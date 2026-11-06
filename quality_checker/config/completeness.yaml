@@ -62,6 +62,7 @@ sections:
       - "work history"
       - "career history"
       - "professional background"
+      - "experience history"
       - "internship experience"
       - "internships"
 
@@ -76,6 +77,8 @@ sections:
       - "education and training"
       - "academic qualifications"
       - "qualifications"
+      - "qualification"
+      - "academic details"
 
   projects:
     display_name: "Projects"
@@ -85,6 +88,8 @@ sections:
       - "personal projects"
       - "academic projects"
       - "key projects"
+      - "projects and achievements"
+      - "technical projects"
       - "selected projects"
       - "project experience"
 
@@ -98,6 +103,9 @@ sections:
       - "licenses and certifications"
       - "professional certifications"
       - "courses and certifications"
+
+# Undetected sections become uncertain at or below this text health score.
+uncertainty_text_health_score: 40
 
 # Points deducted when a section of that importance is missing.
 penalties_by_importance:

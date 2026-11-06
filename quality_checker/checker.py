@@ -71,7 +71,9 @@ class QualityChecker:
             document_id, source_tool, attempt_id,
         )
         text_health = self.text_health_filter.evaluate(text)
-        completeness = self.completeness_filter.evaluate(text)
+        completeness = self.completeness_filter.evaluate(
+            text, extraction_quality=text_health.score if isinstance(text, str) else None
+        )
         reading_order = self.reading_order_filter.evaluate(text)
 
         report = QualityReport(

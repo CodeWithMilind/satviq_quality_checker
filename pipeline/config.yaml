@@ -1,0 +1,52 @@
+# Simple Production Pipeline configuration
+# All values are optional -- missing keys fall back to defaults in
+# pipeline/config.py. No credentials or API keys belong in this file;
+# the LLM provider/model are configured via the backend .env (Muse AI).
+
+# Minimum quality score (0-100) a selected extractor must reach.
+# If the best extractor scores below this, the pipeline reports
+# "below_threshold" instead of silently sending bad text to the LLM.
+min_quality_threshold: 60.0
+
+# Per-extractor wall-clock timeout (seconds) when the three
+# extractors run concurrently.
+per_extractor_timeout_seconds: 60.0
+
+# Deterministic tie-breaking order when two extractors score exactly
+# the same. Earlier in the list wins.
+tie_break_order:
+  - tika
+  - pymupdf
+  - docling
+
+# LLM retries AFTER the first attempt, only for transient failures
+# (timeout / connection / 429 / 5xx). Invalid JSON is never retried.
+llm_max_retries: 2
+
+# Informational only: the existing MuseService does not accept a
+# per-call temperature, so this is recorded in the llm block but not
+# forced onto the provider. null = provider default.
+llm_temperature: null
+
+# Timeout (seconds) applied when the LLM is a plain callable
+# (service-based calls use the service's own configured timeout).
+llm_timeout_seconds: 120.0
+
+# Quality scoring weights. They are sum-normalised at scoring time,
+# so they do not need to sum to exactly 1.0, but the defaults do.
+# - availability:     extraction succeeded and produced meaningful text
+# - length_adequacy:  saturating length score min(chars/1500, 1) --
+#                     longer is NOT automatically better beyond saturation
+# - readability:      proportion of sane alphabetic tokens, punctuation
+# - cleanliness:      penalises replacement (\ufffd) and control chars
+# - non_duplication:  penalises repeated lines / duplicated content
+# - completeness:     contact details + resume section indicators
+# - structure:        headings / paragraphs / bullets present
+weights:
+  availability: 0.10
+  length_adequacy: 0.30
+  readability: 0.15
+  cleanliness: 0.10
+  non_duplication: 0.10
+  completeness: 0.15
+  structure: 0.10

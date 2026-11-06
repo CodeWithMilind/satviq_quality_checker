@@ -2,7 +2,8 @@
 REM ============================================================
 REM  SATVIQ - Resume Intelligence : Windows startup script
 REM  Starts the FastAPI backend, which also serves the frontend.
-REM ============================================================
+REM ============================================================ 
+
 cd /d "%~dp0"
 
 REM Activate an existing virtual environment if one is present.

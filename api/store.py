@@ -68,16 +68,25 @@ def save_record(record: dict[str, Any]) -> None:
     tmp.replace(path)
 
 
-def get_record(resume_id: str) -> dict[str, Any] | None:
+def load_raw_record(resume_id: str) -> dict[str, Any] | None:
+    """The stored record exactly as it is on disk — no derived
+    backfills. For updates that will be saved back (e.g. manual
+    extractor runs), so read-time derivations are never persisted."""
     if not valid_resume_id(resume_id):
         return None
     path = _result_path(resume_id)
     if not path.exists():
         return None
     try:
-        record = json.loads(path.read_text(encoding="utf-8"))
+        return json.loads(path.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError):
         logger.exception("Could not read stored record %s", resume_id)
+        return None
+
+
+def get_record(resume_id: str) -> dict[str, Any] | None:
+    record = load_raw_record(resume_id)
+    if record is None:
         return None
     # Records stored before pipeline traces existed get theirs derived
     # from their stored attempt history on read (never persisted back,

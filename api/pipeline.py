@@ -62,6 +62,8 @@ from typing import Any
 from extractor import ExtractionManager
 from extractor.extractors.docling import DoclingExtractor
 from extractor.extractors.ocr import OCRExtractor
+from extractor.extractors.pymupdf import PyMuPDFExtractor
+from extractor.extractors.tika import TikaExtractor
 from extractor.models import ExtractionResult
 from quality_checker import QualityChecker
 from quality_checker.models import QualityReport
@@ -585,7 +587,6 @@ def build_record_from_result(*, resume_id: str, original_filename: str,
                              path: Path, mime_type: str, file_size: int,
                              result: ExtractionResult, policy: Any,
                              order: list[str],
-                             extraction_timeout_seconds: float | None = None,
                              ) -> dict[str, Any]:
     """Assemble the stored/API record for one processed resume.
 
@@ -642,7 +643,7 @@ def build_record_from_result(*, resume_id: str, original_filename: str,
         entry["fallback_reason"] = entry.get("decision_reason")
         entry["is_final_selected"] = bool(entry.get("selected"))
         entry["ocr"] = _ocr_info(entry.get("metadata"))
-        entry["timeout_seconds"] = extraction_timeout_seconds
+        entry["timeout_seconds"] = None
         entry["model_config_id"] = None
         entry["provider"] = None
         entry["model"] = None
@@ -684,7 +685,7 @@ def build_record_from_result(*, resume_id: str, original_filename: str,
         "quality": _quality_payload(report, status),
         "selection_reason": selection_reason,
         "extractor_order": list(order),
-        "extraction_timeout_seconds": extraction_timeout_seconds,
+        "extraction_timeout_seconds": None,
         "resume_json": None,
         "hyperlinks": [],
         "hyperlink_error": None,
@@ -702,6 +703,7 @@ def build_record_from_result(*, resume_id: str, original_filename: str,
             mime_type=mime_type, total_duration_ms=result.duration_ms,
         ),
     }
+    _ensure_attempt_normalized_texts(record)
     return record
 
 
@@ -942,6 +944,40 @@ def _backfill_hyperlinks(record: dict[str, Any]) -> None:
         record["hyperlink_error"] = result["error"]
 
 
+def _ensure_attempt_normalized_texts(record: dict[str, Any]) -> None:
+    """Per-attempt normalized text, for the Inspector's per-tool text
+    viewer (each extractor's own text + its normalized version).
+
+    Computed on read from each attempt's OWN stored text with the
+    same deterministic normalizer used for the selected text — the
+    stored original is never modified, and nothing is persisted back.
+    STRICT RULE: Muse AI attempts are never normalized (their text
+    is the model's raw response, not extractor output), so they get
+    ``normalized_text = None``.
+    """
+    from .text_normalization import normalize_text
+
+    for attempt in record.get("attempts") or []:
+        if not isinstance(attempt, dict):
+            continue
+        if attempt.get("extractor_name") == "muse_ai":
+            attempt["normalized_text"] = None
+            continue
+        if attempt.get("normalized_text") is not None:
+            continue
+        text = attempt.get("extracted_text") or attempt.get("text") or ""
+        if not text:
+            attempt["normalized_text"] = ""
+            continue
+        try:
+            attempt["normalized_text"] = normalize_text(text)
+        except Exception:
+            logger.exception(
+                "Per-attempt normalization failed for extractor %s",
+                attempt.get("extractor_name"))
+            attempt["normalized_text"] = None
+
+
 def ensure_pipeline_trace(record: dict[str, Any]) -> dict[str, Any]:
     """Fill trace fields for records stored before traces existed.
 
@@ -958,6 +994,8 @@ def ensure_pipeline_trace(record: dict[str, Any]) -> dict[str, Any]:
     _backfill_hyperlinks(record)
     _restore_chain_extracted_text(record)
     _ensure_text_normalization(record)
+    _ensure_attempt_normalized_texts(record)
+    record.setdefault("extractor_results", {})
     if record.get("pipeline_trace"):
         return record
     attempts: list[dict[str, Any]] = []
@@ -1009,28 +1047,6 @@ def ensure_pipeline_trace(record: dict[str, Any]) -> dict[str, Any]:
         total_duration_ms=record.get("duration_ms"),
     )
     return record
-
-
-def _call_with_timeout(fn: Any, timeout_seconds: float | None) -> Any:
-    """Run ``fn`` under a wall-clock cap (used for AI stage calls)."""
-    if not timeout_seconds:
-        return fn()
-    from concurrent.futures import ThreadPoolExecutor
-    from concurrent.futures import TimeoutError as FutureTimeoutError
-
-    executor = ThreadPoolExecutor(max_workers=1)
-    try:
-        return executor.submit(fn).result(timeout=timeout_seconds)
-    except FutureTimeoutError:
-        return {"ok": False,
-                "error": (f"AI stage exceeded the configured timeout of "
-                          f"{timeout_seconds:g}s and was marked TIMEOUT."),
-                "error_type": "TimeoutError", "resume_json": None,
-                "validation": None, "config_id": None, "provider": None,
-                "model": None, "raw_text": None, "page_count": None,
-                "pages_processed": 0, "pages_skipped": 0}
-    finally:
-        executor.shutdown(wait=False)
 
 
 def _restore_chain_extracted_text(record: dict[str, Any]) -> None:
@@ -1248,6 +1264,10 @@ def _apply_muse_stages(record: dict[str, Any], path: Path, service: Any,
     """Muse AI stages (in place): direct image/PDF extraction as the
     last fallback, then Resume JSON generation from accepted text.
 
+    The ``timeout_seconds`` parameter is accepted for call
+    compatibility only — the per-attempt Extraction Timeout feature
+    was removed, so no stage is wall-clock capped here any more.
+
     Muse is configured ONLY through the backend .env — there are no
     frontend model settings. The direct-extraction stage receives
     the ORIGINAL file (never the incomplete extracted text) and runs
@@ -1278,10 +1298,9 @@ def _apply_muse_stages(record: dict[str, Any], path: Path, service: Any,
         if getattr(service, "configured", False) and \
                 getattr(service, "vision_enabled", False):
             started = _time.perf_counter()
-            outcome = _call_with_timeout(
-                lambda: service.vision_extract(
-                    path, tika_text=_tika_text_to_send(record),
-                    hyperlinks=hyperlinks), timeout_seconds)
+            outcome = service.vision_extract(
+                path, tika_text=_tika_text_to_send(record),
+                hyperlinks=hyperlinks)
             requests.append(_muse_request_entry(
                 "vision", outcome, _request_status(outcome)))
             duration_ms = outcome.get("duration_ms")
@@ -1305,8 +1324,6 @@ def _apply_muse_stages(record: dict[str, Any], path: Path, service: Any,
         number = len(record["attempts"]) + 1
         raw_text = outcome.get("raw_text") or ""
         attempt_timeout = outcome.get("timeout_seconds")
-        if attempt_timeout is None:
-            attempt_timeout = timeout_seconds
         record["attempts"].append({
             "attempt_id": f"{record['resume_id']}-attempt-{number}",
             "resume_id": record["resume_id"],
@@ -1431,10 +1448,8 @@ def _apply_muse_stages(record: dict[str, Any], path: Path, service: Any,
         started = _time.perf_counter()
         sent_text, normalization_info = _normalize_for_muse(
             record, record["extracted_text"])
-        outcome = _call_with_timeout(
-            lambda: service.generate_resume_json(
-                sent_text, hyperlinks=hyperlinks),
-            timeout_seconds)
+        outcome = service.generate_resume_json(
+            sent_text, hyperlinks=hyperlinks)
         requests.append(_muse_request_entry(
             "resume_json", outcome, _request_status(outcome)))
         duration_ms = outcome.get("duration_ms")
@@ -1498,17 +1513,279 @@ def _apply_muse_stages(record: dict[str, Any], path: Path, service: Any,
                 "Muse AI produced the final Resume JSON.")
 
 
+def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
+                               original_filename: str,
+                               muse_service: Any | None = None,
+                               pipeline: Any | None = None) -> dict[str, Any]:
+    """Run the SIMPLE pipeline (pipeline.ExtractionPipeline) for one
+    upload and build a record compatible with existing records.
+
+    Additive mode: the legacy chain remains the default elsewhere.
+    Never raises for bad documents -- failures are recorded.
+    """
+    path = Path(file_path)
+    mime_type = detect_mime_type(path)
+    file_size = path.stat().st_size if path.exists() else 0
+    file_type = path.suffix.lower().lstrip(".") or None
+
+    # Resolve pipeline instance
+    pipe = pipeline
+    if pipe is None:
+        from pipeline import ExtractionPipeline as _EP
+        if muse_service is not None:
+            # muse_service may be a MuseService-like object or a callable
+            if hasattr(muse_service, "generate_resume_json"):
+                pipe = _EP(llm_service=muse_service)
+            elif callable(muse_service):
+                pipe = _EP(llm_callable=muse_service)
+            else:
+                pipe = _EP(llm_service=muse_service)
+        else:
+            pipe = _EP()
+
+    # Need per-extractor texts for attempt records
+    try:
+        result = pipe.run(path, include_extractor_texts=True)
+    except TypeError:
+        # Custom pipeline objects in tests may not accept the flag
+        result = pipe.run(path)  # type: ignore[attr-defined]
+        # If texts were stripped, attempts will have empty texts -- acceptable fallback
+
+    selected = result.get("selected_extractor")
+    selected_score = result.get("selected_quality_score")
+    selection_reason = result.get("selection_reason")
+    reports: dict[str, Any] = result.get("extractor_reports") or {}
+    extractor_results: list[dict[str, Any]] = result.get("extractor_results") or []
+    # Canonical order for attempts
+    _canonical = ["tika", "pymupdf", "docling"]
+    by_name = {r.get("extractor"): r for r in extractor_results if isinstance(r, dict)}
+    ordered_results: list[dict[str, Any]] = []
+    for _n in _canonical:
+        if _n in by_name:
+            ordered_results.append(by_name[_n])
+    for _r in extractor_results:
+        if _r.get("extractor") not in _canonical:
+            ordered_results.append(_r)
+
+    # Config threshold for quality_status mapping
+    try:
+        from pipeline import load_pipeline_config as _load_cfg
+        _cfg = _load_cfg()
+        _threshold = float(getattr(pipe, "config", _cfg).min_quality_threshold) if getattr(pipe, "config", None) is not None else float(_cfg.min_quality_threshold)
+    except Exception:
+        _threshold = 60.0
+    try:
+        if getattr(pipe, "config", None) is not None:
+            _threshold = float(pipe.config.min_quality_threshold)
+    except Exception:
+        pass
+
+    if selected is None:
+        quality_status = "FAIL"
+    elif selected_score is not None and selected_score >= 75:
+        quality_status = "PASS"
+    elif selected_score is not None and selected_score >= _threshold:
+        quality_status = "WARNING"
+    else:
+        quality_status = "FAIL"
+
+    pipeline_status = result.get("status")
+    success = bool(pipeline_status == "success" or (pipeline_status == "llm_not_configured" and selected is not None))
+
+    attempts: list[dict[str, Any]] = []
+    timeout_seconds_val: float | None = None
+    try:
+        timeout_seconds_val = float(pipe.config.per_extractor_timeout_seconds) if getattr(pipe, "config", None) is not None else None
+    except Exception:
+        timeout_seconds_val = None
+
+    for index, res in enumerate(ordered_results, start=1):
+        name = res.get("extractor")
+        text_val = res.get("extracted_text") or res.get("text") or ""
+        is_success = res.get("status") == "success"
+        is_selected = bool(selected is not None and name == selected)
+        exec_time = res.get("execution_time") or 0.0
+        try:
+            duration_ms = float(exec_time) * 1000.0
+        except Exception:
+            duration_ms = 0.0
+        err_val = res.get("error")
+        report = reports.get(name) or {}
+        score_val = report.get("quality_score") if isinstance(report, dict) else None
+        if is_selected:
+            decision = "accept"
+            decision_reason = selection_reason
+        elif not is_success:
+            decision = "reject"
+            decision_reason = err_val or "Extraction failed."
+        else:
+            decision = "reject"
+            decision_reason = (
+                f"Not selected: quality score {score_val} (selected '{selected}' scored {selected_score})."
+                if selected else (selection_reason or err_val or "Not selected."))
+        err_type = res.get("error_type")
+        if res.get("status") == "timeout" and not err_type:
+            err_type = "TimeoutError"
+        attempts.append({
+            "attempt_id": f"{resume_id}-attempt-{index}",
+            "resume_id": resume_id,
+            "attempt_number": index,
+            "extractor_name": name,
+            "extractor_version": None,
+            "success": is_success,
+            "accepted": is_selected,
+            "selected": is_selected,
+            "is_final_selected": is_selected,
+            "decision": decision,
+            "decision_reason": decision_reason,
+            "fallback_decision": decision,
+            "fallback_reason": decision_reason,
+            "quality_status": None,
+            "quality": None,
+            "quality_checker_report": None,
+            "duration_ms": duration_ms,
+            "text": text_val,
+            "extracted_text": text_val,
+            "extracted_text_length": len(text_val),
+            "extraction_status": "SUCCESS" if is_success else "FAILED",
+            "error": None if is_success else err_val,
+            "error_message": None if is_success else err_val,
+            "error_type": err_type,
+            "error_traceback": None,
+            "started_at": None,
+            "completed_at": None,
+            "timeout_seconds": timeout_seconds_val,
+            "metadata": res.get("metadata") or {},
+            "ocr": None,
+            "model_config_id": None,
+            "provider": None,
+            "model": None,
+            "json_validation": None,
+            "input_type": None,
+        })
+
+    selected_result = by_name.get(selected) if selected else None
+    page_count = selected_result.get("page_count") if selected_result else None
+    original_text = result.get("original_text") or ""
+    if original_text is None:
+        original_text = ""
+    total_ms: float | None = None
+    timings = result.get("timings") or {}
+    if timings.get("total_seconds") is not None:
+        try:
+            total_ms = float(timings["total_seconds"]) * 1000.0
+        except Exception:
+            total_ms = None
+
+    # Pipeline trace -- simple, honest trace for the simple pipeline
+    trace: list[dict[str, Any]] = [
+        _stage("Resume Upload", "upload", "PASS", message="File received and stored for processing."),
+        _stage("MIME Type Detection", "mime", "PASS", message=mime_type or REASON_UNAVAILABLE),
+    ]
+    for att in attempts:
+        nm = att["extractor_name"]
+        disp = extractor_display_name(nm)
+        trace.append(_stage(f"{disp} Extractor", "extractor", "PASS" if att["success"] else "FAIL",
+                            extractor=nm, duration_ms=att.get("duration_ms"),
+                            message=("Extraction succeeded." if att["success"] else (att.get("error") or REASON_UNAVAILABLE)),
+                            accepted=att.get("accepted"), decision=att.get("decision"), selected=att.get("selected")))
+    trace.append(_stage("Quality Evaluation", "quality", "PASS" if selected else "FAIL",
+                        message=(f"Quality scores: " + ", ".join(f"{k}={ (v.get('quality_score') if isinstance(v, dict) else v)}" for k, v in reports.items()) if reports else (selection_reason or REASON_UNAVAILABLE)),
+                        selected=bool(selected)))
+    trace.append(_stage("Best Extractor Selection", "selection", "PASS" if selected else "FAIL",
+                        extractor=selected, message=selection_reason or REASON_UNAVAILABLE, selected=bool(selected)))
+    norm_block = result.get("normalization") or {}
+    trace.append(_stage("Text Normalization", "normalization", "PASS" if norm_block.get("status") == "success" else ("SKIPPED" if not selected else "FAIL"),
+                        message=f"Normalization status: {norm_block.get('status')}", selected=bool(selected)))
+    llm_block = result.get("llm") or {}
+    llm_status_str = llm_block.get("status")
+    trace.append(_stage("LLM Processing", "llm", "PASS" if llm_status_str == "success" else ("SKIPPED" if llm_status_str == "skipped" else "FAIL"),
+                        message=(llm_block.get("error") or f"LLM status: {llm_status_str}"), selected=False))
+    validation_val = llm_block.get("validation")
+    trace.append(_stage("JSON Validation", "quality", "PASS" if validation_val == "valid" else ("SKIPPED" if llm_status_str in ("skipped", "not_configured") else "FAIL"),
+                        message=("Resume JSON matches the project schema." if validation_val == "valid" else (llm_block.get("error") or f"Validation: {validation_val}")), selected=False))
+    trace.append(_stage("Final Extraction Result", "final", "PASS" if success else "FAIL",
+                        extractor=selected, duration_ms=total_ms,
+                        message=(f"Final accepted text produced by {extractor_display_name(selected)}." if success and selected else (result.get("error") or REASON_UNAVAILABLE)),
+                        accepted=bool(success), selected=bool(success and selected)))
+
+    record: dict[str, Any] = {
+        "resume_id": resume_id,
+        "filename": original_filename,
+        "file_type": file_type,
+        "mime_type": mime_type,
+        "file_size_bytes": file_size,
+        "uploaded_at": datetime.now(timezone.utc).isoformat(),
+        "success": success,
+        "extractor_used": selected if success or selected else None,
+        "final_extractor": selected,
+        "primary_extractor": "tika",
+        "attempts": attempts,
+        "attempt_count": len(attempts),
+        "fallback_occurred": False,
+        "fallback_reason": None,
+        "extracted_text": original_text,
+        "final_extracted_text": original_text,
+        "page_count": page_count,
+        "warnings": [],
+        "error": None if success else result.get("error"),
+        "quality_status": quality_status,
+        "final_quality_status": quality_status,
+        "quality": None,
+        "selection_reason": selection_reason,
+        "pipeline_trace": trace,
+        "duration_ms": total_ms or 0.0,
+        "extractor_order": list(_canonical),
+        "extraction_timeout_seconds": timeout_seconds_val,
+        "hyperlinks": [],
+        "hyperlink_error": None,
+        "text_normalization": None,
+        "muse_requests": [],
+        "token_usage": None,
+        "resume_json_meta": None,
+        # New simple-pipeline fields (additive, backward-compatible)
+        "pipeline_mode": "simple",
+        "selected_extractor": selected,
+        "selected_quality_score": selected_score,
+        "extractor_reports": reports,
+        "normalization": norm_block,
+        "llm": llm_block,
+        "resume_data": result.get("resume_data"),
+        "resume_json": result.get("resume_data"),
+        "resume_json_source": "muse_ai" if pipeline_status == "success" else None,
+        "timings": timings,
+    }
+    # extractor_used should reflect selection even when LLM not configured case already handled;
+    # when extraction succeeded but LLM failed, legacy semantics keep extractor_used as selected
+    if selected and record["extractor_used"] is None:
+        record["extractor_used"] = selected
+    _ensure_attempt_normalized_texts(record)
+    return record
+
+
 def process_resume_file(file_path: str | Path, *, resume_id: str,
                         original_filename: str,
-                        extraction_timeout_seconds: float | None = None,
                         muse_service: Any | None = None,
-                        ai_service: Any | None = None) -> dict[str, Any]:
+                        ai_service: Any | None = None,
+                        pipeline_mode: str = "legacy") -> dict[str, Any]:
     """Run the full pipeline for one stored upload and build its record.
 
     Pipeline: MIME detection → ExtractionManager (configured extractor
     order) with the QualityChecker as its acceptance policy → record.
     Never raises for bad documents — failures are recorded.
+
+    ``pipeline_mode="simple"`` (or env SATVIQ_PIPELINE_MODE=simple)
+    delegates to the simple concurrent pipeline; default is "legacy"
+    and legacy behaviour/defaults are unchanged.
     """
+    _mode = pipeline_mode or "legacy"
+    if _mode != "simple" and os.environ.get("SATVIQ_PIPELINE_MODE") == "simple":
+        _mode = "simple"
+    if _mode == "simple":
+        _svc = muse_service if muse_service is not None else ai_service
+        return process_resume_file_simple(
+            file_path, resume_id=resume_id, original_filename=original_filename,
+            muse_service=_svc)
     path = Path(file_path)
     mime_type = detect_mime_type(path)
     file_size = path.stat().st_size if path.exists() else 0
@@ -1524,9 +1801,7 @@ def process_resume_file(file_path: str | Path, *, resume_id: str,
     except Exception:
         logger.exception("Could not read quality_gate config; using defaults")
     policy = QualityGatePolicy(checker, document_id=resume_id, config=gate_config)
-    manager = ExtractionManager(
-        acceptance_policy=policy,
-        attempt_timeout_seconds=extraction_timeout_seconds)
+    manager = ExtractionManager(acceptance_policy=policy)
     result = manager.extract(path)
 
     order = list(dict.fromkeys(manager.order))
@@ -1534,17 +1809,138 @@ def process_resume_file(file_path: str | Path, *, resume_id: str,
         resume_id=resume_id, original_filename=original_filename,
         path=path, mime_type=mime_type, file_size=file_size,
         result=result, policy=policy, order=order,
-        extraction_timeout_seconds=extraction_timeout_seconds,
     )
     service = muse_service if muse_service is not None else \
         (ai_service if ai_service is not None else _default_muse_service())
     if service is not None:
-        _apply_muse_stages(record, path, service,
-                           extraction_timeout_seconds)
+        _apply_muse_stages(record, path, service, None)
     logger.info("Processed resume_id=%s success=%s extractor=%s quality=%s",
                 resume_id, result.success, record["extractor_used"],
                 record["quality_status"])
     return record
+
+
+# --- Manual extractor comparison -------------------------------------------
+# On-demand, independent runs of the three comparison extractors on a
+# resume's STORED ORIGINAL file, for the Inspector's manual-comparison
+# UI. These runs are deliberately separate from the pipeline:
+# - results live in record["extractor_results"][<extractor>] and never
+#   touch record["attempts"], the selected/final text, extractor_used,
+#   or resume_json;
+# - no Muse / LLM call of any kind is made here;
+# - the pipeline's own selection is never changed by a manual run.
+
+#: Extractors offered for manual comparison.
+MANUAL_EXTRACTORS: tuple[str, ...] = ("tika", "pymupdf", "docling")
+
+_MANUAL_EXTRACTOR_CLASSES: dict[str, type] = {
+    "tika": TikaExtractor,
+    "pymupdf": PyMuPDFExtractor,
+    "docling": DoclingExtractor,
+}
+
+
+def _build_manual_extractors(names: list[str]) -> dict[str, Any]:
+    """Instantiate the requested comparison extractors with their
+    configured sections from extractor.yaml (same config the pipeline
+    uses). Test seam: run_manual_extractors accepts injected instances
+    instead."""
+    try:
+        from extractor.manager import load_manager_config
+
+        per_extractor = load_manager_config().get("extractors", {}) or {}
+    except Exception:
+        logger.exception("Could not read extractor config for manual runs")
+        per_extractor = {}
+    built: dict[str, Any] = {}
+    for name in names:
+        cls = _MANUAL_EXTRACTOR_CLASSES.get(name)
+        if cls is not None:
+            built[name] = cls(config=per_extractor.get(name, {}))
+    return built
+
+
+def run_manual_extractors(record: dict[str, Any], file_path: str | Path,
+                          extractor_names: list[str], *,
+                          extractors: dict[str, Any] | None = None,
+                          checker: QualityChecker | None = None,
+                          ) -> dict[str, Any]:
+    """Run ``extractor_names`` independently on ``file_path`` and store
+    each result under ``record["extractor_results"][name]`` (in place).
+
+    Each entry: status, extracted_text, normalized_text (the existing
+    deterministic normalizer on that extractor's own text), quality
+    score/status/report from the existing QualityChecker when text was
+    produced, character/word counts, execution time, page count, and
+    the real error when the run failed. A failing extractor never
+    stops the others. Returns the updated ``extractor_results`` dict.
+    """
+    from .text_normalization import normalize_text
+
+    path = Path(file_path)
+    built = extractors if extractors is not None else \
+        _build_manual_extractors(list(extractor_names))
+    qc = checker if checker is not None else QualityChecker()
+    results: dict[str, Any] = dict(record.get("extractor_results") or {})
+    for name in extractor_names:
+        extractor = built.get(name)
+        if extractor is None:
+            results[name] = {
+                "extractor": name, "source": "manual", "status": "failed",
+                "extracted_text": "", "normalized_text": "",
+                "quality_score": None, "quality_status": None,
+                "quality": None, "char_count": 0, "word_count": 0,
+                "execution_time": 0.0, "duration_ms": 0.0,
+                "page_count": None,
+                "error": f"Extractor '{name}' is not available.",
+                "error_type": "ExtractorUnavailableError",
+                "run_at": datetime.now(timezone.utc).isoformat(),
+            }
+            continue
+        try:
+            result = extractor.extract(path)
+        except Exception as exc:  # an extractor must never crash the batch
+            logger.exception("Manual extractor '%s' raised", name)
+            result = ExtractionResult(
+                extractor_name=name, success=False, text="",
+                error=f"{type(exc).__name__}: {exc}",
+                error_type=type(exc).__name__)
+        text = result.text or ""
+        quality_score: float | None = None
+        quality_status: str | None = None
+        quality_payload: dict[str, Any] | None = None
+        if result.success and text.strip():
+            report = qc.check(
+                text,
+                document_id=record.get("resume_id") or "manual",
+                source_tool=name,
+                attempt_id=f"manual-{name}",
+            )
+            quality_status = quality_status_for(report, True)
+            quality_payload = _quality_payload(report, quality_status)
+            scores = _filter_scores(report)
+            quality_score = round(sum(scores) / len(scores), 1)
+        results[name] = {
+            "extractor": name, "source": "manual",
+            "status": "success" if result.success else "failed",
+            "extracted_text": text,
+            "normalized_text": normalize_text(text) if text else "",
+            "quality_score": quality_score,
+            "quality_status": quality_status,
+            "quality": quality_payload,
+            "char_count": len(text), "word_count": len(text.split()),
+            "execution_time": round((result.duration_ms or 0.0) / 1000, 3),
+            "duration_ms": result.duration_ms or 0.0,
+            "page_count": result.page_count,
+            "error": None if result.success else result.error,
+            "error_type": getattr(result, "error_type", None),
+            "run_at": datetime.now(timezone.utc).isoformat(),
+        }
+        logger.info("Manual extraction: resume=%s extractor=%s status=%s "
+                    "chars=%d", record.get("resume_id"), name,
+                    results[name]["status"], len(text))
+    record["extractor_results"] = results
+    return results
 
 
 def failed_record(*, resume_id: str, original_filename: str, file_type: str | None,

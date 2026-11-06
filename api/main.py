@@ -18,7 +18,7 @@ import re
 import uuid
 from pathlib import Path
 
-from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
+from fastapi import FastAPI, File, HTTPException, Request, UploadFile
 from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 from starlette.concurrency import run_in_threadpool
@@ -27,11 +27,13 @@ from extractor.manager import load_manager_config
 
 from . import store
 from .pipeline import (
+    MANUAL_EXTRACTORS,
     MAX_UPLOAD_BYTES,
     MAX_UPLOAD_MB,
     SUPPORTED_EXTENSIONS,
     failed_record,
     process_resume_file,
+    run_manual_extractors,
 )
 
 logging.basicConfig(
@@ -111,6 +113,18 @@ def _ai_status() -> dict:
                 "error": "Muse configuration could not be loaded."}
 
 
+def _simple_pipeline_info() -> dict:
+    try:
+        from pipeline import load_pipeline_config
+
+        cfg = load_pipeline_config()
+        return {"extractors": ["tika", "pymupdf", "docling"],
+                "min_quality_threshold": cfg.min_quality_threshold}
+    except Exception:
+        return {"extractors": ["tika", "pymupdf", "docling"],
+                "min_quality_threshold": 60.0}
+
+
 @app.get("/api/health")
 def health() -> dict:
     return {
@@ -122,6 +136,7 @@ def health() -> dict:
         "ai": _ai_status(),
         "supported_extensions": sorted(SUPPORTED_EXTENSIONS),
         "max_upload_mb": MAX_UPLOAD_MB,
+        "simple_pipeline": _simple_pipeline_info(),
     }
 
 
@@ -131,19 +146,12 @@ def stats() -> dict:
 
 
 @app.post("/api/resumes/process")
-async def process_resumes(files: list[UploadFile] = File(...),
-                          extraction_timeout: int = Form(20)) -> dict:
+async def process_resumes(files: list[UploadFile] = File(...)) -> dict:
     """Process one or more uploaded resumes through the full pipeline.
 
     Each file gets its own record — a bad file never fails the batch.
     Extraction runs in a threadpool so the server stays responsive.
-    ``extraction_timeout`` is the frontend's per-attempt timeout in
-    seconds (UI offers 15 or 20); it is enforced on the backend for
-    every extraction attempt, including AI stages.
     """
-    if not 1 <= extraction_timeout <= 300:
-        raise HTTPException(
-            400, "extraction_timeout must be between 1 and 300 seconds.")
     results: list[dict] = []
     for upload in files:
         resume_id = str(uuid.uuid4())
@@ -197,7 +205,6 @@ async def process_resumes(files: list[UploadFile] = File(...),
             record = await run_in_threadpool(
                 process_resume_file, stored_path,
                 resume_id=resume_id, original_filename=safe_name,
-                extraction_timeout_seconds=float(extraction_timeout),
             )
             record["_stored_name"] = stored_name
 
@@ -206,6 +213,74 @@ async def process_resumes(files: list[UploadFile] = File(...),
         store.save_record(record)
         results.append(store.public(record))
 
+    return {"results": results}
+
+
+@app.post("/api/resumes/process-simple")
+async def process_resumes_simple(files: list[UploadFile] = File(...)) -> dict:
+    """Process uploads through the SIMPLE pipeline (pipeline_mode=simple).
+
+    Mirrors /api/resumes/process upload saving/validation, but runs
+    Tika + PyMuPDF + Docling concurrently, quality-scores all three,
+    selects the best, normalizes, and calls the LLM once. Returns the
+    same {"results": [...]} shape with backward-compatible records.
+    """
+    results: list[dict] = []
+    for upload in files:
+        resume_id = str(uuid.uuid4())
+        safe_name = _sanitise_filename(upload.filename)
+        ext = Path(safe_name).suffix.lower().lstrip(".")
+        stored_name = f"{resume_id}_{safe_name}"
+        stored_path = store.UPLOADS_DIR / stored_name
+        size = 0
+        too_large = False
+        with stored_path.open("wb") as out:
+            while True:
+                chunk = await upload.read(1024 * 256)
+                if not chunk:
+                    break
+                size += len(chunk)
+                if size > MAX_UPLOAD_BYTES:
+                    too_large = True
+                    break
+                out.write(chunk)
+        await upload.close()
+        if too_large:
+            stored_path.unlink(missing_ok=True)
+            record = failed_record(
+                resume_id=resume_id, original_filename=safe_name,
+                file_type=ext or None, mime_type=upload.content_type,
+                file_size=size,
+                error=(f"File exceeds the {MAX_UPLOAD_MB} MB limit. "
+                       "Please upload a smaller resume."),
+            )
+        elif size == 0:
+            stored_path.unlink(missing_ok=True)
+            record = failed_record(
+                resume_id=resume_id, original_filename=safe_name,
+                file_type=ext or None, mime_type=upload.content_type,
+                file_size=0, error="File is empty.",
+            )
+        elif ext not in SUPPORTED_EXTENSIONS:
+            stored_path.unlink(missing_ok=True)
+            record = failed_record(
+                resume_id=resume_id, original_filename=safe_name,
+                file_type=ext or None, mime_type=upload.content_type,
+                file_size=size,
+                error=(f"Unsupported file type '.{ext}'. Supported types: "
+                       + ", ".join(sorted(SUPPORTED_EXTENSIONS)) + "."),
+            )
+        else:
+            record = await run_in_threadpool(
+                process_resume_file, stored_path,
+                resume_id=resume_id, original_filename=safe_name,
+                pipeline_mode="simple",
+            )
+            record["_stored_name"] = stored_name
+        if "_stored_name" not in record:
+            record["_stored_name"] = None
+        store.save_record(record)
+        results.append(store.public(record))
     return {"results": results}
 
 
@@ -253,6 +328,56 @@ def get_resume(resume_id: str) -> JSONResponse:
     if record is None:
         return JSONResponse(status_code=404, content={"detail": "Resume record not found."})
     return JSONResponse(content=store.public(record))
+
+
+@app.post("/api/resumes/{resume_id}/extractors/run", response_model=None)
+async def run_manual_extractors_endpoint(resume_id: str,
+                                         request: Request) -> JSONResponse:
+    """Run Tika / PyMuPDF / Docling independently on this resume's
+    stored original, for manual comparison in the Inspector.
+
+    Body: {"extractors": ["tika", ...]} or {"extractor": "tika"};
+    no body / empty list runs all three. Results are stored under the
+    record's ``extractor_results`` only — the pipeline's attempts, the
+    selected extractor, the final text and the Resume JSON are never
+    touched, and no LLM call is made.
+    """
+    try:
+        body = await request.json()
+    except Exception:
+        body = {}
+    if not isinstance(body, dict):
+        body = {}
+    names = body.get("extractors")
+    if not names and body.get("extractor"):
+        names = [body["extractor"]]
+    if not names:
+        names = list(MANUAL_EXTRACTORS)
+    if not isinstance(names, list) or \
+            any(name not in MANUAL_EXTRACTORS for name in names):
+        raise HTTPException(
+            400, "extractors must be a list containing only: "
+            + ", ".join(MANUAL_EXTRACTORS) + ".")
+    names = list(dict.fromkeys(names))
+    raw = store.load_raw_record(resume_id)
+    if raw is None:
+        return JSONResponse(status_code=404,
+                            content={"detail": "Resume record not found."})
+    stored_name = raw.get("_stored_name")
+    original_path = store.UPLOADS_DIR / stored_name if stored_name else None
+    if original_path is None or not original_path.is_file():
+        return JSONResponse(
+            status_code=409,
+            content={"detail": "The original uploaded file is not "
+                               "available for this record, so manual "
+                               "extraction cannot run."})
+    await run_in_threadpool(run_manual_extractors, raw, original_path, names)
+    store.save_record(raw)
+    updated = store.get_record(resume_id)
+    return JSONResponse(content={
+        "extractor_results": (updated or {}).get("extractor_results", {}),
+        "record": store.public(updated) if updated else None,
+    })
 
 
 @app.get("/api/resumes/{resume_id}/text", response_model=None)

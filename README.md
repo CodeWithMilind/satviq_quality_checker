@@ -886,3 +886,151 @@ the exact behaviour that previously stopped at the first WARNING.
 - `.txt`/`.docx` etc. depend primarily on Tika (or Docling); without
   those tools installed, such files will fail cleanly with the
   attempt reasons recorded, while PDFs still work via PyMuPDF.
+
+---
+
+## Simple Production Pipeline (`pipeline/`)
+
+> **Additive — the legacy chain above remains the default and is
+> unchanged.** This section describes the new simple pipeline added
+> in the refactoring. It does not replace the sequential
+> Tika → PyMuPDF → Docling → OCR fallback chain, the Quality
+> Checker, or the Muse vision fallback; those keep working exactly
+> as before for existing callers.
+
+### Architecture
+
+Every supported document is processed **independently by all three
+extractors at the same time**, the three outputs are scored with one
+deterministic quality evaluation, only the best extractor's text is
+normalized and sent to the LLM **once**, and the LLM output is
+validated against the existing Resume JSON schema
+(`muse_ai/schema.py`). There is no fallback chain, no second
+quality layer, and no extra LLM call.
+
+```
+DOCUMENT INPUT
+      |
+      v
+THREE EXTRACTORS (concurrent, ThreadPoolExecutor, per-extractor timeout)
+      |---- Apache Tika      (extractor.extractors.tika.TikaExtractor)
+      |---- PyMuPDF          (extractor.extractors.pymupdf.PyMuPDFExtractor, PDF only)
+      |---- Docling          (extractor.extractors.docling.DoclingExtractor)
+      v
+EXTRACTION QUALITY EVALUATION   (pipeline/quality.py)
+  availability - saturating length adequacy - readability -
+  cleanliness (replacement/control chars) - non-duplication -
+  completeness (contact + sections) - structure (headings/bullets)
+  -> one quality report per extractor, configurable weights
+      v
+BEST EXTRACTOR SELECTION        (pipeline/selector.py)
+  highest quality score wins; deterministic tie-break;
+  below the configured minimum threshold -> below_threshold
+  (bad text is never silently sent to the LLM)
+      v
+TEXT NORMALIZATION              (pipeline/normalization.py)
+  thin wrapper over api.text_normalization.normalize_with_steps;
+  original and normalized text are both preserved
+      v
+LLM PROCESSING (one stage)      (pipeline/llm.py)
+  MuseService (existing provider, configurable Settings system
+  prompt + schema) receives ONLY the selected normalized text;
+  retries only for transient failures, never for invalid JSON
+      v
+STRUCTURED JSON OUTPUT -> VALIDATION (muse_ai.schema.validate_resume_json)
+      v
+FINAL RESUME JSON
+```
+
+```mermaid
+flowchart TD
+    A[Document Input] --> B[Tika]
+    A --> C[PyMuPDF]
+    A --> D[Docling]
+    B --> E[Quality Evaluation]
+    C --> E
+    D --> E
+    E --> F[Best Extractor Selection]
+    F -->|below threshold| X[below_threshold / extraction_failed]
+    F --> G[Text Normalization]
+    G --> H[LLM Processing - selected normalized text only]
+    H --> I[JSON Validation]
+    I --> J[Final Resume JSON]
+```
+
+### Modules
+
+| File | Responsibility |
+|---|---|
+| `pipeline/config.py` + `pipeline/config.yaml` | `PipelineConfig`: `min_quality_threshold` (60.0), per-extractor timeout (60s), `tie_break_order`, `llm_max_retries` (2, transient only), LLM timeout/temperature, scoring weights. `load_pipeline_config()` reads `config.yaml` if present, else defaults. |
+| `pipeline/extractors.py` | `run_extractors()` — concurrent execution, unified result dicts (`extractor`, `status` success/failed/timeout, `extracted_text`, `execution_time`, `metadata`, `error`, `page_count`, `page_texts`) in canonical order `[tika, pymupdf, docling]`. Extractors are injectable for tests. |
+| `pipeline/quality.py` | `evaluate_extraction_quality()` — deterministic 0–100 score. Length is **saturating** (`min(unique meaningful chars/1500, 1)`) so the longest text does not automatically win and duplicated text cannot inflate length; replacement/control characters and repeated lines are penalised. Failed/empty results score 0. |
+| `pipeline/selector.py` | `select_best_extractor()` — highest score wins, ties broken by `tie_break_order` then name; statuses `selected` / `no_usable_extraction` / `below_threshold`. |
+| `pipeline/normalization.py` | `normalize_extracted_text()` — reuses the existing deterministic normalizer; keeps original + normalized. |
+| `pipeline/llm.py` | `LLMProcessor` + `DEFAULT_SYSTEM_PROMPT_GUIDANCE` (the 16 prompt requirements). Accepts a `MuseService` or a plain callable; validates string/dict output with the existing schema; never fabricates JSON. |
+| `pipeline/extraction_pipeline.py` | `ExtractionPipeline.run()` — orchestrates the stages, records per-stage timings, and returns the spec result (`status`, `selected_extractor`, `selected_quality_score`, `extractor_reports`, `original_text`, `normalized_text`, `normalization`, `llm`, `resume_data`, `timings`, `error`). Per-extractor texts are omitted by default (`include_extractor_texts=True` to include them). |
+
+Pipeline statuses: `success`, `extraction_failed`,
+`below_threshold`, `llm_failed`, `llm_not_configured` (extraction
+succeeded but Muse is not configured via the backend `.env`).
+
+### Configuration
+
+Edit `pipeline/config.yaml` (commented defaults ship with the
+project) or construct `PipelineConfig(...)` in code. No API keys
+live there — the LLM provider/model remain configured only through
+the backend `.env` (`MUSE_API_KEY`, `MUSE_MODEL`, …), exactly as
+before.
+
+### How to run it
+
+**New endpoint** (same upload validation and `{"results": [...]}`
+shape as `/api/resumes/process`; records carry the additive fields
+`pipeline_mode="simple"`, `selected_extractor`,
+`selected_quality_score`, `extractor_reports`, `normalization`,
+`llm`, `resume_data`/`resume_json`, and `timings`, plus a simple
+`pipeline_trace`):
+
+```
+POST /api/resumes/process-simple
+```
+
+**Environment switch** (makes the existing
+`process_resume_file` delegate to the simple pipeline; legacy
+remains the default when unset):
+
+```bash
+SATVIQ_PIPELINE_MODE=simple
+```
+
+**Direct Python use:**
+
+```python
+from pipeline import ExtractionPipeline
+
+result = ExtractionPipeline().run("resume.pdf")
+print(result["status"], result["selected_extractor"],
+      result["selected_quality_score"])
+print(result["resume_data"])  # validated Resume JSON, or None
+```
+
+**Health:** `GET /api/health` now also returns
+`simple_pipeline: {"extractors": ["tika", "pymupdf", "docling"],
+"min_quality_threshold": 60.0}`. No existing health keys changed.
+
+### Tests
+
+```bash
+python -m pytest tests/test_simple_pipeline.py -q
+```
+
+25 tests covering all 16 spec scenarios (three-extractor success,
+1-fail/2-fail/all-fail, empty, corrupted, duplicated, quality-based
+selection over longest, tie-breaking, normalization preservation,
+LLM-receives-only-selected-text, valid/invalid JSON, schema
+failure, LLM timeout retry + timeout-then-success, real-PyMuPDF
+end-to-end) plus below-threshold, extractor timeout, callable
+extractors, not-configured, record compatibility, and the health
+key. All use fake extractors / fake LLM callables — no network, no
+paid calls, no Tika/Java/Docling needed. See `REFACTOR_REPORT.md`
+for the full test execution report.

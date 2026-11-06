@@ -277,15 +277,6 @@ function renderProcess() {
       </div>
       <div class="selected-files" id="selectedFiles"></div>
       <div class="inline-row mt">
-        <div class="field">
-          <label for="timeoutSelect">Per-attempt timeout</label>
-          <select id="timeoutSelect" class="select-input" style="width:auto">
-            <option value="15">15 seconds</option>
-            <option value="20" selected>20 seconds</option>
-            <option value="30">30 seconds</option>
-            <option value="60">60 seconds</option>
-          </select>
-        </div>
         <div style="flex:1"></div>
         <button class="btn btn-primary" id="processBtn" type="button" disabled>Process Resume</button>
       </div>
@@ -363,7 +354,6 @@ async function processSelected() {
   try {
     const body = await Api.processResumes(
       valid.map((entry) => entry.file),
-      Number($("timeoutSelect").value),
       (percent) => {
         fill.style.width = percent + "%";
         label.textContent = percent >= 100
@@ -425,6 +415,7 @@ function renderHistory() {
         <option value="failed" ${state.history.status === "failed" ? "selected" : ""}>Processing failed</option>
       </select>
       <button class="btn" id="historyRefresh" type="button">Refresh</button>
+      <button class="btn btn-danger" id="historyDeleteAll" type="button">Delete All Records</button>
     </div>
     <div id="historyList"><div class="loading">Loading history…</div></div>
     <div class="pagination" id="historyPagination"></div>`;
@@ -444,6 +435,16 @@ function renderHistory() {
     loadHistory();
   });
   $("historyRefresh").addEventListener("click", loadHistory);
+  $("historyDeleteAll").addEventListener("click", async () => {
+    if (!confirm("Delete ALL resume records and their stored results? This cannot be undone.")) return;
+    try {
+      const body = await Api.deleteAllResumes();
+      state.recordCache = {};
+      state.history.page = 1;
+      toast("Deleted " + (body.deleted_count ?? 0) + " record(s).", "success");
+      renderHistory();
+    } catch (err) { toast(err.message, "error"); }
+  });
   loadHistory();
 }
 
@@ -521,12 +522,12 @@ function attemptCardHtml(attempt, index) {
       <span class="meta">${fmtNum(chars)} chars · ${fmtMs(attempt.duration_ms)}</span>
       <span style="flex:1"></span>
       <button class="btn btn-small" data-toggle-attempt="${id}" type="button">Details</button>
+      ${attempt.extractor_name !== "muse_ai" ? `<button class="btn btn-small" data-view-output="${escapeHtml(attempt.extractor_name)}" type="button">View Output</button>` : ""}
     </div>
     ${shortError ? `<div class="meta" style="color:var(--bad);margin-top:4px">${escapeHtml(String(shortError).slice(0, 160))}</div>` : ""}
     <div class="attempt-detail" id="${id}" hidden>
       ${attempt.decision_reason || attempt.fallback_reason ? `<p class="hint">${escapeHtml(attempt.decision_reason || attempt.fallback_reason)}</p>` : ""}
       <table class="kv-table">
-        <tr><td>Configured timeout</td><td>${attempt.timeout_seconds != null ? escapeHtml(attempt.timeout_seconds) + " sec" : "N/A"}</td></tr>
         <tr><td>Actual duration</td><td>${fmtMs(attempt.duration_ms)}</td></tr>
         <tr><td>OCR</td><td>${ocr ? escapeHtml(Object.entries(ocr).map(([k, v]) => k + ": " + (typeof v === "object" ? JSON.stringify(v) : v)).join(" · ")) : "N/A"}</td></tr>
         ${attempt.provider || attempt.model ? `<tr><td>LLM</td><td>${escapeHtml(attempt.provider || "")} ${escapeHtml(attempt.model || "")}</td></tr>` : ""}
@@ -642,6 +643,89 @@ async function renderResume(id, params) {
   const normalizedText = norm.normalized_text || "";
   const activeTab = ["text", "normalized", "ai"].includes(params.tab) ? params.tab : "text";
 
+  // --- Shared extractor viewer state -------------------------------------
+  // ONE extractor selector above the tabs drives BOTH the Extracted and
+  // Normalized tabs. Per extractor, the viewer shows its manual
+  // comparison run (record.extractor_results) when one exists — the
+  // fresher, user-requested output for that tool, badged "Manual run" —
+  // otherwise its pipeline attempt. Pipeline attempts, the selected
+  // extractor and the AI output are never changed by manual runs.
+  const MANUAL_TOOLS = ["tika", "pymupdf", "docling"];
+  const manualResults = record.extractor_results || {};
+  const toolAttempts = (record.attempts || []).filter(
+    (a) => a.extractor_name && a.extractor_name !== "muse_ai");
+  const viewerTools = [];
+  ["tika", "pymupdf", "docling", "ocr"].forEach((name) => {
+    if (toolAttempts.some((a) => a.extractor_name === name) || manualResults[name]) viewerTools.push(name);
+  });
+  toolAttempts.forEach((a) => { if (!viewerTools.includes(a.extractor_name)) viewerTools.push(a.extractor_name); });
+  Object.keys(manualResults).forEach((name) => { if (!viewerTools.includes(name)) viewerTools.push(name); });
+  const finalAttempt = toolAttempts.find((a) => a.is_final_selected || a.selected)
+    || toolAttempts.find((a) => a.extractor_name === record.extractor_used)
+    || toolAttempts.find((a) => (a.extracted_text || a.text))
+    || toolAttempts[0] || null;
+  let currentExtractor = (params.extractor && viewerTools.includes(params.extractor))
+    ? params.extractor
+    : (finalAttempt ? finalAttempt.extractor_name : (viewerTools[0] || null));
+  let currentTab = activeTab;
+  const runningManual = new Set();
+
+  function viewerData(name) {
+    const manual = manualResults[name];
+    if (manual) {
+      return { raw: manual.extracted_text || "",
+        normalized: manual.normalized_text != null ? manual.normalized_text : null,
+        source: "manual", status: manual.status,
+        qualityStatus: manual.quality_status, qualityScore: manual.quality_score,
+        error: manual.error, durationMs: manual.duration_ms,
+        pageCount: manual.page_count, isFinal: false };
+    }
+    const a = toolAttempts.find((x) => x.extractor_name === name);
+    if (!a) return null;
+    return { raw: a.extracted_text || a.text || "",
+      normalized: a.normalized_text != null ? a.normalized_text
+        : (name === (norm.source || record.extractor_used) ? normalizedText : null),
+      source: "pipeline", status: a.success ? "success" : "failed",
+      qualityStatus: a.quality_status, qualityScore: null, error: a.error,
+      durationMs: a.duration_ms, pageCount: null,
+      isFinal: !!(a.is_final_selected || a.selected) };
+  }
+
+  function extractorMetaText(name) {
+    const d = viewerData(name);
+    if (!d) return "";
+    return [d.source === "manual" ? "Manual run" : "Pipeline attempt",
+      d.qualityStatus ? "Quality " + d.qualityStatus : null,
+      d.qualityScore != null ? "Score " + d.qualityScore + "/100" : null,
+      d.isFinal ? "Final selected" : null,
+      d.durationMs != null ? fmtMs(d.durationMs) : null].filter(Boolean).join(" · ");
+  }
+
+  function manualCardHtml(name) {
+    const m = manualResults[name];
+    const label = engineLabel(name);
+    if (!m) {
+      return `<div class="attempt-card"><div class="attempt-head">
+        <span class="engine">${escapeHtml(label)}</span>
+        <span class="chip chip-info">Not run manually</span>
+        <span style="flex:1"></span>
+        <button class="btn btn-small" data-run-extractor="${name}" type="button">Run ${escapeHtml(label)}</button>
+      </div></div>`;
+    }
+    const ok = m.status === "success";
+    return `<div class="attempt-card"><div class="attempt-head">
+      <span class="engine">${escapeHtml(label)}</span>
+      <span class="chip ${ok ? "chip-ok" : "chip-bad"}">${ok ? "Completed" : "Failed"}</span>
+      ${m.quality_score != null ? `<span class="chip">Quality Score: ${m.quality_score}/100</span>` : ""}
+      <span class="meta">${fmtNum(m.char_count ?? (m.extracted_text || "").length)} chars · ${fmtMs(m.duration_ms)}</span>
+      <span style="flex:1"></span>
+      <button class="btn btn-small" data-view-output="${name}" type="button">View Output</button>
+      <button class="btn btn-small" data-run-extractor="${name}" type="button">Re-run</button>
+    </div>
+    ${m.error ? `<div class="meta" style="color:var(--bad);margin-top:4px">${escapeHtml(String(m.error).slice(0, 200))}</div>` : ""}
+    </div>`;
+  }
+
   view.innerHTML = `
     <p><a href="#/history">← Back to History</a></p>
     <div class="card">
@@ -665,7 +749,19 @@ async function renderResume(id, params) {
       </div>
     </div>
 
-    <div class="card">
+    <div class="card" id="textViewerCard">
+      <div class="panel-toolbar">
+        <label class="hint">Extractor
+          <select id="extractorSelect" class="select-input" style="width:auto">
+            ${viewerTools.map((name) => {
+              const d = viewerData(name);
+              const noText = d && d.status !== "success" && !(d.raw || "");
+              return `<option value="${escapeHtml(name)}" ${name === currentExtractor ? "selected" : ""}>${escapeHtml(engineLabel(name))}${d && d.isFinal ? " (Final)" : ""}${manualResults[name] ? " (Manual run)" : ""}${noText ? " — no text" : ""}</option>`;
+            }).join("")}
+          </select>
+        </label>
+        <span class="hint" id="extractorMeta"></span>
+      </div>
       <div class="tabs" role="tablist">
         <button data-tab="text" class="${activeTab === "text" ? "active" : ""}">Extracted Text</button>
         <button data-tab="normalized" class="${activeTab === "normalized" ? "active" : ""}">Normalized Text</button>
@@ -700,44 +796,75 @@ async function renderResume(id, params) {
       ${(record.attempts || []).length
         ? (record.attempts || []).map(attemptCardHtml).join("")
         : '<p class="hint">No extraction attempts were recorded for this resume.</p>'}
+      <div class="manual-compare" style="margin-top:16px">
+        <div class="panel-toolbar">
+          <strong>Manual Comparison</strong>
+          <span class="hint">Run an extractor independently on the stored original file. Manual runs never change the pipeline result or the AI output, and never call the LLM.</span>
+          <span class="spacer"></span>
+          <button class="btn btn-small btn-primary" data-run-all type="button">Run All Extractors</button>
+        </div>
+        <div id="manualResults">${MANUAL_TOOLS.map(manualCardHtml).join("")}</div>
+      </div>
     </div>`;
 
   const panel = $("tabPanel");
   function showTab(tab) {
+    currentTab = tab;
     view.querySelectorAll("[data-tab]").forEach((b) =>
       b.classList.toggle("active", b.dataset.tab === tab));
     if (tab === "text") {
       panel.innerHTML = `
         <div class="panel-toolbar">
-          <span class="hint">${extractedText.length.toLocaleString()} characters${record.page_count ? " · " + record.page_count + " page(s)" : ""}</span>
+          <span class="hint" id="extractedMeta"></span>
           <span class="spacer"></span>
           <label class="hint"><input type="checkbox" id="compareToggle" /> Compare with normalized text</label>
           <button class="btn btn-small" id="copyTextBtn" type="button">Copy text</button>
         </div>
-        <div id="compareArea">
-          ${extractedText ? `<div class="text-panel">${escapeHtml(extractedText)}</div>`
-            : '<p class="hint">No extracted text is stored for this resume. If the Resume JSON exists, it was produced by the AI stage directly from the document.</p>'}
-        </div>`;
-      $("copyTextBtn").addEventListener("click", () => copyText(extractedText));
-      $("compareToggle").addEventListener("change", (e) => {
-        $("compareArea").innerHTML = e.target.checked ? `
-          <div class="compare-grid">
-            <div><h4>Original extracted text</h4><div class="text-panel">${escapeHtml(extractedText)}</div></div>
-            <div><h4>Normalized text</h4><div class="text-panel">${escapeHtml(normalizedText)}</div></div>
-          </div>` : (extractedText ? `<div class="text-panel">${escapeHtml(extractedText)}</div>` : '<p class="hint">No extracted text is stored for this resume.</p>');
-      });
+        <div id="compareArea"></div>`;
+      function drawText() {
+        const data = viewerData(currentExtractor);
+        const area = $("compareArea");
+        if (!data) {
+          $("extractedMeta").textContent = "";
+          area.innerHTML = '<p class="hint">No extractor output is stored for this resume. If the Resume JSON exists, it was produced by the AI stage directly from the document.</p>';
+          return;
+        }
+        const raw = data.raw || "";
+        const pages = data.pageCount || record.page_count;
+        $("extractedMeta").textContent = raw.length.toLocaleString() + " characters" + (pages ? " · " + pages + " page(s)" : "");
+        if ($("compareToggle").checked) {
+          area.innerHTML = `
+            <div class="compare-grid">
+              <div><h4>Original extracted text — ${escapeHtml(engineLabel(currentExtractor))} (${raw.length.toLocaleString()} characters)</h4>
+                ${raw ? `<div class="text-panel">${escapeHtml(raw)}</div>` : '<p class="hint">This extractor produced no text.</p>'}</div>
+              <div><h4>Normalized text — ${escapeHtml(engineLabel(currentExtractor))} (${(data.normalized || "").length.toLocaleString()} characters)</h4>
+                ${data.normalized ? `<div class="text-panel">${escapeHtml(data.normalized)}</div>` : '<p class="hint">Normalized text is not available for this extractor.</p>'}</div>
+            </div>`;
+          return;
+        }
+        area.innerHTML = raw
+          ? `<div class="text-panel">${escapeHtml(raw)}</div>`
+          : '<p class="hint">This extractor produced no text.' + (data.error ? " Error: " + escapeHtml(String(data.error).slice(0, 200)) : "") + "</p>";
+      }
+      $("copyTextBtn").addEventListener("click", () => copyText((viewerData(currentExtractor) || {}).raw || ""));
+      $("compareToggle").addEventListener("change", drawText);
+      drawText();
     } else if (tab === "normalized") {
+      const d = viewerData(currentExtractor);
+      const normText = d ? (d.normalized || "") : "";
+      const isPipelineSelected = !!d && d.source === "pipeline"
+        && currentExtractor === (norm.source || record.extractor_used);
       panel.innerHTML = `
         <div class="panel-toolbar">
-          <span class="hint">Status: ${escapeHtml(norm.status || "N/A")}${norm.source ? " · Source: " + escapeHtml(engineLabel(norm.source)) : ""} · ${(normalizedText || "").length.toLocaleString()} characters${norm.original_chars != null ? " · Original: " + Number(norm.original_chars).toLocaleString() + " characters" : ""}${norm.estimated_reduction_percent != null ? " · Reduction: " + norm.estimated_reduction_percent + "%" : ""}</span>
+          <span class="hint">${escapeHtml(engineLabel(currentExtractor))} · ${d ? (d.source === "manual" ? "Manual run" : "Pipeline attempt") : "N/A"} · ${normText.length.toLocaleString()} characters${isPipelineSelected && norm.original_chars != null ? " · Original: " + Number(norm.original_chars).toLocaleString() + " characters" : ""}${isPipelineSelected && norm.estimated_reduction_percent != null ? " · Reduction: " + norm.estimated_reduction_percent + "%" : ""}</span>
           <span class="spacer"></span>
           <button class="btn btn-small" id="copyNormBtn" type="button">Copy text</button>
         </div>
-        ${(norm.normalization_steps || []).length ? `<p class="hint">Steps applied: ${norm.normalization_steps.map(escapeHtml).join(" · ")}</p>` : ""}
-        ${norm.error ? `<div class="error-box">${escapeHtml(norm.error)}</div>` : ""}
-        ${normalizedText ? `<div class="text-panel">${escapeHtml(normalizedText)}</div>`
-          : '<p class="hint">No normalized text is available for this resume.</p>'}`;
-      $("copyNormBtn").addEventListener("click", () => copyText(normalizedText));
+        ${isPipelineSelected && (norm.normalization_steps || []).length ? `<p class="hint">Steps applied: ${norm.normalization_steps.map(escapeHtml).join(" · ")}</p>` : ""}
+        ${isPipelineSelected && norm.error ? `<div class="error-box">${escapeHtml(norm.error)}</div>` : ""}
+        ${normText ? `<div class="text-panel">${escapeHtml(normText)}</div>`
+          : '<p class="hint">No normalized text is available for this extractor.</p>'}`;
+      $("copyNormBtn").addEventListener("click", () => copyText(normText));
     } else {
       const resumeJson = record.resume_json;
       panel.innerHTML = `
@@ -768,6 +895,57 @@ async function renderResume(id, params) {
       drawAi();
     }
   }
+  const extractorSelect = $("extractorSelect");
+  function drawExtractorMeta() {
+    const m = $("extractorMeta");
+    if (m) m.textContent = extractorMetaText(currentExtractor);
+  }
+  if (extractorSelect) {
+    extractorSelect.addEventListener("change", (e) => {
+      currentExtractor = e.target.value;
+      drawExtractorMeta();
+      if (currentTab !== "ai") showTab(currentTab);
+    });
+  }
+  function selectExtractorInViewer(name) {
+    if (!viewerTools.includes(name)) return;
+    currentExtractor = name;
+    if (extractorSelect) extractorSelect.value = name;
+    drawExtractorMeta();
+    showTab("text");
+    const card = $("textViewerCard");
+    if (card) card.scrollIntoView();
+  }
+  view.querySelectorAll("[data-view-output]").forEach((btn) =>
+    btn.addEventListener("click", () => selectExtractorInViewer(btn.dataset.viewOutput)));
+
+  async function runManual(names, triggerBtn) {
+    const fresh = names.filter((n) => !runningManual.has(n));
+    if (!fresh.length) return;
+    fresh.forEach((n) => runningManual.add(n));
+    const allRunBtns = view.querySelectorAll("[data-run-extractor], [data-run-all]");
+    allRunBtns.forEach((b) => { b.disabled = true; });
+    const originalLabel = triggerBtn ? triggerBtn.textContent : "";
+    if (triggerBtn) triggerBtn.textContent = "Running…";
+    try {
+      const body = await Api.runExtractors(id, fresh);
+      if (body && body.record) state.recordCache[id] = body.record;
+      toast(fresh.length === 1
+        ? engineLabel(fresh[0]) + " manual run completed."
+        : "Manual extractor runs completed.", "success");
+      renderResume(id, { tab: currentTab, extractor: currentExtractor });
+    } catch (err) {
+      toast(err.message, "error");
+      fresh.forEach((n) => runningManual.delete(n));
+      allRunBtns.forEach((b) => { b.disabled = false; });
+      if (triggerBtn) triggerBtn.textContent = originalLabel;
+    }
+  }
+  view.querySelectorAll("[data-run-extractor]").forEach((btn) =>
+    btn.addEventListener("click", () => runManual([btn.dataset.runExtractor], btn)));
+  view.querySelectorAll("[data-run-all]").forEach((btn) =>
+    btn.addEventListener("click", () => runManual(MANUAL_TOOLS.slice(), btn)));
+
   view.querySelectorAll("[data-tab]").forEach((btn) =>
     btn.addEventListener("click", () => showTab(btn.dataset.tab)));
   view.querySelectorAll("[data-toggle-attempt]").forEach((btn) =>
@@ -777,6 +955,7 @@ async function renderResume(id, params) {
       btn.textContent = detail.hidden ? "Details" : "Hide";
     }));
   showTab(activeTab);
+  drawExtractorMeta();
   if (params.section === "quality") $("qualitySection").scrollIntoView();
   if (params.section === "attempts") $("attemptsSection").scrollIntoView();
   if (params.section === "tokens") $("tokenSection").scrollIntoView();

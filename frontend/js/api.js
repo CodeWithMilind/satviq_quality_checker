@@ -69,11 +69,10 @@
 
   /* Multipart upload with real upload progress (fetch cannot report
    * upload progress, so this one call uses XMLHttpRequest). */
-  function processResumes(files, extractionTimeoutSeconds, onProgress) {
+  function processResumes(files, onProgress) {
     return new Promise(function (resolve, reject) {
       var form = new FormData();
       files.forEach(function (file) { form.append("files", file); });
-      form.append("extraction_timeout", String(extractionTimeoutSeconds));
       var xhr = new XMLHttpRequest();
       xhr.open("POST", url("/api/resumes/process"));
       xhr.timeout = PROCESS_TIMEOUT_MS;
@@ -121,6 +120,16 @@
     },
     deleteResume: function (id) {
       return request("/api/resumes/" + encodeURIComponent(id), { method: "DELETE" });
+    },
+    deleteAllResumes: function () {
+      return request("/api/resumes", { method: "DELETE" });
+    },
+    runExtractors: function (id, extractors) {
+      return request("/api/resumes/" + encodeURIComponent(id) + "/extractors/run", {
+        method: "POST",
+        json: { extractors: extractors },
+        timeout: 600000,
+      });
     },
     downloadOriginalUrl: function (id) {
       return url("/api/resumes/" + encodeURIComponent(id) + "/file");

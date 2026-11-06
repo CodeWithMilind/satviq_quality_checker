@@ -37,8 +37,6 @@ import copy
 import importlib.metadata
 import logging
 import time
-from concurrent.futures import ThreadPoolExecutor
-from concurrent.futures import TimeoutError as FutureTimeoutError
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Protocol
@@ -175,7 +173,6 @@ class ExtractionManager:
         config_path: str | Path | None = None,
         extractors: dict[str, BaseExtractor] | None = None,
         acceptance_policy: AcceptancePolicy | None = None,
-        attempt_timeout_seconds: float | None = None,
     ) -> None:
         self.config = load_manager_config(config=config, config_path=config_path)
         manager_cfg = self.config.get("manager", {})
@@ -184,15 +181,6 @@ class ExtractionManager:
         self.max_total_timeout_seconds: float = float(
             manager_cfg.get("max_total_timeout_seconds", 300)
         )
-        # Per-attempt timeout (the frontend's Extraction Timeout setting,
-        # enforced here on the backend): each attempt is wall-clock
-        # capped; an attempt that exceeds it is recorded as a TIMEOUT
-        # failure (error_type "TimeoutError") and the chain continues.
-        configured_cap = attempt_timeout_seconds
-        if configured_cap is None:
-            configured_cap = manager_cfg.get("attempt_timeout_seconds")
-        self.attempt_timeout_seconds: float | None = (
-            float(configured_cap) if configured_cap else None)
         self.policy: AcceptancePolicy = acceptance_policy or BasicAcceptancePolicy(
             self.config.get("acceptance", {})
         )
@@ -213,52 +201,9 @@ class ExtractionManager:
                 name: cls(config=per_extractor.get(name, {}))
                 for name, cls in _EXTRACTOR_CLASSES.items()
             }
-        if self.attempt_timeout_seconds:
-            # Clamp each extractor's own internal timeout to the
-            # per-attempt cap, so subprocess-based extractors (Tika's
-            # JVM, Docling) are actually terminated at the cap rather
-            # than merely abandoned by the thread wrapper below.
-            for extractor in self.extractors.values():
-                internal = getattr(extractor, "timeout_seconds", None)
-                if internal:
-                    extractor.timeout_seconds = min(
-                        float(internal), self.attempt_timeout_seconds)
-
     # -- configuration helpers ------------------------------------------
     def is_enabled(self, name: str) -> bool:
         return self._enabled.get(name, False)
-
-    def _extract_with_timeout(self, extractor: BaseExtractor, path: Path,
-                              name: str) -> ExtractionResult:
-        """Run one attempt under the per-attempt timeout cap.
-
-        Without a cap this is a direct call. With a cap the attempt
-        runs in a worker thread; exceeding the cap produces a
-        TIMEOUT failure result (error_type ``TimeoutError``) and the
-        chain continues. Subprocess extractors are also terminated
-        at the cap via the clamped internal timeout (see __init__).
-        """
-        cap = self.attempt_timeout_seconds
-        if not cap:
-            return extractor.extract(path)
-        executor = ThreadPoolExecutor(max_workers=1)
-        try:
-            future = executor.submit(extractor.extract, path)
-            return future.result(timeout=cap)
-        except FutureTimeoutError:
-            logger.error(
-                "Extractor '%s' exceeded the per-attempt timeout of "
-                "%.0fs; marking the attempt TIMEOUT and continuing.",
-                name, cap)
-            return ExtractionResult(
-                extractor_name=name, success=False, text="",
-                file_type=path.suffix.lower().lstrip(".") or None,
-                error=(f"Extraction attempt exceeded the configured "
-                       f"timeout of {cap:g}s and was marked TIMEOUT."),
-                error_type="TimeoutError",
-                duration_ms=round(cap * 1000, 2))
-        finally:
-            executor.shutdown(wait=False)
 
     # -- main entry point -------------------------------------------------
     def extract(self, file_path: str | Path) -> ExtractionResult:
@@ -320,7 +265,7 @@ class ExtractionManager:
             logger.info("Extractor started: %s (file=%s)", name, path.name)
             attempt_started_at = _utcnow_iso()
             try:
-                result = self._extract_with_timeout(extractor, path, name)
+                result = extractor.extract(path)
             except Exception as exc:  # an extractor must never crash the pipeline
                 logger.exception("Extractor '%s' raised unexpectedly", name)
                 result = ExtractionResult(

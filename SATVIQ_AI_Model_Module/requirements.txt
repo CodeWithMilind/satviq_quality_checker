@@ -1,9 +1,0 @@
-# Dependencies for the ai_model/ module ONLY.
-# These are additions on top of the existing project requirements;
-# nothing else in the project needs to change.
-pydantic>=2.5,<3
-openai>=1.30,<2
-Pillow>=10,<12
-
-# Development / testing only:
-pytest>=8,<9
