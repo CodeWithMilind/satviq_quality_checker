@@ -155,6 +155,46 @@ def test_win_rate_denominator_counts_only_records_with_selection():
     assert rows["tika"]["win_rate_percent"] == 100.0
 
 
+def test_duration_median_p95_and_outliers():
+    # Milind's scenario: most resumes take 10-16 s, one takes ~90 s.
+    # The mean (22.6 s) is dragged up; the median (13.5 s) is not,
+    # and the slow resume is flagged as a Tukey outlier.
+    durations_s = [10, 11, 12, 13, 14, 15, 16, 90]
+    records = [
+        _record(resume_id=f"d{i}", duration_ms=s * 1000,
+                uploaded_at=f"2026-01-0{i + 1}T10:00:00+00:00")
+        for i, s in enumerate(durations_s)
+    ]
+    data = compute_analytics(records)
+    k = data["kpis"]
+    assert k["avg_duration_ms"] == 22625
+    assert k["median_duration_ms"] == 13500
+    assert k["p95_duration_ms"] == 90000
+
+    d = data["durations"]
+    assert d["median_ms"] == 13500 and d["max_ms"] == 90000
+    # Q1 = 11 s, Q3 = 15 s (nearest-rank) -> threshold 15 + 1.5*4 = 21 s
+    assert d["outlier_threshold_ms"] == 21000
+    assert d["outlier_count"] == 1
+    flagged = [p for p in d["points"] if p["is_outlier"]]
+    assert len(flagged) == 1 and flagged[0]["duration_ms"] == 90000
+    # Points are in upload order, oldest first.
+    assert [p["duration_ms"] for p in d["points"]] == \
+        [s * 1000 for s in durations_s]
+    # Extractor rows carry a median too (fixture tika attempts: 1.5 s).
+    tika = next(r for r in data["extractors"] if r["name"] == "tika")
+    assert tika["median_duration_ms"] == 1500
+
+
+def test_duration_outliers_need_four_points():
+    records = [_record(resume_id=f"s{i}", duration_ms=v)
+               for i, v in enumerate((10_000, 12_000, 90_000))]
+    d = compute_analytics(records)["durations"]
+    assert d["outlier_threshold_ms"] is None
+    assert d["outlier_count"] == 0
+    assert d["median_ms"] == 12000
+
+
 def test_range_filter_and_missing_timestamps():
     now = datetime.now(timezone.utc)
     recent = _record(resume_id="recent",
@@ -239,6 +279,11 @@ def test_frontend_wiring():
     assert "getAnalytics" in api_js and "/api/analytics/summary" in api_js
     assert "renderAnalytics" in app_js and '"analytics"' in app_js
     assert ".kpi-card" in css
+    # Duration & outliers card + median wiring.
+    assert "Processing time &amp; outliers" in app_js
+    assert "durationChart" in app_js
+    assert "Median time" in app_js
+    assert "median_duration_ms" in app_js
 
 
 if __name__ == "__main__":

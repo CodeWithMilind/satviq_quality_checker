@@ -1,0 +1,1486 @@
+{
+  "resume_id": "684cc674-a588-43a5-a3a1-28c3e6937cbe",
+  "filename": "download_15_.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 1263537,
+  "uploaded_at": "2026-11-06T11:09:46.780017+00:00",
+  "success": true,
+  "extractor_used": "docling",
+  "duration_ms": 72148.79,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": false,
+      "error": "Quality Checker status FAIL for this extraction: text_health=40.0, completeness=100.0, reading_order=90.6 (FAIL when text_health or reading_order < 50). Trying the next fallback extractor.",
+      "duration_ms": 3484.79,
+      "text": "02/01/24, 12:51 PM\nPage 1 of 3\n\n\n\n02/01/24, 12:51 PM\nPage 2 of 3\n\n\n\n02/01/24, 12:51 PM\nPage 3 of 3",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-06T11:08:30.944113+00:00",
+      "completed_at": "2026-11-06T11:08:34.429444+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "FAIL",
+      "quality": {
+        "status": "FAIL",
+        "document_id": "684cc674-a588-43a5-a3a1-28c3e6937cbe",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 40.0,
+          "flags": [
+            "VERY_SHORT_TEXT"
+          ],
+          "reasons": [
+            "Text is nearly empty: 98 characters / 21 words (minimum expected 200 / 30)."
+          ],
+          "metrics": {
+            "char_count": 98,
+            "word_count": 21,
+            "line_count": 12,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.265306,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 100.0,
+          "flags": [
+            "NO_SECTIONS_DETECTED",
+            "SECTION_PRESENCE_UNCERTAIN"
+          ],
+          "reasons": [
+            "No configured resume sections were detected in the extracted text.",
+            "Text extraction quality is too low to classify undetected sections as missing."
+          ],
+          "metrics": {
+            "char_count": 98,
+            "word_count": 21,
+            "configured_section_count": 7,
+            "detected_count": 0,
+            "missing_count": 0,
+            "detected_sections": [],
+            "missing_sections": [],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [],
+            "matched_aliases": {},
+            "conditional_rejected": [],
+            "section_evidence": {},
+            "uncertain_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "section_status": {
+              "Contact Information": "uncertain",
+              "Summary": "uncertain",
+              "Skills": "uncertain",
+              "Work Experience": "uncertain",
+              "Education": "uncertain",
+              "Projects": "uncertain",
+              "Certifications": "uncertain"
+            },
+            "extraction_quality": 40.0
+          },
+          "detected_sections": [],
+          "missing_sections": [],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": []
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 90.62,
+          "flags": [
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "50.0% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 98,
+            "word_count": 21,
+            "line_count": 12,
+            "non_empty_line_count": 6,
+            "short_line_count": 0,
+            "short_line_ratio": 0.0,
+            "fragmented_line_count": 3,
+            "fragmented_line_ratio": 0.5,
+            "mean_line_length": 14.5,
+            "median_line_length": 14.5,
+            "line_length_stdev": 3.5,
+            "line_length_cv": 0.241379,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "reject",
+      "decision_reason": "Quality Checker status FAIL for this extraction: text_health=40.0, completeness=100.0, reading_order=90.6 (FAIL when text_health or reading_order < 50). Trying the next fallback extractor.",
+      "selected": false,
+      "attempt_id": "684cc674-a588-43a5-a3a1-28c3e6937cbe-attempt-1",
+      "resume_id": "684cc674-a588-43a5-a3a1-28c3e6937cbe",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "02/01/24, 12:51 PM\nPage 1 of 3\n\n\n\n02/01/24, 12:51 PM\nPage 2 of 3\n\n\n\n02/01/24, 12:51 PM\nPage 3 of 3",
+      "extracted_text_length": 98,
+      "error_message": "Quality Checker status FAIL for this extraction: text_health=40.0, completeness=100.0, reading_order=90.6 (FAIL when text_health or reading_order < 50). Trying the next fallback extractor.",
+      "quality_checker_report": {
+        "status": "FAIL",
+        "document_id": "684cc674-a588-43a5-a3a1-28c3e6937cbe",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 40.0,
+          "flags": [
+            "VERY_SHORT_TEXT"
+          ],
+          "reasons": [
+            "Text is nearly empty: 98 characters / 21 words (minimum expected 200 / 30)."
+          ],
+          "metrics": {
+            "char_count": 98,
+            "word_count": 21,
+            "line_count": 12,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.265306,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 100.0,
+          "flags": [
+            "NO_SECTIONS_DETECTED",
+            "SECTION_PRESENCE_UNCERTAIN"
+          ],
+          "reasons": [
+            "No configured resume sections were detected in the extracted text.",
+            "Text extraction quality is too low to classify undetected sections as missing."
+          ],
+          "metrics": {
+            "char_count": 98,
+            "word_count": 21,
+            "configured_section_count": 7,
+            "detected_count": 0,
+            "missing_count": 0,
+            "detected_sections": [],
+            "missing_sections": [],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [],
+            "matched_aliases": {},
+            "conditional_rejected": [],
+            "section_evidence": {},
+            "uncertain_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "section_status": {
+              "Contact Information": "uncertain",
+              "Summary": "uncertain",
+              "Skills": "uncertain",
+              "Work Experience": "uncertain",
+              "Education": "uncertain",
+              "Projects": "uncertain",
+              "Certifications": "uncertain"
+            },
+            "extraction_quality": 40.0
+          },
+          "detected_sections": [],
+          "missing_sections": [],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": []
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 90.62,
+          "flags": [
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "50.0% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 98,
+            "word_count": 21,
+            "line_count": 12,
+            "non_empty_line_count": 6,
+            "short_line_count": 0,
+            "short_line_ratio": 0.0,
+            "fragmented_line_count": 3,
+            "fragmented_line_ratio": 0.5,
+            "mean_line_length": 14.5,
+            "median_line_length": 14.5,
+            "line_length_stdev": 3.5,
+            "line_length_cv": 0.241379,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "reject",
+      "fallback_reason": "Quality Checker status FAIL for this extraction: text_health=40.0, completeness=100.0, reading_order=90.6 (FAIL when text_health or reading_order < 50). Trying the next fallback extractor.",
+      "is_final_selected": false,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "02/01/24, 12:51 PM\nPage 1 of 3\n\n02/01/24, 12:51 PM\nPage 2 of 3\n\n02/01/24, 12:51 PM\nPage 3 of 3"
+    },
+    {
+      "extractor_name": "pymupdf",
+      "success": false,
+      "accepted": false,
+      "error": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "duration_ms": 26.21,
+      "text": "",
+      "extractor_version": "1.28.2",
+      "started_at": "2026-11-06T11:08:34.465906+00:00",
+      "completed_at": "2026-11-06T11:08:34.492721+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "format": "PDF 1.3",
+        "title": "Vivek Vasgi – Quality Analyst · Resume.io",
+        "creator": "Aspose Ltd.",
+        "producer": "Aspose.PDF for Java 18.8",
+        "creationDate": "D:20240102072157Z00'00'",
+        "modDate": "D:20240305232846+05'30'"
+      },
+      "quality_status": null,
+      "quality": null,
+      "decision": "reject",
+      "decision_reason": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "selected": false,
+      "attempt_id": "684cc674-a588-43a5-a3a1-28c3e6937cbe-attempt-2",
+      "resume_id": "684cc674-a588-43a5-a3a1-28c3e6937cbe",
+      "attempt_number": 2,
+      "extraction_status": "FAILED",
+      "extracted_text": "",
+      "extracted_text_length": 0,
+      "error_message": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "quality_checker_report": null,
+      "fallback_decision": "reject",
+      "fallback_reason": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": ""
+    },
+    {
+      "extractor_name": "docling",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 72148.79,
+      "text": "Vivek Vasgi\n\nQuality Analyst\n\nHyderabad, India 9030344440 vivekvasgi@gmail.com\n\nSkills\n\nLeadership Skills\n\nCommunication Skills\n\nAbility to Work in a Team\n\nMicrosoft Office\n\nAbility to Multitask\n\nFast Learner\n\nAbility to Work Under Pressure\n\nLanguages\n\nTelugu\n\nEnglish\n\nProfile\n\nI am a Quality Analyst with 4+ years of experience in content moderation analyzing and improving the quality of products and services. My professional experience includes designing and implementing quality assurance processes, and conducting audits to ensure compliance with established standards\n\nEmployment History\n\nQuality Analyst, Webhelp pvt ltd, Hyderabad\n\nMay 2023 — Present\n\n- Worked on the content review and Implemented policy guidelines as per the violations.\n- Managing client calls. quality and client related KPls.\n- Good knowledge in strengthening quality management processes and framework to improve quality delivery.\n- Involved in receiving clients and explaining the process and Ideas for process improvement.\n- Inttt  tid t b t  to i tin. AHT and TOS.\n- Proficiency in supporting quality and compliance teams to perform various audits and follow-ups. Proficiency in using Excel formulas, pivots. and charts for the presentation of reports.\n- Ability to work and collaborate across multiple teams and projects. Providing the work estimations, Analyzing the problems and solution, discussions withClient.\n- Committed team player with strong analytical and problem-solving skills, and ability to quickly\n- Worked on Custom Reports and Report extractions to various formats, Dashboards and various components as per client requirements\n- Design and implement training and knowledge sharing sessions – new hire, re-training, process improvement and updates\n- Perform root cause analysis on the errors made by the team members\n- Provided regular updates to team leadership on quality metrics by communicating consistency problems or production deficiencies.\n- Developed and maintained quality assurance procedure documentation.\n- Collaborated with management to provide training on improved processes and assisted with creation and maintenance of quality training.\n- Monitored KPIs to proactively address bottlenecks and quality issues.\n- Created and revised procedures, checklists and job aids to reduce errors.\n- Compiled and distributed weekly feedback to team leaders and managers to improve service time and quality while increasing productivity.\n- Administered Number internal quality audits and assessed results to inform corrective action measures.\n\nSenior Quality Analyst, Wipro pvt ltd, Hyderabad\n\nMay 2020 — September 2021\n\nContinuing the same role and responsibilities from previous organization (Cognizant).\n\nProcess Specialist, Cognizant Technology Solutions, Hyderabad\n\nMarch 2017 — April 2020\n\n- Update trackers, create/update tickets, update required applications & tools and keep tl informed of newissues\n- ITeam huddles, knowledge base updates and process improvements\n- Prepare meaningful reports in context to the audits, training etc.\n- Ideate and implement process improvement projects\n- Ensure process guidelines are followed and met as documented ε\n- Adhere to shift handover process. I Quality monitoring ε Be responsible for the process improvement ideas on productivity, accuracy &turnaround time\n- IRaise process related issues on time with process lead and team lead\n- Resolve process related queries and expedite on data requests\n- Record data relating to production statistics, end-user related notes, etc as appropriate  Contribute towards creation of knowledge updates &stay updated with process knowledge / changes\n- IDesign and implement training and knowledge sharing sessions – new hire, re-training, processimprovement and updates\n\nAnalyst, Randstad pvt ltd, Hyderabad\n\nApril 2014 — September 2016\n\n- Import the data to store in respective database.\n- Address and Geocodes data to the database named Oyster.\n- Street View and Satellite Image to GT Process.\n- Transforming the data to the required format irrespective of vendor's format.\n- Pushing the rest of the data to Satellite Image database.\n- Final code push to impact the geodata cope up with the policies as per the country requirements.\n\nEducation\n\nMBA, Osmania Unversity, Hyderabad\n\nJune 2013 — June 2015\n\nExtra-curricular activities",
+      "extractor_version": "2.146.0",
+      "started_at": "2026-11-06T11:08:34.500405+00:00",
+      "completed_at": "2026-11-06T11:09:46.652107+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "684cc674-a588-43a5-a3a1-28c3e6937cbe",
+        "source_tool": "docling",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4325,
+            "word_count": 628,
+            "line_count": 96,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.153064,
+            "symbol_count": 7,
+            "symbol_ratio": 0.001618,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4325,
+            "word_count": 628,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "profile",
+              "Skills": "skills",
+              "Work Experience": "employment history",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "vivekvasgi@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Profile",
+                "detection_method": "heading",
+                "line_number": 29,
+                "evidence": "Profile",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Skills",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Employment History",
+                "detection_method": "heading",
+                "line_number": 33,
+                "evidence": "Employment History",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 90,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4325,
+            "word_count": 628,
+            "line_count": 96,
+            "non_empty_line_count": 64,
+            "short_line_count": 14,
+            "short_line_ratio": 0.21875,
+            "fragmented_line_count": 9,
+            "fragmented_line_ratio": 0.140625,
+            "mean_line_length": 66.09,
+            "median_line_length": 57.0,
+            "line_length_stdev": 54.6,
+            "line_length_cv": 0.826158,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "684cc674-a588-43a5-a3a1-28c3e6937cbe-attempt-3",
+      "resume_id": "684cc674-a588-43a5-a3a1-28c3e6937cbe",
+      "attempt_number": 3,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "Vivek Vasgi\n\nQuality Analyst\n\nHyderabad, India 9030344440 vivekvasgi@gmail.com\n\nSkills\n\nLeadership Skills\n\nCommunication Skills\n\nAbility to Work in a Team\n\nMicrosoft Office\n\nAbility to Multitask\n\nFast Learner\n\nAbility to Work Under Pressure\n\nLanguages\n\nTelugu\n\nEnglish\n\nProfile\n\nI am a Quality Analyst with 4+ years of experience in content moderation analyzing and improving the quality of products and services. My professional experience includes designing and implementing quality assurance processes, and conducting audits to ensure compliance with established standards\n\nEmployment History\n\nQuality Analyst, Webhelp pvt ltd, Hyderabad\n\nMay 2023 — Present\n\n- Worked on the content review and Implemented policy guidelines as per the violations.\n- Managing client calls. quality and client related KPls.\n- Good knowledge in strengthening quality management processes and framework to improve quality delivery.\n- Involved in receiving clients and explaining the process and Ideas for process improvement.\n- Inttt  tid t b t  to i tin. AHT and TOS.\n- Proficiency in supporting quality and compliance teams to perform various audits and follow-ups. Proficiency in using Excel formulas, pivots. and charts for the presentation of reports.\n- Ability to work and collaborate across multiple teams and projects. Providing the work estimations, Analyzing the problems and solution, discussions withClient.\n- Committed team player with strong analytical and problem-solving skills, and ability to quickly\n- Worked on Custom Reports and Report extractions to various formats, Dashboards and various components as per client requirements\n- Design and implement training and knowledge sharing sessions – new hire, re-training, process improvement and updates\n- Perform root cause analysis on the errors made by the team members\n- Provided regular updates to team leadership on quality metrics by communicating consistency problems or production deficiencies.\n- Developed and maintained quality assurance procedure documentation.\n- Collaborated with management to provide training on improved processes and assisted with creation and maintenance of quality training.\n- Monitored KPIs to proactively address bottlenecks and quality issues.\n- Created and revised procedures, checklists and job aids to reduce errors.\n- Compiled and distributed weekly feedback to team leaders and managers to improve service time and quality while increasing productivity.\n- Administered Number internal quality audits and assessed results to inform corrective action measures.\n\nSenior Quality Analyst, Wipro pvt ltd, Hyderabad\n\nMay 2020 — September 2021\n\nContinuing the same role and responsibilities from previous organization (Cognizant).\n\nProcess Specialist, Cognizant Technology Solutions, Hyderabad\n\nMarch 2017 — April 2020\n\n- Update trackers, create/update tickets, update required applications & tools and keep tl informed of newissues\n- ITeam huddles, knowledge base updates and process improvements\n- Prepare meaningful reports in context to the audits, training etc.\n- Ideate and implement process improvement projects\n- Ensure process guidelines are followed and met as documented ε\n- Adhere to shift handover process. I Quality monitoring ε Be responsible for the process improvement ideas on productivity, accuracy &turnaround time\n- IRaise process related issues on time with process lead and team lead\n- Resolve process related queries and expedite on data requests\n- Record data relating to production statistics, end-user related notes, etc as appropriate  Contribute towards creation of knowledge updates &stay updated with process knowledge / changes\n- IDesign and implement training and knowledge sharing sessions – new hire, re-training, processimprovement and updates\n\nAnalyst, Randstad pvt ltd, Hyderabad\n\nApril 2014 — September 2016\n\n- Import the data to store in respective database.\n- Address and Geocodes data to the database named Oyster.\n- Street View and Satellite Image to GT Process.\n- Transforming the data to the required format irrespective of vendor's format.\n- Pushing the rest of the data to Satellite Image database.\n- Final code push to impact the geodata cope up with the policies as per the country requirements.\n\nEducation\n\nMBA, Osmania Unversity, Hyderabad\n\nJune 2013 — June 2015\n\nExtra-curricular activities",
+      "extracted_text_length": 4325,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "684cc674-a588-43a5-a3a1-28c3e6937cbe",
+        "source_tool": "docling",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4325,
+            "word_count": 628,
+            "line_count": 96,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.153064,
+            "symbol_count": 7,
+            "symbol_ratio": 0.001618,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4325,
+            "word_count": 628,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "profile",
+              "Skills": "skills",
+              "Work Experience": "employment history",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "vivekvasgi@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Profile",
+                "detection_method": "heading",
+                "line_number": 29,
+                "evidence": "Profile",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Skills",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Employment History",
+                "detection_method": "heading",
+                "line_number": 33,
+                "evidence": "Employment History",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 90,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4325,
+            "word_count": 628,
+            "line_count": 96,
+            "non_empty_line_count": 64,
+            "short_line_count": 14,
+            "short_line_ratio": 0.21875,
+            "fragmented_line_count": 9,
+            "fragmented_line_ratio": 0.140625,
+            "mean_line_length": 66.09,
+            "median_line_length": 57.0,
+            "line_length_stdev": 54.6,
+            "line_length_cv": 0.826158,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": null,
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Vivek Vasgi\n\nQuality Analyst\n\nHyderabad, India 9030344440 vivekvasgi@gmail.com\n\nSkills\n\nLeadership Skills\n\nCommunication Skills\n\nAbility to Work in a Team\n\nMicrosoft Office\n\nAbility to Multitask\n\nFast Learner\n\nAbility to Work Under Pressure\n\nLanguages\n\nTelugu\n\nEnglish\n\nProfile\n\nI am a Quality Analyst with 4+ years of experience in content moderation analyzing and improving the quality of products and services. My professional experience includes designing and implementing quality assurance processes, and conducting audits to ensure compliance with established standards\n\nEmployment History\n\nQuality Analyst, Webhelp pvt ltd, Hyderabad\n\nMay 2023 — Present\n\n- Worked on the content review and Implemented policy guidelines as per the violations.\n- Managing client calls. quality and client related KPls.\n- Good knowledge in strengthening quality management processes and framework to improve quality delivery.\n- Involved in receiving clients and explaining the process and Ideas for process improvement.\n- Inttt tid t b t to i tin. AHT and TOS.\n- Proficiency in supporting quality and compliance teams to perform various audits and follow-ups. Proficiency in using Excel formulas, pivots. and charts for the presentation of reports.\n- Ability to work and collaborate across multiple teams and projects. Providing the work estimations, Analyzing the problems and solution, discussions withClient.\n- Committed team player with strong analytical and problem-solving skills, and ability to quickly\n- Worked on Custom Reports and Report extractions to various formats, Dashboards and various components as per client requirements\n- Design and implement training and knowledge sharing sessions – new hire, re-training, process improvement and updates\n- Perform root cause analysis on the errors made by the team members\n- Provided regular updates to team leadership on quality metrics by communicating consistency problems or production deficiencies.\n- Developed and maintained quality assurance procedure documentation.\n- Collaborated with management to provide training on improved processes and assisted with creation and maintenance of quality training.\n- Monitored KPIs to proactively address bottlenecks and quality issues.\n- Created and revised procedures, checklists and job aids to reduce errors.\n- Compiled and distributed weekly feedback to team leaders and managers to improve service time and quality while increasing productivity.\n- Administered Number internal quality audits and assessed results to inform corrective action measures.\n\nSenior Quality Analyst, Wipro pvt ltd, Hyderabad\n\nMay 2020 — September 2021\n\nContinuing the same role and responsibilities from previous organization (Cognizant).\n\nProcess Specialist, Cognizant Technology Solutions, Hyderabad\n\nMarch 2017 — April 2020\n\n- Update trackers, create/update tickets, update required applications & tools and keep tl informed of newissues\n- ITeam huddles, knowledge base updates and process improvements\n- Prepare meaningful reports in context to the audits, training etc.\n- Ideate and implement process improvement projects\n- Ensure process guidelines are followed and met as documented ε\n- Adhere to shift handover process. I Quality monitoring ε Be responsible for the process improvement ideas on productivity, accuracy &turnaround time\n- IRaise process related issues on time with process lead and team lead\n- Resolve process related queries and expedite on data requests\n- Record data relating to production statistics, end-user related notes, etc as appropriate Contribute towards creation of knowledge updates &stay updated with process knowledge / changes\n- IDesign and implement training and knowledge sharing sessions – new hire, re-training, processimprovement and updates\n\nAnalyst, Randstad pvt ltd, Hyderabad\n\nApril 2014 — September 2016\n\n- Import the data to store in respective database.\n- Address and Geocodes data to the database named Oyster.\n- Street View and Satellite Image to GT Process.\n- Transforming the data to the required format irrespective of vendor's format.\n- Pushing the rest of the data to Satellite Image database.\n- Final code push to impact the geodata cope up with the policies as per the country requirements.\n\nEducation\n\nMBA, Osmania Unversity, Hyderabad\n\nJune 2013 — June 2015\n\nExtra-curricular activities"
+    }
+  ],
+  "extracted_text": "Vivek Vasgi\n\nQuality Analyst\n\nHyderabad, India 9030344440 vivekvasgi@gmail.com\n\nSkills\n\nLeadership Skills\n\nCommunication Skills\n\nAbility to Work in a Team\n\nMicrosoft Office\n\nAbility to Multitask\n\nFast Learner\n\nAbility to Work Under Pressure\n\nLanguages\n\nTelugu\n\nEnglish\n\nProfile\n\nI am a Quality Analyst with 4+ years of experience in content moderation analyzing and improving the quality of products and services. My professional experience includes designing and implementing quality assurance processes, and conducting audits to ensure compliance with established standards\n\nEmployment History\n\nQuality Analyst, Webhelp pvt ltd, Hyderabad\n\nMay 2023 — Present\n\n- Worked on the content review and Implemented policy guidelines as per the violations.\n- Managing client calls. quality and client related KPls.\n- Good knowledge in strengthening quality management processes and framework to improve quality delivery.\n- Involved in receiving clients and explaining the process and Ideas for process improvement.\n- Inttt  tid t b t  to i tin. AHT and TOS.\n- Proficiency in supporting quality and compliance teams to perform various audits and follow-ups. Proficiency in using Excel formulas, pivots. and charts for the presentation of reports.\n- Ability to work and collaborate across multiple teams and projects. Providing the work estimations, Analyzing the problems and solution, discussions withClient.\n- Committed team player with strong analytical and problem-solving skills, and ability to quickly\n- Worked on Custom Reports and Report extractions to various formats, Dashboards and various components as per client requirements\n- Design and implement training and knowledge sharing sessions – new hire, re-training, process improvement and updates\n- Perform root cause analysis on the errors made by the team members\n- Provided regular updates to team leadership on quality metrics by communicating consistency problems or production deficiencies.\n- Developed and maintained quality assurance procedure documentation.\n- Collaborated with management to provide training on improved processes and assisted with creation and maintenance of quality training.\n- Monitored KPIs to proactively address bottlenecks and quality issues.\n- Created and revised procedures, checklists and job aids to reduce errors.\n- Compiled and distributed weekly feedback to team leaders and managers to improve service time and quality while increasing productivity.\n- Administered Number internal quality audits and assessed results to inform corrective action measures.\n\nSenior Quality Analyst, Wipro pvt ltd, Hyderabad\n\nMay 2020 — September 2021\n\nContinuing the same role and responsibilities from previous organization (Cognizant).\n\nProcess Specialist, Cognizant Technology Solutions, Hyderabad\n\nMarch 2017 — April 2020\n\n- Update trackers, create/update tickets, update required applications & tools and keep tl informed of newissues\n- ITeam huddles, knowledge base updates and process improvements\n- Prepare meaningful reports in context to the audits, training etc.\n- Ideate and implement process improvement projects\n- Ensure process guidelines are followed and met as documented ε\n- Adhere to shift handover process. I Quality monitoring ε Be responsible for the process improvement ideas on productivity, accuracy &turnaround time\n- IRaise process related issues on time with process lead and team lead\n- Resolve process related queries and expedite on data requests\n- Record data relating to production statistics, end-user related notes, etc as appropriate  Contribute towards creation of knowledge updates &stay updated with process knowledge / changes\n- IDesign and implement training and knowledge sharing sessions – new hire, re-training, processimprovement and updates\n\nAnalyst, Randstad pvt ltd, Hyderabad\n\nApril 2014 — September 2016\n\n- Import the data to store in respective database.\n- Address and Geocodes data to the database named Oyster.\n- Street View and Satellite Image to GT Process.\n- Transforming the data to the required format irrespective of vendor's format.\n- Pushing the rest of the data to Satellite Image database.\n- Final code push to impact the geodata cope up with the policies as per the country requirements.\n\nEducation\n\nMBA, Osmania Unversity, Hyderabad\n\nJune 2013 — June 2015\n\nExtra-curricular activities",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "Vivek Vasgi\n\nQuality Analyst\n\nHyderabad, India 9030344440 vivekvasgi@gmail.com\n\nSkills\n\nLeadership Skills\n\nCommunication Skills\n\nAbility to Work in a Team\n\nMicrosoft Office\n\nAbility to Multitask\n\nFast Learner\n\nAbility to Work Under Pressure\n\nLanguages\n\nTelugu\n\nEnglish\n\nProfile\n\nI am a Quality Analyst with 4+ years of experience in content moderation analyzing and improving the quality of products and services. My professional experience includes designing and implementing quality assurance processes, and conducting audits to ensure compliance with established standards\n\nEmployment History\n\nQuality Analyst, Webhelp pvt ltd, Hyderabad\n\nMay 2023 — Present\n\n- Worked on the content review and Implemented policy guidelines as per the violations.\n- Managing client calls. quality and client related KPls.\n- Good knowledge in strengthening quality management processes and framework to improve quality delivery.\n- Involved in receiving clients and explaining the process and Ideas for process improvement.\n- Inttt  tid t b t  to i tin. AHT and TOS.\n- Proficiency in supporting quality and compliance teams to perform various audits and follow-ups. Proficiency in using Excel formulas, pivots. and charts for the presentation of reports.\n- Ability to work and collaborate across multiple teams and projects. Providing the work estimations, Analyzing the problems and solution, discussions withClient.\n- Committed team player with strong analytical and problem-solving skills, and ability to quickly\n- Worked on Custom Reports and Report extractions to various formats, Dashboards and various components as per client requirements\n- Design and implement training and knowledge sharing sessions – new hire, re-training, process improvement and updates\n- Perform root cause analysis on the errors made by the team members\n- Provided regular updates to team leadership on quality metrics by communicating consistency problems or production deficiencies.\n- Developed and maintained quality assurance procedure documentation.\n- Collaborated with management to provide training on improved processes and assisted with creation and maintenance of quality training.\n- Monitored KPIs to proactively address bottlenecks and quality issues.\n- Created and revised procedures, checklists and job aids to reduce errors.\n- Compiled and distributed weekly feedback to team leaders and managers to improve service time and quality while increasing productivity.\n- Administered Number internal quality audits and assessed results to inform corrective action measures.\n\nSenior Quality Analyst, Wipro pvt ltd, Hyderabad\n\nMay 2020 — September 2021\n\nContinuing the same role and responsibilities from previous organization (Cognizant).\n\nProcess Specialist, Cognizant Technology Solutions, Hyderabad\n\nMarch 2017 — April 2020\n\n- Update trackers, create/update tickets, update required applications & tools and keep tl informed of newissues\n- ITeam huddles, knowledge base updates and process improvements\n- Prepare meaningful reports in context to the audits, training etc.\n- Ideate and implement process improvement projects\n- Ensure process guidelines are followed and met as documented ε\n- Adhere to shift handover process. I Quality monitoring ε Be responsible for the process improvement ideas on productivity, accuracy &turnaround time\n- IRaise process related issues on time with process lead and team lead\n- Resolve process related queries and expedite on data requests\n- Record data relating to production statistics, end-user related notes, etc as appropriate  Contribute towards creation of knowledge updates &stay updated with process knowledge / changes\n- IDesign and implement training and knowledge sharing sessions – new hire, re-training, processimprovement and updates\n\nAnalyst, Randstad pvt ltd, Hyderabad\n\nApril 2014 — September 2016\n\n- Import the data to store in respective database.\n- Address and Geocodes data to the database named Oyster.\n- Street View and Satellite Image to GT Process.\n- Transforming the data to the required format irrespective of vendor's format.\n- Pushing the rest of the data to Satellite Image database.\n- Final code push to impact the geodata cope up with the policies as per the country requirements.\n\nEducation\n\nMBA, Osmania Unversity, Hyderabad\n\nJune 2013 — June 2015\n\nExtra-curricular activities",
+  "quality": {
+    "status": "PASS",
+    "document_id": "684cc674-a588-43a5-a3a1-28c3e6937cbe",
+    "source_tool": "docling",
+    "attempt_id": "attempt-2",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 4325,
+        "word_count": 628,
+        "line_count": 96,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.153064,
+        "symbol_count": 7,
+        "symbol_ratio": 0.001618,
+        "max_repeated_char_run": 4,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 94.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 4325,
+        "word_count": 628,
+        "configured_section_count": 7,
+        "detected_count": 5,
+        "missing_count": 2,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_sections": [
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "profile",
+          "Skills": "skills",
+          "Work Experience": "employment history",
+          "Education": "education"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "vivekvasgi@gmail.com",
+            "confidence": 0.8
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "Profile",
+            "detection_method": "heading",
+            "line_number": 29,
+            "evidence": "Profile",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "Skills",
+            "detection_method": "heading",
+            "line_number": 7,
+            "evidence": "Skills",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "Employment History",
+            "detection_method": "heading",
+            "line_number": 33,
+            "evidence": "Employment History",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "Education",
+            "detection_method": "heading",
+            "line_number": 90,
+            "evidence": "Education",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Projects": "missing",
+          "Certifications": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_sections": [
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 4325,
+        "word_count": 628,
+        "line_count": 96,
+        "non_empty_line_count": 64,
+        "short_line_count": 14,
+        "short_line_ratio": 0.21875,
+        "fragmented_line_count": 9,
+        "fragmented_line_ratio": 0.140625,
+        "mean_line_length": 66.09,
+        "median_line_length": 57.0,
+        "line_length_stdev": 54.6,
+        "line_length_cv": 0.826158,
+        "broken_sentence_count": 0,
+        "broken_sentence_ratio": 0.0,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": null,
+  "resume_json": {
+    "full_name": "Vivek Vasgi",
+    "email": "vivekvasgi@gmail.com",
+    "phone": "9030344440",
+    "location": "Hyderabad, India",
+    "summary": "I am a Quality Analyst with 4+ years of experience in content moderation analyzing and improving the quality of products and services. My professional experience includes designing and implementing quality assurance processes, and conducting audits to ensure compliance with established standards",
+    "skills": {
+      "technical_skills": [],
+      "soft_skills": [
+        "Leadership Skills",
+        "Communication Skills",
+        "Ability to Work in a Team",
+        "Ability to Multitask",
+        "Fast Learner",
+        "Ability to Work Under Pressure"
+      ],
+      "tools": [
+        "Microsoft Office"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Quality Analyst",
+        "company": "Webhelp pvt ltd",
+        "location": "Hyderabad",
+        "start_date": "May 2023",
+        "end_date": "Present",
+        "highlights": [
+          "Worked on the content review and Implemented policy guidelines as per the violations.",
+          "Managing client calls. quality and client related KPls.",
+          "Good knowledge in strengthening quality management processes and framework to improve quality delivery.",
+          "Involved in receiving clients and explaining the process and Ideas for process improvement.",
+          "Inttt tid t b t to i tin. AHT and TOS.",
+          "Proficiency in supporting quality and compliance teams to perform various audits and follow-ups. Proficiency in using Excel formulas, pivots. and charts for the presentation of reports.",
+          "Ability to work and collaborate across multiple teams and projects. Providing the work estimations, Analyzing the problems and solution, discussions withClient.",
+          "Committed team player with strong analytical and problem-solving skills, and ability to quickly",
+          "Worked on Custom Reports and Report extractions to various formats, Dashboards and various components as per client requirements",
+          "Design and implement training and knowledge sharing sessions – new hire, re-training, process improvement and updates",
+          "Perform root cause analysis on the errors made by the team members",
+          "Provided regular updates to team leadership on quality metrics by communicating consistency problems or production deficiencies.",
+          "Developed and maintained quality assurance procedure documentation.",
+          "Collaborated with management to provide training on improved processes and assisted with creation and maintenance of quality training.",
+          "Monitored KPIs to proactively address bottlenecks and quality issues.",
+          "Created and revised procedures, checklists and job aids to reduce errors.",
+          "Compiled and distributed weekly feedback to team leaders and managers to improve service time and quality while increasing productivity.",
+          "Administered Number internal quality audits and assessed results to inform corrective action measures."
+        ]
+      },
+      {
+        "title": "Senior Quality Analyst",
+        "company": "Wipro pvt ltd",
+        "location": "Hyderabad",
+        "start_date": "May 2020",
+        "end_date": "September 2021",
+        "highlights": [
+          "Continuing the same role and responsibilities from previous organization (Cognizant)."
+        ]
+      },
+      {
+        "title": "Process Specialist",
+        "company": "Cognizant Technology Solutions",
+        "location": "Hyderabad",
+        "start_date": "March 2017",
+        "end_date": "April 2020",
+        "highlights": [
+          "Update trackers, create/update tickets, update required applications & tools and keep tl informed of newissues",
+          "ITeam huddles, knowledge base updates and process improvements",
+          "Prepare meaningful reports in context to the audits, training etc.",
+          "Ideate and implement process improvement projects",
+          "Ensure process guidelines are followed and met as documented",
+          "Adhere to shift handover process. I Quality monitoring Be responsible for the process improvement ideas on productivity, accuracy &turnaround time",
+          "IRaise process related issues on time with process lead and team lead",
+          "Resolve process related queries and expedite on data requests",
+          "Record data relating to production statistics, end-user related notes, etc as appropriate Contribute towards creation of knowledge updates &stay updated with process knowledge / changes",
+          "IDesign and implement training and knowledge sharing sessions – new hire, re-training, processimprovement and updates"
+        ]
+      },
+      {
+        "title": "Analyst",
+        "company": "Randstad pvt ltd",
+        "location": "Hyderabad",
+        "start_date": "April 2014",
+        "end_date": "September 2016",
+        "highlights": [
+          "Import the data to store in respective database.",
+          "Address and Geocodes data to the database named Oyster.",
+          "Street View and Satellite Image to GT Process.",
+          "Transforming the data to the required format irrespective of vendor's format.",
+          "Pushing the rest of the data to Satellite Image database.",
+          "Final code push to impact the geodata cope up with the policies as per the country requirements."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "MBA",
+        "institution": "Osmania Unversity",
+        "location": "Hyderabad",
+        "start_date": "June 2013",
+        "end_date": "June 2015"
+      }
+    ],
+    "certifications": [],
+    "languages": [
+      "Telugu",
+      "English"
+    ],
+    "links": []
+  },
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "docling",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Vivek Vasgi\n\nQuality Analyst\n\nHyderabad, India 9030344440 vivekvasgi@gmail.com\n\nSkills\n\nLeadership Skills\n\nCommunication Skills\n\nAbility to Work in a Team\n\nMicrosoft Office\n\nAbility to Multitask\n\nFast Learner\n\nAbility to Work Under Pressure\n\nLanguages\n\nTelugu\n\nEnglish\n\nProfile\n\nI am a Quality Analyst with 4+ years of experience in content moderation analyzing and improving the quality of products and services. My professional experience includes designing and implementing quality assurance processes, and conducting audits to ensure compliance with established standards\n\nEmployment History\n\nQuality Analyst, Webhelp pvt ltd, Hyderabad\n\nMay 2023 — Present\n\n- Worked on the content review and Implemented policy guidelines as per the violations.\n- Managing client calls. quality and client related KPls.\n- Good knowledge in strengthening quality management processes and framework to improve quality delivery.\n- Involved in receiving clients and explaining the process and Ideas for process improvement.\n- Inttt  tid t b t  to i tin. AHT and TOS.\n- Proficiency in supporting quality and compliance teams to perform various audits and follow-ups. Proficiency in using Excel formulas, pivots. and charts for the presentation of reports.\n- Ability to work and collaborate across multiple teams and projects. Providing the work estimations, Analyzing the problems and solution, discussions withClient.\n- Committed team player with strong analytical and problem-solving skills, and ability to quickly\n- Worked on Custom Reports and Report extractions to various formats, Dashboards and various components as per client requirements\n- Design and implement training and knowledge sharing sessions – new hire, re-training, process improvement and updates\n- Perform root cause analysis on the errors made by the team members\n- Provided regular updates to team leadership on quality metrics by communicating consistency problems or production deficiencies.\n- Developed and maintained quality assurance procedure documentation.\n- Collaborated with management to provide training on improved processes and assisted with creation and maintenance of quality training.\n- Monitored KPIs to proactively address bottlenecks and quality issues.\n- Created and revised procedures, checklists and job aids to reduce errors.\n- Compiled and distributed weekly feedback to team leaders and managers to improve service time and quality while increasing productivity.\n- Administered Number internal quality audits and assessed results to inform corrective action measures.\n\nSenior Quality Analyst, Wipro pvt ltd, Hyderabad\n\nMay 2020 — September 2021\n\nContinuing the same role and responsibilities from previous organization (Cognizant).\n\nProcess Specialist, Cognizant Technology Solutions, Hyderabad\n\nMarch 2017 — April 2020\n\n- Update trackers, create/update tickets, update required applications & tools and keep tl informed of newissues\n- ITeam huddles, knowledge base updates and process improvements\n- Prepare meaningful reports in context to the audits, training etc.\n- Ideate and implement process improvement projects\n- Ensure process guidelines are followed and met as documented ε\n- Adhere to shift handover process. I Quality monitoring ε Be responsible for the process improvement ideas on productivity, accuracy &turnaround time\n- IRaise process related issues on time with process lead and team lead\n- Resolve process related queries and expedite on data requests\n- Record data relating to production statistics, end-user related notes, etc as appropriate  Contribute towards creation of knowledge updates &stay updated with process knowledge / changes\n- IDesign and implement training and knowledge sharing sessions – new hire, re-training, processimprovement and updates\n\nAnalyst, Randstad pvt ltd, Hyderabad\n\nApril 2014 — September 2016\n\n- Import the data to store in respective database.\n- Address and Geocodes data to the database named Oyster.\n- Street View and Satellite Image to GT Process.\n- Transforming the data to the required format irrespective of vendor's format.\n- Pushing the rest of the data to Satellite Image database.\n- Final code push to impact the geodata cope up with the policies as per the country requirements.\n\nEducation\n\nMBA, Osmania Unversity, Hyderabad\n\nJune 2013 — June 2015\n\nExtra-curricular activities",
+    "normalized_text": "Vivek Vasgi\n\nQuality Analyst\n\nHyderabad, India 9030344440 vivekvasgi@gmail.com\n\nSkills\n\nLeadership Skills\n\nCommunication Skills\n\nAbility to Work in a Team\n\nMicrosoft Office\n\nAbility to Multitask\n\nFast Learner\n\nAbility to Work Under Pressure\n\nLanguages\n\nTelugu\n\nEnglish\n\nProfile\n\nI am a Quality Analyst with 4+ years of experience in content moderation analyzing and improving the quality of products and services. My professional experience includes designing and implementing quality assurance processes, and conducting audits to ensure compliance with established standards\n\nEmployment History\n\nQuality Analyst, Webhelp pvt ltd, Hyderabad\n\nMay 2023 — Present\n\n- Worked on the content review and Implemented policy guidelines as per the violations.\n- Managing client calls. quality and client related KPls.\n- Good knowledge in strengthening quality management processes and framework to improve quality delivery.\n- Involved in receiving clients and explaining the process and Ideas for process improvement.\n- Inttt tid t b t to i tin. AHT and TOS.\n- Proficiency in supporting quality and compliance teams to perform various audits and follow-ups. Proficiency in using Excel formulas, pivots. and charts for the presentation of reports.\n- Ability to work and collaborate across multiple teams and projects. Providing the work estimations, Analyzing the problems and solution, discussions withClient.\n- Committed team player with strong analytical and problem-solving skills, and ability to quickly\n- Worked on Custom Reports and Report extractions to various formats, Dashboards and various components as per client requirements\n- Design and implement training and knowledge sharing sessions – new hire, re-training, process improvement and updates\n- Perform root cause analysis on the errors made by the team members\n- Provided regular updates to team leadership on quality metrics by communicating consistency problems or production deficiencies.\n- Developed and maintained quality assurance procedure documentation.\n- Collaborated with management to provide training on improved processes and assisted with creation and maintenance of quality training.\n- Monitored KPIs to proactively address bottlenecks and quality issues.\n- Created and revised procedures, checklists and job aids to reduce errors.\n- Compiled and distributed weekly feedback to team leaders and managers to improve service time and quality while increasing productivity.\n- Administered Number internal quality audits and assessed results to inform corrective action measures.\n\nSenior Quality Analyst, Wipro pvt ltd, Hyderabad\n\nMay 2020 — September 2021\n\nContinuing the same role and responsibilities from previous organization (Cognizant).\n\nProcess Specialist, Cognizant Technology Solutions, Hyderabad\n\nMarch 2017 — April 2020\n\n- Update trackers, create/update tickets, update required applications & tools and keep tl informed of newissues\n- ITeam huddles, knowledge base updates and process improvements\n- Prepare meaningful reports in context to the audits, training etc.\n- Ideate and implement process improvement projects\n- Ensure process guidelines are followed and met as documented ε\n- Adhere to shift handover process. I Quality monitoring ε Be responsible for the process improvement ideas on productivity, accuracy &turnaround time\n- IRaise process related issues on time with process lead and team lead\n- Resolve process related queries and expedite on data requests\n- Record data relating to production statistics, end-user related notes, etc as appropriate Contribute towards creation of knowledge updates &stay updated with process knowledge / changes\n- IDesign and implement training and knowledge sharing sessions – new hire, re-training, processimprovement and updates\n\nAnalyst, Randstad pvt ltd, Hyderabad\n\nApril 2014 — September 2016\n\n- Import the data to store in respective database.\n- Address and Geocodes data to the database named Oyster.\n- Street View and Satellite Image to GT Process.\n- Transforming the data to the required format irrespective of vendor's format.\n- Pushing the rest of the data to Satellite Image database.\n- Final code push to impact the geodata cope up with the policies as per the country requirements.\n\nEducation\n\nMBA, Osmania Unversity, Hyderabad\n\nJune 2013 — June 2015\n\nExtra-curricular activities",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed"
+    ],
+    "original_chars": 4325,
+    "normalized_chars": 4322,
+    "original_estimated_tokens": 1081,
+    "normalized_estimated_tokens": 1080,
+    "estimated_reduction_percent": 0.1
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": "chatcmpl-01a1b08d-327f-7275-bc2d-66b213e6d800",
+      "status": "success",
+      "duration_ms": 19090.58,
+      "input_tokens": 1670,
+      "output_tokens": 2713,
+      "total_tokens": 4383,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1670,
+    "output_tokens": 2713,
+    "total_tokens": 4383,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_source": "muse_ai",
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "input_type": "text",
+    "duration_ms": 19090.58,
+    "timeout_seconds": 20.0,
+    "usage": {
+      "completion_tokens": 2713,
+      "prompt_tokens": 1670,
+      "total_tokens": 4383,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1663
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "text_normalization": {
+      "source": "docling",
+      "status": "applied",
+      "original_chars": 4325,
+      "normalized_chars": 4322,
+      "estimated_reduction_percent": 0.1,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 3,
+  "fallback_occurred": true,
+  "fallback_reason": "Quality Checker status FAIL for this extraction: text_health=40.0, completeness=100.0, reading_order=90.6 (FAIL when text_health or reading_order < 50). Trying the next fallback extractor.",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 3484.79,
+      "message": "Extraction succeeded; its output was sent to the Quality Checker.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "REJECTED",
+      "duration_ms": null,
+      "message": "Quality Checker status FAIL for this extraction: text_health=40.0, completeness=100.0, reading_order=90.6 (FAIL when text_health or reading_order < 50). Trying the next fallback extractor.",
+      "accepted": false,
+      "quality": {
+        "status": "FAIL",
+        "document_id": "684cc674-a588-43a5-a3a1-28c3e6937cbe",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 40.0,
+          "flags": [
+            "VERY_SHORT_TEXT"
+          ],
+          "reasons": [
+            "Text is nearly empty: 98 characters / 21 words (minimum expected 200 / 30)."
+          ],
+          "metrics": {
+            "char_count": 98,
+            "word_count": 21,
+            "line_count": 12,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.265306,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 100.0,
+          "flags": [
+            "NO_SECTIONS_DETECTED",
+            "SECTION_PRESENCE_UNCERTAIN"
+          ],
+          "reasons": [
+            "No configured resume sections were detected in the extracted text.",
+            "Text extraction quality is too low to classify undetected sections as missing."
+          ],
+          "metrics": {
+            "char_count": 98,
+            "word_count": 21,
+            "configured_section_count": 7,
+            "detected_count": 0,
+            "missing_count": 0,
+            "detected_sections": [],
+            "missing_sections": [],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [],
+            "matched_aliases": {},
+            "conditional_rejected": [],
+            "section_evidence": {},
+            "uncertain_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "section_status": {
+              "Contact Information": "uncertain",
+              "Summary": "uncertain",
+              "Skills": "uncertain",
+              "Work Experience": "uncertain",
+              "Education": "uncertain",
+              "Projects": "uncertain",
+              "Certifications": "uncertain"
+            },
+            "extraction_quality": 40.0
+          },
+          "detected_sections": [],
+          "missing_sections": [],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": []
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 90.62,
+          "flags": [
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "50.0% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 98,
+            "word_count": 21,
+            "line_count": 12,
+            "non_empty_line_count": 6,
+            "short_line_count": 0,
+            "short_line_ratio": 0.0,
+            "fragmented_line_count": 3,
+            "fragmented_line_ratio": 0.5,
+            "mean_line_length": 14.5,
+            "median_line_length": 14.5,
+            "line_length_stdev": 3.5,
+            "line_length_cv": 0.241379,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "FAIL",
+      "duration_ms": 26.21,
+      "message": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Quality Checker did not run because extraction failed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 72148.79,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "684cc674-a588-43a5-a3a1-28c3e6937cbe",
+        "source_tool": "docling",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4325,
+            "word_count": 628,
+            "line_count": 96,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.153064,
+            "symbol_count": 7,
+            "symbol_ratio": 0.001618,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4325,
+            "word_count": 628,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "profile",
+              "Skills": "skills",
+              "Work Experience": "employment history",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "vivekvasgi@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Profile",
+                "detection_method": "heading",
+                "line_number": 29,
+                "evidence": "Profile",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Skills",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Employment History",
+                "detection_method": "heading",
+                "line_number": 33,
+                "evidence": "Employment History",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 90,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4325,
+            "word_count": 628,
+            "line_count": 96,
+            "non_empty_line_count": 64,
+            "short_line_count": 14,
+            "short_line_ratio": 0.21875,
+            "fragmented_line_count": 9,
+            "fragmented_line_ratio": 0.140625,
+            "mean_line_length": 66.09,
+            "median_line_length": 57.0,
+            "line_length_stdev": 54.6,
+            "line_length_cv": 0.826158,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Docling was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 19090.58,
+      "message": "Structured Resume JSON generated by Muse AI and validated against the schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 72148.79,
+      "message": "Final accepted text produced by Docling.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "684cc674-a588-43a5-a3a1-28c3e6937cbe_download_15_.pdf"
+}

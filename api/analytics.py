@@ -105,6 +105,19 @@ def _mean(values: list[float]) -> float | None:
     return sum(values) / len(values) if values else None
 
 
+def _median(values: list[float]) -> float | None:
+    """Standard median: the middle value, or the mean of the two
+    middle values for an even count. Unlike the mean it is not
+    dragged by a single very slow resume."""
+    if not values:
+        return None
+    ordered = sorted(values)
+    mid = len(ordered) // 2
+    if len(ordered) % 2:
+        return ordered[mid]
+    return (ordered[mid - 1] + ordered[mid]) / 2
+
+
 def _round1(value: float | None) -> float | None:
     return round(value, 1) if value is not None else None
 
@@ -254,6 +267,8 @@ def compute_analytics(
         "success_rate_percent": _round1(succeeded / total * 100) if total else None,
         "avg_quality_score": _round1(_mean(headlines)),
         "avg_duration_ms": int(round(_mean(durations))) if durations else None,
+        "median_duration_ms": int(round(_median(durations))) if durations else None,
+        "p95_duration_ms": int(round(_percentile(durations, 95))) if durations else None,
         "total_tokens": tok_total,
         "fallback_rate_percent": (
             _round1(fallback_true / len(fallback_base) * 100) if fallback_base else None
@@ -316,11 +331,53 @@ def compute_analytics(
             ),
             "avg_quality": _round1(_mean(row["quality_scores"])),
             "avg_duration_ms": int(round(_mean(row["durations"]))) if row["durations"] else None,
+            "median_duration_ms": int(round(_median(row["durations"]))) if row["durations"] else None,
             "avg_chars": int(round(_mean(row["chars"]))) if row["chars"] else None,
             "wasted_attempts": row["wasted_attempts"],
             "wasted_ms": int(round(row["wasted_ms"])),
         })
     extractors.sort(key=lambda r: (-r["attempts"], r["name"]))
+
+    # ---------------------------------------------------------------- #
+    # Processing-time distribution & outliers (record-level durations)
+    # One ~1-minute resume drags the mean far above the typical
+    # 10-15 s, so alongside the mean this block carries the median,
+    # p95, a per-resume series for charting, and Tukey outliers
+    # (above Q3 + 1.5 x IQR; needs at least 4 points).
+    # ---------------------------------------------------------------- #
+    duration_points: list[dict[str, Any]] = []
+    for record in in_range:
+        if not _is_num(record.get("duration_ms")):
+            continue
+        duration_points.append({
+            "resume_id": record.get("resume_id"),
+            "filename": record.get("filename"),
+            "uploaded_at": record.get("uploaded_at"),
+            "duration_ms": int(round(float(record["duration_ms"]))),
+            "extractor": _selected_extractor(record),
+            "is_outlier": False,
+        })
+    duration_points.sort(key=lambda p: str(p.get("uploaded_at") or ""))
+    duration_values = [float(p["duration_ms"]) for p in duration_points]
+    outlier_threshold: float | None = None
+    if len(duration_values) >= 4:
+        q1 = _percentile(duration_values, 25)
+        q3 = _percentile(duration_values, 75)
+        if q1 is not None and q3 is not None:
+            outlier_threshold = q3 + 1.5 * (q3 - q1)
+            for point in duration_points:
+                point["is_outlier"] = point["duration_ms"] > outlier_threshold
+    durations_block = {
+        "points": duration_points,
+        "mean_ms": int(round(_mean(duration_values))) if duration_values else None,
+        "median_ms": int(round(_median(duration_values))) if duration_values else None,
+        "p95_ms": int(round(_percentile(duration_values, 95))) if duration_values else None,
+        "max_ms": int(max(duration_values)) if duration_values else None,
+        "outlier_threshold_ms": (
+            int(round(outlier_threshold)) if outlier_threshold is not None else None
+        ),
+        "outlier_count": sum(1 for p in duration_points if p["is_outlier"]),
+    }
 
     # ---------------------------------------------------------------- #
     # Quality
@@ -414,6 +471,7 @@ def compute_analytics(
         },
         "kpis": kpis,
         "extractors": extractors,
+        "durations": durations_block,
         "tokens": tokens_block,
         "quality": quality_block,
         "normalization": normalization_block,

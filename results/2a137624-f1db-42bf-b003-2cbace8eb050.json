@@ -1,0 +1,2120 @@
+{
+  "resume_id": "2a137624-f1db-42bf-b003-2cbace8eb050",
+  "filename": "SHJ-5451_SHC-364405.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 539497,
+  "uploaded_at": "2026-11-06T11:20:55.179562+00:00",
+  "success": true,
+  "extractor_used": "docling",
+  "duration_ms": 14410.87,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 70.3 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 8103.85,
+      "text": "DEEPAK KUMAR\nRESUME\n\nMOB. NO.- 8684015660\nGmail id - dkdabla78@gmail.com\n\nADDRESS - VPO UGALAN HISAR \nCAREER OBJECTIVE –\nTo take up a challenging career and grows wit honesty. Loyalty, good relationship best performance                  \nand   translate my experience, knowledge, skills and abilities into value for an organization.\nPERSONAL DETAILS –\nFATHER’S NAME - SH. SUBHASH\nMOTHER’s NAME - SMT. RAJBALA\nDATE OF BIRTH - 05/01/1999\nADDRESS - VPO UGALAN, HISAR (HARYANA)\nRELIGION - HINDU\nGENDER - MALE\nMARRIED STATUS - UNMARRIED\nLANGUAGE - HINDI, ENGLISH\nACADEMIC QUALIFICATION -\n\tSr.\nNo.\n\tClass / Course\n\tYear\n\tBoard/ university\n\tTotal \nmm\n\tObt. \nMarks\n\tPercentage\n\n\t01\n\t10TH\n\t2016\n\tBOARD OF SCHOOL EDUCATION\nHARYANA\n\t500\n\t349\n\t69.8%\n\n\t02\n\t12TH\n\t2018\n\tBOARD OF SCHOOL EDUCATION\nHARYANA\n\t500\n\t373\n\t74.6%\n\n\t03\n\tITI  (ELECTRICIAN)\n\t2021\n\tGOVT. ITI .BHAKLANA, \n(SCVT) HISAR  HARYANA\n\n\t1400\n\t1021\n\t72.9%\n\n\t04\n\tBEACHLOR OF ARTS\n\t2024\n\tIGNOU\n\t2100\n\t1169.85\n\t55.7%\n\n\t05\n\tONE YEAR COMPUTER\nCOURCE(ADCA)\n\t2018\n\tVIEW POINT COMPUTER \nINSTITUTE\n\t500\n\t377\n\t75.4%\n\n\nSKILLS –\nOne year Apprentice:- Electrician\nPW-3  (Peachora) -7BRD Indian Air Force Station, Tughlakabad (New Delhi)\nSTRENGTH & HOBBY-\n\t Hard and smart working\n\t Good communication\n\t Honest and punctual\n\t My hobbies study\n\nDECLLERATION —   I do hearby declare that the statements made is this document are true to \nthe best of my knowledge and belief.\n\n\n\n\tDEEPAK KUMAR\n\tACADEMIC QUALIFICATION -\n\tSTRENGTH & HOBBY-\n\tDECLLERATION —   I do hearby declare that the statements made is this document are true to the best of my knowledge and belief.",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-06T11:20:32.136445+00:00",
+      "completed_at": "2026-11-06T11:20:40.240972+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "2a137624-f1db-42bf-b003-2cbace8eb050",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 94.79,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "4 non-printable characters found (0.25% of text).",
+            "Repeated-character corruption suspected: longest run is 18 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 1600,
+            "word_count": 246,
+            "line_count": 96,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 4,
+            "non_printable_ratio": 0.0025,
+            "whitespace_ratio": 0.21375,
+            "symbol_count": 11,
+            "symbol_ratio": 0.006875,
+            "max_repeated_char_run": 18,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1600,
+            "word_count": 246,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Education"
+            ],
+            "missing_sections": [
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Skills": "skills",
+              "Education": "academic qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERSONAL DETAILS –",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "PERSONAL DETAILS –",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE –",
+                "detection_method": "heading",
+                "line_number": 8,
+                "evidence": "CAREER OBJECTIVE –",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS –",
+                "detection_method": "heading",
+                "line_number": 79,
+                "evidence": "SKILLS –",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "ACADEMIC QUALIFICATION -",
+                "detection_method": "heading",
+                "line_number": 20,
+                "evidence": "ACADEMIC QUALIFICATION -",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Education": "detected",
+              "Work Experience": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 94.79
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Education"
+          ],
+          "missing_sections": [
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 70.33,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "56.1% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "56.1% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.29) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 1600,
+            "word_count": 246,
+            "line_count": 96,
+            "non_empty_line_count": 82,
+            "short_line_count": 46,
+            "short_line_ratio": 0.560976,
+            "fragmented_line_count": 46,
+            "fragmented_line_ratio": 0.560976,
+            "mean_line_length": 17.45,
+            "median_line_length": 11.0,
+            "line_length_stdev": 22.58,
+            "line_length_cv": 1.293739,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.037037,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.3 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": false,
+      "attempt_id": "2a137624-f1db-42bf-b003-2cbace8eb050-attempt-1",
+      "resume_id": "2a137624-f1db-42bf-b003-2cbace8eb050",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "DEEPAK KUMAR\nRESUME\n\nMOB. NO.- 8684015660\nGmail id - dkdabla78@gmail.com\n\nADDRESS - VPO UGALAN HISAR \nCAREER OBJECTIVE –\nTo take up a challenging career and grows wit honesty. Loyalty, good relationship best performance                  \nand   translate my experience, knowledge, skills and abilities into value for an organization.\nPERSONAL DETAILS –\nFATHER’S NAME - SH. SUBHASH\nMOTHER’s NAME - SMT. RAJBALA\nDATE OF BIRTH - 05/01/1999\nADDRESS - VPO UGALAN, HISAR (HARYANA)\nRELIGION - HINDU\nGENDER - MALE\nMARRIED STATUS - UNMARRIED\nLANGUAGE - HINDI, ENGLISH\nACADEMIC QUALIFICATION -\n\tSr.\nNo.\n\tClass / Course\n\tYear\n\tBoard/ university\n\tTotal \nmm\n\tObt. \nMarks\n\tPercentage\n\n\t01\n\t10TH\n\t2016\n\tBOARD OF SCHOOL EDUCATION\nHARYANA\n\t500\n\t349\n\t69.8%\n\n\t02\n\t12TH\n\t2018\n\tBOARD OF SCHOOL EDUCATION\nHARYANA\n\t500\n\t373\n\t74.6%\n\n\t03\n\tITI  (ELECTRICIAN)\n\t2021\n\tGOVT. ITI .BHAKLANA, \n(SCVT) HISAR  HARYANA\n\n\t1400\n\t1021\n\t72.9%\n\n\t04\n\tBEACHLOR OF ARTS\n\t2024\n\tIGNOU\n\t2100\n\t1169.85\n\t55.7%\n\n\t05\n\tONE YEAR COMPUTER\nCOURCE(ADCA)\n\t2018\n\tVIEW POINT COMPUTER \nINSTITUTE\n\t500\n\t377\n\t75.4%\n\n\nSKILLS –\nOne year Apprentice:- Electrician\nPW-3  (Peachora) -7BRD Indian Air Force Station, Tughlakabad (New Delhi)\nSTRENGTH & HOBBY-\n\t Hard and smart working\n\t Good communication\n\t Honest and punctual\n\t My hobbies study\n\nDECLLERATION —   I do hearby declare that the statements made is this document are true to \nthe best of my knowledge and belief.\n\n\n\n\tDEEPAK KUMAR\n\tACADEMIC QUALIFICATION -\n\tSTRENGTH & HOBBY-\n\tDECLLERATION —   I do hearby declare that the statements made is this document are true to the best of my knowledge and belief.",
+      "extracted_text_length": 1600,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 70.3 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "2a137624-f1db-42bf-b003-2cbace8eb050",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 94.79,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "4 non-printable characters found (0.25% of text).",
+            "Repeated-character corruption suspected: longest run is 18 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 1600,
+            "word_count": 246,
+            "line_count": 96,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 4,
+            "non_printable_ratio": 0.0025,
+            "whitespace_ratio": 0.21375,
+            "symbol_count": 11,
+            "symbol_ratio": 0.006875,
+            "max_repeated_char_run": 18,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1600,
+            "word_count": 246,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Education"
+            ],
+            "missing_sections": [
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Skills": "skills",
+              "Education": "academic qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERSONAL DETAILS –",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "PERSONAL DETAILS –",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE –",
+                "detection_method": "heading",
+                "line_number": 8,
+                "evidence": "CAREER OBJECTIVE –",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS –",
+                "detection_method": "heading",
+                "line_number": 79,
+                "evidence": "SKILLS –",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "ACADEMIC QUALIFICATION -",
+                "detection_method": "heading",
+                "line_number": 20,
+                "evidence": "ACADEMIC QUALIFICATION -",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Education": "detected",
+              "Work Experience": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 94.79
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Education"
+          ],
+          "missing_sections": [
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 70.33,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "56.1% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "56.1% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.29) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 1600,
+            "word_count": 246,
+            "line_count": 96,
+            "non_empty_line_count": 82,
+            "short_line_count": 46,
+            "short_line_ratio": 0.560976,
+            "fragmented_line_count": 46,
+            "fragmented_line_ratio": 0.560976,
+            "mean_line_length": 17.45,
+            "median_line_length": 11.0,
+            "line_length_stdev": 22.58,
+            "line_length_cv": 1.293739,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.037037,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.3 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": false,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "DEEPAK KUMAR\nRESUME\n\nMOB. NO.- 8684015660\nGmail id - dkdabla78@gmail.com\n\nADDRESS - VPO UGALAN HISAR\nCAREER OBJECTIVE –\nTo take up a challenging career and grows wit honesty. Loyalty, good relationship best performance\nand translate my experience, knowledge, skills and abilities into value for an organization.\nPERSONAL DETAILS –\nFATHER’S NAME - SH. SUBHASH\nMOTHER’s NAME - SMT. RAJBALA\nDATE OF BIRTH - 05/01/1999\nADDRESS - VPO UGALAN, HISAR (HARYANA)\nRELIGION - HINDU\nGENDER - MALE\nMARRIED STATUS - UNMARRIED\nLANGUAGE - HINDI, ENGLISH\nACADEMIC QUALIFICATION -\nSr.\nNo.\nClass / Course\nYear\nBoard/ university\nTotal\nmm\nObt.\nMarks\nPercentage\n\n01\n10TH\n2016\nBOARD OF SCHOOL EDUCATION\nHARYANA\n500\n349\n69.8%\n\n02\n12TH\n2018\nBOARD OF SCHOOL EDUCATION\nHARYANA\n500\n373\n74.6%\n\n03\nITI (ELECTRICIAN)\n2021\nGOVT. ITI .BHAKLANA,\n(SCVT) HISAR HARYANA\n\n1400\n1021\n72.9%\n\n04\nBEACHLOR OF ARTS\n2024\nIGNOU\n2100\n1169.85\n55.7%\n\n05\nONE YEAR COMPUTER\nCOURCE(ADCA)\n2018\nVIEW POINT COMPUTER\nINSTITUTE\n500\n377\n75.4%\n\nSKILLS –\nOne year Apprentice:- Electrician\nPW-3 (Peachora) -7BRD Indian Air Force Station, Tughlakabad (New Delhi)\nSTRENGTH & HOBBY-\n Hard and smart working\n Good communication\n Honest and punctual\n My hobbies study\n\nDECLLERATION — I do hearby declare that the statements made is this document are true to\nthe best of my knowledge and belief.\n\nDEEPAK KUMAR\nACADEMIC QUALIFICATION -\nSTRENGTH & HOBBY-\nDECLLERATION — I do hearby declare that the statements made is this document are true to the best of my knowledge and belief."
+    },
+    {
+      "extractor_name": "pymupdf",
+      "success": true,
+      "accepted": false,
+      "error": "Quality Checker status FAIL for this extraction: text_health=94.7, completeness=82.0, reading_order=48.3 (FAIL when text_health or reading_order < 50). Trying the next fallback extractor.",
+      "duration_ms": 38.27,
+      "text": "DEEPAK KUMAR \nMOB. NO.- 8684015660 \nADDRESS - VPO UGALAN HISAR \nCAREER OBJECTIVE – \nTo take up a challenging career and grows wit honesty. Loyalty, good relationship best performance                  \nand   translate my experience, knowledge, skills and abilities into value for an organization. \nPERSONAL DETAILS – \nFATHER’S NAME \n- \nSH. SUBHASH \nMOTHER’s NAME \n- \nSMT. RAJBALA \nDATE OF BIRTH \n- \n05/01/1999 \nADDRESS \n- \nVPO UGALAN, HISAR (HARYANA) \nRELIGION \n- \nHINDU \nGENDER \n- \nMALE \nMARRIED STATUS \n- \nUNMARRIED \nLANGUAGE \n- \nHINDI, ENGLISH \nACADEMIC QUALIFICATION - \n \nSr. \nNo. \nClass / Course \nYear \nBoard/ university \nTotal \nmm \nObt. \nMarks \nPercentage \n01 \n10TH \n2016 \nBOARD OF SCHOOL EDUCATION \nHARYANA \n500 \n349 \n69.8% \n02 \n12TH \n2018 \nBOARD OF SCHOOL EDUCATION \nHARYANA \n500 \n373 \n74.6% \n03 \nITI  (ELECTRICIAN) \n2021 \nGOVT. ITI .BHAKLANA, \n(SCVT) HISAR  HARYANA   \n  \n1400 \n1021 \n72.9% \n04 \nBEACHLOR OF ARTS \n2024 \nIGNOU \n2100 \n1169.85 \n55.7% \n05 \nONE YEAR COMPUTER \nCOURCE(ADCA) \n2018 \nVIEW POINT COMPUTER \nINSTITUTE \n500 \n377 \n75.4% \nSKILLS – \n \n          One year Apprentice:- Electrician  \n          PW-3  (Peachora) -7BRD Indian Air Force Station, Tughlakabad (New Delhi) \n STRENGTH & HOBBY- \n Hard and smart working \n Good communication \n Honest and punctual \n My hobbies study    \nDECLLERATION —   I do hearby declare that the statements made is this document are true to \nthe best of my knowledge and belief. \n \nRESUME \nGmail id - dkdabla78@gmail.com",
+      "extractor_version": "1.28.2",
+      "started_at": "2026-11-06T11:20:40.428608+00:00",
+      "completed_at": "2026-11-06T11:20:40.467362+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "format": "PDF 1.5",
+        "author": "Sumit Bhan",
+        "creator": "Aspose Ltd.",
+        "producer": "Aspose.PDF for Java 18.8",
+        "creationDate": "D:20241102061452+00'00'",
+        "modDate": "D:20260813165830+05'30'"
+      },
+      "quality_status": "FAIL",
+      "quality": {
+        "status": "FAIL",
+        "document_id": "2a137624-f1db-42bf-b003-2cbace8eb050",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 94.66,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "4 non-printable characters found (0.27% of text).",
+            "Repeated-character corruption suspected: longest run is 18 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 1474,
+            "word_count": 215,
+            "line_count": 98,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 4,
+            "non_printable_ratio": 0.002714,
+            "whitespace_ratio": 0.248982,
+            "symbol_count": 10,
+            "symbol_ratio": 0.006784,
+            "max_repeated_char_run": 18,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1474,
+            "word_count": 215,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Education"
+            ],
+            "missing_sections": [
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Skills": "skills",
+              "Education": "academic qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERSONAL DETAILS –",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "PERSONAL DETAILS –",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE –",
+                "detection_method": "heading",
+                "line_number": 4,
+                "evidence": "CAREER OBJECTIVE –",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS –",
+                "detection_method": "heading",
+                "line_number": 85,
+                "evidence": "SKILLS –",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "ACADEMIC QUALIFICATION -",
+                "detection_method": "heading",
+                "line_number": 32,
+                "evidence": "ACADEMIC QUALIFICATION -",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Education": "detected",
+              "Work Experience": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 94.66
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Education"
+          ],
+          "missing_sections": [
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 48.32,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "71.3% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "71.3% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.37) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 1474,
+            "word_count": 215,
+            "line_count": 98,
+            "non_empty_line_count": 94,
+            "short_line_count": 67,
+            "short_line_ratio": 0.712766,
+            "fragmented_line_count": 67,
+            "fragmented_line_ratio": 0.712766,
+            "mean_line_length": 13.14,
+            "median_line_length": 7.0,
+            "line_length_stdev": 18.0,
+            "line_length_cv": 1.370113,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.032258,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "reject",
+      "decision_reason": "Quality Checker status FAIL for this extraction: text_health=94.7, completeness=82.0, reading_order=48.3 (FAIL when text_health or reading_order < 50). Trying the next fallback extractor.",
+      "selected": false,
+      "attempt_id": "2a137624-f1db-42bf-b003-2cbace8eb050-attempt-2",
+      "resume_id": "2a137624-f1db-42bf-b003-2cbace8eb050",
+      "attempt_number": 2,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "DEEPAK KUMAR \nMOB. NO.- 8684015660 \nADDRESS - VPO UGALAN HISAR \nCAREER OBJECTIVE – \nTo take up a challenging career and grows wit honesty. Loyalty, good relationship best performance                  \nand   translate my experience, knowledge, skills and abilities into value for an organization. \nPERSONAL DETAILS – \nFATHER’S NAME \n- \nSH. SUBHASH \nMOTHER’s NAME \n- \nSMT. RAJBALA \nDATE OF BIRTH \n- \n05/01/1999 \nADDRESS \n- \nVPO UGALAN, HISAR (HARYANA) \nRELIGION \n- \nHINDU \nGENDER \n- \nMALE \nMARRIED STATUS \n- \nUNMARRIED \nLANGUAGE \n- \nHINDI, ENGLISH \nACADEMIC QUALIFICATION - \n \nSr. \nNo. \nClass / Course \nYear \nBoard/ university \nTotal \nmm \nObt. \nMarks \nPercentage \n01 \n10TH \n2016 \nBOARD OF SCHOOL EDUCATION \nHARYANA \n500 \n349 \n69.8% \n02 \n12TH \n2018 \nBOARD OF SCHOOL EDUCATION \nHARYANA \n500 \n373 \n74.6% \n03 \nITI  (ELECTRICIAN) \n2021 \nGOVT. ITI .BHAKLANA, \n(SCVT) HISAR  HARYANA   \n  \n1400 \n1021 \n72.9% \n04 \nBEACHLOR OF ARTS \n2024 \nIGNOU \n2100 \n1169.85 \n55.7% \n05 \nONE YEAR COMPUTER \nCOURCE(ADCA) \n2018 \nVIEW POINT COMPUTER \nINSTITUTE \n500 \n377 \n75.4% \nSKILLS – \n \n          One year Apprentice:- Electrician  \n          PW-3  (Peachora) -7BRD Indian Air Force Station, Tughlakabad (New Delhi) \n STRENGTH & HOBBY- \n Hard and smart working \n Good communication \n Honest and punctual \n My hobbies study    \nDECLLERATION —   I do hearby declare that the statements made is this document are true to \nthe best of my knowledge and belief. \n \nRESUME \nGmail id - dkdabla78@gmail.com",
+      "extracted_text_length": 1474,
+      "error_message": "Quality Checker status FAIL for this extraction: text_health=94.7, completeness=82.0, reading_order=48.3 (FAIL when text_health or reading_order < 50). Trying the next fallback extractor.",
+      "quality_checker_report": {
+        "status": "FAIL",
+        "document_id": "2a137624-f1db-42bf-b003-2cbace8eb050",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 94.66,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "4 non-printable characters found (0.27% of text).",
+            "Repeated-character corruption suspected: longest run is 18 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 1474,
+            "word_count": 215,
+            "line_count": 98,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 4,
+            "non_printable_ratio": 0.002714,
+            "whitespace_ratio": 0.248982,
+            "symbol_count": 10,
+            "symbol_ratio": 0.006784,
+            "max_repeated_char_run": 18,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1474,
+            "word_count": 215,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Education"
+            ],
+            "missing_sections": [
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Skills": "skills",
+              "Education": "academic qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERSONAL DETAILS –",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "PERSONAL DETAILS –",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE –",
+                "detection_method": "heading",
+                "line_number": 4,
+                "evidence": "CAREER OBJECTIVE –",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS –",
+                "detection_method": "heading",
+                "line_number": 85,
+                "evidence": "SKILLS –",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "ACADEMIC QUALIFICATION -",
+                "detection_method": "heading",
+                "line_number": 32,
+                "evidence": "ACADEMIC QUALIFICATION -",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Education": "detected",
+              "Work Experience": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 94.66
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Education"
+          ],
+          "missing_sections": [
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 48.32,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "71.3% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "71.3% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.37) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 1474,
+            "word_count": 215,
+            "line_count": 98,
+            "non_empty_line_count": 94,
+            "short_line_count": 67,
+            "short_line_ratio": 0.712766,
+            "fragmented_line_count": 67,
+            "fragmented_line_ratio": 0.712766,
+            "mean_line_length": 13.14,
+            "median_line_length": 7.0,
+            "line_length_stdev": 18.0,
+            "line_length_cv": 1.370113,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.032258,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "reject",
+      "fallback_reason": "Quality Checker status FAIL for this extraction: text_health=94.7, completeness=82.0, reading_order=48.3 (FAIL when text_health or reading_order < 50). Trying the next fallback extractor.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "DEEPAK KUMAR\nMOB. NO.- 8684015660\nADDRESS - VPO UGALAN HISAR\nCAREER OBJECTIVE –\nTo take up a challenging career and grows wit honesty. Loyalty, good relationship best performance\nand translate my experience, knowledge, skills and abilities into value for an organization.\nPERSONAL DETAILS –\nFATHER’S NAME\nSH. SUBHASH\nMOTHER’s NAME\nSMT. RAJBALA\nDATE OF BIRTH\n05/01/1999\nADDRESS\nVPO UGALAN, HISAR (HARYANA)\nRELIGION\nHINDU\nGENDER\nMALE\nMARRIED STATUS\nUNMARRIED\nLANGUAGE\nHINDI, ENGLISH\nACADEMIC QUALIFICATION -\n\nSr.\nNo.\nClass / Course\nYear\nBoard/ university\nTotal\nmm\nObt.\nMarks\nPercentage\n01\n10TH\n2016\nBOARD OF SCHOOL EDUCATION\nHARYANA\n500\n349\n69.8%\n02\n12TH\n2018\nBOARD OF SCHOOL EDUCATION\nHARYANA\n500\n373\n74.6%\n03\nITI (ELECTRICIAN)\n2021\nGOVT. ITI .BHAKLANA,\n(SCVT) HISAR HARYANA\n\n1400\n1021\n72.9%\n04\nBEACHLOR OF ARTS\n2024\nIGNOU\n2100\n1169.85\n55.7%\n05\nONE YEAR COMPUTER\nCOURCE(ADCA)\n2018\nVIEW POINT COMPUTER\nINSTITUTE\n500\n377\n75.4%\nSKILLS –\n\nOne year Apprentice:- Electrician\nPW-3 (Peachora) -7BRD Indian Air Force Station, Tughlakabad (New Delhi)\nSTRENGTH & HOBBY-\n Hard and smart working\n Good communication\n Honest and punctual\n My hobbies study\nDECLLERATION — I do hearby declare that the statements made is this document are true to\nthe best of my knowledge and belief.\n\nRESUME\nGmail id - dkdabla78@gmail.com"
+    },
+    {
+      "extractor_name": "docling",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 14410.87,
+      "text": "DEEPAK KUMAR\n\nMOB. NO.- 8684015660\n\nADDRESS - VPO UGALAN HISAR\n\nCAREER OBJECTIVE -\n\nTo take up a challenging career and grows wit honesty. Loyalty, good relationship best performance and translate my experience, knowledge, skills and abilities into value for an organization.\n\nPERSONAL DETAILS -\n\nFATHER'S NAME\n\nMOTHER's NAME\n\n- SH. SUBHASH\n\n- SMT. RAJBALA\n\nDATE OF BIRTH\n\n-\n\n05/01/1999\n\nADDRESS\n\n- VPO UGALAN, HISAR (HARYANA)\n\nRELIGION\n\n- HINDU\n\nGENDER\n\n- MALE\n\nMARRIED STATUS - UNMARRIED\n\nLANGUAGE\n\n- HINDI, ENGLISH\n\nACADEMIC QUALIFICATION -\n\n| Sr. No.                        |   Class / Course | Year                                      |   Board/ university |   Total mm | Obt. Marks   |   Percentage |\n|--------------------------------|------------------|-------------------------------------------|---------------------|------------|--------------|--------------|\n| 10 TH                          |             2016 | BOARD OF SCHOOL EDUCATION HARYANA         |                 500 |        349 | 69.8%        |           01 |\n| 12 TH                          |             2018 | BOARD OF SCHOOL EDUCATION HARYANA         |                 500 |        373 | 74.6%        |           02 |\n| ITI (ELECTRICIAN)              |             2021 | GOVT. ITI .BHAKLANA, (SCVT) HISAR HARYANA |                1400 |       1021 | 72.9%        |           03 |\n| BEACHLOR OF ARTS               |             2024 | IGNOU                                     |                2100 |    1169.85 | 55.7%        |           04 |\n| ONE YEAR COMPUTER COURCE(ADCA) |             2018 | VIEW POINT COMPUTER INSTITUTE             |                 500 |        377 | 75.4%        |           05 |\n\nSKILLS -\n\nOne year Apprentice:- Electrician PW-3 (Peachora) -7BRD Indian Air Force Station, Tughlakabad (New Delhi)\n\nSTRENGTH & HOBBY-\n\n- Hard and smart working\n- Good communication\n- Honest and punctual\n- My hobbies study\n\nDECLLERATION - I do hearby declare that the statements made is this document are true to the best of my knowledge and belief.\n\nRESUME\n\nGmail id - dkdabla78@gmail.com",
+      "extractor_version": "2.146.0",
+      "started_at": "2026-11-06T11:20:40.650181+00:00",
+      "completed_at": "2026-11-06T11:20:55.061864+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "2a137624-f1db-42bf-b003-2cbace8eb050",
+        "source_tool": "docling",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 78.89,
+          "flags": [
+            "ABNORMAL_WHITESPACE_RATIO",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Whitespace makes up 36.6% of the text.",
+            "Repeated-character corruption suspected: longest run is 43 characters, 2.9% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2076,
+            "word_count": 266,
+            "line_count": 70,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.365607,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 43,
+            "repeated_line_ratio": 0.029412
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2076,
+            "word_count": 266,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Education"
+            ],
+            "missing_sections": [
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Skills": "skills",
+              "Education": "academic qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERSONAL DETAILS -",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "PERSONAL DETAILS -",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE -",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "CAREER OBJECTIVE -",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS -",
+                "detection_method": "heading",
+                "line_number": 55,
+                "evidence": "SKILLS -",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "ACADEMIC QUALIFICATION -",
+                "detection_method": "heading",
+                "line_number": 45,
+                "evidence": "ACADEMIC QUALIFICATION -",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Education": "detected",
+              "Work Experience": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 78.89
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Education"
+          ],
+          "missing_sections": [
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 93.28,
+          "flags": [
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "40.0% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.24) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 2076,
+            "word_count": 266,
+            "line_count": 70,
+            "non_empty_line_count": 40,
+            "short_line_count": 14,
+            "short_line_ratio": 0.35,
+            "fragmented_line_count": 16,
+            "fragmented_line_ratio": 0.4,
+            "mean_line_length": 50.17,
+            "median_line_length": 18.0,
+            "line_length_stdev": 62.18,
+            "line_length_cv": 1.239269,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "2a137624-f1db-42bf-b003-2cbace8eb050-attempt-3",
+      "resume_id": "2a137624-f1db-42bf-b003-2cbace8eb050",
+      "attempt_number": 3,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "DEEPAK KUMAR\n\nMOB. NO.- 8684015660\n\nADDRESS - VPO UGALAN HISAR\n\nCAREER OBJECTIVE -\n\nTo take up a challenging career and grows wit honesty. Loyalty, good relationship best performance and translate my experience, knowledge, skills and abilities into value for an organization.\n\nPERSONAL DETAILS -\n\nFATHER'S NAME\n\nMOTHER's NAME\n\n- SH. SUBHASH\n\n- SMT. RAJBALA\n\nDATE OF BIRTH\n\n-\n\n05/01/1999\n\nADDRESS\n\n- VPO UGALAN, HISAR (HARYANA)\n\nRELIGION\n\n- HINDU\n\nGENDER\n\n- MALE\n\nMARRIED STATUS - UNMARRIED\n\nLANGUAGE\n\n- HINDI, ENGLISH\n\nACADEMIC QUALIFICATION -\n\n| Sr. No.                        |   Class / Course | Year                                      |   Board/ university |   Total mm | Obt. Marks   |   Percentage |\n|--------------------------------|------------------|-------------------------------------------|---------------------|------------|--------------|--------------|\n| 10 TH                          |             2016 | BOARD OF SCHOOL EDUCATION HARYANA         |                 500 |        349 | 69.8%        |           01 |\n| 12 TH                          |             2018 | BOARD OF SCHOOL EDUCATION HARYANA         |                 500 |        373 | 74.6%        |           02 |\n| ITI (ELECTRICIAN)              |             2021 | GOVT. ITI .BHAKLANA, (SCVT) HISAR HARYANA |                1400 |       1021 | 72.9%        |           03 |\n| BEACHLOR OF ARTS               |             2024 | IGNOU                                     |                2100 |    1169.85 | 55.7%        |           04 |\n| ONE YEAR COMPUTER COURCE(ADCA) |             2018 | VIEW POINT COMPUTER INSTITUTE             |                 500 |        377 | 75.4%        |           05 |\n\nSKILLS -\n\nOne year Apprentice:- Electrician PW-3 (Peachora) -7BRD Indian Air Force Station, Tughlakabad (New Delhi)\n\nSTRENGTH & HOBBY-\n\n- Hard and smart working\n- Good communication\n- Honest and punctual\n- My hobbies study\n\nDECLLERATION - I do hearby declare that the statements made is this document are true to the best of my knowledge and belief.\n\nRESUME\n\nGmail id - dkdabla78@gmail.com",
+      "extracted_text_length": 2076,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "2a137624-f1db-42bf-b003-2cbace8eb050",
+        "source_tool": "docling",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 78.89,
+          "flags": [
+            "ABNORMAL_WHITESPACE_RATIO",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Whitespace makes up 36.6% of the text.",
+            "Repeated-character corruption suspected: longest run is 43 characters, 2.9% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2076,
+            "word_count": 266,
+            "line_count": 70,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.365607,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 43,
+            "repeated_line_ratio": 0.029412
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2076,
+            "word_count": 266,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Education"
+            ],
+            "missing_sections": [
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Skills": "skills",
+              "Education": "academic qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERSONAL DETAILS -",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "PERSONAL DETAILS -",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE -",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "CAREER OBJECTIVE -",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS -",
+                "detection_method": "heading",
+                "line_number": 55,
+                "evidence": "SKILLS -",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "ACADEMIC QUALIFICATION -",
+                "detection_method": "heading",
+                "line_number": 45,
+                "evidence": "ACADEMIC QUALIFICATION -",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Education": "detected",
+              "Work Experience": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 78.89
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Education"
+          ],
+          "missing_sections": [
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 93.28,
+          "flags": [
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "40.0% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.24) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 2076,
+            "word_count": 266,
+            "line_count": 70,
+            "non_empty_line_count": 40,
+            "short_line_count": 14,
+            "short_line_ratio": 0.35,
+            "fragmented_line_count": 16,
+            "fragmented_line_ratio": 0.4,
+            "mean_line_length": 50.17,
+            "median_line_length": 18.0,
+            "line_length_stdev": 62.18,
+            "line_length_cv": 1.239269,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": null,
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "DEEPAK KUMAR\n\nMOB. NO.- 8684015660\n\nADDRESS - VPO UGALAN HISAR\n\nCAREER OBJECTIVE -\n\nTo take up a challenging career and grows wit honesty. Loyalty, good relationship best performance and translate my experience, knowledge, skills and abilities into value for an organization.\n\nPERSONAL DETAILS -\n\nFATHER'S NAME\n\nMOTHER's NAME\n\n- SH. SUBHASH\n\n- SMT. RAJBALA\n\nDATE OF BIRTH\n\n05/01/1999\n\nADDRESS\n\n- VPO UGALAN, HISAR (HARYANA)\n\nRELIGION\n\n- HINDU\n\nGENDER\n\n- MALE\n\nMARRIED STATUS - UNMARRIED\n\nLANGUAGE\n\n- HINDI, ENGLISH\n\nACADEMIC QUALIFICATION -\n\n| Sr. No. | Class / Course | Year | Board/ university | Total mm | Obt. Marks | Percentage |\n|--------------------------------|------------------|-------------------------------------------|---------------------|------------|--------------|--------------|\n| 10 TH | 2016 | BOARD OF SCHOOL EDUCATION HARYANA | 500 | 349 | 69.8% | 01 |\n| 12 TH | 2018 | BOARD OF SCHOOL EDUCATION HARYANA | 500 | 373 | 74.6% | 02 |\n| ITI (ELECTRICIAN) | 2021 | GOVT. ITI .BHAKLANA, (SCVT) HISAR HARYANA | 1400 | 1021 | 72.9% | 03 |\n| BEACHLOR OF ARTS | 2024 | IGNOU | 2100 | 1169.85 | 55.7% | 04 |\n| ONE YEAR COMPUTER COURCE(ADCA) | 2018 | VIEW POINT COMPUTER INSTITUTE | 500 | 377 | 75.4% | 05 |\n\nSKILLS -\n\nOne year Apprentice:- Electrician PW-3 (Peachora) -7BRD Indian Air Force Station, Tughlakabad (New Delhi)\n\nSTRENGTH & HOBBY-\n\n- Hard and smart working\n- Good communication\n- Honest and punctual\n- My hobbies study\n\nDECLLERATION - I do hearby declare that the statements made is this document are true to the best of my knowledge and belief.\n\nRESUME\n\nGmail id - dkdabla78@gmail.com"
+    }
+  ],
+  "extracted_text": "DEEPAK KUMAR\n\nMOB. NO.- 8684015660\n\nADDRESS - VPO UGALAN HISAR\n\nCAREER OBJECTIVE -\n\nTo take up a challenging career and grows wit honesty. Loyalty, good relationship best performance and translate my experience, knowledge, skills and abilities into value for an organization.\n\nPERSONAL DETAILS -\n\nFATHER'S NAME\n\nMOTHER's NAME\n\n- SH. SUBHASH\n\n- SMT. RAJBALA\n\nDATE OF BIRTH\n\n-\n\n05/01/1999\n\nADDRESS\n\n- VPO UGALAN, HISAR (HARYANA)\n\nRELIGION\n\n- HINDU\n\nGENDER\n\n- MALE\n\nMARRIED STATUS - UNMARRIED\n\nLANGUAGE\n\n- HINDI, ENGLISH\n\nACADEMIC QUALIFICATION -\n\n| Sr. No.                        |   Class / Course | Year                                      |   Board/ university |   Total mm | Obt. Marks   |   Percentage |\n|--------------------------------|------------------|-------------------------------------------|---------------------|------------|--------------|--------------|\n| 10 TH                          |             2016 | BOARD OF SCHOOL EDUCATION HARYANA         |                 500 |        349 | 69.8%        |           01 |\n| 12 TH                          |             2018 | BOARD OF SCHOOL EDUCATION HARYANA         |                 500 |        373 | 74.6%        |           02 |\n| ITI (ELECTRICIAN)              |             2021 | GOVT. ITI .BHAKLANA, (SCVT) HISAR HARYANA |                1400 |       1021 | 72.9%        |           03 |\n| BEACHLOR OF ARTS               |             2024 | IGNOU                                     |                2100 |    1169.85 | 55.7%        |           04 |\n| ONE YEAR COMPUTER COURCE(ADCA) |             2018 | VIEW POINT COMPUTER INSTITUTE             |                 500 |        377 | 75.4%        |           05 |\n\nSKILLS -\n\nOne year Apprentice:- Electrician PW-3 (Peachora) -7BRD Indian Air Force Station, Tughlakabad (New Delhi)\n\nSTRENGTH & HOBBY-\n\n- Hard and smart working\n- Good communication\n- Honest and punctual\n- My hobbies study\n\nDECLLERATION - I do hearby declare that the statements made is this document are true to the best of my knowledge and belief.\n\nRESUME\n\nGmail id - dkdabla78@gmail.com",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "DEEPAK KUMAR\n\nMOB. NO.- 8684015660\n\nADDRESS - VPO UGALAN HISAR\n\nCAREER OBJECTIVE -\n\nTo take up a challenging career and grows wit honesty. Loyalty, good relationship best performance and translate my experience, knowledge, skills and abilities into value for an organization.\n\nPERSONAL DETAILS -\n\nFATHER'S NAME\n\nMOTHER's NAME\n\n- SH. SUBHASH\n\n- SMT. RAJBALA\n\nDATE OF BIRTH\n\n-\n\n05/01/1999\n\nADDRESS\n\n- VPO UGALAN, HISAR (HARYANA)\n\nRELIGION\n\n- HINDU\n\nGENDER\n\n- MALE\n\nMARRIED STATUS - UNMARRIED\n\nLANGUAGE\n\n- HINDI, ENGLISH\n\nACADEMIC QUALIFICATION -\n\n| Sr. No.                        |   Class / Course | Year                                      |   Board/ university |   Total mm | Obt. Marks   |   Percentage |\n|--------------------------------|------------------|-------------------------------------------|---------------------|------------|--------------|--------------|\n| 10 TH                          |             2016 | BOARD OF SCHOOL EDUCATION HARYANA         |                 500 |        349 | 69.8%        |           01 |\n| 12 TH                          |             2018 | BOARD OF SCHOOL EDUCATION HARYANA         |                 500 |        373 | 74.6%        |           02 |\n| ITI (ELECTRICIAN)              |             2021 | GOVT. ITI .BHAKLANA, (SCVT) HISAR HARYANA |                1400 |       1021 | 72.9%        |           03 |\n| BEACHLOR OF ARTS               |             2024 | IGNOU                                     |                2100 |    1169.85 | 55.7%        |           04 |\n| ONE YEAR COMPUTER COURCE(ADCA) |             2018 | VIEW POINT COMPUTER INSTITUTE             |                 500 |        377 | 75.4%        |           05 |\n\nSKILLS -\n\nOne year Apprentice:- Electrician PW-3 (Peachora) -7BRD Indian Air Force Station, Tughlakabad (New Delhi)\n\nSTRENGTH & HOBBY-\n\n- Hard and smart working\n- Good communication\n- Honest and punctual\n- My hobbies study\n\nDECLLERATION - I do hearby declare that the statements made is this document are true to the best of my knowledge and belief.\n\nRESUME\n\nGmail id - dkdabla78@gmail.com",
+  "quality": {
+    "status": "PASS",
+    "document_id": "2a137624-f1db-42bf-b003-2cbace8eb050",
+    "source_tool": "docling",
+    "attempt_id": "attempt-3",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 78.89,
+      "flags": [
+        "ABNORMAL_WHITESPACE_RATIO",
+        "EXCESSIVE_REPEATED_CHARACTERS"
+      ],
+      "reasons": [
+        "Whitespace makes up 36.6% of the text.",
+        "Repeated-character corruption suspected: longest run is 43 characters, 2.9% of long lines are single-character repeats."
+      ],
+      "metrics": {
+        "char_count": 2076,
+        "word_count": 266,
+        "line_count": 70,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.365607,
+        "symbol_count": 0,
+        "symbol_ratio": 0.0,
+        "max_repeated_char_run": 43,
+        "repeated_line_ratio": 0.029412
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 82.0,
+      "flags": [
+        "MISSING_RECOMMENDED_SECTION",
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 2076,
+        "word_count": 266,
+        "configured_section_count": 7,
+        "detected_count": 4,
+        "missing_count": 3,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Education"
+        ],
+        "missing_sections": [
+          "Work Experience",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [
+          "Work Experience"
+        ],
+        "missing_optional": [
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "personal details",
+          "Summary": "career objective",
+          "Skills": "skills",
+          "Education": "academic qualification"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": "PERSONAL DETAILS -",
+            "detection_method": "heading",
+            "line_number": 11,
+            "evidence": "PERSONAL DETAILS -",
+            "confidence": 0.98
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "CAREER OBJECTIVE -",
+            "detection_method": "heading",
+            "line_number": 7,
+            "evidence": "CAREER OBJECTIVE -",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "SKILLS -",
+            "detection_method": "heading",
+            "line_number": 55,
+            "evidence": "SKILLS -",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "ACADEMIC QUALIFICATION -",
+            "detection_method": "heading",
+            "line_number": 45,
+            "evidence": "ACADEMIC QUALIFICATION -",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Education": "detected",
+          "Work Experience": "missing",
+          "Projects": "missing",
+          "Certifications": "missing"
+        },
+        "extraction_quality": 78.89
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Education"
+      ],
+      "missing_sections": [
+        "Work Experience",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [
+        "Work Experience"
+      ],
+      "missing_optional": [
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 93.28,
+      "flags": [
+        "FRAGMENTED_LINES",
+        "HIGH_LINE_LENGTH_VARIATION"
+      ],
+      "reasons": [
+        "40.0% of lines are 15 characters or shorter.",
+        "Line lengths vary unusually (coefficient of variation 1.24) — a possible sign of mixed or merged column text."
+      ],
+      "metrics": {
+        "char_count": 2076,
+        "word_count": 266,
+        "line_count": 70,
+        "non_empty_line_count": 40,
+        "short_line_count": 14,
+        "short_line_ratio": 0.35,
+        "fragmented_line_count": 16,
+        "fragmented_line_ratio": 0.4,
+        "mean_line_length": 50.17,
+        "median_line_length": 18.0,
+        "line_length_stdev": 62.18,
+        "line_length_cv": 1.239269,
+        "broken_sentence_count": 0,
+        "broken_sentence_ratio": 0.0,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": null,
+  "resume_json": null,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "docling",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "DEEPAK KUMAR\n\nMOB. NO.- 8684015660\n\nADDRESS - VPO UGALAN HISAR\n\nCAREER OBJECTIVE -\n\nTo take up a challenging career and grows wit honesty. Loyalty, good relationship best performance and translate my experience, knowledge, skills and abilities into value for an organization.\n\nPERSONAL DETAILS -\n\nFATHER'S NAME\n\nMOTHER's NAME\n\n- SH. SUBHASH\n\n- SMT. RAJBALA\n\nDATE OF BIRTH\n\n-\n\n05/01/1999\n\nADDRESS\n\n- VPO UGALAN, HISAR (HARYANA)\n\nRELIGION\n\n- HINDU\n\nGENDER\n\n- MALE\n\nMARRIED STATUS - UNMARRIED\n\nLANGUAGE\n\n- HINDI, ENGLISH\n\nACADEMIC QUALIFICATION -\n\n| Sr. No.                        |   Class / Course | Year                                      |   Board/ university |   Total mm | Obt. Marks   |   Percentage |\n|--------------------------------|------------------|-------------------------------------------|---------------------|------------|--------------|--------------|\n| 10 TH                          |             2016 | BOARD OF SCHOOL EDUCATION HARYANA         |                 500 |        349 | 69.8%        |           01 |\n| 12 TH                          |             2018 | BOARD OF SCHOOL EDUCATION HARYANA         |                 500 |        373 | 74.6%        |           02 |\n| ITI (ELECTRICIAN)              |             2021 | GOVT. ITI .BHAKLANA, (SCVT) HISAR HARYANA |                1400 |       1021 | 72.9%        |           03 |\n| BEACHLOR OF ARTS               |             2024 | IGNOU                                     |                2100 |    1169.85 | 55.7%        |           04 |\n| ONE YEAR COMPUTER COURCE(ADCA) |             2018 | VIEW POINT COMPUTER INSTITUTE             |                 500 |        377 | 75.4%        |           05 |\n\nSKILLS -\n\nOne year Apprentice:- Electrician PW-3 (Peachora) -7BRD Indian Air Force Station, Tughlakabad (New Delhi)\n\nSTRENGTH & HOBBY-\n\n- Hard and smart working\n- Good communication\n- Honest and punctual\n- My hobbies study\n\nDECLLERATION - I do hearby declare that the statements made is this document are true to the best of my knowledge and belief.\n\nRESUME\n\nGmail id - dkdabla78@gmail.com",
+    "normalized_text": "DEEPAK KUMAR\n\nMOB. NO.- 8684015660\n\nADDRESS - VPO UGALAN HISAR\n\nCAREER OBJECTIVE -\n\nTo take up a challenging career and grows wit honesty. Loyalty, good relationship best performance and translate my experience, knowledge, skills and abilities into value for an organization.\n\nPERSONAL DETAILS -\n\nFATHER'S NAME\n\nMOTHER's NAME\n\n- SH. SUBHASH\n\n- SMT. RAJBALA\n\nDATE OF BIRTH\n\n05/01/1999\n\nADDRESS\n\n- VPO UGALAN, HISAR (HARYANA)\n\nRELIGION\n\n- HINDU\n\nGENDER\n\n- MALE\n\nMARRIED STATUS - UNMARRIED\n\nLANGUAGE\n\n- HINDI, ENGLISH\n\nACADEMIC QUALIFICATION -\n\n| Sr. No. | Class / Course | Year | Board/ university | Total mm | Obt. Marks | Percentage |\n|--------------------------------|------------------|-------------------------------------------|---------------------|------------|--------------|--------------|\n| 10 TH | 2016 | BOARD OF SCHOOL EDUCATION HARYANA | 500 | 349 | 69.8% | 01 |\n| 12 TH | 2018 | BOARD OF SCHOOL EDUCATION HARYANA | 500 | 373 | 74.6% | 02 |\n| ITI (ELECTRICIAN) | 2021 | GOVT. ITI .BHAKLANA, (SCVT) HISAR HARYANA | 1400 | 1021 | 72.9% | 03 |\n| BEACHLOR OF ARTS | 2024 | IGNOU | 2100 | 1169.85 | 55.7% | 04 |\n| ONE YEAR COMPUTER COURCE(ADCA) | 2018 | VIEW POINT COMPUTER INSTITUTE | 500 | 377 | 75.4% | 05 |\n\nSKILLS -\n\nOne year Apprentice:- Electrician PW-3 (Peachora) -7BRD Indian Air Force Station, Tughlakabad (New Delhi)\n\nSTRENGTH & HOBBY-\n\n- Hard and smart working\n- Good communication\n- Honest and punctual\n- My hobbies study\n\nDECLLERATION - I do hearby declare that the statements made is this document are true to the best of my knowledge and belief.\n\nRESUME\n\nGmail id - dkdabla78@gmail.com",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "decorative_separator_lines_removed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 2076,
+    "normalized_chars": 1609,
+    "original_estimated_tokens": 519,
+    "normalized_estimated_tokens": 402,
+    "estimated_reduction_percent": 22.5
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "timed_out_calls": 1,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_source": null,
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Muse API request timed out after 20s.",
+    "input_type": "text",
+    "duration_ms": 20054.26,
+    "timeout_seconds": 20.0,
+    "usage": {},
+    "text_normalization": {
+      "source": "docling",
+      "status": "applied",
+      "original_chars": 2076,
+      "normalized_chars": 1609,
+      "estimated_reduction_percent": 22.5,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "decorative_separator_lines_removed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 3,
+  "fallback_occurred": true,
+  "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.3 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 8103.85,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 70.3 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. A later extractor was accepted, so this candidate was not selected.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "2a137624-f1db-42bf-b003-2cbace8eb050",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 94.79,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "4 non-printable characters found (0.25% of text).",
+            "Repeated-character corruption suspected: longest run is 18 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 1600,
+            "word_count": 246,
+            "line_count": 96,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 4,
+            "non_printable_ratio": 0.0025,
+            "whitespace_ratio": 0.21375,
+            "symbol_count": 11,
+            "symbol_ratio": 0.006875,
+            "max_repeated_char_run": 18,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1600,
+            "word_count": 246,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Education"
+            ],
+            "missing_sections": [
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Skills": "skills",
+              "Education": "academic qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERSONAL DETAILS –",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "PERSONAL DETAILS –",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE –",
+                "detection_method": "heading",
+                "line_number": 8,
+                "evidence": "CAREER OBJECTIVE –",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS –",
+                "detection_method": "heading",
+                "line_number": 79,
+                "evidence": "SKILLS –",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "ACADEMIC QUALIFICATION -",
+                "detection_method": "heading",
+                "line_number": 20,
+                "evidence": "ACADEMIC QUALIFICATION -",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Education": "detected",
+              "Work Experience": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 94.79
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Education"
+          ],
+          "missing_sections": [
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 70.33,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "56.1% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "56.1% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.29) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 1600,
+            "word_count": 246,
+            "line_count": 96,
+            "non_empty_line_count": 82,
+            "short_line_count": 46,
+            "short_line_ratio": 0.560976,
+            "fragmented_line_count": 46,
+            "fragmented_line_ratio": 0.560976,
+            "mean_line_length": 17.45,
+            "median_line_length": 11.0,
+            "line_length_stdev": 22.58,
+            "line_length_cv": 1.293739,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.037037,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": 38.27,
+      "message": "Extraction succeeded; its output was sent to the Quality Checker.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "pymupdf",
+      "status": "REJECTED",
+      "duration_ms": null,
+      "message": "Quality Checker status FAIL for this extraction: text_health=94.7, completeness=82.0, reading_order=48.3 (FAIL when text_health or reading_order < 50). Trying the next fallback extractor.",
+      "accepted": false,
+      "quality": {
+        "status": "FAIL",
+        "document_id": "2a137624-f1db-42bf-b003-2cbace8eb050",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 94.66,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "4 non-printable characters found (0.27% of text).",
+            "Repeated-character corruption suspected: longest run is 18 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 1474,
+            "word_count": 215,
+            "line_count": 98,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 4,
+            "non_printable_ratio": 0.002714,
+            "whitespace_ratio": 0.248982,
+            "symbol_count": 10,
+            "symbol_ratio": 0.006784,
+            "max_repeated_char_run": 18,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1474,
+            "word_count": 215,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Education"
+            ],
+            "missing_sections": [
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Skills": "skills",
+              "Education": "academic qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERSONAL DETAILS –",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "PERSONAL DETAILS –",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE –",
+                "detection_method": "heading",
+                "line_number": 4,
+                "evidence": "CAREER OBJECTIVE –",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS –",
+                "detection_method": "heading",
+                "line_number": 85,
+                "evidence": "SKILLS –",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "ACADEMIC QUALIFICATION -",
+                "detection_method": "heading",
+                "line_number": 32,
+                "evidence": "ACADEMIC QUALIFICATION -",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Education": "detected",
+              "Work Experience": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 94.66
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Education"
+          ],
+          "missing_sections": [
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 48.32,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "71.3% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "71.3% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.37) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 1474,
+            "word_count": 215,
+            "line_count": 98,
+            "non_empty_line_count": 94,
+            "short_line_count": 67,
+            "short_line_ratio": 0.712766,
+            "fragmented_line_count": 67,
+            "fragmented_line_ratio": 0.712766,
+            "mean_line_length": 13.14,
+            "median_line_length": 7.0,
+            "line_length_stdev": 18.0,
+            "line_length_cv": 1.370113,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.032258,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 14410.87,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "2a137624-f1db-42bf-b003-2cbace8eb050",
+        "source_tool": "docling",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 78.89,
+          "flags": [
+            "ABNORMAL_WHITESPACE_RATIO",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Whitespace makes up 36.6% of the text.",
+            "Repeated-character corruption suspected: longest run is 43 characters, 2.9% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2076,
+            "word_count": 266,
+            "line_count": 70,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.365607,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 43,
+            "repeated_line_ratio": 0.029412
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2076,
+            "word_count": 266,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Education"
+            ],
+            "missing_sections": [
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Skills": "skills",
+              "Education": "academic qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERSONAL DETAILS -",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "PERSONAL DETAILS -",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE -",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "CAREER OBJECTIVE -",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS -",
+                "detection_method": "heading",
+                "line_number": 55,
+                "evidence": "SKILLS -",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "ACADEMIC QUALIFICATION -",
+                "detection_method": "heading",
+                "line_number": 45,
+                "evidence": "ACADEMIC QUALIFICATION -",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Education": "detected",
+              "Work Experience": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 78.89
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Education"
+          ],
+          "missing_sections": [
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 93.28,
+          "flags": [
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "40.0% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.24) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 2076,
+            "word_count": 266,
+            "line_count": 70,
+            "non_empty_line_count": 40,
+            "short_line_count": 14,
+            "short_line_ratio": 0.35,
+            "fragmented_line_count": 16,
+            "fragmented_line_ratio": 0.4,
+            "mean_line_length": 50.17,
+            "median_line_length": 18.0,
+            "line_length_stdev": 62.18,
+            "line_length_cv": 1.239269,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Docling was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 20054.26,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 14410.87,
+      "message": "Final accepted text produced by Docling.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "2a137624-f1db-42bf-b003-2cbace8eb050_SHJ-5451_SHC-364405.pdf"
+}

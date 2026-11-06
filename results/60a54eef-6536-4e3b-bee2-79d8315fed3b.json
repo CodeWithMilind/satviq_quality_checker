@@ -1,0 +1,1010 @@
+{
+  "resume_id": "60a54eef-6536-4e3b-bee2-79d8315fed3b",
+  "filename": "SHJ-5329_SHC-365423.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 695912,
+  "uploaded_at": "2026-11-06T11:31:40.899287+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 7736.44,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 7736.44,
+      "text": "Experience\n\nDirected the creation of high-impact motion graphics, marketing\ncampaigns, and visual content for global brands including PepsiCo,\nTarget, Dell, Nestlé, Cintas, and BAE.\nBuilt end-to-end creative workflows—from concept development\nand storyboarding to animation, AI-assisted asset generation\n(Adobe Firefly, Midjourney, Runway), editing, and final delivery.\nProduced multi-format campaign assets and creative variations for\nsocial platforms, supporting A/B testing while collaborating with\ncross-functional teams to deliver projects on schedule.\n\nInteractive Media and Visual Designer\nAlight Solutions\n\n2025 – Present\n\nDesigned and delivered motion graphics, 2D/3D animations, VFX,\nand composited videos for branded campaigns, product\nexplainers, and social-first content in collaboration with cross-\nfunctional teams.\n\nAssistant Video Producer\n\nBattery Smart\n\n2023 - 2025\n\nProduced motion graphics, VFX-enhanced videos, compositing,\nand post-production for social media campaigns, ensuring\nengaging visual storytelling.\nPartnered with clients and internal stakeholders to develop\nbranding, campaign creatives, and social-first visual content.\n\nVideo Editor\n\nSocial Sthaan\n\n 2022- 2023\n\nCreated motion graphics, visual effects, compositing, and\ncreative video content from concept to final delivery while\nmaintaining brand consistency.\n\nVideo Editor\nSocial Mongers \n\n 2021- 2022\n\nAbout Me\nVideo Producer and Motion Designer with 6+ years of\nexperience across video production, motion graphics,\nbranded content and AI-assisted creative workflows.\nExperienced in taking projects from concept and visual\ndevelopment through editing, animation, post-\nproduction and final delivery. Hands-on with Adobe\nCreative Cloud and generative AI tools including Firefly,\nMidjourney and Runway, with experience collaborating\nwith cross-functional teams, stakeholders and clients in\nfast-paced production environments.\n\nSenior Secondary\nCity Montessori School\n\nGuru Gobind Singh Indraprastha\nUniversity\n\n2018-2019\n\n2017-2021\n\nBachelor of Arts in Journalism and\nMass Communication\n\nEducation\n\nSkills\n\n+91 8303738902\n\nvibhutimishra033@gmail.com\n\nPortfolio & Website\n\nLucknow-Gurgaon\n\nVIBHUTI\nMISHRA\nA I  V i d e o  P r o d u c e r  |  M o t i o n  G r a p h i c s  &\nC r e a t i v e  P r o d u c t i o n\n\nTools\n\nAdobe After Effects · Premiere Pro · Photoshop ·\nIllustrator · Firefly · Midjourney · Runway · Blender ·\nCinema 4D · Figma  · Eleven Labs · Synthesia ·\nKling \n\nMotion & Editing\n\nMotion Graphics, 2D/3D Animation, Visual Effects\n(VFX), Compositing, Motion Tracking, Rendering,\nVideo Editing, Storyboarding, Visual Storytelling,\nKinetic Typography, Social & Marketing Content\n\nDesign\n\nGraphic Design, Branding, Typography, Layout\nDesign, Visual Hierarchy, Brand Systems\n\nGenerative AI\n\nAdobe Firefly, Midjourney, Runway, AI-assisted\nCreative Workflows, Prompt Engineering\n\nhttps://drive.google.com/drive/folders/1EketubNRlIXQyaC8yKFtl0fofJBdlVO9\nhttps://motion-portfolio-194.preview.emergentagent.com/\n\n\tVIBHUTI MISHRA\n\tAI Video Producer | Motion Graphics & Creative Production\n\tPortfolio & Website\n\t+91 8303738902\n\tvibhutimishra033@gmail.com\n\tLucknow-Gurgaon\n\tAbout Me\n\tEducation\n\tSenior Secondary\n\tCity Montessori School\n\t2018-2019\n\n\n\tBachelor of Arts in Journalism and Mass Communication\n\tGuru Gobind Singh Indraprastha University\n\t2017-2021\n\n\n\n\tSkills\n\tExperience\n\t2025 – Present\n\tInteractive Media and Visual Designer\n\tAlight Solutions\n\tDirected the creation of high-impact motion graphics, marketing campaigns, and visual content for global brands including PepsiCo, Target, Dell, Nestlé, Cintas, and BAE.\n\tBuilt end-to-end creative workflows—from concept development and storyboarding to animation, AI-assisted asset generation (Adobe Firefly, Midjourney, Runway), editing, and final delivery.\n\tProduced multi-format campaign assets and creative variations for social platforms, supporting A/B testing while collaborating with cross-functional teams to deliver projects on schedule.\n\n\tAssistant Video Producer\n\t2023 - 2025\n\n\tBattery Smart\n\tDesigned and delivered motion graphics, 2D/3D animations, VFX, and composited videos for branded campaigns, product explainers, and social-first content in collaboration with cross-functional teams.\n\t2022- 2023\n\n\tVideo Editor\n\tSocial Sthaan\n\tProduced motion graphics, VFX-enhanced videos, compositing, and post-production for social media campaigns, ensuring engaging visual storytelling.\n\tPartnered with clients and internal stakeholders to develop branding, campaign creatives, and social-first visual content.\n\t2021- 2022\n\n\tVideo Editor\n\tSocial Mongers\n\tCreated motion graphics, visual effects, compositing, and creative video content from concept to final delivery while maintaining brand consistency.",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-06T11:31:32.987899+00:00",
+      "completed_at": "2026-11-06T11:31:40.725017+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "60a54eef-6536-4e3b-bee2-79d8315fed3b",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4754,
+            "word_count": 614,
+            "line_count": 162,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.148507,
+            "symbol_count": 16,
+            "symbol_ratio": 0.003366,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4754,
+            "word_count": 614,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "about me",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [
+              {
+                "section": "Projects",
+                "alias": "portfolio and website",
+                "original_heading": "Portfolio & Website",
+                "line_number": 83
+              }
+            ],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "vibhutimishra033@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "About Me",
+                "detection_method": "heading",
+                "line_number": 50,
+                "evidence": "About Me",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Skills",
+                "detection_method": "heading",
+                "line_number": 77,
+                "evidence": "Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Experience",
+                "detection_method": "heading",
+                "line_number": 1,
+                "evidence": "Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 75,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 98.22,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "41.4% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "36.2% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 4754,
+            "word_count": 614,
+            "line_count": 162,
+            "non_empty_line_count": 116,
+            "short_line_count": 48,
+            "short_line_ratio": 0.413793,
+            "fragmented_line_count": 42,
+            "fragmented_line_ratio": 0.362069,
+            "mean_line_length": 39.26,
+            "median_line_length": 29.5,
+            "line_length_stdev": 38.26,
+            "line_length_cv": 0.974512,
+            "broken_sentence_count": 20,
+            "broken_sentence_ratio": 0.173913,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "60a54eef-6536-4e3b-bee2-79d8315fed3b-attempt-1",
+      "resume_id": "60a54eef-6536-4e3b-bee2-79d8315fed3b",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "Experience\n\nDirected the creation of high-impact motion graphics, marketing\ncampaigns, and visual content for global brands including PepsiCo,\nTarget, Dell, Nestlé, Cintas, and BAE.\nBuilt end-to-end creative workflows—from concept development\nand storyboarding to animation, AI-assisted asset generation\n(Adobe Firefly, Midjourney, Runway), editing, and final delivery.\nProduced multi-format campaign assets and creative variations for\nsocial platforms, supporting A/B testing while collaborating with\ncross-functional teams to deliver projects on schedule.\n\nInteractive Media and Visual Designer\nAlight Solutions\n\n2025 – Present\n\nDesigned and delivered motion graphics, 2D/3D animations, VFX,\nand composited videos for branded campaigns, product\nexplainers, and social-first content in collaboration with cross-\nfunctional teams.\n\nAssistant Video Producer\n\nBattery Smart\n\n2023 - 2025\n\nProduced motion graphics, VFX-enhanced videos, compositing,\nand post-production for social media campaigns, ensuring\nengaging visual storytelling.\nPartnered with clients and internal stakeholders to develop\nbranding, campaign creatives, and social-first visual content.\n\nVideo Editor\n\nSocial Sthaan\n\n 2022- 2023\n\nCreated motion graphics, visual effects, compositing, and\ncreative video content from concept to final delivery while\nmaintaining brand consistency.\n\nVideo Editor\nSocial Mongers \n\n 2021- 2022\n\nAbout Me\nVideo Producer and Motion Designer with 6+ years of\nexperience across video production, motion graphics,\nbranded content and AI-assisted creative workflows.\nExperienced in taking projects from concept and visual\ndevelopment through editing, animation, post-\nproduction and final delivery. Hands-on with Adobe\nCreative Cloud and generative AI tools including Firefly,\nMidjourney and Runway, with experience collaborating\nwith cross-functional teams, stakeholders and clients in\nfast-paced production environments.\n\nSenior Secondary\nCity Montessori School\n\nGuru Gobind Singh Indraprastha\nUniversity\n\n2018-2019\n\n2017-2021\n\nBachelor of Arts in Journalism and\nMass Communication\n\nEducation\n\nSkills\n\n+91 8303738902\n\nvibhutimishra033@gmail.com\n\nPortfolio & Website\n\nLucknow-Gurgaon\n\nVIBHUTI\nMISHRA\nA I  V i d e o  P r o d u c e r  |  M o t i o n  G r a p h i c s  &\nC r e a t i v e  P r o d u c t i o n\n\nTools\n\nAdobe After Effects · Premiere Pro · Photoshop ·\nIllustrator · Firefly · Midjourney · Runway · Blender ·\nCinema 4D · Figma  · Eleven Labs · Synthesia ·\nKling \n\nMotion & Editing\n\nMotion Graphics, 2D/3D Animation, Visual Effects\n(VFX), Compositing, Motion Tracking, Rendering,\nVideo Editing, Storyboarding, Visual Storytelling,\nKinetic Typography, Social & Marketing Content\n\nDesign\n\nGraphic Design, Branding, Typography, Layout\nDesign, Visual Hierarchy, Brand Systems\n\nGenerative AI\n\nAdobe Firefly, Midjourney, Runway, AI-assisted\nCreative Workflows, Prompt Engineering\n\nhttps://drive.google.com/drive/folders/1EketubNRlIXQyaC8yKFtl0fofJBdlVO9\nhttps://motion-portfolio-194.preview.emergentagent.com/\n\n\tVIBHUTI MISHRA\n\tAI Video Producer | Motion Graphics & Creative Production\n\tPortfolio & Website\n\t+91 8303738902\n\tvibhutimishra033@gmail.com\n\tLucknow-Gurgaon\n\tAbout Me\n\tEducation\n\tSenior Secondary\n\tCity Montessori School\n\t2018-2019\n\n\n\tBachelor of Arts in Journalism and Mass Communication\n\tGuru Gobind Singh Indraprastha University\n\t2017-2021\n\n\n\n\tSkills\n\tExperience\n\t2025 – Present\n\tInteractive Media and Visual Designer\n\tAlight Solutions\n\tDirected the creation of high-impact motion graphics, marketing campaigns, and visual content for global brands including PepsiCo, Target, Dell, Nestlé, Cintas, and BAE.\n\tBuilt end-to-end creative workflows—from concept development and storyboarding to animation, AI-assisted asset generation (Adobe Firefly, Midjourney, Runway), editing, and final delivery.\n\tProduced multi-format campaign assets and creative variations for social platforms, supporting A/B testing while collaborating with cross-functional teams to deliver projects on schedule.\n\n\tAssistant Video Producer\n\t2023 - 2025\n\n\tBattery Smart\n\tDesigned and delivered motion graphics, 2D/3D animations, VFX, and composited videos for branded campaigns, product explainers, and social-first content in collaboration with cross-functional teams.\n\t2022- 2023\n\n\tVideo Editor\n\tSocial Sthaan\n\tProduced motion graphics, VFX-enhanced videos, compositing, and post-production for social media campaigns, ensuring engaging visual storytelling.\n\tPartnered with clients and internal stakeholders to develop branding, campaign creatives, and social-first visual content.\n\t2021- 2022\n\n\tVideo Editor\n\tSocial Mongers\n\tCreated motion graphics, visual effects, compositing, and creative video content from concept to final delivery while maintaining brand consistency.",
+      "extracted_text_length": 4754,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "60a54eef-6536-4e3b-bee2-79d8315fed3b",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4754,
+            "word_count": 614,
+            "line_count": 162,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.148507,
+            "symbol_count": 16,
+            "symbol_ratio": 0.003366,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4754,
+            "word_count": 614,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "about me",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [
+              {
+                "section": "Projects",
+                "alias": "portfolio and website",
+                "original_heading": "Portfolio & Website",
+                "line_number": 83
+              }
+            ],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "vibhutimishra033@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "About Me",
+                "detection_method": "heading",
+                "line_number": 50,
+                "evidence": "About Me",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Skills",
+                "detection_method": "heading",
+                "line_number": 77,
+                "evidence": "Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Experience",
+                "detection_method": "heading",
+                "line_number": 1,
+                "evidence": "Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 75,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 98.22,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "41.4% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "36.2% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 4754,
+            "word_count": 614,
+            "line_count": 162,
+            "non_empty_line_count": 116,
+            "short_line_count": 48,
+            "short_line_ratio": 0.413793,
+            "fragmented_line_count": 42,
+            "fragmented_line_ratio": 0.362069,
+            "mean_line_length": 39.26,
+            "median_line_length": 29.5,
+            "line_length_stdev": 38.26,
+            "line_length_cv": 0.974512,
+            "broken_sentence_count": 20,
+            "broken_sentence_ratio": 0.173913,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Experience\n\nDirected the creation of high-impact motion graphics, marketing\ncampaigns, and visual content for global brands including PepsiCo,\nTarget, Dell, Nestlé, Cintas, and BAE.\nBuilt end-to-end creative workflows—from concept development\nand storyboarding to animation, AI-assisted asset generation\n(Adobe Firefly, Midjourney, Runway), editing, and final delivery.\nProduced multi-format campaign assets and creative variations for\nsocial platforms, supporting A/B testing while collaborating with\ncross-functional teams to deliver projects on schedule.\n\nInteractive Media and Visual Designer\nAlight Solutions\n\n2025 – Present\n\nDesigned and delivered motion graphics, 2D/3D animations, VFX,\nand composited videos for branded campaigns, product\nexplainers, and social-first content in collaboration with cross-\nfunctional teams.\n\nAssistant Video Producer\n\nBattery Smart\n\n2023 - 2025\n\nProduced motion graphics, VFX-enhanced videos, compositing,\nand post-production for social media campaigns, ensuring\nengaging visual storytelling.\nPartnered with clients and internal stakeholders to develop\nbranding, campaign creatives, and social-first visual content.\n\nVideo Editor\n\nSocial Sthaan\n\n2022- 2023\n\nCreated motion graphics, visual effects, compositing, and\ncreative video content from concept to final delivery while\nmaintaining brand consistency.\n\nVideo Editor\nSocial Mongers\n\n2021- 2022\n\nAbout Me\nVideo Producer and Motion Designer with 6+ years of\nexperience across video production, motion graphics,\nbranded content and AI-assisted creative workflows.\nExperienced in taking projects from concept and visual\ndevelopment through editing, animation, post-\nproduction and final delivery. Hands-on with Adobe\nCreative Cloud and generative AI tools including Firefly,\nMidjourney and Runway, with experience collaborating\nwith cross-functional teams, stakeholders and clients in\nfast-paced production environments.\n\nSenior Secondary\nCity Montessori School\n\nGuru Gobind Singh Indraprastha\nUniversity\n\n2018-2019\n\n2017-2021\n\nBachelor of Arts in Journalism and\nMass Communication\n\nEducation\n\nSkills\n\n+91 8303738902\n\nvibhutimishra033@gmail.com\n\nPortfolio & Website\n\nLucknow-Gurgaon\n\nVIBHUTI\nMISHRA\nA I V i d e o P r o d u c e r | M o t i o n G r a p h i c s &\nC r e a t i v e P r o d u c t i o n\n\nTools\n\nAdobe After Effects · Premiere Pro · Photoshop ·\nIllustrator · Firefly · Midjourney · Runway · Blender ·\nCinema 4D · Figma · Eleven Labs · Synthesia ·\nKling\n\nMotion & Editing\n\nMotion Graphics, 2D/3D Animation, Visual Effects\n(VFX), Compositing, Motion Tracking, Rendering,\nVideo Editing, Storyboarding, Visual Storytelling,\nKinetic Typography, Social & Marketing Content\n\nDesign\n\nGraphic Design, Branding, Typography, Layout\nDesign, Visual Hierarchy, Brand Systems\n\nGenerative AI\n\nAdobe Firefly, Midjourney, Runway, AI-assisted\nCreative Workflows, Prompt Engineering\n\nhttps://drive.google.com/drive/folders/1EketubNRlIXQyaC8yKFtl0fofJBdlVO9\nhttps://motion-portfolio-194.preview.emergentagent.com/\n\nVIBHUTI MISHRA\nAI Video Producer | Motion Graphics & Creative Production\nPortfolio & Website\n+91 8303738902\nvibhutimishra033@gmail.com\nLucknow-Gurgaon\nAbout Me\nEducation\nSenior Secondary\nCity Montessori School\n2018-2019\n\nBachelor of Arts in Journalism and Mass Communication\nGuru Gobind Singh Indraprastha University\n2017-2021\n\nSkills\nExperience\n2025 – Present\nInteractive Media and Visual Designer\nAlight Solutions\nDirected the creation of high-impact motion graphics, marketing campaigns, and visual content for global brands including PepsiCo, Target, Dell, Nestlé, Cintas, and BAE.\nBuilt end-to-end creative workflows—from concept development and storyboarding to animation, AI-assisted asset generation (Adobe Firefly, Midjourney, Runway), editing, and final delivery.\nProduced multi-format campaign assets and creative variations for social platforms, supporting A/B testing while collaborating with cross-functional teams to deliver projects on schedule.\n\nAssistant Video Producer\n2023 - 2025\n\nBattery Smart\nDesigned and delivered motion graphics, 2D/3D animations, VFX, and composited videos for branded campaigns, product explainers, and social-first content in collaboration with cross-functional teams.\n2022- 2023\n\nVideo Editor\nSocial Sthaan\nProduced motion graphics, VFX-enhanced videos, compositing, and post-production for social media campaigns, ensuring engaging visual storytelling.\nPartnered with clients and internal stakeholders to develop branding, campaign creatives, and social-first visual content.\n2021- 2022\n\nVideo Editor\nSocial Mongers\nCreated motion graphics, visual effects, compositing, and creative video content from concept to final delivery while maintaining brand consistency."
+    }
+  ],
+  "extracted_text": "Experience\n\nDirected the creation of high-impact motion graphics, marketing\ncampaigns, and visual content for global brands including PepsiCo,\nTarget, Dell, Nestlé, Cintas, and BAE.\nBuilt end-to-end creative workflows—from concept development\nand storyboarding to animation, AI-assisted asset generation\n(Adobe Firefly, Midjourney, Runway), editing, and final delivery.\nProduced multi-format campaign assets and creative variations for\nsocial platforms, supporting A/B testing while collaborating with\ncross-functional teams to deliver projects on schedule.\n\nInteractive Media and Visual Designer\nAlight Solutions\n\n2025 – Present\n\nDesigned and delivered motion graphics, 2D/3D animations, VFX,\nand composited videos for branded campaigns, product\nexplainers, and social-first content in collaboration with cross-\nfunctional teams.\n\nAssistant Video Producer\n\nBattery Smart\n\n2023 - 2025\n\nProduced motion graphics, VFX-enhanced videos, compositing,\nand post-production for social media campaigns, ensuring\nengaging visual storytelling.\nPartnered with clients and internal stakeholders to develop\nbranding, campaign creatives, and social-first visual content.\n\nVideo Editor\n\nSocial Sthaan\n\n 2022- 2023\n\nCreated motion graphics, visual effects, compositing, and\ncreative video content from concept to final delivery while\nmaintaining brand consistency.\n\nVideo Editor\nSocial Mongers \n\n 2021- 2022\n\nAbout Me\nVideo Producer and Motion Designer with 6+ years of\nexperience across video production, motion graphics,\nbranded content and AI-assisted creative workflows.\nExperienced in taking projects from concept and visual\ndevelopment through editing, animation, post-\nproduction and final delivery. Hands-on with Adobe\nCreative Cloud and generative AI tools including Firefly,\nMidjourney and Runway, with experience collaborating\nwith cross-functional teams, stakeholders and clients in\nfast-paced production environments.\n\nSenior Secondary\nCity Montessori School\n\nGuru Gobind Singh Indraprastha\nUniversity\n\n2018-2019\n\n2017-2021\n\nBachelor of Arts in Journalism and\nMass Communication\n\nEducation\n\nSkills\n\n+91 8303738902\n\nvibhutimishra033@gmail.com\n\nPortfolio & Website\n\nLucknow-Gurgaon\n\nVIBHUTI\nMISHRA\nA I  V i d e o  P r o d u c e r  |  M o t i o n  G r a p h i c s  &\nC r e a t i v e  P r o d u c t i o n\n\nTools\n\nAdobe After Effects · Premiere Pro · Photoshop ·\nIllustrator · Firefly · Midjourney · Runway · Blender ·\nCinema 4D · Figma  · Eleven Labs · Synthesia ·\nKling \n\nMotion & Editing\n\nMotion Graphics, 2D/3D Animation, Visual Effects\n(VFX), Compositing, Motion Tracking, Rendering,\nVideo Editing, Storyboarding, Visual Storytelling,\nKinetic Typography, Social & Marketing Content\n\nDesign\n\nGraphic Design, Branding, Typography, Layout\nDesign, Visual Hierarchy, Brand Systems\n\nGenerative AI\n\nAdobe Firefly, Midjourney, Runway, AI-assisted\nCreative Workflows, Prompt Engineering\n\nhttps://drive.google.com/drive/folders/1EketubNRlIXQyaC8yKFtl0fofJBdlVO9\nhttps://motion-portfolio-194.preview.emergentagent.com/\n\n\tVIBHUTI MISHRA\n\tAI Video Producer | Motion Graphics & Creative Production\n\tPortfolio & Website\n\t+91 8303738902\n\tvibhutimishra033@gmail.com\n\tLucknow-Gurgaon\n\tAbout Me\n\tEducation\n\tSenior Secondary\n\tCity Montessori School\n\t2018-2019\n\n\n\tBachelor of Arts in Journalism and Mass Communication\n\tGuru Gobind Singh Indraprastha University\n\t2017-2021\n\n\n\n\tSkills\n\tExperience\n\t2025 – Present\n\tInteractive Media and Visual Designer\n\tAlight Solutions\n\tDirected the creation of high-impact motion graphics, marketing campaigns, and visual content for global brands including PepsiCo, Target, Dell, Nestlé, Cintas, and BAE.\n\tBuilt end-to-end creative workflows—from concept development and storyboarding to animation, AI-assisted asset generation (Adobe Firefly, Midjourney, Runway), editing, and final delivery.\n\tProduced multi-format campaign assets and creative variations for social platforms, supporting A/B testing while collaborating with cross-functional teams to deliver projects on schedule.\n\n\tAssistant Video Producer\n\t2023 - 2025\n\n\tBattery Smart\n\tDesigned and delivered motion graphics, 2D/3D animations, VFX, and composited videos for branded campaigns, product explainers, and social-first content in collaboration with cross-functional teams.\n\t2022- 2023\n\n\tVideo Editor\n\tSocial Sthaan\n\tProduced motion graphics, VFX-enhanced videos, compositing, and post-production for social media campaigns, ensuring engaging visual storytelling.\n\tPartnered with clients and internal stakeholders to develop branding, campaign creatives, and social-first visual content.\n\t2021- 2022\n\n\tVideo Editor\n\tSocial Mongers\n\tCreated motion graphics, visual effects, compositing, and creative video content from concept to final delivery while maintaining brand consistency.",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "Experience\n\nDirected the creation of high-impact motion graphics, marketing\ncampaigns, and visual content for global brands including PepsiCo,\nTarget, Dell, Nestlé, Cintas, and BAE.\nBuilt end-to-end creative workflows—from concept development\nand storyboarding to animation, AI-assisted asset generation\n(Adobe Firefly, Midjourney, Runway), editing, and final delivery.\nProduced multi-format campaign assets and creative variations for\nsocial platforms, supporting A/B testing while collaborating with\ncross-functional teams to deliver projects on schedule.\n\nInteractive Media and Visual Designer\nAlight Solutions\n\n2025 – Present\n\nDesigned and delivered motion graphics, 2D/3D animations, VFX,\nand composited videos for branded campaigns, product\nexplainers, and social-first content in collaboration with cross-\nfunctional teams.\n\nAssistant Video Producer\n\nBattery Smart\n\n2023 - 2025\n\nProduced motion graphics, VFX-enhanced videos, compositing,\nand post-production for social media campaigns, ensuring\nengaging visual storytelling.\nPartnered with clients and internal stakeholders to develop\nbranding, campaign creatives, and social-first visual content.\n\nVideo Editor\n\nSocial Sthaan\n\n 2022- 2023\n\nCreated motion graphics, visual effects, compositing, and\ncreative video content from concept to final delivery while\nmaintaining brand consistency.\n\nVideo Editor\nSocial Mongers \n\n 2021- 2022\n\nAbout Me\nVideo Producer and Motion Designer with 6+ years of\nexperience across video production, motion graphics,\nbranded content and AI-assisted creative workflows.\nExperienced in taking projects from concept and visual\ndevelopment through editing, animation, post-\nproduction and final delivery. Hands-on with Adobe\nCreative Cloud and generative AI tools including Firefly,\nMidjourney and Runway, with experience collaborating\nwith cross-functional teams, stakeholders and clients in\nfast-paced production environments.\n\nSenior Secondary\nCity Montessori School\n\nGuru Gobind Singh Indraprastha\nUniversity\n\n2018-2019\n\n2017-2021\n\nBachelor of Arts in Journalism and\nMass Communication\n\nEducation\n\nSkills\n\n+91 8303738902\n\nvibhutimishra033@gmail.com\n\nPortfolio & Website\n\nLucknow-Gurgaon\n\nVIBHUTI\nMISHRA\nA I  V i d e o  P r o d u c e r  |  M o t i o n  G r a p h i c s  &\nC r e a t i v e  P r o d u c t i o n\n\nTools\n\nAdobe After Effects · Premiere Pro · Photoshop ·\nIllustrator · Firefly · Midjourney · Runway · Blender ·\nCinema 4D · Figma  · Eleven Labs · Synthesia ·\nKling \n\nMotion & Editing\n\nMotion Graphics, 2D/3D Animation, Visual Effects\n(VFX), Compositing, Motion Tracking, Rendering,\nVideo Editing, Storyboarding, Visual Storytelling,\nKinetic Typography, Social & Marketing Content\n\nDesign\n\nGraphic Design, Branding, Typography, Layout\nDesign, Visual Hierarchy, Brand Systems\n\nGenerative AI\n\nAdobe Firefly, Midjourney, Runway, AI-assisted\nCreative Workflows, Prompt Engineering\n\nhttps://drive.google.com/drive/folders/1EketubNRlIXQyaC8yKFtl0fofJBdlVO9\nhttps://motion-portfolio-194.preview.emergentagent.com/\n\n\tVIBHUTI MISHRA\n\tAI Video Producer | Motion Graphics & Creative Production\n\tPortfolio & Website\n\t+91 8303738902\n\tvibhutimishra033@gmail.com\n\tLucknow-Gurgaon\n\tAbout Me\n\tEducation\n\tSenior Secondary\n\tCity Montessori School\n\t2018-2019\n\n\n\tBachelor of Arts in Journalism and Mass Communication\n\tGuru Gobind Singh Indraprastha University\n\t2017-2021\n\n\n\n\tSkills\n\tExperience\n\t2025 – Present\n\tInteractive Media and Visual Designer\n\tAlight Solutions\n\tDirected the creation of high-impact motion graphics, marketing campaigns, and visual content for global brands including PepsiCo, Target, Dell, Nestlé, Cintas, and BAE.\n\tBuilt end-to-end creative workflows—from concept development and storyboarding to animation, AI-assisted asset generation (Adobe Firefly, Midjourney, Runway), editing, and final delivery.\n\tProduced multi-format campaign assets and creative variations for social platforms, supporting A/B testing while collaborating with cross-functional teams to deliver projects on schedule.\n\n\tAssistant Video Producer\n\t2023 - 2025\n\n\tBattery Smart\n\tDesigned and delivered motion graphics, 2D/3D animations, VFX, and composited videos for branded campaigns, product explainers, and social-first content in collaboration with cross-functional teams.\n\t2022- 2023\n\n\tVideo Editor\n\tSocial Sthaan\n\tProduced motion graphics, VFX-enhanced videos, compositing, and post-production for social media campaigns, ensuring engaging visual storytelling.\n\tPartnered with clients and internal stakeholders to develop branding, campaign creatives, and social-first visual content.\n\t2021- 2022\n\n\tVideo Editor\n\tSocial Mongers\n\tCreated motion graphics, visual effects, compositing, and creative video content from concept to final delivery while maintaining brand consistency.",
+  "quality": {
+    "status": "PASS",
+    "document_id": "60a54eef-6536-4e3b-bee2-79d8315fed3b",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 4754,
+        "word_count": 614,
+        "line_count": 162,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.148507,
+        "symbol_count": 16,
+        "symbol_ratio": 0.003366,
+        "max_repeated_char_run": 4,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 94.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 4754,
+        "word_count": 614,
+        "configured_section_count": 7,
+        "detected_count": 5,
+        "missing_count": 2,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_sections": [
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "about me",
+          "Skills": "skills",
+          "Work Experience": "experience",
+          "Education": "education"
+        },
+        "conditional_rejected": [
+          {
+            "section": "Projects",
+            "alias": "portfolio and website",
+            "original_heading": "Portfolio & Website",
+            "line_number": 83
+          }
+        ],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "vibhutimishra033@gmail.com",
+            "confidence": 0.8
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "About Me",
+            "detection_method": "heading",
+            "line_number": 50,
+            "evidence": "About Me",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "Skills",
+            "detection_method": "heading",
+            "line_number": 77,
+            "evidence": "Skills",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "Experience",
+            "detection_method": "heading",
+            "line_number": 1,
+            "evidence": "Experience",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "Education",
+            "detection_method": "heading",
+            "line_number": 75,
+            "evidence": "Education",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Projects": "missing",
+          "Certifications": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_sections": [
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 98.22,
+      "flags": [
+        "EXCESSIVE_SHORT_LINES",
+        "FRAGMENTED_LINES"
+      ],
+      "reasons": [
+        "41.4% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+        "36.2% of lines are 15 characters or shorter."
+      ],
+      "metrics": {
+        "char_count": 4754,
+        "word_count": 614,
+        "line_count": 162,
+        "non_empty_line_count": 116,
+        "short_line_count": 48,
+        "short_line_ratio": 0.413793,
+        "fragmented_line_count": 42,
+        "fragmented_line_ratio": 0.362069,
+        "mean_line_length": 39.26,
+        "median_line_length": 29.5,
+        "line_length_stdev": 38.26,
+        "line_length_cv": 0.974512,
+        "broken_sentence_count": 20,
+        "broken_sentence_ratio": 0.173913,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": null,
+  "resume_json": null,
+  "hyperlinks": [
+    {
+      "page": 1,
+      "url": "https://drive.google.com/drive/folders/1EketubNRlIXQyaC8yKFtl0fofJBdlVO9",
+      "visible_text": "Portfolio",
+      "type": "uri",
+      "rect": [
+        423.58,
+        185.88,
+        460.35,
+        198.64
+      ]
+    },
+    {
+      "page": 1,
+      "url": "https://motion-portfolio-194.preview.emergentagent.com/",
+      "visible_text": "Website",
+      "type": "uri",
+      "rect": [
+        471.6,
+        185.88,
+        507.62,
+        198.64
+      ]
+    }
+  ],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Experience\n\nDirected the creation of high-impact motion graphics, marketing\ncampaigns, and visual content for global brands including PepsiCo,\nTarget, Dell, Nestlé, Cintas, and BAE.\nBuilt end-to-end creative workflows—from concept development\nand storyboarding to animation, AI-assisted asset generation\n(Adobe Firefly, Midjourney, Runway), editing, and final delivery.\nProduced multi-format campaign assets and creative variations for\nsocial platforms, supporting A/B testing while collaborating with\ncross-functional teams to deliver projects on schedule.\n\nInteractive Media and Visual Designer\nAlight Solutions\n\n2025 – Present\n\nDesigned and delivered motion graphics, 2D/3D animations, VFX,\nand composited videos for branded campaigns, product\nexplainers, and social-first content in collaboration with cross-\nfunctional teams.\n\nAssistant Video Producer\n\nBattery Smart\n\n2023 - 2025\n\nProduced motion graphics, VFX-enhanced videos, compositing,\nand post-production for social media campaigns, ensuring\nengaging visual storytelling.\nPartnered with clients and internal stakeholders to develop\nbranding, campaign creatives, and social-first visual content.\n\nVideo Editor\n\nSocial Sthaan\n\n 2022- 2023\n\nCreated motion graphics, visual effects, compositing, and\ncreative video content from concept to final delivery while\nmaintaining brand consistency.\n\nVideo Editor\nSocial Mongers \n\n 2021- 2022\n\nAbout Me\nVideo Producer and Motion Designer with 6+ years of\nexperience across video production, motion graphics,\nbranded content and AI-assisted creative workflows.\nExperienced in taking projects from concept and visual\ndevelopment through editing, animation, post-\nproduction and final delivery. Hands-on with Adobe\nCreative Cloud and generative AI tools including Firefly,\nMidjourney and Runway, with experience collaborating\nwith cross-functional teams, stakeholders and clients in\nfast-paced production environments.\n\nSenior Secondary\nCity Montessori School\n\nGuru Gobind Singh Indraprastha\nUniversity\n\n2018-2019\n\n2017-2021\n\nBachelor of Arts in Journalism and\nMass Communication\n\nEducation\n\nSkills\n\n+91 8303738902\n\nvibhutimishra033@gmail.com\n\nPortfolio & Website\n\nLucknow-Gurgaon\n\nVIBHUTI\nMISHRA\nA I  V i d e o  P r o d u c e r  |  M o t i o n  G r a p h i c s  &\nC r e a t i v e  P r o d u c t i o n\n\nTools\n\nAdobe After Effects · Premiere Pro · Photoshop ·\nIllustrator · Firefly · Midjourney · Runway · Blender ·\nCinema 4D · Figma  · Eleven Labs · Synthesia ·\nKling \n\nMotion & Editing\n\nMotion Graphics, 2D/3D Animation, Visual Effects\n(VFX), Compositing, Motion Tracking, Rendering,\nVideo Editing, Storyboarding, Visual Storytelling,\nKinetic Typography, Social & Marketing Content\n\nDesign\n\nGraphic Design, Branding, Typography, Layout\nDesign, Visual Hierarchy, Brand Systems\n\nGenerative AI\n\nAdobe Firefly, Midjourney, Runway, AI-assisted\nCreative Workflows, Prompt Engineering\n\nhttps://drive.google.com/drive/folders/1EketubNRlIXQyaC8yKFtl0fofJBdlVO9\nhttps://motion-portfolio-194.preview.emergentagent.com/\n\n\tVIBHUTI MISHRA\n\tAI Video Producer | Motion Graphics & Creative Production\n\tPortfolio & Website\n\t+91 8303738902\n\tvibhutimishra033@gmail.com\n\tLucknow-Gurgaon\n\tAbout Me\n\tEducation\n\tSenior Secondary\n\tCity Montessori School\n\t2018-2019\n\n\n\tBachelor of Arts in Journalism and Mass Communication\n\tGuru Gobind Singh Indraprastha University\n\t2017-2021\n\n\n\n\tSkills\n\tExperience\n\t2025 – Present\n\tInteractive Media and Visual Designer\n\tAlight Solutions\n\tDirected the creation of high-impact motion graphics, marketing campaigns, and visual content for global brands including PepsiCo, Target, Dell, Nestlé, Cintas, and BAE.\n\tBuilt end-to-end creative workflows—from concept development and storyboarding to animation, AI-assisted asset generation (Adobe Firefly, Midjourney, Runway), editing, and final delivery.\n\tProduced multi-format campaign assets and creative variations for social platforms, supporting A/B testing while collaborating with cross-functional teams to deliver projects on schedule.\n\n\tAssistant Video Producer\n\t2023 - 2025\n\n\tBattery Smart\n\tDesigned and delivered motion graphics, 2D/3D animations, VFX, and composited videos for branded campaigns, product explainers, and social-first content in collaboration with cross-functional teams.\n\t2022- 2023\n\n\tVideo Editor\n\tSocial Sthaan\n\tProduced motion graphics, VFX-enhanced videos, compositing, and post-production for social media campaigns, ensuring engaging visual storytelling.\n\tPartnered with clients and internal stakeholders to develop branding, campaign creatives, and social-first visual content.\n\t2021- 2022\n\n\tVideo Editor\n\tSocial Mongers\n\tCreated motion graphics, visual effects, compositing, and creative video content from concept to final delivery while maintaining brand consistency.",
+    "normalized_text": "Experience\n\nDirected the creation of high-impact motion graphics, marketing\ncampaigns, and visual content for global brands including PepsiCo,\nTarget, Dell, Nestlé, Cintas, and BAE.\nBuilt end-to-end creative workflows—from concept development\nand storyboarding to animation, AI-assisted asset generation\n(Adobe Firefly, Midjourney, Runway), editing, and final delivery.\nProduced multi-format campaign assets and creative variations for\nsocial platforms, supporting A/B testing while collaborating with\ncross-functional teams to deliver projects on schedule.\n\nInteractive Media and Visual Designer\nAlight Solutions\n\n2025 – Present\n\nDesigned and delivered motion graphics, 2D/3D animations, VFX,\nand composited videos for branded campaigns, product\nexplainers, and social-first content in collaboration with cross-\nfunctional teams.\n\nAssistant Video Producer\n\nBattery Smart\n\n2023 - 2025\n\nProduced motion graphics, VFX-enhanced videos, compositing,\nand post-production for social media campaigns, ensuring\nengaging visual storytelling.\nPartnered with clients and internal stakeholders to develop\nbranding, campaign creatives, and social-first visual content.\n\nVideo Editor\n\nSocial Sthaan\n\n2022- 2023\n\nCreated motion graphics, visual effects, compositing, and\ncreative video content from concept to final delivery while\nmaintaining brand consistency.\n\nVideo Editor\nSocial Mongers\n\n2021- 2022\n\nAbout Me\nVideo Producer and Motion Designer with 6+ years of\nexperience across video production, motion graphics,\nbranded content and AI-assisted creative workflows.\nExperienced in taking projects from concept and visual\ndevelopment through editing, animation, post-\nproduction and final delivery. Hands-on with Adobe\nCreative Cloud and generative AI tools including Firefly,\nMidjourney and Runway, with experience collaborating\nwith cross-functional teams, stakeholders and clients in\nfast-paced production environments.\n\nSenior Secondary\nCity Montessori School\n\nGuru Gobind Singh Indraprastha\nUniversity\n\n2018-2019\n\n2017-2021\n\nBachelor of Arts in Journalism and\nMass Communication\n\nEducation\n\nSkills\n\n+91 8303738902\n\nvibhutimishra033@gmail.com\n\nPortfolio & Website\n\nLucknow-Gurgaon\n\nVIBHUTI\nMISHRA\nA I V i d e o P r o d u c e r | M o t i o n G r a p h i c s &\nC r e a t i v e P r o d u c t i o n\n\nTools\n\nAdobe After Effects · Premiere Pro · Photoshop ·\nIllustrator · Firefly · Midjourney · Runway · Blender ·\nCinema 4D · Figma · Eleven Labs · Synthesia ·\nKling\n\nMotion & Editing\n\nMotion Graphics, 2D/3D Animation, Visual Effects\n(VFX), Compositing, Motion Tracking, Rendering,\nVideo Editing, Storyboarding, Visual Storytelling,\nKinetic Typography, Social & Marketing Content\n\nDesign\n\nGraphic Design, Branding, Typography, Layout\nDesign, Visual Hierarchy, Brand Systems\n\nGenerative AI\n\nAdobe Firefly, Midjourney, Runway, AI-assisted\nCreative Workflows, Prompt Engineering\n\nhttps://drive.google.com/drive/folders/1EketubNRlIXQyaC8yKFtl0fofJBdlVO9\nhttps://motion-portfolio-194.preview.emergentagent.com/\n\nVIBHUTI MISHRA\nAI Video Producer | Motion Graphics & Creative Production\nPortfolio & Website\n+91 8303738902\nvibhutimishra033@gmail.com\nLucknow-Gurgaon\nAbout Me\nEducation\nSenior Secondary\nCity Montessori School\n2018-2019\n\nBachelor of Arts in Journalism and Mass Communication\nGuru Gobind Singh Indraprastha University\n2017-2021\n\nSkills\nExperience\n2025 – Present\nInteractive Media and Visual Designer\nAlight Solutions\nDirected the creation of high-impact motion graphics, marketing campaigns, and visual content for global brands including PepsiCo, Target, Dell, Nestlé, Cintas, and BAE.\nBuilt end-to-end creative workflows—from concept development and storyboarding to animation, AI-assisted asset generation (Adobe Firefly, Midjourney, Runway), editing, and final delivery.\nProduced multi-format campaign assets and creative variations for social platforms, supporting A/B testing while collaborating with cross-functional teams to deliver projects on schedule.\n\nAssistant Video Producer\n2023 - 2025\n\nBattery Smart\nDesigned and delivered motion graphics, 2D/3D animations, VFX, and composited videos for branded campaigns, product explainers, and social-first content in collaboration with cross-functional teams.\n2022- 2023\n\nVideo Editor\nSocial Sthaan\nProduced motion graphics, VFX-enhanced videos, compositing, and post-production for social media campaigns, ensuring engaging visual storytelling.\nPartnered with clients and internal stakeholders to develop branding, campaign creatives, and social-first visual content.\n2021- 2022\n\nVideo Editor\nSocial Mongers\nCreated motion graphics, visual effects, compositing, and creative video content from concept to final delivery while maintaining brand consistency.",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 4754,
+    "normalized_chars": 4704,
+    "original_estimated_tokens": 1188,
+    "normalized_estimated_tokens": 1176,
+    "estimated_reduction_percent": 1.0
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "timed_out_calls": 1,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_source": null,
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Muse API request timed out after 20s.",
+    "input_type": "text",
+    "duration_ms": 20092.38,
+    "timeout_seconds": 20.0,
+    "usage": {},
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 4754,
+      "normalized_chars": 4704,
+      "estimated_reduction_percent": 1.0,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 7736.44,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "60a54eef-6536-4e3b-bee2-79d8315fed3b",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4754,
+            "word_count": 614,
+            "line_count": 162,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.148507,
+            "symbol_count": 16,
+            "symbol_ratio": 0.003366,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4754,
+            "word_count": 614,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "about me",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [
+              {
+                "section": "Projects",
+                "alias": "portfolio and website",
+                "original_heading": "Portfolio & Website",
+                "line_number": 83
+              }
+            ],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "vibhutimishra033@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "About Me",
+                "detection_method": "heading",
+                "line_number": 50,
+                "evidence": "About Me",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Skills",
+                "detection_method": "heading",
+                "line_number": 77,
+                "evidence": "Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Experience",
+                "detection_method": "heading",
+                "line_number": 1,
+                "evidence": "Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 75,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 98.22,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "41.4% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "36.2% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 4754,
+            "word_count": 614,
+            "line_count": 162,
+            "non_empty_line_count": 116,
+            "short_line_count": 48,
+            "short_line_ratio": 0.413793,
+            "fragmented_line_count": 42,
+            "fragmented_line_ratio": 0.362069,
+            "mean_line_length": 39.26,
+            "median_line_length": 29.5,
+            "line_length_stdev": 38.26,
+            "line_length_cv": 0.974512,
+            "broken_sentence_count": 20,
+            "broken_sentence_ratio": 0.173913,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 20092.38,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 7736.44,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "60a54eef-6536-4e3b-bee2-79d8315fed3b_SHJ-5329_SHC-365423.pdf"
+}

@@ -773,6 +773,7 @@ def _normalize_attempt_fields(record: dict[str, Any]) -> None:
     record.setdefault("resume_json", None)
     record.setdefault("resume_json_source", None)
     record.setdefault("resume_json_meta", None)
+    record.setdefault("direct_llm_routing", None)
     record.setdefault("final_quality_status", record.get("quality_status"))
     record.setdefault("final_extracted_text",
                       record.get("extracted_text") or "")
@@ -1294,7 +1295,17 @@ def _apply_muse_stages(record: dict[str, Any], path: Path, service: Any,
     hyperlinks = record.get("hyperlinks") or []
 
     # --- Direct image/PDF extraction (final fallback) ------------------
-    if record.get("final_quality_status") != "PASS":
+    # Direct-LLM routing exception: a record promoted by
+    # _apply_direct_llm_routing has READABLE text whose only problem
+    # is a heading-detection gap — it goes straight to the text stage
+    # below, so the vision fallback is skipped while Muse is
+    # configured. When Muse is NOT configured the block still runs,
+    # so the configuration gap is recorded as visibly as for any
+    # other non-PASS record.
+    _routed_direct = bool(
+        (record.get("direct_llm_routing") or {}).get("routed"))
+    if record.get("final_quality_status") != "PASS" and not (
+            _routed_direct and getattr(service, "configured", False)):
         if getattr(service, "configured", False) and \
                 getattr(service, "vision_enabled", False):
             started = _time.perf_counter()
@@ -1511,6 +1522,122 @@ def _apply_muse_stages(record: dict[str, Any], path: Path, service: Any,
             final_stage["selected"] = True
             final_stage["message"] = (
                 "Muse AI produced the final Resume JSON.")
+
+
+def _apply_direct_llm_routing(record: dict[str, Any], *,
+                              fail_below: float = FAIL_BELOW,
+                              ) -> dict[str, Any] | None:
+    """Direct-LLM routing for detection-gap records (Approach A).
+
+    Runs only when the extractor chain produced NO selected text
+    (``record["success"]`` is False) even though an attempt extracted
+    readable text — the record would otherwise dead-end before the
+    LLM text stage. For the best such candidate (highest mean filter
+    score among attempts whose Text Health is at or above the gate's
+    ``fail_below`` — genuinely corrupt text is never promoted), the
+    sections completeness reported missing at required/recommended
+    importance are probed against the candidate's own normalized text
+    (:mod:`api.content_probe`).
+
+    If at least one missing section's content IS present, the miss
+    was a heading-detection gap (typo'd/glued heading), so the
+    candidate is promoted as the record's text source and the record
+    is stamped ``direct_llm_routing`` for audit; ``_apply_muse_stages``
+    then runs the text stage (and skips vision) as usual. Attempt
+    decisions and quality reports are NOT rewritten — promotion is
+    expressed through the selected flags, the record fields, the
+    selection reason and a trace stage. When no missing section
+    probes positive, the content is genuinely absent and the record
+    is returned unchanged (returns None).
+    """
+    if record.get("success") or record.get("extracted_text"):
+        return None
+    from .content_probe import probe_sections
+
+    best: tuple[float, int, dict[str, Any], list[str]] | None = None
+    for index, attempt in enumerate(record.get("attempts") or []):
+        if attempt.get("extractor_name") == "muse_ai":
+            continue
+        if not attempt.get("success"):
+            continue
+        text = attempt.get("extracted_text") or ""
+        report = attempt.get("quality_checker_report") \
+            or attempt.get("quality")
+        if not text.strip() or not isinstance(report, dict):
+            continue
+        scores = []
+        for name in ("text_health", "completeness", "reading_order"):
+            value = (report.get(name) or {}).get("score")
+            if isinstance(value, (int, float)):
+                scores.append(float(value))
+        text_health = (report.get("text_health") or {}).get("score")
+        if not scores or not isinstance(text_health, (int, float)) \
+                or float(text_health) < fail_below:
+            continue
+        completeness = report.get("completeness") or {}
+        missing = [str(s) for s in
+                   (completeness.get("missing_required") or [])
+                   + (completeness.get("missing_recommended") or [])]
+        if not missing:
+            continue
+        headline = sum(scores) / len(scores)
+        if best is None or headline > best[0]:
+            best = (headline, index, attempt, missing)
+    if best is None:
+        return None
+    _headline, _index, attempt, missing = best
+
+    probe_text = attempt.get("normalized_text") \
+        or attempt.get("extracted_text") or ""
+    probed = probe_sections(probe_text, missing)
+    gaps = [s for s in missing if probed.get(s, {}).get("present")]
+    if not gaps:
+        return None
+
+    name = attempt.get("extractor_name")
+    routing: dict[str, Any] = {
+        "routed": True,
+        "reason": "detection_gap",
+        "candidate_extractor": name,
+        "candidate_quality_status": attempt.get("quality_status"),
+        "trigger_sections": gaps,
+        "probed_sections": probed,
+    }
+    record["direct_llm_routing"] = routing
+    attempt["selected"] = True
+    attempt["is_final_selected"] = True
+    record["success"] = True
+    record["extractor_used"] = name
+    record["final_extractor"] = name
+    record["extracted_text"] = attempt.get("extracted_text") or ""
+    record["final_extracted_text"] = record["extracted_text"]
+    record["quality"] = attempt.get("quality")
+    record["quality_status"] = attempt.get("quality_status")
+    record["final_quality_status"] = attempt.get("quality_status")
+    record["error"] = None
+    record["selection_reason"] = (
+        (record.get("selection_reason") or "")
+        + f" Direct-LLM routing: completeness missed"
+          f" {', '.join(gaps)}, but content probes found that"
+          f" content in the {extractor_display_name(name)} extraction"
+          f" (a heading-detection gap), so the record was forwarded"
+          f" directly to the LLM text stage.").strip()
+    trace = record.get("pipeline_trace") or []
+    final_index = next(
+        (i for i, s in enumerate(trace) if s.get("type") == "final"),
+        len(trace))
+    record["pipeline_trace"] = (
+        trace[:final_index]
+        + [_stage("Direct LLM Routing — detection gap", "quality",
+                  "WARNING", extractor=name,
+                  message=(f"Completeness missed {', '.join(gaps)}, "
+                           f"but content probes found the content in "
+                           f"the {extractor_display_name(name)} text; "
+                           f"forwarded directly to the LLM text "
+                           f"stage."),
+                  accepted=True, decision="accept", selected=False)]
+        + trace[final_index:])
+    return routing
 
 
 def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
@@ -1810,10 +1937,38 @@ def process_resume_file(file_path: str | Path, *, resume_id: str,
         path=path, mime_type=mime_type, file_size=file_size,
         result=result, policy=policy, order=order,
     )
+    if not record["success"]:
+        # Detection-gap check BEFORE the Muse stages: a record the
+        # chain left unselected may still hold readable text whose
+        # only fault is a heading the completeness filter could not
+        # see (typo/glued). If the content probes find the missing
+        # sections' content, the candidate is promoted so the LLM
+        # text stage receives it; otherwise the record stands.
+        try:
+            _fail_below = float(gate_config.get("fail_below")
+                                or FAIL_BELOW)
+        except (TypeError, ValueError):
+            _fail_below = FAIL_BELOW
+        _apply_direct_llm_routing(record, fail_below=_fail_below)
     service = muse_service if muse_service is not None else \
         (ai_service if ai_service is not None else _default_muse_service())
     if service is not None:
         _apply_muse_stages(record, path, service, None)
+    if (record.get("direct_llm_routing") or {}).get("routed") \
+            and record.get("resume_json"):
+        # The routed record reached the LLM after all — the trace's
+        # final stage (built when the chain had failed) must say so.
+        trace = record.get("pipeline_trace") or []
+        if trace:
+            final_stage = trace[-1]
+            final_stage["status"] = "PASS"
+            final_stage["accepted"] = True
+            final_stage["selected"] = True
+            final_stage["extractor"] = record.get("extractor_used")
+            final_stage["message"] = (
+                "Muse AI produced the final Resume JSON from the "
+                f"{extractor_display_name(record.get('extractor_used'))}"
+                " extraction (direct-LLM routing).")
     logger.info("Processed resume_id=%s success=%s extractor=%s quality=%s",
                 resume_id, result.success, record["extractor_used"],
                 record["quality_status"])

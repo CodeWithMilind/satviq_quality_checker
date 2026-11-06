@@ -1,0 +1,946 @@
+{
+  "resume_id": "fc1ce52e-f4e7-40e1-9f7e-5ccf6191073f",
+  "filename": "SHJ-5464_SHC-385075.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 279187,
+  "uploaded_at": "2026-11-06T11:27:51.780096+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 7183.3,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 7183.3,
+      "text": "PRANAY DESHMUKH \n\nEmail id- pranaydeshmukh19@gmail.com \n\nContact Number- 6265780049 \n\nDegree Board Institute % / CGPI Year \n\nPGDM A.I.C.T.E N. L. Dalmia Institute of Management Studies & Research 7.8/10 2024 \nB.Com. Amity university Amity University Madhya Pradesh 7.84/10 2021 \nClass XII C.B.S.E Kendriya Vidyalaya Number 1 78.6 2018 \nClass X C.B.S.E Kendriya Vidyalaya Number 1 9.2/10 2016 \n ACADEMICACHIEVEMENTS \n• CFA LEVEL 2 Cleared. \n• Secured 3rd Rank in India and 35th rank in Asia and Australia Region in the “Bloomberg Global Trading \n\n2026 \n2023 \n\nCompetition”     \n\n• Secured 2nd Runner up position in India in JUST-E-DEAL -The Merger & Acquisition Competition 2023 held by \nNIBM Pune. \n\n2023 \n\n• Received 5th Rank in India in Equity Research Competition 2023 held by K.J Somaiya Institute.  2023 \nWork Experience \n\nProcess Manager  Eclerx (Investment Banking Operations)        -Feb 2024  \n\nResponsibility • Led GenAI-driven automation initiatives to optimize operational processes within the Equity      \nDerivatives (Exotic Options) domain.  \n\n• Partnered with internal and client stakeholders to understand business challenges, gather \nrequirements, and identify high-impact automation opportunities.  \n\n• Managed end-to-end automation projects, from process assessment and solution design to \nimplementation, UAT, and production rollout. \n\n• Specialized in reconciling exotic derivatives, including structured notes and auto-callable deals, \nensuring alignment with legal documentation (term-sheets, confirmations) to mitigate operational \nrisks and ensure compliance. \n\n• Proactively addressed discrepancies in payoffs and economic parameters, collaborating with regional \ndesks and drafting teams to preserve P&L integrity and accurate financial reporting. \n\nInternship (1 Month) \nEnterprise Risk Management HDFC AMC June’2023-July’2023 \n\nResponsibility • Worked on Key Risk Indicators and made trends using Power BI and Advance Excel. \n• Read and understood SEBI Circulars on Mutual Funds. \n• Explored HDFC AMC's Operational risk assessment approach using a Risk Register and Risk and \n\nControl Self-Assessment. \n• Learned the complete Structure and the functioning of Enterprise Risk Management in HDFC \n\nSUMMER INTERNSHIP (3 months) Apr23-june23 \nEquity Research \n& Risk \nManagement \n\n• Performed DCF valuation of Apollo Tubes Pvt. Ltd. to estimate intrinsic \nenterprise value.  \n\n 2023 \n\n•  Analyzed Options Greeks (Delta, Gamma, Theta, Vega, Rho) for options pricing \nand risk assessment.  \n\n•  Evaluated the Silicon Valley Bank collapse, focusing on interest rate risk, \nliquidity management, and asset-liability mismatch. \n\n•  Conducted a comparative analysis of IFRS, Indian GAAP, and U.S. GAAP, \nevaluating key differences in recognition, measurement, presentation, and \ndisclosure requirements. \n\n 2023 \n2023 \n2023 \n\nCertifications • Bloomberg Market Concepts from Bloomberg U.S.A.  2022 \n• Analyst Skills Certification by CFA Institute.  2024 \n\nSkills \n\n • Advance Excel \n• Power BI \n• Basics of Python \n• AI-Assisted Process Automation. \n\n2019 \n\nEXTRA-CURRICULAR ACHIEVEMENTS \n\nEssay writing \ncompetition \n\n• Received certification of merit for an honorable position in the “All India Essay Writing \n• Competition”. 2019 \n\nScout and guide \n• Cleared the ‘Tritiya Sopan’ which is the 3rd highest level in Bharat Scout and Guide \n\n2014 \n\nSports \n• Played cricket at Kendriya Vidyalaya Agra regional level \n\n2014 \n\n \n\nmailto:pranaydeshmukh19@gmail.com",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-06T11:27:44.458611+00:00",
+      "completed_at": "2026-11-06T11:27:51.642551+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "fc1ce52e-f4e7-40e1-9f7e-5ccf6191073f",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3479,
+            "word_count": 468,
+            "line_count": 114,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.1762,
+            "symbol_count": 35,
+            "symbol_ratio": 0.01006,
+            "max_repeated_char_run": 8,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3479,
+            "word_count": 468,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "work experience",
+              "Education": "academic achievements",
+              "Certifications": "pattern:(?i)\\b(CFA|PMP|CPA|FRM|CISSP|CISA|PRINCE"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "pranaydeshmukh19@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Skills",
+                "detection_method": "heading",
+                "line_number": 85,
+                "evidence": "Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Work Experience",
+                "detection_method": "heading",
+                "line_number": 28,
+                "evidence": "Work Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "ACADEMICACHIEVEMENTS",
+                "detection_method": "heading_conditional",
+                "line_number": 13,
+                "evidence": "ACADEMICACHIEVEMENTS",
+                "confidence": 0.85
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "CFA",
+                "confidence": 0.8
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Summary": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3479,
+            "word_count": 468,
+            "line_count": 114,
+            "non_empty_line_count": 75,
+            "short_line_count": 27,
+            "short_line_ratio": 0.36,
+            "fragmented_line_count": 24,
+            "fragmented_line_ratio": 0.32,
+            "mean_line_length": 43.64,
+            "median_line_length": 33.0,
+            "line_length_stdev": 34.19,
+            "line_length_cv": 0.783355,
+            "broken_sentence_count": 12,
+            "broken_sentence_ratio": 0.162162,
+            "repeated_adjacent_count": 2,
+            "repeated_adjacent_ratio": 0.027027
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "fc1ce52e-f4e7-40e1-9f7e-5ccf6191073f-attempt-1",
+      "resume_id": "fc1ce52e-f4e7-40e1-9f7e-5ccf6191073f",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "PRANAY DESHMUKH \n\nEmail id- pranaydeshmukh19@gmail.com \n\nContact Number- 6265780049 \n\nDegree Board Institute % / CGPI Year \n\nPGDM A.I.C.T.E N. L. Dalmia Institute of Management Studies & Research 7.8/10 2024 \nB.Com. Amity university Amity University Madhya Pradesh 7.84/10 2021 \nClass XII C.B.S.E Kendriya Vidyalaya Number 1 78.6 2018 \nClass X C.B.S.E Kendriya Vidyalaya Number 1 9.2/10 2016 \n ACADEMICACHIEVEMENTS \n• CFA LEVEL 2 Cleared. \n• Secured 3rd Rank in India and 35th rank in Asia and Australia Region in the “Bloomberg Global Trading \n\n2026 \n2023 \n\nCompetition”     \n\n• Secured 2nd Runner up position in India in JUST-E-DEAL -The Merger & Acquisition Competition 2023 held by \nNIBM Pune. \n\n2023 \n\n• Received 5th Rank in India in Equity Research Competition 2023 held by K.J Somaiya Institute.  2023 \nWork Experience \n\nProcess Manager  Eclerx (Investment Banking Operations)        -Feb 2024  \n\nResponsibility • Led GenAI-driven automation initiatives to optimize operational processes within the Equity      \nDerivatives (Exotic Options) domain.  \n\n• Partnered with internal and client stakeholders to understand business challenges, gather \nrequirements, and identify high-impact automation opportunities.  \n\n• Managed end-to-end automation projects, from process assessment and solution design to \nimplementation, UAT, and production rollout. \n\n• Specialized in reconciling exotic derivatives, including structured notes and auto-callable deals, \nensuring alignment with legal documentation (term-sheets, confirmations) to mitigate operational \nrisks and ensure compliance. \n\n• Proactively addressed discrepancies in payoffs and economic parameters, collaborating with regional \ndesks and drafting teams to preserve P&L integrity and accurate financial reporting. \n\nInternship (1 Month) \nEnterprise Risk Management HDFC AMC June’2023-July’2023 \n\nResponsibility • Worked on Key Risk Indicators and made trends using Power BI and Advance Excel. \n• Read and understood SEBI Circulars on Mutual Funds. \n• Explored HDFC AMC's Operational risk assessment approach using a Risk Register and Risk and \n\nControl Self-Assessment. \n• Learned the complete Structure and the functioning of Enterprise Risk Management in HDFC \n\nSUMMER INTERNSHIP (3 months) Apr23-june23 \nEquity Research \n& Risk \nManagement \n\n• Performed DCF valuation of Apollo Tubes Pvt. Ltd. to estimate intrinsic \nenterprise value.  \n\n 2023 \n\n•  Analyzed Options Greeks (Delta, Gamma, Theta, Vega, Rho) for options pricing \nand risk assessment.  \n\n•  Evaluated the Silicon Valley Bank collapse, focusing on interest rate risk, \nliquidity management, and asset-liability mismatch. \n\n•  Conducted a comparative analysis of IFRS, Indian GAAP, and U.S. GAAP, \nevaluating key differences in recognition, measurement, presentation, and \ndisclosure requirements. \n\n 2023 \n2023 \n2023 \n\nCertifications • Bloomberg Market Concepts from Bloomberg U.S.A.  2022 \n• Analyst Skills Certification by CFA Institute.  2024 \n\nSkills \n\n • Advance Excel \n• Power BI \n• Basics of Python \n• AI-Assisted Process Automation. \n\n2019 \n\nEXTRA-CURRICULAR ACHIEVEMENTS \n\nEssay writing \ncompetition \n\n• Received certification of merit for an honorable position in the “All India Essay Writing \n• Competition”. 2019 \n\nScout and guide \n• Cleared the ‘Tritiya Sopan’ which is the 3rd highest level in Bharat Scout and Guide \n\n2014 \n\nSports \n• Played cricket at Kendriya Vidyalaya Agra regional level \n\n2014 \n\n \n\nmailto:pranaydeshmukh19@gmail.com",
+      "extracted_text_length": 3479,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "fc1ce52e-f4e7-40e1-9f7e-5ccf6191073f",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3479,
+            "word_count": 468,
+            "line_count": 114,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.1762,
+            "symbol_count": 35,
+            "symbol_ratio": 0.01006,
+            "max_repeated_char_run": 8,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3479,
+            "word_count": 468,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "work experience",
+              "Education": "academic achievements",
+              "Certifications": "pattern:(?i)\\b(CFA|PMP|CPA|FRM|CISSP|CISA|PRINCE"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "pranaydeshmukh19@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Skills",
+                "detection_method": "heading",
+                "line_number": 85,
+                "evidence": "Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Work Experience",
+                "detection_method": "heading",
+                "line_number": 28,
+                "evidence": "Work Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "ACADEMICACHIEVEMENTS",
+                "detection_method": "heading_conditional",
+                "line_number": 13,
+                "evidence": "ACADEMICACHIEVEMENTS",
+                "confidence": 0.85
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "CFA",
+                "confidence": 0.8
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Summary": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3479,
+            "word_count": 468,
+            "line_count": 114,
+            "non_empty_line_count": 75,
+            "short_line_count": 27,
+            "short_line_ratio": 0.36,
+            "fragmented_line_count": 24,
+            "fragmented_line_ratio": 0.32,
+            "mean_line_length": 43.64,
+            "median_line_length": 33.0,
+            "line_length_stdev": 34.19,
+            "line_length_cv": 0.783355,
+            "broken_sentence_count": 12,
+            "broken_sentence_ratio": 0.162162,
+            "repeated_adjacent_count": 2,
+            "repeated_adjacent_ratio": 0.027027
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "PRANAY DESHMUKH\n\nEmail id- pranaydeshmukh19@gmail.com\n\nContact Number- 6265780049\n\nDegree Board Institute % / CGPI Year\n\nPGDM A.I.C.T.E N. L. Dalmia Institute of Management Studies & Research 7.8/10 2024\nB.Com. Amity university Amity University Madhya Pradesh 7.84/10 2021\nClass XII C.B.S.E Kendriya Vidyalaya Number 1 78.6 2018\nClass X C.B.S.E Kendriya Vidyalaya Number 1 9.2/10 2016\nACADEMICACHIEVEMENTS\n• CFA LEVEL 2 Cleared.\n• Secured 3rd Rank in India and 35th rank in Asia and Australia Region in the “Bloomberg Global Trading\n\n2026\n2023\n\nCompetition”\n\n• Secured 2nd Runner up position in India in JUST-E-DEAL -The Merger & Acquisition Competition 2023 held by\nNIBM Pune.\n\n2023\n\n• Received 5th Rank in India in Equity Research Competition 2023 held by K.J Somaiya Institute. 2023\nWork Experience\n\nProcess Manager Eclerx (Investment Banking Operations) -Feb 2024\n\nResponsibility • Led GenAI-driven automation initiatives to optimize operational processes within the Equity\nDerivatives (Exotic Options) domain.\n\n• Partnered with internal and client stakeholders to understand business challenges, gather\nrequirements, and identify high-impact automation opportunities.\n\n• Managed end-to-end automation projects, from process assessment and solution design to\nimplementation, UAT, and production rollout.\n\n• Specialized in reconciling exotic derivatives, including structured notes and auto-callable deals,\nensuring alignment with legal documentation (term-sheets, confirmations) to mitigate operational\nrisks and ensure compliance.\n\n• Proactively addressed discrepancies in payoffs and economic parameters, collaborating with regional\ndesks and drafting teams to preserve P&L integrity and accurate financial reporting.\n\nInternship (1 Month)\nEnterprise Risk Management HDFC AMC June’2023-July’2023\n\nResponsibility • Worked on Key Risk Indicators and made trends using Power BI and Advance Excel.\n• Read and understood SEBI Circulars on Mutual Funds.\n• Explored HDFC AMC's Operational risk assessment approach using a Risk Register and Risk and\n\nControl Self-Assessment.\n• Learned the complete Structure and the functioning of Enterprise Risk Management in HDFC\n\nSUMMER INTERNSHIP (3 months) Apr23-june23\nEquity Research\n& Risk\nManagement\n\n• Performed DCF valuation of Apollo Tubes Pvt. Ltd. to estimate intrinsic\nenterprise value.\n\n2023\n\n• Analyzed Options Greeks (Delta, Gamma, Theta, Vega, Rho) for options pricing\nand risk assessment.\n\n• Evaluated the Silicon Valley Bank collapse, focusing on interest rate risk,\nliquidity management, and asset-liability mismatch.\n\n• Conducted a comparative analysis of IFRS, Indian GAAP, and U.S. GAAP,\nevaluating key differences in recognition, measurement, presentation, and\ndisclosure requirements.\n\n2023\n2023\n2023\n\nCertifications • Bloomberg Market Concepts from Bloomberg U.S.A. 2022\n• Analyst Skills Certification by CFA Institute. 2024\n\nSkills\n\n• Advance Excel\n• Power BI\n• Basics of Python\n• AI-Assisted Process Automation.\n\n2019\n\nEXTRA-CURRICULAR ACHIEVEMENTS\n\nEssay writing\ncompetition\n\n• Received certification of merit for an honorable position in the “All India Essay Writing\n• Competition”. 2019\n\nScout and guide\n• Cleared the ‘Tritiya Sopan’ which is the 3rd highest level in Bharat Scout and Guide\n\n2014\n\nSports\n• Played cricket at Kendriya Vidyalaya Agra regional level\n\n2014\n\nmailto:pranaydeshmukh19@gmail.com"
+    }
+  ],
+  "extracted_text": "PRANAY DESHMUKH \n\nEmail id- pranaydeshmukh19@gmail.com \n\nContact Number- 6265780049 \n\nDegree Board Institute % / CGPI Year \n\nPGDM A.I.C.T.E N. L. Dalmia Institute of Management Studies & Research 7.8/10 2024 \nB.Com. Amity university Amity University Madhya Pradesh 7.84/10 2021 \nClass XII C.B.S.E Kendriya Vidyalaya Number 1 78.6 2018 \nClass X C.B.S.E Kendriya Vidyalaya Number 1 9.2/10 2016 \n ACADEMICACHIEVEMENTS \n• CFA LEVEL 2 Cleared. \n• Secured 3rd Rank in India and 35th rank in Asia and Australia Region in the “Bloomberg Global Trading \n\n2026 \n2023 \n\nCompetition”     \n\n• Secured 2nd Runner up position in India in JUST-E-DEAL -The Merger & Acquisition Competition 2023 held by \nNIBM Pune. \n\n2023 \n\n• Received 5th Rank in India in Equity Research Competition 2023 held by K.J Somaiya Institute.  2023 \nWork Experience \n\nProcess Manager  Eclerx (Investment Banking Operations)        -Feb 2024  \n\nResponsibility • Led GenAI-driven automation initiatives to optimize operational processes within the Equity      \nDerivatives (Exotic Options) domain.  \n\n• Partnered with internal and client stakeholders to understand business challenges, gather \nrequirements, and identify high-impact automation opportunities.  \n\n• Managed end-to-end automation projects, from process assessment and solution design to \nimplementation, UAT, and production rollout. \n\n• Specialized in reconciling exotic derivatives, including structured notes and auto-callable deals, \nensuring alignment with legal documentation (term-sheets, confirmations) to mitigate operational \nrisks and ensure compliance. \n\n• Proactively addressed discrepancies in payoffs and economic parameters, collaborating with regional \ndesks and drafting teams to preserve P&L integrity and accurate financial reporting. \n\nInternship (1 Month) \nEnterprise Risk Management HDFC AMC June’2023-July’2023 \n\nResponsibility • Worked on Key Risk Indicators and made trends using Power BI and Advance Excel. \n• Read and understood SEBI Circulars on Mutual Funds. \n• Explored HDFC AMC's Operational risk assessment approach using a Risk Register and Risk and \n\nControl Self-Assessment. \n• Learned the complete Structure and the functioning of Enterprise Risk Management in HDFC \n\nSUMMER INTERNSHIP (3 months) Apr23-june23 \nEquity Research \n& Risk \nManagement \n\n• Performed DCF valuation of Apollo Tubes Pvt. Ltd. to estimate intrinsic \nenterprise value.  \n\n 2023 \n\n•  Analyzed Options Greeks (Delta, Gamma, Theta, Vega, Rho) for options pricing \nand risk assessment.  \n\n•  Evaluated the Silicon Valley Bank collapse, focusing on interest rate risk, \nliquidity management, and asset-liability mismatch. \n\n•  Conducted a comparative analysis of IFRS, Indian GAAP, and U.S. GAAP, \nevaluating key differences in recognition, measurement, presentation, and \ndisclosure requirements. \n\n 2023 \n2023 \n2023 \n\nCertifications • Bloomberg Market Concepts from Bloomberg U.S.A.  2022 \n• Analyst Skills Certification by CFA Institute.  2024 \n\nSkills \n\n • Advance Excel \n• Power BI \n• Basics of Python \n• AI-Assisted Process Automation. \n\n2019 \n\nEXTRA-CURRICULAR ACHIEVEMENTS \n\nEssay writing \ncompetition \n\n• Received certification of merit for an honorable position in the “All India Essay Writing \n• Competition”. 2019 \n\nScout and guide \n• Cleared the ‘Tritiya Sopan’ which is the 3rd highest level in Bharat Scout and Guide \n\n2014 \n\nSports \n• Played cricket at Kendriya Vidyalaya Agra regional level \n\n2014 \n\n \n\nmailto:pranaydeshmukh19@gmail.com",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "PRANAY DESHMUKH \n\nEmail id- pranaydeshmukh19@gmail.com \n\nContact Number- 6265780049 \n\nDegree Board Institute % / CGPI Year \n\nPGDM A.I.C.T.E N. L. Dalmia Institute of Management Studies & Research 7.8/10 2024 \nB.Com. Amity university Amity University Madhya Pradesh 7.84/10 2021 \nClass XII C.B.S.E Kendriya Vidyalaya Number 1 78.6 2018 \nClass X C.B.S.E Kendriya Vidyalaya Number 1 9.2/10 2016 \n ACADEMICACHIEVEMENTS \n• CFA LEVEL 2 Cleared. \n• Secured 3rd Rank in India and 35th rank in Asia and Australia Region in the “Bloomberg Global Trading \n\n2026 \n2023 \n\nCompetition”     \n\n• Secured 2nd Runner up position in India in JUST-E-DEAL -The Merger & Acquisition Competition 2023 held by \nNIBM Pune. \n\n2023 \n\n• Received 5th Rank in India in Equity Research Competition 2023 held by K.J Somaiya Institute.  2023 \nWork Experience \n\nProcess Manager  Eclerx (Investment Banking Operations)        -Feb 2024  \n\nResponsibility • Led GenAI-driven automation initiatives to optimize operational processes within the Equity      \nDerivatives (Exotic Options) domain.  \n\n• Partnered with internal and client stakeholders to understand business challenges, gather \nrequirements, and identify high-impact automation opportunities.  \n\n• Managed end-to-end automation projects, from process assessment and solution design to \nimplementation, UAT, and production rollout. \n\n• Specialized in reconciling exotic derivatives, including structured notes and auto-callable deals, \nensuring alignment with legal documentation (term-sheets, confirmations) to mitigate operational \nrisks and ensure compliance. \n\n• Proactively addressed discrepancies in payoffs and economic parameters, collaborating with regional \ndesks and drafting teams to preserve P&L integrity and accurate financial reporting. \n\nInternship (1 Month) \nEnterprise Risk Management HDFC AMC June’2023-July’2023 \n\nResponsibility • Worked on Key Risk Indicators and made trends using Power BI and Advance Excel. \n• Read and understood SEBI Circulars on Mutual Funds. \n• Explored HDFC AMC's Operational risk assessment approach using a Risk Register and Risk and \n\nControl Self-Assessment. \n• Learned the complete Structure and the functioning of Enterprise Risk Management in HDFC \n\nSUMMER INTERNSHIP (3 months) Apr23-june23 \nEquity Research \n& Risk \nManagement \n\n• Performed DCF valuation of Apollo Tubes Pvt. Ltd. to estimate intrinsic \nenterprise value.  \n\n 2023 \n\n•  Analyzed Options Greeks (Delta, Gamma, Theta, Vega, Rho) for options pricing \nand risk assessment.  \n\n•  Evaluated the Silicon Valley Bank collapse, focusing on interest rate risk, \nliquidity management, and asset-liability mismatch. \n\n•  Conducted a comparative analysis of IFRS, Indian GAAP, and U.S. GAAP, \nevaluating key differences in recognition, measurement, presentation, and \ndisclosure requirements. \n\n 2023 \n2023 \n2023 \n\nCertifications • Bloomberg Market Concepts from Bloomberg U.S.A.  2022 \n• Analyst Skills Certification by CFA Institute.  2024 \n\nSkills \n\n • Advance Excel \n• Power BI \n• Basics of Python \n• AI-Assisted Process Automation. \n\n2019 \n\nEXTRA-CURRICULAR ACHIEVEMENTS \n\nEssay writing \ncompetition \n\n• Received certification of merit for an honorable position in the “All India Essay Writing \n• Competition”. 2019 \n\nScout and guide \n• Cleared the ‘Tritiya Sopan’ which is the 3rd highest level in Bharat Scout and Guide \n\n2014 \n\nSports \n• Played cricket at Kendriya Vidyalaya Agra regional level \n\n2014 \n\n \n\nmailto:pranaydeshmukh19@gmail.com",
+  "quality": {
+    "status": "PASS",
+    "document_id": "fc1ce52e-f4e7-40e1-9f7e-5ccf6191073f",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3479,
+        "word_count": 468,
+        "line_count": 114,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.1762,
+        "symbol_count": 35,
+        "symbol_ratio": 0.01006,
+        "max_repeated_char_run": 8,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 94.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 3479,
+        "word_count": 468,
+        "configured_section_count": 7,
+        "detected_count": 5,
+        "missing_count": 2,
+        "detected_sections": [
+          "Contact Information",
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Summary",
+          "Projects"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Summary",
+          "Projects"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Skills": "skills",
+          "Work Experience": "work experience",
+          "Education": "academic achievements",
+          "Certifications": "pattern:(?i)\\b(CFA|PMP|CPA|FRM|CISSP|CISA|PRINCE"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "pranaydeshmukh19@gmail.com",
+            "confidence": 0.8
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "Skills",
+            "detection_method": "heading",
+            "line_number": 85,
+            "evidence": "Skills",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "Work Experience",
+            "detection_method": "heading",
+            "line_number": 28,
+            "evidence": "Work Experience",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "ACADEMICACHIEVEMENTS",
+            "detection_method": "heading_conditional",
+            "line_number": 13,
+            "evidence": "ACADEMICACHIEVEMENTS",
+            "confidence": 0.85
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "CFA",
+            "confidence": 0.8
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Certifications": "detected",
+          "Summary": "missing",
+          "Projects": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Summary",
+        "Projects"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Summary",
+        "Projects"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3479,
+        "word_count": 468,
+        "line_count": 114,
+        "non_empty_line_count": 75,
+        "short_line_count": 27,
+        "short_line_ratio": 0.36,
+        "fragmented_line_count": 24,
+        "fragmented_line_ratio": 0.32,
+        "mean_line_length": 43.64,
+        "median_line_length": 33.0,
+        "line_length_stdev": 34.19,
+        "line_length_cv": 0.783355,
+        "broken_sentence_count": 12,
+        "broken_sentence_ratio": 0.162162,
+        "repeated_adjacent_count": 2,
+        "repeated_adjacent_ratio": 0.027027
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": null,
+  "resume_json": null,
+  "hyperlinks": [
+    {
+      "page": 1,
+      "url": "mailto:pranaydeshmukh19@gmail.com",
+      "visible_text": "- pranaydeshmukh19@gmail.com",
+      "type": "mailto",
+      "rect": [
+        53.56,
+        31.65,
+        180.58,
+        50.28
+      ]
+    }
+  ],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "PRANAY DESHMUKH \n\nEmail id- pranaydeshmukh19@gmail.com \n\nContact Number- 6265780049 \n\nDegree Board Institute % / CGPI Year \n\nPGDM A.I.C.T.E N. L. Dalmia Institute of Management Studies & Research 7.8/10 2024 \nB.Com. Amity university Amity University Madhya Pradesh 7.84/10 2021 \nClass XII C.B.S.E Kendriya Vidyalaya Number 1 78.6 2018 \nClass X C.B.S.E Kendriya Vidyalaya Number 1 9.2/10 2016 \n ACADEMICACHIEVEMENTS \n• CFA LEVEL 2 Cleared. \n• Secured 3rd Rank in India and 35th rank in Asia and Australia Region in the “Bloomberg Global Trading \n\n2026 \n2023 \n\nCompetition”     \n\n• Secured 2nd Runner up position in India in JUST-E-DEAL -The Merger & Acquisition Competition 2023 held by \nNIBM Pune. \n\n2023 \n\n• Received 5th Rank in India in Equity Research Competition 2023 held by K.J Somaiya Institute.  2023 \nWork Experience \n\nProcess Manager  Eclerx (Investment Banking Operations)        -Feb 2024  \n\nResponsibility • Led GenAI-driven automation initiatives to optimize operational processes within the Equity      \nDerivatives (Exotic Options) domain.  \n\n• Partnered with internal and client stakeholders to understand business challenges, gather \nrequirements, and identify high-impact automation opportunities.  \n\n• Managed end-to-end automation projects, from process assessment and solution design to \nimplementation, UAT, and production rollout. \n\n• Specialized in reconciling exotic derivatives, including structured notes and auto-callable deals, \nensuring alignment with legal documentation (term-sheets, confirmations) to mitigate operational \nrisks and ensure compliance. \n\n• Proactively addressed discrepancies in payoffs and economic parameters, collaborating with regional \ndesks and drafting teams to preserve P&L integrity and accurate financial reporting. \n\nInternship (1 Month) \nEnterprise Risk Management HDFC AMC June’2023-July’2023 \n\nResponsibility • Worked on Key Risk Indicators and made trends using Power BI and Advance Excel. \n• Read and understood SEBI Circulars on Mutual Funds. \n• Explored HDFC AMC's Operational risk assessment approach using a Risk Register and Risk and \n\nControl Self-Assessment. \n• Learned the complete Structure and the functioning of Enterprise Risk Management in HDFC \n\nSUMMER INTERNSHIP (3 months) Apr23-june23 \nEquity Research \n& Risk \nManagement \n\n• Performed DCF valuation of Apollo Tubes Pvt. Ltd. to estimate intrinsic \nenterprise value.  \n\n 2023 \n\n•  Analyzed Options Greeks (Delta, Gamma, Theta, Vega, Rho) for options pricing \nand risk assessment.  \n\n•  Evaluated the Silicon Valley Bank collapse, focusing on interest rate risk, \nliquidity management, and asset-liability mismatch. \n\n•  Conducted a comparative analysis of IFRS, Indian GAAP, and U.S. GAAP, \nevaluating key differences in recognition, measurement, presentation, and \ndisclosure requirements. \n\n 2023 \n2023 \n2023 \n\nCertifications • Bloomberg Market Concepts from Bloomberg U.S.A.  2022 \n• Analyst Skills Certification by CFA Institute.  2024 \n\nSkills \n\n • Advance Excel \n• Power BI \n• Basics of Python \n• AI-Assisted Process Automation. \n\n2019 \n\nEXTRA-CURRICULAR ACHIEVEMENTS \n\nEssay writing \ncompetition \n\n• Received certification of merit for an honorable position in the “All India Essay Writing \n• Competition”. 2019 \n\nScout and guide \n• Cleared the ‘Tritiya Sopan’ which is the 3rd highest level in Bharat Scout and Guide \n\n2014 \n\nSports \n• Played cricket at Kendriya Vidyalaya Agra regional level \n\n2014 \n\n \n\nmailto:pranaydeshmukh19@gmail.com",
+    "normalized_text": "PRANAY DESHMUKH\n\nEmail id- pranaydeshmukh19@gmail.com\n\nContact Number- 6265780049\n\nDegree Board Institute % / CGPI Year\n\nPGDM A.I.C.T.E N. L. Dalmia Institute of Management Studies & Research 7.8/10 2024\nB.Com. Amity university Amity University Madhya Pradesh 7.84/10 2021\nClass XII C.B.S.E Kendriya Vidyalaya Number 1 78.6 2018\nClass X C.B.S.E Kendriya Vidyalaya Number 1 9.2/10 2016\nACADEMICACHIEVEMENTS\n• CFA LEVEL 2 Cleared.\n• Secured 3rd Rank in India and 35th rank in Asia and Australia Region in the “Bloomberg Global Trading\n\n2026\n2023\n\nCompetition”\n\n• Secured 2nd Runner up position in India in JUST-E-DEAL -The Merger & Acquisition Competition 2023 held by\nNIBM Pune.\n\n2023\n\n• Received 5th Rank in India in Equity Research Competition 2023 held by K.J Somaiya Institute. 2023\nWork Experience\n\nProcess Manager Eclerx (Investment Banking Operations) -Feb 2024\n\nResponsibility • Led GenAI-driven automation initiatives to optimize operational processes within the Equity\nDerivatives (Exotic Options) domain.\n\n• Partnered with internal and client stakeholders to understand business challenges, gather\nrequirements, and identify high-impact automation opportunities.\n\n• Managed end-to-end automation projects, from process assessment and solution design to\nimplementation, UAT, and production rollout.\n\n• Specialized in reconciling exotic derivatives, including structured notes and auto-callable deals,\nensuring alignment with legal documentation (term-sheets, confirmations) to mitigate operational\nrisks and ensure compliance.\n\n• Proactively addressed discrepancies in payoffs and economic parameters, collaborating with regional\ndesks and drafting teams to preserve P&L integrity and accurate financial reporting.\n\nInternship (1 Month)\nEnterprise Risk Management HDFC AMC June’2023-July’2023\n\nResponsibility • Worked on Key Risk Indicators and made trends using Power BI and Advance Excel.\n• Read and understood SEBI Circulars on Mutual Funds.\n• Explored HDFC AMC's Operational risk assessment approach using a Risk Register and Risk and\n\nControl Self-Assessment.\n• Learned the complete Structure and the functioning of Enterprise Risk Management in HDFC\n\nSUMMER INTERNSHIP (3 months) Apr23-june23\nEquity Research\n& Risk\nManagement\n\n• Performed DCF valuation of Apollo Tubes Pvt. Ltd. to estimate intrinsic\nenterprise value.\n\n2023\n\n• Analyzed Options Greeks (Delta, Gamma, Theta, Vega, Rho) for options pricing\nand risk assessment.\n\n• Evaluated the Silicon Valley Bank collapse, focusing on interest rate risk,\nliquidity management, and asset-liability mismatch.\n\n• Conducted a comparative analysis of IFRS, Indian GAAP, and U.S. GAAP,\nevaluating key differences in recognition, measurement, presentation, and\ndisclosure requirements.\n\n2023\n2023\n2023\n\nCertifications • Bloomberg Market Concepts from Bloomberg U.S.A. 2022\n• Analyst Skills Certification by CFA Institute. 2024\n\nSkills\n\n• Advance Excel\n• Power BI\n• Basics of Python\n• AI-Assisted Process Automation.\n\n2019\n\nEXTRA-CURRICULAR ACHIEVEMENTS\n\nEssay writing\ncompetition\n\n• Received certification of merit for an honorable position in the “All India Essay Writing\n• Competition”. 2019\n\nScout and guide\n• Cleared the ‘Tritiya Sopan’ which is the 3rd highest level in Bharat Scout and Guide\n\n2014\n\nSports\n• Played cricket at Kendriya Vidyalaya Agra regional level\n\n2014\n\nmailto:pranaydeshmukh19@gmail.com",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 3479,
+    "normalized_chars": 3370,
+    "original_estimated_tokens": 870,
+    "normalized_estimated_tokens": 842,
+    "estimated_reduction_percent": 3.2
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "timed_out_calls": 1,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_source": null,
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Muse API request timed out after 20s.",
+    "input_type": "text",
+    "duration_ms": 20061.57,
+    "timeout_seconds": 20.0,
+    "usage": {},
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 3479,
+      "normalized_chars": 3370,
+      "estimated_reduction_percent": 3.2,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 7183.3,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "fc1ce52e-f4e7-40e1-9f7e-5ccf6191073f",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3479,
+            "word_count": 468,
+            "line_count": 114,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.1762,
+            "symbol_count": 35,
+            "symbol_ratio": 0.01006,
+            "max_repeated_char_run": 8,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3479,
+            "word_count": 468,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "work experience",
+              "Education": "academic achievements",
+              "Certifications": "pattern:(?i)\\b(CFA|PMP|CPA|FRM|CISSP|CISA|PRINCE"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "pranaydeshmukh19@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Skills",
+                "detection_method": "heading",
+                "line_number": 85,
+                "evidence": "Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Work Experience",
+                "detection_method": "heading",
+                "line_number": 28,
+                "evidence": "Work Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "ACADEMICACHIEVEMENTS",
+                "detection_method": "heading_conditional",
+                "line_number": 13,
+                "evidence": "ACADEMICACHIEVEMENTS",
+                "confidence": 0.85
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "CFA",
+                "confidence": 0.8
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Summary": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3479,
+            "word_count": 468,
+            "line_count": 114,
+            "non_empty_line_count": 75,
+            "short_line_count": 27,
+            "short_line_ratio": 0.36,
+            "fragmented_line_count": 24,
+            "fragmented_line_ratio": 0.32,
+            "mean_line_length": 43.64,
+            "median_line_length": 33.0,
+            "line_length_stdev": 34.19,
+            "line_length_cv": 0.783355,
+            "broken_sentence_count": 12,
+            "broken_sentence_ratio": 0.162162,
+            "repeated_adjacent_count": 2,
+            "repeated_adjacent_ratio": 0.027027
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 20061.57,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 7183.3,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "fc1ce52e-f4e7-40e1-9f7e-5ccf6191073f_SHJ-5464_SHC-385075.pdf"
+}

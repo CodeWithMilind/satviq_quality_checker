@@ -1179,6 +1179,29 @@ function lineChart(points) {
     <text x="${padL}" y="11" font-size="11" fill="var(--muted)">peak ${fmtNum(max)} / day</text></svg>`;
 }
 
+function durationChart(d) {
+  // Per-resume processing-time bars with mean/median reference lines.
+  // Outlier bars (above Q3 + 1.5*IQR) are red; hover shows the file.
+  const points = d.points || [];
+  if (!points.length) return `<p class="hint">No durations recorded in this range.</p>`;
+  const width = 640, height = 170, padL = 8, padR = 86, padT = 12, padB = 8;
+  const plotW = width - padL - padR, plotH = height - padT - padB;
+  const max = Math.max(1, ...points.map((p) => p.duration_ms || 0));
+  const stepX = plotW / points.length;
+  const barW = Math.max(1.5, stepX - 1);
+  const yFor = (v) => padT + (1 - (v || 0) / max) * plotH;
+  const bars = points.map((p, idx) => {
+    const y = yFor(p.duration_ms);
+    const fill = p.is_outlier ? "var(--bad)" : "var(--primary)";
+    const title = `${p.filename || p.resume_id || "resume"} — ${fmtMs(p.duration_ms)}${p.is_outlier ? " (outlier)" : ""}`;
+    return `<rect x="${(padL + idx * stepX).toFixed(1)}" y="${y.toFixed(1)}" width="${barW.toFixed(1)}" height="${(padT + plotH - y).toFixed(1)}" fill="${fill}"><title>${escapeHtml(title)}</title></rect>`;
+  }).join("");
+  const line = (v, color, label) => v === null || v === undefined ? "" : `
+    <line x1="${padL}" y1="${yFor(v).toFixed(1)}" x2="${padL + plotW}" y2="${yFor(v).toFixed(1)}" stroke="${color}" stroke-width="1.5" stroke-dasharray="5 3"></line>
+    <text x="${padL + plotW + 6}" y="${(yFor(v) + 4).toFixed(1)}" font-size="11" fill="${color}">${label} ${fmtMs(v)}</text>`;
+  return `<svg class="chart-box" viewBox="0 0 ${width} ${height}" role="img">${bars}${line(d.mean_ms, "var(--warn)", "mean")}${line(d.median_ms, "var(--ok)", "median")}</svg>`;
+}
+
 function renderAnalytics() {
   const view = $("view-analytics");
   const days = state.analytics.days;
@@ -1234,7 +1257,8 @@ function analyticsHtml(data) {
     { value: fmtNum(k.total_processed), label: "Resumes processed" },
     { value: fmtPct(k.success_rate_percent), label: "Extraction success rate" },
     { value: fmtScore(k.avg_quality_score), label: "Avg quality score" },
-    { value: k.avg_duration_ms === null ? "—" : fmtMs(k.avg_duration_ms), label: "Avg processing time" },
+    { value: k.avg_duration_ms === null ? "—" : fmtMs(k.avg_duration_ms), label: "Avg processing time",
+      sub: k.median_duration_ms === null ? "" : `median ${fmtMs(k.median_duration_ms)} · p95 ${k.p95_duration_ms === null ? "—" : fmtMs(k.p95_duration_ms)}` },
     { value: fmtNum(k.total_tokens), label: "Total LLM tokens" },
     { value: fmtPct(k.fallback_rate_percent), label: "Fallback rate",
       sub: k.fallback_base ? `of ${fmtNum(k.fallback_base)} records with fallback data` : "" },
@@ -1245,6 +1269,7 @@ function analyticsHtml(data) {
       <td>${fmtNum(row.succeeded)}</td><td>${fmtNum(row.failed)}</td><td>${fmtNum(row.selected)}</td>
       <td>${fmtPct(row.win_rate_percent)}</td><td>${fmtScore(row.avg_quality)}</td>
       <td>${row.avg_duration_ms === null ? "—" : fmtMs(row.avg_duration_ms)}</td>
+      <td>${row.median_duration_ms === null ? "—" : fmtMs(row.median_duration_ms)}</td>
       <td>${row.avg_chars === null ? "—" : fmtNum(row.avg_chars)}</td>
       <td>${fmtNum(row.wasted_attempts)} · ${fmtMs(row.wasted_ms)}</td></tr>`).join("");
   const winBars = hBarChart(data.extractors.map((row) => ({
@@ -1259,12 +1284,43 @@ function analyticsHtml(data) {
     <div class="card">
       <h3>Extractor performance</h3>
       <div style="overflow-x:auto"><table class="data-table">
-        <thead><tr><th>Tool</th><th>Attempts</th><th>OK</th><th>Failed</th><th>Selected</th><th>Win %</th><th>Avg quality</th><th>Avg time</th><th>Avg chars</th><th>Wasted (n · time)</th></tr></thead>
+        <thead><tr><th>Tool</th><th>Attempts</th><th>OK</th><th>Failed</th><th>Selected</th><th>Win %</th><th>Avg quality</th><th>Avg time</th><th>Median time</th><th>Avg chars</th><th>Wasted (n · time)</th></tr></thead>
         <tbody>${extractorRows}</tbody></table></div>
       <div class="analytics-split" style="margin-top:14px">
         <div><h4>Win rate %</h4>${winBars}</div>
         <div><h4>Selected share</h4>${donutChart(shareParts)}${chartLegend(shareParts)}</div>
       </div>
+    </div>` : "";
+
+  const dur = data.durations || { points: [] };
+  const outliers = (dur.points || []).filter((p) => p.is_outlier)
+    .sort((a, b) => b.duration_ms - a.duration_ms);
+  const outlierRows = outliers.slice(0, 5).map((p) => `<tr>
+      <td>${escapeHtml(p.filename || p.resume_id || "—")}</td>
+      <td>${fmtMs(p.duration_ms)}</td>
+      <td>${escapeHtml(engineLabel(p.extractor))}</td></tr>`).join("");
+  const durationCard = (dur.points || []).length ? `
+    <div class="card">
+      <h3>Processing time &amp; outliers</h3>
+      ${durationChart(dur)}
+      <div class="chart-legend">
+        <span><span class="swatch" style="background:var(--primary)"></span>Resume</span>
+        ${dur.outlier_count ? `<span><span class="swatch" style="background:var(--bad)"></span>Outlier (&gt;${dur.outlier_threshold_ms === null ? "—" : fmtMs(dur.outlier_threshold_ms)})</span>` : ""}
+        <span><span class="swatch" style="background:var(--warn)"></span>Mean ${dur.mean_ms === null ? "—" : fmtMs(dur.mean_ms)}</span>
+        <span><span class="swatch" style="background:var(--ok)"></span>Median ${dur.median_ms === null ? "—" : fmtMs(dur.median_ms)}</span>
+      </div>
+      <table class="kv-table" style="margin-top:10px">
+        <tr><th>Mean</th><td>${dur.mean_ms === null ? "—" : fmtMs(dur.mean_ms)}</td>
+            <th>Median</th><td>${dur.median_ms === null ? "—" : fmtMs(dur.median_ms)}</td>
+            <th>p95</th><td>${dur.p95_ms === null ? "—" : fmtMs(dur.p95_ms)}</td>
+            <th>Slowest</th><td>${dur.max_ms === null ? "—" : fmtMs(dur.max_ms)}</td></tr>
+      </table>
+      ${dur.outlier_threshold_ms === null ? `<p class="hint">Outlier detection needs at least 4 resumes in range.</p>` : ""}
+      ${outliers.length ? `<h4 style="margin-top:12px">Slowest outliers (${fmtNum(dur.outlier_count)})</h4>
+      <div style="overflow-x:auto"><table class="data-table">
+        <thead><tr><th>Resume</th><th>Time</th><th>Selected tool</th></tr></thead>
+        <tbody>${outlierRows}</tbody></table></div>
+      ${outliers.length > 5 ? `<p class="hint">…and ${fmtNum(outliers.length - 5)} more.</p>` : ""}` : ""}
     </div>` : "";
 
   const tokenCard = `
@@ -1329,7 +1385,7 @@ function analyticsHtml(data) {
       </table>
     </div>`;
 
-  return `<div class="kpi-grid">${kpiCards}</div>${extractorCard}${tokenCard}${qualityCard}${normCard}`;
+  return `<div class="kpi-grid">${kpiCards}</div>${extractorCard}${durationCard}${tokenCard}${qualityCard}${normCard}`;
 }
 
 /* ------------------------------------------------------------------ */

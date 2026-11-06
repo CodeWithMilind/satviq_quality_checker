@@ -1,0 +1,1064 @@
+{
+  "resume_id": "00dab0a5-a1b6-48ef-8b5c-965ce49950c8",
+  "filename": "SHJ-5464_SHC-385030.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 4940,
+  "uploaded_at": "2026-11-06T11:26:11.874730+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 3327.63,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 3327.63,
+      "text": "SAHIL PAGHDAR\nDerivatives Trader | Options Trader | Commodity Trader\n\nSurat, Gujarat, India | +91 8488823618 | srppatel805@gmail.com\n\nPROFESSIONAL SUMMARY\nDerivatives Trader, Options Trader, and Commodity Trader with 4+ years of experience in equity and commodity\n\nmarkets. Specializes in cross-asset arbitrage, cash-futures arbitrage, calendar spread arbitrage, short gamma,\n\nand delta-neutral strategies. Consistent monthly returns of 1.5%–2.5% with drawdowns below 4% across NSE,\n\nBSE, MCX, and COMEX markets.\n\nWORK EXPERIENCE\n\nDerivatives Trader & Commodity Trader\nJainam Broking Ltd | December 2023 – Present\n\n• Executed derivatives and commodity trades across NSE, BSE, MCX, and COMEX with consistent\n\nprofitability.\n\n• Applied short gamma, delta-neutral, and cross-asset arbitrage strategies with strong Greeks management.\n\n• Identified index-futures arbitrage, calendar spread arbitrage, and statistical arbitrage opportunities.\n\n• Conducted real-time IV analysis, VIX monitoring, and options chain assessment for precise execution.\n\n• Maintained monthly returns of 1.5%–2.5% with maximum drawdown capped at ~4% using ODIN and\n\nGREEKSOFT.\n\nOptions Trader\nPace Stock Broking Ltd | December 2022 – November 2023\n\n• Executed straddle, strangle, and spread strategies to capitalize on volatility events.\n\n• Managed risk via disciplined position sizing, stop-loss adherence, and mark-to-market P&L; tracking.\n\n• Identified arbitrage opportunities across index and equity derivatives for low-risk returns.\n\nKEY PERFORMANCE METRICS\n• Average Monthly Return: 1.5%–2.5% | Max Drawdown: ~4% | Annual Drawdown: 8%–10%\n\n• Markets: Nifty 50, Bank Nifty, Sensex, MCX (Gold, Silver, Crude Oil), COMEX\n\nCORE SKILLS\n• Options Strategies: Straddle, Strangle, Iron Condor, Short Gamma, Delta-Neutral, Bull/Bear Spread\n\n• Arbitrage: Cross-Asset, Cash-Futures, Index-Futures, Calendar Spread, Statistical, Cross-Exchange\n\nArbitrage\n\n• Commodity Trading: MCX & COMEX – Gold, Silver, Crude Oil, Natural Gas, Base Metals, Copper\n\n• Risk Management: Greeks (Delta, Gamma, Theta, Vega), Position Sizing, Drawdown Control, Portfolio\n\nHedging\n\n• Volatility: Implied Volatility (IV), Historical Volatility, VIX, IV Rank, Skew Analysis, Options Chain\n\n• Markets & Platforms: NSE, BSE, MCX, NCDEX, CME, COMEX | ODIN, GREEKSOFT, NSE NOW\n\n• Trade Execution: High-precision order execution, Intraday & positional trading, Market/Limit/SL orders,\n\nSlippage minimization, Order flow management, Multi-leg options execution\n\n• Financial Services: F&O; Trading, Equity Derivatives, Futures Trading, P&L; Management, Brokerage\n\nOperations\n\nCERTIFICATIONS\n• NISM Series VIII – Equity Derivatives\n\n\n\n• NISM Series XVI – Commodity Derivatives\n\nEDUCATION\n\nDiploma in Agriculture\nWaghai Agriculture College, Navsari Agricultural University, Gujarat",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-06T11:26:08.527980+00:00",
+      "completed_at": "2026-11-06T11:26:11.855873+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "00dab0a5-a1b6-48ef-8b5c-965ce49950c8",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2812,
+            "word_count": 371,
+            "line_count": 83,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.145092,
+            "symbol_count": 29,
+            "symbol_ratio": 0.010313,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2812,
+            "word_count": 371,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "srppatel805@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 6,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "CORE SKILLS",
+                "detection_method": "heading",
+                "line_number": 48,
+                "evidence": "CORE SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 15,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 80,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 73,
+                "evidence": "CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2812,
+            "word_count": 371,
+            "line_count": 83,
+            "non_empty_line_count": 45,
+            "short_line_count": 12,
+            "short_line_ratio": 0.266667,
+            "fragmented_line_count": 11,
+            "fragmented_line_ratio": 0.244444,
+            "mean_line_length": 60.67,
+            "median_line_length": 68.0,
+            "line_length_stdev": 37.69,
+            "line_length_cv": 0.621253,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.068182,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "00dab0a5-a1b6-48ef-8b5c-965ce49950c8-attempt-1",
+      "resume_id": "00dab0a5-a1b6-48ef-8b5c-965ce49950c8",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "SAHIL PAGHDAR\nDerivatives Trader | Options Trader | Commodity Trader\n\nSurat, Gujarat, India | +91 8488823618 | srppatel805@gmail.com\n\nPROFESSIONAL SUMMARY\nDerivatives Trader, Options Trader, and Commodity Trader with 4+ years of experience in equity and commodity\n\nmarkets. Specializes in cross-asset arbitrage, cash-futures arbitrage, calendar spread arbitrage, short gamma,\n\nand delta-neutral strategies. Consistent monthly returns of 1.5%–2.5% with drawdowns below 4% across NSE,\n\nBSE, MCX, and COMEX markets.\n\nWORK EXPERIENCE\n\nDerivatives Trader & Commodity Trader\nJainam Broking Ltd | December 2023 – Present\n\n• Executed derivatives and commodity trades across NSE, BSE, MCX, and COMEX with consistent\n\nprofitability.\n\n• Applied short gamma, delta-neutral, and cross-asset arbitrage strategies with strong Greeks management.\n\n• Identified index-futures arbitrage, calendar spread arbitrage, and statistical arbitrage opportunities.\n\n• Conducted real-time IV analysis, VIX monitoring, and options chain assessment for precise execution.\n\n• Maintained monthly returns of 1.5%–2.5% with maximum drawdown capped at ~4% using ODIN and\n\nGREEKSOFT.\n\nOptions Trader\nPace Stock Broking Ltd | December 2022 – November 2023\n\n• Executed straddle, strangle, and spread strategies to capitalize on volatility events.\n\n• Managed risk via disciplined position sizing, stop-loss adherence, and mark-to-market P&L; tracking.\n\n• Identified arbitrage opportunities across index and equity derivatives for low-risk returns.\n\nKEY PERFORMANCE METRICS\n• Average Monthly Return: 1.5%–2.5% | Max Drawdown: ~4% | Annual Drawdown: 8%–10%\n\n• Markets: Nifty 50, Bank Nifty, Sensex, MCX (Gold, Silver, Crude Oil), COMEX\n\nCORE SKILLS\n• Options Strategies: Straddle, Strangle, Iron Condor, Short Gamma, Delta-Neutral, Bull/Bear Spread\n\n• Arbitrage: Cross-Asset, Cash-Futures, Index-Futures, Calendar Spread, Statistical, Cross-Exchange\n\nArbitrage\n\n• Commodity Trading: MCX & COMEX – Gold, Silver, Crude Oil, Natural Gas, Base Metals, Copper\n\n• Risk Management: Greeks (Delta, Gamma, Theta, Vega), Position Sizing, Drawdown Control, Portfolio\n\nHedging\n\n• Volatility: Implied Volatility (IV), Historical Volatility, VIX, IV Rank, Skew Analysis, Options Chain\n\n• Markets & Platforms: NSE, BSE, MCX, NCDEX, CME, COMEX | ODIN, GREEKSOFT, NSE NOW\n\n• Trade Execution: High-precision order execution, Intraday & positional trading, Market/Limit/SL orders,\n\nSlippage minimization, Order flow management, Multi-leg options execution\n\n• Financial Services: F&O; Trading, Equity Derivatives, Futures Trading, P&L; Management, Brokerage\n\nOperations\n\nCERTIFICATIONS\n• NISM Series VIII – Equity Derivatives\n\n\n\n• NISM Series XVI – Commodity Derivatives\n\nEDUCATION\n\nDiploma in Agriculture\nWaghai Agriculture College, Navsari Agricultural University, Gujarat",
+      "extracted_text_length": 2812,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "00dab0a5-a1b6-48ef-8b5c-965ce49950c8",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2812,
+            "word_count": 371,
+            "line_count": 83,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.145092,
+            "symbol_count": 29,
+            "symbol_ratio": 0.010313,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2812,
+            "word_count": 371,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "srppatel805@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 6,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "CORE SKILLS",
+                "detection_method": "heading",
+                "line_number": 48,
+                "evidence": "CORE SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 15,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 80,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 73,
+                "evidence": "CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2812,
+            "word_count": 371,
+            "line_count": 83,
+            "non_empty_line_count": 45,
+            "short_line_count": 12,
+            "short_line_ratio": 0.266667,
+            "fragmented_line_count": 11,
+            "fragmented_line_ratio": 0.244444,
+            "mean_line_length": 60.67,
+            "median_line_length": 68.0,
+            "line_length_stdev": 37.69,
+            "line_length_cv": 0.621253,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.068182,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "SAHIL PAGHDAR\nDerivatives Trader | Options Trader | Commodity Trader\n\nSurat, Gujarat, India | +91 8488823618 | srppatel805@gmail.com\n\nPROFESSIONAL SUMMARY\nDerivatives Trader, Options Trader, and Commodity Trader with 4+ years of experience in equity and commodity\n\nmarkets. Specializes in cross-asset arbitrage, cash-futures arbitrage, calendar spread arbitrage, short gamma,\n\nand delta-neutral strategies. Consistent monthly returns of 1.5%–2.5% with drawdowns below 4% across NSE,\n\nBSE, MCX, and COMEX markets.\n\nWORK EXPERIENCE\n\nDerivatives Trader & Commodity Trader\nJainam Broking Ltd | December 2023 – Present\n\n• Executed derivatives and commodity trades across NSE, BSE, MCX, and COMEX with consistent\n\nprofitability.\n\n• Applied short gamma, delta-neutral, and cross-asset arbitrage strategies with strong Greeks management.\n\n• Identified index-futures arbitrage, calendar spread arbitrage, and statistical arbitrage opportunities.\n\n• Conducted real-time IV analysis, VIX monitoring, and options chain assessment for precise execution.\n\n• Maintained monthly returns of 1.5%–2.5% with maximum drawdown capped at ~4% using ODIN and\n\nGREEKSOFT.\n\nOptions Trader\nPace Stock Broking Ltd | December 2022 – November 2023\n\n• Executed straddle, strangle, and spread strategies to capitalize on volatility events.\n\n• Managed risk via disciplined position sizing, stop-loss adherence, and mark-to-market P&L; tracking.\n\n• Identified arbitrage opportunities across index and equity derivatives for low-risk returns.\n\nKEY PERFORMANCE METRICS\n• Average Monthly Return: 1.5%–2.5% | Max Drawdown: ~4% | Annual Drawdown: 8%–10%\n\n• Markets: Nifty 50, Bank Nifty, Sensex, MCX (Gold, Silver, Crude Oil), COMEX\n\nCORE SKILLS\n• Options Strategies: Straddle, Strangle, Iron Condor, Short Gamma, Delta-Neutral, Bull/Bear Spread\n\n• Arbitrage: Cross-Asset, Cash-Futures, Index-Futures, Calendar Spread, Statistical, Cross-Exchange\n\nArbitrage\n\n• Commodity Trading: MCX & COMEX – Gold, Silver, Crude Oil, Natural Gas, Base Metals, Copper\n\n• Risk Management: Greeks (Delta, Gamma, Theta, Vega), Position Sizing, Drawdown Control, Portfolio\n\nHedging\n\n• Volatility: Implied Volatility (IV), Historical Volatility, VIX, IV Rank, Skew Analysis, Options Chain\n\n• Markets & Platforms: NSE, BSE, MCX, NCDEX, CME, COMEX | ODIN, GREEKSOFT, NSE NOW\n\n• Trade Execution: High-precision order execution, Intraday & positional trading, Market/Limit/SL orders,\n\nSlippage minimization, Order flow management, Multi-leg options execution\n\n• Financial Services: F&O; Trading, Equity Derivatives, Futures Trading, P&L; Management, Brokerage\n\nOperations\n\nCERTIFICATIONS\n• NISM Series VIII – Equity Derivatives\n\n• NISM Series XVI – Commodity Derivatives\n\nEDUCATION\n\nDiploma in Agriculture\nWaghai Agriculture College, Navsari Agricultural University, Gujarat"
+    }
+  ],
+  "extracted_text": "SAHIL PAGHDAR\nDerivatives Trader | Options Trader | Commodity Trader\n\nSurat, Gujarat, India | +91 8488823618 | srppatel805@gmail.com\n\nPROFESSIONAL SUMMARY\nDerivatives Trader, Options Trader, and Commodity Trader with 4+ years of experience in equity and commodity\n\nmarkets. Specializes in cross-asset arbitrage, cash-futures arbitrage, calendar spread arbitrage, short gamma,\n\nand delta-neutral strategies. Consistent monthly returns of 1.5%–2.5% with drawdowns below 4% across NSE,\n\nBSE, MCX, and COMEX markets.\n\nWORK EXPERIENCE\n\nDerivatives Trader & Commodity Trader\nJainam Broking Ltd | December 2023 – Present\n\n• Executed derivatives and commodity trades across NSE, BSE, MCX, and COMEX with consistent\n\nprofitability.\n\n• Applied short gamma, delta-neutral, and cross-asset arbitrage strategies with strong Greeks management.\n\n• Identified index-futures arbitrage, calendar spread arbitrage, and statistical arbitrage opportunities.\n\n• Conducted real-time IV analysis, VIX monitoring, and options chain assessment for precise execution.\n\n• Maintained monthly returns of 1.5%–2.5% with maximum drawdown capped at ~4% using ODIN and\n\nGREEKSOFT.\n\nOptions Trader\nPace Stock Broking Ltd | December 2022 – November 2023\n\n• Executed straddle, strangle, and spread strategies to capitalize on volatility events.\n\n• Managed risk via disciplined position sizing, stop-loss adherence, and mark-to-market P&L; tracking.\n\n• Identified arbitrage opportunities across index and equity derivatives for low-risk returns.\n\nKEY PERFORMANCE METRICS\n• Average Monthly Return: 1.5%–2.5% | Max Drawdown: ~4% | Annual Drawdown: 8%–10%\n\n• Markets: Nifty 50, Bank Nifty, Sensex, MCX (Gold, Silver, Crude Oil), COMEX\n\nCORE SKILLS\n• Options Strategies: Straddle, Strangle, Iron Condor, Short Gamma, Delta-Neutral, Bull/Bear Spread\n\n• Arbitrage: Cross-Asset, Cash-Futures, Index-Futures, Calendar Spread, Statistical, Cross-Exchange\n\nArbitrage\n\n• Commodity Trading: MCX & COMEX – Gold, Silver, Crude Oil, Natural Gas, Base Metals, Copper\n\n• Risk Management: Greeks (Delta, Gamma, Theta, Vega), Position Sizing, Drawdown Control, Portfolio\n\nHedging\n\n• Volatility: Implied Volatility (IV), Historical Volatility, VIX, IV Rank, Skew Analysis, Options Chain\n\n• Markets & Platforms: NSE, BSE, MCX, NCDEX, CME, COMEX | ODIN, GREEKSOFT, NSE NOW\n\n• Trade Execution: High-precision order execution, Intraday & positional trading, Market/Limit/SL orders,\n\nSlippage minimization, Order flow management, Multi-leg options execution\n\n• Financial Services: F&O; Trading, Equity Derivatives, Futures Trading, P&L; Management, Brokerage\n\nOperations\n\nCERTIFICATIONS\n• NISM Series VIII – Equity Derivatives\n\n\n\n• NISM Series XVI – Commodity Derivatives\n\nEDUCATION\n\nDiploma in Agriculture\nWaghai Agriculture College, Navsari Agricultural University, Gujarat",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "SAHIL PAGHDAR\nDerivatives Trader | Options Trader | Commodity Trader\n\nSurat, Gujarat, India | +91 8488823618 | srppatel805@gmail.com\n\nPROFESSIONAL SUMMARY\nDerivatives Trader, Options Trader, and Commodity Trader with 4+ years of experience in equity and commodity\n\nmarkets. Specializes in cross-asset arbitrage, cash-futures arbitrage, calendar spread arbitrage, short gamma,\n\nand delta-neutral strategies. Consistent monthly returns of 1.5%–2.5% with drawdowns below 4% across NSE,\n\nBSE, MCX, and COMEX markets.\n\nWORK EXPERIENCE\n\nDerivatives Trader & Commodity Trader\nJainam Broking Ltd | December 2023 – Present\n\n• Executed derivatives and commodity trades across NSE, BSE, MCX, and COMEX with consistent\n\nprofitability.\n\n• Applied short gamma, delta-neutral, and cross-asset arbitrage strategies with strong Greeks management.\n\n• Identified index-futures arbitrage, calendar spread arbitrage, and statistical arbitrage opportunities.\n\n• Conducted real-time IV analysis, VIX monitoring, and options chain assessment for precise execution.\n\n• Maintained monthly returns of 1.5%–2.5% with maximum drawdown capped at ~4% using ODIN and\n\nGREEKSOFT.\n\nOptions Trader\nPace Stock Broking Ltd | December 2022 – November 2023\n\n• Executed straddle, strangle, and spread strategies to capitalize on volatility events.\n\n• Managed risk via disciplined position sizing, stop-loss adherence, and mark-to-market P&L; tracking.\n\n• Identified arbitrage opportunities across index and equity derivatives for low-risk returns.\n\nKEY PERFORMANCE METRICS\n• Average Monthly Return: 1.5%–2.5% | Max Drawdown: ~4% | Annual Drawdown: 8%–10%\n\n• Markets: Nifty 50, Bank Nifty, Sensex, MCX (Gold, Silver, Crude Oil), COMEX\n\nCORE SKILLS\n• Options Strategies: Straddle, Strangle, Iron Condor, Short Gamma, Delta-Neutral, Bull/Bear Spread\n\n• Arbitrage: Cross-Asset, Cash-Futures, Index-Futures, Calendar Spread, Statistical, Cross-Exchange\n\nArbitrage\n\n• Commodity Trading: MCX & COMEX – Gold, Silver, Crude Oil, Natural Gas, Base Metals, Copper\n\n• Risk Management: Greeks (Delta, Gamma, Theta, Vega), Position Sizing, Drawdown Control, Portfolio\n\nHedging\n\n• Volatility: Implied Volatility (IV), Historical Volatility, VIX, IV Rank, Skew Analysis, Options Chain\n\n• Markets & Platforms: NSE, BSE, MCX, NCDEX, CME, COMEX | ODIN, GREEKSOFT, NSE NOW\n\n• Trade Execution: High-precision order execution, Intraday & positional trading, Market/Limit/SL orders,\n\nSlippage minimization, Order flow management, Multi-leg options execution\n\n• Financial Services: F&O; Trading, Equity Derivatives, Futures Trading, P&L; Management, Brokerage\n\nOperations\n\nCERTIFICATIONS\n• NISM Series VIII – Equity Derivatives\n\n\n\n• NISM Series XVI – Commodity Derivatives\n\nEDUCATION\n\nDiploma in Agriculture\nWaghai Agriculture College, Navsari Agricultural University, Gujarat",
+  "quality": {
+    "status": "PASS",
+    "document_id": "00dab0a5-a1b6-48ef-8b5c-965ce49950c8",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 2812,
+        "word_count": 371,
+        "line_count": 83,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.145092,
+        "symbol_count": 29,
+        "symbol_ratio": 0.010313,
+        "max_repeated_char_run": 4,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 97.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 2812,
+        "word_count": 371,
+        "configured_section_count": 7,
+        "detected_count": 6,
+        "missing_count": 1,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Projects"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Projects"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "professional summary",
+          "Skills": "core skills",
+          "Work Experience": "work experience",
+          "Education": "education",
+          "Certifications": "certifications"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "srppatel805@gmail.com",
+            "confidence": 0.8
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "PROFESSIONAL SUMMARY",
+            "detection_method": "heading",
+            "line_number": 6,
+            "evidence": "PROFESSIONAL SUMMARY",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "CORE SKILLS",
+            "detection_method": "heading",
+            "line_number": 48,
+            "evidence": "CORE SKILLS",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "WORK EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 15,
+            "evidence": "WORK EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATION",
+            "detection_method": "heading",
+            "line_number": 80,
+            "evidence": "EDUCATION",
+            "confidence": 0.98
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": "CERTIFICATIONS",
+            "detection_method": "heading",
+            "line_number": 73,
+            "evidence": "CERTIFICATIONS",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Certifications": "detected",
+          "Projects": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Projects"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Projects"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 2812,
+        "word_count": 371,
+        "line_count": 83,
+        "non_empty_line_count": 45,
+        "short_line_count": 12,
+        "short_line_ratio": 0.266667,
+        "fragmented_line_count": 11,
+        "fragmented_line_ratio": 0.244444,
+        "mean_line_length": 60.67,
+        "median_line_length": 68.0,
+        "line_length_stdev": 37.69,
+        "line_length_cv": 0.621253,
+        "broken_sentence_count": 3,
+        "broken_sentence_ratio": 0.068182,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": null,
+  "resume_json": {
+    "full_name": "SAHIL PAGHDAR",
+    "email": "srppatel805@gmail.com",
+    "phone": "+91 8488823618",
+    "location": "Surat, Gujarat, India",
+    "summary": "Derivatives Trader, Options Trader, and Commodity Trader with 4+ years of experience in equity and commodity markets. Specializes in cross-asset arbitrage, cash-futures arbitrage, calendar spread arbitrage, short gamma, and delta-neutral strategies. Consistent monthly returns of 1.5%–2.5% with drawdowns below 4% across NSE, BSE, MCX, and COMEX markets.",
+    "skills": {
+      "technical_skills": [
+        "Straddle",
+        "Strangle",
+        "Iron Condor",
+        "Short Gamma",
+        "Delta-Neutral",
+        "Bull/Bear Spread",
+        "Cross-Asset Arbitrage",
+        "Cash-Futures Arbitrage",
+        "Index-Futures Arbitrage",
+        "Calendar Spread Arbitrage",
+        "Statistical Arbitrage",
+        "Cross-Exchange Arbitrage",
+        "Commodity Trading: Gold, Silver, Crude Oil, Natural Gas, Base Metals, Copper",
+        "Greeks (Delta, Gamma, Theta, Vega)",
+        "Position Sizing",
+        "Drawdown Control",
+        "Portfolio Hedging",
+        "Implied Volatility (IV)",
+        "Historical Volatility",
+        "VIX",
+        "IV Rank",
+        "Skew Analysis",
+        "Options Chain",
+        "NSE",
+        "BSE",
+        "MCX",
+        "NCDEX",
+        "CME",
+        "COMEX",
+        "High-precision order execution",
+        "Intraday & positional trading",
+        "Market/Limit/SL orders",
+        "Slippage minimization",
+        "Order flow management",
+        "Multi-leg options execution",
+        "F&O Trading",
+        "Equity Derivatives",
+        "Futures Trading",
+        "P&L Management",
+        "Brokerage Operations"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "ODIN",
+        "GREEKSOFT",
+        "NSE NOW"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Derivatives Trader & Commodity Trader",
+        "company": "Jainam Broking Ltd",
+        "location": "",
+        "start_date": "December 2023",
+        "end_date": "Present",
+        "highlights": [
+          "Executed derivatives and commodity trades across NSE, BSE, MCX, and COMEX with consistent profitability.",
+          "Applied short gamma, delta-neutral, and cross-asset arbitrage strategies with strong Greeks management.",
+          "Identified index-futures arbitrage, calendar spread arbitrage, and statistical arbitrage opportunities.",
+          "Conducted real-time IV analysis, VIX monitoring, and options chain assessment for precise execution.",
+          "Maintained monthly returns of 1.5%–2.5% with maximum drawdown capped at ~4% using ODIN and GREEKSOFT."
+        ]
+      },
+      {
+        "title": "Options Trader",
+        "company": "Pace Stock Broking Ltd",
+        "location": "",
+        "start_date": "December 2022",
+        "end_date": "November 2023",
+        "highlights": [
+          "Executed straddle, strangle, and spread strategies to capitalize on volatility events.",
+          "Managed risk via disciplined position sizing, stop-loss adherence, and mark-to-market P&L tracking.",
+          "Identified arbitrage opportunities across index and equity derivatives for low-risk returns."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Diploma in Agriculture",
+        "institution": "Waghai Agriculture College, Navsari Agricultural University",
+        "location": "Gujarat",
+        "start_date": "",
+        "end_date": ""
+      }
+    ],
+    "certifications": [
+      "NISM Series VIII – Equity Derivatives",
+      "NISM Series XVI – Commodity Derivatives"
+    ],
+    "languages": [],
+    "links": []
+  },
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "SAHIL PAGHDAR\nDerivatives Trader | Options Trader | Commodity Trader\n\nSurat, Gujarat, India | +91 8488823618 | srppatel805@gmail.com\n\nPROFESSIONAL SUMMARY\nDerivatives Trader, Options Trader, and Commodity Trader with 4+ years of experience in equity and commodity\n\nmarkets. Specializes in cross-asset arbitrage, cash-futures arbitrage, calendar spread arbitrage, short gamma,\n\nand delta-neutral strategies. Consistent monthly returns of 1.5%–2.5% with drawdowns below 4% across NSE,\n\nBSE, MCX, and COMEX markets.\n\nWORK EXPERIENCE\n\nDerivatives Trader & Commodity Trader\nJainam Broking Ltd | December 2023 – Present\n\n• Executed derivatives and commodity trades across NSE, BSE, MCX, and COMEX with consistent\n\nprofitability.\n\n• Applied short gamma, delta-neutral, and cross-asset arbitrage strategies with strong Greeks management.\n\n• Identified index-futures arbitrage, calendar spread arbitrage, and statistical arbitrage opportunities.\n\n• Conducted real-time IV analysis, VIX monitoring, and options chain assessment for precise execution.\n\n• Maintained monthly returns of 1.5%–2.5% with maximum drawdown capped at ~4% using ODIN and\n\nGREEKSOFT.\n\nOptions Trader\nPace Stock Broking Ltd | December 2022 – November 2023\n\n• Executed straddle, strangle, and spread strategies to capitalize on volatility events.\n\n• Managed risk via disciplined position sizing, stop-loss adherence, and mark-to-market P&L; tracking.\n\n• Identified arbitrage opportunities across index and equity derivatives for low-risk returns.\n\nKEY PERFORMANCE METRICS\n• Average Monthly Return: 1.5%–2.5% | Max Drawdown: ~4% | Annual Drawdown: 8%–10%\n\n• Markets: Nifty 50, Bank Nifty, Sensex, MCX (Gold, Silver, Crude Oil), COMEX\n\nCORE SKILLS\n• Options Strategies: Straddle, Strangle, Iron Condor, Short Gamma, Delta-Neutral, Bull/Bear Spread\n\n• Arbitrage: Cross-Asset, Cash-Futures, Index-Futures, Calendar Spread, Statistical, Cross-Exchange\n\nArbitrage\n\n• Commodity Trading: MCX & COMEX – Gold, Silver, Crude Oil, Natural Gas, Base Metals, Copper\n\n• Risk Management: Greeks (Delta, Gamma, Theta, Vega), Position Sizing, Drawdown Control, Portfolio\n\nHedging\n\n• Volatility: Implied Volatility (IV), Historical Volatility, VIX, IV Rank, Skew Analysis, Options Chain\n\n• Markets & Platforms: NSE, BSE, MCX, NCDEX, CME, COMEX | ODIN, GREEKSOFT, NSE NOW\n\n• Trade Execution: High-precision order execution, Intraday & positional trading, Market/Limit/SL orders,\n\nSlippage minimization, Order flow management, Multi-leg options execution\n\n• Financial Services: F&O; Trading, Equity Derivatives, Futures Trading, P&L; Management, Brokerage\n\nOperations\n\nCERTIFICATIONS\n• NISM Series VIII – Equity Derivatives\n\n\n\n• NISM Series XVI – Commodity Derivatives\n\nEDUCATION\n\nDiploma in Agriculture\nWaghai Agriculture College, Navsari Agricultural University, Gujarat",
+    "normalized_text": "SAHIL PAGHDAR\nDerivatives Trader | Options Trader | Commodity Trader\n\nSurat, Gujarat, India | +91 8488823618 | srppatel805@gmail.com\n\nPROFESSIONAL SUMMARY\nDerivatives Trader, Options Trader, and Commodity Trader with 4+ years of experience in equity and commodity\n\nmarkets. Specializes in cross-asset arbitrage, cash-futures arbitrage, calendar spread arbitrage, short gamma,\n\nand delta-neutral strategies. Consistent monthly returns of 1.5%–2.5% with drawdowns below 4% across NSE,\n\nBSE, MCX, and COMEX markets.\n\nWORK EXPERIENCE\n\nDerivatives Trader & Commodity Trader\nJainam Broking Ltd | December 2023 – Present\n\n• Executed derivatives and commodity trades across NSE, BSE, MCX, and COMEX with consistent\n\nprofitability.\n\n• Applied short gamma, delta-neutral, and cross-asset arbitrage strategies with strong Greeks management.\n\n• Identified index-futures arbitrage, calendar spread arbitrage, and statistical arbitrage opportunities.\n\n• Conducted real-time IV analysis, VIX monitoring, and options chain assessment for precise execution.\n\n• Maintained monthly returns of 1.5%–2.5% with maximum drawdown capped at ~4% using ODIN and\n\nGREEKSOFT.\n\nOptions Trader\nPace Stock Broking Ltd | December 2022 – November 2023\n\n• Executed straddle, strangle, and spread strategies to capitalize on volatility events.\n\n• Managed risk via disciplined position sizing, stop-loss adherence, and mark-to-market P&L; tracking.\n\n• Identified arbitrage opportunities across index and equity derivatives for low-risk returns.\n\nKEY PERFORMANCE METRICS\n• Average Monthly Return: 1.5%–2.5% | Max Drawdown: ~4% | Annual Drawdown: 8%–10%\n\n• Markets: Nifty 50, Bank Nifty, Sensex, MCX (Gold, Silver, Crude Oil), COMEX\n\nCORE SKILLS\n• Options Strategies: Straddle, Strangle, Iron Condor, Short Gamma, Delta-Neutral, Bull/Bear Spread\n\n• Arbitrage: Cross-Asset, Cash-Futures, Index-Futures, Calendar Spread, Statistical, Cross-Exchange\n\nArbitrage\n\n• Commodity Trading: MCX & COMEX – Gold, Silver, Crude Oil, Natural Gas, Base Metals, Copper\n\n• Risk Management: Greeks (Delta, Gamma, Theta, Vega), Position Sizing, Drawdown Control, Portfolio\n\nHedging\n\n• Volatility: Implied Volatility (IV), Historical Volatility, VIX, IV Rank, Skew Analysis, Options Chain\n\n• Markets & Platforms: NSE, BSE, MCX, NCDEX, CME, COMEX | ODIN, GREEKSOFT, NSE NOW\n\n• Trade Execution: High-precision order execution, Intraday & positional trading, Market/Limit/SL orders,\n\nSlippage minimization, Order flow management, Multi-leg options execution\n\n• Financial Services: F&O; Trading, Equity Derivatives, Futures Trading, P&L; Management, Brokerage\n\nOperations\n\nCERTIFICATIONS\n• NISM Series VIII – Equity Derivatives\n\n• NISM Series XVI – Commodity Derivatives\n\nEDUCATION\n\nDiploma in Agriculture\nWaghai Agriculture College, Navsari Agricultural University, Gujarat",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 2812,
+    "normalized_chars": 2810,
+    "original_estimated_tokens": 703,
+    "normalized_estimated_tokens": 702,
+    "estimated_reduction_percent": 0.1
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": "chatcmpl-01a1b09c-330f-738d-b528-15e4b7a47f1f",
+      "status": "success",
+      "duration_ms": 17204.81,
+      "input_tokens": 1526,
+      "output_tokens": 2524,
+      "total_tokens": 4050,
+      "cached_input_tokens": 753,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1526,
+    "output_tokens": 2524,
+    "total_tokens": 4050,
+    "cached_input_tokens": 753,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_source": "muse_ai",
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "input_type": "text",
+    "duration_ms": 17204.81,
+    "timeout_seconds": 20.0,
+    "usage": {
+      "completion_tokens": 2524,
+      "prompt_tokens": 1526,
+      "total_tokens": 4050,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1753
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 753
+      }
+    },
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 2812,
+      "normalized_chars": 2810,
+      "estimated_reduction_percent": 0.1,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 3327.63,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "00dab0a5-a1b6-48ef-8b5c-965ce49950c8",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2812,
+            "word_count": 371,
+            "line_count": 83,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.145092,
+            "symbol_count": 29,
+            "symbol_ratio": 0.010313,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2812,
+            "word_count": 371,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "srppatel805@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 6,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "CORE SKILLS",
+                "detection_method": "heading",
+                "line_number": 48,
+                "evidence": "CORE SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 15,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 80,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 73,
+                "evidence": "CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2812,
+            "word_count": 371,
+            "line_count": 83,
+            "non_empty_line_count": 45,
+            "short_line_count": 12,
+            "short_line_ratio": 0.266667,
+            "fragmented_line_count": 11,
+            "fragmented_line_ratio": 0.244444,
+            "mean_line_length": 60.67,
+            "median_line_length": 68.0,
+            "line_length_stdev": 37.69,
+            "line_length_cv": 0.621253,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.068182,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 17204.81,
+      "message": "Structured Resume JSON generated by Muse AI and validated against the schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 3327.63,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "00dab0a5-a1b6-48ef-8b5c-965ce49950c8_SHJ-5464_SHC-385030.pdf"
+}

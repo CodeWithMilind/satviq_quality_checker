@@ -1,0 +1,994 @@
+{
+  "resume_id": "0f82c44b-af94-4646-9faa-d40fad6865d9",
+  "filename": "SHJ-5444_SHC-383052.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 219470,
+  "uploaded_at": "2026-11-06T11:13:52.547262+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 9783.33,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 9783.33,
+      "text": "PARAG BADJATE\n\nCHARTERED ACCOUNTANT\n\n8767289120 LinkedIn\nAug 2023 - Aug 2025\nMumbai\nJul 2026\nJul 2026\nbadjateparag@gmail.com\nSUMMARY\nNewly qualified Chartered Accountant, having cleared in first attempt and articleship experience in statutory audit across diverse\nindustries. Strong foundation in financial reporting, internal controls, analytical review and business process understanding.\nEDUCATION\n\n\tCourse\tYear\tInstitution\tScore\tRemarks\n\tCA Final\tMay 2026\tICAI\t321 / 600\tExemption in 2 Subjects.\n(First Attempt)\n\n\tCA Intermediate\tMay 2023\tICAI\t446 / 800\tExemption in 2 Subjects.\n(First Attempt)\n\n\tCA Foundation\tJune 2022\tICAI\t295 / 400\tPassed with distinction.\n(First Attempt)\n\n\tBBA\tApril 2022 -\nApril 2025\tSavitribai Phule Pune University\tGPA 8.43\tGraduated with A+ Grade.\n1st rank in BBA College.\n\n\tClass XII\tMarch 2022\tHSC Examination\t90.17%\tScored 99 marks in Maths.\n4th rank in city.\n\n\tClass X\tMarch 2020\tSSC Examination\t92.40%\tScored 95 marks in Maths.\n3rd rank in school.\n\n\n\nWORK EXPERIENCE\n\nArticled Assistant\n\nSinghi & Co.\n\n(Leading CA Firm (Ranked Top 10) with 40 Partners and 8 offices providing services for more than last 85 years in diverse areas.)\nFMCG (Turnover > Rs. 1200 Crores)\n\tSupported statutory audit planning by assisting in scoping, allocating work across a team of 5 articled assistants, and\nperforming risk assessment procedures on key balances.\n\n\tPerformed detailed testing of financial control which includes fixed assets, HR and payroll, finance and accounts.\n\n\tContributed to the detection and reporting of employee fraud exceeding 1 crore in accordance with SA240 and section 143(12)\nreporting requirements.\n\n\tWorked on first-time transition from IGAAP to IND AS with hands on exposure to IND AS 101 adjustments, reconciliations and\ndisclosure requirements.\n\n\nManufacturing - Chemicals (Turnover > Rs. 800 Crores)\n\tHandled compliance testing of statutory dues including TDS, TCS through challan mapping, reconciliation, and due date testing.\n\n\tPerformed year end stock audit and physical inventory verification.\n\n\nManufacturing - Tyre Rubber (Turnover > Rs. 50 Crores)\n\tExecuted opening balance verification procedures under SA 510 by validating prior year balances and carry-forward\nadjustments.\n\n\tLed audit execution for key reporting areas such as revenue, inventory and assets including Test of Details and variance\nanalysis.\n\n\nRestaurant Chain Busines (Turnover > Rs. 400 Crores)\n\tConducted IFC and TOD for revenue realization during the year.\n\n\tPrepared analytical review schedules and area-wise detailed variance analyses for revenue, margins, and key expense heads.\n\n\nOthers\n\tExecuted Internal Audit assignments for a subsidiary of a leading battery manufacturing company across P2P, R2R, HR\nfunctions.\n\n\tAssisted in Transfer Pricing assignments for listed textile and apparel companies, including functional analysis, benchmarking,\nand transfer pricing documentation.\n\n\tGained audit and advisory exposure across NBFC, data centres, quick commerce, real estate, and manufacturing clients by\nparticipating in end-to-end engagements.\n\n\nEXTRA-CURRICULAR ACTIVITIES, ACHIEVEMENTS & CERTIFICATIONS\n\n\tVolunteer at Inner Wheel Club NPO in a tree plantation drive.\n\n\tLed a school Cricket Team in State Level Tournament fostering teamwork and on-field decision making.\n\n\tParticipated in National CA Student Conferences and WICASA Chess competition reflecting strategic thinking skills.\n\n\tElected as a School President of Students council in Class X.\n\n\nSKILLS\n\nTools & Technologies: SAP, Tally Prime, MS -Excel, Word, PowerPoint, ERP System\n\nCERTIFICATIONS\n\nFinance Masterclass\n\n(CAMonk)\n\nCertified in AI for Finance\n\n(CAMonk)\n\n\ntel:8767289120\nhttps://www.linkedin.com/in/parag-badjate-454460282?utm_source=share_via&utm_content=profile&utm_medium=member_ios\nmailto:badjateparag@gmail.com",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-06T11:13:42.677074+00:00",
+      "completed_at": "2026-11-06T11:13:52.461144+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "0f82c44b-af94-4646-9faa-d40fad6865d9",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3822,
+            "word_count": 523,
+            "line_count": 117,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.154893,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3822,
+            "word_count": 523,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "summary",
+              "Skills": "skills",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "badjateparag@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 100,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 38,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 14,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 104,
+                "evidence": "CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3822,
+            "word_count": 523,
+            "line_count": 117,
+            "non_empty_line_count": 71,
+            "short_line_count": 28,
+            "short_line_ratio": 0.394366,
+            "fragmented_line_count": 20,
+            "fragmented_line_ratio": 0.28169,
+            "mean_line_length": 51.86,
+            "median_line_length": 35.0,
+            "line_length_stdev": 42.86,
+            "line_length_cv": 0.826549,
+            "broken_sentence_count": 11,
+            "broken_sentence_ratio": 0.157143,
+            "repeated_adjacent_count": 1,
+            "repeated_adjacent_ratio": 0.014286
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "0f82c44b-af94-4646-9faa-d40fad6865d9-attempt-1",
+      "resume_id": "0f82c44b-af94-4646-9faa-d40fad6865d9",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "PARAG BADJATE\n\nCHARTERED ACCOUNTANT\n\n8767289120 LinkedIn\nAug 2023 - Aug 2025\nMumbai\nJul 2026\nJul 2026\nbadjateparag@gmail.com\nSUMMARY\nNewly qualified Chartered Accountant, having cleared in first attempt and articleship experience in statutory audit across diverse\nindustries. Strong foundation in financial reporting, internal controls, analytical review and business process understanding.\nEDUCATION\n\n\tCourse\tYear\tInstitution\tScore\tRemarks\n\tCA Final\tMay 2026\tICAI\t321 / 600\tExemption in 2 Subjects.\n(First Attempt)\n\n\tCA Intermediate\tMay 2023\tICAI\t446 / 800\tExemption in 2 Subjects.\n(First Attempt)\n\n\tCA Foundation\tJune 2022\tICAI\t295 / 400\tPassed with distinction.\n(First Attempt)\n\n\tBBA\tApril 2022 -\nApril 2025\tSavitribai Phule Pune University\tGPA 8.43\tGraduated with A+ Grade.\n1st rank in BBA College.\n\n\tClass XII\tMarch 2022\tHSC Examination\t90.17%\tScored 99 marks in Maths.\n4th rank in city.\n\n\tClass X\tMarch 2020\tSSC Examination\t92.40%\tScored 95 marks in Maths.\n3rd rank in school.\n\n\n\nWORK EXPERIENCE\n\nArticled Assistant\n\nSinghi & Co.\n\n(Leading CA Firm (Ranked Top 10) with 40 Partners and 8 offices providing services for more than last 85 years in diverse areas.)\nFMCG (Turnover > Rs. 1200 Crores)\n\tSupported statutory audit planning by assisting in scoping, allocating work across a team of 5 articled assistants, and\nperforming risk assessment procedures on key balances.\n\n\tPerformed detailed testing of financial control which includes fixed assets, HR and payroll, finance and accounts.\n\n\tContributed to the detection and reporting of employee fraud exceeding 1 crore in accordance with SA240 and section 143(12)\nreporting requirements.\n\n\tWorked on first-time transition from IGAAP to IND AS with hands on exposure to IND AS 101 adjustments, reconciliations and\ndisclosure requirements.\n\n\nManufacturing - Chemicals (Turnover > Rs. 800 Crores)\n\tHandled compliance testing of statutory dues including TDS, TCS through challan mapping, reconciliation, and due date testing.\n\n\tPerformed year end stock audit and physical inventory verification.\n\n\nManufacturing - Tyre Rubber (Turnover > Rs. 50 Crores)\n\tExecuted opening balance verification procedures under SA 510 by validating prior year balances and carry-forward\nadjustments.\n\n\tLed audit execution for key reporting areas such as revenue, inventory and assets including Test of Details and variance\nanalysis.\n\n\nRestaurant Chain Busines (Turnover > Rs. 400 Crores)\n\tConducted IFC and TOD for revenue realization during the year.\n\n\tPrepared analytical review schedules and area-wise detailed variance analyses for revenue, margins, and key expense heads.\n\n\nOthers\n\tExecuted Internal Audit assignments for a subsidiary of a leading battery manufacturing company across P2P, R2R, HR\nfunctions.\n\n\tAssisted in Transfer Pricing assignments for listed textile and apparel companies, including functional analysis, benchmarking,\nand transfer pricing documentation.\n\n\tGained audit and advisory exposure across NBFC, data centres, quick commerce, real estate, and manufacturing clients by\nparticipating in end-to-end engagements.\n\n\nEXTRA-CURRICULAR ACTIVITIES, ACHIEVEMENTS & CERTIFICATIONS\n\n\tVolunteer at Inner Wheel Club NPO in a tree plantation drive.\n\n\tLed a school Cricket Team in State Level Tournament fostering teamwork and on-field decision making.\n\n\tParticipated in National CA Student Conferences and WICASA Chess competition reflecting strategic thinking skills.\n\n\tElected as a School President of Students council in Class X.\n\n\nSKILLS\n\nTools & Technologies: SAP, Tally Prime, MS -Excel, Word, PowerPoint, ERP System\n\nCERTIFICATIONS\n\nFinance Masterclass\n\n(CAMonk)\n\nCertified in AI for Finance\n\n(CAMonk)\n\n\ntel:8767289120\nhttps://www.linkedin.com/in/parag-badjate-454460282?utm_source=share_via&utm_content=profile&utm_medium=member_ios\nmailto:badjateparag@gmail.com",
+      "extracted_text_length": 3822,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "0f82c44b-af94-4646-9faa-d40fad6865d9",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3822,
+            "word_count": 523,
+            "line_count": 117,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.154893,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3822,
+            "word_count": 523,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "summary",
+              "Skills": "skills",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "badjateparag@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 100,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 38,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 14,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 104,
+                "evidence": "CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3822,
+            "word_count": 523,
+            "line_count": 117,
+            "non_empty_line_count": 71,
+            "short_line_count": 28,
+            "short_line_ratio": 0.394366,
+            "fragmented_line_count": 20,
+            "fragmented_line_ratio": 0.28169,
+            "mean_line_length": 51.86,
+            "median_line_length": 35.0,
+            "line_length_stdev": 42.86,
+            "line_length_cv": 0.826549,
+            "broken_sentence_count": 11,
+            "broken_sentence_ratio": 0.157143,
+            "repeated_adjacent_count": 1,
+            "repeated_adjacent_ratio": 0.014286
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "PARAG BADJATE\n\nCHARTERED ACCOUNTANT\n\n8767289120 LinkedIn\nAug 2023 - Aug 2025\nMumbai\nJul 2026\nJul 2026\nbadjateparag@gmail.com\nSUMMARY\nNewly qualified Chartered Accountant, having cleared in first attempt and articleship experience in statutory audit across diverse\nindustries. Strong foundation in financial reporting, internal controls, analytical review and business process understanding.\nEDUCATION\n\nCourse Year Institution Score Remarks\nCA Final May 2026 ICAI 321 / 600 Exemption in 2 Subjects.\n(First Attempt)\n\nCA Intermediate May 2023 ICAI 446 / 800 Exemption in 2 Subjects.\n(First Attempt)\n\nCA Foundation June 2022 ICAI 295 / 400 Passed with distinction.\n(First Attempt)\n\nBBA April 2022 -\nApril 2025 Savitribai Phule Pune University GPA 8.43 Graduated with A+ Grade.\n1st rank in BBA College.\n\nClass XII March 2022 HSC Examination 90.17% Scored 99 marks in Maths.\n4th rank in city.\n\nClass X March 2020 SSC Examination 92.40% Scored 95 marks in Maths.\n3rd rank in school.\n\nWORK EXPERIENCE\n\nArticled Assistant\n\nSinghi & Co.\n\n(Leading CA Firm (Ranked Top 10) with 40 Partners and 8 offices providing services for more than last 85 years in diverse areas.)\nFMCG (Turnover > Rs. 1200 Crores)\nSupported statutory audit planning by assisting in scoping, allocating work across a team of 5 articled assistants, and\nperforming risk assessment procedures on key balances.\n\nPerformed detailed testing of financial control which includes fixed assets, HR and payroll, finance and accounts.\n\nContributed to the detection and reporting of employee fraud exceeding 1 crore in accordance with SA240 and section 143(12)\nreporting requirements.\n\nWorked on first-time transition from IGAAP to IND AS with hands on exposure to IND AS 101 adjustments, reconciliations and\ndisclosure requirements.\n\nManufacturing - Chemicals (Turnover > Rs. 800 Crores)\nHandled compliance testing of statutory dues including TDS, TCS through challan mapping, reconciliation, and due date testing.\n\nPerformed year end stock audit and physical inventory verification.\n\nManufacturing - Tyre Rubber (Turnover > Rs. 50 Crores)\nExecuted opening balance verification procedures under SA 510 by validating prior year balances and carry-forward\nadjustments.\n\nLed audit execution for key reporting areas such as revenue, inventory and assets including Test of Details and variance\nanalysis.\n\nRestaurant Chain Busines (Turnover > Rs. 400 Crores)\nConducted IFC and TOD for revenue realization during the year.\n\nPrepared analytical review schedules and area-wise detailed variance analyses for revenue, margins, and key expense heads.\n\nOthers\nExecuted Internal Audit assignments for a subsidiary of a leading battery manufacturing company across P2P, R2R, HR\nfunctions.\n\nAssisted in Transfer Pricing assignments for listed textile and apparel companies, including functional analysis, benchmarking,\nand transfer pricing documentation.\n\nGained audit and advisory exposure across NBFC, data centres, quick commerce, real estate, and manufacturing clients by\nparticipating in end-to-end engagements.\n\nEXTRA-CURRICULAR ACTIVITIES, ACHIEVEMENTS & CERTIFICATIONS\n\nVolunteer at Inner Wheel Club NPO in a tree plantation drive.\n\nLed a school Cricket Team in State Level Tournament fostering teamwork and on-field decision making.\n\nParticipated in National CA Student Conferences and WICASA Chess competition reflecting strategic thinking skills.\n\nElected as a School President of Students council in Class X.\n\nSKILLS\n\nTools & Technologies: SAP, Tally Prime, MS -Excel, Word, PowerPoint, ERP System\n\nCERTIFICATIONS\n\nFinance Masterclass\n\n(CAMonk)\n\nCertified in AI for Finance\n\n(CAMonk)\n\ntel:8767289120\nhttps://www.linkedin.com/in/parag-badjate-454460282?utm_source=share_via&utm_content=profile&utm_medium=member_ios\nmailto:badjateparag@gmail.com"
+    }
+  ],
+  "extracted_text": "PARAG BADJATE\n\nCHARTERED ACCOUNTANT\n\n8767289120 LinkedIn\nAug 2023 - Aug 2025\nMumbai\nJul 2026\nJul 2026\nbadjateparag@gmail.com\nSUMMARY\nNewly qualified Chartered Accountant, having cleared in first attempt and articleship experience in statutory audit across diverse\nindustries. Strong foundation in financial reporting, internal controls, analytical review and business process understanding.\nEDUCATION\n\n\tCourse\tYear\tInstitution\tScore\tRemarks\n\tCA Final\tMay 2026\tICAI\t321 / 600\tExemption in 2 Subjects.\n(First Attempt)\n\n\tCA Intermediate\tMay 2023\tICAI\t446 / 800\tExemption in 2 Subjects.\n(First Attempt)\n\n\tCA Foundation\tJune 2022\tICAI\t295 / 400\tPassed with distinction.\n(First Attempt)\n\n\tBBA\tApril 2022 -\nApril 2025\tSavitribai Phule Pune University\tGPA 8.43\tGraduated with A+ Grade.\n1st rank in BBA College.\n\n\tClass XII\tMarch 2022\tHSC Examination\t90.17%\tScored 99 marks in Maths.\n4th rank in city.\n\n\tClass X\tMarch 2020\tSSC Examination\t92.40%\tScored 95 marks in Maths.\n3rd rank in school.\n\n\n\nWORK EXPERIENCE\n\nArticled Assistant\n\nSinghi & Co.\n\n(Leading CA Firm (Ranked Top 10) with 40 Partners and 8 offices providing services for more than last 85 years in diverse areas.)\nFMCG (Turnover > Rs. 1200 Crores)\n\tSupported statutory audit planning by assisting in scoping, allocating work across a team of 5 articled assistants, and\nperforming risk assessment procedures on key balances.\n\n\tPerformed detailed testing of financial control which includes fixed assets, HR and payroll, finance and accounts.\n\n\tContributed to the detection and reporting of employee fraud exceeding 1 crore in accordance with SA240 and section 143(12)\nreporting requirements.\n\n\tWorked on first-time transition from IGAAP to IND AS with hands on exposure to IND AS 101 adjustments, reconciliations and\ndisclosure requirements.\n\n\nManufacturing - Chemicals (Turnover > Rs. 800 Crores)\n\tHandled compliance testing of statutory dues including TDS, TCS through challan mapping, reconciliation, and due date testing.\n\n\tPerformed year end stock audit and physical inventory verification.\n\n\nManufacturing - Tyre Rubber (Turnover > Rs. 50 Crores)\n\tExecuted opening balance verification procedures under SA 510 by validating prior year balances and carry-forward\nadjustments.\n\n\tLed audit execution for key reporting areas such as revenue, inventory and assets including Test of Details and variance\nanalysis.\n\n\nRestaurant Chain Busines (Turnover > Rs. 400 Crores)\n\tConducted IFC and TOD for revenue realization during the year.\n\n\tPrepared analytical review schedules and area-wise detailed variance analyses for revenue, margins, and key expense heads.\n\n\nOthers\n\tExecuted Internal Audit assignments for a subsidiary of a leading battery manufacturing company across P2P, R2R, HR\nfunctions.\n\n\tAssisted in Transfer Pricing assignments for listed textile and apparel companies, including functional analysis, benchmarking,\nand transfer pricing documentation.\n\n\tGained audit and advisory exposure across NBFC, data centres, quick commerce, real estate, and manufacturing clients by\nparticipating in end-to-end engagements.\n\n\nEXTRA-CURRICULAR ACTIVITIES, ACHIEVEMENTS & CERTIFICATIONS\n\n\tVolunteer at Inner Wheel Club NPO in a tree plantation drive.\n\n\tLed a school Cricket Team in State Level Tournament fostering teamwork and on-field decision making.\n\n\tParticipated in National CA Student Conferences and WICASA Chess competition reflecting strategic thinking skills.\n\n\tElected as a School President of Students council in Class X.\n\n\nSKILLS\n\nTools & Technologies: SAP, Tally Prime, MS -Excel, Word, PowerPoint, ERP System\n\nCERTIFICATIONS\n\nFinance Masterclass\n\n(CAMonk)\n\nCertified in AI for Finance\n\n(CAMonk)\n\n\ntel:8767289120\nhttps://www.linkedin.com/in/parag-badjate-454460282?utm_source=share_via&utm_content=profile&utm_medium=member_ios\nmailto:badjateparag@gmail.com",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "PARAG BADJATE\n\nCHARTERED ACCOUNTANT\n\n8767289120 LinkedIn\nAug 2023 - Aug 2025\nMumbai\nJul 2026\nJul 2026\nbadjateparag@gmail.com\nSUMMARY\nNewly qualified Chartered Accountant, having cleared in first attempt and articleship experience in statutory audit across diverse\nindustries. Strong foundation in financial reporting, internal controls, analytical review and business process understanding.\nEDUCATION\n\n\tCourse\tYear\tInstitution\tScore\tRemarks\n\tCA Final\tMay 2026\tICAI\t321 / 600\tExemption in 2 Subjects.\n(First Attempt)\n\n\tCA Intermediate\tMay 2023\tICAI\t446 / 800\tExemption in 2 Subjects.\n(First Attempt)\n\n\tCA Foundation\tJune 2022\tICAI\t295 / 400\tPassed with distinction.\n(First Attempt)\n\n\tBBA\tApril 2022 -\nApril 2025\tSavitribai Phule Pune University\tGPA 8.43\tGraduated with A+ Grade.\n1st rank in BBA College.\n\n\tClass XII\tMarch 2022\tHSC Examination\t90.17%\tScored 99 marks in Maths.\n4th rank in city.\n\n\tClass X\tMarch 2020\tSSC Examination\t92.40%\tScored 95 marks in Maths.\n3rd rank in school.\n\n\n\nWORK EXPERIENCE\n\nArticled Assistant\n\nSinghi & Co.\n\n(Leading CA Firm (Ranked Top 10) with 40 Partners and 8 offices providing services for more than last 85 years in diverse areas.)\nFMCG (Turnover > Rs. 1200 Crores)\n\tSupported statutory audit planning by assisting in scoping, allocating work across a team of 5 articled assistants, and\nperforming risk assessment procedures on key balances.\n\n\tPerformed detailed testing of financial control which includes fixed assets, HR and payroll, finance and accounts.\n\n\tContributed to the detection and reporting of employee fraud exceeding 1 crore in accordance with SA240 and section 143(12)\nreporting requirements.\n\n\tWorked on first-time transition from IGAAP to IND AS with hands on exposure to IND AS 101 adjustments, reconciliations and\ndisclosure requirements.\n\n\nManufacturing - Chemicals (Turnover > Rs. 800 Crores)\n\tHandled compliance testing of statutory dues including TDS, TCS through challan mapping, reconciliation, and due date testing.\n\n\tPerformed year end stock audit and physical inventory verification.\n\n\nManufacturing - Tyre Rubber (Turnover > Rs. 50 Crores)\n\tExecuted opening balance verification procedures under SA 510 by validating prior year balances and carry-forward\nadjustments.\n\n\tLed audit execution for key reporting areas such as revenue, inventory and assets including Test of Details and variance\nanalysis.\n\n\nRestaurant Chain Busines (Turnover > Rs. 400 Crores)\n\tConducted IFC and TOD for revenue realization during the year.\n\n\tPrepared analytical review schedules and area-wise detailed variance analyses for revenue, margins, and key expense heads.\n\n\nOthers\n\tExecuted Internal Audit assignments for a subsidiary of a leading battery manufacturing company across P2P, R2R, HR\nfunctions.\n\n\tAssisted in Transfer Pricing assignments for listed textile and apparel companies, including functional analysis, benchmarking,\nand transfer pricing documentation.\n\n\tGained audit and advisory exposure across NBFC, data centres, quick commerce, real estate, and manufacturing clients by\nparticipating in end-to-end engagements.\n\n\nEXTRA-CURRICULAR ACTIVITIES, ACHIEVEMENTS & CERTIFICATIONS\n\n\tVolunteer at Inner Wheel Club NPO in a tree plantation drive.\n\n\tLed a school Cricket Team in State Level Tournament fostering teamwork and on-field decision making.\n\n\tParticipated in National CA Student Conferences and WICASA Chess competition reflecting strategic thinking skills.\n\n\tElected as a School President of Students council in Class X.\n\n\nSKILLS\n\nTools & Technologies: SAP, Tally Prime, MS -Excel, Word, PowerPoint, ERP System\n\nCERTIFICATIONS\n\nFinance Masterclass\n\n(CAMonk)\n\nCertified in AI for Finance\n\n(CAMonk)\n\n\ntel:8767289120\nhttps://www.linkedin.com/in/parag-badjate-454460282?utm_source=share_via&utm_content=profile&utm_medium=member_ios\nmailto:badjateparag@gmail.com",
+  "quality": {
+    "status": "PASS",
+    "document_id": "0f82c44b-af94-4646-9faa-d40fad6865d9",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3822,
+        "word_count": 523,
+        "line_count": 117,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.154893,
+        "symbol_count": 0,
+        "symbol_ratio": 0.0,
+        "max_repeated_char_run": 4,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 97.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 3822,
+        "word_count": 523,
+        "configured_section_count": 7,
+        "detected_count": 6,
+        "missing_count": 1,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Projects"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Projects"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "summary",
+          "Skills": "skills",
+          "Work Experience": "work experience",
+          "Education": "education",
+          "Certifications": "certifications"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "badjateparag@gmail.com",
+            "confidence": 0.8
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "SUMMARY",
+            "detection_method": "heading",
+            "line_number": 11,
+            "evidence": "SUMMARY",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "SKILLS",
+            "detection_method": "heading",
+            "line_number": 100,
+            "evidence": "SKILLS",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "WORK EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 38,
+            "evidence": "WORK EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATION",
+            "detection_method": "heading",
+            "line_number": 14,
+            "evidence": "EDUCATION",
+            "confidence": 0.98
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": "CERTIFICATIONS",
+            "detection_method": "heading",
+            "line_number": 104,
+            "evidence": "CERTIFICATIONS",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Certifications": "detected",
+          "Projects": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Projects"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Projects"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3822,
+        "word_count": 523,
+        "line_count": 117,
+        "non_empty_line_count": 71,
+        "short_line_count": 28,
+        "short_line_ratio": 0.394366,
+        "fragmented_line_count": 20,
+        "fragmented_line_ratio": 0.28169,
+        "mean_line_length": 51.86,
+        "median_line_length": 35.0,
+        "line_length_stdev": 42.86,
+        "line_length_cv": 0.826549,
+        "broken_sentence_count": 11,
+        "broken_sentence_ratio": 0.157143,
+        "repeated_adjacent_count": 1,
+        "repeated_adjacent_ratio": 0.014286
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": null,
+  "resume_json": null,
+  "hyperlinks": [
+    {
+      "page": 1,
+      "url": "tel:8767289120",
+      "visible_text": "8767289120",
+      "type": "uri",
+      "rect": [
+        26.25,
+        60.75,
+        78.75,
+        72.75
+      ]
+    },
+    {
+      "page": 1,
+      "url": "https://www.linkedin.com/in/parag-badjate-454460282?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      "visible_text": "LinkedIn",
+      "type": "uri",
+      "rect": [
+        232.5,
+        60.75,
+        268.5,
+        72.75
+      ]
+    },
+    {
+      "page": 1,
+      "url": "mailto:badjateparag@gmail.com",
+      "visible_text": "badjateparag@gmail.com",
+      "type": "mailto",
+      "rect": [
+        101.25,
+        60.75,
+        210.0,
+        72.0
+      ]
+    }
+  ],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "PARAG BADJATE\n\nCHARTERED ACCOUNTANT\n\n8767289120 LinkedIn\nAug 2023 - Aug 2025\nMumbai\nJul 2026\nJul 2026\nbadjateparag@gmail.com\nSUMMARY\nNewly qualified Chartered Accountant, having cleared in first attempt and articleship experience in statutory audit across diverse\nindustries. Strong foundation in financial reporting, internal controls, analytical review and business process understanding.\nEDUCATION\n\n\tCourse\tYear\tInstitution\tScore\tRemarks\n\tCA Final\tMay 2026\tICAI\t321 / 600\tExemption in 2 Subjects.\n(First Attempt)\n\n\tCA Intermediate\tMay 2023\tICAI\t446 / 800\tExemption in 2 Subjects.\n(First Attempt)\n\n\tCA Foundation\tJune 2022\tICAI\t295 / 400\tPassed with distinction.\n(First Attempt)\n\n\tBBA\tApril 2022 -\nApril 2025\tSavitribai Phule Pune University\tGPA 8.43\tGraduated with A+ Grade.\n1st rank in BBA College.\n\n\tClass XII\tMarch 2022\tHSC Examination\t90.17%\tScored 99 marks in Maths.\n4th rank in city.\n\n\tClass X\tMarch 2020\tSSC Examination\t92.40%\tScored 95 marks in Maths.\n3rd rank in school.\n\n\n\nWORK EXPERIENCE\n\nArticled Assistant\n\nSinghi & Co.\n\n(Leading CA Firm (Ranked Top 10) with 40 Partners and 8 offices providing services for more than last 85 years in diverse areas.)\nFMCG (Turnover > Rs. 1200 Crores)\n\tSupported statutory audit planning by assisting in scoping, allocating work across a team of 5 articled assistants, and\nperforming risk assessment procedures on key balances.\n\n\tPerformed detailed testing of financial control which includes fixed assets, HR and payroll, finance and accounts.\n\n\tContributed to the detection and reporting of employee fraud exceeding 1 crore in accordance with SA240 and section 143(12)\nreporting requirements.\n\n\tWorked on first-time transition from IGAAP to IND AS with hands on exposure to IND AS 101 adjustments, reconciliations and\ndisclosure requirements.\n\n\nManufacturing - Chemicals (Turnover > Rs. 800 Crores)\n\tHandled compliance testing of statutory dues including TDS, TCS through challan mapping, reconciliation, and due date testing.\n\n\tPerformed year end stock audit and physical inventory verification.\n\n\nManufacturing - Tyre Rubber (Turnover > Rs. 50 Crores)\n\tExecuted opening balance verification procedures under SA 510 by validating prior year balances and carry-forward\nadjustments.\n\n\tLed audit execution for key reporting areas such as revenue, inventory and assets including Test of Details and variance\nanalysis.\n\n\nRestaurant Chain Busines (Turnover > Rs. 400 Crores)\n\tConducted IFC and TOD for revenue realization during the year.\n\n\tPrepared analytical review schedules and area-wise detailed variance analyses for revenue, margins, and key expense heads.\n\n\nOthers\n\tExecuted Internal Audit assignments for a subsidiary of a leading battery manufacturing company across P2P, R2R, HR\nfunctions.\n\n\tAssisted in Transfer Pricing assignments for listed textile and apparel companies, including functional analysis, benchmarking,\nand transfer pricing documentation.\n\n\tGained audit and advisory exposure across NBFC, data centres, quick commerce, real estate, and manufacturing clients by\nparticipating in end-to-end engagements.\n\n\nEXTRA-CURRICULAR ACTIVITIES, ACHIEVEMENTS & CERTIFICATIONS\n\n\tVolunteer at Inner Wheel Club NPO in a tree plantation drive.\n\n\tLed a school Cricket Team in State Level Tournament fostering teamwork and on-field decision making.\n\n\tParticipated in National CA Student Conferences and WICASA Chess competition reflecting strategic thinking skills.\n\n\tElected as a School President of Students council in Class X.\n\n\nSKILLS\n\nTools & Technologies: SAP, Tally Prime, MS -Excel, Word, PowerPoint, ERP System\n\nCERTIFICATIONS\n\nFinance Masterclass\n\n(CAMonk)\n\nCertified in AI for Finance\n\n(CAMonk)\n\n\ntel:8767289120\nhttps://www.linkedin.com/in/parag-badjate-454460282?utm_source=share_via&utm_content=profile&utm_medium=member_ios\nmailto:badjateparag@gmail.com",
+    "normalized_text": "PARAG BADJATE\n\nCHARTERED ACCOUNTANT\n\n8767289120 LinkedIn\nAug 2023 - Aug 2025\nMumbai\nJul 2026\nJul 2026\nbadjateparag@gmail.com\nSUMMARY\nNewly qualified Chartered Accountant, having cleared in first attempt and articleship experience in statutory audit across diverse\nindustries. Strong foundation in financial reporting, internal controls, analytical review and business process understanding.\nEDUCATION\n\nCourse Year Institution Score Remarks\nCA Final May 2026 ICAI 321 / 600 Exemption in 2 Subjects.\n(First Attempt)\n\nCA Intermediate May 2023 ICAI 446 / 800 Exemption in 2 Subjects.\n(First Attempt)\n\nCA Foundation June 2022 ICAI 295 / 400 Passed with distinction.\n(First Attempt)\n\nBBA April 2022 -\nApril 2025 Savitribai Phule Pune University GPA 8.43 Graduated with A+ Grade.\n1st rank in BBA College.\n\nClass XII March 2022 HSC Examination 90.17% Scored 99 marks in Maths.\n4th rank in city.\n\nClass X March 2020 SSC Examination 92.40% Scored 95 marks in Maths.\n3rd rank in school.\n\nWORK EXPERIENCE\n\nArticled Assistant\n\nSinghi & Co.\n\n(Leading CA Firm (Ranked Top 10) with 40 Partners and 8 offices providing services for more than last 85 years in diverse areas.)\nFMCG (Turnover > Rs. 1200 Crores)\nSupported statutory audit planning by assisting in scoping, allocating work across a team of 5 articled assistants, and\nperforming risk assessment procedures on key balances.\n\nPerformed detailed testing of financial control which includes fixed assets, HR and payroll, finance and accounts.\n\nContributed to the detection and reporting of employee fraud exceeding 1 crore in accordance with SA240 and section 143(12)\nreporting requirements.\n\nWorked on first-time transition from IGAAP to IND AS with hands on exposure to IND AS 101 adjustments, reconciliations and\ndisclosure requirements.\n\nManufacturing - Chemicals (Turnover > Rs. 800 Crores)\nHandled compliance testing of statutory dues including TDS, TCS through challan mapping, reconciliation, and due date testing.\n\nPerformed year end stock audit and physical inventory verification.\n\nManufacturing - Tyre Rubber (Turnover > Rs. 50 Crores)\nExecuted opening balance verification procedures under SA 510 by validating prior year balances and carry-forward\nadjustments.\n\nLed audit execution for key reporting areas such as revenue, inventory and assets including Test of Details and variance\nanalysis.\n\nRestaurant Chain Busines (Turnover > Rs. 400 Crores)\nConducted IFC and TOD for revenue realization during the year.\n\nPrepared analytical review schedules and area-wise detailed variance analyses for revenue, margins, and key expense heads.\n\nOthers\nExecuted Internal Audit assignments for a subsidiary of a leading battery manufacturing company across P2P, R2R, HR\nfunctions.\n\nAssisted in Transfer Pricing assignments for listed textile and apparel companies, including functional analysis, benchmarking,\nand transfer pricing documentation.\n\nGained audit and advisory exposure across NBFC, data centres, quick commerce, real estate, and manufacturing clients by\nparticipating in end-to-end engagements.\n\nEXTRA-CURRICULAR ACTIVITIES, ACHIEVEMENTS & CERTIFICATIONS\n\nVolunteer at Inner Wheel Club NPO in a tree plantation drive.\n\nLed a school Cricket Team in State Level Tournament fostering teamwork and on-field decision making.\n\nParticipated in National CA Student Conferences and WICASA Chess competition reflecting strategic thinking skills.\n\nElected as a School President of Students council in Class X.\n\nSKILLS\n\nTools & Technologies: SAP, Tally Prime, MS -Excel, Word, PowerPoint, ERP System\n\nCERTIFICATIONS\n\nFinance Masterclass\n\n(CAMonk)\n\nCertified in AI for Finance\n\n(CAMonk)\n\ntel:8767289120\nhttps://www.linkedin.com/in/parag-badjate-454460282?utm_source=share_via&utm_content=profile&utm_medium=member_ios\nmailto:badjateparag@gmail.com",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 3822,
+    "normalized_chars": 3789,
+    "original_estimated_tokens": 956,
+    "normalized_estimated_tokens": 947,
+    "estimated_reduction_percent": 0.9
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "timed_out_calls": 1,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_source": null,
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Muse API request timed out after 20s.",
+    "input_type": "text",
+    "duration_ms": 20062.68,
+    "timeout_seconds": 20.0,
+    "usage": {},
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 3822,
+      "normalized_chars": 3789,
+      "estimated_reduction_percent": 0.9,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 9783.33,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "0f82c44b-af94-4646-9faa-d40fad6865d9",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3822,
+            "word_count": 523,
+            "line_count": 117,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.154893,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3822,
+            "word_count": 523,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "summary",
+              "Skills": "skills",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "badjateparag@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 100,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 38,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 14,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 104,
+                "evidence": "CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3822,
+            "word_count": 523,
+            "line_count": 117,
+            "non_empty_line_count": 71,
+            "short_line_count": 28,
+            "short_line_ratio": 0.394366,
+            "fragmented_line_count": 20,
+            "fragmented_line_ratio": 0.28169,
+            "mean_line_length": 51.86,
+            "median_line_length": 35.0,
+            "line_length_stdev": 42.86,
+            "line_length_cv": 0.826549,
+            "broken_sentence_count": 11,
+            "broken_sentence_ratio": 0.157143,
+            "repeated_adjacent_count": 1,
+            "repeated_adjacent_ratio": 0.014286
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 20062.68,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 9783.33,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "0f82c44b-af94-4646-9faa-d40fad6865d9_SHJ-5444_SHC-383052.pdf"
+}

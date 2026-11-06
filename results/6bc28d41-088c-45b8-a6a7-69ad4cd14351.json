@@ -1,0 +1,1010 @@
+{
+  "resume_id": "6bc28d41-088c-45b8-a6a7-69ad4cd14351",
+  "filename": "SHJ-5451_SHC-308247.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 153157,
+  "uploaded_at": "2026-11-06T11:16:33.675201+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 9647.48,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 9647.48,
+      "text": "RESUME\n\nARUN KUMAR\nMOH.KHWAJA FIROJ POST DALELGANJ \nSHAHJAHANPUR(U.P.)-242001\nMob. No. :8957269112\nE-mail arun8957269112@gmail.com\n\nCAREER OBJECTIVE\nTo work in an organization where I can apply my skill and expertise to learn continuously in the \npursuit of achieving proficiency & excellence thus giving me the maximum job satisfaction.\n\nPROFESSIONAL QUALIFICATION\nThree Years Diploma in Chemical Engineering from Government Polytechnic, Shajahanpur \n(U.P).\n\nEDUCATIONAL QUALIFICATION\n TECHNICAL QUALIFICATION\n\nExam University/Board Passing Year Institute %age\nDiploma in \nChemical \nEngineering\n\nBoard of Technical \nEducation \nLucknow Uttar \nPradesh\n\n2019        Gov \nPolytechnic \nShajahanpur\n\n75\n\n ACADEMIC QUALIFICATION\n\nExam University/Board Passing Year Division\nHighschool U.P. BOARD 2014 1st 72.50\nIntermediate U.P.BOARD 2016 1st 66.60\n\nVOCATIONAL TRAINING\n4 weeks full vocational training at THE KISAN CHINI MILLS LIMITED TILHAR \n\nSHAHJAHANPUR.\n\nmailto:arun8957269112@gmail.com\n\n\nWORK EXPERIENCE\nTechnical Apprentice (Chemical) From: May 2022-May 2023\n\nJOB DESCRIPTION\n Understanding P&ID, PFD drawings.\n Handle various equipments like Centrifugal pump,Reciprocating pump,Dosing pump,Heat \n\nexchange equipments (shell & tube type),Control valve(Ball valve,Glove valve,Gate \nvalve,Diaphragm valve & Air operated valve),Filters.\n\n Knowledge about Utilities(Cooling and Chilling Tower),Air compressor, Boilers.\n\n General knowledge about plant process equipments like granulators,dryer,vibrating \nscreens,combustion chamber,conveyors,scrubbers.And also its operations.\n\nSKILLS\nHard Working, Responsible, Strong Will Power, Co-operative & Participate, Optimistic,Basic\nknowledge of computer,self motivated,Straight forward.\n\nPERSONAL PROFILE\n\nFather’s Name \nMother’s Name \nDate Of Birth\n\nMr. RAMADEEN \nMrs. RAMKHUSHI \n21-07-1998\n\nMarital Status : Unmarried\nGender : Male\n\nDECLARATION\n\nI, hereby declare that all the details furnished above are true to the best of my knowledge and \nBelief\n\nI worked in Indian Oil Corporation Limited Gujrat Refinery Badodara  as a Technical Apprentice in\nthe Production Department.1 year work experience.\nI  worked in safeyeast private limited company Sandila Hardoi from 1.may-2025",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-06T11:16:23.932785+00:00",
+      "completed_at": "2026-11-06T11:16:33.580895+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "6bc28d41-088c-45b8-a6a7-69ad4cd14351",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 98.96,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS"
+          ],
+          "reasons": [
+            "6 non-printable characters found (0.27% of text)."
+          ],
+          "metrics": {
+            "char_count": 2224,
+            "word_count": 273,
+            "line_count": 89,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 6,
+            "non_printable_ratio": 0.002698,
+            "whitespace_ratio": 0.147032,
+            "symbol_count": 8,
+            "symbol_ratio": 0.003597,
+            "max_repeated_char_run": 8,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2224,
+            "word_count": 273,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "career objective",
+              "Skills": "skills",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "vocational training"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "arun8957269112@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "CAREER OBJECTIVE",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 65,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 50,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 26,
+                "evidence": "Education",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "VOCATIONAL TRAINING",
+                "detection_method": "heading_conditional",
+                "line_number": 42,
+                "evidence": "VOCATIONAL TRAINING",
+                "confidence": 0.85
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 98.96
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 86.96,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "51.6% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "41.9% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 2224,
+            "word_count": 273,
+            "line_count": 89,
+            "non_empty_line_count": 62,
+            "short_line_count": 32,
+            "short_line_ratio": 0.516129,
+            "fragmented_line_count": 26,
+            "fragmented_line_ratio": 0.419355,
+            "mean_line_length": 34.15,
+            "median_line_length": 22.0,
+            "line_length_stdev": 29.09,
+            "line_length_cv": 0.852012,
+            "broken_sentence_count": 6,
+            "broken_sentence_ratio": 0.098361,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "6bc28d41-088c-45b8-a6a7-69ad4cd14351-attempt-1",
+      "resume_id": "6bc28d41-088c-45b8-a6a7-69ad4cd14351",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "RESUME\n\nARUN KUMAR\nMOH.KHWAJA FIROJ POST DALELGANJ \nSHAHJAHANPUR(U.P.)-242001\nMob. No. :8957269112\nE-mail arun8957269112@gmail.com\n\nCAREER OBJECTIVE\nTo work in an organization where I can apply my skill and expertise to learn continuously in the \npursuit of achieving proficiency & excellence thus giving me the maximum job satisfaction.\n\nPROFESSIONAL QUALIFICATION\nThree Years Diploma in Chemical Engineering from Government Polytechnic, Shajahanpur \n(U.P).\n\nEDUCATIONAL QUALIFICATION\n TECHNICAL QUALIFICATION\n\nExam University/Board Passing Year Institute %age\nDiploma in \nChemical \nEngineering\n\nBoard of Technical \nEducation \nLucknow Uttar \nPradesh\n\n2019        Gov \nPolytechnic \nShajahanpur\n\n75\n\n ACADEMIC QUALIFICATION\n\nExam University/Board Passing Year Division\nHighschool U.P. BOARD 2014 1st 72.50\nIntermediate U.P.BOARD 2016 1st 66.60\n\nVOCATIONAL TRAINING\n4 weeks full vocational training at THE KISAN CHINI MILLS LIMITED TILHAR \n\nSHAHJAHANPUR.\n\nmailto:arun8957269112@gmail.com\n\n\nWORK EXPERIENCE\nTechnical Apprentice (Chemical) From: May 2022-May 2023\n\nJOB DESCRIPTION\n Understanding P&ID, PFD drawings.\n Handle various equipments like Centrifugal pump,Reciprocating pump,Dosing pump,Heat \n\nexchange equipments (shell & tube type),Control valve(Ball valve,Glove valve,Gate \nvalve,Diaphragm valve & Air operated valve),Filters.\n\n Knowledge about Utilities(Cooling and Chilling Tower),Air compressor, Boilers.\n\n General knowledge about plant process equipments like granulators,dryer,vibrating \nscreens,combustion chamber,conveyors,scrubbers.And also its operations.\n\nSKILLS\nHard Working, Responsible, Strong Will Power, Co-operative & Participate, Optimistic,Basic\nknowledge of computer,self motivated,Straight forward.\n\nPERSONAL PROFILE\n\nFather’s Name \nMother’s Name \nDate Of Birth\n\nMr. RAMADEEN \nMrs. RAMKHUSHI \n21-07-1998\n\nMarital Status : Unmarried\nGender : Male\n\nDECLARATION\n\nI, hereby declare that all the details furnished above are true to the best of my knowledge and \nBelief\n\nI worked in Indian Oil Corporation Limited Gujrat Refinery Badodara  as a Technical Apprentice in\nthe Production Department.1 year work experience.\nI  worked in safeyeast private limited company Sandila Hardoi from 1.may-2025",
+      "extracted_text_length": 2224,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "6bc28d41-088c-45b8-a6a7-69ad4cd14351",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 98.96,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS"
+          ],
+          "reasons": [
+            "6 non-printable characters found (0.27% of text)."
+          ],
+          "metrics": {
+            "char_count": 2224,
+            "word_count": 273,
+            "line_count": 89,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 6,
+            "non_printable_ratio": 0.002698,
+            "whitespace_ratio": 0.147032,
+            "symbol_count": 8,
+            "symbol_ratio": 0.003597,
+            "max_repeated_char_run": 8,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2224,
+            "word_count": 273,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "career objective",
+              "Skills": "skills",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "vocational training"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "arun8957269112@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "CAREER OBJECTIVE",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 65,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 50,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 26,
+                "evidence": "Education",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "VOCATIONAL TRAINING",
+                "detection_method": "heading_conditional",
+                "line_number": 42,
+                "evidence": "VOCATIONAL TRAINING",
+                "confidence": 0.85
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 98.96
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 86.96,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "51.6% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "41.9% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 2224,
+            "word_count": 273,
+            "line_count": 89,
+            "non_empty_line_count": 62,
+            "short_line_count": 32,
+            "short_line_ratio": 0.516129,
+            "fragmented_line_count": 26,
+            "fragmented_line_ratio": 0.419355,
+            "mean_line_length": 34.15,
+            "median_line_length": 22.0,
+            "line_length_stdev": 29.09,
+            "line_length_cv": 0.852012,
+            "broken_sentence_count": 6,
+            "broken_sentence_ratio": 0.098361,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "RESUME\n\nARUN KUMAR\nMOH.KHWAJA FIROJ POST DALELGANJ\nSHAHJAHANPUR(U.P.)-242001\nMob. No. :8957269112\nE-mail arun8957269112@gmail.com\n\nCAREER OBJECTIVE\nTo work in an organization where I can apply my skill and expertise to learn continuously in the\npursuit of achieving proficiency & excellence thus giving me the maximum job satisfaction.\n\nPROFESSIONAL QUALIFICATION\nThree Years Diploma in Chemical Engineering from Government Polytechnic, Shajahanpur\n(U.P).\n\nEDUCATIONAL QUALIFICATION\n TECHNICAL QUALIFICATION\n\nExam University/Board Passing Year Institute %age\nDiploma in\nChemical\nEngineering\n\nBoard of Technical\nEducation\nLucknow Uttar\nPradesh\n\n2019 Gov\nPolytechnic\nShajahanpur\n\n75\n\n ACADEMIC QUALIFICATION\n\nExam University/Board Passing Year Division\nHighschool U.P. BOARD 2014 1st 72.50\nIntermediate U.P.BOARD 2016 1st 66.60\n\nVOCATIONAL TRAINING\n4 weeks full vocational training at THE KISAN CHINI MILLS LIMITED TILHAR\n\nSHAHJAHANPUR.\n\nmailto:arun8957269112@gmail.com\n\nWORK EXPERIENCE\nTechnical Apprentice (Chemical) From: May 2022-May 2023\n\nJOB DESCRIPTION\n Understanding P&ID, PFD drawings.\n Handle various equipments like Centrifugal pump,Reciprocating pump,Dosing pump,Heat\n\nexchange equipments (shell & tube type),Control valve(Ball valve,Glove valve,Gate\nvalve,Diaphragm valve & Air operated valve),Filters.\n\n Knowledge about Utilities(Cooling and Chilling Tower),Air compressor, Boilers.\n\n General knowledge about plant process equipments like granulators,dryer,vibrating\nscreens,combustion chamber,conveyors,scrubbers.And also its operations.\n\nSKILLS\nHard Working, Responsible, Strong Will Power, Co-operative & Participate, Optimistic,Basic\nknowledge of computer,self motivated,Straight forward.\n\nPERSONAL PROFILE\n\nFather’s Name\nMother’s Name\nDate Of Birth\n\nMr. RAMADEEN\nMrs. RAMKHUSHI\n21-07-1998\n\nMarital Status : Unmarried\nGender : Male\n\nDECLARATION\n\nI, hereby declare that all the details furnished above are true to the best of my knowledge and\nBelief\n\nI worked in Indian Oil Corporation Limited Gujrat Refinery Badodara as a Technical Apprentice in\nthe Production Department.1 year work experience.\nI worked in safeyeast private limited company Sandila Hardoi from 1.may-2025"
+    }
+  ],
+  "extracted_text": "RESUME\n\nARUN KUMAR\nMOH.KHWAJA FIROJ POST DALELGANJ \nSHAHJAHANPUR(U.P.)-242001\nMob. No. :8957269112\nE-mail arun8957269112@gmail.com\n\nCAREER OBJECTIVE\nTo work in an organization where I can apply my skill and expertise to learn continuously in the \npursuit of achieving proficiency & excellence thus giving me the maximum job satisfaction.\n\nPROFESSIONAL QUALIFICATION\nThree Years Diploma in Chemical Engineering from Government Polytechnic, Shajahanpur \n(U.P).\n\nEDUCATIONAL QUALIFICATION\n TECHNICAL QUALIFICATION\n\nExam University/Board Passing Year Institute %age\nDiploma in \nChemical \nEngineering\n\nBoard of Technical \nEducation \nLucknow Uttar \nPradesh\n\n2019        Gov \nPolytechnic \nShajahanpur\n\n75\n\n ACADEMIC QUALIFICATION\n\nExam University/Board Passing Year Division\nHighschool U.P. BOARD 2014 1st 72.50\nIntermediate U.P.BOARD 2016 1st 66.60\n\nVOCATIONAL TRAINING\n4 weeks full vocational training at THE KISAN CHINI MILLS LIMITED TILHAR \n\nSHAHJAHANPUR.\n\nmailto:arun8957269112@gmail.com\n\n\nWORK EXPERIENCE\nTechnical Apprentice (Chemical) From: May 2022-May 2023\n\nJOB DESCRIPTION\n Understanding P&ID, PFD drawings.\n Handle various equipments like Centrifugal pump,Reciprocating pump,Dosing pump,Heat \n\nexchange equipments (shell & tube type),Control valve(Ball valve,Glove valve,Gate \nvalve,Diaphragm valve & Air operated valve),Filters.\n\n Knowledge about Utilities(Cooling and Chilling Tower),Air compressor, Boilers.\n\n General knowledge about plant process equipments like granulators,dryer,vibrating \nscreens,combustion chamber,conveyors,scrubbers.And also its operations.\n\nSKILLS\nHard Working, Responsible, Strong Will Power, Co-operative & Participate, Optimistic,Basic\nknowledge of computer,self motivated,Straight forward.\n\nPERSONAL PROFILE\n\nFather’s Name \nMother’s Name \nDate Of Birth\n\nMr. RAMADEEN \nMrs. RAMKHUSHI \n21-07-1998\n\nMarital Status : Unmarried\nGender : Male\n\nDECLARATION\n\nI, hereby declare that all the details furnished above are true to the best of my knowledge and \nBelief\n\nI worked in Indian Oil Corporation Limited Gujrat Refinery Badodara  as a Technical Apprentice in\nthe Production Department.1 year work experience.\nI  worked in safeyeast private limited company Sandila Hardoi from 1.may-2025",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "RESUME\n\nARUN KUMAR\nMOH.KHWAJA FIROJ POST DALELGANJ \nSHAHJAHANPUR(U.P.)-242001\nMob. No. :8957269112\nE-mail arun8957269112@gmail.com\n\nCAREER OBJECTIVE\nTo work in an organization where I can apply my skill and expertise to learn continuously in the \npursuit of achieving proficiency & excellence thus giving me the maximum job satisfaction.\n\nPROFESSIONAL QUALIFICATION\nThree Years Diploma in Chemical Engineering from Government Polytechnic, Shajahanpur \n(U.P).\n\nEDUCATIONAL QUALIFICATION\n TECHNICAL QUALIFICATION\n\nExam University/Board Passing Year Institute %age\nDiploma in \nChemical \nEngineering\n\nBoard of Technical \nEducation \nLucknow Uttar \nPradesh\n\n2019        Gov \nPolytechnic \nShajahanpur\n\n75\n\n ACADEMIC QUALIFICATION\n\nExam University/Board Passing Year Division\nHighschool U.P. BOARD 2014 1st 72.50\nIntermediate U.P.BOARD 2016 1st 66.60\n\nVOCATIONAL TRAINING\n4 weeks full vocational training at THE KISAN CHINI MILLS LIMITED TILHAR \n\nSHAHJAHANPUR.\n\nmailto:arun8957269112@gmail.com\n\n\nWORK EXPERIENCE\nTechnical Apprentice (Chemical) From: May 2022-May 2023\n\nJOB DESCRIPTION\n Understanding P&ID, PFD drawings.\n Handle various equipments like Centrifugal pump,Reciprocating pump,Dosing pump,Heat \n\nexchange equipments (shell & tube type),Control valve(Ball valve,Glove valve,Gate \nvalve,Diaphragm valve & Air operated valve),Filters.\n\n Knowledge about Utilities(Cooling and Chilling Tower),Air compressor, Boilers.\n\n General knowledge about plant process equipments like granulators,dryer,vibrating \nscreens,combustion chamber,conveyors,scrubbers.And also its operations.\n\nSKILLS\nHard Working, Responsible, Strong Will Power, Co-operative & Participate, Optimistic,Basic\nknowledge of computer,self motivated,Straight forward.\n\nPERSONAL PROFILE\n\nFather’s Name \nMother’s Name \nDate Of Birth\n\nMr. RAMADEEN \nMrs. RAMKHUSHI \n21-07-1998\n\nMarital Status : Unmarried\nGender : Male\n\nDECLARATION\n\nI, hereby declare that all the details furnished above are true to the best of my knowledge and \nBelief\n\nI worked in Indian Oil Corporation Limited Gujrat Refinery Badodara  as a Technical Apprentice in\nthe Production Department.1 year work experience.\nI  worked in safeyeast private limited company Sandila Hardoi from 1.may-2025",
+  "quality": {
+    "status": "PASS",
+    "document_id": "6bc28d41-088c-45b8-a6a7-69ad4cd14351",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 98.96,
+      "flags": [
+        "EXCESSIVE_NON_PRINTABLE_CHARS"
+      ],
+      "reasons": [
+        "6 non-printable characters found (0.27% of text)."
+      ],
+      "metrics": {
+        "char_count": 2224,
+        "word_count": 273,
+        "line_count": 89,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 6,
+        "non_printable_ratio": 0.002698,
+        "whitespace_ratio": 0.147032,
+        "symbol_count": 8,
+        "symbol_ratio": 0.003597,
+        "max_repeated_char_run": 8,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 97.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 2224,
+        "word_count": 273,
+        "configured_section_count": 7,
+        "detected_count": 6,
+        "missing_count": 1,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Projects"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Projects"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "career objective",
+          "Skills": "skills",
+          "Work Experience": "work experience",
+          "Education": "education",
+          "Certifications": "vocational training"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "arun8957269112@gmail.com",
+            "confidence": 0.8
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "CAREER OBJECTIVE",
+            "detection_method": "heading",
+            "line_number": 9,
+            "evidence": "CAREER OBJECTIVE",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "SKILLS",
+            "detection_method": "heading",
+            "line_number": 65,
+            "evidence": "SKILLS",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "WORK EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 50,
+            "evidence": "WORK EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "Education",
+            "detection_method": "heading",
+            "line_number": 26,
+            "evidence": "Education",
+            "confidence": 0.98
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": "VOCATIONAL TRAINING",
+            "detection_method": "heading_conditional",
+            "line_number": 42,
+            "evidence": "VOCATIONAL TRAINING",
+            "confidence": 0.85
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Certifications": "detected",
+          "Projects": "missing"
+        },
+        "extraction_quality": 98.96
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Projects"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Projects"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 86.96,
+      "flags": [
+        "EXCESSIVE_SHORT_LINES",
+        "FRAGMENTED_LINES"
+      ],
+      "reasons": [
+        "51.6% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+        "41.9% of lines are 15 characters or shorter."
+      ],
+      "metrics": {
+        "char_count": 2224,
+        "word_count": 273,
+        "line_count": 89,
+        "non_empty_line_count": 62,
+        "short_line_count": 32,
+        "short_line_ratio": 0.516129,
+        "fragmented_line_count": 26,
+        "fragmented_line_ratio": 0.419355,
+        "mean_line_length": 34.15,
+        "median_line_length": 22.0,
+        "line_length_stdev": 29.09,
+        "line_length_cv": 0.852012,
+        "broken_sentence_count": 6,
+        "broken_sentence_ratio": 0.098361,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": null,
+  "resume_json": null,
+  "hyperlinks": [
+    {
+      "page": 1,
+      "url": "mailto:arun8957269112@gmail.com",
+      "visible_text": "arun8957269112@gmail.com",
+      "type": "mailto",
+      "rect": [
+        96.0,
+        194.65,
+        232.42,
+        207.3
+      ]
+    }
+  ],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "RESUME\n\nARUN KUMAR\nMOH.KHWAJA FIROJ POST DALELGANJ \nSHAHJAHANPUR(U.P.)-242001\nMob. No. :8957269112\nE-mail arun8957269112@gmail.com\n\nCAREER OBJECTIVE\nTo work in an organization where I can apply my skill and expertise to learn continuously in the \npursuit of achieving proficiency & excellence thus giving me the maximum job satisfaction.\n\nPROFESSIONAL QUALIFICATION\nThree Years Diploma in Chemical Engineering from Government Polytechnic, Shajahanpur \n(U.P).\n\nEDUCATIONAL QUALIFICATION\n TECHNICAL QUALIFICATION\n\nExam University/Board Passing Year Institute %age\nDiploma in \nChemical \nEngineering\n\nBoard of Technical \nEducation \nLucknow Uttar \nPradesh\n\n2019        Gov \nPolytechnic \nShajahanpur\n\n75\n\n ACADEMIC QUALIFICATION\n\nExam University/Board Passing Year Division\nHighschool U.P. BOARD 2014 1st 72.50\nIntermediate U.P.BOARD 2016 1st 66.60\n\nVOCATIONAL TRAINING\n4 weeks full vocational training at THE KISAN CHINI MILLS LIMITED TILHAR \n\nSHAHJAHANPUR.\n\nmailto:arun8957269112@gmail.com\n\n\nWORK EXPERIENCE\nTechnical Apprentice (Chemical) From: May 2022-May 2023\n\nJOB DESCRIPTION\n Understanding P&ID, PFD drawings.\n Handle various equipments like Centrifugal pump,Reciprocating pump,Dosing pump,Heat \n\nexchange equipments (shell & tube type),Control valve(Ball valve,Glove valve,Gate \nvalve,Diaphragm valve & Air operated valve),Filters.\n\n Knowledge about Utilities(Cooling and Chilling Tower),Air compressor, Boilers.\n\n General knowledge about plant process equipments like granulators,dryer,vibrating \nscreens,combustion chamber,conveyors,scrubbers.And also its operations.\n\nSKILLS\nHard Working, Responsible, Strong Will Power, Co-operative & Participate, Optimistic,Basic\nknowledge of computer,self motivated,Straight forward.\n\nPERSONAL PROFILE\n\nFather’s Name \nMother’s Name \nDate Of Birth\n\nMr. RAMADEEN \nMrs. RAMKHUSHI \n21-07-1998\n\nMarital Status : Unmarried\nGender : Male\n\nDECLARATION\n\nI, hereby declare that all the details furnished above are true to the best of my knowledge and \nBelief\n\nI worked in Indian Oil Corporation Limited Gujrat Refinery Badodara  as a Technical Apprentice in\nthe Production Department.1 year work experience.\nI  worked in safeyeast private limited company Sandila Hardoi from 1.may-2025",
+    "normalized_text": "RESUME\n\nARUN KUMAR\nMOH.KHWAJA FIROJ POST DALELGANJ\nSHAHJAHANPUR(U.P.)-242001\nMob. No. :8957269112\nE-mail arun8957269112@gmail.com\n\nCAREER OBJECTIVE\nTo work in an organization where I can apply my skill and expertise to learn continuously in the\npursuit of achieving proficiency & excellence thus giving me the maximum job satisfaction.\n\nPROFESSIONAL QUALIFICATION\nThree Years Diploma in Chemical Engineering from Government Polytechnic, Shajahanpur\n(U.P).\n\nEDUCATIONAL QUALIFICATION\n TECHNICAL QUALIFICATION\n\nExam University/Board Passing Year Institute %age\nDiploma in\nChemical\nEngineering\n\nBoard of Technical\nEducation\nLucknow Uttar\nPradesh\n\n2019 Gov\nPolytechnic\nShajahanpur\n\n75\n\n ACADEMIC QUALIFICATION\n\nExam University/Board Passing Year Division\nHighschool U.P. BOARD 2014 1st 72.50\nIntermediate U.P.BOARD 2016 1st 66.60\n\nVOCATIONAL TRAINING\n4 weeks full vocational training at THE KISAN CHINI MILLS LIMITED TILHAR\n\nSHAHJAHANPUR.\n\nmailto:arun8957269112@gmail.com\n\nWORK EXPERIENCE\nTechnical Apprentice (Chemical) From: May 2022-May 2023\n\nJOB DESCRIPTION\n Understanding P&ID, PFD drawings.\n Handle various equipments like Centrifugal pump,Reciprocating pump,Dosing pump,Heat\n\nexchange equipments (shell & tube type),Control valve(Ball valve,Glove valve,Gate\nvalve,Diaphragm valve & Air operated valve),Filters.\n\n Knowledge about Utilities(Cooling and Chilling Tower),Air compressor, Boilers.\n\n General knowledge about plant process equipments like granulators,dryer,vibrating\nscreens,combustion chamber,conveyors,scrubbers.And also its operations.\n\nSKILLS\nHard Working, Responsible, Strong Will Power, Co-operative & Participate, Optimistic,Basic\nknowledge of computer,self motivated,Straight forward.\n\nPERSONAL PROFILE\n\nFather’s Name\nMother’s Name\nDate Of Birth\n\nMr. RAMADEEN\nMrs. RAMKHUSHI\n21-07-1998\n\nMarital Status : Unmarried\nGender : Male\n\nDECLARATION\n\nI, hereby declare that all the details furnished above are true to the best of my knowledge and\nBelief\n\nI worked in Indian Oil Corporation Limited Gujrat Refinery Badodara as a Technical Apprentice in\nthe Production Department.1 year work experience.\nI worked in safeyeast private limited company Sandila Hardoi from 1.may-2025",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 2224,
+    "normalized_chars": 2195,
+    "original_estimated_tokens": 556,
+    "normalized_estimated_tokens": 549,
+    "estimated_reduction_percent": 1.3
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "timed_out_calls": 1,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_source": null,
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Muse API request timed out after 20s.",
+    "input_type": "text",
+    "duration_ms": 20094.79,
+    "timeout_seconds": 20.0,
+    "usage": {},
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 2224,
+      "normalized_chars": 2195,
+      "estimated_reduction_percent": 1.3,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 9647.48,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "6bc28d41-088c-45b8-a6a7-69ad4cd14351",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 98.96,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS"
+          ],
+          "reasons": [
+            "6 non-printable characters found (0.27% of text)."
+          ],
+          "metrics": {
+            "char_count": 2224,
+            "word_count": 273,
+            "line_count": 89,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 6,
+            "non_printable_ratio": 0.002698,
+            "whitespace_ratio": 0.147032,
+            "symbol_count": 8,
+            "symbol_ratio": 0.003597,
+            "max_repeated_char_run": 8,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2224,
+            "word_count": 273,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "career objective",
+              "Skills": "skills",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "vocational training"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "arun8957269112@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "CAREER OBJECTIVE",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 65,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 50,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 26,
+                "evidence": "Education",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "VOCATIONAL TRAINING",
+                "detection_method": "heading_conditional",
+                "line_number": 42,
+                "evidence": "VOCATIONAL TRAINING",
+                "confidence": 0.85
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 98.96
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 86.96,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "51.6% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "41.9% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 2224,
+            "word_count": 273,
+            "line_count": 89,
+            "non_empty_line_count": 62,
+            "short_line_count": 32,
+            "short_line_ratio": 0.516129,
+            "fragmented_line_count": 26,
+            "fragmented_line_ratio": 0.419355,
+            "mean_line_length": 34.15,
+            "median_line_length": 22.0,
+            "line_length_stdev": 29.09,
+            "line_length_cv": 0.852012,
+            "broken_sentence_count": 6,
+            "broken_sentence_ratio": 0.098361,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 20094.79,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 9647.48,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "6bc28d41-088c-45b8-a6a7-69ad4cd14351_SHJ-5451_SHC-308247.pdf"
+}

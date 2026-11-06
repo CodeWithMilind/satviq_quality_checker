@@ -1,0 +1,1060 @@
+{
+  "resume_id": "6e676de6-01d1-432e-bb34-fd90d6678aff",
+  "filename": "SHJ-5464_SHC-385068.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 556891,
+  "uploaded_at": "2026-11-06T11:27:03.688600+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 7258.52,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 7258.52,
+      "text": "GAJENDRA JADHAV\nDerivatives Trader\n+91 9920563289   •   gajendraindex03@gmail.com   •   Dombivali, Maharashtra\n\n\nSUMMARY\nResults-driven Derivatives Trader with experience in options strategies (collars, spreads, calendar spreads), risk-adjusted returns, Greeks interpretation, and \nbacktesting. Adept at client relationship management, financial advisory, and identifying new business opportunities.\nEXPERIENCE\nTrader / Business Development Aug 2025 – Present\nIndependent  |  Dombivali, Maharashtra\n\t• Developed and deployed a proprietary algorithmic trading system for Indian equity derivatives (Nifty/BankNifty) and BTC Options, automating strategy \nexecution and trade management.\n\t• Managed algo-based account handling services for clients, running systematic strategies across Indian markets and crypto (BTC Options) with defined \nrisk parameters per account.\n\t• Onboarded and serviced clients by providing transparent performance reporting, strategy walkthroughs, and ongoing support — driving business \ngrowth through referrals and retention.\n\t• Continuously backtested and optimized algo logic to adapt to changing market conditions across both Indian derivatives and global BTC options \nmarkets.\n\nTrader May 2025 – July 2025\nNU Fintech  |  Thane, Maharashtra\n\t• Executed Collars, Bull Call Spreads, and Bull Put Spreads to generate consistent risk-adjusted returns.\n\t• Monitored Greeks (Delta, Gamma, Theta, Vega) and macro events to adjust positions and optimize performance.\n\t• Backtested historical data to refine entry/exit points, reducing drawdowns and improving win rates.\n\nDerivative Trader Feb 2024 – April 2025\nMansukh Securities  |  Thane, Maharashtra\n\t• Developed Calendar Spread strategies capitalizing on time decay and implied volatility shifts.\n\t• Applied Nifty Straddle-based Calendar Spreads across expiries; leveraged volatility during earnings & macro events.\n\t• Monitored live order flow, market sentiment, and risk exposure to support strategic decision-making.\n\nFinancial Advisor Jan 2023 – Mar 2023\nMotilal Oswal  |  Mumbai, India\n\t• Advised clients on equity, mutual funds, and portfolio management aligned with individual financial goals.\n\t• Built client base through relationship management; used research reports and analytics for informed decisions.\n\nEDUCATION\nBachelor of Commerce Jun 2022\nModel College  |  Dombivali, Maharashtra\nCORE SKILLS\nTechnical Analysis   •   Intraday Trading   •   Risk Management   •   Market Trend Analysis\nMS Office   •   Decision Making   •   Problem Solving   •   Analytical Thinking   •   Organization Skills\n\tCERTIFICATIONS\n\n\t• NISM-Series-VIII: Equity Derivatives Certification\n\n\tLANGUAGES\n\nEnglish  •  Hindi  •  Marathi",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-06T11:26:56.389193+00:00",
+      "completed_at": "2026-11-06T11:27:03.648315+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "6e676de6-01d1-432e-bb34-fd90d6678aff",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2693,
+            "word_count": 350,
+            "line_count": 50,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.158931,
+            "symbol_count": 29,
+            "symbol_ratio": 0.010769,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2693,
+            "word_count": 350,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "summary",
+              "Skills": "core skills",
+              "Work Experience": "experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "gajendraindex03@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 6,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "CORE SKILLS",
+                "detection_method": "heading",
+                "line_number": 41,
+                "evidence": "CORE SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 38,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 44,
+                "evidence": "CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2693,
+            "word_count": 350,
+            "line_count": 50,
+            "non_empty_line_count": 41,
+            "short_line_count": 9,
+            "short_line_ratio": 0.219512,
+            "fragmented_line_count": 8,
+            "fragmented_line_ratio": 0.195122,
+            "mean_line_length": 64.0,
+            "median_line_length": 40.0,
+            "line_length_stdev": 47.75,
+            "line_length_cv": 0.746139,
+            "broken_sentence_count": 5,
+            "broken_sentence_ratio": 0.125,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "6e676de6-01d1-432e-bb34-fd90d6678aff-attempt-1",
+      "resume_id": "6e676de6-01d1-432e-bb34-fd90d6678aff",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "GAJENDRA JADHAV\nDerivatives Trader\n+91 9920563289   •   gajendraindex03@gmail.com   •   Dombivali, Maharashtra\n\n\nSUMMARY\nResults-driven Derivatives Trader with experience in options strategies (collars, spreads, calendar spreads), risk-adjusted returns, Greeks interpretation, and \nbacktesting. Adept at client relationship management, financial advisory, and identifying new business opportunities.\nEXPERIENCE\nTrader / Business Development Aug 2025 – Present\nIndependent  |  Dombivali, Maharashtra\n\t• Developed and deployed a proprietary algorithmic trading system for Indian equity derivatives (Nifty/BankNifty) and BTC Options, automating strategy \nexecution and trade management.\n\t• Managed algo-based account handling services for clients, running systematic strategies across Indian markets and crypto (BTC Options) with defined \nrisk parameters per account.\n\t• Onboarded and serviced clients by providing transparent performance reporting, strategy walkthroughs, and ongoing support — driving business \ngrowth through referrals and retention.\n\t• Continuously backtested and optimized algo logic to adapt to changing market conditions across both Indian derivatives and global BTC options \nmarkets.\n\nTrader May 2025 – July 2025\nNU Fintech  |  Thane, Maharashtra\n\t• Executed Collars, Bull Call Spreads, and Bull Put Spreads to generate consistent risk-adjusted returns.\n\t• Monitored Greeks (Delta, Gamma, Theta, Vega) and macro events to adjust positions and optimize performance.\n\t• Backtested historical data to refine entry/exit points, reducing drawdowns and improving win rates.\n\nDerivative Trader Feb 2024 – April 2025\nMansukh Securities  |  Thane, Maharashtra\n\t• Developed Calendar Spread strategies capitalizing on time decay and implied volatility shifts.\n\t• Applied Nifty Straddle-based Calendar Spreads across expiries; leveraged volatility during earnings & macro events.\n\t• Monitored live order flow, market sentiment, and risk exposure to support strategic decision-making.\n\nFinancial Advisor Jan 2023 – Mar 2023\nMotilal Oswal  |  Mumbai, India\n\t• Advised clients on equity, mutual funds, and portfolio management aligned with individual financial goals.\n\t• Built client base through relationship management; used research reports and analytics for informed decisions.\n\nEDUCATION\nBachelor of Commerce Jun 2022\nModel College  |  Dombivali, Maharashtra\nCORE SKILLS\nTechnical Analysis   •   Intraday Trading   •   Risk Management   •   Market Trend Analysis\nMS Office   •   Decision Making   •   Problem Solving   •   Analytical Thinking   •   Organization Skills\n\tCERTIFICATIONS\n\n\t• NISM-Series-VIII: Equity Derivatives Certification\n\n\tLANGUAGES\n\nEnglish  •  Hindi  •  Marathi",
+      "extracted_text_length": 2693,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "6e676de6-01d1-432e-bb34-fd90d6678aff",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2693,
+            "word_count": 350,
+            "line_count": 50,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.158931,
+            "symbol_count": 29,
+            "symbol_ratio": 0.010769,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2693,
+            "word_count": 350,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "summary",
+              "Skills": "core skills",
+              "Work Experience": "experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "gajendraindex03@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 6,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "CORE SKILLS",
+                "detection_method": "heading",
+                "line_number": 41,
+                "evidence": "CORE SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 38,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 44,
+                "evidence": "CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2693,
+            "word_count": 350,
+            "line_count": 50,
+            "non_empty_line_count": 41,
+            "short_line_count": 9,
+            "short_line_ratio": 0.219512,
+            "fragmented_line_count": 8,
+            "fragmented_line_ratio": 0.195122,
+            "mean_line_length": 64.0,
+            "median_line_length": 40.0,
+            "line_length_stdev": 47.75,
+            "line_length_cv": 0.746139,
+            "broken_sentence_count": 5,
+            "broken_sentence_ratio": 0.125,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "GAJENDRA JADHAV\nDerivatives Trader\n+91 9920563289 • gajendraindex03@gmail.com • Dombivali, Maharashtra\n\nSUMMARY\nResults-driven Derivatives Trader with experience in options strategies (collars, spreads, calendar spreads), risk-adjusted returns, Greeks interpretation, and\nbacktesting. Adept at client relationship management, financial advisory, and identifying new business opportunities.\nEXPERIENCE\nTrader / Business Development Aug 2025 – Present\nIndependent | Dombivali, Maharashtra\n• Developed and deployed a proprietary algorithmic trading system for Indian equity derivatives (Nifty/BankNifty) and BTC Options, automating strategy\nexecution and trade management.\n• Managed algo-based account handling services for clients, running systematic strategies across Indian markets and crypto (BTC Options) with defined\nrisk parameters per account.\n• Onboarded and serviced clients by providing transparent performance reporting, strategy walkthroughs, and ongoing support — driving business\ngrowth through referrals and retention.\n• Continuously backtested and optimized algo logic to adapt to changing market conditions across both Indian derivatives and global BTC options\nmarkets.\n\nTrader May 2025 – July 2025\nNU Fintech | Thane, Maharashtra\n• Executed Collars, Bull Call Spreads, and Bull Put Spreads to generate consistent risk-adjusted returns.\n• Monitored Greeks (Delta, Gamma, Theta, Vega) and macro events to adjust positions and optimize performance.\n• Backtested historical data to refine entry/exit points, reducing drawdowns and improving win rates.\n\nDerivative Trader Feb 2024 – April 2025\nMansukh Securities | Thane, Maharashtra\n• Developed Calendar Spread strategies capitalizing on time decay and implied volatility shifts.\n• Applied Nifty Straddle-based Calendar Spreads across expiries; leveraged volatility during earnings & macro events.\n• Monitored live order flow, market sentiment, and risk exposure to support strategic decision-making.\n\nFinancial Advisor Jan 2023 – Mar 2023\nMotilal Oswal | Mumbai, India\n• Advised clients on equity, mutual funds, and portfolio management aligned with individual financial goals.\n• Built client base through relationship management; used research reports and analytics for informed decisions.\n\nEDUCATION\nBachelor of Commerce Jun 2022\nModel College | Dombivali, Maharashtra\nCORE SKILLS\nTechnical Analysis • Intraday Trading • Risk Management • Market Trend Analysis\nMS Office • Decision Making • Problem Solving • Analytical Thinking • Organization Skills\nCERTIFICATIONS\n\n• NISM-Series-VIII: Equity Derivatives Certification\n\nLANGUAGES\n\nEnglish • Hindi • Marathi"
+    }
+  ],
+  "extracted_text": "GAJENDRA JADHAV\nDerivatives Trader\n+91 9920563289   •   gajendraindex03@gmail.com   •   Dombivali, Maharashtra\n\n\nSUMMARY\nResults-driven Derivatives Trader with experience in options strategies (collars, spreads, calendar spreads), risk-adjusted returns, Greeks interpretation, and \nbacktesting. Adept at client relationship management, financial advisory, and identifying new business opportunities.\nEXPERIENCE\nTrader / Business Development Aug 2025 – Present\nIndependent  |  Dombivali, Maharashtra\n\t• Developed and deployed a proprietary algorithmic trading system for Indian equity derivatives (Nifty/BankNifty) and BTC Options, automating strategy \nexecution and trade management.\n\t• Managed algo-based account handling services for clients, running systematic strategies across Indian markets and crypto (BTC Options) with defined \nrisk parameters per account.\n\t• Onboarded and serviced clients by providing transparent performance reporting, strategy walkthroughs, and ongoing support — driving business \ngrowth through referrals and retention.\n\t• Continuously backtested and optimized algo logic to adapt to changing market conditions across both Indian derivatives and global BTC options \nmarkets.\n\nTrader May 2025 – July 2025\nNU Fintech  |  Thane, Maharashtra\n\t• Executed Collars, Bull Call Spreads, and Bull Put Spreads to generate consistent risk-adjusted returns.\n\t• Monitored Greeks (Delta, Gamma, Theta, Vega) and macro events to adjust positions and optimize performance.\n\t• Backtested historical data to refine entry/exit points, reducing drawdowns and improving win rates.\n\nDerivative Trader Feb 2024 – April 2025\nMansukh Securities  |  Thane, Maharashtra\n\t• Developed Calendar Spread strategies capitalizing on time decay and implied volatility shifts.\n\t• Applied Nifty Straddle-based Calendar Spreads across expiries; leveraged volatility during earnings & macro events.\n\t• Monitored live order flow, market sentiment, and risk exposure to support strategic decision-making.\n\nFinancial Advisor Jan 2023 – Mar 2023\nMotilal Oswal  |  Mumbai, India\n\t• Advised clients on equity, mutual funds, and portfolio management aligned with individual financial goals.\n\t• Built client base through relationship management; used research reports and analytics for informed decisions.\n\nEDUCATION\nBachelor of Commerce Jun 2022\nModel College  |  Dombivali, Maharashtra\nCORE SKILLS\nTechnical Analysis   •   Intraday Trading   •   Risk Management   •   Market Trend Analysis\nMS Office   •   Decision Making   •   Problem Solving   •   Analytical Thinking   •   Organization Skills\n\tCERTIFICATIONS\n\n\t• NISM-Series-VIII: Equity Derivatives Certification\n\n\tLANGUAGES\n\nEnglish  •  Hindi  •  Marathi",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "GAJENDRA JADHAV\nDerivatives Trader\n+91 9920563289   •   gajendraindex03@gmail.com   •   Dombivali, Maharashtra\n\n\nSUMMARY\nResults-driven Derivatives Trader with experience in options strategies (collars, spreads, calendar spreads), risk-adjusted returns, Greeks interpretation, and \nbacktesting. Adept at client relationship management, financial advisory, and identifying new business opportunities.\nEXPERIENCE\nTrader / Business Development Aug 2025 – Present\nIndependent  |  Dombivali, Maharashtra\n\t• Developed and deployed a proprietary algorithmic trading system for Indian equity derivatives (Nifty/BankNifty) and BTC Options, automating strategy \nexecution and trade management.\n\t• Managed algo-based account handling services for clients, running systematic strategies across Indian markets and crypto (BTC Options) with defined \nrisk parameters per account.\n\t• Onboarded and serviced clients by providing transparent performance reporting, strategy walkthroughs, and ongoing support — driving business \ngrowth through referrals and retention.\n\t• Continuously backtested and optimized algo logic to adapt to changing market conditions across both Indian derivatives and global BTC options \nmarkets.\n\nTrader May 2025 – July 2025\nNU Fintech  |  Thane, Maharashtra\n\t• Executed Collars, Bull Call Spreads, and Bull Put Spreads to generate consistent risk-adjusted returns.\n\t• Monitored Greeks (Delta, Gamma, Theta, Vega) and macro events to adjust positions and optimize performance.\n\t• Backtested historical data to refine entry/exit points, reducing drawdowns and improving win rates.\n\nDerivative Trader Feb 2024 – April 2025\nMansukh Securities  |  Thane, Maharashtra\n\t• Developed Calendar Spread strategies capitalizing on time decay and implied volatility shifts.\n\t• Applied Nifty Straddle-based Calendar Spreads across expiries; leveraged volatility during earnings & macro events.\n\t• Monitored live order flow, market sentiment, and risk exposure to support strategic decision-making.\n\nFinancial Advisor Jan 2023 – Mar 2023\nMotilal Oswal  |  Mumbai, India\n\t• Advised clients on equity, mutual funds, and portfolio management aligned with individual financial goals.\n\t• Built client base through relationship management; used research reports and analytics for informed decisions.\n\nEDUCATION\nBachelor of Commerce Jun 2022\nModel College  |  Dombivali, Maharashtra\nCORE SKILLS\nTechnical Analysis   •   Intraday Trading   •   Risk Management   •   Market Trend Analysis\nMS Office   •   Decision Making   •   Problem Solving   •   Analytical Thinking   •   Organization Skills\n\tCERTIFICATIONS\n\n\t• NISM-Series-VIII: Equity Derivatives Certification\n\n\tLANGUAGES\n\nEnglish  •  Hindi  •  Marathi",
+  "quality": {
+    "status": "PASS",
+    "document_id": "6e676de6-01d1-432e-bb34-fd90d6678aff",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 2693,
+        "word_count": 350,
+        "line_count": 50,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.158931,
+        "symbol_count": 29,
+        "symbol_ratio": 0.010769,
+        "max_repeated_char_run": 3,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 97.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 2693,
+        "word_count": 350,
+        "configured_section_count": 7,
+        "detected_count": 6,
+        "missing_count": 1,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Projects"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Projects"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "summary",
+          "Skills": "core skills",
+          "Work Experience": "experience",
+          "Education": "education",
+          "Certifications": "certifications"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "gajendraindex03@gmail.com",
+            "confidence": 0.8
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "SUMMARY",
+            "detection_method": "heading",
+            "line_number": 6,
+            "evidence": "SUMMARY",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "CORE SKILLS",
+            "detection_method": "heading",
+            "line_number": 41,
+            "evidence": "CORE SKILLS",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 9,
+            "evidence": "EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATION",
+            "detection_method": "heading",
+            "line_number": 38,
+            "evidence": "EDUCATION",
+            "confidence": 0.98
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": "CERTIFICATIONS",
+            "detection_method": "heading",
+            "line_number": 44,
+            "evidence": "CERTIFICATIONS",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Certifications": "detected",
+          "Projects": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Projects"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Projects"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 2693,
+        "word_count": 350,
+        "line_count": 50,
+        "non_empty_line_count": 41,
+        "short_line_count": 9,
+        "short_line_ratio": 0.219512,
+        "fragmented_line_count": 8,
+        "fragmented_line_ratio": 0.195122,
+        "mean_line_length": 64.0,
+        "median_line_length": 40.0,
+        "line_length_stdev": 47.75,
+        "line_length_cv": 0.746139,
+        "broken_sentence_count": 5,
+        "broken_sentence_ratio": 0.125,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": null,
+  "resume_json": {
+    "full_name": "GAJENDRA JADHAV",
+    "email": "gajendraindex03@gmail.com",
+    "phone": "+91 9920563289",
+    "location": "Dombivali, Maharashtra",
+    "summary": "Results-driven Derivatives Trader with experience in options strategies (collars, spreads, calendar spreads), risk-adjusted returns, Greeks interpretation, and backtesting. Adept at client relationship management, financial advisory, and identifying new business opportunities.",
+    "skills": {
+      "technical_skills": [
+        "Technical Analysis",
+        "Intraday Trading",
+        "Risk Management",
+        "Market Trend Analysis"
+      ],
+      "soft_skills": [
+        "Decision Making",
+        "Problem Solving",
+        "Analytical Thinking",
+        "Organization Skills"
+      ],
+      "tools": [
+        "MS Office"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Trader / Business Development",
+        "company": "Independent",
+        "location": "Dombivali, Maharashtra",
+        "start_date": "Aug 2025",
+        "end_date": "Present",
+        "highlights": [
+          "Developed and deployed a proprietary algorithmic trading system for Indian equity derivatives (Nifty/BankNifty) and BTC Options, automating strategy execution and trade management.",
+          "Managed algo-based account handling services for clients, running systematic strategies across Indian markets and crypto (BTC Options) with defined risk parameters per account.",
+          "Onboarded and serviced clients by providing transparent performance reporting, strategy walkthroughs, and ongoing support — driving business growth through referrals and retention.",
+          "Continuously backtested and optimized algo logic to adapt to changing market conditions across both Indian derivatives and global BTC options markets."
+        ]
+      },
+      {
+        "title": "Trader",
+        "company": "NU Fintech",
+        "location": "Thane, Maharashtra",
+        "start_date": "May 2025",
+        "end_date": "July 2025",
+        "highlights": [
+          "Executed Collars, Bull Call Spreads, and Bull Put Spreads to generate consistent risk-adjusted returns.",
+          "Monitored Greeks (Delta, Gamma, Theta, Vega) and macro events to adjust positions and optimize performance.",
+          "Backtested historical data to refine entry/exit points, reducing drawdowns and improving win rates."
+        ]
+      },
+      {
+        "title": "Derivative Trader",
+        "company": "Mansukh Securities",
+        "location": "Thane, Maharashtra",
+        "start_date": "Feb 2024",
+        "end_date": "April 2025",
+        "highlights": [
+          "Developed Calendar Spread strategies capitalizing on time decay and implied volatility shifts.",
+          "Applied Nifty Straddle-based Calendar Spreads across expiries; leveraged volatility during earnings & macro events.",
+          "Monitored live order flow, market sentiment, and risk exposure to support strategic decision-making."
+        ]
+      },
+      {
+        "title": "Financial Advisor",
+        "company": "Motilal Oswal",
+        "location": "Mumbai, India",
+        "start_date": "Jan 2023",
+        "end_date": "Mar 2023",
+        "highlights": [
+          "Advised clients on equity, mutual funds, and portfolio management aligned with individual financial goals.",
+          "Built client base through relationship management; used research reports and analytics for informed decisions."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Commerce",
+        "institution": "Model College",
+        "location": "Dombivali, Maharashtra",
+        "start_date": "",
+        "end_date": "Jun 2022"
+      }
+    ],
+    "certifications": [
+      "NISM-Series-VIII: Equity Derivatives Certification"
+    ],
+    "languages": [
+      "English",
+      "Hindi",
+      "Marathi"
+    ],
+    "links": []
+  },
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "GAJENDRA JADHAV\nDerivatives Trader\n+91 9920563289   •   gajendraindex03@gmail.com   •   Dombivali, Maharashtra\n\n\nSUMMARY\nResults-driven Derivatives Trader with experience in options strategies (collars, spreads, calendar spreads), risk-adjusted returns, Greeks interpretation, and \nbacktesting. Adept at client relationship management, financial advisory, and identifying new business opportunities.\nEXPERIENCE\nTrader / Business Development Aug 2025 – Present\nIndependent  |  Dombivali, Maharashtra\n\t• Developed and deployed a proprietary algorithmic trading system for Indian equity derivatives (Nifty/BankNifty) and BTC Options, automating strategy \nexecution and trade management.\n\t• Managed algo-based account handling services for clients, running systematic strategies across Indian markets and crypto (BTC Options) with defined \nrisk parameters per account.\n\t• Onboarded and serviced clients by providing transparent performance reporting, strategy walkthroughs, and ongoing support — driving business \ngrowth through referrals and retention.\n\t• Continuously backtested and optimized algo logic to adapt to changing market conditions across both Indian derivatives and global BTC options \nmarkets.\n\nTrader May 2025 – July 2025\nNU Fintech  |  Thane, Maharashtra\n\t• Executed Collars, Bull Call Spreads, and Bull Put Spreads to generate consistent risk-adjusted returns.\n\t• Monitored Greeks (Delta, Gamma, Theta, Vega) and macro events to adjust positions and optimize performance.\n\t• Backtested historical data to refine entry/exit points, reducing drawdowns and improving win rates.\n\nDerivative Trader Feb 2024 – April 2025\nMansukh Securities  |  Thane, Maharashtra\n\t• Developed Calendar Spread strategies capitalizing on time decay and implied volatility shifts.\n\t• Applied Nifty Straddle-based Calendar Spreads across expiries; leveraged volatility during earnings & macro events.\n\t• Monitored live order flow, market sentiment, and risk exposure to support strategic decision-making.\n\nFinancial Advisor Jan 2023 – Mar 2023\nMotilal Oswal  |  Mumbai, India\n\t• Advised clients on equity, mutual funds, and portfolio management aligned with individual financial goals.\n\t• Built client base through relationship management; used research reports and analytics for informed decisions.\n\nEDUCATION\nBachelor of Commerce Jun 2022\nModel College  |  Dombivali, Maharashtra\nCORE SKILLS\nTechnical Analysis   •   Intraday Trading   •   Risk Management   •   Market Trend Analysis\nMS Office   •   Decision Making   •   Problem Solving   •   Analytical Thinking   •   Organization Skills\n\tCERTIFICATIONS\n\n\t• NISM-Series-VIII: Equity Derivatives Certification\n\n\tLANGUAGES\n\nEnglish  •  Hindi  •  Marathi",
+    "normalized_text": "GAJENDRA JADHAV\nDerivatives Trader\n+91 9920563289 • gajendraindex03@gmail.com • Dombivali, Maharashtra\n\nSUMMARY\nResults-driven Derivatives Trader with experience in options strategies (collars, spreads, calendar spreads), risk-adjusted returns, Greeks interpretation, and\nbacktesting. Adept at client relationship management, financial advisory, and identifying new business opportunities.\nEXPERIENCE\nTrader / Business Development Aug 2025 – Present\nIndependent | Dombivali, Maharashtra\n• Developed and deployed a proprietary algorithmic trading system for Indian equity derivatives (Nifty/BankNifty) and BTC Options, automating strategy\nexecution and trade management.\n• Managed algo-based account handling services for clients, running systematic strategies across Indian markets and crypto (BTC Options) with defined\nrisk parameters per account.\n• Onboarded and serviced clients by providing transparent performance reporting, strategy walkthroughs, and ongoing support — driving business\ngrowth through referrals and retention.\n• Continuously backtested and optimized algo logic to adapt to changing market conditions across both Indian derivatives and global BTC options\nmarkets.\n\nTrader May 2025 – July 2025\nNU Fintech | Thane, Maharashtra\n• Executed Collars, Bull Call Spreads, and Bull Put Spreads to generate consistent risk-adjusted returns.\n• Monitored Greeks (Delta, Gamma, Theta, Vega) and macro events to adjust positions and optimize performance.\n• Backtested historical data to refine entry/exit points, reducing drawdowns and improving win rates.\n\nDerivative Trader Feb 2024 – April 2025\nMansukh Securities | Thane, Maharashtra\n• Developed Calendar Spread strategies capitalizing on time decay and implied volatility shifts.\n• Applied Nifty Straddle-based Calendar Spreads across expiries; leveraged volatility during earnings & macro events.\n• Monitored live order flow, market sentiment, and risk exposure to support strategic decision-making.\n\nFinancial Advisor Jan 2023 – Mar 2023\nMotilal Oswal | Mumbai, India\n• Advised clients on equity, mutual funds, and portfolio management aligned with individual financial goals.\n• Built client base through relationship management; used research reports and analytics for informed decisions.\n\nEDUCATION\nBachelor of Commerce Jun 2022\nModel College | Dombivali, Maharashtra\nCORE SKILLS\nTechnical Analysis • Intraday Trading • Risk Management • Market Trend Analysis\nMS Office • Decision Making • Problem Solving • Analytical Thinking • Organization Skills\nCERTIFICATIONS\n\n• NISM-Series-VIII: Equity Derivatives Certification\n\nLANGUAGES\n\nEnglish • Hindi • Marathi",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 2693,
+    "normalized_chars": 2622,
+    "original_estimated_tokens": 673,
+    "normalized_estimated_tokens": 656,
+    "estimated_reduction_percent": 2.5
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": "chatcmpl-01a1b09c-eb50-7668-8178-827cf0adfc1a",
+      "status": "success",
+      "duration_ms": 12583.19,
+      "input_tokens": 1364,
+      "output_tokens": 1903,
+      "total_tokens": 3267,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1364,
+    "output_tokens": 1903,
+    "total_tokens": 3267,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_source": "muse_ai",
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "input_type": "text",
+    "duration_ms": 12583.19,
+    "timeout_seconds": 20.0,
+    "usage": {
+      "completion_tokens": 1903,
+      "prompt_tokens": 1364,
+      "total_tokens": 3267,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1169
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 2693,
+      "normalized_chars": 2622,
+      "estimated_reduction_percent": 2.5,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 7258.52,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "6e676de6-01d1-432e-bb34-fd90d6678aff",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2693,
+            "word_count": 350,
+            "line_count": 50,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.158931,
+            "symbol_count": 29,
+            "symbol_ratio": 0.010769,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2693,
+            "word_count": 350,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "summary",
+              "Skills": "core skills",
+              "Work Experience": "experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "gajendraindex03@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 6,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "CORE SKILLS",
+                "detection_method": "heading",
+                "line_number": 41,
+                "evidence": "CORE SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 38,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 44,
+                "evidence": "CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2693,
+            "word_count": 350,
+            "line_count": 50,
+            "non_empty_line_count": 41,
+            "short_line_count": 9,
+            "short_line_ratio": 0.219512,
+            "fragmented_line_count": 8,
+            "fragmented_line_ratio": 0.195122,
+            "mean_line_length": 64.0,
+            "median_line_length": 40.0,
+            "line_length_stdev": 47.75,
+            "line_length_cv": 0.746139,
+            "broken_sentence_count": 5,
+            "broken_sentence_ratio": 0.125,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 12583.19,
+      "message": "Structured Resume JSON generated by Muse AI and validated against the schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 7258.52,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "6e676de6-01d1-432e-bb34-fd90d6678aff_SHJ-5464_SHC-385068.pdf"
+}

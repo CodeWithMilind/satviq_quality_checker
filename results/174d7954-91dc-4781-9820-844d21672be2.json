@@ -1,0 +1,970 @@
+{
+  "resume_id": "174d7954-91dc-4781-9820-844d21672be2",
+  "filename": "SHJ-5464_SHC-384975.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 442716,
+  "uploaded_at": "2026-11-06T11:25:00.774078+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 3874.74,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 3874.74,
+      "text": "GOVINDA RATHI\nDerivatives Trader | Equity & Derivatives Dealer | Market Analysis\n◻ +91-8007131513 • ✉govindarathi737@gmail.com • ◻ Malad, Mumbai • linkedin.com/in/govinda-rathi\nPROFESSIONAL SUMMARY\nDynamic finance professional with 2+ years of hands-on experience in derivatives execution, order management, \nand real-time market operations in India’s index derivatives market. Managed client accounts by handling order \nplacement, trade execution, and portfolio updates — providing responsive, client-first service and building trust \nthrough clear communication and timely execution. Proven expertise in executing high-value trades across NIFTY \nand SENSEX, managing proprietary capital of ₹2 Crore, and operating under pressure in fast-moving markets. Now \nseeking to leverage deep market knowledge and execution skills in a client-facing Equity Dealer or Retail Dealer \nrole, where I can combine technical expertise with strong relationship-building to deliver best-in-class order \nexecution for clients.\nKEY SKILLS & COMPETENCIES\nExecution: Equity & Derivatives Order Execution, Multi-leg Options Strategies, Terminal Operations (BSE/NSE) \nMarket Knowledge: Index Derivatives (NIFTY/SENSEX), Option Greeks, IV Analysis, Open Interest, Market \nMicrostructure\nStrategies: Calendar, Diagonal, Butterfly Spreads, Straddles, Delta-Neutral, Pair Trading, Arbitrage\nClient Skills: Client Relationship Management, Order Execution for Clients, Interpersonal Communication, \nStakeholder Coordination, Trade Reporting\nRisk & Compliance: Real-time Risk Monitoring, Drawdown Control, SEBI Regulatory Framework, NISM Certified\nTools & Analysis: Technical Analysis, Fundamental Analysis, Algo Strategy Execution, Volatility Analytics\nWORK EXPERIENCE\nRM – Dealing | Religare Broking Limited | Mumbai\nMay 2026 – Present\n\t• Executing equity and derivatives orders for retail clients across NSE and BSE platforms.\n\t• Assisting clients with trade execution, margin-related queries, and portfolio updates.\n\t• Providing market updates and supporting clients in managing their trading positions.\n\t• Ensuring compliance with internal risk controls and regulatory guidelines.\n\nDerivatives Trader | Jainam Broking Ltd | Mumbai\nDec 2025 – March 2026\n\t• Managing and deploying ₹2 Crore proprietary margin across index derivative strategies on live trading \nterminals.\n\t• Executing complex multi-leg options strategies including Calendar, Diagonal, Butterfly Spreads, and Straddles \nwith precision timing.\n\t• Structuring Delta-Neutral and Gamma-High portfolios based on real-time volatility outlook and market \nconditions.\n\t• Coordinating with internal stakeholders (risk desk, back-office, compliance) on trade confirmations and \nsettlements — building foundation for client-facing communication.\n\t• Conducting live volatility analysis using IV Rank, IV Percentile, and skew interpretation to inform execution \ndecisions.\n\t• Managing real-time portfolio risk using Option Greeks (Delta, Gamma, Theta, Vega, Rho) and enforcing strict \ndrawdown controls.\n\t• Executing statistical pair trading and arbitrage strategies between NIFTY and SENSEX across exchanges.\n\nDerivatives Trader | Mansukh Securities & Finance Ltd | Mumbai\nApr 2024 – Nov 2025\n\t• Managed client accounts by handling order placement, trade execution, and portfolio updates across equity and \nderivatives segments.\n\t• Executed algorithmic and discretionary trading strategies in index futures and options, including Calendar, \nDiagonal, and Butterfly spreads.\n\t• Monitored market volatility, option Greeks, and trade performance to support execution and risk management \ndecisions.\n\t• Conducted market research and analysis of macroeconomic factors, identifying trading and arbitrage\n\n\nmailto:govindarathi737@gmail.com\n\n\topportunities in index derivatives.\n\nFinance Intern | Motilal Oswal Financial Services Ltd | Mumbai\nApr 2023 – Jul 2023\n\t• Performed Fundamental and Technical Analysis of various stocks in the Indian financial market.\n\t• Gained early exposure to broking operations and client-facing financial services environment.\n\nEDUCATION\nMaster in Management Studies (MMS) — 2024\nThakur Institute of Management Studies and Research, Mumbai University\nBachelor of Commerce (B.Com) — 2020\nSant Gadge Baba Amravati University, Amravati, Maharashtra\nCERTIFICATIONS & LICENSES\n\t• NISM Series VIII – Equity & Derivatives | NSE | SEBI Certified\n\nDate of Birth: 11 January 2000 | Languages: English, Hindi, Marathi\n\n\n\tPROFESSIONAL SUMMARY\n\tKEY SKILLS & COMPETENCIES\n\tWORK EXPERIENCE\n\tEDUCATION\n\tMaster in Management Studies (MMS) — 2024\n\tBachelor of Commerce (B.Com) — 2020\n\n\tCERTIFICATIONS & LICENSES",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-06T11:24:56.858064+00:00",
+      "completed_at": "2026-11-06T11:25:00.733132+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "174d7954-91dc-4781-9820-844d21672be2",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4643,
+            "word_count": 608,
+            "line_count": 84,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.142796,
+            "symbol_count": 39,
+            "symbol_ratio": 0.0084,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4643,
+            "word_count": 608,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "key skills and competencies",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications and licenses"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "govindarathi737@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 4,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "KEY SKILLS & COMPETENCIES",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "KEY SKILLS & COMPETENCIES",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 22,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 66,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS & LICENSES",
+                "detection_method": "heading",
+                "line_number": 71,
+                "evidence": "CERTIFICATIONS & LICENSES",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4643,
+            "word_count": 608,
+            "line_count": 84,
+            "non_empty_line_count": 73,
+            "short_line_count": 15,
+            "short_line_ratio": 0.205479,
+            "fragmented_line_count": 10,
+            "fragmented_line_ratio": 0.136986,
+            "mean_line_length": 61.85,
+            "median_line_length": 62.0,
+            "line_length_stdev": 38.67,
+            "line_length_cv": 0.62517,
+            "broken_sentence_count": 17,
+            "broken_sentence_ratio": 0.236111,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "174d7954-91dc-4781-9820-844d21672be2-attempt-1",
+      "resume_id": "174d7954-91dc-4781-9820-844d21672be2",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "GOVINDA RATHI\nDerivatives Trader | Equity & Derivatives Dealer | Market Analysis\n◻ +91-8007131513 • ✉govindarathi737@gmail.com • ◻ Malad, Mumbai • linkedin.com/in/govinda-rathi\nPROFESSIONAL SUMMARY\nDynamic finance professional with 2+ years of hands-on experience in derivatives execution, order management, \nand real-time market operations in India’s index derivatives market. Managed client accounts by handling order \nplacement, trade execution, and portfolio updates — providing responsive, client-first service and building trust \nthrough clear communication and timely execution. Proven expertise in executing high-value trades across NIFTY \nand SENSEX, managing proprietary capital of ₹2 Crore, and operating under pressure in fast-moving markets. Now \nseeking to leverage deep market knowledge and execution skills in a client-facing Equity Dealer or Retail Dealer \nrole, where I can combine technical expertise with strong relationship-building to deliver best-in-class order \nexecution for clients.\nKEY SKILLS & COMPETENCIES\nExecution: Equity & Derivatives Order Execution, Multi-leg Options Strategies, Terminal Operations (BSE/NSE) \nMarket Knowledge: Index Derivatives (NIFTY/SENSEX), Option Greeks, IV Analysis, Open Interest, Market \nMicrostructure\nStrategies: Calendar, Diagonal, Butterfly Spreads, Straddles, Delta-Neutral, Pair Trading, Arbitrage\nClient Skills: Client Relationship Management, Order Execution for Clients, Interpersonal Communication, \nStakeholder Coordination, Trade Reporting\nRisk & Compliance: Real-time Risk Monitoring, Drawdown Control, SEBI Regulatory Framework, NISM Certified\nTools & Analysis: Technical Analysis, Fundamental Analysis, Algo Strategy Execution, Volatility Analytics\nWORK EXPERIENCE\nRM – Dealing | Religare Broking Limited | Mumbai\nMay 2026 – Present\n\t• Executing equity and derivatives orders for retail clients across NSE and BSE platforms.\n\t• Assisting clients with trade execution, margin-related queries, and portfolio updates.\n\t• Providing market updates and supporting clients in managing their trading positions.\n\t• Ensuring compliance with internal risk controls and regulatory guidelines.\n\nDerivatives Trader | Jainam Broking Ltd | Mumbai\nDec 2025 – March 2026\n\t• Managing and deploying ₹2 Crore proprietary margin across index derivative strategies on live trading \nterminals.\n\t• Executing complex multi-leg options strategies including Calendar, Diagonal, Butterfly Spreads, and Straddles \nwith precision timing.\n\t• Structuring Delta-Neutral and Gamma-High portfolios based on real-time volatility outlook and market \nconditions.\n\t• Coordinating with internal stakeholders (risk desk, back-office, compliance) on trade confirmations and \nsettlements — building foundation for client-facing communication.\n\t• Conducting live volatility analysis using IV Rank, IV Percentile, and skew interpretation to inform execution \ndecisions.\n\t• Managing real-time portfolio risk using Option Greeks (Delta, Gamma, Theta, Vega, Rho) and enforcing strict \ndrawdown controls.\n\t• Executing statistical pair trading and arbitrage strategies between NIFTY and SENSEX across exchanges.\n\nDerivatives Trader | Mansukh Securities & Finance Ltd | Mumbai\nApr 2024 – Nov 2025\n\t• Managed client accounts by handling order placement, trade execution, and portfolio updates across equity and \nderivatives segments.\n\t• Executed algorithmic and discretionary trading strategies in index futures and options, including Calendar, \nDiagonal, and Butterfly spreads.\n\t• Monitored market volatility, option Greeks, and trade performance to support execution and risk management \ndecisions.\n\t• Conducted market research and analysis of macroeconomic factors, identifying trading and arbitrage\n\n\nmailto:govindarathi737@gmail.com\n\n\topportunities in index derivatives.\n\nFinance Intern | Motilal Oswal Financial Services Ltd | Mumbai\nApr 2023 – Jul 2023\n\t• Performed Fundamental and Technical Analysis of various stocks in the Indian financial market.\n\t• Gained early exposure to broking operations and client-facing financial services environment.\n\nEDUCATION\nMaster in Management Studies (MMS) — 2024\nThakur Institute of Management Studies and Research, Mumbai University\nBachelor of Commerce (B.Com) — 2020\nSant Gadge Baba Amravati University, Amravati, Maharashtra\nCERTIFICATIONS & LICENSES\n\t• NISM Series VIII – Equity & Derivatives | NSE | SEBI Certified\n\nDate of Birth: 11 January 2000 | Languages: English, Hindi, Marathi\n\n\n\tPROFESSIONAL SUMMARY\n\tKEY SKILLS & COMPETENCIES\n\tWORK EXPERIENCE\n\tEDUCATION\n\tMaster in Management Studies (MMS) — 2024\n\tBachelor of Commerce (B.Com) — 2020\n\n\tCERTIFICATIONS & LICENSES",
+      "extracted_text_length": 4643,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "174d7954-91dc-4781-9820-844d21672be2",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4643,
+            "word_count": 608,
+            "line_count": 84,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.142796,
+            "symbol_count": 39,
+            "symbol_ratio": 0.0084,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4643,
+            "word_count": 608,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "key skills and competencies",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications and licenses"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "govindarathi737@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 4,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "KEY SKILLS & COMPETENCIES",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "KEY SKILLS & COMPETENCIES",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 22,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 66,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS & LICENSES",
+                "detection_method": "heading",
+                "line_number": 71,
+                "evidence": "CERTIFICATIONS & LICENSES",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4643,
+            "word_count": 608,
+            "line_count": 84,
+            "non_empty_line_count": 73,
+            "short_line_count": 15,
+            "short_line_ratio": 0.205479,
+            "fragmented_line_count": 10,
+            "fragmented_line_ratio": 0.136986,
+            "mean_line_length": 61.85,
+            "median_line_length": 62.0,
+            "line_length_stdev": 38.67,
+            "line_length_cv": 0.62517,
+            "broken_sentence_count": 17,
+            "broken_sentence_ratio": 0.236111,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "GOVINDA RATHI\nDerivatives Trader | Equity & Derivatives Dealer | Market Analysis\n◻ +91-8007131513 • ✉govindarathi737@gmail.com • ◻ Malad, Mumbai • linkedin.com/in/govinda-rathi\nPROFESSIONAL SUMMARY\nDynamic finance professional with 2+ years of hands-on experience in derivatives execution, order management,\nand real-time market operations in India’s index derivatives market. Managed client accounts by handling order\nplacement, trade execution, and portfolio updates — providing responsive, client-first service and building trust\nthrough clear communication and timely execution. Proven expertise in executing high-value trades across NIFTY\nand SENSEX, managing proprietary capital of ₹2 Crore, and operating under pressure in fast-moving markets. Now\nseeking to leverage deep market knowledge and execution skills in a client-facing Equity Dealer or Retail Dealer\nrole, where I can combine technical expertise with strong relationship-building to deliver best-in-class order\nexecution for clients.\nKEY SKILLS & COMPETENCIES\nExecution: Equity & Derivatives Order Execution, Multi-leg Options Strategies, Terminal Operations (BSE/NSE)\nMarket Knowledge: Index Derivatives (NIFTY/SENSEX), Option Greeks, IV Analysis, Open Interest, Market\nMicrostructure\nStrategies: Calendar, Diagonal, Butterfly Spreads, Straddles, Delta-Neutral, Pair Trading, Arbitrage\nClient Skills: Client Relationship Management, Order Execution for Clients, Interpersonal Communication,\nStakeholder Coordination, Trade Reporting\nRisk & Compliance: Real-time Risk Monitoring, Drawdown Control, SEBI Regulatory Framework, NISM Certified\nTools & Analysis: Technical Analysis, Fundamental Analysis, Algo Strategy Execution, Volatility Analytics\nWORK EXPERIENCE\nRM – Dealing | Religare Broking Limited | Mumbai\nMay 2026 – Present\n• Executing equity and derivatives orders for retail clients across NSE and BSE platforms.\n• Assisting clients with trade execution, margin-related queries, and portfolio updates.\n• Providing market updates and supporting clients in managing their trading positions.\n• Ensuring compliance with internal risk controls and regulatory guidelines.\n\nDerivatives Trader | Jainam Broking Ltd | Mumbai\nDec 2025 – March 2026\n• Managing and deploying ₹2 Crore proprietary margin across index derivative strategies on live trading\nterminals.\n• Executing complex multi-leg options strategies including Calendar, Diagonal, Butterfly Spreads, and Straddles\nwith precision timing.\n• Structuring Delta-Neutral and Gamma-High portfolios based on real-time volatility outlook and market\nconditions.\n• Coordinating with internal stakeholders (risk desk, back-office, compliance) on trade confirmations and\nsettlements — building foundation for client-facing communication.\n• Conducting live volatility analysis using IV Rank, IV Percentile, and skew interpretation to inform execution\ndecisions.\n• Managing real-time portfolio risk using Option Greeks (Delta, Gamma, Theta, Vega, Rho) and enforcing strict\ndrawdown controls.\n• Executing statistical pair trading and arbitrage strategies between NIFTY and SENSEX across exchanges.\n\nDerivatives Trader | Mansukh Securities & Finance Ltd | Mumbai\nApr 2024 – Nov 2025\n• Managed client accounts by handling order placement, trade execution, and portfolio updates across equity and\nderivatives segments.\n• Executed algorithmic and discretionary trading strategies in index futures and options, including Calendar,\nDiagonal, and Butterfly spreads.\n• Monitored market volatility, option Greeks, and trade performance to support execution and risk management\ndecisions.\n• Conducted market research and analysis of macroeconomic factors, identifying trading and arbitrage\n\nmailto:govindarathi737@gmail.com\n\nopportunities in index derivatives.\n\nFinance Intern | Motilal Oswal Financial Services Ltd | Mumbai\nApr 2023 – Jul 2023\n• Performed Fundamental and Technical Analysis of various stocks in the Indian financial market.\n• Gained early exposure to broking operations and client-facing financial services environment.\n\nEDUCATION\nMaster in Management Studies (MMS) — 2024\nThakur Institute of Management Studies and Research, Mumbai University\nBachelor of Commerce (B.Com) — 2020\nSant Gadge Baba Amravati University, Amravati, Maharashtra\nCERTIFICATIONS & LICENSES\n• NISM Series VIII – Equity & Derivatives | NSE | SEBI Certified\n\nDate of Birth: 11 January 2000 | Languages: English, Hindi, Marathi\n\nPROFESSIONAL SUMMARY\nKEY SKILLS & COMPETENCIES\nWORK EXPERIENCE\nEDUCATION\nMaster in Management Studies (MMS) — 2024\nBachelor of Commerce (B.Com) — 2020\n\nCERTIFICATIONS & LICENSES"
+    }
+  ],
+  "extracted_text": "GOVINDA RATHI\nDerivatives Trader | Equity & Derivatives Dealer | Market Analysis\n◻ +91-8007131513 • ✉govindarathi737@gmail.com • ◻ Malad, Mumbai • linkedin.com/in/govinda-rathi\nPROFESSIONAL SUMMARY\nDynamic finance professional with 2+ years of hands-on experience in derivatives execution, order management, \nand real-time market operations in India’s index derivatives market. Managed client accounts by handling order \nplacement, trade execution, and portfolio updates — providing responsive, client-first service and building trust \nthrough clear communication and timely execution. Proven expertise in executing high-value trades across NIFTY \nand SENSEX, managing proprietary capital of ₹2 Crore, and operating under pressure in fast-moving markets. Now \nseeking to leverage deep market knowledge and execution skills in a client-facing Equity Dealer or Retail Dealer \nrole, where I can combine technical expertise with strong relationship-building to deliver best-in-class order \nexecution for clients.\nKEY SKILLS & COMPETENCIES\nExecution: Equity & Derivatives Order Execution, Multi-leg Options Strategies, Terminal Operations (BSE/NSE) \nMarket Knowledge: Index Derivatives (NIFTY/SENSEX), Option Greeks, IV Analysis, Open Interest, Market \nMicrostructure\nStrategies: Calendar, Diagonal, Butterfly Spreads, Straddles, Delta-Neutral, Pair Trading, Arbitrage\nClient Skills: Client Relationship Management, Order Execution for Clients, Interpersonal Communication, \nStakeholder Coordination, Trade Reporting\nRisk & Compliance: Real-time Risk Monitoring, Drawdown Control, SEBI Regulatory Framework, NISM Certified\nTools & Analysis: Technical Analysis, Fundamental Analysis, Algo Strategy Execution, Volatility Analytics\nWORK EXPERIENCE\nRM – Dealing | Religare Broking Limited | Mumbai\nMay 2026 – Present\n\t• Executing equity and derivatives orders for retail clients across NSE and BSE platforms.\n\t• Assisting clients with trade execution, margin-related queries, and portfolio updates.\n\t• Providing market updates and supporting clients in managing their trading positions.\n\t• Ensuring compliance with internal risk controls and regulatory guidelines.\n\nDerivatives Trader | Jainam Broking Ltd | Mumbai\nDec 2025 – March 2026\n\t• Managing and deploying ₹2 Crore proprietary margin across index derivative strategies on live trading \nterminals.\n\t• Executing complex multi-leg options strategies including Calendar, Diagonal, Butterfly Spreads, and Straddles \nwith precision timing.\n\t• Structuring Delta-Neutral and Gamma-High portfolios based on real-time volatility outlook and market \nconditions.\n\t• Coordinating with internal stakeholders (risk desk, back-office, compliance) on trade confirmations and \nsettlements — building foundation for client-facing communication.\n\t• Conducting live volatility analysis using IV Rank, IV Percentile, and skew interpretation to inform execution \ndecisions.\n\t• Managing real-time portfolio risk using Option Greeks (Delta, Gamma, Theta, Vega, Rho) and enforcing strict \ndrawdown controls.\n\t• Executing statistical pair trading and arbitrage strategies between NIFTY and SENSEX across exchanges.\n\nDerivatives Trader | Mansukh Securities & Finance Ltd | Mumbai\nApr 2024 – Nov 2025\n\t• Managed client accounts by handling order placement, trade execution, and portfolio updates across equity and \nderivatives segments.\n\t• Executed algorithmic and discretionary trading strategies in index futures and options, including Calendar, \nDiagonal, and Butterfly spreads.\n\t• Monitored market volatility, option Greeks, and trade performance to support execution and risk management \ndecisions.\n\t• Conducted market research and analysis of macroeconomic factors, identifying trading and arbitrage\n\n\nmailto:govindarathi737@gmail.com\n\n\topportunities in index derivatives.\n\nFinance Intern | Motilal Oswal Financial Services Ltd | Mumbai\nApr 2023 – Jul 2023\n\t• Performed Fundamental and Technical Analysis of various stocks in the Indian financial market.\n\t• Gained early exposure to broking operations and client-facing financial services environment.\n\nEDUCATION\nMaster in Management Studies (MMS) — 2024\nThakur Institute of Management Studies and Research, Mumbai University\nBachelor of Commerce (B.Com) — 2020\nSant Gadge Baba Amravati University, Amravati, Maharashtra\nCERTIFICATIONS & LICENSES\n\t• NISM Series VIII – Equity & Derivatives | NSE | SEBI Certified\n\nDate of Birth: 11 January 2000 | Languages: English, Hindi, Marathi\n\n\n\tPROFESSIONAL SUMMARY\n\tKEY SKILLS & COMPETENCIES\n\tWORK EXPERIENCE\n\tEDUCATION\n\tMaster in Management Studies (MMS) — 2024\n\tBachelor of Commerce (B.Com) — 2020\n\n\tCERTIFICATIONS & LICENSES",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "GOVINDA RATHI\nDerivatives Trader | Equity & Derivatives Dealer | Market Analysis\n◻ +91-8007131513 • ✉govindarathi737@gmail.com • ◻ Malad, Mumbai • linkedin.com/in/govinda-rathi\nPROFESSIONAL SUMMARY\nDynamic finance professional with 2+ years of hands-on experience in derivatives execution, order management, \nand real-time market operations in India’s index derivatives market. Managed client accounts by handling order \nplacement, trade execution, and portfolio updates — providing responsive, client-first service and building trust \nthrough clear communication and timely execution. Proven expertise in executing high-value trades across NIFTY \nand SENSEX, managing proprietary capital of ₹2 Crore, and operating under pressure in fast-moving markets. Now \nseeking to leverage deep market knowledge and execution skills in a client-facing Equity Dealer or Retail Dealer \nrole, where I can combine technical expertise with strong relationship-building to deliver best-in-class order \nexecution for clients.\nKEY SKILLS & COMPETENCIES\nExecution: Equity & Derivatives Order Execution, Multi-leg Options Strategies, Terminal Operations (BSE/NSE) \nMarket Knowledge: Index Derivatives (NIFTY/SENSEX), Option Greeks, IV Analysis, Open Interest, Market \nMicrostructure\nStrategies: Calendar, Diagonal, Butterfly Spreads, Straddles, Delta-Neutral, Pair Trading, Arbitrage\nClient Skills: Client Relationship Management, Order Execution for Clients, Interpersonal Communication, \nStakeholder Coordination, Trade Reporting\nRisk & Compliance: Real-time Risk Monitoring, Drawdown Control, SEBI Regulatory Framework, NISM Certified\nTools & Analysis: Technical Analysis, Fundamental Analysis, Algo Strategy Execution, Volatility Analytics\nWORK EXPERIENCE\nRM – Dealing | Religare Broking Limited | Mumbai\nMay 2026 – Present\n\t• Executing equity and derivatives orders for retail clients across NSE and BSE platforms.\n\t• Assisting clients with trade execution, margin-related queries, and portfolio updates.\n\t• Providing market updates and supporting clients in managing their trading positions.\n\t• Ensuring compliance with internal risk controls and regulatory guidelines.\n\nDerivatives Trader | Jainam Broking Ltd | Mumbai\nDec 2025 – March 2026\n\t• Managing and deploying ₹2 Crore proprietary margin across index derivative strategies on live trading \nterminals.\n\t• Executing complex multi-leg options strategies including Calendar, Diagonal, Butterfly Spreads, and Straddles \nwith precision timing.\n\t• Structuring Delta-Neutral and Gamma-High portfolios based on real-time volatility outlook and market \nconditions.\n\t• Coordinating with internal stakeholders (risk desk, back-office, compliance) on trade confirmations and \nsettlements — building foundation for client-facing communication.\n\t• Conducting live volatility analysis using IV Rank, IV Percentile, and skew interpretation to inform execution \ndecisions.\n\t• Managing real-time portfolio risk using Option Greeks (Delta, Gamma, Theta, Vega, Rho) and enforcing strict \ndrawdown controls.\n\t• Executing statistical pair trading and arbitrage strategies between NIFTY and SENSEX across exchanges.\n\nDerivatives Trader | Mansukh Securities & Finance Ltd | Mumbai\nApr 2024 – Nov 2025\n\t• Managed client accounts by handling order placement, trade execution, and portfolio updates across equity and \nderivatives segments.\n\t• Executed algorithmic and discretionary trading strategies in index futures and options, including Calendar, \nDiagonal, and Butterfly spreads.\n\t• Monitored market volatility, option Greeks, and trade performance to support execution and risk management \ndecisions.\n\t• Conducted market research and analysis of macroeconomic factors, identifying trading and arbitrage\n\n\nmailto:govindarathi737@gmail.com\n\n\topportunities in index derivatives.\n\nFinance Intern | Motilal Oswal Financial Services Ltd | Mumbai\nApr 2023 – Jul 2023\n\t• Performed Fundamental and Technical Analysis of various stocks in the Indian financial market.\n\t• Gained early exposure to broking operations and client-facing financial services environment.\n\nEDUCATION\nMaster in Management Studies (MMS) — 2024\nThakur Institute of Management Studies and Research, Mumbai University\nBachelor of Commerce (B.Com) — 2020\nSant Gadge Baba Amravati University, Amravati, Maharashtra\nCERTIFICATIONS & LICENSES\n\t• NISM Series VIII – Equity & Derivatives | NSE | SEBI Certified\n\nDate of Birth: 11 January 2000 | Languages: English, Hindi, Marathi\n\n\n\tPROFESSIONAL SUMMARY\n\tKEY SKILLS & COMPETENCIES\n\tWORK EXPERIENCE\n\tEDUCATION\n\tMaster in Management Studies (MMS) — 2024\n\tBachelor of Commerce (B.Com) — 2020\n\n\tCERTIFICATIONS & LICENSES",
+  "quality": {
+    "status": "PASS",
+    "document_id": "174d7954-91dc-4781-9820-844d21672be2",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 4643,
+        "word_count": 608,
+        "line_count": 84,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.142796,
+        "symbol_count": 39,
+        "symbol_ratio": 0.0084,
+        "max_repeated_char_run": 3,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 97.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 4643,
+        "word_count": 608,
+        "configured_section_count": 7,
+        "detected_count": 6,
+        "missing_count": 1,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Projects"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Projects"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "professional summary",
+          "Skills": "key skills and competencies",
+          "Work Experience": "work experience",
+          "Education": "education",
+          "Certifications": "certifications and licenses"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "govindarathi737@gmail.com",
+            "confidence": 0.8
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "PROFESSIONAL SUMMARY",
+            "detection_method": "heading",
+            "line_number": 4,
+            "evidence": "PROFESSIONAL SUMMARY",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "KEY SKILLS & COMPETENCIES",
+            "detection_method": "heading",
+            "line_number": 13,
+            "evidence": "KEY SKILLS & COMPETENCIES",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "WORK EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 22,
+            "evidence": "WORK EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATION",
+            "detection_method": "heading",
+            "line_number": 66,
+            "evidence": "EDUCATION",
+            "confidence": 0.98
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": "CERTIFICATIONS & LICENSES",
+            "detection_method": "heading",
+            "line_number": 71,
+            "evidence": "CERTIFICATIONS & LICENSES",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Certifications": "detected",
+          "Projects": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Projects"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Projects"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 4643,
+        "word_count": 608,
+        "line_count": 84,
+        "non_empty_line_count": 73,
+        "short_line_count": 15,
+        "short_line_ratio": 0.205479,
+        "fragmented_line_count": 10,
+        "fragmented_line_ratio": 0.136986,
+        "mean_line_length": 61.85,
+        "median_line_length": 62.0,
+        "line_length_stdev": 38.67,
+        "line_length_cv": 0.62517,
+        "broken_sentence_count": 17,
+        "broken_sentence_ratio": 0.236111,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": null,
+  "resume_json": null,
+  "hyperlinks": [
+    {
+      "page": 1,
+      "url": "mailto:govindarathi737@gmail.com",
+      "visible_text": "✉govindarathi737@gmail.com",
+      "type": "mailto",
+      "rect": [
+        185.29,
+        95.74,
+        307.56,
+        109.82
+      ]
+    }
+  ],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "GOVINDA RATHI\nDerivatives Trader | Equity & Derivatives Dealer | Market Analysis\n◻ +91-8007131513 • ✉govindarathi737@gmail.com • ◻ Malad, Mumbai • linkedin.com/in/govinda-rathi\nPROFESSIONAL SUMMARY\nDynamic finance professional with 2+ years of hands-on experience in derivatives execution, order management, \nand real-time market operations in India’s index derivatives market. Managed client accounts by handling order \nplacement, trade execution, and portfolio updates — providing responsive, client-first service and building trust \nthrough clear communication and timely execution. Proven expertise in executing high-value trades across NIFTY \nand SENSEX, managing proprietary capital of ₹2 Crore, and operating under pressure in fast-moving markets. Now \nseeking to leverage deep market knowledge and execution skills in a client-facing Equity Dealer or Retail Dealer \nrole, where I can combine technical expertise with strong relationship-building to deliver best-in-class order \nexecution for clients.\nKEY SKILLS & COMPETENCIES\nExecution: Equity & Derivatives Order Execution, Multi-leg Options Strategies, Terminal Operations (BSE/NSE) \nMarket Knowledge: Index Derivatives (NIFTY/SENSEX), Option Greeks, IV Analysis, Open Interest, Market \nMicrostructure\nStrategies: Calendar, Diagonal, Butterfly Spreads, Straddles, Delta-Neutral, Pair Trading, Arbitrage\nClient Skills: Client Relationship Management, Order Execution for Clients, Interpersonal Communication, \nStakeholder Coordination, Trade Reporting\nRisk & Compliance: Real-time Risk Monitoring, Drawdown Control, SEBI Regulatory Framework, NISM Certified\nTools & Analysis: Technical Analysis, Fundamental Analysis, Algo Strategy Execution, Volatility Analytics\nWORK EXPERIENCE\nRM – Dealing | Religare Broking Limited | Mumbai\nMay 2026 – Present\n\t• Executing equity and derivatives orders for retail clients across NSE and BSE platforms.\n\t• Assisting clients with trade execution, margin-related queries, and portfolio updates.\n\t• Providing market updates and supporting clients in managing their trading positions.\n\t• Ensuring compliance with internal risk controls and regulatory guidelines.\n\nDerivatives Trader | Jainam Broking Ltd | Mumbai\nDec 2025 – March 2026\n\t• Managing and deploying ₹2 Crore proprietary margin across index derivative strategies on live trading \nterminals.\n\t• Executing complex multi-leg options strategies including Calendar, Diagonal, Butterfly Spreads, and Straddles \nwith precision timing.\n\t• Structuring Delta-Neutral and Gamma-High portfolios based on real-time volatility outlook and market \nconditions.\n\t• Coordinating with internal stakeholders (risk desk, back-office, compliance) on trade confirmations and \nsettlements — building foundation for client-facing communication.\n\t• Conducting live volatility analysis using IV Rank, IV Percentile, and skew interpretation to inform execution \ndecisions.\n\t• Managing real-time portfolio risk using Option Greeks (Delta, Gamma, Theta, Vega, Rho) and enforcing strict \ndrawdown controls.\n\t• Executing statistical pair trading and arbitrage strategies between NIFTY and SENSEX across exchanges.\n\nDerivatives Trader | Mansukh Securities & Finance Ltd | Mumbai\nApr 2024 – Nov 2025\n\t• Managed client accounts by handling order placement, trade execution, and portfolio updates across equity and \nderivatives segments.\n\t• Executed algorithmic and discretionary trading strategies in index futures and options, including Calendar, \nDiagonal, and Butterfly spreads.\n\t• Monitored market volatility, option Greeks, and trade performance to support execution and risk management \ndecisions.\n\t• Conducted market research and analysis of macroeconomic factors, identifying trading and arbitrage\n\n\nmailto:govindarathi737@gmail.com\n\n\topportunities in index derivatives.\n\nFinance Intern | Motilal Oswal Financial Services Ltd | Mumbai\nApr 2023 – Jul 2023\n\t• Performed Fundamental and Technical Analysis of various stocks in the Indian financial market.\n\t• Gained early exposure to broking operations and client-facing financial services environment.\n\nEDUCATION\nMaster in Management Studies (MMS) — 2024\nThakur Institute of Management Studies and Research, Mumbai University\nBachelor of Commerce (B.Com) — 2020\nSant Gadge Baba Amravati University, Amravati, Maharashtra\nCERTIFICATIONS & LICENSES\n\t• NISM Series VIII – Equity & Derivatives | NSE | SEBI Certified\n\nDate of Birth: 11 January 2000 | Languages: English, Hindi, Marathi\n\n\n\tPROFESSIONAL SUMMARY\n\tKEY SKILLS & COMPETENCIES\n\tWORK EXPERIENCE\n\tEDUCATION\n\tMaster in Management Studies (MMS) — 2024\n\tBachelor of Commerce (B.Com) — 2020\n\n\tCERTIFICATIONS & LICENSES",
+    "normalized_text": "GOVINDA RATHI\nDerivatives Trader | Equity & Derivatives Dealer | Market Analysis\n◻ +91-8007131513 • ✉govindarathi737@gmail.com • ◻ Malad, Mumbai • linkedin.com/in/govinda-rathi\nPROFESSIONAL SUMMARY\nDynamic finance professional with 2+ years of hands-on experience in derivatives execution, order management,\nand real-time market operations in India’s index derivatives market. Managed client accounts by handling order\nplacement, trade execution, and portfolio updates — providing responsive, client-first service and building trust\nthrough clear communication and timely execution. Proven expertise in executing high-value trades across NIFTY\nand SENSEX, managing proprietary capital of ₹2 Crore, and operating under pressure in fast-moving markets. Now\nseeking to leverage deep market knowledge and execution skills in a client-facing Equity Dealer or Retail Dealer\nrole, where I can combine technical expertise with strong relationship-building to deliver best-in-class order\nexecution for clients.\nKEY SKILLS & COMPETENCIES\nExecution: Equity & Derivatives Order Execution, Multi-leg Options Strategies, Terminal Operations (BSE/NSE)\nMarket Knowledge: Index Derivatives (NIFTY/SENSEX), Option Greeks, IV Analysis, Open Interest, Market\nMicrostructure\nStrategies: Calendar, Diagonal, Butterfly Spreads, Straddles, Delta-Neutral, Pair Trading, Arbitrage\nClient Skills: Client Relationship Management, Order Execution for Clients, Interpersonal Communication,\nStakeholder Coordination, Trade Reporting\nRisk & Compliance: Real-time Risk Monitoring, Drawdown Control, SEBI Regulatory Framework, NISM Certified\nTools & Analysis: Technical Analysis, Fundamental Analysis, Algo Strategy Execution, Volatility Analytics\nWORK EXPERIENCE\nRM – Dealing | Religare Broking Limited | Mumbai\nMay 2026 – Present\n• Executing equity and derivatives orders for retail clients across NSE and BSE platforms.\n• Assisting clients with trade execution, margin-related queries, and portfolio updates.\n• Providing market updates and supporting clients in managing their trading positions.\n• Ensuring compliance with internal risk controls and regulatory guidelines.\n\nDerivatives Trader | Jainam Broking Ltd | Mumbai\nDec 2025 – March 2026\n• Managing and deploying ₹2 Crore proprietary margin across index derivative strategies on live trading\nterminals.\n• Executing complex multi-leg options strategies including Calendar, Diagonal, Butterfly Spreads, and Straddles\nwith precision timing.\n• Structuring Delta-Neutral and Gamma-High portfolios based on real-time volatility outlook and market\nconditions.\n• Coordinating with internal stakeholders (risk desk, back-office, compliance) on trade confirmations and\nsettlements — building foundation for client-facing communication.\n• Conducting live volatility analysis using IV Rank, IV Percentile, and skew interpretation to inform execution\ndecisions.\n• Managing real-time portfolio risk using Option Greeks (Delta, Gamma, Theta, Vega, Rho) and enforcing strict\ndrawdown controls.\n• Executing statistical pair trading and arbitrage strategies between NIFTY and SENSEX across exchanges.\n\nDerivatives Trader | Mansukh Securities & Finance Ltd | Mumbai\nApr 2024 – Nov 2025\n• Managed client accounts by handling order placement, trade execution, and portfolio updates across equity and\nderivatives segments.\n• Executed algorithmic and discretionary trading strategies in index futures and options, including Calendar,\nDiagonal, and Butterfly spreads.\n• Monitored market volatility, option Greeks, and trade performance to support execution and risk management\ndecisions.\n• Conducted market research and analysis of macroeconomic factors, identifying trading and arbitrage\n\nmailto:govindarathi737@gmail.com\n\nopportunities in index derivatives.\n\nFinance Intern | Motilal Oswal Financial Services Ltd | Mumbai\nApr 2023 – Jul 2023\n• Performed Fundamental and Technical Analysis of various stocks in the Indian financial market.\n• Gained early exposure to broking operations and client-facing financial services environment.\n\nEDUCATION\nMaster in Management Studies (MMS) — 2024\nThakur Institute of Management Studies and Research, Mumbai University\nBachelor of Commerce (B.Com) — 2020\nSant Gadge Baba Amravati University, Amravati, Maharashtra\nCERTIFICATIONS & LICENSES\n• NISM Series VIII – Equity & Derivatives | NSE | SEBI Certified\n\nDate of Birth: 11 January 2000 | Languages: English, Hindi, Marathi\n\nPROFESSIONAL SUMMARY\nKEY SKILLS & COMPETENCIES\nWORK EXPERIENCE\nEDUCATION\nMaster in Management Studies (MMS) — 2024\nBachelor of Commerce (B.Com) — 2020\n\nCERTIFICATIONS & LICENSES",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 4643,
+    "normalized_chars": 4596,
+    "original_estimated_tokens": 1161,
+    "normalized_estimated_tokens": 1149,
+    "estimated_reduction_percent": 1.0
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "timed_out_calls": 1,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_source": null,
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Muse API request timed out after 20s.",
+    "input_type": "text",
+    "duration_ms": 20041.95,
+    "timeout_seconds": 20.0,
+    "usage": {},
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 4643,
+      "normalized_chars": 4596,
+      "estimated_reduction_percent": 1.0,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 3874.74,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "174d7954-91dc-4781-9820-844d21672be2",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4643,
+            "word_count": 608,
+            "line_count": 84,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.142796,
+            "symbol_count": 39,
+            "symbol_ratio": 0.0084,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4643,
+            "word_count": 608,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "key skills and competencies",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications and licenses"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "govindarathi737@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 4,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "KEY SKILLS & COMPETENCIES",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "KEY SKILLS & COMPETENCIES",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 22,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 66,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS & LICENSES",
+                "detection_method": "heading",
+                "line_number": 71,
+                "evidence": "CERTIFICATIONS & LICENSES",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4643,
+            "word_count": 608,
+            "line_count": 84,
+            "non_empty_line_count": 73,
+            "short_line_count": 15,
+            "short_line_ratio": 0.205479,
+            "fragmented_line_count": 10,
+            "fragmented_line_ratio": 0.136986,
+            "mean_line_length": 61.85,
+            "median_line_length": 62.0,
+            "line_length_stdev": 38.67,
+            "line_length_cv": 0.62517,
+            "broken_sentence_count": 17,
+            "broken_sentence_ratio": 0.236111,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 20041.95,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 3874.74,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "174d7954-91dc-4781-9820-844d21672be2_SHJ-5464_SHC-384975.pdf"
+}

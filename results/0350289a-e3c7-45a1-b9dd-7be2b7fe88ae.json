@@ -1,0 +1,961 @@
+{
+  "resume_id": "0350289a-e3c7-45a1-b9dd-7be2b7fe88ae",
+  "filename": "SHJ-5451_SHC-364880.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 333683,
+  "uploaded_at": "2026-11-06T11:22:05.900227+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 8905.9,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 8905.9,
+      "text": "Job Objective: \n\nAcademic Qualifications Details: \n\nOJT /Work Experience at TATA MOTORS LTD, Pantnagar : \n\n \n\n \n\n \n\nKavi Phone no: +91-7082177993 \n\nEmail: kavikakran2@gmail.com \n \n\nTo secure a suitable position, where I can effectively exhibit my skills as Technical \nprofessional, and grow along with the organization. \n\n \n\n \n \nNettur Technical Training Foundation, Bangalore \n\n 2 years Diploma in Mechatronics \n On Job Training at TATA MOTORS LTD Pantnagar \n Academics by NTTF \n\n \n\n \n\n \nQualification \n\n \nBoard/ Institute \n\n \nSubjects/ Trade \n\nYea\nrs \nof \nPas\nsing \n\n \n% of marks \n\n \n\n \nDiploma \n\n \n\n \nNTTF \n\n \nDiploma in Mechatronics \n\n \n\n \n2025 \n\n \n\n69% \n\nITI NCVT Mechanic Diesel 2023 81.8% \n\n \nHigh School \n\nGovt SR SEC school \nkathura \n\n(sonipat)/,HBSE \n(Haryana Board of \n\nSecondary Education) \n\nEnglish Hindi Mathematics \nsocial science Automobile \n\nscience \n\n \n2020 \n\n \n68% \n\n \nIntermediate \n\nGovt SR SEC school \nkathura \n\n(sonipat)/,HBSE \n(Haryana Board of \n\nSecondary Education) \n\nEnglish Hindi Mathematics \npolitical science physical \n\neducation \n\n \n2022 \n\n \n77% \n\n \n\n \nAs a Trainee at TATA MOTORS Ltd I have rich hands experience in the following area \n\n Knowledge about BIW fixtures. \n\n PM activity of BIW fixtures. \n\n Implemented new modified fixtures. \n\n Troubleshooting daily line problems regarding fixtures. \n\nTechnical Qualification: \n\n\n\nAdditional Certification : \n\nKey Functional areas during the On Job Training: \n\nKnowledge/Skills gained during NTTF Academics: \n\nReference: \n\nPersonal Information: \n\n Maintain all documents of fixtures like pin validation, copper plate & roller changing \nschedule, PM check sheet and fixtures validation record. \n\nAs a causal at Donaldson Ltd Company, Manesar: \n\n Air cleaner assembly \n\n Filter expending \n\n Production maintenance of jigs and fixture. \n \n \n\n Automotive service technician \n\n Got awards in suraksha rakshak \n \n \n\n \nAs a Trainee at TATA MOTORS Ltd I have rich hands experience in the following area \nShop Name: PE_Fixtures Maintenance in BIW-1C/1B/1D \n\n \n\nTheory \n Engineering drawing related like Interpretation of component drawing, Basic drafting. \n\n Metrology related like Measurement, Limits & Fits and Tolerances etc. \n\n Modern Shop Floor Practices using 7 QC tools, 5S, Kaizen, Poke-yoke etc. \n\n Manufacturing Processes like ability to do basic Welding, to operate Power Tools, understanding \nof machining, casting, forging, rolling, finishing process \n\n Automobile related like ability to recognize basic components & Systems like - Power \ntransmission, Suspension etc. \n\n Familiarization of PLC System, Basics of Timer and Counter, Logic function. \n\n Robotics Engineering and IoT encompasses electronics, communication and computer science \nengineering. \n\n Safety, health and environment norms and compliances. \n\n Industrial Act, Material, Purchase, Store, and Inventory Management, Production Planning and \nControl, TPM. \n\n \n\nPractical \n\n \n Metrology applications like- Measuring parts using Instrument (Calipers, Micrometer) & \n\nInspection using Gauges (Slip, Feeler, Ring, Plug, Snap gauge etc.) \n\n Computer Skills like application of MS Office (Excel, Word, and Power Point). \n \n \n\n \n\nMr. Nitin Kumar (Center Coordinator) \nMobile: +91 9837327513 \n(NTTF Training Centre, Pantnagar) \n\nMr. Manish Kumar (Supervisor) \nMob: 8272035742 \n(Tata motors Pantnagar, Uttarakhand) \n\n \n\nName: Kavi \n\n\n\nConclusion: \n\nDOB: 30-11-2004 \nFather name: Mr. Satpal \n\nMother name: Mrs. Poonam Devi \nLanguages Known: English, Hindi \nMarital Status: Single \nHobbies: Playing Kabaddi, Reading Books \n\nPermanent Address: Village- Kathura (89) Sonipat Haryana 131301 \n\n \n\n \nHere by I declare that the above provided information is correct up to the best of my knowledge. \n\n \nPlace:  Signature \nDate:",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-06T11:21:56.710898+00:00",
+      "completed_at": "2026-11-06T11:22:05.617423+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "0350289a-e3c7-45a1-b9dd-7be2b7fe88ae",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 96.73,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS"
+          ],
+          "reasons": [
+            "24 non-printable characters found (0.63% of text)."
+          ],
+          "metrics": {
+            "char_count": 3782,
+            "word_count": 502,
+            "line_count": 244,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 24,
+            "non_printable_ratio": 0.006346,
+            "whitespace_ratio": 0.208091,
+            "symbol_count": 24,
+            "symbol_ratio": 0.006346,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 85.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3782,
+            "word_count": 502,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal information",
+              "Summary": "job objective",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "additional certification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "Personal Information:",
+                "detection_method": "heading",
+                "line_number": 146,
+                "evidence": "Personal Information:",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Job Objective:",
+                "detection_method": "heading",
+                "line_number": 1,
+                "evidence": "Job Objective:",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "OJT /Work Experience at TATA MOTORS LTD, Pantnagar :",
+                "detection_method": "heading_embedded",
+                "line_number": 5,
+                "evidence": "OJT /Work Experience at TATA MOTORS LTD, Pantnagar :",
+                "confidence": 0.9
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "education",
+                "detection_method": "heading",
+                "line_number": 113,
+                "evidence": "education",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "Additional Certification :",
+                "detection_method": "heading",
+                "line_number": 138,
+                "evidence": "Additional Certification :",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Skills": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 96.73
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3782,
+            "word_count": 502,
+            "line_count": 244,
+            "non_empty_line_count": 105,
+            "short_line_count": 41,
+            "short_line_ratio": 0.390476,
+            "fragmented_line_count": 35,
+            "fragmented_line_ratio": 0.333333,
+            "mean_line_length": 32.31,
+            "median_line_length": 25.0,
+            "line_length_stdev": 26.46,
+            "line_length_cv": 0.818737,
+            "broken_sentence_count": 14,
+            "broken_sentence_ratio": 0.134615,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "0350289a-e3c7-45a1-b9dd-7be2b7fe88ae-attempt-1",
+      "resume_id": "0350289a-e3c7-45a1-b9dd-7be2b7fe88ae",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "Job Objective: \n\nAcademic Qualifications Details: \n\nOJT /Work Experience at TATA MOTORS LTD, Pantnagar : \n\n \n\n \n\n \n\nKavi Phone no: +91-7082177993 \n\nEmail: kavikakran2@gmail.com \n \n\nTo secure a suitable position, where I can effectively exhibit my skills as Technical \nprofessional, and grow along with the organization. \n\n \n\n \n \nNettur Technical Training Foundation, Bangalore \n\n 2 years Diploma in Mechatronics \n On Job Training at TATA MOTORS LTD Pantnagar \n Academics by NTTF \n\n \n\n \n\n \nQualification \n\n \nBoard/ Institute \n\n \nSubjects/ Trade \n\nYea\nrs \nof \nPas\nsing \n\n \n% of marks \n\n \n\n \nDiploma \n\n \n\n \nNTTF \n\n \nDiploma in Mechatronics \n\n \n\n \n2025 \n\n \n\n69% \n\nITI NCVT Mechanic Diesel 2023 81.8% \n\n \nHigh School \n\nGovt SR SEC school \nkathura \n\n(sonipat)/,HBSE \n(Haryana Board of \n\nSecondary Education) \n\nEnglish Hindi Mathematics \nsocial science Automobile \n\nscience \n\n \n2020 \n\n \n68% \n\n \nIntermediate \n\nGovt SR SEC school \nkathura \n\n(sonipat)/,HBSE \n(Haryana Board of \n\nSecondary Education) \n\nEnglish Hindi Mathematics \npolitical science physical \n\neducation \n\n \n2022 \n\n \n77% \n\n \n\n \nAs a Trainee at TATA MOTORS Ltd I have rich hands experience in the following area \n\n Knowledge about BIW fixtures. \n\n PM activity of BIW fixtures. \n\n Implemented new modified fixtures. \n\n Troubleshooting daily line problems regarding fixtures. \n\nTechnical Qualification: \n\n\n\nAdditional Certification : \n\nKey Functional areas during the On Job Training: \n\nKnowledge/Skills gained during NTTF Academics: \n\nReference: \n\nPersonal Information: \n\n Maintain all documents of fixtures like pin validation, copper plate & roller changing \nschedule, PM check sheet and fixtures validation record. \n\nAs a causal at Donaldson Ltd Company, Manesar: \n\n Air cleaner assembly \n\n Filter expending \n\n Production maintenance of jigs and fixture. \n \n \n\n Automotive service technician \n\n Got awards in suraksha rakshak \n \n \n\n \nAs a Trainee at TATA MOTORS Ltd I have rich hands experience in the following area \nShop Name: PE_Fixtures Maintenance in BIW-1C/1B/1D \n\n \n\nTheory \n Engineering drawing related like Interpretation of component drawing, Basic drafting. \n\n Metrology related like Measurement, Limits & Fits and Tolerances etc. \n\n Modern Shop Floor Practices using 7 QC tools, 5S, Kaizen, Poke-yoke etc. \n\n Manufacturing Processes like ability to do basic Welding, to operate Power Tools, understanding \nof machining, casting, forging, rolling, finishing process \n\n Automobile related like ability to recognize basic components & Systems like - Power \ntransmission, Suspension etc. \n\n Familiarization of PLC System, Basics of Timer and Counter, Logic function. \n\n Robotics Engineering and IoT encompasses electronics, communication and computer science \nengineering. \n\n Safety, health and environment norms and compliances. \n\n Industrial Act, Material, Purchase, Store, and Inventory Management, Production Planning and \nControl, TPM. \n\n \n\nPractical \n\n \n Metrology applications like- Measuring parts using Instrument (Calipers, Micrometer) & \n\nInspection using Gauges (Slip, Feeler, Ring, Plug, Snap gauge etc.) \n\n Computer Skills like application of MS Office (Excel, Word, and Power Point). \n \n \n\n \n\nMr. Nitin Kumar (Center Coordinator) \nMobile: +91 9837327513 \n(NTTF Training Centre, Pantnagar) \n\nMr. Manish Kumar (Supervisor) \nMob: 8272035742 \n(Tata motors Pantnagar, Uttarakhand) \n\n \n\nName: Kavi \n\n\n\nConclusion: \n\nDOB: 30-11-2004 \nFather name: Mr. Satpal \n\nMother name: Mrs. Poonam Devi \nLanguages Known: English, Hindi \nMarital Status: Single \nHobbies: Playing Kabaddi, Reading Books \n\nPermanent Address: Village- Kathura (89) Sonipat Haryana 131301 \n\n \n\n \nHere by I declare that the above provided information is correct up to the best of my knowledge. \n\n \nPlace:  Signature \nDate:",
+      "extracted_text_length": 3782,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "0350289a-e3c7-45a1-b9dd-7be2b7fe88ae",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 96.73,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS"
+          ],
+          "reasons": [
+            "24 non-printable characters found (0.63% of text)."
+          ],
+          "metrics": {
+            "char_count": 3782,
+            "word_count": 502,
+            "line_count": 244,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 24,
+            "non_printable_ratio": 0.006346,
+            "whitespace_ratio": 0.208091,
+            "symbol_count": 24,
+            "symbol_ratio": 0.006346,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 85.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3782,
+            "word_count": 502,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal information",
+              "Summary": "job objective",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "additional certification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "Personal Information:",
+                "detection_method": "heading",
+                "line_number": 146,
+                "evidence": "Personal Information:",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Job Objective:",
+                "detection_method": "heading",
+                "line_number": 1,
+                "evidence": "Job Objective:",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "OJT /Work Experience at TATA MOTORS LTD, Pantnagar :",
+                "detection_method": "heading_embedded",
+                "line_number": 5,
+                "evidence": "OJT /Work Experience at TATA MOTORS LTD, Pantnagar :",
+                "confidence": 0.9
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "education",
+                "detection_method": "heading",
+                "line_number": 113,
+                "evidence": "education",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "Additional Certification :",
+                "detection_method": "heading",
+                "line_number": 138,
+                "evidence": "Additional Certification :",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Skills": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 96.73
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3782,
+            "word_count": 502,
+            "line_count": 244,
+            "non_empty_line_count": 105,
+            "short_line_count": 41,
+            "short_line_ratio": 0.390476,
+            "fragmented_line_count": 35,
+            "fragmented_line_ratio": 0.333333,
+            "mean_line_length": 32.31,
+            "median_line_length": 25.0,
+            "line_length_stdev": 26.46,
+            "line_length_cv": 0.818737,
+            "broken_sentence_count": 14,
+            "broken_sentence_ratio": 0.134615,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Job Objective:\n\nAcademic Qualifications Details:\n\nOJT /Work Experience at TATA MOTORS LTD, Pantnagar :\n\nKavi Phone no: +91-7082177993\n\nEmail: kavikakran2@gmail.com\n\nTo secure a suitable position, where I can effectively exhibit my skills as Technical\nprofessional, and grow along with the organization.\n\nNettur Technical Training Foundation, Bangalore\n\n 2 years Diploma in Mechatronics\n On Job Training at TATA MOTORS LTD Pantnagar\n Academics by NTTF\n\nQualification\n\nBoard/ Institute\n\nSubjects/ Trade\n\nYea\nrs\nof\nPas\nsing\n\n% of marks\n\nDiploma\n\nNTTF\n\nDiploma in Mechatronics\n\n2025\n\n69%\n\nITI NCVT Mechanic Diesel 2023 81.8%\n\nHigh School\n\nGovt SR SEC school\nkathura\n\n(sonipat)/,HBSE\n(Haryana Board of\n\nSecondary Education)\n\nEnglish Hindi Mathematics\nsocial science Automobile\n\nscience\n\n2020\n\n68%\n\nIntermediate\n\nGovt SR SEC school\nkathura\n\n(sonipat)/,HBSE\n(Haryana Board of\n\nSecondary Education)\n\nEnglish Hindi Mathematics\npolitical science physical\n\neducation\n\n2022\n\n77%\n\nAs a Trainee at TATA MOTORS Ltd I have rich hands experience in the following area\n\n Knowledge about BIW fixtures.\n\n PM activity of BIW fixtures.\n\n Implemented new modified fixtures.\n\n Troubleshooting daily line problems regarding fixtures.\n\nTechnical Qualification:\n\nAdditional Certification :\n\nKey Functional areas during the On Job Training:\n\nKnowledge/Skills gained during NTTF Academics:\n\nReference:\n\nPersonal Information:\n\n Maintain all documents of fixtures like pin validation, copper plate & roller changing\nschedule, PM check sheet and fixtures validation record.\n\nAs a causal at Donaldson Ltd Company, Manesar:\n\n Air cleaner assembly\n\n Filter expending\n\n Production maintenance of jigs and fixture.\n\n Automotive service technician\n\n Got awards in suraksha rakshak\n\nAs a Trainee at TATA MOTORS Ltd I have rich hands experience in the following area\nShop Name: PE_Fixtures Maintenance in BIW-1C/1B/1D\n\nTheory\n Engineering drawing related like Interpretation of component drawing, Basic drafting.\n\n Metrology related like Measurement, Limits & Fits and Tolerances etc.\n\n Modern Shop Floor Practices using 7 QC tools, 5S, Kaizen, Poke-yoke etc.\n\n Manufacturing Processes like ability to do basic Welding, to operate Power Tools, understanding\nof machining, casting, forging, rolling, finishing process\n\n Automobile related like ability to recognize basic components & Systems like - Power\ntransmission, Suspension etc.\n\n Familiarization of PLC System, Basics of Timer and Counter, Logic function.\n\n Robotics Engineering and IoT encompasses electronics, communication and computer science\nengineering.\n\n Safety, health and environment norms and compliances.\n\n Industrial Act, Material, Purchase, Store, and Inventory Management, Production Planning and\nControl, TPM.\n\nPractical\n\n Metrology applications like- Measuring parts using Instrument (Calipers, Micrometer) &\n\nInspection using Gauges (Slip, Feeler, Ring, Plug, Snap gauge etc.)\n\n Computer Skills like application of MS Office (Excel, Word, and Power Point).\n\nMr. Nitin Kumar (Center Coordinator)\nMobile: +91 9837327513\n(NTTF Training Centre, Pantnagar)\n\nMr. Manish Kumar (Supervisor)\nMob: 8272035742\n(Tata motors Pantnagar, Uttarakhand)\n\nName: Kavi\n\nConclusion:\n\nDOB: 30-11-2004\nFather name: Mr. Satpal\n\nMother name: Mrs. Poonam Devi\nLanguages Known: English, Hindi\nMarital Status: Single\nHobbies: Playing Kabaddi, Reading Books\n\nPermanent Address: Village- Kathura (89) Sonipat Haryana 131301\n\nHere by I declare that the above provided information is correct up to the best of my knowledge.\n\nPlace: Signature\nDate:"
+    }
+  ],
+  "extracted_text": "Job Objective: \n\nAcademic Qualifications Details: \n\nOJT /Work Experience at TATA MOTORS LTD, Pantnagar : \n\n \n\n \n\n \n\nKavi Phone no: +91-7082177993 \n\nEmail: kavikakran2@gmail.com \n \n\nTo secure a suitable position, where I can effectively exhibit my skills as Technical \nprofessional, and grow along with the organization. \n\n \n\n \n \nNettur Technical Training Foundation, Bangalore \n\n 2 years Diploma in Mechatronics \n On Job Training at TATA MOTORS LTD Pantnagar \n Academics by NTTF \n\n \n\n \n\n \nQualification \n\n \nBoard/ Institute \n\n \nSubjects/ Trade \n\nYea\nrs \nof \nPas\nsing \n\n \n% of marks \n\n \n\n \nDiploma \n\n \n\n \nNTTF \n\n \nDiploma in Mechatronics \n\n \n\n \n2025 \n\n \n\n69% \n\nITI NCVT Mechanic Diesel 2023 81.8% \n\n \nHigh School \n\nGovt SR SEC school \nkathura \n\n(sonipat)/,HBSE \n(Haryana Board of \n\nSecondary Education) \n\nEnglish Hindi Mathematics \nsocial science Automobile \n\nscience \n\n \n2020 \n\n \n68% \n\n \nIntermediate \n\nGovt SR SEC school \nkathura \n\n(sonipat)/,HBSE \n(Haryana Board of \n\nSecondary Education) \n\nEnglish Hindi Mathematics \npolitical science physical \n\neducation \n\n \n2022 \n\n \n77% \n\n \n\n \nAs a Trainee at TATA MOTORS Ltd I have rich hands experience in the following area \n\n Knowledge about BIW fixtures. \n\n PM activity of BIW fixtures. \n\n Implemented new modified fixtures. \n\n Troubleshooting daily line problems regarding fixtures. \n\nTechnical Qualification: \n\n\n\nAdditional Certification : \n\nKey Functional areas during the On Job Training: \n\nKnowledge/Skills gained during NTTF Academics: \n\nReference: \n\nPersonal Information: \n\n Maintain all documents of fixtures like pin validation, copper plate & roller changing \nschedule, PM check sheet and fixtures validation record. \n\nAs a causal at Donaldson Ltd Company, Manesar: \n\n Air cleaner assembly \n\n Filter expending \n\n Production maintenance of jigs and fixture. \n \n \n\n Automotive service technician \n\n Got awards in suraksha rakshak \n \n \n\n \nAs a Trainee at TATA MOTORS Ltd I have rich hands experience in the following area \nShop Name: PE_Fixtures Maintenance in BIW-1C/1B/1D \n\n \n\nTheory \n Engineering drawing related like Interpretation of component drawing, Basic drafting. \n\n Metrology related like Measurement, Limits & Fits and Tolerances etc. \n\n Modern Shop Floor Practices using 7 QC tools, 5S, Kaizen, Poke-yoke etc. \n\n Manufacturing Processes like ability to do basic Welding, to operate Power Tools, understanding \nof machining, casting, forging, rolling, finishing process \n\n Automobile related like ability to recognize basic components & Systems like - Power \ntransmission, Suspension etc. \n\n Familiarization of PLC System, Basics of Timer and Counter, Logic function. \n\n Robotics Engineering and IoT encompasses electronics, communication and computer science \nengineering. \n\n Safety, health and environment norms and compliances. \n\n Industrial Act, Material, Purchase, Store, and Inventory Management, Production Planning and \nControl, TPM. \n\n \n\nPractical \n\n \n Metrology applications like- Measuring parts using Instrument (Calipers, Micrometer) & \n\nInspection using Gauges (Slip, Feeler, Ring, Plug, Snap gauge etc.) \n\n Computer Skills like application of MS Office (Excel, Word, and Power Point). \n \n \n\n \n\nMr. Nitin Kumar (Center Coordinator) \nMobile: +91 9837327513 \n(NTTF Training Centre, Pantnagar) \n\nMr. Manish Kumar (Supervisor) \nMob: 8272035742 \n(Tata motors Pantnagar, Uttarakhand) \n\n \n\nName: Kavi \n\n\n\nConclusion: \n\nDOB: 30-11-2004 \nFather name: Mr. Satpal \n\nMother name: Mrs. Poonam Devi \nLanguages Known: English, Hindi \nMarital Status: Single \nHobbies: Playing Kabaddi, Reading Books \n\nPermanent Address: Village- Kathura (89) Sonipat Haryana 131301 \n\n \n\n \nHere by I declare that the above provided information is correct up to the best of my knowledge. \n\n \nPlace:  Signature \nDate:",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "Job Objective: \n\nAcademic Qualifications Details: \n\nOJT /Work Experience at TATA MOTORS LTD, Pantnagar : \n\n \n\n \n\n \n\nKavi Phone no: +91-7082177993 \n\nEmail: kavikakran2@gmail.com \n \n\nTo secure a suitable position, where I can effectively exhibit my skills as Technical \nprofessional, and grow along with the organization. \n\n \n\n \n \nNettur Technical Training Foundation, Bangalore \n\n 2 years Diploma in Mechatronics \n On Job Training at TATA MOTORS LTD Pantnagar \n Academics by NTTF \n\n \n\n \n\n \nQualification \n\n \nBoard/ Institute \n\n \nSubjects/ Trade \n\nYea\nrs \nof \nPas\nsing \n\n \n% of marks \n\n \n\n \nDiploma \n\n \n\n \nNTTF \n\n \nDiploma in Mechatronics \n\n \n\n \n2025 \n\n \n\n69% \n\nITI NCVT Mechanic Diesel 2023 81.8% \n\n \nHigh School \n\nGovt SR SEC school \nkathura \n\n(sonipat)/,HBSE \n(Haryana Board of \n\nSecondary Education) \n\nEnglish Hindi Mathematics \nsocial science Automobile \n\nscience \n\n \n2020 \n\n \n68% \n\n \nIntermediate \n\nGovt SR SEC school \nkathura \n\n(sonipat)/,HBSE \n(Haryana Board of \n\nSecondary Education) \n\nEnglish Hindi Mathematics \npolitical science physical \n\neducation \n\n \n2022 \n\n \n77% \n\n \n\n \nAs a Trainee at TATA MOTORS Ltd I have rich hands experience in the following area \n\n Knowledge about BIW fixtures. \n\n PM activity of BIW fixtures. \n\n Implemented new modified fixtures. \n\n Troubleshooting daily line problems regarding fixtures. \n\nTechnical Qualification: \n\n\n\nAdditional Certification : \n\nKey Functional areas during the On Job Training: \n\nKnowledge/Skills gained during NTTF Academics: \n\nReference: \n\nPersonal Information: \n\n Maintain all documents of fixtures like pin validation, copper plate & roller changing \nschedule, PM check sheet and fixtures validation record. \n\nAs a causal at Donaldson Ltd Company, Manesar: \n\n Air cleaner assembly \n\n Filter expending \n\n Production maintenance of jigs and fixture. \n \n \n\n Automotive service technician \n\n Got awards in suraksha rakshak \n \n \n\n \nAs a Trainee at TATA MOTORS Ltd I have rich hands experience in the following area \nShop Name: PE_Fixtures Maintenance in BIW-1C/1B/1D \n\n \n\nTheory \n Engineering drawing related like Interpretation of component drawing, Basic drafting. \n\n Metrology related like Measurement, Limits & Fits and Tolerances etc. \n\n Modern Shop Floor Practices using 7 QC tools, 5S, Kaizen, Poke-yoke etc. \n\n Manufacturing Processes like ability to do basic Welding, to operate Power Tools, understanding \nof machining, casting, forging, rolling, finishing process \n\n Automobile related like ability to recognize basic components & Systems like - Power \ntransmission, Suspension etc. \n\n Familiarization of PLC System, Basics of Timer and Counter, Logic function. \n\n Robotics Engineering and IoT encompasses electronics, communication and computer science \nengineering. \n\n Safety, health and environment norms and compliances. \n\n Industrial Act, Material, Purchase, Store, and Inventory Management, Production Planning and \nControl, TPM. \n\n \n\nPractical \n\n \n Metrology applications like- Measuring parts using Instrument (Calipers, Micrometer) & \n\nInspection using Gauges (Slip, Feeler, Ring, Plug, Snap gauge etc.) \n\n Computer Skills like application of MS Office (Excel, Word, and Power Point). \n \n \n\n \n\nMr. Nitin Kumar (Center Coordinator) \nMobile: +91 9837327513 \n(NTTF Training Centre, Pantnagar) \n\nMr. Manish Kumar (Supervisor) \nMob: 8272035742 \n(Tata motors Pantnagar, Uttarakhand) \n\n \n\nName: Kavi \n\n\n\nConclusion: \n\nDOB: 30-11-2004 \nFather name: Mr. Satpal \n\nMother name: Mrs. Poonam Devi \nLanguages Known: English, Hindi \nMarital Status: Single \nHobbies: Playing Kabaddi, Reading Books \n\nPermanent Address: Village- Kathura (89) Sonipat Haryana 131301 \n\n \n\n \nHere by I declare that the above provided information is correct up to the best of my knowledge. \n\n \nPlace:  Signature \nDate:",
+  "quality": {
+    "status": "PASS",
+    "document_id": "0350289a-e3c7-45a1-b9dd-7be2b7fe88ae",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 96.73,
+      "flags": [
+        "EXCESSIVE_NON_PRINTABLE_CHARS"
+      ],
+      "reasons": [
+        "24 non-printable characters found (0.63% of text)."
+      ],
+      "metrics": {
+        "char_count": 3782,
+        "word_count": 502,
+        "line_count": 244,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 24,
+        "non_printable_ratio": 0.006346,
+        "whitespace_ratio": 0.208091,
+        "symbol_count": 24,
+        "symbol_ratio": 0.006346,
+        "max_repeated_char_run": 4,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 85.0,
+      "flags": [
+        "MISSING_RECOMMENDED_SECTION",
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 3782,
+        "word_count": 502,
+        "configured_section_count": 7,
+        "detected_count": 5,
+        "missing_count": 2,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Work Experience",
+          "Education",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Skills",
+          "Projects"
+        ],
+        "missing_required": [],
+        "missing_recommended": [
+          "Skills"
+        ],
+        "missing_optional": [
+          "Projects"
+        ],
+        "matched_aliases": {
+          "Contact Information": "personal information",
+          "Summary": "job objective",
+          "Work Experience": "work experience",
+          "Education": "education",
+          "Certifications": "additional certification"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": "Personal Information:",
+            "detection_method": "heading",
+            "line_number": 146,
+            "evidence": "Personal Information:",
+            "confidence": 0.98
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "Job Objective:",
+            "detection_method": "heading",
+            "line_number": 1,
+            "evidence": "Job Objective:",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "OJT /Work Experience at TATA MOTORS LTD, Pantnagar :",
+            "detection_method": "heading_embedded",
+            "line_number": 5,
+            "evidence": "OJT /Work Experience at TATA MOTORS LTD, Pantnagar :",
+            "confidence": 0.9
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "education",
+            "detection_method": "heading",
+            "line_number": 113,
+            "evidence": "education",
+            "confidence": 0.98
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": "Additional Certification :",
+            "detection_method": "heading",
+            "line_number": 138,
+            "evidence": "Additional Certification :",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Certifications": "detected",
+          "Skills": "missing",
+          "Projects": "missing"
+        },
+        "extraction_quality": 96.73
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Work Experience",
+        "Education",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Skills",
+        "Projects"
+      ],
+      "missing_required": [],
+      "missing_recommended": [
+        "Skills"
+      ],
+      "missing_optional": [
+        "Projects"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3782,
+        "word_count": 502,
+        "line_count": 244,
+        "non_empty_line_count": 105,
+        "short_line_count": 41,
+        "short_line_ratio": 0.390476,
+        "fragmented_line_count": 35,
+        "fragmented_line_ratio": 0.333333,
+        "mean_line_length": 32.31,
+        "median_line_length": 25.0,
+        "line_length_stdev": 26.46,
+        "line_length_cv": 0.818737,
+        "broken_sentence_count": 14,
+        "broken_sentence_ratio": 0.134615,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": null,
+  "resume_json": null,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Job Objective: \n\nAcademic Qualifications Details: \n\nOJT /Work Experience at TATA MOTORS LTD, Pantnagar : \n\n \n\n \n\n \n\nKavi Phone no: +91-7082177993 \n\nEmail: kavikakran2@gmail.com \n \n\nTo secure a suitable position, where I can effectively exhibit my skills as Technical \nprofessional, and grow along with the organization. \n\n \n\n \n \nNettur Technical Training Foundation, Bangalore \n\n 2 years Diploma in Mechatronics \n On Job Training at TATA MOTORS LTD Pantnagar \n Academics by NTTF \n\n \n\n \n\n \nQualification \n\n \nBoard/ Institute \n\n \nSubjects/ Trade \n\nYea\nrs \nof \nPas\nsing \n\n \n% of marks \n\n \n\n \nDiploma \n\n \n\n \nNTTF \n\n \nDiploma in Mechatronics \n\n \n\n \n2025 \n\n \n\n69% \n\nITI NCVT Mechanic Diesel 2023 81.8% \n\n \nHigh School \n\nGovt SR SEC school \nkathura \n\n(sonipat)/,HBSE \n(Haryana Board of \n\nSecondary Education) \n\nEnglish Hindi Mathematics \nsocial science Automobile \n\nscience \n\n \n2020 \n\n \n68% \n\n \nIntermediate \n\nGovt SR SEC school \nkathura \n\n(sonipat)/,HBSE \n(Haryana Board of \n\nSecondary Education) \n\nEnglish Hindi Mathematics \npolitical science physical \n\neducation \n\n \n2022 \n\n \n77% \n\n \n\n \nAs a Trainee at TATA MOTORS Ltd I have rich hands experience in the following area \n\n Knowledge about BIW fixtures. \n\n PM activity of BIW fixtures. \n\n Implemented new modified fixtures. \n\n Troubleshooting daily line problems regarding fixtures. \n\nTechnical Qualification: \n\n\n\nAdditional Certification : \n\nKey Functional areas during the On Job Training: \n\nKnowledge/Skills gained during NTTF Academics: \n\nReference: \n\nPersonal Information: \n\n Maintain all documents of fixtures like pin validation, copper plate & roller changing \nschedule, PM check sheet and fixtures validation record. \n\nAs a causal at Donaldson Ltd Company, Manesar: \n\n Air cleaner assembly \n\n Filter expending \n\n Production maintenance of jigs and fixture. \n \n \n\n Automotive service technician \n\n Got awards in suraksha rakshak \n \n \n\n \nAs a Trainee at TATA MOTORS Ltd I have rich hands experience in the following area \nShop Name: PE_Fixtures Maintenance in BIW-1C/1B/1D \n\n \n\nTheory \n Engineering drawing related like Interpretation of component drawing, Basic drafting. \n\n Metrology related like Measurement, Limits & Fits and Tolerances etc. \n\n Modern Shop Floor Practices using 7 QC tools, 5S, Kaizen, Poke-yoke etc. \n\n Manufacturing Processes like ability to do basic Welding, to operate Power Tools, understanding \nof machining, casting, forging, rolling, finishing process \n\n Automobile related like ability to recognize basic components & Systems like - Power \ntransmission, Suspension etc. \n\n Familiarization of PLC System, Basics of Timer and Counter, Logic function. \n\n Robotics Engineering and IoT encompasses electronics, communication and computer science \nengineering. \n\n Safety, health and environment norms and compliances. \n\n Industrial Act, Material, Purchase, Store, and Inventory Management, Production Planning and \nControl, TPM. \n\n \n\nPractical \n\n \n Metrology applications like- Measuring parts using Instrument (Calipers, Micrometer) & \n\nInspection using Gauges (Slip, Feeler, Ring, Plug, Snap gauge etc.) \n\n Computer Skills like application of MS Office (Excel, Word, and Power Point). \n \n \n\n \n\nMr. Nitin Kumar (Center Coordinator) \nMobile: +91 9837327513 \n(NTTF Training Centre, Pantnagar) \n\nMr. Manish Kumar (Supervisor) \nMob: 8272035742 \n(Tata motors Pantnagar, Uttarakhand) \n\n \n\nName: Kavi \n\n\n\nConclusion: \n\nDOB: 30-11-2004 \nFather name: Mr. Satpal \n\nMother name: Mrs. Poonam Devi \nLanguages Known: English, Hindi \nMarital Status: Single \nHobbies: Playing Kabaddi, Reading Books \n\nPermanent Address: Village- Kathura (89) Sonipat Haryana 131301 \n\n \n\n \nHere by I declare that the above provided information is correct up to the best of my knowledge. \n\n \nPlace:  Signature \nDate:",
+    "normalized_text": "Job Objective:\n\nAcademic Qualifications Details:\n\nOJT /Work Experience at TATA MOTORS LTD, Pantnagar :\n\nKavi Phone no: +91-7082177993\n\nEmail: kavikakran2@gmail.com\n\nTo secure a suitable position, where I can effectively exhibit my skills as Technical\nprofessional, and grow along with the organization.\n\nNettur Technical Training Foundation, Bangalore\n\n 2 years Diploma in Mechatronics\n On Job Training at TATA MOTORS LTD Pantnagar\n Academics by NTTF\n\nQualification\n\nBoard/ Institute\n\nSubjects/ Trade\n\nYea\nrs\nof\nPas\nsing\n\n% of marks\n\nDiploma\n\nNTTF\n\nDiploma in Mechatronics\n\n2025\n\n69%\n\nITI NCVT Mechanic Diesel 2023 81.8%\n\nHigh School\n\nGovt SR SEC school\nkathura\n\n(sonipat)/,HBSE\n(Haryana Board of\n\nSecondary Education)\n\nEnglish Hindi Mathematics\nsocial science Automobile\n\nscience\n\n2020\n\n68%\n\nIntermediate\n\nGovt SR SEC school\nkathura\n\n(sonipat)/,HBSE\n(Haryana Board of\n\nSecondary Education)\n\nEnglish Hindi Mathematics\npolitical science physical\n\neducation\n\n2022\n\n77%\n\nAs a Trainee at TATA MOTORS Ltd I have rich hands experience in the following area\n\n Knowledge about BIW fixtures.\n\n PM activity of BIW fixtures.\n\n Implemented new modified fixtures.\n\n Troubleshooting daily line problems regarding fixtures.\n\nTechnical Qualification:\n\nAdditional Certification :\n\nKey Functional areas during the On Job Training:\n\nKnowledge/Skills gained during NTTF Academics:\n\nReference:\n\nPersonal Information:\n\n Maintain all documents of fixtures like pin validation, copper plate & roller changing\nschedule, PM check sheet and fixtures validation record.\n\nAs a causal at Donaldson Ltd Company, Manesar:\n\n Air cleaner assembly\n\n Filter expending\n\n Production maintenance of jigs and fixture.\n\n Automotive service technician\n\n Got awards in suraksha rakshak\n\nAs a Trainee at TATA MOTORS Ltd I have rich hands experience in the following area\nShop Name: PE_Fixtures Maintenance in BIW-1C/1B/1D\n\nTheory\n Engineering drawing related like Interpretation of component drawing, Basic drafting.\n\n Metrology related like Measurement, Limits & Fits and Tolerances etc.\n\n Modern Shop Floor Practices using 7 QC tools, 5S, Kaizen, Poke-yoke etc.\n\n Manufacturing Processes like ability to do basic Welding, to operate Power Tools, understanding\nof machining, casting, forging, rolling, finishing process\n\n Automobile related like ability to recognize basic components & Systems like - Power\ntransmission, Suspension etc.\n\n Familiarization of PLC System, Basics of Timer and Counter, Logic function.\n\n Robotics Engineering and IoT encompasses electronics, communication and computer science\nengineering.\n\n Safety, health and environment norms and compliances.\n\n Industrial Act, Material, Purchase, Store, and Inventory Management, Production Planning and\nControl, TPM.\n\nPractical\n\n Metrology applications like- Measuring parts using Instrument (Calipers, Micrometer) &\n\nInspection using Gauges (Slip, Feeler, Ring, Plug, Snap gauge etc.)\n\n Computer Skills like application of MS Office (Excel, Word, and Power Point).\n\nMr. Nitin Kumar (Center Coordinator)\nMobile: +91 9837327513\n(NTTF Training Centre, Pantnagar)\n\nMr. Manish Kumar (Supervisor)\nMob: 8272035742\n(Tata motors Pantnagar, Uttarakhand)\n\nName: Kavi\n\nConclusion:\n\nDOB: 30-11-2004\nFather name: Mr. Satpal\n\nMother name: Mrs. Poonam Devi\nLanguages Known: English, Hindi\nMarital Status: Single\nHobbies: Playing Kabaddi, Reading Books\n\nPermanent Address: Village- Kathura (89) Sonipat Haryana 131301\n\nHere by I declare that the above provided information is correct up to the best of my knowledge.\n\nPlace: Signature\nDate:",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 3782,
+    "normalized_chars": 3571,
+    "original_estimated_tokens": 946,
+    "normalized_estimated_tokens": 893,
+    "estimated_reduction_percent": 5.6
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "timed_out_calls": 1,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_source": null,
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Muse API request timed out after 20s.",
+    "input_type": "text",
+    "duration_ms": 20118.58,
+    "timeout_seconds": 20.0,
+    "usage": {},
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 3782,
+      "normalized_chars": 3571,
+      "estimated_reduction_percent": 5.6,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 8905.9,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "0350289a-e3c7-45a1-b9dd-7be2b7fe88ae",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 96.73,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS"
+          ],
+          "reasons": [
+            "24 non-printable characters found (0.63% of text)."
+          ],
+          "metrics": {
+            "char_count": 3782,
+            "word_count": 502,
+            "line_count": 244,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 24,
+            "non_printable_ratio": 0.006346,
+            "whitespace_ratio": 0.208091,
+            "symbol_count": 24,
+            "symbol_ratio": 0.006346,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 85.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3782,
+            "word_count": 502,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal information",
+              "Summary": "job objective",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "additional certification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "Personal Information:",
+                "detection_method": "heading",
+                "line_number": 146,
+                "evidence": "Personal Information:",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Job Objective:",
+                "detection_method": "heading",
+                "line_number": 1,
+                "evidence": "Job Objective:",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "OJT /Work Experience at TATA MOTORS LTD, Pantnagar :",
+                "detection_method": "heading_embedded",
+                "line_number": 5,
+                "evidence": "OJT /Work Experience at TATA MOTORS LTD, Pantnagar :",
+                "confidence": 0.9
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "education",
+                "detection_method": "heading",
+                "line_number": 113,
+                "evidence": "education",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "Additional Certification :",
+                "detection_method": "heading",
+                "line_number": 138,
+                "evidence": "Additional Certification :",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Skills": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 96.73
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3782,
+            "word_count": 502,
+            "line_count": 244,
+            "non_empty_line_count": 105,
+            "short_line_count": 41,
+            "short_line_ratio": 0.390476,
+            "fragmented_line_count": 35,
+            "fragmented_line_ratio": 0.333333,
+            "mean_line_length": 32.31,
+            "median_line_length": 25.0,
+            "line_length_stdev": 26.46,
+            "line_length_cv": 0.818737,
+            "broken_sentence_count": 14,
+            "broken_sentence_ratio": 0.134615,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 20118.58,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 8905.9,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "0350289a-e3c7-45a1-b9dd-7be2b7fe88ae_SHJ-5451_SHC-364880.pdf"
+}

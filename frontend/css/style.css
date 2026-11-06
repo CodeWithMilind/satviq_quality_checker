@@ -154,6 +154,39 @@ input, select, textarea { font: inherit; color: var(--text); }
 .file-row .file-error { color: var(--bad); font-size: 12.5px; }
 .file-row.invalid { border-color: var(--bad); background: var(--bad-bg); }
 .file-row .spacer { flex: 1; }
+/* Selected-files box: fixed height, own scrollbar, scroll buttons */
+.file-list-header {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  margin-bottom: 8px;
+}
+.file-list-title { font-size: 13.5px; }
+.file-list-sub { color: var(--muted); font-size: 12.5px; }
+.file-list-invalid { color: var(--bad); font-weight: 600; }
+.file-list-wrap { position: relative; }
+.file-list-box {
+  max-height: 340px; overflow-y: auto; overscroll-behavior: contain;
+  padding: 10px 10px 2px; border: 1px solid var(--border-strong);
+  border-radius: var(--radius); background: var(--bg);
+  scrollbar-width: thin;
+}
+.file-list-box:focus-visible { outline: 2px solid var(--primary-soft); border-color: var(--primary); }
+.file-list-box::-webkit-scrollbar { width: 10px; }
+.file-list-box::-webkit-scrollbar-thumb {
+  background: var(--border-strong); border-radius: 6px; border: 2px solid var(--bg);
+}
+.file-list-box::-webkit-scrollbar-thumb:hover { background: var(--faint); }
+.scroll-controls {
+  position: absolute; right: 22px; bottom: 12px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.scroll-controls[hidden] { display: none; }
+.scroll-btn {
+  width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--border-strong);
+  background: var(--card); color: var(--primary); font-size: 16px; line-height: 1;
+  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.15); cursor: pointer;
+}
+.scroll-btn:hover:not(:disabled) { background: var(--primary-soft); border-color: var(--primary); }
+.scroll-btn:disabled { opacity: 0.35; cursor: default; box-shadow: none; }
 .progress-wrap { margin-top: 14px; }
 .progress-track {
   height: 8px; background: var(--border); border-radius: 4px; overflow: hidden;

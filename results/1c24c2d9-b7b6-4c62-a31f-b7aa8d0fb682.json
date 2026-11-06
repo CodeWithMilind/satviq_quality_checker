@@ -1,0 +1,1034 @@
+{
+  "resume_id": "1c24c2d9-b7b6-4c62-a31f-b7aa8d0fb682",
+  "filename": "SHJ-5451_SHC-383957.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 4195,
+  "uploaded_at": "2026-11-06T11:23:39.170804+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 7006.86,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 7006.86,
+      "text": "AMAN SIWACH\n\nPhone: 9499311980\n\nEmail: amansiwach102002@gmail.com\n\nAddress: Village Padana, Post Office Nidani, District Jind, Haryana – 126102, India\n\nCareer Objective\n\nDedicated and hardworking Production Operator with hands-on experience in food manufacturing.\nSeeking a Production Executive / Operator role in a reputed company where I can utilize my\ntechnical skills, improve production efficiency, and grow professionally.\n\nWork Experience\n\nProduction Operator – Lotte India Corporation Ltd., Rohtak, Haryana (May 2023 – Present)\n\n• Operate and monitor syrup preparation machines\n• Handle MBD Enrober operations for chocolate production\n• Ensure adherence to GMP and food safety standards\n• Maintain daily production reports and quality records\n• Perform machine cleaning and preventive maintenance\n• Handle production targets and minimize downtime\n• Support team coordination and shift operations\n\nEducation\n\n• 10th Pass\n• 12th Pass\n• ITI – Wireman Trade\n\nTechnical Skills\n\n• Syrup Making & Mixing Process\n• MBD Enrober Operation\n• Production Line Monitoring\n• Machine Maintenance & Cleaning\n• Basic Electrical Knowledge\n• Quality Control & Safety Compliance\n• Team Coordination & Shift Handling\n\nCertifications\n\nFood Safety Supervisor – Certificate of Competence\n\n• Course: Advance Manufacturing\n• Issued by: FSSAI (Intertek India Pvt Ltd)\n• Valid Till: 22 September 2027\n\n\n\nLanguages\n\n• Hindi (Fluent)\n• English (Basic)\n\nAdditional Information\n\n• Ready to join immediately",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-06T11:23:32.127725+00:00",
+      "completed_at": "2026-11-06T11:23:39.135159+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "1c24c2d9-b7b6-4c62-a31f-b7aa8d0fb682",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1481,
+            "word_count": 212,
+            "line_count": 60,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.156651,
+            "symbol_count": 28,
+            "symbol_ratio": 0.018906,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1481,
+            "word_count": 212,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "career objective",
+              "Skills": "technical skills",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "amansiwach102002@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Career Objective",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "Career Objective",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Technical Skills",
+                "detection_method": "heading",
+                "line_number": 33,
+                "evidence": "Technical Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Work Experience",
+                "detection_method": "heading",
+                "line_number": 15,
+                "evidence": "Work Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 27,
+                "evidence": "Education",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "Certifications",
+                "detection_method": "heading",
+                "line_number": 43,
+                "evidence": "Certifications",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1481,
+            "word_count": 212,
+            "line_count": 60,
+            "non_empty_line_count": 39,
+            "short_line_count": 10,
+            "short_line_ratio": 0.25641,
+            "fragmented_line_count": 7,
+            "fragmented_line_ratio": 0.179487,
+            "mean_line_length": 36.46,
+            "median_line_length": 31.0,
+            "line_length_stdev": 23.48,
+            "line_length_cv": 0.643885,
+            "broken_sentence_count": 1,
+            "broken_sentence_ratio": 0.026316,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "1c24c2d9-b7b6-4c62-a31f-b7aa8d0fb682-attempt-1",
+      "resume_id": "1c24c2d9-b7b6-4c62-a31f-b7aa8d0fb682",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "AMAN SIWACH\n\nPhone: 9499311980\n\nEmail: amansiwach102002@gmail.com\n\nAddress: Village Padana, Post Office Nidani, District Jind, Haryana – 126102, India\n\nCareer Objective\n\nDedicated and hardworking Production Operator with hands-on experience in food manufacturing.\nSeeking a Production Executive / Operator role in a reputed company where I can utilize my\ntechnical skills, improve production efficiency, and grow professionally.\n\nWork Experience\n\nProduction Operator – Lotte India Corporation Ltd., Rohtak, Haryana (May 2023 – Present)\n\n• Operate and monitor syrup preparation machines\n• Handle MBD Enrober operations for chocolate production\n• Ensure adherence to GMP and food safety standards\n• Maintain daily production reports and quality records\n• Perform machine cleaning and preventive maintenance\n• Handle production targets and minimize downtime\n• Support team coordination and shift operations\n\nEducation\n\n• 10th Pass\n• 12th Pass\n• ITI – Wireman Trade\n\nTechnical Skills\n\n• Syrup Making & Mixing Process\n• MBD Enrober Operation\n• Production Line Monitoring\n• Machine Maintenance & Cleaning\n• Basic Electrical Knowledge\n• Quality Control & Safety Compliance\n• Team Coordination & Shift Handling\n\nCertifications\n\nFood Safety Supervisor – Certificate of Competence\n\n• Course: Advance Manufacturing\n• Issued by: FSSAI (Intertek India Pvt Ltd)\n• Valid Till: 22 September 2027\n\n\n\nLanguages\n\n• Hindi (Fluent)\n• English (Basic)\n\nAdditional Information\n\n• Ready to join immediately",
+      "extracted_text_length": 1481,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "1c24c2d9-b7b6-4c62-a31f-b7aa8d0fb682",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1481,
+            "word_count": 212,
+            "line_count": 60,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.156651,
+            "symbol_count": 28,
+            "symbol_ratio": 0.018906,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1481,
+            "word_count": 212,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "career objective",
+              "Skills": "technical skills",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "amansiwach102002@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Career Objective",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "Career Objective",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Technical Skills",
+                "detection_method": "heading",
+                "line_number": 33,
+                "evidence": "Technical Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Work Experience",
+                "detection_method": "heading",
+                "line_number": 15,
+                "evidence": "Work Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 27,
+                "evidence": "Education",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "Certifications",
+                "detection_method": "heading",
+                "line_number": 43,
+                "evidence": "Certifications",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1481,
+            "word_count": 212,
+            "line_count": 60,
+            "non_empty_line_count": 39,
+            "short_line_count": 10,
+            "short_line_ratio": 0.25641,
+            "fragmented_line_count": 7,
+            "fragmented_line_ratio": 0.179487,
+            "mean_line_length": 36.46,
+            "median_line_length": 31.0,
+            "line_length_stdev": 23.48,
+            "line_length_cv": 0.643885,
+            "broken_sentence_count": 1,
+            "broken_sentence_ratio": 0.026316,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "AMAN SIWACH\n\nPhone: 9499311980\n\nEmail: amansiwach102002@gmail.com\n\nAddress: Village Padana, Post Office Nidani, District Jind, Haryana – 126102, India\n\nCareer Objective\n\nDedicated and hardworking Production Operator with hands-on experience in food manufacturing.\nSeeking a Production Executive / Operator role in a reputed company where I can utilize my\ntechnical skills, improve production efficiency, and grow professionally.\n\nWork Experience\n\nProduction Operator – Lotte India Corporation Ltd., Rohtak, Haryana (May 2023 – Present)\n\n• Operate and monitor syrup preparation machines\n• Handle MBD Enrober operations for chocolate production\n• Ensure adherence to GMP and food safety standards\n• Maintain daily production reports and quality records\n• Perform machine cleaning and preventive maintenance\n• Handle production targets and minimize downtime\n• Support team coordination and shift operations\n\nEducation\n\n• 10th Pass\n• 12th Pass\n• ITI – Wireman Trade\n\nTechnical Skills\n\n• Syrup Making & Mixing Process\n• MBD Enrober Operation\n• Production Line Monitoring\n• Machine Maintenance & Cleaning\n• Basic Electrical Knowledge\n• Quality Control & Safety Compliance\n• Team Coordination & Shift Handling\n\nCertifications\n\nFood Safety Supervisor – Certificate of Competence\n\n• Course: Advance Manufacturing\n• Issued by: FSSAI (Intertek India Pvt Ltd)\n• Valid Till: 22 September 2027\n\nLanguages\n\n• Hindi (Fluent)\n• English (Basic)\n\nAdditional Information\n\n• Ready to join immediately"
+    }
+  ],
+  "extracted_text": "AMAN SIWACH\n\nPhone: 9499311980\n\nEmail: amansiwach102002@gmail.com\n\nAddress: Village Padana, Post Office Nidani, District Jind, Haryana – 126102, India\n\nCareer Objective\n\nDedicated and hardworking Production Operator with hands-on experience in food manufacturing.\nSeeking a Production Executive / Operator role in a reputed company where I can utilize my\ntechnical skills, improve production efficiency, and grow professionally.\n\nWork Experience\n\nProduction Operator – Lotte India Corporation Ltd., Rohtak, Haryana (May 2023 – Present)\n\n• Operate and monitor syrup preparation machines\n• Handle MBD Enrober operations for chocolate production\n• Ensure adherence to GMP and food safety standards\n• Maintain daily production reports and quality records\n• Perform machine cleaning and preventive maintenance\n• Handle production targets and minimize downtime\n• Support team coordination and shift operations\n\nEducation\n\n• 10th Pass\n• 12th Pass\n• ITI – Wireman Trade\n\nTechnical Skills\n\n• Syrup Making & Mixing Process\n• MBD Enrober Operation\n• Production Line Monitoring\n• Machine Maintenance & Cleaning\n• Basic Electrical Knowledge\n• Quality Control & Safety Compliance\n• Team Coordination & Shift Handling\n\nCertifications\n\nFood Safety Supervisor – Certificate of Competence\n\n• Course: Advance Manufacturing\n• Issued by: FSSAI (Intertek India Pvt Ltd)\n• Valid Till: 22 September 2027\n\n\n\nLanguages\n\n• Hindi (Fluent)\n• English (Basic)\n\nAdditional Information\n\n• Ready to join immediately",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "AMAN SIWACH\n\nPhone: 9499311980\n\nEmail: amansiwach102002@gmail.com\n\nAddress: Village Padana, Post Office Nidani, District Jind, Haryana – 126102, India\n\nCareer Objective\n\nDedicated and hardworking Production Operator with hands-on experience in food manufacturing.\nSeeking a Production Executive / Operator role in a reputed company where I can utilize my\ntechnical skills, improve production efficiency, and grow professionally.\n\nWork Experience\n\nProduction Operator – Lotte India Corporation Ltd., Rohtak, Haryana (May 2023 – Present)\n\n• Operate and monitor syrup preparation machines\n• Handle MBD Enrober operations for chocolate production\n• Ensure adherence to GMP and food safety standards\n• Maintain daily production reports and quality records\n• Perform machine cleaning and preventive maintenance\n• Handle production targets and minimize downtime\n• Support team coordination and shift operations\n\nEducation\n\n• 10th Pass\n• 12th Pass\n• ITI – Wireman Trade\n\nTechnical Skills\n\n• Syrup Making & Mixing Process\n• MBD Enrober Operation\n• Production Line Monitoring\n• Machine Maintenance & Cleaning\n• Basic Electrical Knowledge\n• Quality Control & Safety Compliance\n• Team Coordination & Shift Handling\n\nCertifications\n\nFood Safety Supervisor – Certificate of Competence\n\n• Course: Advance Manufacturing\n• Issued by: FSSAI (Intertek India Pvt Ltd)\n• Valid Till: 22 September 2027\n\n\n\nLanguages\n\n• Hindi (Fluent)\n• English (Basic)\n\nAdditional Information\n\n• Ready to join immediately",
+  "quality": {
+    "status": "PASS",
+    "document_id": "1c24c2d9-b7b6-4c62-a31f-b7aa8d0fb682",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 1481,
+        "word_count": 212,
+        "line_count": 60,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.156651,
+        "symbol_count": 28,
+        "symbol_ratio": 0.018906,
+        "max_repeated_char_run": 4,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 97.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 1481,
+        "word_count": 212,
+        "configured_section_count": 7,
+        "detected_count": 6,
+        "missing_count": 1,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Projects"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Projects"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "career objective",
+          "Skills": "technical skills",
+          "Work Experience": "work experience",
+          "Education": "education",
+          "Certifications": "certifications"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "amansiwach102002@gmail.com",
+            "confidence": 0.8
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "Career Objective",
+            "detection_method": "heading",
+            "line_number": 9,
+            "evidence": "Career Objective",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "Technical Skills",
+            "detection_method": "heading",
+            "line_number": 33,
+            "evidence": "Technical Skills",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "Work Experience",
+            "detection_method": "heading",
+            "line_number": 15,
+            "evidence": "Work Experience",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "Education",
+            "detection_method": "heading",
+            "line_number": 27,
+            "evidence": "Education",
+            "confidence": 0.98
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": "Certifications",
+            "detection_method": "heading",
+            "line_number": 43,
+            "evidence": "Certifications",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Certifications": "detected",
+          "Projects": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Projects"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Projects"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 1481,
+        "word_count": 212,
+        "line_count": 60,
+        "non_empty_line_count": 39,
+        "short_line_count": 10,
+        "short_line_ratio": 0.25641,
+        "fragmented_line_count": 7,
+        "fragmented_line_ratio": 0.179487,
+        "mean_line_length": 36.46,
+        "median_line_length": 31.0,
+        "line_length_stdev": 23.48,
+        "line_length_cv": 0.643885,
+        "broken_sentence_count": 1,
+        "broken_sentence_ratio": 0.026316,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": null,
+  "resume_json": {
+    "full_name": "AMAN SIWACH",
+    "email": "amansiwach102002@gmail.com",
+    "phone": "9499311980",
+    "location": "Village Padana, Post Office Nidani, District Jind, Haryana – 126102, India",
+    "summary": "Dedicated and hardworking Production Operator with hands-on experience in food manufacturing. Seeking a Production Executive / Operator role in a reputed company where I can utilize my technical skills, improve production efficiency, and grow professionally.",
+    "skills": {
+      "technical_skills": [
+        "Syrup Making & Mixing Process",
+        "MBD Enrober Operation",
+        "Production Line Monitoring",
+        "Machine Maintenance & Cleaning",
+        "Basic Electrical Knowledge",
+        "Quality Control & Safety Compliance"
+      ],
+      "soft_skills": [
+        "Team Coordination & Shift Handling"
+      ],
+      "tools": [],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Production Operator",
+        "company": "Lotte India Corporation Ltd.",
+        "location": "Rohtak, Haryana",
+        "start_date": "May 2023",
+        "end_date": "Present",
+        "highlights": [
+          "Operate and monitor syrup preparation machines",
+          "Handle MBD Enrober operations for chocolate production",
+          "Ensure adherence to GMP and food safety standards",
+          "Maintain daily production reports and quality records",
+          "Perform machine cleaning and preventive maintenance",
+          "Handle production targets and minimize downtime",
+          "Support team coordination and shift operations"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "10th Pass",
+        "institution": "",
+        "location": "",
+        "start_date": "",
+        "end_date": ""
+      },
+      {
+        "degree": "12th Pass",
+        "institution": "",
+        "location": "",
+        "start_date": "",
+        "end_date": ""
+      },
+      {
+        "degree": "ITI – Wireman Trade",
+        "institution": "",
+        "location": "",
+        "start_date": "",
+        "end_date": ""
+      }
+    ],
+    "certifications": [
+      "Food Safety Supervisor – Certificate of Competence - Course: Advance Manufacturing - Issued by: FSSAI (Intertek India Pvt Ltd) - Valid Till: 22 September 2027"
+    ],
+    "languages": [
+      "Hindi (Fluent)",
+      "English (Basic)"
+    ],
+    "links": []
+  },
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "AMAN SIWACH\n\nPhone: 9499311980\n\nEmail: amansiwach102002@gmail.com\n\nAddress: Village Padana, Post Office Nidani, District Jind, Haryana – 126102, India\n\nCareer Objective\n\nDedicated and hardworking Production Operator with hands-on experience in food manufacturing.\nSeeking a Production Executive / Operator role in a reputed company where I can utilize my\ntechnical skills, improve production efficiency, and grow professionally.\n\nWork Experience\n\nProduction Operator – Lotte India Corporation Ltd., Rohtak, Haryana (May 2023 – Present)\n\n• Operate and monitor syrup preparation machines\n• Handle MBD Enrober operations for chocolate production\n• Ensure adherence to GMP and food safety standards\n• Maintain daily production reports and quality records\n• Perform machine cleaning and preventive maintenance\n• Handle production targets and minimize downtime\n• Support team coordination and shift operations\n\nEducation\n\n• 10th Pass\n• 12th Pass\n• ITI – Wireman Trade\n\nTechnical Skills\n\n• Syrup Making & Mixing Process\n• MBD Enrober Operation\n• Production Line Monitoring\n• Machine Maintenance & Cleaning\n• Basic Electrical Knowledge\n• Quality Control & Safety Compliance\n• Team Coordination & Shift Handling\n\nCertifications\n\nFood Safety Supervisor – Certificate of Competence\n\n• Course: Advance Manufacturing\n• Issued by: FSSAI (Intertek India Pvt Ltd)\n• Valid Till: 22 September 2027\n\n\n\nLanguages\n\n• Hindi (Fluent)\n• English (Basic)\n\nAdditional Information\n\n• Ready to join immediately",
+    "normalized_text": "AMAN SIWACH\n\nPhone: 9499311980\n\nEmail: amansiwach102002@gmail.com\n\nAddress: Village Padana, Post Office Nidani, District Jind, Haryana – 126102, India\n\nCareer Objective\n\nDedicated and hardworking Production Operator with hands-on experience in food manufacturing.\nSeeking a Production Executive / Operator role in a reputed company where I can utilize my\ntechnical skills, improve production efficiency, and grow professionally.\n\nWork Experience\n\nProduction Operator – Lotte India Corporation Ltd., Rohtak, Haryana (May 2023 – Present)\n\n• Operate and monitor syrup preparation machines\n• Handle MBD Enrober operations for chocolate production\n• Ensure adherence to GMP and food safety standards\n• Maintain daily production reports and quality records\n• Perform machine cleaning and preventive maintenance\n• Handle production targets and minimize downtime\n• Support team coordination and shift operations\n\nEducation\n\n• 10th Pass\n• 12th Pass\n• ITI – Wireman Trade\n\nTechnical Skills\n\n• Syrup Making & Mixing Process\n• MBD Enrober Operation\n• Production Line Monitoring\n• Machine Maintenance & Cleaning\n• Basic Electrical Knowledge\n• Quality Control & Safety Compliance\n• Team Coordination & Shift Handling\n\nCertifications\n\nFood Safety Supervisor – Certificate of Competence\n\n• Course: Advance Manufacturing\n• Issued by: FSSAI (Intertek India Pvt Ltd)\n• Valid Till: 22 September 2027\n\nLanguages\n\n• Hindi (Fluent)\n• English (Basic)\n\nAdditional Information\n\n• Ready to join immediately",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 1481,
+    "normalized_chars": 1479,
+    "original_estimated_tokens": 370,
+    "normalized_estimated_tokens": 370,
+    "estimated_reduction_percent": 0.0
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": "chatcmpl-01a1b099-e55e-7011-8acf-0d703bd5b5cd",
+      "status": "success",
+      "duration_ms": 18987.72,
+      "input_tokens": 1152,
+      "output_tokens": 2188,
+      "total_tokens": 3340,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1152,
+    "output_tokens": 2188,
+    "total_tokens": 3340,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_source": "muse_ai",
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "input_type": "text",
+    "duration_ms": 18987.72,
+    "timeout_seconds": 20.0,
+    "usage": {
+      "completion_tokens": 2188,
+      "prompt_tokens": 1152,
+      "total_tokens": 3340,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1732
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 1481,
+      "normalized_chars": 1479,
+      "estimated_reduction_percent": 0.0,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 7006.86,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "1c24c2d9-b7b6-4c62-a31f-b7aa8d0fb682",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1481,
+            "word_count": 212,
+            "line_count": 60,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.156651,
+            "symbol_count": 28,
+            "symbol_ratio": 0.018906,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1481,
+            "word_count": 212,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "career objective",
+              "Skills": "technical skills",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "amansiwach102002@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Career Objective",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "Career Objective",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Technical Skills",
+                "detection_method": "heading",
+                "line_number": 33,
+                "evidence": "Technical Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Work Experience",
+                "detection_method": "heading",
+                "line_number": 15,
+                "evidence": "Work Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 27,
+                "evidence": "Education",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "Certifications",
+                "detection_method": "heading",
+                "line_number": 43,
+                "evidence": "Certifications",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1481,
+            "word_count": 212,
+            "line_count": 60,
+            "non_empty_line_count": 39,
+            "short_line_count": 10,
+            "short_line_ratio": 0.25641,
+            "fragmented_line_count": 7,
+            "fragmented_line_ratio": 0.179487,
+            "mean_line_length": 36.46,
+            "median_line_length": 31.0,
+            "line_length_stdev": 23.48,
+            "line_length_cv": 0.643885,
+            "broken_sentence_count": 1,
+            "broken_sentence_ratio": 0.026316,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 18987.72,
+      "message": "Structured Resume JSON generated by Muse AI and validated against the schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 7006.86,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "1c24c2d9-b7b6-4c62-a31f-b7aa8d0fb682_SHJ-5451_SHC-383957.pdf"
+}

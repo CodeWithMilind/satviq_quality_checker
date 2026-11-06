@@ -1,0 +1,950 @@
+{
+  "resume_id": "4d95255c-3ae3-4237-96b8-6bbee70fcbb8",
+  "filename": "SHJ-5464_SHC-384979.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 240206,
+  "uploaded_at": "2026-11-06T11:25:24.541108+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 3524.4,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 3524.4,
+      "text": "Atharva Uday Kulkarni     \n26 | Male     \n\n+91 9503278557 | kulkarni99atharva@gmail.com                  PGDM (Finance) | B. Tech (Mechanical) | LinkedIn \n\nProfessional Experience                                                                         \n\nTHE FEDERAL BANK LTD. |Officer                                                                                                                         April 2025 – Present \n\nDynamic banking professional driving Operations, Credit & Regulatory Compliance contributing to Business Growth and Service Excellence \n\n• Evaluated & processed loan proposals for Gold and Vehicle clients, conducting gold appraisals, document verification, & risk assessments \n\n• Collaborated with cross-functional teams to support audits, streamline workflows and optimize operational efficiency within the branch \n\n• Drove cross-selling initiatives for third-party products, directly contributing to branch revenue and customer portfolio growth significantly \n\n• Resolved complex customer grievances with empathy and accuracy to enhance client satisfaction and maintaining high service standards \n\n• Enforced regulatory compliance by conducting KYC and AML checks, ensuring adherence to RBI norms and internal audit requirements \n\n• Led branch-level customer engagement by managing operations, ensuring seamless delivery of various banking products and services  \n\nCombine Agencies |HVAC, Site & Supervision Engineer                                                                                                            June 2021 – December 2022 \n\n• Empowered sales by gathering customer feedback & analysing data to enhance product suggestions and sourcing quotations effectively \n\n• Enhanced service reliability by reducing the customer complaints to 50% by effectively monitoring repairs of over 100+ Air Conditioners  \n\n• Built and Led a team of 6 people, to increase efficiency of service department by increasing the mean time between failure by 2 months \n\n• Engineered tailormade air-conditioning solutions with optimal capacity to combat server overheating in server rooms in various industries \n \n\nSummer Internship Program                                                    Experience: 02 months \n\nHEDGE EQUITIES LTD. |Finance Intern                                                                                                                    April 2024 – May 2024 \n\nTo apply advanced technical analysis and options expertise in driving profitable trading & investment strategies and mitigating risks effectively \n\n• Engineered high-precision speculative model achieving 45% profit success rate leveraging Option strategies, using Nifty NSE historical data \n\n• Realised a profit of 12.6% (₹3.15 lacs) in 45 days using technical analysis in a virtual stock portfolio encompassing 10 Stocks worth ₹25 lac \n\n• Reported daily P&L, Alpha & Beta of 15 Client-portfolios to manage risks, evaluate portfolio performance, & optimize investment strategies \n\n• Effectively mitigated the risks to protect a portfolio during high volatility (elections) period by strategically hedging losses using Nifty futures  \n\n• Earned the Certificate of Appreciation & Performer of the Month awards for exceptional market analysis reports & top-tier analytical skills  \n\nAcademic Achievements \n\n• PGDM \n\n• B. Tech \n\n• HSC \n\n• SSC \n\nGoa Institute of Management, Goa \n\nMIT College of Engineering, Pune \n\nSanjay Ghodawat Jr. College, Kolhapur \n\nBharati Vidyapeeth’s School, Satara \n\n2023- 2025 \n\n2017- 2021 \n\n2016- 2017 \n\n2014- 2015 \n\n71.00 % \n\n85.00 % \n\n77.23 % \n\n92.60 %\n\nSkills\n\n• Bond Valuations \n\n• Equity Derivatives \n\n• Option Strategies \n\n• Fixed Income Securities \n\n• Options Valuation \n\n• Portfolio Management \n\n• Fixed Income \n\n• Market Risk \n\n• Credit Risk \n\n• Investment Analysis \n\n• Risk Management \n\n• Fixed Income Derivatives \n\n• Technical Analysis \n\n• Equity Analysis \n\n• Finacle\n\nAcademic Work \n\nProject: \n\nGoa Institute of \nManagement \n\nSept 2024 – Nov 2024 \n\n• Performed comprehensive risk analysis by assessing VaR & ES for diverse stocks, bonds, & options \n\nportfolios, optimizing diversification benefits to estimate risk exposure at various confidence levels \n\n• Estimated loan loss reserves & economic capital requirements by calculating loan portfolio risk metrics \n\nincluding PD, LGD, and EAD, while analyzing individual loan risk contributions to overall portfolio risk \n\n• Conducted predictive regression analysis in R to assess credit risk & PD based on customer variables \n\nLive Project:  \n\nGoa Institute of \nManagement \n\nJuly 2024 – Sept 2024 \n\n• Developed and evaluated 5 portfolio strategies (Equal Weight, Inverse Volatility, Min Variance, Equal \n\nRisk Contribution, Max Decorrelation), benchmarking performance against the Equal Weight portfolio \n\n• Assessed portfolio performance & identified key stocks of outperformance or underperformance by \n\ncalculating Sharpe Ratios using T-Bill investor yield rates for each Strategies for a period of 3 months \n\nProject: \n\nGoa Institute of \nManagement \n\nJune 2024 – Aug 2024 \n\n• Priced vanilla debt instruments, with computation of key risk metrics like PVBP, Duration & Convexity \n\n• Performed Forwards/Futures valuation using risk-free rate, & Options valuation using BSM & BOPM  \n\n• Mitigated portfolio risks by achieving Beta-neutrality using Futures & implemented Delta-neutral \n\nhedging strategies by manipulating Option Greeks (Delta, Gamma, Theta, Vega) for portfolio stability   \n\nHobbies \n\n• Trekking • Photography • Swimming • Cooking \n\nmailto:kulkarni99atharva@gmail.com\nhttp://www.linkedin.com/in/kulkarni99atharva",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-06T11:25:20.916536+00:00",
+      "completed_at": "2026-11-06T11:25:24.441200+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "4d95255c-3ae3-4237-96b8-6bbee70fcbb8",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 121 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 5629,
+            "word_count": 707,
+            "line_count": 171,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.24356,
+            "symbol_count": 55,
+            "symbol_ratio": 0.009771,
+            "max_repeated_char_run": 121,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 5629,
+            "word_count": 707,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "professional experience",
+              "Education": "academic achievements"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "kulkarni99atharva@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Skills",
+                "detection_method": "heading",
+                "line_number": 85,
+                "evidence": "Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Professional Experience",
+                "detection_method": "heading",
+                "line_number": 6,
+                "evidence": "Professional Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Academic Achievements",
+                "detection_method": "heading_conditional",
+                "line_number": 51,
+                "evidence": "Academic Achievements",
+                "confidence": 0.85
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Summary": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 80.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 5629,
+            "word_count": 707,
+            "line_count": 171,
+            "non_empty_line_count": 88,
+            "short_line_count": 25,
+            "short_line_ratio": 0.284091,
+            "fragmented_line_count": 26,
+            "fragmented_line_ratio": 0.295455,
+            "mean_line_length": 60.08,
+            "median_line_length": 24.0,
+            "line_length_stdev": 55.82,
+            "line_length_cv": 0.929121,
+            "broken_sentence_count": 6,
+            "broken_sentence_ratio": 0.068966,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "4d95255c-3ae3-4237-96b8-6bbee70fcbb8-attempt-1",
+      "resume_id": "4d95255c-3ae3-4237-96b8-6bbee70fcbb8",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "Atharva Uday Kulkarni     \n26 | Male     \n\n+91 9503278557 | kulkarni99atharva@gmail.com                  PGDM (Finance) | B. Tech (Mechanical) | LinkedIn \n\nProfessional Experience                                                                         \n\nTHE FEDERAL BANK LTD. |Officer                                                                                                                         April 2025 – Present \n\nDynamic banking professional driving Operations, Credit & Regulatory Compliance contributing to Business Growth and Service Excellence \n\n• Evaluated & processed loan proposals for Gold and Vehicle clients, conducting gold appraisals, document verification, & risk assessments \n\n• Collaborated with cross-functional teams to support audits, streamline workflows and optimize operational efficiency within the branch \n\n• Drove cross-selling initiatives for third-party products, directly contributing to branch revenue and customer portfolio growth significantly \n\n• Resolved complex customer grievances with empathy and accuracy to enhance client satisfaction and maintaining high service standards \n\n• Enforced regulatory compliance by conducting KYC and AML checks, ensuring adherence to RBI norms and internal audit requirements \n\n• Led branch-level customer engagement by managing operations, ensuring seamless delivery of various banking products and services  \n\nCombine Agencies |HVAC, Site & Supervision Engineer                                                                                                            June 2021 – December 2022 \n\n• Empowered sales by gathering customer feedback & analysing data to enhance product suggestions and sourcing quotations effectively \n\n• Enhanced service reliability by reducing the customer complaints to 50% by effectively monitoring repairs of over 100+ Air Conditioners  \n\n• Built and Led a team of 6 people, to increase efficiency of service department by increasing the mean time between failure by 2 months \n\n• Engineered tailormade air-conditioning solutions with optimal capacity to combat server overheating in server rooms in various industries \n \n\nSummer Internship Program                                                    Experience: 02 months \n\nHEDGE EQUITIES LTD. |Finance Intern                                                                                                                    April 2024 – May 2024 \n\nTo apply advanced technical analysis and options expertise in driving profitable trading & investment strategies and mitigating risks effectively \n\n• Engineered high-precision speculative model achieving 45% profit success rate leveraging Option strategies, using Nifty NSE historical data \n\n• Realised a profit of 12.6% (₹3.15 lacs) in 45 days using technical analysis in a virtual stock portfolio encompassing 10 Stocks worth ₹25 lac \n\n• Reported daily P&L, Alpha & Beta of 15 Client-portfolios to manage risks, evaluate portfolio performance, & optimize investment strategies \n\n• Effectively mitigated the risks to protect a portfolio during high volatility (elections) period by strategically hedging losses using Nifty futures  \n\n• Earned the Certificate of Appreciation & Performer of the Month awards for exceptional market analysis reports & top-tier analytical skills  \n\nAcademic Achievements \n\n• PGDM \n\n• B. Tech \n\n• HSC \n\n• SSC \n\nGoa Institute of Management, Goa \n\nMIT College of Engineering, Pune \n\nSanjay Ghodawat Jr. College, Kolhapur \n\nBharati Vidyapeeth’s School, Satara \n\n2023- 2025 \n\n2017- 2021 \n\n2016- 2017 \n\n2014- 2015 \n\n71.00 % \n\n85.00 % \n\n77.23 % \n\n92.60 %\n\nSkills\n\n• Bond Valuations \n\n• Equity Derivatives \n\n• Option Strategies \n\n• Fixed Income Securities \n\n• Options Valuation \n\n• Portfolio Management \n\n• Fixed Income \n\n• Market Risk \n\n• Credit Risk \n\n• Investment Analysis \n\n• Risk Management \n\n• Fixed Income Derivatives \n\n• Technical Analysis \n\n• Equity Analysis \n\n• Finacle\n\nAcademic Work \n\nProject: \n\nGoa Institute of \nManagement \n\nSept 2024 – Nov 2024 \n\n• Performed comprehensive risk analysis by assessing VaR & ES for diverse stocks, bonds, & options \n\nportfolios, optimizing diversification benefits to estimate risk exposure at various confidence levels \n\n• Estimated loan loss reserves & economic capital requirements by calculating loan portfolio risk metrics \n\nincluding PD, LGD, and EAD, while analyzing individual loan risk contributions to overall portfolio risk \n\n• Conducted predictive regression analysis in R to assess credit risk & PD based on customer variables \n\nLive Project:  \n\nGoa Institute of \nManagement \n\nJuly 2024 – Sept 2024 \n\n• Developed and evaluated 5 portfolio strategies (Equal Weight, Inverse Volatility, Min Variance, Equal \n\nRisk Contribution, Max Decorrelation), benchmarking performance against the Equal Weight portfolio \n\n• Assessed portfolio performance & identified key stocks of outperformance or underperformance by \n\ncalculating Sharpe Ratios using T-Bill investor yield rates for each Strategies for a period of 3 months \n\nProject: \n\nGoa Institute of \nManagement \n\nJune 2024 – Aug 2024 \n\n• Priced vanilla debt instruments, with computation of key risk metrics like PVBP, Duration & Convexity \n\n• Performed Forwards/Futures valuation using risk-free rate, & Options valuation using BSM & BOPM  \n\n• Mitigated portfolio risks by achieving Beta-neutrality using Futures & implemented Delta-neutral \n\nhedging strategies by manipulating Option Greeks (Delta, Gamma, Theta, Vega) for portfolio stability   \n\nHobbies \n\n• Trekking • Photography • Swimming • Cooking \n\nmailto:kulkarni99atharva@gmail.com\nhttp://www.linkedin.com/in/kulkarni99atharva",
+      "extracted_text_length": 5629,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "4d95255c-3ae3-4237-96b8-6bbee70fcbb8",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 121 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 5629,
+            "word_count": 707,
+            "line_count": 171,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.24356,
+            "symbol_count": 55,
+            "symbol_ratio": 0.009771,
+            "max_repeated_char_run": 121,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 5629,
+            "word_count": 707,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "professional experience",
+              "Education": "academic achievements"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "kulkarni99atharva@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Skills",
+                "detection_method": "heading",
+                "line_number": 85,
+                "evidence": "Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Professional Experience",
+                "detection_method": "heading",
+                "line_number": 6,
+                "evidence": "Professional Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Academic Achievements",
+                "detection_method": "heading_conditional",
+                "line_number": 51,
+                "evidence": "Academic Achievements",
+                "confidence": 0.85
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Summary": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 80.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 5629,
+            "word_count": 707,
+            "line_count": 171,
+            "non_empty_line_count": 88,
+            "short_line_count": 25,
+            "short_line_ratio": 0.284091,
+            "fragmented_line_count": 26,
+            "fragmented_line_ratio": 0.295455,
+            "mean_line_length": 60.08,
+            "median_line_length": 24.0,
+            "line_length_stdev": 55.82,
+            "line_length_cv": 0.929121,
+            "broken_sentence_count": 6,
+            "broken_sentence_ratio": 0.068966,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Atharva Uday Kulkarni\n26 | Male\n\n+91 9503278557 | kulkarni99atharva@gmail.com PGDM (Finance) | B. Tech (Mechanical) | LinkedIn\n\nProfessional Experience\n\nTHE FEDERAL BANK LTD. |Officer April 2025 – Present\n\nDynamic banking professional driving Operations, Credit & Regulatory Compliance contributing to Business Growth and Service Excellence\n\n• Evaluated & processed loan proposals for Gold and Vehicle clients, conducting gold appraisals, document verification, & risk assessments\n\n• Collaborated with cross-functional teams to support audits, streamline workflows and optimize operational efficiency within the branch\n\n• Drove cross-selling initiatives for third-party products, directly contributing to branch revenue and customer portfolio growth significantly\n\n• Resolved complex customer grievances with empathy and accuracy to enhance client satisfaction and maintaining high service standards\n\n• Enforced regulatory compliance by conducting KYC and AML checks, ensuring adherence to RBI norms and internal audit requirements\n\n• Led branch-level customer engagement by managing operations, ensuring seamless delivery of various banking products and services\n\nCombine Agencies |HVAC, Site & Supervision Engineer June 2021 – December 2022\n\n• Empowered sales by gathering customer feedback & analysing data to enhance product suggestions and sourcing quotations effectively\n\n• Enhanced service reliability by reducing the customer complaints to 50% by effectively monitoring repairs of over 100+ Air Conditioners\n\n• Built and Led a team of 6 people, to increase efficiency of service department by increasing the mean time between failure by 2 months\n\n• Engineered tailormade air-conditioning solutions with optimal capacity to combat server overheating in server rooms in various industries\n\nSummer Internship Program Experience: 02 months\n\nHEDGE EQUITIES LTD. |Finance Intern April 2024 – May 2024\n\nTo apply advanced technical analysis and options expertise in driving profitable trading & investment strategies and mitigating risks effectively\n\n• Engineered high-precision speculative model achieving 45% profit success rate leveraging Option strategies, using Nifty NSE historical data\n\n• Realised a profit of 12.6% (₹3.15 lacs) in 45 days using technical analysis in a virtual stock portfolio encompassing 10 Stocks worth ₹25 lac\n\n• Reported daily P&L, Alpha & Beta of 15 Client-portfolios to manage risks, evaluate portfolio performance, & optimize investment strategies\n\n• Effectively mitigated the risks to protect a portfolio during high volatility (elections) period by strategically hedging losses using Nifty futures\n\n• Earned the Certificate of Appreciation & Performer of the Month awards for exceptional market analysis reports & top-tier analytical skills\n\nAcademic Achievements\n\n• PGDM\n\n• B. Tech\n\n• HSC\n\n• SSC\n\nGoa Institute of Management, Goa\n\nMIT College of Engineering, Pune\n\nSanjay Ghodawat Jr. College, Kolhapur\n\nBharati Vidyapeeth’s School, Satara\n\n2023- 2025\n\n2017- 2021\n\n2016- 2017\n\n2014- 2015\n\n71.00 %\n\n85.00 %\n\n77.23 %\n\n92.60 %\n\nSkills\n\n• Bond Valuations\n\n• Equity Derivatives\n\n• Option Strategies\n\n• Fixed Income Securities\n\n• Options Valuation\n\n• Portfolio Management\n\n• Fixed Income\n\n• Market Risk\n\n• Credit Risk\n\n• Investment Analysis\n\n• Risk Management\n\n• Fixed Income Derivatives\n\n• Technical Analysis\n\n• Equity Analysis\n\n• Finacle\n\nAcademic Work\n\nProject:\n\nGoa Institute of\nManagement\n\nSept 2024 – Nov 2024\n\n• Performed comprehensive risk analysis by assessing VaR & ES for diverse stocks, bonds, & options\n\nportfolios, optimizing diversification benefits to estimate risk exposure at various confidence levels\n\n• Estimated loan loss reserves & economic capital requirements by calculating loan portfolio risk metrics\n\nincluding PD, LGD, and EAD, while analyzing individual loan risk contributions to overall portfolio risk\n\n• Conducted predictive regression analysis in R to assess credit risk & PD based on customer variables\n\nLive Project:\n\nGoa Institute of\nManagement\n\nJuly 2024 – Sept 2024\n\n• Developed and evaluated 5 portfolio strategies (Equal Weight, Inverse Volatility, Min Variance, Equal\n\nRisk Contribution, Max Decorrelation), benchmarking performance against the Equal Weight portfolio\n\n• Assessed portfolio performance & identified key stocks of outperformance or underperformance by\n\ncalculating Sharpe Ratios using T-Bill investor yield rates for each Strategies for a period of 3 months\n\nProject:\n\nGoa Institute of\nManagement\n\nJune 2024 – Aug 2024\n\n• Priced vanilla debt instruments, with computation of key risk metrics like PVBP, Duration & Convexity\n\n• Performed Forwards/Futures valuation using risk-free rate, & Options valuation using BSM & BOPM\n\n• Mitigated portfolio risks by achieving Beta-neutrality using Futures & implemented Delta-neutral\n\nhedging strategies by manipulating Option Greeks (Delta, Gamma, Theta, Vega) for portfolio stability\n\nHobbies\n\n• Trekking • Photography • Swimming • Cooking\n\nmailto:kulkarni99atharva@gmail.com\nhttp://www.linkedin.com/in/kulkarni99atharva"
+    }
+  ],
+  "extracted_text": "Atharva Uday Kulkarni     \n26 | Male     \n\n+91 9503278557 | kulkarni99atharva@gmail.com                  PGDM (Finance) | B. Tech (Mechanical) | LinkedIn \n\nProfessional Experience                                                                         \n\nTHE FEDERAL BANK LTD. |Officer                                                                                                                         April 2025 – Present \n\nDynamic banking professional driving Operations, Credit & Regulatory Compliance contributing to Business Growth and Service Excellence \n\n• Evaluated & processed loan proposals for Gold and Vehicle clients, conducting gold appraisals, document verification, & risk assessments \n\n• Collaborated with cross-functional teams to support audits, streamline workflows and optimize operational efficiency within the branch \n\n• Drove cross-selling initiatives for third-party products, directly contributing to branch revenue and customer portfolio growth significantly \n\n• Resolved complex customer grievances with empathy and accuracy to enhance client satisfaction and maintaining high service standards \n\n• Enforced regulatory compliance by conducting KYC and AML checks, ensuring adherence to RBI norms and internal audit requirements \n\n• Led branch-level customer engagement by managing operations, ensuring seamless delivery of various banking products and services  \n\nCombine Agencies |HVAC, Site & Supervision Engineer                                                                                                            June 2021 – December 2022 \n\n• Empowered sales by gathering customer feedback & analysing data to enhance product suggestions and sourcing quotations effectively \n\n• Enhanced service reliability by reducing the customer complaints to 50% by effectively monitoring repairs of over 100+ Air Conditioners  \n\n• Built and Led a team of 6 people, to increase efficiency of service department by increasing the mean time between failure by 2 months \n\n• Engineered tailormade air-conditioning solutions with optimal capacity to combat server overheating in server rooms in various industries \n \n\nSummer Internship Program                                                    Experience: 02 months \n\nHEDGE EQUITIES LTD. |Finance Intern                                                                                                                    April 2024 – May 2024 \n\nTo apply advanced technical analysis and options expertise in driving profitable trading & investment strategies and mitigating risks effectively \n\n• Engineered high-precision speculative model achieving 45% profit success rate leveraging Option strategies, using Nifty NSE historical data \n\n• Realised a profit of 12.6% (₹3.15 lacs) in 45 days using technical analysis in a virtual stock portfolio encompassing 10 Stocks worth ₹25 lac \n\n• Reported daily P&L, Alpha & Beta of 15 Client-portfolios to manage risks, evaluate portfolio performance, & optimize investment strategies \n\n• Effectively mitigated the risks to protect a portfolio during high volatility (elections) period by strategically hedging losses using Nifty futures  \n\n• Earned the Certificate of Appreciation & Performer of the Month awards for exceptional market analysis reports & top-tier analytical skills  \n\nAcademic Achievements \n\n• PGDM \n\n• B. Tech \n\n• HSC \n\n• SSC \n\nGoa Institute of Management, Goa \n\nMIT College of Engineering, Pune \n\nSanjay Ghodawat Jr. College, Kolhapur \n\nBharati Vidyapeeth’s School, Satara \n\n2023- 2025 \n\n2017- 2021 \n\n2016- 2017 \n\n2014- 2015 \n\n71.00 % \n\n85.00 % \n\n77.23 % \n\n92.60 %\n\nSkills\n\n• Bond Valuations \n\n• Equity Derivatives \n\n• Option Strategies \n\n• Fixed Income Securities \n\n• Options Valuation \n\n• Portfolio Management \n\n• Fixed Income \n\n• Market Risk \n\n• Credit Risk \n\n• Investment Analysis \n\n• Risk Management \n\n• Fixed Income Derivatives \n\n• Technical Analysis \n\n• Equity Analysis \n\n• Finacle\n\nAcademic Work \n\nProject: \n\nGoa Institute of \nManagement \n\nSept 2024 – Nov 2024 \n\n• Performed comprehensive risk analysis by assessing VaR & ES for diverse stocks, bonds, & options \n\nportfolios, optimizing diversification benefits to estimate risk exposure at various confidence levels \n\n• Estimated loan loss reserves & economic capital requirements by calculating loan portfolio risk metrics \n\nincluding PD, LGD, and EAD, while analyzing individual loan risk contributions to overall portfolio risk \n\n• Conducted predictive regression analysis in R to assess credit risk & PD based on customer variables \n\nLive Project:  \n\nGoa Institute of \nManagement \n\nJuly 2024 – Sept 2024 \n\n• Developed and evaluated 5 portfolio strategies (Equal Weight, Inverse Volatility, Min Variance, Equal \n\nRisk Contribution, Max Decorrelation), benchmarking performance against the Equal Weight portfolio \n\n• Assessed portfolio performance & identified key stocks of outperformance or underperformance by \n\ncalculating Sharpe Ratios using T-Bill investor yield rates for each Strategies for a period of 3 months \n\nProject: \n\nGoa Institute of \nManagement \n\nJune 2024 – Aug 2024 \n\n• Priced vanilla debt instruments, with computation of key risk metrics like PVBP, Duration & Convexity \n\n• Performed Forwards/Futures valuation using risk-free rate, & Options valuation using BSM & BOPM  \n\n• Mitigated portfolio risks by achieving Beta-neutrality using Futures & implemented Delta-neutral \n\nhedging strategies by manipulating Option Greeks (Delta, Gamma, Theta, Vega) for portfolio stability   \n\nHobbies \n\n• Trekking • Photography • Swimming • Cooking \n\nmailto:kulkarni99atharva@gmail.com\nhttp://www.linkedin.com/in/kulkarni99atharva",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "Atharva Uday Kulkarni     \n26 | Male     \n\n+91 9503278557 | kulkarni99atharva@gmail.com                  PGDM (Finance) | B. Tech (Mechanical) | LinkedIn \n\nProfessional Experience                                                                         \n\nTHE FEDERAL BANK LTD. |Officer                                                                                                                         April 2025 – Present \n\nDynamic banking professional driving Operations, Credit & Regulatory Compliance contributing to Business Growth and Service Excellence \n\n• Evaluated & processed loan proposals for Gold and Vehicle clients, conducting gold appraisals, document verification, & risk assessments \n\n• Collaborated with cross-functional teams to support audits, streamline workflows and optimize operational efficiency within the branch \n\n• Drove cross-selling initiatives for third-party products, directly contributing to branch revenue and customer portfolio growth significantly \n\n• Resolved complex customer grievances with empathy and accuracy to enhance client satisfaction and maintaining high service standards \n\n• Enforced regulatory compliance by conducting KYC and AML checks, ensuring adherence to RBI norms and internal audit requirements \n\n• Led branch-level customer engagement by managing operations, ensuring seamless delivery of various banking products and services  \n\nCombine Agencies |HVAC, Site & Supervision Engineer                                                                                                            June 2021 – December 2022 \n\n• Empowered sales by gathering customer feedback & analysing data to enhance product suggestions and sourcing quotations effectively \n\n• Enhanced service reliability by reducing the customer complaints to 50% by effectively monitoring repairs of over 100+ Air Conditioners  \n\n• Built and Led a team of 6 people, to increase efficiency of service department by increasing the mean time between failure by 2 months \n\n• Engineered tailormade air-conditioning solutions with optimal capacity to combat server overheating in server rooms in various industries \n \n\nSummer Internship Program                                                    Experience: 02 months \n\nHEDGE EQUITIES LTD. |Finance Intern                                                                                                                    April 2024 – May 2024 \n\nTo apply advanced technical analysis and options expertise in driving profitable trading & investment strategies and mitigating risks effectively \n\n• Engineered high-precision speculative model achieving 45% profit success rate leveraging Option strategies, using Nifty NSE historical data \n\n• Realised a profit of 12.6% (₹3.15 lacs) in 45 days using technical analysis in a virtual stock portfolio encompassing 10 Stocks worth ₹25 lac \n\n• Reported daily P&L, Alpha & Beta of 15 Client-portfolios to manage risks, evaluate portfolio performance, & optimize investment strategies \n\n• Effectively mitigated the risks to protect a portfolio during high volatility (elections) period by strategically hedging losses using Nifty futures  \n\n• Earned the Certificate of Appreciation & Performer of the Month awards for exceptional market analysis reports & top-tier analytical skills  \n\nAcademic Achievements \n\n• PGDM \n\n• B. Tech \n\n• HSC \n\n• SSC \n\nGoa Institute of Management, Goa \n\nMIT College of Engineering, Pune \n\nSanjay Ghodawat Jr. College, Kolhapur \n\nBharati Vidyapeeth’s School, Satara \n\n2023- 2025 \n\n2017- 2021 \n\n2016- 2017 \n\n2014- 2015 \n\n71.00 % \n\n85.00 % \n\n77.23 % \n\n92.60 %\n\nSkills\n\n• Bond Valuations \n\n• Equity Derivatives \n\n• Option Strategies \n\n• Fixed Income Securities \n\n• Options Valuation \n\n• Portfolio Management \n\n• Fixed Income \n\n• Market Risk \n\n• Credit Risk \n\n• Investment Analysis \n\n• Risk Management \n\n• Fixed Income Derivatives \n\n• Technical Analysis \n\n• Equity Analysis \n\n• Finacle\n\nAcademic Work \n\nProject: \n\nGoa Institute of \nManagement \n\nSept 2024 – Nov 2024 \n\n• Performed comprehensive risk analysis by assessing VaR & ES for diverse stocks, bonds, & options \n\nportfolios, optimizing diversification benefits to estimate risk exposure at various confidence levels \n\n• Estimated loan loss reserves & economic capital requirements by calculating loan portfolio risk metrics \n\nincluding PD, LGD, and EAD, while analyzing individual loan risk contributions to overall portfolio risk \n\n• Conducted predictive regression analysis in R to assess credit risk & PD based on customer variables \n\nLive Project:  \n\nGoa Institute of \nManagement \n\nJuly 2024 – Sept 2024 \n\n• Developed and evaluated 5 portfolio strategies (Equal Weight, Inverse Volatility, Min Variance, Equal \n\nRisk Contribution, Max Decorrelation), benchmarking performance against the Equal Weight portfolio \n\n• Assessed portfolio performance & identified key stocks of outperformance or underperformance by \n\ncalculating Sharpe Ratios using T-Bill investor yield rates for each Strategies for a period of 3 months \n\nProject: \n\nGoa Institute of \nManagement \n\nJune 2024 – Aug 2024 \n\n• Priced vanilla debt instruments, with computation of key risk metrics like PVBP, Duration & Convexity \n\n• Performed Forwards/Futures valuation using risk-free rate, & Options valuation using BSM & BOPM  \n\n• Mitigated portfolio risks by achieving Beta-neutrality using Futures & implemented Delta-neutral \n\nhedging strategies by manipulating Option Greeks (Delta, Gamma, Theta, Vega) for portfolio stability   \n\nHobbies \n\n• Trekking • Photography • Swimming • Cooking \n\nmailto:kulkarni99atharva@gmail.com\nhttp://www.linkedin.com/in/kulkarni99atharva",
+  "quality": {
+    "status": "PASS",
+    "document_id": "4d95255c-3ae3-4237-96b8-6bbee70fcbb8",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 80.0,
+      "flags": [
+        "EXCESSIVE_REPEATED_CHARACTERS"
+      ],
+      "reasons": [
+        "Repeated-character corruption suspected: longest run is 121 characters, 0.0% of long lines are single-character repeats."
+      ],
+      "metrics": {
+        "char_count": 5629,
+        "word_count": 707,
+        "line_count": 171,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.24356,
+        "symbol_count": 55,
+        "symbol_ratio": 0.009771,
+        "max_repeated_char_run": 121,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 91.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 5629,
+        "word_count": 707,
+        "configured_section_count": 7,
+        "detected_count": 4,
+        "missing_count": 3,
+        "detected_sections": [
+          "Contact Information",
+          "Skills",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_sections": [
+          "Summary",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Summary",
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Skills": "skills",
+          "Work Experience": "professional experience",
+          "Education": "academic achievements"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "kulkarni99atharva@gmail.com",
+            "confidence": 0.8
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "Skills",
+            "detection_method": "heading",
+            "line_number": 85,
+            "evidence": "Skills",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "Professional Experience",
+            "detection_method": "heading",
+            "line_number": 6,
+            "evidence": "Professional Experience",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "Academic Achievements",
+            "detection_method": "heading_conditional",
+            "line_number": 51,
+            "evidence": "Academic Achievements",
+            "confidence": 0.85
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Summary": "missing",
+          "Projects": "missing",
+          "Certifications": "missing"
+        },
+        "extraction_quality": 80.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Skills",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_sections": [
+        "Summary",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Summary",
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 5629,
+        "word_count": 707,
+        "line_count": 171,
+        "non_empty_line_count": 88,
+        "short_line_count": 25,
+        "short_line_ratio": 0.284091,
+        "fragmented_line_count": 26,
+        "fragmented_line_ratio": 0.295455,
+        "mean_line_length": 60.08,
+        "median_line_length": 24.0,
+        "line_length_stdev": 55.82,
+        "line_length_cv": 0.929121,
+        "broken_sentence_count": 6,
+        "broken_sentence_ratio": 0.068966,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": null,
+  "resume_json": null,
+  "hyperlinks": [
+    {
+      "page": 1,
+      "url": "mailto:kulkarni99atharva@gmail.com",
+      "visible_text": "kulkarni99atharva@gmail.com",
+      "type": "mailto",
+      "rect": [
+        171.27,
+        46.23,
+        287.92,
+        59.71
+      ]
+    },
+    {
+      "page": 1,
+      "url": "http://www.linkedin.com/in/kulkarni99atharva",
+      "visible_text": "LinkedIn",
+      "type": "uri",
+      "rect": [
+        533.93,
+        46.23,
+        569.3,
+        59.71
+      ]
+    }
+  ],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Atharva Uday Kulkarni     \n26 | Male     \n\n+91 9503278557 | kulkarni99atharva@gmail.com                  PGDM (Finance) | B. Tech (Mechanical) | LinkedIn \n\nProfessional Experience                                                                         \n\nTHE FEDERAL BANK LTD. |Officer                                                                                                                         April 2025 – Present \n\nDynamic banking professional driving Operations, Credit & Regulatory Compliance contributing to Business Growth and Service Excellence \n\n• Evaluated & processed loan proposals for Gold and Vehicle clients, conducting gold appraisals, document verification, & risk assessments \n\n• Collaborated with cross-functional teams to support audits, streamline workflows and optimize operational efficiency within the branch \n\n• Drove cross-selling initiatives for third-party products, directly contributing to branch revenue and customer portfolio growth significantly \n\n• Resolved complex customer grievances with empathy and accuracy to enhance client satisfaction and maintaining high service standards \n\n• Enforced regulatory compliance by conducting KYC and AML checks, ensuring adherence to RBI norms and internal audit requirements \n\n• Led branch-level customer engagement by managing operations, ensuring seamless delivery of various banking products and services  \n\nCombine Agencies |HVAC, Site & Supervision Engineer                                                                                                            June 2021 – December 2022 \n\n• Empowered sales by gathering customer feedback & analysing data to enhance product suggestions and sourcing quotations effectively \n\n• Enhanced service reliability by reducing the customer complaints to 50% by effectively monitoring repairs of over 100+ Air Conditioners  \n\n• Built and Led a team of 6 people, to increase efficiency of service department by increasing the mean time between failure by 2 months \n\n• Engineered tailormade air-conditioning solutions with optimal capacity to combat server overheating in server rooms in various industries \n \n\nSummer Internship Program                                                    Experience: 02 months \n\nHEDGE EQUITIES LTD. |Finance Intern                                                                                                                    April 2024 – May 2024 \n\nTo apply advanced technical analysis and options expertise in driving profitable trading & investment strategies and mitigating risks effectively \n\n• Engineered high-precision speculative model achieving 45% profit success rate leveraging Option strategies, using Nifty NSE historical data \n\n• Realised a profit of 12.6% (₹3.15 lacs) in 45 days using technical analysis in a virtual stock portfolio encompassing 10 Stocks worth ₹25 lac \n\n• Reported daily P&L, Alpha & Beta of 15 Client-portfolios to manage risks, evaluate portfolio performance, & optimize investment strategies \n\n• Effectively mitigated the risks to protect a portfolio during high volatility (elections) period by strategically hedging losses using Nifty futures  \n\n• Earned the Certificate of Appreciation & Performer of the Month awards for exceptional market analysis reports & top-tier analytical skills  \n\nAcademic Achievements \n\n• PGDM \n\n• B. Tech \n\n• HSC \n\n• SSC \n\nGoa Institute of Management, Goa \n\nMIT College of Engineering, Pune \n\nSanjay Ghodawat Jr. College, Kolhapur \n\nBharati Vidyapeeth’s School, Satara \n\n2023- 2025 \n\n2017- 2021 \n\n2016- 2017 \n\n2014- 2015 \n\n71.00 % \n\n85.00 % \n\n77.23 % \n\n92.60 %\n\nSkills\n\n• Bond Valuations \n\n• Equity Derivatives \n\n• Option Strategies \n\n• Fixed Income Securities \n\n• Options Valuation \n\n• Portfolio Management \n\n• Fixed Income \n\n• Market Risk \n\n• Credit Risk \n\n• Investment Analysis \n\n• Risk Management \n\n• Fixed Income Derivatives \n\n• Technical Analysis \n\n• Equity Analysis \n\n• Finacle\n\nAcademic Work \n\nProject: \n\nGoa Institute of \nManagement \n\nSept 2024 – Nov 2024 \n\n• Performed comprehensive risk analysis by assessing VaR & ES for diverse stocks, bonds, & options \n\nportfolios, optimizing diversification benefits to estimate risk exposure at various confidence levels \n\n• Estimated loan loss reserves & economic capital requirements by calculating loan portfolio risk metrics \n\nincluding PD, LGD, and EAD, while analyzing individual loan risk contributions to overall portfolio risk \n\n• Conducted predictive regression analysis in R to assess credit risk & PD based on customer variables \n\nLive Project:  \n\nGoa Institute of \nManagement \n\nJuly 2024 – Sept 2024 \n\n• Developed and evaluated 5 portfolio strategies (Equal Weight, Inverse Volatility, Min Variance, Equal \n\nRisk Contribution, Max Decorrelation), benchmarking performance against the Equal Weight portfolio \n\n• Assessed portfolio performance & identified key stocks of outperformance or underperformance by \n\ncalculating Sharpe Ratios using T-Bill investor yield rates for each Strategies for a period of 3 months \n\nProject: \n\nGoa Institute of \nManagement \n\nJune 2024 – Aug 2024 \n\n• Priced vanilla debt instruments, with computation of key risk metrics like PVBP, Duration & Convexity \n\n• Performed Forwards/Futures valuation using risk-free rate, & Options valuation using BSM & BOPM  \n\n• Mitigated portfolio risks by achieving Beta-neutrality using Futures & implemented Delta-neutral \n\nhedging strategies by manipulating Option Greeks (Delta, Gamma, Theta, Vega) for portfolio stability   \n\nHobbies \n\n• Trekking • Photography • Swimming • Cooking \n\nmailto:kulkarni99atharva@gmail.com\nhttp://www.linkedin.com/in/kulkarni99atharva",
+    "normalized_text": "Atharva Uday Kulkarni\n26 | Male\n\n+91 9503278557 | kulkarni99atharva@gmail.com PGDM (Finance) | B. Tech (Mechanical) | LinkedIn\n\nProfessional Experience\n\nTHE FEDERAL BANK LTD. |Officer April 2025 – Present\n\nDynamic banking professional driving Operations, Credit & Regulatory Compliance contributing to Business Growth and Service Excellence\n\n• Evaluated & processed loan proposals for Gold and Vehicle clients, conducting gold appraisals, document verification, & risk assessments\n\n• Collaborated with cross-functional teams to support audits, streamline workflows and optimize operational efficiency within the branch\n\n• Drove cross-selling initiatives for third-party products, directly contributing to branch revenue and customer portfolio growth significantly\n\n• Resolved complex customer grievances with empathy and accuracy to enhance client satisfaction and maintaining high service standards\n\n• Enforced regulatory compliance by conducting KYC and AML checks, ensuring adherence to RBI norms and internal audit requirements\n\n• Led branch-level customer engagement by managing operations, ensuring seamless delivery of various banking products and services\n\nCombine Agencies |HVAC, Site & Supervision Engineer June 2021 – December 2022\n\n• Empowered sales by gathering customer feedback & analysing data to enhance product suggestions and sourcing quotations effectively\n\n• Enhanced service reliability by reducing the customer complaints to 50% by effectively monitoring repairs of over 100+ Air Conditioners\n\n• Built and Led a team of 6 people, to increase efficiency of service department by increasing the mean time between failure by 2 months\n\n• Engineered tailormade air-conditioning solutions with optimal capacity to combat server overheating in server rooms in various industries\n\nSummer Internship Program Experience: 02 months\n\nHEDGE EQUITIES LTD. |Finance Intern April 2024 – May 2024\n\nTo apply advanced technical analysis and options expertise in driving profitable trading & investment strategies and mitigating risks effectively\n\n• Engineered high-precision speculative model achieving 45% profit success rate leveraging Option strategies, using Nifty NSE historical data\n\n• Realised a profit of 12.6% (₹3.15 lacs) in 45 days using technical analysis in a virtual stock portfolio encompassing 10 Stocks worth ₹25 lac\n\n• Reported daily P&L, Alpha & Beta of 15 Client-portfolios to manage risks, evaluate portfolio performance, & optimize investment strategies\n\n• Effectively mitigated the risks to protect a portfolio during high volatility (elections) period by strategically hedging losses using Nifty futures\n\n• Earned the Certificate of Appreciation & Performer of the Month awards for exceptional market analysis reports & top-tier analytical skills\n\nAcademic Achievements\n\n• PGDM\n\n• B. Tech\n\n• HSC\n\n• SSC\n\nGoa Institute of Management, Goa\n\nMIT College of Engineering, Pune\n\nSanjay Ghodawat Jr. College, Kolhapur\n\nBharati Vidyapeeth’s School, Satara\n\n2023- 2025\n\n2017- 2021\n\n2016- 2017\n\n2014- 2015\n\n71.00 %\n\n85.00 %\n\n77.23 %\n\n92.60 %\n\nSkills\n\n• Bond Valuations\n\n• Equity Derivatives\n\n• Option Strategies\n\n• Fixed Income Securities\n\n• Options Valuation\n\n• Portfolio Management\n\n• Fixed Income\n\n• Market Risk\n\n• Credit Risk\n\n• Investment Analysis\n\n• Risk Management\n\n• Fixed Income Derivatives\n\n• Technical Analysis\n\n• Equity Analysis\n\n• Finacle\n\nAcademic Work\n\nProject:\n\nGoa Institute of\nManagement\n\nSept 2024 – Nov 2024\n\n• Performed comprehensive risk analysis by assessing VaR & ES for diverse stocks, bonds, & options\n\nportfolios, optimizing diversification benefits to estimate risk exposure at various confidence levels\n\n• Estimated loan loss reserves & economic capital requirements by calculating loan portfolio risk metrics\n\nincluding PD, LGD, and EAD, while analyzing individual loan risk contributions to overall portfolio risk\n\n• Conducted predictive regression analysis in R to assess credit risk & PD based on customer variables\n\nLive Project:\n\nGoa Institute of\nManagement\n\nJuly 2024 – Sept 2024\n\n• Developed and evaluated 5 portfolio strategies (Equal Weight, Inverse Volatility, Min Variance, Equal\n\nRisk Contribution, Max Decorrelation), benchmarking performance against the Equal Weight portfolio\n\n• Assessed portfolio performance & identified key stocks of outperformance or underperformance by\n\ncalculating Sharpe Ratios using T-Bill investor yield rates for each Strategies for a period of 3 months\n\nProject:\n\nGoa Institute of\nManagement\n\nJune 2024 – Aug 2024\n\n• Priced vanilla debt instruments, with computation of key risk metrics like PVBP, Duration & Convexity\n\n• Performed Forwards/Futures valuation using risk-free rate, & Options valuation using BSM & BOPM\n\n• Mitigated portfolio risks by achieving Beta-neutrality using Futures & implemented Delta-neutral\n\nhedging strategies by manipulating Option Greeks (Delta, Gamma, Theta, Vega) for portfolio stability\n\nHobbies\n\n• Trekking • Photography • Swimming • Cooking\n\nmailto:kulkarni99atharva@gmail.com\nhttp://www.linkedin.com/in/kulkarni99atharva",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 5629,
+    "normalized_chars": 5046,
+    "original_estimated_tokens": 1407,
+    "normalized_estimated_tokens": 1262,
+    "estimated_reduction_percent": 10.3
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "timed_out_calls": 1,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_source": null,
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Muse API request timed out after 20s.",
+    "input_type": "text",
+    "duration_ms": 20079.45,
+    "timeout_seconds": 20.0,
+    "usage": {},
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 5629,
+      "normalized_chars": 5046,
+      "estimated_reduction_percent": 10.3,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 3524.4,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "4d95255c-3ae3-4237-96b8-6bbee70fcbb8",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 121 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 5629,
+            "word_count": 707,
+            "line_count": 171,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.24356,
+            "symbol_count": 55,
+            "symbol_ratio": 0.009771,
+            "max_repeated_char_run": 121,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 5629,
+            "word_count": 707,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "professional experience",
+              "Education": "academic achievements"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "kulkarni99atharva@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Skills",
+                "detection_method": "heading",
+                "line_number": 85,
+                "evidence": "Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Professional Experience",
+                "detection_method": "heading",
+                "line_number": 6,
+                "evidence": "Professional Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Academic Achievements",
+                "detection_method": "heading_conditional",
+                "line_number": 51,
+                "evidence": "Academic Achievements",
+                "confidence": 0.85
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Summary": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 80.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 5629,
+            "word_count": 707,
+            "line_count": 171,
+            "non_empty_line_count": 88,
+            "short_line_count": 25,
+            "short_line_ratio": 0.284091,
+            "fragmented_line_count": 26,
+            "fragmented_line_ratio": 0.295455,
+            "mean_line_length": 60.08,
+            "median_line_length": 24.0,
+            "line_length_stdev": 55.82,
+            "line_length_cv": 0.929121,
+            "broken_sentence_count": 6,
+            "broken_sentence_ratio": 0.068966,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 20079.45,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 3524.4,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "4d95255c-3ae3-4237-96b8-6bbee70fcbb8_SHJ-5464_SHC-384979.pdf"
+}
