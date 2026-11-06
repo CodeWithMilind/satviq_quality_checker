@@ -25,7 +25,7 @@ from starlette.concurrency import run_in_threadpool
 
 from extractor.manager import load_manager_config
 
-from . import store
+from . import analytics, store
 from .pipeline import (
     MANUAL_EXTRACTORS,
     MAX_UPLOAD_BYTES,
@@ -143,6 +143,18 @@ def health() -> dict:
 @app.get("/api/stats")
 def stats() -> dict:
     return store.compute_stats(store.list_records())
+
+
+@app.get("/api/analytics/summary")
+def analytics_summary(days: int | None = None, include_manual: bool = False) -> dict:
+    """Analytics Phase 1 aggregation over stored records (api/analytics.py).
+
+    ``days`` limits to records uploaded within the last N days (omitted =
+    all time). ``include_manual`` is accepted for the Phase 2 toggle shape;
+    Phase 1 always excludes Manual Comparison runs from pipeline stats.
+    """
+    return analytics.compute_analytics(
+        store.list_records(), days=days, include_manual=include_manual)
 
 
 @app.post("/api/resumes/process")

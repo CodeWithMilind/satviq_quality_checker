@@ -30,6 +30,7 @@ const state = {
   selectedFiles: [], // { file, error }
   processing: false,
   history: { page: 1, pageSize: 10, q: "", status: "", data: null },
+  analytics: { days: "" },
   recordCache: {}, // resume_id -> full record
   settings: null,
 };
@@ -641,7 +642,7 @@ async function renderResume(id, params) {
   const norm = record.text_normalization || {};
   const extractedText = record.extracted_text || "";
   const normalizedText = norm.normalized_text || "";
-  const activeTab = ["text", "normalized", "ai"].includes(params.tab) ? params.tab : "text";
+  const activeTab = ["text", "normalized", "selected", "ai"].includes(params.tab) ? params.tab : "text";
 
   // --- Shared extractor viewer state -------------------------------------
   // ONE extractor selector above the tabs drives BOTH the Extracted and
@@ -664,6 +665,12 @@ async function renderResume(id, params) {
     || toolAttempts.find((a) => a.extractor_name === record.extractor_used)
     || toolAttempts.find((a) => (a.extracted_text || a.text))
     || toolAttempts[0] || null;
+  // Source extractor of the record's selected normalized text (the
+  // normalized text produced from the pipeline-selected extractor and
+  // sent to the AI stage) — shown in its own "Selected Normalized
+  // Text" tab, NOT in the extractor selector.
+  const selectedSource = norm.source || record.extractor_used
+    || (finalAttempt ? finalAttempt.extractor_name : null);
   let currentExtractor = (params.extractor && viewerTools.includes(params.extractor))
     ? params.extractor
     : (finalAttempt ? finalAttempt.extractor_name : (viewerTools[0] || null));
@@ -765,6 +772,7 @@ async function renderResume(id, params) {
       <div class="tabs" role="tablist">
         <button data-tab="text" class="${activeTab === "text" ? "active" : ""}">Extracted Text</button>
         <button data-tab="normalized" class="${activeTab === "normalized" ? "active" : ""}">Normalized Text</button>
+        <button data-tab="selected" class="${activeTab === "selected" ? "active" : ""}">Selected Normalized Text</button>
         <button data-tab="ai" class="${activeTab === "ai" ? "active" : ""}">AI Output</button>
       </div>
       <div id="tabPanel"></div>
@@ -865,6 +873,18 @@ async function renderResume(id, params) {
         ${normText ? `<div class="text-panel">${escapeHtml(normText)}</div>`
           : '<p class="hint">No normalized text is available for this extractor.</p>'}`;
       $("copyNormBtn").addEventListener("click", () => copyText(normText));
+    } else if (tab === "selected") {
+      panel.innerHTML = `
+        <div class="panel-toolbar">
+          <span class="hint">Selected normalized text · from ${escapeHtml(engineLabel(selectedSource))} (the pipeline-selected extractor) · ${normalizedText.length.toLocaleString()} characters${norm.original_chars != null ? " · Original: " + Number(norm.original_chars).toLocaleString() + " characters" : ""}${norm.estimated_reduction_percent != null ? " · Reduction: " + norm.estimated_reduction_percent + "%" : ""}</span>
+          <span class="spacer"></span>
+          <button class="btn btn-small" id="copySelectedBtn" type="button">Copy text</button>
+        </div>
+        ${(norm.normalization_steps || []).length ? `<p class="hint">Steps applied: ${norm.normalization_steps.map(escapeHtml).join(" · ")}</p>` : ""}
+        ${norm.error ? `<div class="error-box">${escapeHtml(norm.error)}</div>` : ""}
+        ${normalizedText ? `<div class="text-panel">${escapeHtml(normalizedText)}</div>`
+          : '<p class="hint">No selected normalized text is stored for this resume.</p>'}`;
+      $("copySelectedBtn").addEventListener("click", () => copyText(normalizedText));
     } else {
       const resumeJson = record.resume_json;
       panel.innerHTML = `
@@ -904,7 +924,7 @@ async function renderResume(id, params) {
     extractorSelect.addEventListener("change", (e) => {
       currentExtractor = e.target.value;
       drawExtractorMeta();
-      if (currentTab !== "ai") showTab(currentTab);
+      if (currentTab !== "ai" && currentTab !== "selected") showTab(currentTab);
     });
   }
   function selectExtractorInViewer(name) {
@@ -1070,10 +1090,253 @@ async function renderSettings() {
 }
 
 /* ------------------------------------------------------------------ */
+/* Analytics (Phase 1) — aggregates from GET /api/analytics/summary.  */
+/* Hand-rolled inline SVG charts; no external libraries.              */
+/* ------------------------------------------------------------------ */
+
+const CHART_COLORS = ["#1d4ed8", "#15803d", "#b45309", "#b91c1c", "#7c3aed", "#0891b2", "#64748b", "#db2777"];
+
+function fmtPct(value) {
+  return value === null || value === undefined ? "—" : Number(value).toFixed(1) + "%";
+}
+
+function fmtScore(value) {
+  return value === null || value === undefined ? "—" : Number(value).toFixed(1);
+}
+
+function hBarChart(items, color) {
+  // items: [{label, value, display}] — horizontal bars scaled to the max.
+  const max = Math.max(1, ...items.map((i) => i.value || 0));
+  const rowH = 22, labelW = 130, barW = 300, valW = 70;
+  const height = Math.max(1, items.length) * rowH + 4;
+  const rows = items.map((item, idx) => {
+    const y = idx * rowH + 4;
+    const w = Math.max(0, (item.value || 0) / max * barW);
+    return `<text x="0" y="${y + 13}" font-size="12" fill="var(--muted)">${escapeHtml(item.label)}</text>
+      <rect x="${labelW}" y="${y + 3}" width="${w.toFixed(1)}" height="12" rx="2" fill="${color || CHART_COLORS[0]}"></rect>
+      <text x="${labelW + barW + 8}" y="${y + 13}" font-size="12" fill="var(--text)">${escapeHtml(item.display)}</text>`;
+  }).join("");
+  return `<svg class="chart-box" viewBox="0 0 ${labelW + barW + valW} ${height}" role="img">${rows}</svg>`;
+}
+
+function vBarChart(items, color) {
+  // items: [{label, value, display}] — vertical bars (histogram).
+  const max = Math.max(1, ...items.map((i) => i.value || 0));
+  const chartH = 110, barW = 54, gap = 18, base = chartH + 4;
+  const width = items.length * (barW + gap) + gap;
+  const bars = items.map((item, idx) => {
+    const h = Math.max(0, (item.value || 0) / max * chartH);
+    const x = gap + idx * (barW + gap);
+    return `<rect x="${x}" y="${(base - h).toFixed(1)}" width="${barW}" height="${h.toFixed(1)}" rx="2" fill="${color || CHART_COLORS[0]}"></rect>
+      <text x="${x + barW / 2}" y="${(base - h - 5).toFixed(1)}" font-size="12" text-anchor="middle" fill="var(--text)">${escapeHtml(item.display)}</text>
+      <text x="${x + barW / 2}" y="${base + 16}" font-size="11" text-anchor="middle" fill="var(--muted)">${escapeHtml(item.label)}</text>`;
+  }).join("");
+  return `<svg class="chart-box" viewBox="0 0 ${width} ${base + 22}" role="img">${bars}</svg>`;
+}
+
+function donutChart(parts) {
+  // parts: [{label, value, color}] — ring segments; legend rendered by caller.
+  const total = parts.reduce((sum, p) => sum + (p.value || 0), 0);
+  const r = 52, c = 2 * Math.PI * r;
+  if (!total) {
+    return `<svg class="chart-box" viewBox="0 0 140 140" role="img"><circle cx="70" cy="70" r="${r}" fill="none" stroke="var(--border)" stroke-width="16"></circle><text x="70" y="74" font-size="12" text-anchor="middle" fill="var(--muted)">No data</text></svg>`;
+  }
+  let offset = 0;
+  const segments = parts.map((p) => {
+    const frac = (p.value || 0) / total;
+    const seg = `<circle cx="70" cy="70" r="${r}" fill="none" stroke="${p.color}" stroke-width="16"
+      stroke-dasharray="${(frac * c).toFixed(1)} ${c.toFixed(1)}" stroke-dashoffset="${(-offset * c).toFixed(1)}"
+      transform="rotate(-90 70 70)"></circle>`;
+    offset += frac;
+    return seg;
+  }).join("");
+  return `<svg class="chart-box" viewBox="0 0 140 140" role="img">${segments}<text x="70" y="74" font-size="15" font-weight="700" text-anchor="middle" fill="var(--text)">${fmtNum(total)}</text></svg>`;
+}
+
+function chartLegend(parts) {
+  return `<div class="chart-legend">${parts.map((p) =>
+    `<span><span class="swatch" style="background:${p.color}"></span>${escapeHtml(p.label)}: ${escapeHtml(p.display)}</span>`).join("")}</div>`;
+}
+
+function lineChart(points) {
+  // points: [{label, value}] — tokens per day.
+  const width = 640, height = 150, padL = 8, padR = 8, padT = 14, padB = 22;
+  if (!points.length) return `<p class="hint">No dated records in this range.</p>`;
+  const max = Math.max(1, ...points.map((p) => p.value || 0));
+  const stepX = points.length > 1 ? (width - padL - padR) / (points.length - 1) : 0;
+  const coords = points.map((p, idx) => {
+    const x = padL + idx * stepX;
+    const y = padT + (1 - (p.value || 0) / max) * (height - padT - padB);
+    return [x, y];
+  });
+  const poly = coords.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(" ");
+  const dots = coords.map(([x, y]) => `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.5" fill="${CHART_COLORS[0]}"></circle>`).join("");
+  const first = points[0], last = points[points.length - 1];
+  return `<svg class="chart-box" viewBox="0 0 ${width} ${height}" role="img">
+    <polyline points="${poly}" fill="none" stroke="${CHART_COLORS[0]}" stroke-width="2"></polyline>${dots}
+    <text x="${padL}" y="${height - 6}" font-size="11" fill="var(--muted)">${escapeHtml(first.label)}</text>
+    <text x="${width - padR}" y="${height - 6}" font-size="11" text-anchor="end" fill="var(--muted)">${escapeHtml(last.label)}</text>
+    <text x="${padL}" y="11" font-size="11" fill="var(--muted)">peak ${fmtNum(max)} / day</text></svg>`;
+}
+
+function renderAnalytics() {
+  const view = $("view-analytics");
+  const days = state.analytics.days;
+  view.innerHTML = `
+    <h2>Analytics</h2>
+    <p class="page-subtitle">Pipeline-wide insights from stored records — extractors, LLM tokens, and quality.</p>
+    <div class="analytics-toolbar">
+      <label for="analyticsRange">Range</label>
+      <select class="select-input" id="analyticsRange" aria-label="Analytics range">
+        <option value="" ${days === "" ? "selected" : ""}>All time</option>
+        <option value="7" ${days === "7" ? "selected" : ""}>Last 7 days</option>
+        <option value="30" ${days === "30" ? "selected" : ""}>Last 30 days</option>
+        <option value="90" ${days === "90" ? "selected" : ""}>Last 90 days</option>
+      </select>
+      <span class="hint" id="analyticsMeta"></span>
+    </div>
+    <div id="analyticsBody"><div class="loading">Computing analytics…</div></div>`;
+  $("analyticsRange").addEventListener("change", (e) => {
+    state.analytics.days = e.target.value;
+    loadAnalytics();
+  });
+  loadAnalytics();
+}
+
+async function loadAnalytics() {
+  const body = $("analyticsBody");
+  if (!body) return;
+  body.innerHTML = '<div class="loading">Computing analytics…</div>';
+  try {
+    const params = state.analytics.days ? { days: Number(state.analytics.days) } : {};
+    const data = await Api.getAnalytics(params);
+    const meta = $("analyticsMeta");
+    if (meta) {
+      const cov = data.meta.token_usage_coverage || {};
+      meta.textContent = `Based on ${fmtNum(data.meta.records_in_range)} of ${fmtNum(data.meta.records_total)} records` +
+        (cov.calls_total > cov.calls_with_usage
+          ? ` · Token totals cover ${fmtNum(cov.calls_with_usage)} of ${fmtNum(cov.calls_total)} LLM calls — the rest returned no usage`
+          : "");
+    }
+    body.innerHTML = analyticsHtml(data);
+  } catch (err) {
+    body.innerHTML = `<div class="error-box">${escapeHtml(err.message)}</div>`;
+  }
+}
+
+function analyticsHtml(data) {
+  if (!data.meta.records_in_range) {
+    return `<div class="card"><p>No records in this range — process a resume or widen the range.</p></div>`;
+  }
+  const k = data.kpis, t = data.tokens, q = data.quality, n = data.normalization;
+
+  const kpiCards = [
+    { value: fmtNum(k.total_processed), label: "Resumes processed" },
+    { value: fmtPct(k.success_rate_percent), label: "Extraction success rate" },
+    { value: fmtScore(k.avg_quality_score), label: "Avg quality score" },
+    { value: k.avg_duration_ms === null ? "—" : fmtMs(k.avg_duration_ms), label: "Avg processing time" },
+    { value: fmtNum(k.total_tokens), label: "Total LLM tokens" },
+    { value: fmtPct(k.fallback_rate_percent), label: "Fallback rate",
+      sub: k.fallback_base ? `of ${fmtNum(k.fallback_base)} records with fallback data` : "" },
+  ].map((c) => `<div class="kpi-card"><div class="kpi-value">${c.value}</div><div class="kpi-label">${c.label}</div>${c.sub ? `<div class="kpi-sub">${escapeHtml(c.sub)}</div>` : ""}</div>`).join("");
+
+  const extractorRows = data.extractors.map((row) => `<tr>
+      <td>${escapeHtml(engineLabel(row.name))}</td><td>${fmtNum(row.attempts)}</td>
+      <td>${fmtNum(row.succeeded)}</td><td>${fmtNum(row.failed)}</td><td>${fmtNum(row.selected)}</td>
+      <td>${fmtPct(row.win_rate_percent)}</td><td>${fmtScore(row.avg_quality)}</td>
+      <td>${row.avg_duration_ms === null ? "—" : fmtMs(row.avg_duration_ms)}</td>
+      <td>${row.avg_chars === null ? "—" : fmtNum(row.avg_chars)}</td>
+      <td>${fmtNum(row.wasted_attempts)} · ${fmtMs(row.wasted_ms)}</td></tr>`).join("");
+  const winBars = hBarChart(data.extractors.map((row) => ({
+    label: engineLabel(row.name), value: row.win_rate_percent || 0,
+    display: fmtPct(row.win_rate_percent),
+  })));
+  const shareParts = data.extractors.filter((row) => row.selected > 0).map((row, idx) => ({
+    label: engineLabel(row.name), value: row.selected, display: fmtNum(row.selected),
+    color: CHART_COLORS[idx % CHART_COLORS.length],
+  }));
+  const extractorCard = data.extractors.length ? `
+    <div class="card">
+      <h3>Extractor performance</h3>
+      <div style="overflow-x:auto"><table class="data-table">
+        <thead><tr><th>Tool</th><th>Attempts</th><th>OK</th><th>Failed</th><th>Selected</th><th>Win %</th><th>Avg quality</th><th>Avg time</th><th>Avg chars</th><th>Wasted (n · time)</th></tr></thead>
+        <tbody>${extractorRows}</tbody></table></div>
+      <div class="analytics-split" style="margin-top:14px">
+        <div><h4>Win rate %</h4>${winBars}</div>
+        <div><h4>Selected share</h4>${donutChart(shareParts)}${chartLegend(shareParts)}</div>
+      </div>
+    </div>` : "";
+
+  const tokenCard = `
+    <div class="card">
+      <h3>LLM &amp; tokens</h3>
+      <table class="kv-table">
+        <tr><td>Input tokens</td><td>${fmtNum(t.input)}</td></tr>
+        <tr><td>Output tokens</td><td>${fmtNum(t.output)}</td></tr>
+        <tr><td>Cached input tokens</td><td>${fmtNum(t.cached_input)}</td></tr>
+        <tr><td>Total tokens</td><td><strong>${fmtNum(t.total)}</strong></td></tr>
+        <tr><td>API calls</td><td>${fmtNum(t.api_calls)} — ${fmtNum(t.successful_calls)} ok · ${fmtNum(t.failed_calls)} failed · ${fmtNum(t.timed_out_calls)} timed out</td></tr>
+        <tr><td>Avg tokens / resume</td><td>${t.avg_per_resume === null ? "—" : fmtNum(Math.round(t.avg_per_resume))}</td></tr>
+        <tr><td>p95 tokens / resume</td><td>${t.p95_per_resume === null ? "—" : fmtNum(Math.round(t.p95_per_resume))}</td></tr>
+        <tr><td>Tokens / 1,000 extracted chars</td><td>${t.tokens_per_1000_chars === null ? "—" : fmtNum(Math.round(t.tokens_per_1000_chars))}</td></tr>
+      </table>
+      <h4 style="margin-top:14px">Tokens per day</h4>
+      ${lineChart((t.by_day || []).map((d) => ({ label: d.date, value: d.tokens })))}
+      ${t.normalization_tokens_saved ? `<p class="hint">Normalization saved ≈ ${fmtNum(t.normalization_tokens_saved)} estimated tokens of LLM input across these records.</p>` : ""}
+    </div>`;
+
+  const statusParts = [
+    { label: "PASS", value: q.pass, display: fmtNum(q.pass), color: "#15803d" },
+    { label: "WARNING", value: q.warning, display: fmtNum(q.warning), color: "#b45309" },
+    { label: "FAIL", value: q.fail, display: fmtNum(q.fail), color: "#b91c1c" },
+  ];
+  const filterBars = hBarChart([
+    { label: "Text Health", value: q.filters_avg.text_health || 0, display: fmtScore(q.filters_avg.text_health) },
+    { label: "Completeness", value: q.filters_avg.completeness || 0, display: fmtScore(q.filters_avg.completeness) },
+    { label: "Reading Order", value: q.filters_avg.reading_order || 0, display: fmtScore(q.filters_avg.reading_order) },
+  ], "#15803d");
+  const hist = vBarChart((q.histogram || []).map((b) => ({
+    label: b.bucket, value: b.count, display: fmtNum(b.count),
+  })), "#1d4ed8");
+  const missedRows = (q.missed_sections || []).map((m) => `<tr>
+      <td>${escapeHtml(m.section)}</td><td>${fmtNum(m.missing)}</td><td>${fmtNum(m.of)}</td><td>${fmtPct(m.percent)}</td></tr>`).join("");
+  const flagsList = (q.top_flags || []).length
+    ? `<table class="kv-table">${q.top_flags.map((f) => `<tr><td>${escapeHtml(f.flag)}</td><td>${fmtNum(f.count)}</td></tr>`).join("")}</table>`
+    : `<p class="hint">No quality flags recorded.</p>`;
+  const qualityCard = `
+    <div class="card">
+      <h3>Quality</h3>
+      <div class="analytics-split">
+        <div><h4>Final quality status</h4>${donutChart(statusParts)}${chartLegend(statusParts)}
+          <h4 style="margin-top:14px">Average filter scores</h4>${filterBars}</div>
+        <div><h4>Score distribution</h4>${hist}</div>
+      </div>
+      <h4 style="margin-top:14px">Most-missed sections</h4>
+      <div style="overflow-x:auto"><table class="data-table">
+        <thead><tr><th>Section</th><th>Missing in</th><th>Of</th><th>%</th></tr></thead>
+        <tbody>${missedRows}</tbody></table></div>
+      <h4 style="margin-top:14px">Top quality flags</h4>${flagsList}
+    </div>`;
+
+  const normCard = `
+    <div class="card">
+      <h3>Normalization</h3>
+      <table class="kv-table">
+        <tr><td>Records normalized</td><td>${fmtNum(n.applied)}</td></tr>
+        <tr><td>Avg text reduction</td><td>${fmtPct(n.avg_reduction_percent)}</td></tr>
+        <tr><td>Total characters removed</td><td>${fmtNum(n.total_chars_removed)}</td></tr>
+        <tr><td>Estimated tokens saved</td><td>${fmtNum(n.estimated_tokens_saved)}</td></tr>
+      </table>
+    </div>`;
+
+  return `<div class="kpi-grid">${kpiCards}</div>${extractorCard}${tokenCard}${qualityCard}${normCard}`;
+}
+
+/* ------------------------------------------------------------------ */
 /* Router + boot                                                      */
 /* ------------------------------------------------------------------ */
 
-const VIEWS = ["process", "history", "resume", "settings"];
+const VIEWS = ["process", "history", "resume", "analytics", "settings"];
 
 function parseHash() {
   const raw = location.hash.replace(/^#\/?/, "");
@@ -1083,7 +1346,7 @@ function parseHash() {
   if (segments[0] === "resume" && segments[1]) {
     return { view: "resume", id: decodeURIComponent(segments[1]), params };
   }
-  if (["history", "settings", "process"].includes(segments[0])) {
+  if (["history", "settings", "process", "analytics"].includes(segments[0])) {
     return { view: segments[0], params };
   }
   return { view: "process", params };
@@ -1101,6 +1364,7 @@ function route() {
     renderProcess();
   }
   if (view === "history") renderHistory();
+  if (view === "analytics") renderAnalytics();
   if (view === "settings") renderSettings();
   if (view === "resume") renderResume(id, params);
   window.scrollTo(0, 0);

@@ -9,8 +9,23 @@
 # Detection:
 #   - `aliases` are matched against normalised heading lines
 #     (case-insensitive, trailing ':' / '#' / '-' stripped).
+#   - `conditional_aliases` are heading matches that only count when
+#     the content following the heading is substantive (see
+#     `conditional_content` below) — for headings that can also be a
+#     mere label, e.g. "Portfolio" above a single URL.
 #   - `patterns` are optional regexes matched against the whole text,
 #     used for sections that rarely have a heading (e.g. contact info).
+#
+# Alias evidence: aliases marked [corpus] were observed as real
+# headings in a 41-resume corpus analysed earlier the same day;
+# aliases marked [cv100] were observed in the 95-resume dataset
+# CVs_1_be3h.zip (99 files: 90 PDF, 7 DOCX, 2 DOC; 4 PDFs were
+# image-only with no extractable text). Frequencies are per-dataset
+# and are NOT summed across datasets. Aliases marked [spec] were
+# specified by the product owner from real resumes outside both
+# corpora. Unmarked aliases predate the corpus analyses. Full
+# evidence: HEADING_ANALYSIS.md in this package.
+# outside that corpus. Unmarked aliases predate the corpus analysis.
 
 sections:
   contact_information:
@@ -30,13 +45,35 @@ sections:
     display_name: "Summary"
     importance: "optional"
     aliases:
-      - "summary"
-      - "professional summary"
-      - "profile"
-      - "profile summary"
-      - "objective"
+      - "objectives"                 # [cv100] x1 — only new one found in your data
+      - "professional profile"
+      - "career profile"
+      - "candidate profile"
+      - "executive profile"
+      - "personal summary"
+      - "professional overview"
+      - "career overview"
+      - "overview"
+      - "introduction"
+      - "professional introduction"
+      - "self introduction"
+      - "professional background"
+      - "summary of qualifications"
+      - "qualifications summary"
+      - "key qualifications"
+      - "resume summary"
+      - "career synopsis"
+      - "professional objective"
+      - "employment objective"
+      - "objective statement"
+      - "career aim"
+      - "career goal"
+      - "career goals"
+      - "statement of purpose"
+      - "bio"
+      - "professional bio"
       - "career objective"
-      - "about me"
+
 
   skills:
     display_name: "Skills"
@@ -50,6 +87,37 @@ sections:
       - "tech stack"
       - "skills and technologies"
       - "areas of expertise"
+      - "expertise"                            # [corpus] x2
+      - "relevant skills"                      # [corpus] x2
+      - "skills summary"                       # [corpus] x1
+      - "skillset"                             # [corpus] x1
+      - "it skills"                            # [corpus] x1
+      - "software and tools"                   # [corpus] x1
+      - "tools and technologies"               # [corpus] x1
+      - "technical environment"                # [corpus] x1
+      - "core skills and competencies"         # [corpus] x1
+      - "core competencies and professional strengths"  # [corpus] x1
+      - "core infrastructure competencies"     # [corpus] x1
+      - "communication skills"                 # [corpus] x1
+      - "interpersonal skills"                 # [corpus] x1
+      - "editing skill"                        # [corpus] x1
+      - "key skills"                          # [cv100] x3
+      - "soft skills"                         # [cv100] x3
+      - "professional skills"                 # [cv100] x2
+      - "core competencies and technical skills"  # [cv100] x1
+      - "skills and competencies"             # [cv100] x1
+      - "key skills and competencies"         # [cv100] x1
+      - "technical and quantitative skills"   # [cv100] x1
+      - "software skills"                     # [cv100] x1
+      - "software exposure"                   # [cv100] x1
+      - "skills and certifications"           # [cv100] x1 (combined; also under certifications)
+      - "certificates and skills"             # [cv100] x1 (combined; also under certifications)
+    conditional_aliases:
+      # "Tools" alone can be a genuine skills heading ([corpus] x1,
+      # followed by a tool list) but is weak on its own — the content
+      # under it must be substantive.
+      - "tools"
+      - "technical tools"                     # [cv100] x1
 
   work_experience:
     display_name: "Work Experience"
@@ -65,7 +133,15 @@ sections:
       - "experience history"
       - "internship experience"
       - "internships"
+      - "previous experience"                  # [corpus] x1
+      - "freelance experience"                 # [corpus] x1
+      - "organisational experience"           # [cv100] x1
+      - "post qualification work experience"  # [cv100] x1
+      - "pre qualification work experience"   # [cv100] x1
+      - "working experience"                  # [cv100] x1 (also seen with a '(2.5+ Years)' suffix, which exact match cannot capture)
 
+    conditional_aliases:
+      - "work profile"                        # [cv100] x1 (heads a duties list)
   education:
     display_name: "Education"
     importance: "recommended"
@@ -79,6 +155,41 @@ sections:
       - "qualifications"
       - "qualification"
       - "academic details"
+      - "academic qualification"               # [corpus] x2 (singular form)
+      # Combined heading: one line covering two sections. The same
+      # alias is also listed under certifications, so BOTH sections
+      # are detected from the single heading. [corpus] x2
+      - "education and certifications"
+      - "educational qualification"           # [cv100] x6 (singular form)
+      - "technical qualification"             # [cv100] x3
+      - "professional qualification"          # [cv100] x2
+      - "academics"                           # [cv100] x2
+      - "education and credentials"           # [cv100] x1
+      - "education and professional qualifications"  # [cv100] x1
+      - "academic and professional qualifications"  # [cv100] x1
+      - "education details"                   # [cv100] x1
+      - "education qualification"             # [cv100] x1
+      - "educational accomplishments"       # [cv100] x1
+      - "education level"                      # [cv100] label form: "Education level: ITI / Diploma"
+      - "education qualifications"            # [cv100] x1 plural of the singular form
+      - "education and qualification" 
+      - "education & qualification"         # [cv100] x1 combined form
+              # [cv100] x1 combined form
+    patterns:
+      # Content evidence for resumes whose education is a TABLE or a
+      # list with no heading at all (the reported case: Degree /
+      # Board / Institute / % / Year columns). Patterns only fire
+      # when no heading matched, and are recorded at lower
+      # confidence (0.8, detection_method "pattern").
+      # All three table headers together — never one alone.
+      - "(?i)\\bdegree\\b(?=[\\s\\S]*\\binstitute\\b)(?=[\\s\\S]*\\bboard\\b)"
+      # Degree / qualification names stated in the text.
+      - "(?i)\\b(PGDM|MBA|MCA|BCA|B\\.?Com\\.?|M\\.?Com\\.?|B\\.?Tech\\.?|M\\.?Tech\\.?|B\\.?Sc\\.?|M\\.?Sc\\.?|B\\.E\\.?|M\\.E\\.?|BBA|Bachelor|Master of|Master's|Ph\\.?D\\.?|Class\\s+XII|Class\\s+X\\b|HSC|SSC|Diploma|CGPA|CGPI)\\b"
+    conditional_aliases:
+      # [corpus] x1 — content was a final-year project and workshop
+      # record; count only with substantive content underneath.
+      - "academic highlights"
+      - "academic achievements"               # [cv100] x1
 
   projects:
     display_name: "Projects"
@@ -92,6 +203,27 @@ sections:
       - "technical projects"
       - "selected projects"
       - "project experience"
+      - "select projects"                      # [corpus] x1
+      - "flagship projects"                    # [corpus] x1
+      - "portfolio and work samples"           # [spec]
+      - "work samples"                         # [spec]
+      - "selected works"                       # [spec]
+      - "project portfolio"                    # [spec]
+      - "projects and portfolio"               # [spec]
+      - "key projects and achievements"        # [spec]
+      - "relevant projects"                    # [spec]
+      - "project work"                        # [cv100] x1
+      - "internship and academic project"     # [cv100] x1
+    conditional_aliases:
+      # These headings can also be a bare link label (e.g.
+      # "Portfolio: https://example.com" in a contact block), so they
+      # count as Projects only when substantive work-sample content
+      # follows the heading.
+      - "portfolio"                            # [spec]
+      - "professional portfolio"               # [spec]
+      - "technical portfolio"                  # [spec]
+      - "portfolio and website"                # [corpus] x1 (link label there — gate correctly rejects it)
+      - "tech stack projects"                  # [corpus] x1
 
   certifications:
     display_name: "Certifications"
@@ -103,7 +235,130 @@ sections:
       - "licenses and certifications"
       - "professional certifications"
       - "courses and certifications"
+      - "certifications and training"          # [corpus] x1
+      - "certifications and technical training"  # [corpus] x1
+      # Combined heading — see the note under education. [corpus] x2
+      - "education and certifications"
+      - "training and certifications"         # [cv100] x1
+      - "certifications and workshops"        # [cv100] x1
+      - "certifications and professional development"  # [cv100] x1
+      - "certifications and specialized training"  # [cv100] x1
+      - "certification"                       # [cv100] x1 (singular form)
+      - "additional certification"            # [cv100] x1
+      - "awards and certifications"           # [cv100] x2 (combined with Awards)
+      - "skills and certifications"           # [cv100] x1 (combined; also under skills)
+      - "certificates and skills"             # [cv100] x1 (combined; also under skills)
+      - "certifications and achievements"     # [cv100] x1 (combined with Achievements)
+      - "achievements certifications and extra curricular activities"  # [cv100] x1 (combined heading)
+      - "extra curricular activities achievements and certifications"  # [cv100] x1 (combined heading)
 
+    conditional_aliases:
+      - "vocational training"                 # [cv100] x1
+      - "technical training"                  # [cv100] x1 (+ x1 in the earlier corpus)
+    patterns:
+      # Content evidence when credentials are stated without a
+      # Certifications heading (e.g. "CFA LEVEL 2 Cleared",
+      # "Project Manager | PMP Certified"). The word forms require
+      # a credential shape ("Certified X", "Certification in X",
+      # 'Certification: "X"') so a duty sentence such as "documents
+      # and certifications" cannot fire it. Bare "certificate" is
+      # deliberately NOT a pattern: in this dataset it meant school
+      # certificates (HSC/SSC — education) and a "Certificate of
+      # Appreciation" (an award) more often than a certification.
+      - "(?i)\\b(CFA|PMP|CPA|FRM|CISSP|CISA|PRINCE2)\\b"
+      - "(?i)\\bcertified\\b|\\bcertifications?\\s+(?:in|from)\\b|\\bcertifications?\\s*[:\\-\"“]"
+# Conditional (content-gated) alias validation. A conditional heading
+# counts only if the lines after it — up to the next recognised
+# section heading or `max_window_lines`, whichever comes first —
+# contain at least `min_words` words once URLs, email addresses and
+# phone numbers are removed. This keeps a bare link label such as
+# "Portfolio: https://example.com" from counting as a Projects
+# section while accepting a genuine portfolio section.
+conditional_content:
+  min_words: 8
+  max_window_lines: 15
+
+# Sections observed in real resumes that are NOT part of completeness
+# scoring. They are recorded here as an evidence-based dictionary for
+# future product decisions; the Completeness filter does not read
+# this block and these headings never affect any score.
+observed_unscored_sections:
+  languages:
+    display_name: "Languages"
+    aliases:
+      - "languages"                            # [corpus] x6
+      - "language"                             # [corpus] x3
+      - "languages known"                      # [corpus] x1
+      - "language known"                       # [corpus] x1
+      - "languages and interests"              # [corpus] x1 (combined with Interests)
+      - "indian languages known"              # [cv100] x1
+    note: "Ambiguous in tech resumes: 'Languages: Python, SQL' denotes programming languages and belongs under Skills content, not a spoken-languages section."
+  achievements:
+    display_name: "Achievements"
+    aliases:
+      - "achievements"                         # [corpus] x6
+      - "key achievements"                     # [corpus] x4
+      - "achievement"                         # [cv100] x1 (singular form)
+      - "achievements and recognition"        # [cv100] x1
+      - "achievements and extracurricular activities"  # [cv100] x1 (combined)
+      - "extra curricular achievements"       # [cv100] x1
+  awards:
+    display_name: "Awards"
+    aliases:
+      - "awards"                               # [corpus] x1
+      - "awards and recognition"               # [corpus] x1
+      - "honor and award"                      # [corpus] x1
+      - "awards and certifications"           # [cv100] x2 (combined with Certifications)
+  publications:
+    display_name: "Publications"
+    aliases:
+      - "publications and research"            # [corpus] x1
+      - "publications"                        # [cv100] x1
+  volunteer_experience:
+    display_name: "Volunteer Experience"
+    aliases:
+      - "volunteering and community engagement"  # [corpus] x1
+  interests:
+    display_name: "Interests"
+    aliases:
+      - "hobbies and interests"                # [corpus] x2
+      - "interests"                            # [corpus] x1
+      - "hobbies"                              # [corpus] x1
+      - "strength and hobby"                   # [corpus] x2 (combined with Strengths)
+      - "languages and interests"              # [corpus] x1 (combined with Languages)
+      - "area of interest"                    # [cv100] x1
+      - "areas of interests"                  # [cv100] x1
+      - "interest"                            # [cv100] x1
+      - "interests hobbies"                   # [cv100] x1
+  strengths:
+    display_name: "Strengths"
+    aliases:
+      - "strengths"                            # [corpus] x2
+      - "strength and hobby"                   # [corpus] x2 (combined with Interests)
+      - "strength"                            # [cv100] x3 (singular form)
+  declaration:
+    display_name: "Declaration"
+    aliases:
+      - "declaration"                          # [corpus] x2
+  links:
+    display_name: "Links"
+    aliases:
+      - "links"                                # [corpus] x2
+    note: "Link blocks are contact-adjacent; URLs are already captured by the hyperlink layer."
+
+  references:
+    display_name: "References"
+    aliases:
+      - "reference"                            # [cv100] x1
+  extracurricular_activities:
+    display_name: "Extracurricular Activities"
+    aliases:
+      - "extra curricular activities"          # [cv100] x3
+      - "activities"                           # [cv100] x1
+  leadership:
+    display_name: "Leadership"
+    aliases:
+      - "leadership"                           # [cv100] x1
 # Undetected sections become uncertain at or below this text health score.
 uncertainty_text_health_score: 40
 

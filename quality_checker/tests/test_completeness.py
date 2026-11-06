@@ -70,8 +70,15 @@ def test_missing_optional_sections_cost_less_than_required(filt):
     # Resume missing only optional sections (Projects / Certifications / Summary
     # all absent is covered in PARTIAL_RESUME too) should keep a decent score
     # when required + recommended sections are present.
+    # The credential wording is neutralised too: since the
+    # content-evidence patterns were added, a stated credential
+    # ("NASSCOM Certified Data Scientist") counts as Certifications
+    # evidence even under a renamed heading — which is the intended
+    # behaviour, so this fixture must remove the evidence itself to
+    # keep testing genuinely-absent optional sections.
     text = NORMAL_RESUME.replace("Projects", "Portfolio Work").replace(
-        "Certifications", "Awards and Honours").replace("Professional Summary", "Overview")
+        "Certifications", "Awards and Honours").replace(
+        "Professional Summary", "Overview").replace("Certified", "Awarded")
     result = filt.evaluate(text)
     assert "Projects" in result.missing_optional
     assert "Certifications" in result.missing_optional

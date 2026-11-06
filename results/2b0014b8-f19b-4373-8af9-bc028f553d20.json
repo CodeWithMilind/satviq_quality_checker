@@ -1,0 +1,896 @@
+{
+  "resume_id": "2b0014b8-f19b-4373-8af9-bc028f553d20",
+  "filename": "SHJ-5444_SHC-383074.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 253837,
+  "uploaded_at": "2026-11-06T10:32:28.632259+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 7712.08,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 7712.08,
+      "text": "BHAWIKA VADHVA Chartered Accountant\n+91 9111393391 bhawikavadhva@gmail.com linkedin.com/in/bhawikavadhva26\nOct 2021 – Oct 2024\nUdaipur\nMay 2026\n2018 - 2021\n2018\n2016\nSUMMARY\n\nChartered Accountant with over three years of experience in Financial Analysis, Audit, and Financial Reporting across Hospitality,\nReal Estate, Construction, Petroleum, Marble, Education, and Public Sector organizations. Skilled in P&L Analysis, Variance\nAnalysis, Working Capital Analysis, Financial Statement Analysis, and Management Reporting to support strategic decision-\nmaking.\nWORK EXPERIENCE\n\nArticle Trainee\n\nSatyam SVG & Co.\n\n\tPerformed Financial Statement Analysis for 15+ clients across Hospitality, Real Estate, Construction, Petroleum, Marble, and\nEducation sectors by analyzing P&L Statements, Balance Sheets, and supporting schedules to identify Revenue Trends, Cost\nDrivers, Profitability, and Financial Risks.\n\n\tEvaluated the Business Performance of organizations with annual turnover ranging from ₹50–400 crore through analysis of\nRevenue, Operating Expenses, Working Capital, and Capital Expenditure, delivering actionable Financial Insights to\nmanagement.\n\n\tConducted Variance Analysis and assessed Liquidity, Profitability, and Working Capital, identifying key financial trends to\nsupport Business Decision-Making and strategic discussions.\n\n\tReviewed internal financial processes, strengthened Internal Controls, improved Reporting Accuracy, and recommended\nProcess Improvements to enhance operational efficiency and support reliable financial reporting.\n\n\tExecuted Statutory, Bank, Tax, and Government Audits, developing expertise in Financial Reporting, Risk Assessment,\nCompliance, and Financial Reconciliations.\n\n\tPrepared and reviewed Financial Reports, reconciliations, and supporting schedules while collaborating with Partners, Senior\nManagement, and Cross-functional Teams to communicate financial observations and recommend business-focused solutions.\n\n\tCollaborated with Partners, Senior Management, and Cross-functional Teams to communicate financial observations, resolve\naccounting issues, and recommend Business-Oriented Solutions.\n\n\nCERTIFICATIONS & SPECIALIZED TRAINING\n\nFinancial Modelling & Valuation | CA Monk\n\tBuilt integrated Three-Statement Financial Models incorporating Income Statement, Balance Sheet, and Cash Flow\nForecasting.\n\n\tPerformed Discounted Cash Flow (DCF) Valuation, Trading Comparable Analysis, and Transaction Comparable Analysis to\nevaluate Business Performance and Enterprise Value.\n\n\tDeveloped Financial Forecasts, Scenario Analysis, and Valuation Models.\n\n\tConducted Industry Research, Peer Benchmarking, and Financial Analysis to support valuation assumptions.\n\n\nMarketplace Business Simulation | Virtual Corporate Strategy\n\tRanked among the Top 10% Globally in a six-quarter simulation involving Budgeting, Pricing Strategy, Demand Planning,\nProduction Planning, Investment Decisions, and Profitability Management.\n\n\tPrepared Cash Flow Forecasts, Budgets, ROI Analysis, and financial projections to optimize profitability while maintaining\nliquidity.\n\n\tEvaluated Business Performance using Financial KPIs, Profitability Analysis, and Scenario-Based Decision Making.\n\n\nEDUCATION\n\nChartered Accountant\n\nThe Institute of Chartered Accountants of India\n\nScore: 52%\n\n(Exemption in AFM)\nBachelor of Commerce\n\nDAVV\n\nScore: 71%\n\n12th\n\nCBSE\n\nScore: 93%\n\n(District Topper)\n10th\n\nCBSE\n\nScore: GPA 9.0\n\nSKILLS\n\nTools : Power BI, Advanced Excel (Pivot Tables, Macros, VBA), Tally, AI Tools for Finance\n\nFinancial Skills: Financial Planning & Analysis (FP&A), Financial Statement Analysis, Budgeting & Forecasting, Financial Modelling &\nValuation, Business Performance Analysis\n\n\ntel:+91 9111393391\nmailto:bhawikavadhva@gmail.com\nhttps://www.linkedin.com/in/bhawikavadhva26",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-06T10:32:20.836534+00:00",
+      "completed_at": "2026-11-06T10:32:28.549531+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "2b0014b8-f19b-4373-8af9-bc028f553d20",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3804,
+            "word_count": 445,
+            "line_count": 107,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.130652,
+            "symbol_count": 3,
+            "symbol_ratio": 0.000789,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3804,
+            "word_count": 445,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications and specialized training"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "bhawikavadhva@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 97,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 15,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 69,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS & SPECIALIZED TRAINING",
+                "detection_method": "heading",
+                "line_number": 45,
+                "evidence": "CERTIFICATIONS & SPECIALIZED TRAINING",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Summary": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3804,
+            "word_count": 445,
+            "line_count": 107,
+            "non_empty_line_count": 68,
+            "short_line_count": 26,
+            "short_line_ratio": 0.382353,
+            "fragmented_line_count": 23,
+            "fragmented_line_ratio": 0.338235,
+            "mean_line_length": 54.18,
+            "median_line_length": 40.5,
+            "line_length_stdev": 46.72,
+            "line_length_cv": 0.862292,
+            "broken_sentence_count": 8,
+            "broken_sentence_ratio": 0.119403,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "2b0014b8-f19b-4373-8af9-bc028f553d20-attempt-1",
+      "resume_id": "2b0014b8-f19b-4373-8af9-bc028f553d20",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "BHAWIKA VADHVA Chartered Accountant\n+91 9111393391 bhawikavadhva@gmail.com linkedin.com/in/bhawikavadhva26\nOct 2021 – Oct 2024\nUdaipur\nMay 2026\n2018 - 2021\n2018\n2016\nSUMMARY\n\nChartered Accountant with over three years of experience in Financial Analysis, Audit, and Financial Reporting across Hospitality,\nReal Estate, Construction, Petroleum, Marble, Education, and Public Sector organizations. Skilled in P&L Analysis, Variance\nAnalysis, Working Capital Analysis, Financial Statement Analysis, and Management Reporting to support strategic decision-\nmaking.\nWORK EXPERIENCE\n\nArticle Trainee\n\nSatyam SVG & Co.\n\n\tPerformed Financial Statement Analysis for 15+ clients across Hospitality, Real Estate, Construction, Petroleum, Marble, and\nEducation sectors by analyzing P&L Statements, Balance Sheets, and supporting schedules to identify Revenue Trends, Cost\nDrivers, Profitability, and Financial Risks.\n\n\tEvaluated the Business Performance of organizations with annual turnover ranging from ₹50–400 crore through analysis of\nRevenue, Operating Expenses, Working Capital, and Capital Expenditure, delivering actionable Financial Insights to\nmanagement.\n\n\tConducted Variance Analysis and assessed Liquidity, Profitability, and Working Capital, identifying key financial trends to\nsupport Business Decision-Making and strategic discussions.\n\n\tReviewed internal financial processes, strengthened Internal Controls, improved Reporting Accuracy, and recommended\nProcess Improvements to enhance operational efficiency and support reliable financial reporting.\n\n\tExecuted Statutory, Bank, Tax, and Government Audits, developing expertise in Financial Reporting, Risk Assessment,\nCompliance, and Financial Reconciliations.\n\n\tPrepared and reviewed Financial Reports, reconciliations, and supporting schedules while collaborating with Partners, Senior\nManagement, and Cross-functional Teams to communicate financial observations and recommend business-focused solutions.\n\n\tCollaborated with Partners, Senior Management, and Cross-functional Teams to communicate financial observations, resolve\naccounting issues, and recommend Business-Oriented Solutions.\n\n\nCERTIFICATIONS & SPECIALIZED TRAINING\n\nFinancial Modelling & Valuation | CA Monk\n\tBuilt integrated Three-Statement Financial Models incorporating Income Statement, Balance Sheet, and Cash Flow\nForecasting.\n\n\tPerformed Discounted Cash Flow (DCF) Valuation, Trading Comparable Analysis, and Transaction Comparable Analysis to\nevaluate Business Performance and Enterprise Value.\n\n\tDeveloped Financial Forecasts, Scenario Analysis, and Valuation Models.\n\n\tConducted Industry Research, Peer Benchmarking, and Financial Analysis to support valuation assumptions.\n\n\nMarketplace Business Simulation | Virtual Corporate Strategy\n\tRanked among the Top 10% Globally in a six-quarter simulation involving Budgeting, Pricing Strategy, Demand Planning,\nProduction Planning, Investment Decisions, and Profitability Management.\n\n\tPrepared Cash Flow Forecasts, Budgets, ROI Analysis, and financial projections to optimize profitability while maintaining\nliquidity.\n\n\tEvaluated Business Performance using Financial KPIs, Profitability Analysis, and Scenario-Based Decision Making.\n\n\nEDUCATION\n\nChartered Accountant\n\nThe Institute of Chartered Accountants of India\n\nScore: 52%\n\n(Exemption in AFM)\nBachelor of Commerce\n\nDAVV\n\nScore: 71%\n\n12th\n\nCBSE\n\nScore: 93%\n\n(District Topper)\n10th\n\nCBSE\n\nScore: GPA 9.0\n\nSKILLS\n\nTools : Power BI, Advanced Excel (Pivot Tables, Macros, VBA), Tally, AI Tools for Finance\n\nFinancial Skills: Financial Planning & Analysis (FP&A), Financial Statement Analysis, Budgeting & Forecasting, Financial Modelling &\nValuation, Business Performance Analysis\n\n\ntel:+91 9111393391\nmailto:bhawikavadhva@gmail.com\nhttps://www.linkedin.com/in/bhawikavadhva26",
+      "extracted_text_length": 3804,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "2b0014b8-f19b-4373-8af9-bc028f553d20",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3804,
+            "word_count": 445,
+            "line_count": 107,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.130652,
+            "symbol_count": 3,
+            "symbol_ratio": 0.000789,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3804,
+            "word_count": 445,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications and specialized training"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "bhawikavadhva@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 97,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 15,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 69,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS & SPECIALIZED TRAINING",
+                "detection_method": "heading",
+                "line_number": 45,
+                "evidence": "CERTIFICATIONS & SPECIALIZED TRAINING",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Summary": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3804,
+            "word_count": 445,
+            "line_count": 107,
+            "non_empty_line_count": 68,
+            "short_line_count": 26,
+            "short_line_ratio": 0.382353,
+            "fragmented_line_count": 23,
+            "fragmented_line_ratio": 0.338235,
+            "mean_line_length": 54.18,
+            "median_line_length": 40.5,
+            "line_length_stdev": 46.72,
+            "line_length_cv": 0.862292,
+            "broken_sentence_count": 8,
+            "broken_sentence_ratio": 0.119403,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "BHAWIKA VADHVA Chartered Accountant\n+91 9111393391 bhawikavadhva@gmail.com linkedin.com/in/bhawikavadhva26\nOct 2021 – Oct 2024\nUdaipur\nMay 2026\n2018 - 2021\n2018\n2016\nSUMMARY\n\nChartered Accountant with over three years of experience in Financial Analysis, Audit, and Financial Reporting across Hospitality,\nReal Estate, Construction, Petroleum, Marble, Education, and Public Sector organizations. Skilled in P&L Analysis, Variance\nAnalysis, Working Capital Analysis, Financial Statement Analysis, and Management Reporting to support strategic decision-\nmaking.\nWORK EXPERIENCE\n\nArticle Trainee\n\nSatyam SVG & Co.\n\nPerformed Financial Statement Analysis for 15+ clients across Hospitality, Real Estate, Construction, Petroleum, Marble, and\nEducation sectors by analyzing P&L Statements, Balance Sheets, and supporting schedules to identify Revenue Trends, Cost\nDrivers, Profitability, and Financial Risks.\n\nEvaluated the Business Performance of organizations with annual turnover ranging from ₹50–400 crore through analysis of\nRevenue, Operating Expenses, Working Capital, and Capital Expenditure, delivering actionable Financial Insights to\nmanagement.\n\nConducted Variance Analysis and assessed Liquidity, Profitability, and Working Capital, identifying key financial trends to\nsupport Business Decision-Making and strategic discussions.\n\nReviewed internal financial processes, strengthened Internal Controls, improved Reporting Accuracy, and recommended\nProcess Improvements to enhance operational efficiency and support reliable financial reporting.\n\nExecuted Statutory, Bank, Tax, and Government Audits, developing expertise in Financial Reporting, Risk Assessment,\nCompliance, and Financial Reconciliations.\n\nPrepared and reviewed Financial Reports, reconciliations, and supporting schedules while collaborating with Partners, Senior\nManagement, and Cross-functional Teams to communicate financial observations and recommend business-focused solutions.\n\nCollaborated with Partners, Senior Management, and Cross-functional Teams to communicate financial observations, resolve\naccounting issues, and recommend Business-Oriented Solutions.\n\nCERTIFICATIONS & SPECIALIZED TRAINING\n\nFinancial Modelling & Valuation | CA Monk\nBuilt integrated Three-Statement Financial Models incorporating Income Statement, Balance Sheet, and Cash Flow\nForecasting.\n\nPerformed Discounted Cash Flow (DCF) Valuation, Trading Comparable Analysis, and Transaction Comparable Analysis to\nevaluate Business Performance and Enterprise Value.\n\nDeveloped Financial Forecasts, Scenario Analysis, and Valuation Models.\n\nConducted Industry Research, Peer Benchmarking, and Financial Analysis to support valuation assumptions.\n\nMarketplace Business Simulation | Virtual Corporate Strategy\nRanked among the Top 10% Globally in a six-quarter simulation involving Budgeting, Pricing Strategy, Demand Planning,\nProduction Planning, Investment Decisions, and Profitability Management.\n\nPrepared Cash Flow Forecasts, Budgets, ROI Analysis, and financial projections to optimize profitability while maintaining\nliquidity.\n\nEvaluated Business Performance using Financial KPIs, Profitability Analysis, and Scenario-Based Decision Making.\n\nEDUCATION\n\nChartered Accountant\n\nThe Institute of Chartered Accountants of India\n\nScore: 52%\n\n(Exemption in AFM)\nBachelor of Commerce\n\nDAVV\n\nScore: 71%\n\n12th\n\nCBSE\n\nScore: 93%\n\n(District Topper)\n10th\n\nCBSE\n\nScore: GPA 9.0\n\nSKILLS\n\nTools : Power BI, Advanced Excel (Pivot Tables, Macros, VBA), Tally, AI Tools for Finance\n\nFinancial Skills: Financial Planning & Analysis (FP&A), Financial Statement Analysis, Budgeting & Forecasting, Financial Modelling &\nValuation, Business Performance Analysis\n\ntel:+91 9111393391\nmailto:bhawikavadhva@gmail.com\nhttps://www.linkedin.com/in/bhawikavadhva26"
+    }
+  ],
+  "extracted_text": "BHAWIKA VADHVA Chartered Accountant\n+91 9111393391 bhawikavadhva@gmail.com linkedin.com/in/bhawikavadhva26\nOct 2021 – Oct 2024\nUdaipur\nMay 2026\n2018 - 2021\n2018\n2016\nSUMMARY\n\nChartered Accountant with over three years of experience in Financial Analysis, Audit, and Financial Reporting across Hospitality,\nReal Estate, Construction, Petroleum, Marble, Education, and Public Sector organizations. Skilled in P&L Analysis, Variance\nAnalysis, Working Capital Analysis, Financial Statement Analysis, and Management Reporting to support strategic decision-\nmaking.\nWORK EXPERIENCE\n\nArticle Trainee\n\nSatyam SVG & Co.\n\n\tPerformed Financial Statement Analysis for 15+ clients across Hospitality, Real Estate, Construction, Petroleum, Marble, and\nEducation sectors by analyzing P&L Statements, Balance Sheets, and supporting schedules to identify Revenue Trends, Cost\nDrivers, Profitability, and Financial Risks.\n\n\tEvaluated the Business Performance of organizations with annual turnover ranging from ₹50–400 crore through analysis of\nRevenue, Operating Expenses, Working Capital, and Capital Expenditure, delivering actionable Financial Insights to\nmanagement.\n\n\tConducted Variance Analysis and assessed Liquidity, Profitability, and Working Capital, identifying key financial trends to\nsupport Business Decision-Making and strategic discussions.\n\n\tReviewed internal financial processes, strengthened Internal Controls, improved Reporting Accuracy, and recommended\nProcess Improvements to enhance operational efficiency and support reliable financial reporting.\n\n\tExecuted Statutory, Bank, Tax, and Government Audits, developing expertise in Financial Reporting, Risk Assessment,\nCompliance, and Financial Reconciliations.\n\n\tPrepared and reviewed Financial Reports, reconciliations, and supporting schedules while collaborating with Partners, Senior\nManagement, and Cross-functional Teams to communicate financial observations and recommend business-focused solutions.\n\n\tCollaborated with Partners, Senior Management, and Cross-functional Teams to communicate financial observations, resolve\naccounting issues, and recommend Business-Oriented Solutions.\n\n\nCERTIFICATIONS & SPECIALIZED TRAINING\n\nFinancial Modelling & Valuation | CA Monk\n\tBuilt integrated Three-Statement Financial Models incorporating Income Statement, Balance Sheet, and Cash Flow\nForecasting.\n\n\tPerformed Discounted Cash Flow (DCF) Valuation, Trading Comparable Analysis, and Transaction Comparable Analysis to\nevaluate Business Performance and Enterprise Value.\n\n\tDeveloped Financial Forecasts, Scenario Analysis, and Valuation Models.\n\n\tConducted Industry Research, Peer Benchmarking, and Financial Analysis to support valuation assumptions.\n\n\nMarketplace Business Simulation | Virtual Corporate Strategy\n\tRanked among the Top 10% Globally in a six-quarter simulation involving Budgeting, Pricing Strategy, Demand Planning,\nProduction Planning, Investment Decisions, and Profitability Management.\n\n\tPrepared Cash Flow Forecasts, Budgets, ROI Analysis, and financial projections to optimize profitability while maintaining\nliquidity.\n\n\tEvaluated Business Performance using Financial KPIs, Profitability Analysis, and Scenario-Based Decision Making.\n\n\nEDUCATION\n\nChartered Accountant\n\nThe Institute of Chartered Accountants of India\n\nScore: 52%\n\n(Exemption in AFM)\nBachelor of Commerce\n\nDAVV\n\nScore: 71%\n\n12th\n\nCBSE\n\nScore: 93%\n\n(District Topper)\n10th\n\nCBSE\n\nScore: GPA 9.0\n\nSKILLS\n\nTools : Power BI, Advanced Excel (Pivot Tables, Macros, VBA), Tally, AI Tools for Finance\n\nFinancial Skills: Financial Planning & Analysis (FP&A), Financial Statement Analysis, Budgeting & Forecasting, Financial Modelling &\nValuation, Business Performance Analysis\n\n\ntel:+91 9111393391\nmailto:bhawikavadhva@gmail.com\nhttps://www.linkedin.com/in/bhawikavadhva26",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "BHAWIKA VADHVA Chartered Accountant\n+91 9111393391 bhawikavadhva@gmail.com linkedin.com/in/bhawikavadhva26\nOct 2021 – Oct 2024\nUdaipur\nMay 2026\n2018 - 2021\n2018\n2016\nSUMMARY\n\nChartered Accountant with over three years of experience in Financial Analysis, Audit, and Financial Reporting across Hospitality,\nReal Estate, Construction, Petroleum, Marble, Education, and Public Sector organizations. Skilled in P&L Analysis, Variance\nAnalysis, Working Capital Analysis, Financial Statement Analysis, and Management Reporting to support strategic decision-\nmaking.\nWORK EXPERIENCE\n\nArticle Trainee\n\nSatyam SVG & Co.\n\n\tPerformed Financial Statement Analysis for 15+ clients across Hospitality, Real Estate, Construction, Petroleum, Marble, and\nEducation sectors by analyzing P&L Statements, Balance Sheets, and supporting schedules to identify Revenue Trends, Cost\nDrivers, Profitability, and Financial Risks.\n\n\tEvaluated the Business Performance of organizations with annual turnover ranging from ₹50–400 crore through analysis of\nRevenue, Operating Expenses, Working Capital, and Capital Expenditure, delivering actionable Financial Insights to\nmanagement.\n\n\tConducted Variance Analysis and assessed Liquidity, Profitability, and Working Capital, identifying key financial trends to\nsupport Business Decision-Making and strategic discussions.\n\n\tReviewed internal financial processes, strengthened Internal Controls, improved Reporting Accuracy, and recommended\nProcess Improvements to enhance operational efficiency and support reliable financial reporting.\n\n\tExecuted Statutory, Bank, Tax, and Government Audits, developing expertise in Financial Reporting, Risk Assessment,\nCompliance, and Financial Reconciliations.\n\n\tPrepared and reviewed Financial Reports, reconciliations, and supporting schedules while collaborating with Partners, Senior\nManagement, and Cross-functional Teams to communicate financial observations and recommend business-focused solutions.\n\n\tCollaborated with Partners, Senior Management, and Cross-functional Teams to communicate financial observations, resolve\naccounting issues, and recommend Business-Oriented Solutions.\n\n\nCERTIFICATIONS & SPECIALIZED TRAINING\n\nFinancial Modelling & Valuation | CA Monk\n\tBuilt integrated Three-Statement Financial Models incorporating Income Statement, Balance Sheet, and Cash Flow\nForecasting.\n\n\tPerformed Discounted Cash Flow (DCF) Valuation, Trading Comparable Analysis, and Transaction Comparable Analysis to\nevaluate Business Performance and Enterprise Value.\n\n\tDeveloped Financial Forecasts, Scenario Analysis, and Valuation Models.\n\n\tConducted Industry Research, Peer Benchmarking, and Financial Analysis to support valuation assumptions.\n\n\nMarketplace Business Simulation | Virtual Corporate Strategy\n\tRanked among the Top 10% Globally in a six-quarter simulation involving Budgeting, Pricing Strategy, Demand Planning,\nProduction Planning, Investment Decisions, and Profitability Management.\n\n\tPrepared Cash Flow Forecasts, Budgets, ROI Analysis, and financial projections to optimize profitability while maintaining\nliquidity.\n\n\tEvaluated Business Performance using Financial KPIs, Profitability Analysis, and Scenario-Based Decision Making.\n\n\nEDUCATION\n\nChartered Accountant\n\nThe Institute of Chartered Accountants of India\n\nScore: 52%\n\n(Exemption in AFM)\nBachelor of Commerce\n\nDAVV\n\nScore: 71%\n\n12th\n\nCBSE\n\nScore: 93%\n\n(District Topper)\n10th\n\nCBSE\n\nScore: GPA 9.0\n\nSKILLS\n\nTools : Power BI, Advanced Excel (Pivot Tables, Macros, VBA), Tally, AI Tools for Finance\n\nFinancial Skills: Financial Planning & Analysis (FP&A), Financial Statement Analysis, Budgeting & Forecasting, Financial Modelling &\nValuation, Business Performance Analysis\n\n\ntel:+91 9111393391\nmailto:bhawikavadhva@gmail.com\nhttps://www.linkedin.com/in/bhawikavadhva26",
+  "quality": {
+    "status": "PASS",
+    "document_id": "2b0014b8-f19b-4373-8af9-bc028f553d20",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3804,
+        "word_count": 445,
+        "line_count": 107,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.130652,
+        "symbol_count": 3,
+        "symbol_ratio": 0.000789,
+        "max_repeated_char_run": 3,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 94.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 3804,
+        "word_count": 445,
+        "configured_section_count": 7,
+        "detected_count": 5,
+        "missing_count": 2,
+        "detected_sections": [
+          "Contact Information",
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Summary",
+          "Projects"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Summary",
+          "Projects"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Skills": "skills",
+          "Work Experience": "work experience",
+          "Education": "education",
+          "Certifications": "certifications and specialized training"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "bhawikavadhva@gmail.com",
+            "confidence": 0.8
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "SKILLS",
+            "detection_method": "heading",
+            "line_number": 97,
+            "evidence": "SKILLS",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "WORK EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 15,
+            "evidence": "WORK EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATION",
+            "detection_method": "heading",
+            "line_number": 69,
+            "evidence": "EDUCATION",
+            "confidence": 0.98
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": "CERTIFICATIONS & SPECIALIZED TRAINING",
+            "detection_method": "heading",
+            "line_number": 45,
+            "evidence": "CERTIFICATIONS & SPECIALIZED TRAINING",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Certifications": "detected",
+          "Summary": "missing",
+          "Projects": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Summary",
+        "Projects"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Summary",
+        "Projects"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3804,
+        "word_count": 445,
+        "line_count": 107,
+        "non_empty_line_count": 68,
+        "short_line_count": 26,
+        "short_line_ratio": 0.382353,
+        "fragmented_line_count": 23,
+        "fragmented_line_ratio": 0.338235,
+        "mean_line_length": 54.18,
+        "median_line_length": 40.5,
+        "line_length_stdev": 46.72,
+        "line_length_cv": 0.862292,
+        "broken_sentence_count": 8,
+        "broken_sentence_ratio": 0.119403,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": null,
+  "resume_json": null,
+  "hyperlinks": [
+    {
+      "page": 1,
+      "url": "tel:+91 9111393391",
+      "visible_text": "+91 9111393391",
+      "type": "uri",
+      "rect": [
+        26.25,
+        44.25,
+        92.25,
+        55.5
+      ]
+    },
+    {
+      "page": 1,
+      "url": "mailto:bhawikavadhva@gmail.com",
+      "visible_text": "bhawikavadhva@gmail.com",
+      "type": "mailto",
+      "rect": [
+        114.0,
+        44.25,
+        232.5,
+        55.5
+      ]
+    },
+    {
+      "page": 1,
+      "url": "https://www.linkedin.com/in/bhawikavadhva26",
+      "visible_text": "linkedin.com/in/bhawikavadhva26",
+      "type": "uri",
+      "rect": [
+        254.25,
+        44.25,
+        399.0,
+        55.5
+      ]
+    }
+  ],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "BHAWIKA VADHVA Chartered Accountant\n+91 9111393391 bhawikavadhva@gmail.com linkedin.com/in/bhawikavadhva26\nOct 2021 – Oct 2024\nUdaipur\nMay 2026\n2018 - 2021\n2018\n2016\nSUMMARY\n\nChartered Accountant with over three years of experience in Financial Analysis, Audit, and Financial Reporting across Hospitality,\nReal Estate, Construction, Petroleum, Marble, Education, and Public Sector organizations. Skilled in P&L Analysis, Variance\nAnalysis, Working Capital Analysis, Financial Statement Analysis, and Management Reporting to support strategic decision-\nmaking.\nWORK EXPERIENCE\n\nArticle Trainee\n\nSatyam SVG & Co.\n\n\tPerformed Financial Statement Analysis for 15+ clients across Hospitality, Real Estate, Construction, Petroleum, Marble, and\nEducation sectors by analyzing P&L Statements, Balance Sheets, and supporting schedules to identify Revenue Trends, Cost\nDrivers, Profitability, and Financial Risks.\n\n\tEvaluated the Business Performance of organizations with annual turnover ranging from ₹50–400 crore through analysis of\nRevenue, Operating Expenses, Working Capital, and Capital Expenditure, delivering actionable Financial Insights to\nmanagement.\n\n\tConducted Variance Analysis and assessed Liquidity, Profitability, and Working Capital, identifying key financial trends to\nsupport Business Decision-Making and strategic discussions.\n\n\tReviewed internal financial processes, strengthened Internal Controls, improved Reporting Accuracy, and recommended\nProcess Improvements to enhance operational efficiency and support reliable financial reporting.\n\n\tExecuted Statutory, Bank, Tax, and Government Audits, developing expertise in Financial Reporting, Risk Assessment,\nCompliance, and Financial Reconciliations.\n\n\tPrepared and reviewed Financial Reports, reconciliations, and supporting schedules while collaborating with Partners, Senior\nManagement, and Cross-functional Teams to communicate financial observations and recommend business-focused solutions.\n\n\tCollaborated with Partners, Senior Management, and Cross-functional Teams to communicate financial observations, resolve\naccounting issues, and recommend Business-Oriented Solutions.\n\n\nCERTIFICATIONS & SPECIALIZED TRAINING\n\nFinancial Modelling & Valuation | CA Monk\n\tBuilt integrated Three-Statement Financial Models incorporating Income Statement, Balance Sheet, and Cash Flow\nForecasting.\n\n\tPerformed Discounted Cash Flow (DCF) Valuation, Trading Comparable Analysis, and Transaction Comparable Analysis to\nevaluate Business Performance and Enterprise Value.\n\n\tDeveloped Financial Forecasts, Scenario Analysis, and Valuation Models.\n\n\tConducted Industry Research, Peer Benchmarking, and Financial Analysis to support valuation assumptions.\n\n\nMarketplace Business Simulation | Virtual Corporate Strategy\n\tRanked among the Top 10% Globally in a six-quarter simulation involving Budgeting, Pricing Strategy, Demand Planning,\nProduction Planning, Investment Decisions, and Profitability Management.\n\n\tPrepared Cash Flow Forecasts, Budgets, ROI Analysis, and financial projections to optimize profitability while maintaining\nliquidity.\n\n\tEvaluated Business Performance using Financial KPIs, Profitability Analysis, and Scenario-Based Decision Making.\n\n\nEDUCATION\n\nChartered Accountant\n\nThe Institute of Chartered Accountants of India\n\nScore: 52%\n\n(Exemption in AFM)\nBachelor of Commerce\n\nDAVV\n\nScore: 71%\n\n12th\n\nCBSE\n\nScore: 93%\n\n(District Topper)\n10th\n\nCBSE\n\nScore: GPA 9.0\n\nSKILLS\n\nTools : Power BI, Advanced Excel (Pivot Tables, Macros, VBA), Tally, AI Tools for Finance\n\nFinancial Skills: Financial Planning & Analysis (FP&A), Financial Statement Analysis, Budgeting & Forecasting, Financial Modelling &\nValuation, Business Performance Analysis\n\n\ntel:+91 9111393391\nmailto:bhawikavadhva@gmail.com\nhttps://www.linkedin.com/in/bhawikavadhva26",
+    "normalized_text": "BHAWIKA VADHVA Chartered Accountant\n+91 9111393391 bhawikavadhva@gmail.com linkedin.com/in/bhawikavadhva26\nOct 2021 – Oct 2024\nUdaipur\nMay 2026\n2018 - 2021\n2018\n2016\nSUMMARY\n\nChartered Accountant with over three years of experience in Financial Analysis, Audit, and Financial Reporting across Hospitality,\nReal Estate, Construction, Petroleum, Marble, Education, and Public Sector organizations. Skilled in P&L Analysis, Variance\nAnalysis, Working Capital Analysis, Financial Statement Analysis, and Management Reporting to support strategic decision-\nmaking.\nWORK EXPERIENCE\n\nArticle Trainee\n\nSatyam SVG & Co.\n\nPerformed Financial Statement Analysis for 15+ clients across Hospitality, Real Estate, Construction, Petroleum, Marble, and\nEducation sectors by analyzing P&L Statements, Balance Sheets, and supporting schedules to identify Revenue Trends, Cost\nDrivers, Profitability, and Financial Risks.\n\nEvaluated the Business Performance of organizations with annual turnover ranging from ₹50–400 crore through analysis of\nRevenue, Operating Expenses, Working Capital, and Capital Expenditure, delivering actionable Financial Insights to\nmanagement.\n\nConducted Variance Analysis and assessed Liquidity, Profitability, and Working Capital, identifying key financial trends to\nsupport Business Decision-Making and strategic discussions.\n\nReviewed internal financial processes, strengthened Internal Controls, improved Reporting Accuracy, and recommended\nProcess Improvements to enhance operational efficiency and support reliable financial reporting.\n\nExecuted Statutory, Bank, Tax, and Government Audits, developing expertise in Financial Reporting, Risk Assessment,\nCompliance, and Financial Reconciliations.\n\nPrepared and reviewed Financial Reports, reconciliations, and supporting schedules while collaborating with Partners, Senior\nManagement, and Cross-functional Teams to communicate financial observations and recommend business-focused solutions.\n\nCollaborated with Partners, Senior Management, and Cross-functional Teams to communicate financial observations, resolve\naccounting issues, and recommend Business-Oriented Solutions.\n\nCERTIFICATIONS & SPECIALIZED TRAINING\n\nFinancial Modelling & Valuation | CA Monk\nBuilt integrated Three-Statement Financial Models incorporating Income Statement, Balance Sheet, and Cash Flow\nForecasting.\n\nPerformed Discounted Cash Flow (DCF) Valuation, Trading Comparable Analysis, and Transaction Comparable Analysis to\nevaluate Business Performance and Enterprise Value.\n\nDeveloped Financial Forecasts, Scenario Analysis, and Valuation Models.\n\nConducted Industry Research, Peer Benchmarking, and Financial Analysis to support valuation assumptions.\n\nMarketplace Business Simulation | Virtual Corporate Strategy\nRanked among the Top 10% Globally in a six-quarter simulation involving Budgeting, Pricing Strategy, Demand Planning,\nProduction Planning, Investment Decisions, and Profitability Management.\n\nPrepared Cash Flow Forecasts, Budgets, ROI Analysis, and financial projections to optimize profitability while maintaining\nliquidity.\n\nEvaluated Business Performance using Financial KPIs, Profitability Analysis, and Scenario-Based Decision Making.\n\nEDUCATION\n\nChartered Accountant\n\nThe Institute of Chartered Accountants of India\n\nScore: 52%\n\n(Exemption in AFM)\nBachelor of Commerce\n\nDAVV\n\nScore: 71%\n\n12th\n\nCBSE\n\nScore: 93%\n\n(District Topper)\n10th\n\nCBSE\n\nScore: GPA 9.0\n\nSKILLS\n\nTools : Power BI, Advanced Excel (Pivot Tables, Macros, VBA), Tally, AI Tools for Finance\n\nFinancial Skills: Financial Planning & Analysis (FP&A), Financial Statement Analysis, Budgeting & Forecasting, Financial Modelling &\nValuation, Business Performance Analysis\n\ntel:+91 9111393391\nmailto:bhawikavadhva@gmail.com\nhttps://www.linkedin.com/in/bhawikavadhva26",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 3804,
+    "normalized_chars": 3786,
+    "original_estimated_tokens": 951,
+    "normalized_estimated_tokens": 946,
+    "estimated_reduction_percent": 0.5
+  },
+  "muse_requests": [],
+  "token_usage": null,
+  "resume_json_source": null,
+  "resume_json_meta": null,
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 7712.08,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "2b0014b8-f19b-4373-8af9-bc028f553d20",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3804,
+            "word_count": 445,
+            "line_count": 107,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.130652,
+            "symbol_count": 3,
+            "symbol_ratio": 0.000789,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3804,
+            "word_count": 445,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications and specialized training"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "bhawikavadhva@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 97,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 15,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 69,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS & SPECIALIZED TRAINING",
+                "detection_method": "heading",
+                "line_number": 45,
+                "evidence": "CERTIFICATIONS & SPECIALIZED TRAINING",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Summary": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3804,
+            "word_count": 445,
+            "line_count": 107,
+            "non_empty_line_count": 68,
+            "short_line_count": 26,
+            "short_line_ratio": 0.382353,
+            "fragmented_line_count": 23,
+            "fragmented_line_ratio": 0.338235,
+            "mean_line_length": 54.18,
+            "median_line_length": 40.5,
+            "line_length_stdev": 46.72,
+            "line_length_cv": 0.862292,
+            "broken_sentence_count": 8,
+            "broken_sentence_ratio": 0.119403,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 7712.08,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "2b0014b8-f19b-4373-8af9-bc028f553d20_SHJ-5444_SHC-383074.pdf"
+}

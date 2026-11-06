@@ -224,3 +224,11 @@ def test_frontend_wiring():
     assert "Manual Comparison" in app_js
     assert "runExtractors" in api_js
     assert "/extractors/run" in api_js
+    # The selected normalized text (from the pipeline-selected
+    # extractor, sent to the AI stage) lives in its OWN tab between
+    # Normalized Text and AI Output — never in the extractor selector.
+    assert 'data-tab="selected"' in app_js
+    assert "Selected Normalized Text" in app_js
+    assert "Selected normalized text · from" in app_js
+    assert "__selected__" not in app_js
+    assert "Selected (Final)" not in app_js

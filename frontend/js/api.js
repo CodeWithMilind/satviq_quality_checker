@@ -104,6 +104,16 @@
     url: url,
     health: function () { return request("/api/health"); },
     stats: function () { return request("/api/stats"); },
+    getAnalytics: function (params) {
+      var query = new URLSearchParams();
+      Object.keys(params || {}).forEach(function (key) {
+        if (params[key] !== undefined && params[key] !== null && params[key] !== "") {
+          query.set(key, params[key]);
+        }
+      });
+      var suffix = query.toString() ? "?" + query.toString() : "";
+      return request("/api/analytics/summary" + suffix);
+    },
     processResumes: processResumes,
     listResumes: function (params) {
       var query = new URLSearchParams();
