@@ -1,0 +1,752 @@
+{
+  "resume_id": "7dca1b7f-65f9-4ce9-b04b-4d2cebc94f9f",
+  "filename": "SHJ-5412_SHC-379418.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 1150786,
+  "uploaded_at": "2026-11-05T12:42:42.407444+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 3755.25,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 3755.25,
+      "text": "Shyam Babu    \n\n             8178727462 | shyam685439@gmail.com  | East Delhi-110092   \n\n \n\n  \n\n      \nTo utilize my skills and ability to achieve the organizational goal and being resourceful and Innovative to become \nan important part for the company.    \n\nWork Experience    \n\n      \n Jetking Infotrain Limited  | Lab cordinet | Internship | May-2025 to October-2025                     \n\nResponsibilities:     \n\nInstall and maintain network cables, patch panels, and wireless devices.    \nSupport in configuring user access and permissions.   \nKnowledge of Hardware OS and Network    \nTroubleshoot network downtime and escalate issues if needed.    \nMaintain updated documentation of network topology and assets.    \nAssist in disaster recovery planning and data backup procedures.    \nImplement basic security practices to protect network resources.    \nProvide on-site and remote technical support to end-users.    \n   \n\n Grassroots Solutions & Services Pvt. Ltd | IT Executive | Oct-2025 to Sept-2026    \nResponsibilities:    \n\nRespond promptly to IT support requests from employees.    \nInstall and configure operating systems and applications.    \nCheck system performance and escalate issues to senior IT staff if required. \nMonitor network availability and performance using monitoring tools   \n\nMaintain user accounts, passwords, and access rights.    \nEnsure proper functioning of email systems and communication tools.    \nSupport in implementing new technologies or IT policies.    \nKeep records of repairs, maintenance, and system upgrades.    \nEducate users on safe IT practices and basic troubleshooting steps.   Technical Skills     \n\n   \n \n\nOperating Systems: Windows 10, 11  Installation, troubleshoot, create user, share folder, bit locker.   \nNetworking: TCP/IP,DNS.LAN/WAN IPV4, IPV6 making network cable (568A, 568B)    \n\n \n\nHardware Knowledge: Assembling/Dissembling Installation and Replacement of RAM, HARD  DISK, \nSMPS and Motherboard    \n\n \n\nSoftware Support: Printer DRIVER Installation and sharing, Email setup in MS Outlook (IMAP, POP) \nWindows Updates    \n\n \n\nRemote Support: Usage of Team Viewer, AnyDesk,Tight Vnc, Remote Desktop (RD)    \n \n\nCareer Objective    \n\n\n\nCommand Line (CMD): ipconfig, ping, tracer commands, creating and formatting partitions using \nDisk Management.    \n\nEducational Qualifications  \n\n    \nPursuing BCA in Yenepoya University   \n\n12th from CBSE Board in 2025  \n\n10th From CBSE Board in 2023  \n  \n\nAdditional Qualifications    \n  \n\n  \nStrengths   \n\n  \n  \n\nAdaptable and positive learning attitude   \nAbility to adapt according to the need of hour   \nStrong will power and Patient attitude towards any problem   \nComplete attention with dedicated involvement towards the task given to me   \n\n  \n\nHobbies & Interests   \n   \n\nListening to Music            \n\n   \n\nPersonal Details   \n\n  \n\n  \n\n  \n:            Mr. Shyam Babu   \n\nDate of Birth      :   21-August-2007   \n\nGender        :   Male    \n\nNationality        :   Indian   \n\nLanguage        \n  \n\nDeclaration   \n\n:   English & Hindi   \n\n   \n\nI hereby declare that the information provided above is true to the best of my knowledge and belief.   \n\n  \nDate: September -2026  \nPlace: Delhi                                                                                                                                                                                      {Shyam Babu}  \n\ndiploma in cloud computing from Jetking Institute of Learning -2025",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-05T12:42:38.641824+00:00",
+      "completed_at": "2026-11-05T12:42:42.397912+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "7dca1b7f-65f9-4ce9-b04b-4d2cebc94f9f",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 182 characters, 1.7% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 3466,
+            "word_count": 402,
+            "line_count": 135,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.288806,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 182,
+            "repeated_line_ratio": 0.016667
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3466,
+            "word_count": 402,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Work Experience": "work experience",
+              "Education": "educational qualifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3466,
+            "word_count": 402,
+            "line_count": 135,
+            "non_empty_line_count": 60,
+            "short_line_count": 13,
+            "short_line_ratio": 0.216667,
+            "fragmented_line_count": 6,
+            "fragmented_line_ratio": 0.1,
+            "mean_line_length": 50.53,
+            "median_line_length": 52.0,
+            "line_length_stdev": 34.49,
+            "line_length_cv": 0.682507,
+            "broken_sentence_count": 2,
+            "broken_sentence_ratio": 0.033898,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "7dca1b7f-65f9-4ce9-b04b-4d2cebc94f9f-attempt-1",
+      "resume_id": "7dca1b7f-65f9-4ce9-b04b-4d2cebc94f9f",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "Shyam Babu    \n\n             8178727462 | shyam685439@gmail.com  | East Delhi-110092   \n\n \n\n  \n\n      \nTo utilize my skills and ability to achieve the organizational goal and being resourceful and Innovative to become \nan important part for the company.    \n\nWork Experience    \n\n      \n Jetking Infotrain Limited  | Lab cordinet | Internship | May-2025 to October-2025                     \n\nResponsibilities:     \n\nInstall and maintain network cables, patch panels, and wireless devices.    \nSupport in configuring user access and permissions.   \nKnowledge of Hardware OS and Network    \nTroubleshoot network downtime and escalate issues if needed.    \nMaintain updated documentation of network topology and assets.    \nAssist in disaster recovery planning and data backup procedures.    \nImplement basic security practices to protect network resources.    \nProvide on-site and remote technical support to end-users.    \n   \n\n Grassroots Solutions & Services Pvt. Ltd | IT Executive | Oct-2025 to Sept-2026    \nResponsibilities:    \n\nRespond promptly to IT support requests from employees.    \nInstall and configure operating systems and applications.    \nCheck system performance and escalate issues to senior IT staff if required. \nMonitor network availability and performance using monitoring tools   \n\nMaintain user accounts, passwords, and access rights.    \nEnsure proper functioning of email systems and communication tools.    \nSupport in implementing new technologies or IT policies.    \nKeep records of repairs, maintenance, and system upgrades.    \nEducate users on safe IT practices and basic troubleshooting steps.   Technical Skills     \n\n   \n \n\nOperating Systems: Windows 10, 11  Installation, troubleshoot, create user, share folder, bit locker.   \nNetworking: TCP/IP,DNS.LAN/WAN IPV4, IPV6 making network cable (568A, 568B)    \n\n \n\nHardware Knowledge: Assembling/Dissembling Installation and Replacement of RAM, HARD  DISK, \nSMPS and Motherboard    \n\n \n\nSoftware Support: Printer DRIVER Installation and sharing, Email setup in MS Outlook (IMAP, POP) \nWindows Updates    \n\n \n\nRemote Support: Usage of Team Viewer, AnyDesk,Tight Vnc, Remote Desktop (RD)    \n \n\nCareer Objective    \n\n\n\nCommand Line (CMD): ipconfig, ping, tracer commands, creating and formatting partitions using \nDisk Management.    \n\nEducational Qualifications  \n\n    \nPursuing BCA in Yenepoya University   \n\n12th from CBSE Board in 2025  \n\n10th From CBSE Board in 2023  \n  \n\nAdditional Qualifications    \n  \n\n  \nStrengths   \n\n  \n  \n\nAdaptable and positive learning attitude   \nAbility to adapt according to the need of hour   \nStrong will power and Patient attitude towards any problem   \nComplete attention with dedicated involvement towards the task given to me   \n\n  \n\nHobbies & Interests   \n   \n\nListening to Music            \n\n   \n\nPersonal Details   \n\n  \n\n  \n\n  \n:            Mr. Shyam Babu   \n\nDate of Birth      :   21-August-2007   \n\nGender        :   Male    \n\nNationality        :   Indian   \n\nLanguage        \n  \n\nDeclaration   \n\n:   English & Hindi   \n\n   \n\nI hereby declare that the information provided above is true to the best of my knowledge and belief.   \n\n  \nDate: September -2026  \nPlace: Delhi                                                                                                                                                                                      {Shyam Babu}  \n\ndiploma in cloud computing from Jetking Institute of Learning -2025",
+      "extracted_text_length": 3466,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "7dca1b7f-65f9-4ce9-b04b-4d2cebc94f9f",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 182 characters, 1.7% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 3466,
+            "word_count": 402,
+            "line_count": 135,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.288806,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 182,
+            "repeated_line_ratio": 0.016667
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3466,
+            "word_count": 402,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Work Experience": "work experience",
+              "Education": "educational qualifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3466,
+            "word_count": 402,
+            "line_count": 135,
+            "non_empty_line_count": 60,
+            "short_line_count": 13,
+            "short_line_ratio": 0.216667,
+            "fragmented_line_count": 6,
+            "fragmented_line_ratio": 0.1,
+            "mean_line_length": 50.53,
+            "median_line_length": 52.0,
+            "line_length_stdev": 34.49,
+            "line_length_cv": 0.682507,
+            "broken_sentence_count": 2,
+            "broken_sentence_ratio": 0.033898,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    }
+  ],
+  "extracted_text": "Shyam Babu    \n\n             8178727462 | shyam685439@gmail.com  | East Delhi-110092   \n\n \n\n  \n\n      \nTo utilize my skills and ability to achieve the organizational goal and being resourceful and Innovative to become \nan important part for the company.    \n\nWork Experience    \n\n      \n Jetking Infotrain Limited  | Lab cordinet | Internship | May-2025 to October-2025                     \n\nResponsibilities:     \n\nInstall and maintain network cables, patch panels, and wireless devices.    \nSupport in configuring user access and permissions.   \nKnowledge of Hardware OS and Network    \nTroubleshoot network downtime and escalate issues if needed.    \nMaintain updated documentation of network topology and assets.    \nAssist in disaster recovery planning and data backup procedures.    \nImplement basic security practices to protect network resources.    \nProvide on-site and remote technical support to end-users.    \n   \n\n Grassroots Solutions & Services Pvt. Ltd | IT Executive | Oct-2025 to Sept-2026    \nResponsibilities:    \n\nRespond promptly to IT support requests from employees.    \nInstall and configure operating systems and applications.    \nCheck system performance and escalate issues to senior IT staff if required. \nMonitor network availability and performance using monitoring tools   \n\nMaintain user accounts, passwords, and access rights.    \nEnsure proper functioning of email systems and communication tools.    \nSupport in implementing new technologies or IT policies.    \nKeep records of repairs, maintenance, and system upgrades.    \nEducate users on safe IT practices and basic troubleshooting steps.   Technical Skills     \n\n   \n \n\nOperating Systems: Windows 10, 11  Installation, troubleshoot, create user, share folder, bit locker.   \nNetworking: TCP/IP,DNS.LAN/WAN IPV4, IPV6 making network cable (568A, 568B)    \n\n \n\nHardware Knowledge: Assembling/Dissembling Installation and Replacement of RAM, HARD  DISK, \nSMPS and Motherboard    \n\n \n\nSoftware Support: Printer DRIVER Installation and sharing, Email setup in MS Outlook (IMAP, POP) \nWindows Updates    \n\n \n\nRemote Support: Usage of Team Viewer, AnyDesk,Tight Vnc, Remote Desktop (RD)    \n \n\nCareer Objective    \n\n\n\nCommand Line (CMD): ipconfig, ping, tracer commands, creating and formatting partitions using \nDisk Management.    \n\nEducational Qualifications  \n\n    \nPursuing BCA in Yenepoya University   \n\n12th from CBSE Board in 2025  \n\n10th From CBSE Board in 2023  \n  \n\nAdditional Qualifications    \n  \n\n  \nStrengths   \n\n  \n  \n\nAdaptable and positive learning attitude   \nAbility to adapt according to the need of hour   \nStrong will power and Patient attitude towards any problem   \nComplete attention with dedicated involvement towards the task given to me   \n\n  \n\nHobbies & Interests   \n   \n\nListening to Music            \n\n   \n\nPersonal Details   \n\n  \n\n  \n\n  \n:            Mr. Shyam Babu   \n\nDate of Birth      :   21-August-2007   \n\nGender        :   Male    \n\nNationality        :   Indian   \n\nLanguage        \n  \n\nDeclaration   \n\n:   English & Hindi   \n\n   \n\nI hereby declare that the information provided above is true to the best of my knowledge and belief.   \n\n  \nDate: September -2026  \nPlace: Delhi                                                                                                                                                                                      {Shyam Babu}  \n\ndiploma in cloud computing from Jetking Institute of Learning -2025",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "Shyam Babu    \n\n             8178727462 | shyam685439@gmail.com  | East Delhi-110092   \n\n \n\n  \n\n      \nTo utilize my skills and ability to achieve the organizational goal and being resourceful and Innovative to become \nan important part for the company.    \n\nWork Experience    \n\n      \n Jetking Infotrain Limited  | Lab cordinet | Internship | May-2025 to October-2025                     \n\nResponsibilities:     \n\nInstall and maintain network cables, patch panels, and wireless devices.    \nSupport in configuring user access and permissions.   \nKnowledge of Hardware OS and Network    \nTroubleshoot network downtime and escalate issues if needed.    \nMaintain updated documentation of network topology and assets.    \nAssist in disaster recovery planning and data backup procedures.    \nImplement basic security practices to protect network resources.    \nProvide on-site and remote technical support to end-users.    \n   \n\n Grassroots Solutions & Services Pvt. Ltd | IT Executive | Oct-2025 to Sept-2026    \nResponsibilities:    \n\nRespond promptly to IT support requests from employees.    \nInstall and configure operating systems and applications.    \nCheck system performance and escalate issues to senior IT staff if required. \nMonitor network availability and performance using monitoring tools   \n\nMaintain user accounts, passwords, and access rights.    \nEnsure proper functioning of email systems and communication tools.    \nSupport in implementing new technologies or IT policies.    \nKeep records of repairs, maintenance, and system upgrades.    \nEducate users on safe IT practices and basic troubleshooting steps.   Technical Skills     \n\n   \n \n\nOperating Systems: Windows 10, 11  Installation, troubleshoot, create user, share folder, bit locker.   \nNetworking: TCP/IP,DNS.LAN/WAN IPV4, IPV6 making network cable (568A, 568B)    \n\n \n\nHardware Knowledge: Assembling/Dissembling Installation and Replacement of RAM, HARD  DISK, \nSMPS and Motherboard    \n\n \n\nSoftware Support: Printer DRIVER Installation and sharing, Email setup in MS Outlook (IMAP, POP) \nWindows Updates    \n\n \n\nRemote Support: Usage of Team Viewer, AnyDesk,Tight Vnc, Remote Desktop (RD)    \n \n\nCareer Objective    \n\n\n\nCommand Line (CMD): ipconfig, ping, tracer commands, creating and formatting partitions using \nDisk Management.    \n\nEducational Qualifications  \n\n    \nPursuing BCA in Yenepoya University   \n\n12th from CBSE Board in 2025  \n\n10th From CBSE Board in 2023  \n  \n\nAdditional Qualifications    \n  \n\n  \nStrengths   \n\n  \n  \n\nAdaptable and positive learning attitude   \nAbility to adapt according to the need of hour   \nStrong will power and Patient attitude towards any problem   \nComplete attention with dedicated involvement towards the task given to me   \n\n  \n\nHobbies & Interests   \n   \n\nListening to Music            \n\n   \n\nPersonal Details   \n\n  \n\n  \n\n  \n:            Mr. Shyam Babu   \n\nDate of Birth      :   21-August-2007   \n\nGender        :   Male    \n\nNationality        :   Indian   \n\nLanguage        \n  \n\nDeclaration   \n\n:   English & Hindi   \n\n   \n\nI hereby declare that the information provided above is true to the best of my knowledge and belief.   \n\n  \nDate: September -2026  \nPlace: Delhi                                                                                                                                                                                      {Shyam Babu}  \n\ndiploma in cloud computing from Jetking Institute of Learning -2025",
+  "quality": {
+    "status": "PASS",
+    "document_id": "7dca1b7f-65f9-4ce9-b04b-4d2cebc94f9f",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 80.0,
+      "flags": [
+        "EXCESSIVE_REPEATED_CHARACTERS"
+      ],
+      "reasons": [
+        "Repeated-character corruption suspected: longest run is 182 characters, 1.7% of long lines are single-character repeats."
+      ],
+      "metrics": {
+        "char_count": 3466,
+        "word_count": 402,
+        "line_count": 135,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.288806,
+        "symbol_count": 0,
+        "symbol_ratio": 0.0,
+        "max_repeated_char_run": 182,
+        "repeated_line_ratio": 0.016667
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 82.0,
+      "flags": [
+        "MISSING_RECOMMENDED_SECTION",
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 3466,
+        "word_count": 402,
+        "configured_section_count": 7,
+        "detected_count": 4,
+        "missing_count": 3,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_sections": [
+          "Skills",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [
+          "Skills"
+        ],
+        "missing_optional": [
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "personal details",
+          "Summary": "career objective",
+          "Work Experience": "work experience",
+          "Education": "educational qualifications"
+        }
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_sections": [
+        "Skills",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [
+        "Skills"
+      ],
+      "missing_optional": [
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3466,
+        "word_count": 402,
+        "line_count": 135,
+        "non_empty_line_count": 60,
+        "short_line_count": 13,
+        "short_line_ratio": 0.216667,
+        "fragmented_line_count": 6,
+        "fragmented_line_ratio": 0.1,
+        "mean_line_length": 50.53,
+        "median_line_length": 52.0,
+        "line_length_stdev": 34.49,
+        "line_length_cv": 0.682507,
+        "broken_sentence_count": 2,
+        "broken_sentence_ratio": 0.033898,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 60.0,
+  "resume_json": null,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Shyam Babu    \n\n             8178727462 | shyam685439@gmail.com  | East Delhi-110092   \n\n \n\n  \n\n      \nTo utilize my skills and ability to achieve the organizational goal and being resourceful and Innovative to become \nan important part for the company.    \n\nWork Experience    \n\n      \n Jetking Infotrain Limited  | Lab cordinet | Internship | May-2025 to October-2025                     \n\nResponsibilities:     \n\nInstall and maintain network cables, patch panels, and wireless devices.    \nSupport in configuring user access and permissions.   \nKnowledge of Hardware OS and Network    \nTroubleshoot network downtime and escalate issues if needed.    \nMaintain updated documentation of network topology and assets.    \nAssist in disaster recovery planning and data backup procedures.    \nImplement basic security practices to protect network resources.    \nProvide on-site and remote technical support to end-users.    \n   \n\n Grassroots Solutions & Services Pvt. Ltd | IT Executive | Oct-2025 to Sept-2026    \nResponsibilities:    \n\nRespond promptly to IT support requests from employees.    \nInstall and configure operating systems and applications.    \nCheck system performance and escalate issues to senior IT staff if required. \nMonitor network availability and performance using monitoring tools   \n\nMaintain user accounts, passwords, and access rights.    \nEnsure proper functioning of email systems and communication tools.    \nSupport in implementing new technologies or IT policies.    \nKeep records of repairs, maintenance, and system upgrades.    \nEducate users on safe IT practices and basic troubleshooting steps.   Technical Skills     \n\n   \n \n\nOperating Systems: Windows 10, 11  Installation, troubleshoot, create user, share folder, bit locker.   \nNetworking: TCP/IP,DNS.LAN/WAN IPV4, IPV6 making network cable (568A, 568B)    \n\n \n\nHardware Knowledge: Assembling/Dissembling Installation and Replacement of RAM, HARD  DISK, \nSMPS and Motherboard    \n\n \n\nSoftware Support: Printer DRIVER Installation and sharing, Email setup in MS Outlook (IMAP, POP) \nWindows Updates    \n\n \n\nRemote Support: Usage of Team Viewer, AnyDesk,Tight Vnc, Remote Desktop (RD)    \n \n\nCareer Objective    \n\n\n\nCommand Line (CMD): ipconfig, ping, tracer commands, creating and formatting partitions using \nDisk Management.    \n\nEducational Qualifications  \n\n    \nPursuing BCA in Yenepoya University   \n\n12th from CBSE Board in 2025  \n\n10th From CBSE Board in 2023  \n  \n\nAdditional Qualifications    \n  \n\n  \nStrengths   \n\n  \n  \n\nAdaptable and positive learning attitude   \nAbility to adapt according to the need of hour   \nStrong will power and Patient attitude towards any problem   \nComplete attention with dedicated involvement towards the task given to me   \n\n  \n\nHobbies & Interests   \n   \n\nListening to Music            \n\n   \n\nPersonal Details   \n\n  \n\n  \n\n  \n:            Mr. Shyam Babu   \n\nDate of Birth      :   21-August-2007   \n\nGender        :   Male    \n\nNationality        :   Indian   \n\nLanguage        \n  \n\nDeclaration   \n\n:   English & Hindi   \n\n   \n\nI hereby declare that the information provided above is true to the best of my knowledge and belief.   \n\n  \nDate: September -2026  \nPlace: Delhi                                                                                                                                                                                      {Shyam Babu}  \n\ndiploma in cloud computing from Jetking Institute of Learning -2025",
+    "normalized_text": "Shyam Babu\n\n8178727462 | shyam685439@gmail.com | East Delhi-110092\n\nTo utilize my skills and ability to achieve the organizational goal and being resourceful and Innovative to become\nan important part for the company.\n\nWork Experience\n\nJetking Infotrain Limited | Lab cordinet | Internship | May-2025 to October-2025\n\nResponsibilities:\n\nInstall and maintain network cables, patch panels, and wireless devices.\nSupport in configuring user access and permissions.\nKnowledge of Hardware OS and Network\nTroubleshoot network downtime and escalate issues if needed.\nMaintain updated documentation of network topology and assets.\nAssist in disaster recovery planning and data backup procedures.\nImplement basic security practices to protect network resources.\nProvide on-site and remote technical support to end-users.\n\nGrassroots Solutions & Services Pvt. Ltd | IT Executive | Oct-2025 to Sept-2026\nResponsibilities:\n\nRespond promptly to IT support requests from employees.\nInstall and configure operating systems and applications.\nCheck system performance and escalate issues to senior IT staff if required.\nMonitor network availability and performance using monitoring tools\n\nMaintain user accounts, passwords, and access rights.\nEnsure proper functioning of email systems and communication tools.\nSupport in implementing new technologies or IT policies.\nKeep records of repairs, maintenance, and system upgrades.\nEducate users on safe IT practices and basic troubleshooting steps. Technical Skills\n\nOperating Systems: Windows 10, 11 Installation, troubleshoot, create user, share folder, bit locker.\nNetworking: TCP/IP,DNS.LAN/WAN IPV4, IPV6 making network cable (568A, 568B)\n\nHardware Knowledge: Assembling/Dissembling Installation and Replacement of RAM, HARD DISK,\nSMPS and Motherboard\n\nSoftware Support: Printer DRIVER Installation and sharing, Email setup in MS Outlook (IMAP, POP)\nWindows Updates\n\nRemote Support: Usage of Team Viewer, AnyDesk,Tight Vnc, Remote Desktop (RD)\n\nCareer Objective\n\nCommand Line (CMD): ipconfig, ping, tracer commands, creating and formatting partitions using\nDisk Management.\n\nEducational Qualifications\n\nPursuing BCA in Yenepoya University\n\n12th from CBSE Board in 2025\n\n10th From CBSE Board in 2023\n\nAdditional Qualifications\n\nStrengths\n\nAdaptable and positive learning attitude\nAbility to adapt according to the need of hour\nStrong will power and Patient attitude towards any problem\nComplete attention with dedicated involvement towards the task given to me\n\nHobbies & Interests\n\nListening to Music\n\nPersonal Details\n\n: Mr. Shyam Babu\n\nDate of Birth : 21-August-2007\n\nGender : Male\n\nNationality : Indian\n\nLanguage\n\nDeclaration\n\n: English & Hindi\n\nI hereby declare that the information provided above is true to the best of my knowledge and belief.\n\nDate: September -2026\nPlace: Delhi {Shyam Babu}\n\ndiploma in cloud computing from Jetking Institute of Learning -2025",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 3466,
+    "normalized_chars": 2901,
+    "original_estimated_tokens": 866,
+    "normalized_estimated_tokens": 725,
+    "estimated_reduction_percent": 16.3
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "timed_out_calls": 1,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_source": null,
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Muse API request timed out after 20s.",
+    "input_type": "text",
+    "duration_ms": 20082.47,
+    "timeout_seconds": 20.0,
+    "usage": {},
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 3466,
+      "normalized_chars": 2901,
+      "estimated_reduction_percent": 16.3,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 3755.25,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "7dca1b7f-65f9-4ce9-b04b-4d2cebc94f9f",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 182 characters, 1.7% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 3466,
+            "word_count": 402,
+            "line_count": 135,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.288806,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 182,
+            "repeated_line_ratio": 0.016667
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3466,
+            "word_count": 402,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Work Experience": "work experience",
+              "Education": "educational qualifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3466,
+            "word_count": 402,
+            "line_count": 135,
+            "non_empty_line_count": 60,
+            "short_line_count": 13,
+            "short_line_ratio": 0.216667,
+            "fragmented_line_count": 6,
+            "fragmented_line_ratio": 0.1,
+            "mean_line_length": 50.53,
+            "median_line_length": 52.0,
+            "line_length_stdev": 34.49,
+            "line_length_cv": 0.682507,
+            "broken_sentence_count": 2,
+            "broken_sentence_ratio": 0.033898,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 20082.47,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 3755.25,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "7dca1b7f-65f9-4ce9-b04b-4d2cebc94f9f_SHJ-5412_SHC-379418.pdf"
+}

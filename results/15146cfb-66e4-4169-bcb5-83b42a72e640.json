@@ -1,0 +1,757 @@
+{
+  "resume_id": "15146cfb-66e4-4169-bcb5-83b42a72e640",
+  "filename": "SHJ-5354_SHC-350771.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 238469,
+  "uploaded_at": "2026-11-05T12:40:02.556556+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 3068.1,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 3068.1,
+      "text": "MRUNAL KHERDE \n\nScrum Master, Agile Facilitator  \n\n \n\nmrunalkherde12@gmail.com | www.linkedin.com/in/mrunal-kherde-a564b1223 \n\n Pune, Maharashtra, 411057, India | +91 8010127894 \n\n \n\nPROFESSIONAL SUMMARY \n\nResults-driven Scrum Master with 4+ years of experience leading Agile teams using Scrum and SAFe \n\nmethodologies to deliver high-quality software and business solutions. Skilled in facilitating Agile \n\nceremonies, removing impediments, managing stakeholder communication, and driving continuous \n\nimprovement. Proficient in Azure DevOps, Jira, Confluence, and Rally for sprint planning, backlog \n\nmanagement, and release tracking. Strong collaborator with a focus on team productivity, Agile maturity, \n\nand successful project delivery. \n\n \n\nWORK EXPERIENCE \n\nApplication Development Analyst / Scrum Master                                                                   March 2022 - Present  \n\nACCENTURE | Pune \n\n• Facilitated Scrum and SAFe ceremonies including sprint planning, stand-ups, reviews, retrospectives, \n\nand PI planning to ensure smooth Agile delivery and continuous improvement. \n\n• Collaborated with RTE, Product Owners and stakeholders to manage backlog readiness, prioritize \n\nuser stories, refine requirements, and align delivery with business goals and release timelines. \n\n• Managed sprint execution, delivery tracking, and Agile workflows using Azure DevOps, Jira, and \n\nConfluence while maintaining dashboards for velocity, burndown, sprint progress, and release \n\nreadiness. \n\n• Coordinated with cross-functional onshore/offshore teams to manage dependencies, align project \n\nmilestones, and support successful Data & Analytics project delivery. \n\n• Identified and resolved impediments, risks, and issues, escalating critical concerns when needed to \n\nmaintain delivery predictability and team efficiency. \n\n• Communicated regularly with Engagement Managers, project team members, and representatives \n\nfrom various functional and / or technical teams, including escalating any matters that require \n\nadditional attention and consideration from engagement management. \n\nAdditional Responsibilities \n\n• Managed demand intake, resource planning, and project prioritization across multiple engagements. \n\n• Oversaw project timelines, budgets, risks, and dependencies to support successful delivery \n\nexecution. \n\n• Collaborated with stakeholders and cross-functional teams to drive process improvements and \n\noperational efficiency. \n\n• Applied strong analytical and organizational skills to manage multiple projects and delivery priorities \n\neffectively. \n\nhttp://www.linkedin.com/in/mrunal-kherde-a564b1223\n\n\n• Independently and collaboratively led client engagement workstreams focused on process \n\nimprovement, optimization, and transformation, including implementing leading practice workflows, \n\naddressing quality gaps, and driving operational outcomes. \n\n \n\nAGILE & PROJECT MANAGEMENT SKILLS \n\n• Agile & Scrum (Scrum, SAFe), Project Delivery & Governance \n\n• Sprint/PI Planning, Daily stand ups, Backlog & Release Management, Retrospective \n\n• Agile Metrics (Velocity, Burndown) & Reporting \n\n• Stakeholder & Cross-Team Coordination \n\n• SDLC, Risk & Dependency Management \n\n• Tools: JIRA, Azure DevOps, Rally, Confluence \n\n• Demand & Resource Management \n\n• Agile Coaching & Continuous Improvement \n\nExpertise: \n\nProject Management, Demand Management, Scrum Master, Business Analysis, \n\nRequirements Gathering, SDLC Coordination, Agile Reporting & Execution \n\n \n\nEDUCATION \n\nBachelor of Engineering (Information Technology)  \n\nSant Gadge Baba Amravati University, Maharashtra                                                                      Graduated: 2021 \n\n \n\nCGPA: 9.63  \n\n \n\nCERTIFICATIONS \n\n• Reinvention with Agentic AI certified (Accenture)  \n\n• Actively preparing for Certified Scrum Master (CSM) certification to further strengthen Agile and \n\nScrum expertise \n\n \n\nLANGUAGES \n\n• English \n\n• Marathi \n\n• Hindi",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-05T12:39:59.481459+00:00",
+      "completed_at": "2026-11-05T12:40:02.550618+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "15146cfb-66e4-4169-bcb5-83b42a72e640",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 70 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 3959,
+            "word_count": 457,
+            "line_count": 144,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.188684,
+            "symbol_count": 24,
+            "symbol_ratio": 0.006062,
+            "max_repeated_char_run": 70,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 85.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3959,
+            "word_count": 457,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3959,
+            "word_count": 457,
+            "line_count": 144,
+            "non_empty_line_count": 64,
+            "short_line_count": 18,
+            "short_line_ratio": 0.28125,
+            "fragmented_line_count": 14,
+            "fragmented_line_ratio": 0.21875,
+            "mean_line_length": 58.44,
+            "median_line_length": 55.5,
+            "line_length_stdev": 36.54,
+            "line_length_cv": 0.625337,
+            "broken_sentence_count": 18,
+            "broken_sentence_ratio": 0.285714,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "15146cfb-66e4-4169-bcb5-83b42a72e640-attempt-1",
+      "resume_id": "15146cfb-66e4-4169-bcb5-83b42a72e640",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "MRUNAL KHERDE \n\nScrum Master, Agile Facilitator  \n\n \n\nmrunalkherde12@gmail.com | www.linkedin.com/in/mrunal-kherde-a564b1223 \n\n Pune, Maharashtra, 411057, India | +91 8010127894 \n\n \n\nPROFESSIONAL SUMMARY \n\nResults-driven Scrum Master with 4+ years of experience leading Agile teams using Scrum and SAFe \n\nmethodologies to deliver high-quality software and business solutions. Skilled in facilitating Agile \n\nceremonies, removing impediments, managing stakeholder communication, and driving continuous \n\nimprovement. Proficient in Azure DevOps, Jira, Confluence, and Rally for sprint planning, backlog \n\nmanagement, and release tracking. Strong collaborator with a focus on team productivity, Agile maturity, \n\nand successful project delivery. \n\n \n\nWORK EXPERIENCE \n\nApplication Development Analyst / Scrum Master                                                                   March 2022 - Present  \n\nACCENTURE | Pune \n\n• Facilitated Scrum and SAFe ceremonies including sprint planning, stand-ups, reviews, retrospectives, \n\nand PI planning to ensure smooth Agile delivery and continuous improvement. \n\n• Collaborated with RTE, Product Owners and stakeholders to manage backlog readiness, prioritize \n\nuser stories, refine requirements, and align delivery with business goals and release timelines. \n\n• Managed sprint execution, delivery tracking, and Agile workflows using Azure DevOps, Jira, and \n\nConfluence while maintaining dashboards for velocity, burndown, sprint progress, and release \n\nreadiness. \n\n• Coordinated with cross-functional onshore/offshore teams to manage dependencies, align project \n\nmilestones, and support successful Data & Analytics project delivery. \n\n• Identified and resolved impediments, risks, and issues, escalating critical concerns when needed to \n\nmaintain delivery predictability and team efficiency. \n\n• Communicated regularly with Engagement Managers, project team members, and representatives \n\nfrom various functional and / or technical teams, including escalating any matters that require \n\nadditional attention and consideration from engagement management. \n\nAdditional Responsibilities \n\n• Managed demand intake, resource planning, and project prioritization across multiple engagements. \n\n• Oversaw project timelines, budgets, risks, and dependencies to support successful delivery \n\nexecution. \n\n• Collaborated with stakeholders and cross-functional teams to drive process improvements and \n\noperational efficiency. \n\n• Applied strong analytical and organizational skills to manage multiple projects and delivery priorities \n\neffectively. \n\nhttp://www.linkedin.com/in/mrunal-kherde-a564b1223\n\n\n• Independently and collaboratively led client engagement workstreams focused on process \n\nimprovement, optimization, and transformation, including implementing leading practice workflows, \n\naddressing quality gaps, and driving operational outcomes. \n\n \n\nAGILE & PROJECT MANAGEMENT SKILLS \n\n• Agile & Scrum (Scrum, SAFe), Project Delivery & Governance \n\n• Sprint/PI Planning, Daily stand ups, Backlog & Release Management, Retrospective \n\n• Agile Metrics (Velocity, Burndown) & Reporting \n\n• Stakeholder & Cross-Team Coordination \n\n• SDLC, Risk & Dependency Management \n\n• Tools: JIRA, Azure DevOps, Rally, Confluence \n\n• Demand & Resource Management \n\n• Agile Coaching & Continuous Improvement \n\nExpertise: \n\nProject Management, Demand Management, Scrum Master, Business Analysis, \n\nRequirements Gathering, SDLC Coordination, Agile Reporting & Execution \n\n \n\nEDUCATION \n\nBachelor of Engineering (Information Technology)  \n\nSant Gadge Baba Amravati University, Maharashtra                                                                      Graduated: 2021 \n\n \n\nCGPA: 9.63  \n\n \n\nCERTIFICATIONS \n\n• Reinvention with Agentic AI certified (Accenture)  \n\n• Actively preparing for Certified Scrum Master (CSM) certification to further strengthen Agile and \n\nScrum expertise \n\n \n\nLANGUAGES \n\n• English \n\n• Marathi \n\n• Hindi",
+      "extracted_text_length": 3959,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "15146cfb-66e4-4169-bcb5-83b42a72e640",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 70 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 3959,
+            "word_count": 457,
+            "line_count": 144,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.188684,
+            "symbol_count": 24,
+            "symbol_ratio": 0.006062,
+            "max_repeated_char_run": 70,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 85.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3959,
+            "word_count": 457,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3959,
+            "word_count": 457,
+            "line_count": 144,
+            "non_empty_line_count": 64,
+            "short_line_count": 18,
+            "short_line_ratio": 0.28125,
+            "fragmented_line_count": 14,
+            "fragmented_line_ratio": 0.21875,
+            "mean_line_length": 58.44,
+            "median_line_length": 55.5,
+            "line_length_stdev": 36.54,
+            "line_length_cv": 0.625337,
+            "broken_sentence_count": 18,
+            "broken_sentence_ratio": 0.285714,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    }
+  ],
+  "extracted_text": "MRUNAL KHERDE \n\nScrum Master, Agile Facilitator  \n\n \n\nmrunalkherde12@gmail.com | www.linkedin.com/in/mrunal-kherde-a564b1223 \n\n Pune, Maharashtra, 411057, India | +91 8010127894 \n\n \n\nPROFESSIONAL SUMMARY \n\nResults-driven Scrum Master with 4+ years of experience leading Agile teams using Scrum and SAFe \n\nmethodologies to deliver high-quality software and business solutions. Skilled in facilitating Agile \n\nceremonies, removing impediments, managing stakeholder communication, and driving continuous \n\nimprovement. Proficient in Azure DevOps, Jira, Confluence, and Rally for sprint planning, backlog \n\nmanagement, and release tracking. Strong collaborator with a focus on team productivity, Agile maturity, \n\nand successful project delivery. \n\n \n\nWORK EXPERIENCE \n\nApplication Development Analyst / Scrum Master                                                                   March 2022 - Present  \n\nACCENTURE | Pune \n\n• Facilitated Scrum and SAFe ceremonies including sprint planning, stand-ups, reviews, retrospectives, \n\nand PI planning to ensure smooth Agile delivery and continuous improvement. \n\n• Collaborated with RTE, Product Owners and stakeholders to manage backlog readiness, prioritize \n\nuser stories, refine requirements, and align delivery with business goals and release timelines. \n\n• Managed sprint execution, delivery tracking, and Agile workflows using Azure DevOps, Jira, and \n\nConfluence while maintaining dashboards for velocity, burndown, sprint progress, and release \n\nreadiness. \n\n• Coordinated with cross-functional onshore/offshore teams to manage dependencies, align project \n\nmilestones, and support successful Data & Analytics project delivery. \n\n• Identified and resolved impediments, risks, and issues, escalating critical concerns when needed to \n\nmaintain delivery predictability and team efficiency. \n\n• Communicated regularly with Engagement Managers, project team members, and representatives \n\nfrom various functional and / or technical teams, including escalating any matters that require \n\nadditional attention and consideration from engagement management. \n\nAdditional Responsibilities \n\n• Managed demand intake, resource planning, and project prioritization across multiple engagements. \n\n• Oversaw project timelines, budgets, risks, and dependencies to support successful delivery \n\nexecution. \n\n• Collaborated with stakeholders and cross-functional teams to drive process improvements and \n\noperational efficiency. \n\n• Applied strong analytical and organizational skills to manage multiple projects and delivery priorities \n\neffectively. \n\nhttp://www.linkedin.com/in/mrunal-kherde-a564b1223\n\n\n• Independently and collaboratively led client engagement workstreams focused on process \n\nimprovement, optimization, and transformation, including implementing leading practice workflows, \n\naddressing quality gaps, and driving operational outcomes. \n\n \n\nAGILE & PROJECT MANAGEMENT SKILLS \n\n• Agile & Scrum (Scrum, SAFe), Project Delivery & Governance \n\n• Sprint/PI Planning, Daily stand ups, Backlog & Release Management, Retrospective \n\n• Agile Metrics (Velocity, Burndown) & Reporting \n\n• Stakeholder & Cross-Team Coordination \n\n• SDLC, Risk & Dependency Management \n\n• Tools: JIRA, Azure DevOps, Rally, Confluence \n\n• Demand & Resource Management \n\n• Agile Coaching & Continuous Improvement \n\nExpertise: \n\nProject Management, Demand Management, Scrum Master, Business Analysis, \n\nRequirements Gathering, SDLC Coordination, Agile Reporting & Execution \n\n \n\nEDUCATION \n\nBachelor of Engineering (Information Technology)  \n\nSant Gadge Baba Amravati University, Maharashtra                                                                      Graduated: 2021 \n\n \n\nCGPA: 9.63  \n\n \n\nCERTIFICATIONS \n\n• Reinvention with Agentic AI certified (Accenture)  \n\n• Actively preparing for Certified Scrum Master (CSM) certification to further strengthen Agile and \n\nScrum expertise \n\n \n\nLANGUAGES \n\n• English \n\n• Marathi \n\n• Hindi",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "MRUNAL KHERDE \n\nScrum Master, Agile Facilitator  \n\n \n\nmrunalkherde12@gmail.com | www.linkedin.com/in/mrunal-kherde-a564b1223 \n\n Pune, Maharashtra, 411057, India | +91 8010127894 \n\n \n\nPROFESSIONAL SUMMARY \n\nResults-driven Scrum Master with 4+ years of experience leading Agile teams using Scrum and SAFe \n\nmethodologies to deliver high-quality software and business solutions. Skilled in facilitating Agile \n\nceremonies, removing impediments, managing stakeholder communication, and driving continuous \n\nimprovement. Proficient in Azure DevOps, Jira, Confluence, and Rally for sprint planning, backlog \n\nmanagement, and release tracking. Strong collaborator with a focus on team productivity, Agile maturity, \n\nand successful project delivery. \n\n \n\nWORK EXPERIENCE \n\nApplication Development Analyst / Scrum Master                                                                   March 2022 - Present  \n\nACCENTURE | Pune \n\n• Facilitated Scrum and SAFe ceremonies including sprint planning, stand-ups, reviews, retrospectives, \n\nand PI planning to ensure smooth Agile delivery and continuous improvement. \n\n• Collaborated with RTE, Product Owners and stakeholders to manage backlog readiness, prioritize \n\nuser stories, refine requirements, and align delivery with business goals and release timelines. \n\n• Managed sprint execution, delivery tracking, and Agile workflows using Azure DevOps, Jira, and \n\nConfluence while maintaining dashboards for velocity, burndown, sprint progress, and release \n\nreadiness. \n\n• Coordinated with cross-functional onshore/offshore teams to manage dependencies, align project \n\nmilestones, and support successful Data & Analytics project delivery. \n\n• Identified and resolved impediments, risks, and issues, escalating critical concerns when needed to \n\nmaintain delivery predictability and team efficiency. \n\n• Communicated regularly with Engagement Managers, project team members, and representatives \n\nfrom various functional and / or technical teams, including escalating any matters that require \n\nadditional attention and consideration from engagement management. \n\nAdditional Responsibilities \n\n• Managed demand intake, resource planning, and project prioritization across multiple engagements. \n\n• Oversaw project timelines, budgets, risks, and dependencies to support successful delivery \n\nexecution. \n\n• Collaborated with stakeholders and cross-functional teams to drive process improvements and \n\noperational efficiency. \n\n• Applied strong analytical and organizational skills to manage multiple projects and delivery priorities \n\neffectively. \n\nhttp://www.linkedin.com/in/mrunal-kherde-a564b1223\n\n\n• Independently and collaboratively led client engagement workstreams focused on process \n\nimprovement, optimization, and transformation, including implementing leading practice workflows, \n\naddressing quality gaps, and driving operational outcomes. \n\n \n\nAGILE & PROJECT MANAGEMENT SKILLS \n\n• Agile & Scrum (Scrum, SAFe), Project Delivery & Governance \n\n• Sprint/PI Planning, Daily stand ups, Backlog & Release Management, Retrospective \n\n• Agile Metrics (Velocity, Burndown) & Reporting \n\n• Stakeholder & Cross-Team Coordination \n\n• SDLC, Risk & Dependency Management \n\n• Tools: JIRA, Azure DevOps, Rally, Confluence \n\n• Demand & Resource Management \n\n• Agile Coaching & Continuous Improvement \n\nExpertise: \n\nProject Management, Demand Management, Scrum Master, Business Analysis, \n\nRequirements Gathering, SDLC Coordination, Agile Reporting & Execution \n\n \n\nEDUCATION \n\nBachelor of Engineering (Information Technology)  \n\nSant Gadge Baba Amravati University, Maharashtra                                                                      Graduated: 2021 \n\n \n\nCGPA: 9.63  \n\n \n\nCERTIFICATIONS \n\n• Reinvention with Agentic AI certified (Accenture)  \n\n• Actively preparing for Certified Scrum Master (CSM) certification to further strengthen Agile and \n\nScrum expertise \n\n \n\nLANGUAGES \n\n• English \n\n• Marathi \n\n• Hindi",
+  "quality": {
+    "status": "PASS",
+    "document_id": "15146cfb-66e4-4169-bcb5-83b42a72e640",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 80.0,
+      "flags": [
+        "EXCESSIVE_REPEATED_CHARACTERS"
+      ],
+      "reasons": [
+        "Repeated-character corruption suspected: longest run is 70 characters, 0.0% of long lines are single-character repeats."
+      ],
+      "metrics": {
+        "char_count": 3959,
+        "word_count": 457,
+        "line_count": 144,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.188684,
+        "symbol_count": 24,
+        "symbol_ratio": 0.006062,
+        "max_repeated_char_run": 70,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 85.0,
+      "flags": [
+        "MISSING_RECOMMENDED_SECTION",
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 3959,
+        "word_count": 457,
+        "configured_section_count": 7,
+        "detected_count": 5,
+        "missing_count": 2,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Work Experience",
+          "Education",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Skills",
+          "Projects"
+        ],
+        "missing_required": [],
+        "missing_recommended": [
+          "Skills"
+        ],
+        "missing_optional": [
+          "Projects"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "professional summary",
+          "Work Experience": "work experience",
+          "Education": "education",
+          "Certifications": "certifications"
+        }
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Work Experience",
+        "Education",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Skills",
+        "Projects"
+      ],
+      "missing_required": [],
+      "missing_recommended": [
+        "Skills"
+      ],
+      "missing_optional": [
+        "Projects"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3959,
+        "word_count": 457,
+        "line_count": 144,
+        "non_empty_line_count": 64,
+        "short_line_count": 18,
+        "short_line_ratio": 0.28125,
+        "fragmented_line_count": 14,
+        "fragmented_line_ratio": 0.21875,
+        "mean_line_length": 58.44,
+        "median_line_length": 55.5,
+        "line_length_stdev": 36.54,
+        "line_length_cv": 0.625337,
+        "broken_sentence_count": 18,
+        "broken_sentence_ratio": 0.285714,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 60.0,
+  "resume_json": null,
+  "hyperlinks": [
+    {
+      "page": 1,
+      "url": "http://www.linkedin.com/in/mrunal-kherde-a564b1223",
+      "visible_text": "www.linkedin.com/in/mrunal-kherde-a564b1223",
+      "type": "uri",
+      "rect": [
+        251.73,
+        112.15,
+        496.99,
+        129.0
+      ]
+    }
+  ],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "MRUNAL KHERDE \n\nScrum Master, Agile Facilitator  \n\n \n\nmrunalkherde12@gmail.com | www.linkedin.com/in/mrunal-kherde-a564b1223 \n\n Pune, Maharashtra, 411057, India | +91 8010127894 \n\n \n\nPROFESSIONAL SUMMARY \n\nResults-driven Scrum Master with 4+ years of experience leading Agile teams using Scrum and SAFe \n\nmethodologies to deliver high-quality software and business solutions. Skilled in facilitating Agile \n\nceremonies, removing impediments, managing stakeholder communication, and driving continuous \n\nimprovement. Proficient in Azure DevOps, Jira, Confluence, and Rally for sprint planning, backlog \n\nmanagement, and release tracking. Strong collaborator with a focus on team productivity, Agile maturity, \n\nand successful project delivery. \n\n \n\nWORK EXPERIENCE \n\nApplication Development Analyst / Scrum Master                                                                   March 2022 - Present  \n\nACCENTURE | Pune \n\n• Facilitated Scrum and SAFe ceremonies including sprint planning, stand-ups, reviews, retrospectives, \n\nand PI planning to ensure smooth Agile delivery and continuous improvement. \n\n• Collaborated with RTE, Product Owners and stakeholders to manage backlog readiness, prioritize \n\nuser stories, refine requirements, and align delivery with business goals and release timelines. \n\n• Managed sprint execution, delivery tracking, and Agile workflows using Azure DevOps, Jira, and \n\nConfluence while maintaining dashboards for velocity, burndown, sprint progress, and release \n\nreadiness. \n\n• Coordinated with cross-functional onshore/offshore teams to manage dependencies, align project \n\nmilestones, and support successful Data & Analytics project delivery. \n\n• Identified and resolved impediments, risks, and issues, escalating critical concerns when needed to \n\nmaintain delivery predictability and team efficiency. \n\n• Communicated regularly with Engagement Managers, project team members, and representatives \n\nfrom various functional and / or technical teams, including escalating any matters that require \n\nadditional attention and consideration from engagement management. \n\nAdditional Responsibilities \n\n• Managed demand intake, resource planning, and project prioritization across multiple engagements. \n\n• Oversaw project timelines, budgets, risks, and dependencies to support successful delivery \n\nexecution. \n\n• Collaborated with stakeholders and cross-functional teams to drive process improvements and \n\noperational efficiency. \n\n• Applied strong analytical and organizational skills to manage multiple projects and delivery priorities \n\neffectively. \n\nhttp://www.linkedin.com/in/mrunal-kherde-a564b1223\n\n\n• Independently and collaboratively led client engagement workstreams focused on process \n\nimprovement, optimization, and transformation, including implementing leading practice workflows, \n\naddressing quality gaps, and driving operational outcomes. \n\n \n\nAGILE & PROJECT MANAGEMENT SKILLS \n\n• Agile & Scrum (Scrum, SAFe), Project Delivery & Governance \n\n• Sprint/PI Planning, Daily stand ups, Backlog & Release Management, Retrospective \n\n• Agile Metrics (Velocity, Burndown) & Reporting \n\n• Stakeholder & Cross-Team Coordination \n\n• SDLC, Risk & Dependency Management \n\n• Tools: JIRA, Azure DevOps, Rally, Confluence \n\n• Demand & Resource Management \n\n• Agile Coaching & Continuous Improvement \n\nExpertise: \n\nProject Management, Demand Management, Scrum Master, Business Analysis, \n\nRequirements Gathering, SDLC Coordination, Agile Reporting & Execution \n\n \n\nEDUCATION \n\nBachelor of Engineering (Information Technology)  \n\nSant Gadge Baba Amravati University, Maharashtra                                                                      Graduated: 2021 \n\n \n\nCGPA: 9.63  \n\n \n\nCERTIFICATIONS \n\n• Reinvention with Agentic AI certified (Accenture)  \n\n• Actively preparing for Certified Scrum Master (CSM) certification to further strengthen Agile and \n\nScrum expertise \n\n \n\nLANGUAGES \n\n• English \n\n• Marathi \n\n• Hindi",
+    "normalized_text": "MRUNAL KHERDE\n\nScrum Master, Agile Facilitator\n\nmrunalkherde12@gmail.com | www.linkedin.com/in/mrunal-kherde-a564b1223\n\nPune, Maharashtra, 411057, India | +91 8010127894\n\nPROFESSIONAL SUMMARY\n\nResults-driven Scrum Master with 4+ years of experience leading Agile teams using Scrum and SAFe\n\nmethodologies to deliver high-quality software and business solutions. Skilled in facilitating Agile\n\nceremonies, removing impediments, managing stakeholder communication, and driving continuous\n\nimprovement. Proficient in Azure DevOps, Jira, Confluence, and Rally for sprint planning, backlog\n\nmanagement, and release tracking. Strong collaborator with a focus on team productivity, Agile maturity,\n\nand successful project delivery.\n\nWORK EXPERIENCE\n\nApplication Development Analyst / Scrum Master March 2022 - Present\n\nACCENTURE | Pune\n\n• Facilitated Scrum and SAFe ceremonies including sprint planning, stand-ups, reviews, retrospectives,\n\nand PI planning to ensure smooth Agile delivery and continuous improvement.\n\n• Collaborated with RTE, Product Owners and stakeholders to manage backlog readiness, prioritize\n\nuser stories, refine requirements, and align delivery with business goals and release timelines.\n\n• Managed sprint execution, delivery tracking, and Agile workflows using Azure DevOps, Jira, and\n\nConfluence while maintaining dashboards for velocity, burndown, sprint progress, and release\n\nreadiness.\n\n• Coordinated with cross-functional onshore/offshore teams to manage dependencies, align project\n\nmilestones, and support successful Data & Analytics project delivery.\n\n• Identified and resolved impediments, risks, and issues, escalating critical concerns when needed to\n\nmaintain delivery predictability and team efficiency.\n\n• Communicated regularly with Engagement Managers, project team members, and representatives\n\nfrom various functional and / or technical teams, including escalating any matters that require\n\nadditional attention and consideration from engagement management.\n\nAdditional Responsibilities\n\n• Managed demand intake, resource planning, and project prioritization across multiple engagements.\n\n• Oversaw project timelines, budgets, risks, and dependencies to support successful delivery\n\nexecution.\n\n• Collaborated with stakeholders and cross-functional teams to drive process improvements and\n\noperational efficiency.\n\n• Applied strong analytical and organizational skills to manage multiple projects and delivery priorities\n\neffectively.\n\nhttp://www.linkedin.com/in/mrunal-kherde-a564b1223\n\n• Independently and collaboratively led client engagement workstreams focused on process\n\nimprovement, optimization, and transformation, including implementing leading practice workflows,\n\naddressing quality gaps, and driving operational outcomes.\n\nAGILE & PROJECT MANAGEMENT SKILLS\n\n• Agile & Scrum (Scrum, SAFe), Project Delivery & Governance\n\n• Sprint/PI Planning, Daily stand ups, Backlog & Release Management, Retrospective\n\n• Agile Metrics (Velocity, Burndown) & Reporting\n\n• Stakeholder & Cross-Team Coordination\n\n• SDLC, Risk & Dependency Management\n\n• Tools: JIRA, Azure DevOps, Rally, Confluence\n\n• Demand & Resource Management\n\n• Agile Coaching & Continuous Improvement\n\nExpertise:\n\nProject Management, Demand Management, Scrum Master, Business Analysis,\n\nRequirements Gathering, SDLC Coordination, Agile Reporting & Execution\n\nEDUCATION\n\nBachelor of Engineering (Information Technology)\n\nSant Gadge Baba Amravati University, Maharashtra Graduated: 2021\n\nCGPA: 9.63\n\nCERTIFICATIONS\n\n• Reinvention with Agentic AI certified (Accenture)\n\n• Actively preparing for Certified Scrum Master (CSM) certification to further strengthen Agile and\n\nScrum expertise\n\nLANGUAGES\n\n• English\n\n• Marathi\n\n• Hindi",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 3959,
+    "normalized_chars": 3731,
+    "original_estimated_tokens": 990,
+    "normalized_estimated_tokens": 933,
+    "estimated_reduction_percent": 5.8
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "timed_out_calls": 1,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_source": null,
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Muse API request timed out after 20s.",
+    "input_type": "text",
+    "duration_ms": 20044.08,
+    "timeout_seconds": 20.0,
+    "usage": {},
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 3959,
+      "normalized_chars": 3731,
+      "estimated_reduction_percent": 5.8,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 3068.1,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "15146cfb-66e4-4169-bcb5-83b42a72e640",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 70 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 3959,
+            "word_count": 457,
+            "line_count": 144,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.188684,
+            "symbol_count": 24,
+            "symbol_ratio": 0.006062,
+            "max_repeated_char_run": 70,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 85.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3959,
+            "word_count": 457,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Work Experience": "work experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3959,
+            "word_count": 457,
+            "line_count": 144,
+            "non_empty_line_count": 64,
+            "short_line_count": 18,
+            "short_line_ratio": 0.28125,
+            "fragmented_line_count": 14,
+            "fragmented_line_ratio": 0.21875,
+            "mean_line_length": 58.44,
+            "median_line_length": 55.5,
+            "line_length_stdev": 36.54,
+            "line_length_cv": 0.625337,
+            "broken_sentence_count": 18,
+            "broken_sentence_ratio": 0.285714,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 20044.08,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 3068.1,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "15146cfb-66e4-4169-bcb5-83b42a72e640_SHJ-5354_SHC-350771.pdf"
+}

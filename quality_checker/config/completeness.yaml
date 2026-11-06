@@ -1,0 +1,106 @@
+# Completeness filter configuration
+#
+# Section names, aliases and importance are fully configurable here.
+# importance: required | recommended | optional
+#   - A missing section is a *possible omission*, never proof that
+#     extraction failed. Optional sections barely affect the score.
+#   - Do NOT mark every section "required" — real resumes vary.
+#
+# Detection:
+#   - `aliases` are matched against normalised heading lines
+#     (case-insensitive, trailing ':' / '#' / '-' stripped).
+#   - `patterns` are optional regexes matched against the whole text,
+#     used for sections that rarely have a heading (e.g. contact info).
+
+sections:
+  contact_information:
+    display_name: "Contact Information"
+    importance: "required"
+    aliases:
+      - "contact"
+      - "contact information"
+      - "contact details"
+      - "personal information"
+      - "personal details"
+    patterns:
+      - "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"   # email
+      - "(\\+?\\d[\\d\\s().-]{7,}\\d)"                       # phone-like
+
+  summary:
+    display_name: "Summary"
+    importance: "optional"
+    aliases:
+      - "summary"
+      - "professional summary"
+      - "profile"
+      - "profile summary"
+      - "objective"
+      - "career objective"
+      - "about me"
+
+  skills:
+    display_name: "Skills"
+    importance: "recommended"
+    aliases:
+      - "skills"
+      - "technical skills"
+      - "core competencies"
+      - "core skills"
+      - "technologies"
+      - "tech stack"
+      - "skills and technologies"
+      - "areas of expertise"
+
+  work_experience:
+    display_name: "Work Experience"
+    importance: "recommended"
+    aliases:
+      - "experience"
+      - "work experience"
+      - "professional experience"
+      - "employment history"
+      - "work history"
+      - "career history"
+      - "professional background"
+      - "internship experience"
+      - "internships"
+
+  education:
+    display_name: "Education"
+    importance: "recommended"
+    aliases:
+      - "education"
+      - "academic background"
+      - "educational background"
+      - "educational qualifications"
+      - "education and training"
+      - "academic qualifications"
+      - "qualifications"
+
+  projects:
+    display_name: "Projects"
+    importance: "optional"
+    aliases:
+      - "projects"
+      - "personal projects"
+      - "academic projects"
+      - "key projects"
+      - "selected projects"
+      - "project experience"
+
+  certifications:
+    display_name: "Certifications"
+    importance: "optional"
+    aliases:
+      - "certifications"
+      - "certificates"
+      - "certifications and licenses"
+      - "licenses and certifications"
+      - "professional certifications"
+      - "courses and certifications"
+
+# Points deducted when a section of that importance is missing.
+penalties_by_importance:
+  required: 25
+  recommended: 12
+  optional: 3

@@ -1,0 +1,2151 @@
+{
+  "resume_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+  "filename": "SHJ-5442_SHC-321887.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 457049,
+  "uploaded_at": "2026-11-05T13:34:44.623138+00:00",
+  "success": true,
+  "extractor_used": "muse_ai",
+  "duration_ms": 5448.6,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 55.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 7891.58,
+      "text": "RESUME \n\nAbhishek Kumar S/O Manbir Singh                                                                                                                                         \n\nAddress: Village Teontha                                                                                                                                              \n\nDist :-. Kaithal, Haryana-136042                                                                                                                                                               \n\nContact No:-  8059310135                                                                                                                                     \n\n CAREER OBJECTIVE :-To work in a professional environment which brings out the \nvery best in me helps me learn new things and provide growth opportunities. \n\n Educational Qualifications: \n✔ 10th  from Haryana Board of School Education in passing  year 2018.                                                                                                                                                                         \n✔ 12th from Haryana Board of School Education in passing  year 2020. \n✔  ITI Turner From NCVT  in passing year 2022. \n\n \n\n COMPUTER KNOWLEDGE \n✔ Basic Knowledge of Computer  Internet \n\n \n\n STRENGTH                                                                                                  \n Ability to work in any hard conditions.  \n\n Sincerity & Punctuality.  \n\n Smart Working. \n\n Positive Thinking \n\n Hard Working \n \n\n Personal Information: \nFarther Name             :             Sh.Manbir Singh  \nDate of Birth               :             14/02/2002                                                                                                                          \nMarital Status             :             Unmarried \nGender                          :             Male                                                                                                                                   \nNationality                   :             Indian \n \n\n Hobbies                          \n Reading Books \n\n Hard Working \n \n\n Languages  \n Hindi ,English \n\n \n\n Declaration   \n I hereby declare that the above mentioned information is correct to the best of my \n\nknowledge and I bear the responsibility for the correctness of the above  mentional \nparticulars.      \n\n \n\n DATE : \n PLACE:    \n\n \n\n \n\n \n\n\n\n \n\n \n\n \n\n✔ Kurukshetra University Kurukshetra",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-05T13:34:17.708480+00:00",
+      "completed_at": "2026-11-05T13:34:25.601542+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 56.8,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "ABNORMAL_WHITESPACE_RATIO",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "19 non-printable characters found (0.76% of text).",
+            "Whitespace makes up 61.8% of the text.",
+            "Repeated-character corruption suspected: longest run is 169 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2508,
+            "word_count": 187,
+            "line_count": 82,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 19,
+            "non_printable_ratio": 0.007576,
+            "whitespace_ratio": 0.618421,
+            "symbol_count": 24,
+            "symbol_ratio": 0.009569,
+            "max_repeated_char_run": 169,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 55.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2508,
+            "word_count": 187,
+            "configured_section_count": 7,
+            "detected_count": 1,
+            "missing_count": 6,
+            "detected_sections": [
+              "Contact Information"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact"
+            }
+          },
+          "detected_sections": [
+            "Contact Information"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2508,
+            "word_count": 187,
+            "line_count": 82,
+            "non_empty_line_count": 37,
+            "short_line_count": 7,
+            "short_line_ratio": 0.189189,
+            "fragmented_line_count": 11,
+            "fragmented_line_ratio": 0.297297,
+            "mean_line_length": 33.95,
+            "median_line_length": 26.0,
+            "line_length_stdev": 23.33,
+            "line_length_cv": 0.687392,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.083333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 55.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": false,
+      "attempt_id": "c2cf7952-9995-4129-9ae4-00915766ab13-attempt-1",
+      "resume_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "RESUME \n\nAbhishek Kumar S/O Manbir Singh                                                                                                                                         \n\nAddress: Village Teontha                                                                                                                                              \n\nDist :-. Kaithal, Haryana-136042                                                                                                                                                               \n\nContact No:-  8059310135                                                                                                                                     \n\n CAREER OBJECTIVE :-To work in a professional environment which brings out the \nvery best in me helps me learn new things and provide growth opportunities. \n\n Educational Qualifications: \n✔ 10th  from Haryana Board of School Education in passing  year 2018.                                                                                                                                                                         \n✔ 12th from Haryana Board of School Education in passing  year 2020. \n✔  ITI Turner From NCVT  in passing year 2022. \n\n \n\n COMPUTER KNOWLEDGE \n✔ Basic Knowledge of Computer  Internet \n\n \n\n STRENGTH                                                                                                  \n Ability to work in any hard conditions.  \n\n Sincerity & Punctuality.  \n\n Smart Working. \n\n Positive Thinking \n\n Hard Working \n \n\n Personal Information: \nFarther Name             :             Sh.Manbir Singh  \nDate of Birth               :             14/02/2002                                                                                                                          \nMarital Status             :             Unmarried \nGender                          :             Male                                                                                                                                   \nNationality                   :             Indian \n \n\n Hobbies                          \n Reading Books \n\n Hard Working \n \n\n Languages  \n Hindi ,English \n\n \n\n Declaration   \n I hereby declare that the above mentioned information is correct to the best of my \n\nknowledge and I bear the responsibility for the correctness of the above  mentional \nparticulars.      \n\n \n\n DATE : \n PLACE:    \n\n \n\n \n\n \n\n\n\n \n\n \n\n \n\n✔ Kurukshetra University Kurukshetra",
+      "extracted_text_length": 2508,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 55.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 56.8,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "ABNORMAL_WHITESPACE_RATIO",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "19 non-printable characters found (0.76% of text).",
+            "Whitespace makes up 61.8% of the text.",
+            "Repeated-character corruption suspected: longest run is 169 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2508,
+            "word_count": 187,
+            "line_count": 82,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 19,
+            "non_printable_ratio": 0.007576,
+            "whitespace_ratio": 0.618421,
+            "symbol_count": 24,
+            "symbol_ratio": 0.009569,
+            "max_repeated_char_run": 169,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 55.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2508,
+            "word_count": 187,
+            "configured_section_count": 7,
+            "detected_count": 1,
+            "missing_count": 6,
+            "detected_sections": [
+              "Contact Information"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact"
+            }
+          },
+          "detected_sections": [
+            "Contact Information"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2508,
+            "word_count": 187,
+            "line_count": 82,
+            "non_empty_line_count": 37,
+            "short_line_count": 7,
+            "short_line_ratio": 0.189189,
+            "fragmented_line_count": 11,
+            "fragmented_line_ratio": 0.297297,
+            "mean_line_length": 33.95,
+            "median_line_length": 26.0,
+            "line_length_stdev": 23.33,
+            "line_length_cv": 0.687392,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.083333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 55.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": false,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "extractor_name": "pymupdf",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 55.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 36.14,
+      "text": "RESUME \nAbhishek Kumar S/O Manbir Singh                                                                                                                      \nAddress: Village Teontha                                                                                                                                              \nDist :-. Kaithal, Haryana-136042                                                                                                                                                \nContact No:-  8059310135                                                                                                                                     \n CAREER OBJECTIVE :-To work in a professional environment which brings out the \nvery best in me helps me learn new things and provide growth opportunities. \n Educational Qualifications: \n✔ 10th  from Haryana Board of School Education in passing  year 2018.                                                             \n✔ 12th from Haryana Board of School Education in passing  year 2020. \n✔  ITI Turner From NCVT  in passing year 2022. \n \n COMPUTER KNOWLEDGE \n✔ Basic Knowledge of Computer  Internet \n \n STRENGTH                                                                                                  \n Ability to work in any hard conditions.  \n Sincerity & Punctuality.  \n Smart Working. \n Positive Thinking \n Hard Working \n \n Personal Information: \nFarther Name             :             Sh.Manbir Singh \n \nDate of Birth               :             14/02/2002                                                                                                                  \nMarital Status             :             Unmarried \nGender                          :             Male                                                                                                                                 \nNationality                   :             Indian \n \n Hobbies                          \n Reading Books \n Hard Working \n \n Languages  \n Hindi ,English \n \n Declaration   \n I hereby declare that the above mentioned information is correct to the best of my \nknowledge and I bear the responsibility for the correctness of the above  mentional \nparticulars.      \n \n DATE : \n PLACE:\n✔ Kurukshetra University Kurukshetra",
+      "extractor_version": "1.28.2",
+      "started_at": "2026-11-05T13:34:25.608605+00:00",
+      "completed_at": "2026-11-05T13:34:25.646393+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "format": "PDF 1.5",
+        "author": "Gurdas Mehra",
+        "creator": "Microsoft® Word 2010",
+        "producer": "Microsoft® Word 2010",
+        "creationDate": "D:20241124151936+05'30'",
+        "modDate": "D:20241124151936+05'30'"
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 58.75,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "ABNORMAL_WHITESPACE_RATIO",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "19 non-printable characters found (0.82% of text).",
+            "Whitespace makes up 58.6% of the text.",
+            "Repeated-character corruption suspected: longest run is 144 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2309,
+            "word_count": 187,
+            "line_count": 45,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 19,
+            "non_printable_ratio": 0.008229,
+            "whitespace_ratio": 0.585535,
+            "symbol_count": 24,
+            "symbol_ratio": 0.010394,
+            "max_repeated_char_run": 144,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 55.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2309,
+            "word_count": 187,
+            "configured_section_count": 7,
+            "detected_count": 1,
+            "missing_count": 6,
+            "detected_sections": [
+              "Contact Information"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact"
+            }
+          },
+          "detected_sections": [
+            "Contact Information"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2309,
+            "word_count": 187,
+            "line_count": 45,
+            "non_empty_line_count": 37,
+            "short_line_count": 7,
+            "short_line_ratio": 0.189189,
+            "fragmented_line_count": 11,
+            "fragmented_line_ratio": 0.297297,
+            "mean_line_length": 33.95,
+            "median_line_length": 26.0,
+            "line_length_stdev": 23.33,
+            "line_length_cv": 0.687392,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.083333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 55.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": false,
+      "attempt_id": "c2cf7952-9995-4129-9ae4-00915766ab13-attempt-2",
+      "resume_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+      "attempt_number": 2,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "RESUME \nAbhishek Kumar S/O Manbir Singh                                                                                                                      \nAddress: Village Teontha                                                                                                                                              \nDist :-. Kaithal, Haryana-136042                                                                                                                                                \nContact No:-  8059310135                                                                                                                                     \n CAREER OBJECTIVE :-To work in a professional environment which brings out the \nvery best in me helps me learn new things and provide growth opportunities. \n Educational Qualifications: \n✔ 10th  from Haryana Board of School Education in passing  year 2018.                                                             \n✔ 12th from Haryana Board of School Education in passing  year 2020. \n✔  ITI Turner From NCVT  in passing year 2022. \n \n COMPUTER KNOWLEDGE \n✔ Basic Knowledge of Computer  Internet \n \n STRENGTH                                                                                                  \n Ability to work in any hard conditions.  \n Sincerity & Punctuality.  \n Smart Working. \n Positive Thinking \n Hard Working \n \n Personal Information: \nFarther Name             :             Sh.Manbir Singh \n \nDate of Birth               :             14/02/2002                                                                                                                  \nMarital Status             :             Unmarried \nGender                          :             Male                                                                                                                                 \nNationality                   :             Indian \n \n Hobbies                          \n Reading Books \n Hard Working \n \n Languages  \n Hindi ,English \n \n Declaration   \n I hereby declare that the above mentioned information is correct to the best of my \nknowledge and I bear the responsibility for the correctness of the above  mentional \nparticulars.      \n \n DATE : \n PLACE:\n✔ Kurukshetra University Kurukshetra",
+      "extracted_text_length": 2309,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 55.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 58.75,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "ABNORMAL_WHITESPACE_RATIO",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "19 non-printable characters found (0.82% of text).",
+            "Whitespace makes up 58.6% of the text.",
+            "Repeated-character corruption suspected: longest run is 144 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2309,
+            "word_count": 187,
+            "line_count": 45,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 19,
+            "non_printable_ratio": 0.008229,
+            "whitespace_ratio": 0.585535,
+            "symbol_count": 24,
+            "symbol_ratio": 0.010394,
+            "max_repeated_char_run": 144,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 55.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2309,
+            "word_count": 187,
+            "configured_section_count": 7,
+            "detected_count": 1,
+            "missing_count": 6,
+            "detected_sections": [
+              "Contact Information"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact"
+            }
+          },
+          "detected_sections": [
+            "Contact Information"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2309,
+            "word_count": 187,
+            "line_count": 45,
+            "non_empty_line_count": 37,
+            "short_line_count": 7,
+            "short_line_ratio": 0.189189,
+            "fragmented_line_count": 11,
+            "fragmented_line_ratio": 0.297297,
+            "mean_line_length": 33.95,
+            "median_line_length": 26.0,
+            "line_length_stdev": 23.33,
+            "line_length_cv": 0.687392,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.083333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 55.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "extractor_name": "docling",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 13490.52,
+      "text": "RESUME\n\nAbhishek Kumar S/O Manbir Singh\n\nAddress: Village Teontha Dist :-. Kaithal, Haryana-136042 Contact No:- 8059310135\n\n- CAREER OBJECTIVE :-To work in a professional environment which brings out the very best in me helps me learn new things and provide growth opportunities.\n- Educational Qualifications:\n- 10 th from Haryana Board of School Education in passing year 2018.\n- 12 th from Haryana Board of School Education in passing year 2020.\n- ITI Turner From NCVT in passing year 2022.\n- COMPUTER KNOWLEDGE\n- Basic Knowledge of Computer Internet\n- STRENGTH\n- Ability to work in any hard conditions.\n- Sincerity & Punctuality.\n- Smart Working.\n- Positive Thinking\n- Hard Working\n- Personal Information:\n\nFarther Name : Sh.Manbir Singh Date of Birth : 14/02/2002 Marital Status : Unmarried Gender : Male Nationality : Indian\n\n- Hobbies\n- Reading Books\n- Hard Working\n- Languages\n- Hindi ,English\n- Declaration\n- I hereby declare that the above mentioned information is correct to the best of my knowledge and I bear the responsibility for the correctness of the above mentional particulars.\n- DATE :\n- PLACE:\n- Kurukshetra University Kurukshetra",
+      "extractor_version": "2.146.0",
+      "started_at": "2026-11-05T13:34:25.662138+00:00",
+      "completed_at": "2026-11-05T13:34:39.154159+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+        "source_tool": "docling",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1150,
+            "word_count": 189,
+            "line_count": 33,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.167826,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1150,
+            "word_count": 189,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Education"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal information",
+              "Summary": "career objective",
+              "Education": "educational qualifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Education"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 98.11,
+          "flags": [
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "35.7% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.10) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 1150,
+            "word_count": 189,
+            "line_count": 33,
+            "non_empty_line_count": 28,
+            "short_line_count": 6,
+            "short_line_ratio": 0.214286,
+            "fragmented_line_count": 10,
+            "fragmented_line_ratio": 0.357143,
+            "mean_line_length": 39.93,
+            "median_line_length": 21.5,
+            "line_length_stdev": 43.77,
+            "line_length_cv": 1.096219,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": false,
+      "attempt_id": "c2cf7952-9995-4129-9ae4-00915766ab13-attempt-3",
+      "resume_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+      "attempt_number": 3,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "RESUME\n\nAbhishek Kumar S/O Manbir Singh\n\nAddress: Village Teontha Dist :-. Kaithal, Haryana-136042 Contact No:- 8059310135\n\n- CAREER OBJECTIVE :-To work in a professional environment which brings out the very best in me helps me learn new things and provide growth opportunities.\n- Educational Qualifications:\n- 10 th from Haryana Board of School Education in passing year 2018.\n- 12 th from Haryana Board of School Education in passing year 2020.\n- ITI Turner From NCVT in passing year 2022.\n- COMPUTER KNOWLEDGE\n- Basic Knowledge of Computer Internet\n- STRENGTH\n- Ability to work in any hard conditions.\n- Sincerity & Punctuality.\n- Smart Working.\n- Positive Thinking\n- Hard Working\n- Personal Information:\n\nFarther Name : Sh.Manbir Singh Date of Birth : 14/02/2002 Marital Status : Unmarried Gender : Male Nationality : Indian\n\n- Hobbies\n- Reading Books\n- Hard Working\n- Languages\n- Hindi ,English\n- Declaration\n- I hereby declare that the above mentioned information is correct to the best of my knowledge and I bear the responsibility for the correctness of the above mentional particulars.\n- DATE :\n- PLACE:\n- Kurukshetra University Kurukshetra",
+      "extracted_text_length": 1150,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+        "source_tool": "docling",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1150,
+            "word_count": 189,
+            "line_count": 33,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.167826,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1150,
+            "word_count": 189,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Education"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal information",
+              "Summary": "career objective",
+              "Education": "educational qualifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Education"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 98.11,
+          "flags": [
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "35.7% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.10) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 1150,
+            "word_count": 189,
+            "line_count": 33,
+            "non_empty_line_count": 28,
+            "short_line_count": 6,
+            "short_line_ratio": 0.214286,
+            "fragmented_line_count": 10,
+            "fragmented_line_ratio": 0.357143,
+            "mean_line_length": 39.93,
+            "median_line_length": 21.5,
+            "line_length_stdev": 43.77,
+            "line_length_cv": 1.096219,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "extractor_name": "ocr",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 5448.6,
+      "text": "RESUME\n\nAbhishek Kumar S/O Manbir Singh\nAddress: Village Teontha\n\nDist :-. Kaithal, Haryana-136042\n\nContact No:- 8059310135\n\nCAREER OBJECTIVE :-To work in a professional environment which brings out the\nvery best in me helps me learn new things and provide growth opportunities.\n\nEducational Qualifications:\n\nY 10 from Haryana Board of School Education in passing year 2018.\nY 12 from Haryana Board of School Education in passing year 2020.\nY ITI Turner From NCVT in passing year 2022.\n\nCOMPUTER KNOWLEDGE\nVY Basic Knowledge of Computer Internet\n\nSTRENGTH\nY Ability to work in any hard conditions.\nY Sincerity & Punctuality.\nv Smart Working.\nY Positive Thinking\nY Hard Working\n\nPersonal Information:\nFarther Name : Sh.Manbir Singh\nDate of Birth : 14/02/2002\nMarital Status : Unmarried\nGender : Male\nNationality : Indian\n\nHobbies\n¥ Reading Books\nY Hard Working\n\nLanguages\nY Hindi ,English\n\nDeclaration\n\nY [hereby declare that the above mentioned information is correct to the best of m\ny y\nknowledge and I bear the responsibility for the correctness of the above mentional\nparticulars.\n\nDATE:\nPLACE:\nY Kurukshetra University Kurukshetra",
+      "extractor_version": "0.3.13",
+      "started_at": "2026-11-05T13:34:39.163990+00:00",
+      "completed_at": "2026-11-05T13:34:44.614386+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "ocr_language": "eng",
+        "ocr_dpi": 300,
+        "tesseract_path": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+        "source_tool": "ocr",
+        "attempt_id": "attempt-4",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1135,
+            "word_count": 177,
+            "line_count": 52,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.167401,
+            "symbol_count": 1,
+            "symbol_ratio": 0.000881,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1135,
+            "word_count": 177,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Education"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "career objective",
+              "Education": "educational qualifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Education"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1135,
+            "word_count": 177,
+            "line_count": 52,
+            "non_empty_line_count": 38,
+            "short_line_count": 12,
+            "short_line_ratio": 0.315789,
+            "fragmented_line_count": 13,
+            "fragmented_line_ratio": 0.342105,
+            "mean_line_length": 28.53,
+            "median_line_length": 22.0,
+            "line_length_stdev": 22.42,
+            "line_length_cv": 0.785911,
+            "broken_sentence_count": 4,
+            "broken_sentence_ratio": 0.108108,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": false,
+      "attempt_id": "c2cf7952-9995-4129-9ae4-00915766ab13-attempt-4",
+      "resume_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+      "attempt_number": 4,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "RESUME\n\nAbhishek Kumar S/O Manbir Singh\nAddress: Village Teontha\n\nDist :-. Kaithal, Haryana-136042\n\nContact No:- 8059310135\n\nCAREER OBJECTIVE :-To work in a professional environment which brings out the\nvery best in me helps me learn new things and provide growth opportunities.\n\nEducational Qualifications:\n\nY 10 from Haryana Board of School Education in passing year 2018.\nY 12 from Haryana Board of School Education in passing year 2020.\nY ITI Turner From NCVT in passing year 2022.\n\nCOMPUTER KNOWLEDGE\nVY Basic Knowledge of Computer Internet\n\nSTRENGTH\nY Ability to work in any hard conditions.\nY Sincerity & Punctuality.\nv Smart Working.\nY Positive Thinking\nY Hard Working\n\nPersonal Information:\nFarther Name : Sh.Manbir Singh\nDate of Birth : 14/02/2002\nMarital Status : Unmarried\nGender : Male\nNationality : Indian\n\nHobbies\n¥ Reading Books\nY Hard Working\n\nLanguages\nY Hindi ,English\n\nDeclaration\n\nY [hereby declare that the above mentioned information is correct to the best of m\ny y\nknowledge and I bear the responsibility for the correctness of the above mentional\nparticulars.\n\nDATE:\nPLACE:\nY Kurukshetra University Kurukshetra",
+      "extracted_text_length": 1135,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+        "source_tool": "ocr",
+        "attempt_id": "attempt-4",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1135,
+            "word_count": 177,
+            "line_count": 52,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.167401,
+            "symbol_count": 1,
+            "symbol_ratio": 0.000881,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1135,
+            "word_count": 177,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Education"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "career objective",
+              "Education": "educational qualifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Education"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1135,
+            "word_count": 177,
+            "line_count": 52,
+            "non_empty_line_count": 38,
+            "short_line_count": 12,
+            "short_line_ratio": 0.315789,
+            "fragmented_line_count": 13,
+            "fragmented_line_ratio": 0.342105,
+            "mean_line_length": 28.53,
+            "median_line_length": 22.0,
+            "line_length_stdev": 22.42,
+            "line_length_cv": 0.785911,
+            "broken_sentence_count": 4,
+            "broken_sentence_ratio": 0.108108,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "attempt_id": "c2cf7952-9995-4129-9ae4-00915766ab13-attempt-5",
+      "resume_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+      "attempt_number": 5,
+      "extractor_name": "muse_ai",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "decision": "accept",
+      "decision_reason": "Muse AI returned schema-valid Resume JSON.",
+      "quality_status": null,
+      "quality": null,
+      "quality_checker_report": null,
+      "duration_ms": 10618.92,
+      "text": "{\"full_name\":\"Abhishek Kumar S/O Manbir Singh\",\"email\":\"\",\"phone\":\"8059310135\",\"location\":\"Village Teontha, Kaithal, Haryana-136042\",\"summary\":\"To work in a professional environment which brings out the very best in me helps me learn new things and provide growth opportunities.\",\"skills\":{\"technical_skills\":[\"Basic Knowledge of Computer Internet\"],\"soft_skills\":[\"Ability to work in any hard conditions.\",\"Sincerity & Punctuality.\",\"Smart Working.\",\"Positive Thinking\",\"Hard Working\"],\"tools\":[],\"taxonomy_skills\":[],\"other_skills\":[]},\"experience\":[],\"education\":[{\"degree\":\"10th\",\"institution\":\"Haryana Board of School Education\",\"location\":\"\",\"start_date\":\"\",\"end_date\":\"2018\"},{\"degree\":\"12th\",\"institution\":\"Haryana Board of School Education\",\"location\":\"\",\"start_date\":\"\",\"end_date\":\"2020\"},{\"degree\":\"ITI Turner\",\"institution\":\"NCVT\",\"location\":\"\",\"start_date\":\"\",\"end_date\":\"2022\"},{\"degree\":\"\",\"institution\":\"Kurukshetra University Kurukshetra\",\"location\":\"\",\"start_date\":\"\",\"end_date\":\"\"}],\"certifications\":[],\"languages\":[\"Hindi\",\"English\"],\"links\":[]}",
+      "extracted_text": "{\"full_name\":\"Abhishek Kumar S/O Manbir Singh\",\"email\":\"\",\"phone\":\"8059310135\",\"location\":\"Village Teontha, Kaithal, Haryana-136042\",\"summary\":\"To work in a professional environment which brings out the very best in me helps me learn new things and provide growth opportunities.\",\"skills\":{\"technical_skills\":[\"Basic Knowledge of Computer Internet\"],\"soft_skills\":[\"Ability to work in any hard conditions.\",\"Sincerity & Punctuality.\",\"Smart Working.\",\"Positive Thinking\",\"Hard Working\"],\"tools\":[],\"taxonomy_skills\":[],\"other_skills\":[]},\"experience\":[],\"education\":[{\"degree\":\"10th\",\"institution\":\"Haryana Board of School Education\",\"location\":\"\",\"start_date\":\"\",\"end_date\":\"2018\"},{\"degree\":\"12th\",\"institution\":\"Haryana Board of School Education\",\"location\":\"\",\"start_date\":\"\",\"end_date\":\"2020\"},{\"degree\":\"ITI Turner\",\"institution\":\"NCVT\",\"location\":\"\",\"start_date\":\"\",\"end_date\":\"2022\"},{\"degree\":\"\",\"institution\":\"Kurukshetra University Kurukshetra\",\"location\":\"\",\"start_date\":\"\",\"end_date\":\"\"}],\"certifications\":[],\"languages\":[\"Hindi\",\"English\"],\"links\":[]}",
+      "extracted_text_length": 1065,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "selected": true,
+      "fallback_decision": "accept",
+      "fallback_reason": "Muse AI returned schema-valid Resume JSON.",
+      "is_final_selected": true,
+      "ocr": null,
+      "timeout_seconds": 20.0,
+      "model_config_id": null,
+      "provider": "Muse AI",
+      "model": "muse-spark-1.3-contributor",
+      "json_validation": "valid",
+      "input_type": "pdf",
+      "metadata": {
+        "input_type": "pdf",
+        "visual_provided": true,
+        "tika_text_provided": true,
+        "tika_text_chars": 1163,
+        "hyperlinks_provided": false,
+        "hyperlink_count": 0,
+        "hyperlink_extraction_error": null,
+        "request_id": "chatcmpl-01a1abeb-6fa2-74ca-859e-6bde02dabeee",
+        "usage_available": true,
+        "tika_text_normalization": {
+          "status": "applied",
+          "original_chars": 2508,
+          "normalized_chars": 1163,
+          "estimated_reduction_percent": 53.6,
+          "normalization_applied": true,
+          "normalization_steps": [
+            "whitespace_runs_collapsed",
+            "lines_trimmed",
+            "excessive_blank_lines_collapsed"
+          ],
+          "error": null
+        },
+        "page_count": 3,
+        "pages_processed": 3,
+        "pages_skipped": 0,
+        "pages_beyond_image_limit": 0,
+        "usage": {
+          "completion_tokens": 2000,
+          "prompt_tokens": 8846,
+          "total_tokens": 10846,
+          "completion_tokens_details": {
+            "reasoning_tokens": 1764
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    }
+  ],
+  "extracted_text": "RESUME\n\nAbhishek Kumar S/O Manbir Singh\nAddress: Village Teontha\n\nDist :-. Kaithal, Haryana-136042\n\nContact No:- 8059310135\n\nCAREER OBJECTIVE :-To work in a professional environment which brings out the\nvery best in me helps me learn new things and provide growth opportunities.\n\nEducational Qualifications:\n\nY 10 from Haryana Board of School Education in passing year 2018.\nY 12 from Haryana Board of School Education in passing year 2020.\nY ITI Turner From NCVT in passing year 2022.\n\nCOMPUTER KNOWLEDGE\nVY Basic Knowledge of Computer Internet\n\nSTRENGTH\nY Ability to work in any hard conditions.\nY Sincerity & Punctuality.\nv Smart Working.\nY Positive Thinking\nY Hard Working\n\nPersonal Information:\nFarther Name : Sh.Manbir Singh\nDate of Birth : 14/02/2002\nMarital Status : Unmarried\nGender : Male\nNationality : Indian\n\nHobbies\n¥ Reading Books\nY Hard Working\n\nLanguages\nY Hindi ,English\n\nDeclaration\n\nY [hereby declare that the above mentioned information is correct to the best of m\ny y\nknowledge and I bear the responsibility for the correctness of the above mentional\nparticulars.\n\nDATE:\nPLACE:\nY Kurukshetra University Kurukshetra",
+  "page_count": 3,
+  "warnings": [
+    "OCR recognised no text on page(s): [3]."
+  ],
+  "error": null,
+  "quality_status": "WARNING",
+  "final_quality_status": "WARNING",
+  "final_extracted_text": "RESUME\n\nAbhishek Kumar S/O Manbir Singh\nAddress: Village Teontha\n\nDist :-. Kaithal, Haryana-136042\n\nContact No:- 8059310135\n\nCAREER OBJECTIVE :-To work in a professional environment which brings out the\nvery best in me helps me learn new things and provide growth opportunities.\n\nEducational Qualifications:\n\nY 10 from Haryana Board of School Education in passing year 2018.\nY 12 from Haryana Board of School Education in passing year 2020.\nY ITI Turner From NCVT in passing year 2022.\n\nCOMPUTER KNOWLEDGE\nVY Basic Knowledge of Computer Internet\n\nSTRENGTH\nY Ability to work in any hard conditions.\nY Sincerity & Punctuality.\nv Smart Working.\nY Positive Thinking\nY Hard Working\n\nPersonal Information:\nFarther Name : Sh.Manbir Singh\nDate of Birth : 14/02/2002\nMarital Status : Unmarried\nGender : Male\nNationality : Indian\n\nHobbies\n¥ Reading Books\nY Hard Working\n\nLanguages\nY Hindi ,English\n\nDeclaration\n\nY [hereby declare that the above mentioned information is correct to the best of m\ny y\nknowledge and I bear the responsibility for the correctness of the above mentional\nparticulars.\n\nDATE:\nPLACE:\nY Kurukshetra University Kurukshetra",
+  "quality": {
+    "status": "WARNING",
+    "document_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+    "source_tool": "ocr",
+    "attempt_id": "attempt-4",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 1135,
+        "word_count": 177,
+        "line_count": 52,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.167401,
+        "symbol_count": 1,
+        "symbol_ratio": 0.000881,
+        "max_repeated_char_run": 2,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 70.0,
+      "flags": [
+        "MISSING_RECOMMENDED_SECTION",
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 1135,
+        "word_count": 177,
+        "configured_section_count": 7,
+        "detected_count": 3,
+        "missing_count": 4,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Education"
+        ],
+        "missing_sections": [
+          "Skills",
+          "Work Experience",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [
+          "Skills",
+          "Work Experience"
+        ],
+        "missing_optional": [
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "contact",
+          "Summary": "career objective",
+          "Education": "educational qualifications"
+        }
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Education"
+      ],
+      "missing_sections": [
+        "Skills",
+        "Work Experience",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [
+        "Skills",
+        "Work Experience"
+      ],
+      "missing_optional": [
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 1135,
+        "word_count": 177,
+        "line_count": 52,
+        "non_empty_line_count": 38,
+        "short_line_count": 12,
+        "short_line_ratio": 0.315789,
+        "fragmented_line_count": 13,
+        "fragmented_line_ratio": 0.342105,
+        "mean_line_length": 28.53,
+        "median_line_length": 22.0,
+        "line_length_stdev": 22.42,
+        "line_length_cv": 0.785911,
+        "broken_sentence_count": 4,
+        "broken_sentence_ratio": 0.108108,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Best candidate selected after all extractors were tried: ocr (quality WARNING; weakest filter 70.0, average 90.0). Candidates compared: tika (weakest 55.0, average 70.6); pymupdf (weakest 55.0, average 71.2); docling (weakest 70.0, average 89.4); ocr (weakest 70.0, average 90.0). Muse AI produced validated Resume JSON from the original file after the extractor chain did not reach PASS.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 60.0,
+  "resume_json": {
+    "full_name": "Abhishek Kumar S/O Manbir Singh",
+    "email": "",
+    "phone": "8059310135",
+    "location": "Village Teontha, Kaithal, Haryana-136042",
+    "summary": "To work in a professional environment which brings out the very best in me helps me learn new things and provide growth opportunities.",
+    "skills": {
+      "technical_skills": [
+        "Basic Knowledge of Computer Internet"
+      ],
+      "soft_skills": [
+        "Ability to work in any hard conditions.",
+        "Sincerity & Punctuality.",
+        "Smart Working.",
+        "Positive Thinking",
+        "Hard Working"
+      ],
+      "tools": [],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [],
+    "education": [
+      {
+        "degree": "10th",
+        "institution": "Haryana Board of School Education",
+        "location": "",
+        "start_date": "",
+        "end_date": "2018"
+      },
+      {
+        "degree": "12th",
+        "institution": "Haryana Board of School Education",
+        "location": "",
+        "start_date": "",
+        "end_date": "2020"
+      },
+      {
+        "degree": "ITI Turner",
+        "institution": "NCVT",
+        "location": "",
+        "start_date": "",
+        "end_date": "2022"
+      },
+      {
+        "degree": "",
+        "institution": "Kurukshetra University Kurukshetra",
+        "location": "",
+        "start_date": "",
+        "end_date": ""
+      }
+    ],
+    "certifications": [],
+    "languages": [
+      "Hindi",
+      "English"
+    ],
+    "links": []
+  },
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "ocr",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "RESUME\n\nAbhishek Kumar S/O Manbir Singh\nAddress: Village Teontha\n\nDist :-. Kaithal, Haryana-136042\n\nContact No:- 8059310135\n\nCAREER OBJECTIVE :-To work in a professional environment which brings out the\nvery best in me helps me learn new things and provide growth opportunities.\n\nEducational Qualifications:\n\nY 10 from Haryana Board of School Education in passing year 2018.\nY 12 from Haryana Board of School Education in passing year 2020.\nY ITI Turner From NCVT in passing year 2022.\n\nCOMPUTER KNOWLEDGE\nVY Basic Knowledge of Computer Internet\n\nSTRENGTH\nY Ability to work in any hard conditions.\nY Sincerity & Punctuality.\nv Smart Working.\nY Positive Thinking\nY Hard Working\n\nPersonal Information:\nFarther Name : Sh.Manbir Singh\nDate of Birth : 14/02/2002\nMarital Status : Unmarried\nGender : Male\nNationality : Indian\n\nHobbies\n¥ Reading Books\nY Hard Working\n\nLanguages\nY Hindi ,English\n\nDeclaration\n\nY [hereby declare that the above mentioned information is correct to the best of m\ny y\nknowledge and I bear the responsibility for the correctness of the above mentional\nparticulars.\n\nDATE:\nPLACE:\nY Kurukshetra University Kurukshetra",
+    "normalized_text": "RESUME\n\nAbhishek Kumar S/O Manbir Singh\nAddress: Village Teontha\n\nDist :-. Kaithal, Haryana-136042\n\nContact No:- 8059310135\n\nCAREER OBJECTIVE :-To work in a professional environment which brings out the\nvery best in me helps me learn new things and provide growth opportunities.\n\nEducational Qualifications:\n\nY 10 from Haryana Board of School Education in passing year 2018.\nY 12 from Haryana Board of School Education in passing year 2020.\nY ITI Turner From NCVT in passing year 2022.\n\nCOMPUTER KNOWLEDGE\nVY Basic Knowledge of Computer Internet\n\nSTRENGTH\nY Ability to work in any hard conditions.\nY Sincerity & Punctuality.\nv Smart Working.\nY Positive Thinking\nY Hard Working\n\nPersonal Information:\nFarther Name : Sh.Manbir Singh\nDate of Birth : 14/02/2002\nMarital Status : Unmarried\nGender : Male\nNationality : Indian\n\nHobbies\n¥ Reading Books\nY Hard Working\n\nLanguages\nY Hindi ,English\n\nDeclaration\n\nY [hereby declare that the above mentioned information is correct to the best of m\ny y\nknowledge and I bear the responsibility for the correctness of the above mentional\nparticulars.\n\nDATE:\nPLACE:\nY Kurukshetra University Kurukshetra",
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "original_chars": 1135,
+    "normalized_chars": 1135,
+    "original_estimated_tokens": 284,
+    "normalized_estimated_tokens": 284,
+    "estimated_reduction_percent": 0.0
+  },
+  "muse_requests": [
+    {
+      "stage": "vision",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": "chatcmpl-01a1abeb-6fa2-74ca-859e-6bde02dabeee",
+      "status": "success",
+      "duration_ms": 10618.92,
+      "input_tokens": 8846,
+      "output_tokens": 2000,
+      "total_tokens": 10846,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 8846,
+    "output_tokens": 2000,
+    "total_tokens": 10846,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_source": "muse_ai",
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "input_type": "pdf",
+    "duration_ms": 10618.92,
+    "timeout_seconds": 20.0,
+    "usage": {
+      "completion_tokens": 2000,
+      "prompt_tokens": 8846,
+      "total_tokens": 10846,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1764
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "pages_processed": 3,
+    "pages_skipped": 0
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 5,
+  "fallback_occurred": true,
+  "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 55.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 7891.58,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 55.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. A later extractor was accepted, so this candidate was not selected.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 56.8,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "ABNORMAL_WHITESPACE_RATIO",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "19 non-printable characters found (0.76% of text).",
+            "Whitespace makes up 61.8% of the text.",
+            "Repeated-character corruption suspected: longest run is 169 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2508,
+            "word_count": 187,
+            "line_count": 82,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 19,
+            "non_printable_ratio": 0.007576,
+            "whitespace_ratio": 0.618421,
+            "symbol_count": 24,
+            "symbol_ratio": 0.009569,
+            "max_repeated_char_run": 169,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 55.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2508,
+            "word_count": 187,
+            "configured_section_count": 7,
+            "detected_count": 1,
+            "missing_count": 6,
+            "detected_sections": [
+              "Contact Information"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact"
+            }
+          },
+          "detected_sections": [
+            "Contact Information"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2508,
+            "word_count": 187,
+            "line_count": 82,
+            "non_empty_line_count": 37,
+            "short_line_count": 7,
+            "short_line_ratio": 0.189189,
+            "fragmented_line_count": 11,
+            "fragmented_line_ratio": 0.297297,
+            "mean_line_length": 33.95,
+            "median_line_length": 26.0,
+            "line_length_stdev": 23.33,
+            "line_length_cv": 0.687392,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.083333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": 36.14,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "pymupdf",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 55.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. A later extractor was accepted, so this candidate was not selected.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 58.75,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "ABNORMAL_WHITESPACE_RATIO",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "19 non-printable characters found (0.82% of text).",
+            "Whitespace makes up 58.6% of the text.",
+            "Repeated-character corruption suspected: longest run is 144 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2309,
+            "word_count": 187,
+            "line_count": 45,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 19,
+            "non_printable_ratio": 0.008229,
+            "whitespace_ratio": 0.585535,
+            "symbol_count": 24,
+            "symbol_ratio": 0.010394,
+            "max_repeated_char_run": 144,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 55.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2309,
+            "word_count": 187,
+            "configured_section_count": 7,
+            "detected_count": 1,
+            "missing_count": 6,
+            "detected_sections": [
+              "Contact Information"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact"
+            }
+          },
+          "detected_sections": [
+            "Contact Information"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2309,
+            "word_count": 187,
+            "line_count": 45,
+            "non_empty_line_count": 37,
+            "short_line_count": 7,
+            "short_line_ratio": 0.189189,
+            "fragmented_line_count": 11,
+            "fragmented_line_ratio": 0.297297,
+            "mean_line_length": 33.95,
+            "median_line_length": 26.0,
+            "line_length_stdev": 23.33,
+            "line_length_cv": 0.687392,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.083333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 13490.52,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "docling",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. A later extractor was accepted, so this candidate was not selected.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+        "source_tool": "docling",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1150,
+            "word_count": 189,
+            "line_count": 33,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.167826,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1150,
+            "word_count": 189,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Education"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal information",
+              "Summary": "career objective",
+              "Education": "educational qualifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Education"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 98.11,
+          "flags": [
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "35.7% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.10) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 1150,
+            "word_count": 189,
+            "line_count": 33,
+            "non_empty_line_count": 28,
+            "short_line_count": 6,
+            "short_line_ratio": 0.214286,
+            "fragmented_line_count": 10,
+            "fragmented_line_ratio": 0.357143,
+            "mean_line_length": 39.93,
+            "median_line_length": 21.5,
+            "line_length_stdev": 43.77,
+            "line_length_cv": 1.096219,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "PASS",
+      "duration_ms": 5448.6,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "ocr",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. Selected as the best candidate after all extractors were tried.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "c2cf7952-9995-4129-9ae4-00915766ab13",
+        "source_tool": "ocr",
+        "attempt_id": "attempt-4",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1135,
+            "word_count": 177,
+            "line_count": 52,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.167401,
+            "symbol_count": 1,
+            "symbol_ratio": 0.000881,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1135,
+            "word_count": 177,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Education"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "career objective",
+              "Education": "educational qualifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Education"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1135,
+            "word_count": 177,
+            "line_count": 52,
+            "non_empty_line_count": 38,
+            "short_line_count": 12,
+            "short_line_ratio": 0.315789,
+            "fragmented_line_count": 13,
+            "fragmented_line_ratio": 0.342105,
+            "mean_line_length": 28.53,
+            "median_line_length": 22.0,
+            "line_length_stdev": 22.42,
+            "line_length_cv": 0.785911,
+            "broken_sentence_count": 4,
+            "broken_sentence_ratio": 0.108108,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": true
+    },
+    {
+      "stage": "Muse AI (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": "muse_ai",
+      "status": "PASS",
+      "duration_ms": 10618.92,
+      "message": "Sent to Muse AI: original document + Tika extracted text. Schema-valid Resume JSON returned.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "muse_ai",
+      "status": "PASS",
+      "duration_ms": 5448.6,
+      "message": "Muse AI produced the final Resume JSON.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "final_extractor": "muse_ai",
+  "_stored_name": "c2cf7952-9995-4129-9ae4-00915766ab13_SHJ-5442_SHC-321887.pdf"
+}

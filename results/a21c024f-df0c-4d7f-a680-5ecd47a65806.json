@@ -1,0 +1,1728 @@
+{
+  "resume_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806",
+  "filename": "SHJ-5412_SHC-381592.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 510463,
+  "uploaded_at": "2026-11-05T12:45:07.039918+00:00",
+  "success": true,
+  "extractor_used": "ocr",
+  "duration_ms": 7844.06,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 6916.84,
+      "text": "CURRICULUM VITAE\n\nMr. Praveen\nS/O Mr. Shiv Prasad\nPERMANENT  ADDRESS\nVillage : Ranapur Pure Jhagru\nPost : Ranapur\nDistrict : Ayodhya Pin-224164\nContact No   : 8423031170, 9532870993\nE-mail id : py6664089@gmail.com\nCAREER OBJECTIVE:-\nTo work with an organization, which match my profile & provide me a \nplatform to develop my skills at grow in proportion to my quality endeavors in \nthe leaning phase of my career.\nEDUCATIONAL QUALIFICATION:-\nHigh school Passed in 2010 From with Second Division. \n Intermediate Passed in 2012 from with First Division.\nB.A. Passed in 2015 form with First Division.\nTECHNICAL QUALIFICATION:-\nPG Diploma Computer Hardware and Networking (Year-2022-2023).\nCCC (Course on Computer Concepts)\nBasic Computer Knowledge (Hindi & English) Typing.\nEXPERIENCE:-\n\t CURRENT COMPANY – Client side Cholamandalam pay role of the SP Solution point. \nDate – 03-January-2023 – Till now.\n\nDesignation – Customer Support Engineer.\n\t 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow \nDate – 13th, Jun-2021 – 20-January-2022\n\n\nmailto:py6664089@gmail.com\n\nSkill:-  Ticketing Tools – ITSM and Service now.\nOS installation and hardware Troubleshooting, Outlook configuration,\nManage LAN, Wan, Wi-Fi and internet connectivity\nCoordinating with ISP OEM Vendor for Link issue.\nProvide L1 & L2 troubleshooting on hardware and software related issues.\nResolving issue on time with in SLA day to day it issue resolved\nMaintain IT Assets for all IP Devices\nKnowledge of CCTV and Access control hardware and software.\nHandling switches and router\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and \nOutlook support, GWS migration support, Physical Asset verification, \nRemote support, EUC support, Maintain daily Branch check list.\nSTRENGTH:-\n\t\t Positive attitude\n\t Confidence\n\n\n\nPERSONAL PROFILE:-\nFather’s name : Mr. Shiv Prasad\nMother’s Name : Mrs. Sumitra Devi\nDate of Birth : 15 July 1996\nGender : Male\nLanguage : English & Hindi\nMarital Status : Unmarried\nNationality : Indian\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of \nmy knowledge & belief.\nDate : Mr. Praveen\nPlace -\n\n\n\tCAREER OBJECTIVE:-\n\tEDUCATIONAL QUALIFICATION:-\n\tTECHNICAL QUALIFICATION:-\n\tEXPERIENCE:-\n\tSTRENGTH:-\n\tPERSONAL PROFILE:-",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-05T12:43:52.173722+00:00",
+      "completed_at": "2026-11-05T12:43:59.092128+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 99.55,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS"
+          ],
+          "reasons": [
+            "4 non-printable characters found (0.17% of text)."
+          ],
+          "metrics": {
+            "char_count": 2298,
+            "word_count": 339,
+            "line_count": 73,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 4,
+            "non_printable_ratio": 0.001741,
+            "whitespace_ratio": 0.162315,
+            "symbol_count": 13,
+            "symbol_ratio": 0.005657,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2298,
+            "word_count": 339,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "career objective",
+              "Work Experience": "experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2298,
+            "word_count": 339,
+            "line_count": 73,
+            "non_empty_line_count": 62,
+            "short_line_count": 19,
+            "short_line_ratio": 0.306452,
+            "fragmented_line_count": 10,
+            "fragmented_line_ratio": 0.16129,
+            "mean_line_length": 35.58,
+            "median_line_length": 29.0,
+            "line_length_stdev": 20.99,
+            "line_length_cv": 0.58981,
+            "broken_sentence_count": 4,
+            "broken_sentence_ratio": 0.065574,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": false,
+      "attempt_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806-attempt-1",
+      "resume_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "CURRICULUM VITAE\n\nMr. Praveen\nS/O Mr. Shiv Prasad\nPERMANENT  ADDRESS\nVillage : Ranapur Pure Jhagru\nPost : Ranapur\nDistrict : Ayodhya Pin-224164\nContact No   : 8423031170, 9532870993\nE-mail id : py6664089@gmail.com\nCAREER OBJECTIVE:-\nTo work with an organization, which match my profile & provide me a \nplatform to develop my skills at grow in proportion to my quality endeavors in \nthe leaning phase of my career.\nEDUCATIONAL QUALIFICATION:-\nHigh school Passed in 2010 From with Second Division. \n Intermediate Passed in 2012 from with First Division.\nB.A. Passed in 2015 form with First Division.\nTECHNICAL QUALIFICATION:-\nPG Diploma Computer Hardware and Networking (Year-2022-2023).\nCCC (Course on Computer Concepts)\nBasic Computer Knowledge (Hindi & English) Typing.\nEXPERIENCE:-\n\t CURRENT COMPANY – Client side Cholamandalam pay role of the SP Solution point. \nDate – 03-January-2023 – Till now.\n\nDesignation – Customer Support Engineer.\n\t 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow \nDate – 13th, Jun-2021 – 20-January-2022\n\n\nmailto:py6664089@gmail.com\n\nSkill:-  Ticketing Tools – ITSM and Service now.\nOS installation and hardware Troubleshooting, Outlook configuration,\nManage LAN, Wan, Wi-Fi and internet connectivity\nCoordinating with ISP OEM Vendor for Link issue.\nProvide L1 & L2 troubleshooting on hardware and software related issues.\nResolving issue on time with in SLA day to day it issue resolved\nMaintain IT Assets for all IP Devices\nKnowledge of CCTV and Access control hardware and software.\nHandling switches and router\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and \nOutlook support, GWS migration support, Physical Asset verification, \nRemote support, EUC support, Maintain daily Branch check list.\nSTRENGTH:-\n\t\t Positive attitude\n\t Confidence\n\n\n\nPERSONAL PROFILE:-\nFather’s name : Mr. Shiv Prasad\nMother’s Name : Mrs. Sumitra Devi\nDate of Birth : 15 July 1996\nGender : Male\nLanguage : English & Hindi\nMarital Status : Unmarried\nNationality : Indian\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of \nmy knowledge & belief.\nDate : Mr. Praveen\nPlace -\n\n\n\tCAREER OBJECTIVE:-\n\tEDUCATIONAL QUALIFICATION:-\n\tTECHNICAL QUALIFICATION:-\n\tEXPERIENCE:-\n\tSTRENGTH:-\n\tPERSONAL PROFILE:-",
+      "extracted_text_length": 2298,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 99.55,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS"
+          ],
+          "reasons": [
+            "4 non-printable characters found (0.17% of text)."
+          ],
+          "metrics": {
+            "char_count": 2298,
+            "word_count": 339,
+            "line_count": 73,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 4,
+            "non_printable_ratio": 0.001741,
+            "whitespace_ratio": 0.162315,
+            "symbol_count": 13,
+            "symbol_ratio": 0.005657,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2298,
+            "word_count": 339,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "career objective",
+              "Work Experience": "experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2298,
+            "word_count": 339,
+            "line_count": 73,
+            "non_empty_line_count": 62,
+            "short_line_count": 19,
+            "short_line_ratio": 0.306452,
+            "fragmented_line_count": 10,
+            "fragmented_line_ratio": 0.16129,
+            "mean_line_length": 35.58,
+            "median_line_length": 29.0,
+            "line_length_stdev": 20.99,
+            "line_length_cv": 0.58981,
+            "broken_sentence_count": 4,
+            "broken_sentence_ratio": 0.065574,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": false,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "extractor_name": "pymupdf",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 43.25,
+      "text": "Mr. Praveen \nS/O Mr. Shiv Prasad \nPERMANENT  ADDRESS \nVillage \n: \nRanapur Pure Jhagru \nPost \n: \nRanapur \nDistrict \n: \nAyodhya Pin-224164 \nContact No   : \n8423031170, 9532870993 \nE-mail id \n: \npy6664089@gmail.com \n \nCAREER OBJECTIVE:- \n \n \nTo work with an organization, which match my profile & provide me a \nplatform to develop my skills at grow in proportion to my quality endeavors in \nthe leaning phase of my career. \n \nEDUCATIONAL QUALIFICATION:- \n \n \n High school Passed in 2010 From with Second Division. \n Intermediate Passed in 2012 from with First Division. \nB.A. Passed in 2015 form with First Division. \n \nTECHNICAL QUALIFICATION:- \n \n PG Diploma Computer Hardware and Networking (Year-2022-2023). \n CCC (Course on Computer Concepts) \n Basic Computer Knowledge (Hindi & English) Typing. \n \n \nEXPERIENCE:- \n \n CURRENT COMPANY – Client side Cholamandalam pay role of the SP Solution point. \nDate – 03-January-2023 – Till now. \nDesignation – Customer Support Engineer. \n \n 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow \nDate – 13th, Jun-2021 – 20-January-2022 \nCURRICULUM VITAE\nSkill:-  Ticketing Tools – ITSM and Service now. \nOS installation and hardware Troubleshooting, Outlook configuration,  \nManage LAN, Wan, Wi-Fi and internet connectivity \nCoordinating with ISP OEM Vendor for Link issue.  \nProvide L1 & L2 troubleshooting on hardware and software related issues.  \nResolving issue on time with in SLA day to day it issue resolved \nMaintain IT Assets for all IP Devices  \nKnowledge of CCTV and Access control hardware and software.  \nHandling switches and router  \nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and \nOutlook support, GWS migration support, Physical Asset verification, \nRemote support, EUC support, Maintain daily Branch check list. \nSTRENGTH:- \n \n Positive attitude \n Confidence \nPERSONAL PROFILE:- \n \nFather’s name \n: \nMr. Shiv Prasad \n \nMother’s Name \n: \nMrs. Sumitra Devi \n \nDate of Birth \n: \n15 July 1996 \n \nGender \n: \nMale \n \nLanguage \n: \nEnglish & Hindi \n \nMarital Status \n: \nUnmarried \n \nNationality \n: \nIndian \n \n \n \n \nI hereby declare that all true above information furnished by me is correct the best of \nmy knowledge & belief. \nDate : \nMr. Praveen \n \nPlace - \nDECLARATION",
+      "extractor_version": "1.28.2",
+      "started_at": "2026-11-05T12:43:59.099985+00:00",
+      "completed_at": "2026-11-05T12:43:59.145375+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "format": "PDF 1.5",
+        "title": "Microsoft Word - update cv praveen (1) (1)",
+        "creator": "Aspose Ltd.",
+        "producer": "Aspose.PDF for Java 18.8",
+        "creationDate": "D:20260121120100+00'00'",
+        "modDate": "D:20261009120000+05'30'"
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 99.53,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS"
+          ],
+          "reasons": [
+            "4 non-printable characters found (0.18% of text)."
+          ],
+          "metrics": {
+            "char_count": 2262,
+            "word_count": 328,
+            "line_count": 104,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 4,
+            "non_printable_ratio": 0.001768,
+            "whitespace_ratio": 0.207339,
+            "symbol_count": 13,
+            "symbol_ratio": 0.005747,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2262,
+            "word_count": 328,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "career objective",
+              "Work Experience": "experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 81.94,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "53.2% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "48.1% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 2262,
+            "word_count": 328,
+            "line_count": 104,
+            "non_empty_line_count": 79,
+            "short_line_count": 42,
+            "short_line_ratio": 0.531646,
+            "fragmented_line_count": 38,
+            "fragmented_line_ratio": 0.481013,
+            "mean_line_length": 25.9,
+            "median_line_length": 17.0,
+            "line_length_stdev": 23.78,
+            "line_length_cv": 0.918373,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.038462,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": false,
+      "attempt_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806-attempt-2",
+      "resume_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806",
+      "attempt_number": 2,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "Mr. Praveen \nS/O Mr. Shiv Prasad \nPERMANENT  ADDRESS \nVillage \n: \nRanapur Pure Jhagru \nPost \n: \nRanapur \nDistrict \n: \nAyodhya Pin-224164 \nContact No   : \n8423031170, 9532870993 \nE-mail id \n: \npy6664089@gmail.com \n \nCAREER OBJECTIVE:- \n \n \nTo work with an organization, which match my profile & provide me a \nplatform to develop my skills at grow in proportion to my quality endeavors in \nthe leaning phase of my career. \n \nEDUCATIONAL QUALIFICATION:- \n \n \n High school Passed in 2010 From with Second Division. \n Intermediate Passed in 2012 from with First Division. \nB.A. Passed in 2015 form with First Division. \n \nTECHNICAL QUALIFICATION:- \n \n PG Diploma Computer Hardware and Networking (Year-2022-2023). \n CCC (Course on Computer Concepts) \n Basic Computer Knowledge (Hindi & English) Typing. \n \n \nEXPERIENCE:- \n \n CURRENT COMPANY – Client side Cholamandalam pay role of the SP Solution point. \nDate – 03-January-2023 – Till now. \nDesignation – Customer Support Engineer. \n \n 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow \nDate – 13th, Jun-2021 – 20-January-2022 \nCURRICULUM VITAE\nSkill:-  Ticketing Tools – ITSM and Service now. \nOS installation and hardware Troubleshooting, Outlook configuration,  \nManage LAN, Wan, Wi-Fi and internet connectivity \nCoordinating with ISP OEM Vendor for Link issue.  \nProvide L1 & L2 troubleshooting on hardware and software related issues.  \nResolving issue on time with in SLA day to day it issue resolved \nMaintain IT Assets for all IP Devices  \nKnowledge of CCTV and Access control hardware and software.  \nHandling switches and router  \nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and \nOutlook support, GWS migration support, Physical Asset verification, \nRemote support, EUC support, Maintain daily Branch check list. \nSTRENGTH:- \n \n Positive attitude \n Confidence \nPERSONAL PROFILE:- \n \nFather’s name \n: \nMr. Shiv Prasad \n \nMother’s Name \n: \nMrs. Sumitra Devi \n \nDate of Birth \n: \n15 July 1996 \n \nGender \n: \nMale \n \nLanguage \n: \nEnglish & Hindi \n \nMarital Status \n: \nUnmarried \n \nNationality \n: \nIndian \n \n \n \n \nI hereby declare that all true above information furnished by me is correct the best of \nmy knowledge & belief. \nDate : \nMr. Praveen \n \nPlace - \nDECLARATION",
+      "extracted_text_length": 2262,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 99.53,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS"
+          ],
+          "reasons": [
+            "4 non-printable characters found (0.18% of text)."
+          ],
+          "metrics": {
+            "char_count": 2262,
+            "word_count": 328,
+            "line_count": 104,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 4,
+            "non_printable_ratio": 0.001768,
+            "whitespace_ratio": 0.207339,
+            "symbol_count": 13,
+            "symbol_ratio": 0.005747,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2262,
+            "word_count": 328,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "career objective",
+              "Work Experience": "experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 81.94,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "53.2% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "48.1% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 2262,
+            "word_count": 328,
+            "line_count": 104,
+            "non_empty_line_count": 79,
+            "short_line_count": 42,
+            "short_line_ratio": 0.531646,
+            "fragmented_line_count": 38,
+            "fragmented_line_ratio": 0.481013,
+            "mean_line_length": 25.9,
+            "median_line_length": 17.0,
+            "line_length_stdev": 23.78,
+            "line_length_cv": 0.918373,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.038462,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "extractor_name": "docling",
+      "success": false,
+      "accepted": false,
+      "error": "Extraction attempt exceeded the configured timeout of 60s and was marked TIMEOUT.",
+      "duration_ms": 60000.0,
+      "text": "",
+      "extractor_version": "2.146.0",
+      "started_at": "2026-11-05T12:43:59.155807+00:00",
+      "completed_at": "2026-11-05T12:44:59.169802+00:00",
+      "error_type": "TimeoutError",
+      "error_traceback": null,
+      "metadata": {},
+      "quality_status": null,
+      "quality": null,
+      "decision": "reject",
+      "decision_reason": "Extraction attempt exceeded the configured timeout of 60s and was marked TIMEOUT.",
+      "selected": false,
+      "attempt_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806-attempt-3",
+      "resume_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806",
+      "attempt_number": 3,
+      "extraction_status": "FAILED",
+      "extracted_text": "",
+      "extracted_text_length": 0,
+      "error_message": "Extraction attempt exceeded the configured timeout of 60s and was marked TIMEOUT.",
+      "quality_checker_report": null,
+      "fallback_decision": "reject",
+      "fallback_reason": "Extraction attempt exceeded the configured timeout of 60s and was marked TIMEOUT.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "extractor_name": "ocr",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 7844.06,
+      "text": "CURRICULUM VITAE\n\nMr. Praveen\nS/O Mr. Shiv Prasad\n\nPERMANENT ADDRESS\n\nVillage : Ranapur Pure Jhagru\n\nPost : Ranapur\n\nDistrict : Ayodhya Pin-224164\nContact No : 8423031170, 9532870993\nE-mail id : py6664089 @ gmail.com\nCAREER OBJECTIVE:-\n\nTo work with an organization, which match my profile & provide me a\nplatform to develop my skills at grow in proportion to my quality endeavors in\n\nthe leaning phase of my career.\n\nEDUCATIONAL QUALIFICATION:-\n\n4 High school Passed in 2010 From with Second Division.\n+ Intermediate Passed in 2012 from with First Division.\n\n4 B.A. Passed in 2015 form with First Division.\n\nTECHNICAL QUALIFICATION:-\n« PG Diploma Computer Hardware and Networking (Year-2022-2023).\n\n« CCC (Course on Computer Concepts)\n\n+ Basic Computer Knowledge (Hindi & English) Typing.\n\nEXPERIENCE:-\n\n>» CURRENT COMPANY — Client side Cholamandalam pay role of the SP Solution point.\nDate — 03-January-2023 — Till now.\n\nDesignation — Customer Support Engineer.\n\n> 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow\nDate — 13th, Jun-2021 — 20-January-2022\nSkill:- Ticketing Tools — ITSM and Service now.\nOS installation and hardware Troubleshooting, Outlook configuration,\nManage LAN, Wan, Wi-Fi and internet connectivity\nCoordinating with ISP OEM Vendor for Link issue.\nProvide L1 & L2 troubleshooting on hardware and software related issues.\nResolving issue on time with in SLA day to day it issue resolved\nMaintain IT Assets for all IP Devices\nKnowledge of CCTV and Access control hardware and software.\nHandling switches and router\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\nOutlook support, GWS migration support, Physical Asset verification,\nRemote support, EUC support, Maintain daily Branch check list.\n\nSTRENGTH:-\n\n> Positive attitude\n> Confidence\n\nPERSONAL PROFILE:-\n\nFather’s name : Mr. Shiv Prasad\nMother’s Name : Mrs. Sumitra Devi\nDate of Birth : 15 July 1996\nGender : Male\n\nLanguage : English & Hindi\nMarital Status : Unmarried\n\nNationality : Indian\n\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of\n\nmy knowledge & belief.\n\nDate : Mr. Praveen\n\nPlace -",
+      "extractor_version": "0.3.13",
+      "started_at": "2026-11-05T12:44:59.182272+00:00",
+      "completed_at": "2026-11-05T12:45:07.029289+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "ocr_language": "eng",
+        "ocr_dpi": 300,
+        "tesseract_path": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806",
+        "source_tool": "ocr",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2163,
+            "word_count": 336,
+            "line_count": 83,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.167822,
+            "symbol_count": 12,
+            "symbol_ratio": 0.005548,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2163,
+            "word_count": 336,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "career objective",
+              "Work Experience": "experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2163,
+            "word_count": 336,
+            "line_count": 83,
+            "non_empty_line_count": 55,
+            "short_line_count": 12,
+            "short_line_ratio": 0.218182,
+            "fragmented_line_count": 8,
+            "fragmented_line_ratio": 0.145455,
+            "mean_line_length": 37.84,
+            "median_line_length": 33.0,
+            "line_length_stdev": 21.47,
+            "line_length_cv": 0.567474,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.055556,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": true,
+      "attempt_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806-attempt-4",
+      "resume_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806",
+      "attempt_number": 4,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "CURRICULUM VITAE\n\nMr. Praveen\nS/O Mr. Shiv Prasad\n\nPERMANENT ADDRESS\n\nVillage : Ranapur Pure Jhagru\n\nPost : Ranapur\n\nDistrict : Ayodhya Pin-224164\nContact No : 8423031170, 9532870993\nE-mail id : py6664089 @ gmail.com\nCAREER OBJECTIVE:-\n\nTo work with an organization, which match my profile & provide me a\nplatform to develop my skills at grow in proportion to my quality endeavors in\n\nthe leaning phase of my career.\n\nEDUCATIONAL QUALIFICATION:-\n\n4 High school Passed in 2010 From with Second Division.\n+ Intermediate Passed in 2012 from with First Division.\n\n4 B.A. Passed in 2015 form with First Division.\n\nTECHNICAL QUALIFICATION:-\n« PG Diploma Computer Hardware and Networking (Year-2022-2023).\n\n« CCC (Course on Computer Concepts)\n\n+ Basic Computer Knowledge (Hindi & English) Typing.\n\nEXPERIENCE:-\n\n>» CURRENT COMPANY — Client side Cholamandalam pay role of the SP Solution point.\nDate — 03-January-2023 — Till now.\n\nDesignation — Customer Support Engineer.\n\n> 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow\nDate — 13th, Jun-2021 — 20-January-2022\nSkill:- Ticketing Tools — ITSM and Service now.\nOS installation and hardware Troubleshooting, Outlook configuration,\nManage LAN, Wan, Wi-Fi and internet connectivity\nCoordinating with ISP OEM Vendor for Link issue.\nProvide L1 & L2 troubleshooting on hardware and software related issues.\nResolving issue on time with in SLA day to day it issue resolved\nMaintain IT Assets for all IP Devices\nKnowledge of CCTV and Access control hardware and software.\nHandling switches and router\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\nOutlook support, GWS migration support, Physical Asset verification,\nRemote support, EUC support, Maintain daily Branch check list.\n\nSTRENGTH:-\n\n> Positive attitude\n> Confidence\n\nPERSONAL PROFILE:-\n\nFather’s name : Mr. Shiv Prasad\nMother’s Name : Mrs. Sumitra Devi\nDate of Birth : 15 July 1996\nGender : Male\n\nLanguage : English & Hindi\nMarital Status : Unmarried\n\nNationality : Indian\n\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of\n\nmy knowledge & belief.\n\nDate : Mr. Praveen\n\nPlace -",
+      "extracted_text_length": 2163,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806",
+        "source_tool": "ocr",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2163,
+            "word_count": 336,
+            "line_count": 83,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.167822,
+            "symbol_count": 12,
+            "symbol_ratio": 0.005548,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2163,
+            "word_count": 336,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "career objective",
+              "Work Experience": "experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2163,
+            "word_count": 336,
+            "line_count": 83,
+            "non_empty_line_count": 55,
+            "short_line_count": 12,
+            "short_line_ratio": 0.218182,
+            "fragmented_line_count": 8,
+            "fragmented_line_ratio": 0.145455,
+            "mean_line_length": 37.84,
+            "median_line_length": 33.0,
+            "line_length_stdev": 21.47,
+            "line_length_cv": 0.567474,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.055556,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": true,
+      "ocr": null,
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "attempt_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806-attempt-5",
+      "resume_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806",
+      "attempt_number": 5,
+      "extractor_name": "muse_ai",
+      "extractor_version": null,
+      "success": false,
+      "accepted": false,
+      "decision": "reject",
+      "decision_reason": "Muse API request timed out after 20s.",
+      "quality_status": null,
+      "quality": null,
+      "quality_checker_report": null,
+      "duration_ms": 20319.84,
+      "text": "",
+      "extracted_text": "",
+      "extracted_text_length": 0,
+      "extraction_status": "FAILED",
+      "error": "Muse API request timed out after 20s.",
+      "error_message": "Muse API request timed out after 20s.",
+      "error_type": "TimeoutError",
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "selected": false,
+      "fallback_decision": "reject",
+      "fallback_reason": "Muse API request timed out after 20s.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": 20.0,
+      "model_config_id": null,
+      "provider": "Muse AI",
+      "model": "muse-spark-1.3-contributor",
+      "json_validation": null,
+      "input_type": "pdf",
+      "metadata": {
+        "input_type": "pdf",
+        "visual_provided": true,
+        "tika_text_provided": true,
+        "tika_text_chars": 2270,
+        "hyperlinks_provided": true,
+        "hyperlink_count": 1,
+        "hyperlink_extraction_error": null,
+        "request_id": null,
+        "usage_available": false,
+        "tika_text_normalization": {
+          "status": "applied",
+          "original_chars": 2298,
+          "normalized_chars": 2270,
+          "estimated_reduction_percent": 1.0,
+          "normalization_applied": true,
+          "normalization_steps": [
+            "whitespace_runs_collapsed",
+            "lines_trimmed",
+            "excessive_blank_lines_collapsed"
+          ],
+          "error": null
+        },
+        "page_count": 2,
+        "pages_processed": 2,
+        "pages_skipped": 0,
+        "pages_beyond_image_limit": 0,
+        "usage": {}
+      }
+    }
+  ],
+  "extracted_text": "CURRICULUM VITAE\n\nMr. Praveen\nS/O Mr. Shiv Prasad\n\nPERMANENT ADDRESS\n\nVillage : Ranapur Pure Jhagru\n\nPost : Ranapur\n\nDistrict : Ayodhya Pin-224164\nContact No : 8423031170, 9532870993\nE-mail id : py6664089 @ gmail.com\nCAREER OBJECTIVE:-\n\nTo work with an organization, which match my profile & provide me a\nplatform to develop my skills at grow in proportion to my quality endeavors in\n\nthe leaning phase of my career.\n\nEDUCATIONAL QUALIFICATION:-\n\n4 High school Passed in 2010 From with Second Division.\n+ Intermediate Passed in 2012 from with First Division.\n\n4 B.A. Passed in 2015 form with First Division.\n\nTECHNICAL QUALIFICATION:-\n« PG Diploma Computer Hardware and Networking (Year-2022-2023).\n\n« CCC (Course on Computer Concepts)\n\n+ Basic Computer Knowledge (Hindi & English) Typing.\n\nEXPERIENCE:-\n\n>» CURRENT COMPANY — Client side Cholamandalam pay role of the SP Solution point.\nDate — 03-January-2023 — Till now.\n\nDesignation — Customer Support Engineer.\n\n> 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow\nDate — 13th, Jun-2021 — 20-January-2022\nSkill:- Ticketing Tools — ITSM and Service now.\nOS installation and hardware Troubleshooting, Outlook configuration,\nManage LAN, Wan, Wi-Fi and internet connectivity\nCoordinating with ISP OEM Vendor for Link issue.\nProvide L1 & L2 troubleshooting on hardware and software related issues.\nResolving issue on time with in SLA day to day it issue resolved\nMaintain IT Assets for all IP Devices\nKnowledge of CCTV and Access control hardware and software.\nHandling switches and router\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\nOutlook support, GWS migration support, Physical Asset verification,\nRemote support, EUC support, Maintain daily Branch check list.\n\nSTRENGTH:-\n\n> Positive attitude\n> Confidence\n\nPERSONAL PROFILE:-\n\nFather’s name : Mr. Shiv Prasad\nMother’s Name : Mrs. Sumitra Devi\nDate of Birth : 15 July 1996\nGender : Male\n\nLanguage : English & Hindi\nMarital Status : Unmarried\n\nNationality : Indian\n\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of\n\nmy knowledge & belief.\n\nDate : Mr. Praveen\n\nPlace -",
+  "page_count": 2,
+  "warnings": [],
+  "error": null,
+  "quality_status": "WARNING",
+  "final_quality_status": "WARNING",
+  "final_extracted_text": "CURRICULUM VITAE\n\nMr. Praveen\nS/O Mr. Shiv Prasad\n\nPERMANENT ADDRESS\n\nVillage : Ranapur Pure Jhagru\n\nPost : Ranapur\n\nDistrict : Ayodhya Pin-224164\nContact No : 8423031170, 9532870993\nE-mail id : py6664089 @ gmail.com\nCAREER OBJECTIVE:-\n\nTo work with an organization, which match my profile & provide me a\nplatform to develop my skills at grow in proportion to my quality endeavors in\n\nthe leaning phase of my career.\n\nEDUCATIONAL QUALIFICATION:-\n\n4 High school Passed in 2010 From with Second Division.\n+ Intermediate Passed in 2012 from with First Division.\n\n4 B.A. Passed in 2015 form with First Division.\n\nTECHNICAL QUALIFICATION:-\n« PG Diploma Computer Hardware and Networking (Year-2022-2023).\n\n« CCC (Course on Computer Concepts)\n\n+ Basic Computer Knowledge (Hindi & English) Typing.\n\nEXPERIENCE:-\n\n>» CURRENT COMPANY — Client side Cholamandalam pay role of the SP Solution point.\nDate — 03-January-2023 — Till now.\n\nDesignation — Customer Support Engineer.\n\n> 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow\nDate — 13th, Jun-2021 — 20-January-2022\nSkill:- Ticketing Tools — ITSM and Service now.\nOS installation and hardware Troubleshooting, Outlook configuration,\nManage LAN, Wan, Wi-Fi and internet connectivity\nCoordinating with ISP OEM Vendor for Link issue.\nProvide L1 & L2 troubleshooting on hardware and software related issues.\nResolving issue on time with in SLA day to day it issue resolved\nMaintain IT Assets for all IP Devices\nKnowledge of CCTV and Access control hardware and software.\nHandling switches and router\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\nOutlook support, GWS migration support, Physical Asset verification,\nRemote support, EUC support, Maintain daily Branch check list.\n\nSTRENGTH:-\n\n> Positive attitude\n> Confidence\n\nPERSONAL PROFILE:-\n\nFather’s name : Mr. Shiv Prasad\nMother’s Name : Mrs. Sumitra Devi\nDate of Birth : 15 July 1996\nGender : Male\n\nLanguage : English & Hindi\nMarital Status : Unmarried\n\nNationality : Indian\n\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of\n\nmy knowledge & belief.\n\nDate : Mr. Praveen\n\nPlace -",
+  "quality": {
+    "status": "WARNING",
+    "document_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806",
+    "source_tool": "ocr",
+    "attempt_id": "attempt-3",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 2163,
+        "word_count": 336,
+        "line_count": 83,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.167822,
+        "symbol_count": 12,
+        "symbol_ratio": 0.005548,
+        "max_repeated_char_run": 3,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 70.0,
+      "flags": [
+        "MISSING_RECOMMENDED_SECTION",
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 2163,
+        "word_count": 336,
+        "configured_section_count": 7,
+        "detected_count": 3,
+        "missing_count": 4,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Work Experience"
+        ],
+        "missing_sections": [
+          "Skills",
+          "Education",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [
+          "Skills",
+          "Education"
+        ],
+        "missing_optional": [
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "contact",
+          "Summary": "career objective",
+          "Work Experience": "experience"
+        }
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Work Experience"
+      ],
+      "missing_sections": [
+        "Skills",
+        "Education",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [
+        "Skills",
+        "Education"
+      ],
+      "missing_optional": [
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 2163,
+        "word_count": 336,
+        "line_count": 83,
+        "non_empty_line_count": 55,
+        "short_line_count": 12,
+        "short_line_ratio": 0.218182,
+        "fragmented_line_count": 8,
+        "fragmented_line_ratio": 0.145455,
+        "mean_line_length": 37.84,
+        "median_line_length": 33.0,
+        "line_length_stdev": 21.47,
+        "line_length_cv": 0.567474,
+        "broken_sentence_count": 3,
+        "broken_sentence_ratio": 0.055556,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Best candidate selected after all extractors were tried: ocr (quality WARNING; weakest filter 70.0, average 90.0). Candidates compared: tika (weakest 70.0, average 89.9); pymupdf (weakest 70.0, average 83.8); ocr (weakest 70.0, average 90.0).",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 60.0,
+  "resume_json": null,
+  "hyperlinks": [
+    {
+      "page": 1,
+      "url": "mailto:py6664089@gmail.com",
+      "visible_text": "py6664089@gmail.com",
+      "type": "mailto",
+      "rect": [
+        180.8,
+        255.26,
+        299.44,
+        271.31
+      ]
+    }
+  ],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "ocr",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "CURRICULUM VITAE\n\nMr. Praveen\nS/O Mr. Shiv Prasad\n\nPERMANENT ADDRESS\n\nVillage : Ranapur Pure Jhagru\n\nPost : Ranapur\n\nDistrict : Ayodhya Pin-224164\nContact No : 8423031170, 9532870993\nE-mail id : py6664089 @ gmail.com\nCAREER OBJECTIVE:-\n\nTo work with an organization, which match my profile & provide me a\nplatform to develop my skills at grow in proportion to my quality endeavors in\n\nthe leaning phase of my career.\n\nEDUCATIONAL QUALIFICATION:-\n\n4 High school Passed in 2010 From with Second Division.\n+ Intermediate Passed in 2012 from with First Division.\n\n4 B.A. Passed in 2015 form with First Division.\n\nTECHNICAL QUALIFICATION:-\n« PG Diploma Computer Hardware and Networking (Year-2022-2023).\n\n« CCC (Course on Computer Concepts)\n\n+ Basic Computer Knowledge (Hindi & English) Typing.\n\nEXPERIENCE:-\n\n>» CURRENT COMPANY — Client side Cholamandalam pay role of the SP Solution point.\nDate — 03-January-2023 — Till now.\n\nDesignation — Customer Support Engineer.\n\n> 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow\nDate — 13th, Jun-2021 — 20-January-2022\nSkill:- Ticketing Tools — ITSM and Service now.\nOS installation and hardware Troubleshooting, Outlook configuration,\nManage LAN, Wan, Wi-Fi and internet connectivity\nCoordinating with ISP OEM Vendor for Link issue.\nProvide L1 & L2 troubleshooting on hardware and software related issues.\nResolving issue on time with in SLA day to day it issue resolved\nMaintain IT Assets for all IP Devices\nKnowledge of CCTV and Access control hardware and software.\nHandling switches and router\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\nOutlook support, GWS migration support, Physical Asset verification,\nRemote support, EUC support, Maintain daily Branch check list.\n\nSTRENGTH:-\n\n> Positive attitude\n> Confidence\n\nPERSONAL PROFILE:-\n\nFather’s name : Mr. Shiv Prasad\nMother’s Name : Mrs. Sumitra Devi\nDate of Birth : 15 July 1996\nGender : Male\n\nLanguage : English & Hindi\nMarital Status : Unmarried\n\nNationality : Indian\n\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of\n\nmy knowledge & belief.\n\nDate : Mr. Praveen\n\nPlace -",
+    "normalized_text": "CURRICULUM VITAE\n\nMr. Praveen\nS/O Mr. Shiv Prasad\n\nPERMANENT ADDRESS\n\nVillage : Ranapur Pure Jhagru\n\nPost : Ranapur\n\nDistrict : Ayodhya Pin-224164\nContact No : 8423031170, 9532870993\nE-mail id : py6664089 @ gmail.com\nCAREER OBJECTIVE:-\n\nTo work with an organization, which match my profile & provide me a\nplatform to develop my skills at grow in proportion to my quality endeavors in\n\nthe leaning phase of my career.\n\nEDUCATIONAL QUALIFICATION:-\n\n4 High school Passed in 2010 From with Second Division.\n+ Intermediate Passed in 2012 from with First Division.\n\n4 B.A. Passed in 2015 form with First Division.\n\nTECHNICAL QUALIFICATION:-\n« PG Diploma Computer Hardware and Networking (Year-2022-2023).\n\n« CCC (Course on Computer Concepts)\n\n+ Basic Computer Knowledge (Hindi & English) Typing.\n\nEXPERIENCE:-\n\n>» CURRENT COMPANY — Client side Cholamandalam pay role of the SP Solution point.\nDate — 03-January-2023 — Till now.\n\nDesignation — Customer Support Engineer.\n\n> 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow\nDate — 13th, Jun-2021 — 20-January-2022\nSkill:- Ticketing Tools — ITSM and Service now.\nOS installation and hardware Troubleshooting, Outlook configuration,\nManage LAN, Wan, Wi-Fi and internet connectivity\nCoordinating with ISP OEM Vendor for Link issue.\nProvide L1 & L2 troubleshooting on hardware and software related issues.\nResolving issue on time with in SLA day to day it issue resolved\nMaintain IT Assets for all IP Devices\nKnowledge of CCTV and Access control hardware and software.\nHandling switches and router\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\nOutlook support, GWS migration support, Physical Asset verification,\nRemote support, EUC support, Maintain daily Branch check list.\n\nSTRENGTH:-\n\n> Positive attitude\n> Confidence\n\nPERSONAL PROFILE:-\n\nFather’s name : Mr. Shiv Prasad\nMother’s Name : Mrs. Sumitra Devi\nDate of Birth : 15 July 1996\nGender : Male\n\nLanguage : English & Hindi\nMarital Status : Unmarried\n\nNationality : Indian\n\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of\n\nmy knowledge & belief.\n\nDate : Mr. Praveen\n\nPlace -",
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "original_chars": 2163,
+    "normalized_chars": 2163,
+    "original_estimated_tokens": 541,
+    "normalized_estimated_tokens": 541,
+    "estimated_reduction_percent": 0.0
+  },
+  "muse_requests": [
+    {
+      "stage": "vision",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    },
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 2,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "timed_out_calls": 2,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_source": null,
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Muse API request timed out after 20s.",
+    "input_type": "text",
+    "duration_ms": 20077.29,
+    "timeout_seconds": 20.0,
+    "usage": {},
+    "text_normalization": {
+      "source": "ocr",
+      "status": "applied",
+      "original_chars": 2163,
+      "normalized_chars": 2163,
+      "estimated_reduction_percent": 0.0,
+      "normalization_applied": false,
+      "normalization_steps": [],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 5,
+  "fallback_occurred": true,
+  "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 6916.84,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. A later extractor was accepted, so this candidate was not selected.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 99.55,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS"
+          ],
+          "reasons": [
+            "4 non-printable characters found (0.17% of text)."
+          ],
+          "metrics": {
+            "char_count": 2298,
+            "word_count": 339,
+            "line_count": 73,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 4,
+            "non_printable_ratio": 0.001741,
+            "whitespace_ratio": 0.162315,
+            "symbol_count": 13,
+            "symbol_ratio": 0.005657,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2298,
+            "word_count": 339,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "career objective",
+              "Work Experience": "experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2298,
+            "word_count": 339,
+            "line_count": 73,
+            "non_empty_line_count": 62,
+            "short_line_count": 19,
+            "short_line_ratio": 0.306452,
+            "fragmented_line_count": 10,
+            "fragmented_line_ratio": 0.16129,
+            "mean_line_length": 35.58,
+            "median_line_length": 29.0,
+            "line_length_stdev": 20.99,
+            "line_length_cv": 0.58981,
+            "broken_sentence_count": 4,
+            "broken_sentence_ratio": 0.065574,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": 43.25,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "pymupdf",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. A later extractor was accepted, so this candidate was not selected.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 99.53,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS"
+          ],
+          "reasons": [
+            "4 non-printable characters found (0.18% of text)."
+          ],
+          "metrics": {
+            "char_count": 2262,
+            "word_count": 328,
+            "line_count": 104,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 4,
+            "non_printable_ratio": 0.001768,
+            "whitespace_ratio": 0.207339,
+            "symbol_count": 13,
+            "symbol_ratio": 0.005747,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2262,
+            "word_count": 328,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "career objective",
+              "Work Experience": "experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 81.94,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "53.2% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "48.1% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 2262,
+            "word_count": 328,
+            "line_count": 104,
+            "non_empty_line_count": 79,
+            "short_line_count": 42,
+            "short_line_ratio": 0.531646,
+            "fragmented_line_count": 38,
+            "fragmented_line_ratio": 0.481013,
+            "mean_line_length": 25.9,
+            "median_line_length": 17.0,
+            "line_length_stdev": 23.78,
+            "line_length_cv": 0.918373,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.038462,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "FAIL",
+      "duration_ms": 60000.0,
+      "message": "Extraction attempt exceeded the configured timeout of 60s and was marked TIMEOUT.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Quality Checker did not run because extraction failed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "PASS",
+      "duration_ms": 7844.06,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "ocr",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. Selected as the best candidate after all extractors were tried.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "a21c024f-df0c-4d7f-a680-5ecd47a65806",
+        "source_tool": "ocr",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2163,
+            "word_count": 336,
+            "line_count": 83,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.167822,
+            "symbol_count": 12,
+            "symbol_ratio": 0.005548,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2163,
+            "word_count": 336,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "career objective",
+              "Work Experience": "experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2163,
+            "word_count": 336,
+            "line_count": 83,
+            "non_empty_line_count": 55,
+            "short_line_count": 12,
+            "short_line_ratio": 0.218182,
+            "fragmented_line_count": 8,
+            "fragmented_line_ratio": 0.145455,
+            "mean_line_length": 37.84,
+            "median_line_length": 33.0,
+            "line_length_stdev": 21.47,
+            "line_length_cv": 0.567474,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.055556,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": true
+    },
+    {
+      "stage": "Muse AI (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": "muse_ai",
+      "status": "FAIL",
+      "duration_ms": 20319.84,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 20077.29,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "ocr",
+      "status": "PASS",
+      "duration_ms": 7844.06,
+      "message": "Final accepted text produced by OCR — best candidate selected after all extractors were tried.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "a21c024f-df0c-4d7f-a680-5ecd47a65806_SHJ-5412_SHC-381592.pdf"
+}

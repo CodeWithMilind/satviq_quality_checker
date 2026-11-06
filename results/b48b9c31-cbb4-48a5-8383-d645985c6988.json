@@ -1,0 +1,724 @@
+{
+  "resume_id": "b48b9c31-cbb4-48a5-8383-d645985c6988",
+  "filename": "SHJ-5412_SHC-274899.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 188026,
+  "uploaded_at": "2026-11-05T12:41:55.404212+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 2767.85,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 2767.85,
+      "text": "General \n\nGeneral \n\n    \n\nPRAGATI BHARATE  \n Email : pragatibharate7@gmail.com    Mobile : +91-7709763434 \n\n \n\n \n\nTo work with an organization where can learn new skills and increase my abilities for the organization goal as well \n\nas myself. \n\n \n \n\nEDUCATION    \n\n   \n    \n\nFergusson College(Autonomous), Pune                                                                                                           CGPA : 8 \n\nM.Sc. Computer Application, From September 2022 - 2024     \n\nVidya Pratishthan's Arts, Science and Commerce College, Baramati                                                        Percentage: 89.86 % \n\nB.Sc. Computer Science, From June 2019 - 2022              \n\n \n \n\nEXPERIENCE    \n\n   \n \n\nTech Support Engineer| Tech Mahindra| India | July 2024- Present \n\n• Collaboration with Stakeholders: Collaborated on the Openreach project, directly interfacing with UK clients \n\nto address technical needs. \n\n \n\n• Requirements Gathering: Gather requirements like NSI, R-code and port information for sync checks as well as \n\ntoggle requests and T-code and CBT codes for SASA information.  \n\n \n\n• Business Intelligence gathering: Provided expert guidance to engineers on technical issues across multiple \n\nserver platforms, including Nokia, ADTRAN, and Huawei.  \n\n \n\n• Performance: Diagnosed and resolved server-specific problems by gathering and analysing relevant technical \n\ninformation. \n\n \n\n  Intern | PSPM Technology Pvt. Ltd| India | February 2024 – June 2024    \n\n• Assignment on HTML and CSS: Created different webpages.  \n\n• Assignment on MySQL: Creation of database, Performed CRUD and Joins operations  \n\n• Basic Sessions/Training: Training on Python and Lang Chain  \n\n• Ensured quality and performance of web applications and backend systems. Also conducted functional, regression, \n\nand performance testing to maintain system integrity. \n\n• Created detailed test cases to cover all application functionalities and focused on delivering a seamless user \n\nexperience and optimizing application performance. \n\n \n \n\n\n\n \n\n \n\nGeneral \n\nGeneral \n\nTECHNICAL SKILLS     \n\n   \n• BI Technologies: Microsoft Power BI (Aggregate, Date, Logical, String, Table), Excel, Data visualization, Data \n\nModelling, BI Gateways, ETL. \n \n\n• Relational Database: MySQL, PostgreSQL \n \n\n• Languages: Python, Java, C language, SQL, HTML, CSS \n \n\n• Business Analysis: Requirements Gathering, Agile Methodology, Data Modelling, Process Mapping, SWOT \nAnalysis, Agile & Scrum, Cost-Benefit Analysis, manual testing. \n\n \n• Soft skills: Communication, Adaptability, Problem Solving, Teamwork, Collaboration, Time management. \n\n \n\n \n\nPROJECTS    \n\n     \n\nPMT (Pune Municipal Transport) Pass System | Java (JSP), HTML, CSS, JavaScript, PostgreSQL, XAMPP  \n\n \n\n• web-based tool which helps people renew and register for new bus passes online.  \n\n• Provide commuters with versatile pass options tailored to their travel frequency, encouraging regular usage of \n\npublic transportation while simplifying payment methods. \n\n \n\n \n\n    \n\nMaharashtra Tourist Guide | HTML, CSS, PHP, JavaScript, PostgreSQL \n\n \n\n• It is a web-based software system which allows users to discover and explore new places according to their choice. \n\n• Users can also see photographs and information of the places and its surroundings to get conception of the places \n\neven before visiting it. \n\n• Users can also book railway, bus and airline tickets through our software system. \n\n• The main objective of this project is to make travel easy and comfortable for the users right from finding the best \n\nplaces to booking tickets.    \n\n      \n\n   Student Management System| HTML, CSS, PHP, JavaScript, PostgreSQL \n\n \n\n• Designed a web-based software system for both college and student. Used by educational institutions to \n\nmaintain their student's record and provide the notices. \n\n• Multiple user roles (admin, student, etc.), and each user has different functionality. \n\n• It includes processes like registration of the students' details, assigning all departments based on their course \n\nand management of the records. \n\n• This system reduces the time and workforce required for this job. \n\n• As the system is online, the information is locally present to everyone. \n \n\n \n\nCERTIFICATES\n\n   \n \n\n• C language by IIT Bombay  \n\n• Basic Python certificate by net2net knowledge solutions (07/2021 - 09/2021)",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-05T12:41:52.629800+00:00",
+      "completed_at": "2026-11-05T12:41:55.398850+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "b48b9c31-cbb4-48a5-8383-d645985c6988",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 107 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 4374,
+            "word_count": 566,
+            "line_count": 187,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.235254,
+            "symbol_count": 28,
+            "symbol_ratio": 0.006401,
+            "max_repeated_char_run": 107,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4374,
+            "word_count": 566,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Summary"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "technical skills",
+              "Work Experience": "experience",
+              "Education": "education",
+              "Projects": "projects",
+              "Certifications": "certificates"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Summary"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4374,
+            "word_count": 566,
+            "line_count": 187,
+            "non_empty_line_count": 62,
+            "short_line_count": 12,
+            "short_line_ratio": 0.193548,
+            "fragmented_line_count": 11,
+            "fragmented_line_ratio": 0.177419,
+            "mean_line_length": 64.73,
+            "median_line_length": 62.5,
+            "line_length_stdev": 39.39,
+            "line_length_cv": 0.608589,
+            "broken_sentence_count": 12,
+            "broken_sentence_ratio": 0.196721,
+            "repeated_adjacent_count": 2,
+            "repeated_adjacent_ratio": 0.032787
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "b48b9c31-cbb4-48a5-8383-d645985c6988-attempt-1",
+      "resume_id": "b48b9c31-cbb4-48a5-8383-d645985c6988",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "General \n\nGeneral \n\n    \n\nPRAGATI BHARATE  \n Email : pragatibharate7@gmail.com    Mobile : +91-7709763434 \n\n \n\n \n\nTo work with an organization where can learn new skills and increase my abilities for the organization goal as well \n\nas myself. \n\n \n \n\nEDUCATION    \n\n   \n    \n\nFergusson College(Autonomous), Pune                                                                                                           CGPA : 8 \n\nM.Sc. Computer Application, From September 2022 - 2024     \n\nVidya Pratishthan's Arts, Science and Commerce College, Baramati                                                        Percentage: 89.86 % \n\nB.Sc. Computer Science, From June 2019 - 2022              \n\n \n \n\nEXPERIENCE    \n\n   \n \n\nTech Support Engineer| Tech Mahindra| India | July 2024- Present \n\n• Collaboration with Stakeholders: Collaborated on the Openreach project, directly interfacing with UK clients \n\nto address technical needs. \n\n \n\n• Requirements Gathering: Gather requirements like NSI, R-code and port information for sync checks as well as \n\ntoggle requests and T-code and CBT codes for SASA information.  \n\n \n\n• Business Intelligence gathering: Provided expert guidance to engineers on technical issues across multiple \n\nserver platforms, including Nokia, ADTRAN, and Huawei.  \n\n \n\n• Performance: Diagnosed and resolved server-specific problems by gathering and analysing relevant technical \n\ninformation. \n\n \n\n  Intern | PSPM Technology Pvt. Ltd| India | February 2024 – June 2024    \n\n• Assignment on HTML and CSS: Created different webpages.  \n\n• Assignment on MySQL: Creation of database, Performed CRUD and Joins operations  \n\n• Basic Sessions/Training: Training on Python and Lang Chain  \n\n• Ensured quality and performance of web applications and backend systems. Also conducted functional, regression, \n\nand performance testing to maintain system integrity. \n\n• Created detailed test cases to cover all application functionalities and focused on delivering a seamless user \n\nexperience and optimizing application performance. \n\n \n \n\n\n\n \n\n \n\nGeneral \n\nGeneral \n\nTECHNICAL SKILLS     \n\n   \n• BI Technologies: Microsoft Power BI (Aggregate, Date, Logical, String, Table), Excel, Data visualization, Data \n\nModelling, BI Gateways, ETL. \n \n\n• Relational Database: MySQL, PostgreSQL \n \n\n• Languages: Python, Java, C language, SQL, HTML, CSS \n \n\n• Business Analysis: Requirements Gathering, Agile Methodology, Data Modelling, Process Mapping, SWOT \nAnalysis, Agile & Scrum, Cost-Benefit Analysis, manual testing. \n\n \n• Soft skills: Communication, Adaptability, Problem Solving, Teamwork, Collaboration, Time management. \n\n \n\n \n\nPROJECTS    \n\n     \n\nPMT (Pune Municipal Transport) Pass System | Java (JSP), HTML, CSS, JavaScript, PostgreSQL, XAMPP  \n\n \n\n• web-based tool which helps people renew and register for new bus passes online.  \n\n• Provide commuters with versatile pass options tailored to their travel frequency, encouraging regular usage of \n\npublic transportation while simplifying payment methods. \n\n \n\n \n\n    \n\nMaharashtra Tourist Guide | HTML, CSS, PHP, JavaScript, PostgreSQL \n\n \n\n• It is a web-based software system which allows users to discover and explore new places according to their choice. \n\n• Users can also see photographs and information of the places and its surroundings to get conception of the places \n\neven before visiting it. \n\n• Users can also book railway, bus and airline tickets through our software system. \n\n• The main objective of this project is to make travel easy and comfortable for the users right from finding the best \n\nplaces to booking tickets.    \n\n      \n\n   Student Management System| HTML, CSS, PHP, JavaScript, PostgreSQL \n\n \n\n• Designed a web-based software system for both college and student. Used by educational institutions to \n\nmaintain their student's record and provide the notices. \n\n• Multiple user roles (admin, student, etc.), and each user has different functionality. \n\n• It includes processes like registration of the students' details, assigning all departments based on their course \n\nand management of the records. \n\n• This system reduces the time and workforce required for this job. \n\n• As the system is online, the information is locally present to everyone. \n \n\n \n\nCERTIFICATES\n\n   \n \n\n• C language by IIT Bombay  \n\n• Basic Python certificate by net2net knowledge solutions (07/2021 - 09/2021)",
+      "extracted_text_length": 4374,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "b48b9c31-cbb4-48a5-8383-d645985c6988",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 107 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 4374,
+            "word_count": 566,
+            "line_count": 187,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.235254,
+            "symbol_count": 28,
+            "symbol_ratio": 0.006401,
+            "max_repeated_char_run": 107,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4374,
+            "word_count": 566,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Summary"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "technical skills",
+              "Work Experience": "experience",
+              "Education": "education",
+              "Projects": "projects",
+              "Certifications": "certificates"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Summary"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4374,
+            "word_count": 566,
+            "line_count": 187,
+            "non_empty_line_count": 62,
+            "short_line_count": 12,
+            "short_line_ratio": 0.193548,
+            "fragmented_line_count": 11,
+            "fragmented_line_ratio": 0.177419,
+            "mean_line_length": 64.73,
+            "median_line_length": 62.5,
+            "line_length_stdev": 39.39,
+            "line_length_cv": 0.608589,
+            "broken_sentence_count": 12,
+            "broken_sentence_ratio": 0.196721,
+            "repeated_adjacent_count": 2,
+            "repeated_adjacent_ratio": 0.032787
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    }
+  ],
+  "extracted_text": "General \n\nGeneral \n\n    \n\nPRAGATI BHARATE  \n Email : pragatibharate7@gmail.com    Mobile : +91-7709763434 \n\n \n\n \n\nTo work with an organization where can learn new skills and increase my abilities for the organization goal as well \n\nas myself. \n\n \n \n\nEDUCATION    \n\n   \n    \n\nFergusson College(Autonomous), Pune                                                                                                           CGPA : 8 \n\nM.Sc. Computer Application, From September 2022 - 2024     \n\nVidya Pratishthan's Arts, Science and Commerce College, Baramati                                                        Percentage: 89.86 % \n\nB.Sc. Computer Science, From June 2019 - 2022              \n\n \n \n\nEXPERIENCE    \n\n   \n \n\nTech Support Engineer| Tech Mahindra| India | July 2024- Present \n\n• Collaboration with Stakeholders: Collaborated on the Openreach project, directly interfacing with UK clients \n\nto address technical needs. \n\n \n\n• Requirements Gathering: Gather requirements like NSI, R-code and port information for sync checks as well as \n\ntoggle requests and T-code and CBT codes for SASA information.  \n\n \n\n• Business Intelligence gathering: Provided expert guidance to engineers on technical issues across multiple \n\nserver platforms, including Nokia, ADTRAN, and Huawei.  \n\n \n\n• Performance: Diagnosed and resolved server-specific problems by gathering and analysing relevant technical \n\ninformation. \n\n \n\n  Intern | PSPM Technology Pvt. Ltd| India | February 2024 – June 2024    \n\n• Assignment on HTML and CSS: Created different webpages.  \n\n• Assignment on MySQL: Creation of database, Performed CRUD and Joins operations  \n\n• Basic Sessions/Training: Training on Python and Lang Chain  \n\n• Ensured quality and performance of web applications and backend systems. Also conducted functional, regression, \n\nand performance testing to maintain system integrity. \n\n• Created detailed test cases to cover all application functionalities and focused on delivering a seamless user \n\nexperience and optimizing application performance. \n\n \n \n\n\n\n \n\n \n\nGeneral \n\nGeneral \n\nTECHNICAL SKILLS     \n\n   \n• BI Technologies: Microsoft Power BI (Aggregate, Date, Logical, String, Table), Excel, Data visualization, Data \n\nModelling, BI Gateways, ETL. \n \n\n• Relational Database: MySQL, PostgreSQL \n \n\n• Languages: Python, Java, C language, SQL, HTML, CSS \n \n\n• Business Analysis: Requirements Gathering, Agile Methodology, Data Modelling, Process Mapping, SWOT \nAnalysis, Agile & Scrum, Cost-Benefit Analysis, manual testing. \n\n \n• Soft skills: Communication, Adaptability, Problem Solving, Teamwork, Collaboration, Time management. \n\n \n\n \n\nPROJECTS    \n\n     \n\nPMT (Pune Municipal Transport) Pass System | Java (JSP), HTML, CSS, JavaScript, PostgreSQL, XAMPP  \n\n \n\n• web-based tool which helps people renew and register for new bus passes online.  \n\n• Provide commuters with versatile pass options tailored to their travel frequency, encouraging regular usage of \n\npublic transportation while simplifying payment methods. \n\n \n\n \n\n    \n\nMaharashtra Tourist Guide | HTML, CSS, PHP, JavaScript, PostgreSQL \n\n \n\n• It is a web-based software system which allows users to discover and explore new places according to their choice. \n\n• Users can also see photographs and information of the places and its surroundings to get conception of the places \n\neven before visiting it. \n\n• Users can also book railway, bus and airline tickets through our software system. \n\n• The main objective of this project is to make travel easy and comfortable for the users right from finding the best \n\nplaces to booking tickets.    \n\n      \n\n   Student Management System| HTML, CSS, PHP, JavaScript, PostgreSQL \n\n \n\n• Designed a web-based software system for both college and student. Used by educational institutions to \n\nmaintain their student's record and provide the notices. \n\n• Multiple user roles (admin, student, etc.), and each user has different functionality. \n\n• It includes processes like registration of the students' details, assigning all departments based on their course \n\nand management of the records. \n\n• This system reduces the time and workforce required for this job. \n\n• As the system is online, the information is locally present to everyone. \n \n\n \n\nCERTIFICATES\n\n   \n \n\n• C language by IIT Bombay  \n\n• Basic Python certificate by net2net knowledge solutions (07/2021 - 09/2021)",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "General \n\nGeneral \n\n    \n\nPRAGATI BHARATE  \n Email : pragatibharate7@gmail.com    Mobile : +91-7709763434 \n\n \n\n \n\nTo work with an organization where can learn new skills and increase my abilities for the organization goal as well \n\nas myself. \n\n \n \n\nEDUCATION    \n\n   \n    \n\nFergusson College(Autonomous), Pune                                                                                                           CGPA : 8 \n\nM.Sc. Computer Application, From September 2022 - 2024     \n\nVidya Pratishthan's Arts, Science and Commerce College, Baramati                                                        Percentage: 89.86 % \n\nB.Sc. Computer Science, From June 2019 - 2022              \n\n \n \n\nEXPERIENCE    \n\n   \n \n\nTech Support Engineer| Tech Mahindra| India | July 2024- Present \n\n• Collaboration with Stakeholders: Collaborated on the Openreach project, directly interfacing with UK clients \n\nto address technical needs. \n\n \n\n• Requirements Gathering: Gather requirements like NSI, R-code and port information for sync checks as well as \n\ntoggle requests and T-code and CBT codes for SASA information.  \n\n \n\n• Business Intelligence gathering: Provided expert guidance to engineers on technical issues across multiple \n\nserver platforms, including Nokia, ADTRAN, and Huawei.  \n\n \n\n• Performance: Diagnosed and resolved server-specific problems by gathering and analysing relevant technical \n\ninformation. \n\n \n\n  Intern | PSPM Technology Pvt. Ltd| India | February 2024 – June 2024    \n\n• Assignment on HTML and CSS: Created different webpages.  \n\n• Assignment on MySQL: Creation of database, Performed CRUD and Joins operations  \n\n• Basic Sessions/Training: Training on Python and Lang Chain  \n\n• Ensured quality and performance of web applications and backend systems. Also conducted functional, regression, \n\nand performance testing to maintain system integrity. \n\n• Created detailed test cases to cover all application functionalities and focused on delivering a seamless user \n\nexperience and optimizing application performance. \n\n \n \n\n\n\n \n\n \n\nGeneral \n\nGeneral \n\nTECHNICAL SKILLS     \n\n   \n• BI Technologies: Microsoft Power BI (Aggregate, Date, Logical, String, Table), Excel, Data visualization, Data \n\nModelling, BI Gateways, ETL. \n \n\n• Relational Database: MySQL, PostgreSQL \n \n\n• Languages: Python, Java, C language, SQL, HTML, CSS \n \n\n• Business Analysis: Requirements Gathering, Agile Methodology, Data Modelling, Process Mapping, SWOT \nAnalysis, Agile & Scrum, Cost-Benefit Analysis, manual testing. \n\n \n• Soft skills: Communication, Adaptability, Problem Solving, Teamwork, Collaboration, Time management. \n\n \n\n \n\nPROJECTS    \n\n     \n\nPMT (Pune Municipal Transport) Pass System | Java (JSP), HTML, CSS, JavaScript, PostgreSQL, XAMPP  \n\n \n\n• web-based tool which helps people renew and register for new bus passes online.  \n\n• Provide commuters with versatile pass options tailored to their travel frequency, encouraging regular usage of \n\npublic transportation while simplifying payment methods. \n\n \n\n \n\n    \n\nMaharashtra Tourist Guide | HTML, CSS, PHP, JavaScript, PostgreSQL \n\n \n\n• It is a web-based software system which allows users to discover and explore new places according to their choice. \n\n• Users can also see photographs and information of the places and its surroundings to get conception of the places \n\neven before visiting it. \n\n• Users can also book railway, bus and airline tickets through our software system. \n\n• The main objective of this project is to make travel easy and comfortable for the users right from finding the best \n\nplaces to booking tickets.    \n\n      \n\n   Student Management System| HTML, CSS, PHP, JavaScript, PostgreSQL \n\n \n\n• Designed a web-based software system for both college and student. Used by educational institutions to \n\nmaintain their student's record and provide the notices. \n\n• Multiple user roles (admin, student, etc.), and each user has different functionality. \n\n• It includes processes like registration of the students' details, assigning all departments based on their course \n\nand management of the records. \n\n• This system reduces the time and workforce required for this job. \n\n• As the system is online, the information is locally present to everyone. \n \n\n \n\nCERTIFICATES\n\n   \n \n\n• C language by IIT Bombay  \n\n• Basic Python certificate by net2net knowledge solutions (07/2021 - 09/2021)",
+  "quality": {
+    "status": "PASS",
+    "document_id": "b48b9c31-cbb4-48a5-8383-d645985c6988",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 80.0,
+      "flags": [
+        "EXCESSIVE_REPEATED_CHARACTERS"
+      ],
+      "reasons": [
+        "Repeated-character corruption suspected: longest run is 107 characters, 0.0% of long lines are single-character repeats."
+      ],
+      "metrics": {
+        "char_count": 4374,
+        "word_count": 566,
+        "line_count": 187,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.235254,
+        "symbol_count": 28,
+        "symbol_ratio": 0.006401,
+        "max_repeated_char_run": 107,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 97.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 4374,
+        "word_count": 566,
+        "configured_section_count": 7,
+        "detected_count": 6,
+        "missing_count": 1,
+        "detected_sections": [
+          "Contact Information",
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Summary"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Summary"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Skills": "technical skills",
+          "Work Experience": "experience",
+          "Education": "education",
+          "Projects": "projects",
+          "Certifications": "certificates"
+        }
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Summary"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Summary"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 4374,
+        "word_count": 566,
+        "line_count": 187,
+        "non_empty_line_count": 62,
+        "short_line_count": 12,
+        "short_line_ratio": 0.193548,
+        "fragmented_line_count": 11,
+        "fragmented_line_ratio": 0.177419,
+        "mean_line_length": 64.73,
+        "median_line_length": 62.5,
+        "line_length_stdev": 39.39,
+        "line_length_cv": 0.608589,
+        "broken_sentence_count": 12,
+        "broken_sentence_ratio": 0.196721,
+        "repeated_adjacent_count": 2,
+        "repeated_adjacent_ratio": 0.032787
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 60.0,
+  "resume_json": null,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "General \n\nGeneral \n\n    \n\nPRAGATI BHARATE  \n Email : pragatibharate7@gmail.com    Mobile : +91-7709763434 \n\n \n\n \n\nTo work with an organization where can learn new skills and increase my abilities for the organization goal as well \n\nas myself. \n\n \n \n\nEDUCATION    \n\n   \n    \n\nFergusson College(Autonomous), Pune                                                                                                           CGPA : 8 \n\nM.Sc. Computer Application, From September 2022 - 2024     \n\nVidya Pratishthan's Arts, Science and Commerce College, Baramati                                                        Percentage: 89.86 % \n\nB.Sc. Computer Science, From June 2019 - 2022              \n\n \n \n\nEXPERIENCE    \n\n   \n \n\nTech Support Engineer| Tech Mahindra| India | July 2024- Present \n\n• Collaboration with Stakeholders: Collaborated on the Openreach project, directly interfacing with UK clients \n\nto address technical needs. \n\n \n\n• Requirements Gathering: Gather requirements like NSI, R-code and port information for sync checks as well as \n\ntoggle requests and T-code and CBT codes for SASA information.  \n\n \n\n• Business Intelligence gathering: Provided expert guidance to engineers on technical issues across multiple \n\nserver platforms, including Nokia, ADTRAN, and Huawei.  \n\n \n\n• Performance: Diagnosed and resolved server-specific problems by gathering and analysing relevant technical \n\ninformation. \n\n \n\n  Intern | PSPM Technology Pvt. Ltd| India | February 2024 – June 2024    \n\n• Assignment on HTML and CSS: Created different webpages.  \n\n• Assignment on MySQL: Creation of database, Performed CRUD and Joins operations  \n\n• Basic Sessions/Training: Training on Python and Lang Chain  \n\n• Ensured quality and performance of web applications and backend systems. Also conducted functional, regression, \n\nand performance testing to maintain system integrity. \n\n• Created detailed test cases to cover all application functionalities and focused on delivering a seamless user \n\nexperience and optimizing application performance. \n\n \n \n\n\n\n \n\n \n\nGeneral \n\nGeneral \n\nTECHNICAL SKILLS     \n\n   \n• BI Technologies: Microsoft Power BI (Aggregate, Date, Logical, String, Table), Excel, Data visualization, Data \n\nModelling, BI Gateways, ETL. \n \n\n• Relational Database: MySQL, PostgreSQL \n \n\n• Languages: Python, Java, C language, SQL, HTML, CSS \n \n\n• Business Analysis: Requirements Gathering, Agile Methodology, Data Modelling, Process Mapping, SWOT \nAnalysis, Agile & Scrum, Cost-Benefit Analysis, manual testing. \n\n \n• Soft skills: Communication, Adaptability, Problem Solving, Teamwork, Collaboration, Time management. \n\n \n\n \n\nPROJECTS    \n\n     \n\nPMT (Pune Municipal Transport) Pass System | Java (JSP), HTML, CSS, JavaScript, PostgreSQL, XAMPP  \n\n \n\n• web-based tool which helps people renew and register for new bus passes online.  \n\n• Provide commuters with versatile pass options tailored to their travel frequency, encouraging regular usage of \n\npublic transportation while simplifying payment methods. \n\n \n\n \n\n    \n\nMaharashtra Tourist Guide | HTML, CSS, PHP, JavaScript, PostgreSQL \n\n \n\n• It is a web-based software system which allows users to discover and explore new places according to their choice. \n\n• Users can also see photographs and information of the places and its surroundings to get conception of the places \n\neven before visiting it. \n\n• Users can also book railway, bus and airline tickets through our software system. \n\n• The main objective of this project is to make travel easy and comfortable for the users right from finding the best \n\nplaces to booking tickets.    \n\n      \n\n   Student Management System| HTML, CSS, PHP, JavaScript, PostgreSQL \n\n \n\n• Designed a web-based software system for both college and student. Used by educational institutions to \n\nmaintain their student's record and provide the notices. \n\n• Multiple user roles (admin, student, etc.), and each user has different functionality. \n\n• It includes processes like registration of the students' details, assigning all departments based on their course \n\nand management of the records. \n\n• This system reduces the time and workforce required for this job. \n\n• As the system is online, the information is locally present to everyone. \n \n\n \n\nCERTIFICATES\n\n   \n \n\n• C language by IIT Bombay  \n\n• Basic Python certificate by net2net knowledge solutions (07/2021 - 09/2021)",
+    "normalized_text": "General\n\nGeneral\n\nPRAGATI BHARATE\nEmail : pragatibharate7@gmail.com Mobile : +91-7709763434\n\nTo work with an organization where can learn new skills and increase my abilities for the organization goal as well\n\nas myself.\n\nEDUCATION\n\nFergusson College(Autonomous), Pune CGPA : 8\n\nM.Sc. Computer Application, From September 2022 - 2024\n\nVidya Pratishthan's Arts, Science and Commerce College, Baramati Percentage: 89.86 %\n\nB.Sc. Computer Science, From June 2019 - 2022\n\nEXPERIENCE\n\nTech Support Engineer| Tech Mahindra| India | July 2024- Present\n\n• Collaboration with Stakeholders: Collaborated on the Openreach project, directly interfacing with UK clients\n\nto address technical needs.\n\n• Requirements Gathering: Gather requirements like NSI, R-code and port information for sync checks as well as\n\ntoggle requests and T-code and CBT codes for SASA information.\n\n• Business Intelligence gathering: Provided expert guidance to engineers on technical issues across multiple\n\nserver platforms, including Nokia, ADTRAN, and Huawei.\n\n• Performance: Diagnosed and resolved server-specific problems by gathering and analysing relevant technical\n\ninformation.\n\nIntern | PSPM Technology Pvt. Ltd| India | February 2024 – June 2024\n\n• Assignment on HTML and CSS: Created different webpages.\n\n• Assignment on MySQL: Creation of database, Performed CRUD and Joins operations\n\n• Basic Sessions/Training: Training on Python and Lang Chain\n\n• Ensured quality and performance of web applications and backend systems. Also conducted functional, regression,\n\nand performance testing to maintain system integrity.\n\n• Created detailed test cases to cover all application functionalities and focused on delivering a seamless user\n\nexperience and optimizing application performance.\n\nGeneral\n\nGeneral\n\nTECHNICAL SKILLS\n\n• BI Technologies: Microsoft Power BI (Aggregate, Date, Logical, String, Table), Excel, Data visualization, Data\n\nModelling, BI Gateways, ETL.\n\n• Relational Database: MySQL, PostgreSQL\n\n• Languages: Python, Java, C language, SQL, HTML, CSS\n\n• Business Analysis: Requirements Gathering, Agile Methodology, Data Modelling, Process Mapping, SWOT\nAnalysis, Agile & Scrum, Cost-Benefit Analysis, manual testing.\n\n• Soft skills: Communication, Adaptability, Problem Solving, Teamwork, Collaboration, Time management.\n\nPROJECTS\n\nPMT (Pune Municipal Transport) Pass System | Java (JSP), HTML, CSS, JavaScript, PostgreSQL, XAMPP\n\n• web-based tool which helps people renew and register for new bus passes online.\n\n• Provide commuters with versatile pass options tailored to their travel frequency, encouraging regular usage of\n\npublic transportation while simplifying payment methods.\n\nMaharashtra Tourist Guide | HTML, CSS, PHP, JavaScript, PostgreSQL\n\n• It is a web-based software system which allows users to discover and explore new places according to their choice.\n\n• Users can also see photographs and information of the places and its surroundings to get conception of the places\n\neven before visiting it.\n\n• Users can also book railway, bus and airline tickets through our software system.\n\n• The main objective of this project is to make travel easy and comfortable for the users right from finding the best\n\nplaces to booking tickets.\n\nStudent Management System| HTML, CSS, PHP, JavaScript, PostgreSQL\n\n• Designed a web-based software system for both college and student. Used by educational institutions to\n\nmaintain their student's record and provide the notices.\n\n• Multiple user roles (admin, student, etc.), and each user has different functionality.\n\n• It includes processes like registration of the students' details, assigning all departments based on their course\n\nand management of the records.\n\n• This system reduces the time and workforce required for this job.\n\n• As the system is online, the information is locally present to everyone.\n\nCERTIFICATES\n\n• C language by IIT Bombay\n\n• Basic Python certificate by net2net knowledge solutions (07/2021 - 09/2021)",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 4374,
+    "normalized_chars": 3969,
+    "original_estimated_tokens": 1094,
+    "normalized_estimated_tokens": 992,
+    "estimated_reduction_percent": 9.3
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "timed_out_calls": 1,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_source": null,
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Muse API request timed out after 20s.",
+    "input_type": "text",
+    "duration_ms": 20057.95,
+    "timeout_seconds": 20.0,
+    "usage": {},
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 4374,
+      "normalized_chars": 3969,
+      "estimated_reduction_percent": 9.3,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 2767.85,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "b48b9c31-cbb4-48a5-8383-d645985c6988",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 107 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 4374,
+            "word_count": 566,
+            "line_count": 187,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.235254,
+            "symbol_count": 28,
+            "symbol_ratio": 0.006401,
+            "max_repeated_char_run": 107,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4374,
+            "word_count": 566,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Summary"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "technical skills",
+              "Work Experience": "experience",
+              "Education": "education",
+              "Projects": "projects",
+              "Certifications": "certificates"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Summary"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4374,
+            "word_count": 566,
+            "line_count": 187,
+            "non_empty_line_count": 62,
+            "short_line_count": 12,
+            "short_line_ratio": 0.193548,
+            "fragmented_line_count": 11,
+            "fragmented_line_ratio": 0.177419,
+            "mean_line_length": 64.73,
+            "median_line_length": 62.5,
+            "line_length_stdev": 39.39,
+            "line_length_cv": 0.608589,
+            "broken_sentence_count": 12,
+            "broken_sentence_ratio": 0.196721,
+            "repeated_adjacent_count": 2,
+            "repeated_adjacent_ratio": 0.032787
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 20057.95,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 2767.85,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "b48b9c31-cbb4-48a5-8383-d645985c6988_SHJ-5412_SHC-274899.pdf"
+}

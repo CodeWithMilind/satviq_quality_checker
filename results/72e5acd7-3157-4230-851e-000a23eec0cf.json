@@ -1,0 +1,756 @@
+{
+  "resume_id": "72e5acd7-3157-4230-851e-000a23eec0cf",
+  "filename": "SHJ-5434_SHC-111080.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 194875,
+  "uploaded_at": "2026-11-05T12:59:47.580201+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 8001.56,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 8001.56,
+      "text": "RESUME   \n   \n\n  LAGUDU RAMESH                    \n                                                                                               Email: rameshlagudu772@gmail.com  \n\n                                                                         Mobile: +91 9848730490  \n\n PROFESSIONAL SUMMARY  \n\n  \n\n     “Aspiring to work with an organization that offers a challenging career where I can learn and function \n\neffectively and contribute towards organizations goals, to constantly upgrade my knowledge and skills and \n\nmake a difference in whatever I do.”    \n\n  \n\nACADEMIC QUALIFICATIONS   \n\n  \n   \n\nDegree  Year of  \n\nPassing  \n\nName of Institute  University/ Board  Percentage/CGPA \n\nM.Com  \n\n(Financial \n\nManagement) \n\n  2023 SVU College of CM&CS, \n\nTirupati \n\nSri Venkateswara \n\nUniversity, Tirupati \n\n           6.8 \n\n  \n\nB.Com  \n\n \n\n \n\n \n\n \n\n    2021 \n\n  \n\nMother Arts & Science  \n\nCollege, Narsipatnam  \n\n   \n\nAndhra University,  \n\nVisakhapatnam, AP.  \n\n  \n\n 70%  \n\n  \n\n   \n\n        Intermediate \n\n          (M.P.C) \n\n 2018 SV Junior College, \n\nTuni \n\nBoard of Intermediate  \n\nEducation, A.P \n\n \n\n             63% \n\n           SSC  2016 Z.P.P. High School, \n\nB.H.kota \n\nBoard of Secondary \n\nEducation, A.P \n\n                             \n\n8.2 \n\n  \n\nEXPERIENCE  \n\n  \n\n• FRESHER  \n\n  \n\nPROJECT  \n\n \n A  STUDY ON WORKING CAPITAL MANAGEMENT WITH REFERENCE TO ULTRATECH \n\nCEMENTS LTD.   \n\n• Analysing the financial position of Ultratech cements Ltd. (2018-2023)  \n\n• By using ratios like Current, Quick, Total Assets and Fixed Assets Turnover Ratios and also \n\nrepresented by Graphs & Tables  \n\n• Findings, Suggestions and Conclusion   \n\n\n\n \n\n \n\n AREAS OF KNOWLEDGE   \n\n  \n\n• Basic Understanding of Indian & US Securities Market &Trade Life Cycle \n\n• Good Knowledge on Mutual Funds like Open and Close ended funds, Interval funds, NAV \n\nCalculations and Life Cycle.   \n\n• Good Knowledge on Private Equity Funds like Structure of PE, Management Fee, Waterfall \n\nProvisions  \n\n• Conceptual Understanding on Hedge Funds like Investment Strategies, ABS and MBS, \n\nCrystallization date  \n\n• Good Knowledge on Fixed Income Securities like Debentures and Bonds (Types of Bonds) \n\n• Basic Understanding of Corporate Actions such as Dividends, Bonus Issue, Rights Issue etc. \n\n• Conceptual Understanding of Financial Derivatives like Forwards, Futures, Options and Swaps  \n\n• Basic Knowledge on AML/KYC and Transaction Monitoring \n\n• Conceptual Understanding of Equity Research like Fundamental & Technical Analysis etc.,  \n\n• Financial Accounting like Journal entries, ledger posting, Trial balance and Final Accounts  \n\n  \n\n SKILLS  \n\n \n\n• MS OFFICE (Word, Excel and PowerPoint,Vba)    \n\n• Tally ERP9 and Prime \n\n• Flexible and adoptable to working environment \n\n• Effective Communication Skills  \n\n• Hard worker and Self Motivated  \n\n• Ability to work under pressure   \n\n• Active participation in team work  \n\n• Time Management and Work Ethic  \n\n• Problem Solving and Critical Thinking   \n\n  \n\nLANGUAGES KNOWN  \n\n \n\n• English     - Read, Write and Speak   \n\n• Telugu      - Read, Write and Speak   \n\n• Hindi        – Read and Write \n\n \n\nHOBBIES  \n\n \n\n• Playing chess \n\n• Listening Music  \n\n  \nDECLARATION  \n\n \nI hereby declare that the above information is correct to the best of my knowledge \n\n                                                                                                                                   (L.Ramesh)",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-05T12:59:39.567069+00:00",
+      "completed_at": "2026-11-05T12:59:47.570160+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "72e5acd7-3157-4230-851e-000a23eec0cf",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 131 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 3442,
+            "word_count": 400,
+            "line_count": 223,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.3405,
+            "symbol_count": 31,
+            "symbol_ratio": 0.009006,
+            "max_repeated_char_run": 131,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3442,
+            "word_count": 400,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Education": "academic qualifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 93.49,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "46.3% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "37.8% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 3442,
+            "word_count": 400,
+            "line_count": 223,
+            "non_empty_line_count": 82,
+            "short_line_count": 38,
+            "short_line_ratio": 0.463415,
+            "fragmented_line_count": 31,
+            "fragmented_line_ratio": 0.378049,
+            "mean_line_length": 31.82,
+            "median_line_length": 20.5,
+            "line_length_stdev": 28.77,
+            "line_length_cv": 0.904297,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.037037,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "72e5acd7-3157-4230-851e-000a23eec0cf-attempt-1",
+      "resume_id": "72e5acd7-3157-4230-851e-000a23eec0cf",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "RESUME   \n   \n\n  LAGUDU RAMESH                    \n                                                                                               Email: rameshlagudu772@gmail.com  \n\n                                                                         Mobile: +91 9848730490  \n\n PROFESSIONAL SUMMARY  \n\n  \n\n     “Aspiring to work with an organization that offers a challenging career where I can learn and function \n\neffectively and contribute towards organizations goals, to constantly upgrade my knowledge and skills and \n\nmake a difference in whatever I do.”    \n\n  \n\nACADEMIC QUALIFICATIONS   \n\n  \n   \n\nDegree  Year of  \n\nPassing  \n\nName of Institute  University/ Board  Percentage/CGPA \n\nM.Com  \n\n(Financial \n\nManagement) \n\n  2023 SVU College of CM&CS, \n\nTirupati \n\nSri Venkateswara \n\nUniversity, Tirupati \n\n           6.8 \n\n  \n\nB.Com  \n\n \n\n \n\n \n\n \n\n    2021 \n\n  \n\nMother Arts & Science  \n\nCollege, Narsipatnam  \n\n   \n\nAndhra University,  \n\nVisakhapatnam, AP.  \n\n  \n\n 70%  \n\n  \n\n   \n\n        Intermediate \n\n          (M.P.C) \n\n 2018 SV Junior College, \n\nTuni \n\nBoard of Intermediate  \n\nEducation, A.P \n\n \n\n             63% \n\n           SSC  2016 Z.P.P. High School, \n\nB.H.kota \n\nBoard of Secondary \n\nEducation, A.P \n\n                             \n\n8.2 \n\n  \n\nEXPERIENCE  \n\n  \n\n• FRESHER  \n\n  \n\nPROJECT  \n\n \n A  STUDY ON WORKING CAPITAL MANAGEMENT WITH REFERENCE TO ULTRATECH \n\nCEMENTS LTD.   \n\n• Analysing the financial position of Ultratech cements Ltd. (2018-2023)  \n\n• By using ratios like Current, Quick, Total Assets and Fixed Assets Turnover Ratios and also \n\nrepresented by Graphs & Tables  \n\n• Findings, Suggestions and Conclusion   \n\n\n\n \n\n \n\n AREAS OF KNOWLEDGE   \n\n  \n\n• Basic Understanding of Indian & US Securities Market &Trade Life Cycle \n\n• Good Knowledge on Mutual Funds like Open and Close ended funds, Interval funds, NAV \n\nCalculations and Life Cycle.   \n\n• Good Knowledge on Private Equity Funds like Structure of PE, Management Fee, Waterfall \n\nProvisions  \n\n• Conceptual Understanding on Hedge Funds like Investment Strategies, ABS and MBS, \n\nCrystallization date  \n\n• Good Knowledge on Fixed Income Securities like Debentures and Bonds (Types of Bonds) \n\n• Basic Understanding of Corporate Actions such as Dividends, Bonus Issue, Rights Issue etc. \n\n• Conceptual Understanding of Financial Derivatives like Forwards, Futures, Options and Swaps  \n\n• Basic Knowledge on AML/KYC and Transaction Monitoring \n\n• Conceptual Understanding of Equity Research like Fundamental & Technical Analysis etc.,  \n\n• Financial Accounting like Journal entries, ledger posting, Trial balance and Final Accounts  \n\n  \n\n SKILLS  \n\n \n\n• MS OFFICE (Word, Excel and PowerPoint,Vba)    \n\n• Tally ERP9 and Prime \n\n• Flexible and adoptable to working environment \n\n• Effective Communication Skills  \n\n• Hard worker and Self Motivated  \n\n• Ability to work under pressure   \n\n• Active participation in team work  \n\n• Time Management and Work Ethic  \n\n• Problem Solving and Critical Thinking   \n\n  \n\nLANGUAGES KNOWN  \n\n \n\n• English     - Read, Write and Speak   \n\n• Telugu      - Read, Write and Speak   \n\n• Hindi        – Read and Write \n\n \n\nHOBBIES  \n\n \n\n• Playing chess \n\n• Listening Music  \n\n  \nDECLARATION  \n\n \nI hereby declare that the above information is correct to the best of my knowledge \n\n                                                                                                                                   (L.Ramesh)",
+      "extracted_text_length": 3442,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "72e5acd7-3157-4230-851e-000a23eec0cf",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 131 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 3442,
+            "word_count": 400,
+            "line_count": 223,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.3405,
+            "symbol_count": 31,
+            "symbol_ratio": 0.009006,
+            "max_repeated_char_run": 131,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3442,
+            "word_count": 400,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Education": "academic qualifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 93.49,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "46.3% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "37.8% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 3442,
+            "word_count": 400,
+            "line_count": 223,
+            "non_empty_line_count": 82,
+            "short_line_count": 38,
+            "short_line_ratio": 0.463415,
+            "fragmented_line_count": 31,
+            "fragmented_line_ratio": 0.378049,
+            "mean_line_length": 31.82,
+            "median_line_length": 20.5,
+            "line_length_stdev": 28.77,
+            "line_length_cv": 0.904297,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.037037,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    }
+  ],
+  "extracted_text": "RESUME   \n   \n\n  LAGUDU RAMESH                    \n                                                                                               Email: rameshlagudu772@gmail.com  \n\n                                                                         Mobile: +91 9848730490  \n\n PROFESSIONAL SUMMARY  \n\n  \n\n     “Aspiring to work with an organization that offers a challenging career where I can learn and function \n\neffectively and contribute towards organizations goals, to constantly upgrade my knowledge and skills and \n\nmake a difference in whatever I do.”    \n\n  \n\nACADEMIC QUALIFICATIONS   \n\n  \n   \n\nDegree  Year of  \n\nPassing  \n\nName of Institute  University/ Board  Percentage/CGPA \n\nM.Com  \n\n(Financial \n\nManagement) \n\n  2023 SVU College of CM&CS, \n\nTirupati \n\nSri Venkateswara \n\nUniversity, Tirupati \n\n           6.8 \n\n  \n\nB.Com  \n\n \n\n \n\n \n\n \n\n    2021 \n\n  \n\nMother Arts & Science  \n\nCollege, Narsipatnam  \n\n   \n\nAndhra University,  \n\nVisakhapatnam, AP.  \n\n  \n\n 70%  \n\n  \n\n   \n\n        Intermediate \n\n          (M.P.C) \n\n 2018 SV Junior College, \n\nTuni \n\nBoard of Intermediate  \n\nEducation, A.P \n\n \n\n             63% \n\n           SSC  2016 Z.P.P. High School, \n\nB.H.kota \n\nBoard of Secondary \n\nEducation, A.P \n\n                             \n\n8.2 \n\n  \n\nEXPERIENCE  \n\n  \n\n• FRESHER  \n\n  \n\nPROJECT  \n\n \n A  STUDY ON WORKING CAPITAL MANAGEMENT WITH REFERENCE TO ULTRATECH \n\nCEMENTS LTD.   \n\n• Analysing the financial position of Ultratech cements Ltd. (2018-2023)  \n\n• By using ratios like Current, Quick, Total Assets and Fixed Assets Turnover Ratios and also \n\nrepresented by Graphs & Tables  \n\n• Findings, Suggestions and Conclusion   \n\n\n\n \n\n \n\n AREAS OF KNOWLEDGE   \n\n  \n\n• Basic Understanding of Indian & US Securities Market &Trade Life Cycle \n\n• Good Knowledge on Mutual Funds like Open and Close ended funds, Interval funds, NAV \n\nCalculations and Life Cycle.   \n\n• Good Knowledge on Private Equity Funds like Structure of PE, Management Fee, Waterfall \n\nProvisions  \n\n• Conceptual Understanding on Hedge Funds like Investment Strategies, ABS and MBS, \n\nCrystallization date  \n\n• Good Knowledge on Fixed Income Securities like Debentures and Bonds (Types of Bonds) \n\n• Basic Understanding of Corporate Actions such as Dividends, Bonus Issue, Rights Issue etc. \n\n• Conceptual Understanding of Financial Derivatives like Forwards, Futures, Options and Swaps  \n\n• Basic Knowledge on AML/KYC and Transaction Monitoring \n\n• Conceptual Understanding of Equity Research like Fundamental & Technical Analysis etc.,  \n\n• Financial Accounting like Journal entries, ledger posting, Trial balance and Final Accounts  \n\n  \n\n SKILLS  \n\n \n\n• MS OFFICE (Word, Excel and PowerPoint,Vba)    \n\n• Tally ERP9 and Prime \n\n• Flexible and adoptable to working environment \n\n• Effective Communication Skills  \n\n• Hard worker and Self Motivated  \n\n• Ability to work under pressure   \n\n• Active participation in team work  \n\n• Time Management and Work Ethic  \n\n• Problem Solving and Critical Thinking   \n\n  \n\nLANGUAGES KNOWN  \n\n \n\n• English     - Read, Write and Speak   \n\n• Telugu      - Read, Write and Speak   \n\n• Hindi        – Read and Write \n\n \n\nHOBBIES  \n\n \n\n• Playing chess \n\n• Listening Music  \n\n  \nDECLARATION  \n\n \nI hereby declare that the above information is correct to the best of my knowledge \n\n                                                                                                                                   (L.Ramesh)",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "RESUME   \n   \n\n  LAGUDU RAMESH                    \n                                                                                               Email: rameshlagudu772@gmail.com  \n\n                                                                         Mobile: +91 9848730490  \n\n PROFESSIONAL SUMMARY  \n\n  \n\n     “Aspiring to work with an organization that offers a challenging career where I can learn and function \n\neffectively and contribute towards organizations goals, to constantly upgrade my knowledge and skills and \n\nmake a difference in whatever I do.”    \n\n  \n\nACADEMIC QUALIFICATIONS   \n\n  \n   \n\nDegree  Year of  \n\nPassing  \n\nName of Institute  University/ Board  Percentage/CGPA \n\nM.Com  \n\n(Financial \n\nManagement) \n\n  2023 SVU College of CM&CS, \n\nTirupati \n\nSri Venkateswara \n\nUniversity, Tirupati \n\n           6.8 \n\n  \n\nB.Com  \n\n \n\n \n\n \n\n \n\n    2021 \n\n  \n\nMother Arts & Science  \n\nCollege, Narsipatnam  \n\n   \n\nAndhra University,  \n\nVisakhapatnam, AP.  \n\n  \n\n 70%  \n\n  \n\n   \n\n        Intermediate \n\n          (M.P.C) \n\n 2018 SV Junior College, \n\nTuni \n\nBoard of Intermediate  \n\nEducation, A.P \n\n \n\n             63% \n\n           SSC  2016 Z.P.P. High School, \n\nB.H.kota \n\nBoard of Secondary \n\nEducation, A.P \n\n                             \n\n8.2 \n\n  \n\nEXPERIENCE  \n\n  \n\n• FRESHER  \n\n  \n\nPROJECT  \n\n \n A  STUDY ON WORKING CAPITAL MANAGEMENT WITH REFERENCE TO ULTRATECH \n\nCEMENTS LTD.   \n\n• Analysing the financial position of Ultratech cements Ltd. (2018-2023)  \n\n• By using ratios like Current, Quick, Total Assets and Fixed Assets Turnover Ratios and also \n\nrepresented by Graphs & Tables  \n\n• Findings, Suggestions and Conclusion   \n\n\n\n \n\n \n\n AREAS OF KNOWLEDGE   \n\n  \n\n• Basic Understanding of Indian & US Securities Market &Trade Life Cycle \n\n• Good Knowledge on Mutual Funds like Open and Close ended funds, Interval funds, NAV \n\nCalculations and Life Cycle.   \n\n• Good Knowledge on Private Equity Funds like Structure of PE, Management Fee, Waterfall \n\nProvisions  \n\n• Conceptual Understanding on Hedge Funds like Investment Strategies, ABS and MBS, \n\nCrystallization date  \n\n• Good Knowledge on Fixed Income Securities like Debentures and Bonds (Types of Bonds) \n\n• Basic Understanding of Corporate Actions such as Dividends, Bonus Issue, Rights Issue etc. \n\n• Conceptual Understanding of Financial Derivatives like Forwards, Futures, Options and Swaps  \n\n• Basic Knowledge on AML/KYC and Transaction Monitoring \n\n• Conceptual Understanding of Equity Research like Fundamental & Technical Analysis etc.,  \n\n• Financial Accounting like Journal entries, ledger posting, Trial balance and Final Accounts  \n\n  \n\n SKILLS  \n\n \n\n• MS OFFICE (Word, Excel and PowerPoint,Vba)    \n\n• Tally ERP9 and Prime \n\n• Flexible and adoptable to working environment \n\n• Effective Communication Skills  \n\n• Hard worker and Self Motivated  \n\n• Ability to work under pressure   \n\n• Active participation in team work  \n\n• Time Management and Work Ethic  \n\n• Problem Solving and Critical Thinking   \n\n  \n\nLANGUAGES KNOWN  \n\n \n\n• English     - Read, Write and Speak   \n\n• Telugu      - Read, Write and Speak   \n\n• Hindi        – Read and Write \n\n \n\nHOBBIES  \n\n \n\n• Playing chess \n\n• Listening Music  \n\n  \nDECLARATION  \n\n \nI hereby declare that the above information is correct to the best of my knowledge \n\n                                                                                                                                   (L.Ramesh)",
+  "quality": {
+    "status": "PASS",
+    "document_id": "72e5acd7-3157-4230-851e-000a23eec0cf",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 80.0,
+      "flags": [
+        "EXCESSIVE_REPEATED_CHARACTERS"
+      ],
+      "reasons": [
+        "Repeated-character corruption suspected: longest run is 131 characters, 0.0% of long lines are single-character repeats."
+      ],
+      "metrics": {
+        "char_count": 3442,
+        "word_count": 400,
+        "line_count": 223,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.3405,
+        "symbol_count": 31,
+        "symbol_ratio": 0.009006,
+        "max_repeated_char_run": 131,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 94.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 3442,
+        "word_count": 400,
+        "configured_section_count": 7,
+        "detected_count": 5,
+        "missing_count": 2,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_sections": [
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "professional summary",
+          "Skills": "skills",
+          "Work Experience": "experience",
+          "Education": "academic qualifications"
+        }
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_sections": [
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 93.49,
+      "flags": [
+        "EXCESSIVE_SHORT_LINES",
+        "FRAGMENTED_LINES"
+      ],
+      "reasons": [
+        "46.3% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+        "37.8% of lines are 15 characters or shorter."
+      ],
+      "metrics": {
+        "char_count": 3442,
+        "word_count": 400,
+        "line_count": 223,
+        "non_empty_line_count": 82,
+        "short_line_count": 38,
+        "short_line_ratio": 0.463415,
+        "fragmented_line_count": 31,
+        "fragmented_line_ratio": 0.378049,
+        "mean_line_length": 31.82,
+        "median_line_length": 20.5,
+        "line_length_stdev": 28.77,
+        "line_length_cv": 0.904297,
+        "broken_sentence_count": 3,
+        "broken_sentence_ratio": 0.037037,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 60.0,
+  "resume_json": null,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "RESUME   \n   \n\n  LAGUDU RAMESH                    \n                                                                                               Email: rameshlagudu772@gmail.com  \n\n                                                                         Mobile: +91 9848730490  \n\n PROFESSIONAL SUMMARY  \n\n  \n\n     “Aspiring to work with an organization that offers a challenging career where I can learn and function \n\neffectively and contribute towards organizations goals, to constantly upgrade my knowledge and skills and \n\nmake a difference in whatever I do.”    \n\n  \n\nACADEMIC QUALIFICATIONS   \n\n  \n   \n\nDegree  Year of  \n\nPassing  \n\nName of Institute  University/ Board  Percentage/CGPA \n\nM.Com  \n\n(Financial \n\nManagement) \n\n  2023 SVU College of CM&CS, \n\nTirupati \n\nSri Venkateswara \n\nUniversity, Tirupati \n\n           6.8 \n\n  \n\nB.Com  \n\n \n\n \n\n \n\n \n\n    2021 \n\n  \n\nMother Arts & Science  \n\nCollege, Narsipatnam  \n\n   \n\nAndhra University,  \n\nVisakhapatnam, AP.  \n\n  \n\n 70%  \n\n  \n\n   \n\n        Intermediate \n\n          (M.P.C) \n\n 2018 SV Junior College, \n\nTuni \n\nBoard of Intermediate  \n\nEducation, A.P \n\n \n\n             63% \n\n           SSC  2016 Z.P.P. High School, \n\nB.H.kota \n\nBoard of Secondary \n\nEducation, A.P \n\n                             \n\n8.2 \n\n  \n\nEXPERIENCE  \n\n  \n\n• FRESHER  \n\n  \n\nPROJECT  \n\n \n A  STUDY ON WORKING CAPITAL MANAGEMENT WITH REFERENCE TO ULTRATECH \n\nCEMENTS LTD.   \n\n• Analysing the financial position of Ultratech cements Ltd. (2018-2023)  \n\n• By using ratios like Current, Quick, Total Assets and Fixed Assets Turnover Ratios and also \n\nrepresented by Graphs & Tables  \n\n• Findings, Suggestions and Conclusion   \n\n\n\n \n\n \n\n AREAS OF KNOWLEDGE   \n\n  \n\n• Basic Understanding of Indian & US Securities Market &Trade Life Cycle \n\n• Good Knowledge on Mutual Funds like Open and Close ended funds, Interval funds, NAV \n\nCalculations and Life Cycle.   \n\n• Good Knowledge on Private Equity Funds like Structure of PE, Management Fee, Waterfall \n\nProvisions  \n\n• Conceptual Understanding on Hedge Funds like Investment Strategies, ABS and MBS, \n\nCrystallization date  \n\n• Good Knowledge on Fixed Income Securities like Debentures and Bonds (Types of Bonds) \n\n• Basic Understanding of Corporate Actions such as Dividends, Bonus Issue, Rights Issue etc. \n\n• Conceptual Understanding of Financial Derivatives like Forwards, Futures, Options and Swaps  \n\n• Basic Knowledge on AML/KYC and Transaction Monitoring \n\n• Conceptual Understanding of Equity Research like Fundamental & Technical Analysis etc.,  \n\n• Financial Accounting like Journal entries, ledger posting, Trial balance and Final Accounts  \n\n  \n\n SKILLS  \n\n \n\n• MS OFFICE (Word, Excel and PowerPoint,Vba)    \n\n• Tally ERP9 and Prime \n\n• Flexible and adoptable to working environment \n\n• Effective Communication Skills  \n\n• Hard worker and Self Motivated  \n\n• Ability to work under pressure   \n\n• Active participation in team work  \n\n• Time Management and Work Ethic  \n\n• Problem Solving and Critical Thinking   \n\n  \n\nLANGUAGES KNOWN  \n\n \n\n• English     - Read, Write and Speak   \n\n• Telugu      - Read, Write and Speak   \n\n• Hindi        – Read and Write \n\n \n\nHOBBIES  \n\n \n\n• Playing chess \n\n• Listening Music  \n\n  \nDECLARATION  \n\n \nI hereby declare that the above information is correct to the best of my knowledge \n\n                                                                                                                                   (L.Ramesh)",
+    "normalized_text": "RESUME\n\nLAGUDU RAMESH\nEmail: rameshlagudu772@gmail.com\n\nMobile: +91 9848730490\n\nPROFESSIONAL SUMMARY\n\n“Aspiring to work with an organization that offers a challenging career where I can learn and function\n\neffectively and contribute towards organizations goals, to constantly upgrade my knowledge and skills and\n\nmake a difference in whatever I do.”\n\nACADEMIC QUALIFICATIONS\n\nDegree Year of\n\nPassing\n\nName of Institute University/ Board Percentage/CGPA\n\nM.Com\n\n(Financial\n\nManagement)\n\n2023 SVU College of CM&CS,\n\nTirupati\n\nSri Venkateswara\n\nUniversity, Tirupati\n\n6.8\n\nB.Com\n\n2021\n\nMother Arts & Science\n\nCollege, Narsipatnam\n\nAndhra University,\n\nVisakhapatnam, AP.\n\n70%\n\nIntermediate\n\n(M.P.C)\n\n2018 SV Junior College,\n\nTuni\n\nBoard of Intermediate\n\nEducation, A.P\n\n63%\n\nSSC 2016 Z.P.P. High School,\n\nB.H.kota\n\nBoard of Secondary\n\nEducation, A.P\n\n8.2\n\nEXPERIENCE\n\n• FRESHER\n\nPROJECT\n\nA STUDY ON WORKING CAPITAL MANAGEMENT WITH REFERENCE TO ULTRATECH\n\nCEMENTS LTD.\n\n• Analysing the financial position of Ultratech cements Ltd. (2018-2023)\n\n• By using ratios like Current, Quick, Total Assets and Fixed Assets Turnover Ratios and also\n\nrepresented by Graphs & Tables\n\n• Findings, Suggestions and Conclusion\n\nAREAS OF KNOWLEDGE\n\n• Basic Understanding of Indian & US Securities Market &Trade Life Cycle\n\n• Good Knowledge on Mutual Funds like Open and Close ended funds, Interval funds, NAV\n\nCalculations and Life Cycle.\n\n• Good Knowledge on Private Equity Funds like Structure of PE, Management Fee, Waterfall\n\nProvisions\n\n• Conceptual Understanding on Hedge Funds like Investment Strategies, ABS and MBS,\n\nCrystallization date\n\n• Good Knowledge on Fixed Income Securities like Debentures and Bonds (Types of Bonds)\n\n• Basic Understanding of Corporate Actions such as Dividends, Bonus Issue, Rights Issue etc.\n\n• Conceptual Understanding of Financial Derivatives like Forwards, Futures, Options and Swaps\n\n• Basic Knowledge on AML/KYC and Transaction Monitoring\n\n• Conceptual Understanding of Equity Research like Fundamental & Technical Analysis etc.,\n\n• Financial Accounting like Journal entries, ledger posting, Trial balance and Final Accounts\n\nSKILLS\n\n• MS OFFICE (Word, Excel and PowerPoint,Vba)\n\n• Tally ERP9 and Prime\n\n• Flexible and adoptable to working environment\n\n• Effective Communication Skills\n\n• Hard worker and Self Motivated\n\n• Ability to work under pressure\n\n• Active participation in team work\n\n• Time Management and Work Ethic\n\n• Problem Solving and Critical Thinking\n\nLANGUAGES KNOWN\n\n• English - Read, Write and Speak\n\n• Telugu - Read, Write and Speak\n\n• Hindi – Read and Write\n\nHOBBIES\n\n• Playing chess\n\n• Listening Music\n\nDECLARATION\n\nI hereby declare that the above information is correct to the best of my knowledge\n\n(L.Ramesh)",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 3442,
+    "normalized_chars": 2749,
+    "original_estimated_tokens": 860,
+    "normalized_estimated_tokens": 687,
+    "estimated_reduction_percent": 20.1
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "timed_out_calls": 1,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_source": null,
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Muse API request timed out after 20s.",
+    "input_type": "text",
+    "duration_ms": 20051.58,
+    "timeout_seconds": 20.0,
+    "usage": {},
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 3442,
+      "normalized_chars": 2749,
+      "estimated_reduction_percent": 20.1,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 8001.56,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "72e5acd7-3157-4230-851e-000a23eec0cf",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 131 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 3442,
+            "word_count": 400,
+            "line_count": 223,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.3405,
+            "symbol_count": 31,
+            "symbol_ratio": 0.009006,
+            "max_repeated_char_run": 131,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3442,
+            "word_count": 400,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Education": "academic qualifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 93.49,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "46.3% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "37.8% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 3442,
+            "word_count": 400,
+            "line_count": 223,
+            "non_empty_line_count": 82,
+            "short_line_count": 38,
+            "short_line_ratio": 0.463415,
+            "fragmented_line_count": 31,
+            "fragmented_line_ratio": 0.378049,
+            "mean_line_length": 31.82,
+            "median_line_length": 20.5,
+            "line_length_stdev": 28.77,
+            "line_length_cv": 0.904297,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.037037,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 20051.58,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 8001.56,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "72e5acd7-3157-4230-851e-000a23eec0cf_SHJ-5434_SHC-111080.pdf"
+}

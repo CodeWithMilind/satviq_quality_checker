@@ -1,0 +1,773 @@
+{
+  "resume_id": "1cd219a2-f49c-4f52-b527-689cd5488154",
+  "filename": "SHJ-5433_SHC-381544.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 246013,
+  "uploaded_at": "2026-11-05T12:59:19.398257+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 6811.04,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 6811.04,
+      "text": "Resume                                                                                                                                  Agrani Vishwakarma \n\n1 \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\nCareer Objectives \n\nTo secure an exciting and challenging role in a dynamic organization where I can leverage my expertise \n\nin document production, technical skills, and organizational abilities to contribute to business success \n\nwhile continuously enhancing my professional growth. \n\nProfessional Summary \n\nDetail-oriented Senior Document Specialist with 5+ years of experience in document production, \n\nbackend operations, and data processing across legal, IT, and telecom domains. Worked with Clifford \n\nChance, specializing in advanced document formatting, editing, template management, and quality \n\nassurance for complex legal and business documents. Proven ability to manage high-volume workloads \n\nwhile maintaining accuracy, consistency, and strict turnaround timelines. Experienced in backend \n\noperations, Chat Process through roles at Tech Mahindra and Wipro. Well versed in MS Word, \n\ndocument lifecycle management, data accuracy, combined with attention to detail and client \n\ncommunication abilities. \n\nWork Experience \n\n Senior Document Production Specialist at Clifford Chance, Gurugram (June 2022 – \n\nDecember 2025) \n\n Create, edit, format, and convert legal and business documents using advanced MS Word. \n\n Perform document comparison, merging, and proofreading to ensure accuracy. \n\n Develop and maintain document templates and formatting standards. \n\n Conduct quality checks (QA) before delivery to ensure compliance with client \n\nrequirements. \n\n Handle high-volume document requests within strict deadlines. \n\n Collaborate with internal teams to improve workflow efficiency and turnaround time. \n\n Provide client support for document-related queries and revisions. \n\n Associate at Tech Mahindra Pvt Ltd, Pune (Oct 2020 – May 2021) \n\n Processed and validated customer and account data within SLA timelines. \n\n Ensured data accuracy, integrity, and compliance with company policies. \n\n Performed data verification, correction, and report generation. \n\n Conducted research to complete missing or incorrect data entries. \n\n Supported backend operations and maintained documentation records. \n\n Associate at Wipro Pvt Ltd, Pune (Dec 2018 – July 2019) \n\n Provided backend support for telecom services (Broadband & PSTN). \n\n Resolved service issues and ensured smooth process handling. \n\nAgrani Vishwakarma \n\nContact No: +91 7498414429 \n\nE-mail ID: agranivishwakarma1993@gmail.com \n\nmailto:agranivishwakarma1993@gmail.com\n\n\nResume                                                                                                                                                          Agrani Vishwakarma \n\n2 \n\n \n\n Managed service transfer requests and documentation updates. \n\n Used tools like SAP, Citrix, Siebel, and PEGA for workflow processing. \n\n Maintained accurate records and ensured system update. \n\nEducational Accomplishments: \n\n Master of Technology (M.Tech) \n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2018 \n\n Bachelor of Technology (B.Tech) \n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2015 \n\n Diploma in Engineering \n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2012 \n\n \n\nTechnical Skills \n\n MS Office: Advanced MS Word, Basic Excel & PowerPoint \n\n Document Tools: Formatting, Templates, Track Changes \n\n Tools Overview: Citrix, Siebel, PEGA, MAXIM, WAS, ONDB, FLEXCAB, MICA \n\nWorking Skills \n\n Document Production & Formatting, Data Entry, Validation, Quality Check \n\n Backend Operations & Data Processing \n\n Document Conversion & Editing, Attention to Detail & Accuracy \n\n Template Creation & Standardization \n\n Workflow Coordination & Process Optimization \n\n Microsoft Word (Advanced), Excel (Basic), PowerPoint \n\n Client Communication & Stakeholder Management, Time Management & Deadline \n\nHandling \n\nPersonal Details \n\n Date of Birth: 06th February 1994 \n\n Marital Status: Married \n\n Nationality: Indian \n\n Permanent Address: Runwaly Mycity Phase 2, Dombivli, Thane (Maharashtra) \n\n \n\nDeclaration \n\nI hereby declare that the details provided above are accurate to the best of my knowledge. \n\n \n\nDate: __/__/2026                       Agrani Vishwakarma \n\nPlace: Thane, India",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-05T12:59:12.574120+00:00",
+      "completed_at": "2026-11-05T12:59:19.386713+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "1cd219a2-f49c-4f52-b527-689cd5488154",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 75.41,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "37 non-printable characters found (0.85% of text).",
+            "Repeated-character corruption suspected: longest run is 154 characters, 2.8% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 4355,
+            "word_count": 532,
+            "line_count": 168,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 37,
+            "non_printable_ratio": 0.008496,
+            "whitespace_ratio": 0.232377,
+            "symbol_count": 43,
+            "symbol_ratio": 0.009874,
+            "max_repeated_char_run": 154,
+            "repeated_line_ratio": 0.028169
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4355,
+            "word_count": 532,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "professional summary",
+              "Skills": "technical skills",
+              "Work Experience": "work experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4355,
+            "word_count": 532,
+            "line_count": 168,
+            "non_empty_line_count": 73,
+            "short_line_count": 16,
+            "short_line_ratio": 0.219178,
+            "fragmented_line_count": 8,
+            "fragmented_line_ratio": 0.109589,
+            "mean_line_length": 56.25,
+            "median_line_length": 57.0,
+            "line_length_stdev": 33.52,
+            "line_length_cv": 0.596004,
+            "broken_sentence_count": 10,
+            "broken_sentence_ratio": 0.138889,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "1cd219a2-f49c-4f52-b527-689cd5488154-attempt-1",
+      "resume_id": "1cd219a2-f49c-4f52-b527-689cd5488154",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "Resume                                                                                                                                  Agrani Vishwakarma \n\n1 \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\nCareer Objectives \n\nTo secure an exciting and challenging role in a dynamic organization where I can leverage my expertise \n\nin document production, technical skills, and organizational abilities to contribute to business success \n\nwhile continuously enhancing my professional growth. \n\nProfessional Summary \n\nDetail-oriented Senior Document Specialist with 5+ years of experience in document production, \n\nbackend operations, and data processing across legal, IT, and telecom domains. Worked with Clifford \n\nChance, specializing in advanced document formatting, editing, template management, and quality \n\nassurance for complex legal and business documents. Proven ability to manage high-volume workloads \n\nwhile maintaining accuracy, consistency, and strict turnaround timelines. Experienced in backend \n\noperations, Chat Process through roles at Tech Mahindra and Wipro. Well versed in MS Word, \n\ndocument lifecycle management, data accuracy, combined with attention to detail and client \n\ncommunication abilities. \n\nWork Experience \n\n Senior Document Production Specialist at Clifford Chance, Gurugram (June 2022 – \n\nDecember 2025) \n\n Create, edit, format, and convert legal and business documents using advanced MS Word. \n\n Perform document comparison, merging, and proofreading to ensure accuracy. \n\n Develop and maintain document templates and formatting standards. \n\n Conduct quality checks (QA) before delivery to ensure compliance with client \n\nrequirements. \n\n Handle high-volume document requests within strict deadlines. \n\n Collaborate with internal teams to improve workflow efficiency and turnaround time. \n\n Provide client support for document-related queries and revisions. \n\n Associate at Tech Mahindra Pvt Ltd, Pune (Oct 2020 – May 2021) \n\n Processed and validated customer and account data within SLA timelines. \n\n Ensured data accuracy, integrity, and compliance with company policies. \n\n Performed data verification, correction, and report generation. \n\n Conducted research to complete missing or incorrect data entries. \n\n Supported backend operations and maintained documentation records. \n\n Associate at Wipro Pvt Ltd, Pune (Dec 2018 – July 2019) \n\n Provided backend support for telecom services (Broadband & PSTN). \n\n Resolved service issues and ensured smooth process handling. \n\nAgrani Vishwakarma \n\nContact No: +91 7498414429 \n\nE-mail ID: agranivishwakarma1993@gmail.com \n\nmailto:agranivishwakarma1993@gmail.com\n\n\nResume                                                                                                                                                          Agrani Vishwakarma \n\n2 \n\n \n\n Managed service transfer requests and documentation updates. \n\n Used tools like SAP, Citrix, Siebel, and PEGA for workflow processing. \n\n Maintained accurate records and ensured system update. \n\nEducational Accomplishments: \n\n Master of Technology (M.Tech) \n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2018 \n\n Bachelor of Technology (B.Tech) \n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2015 \n\n Diploma in Engineering \n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2012 \n\n \n\nTechnical Skills \n\n MS Office: Advanced MS Word, Basic Excel & PowerPoint \n\n Document Tools: Formatting, Templates, Track Changes \n\n Tools Overview: Citrix, Siebel, PEGA, MAXIM, WAS, ONDB, FLEXCAB, MICA \n\nWorking Skills \n\n Document Production & Formatting, Data Entry, Validation, Quality Check \n\n Backend Operations & Data Processing \n\n Document Conversion & Editing, Attention to Detail & Accuracy \n\n Template Creation & Standardization \n\n Workflow Coordination & Process Optimization \n\n Microsoft Word (Advanced), Excel (Basic), PowerPoint \n\n Client Communication & Stakeholder Management, Time Management & Deadline \n\nHandling \n\nPersonal Details \n\n Date of Birth: 06th February 1994 \n\n Marital Status: Married \n\n Nationality: Indian \n\n Permanent Address: Runwaly Mycity Phase 2, Dombivli, Thane (Maharashtra) \n\n \n\nDeclaration \n\nI hereby declare that the details provided above are accurate to the best of my knowledge. \n\n \n\nDate: __/__/2026                       Agrani Vishwakarma \n\nPlace: Thane, India",
+      "extracted_text_length": 4355,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "1cd219a2-f49c-4f52-b527-689cd5488154",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 75.41,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "37 non-printable characters found (0.85% of text).",
+            "Repeated-character corruption suspected: longest run is 154 characters, 2.8% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 4355,
+            "word_count": 532,
+            "line_count": 168,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 37,
+            "non_printable_ratio": 0.008496,
+            "whitespace_ratio": 0.232377,
+            "symbol_count": 43,
+            "symbol_ratio": 0.009874,
+            "max_repeated_char_run": 154,
+            "repeated_line_ratio": 0.028169
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4355,
+            "word_count": 532,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "professional summary",
+              "Skills": "technical skills",
+              "Work Experience": "work experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4355,
+            "word_count": 532,
+            "line_count": 168,
+            "non_empty_line_count": 73,
+            "short_line_count": 16,
+            "short_line_ratio": 0.219178,
+            "fragmented_line_count": 8,
+            "fragmented_line_ratio": 0.109589,
+            "mean_line_length": 56.25,
+            "median_line_length": 57.0,
+            "line_length_stdev": 33.52,
+            "line_length_cv": 0.596004,
+            "broken_sentence_count": 10,
+            "broken_sentence_ratio": 0.138889,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    }
+  ],
+  "extracted_text": "Resume                                                                                                                                  Agrani Vishwakarma \n\n1 \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\nCareer Objectives \n\nTo secure an exciting and challenging role in a dynamic organization where I can leverage my expertise \n\nin document production, technical skills, and organizational abilities to contribute to business success \n\nwhile continuously enhancing my professional growth. \n\nProfessional Summary \n\nDetail-oriented Senior Document Specialist with 5+ years of experience in document production, \n\nbackend operations, and data processing across legal, IT, and telecom domains. Worked with Clifford \n\nChance, specializing in advanced document formatting, editing, template management, and quality \n\nassurance for complex legal and business documents. Proven ability to manage high-volume workloads \n\nwhile maintaining accuracy, consistency, and strict turnaround timelines. Experienced in backend \n\noperations, Chat Process through roles at Tech Mahindra and Wipro. Well versed in MS Word, \n\ndocument lifecycle management, data accuracy, combined with attention to detail and client \n\ncommunication abilities. \n\nWork Experience \n\n Senior Document Production Specialist at Clifford Chance, Gurugram (June 2022 – \n\nDecember 2025) \n\n Create, edit, format, and convert legal and business documents using advanced MS Word. \n\n Perform document comparison, merging, and proofreading to ensure accuracy. \n\n Develop and maintain document templates and formatting standards. \n\n Conduct quality checks (QA) before delivery to ensure compliance with client \n\nrequirements. \n\n Handle high-volume document requests within strict deadlines. \n\n Collaborate with internal teams to improve workflow efficiency and turnaround time. \n\n Provide client support for document-related queries and revisions. \n\n Associate at Tech Mahindra Pvt Ltd, Pune (Oct 2020 – May 2021) \n\n Processed and validated customer and account data within SLA timelines. \n\n Ensured data accuracy, integrity, and compliance with company policies. \n\n Performed data verification, correction, and report generation. \n\n Conducted research to complete missing or incorrect data entries. \n\n Supported backend operations and maintained documentation records. \n\n Associate at Wipro Pvt Ltd, Pune (Dec 2018 – July 2019) \n\n Provided backend support for telecom services (Broadband & PSTN). \n\n Resolved service issues and ensured smooth process handling. \n\nAgrani Vishwakarma \n\nContact No: +91 7498414429 \n\nE-mail ID: agranivishwakarma1993@gmail.com \n\nmailto:agranivishwakarma1993@gmail.com\n\n\nResume                                                                                                                                                          Agrani Vishwakarma \n\n2 \n\n \n\n Managed service transfer requests and documentation updates. \n\n Used tools like SAP, Citrix, Siebel, and PEGA for workflow processing. \n\n Maintained accurate records and ensured system update. \n\nEducational Accomplishments: \n\n Master of Technology (M.Tech) \n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2018 \n\n Bachelor of Technology (B.Tech) \n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2015 \n\n Diploma in Engineering \n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2012 \n\n \n\nTechnical Skills \n\n MS Office: Advanced MS Word, Basic Excel & PowerPoint \n\n Document Tools: Formatting, Templates, Track Changes \n\n Tools Overview: Citrix, Siebel, PEGA, MAXIM, WAS, ONDB, FLEXCAB, MICA \n\nWorking Skills \n\n Document Production & Formatting, Data Entry, Validation, Quality Check \n\n Backend Operations & Data Processing \n\n Document Conversion & Editing, Attention to Detail & Accuracy \n\n Template Creation & Standardization \n\n Workflow Coordination & Process Optimization \n\n Microsoft Word (Advanced), Excel (Basic), PowerPoint \n\n Client Communication & Stakeholder Management, Time Management & Deadline \n\nHandling \n\nPersonal Details \n\n Date of Birth: 06th February 1994 \n\n Marital Status: Married \n\n Nationality: Indian \n\n Permanent Address: Runwaly Mycity Phase 2, Dombivli, Thane (Maharashtra) \n\n \n\nDeclaration \n\nI hereby declare that the details provided above are accurate to the best of my knowledge. \n\n \n\nDate: __/__/2026                       Agrani Vishwakarma \n\nPlace: Thane, India",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "Resume                                                                                                                                  Agrani Vishwakarma \n\n1 \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\nCareer Objectives \n\nTo secure an exciting and challenging role in a dynamic organization where I can leverage my expertise \n\nin document production, technical skills, and organizational abilities to contribute to business success \n\nwhile continuously enhancing my professional growth. \n\nProfessional Summary \n\nDetail-oriented Senior Document Specialist with 5+ years of experience in document production, \n\nbackend operations, and data processing across legal, IT, and telecom domains. Worked with Clifford \n\nChance, specializing in advanced document formatting, editing, template management, and quality \n\nassurance for complex legal and business documents. Proven ability to manage high-volume workloads \n\nwhile maintaining accuracy, consistency, and strict turnaround timelines. Experienced in backend \n\noperations, Chat Process through roles at Tech Mahindra and Wipro. Well versed in MS Word, \n\ndocument lifecycle management, data accuracy, combined with attention to detail and client \n\ncommunication abilities. \n\nWork Experience \n\n Senior Document Production Specialist at Clifford Chance, Gurugram (June 2022 – \n\nDecember 2025) \n\n Create, edit, format, and convert legal and business documents using advanced MS Word. \n\n Perform document comparison, merging, and proofreading to ensure accuracy. \n\n Develop and maintain document templates and formatting standards. \n\n Conduct quality checks (QA) before delivery to ensure compliance with client \n\nrequirements. \n\n Handle high-volume document requests within strict deadlines. \n\n Collaborate with internal teams to improve workflow efficiency and turnaround time. \n\n Provide client support for document-related queries and revisions. \n\n Associate at Tech Mahindra Pvt Ltd, Pune (Oct 2020 – May 2021) \n\n Processed and validated customer and account data within SLA timelines. \n\n Ensured data accuracy, integrity, and compliance with company policies. \n\n Performed data verification, correction, and report generation. \n\n Conducted research to complete missing or incorrect data entries. \n\n Supported backend operations and maintained documentation records. \n\n Associate at Wipro Pvt Ltd, Pune (Dec 2018 – July 2019) \n\n Provided backend support for telecom services (Broadband & PSTN). \n\n Resolved service issues and ensured smooth process handling. \n\nAgrani Vishwakarma \n\nContact No: +91 7498414429 \n\nE-mail ID: agranivishwakarma1993@gmail.com \n\nmailto:agranivishwakarma1993@gmail.com\n\n\nResume                                                                                                                                                          Agrani Vishwakarma \n\n2 \n\n \n\n Managed service transfer requests and documentation updates. \n\n Used tools like SAP, Citrix, Siebel, and PEGA for workflow processing. \n\n Maintained accurate records and ensured system update. \n\nEducational Accomplishments: \n\n Master of Technology (M.Tech) \n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2018 \n\n Bachelor of Technology (B.Tech) \n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2015 \n\n Diploma in Engineering \n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2012 \n\n \n\nTechnical Skills \n\n MS Office: Advanced MS Word, Basic Excel & PowerPoint \n\n Document Tools: Formatting, Templates, Track Changes \n\n Tools Overview: Citrix, Siebel, PEGA, MAXIM, WAS, ONDB, FLEXCAB, MICA \n\nWorking Skills \n\n Document Production & Formatting, Data Entry, Validation, Quality Check \n\n Backend Operations & Data Processing \n\n Document Conversion & Editing, Attention to Detail & Accuracy \n\n Template Creation & Standardization \n\n Workflow Coordination & Process Optimization \n\n Microsoft Word (Advanced), Excel (Basic), PowerPoint \n\n Client Communication & Stakeholder Management, Time Management & Deadline \n\nHandling \n\nPersonal Details \n\n Date of Birth: 06th February 1994 \n\n Marital Status: Married \n\n Nationality: Indian \n\n Permanent Address: Runwaly Mycity Phase 2, Dombivli, Thane (Maharashtra) \n\n \n\nDeclaration \n\nI hereby declare that the details provided above are accurate to the best of my knowledge. \n\n \n\nDate: __/__/2026                       Agrani Vishwakarma \n\nPlace: Thane, India",
+  "quality": {
+    "status": "PASS",
+    "document_id": "1cd219a2-f49c-4f52-b527-689cd5488154",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 75.41,
+      "flags": [
+        "EXCESSIVE_NON_PRINTABLE_CHARS",
+        "EXCESSIVE_REPEATED_CHARACTERS"
+      ],
+      "reasons": [
+        "37 non-printable characters found (0.85% of text).",
+        "Repeated-character corruption suspected: longest run is 154 characters, 2.8% of long lines are single-character repeats."
+      ],
+      "metrics": {
+        "char_count": 4355,
+        "word_count": 532,
+        "line_count": 168,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 37,
+        "non_printable_ratio": 0.008496,
+        "whitespace_ratio": 0.232377,
+        "symbol_count": 43,
+        "symbol_ratio": 0.009874,
+        "max_repeated_char_run": 154,
+        "repeated_line_ratio": 0.028169
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 82.0,
+      "flags": [
+        "MISSING_RECOMMENDED_SECTION",
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 4355,
+        "word_count": 532,
+        "configured_section_count": 7,
+        "detected_count": 4,
+        "missing_count": 3,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience"
+        ],
+        "missing_sections": [
+          "Education",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [
+          "Education"
+        ],
+        "missing_optional": [
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "contact",
+          "Summary": "professional summary",
+          "Skills": "technical skills",
+          "Work Experience": "work experience"
+        }
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience"
+      ],
+      "missing_sections": [
+        "Education",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [
+        "Education"
+      ],
+      "missing_optional": [
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 4355,
+        "word_count": 532,
+        "line_count": 168,
+        "non_empty_line_count": 73,
+        "short_line_count": 16,
+        "short_line_ratio": 0.219178,
+        "fragmented_line_count": 8,
+        "fragmented_line_ratio": 0.109589,
+        "mean_line_length": 56.25,
+        "median_line_length": 57.0,
+        "line_length_stdev": 33.52,
+        "line_length_cv": 0.596004,
+        "broken_sentence_count": 10,
+        "broken_sentence_ratio": 0.138889,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 60.0,
+  "resume_json": null,
+  "hyperlinks": [
+    {
+      "page": 1,
+      "url": "mailto:agranivishwakarma1993@gmail.com",
+      "visible_text": "agranivishwakarma1993@gmail.com",
+      "type": "mailto",
+      "rect": [
+        103.85,
+        109.4,
+        288.35,
+        123.2
+      ]
+    }
+  ],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Resume                                                                                                                                  Agrani Vishwakarma \n\n1 \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\nCareer Objectives \n\nTo secure an exciting and challenging role in a dynamic organization where I can leverage my expertise \n\nin document production, technical skills, and organizational abilities to contribute to business success \n\nwhile continuously enhancing my professional growth. \n\nProfessional Summary \n\nDetail-oriented Senior Document Specialist with 5+ years of experience in document production, \n\nbackend operations, and data processing across legal, IT, and telecom domains. Worked with Clifford \n\nChance, specializing in advanced document formatting, editing, template management, and quality \n\nassurance for complex legal and business documents. Proven ability to manage high-volume workloads \n\nwhile maintaining accuracy, consistency, and strict turnaround timelines. Experienced in backend \n\noperations, Chat Process through roles at Tech Mahindra and Wipro. Well versed in MS Word, \n\ndocument lifecycle management, data accuracy, combined with attention to detail and client \n\ncommunication abilities. \n\nWork Experience \n\n Senior Document Production Specialist at Clifford Chance, Gurugram (June 2022 – \n\nDecember 2025) \n\n Create, edit, format, and convert legal and business documents using advanced MS Word. \n\n Perform document comparison, merging, and proofreading to ensure accuracy. \n\n Develop and maintain document templates and formatting standards. \n\n Conduct quality checks (QA) before delivery to ensure compliance with client \n\nrequirements. \n\n Handle high-volume document requests within strict deadlines. \n\n Collaborate with internal teams to improve workflow efficiency and turnaround time. \n\n Provide client support for document-related queries and revisions. \n\n Associate at Tech Mahindra Pvt Ltd, Pune (Oct 2020 – May 2021) \n\n Processed and validated customer and account data within SLA timelines. \n\n Ensured data accuracy, integrity, and compliance with company policies. \n\n Performed data verification, correction, and report generation. \n\n Conducted research to complete missing or incorrect data entries. \n\n Supported backend operations and maintained documentation records. \n\n Associate at Wipro Pvt Ltd, Pune (Dec 2018 – July 2019) \n\n Provided backend support for telecom services (Broadband & PSTN). \n\n Resolved service issues and ensured smooth process handling. \n\nAgrani Vishwakarma \n\nContact No: +91 7498414429 \n\nE-mail ID: agranivishwakarma1993@gmail.com \n\nmailto:agranivishwakarma1993@gmail.com\n\n\nResume                                                                                                                                                          Agrani Vishwakarma \n\n2 \n\n \n\n Managed service transfer requests and documentation updates. \n\n Used tools like SAP, Citrix, Siebel, and PEGA for workflow processing. \n\n Maintained accurate records and ensured system update. \n\nEducational Accomplishments: \n\n Master of Technology (M.Tech) \n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2018 \n\n Bachelor of Technology (B.Tech) \n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2015 \n\n Diploma in Engineering \n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2012 \n\n \n\nTechnical Skills \n\n MS Office: Advanced MS Word, Basic Excel & PowerPoint \n\n Document Tools: Formatting, Templates, Track Changes \n\n Tools Overview: Citrix, Siebel, PEGA, MAXIM, WAS, ONDB, FLEXCAB, MICA \n\nWorking Skills \n\n Document Production & Formatting, Data Entry, Validation, Quality Check \n\n Backend Operations & Data Processing \n\n Document Conversion & Editing, Attention to Detail & Accuracy \n\n Template Creation & Standardization \n\n Workflow Coordination & Process Optimization \n\n Microsoft Word (Advanced), Excel (Basic), PowerPoint \n\n Client Communication & Stakeholder Management, Time Management & Deadline \n\nHandling \n\nPersonal Details \n\n Date of Birth: 06th February 1994 \n\n Marital Status: Married \n\n Nationality: Indian \n\n Permanent Address: Runwaly Mycity Phase 2, Dombivli, Thane (Maharashtra) \n\n \n\nDeclaration \n\nI hereby declare that the details provided above are accurate to the best of my knowledge. \n\n \n\nDate: __/__/2026                       Agrani Vishwakarma \n\nPlace: Thane, India",
+    "normalized_text": "Resume Agrani Vishwakarma\n\n1\n\nCareer Objectives\n\nTo secure an exciting and challenging role in a dynamic organization where I can leverage my expertise\n\nin document production, technical skills, and organizational abilities to contribute to business success\n\nwhile continuously enhancing my professional growth.\n\nProfessional Summary\n\nDetail-oriented Senior Document Specialist with 5+ years of experience in document production,\n\nbackend operations, and data processing across legal, IT, and telecom domains. Worked with Clifford\n\nChance, specializing in advanced document formatting, editing, template management, and quality\n\nassurance for complex legal and business documents. Proven ability to manage high-volume workloads\n\nwhile maintaining accuracy, consistency, and strict turnaround timelines. Experienced in backend\n\noperations, Chat Process through roles at Tech Mahindra and Wipro. Well versed in MS Word,\n\ndocument lifecycle management, data accuracy, combined with attention to detail and client\n\ncommunication abilities.\n\nWork Experience\n\n Senior Document Production Specialist at Clifford Chance, Gurugram (June 2022 –\n\nDecember 2025)\n\n Create, edit, format, and convert legal and business documents using advanced MS Word.\n\n Perform document comparison, merging, and proofreading to ensure accuracy.\n\n Develop and maintain document templates and formatting standards.\n\n Conduct quality checks (QA) before delivery to ensure compliance with client\n\nrequirements.\n\n Handle high-volume document requests within strict deadlines.\n\n Collaborate with internal teams to improve workflow efficiency and turnaround time.\n\n Provide client support for document-related queries and revisions.\n\n Associate at Tech Mahindra Pvt Ltd, Pune (Oct 2020 – May 2021)\n\n Processed and validated customer and account data within SLA timelines.\n\n Ensured data accuracy, integrity, and compliance with company policies.\n\n Performed data verification, correction, and report generation.\n\n Conducted research to complete missing or incorrect data entries.\n\n Supported backend operations and maintained documentation records.\n\n Associate at Wipro Pvt Ltd, Pune (Dec 2018 – July 2019)\n\n Provided backend support for telecom services (Broadband & PSTN).\n\n Resolved service issues and ensured smooth process handling.\n\nAgrani Vishwakarma\n\nContact No: +91 7498414429\n\nE-mail ID: agranivishwakarma1993@gmail.com\n\nmailto:agranivishwakarma1993@gmail.com\n\nResume Agrani Vishwakarma\n\n2\n\n Managed service transfer requests and documentation updates.\n\n Used tools like SAP, Citrix, Siebel, and PEGA for workflow processing.\n\n Maintained accurate records and ensured system update.\n\nEducational Accomplishments:\n\n Master of Technology (M.Tech)\n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2018\n\n Bachelor of Technology (B.Tech)\n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2015\n\n Diploma in Engineering\n\nRajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal — 2012\n\nTechnical Skills\n\n MS Office: Advanced MS Word, Basic Excel & PowerPoint\n\n Document Tools: Formatting, Templates, Track Changes\n\n Tools Overview: Citrix, Siebel, PEGA, MAXIM, WAS, ONDB, FLEXCAB, MICA\n\nWorking Skills\n\n Document Production & Formatting, Data Entry, Validation, Quality Check\n\n Backend Operations & Data Processing\n\n Document Conversion & Editing, Attention to Detail & Accuracy\n\n Template Creation & Standardization\n\n Workflow Coordination & Process Optimization\n\n Microsoft Word (Advanced), Excel (Basic), PowerPoint\n\n Client Communication & Stakeholder Management, Time Management & Deadline\n\nHandling\n\nPersonal Details\n\n Date of Birth: 06th February 1994\n\n Marital Status: Married\n\n Nationality: Indian\n\n Permanent Address: Runwaly Mycity Phase 2, Dombivli, Thane (Maharashtra)\n\nDeclaration\n\nI hereby declare that the details provided above are accurate to the best of my knowledge.\n\nDate: __/__/2026 Agrani Vishwakarma\n\nPlace: Thane, India",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 4355,
+    "normalized_chars": 3946,
+    "original_estimated_tokens": 1089,
+    "normalized_estimated_tokens": 986,
+    "estimated_reduction_percent": 9.5
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "timed_out_calls": 1,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_source": null,
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Muse API request timed out after 20s.",
+    "input_type": "text",
+    "duration_ms": 20042.44,
+    "timeout_seconds": 20.0,
+    "usage": {},
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 4355,
+      "normalized_chars": 3946,
+      "estimated_reduction_percent": 9.5,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 6811.04,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "1cd219a2-f49c-4f52-b527-689cd5488154",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 75.41,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "37 non-printable characters found (0.85% of text).",
+            "Repeated-character corruption suspected: longest run is 154 characters, 2.8% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 4355,
+            "word_count": 532,
+            "line_count": 168,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 37,
+            "non_printable_ratio": 0.008496,
+            "whitespace_ratio": 0.232377,
+            "symbol_count": 43,
+            "symbol_ratio": 0.009874,
+            "max_repeated_char_run": 154,
+            "repeated_line_ratio": 0.028169
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4355,
+            "word_count": 532,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "professional summary",
+              "Skills": "technical skills",
+              "Work Experience": "work experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4355,
+            "word_count": 532,
+            "line_count": 168,
+            "non_empty_line_count": 73,
+            "short_line_count": 16,
+            "short_line_ratio": 0.219178,
+            "fragmented_line_count": 8,
+            "fragmented_line_ratio": 0.109589,
+            "mean_line_length": 56.25,
+            "median_line_length": 57.0,
+            "line_length_stdev": 33.52,
+            "line_length_cv": 0.596004,
+            "broken_sentence_count": 10,
+            "broken_sentence_ratio": 0.138889,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 20042.44,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 6811.04,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "1cd219a2-f49c-4f52-b527-689cd5488154_SHJ-5433_SHC-381544.pdf"
+}

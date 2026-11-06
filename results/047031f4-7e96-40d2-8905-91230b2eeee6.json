@@ -1,0 +1,708 @@
+{
+  "resume_id": "047031f4-7e96-40d2-8905-91230b2eeee6",
+  "filename": "SHJ-5354_SHC-245975.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 72528,
+  "uploaded_at": "2026-11-05T12:38:25.106719+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 2920.54,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 2920.54,
+      "text": "MOHAMMED KHIZER SHARIFF\nTechnical Program Manager | MarTech & Web Platform Delivery | Client-Facing Technical Leadership | AI-Assisted Engineering Execution\nBengaluru, Karnataka, India | +91-9731437210 | mdkhizer.shariff0@gmail.com | linkedin.com/in/mohammed-khizer-shariff\nPROFESSIONAL SUMMARY\nTechnical Program Manager with 4+ years of experience progressing from an engineering foundation into technical delivery and client-facing \nleadership, owning end-to-end execution for enterprise MarTech, web platform, and AI/GenAI engagements. Acts as single delivery owner across \nconcurrent client accounts — leading requirement discovery, converting business and marketing needs into structured execution plans, milestones, \nand delivery roadmaps, and partnering with solution SMEs and domain experts to define the right technical and MarTech solutions. Hands-on \ntechnical leadership spanning full-stack web application development, CMS and MarTech execution (WordPress, Adobe Experience Manager (AEM), \nHeadless CMS/Contentful), API integrations, system architecture, and the broader MarTech ecosystem — content, SEO, analytics, and digital \nexperience platforms. Drives sprint planning, execution tracking, risk management, and dependency resolution with strong delivery governance, and \nleverages AI-assisted tools (ChatGPT, Cursor) and automation to improve delivery efficiency, quality, and speed. Track record includes 95% on-time \ndelivery, 22% sprint velocity gains, and direct C-suite/client stakeholder management across Fortune 500 and enterprise accounts including KPMG, \nBosch, and HSBC. Engineering foundation from a B.E. in Electrical & Electronics Engineering and a PG Diploma in Industrial Automation.\nTECHNICAL SKILLS\nProgram & Delivery Execution: Sprint Planning, Execution Tracking, Dependency Resolution, Delivery Predictability, Backlog Management & Health, \nSpillover & Cycle-Time Tracking, Spec-Driven Development, RAID & Risk/Issues Log Management, Escalation Management, Meeting Cadence \nManagement, Minutes & Action Item Tracking, Status Reporting to Senior Leadership & Clients, Product Delivery, Product Operations, Roadmap \nManagement, Cross-Functional Resource Coordination & Leadership, Leading Through Influence (No Direct Authority), Client & Engagement \nOwnership, Single-Owner Delivery Model (2–3 Concurrent Engagements), Cross-Functional Product Teams, Resource Planning & Capacity \nManagement, Project Schedule Management, Project Deliverables Management, On-Time Launch Management, Cost, Quality & Delivery \nManagement, Regional Project Management, Project Governance Approvals\nWeb, CMS & MarTech: Full-Stack Web Application Development, CMS & MarTech Execution (WordPress, Adobe Experience Manager (AEM), Headless \nCMS, Contentful), MarTech Ecosystem (Content, SEO, Analytics, Digital Experience Platforms), Requirement Discovery & Solution Alignment, Solution \nSME Partnership, Technical Feasibility & Scalability Planning\nTechnical & Systems Fluency: System Architecture, APIs & Service Integration, Frontend/Backend/ML Coordination, Full SDLC (Specs, Code Review, \nCI/CD, Testing/QA, Release, Monitoring), Design Doc / PRD Review\nAI & GenAI: Agentic AI, AI Agent Orchestration, RAG, LLM Fine-Tuning (GPT-4, Open-Source), Prompt Engineering, AI-Assisted Engineering & \nAutomation-Driven Workflows (ChatGPT, Cursor), Intelligent Document Processing, AI-Based Document/Data Defect & Error Detection, OCR, NLP, \nComputer Vision, Azure OpenAI, LangChain, LlamaIndex, Vector Databases (FAISS, Pinecone, Chroma), ML Pipelines, Python, SQL\nDelivery Frameworks: Agile, Scrum, Kanban, SAFe, Waterfall, Hybrid Delivery, Stage-Gate / New Product Development (NPD) Process, NPD Projects, \nProduct Development Lifecycle, Product Launch / Launch Readiness, RFQ-to-Release Lifecycle Coordination, Release Management, CI/CD, Customer \nSign-off & Project Handover\nTools & Platforms: JIRA, Azure DevOps, Confluence, MS Project, ServiceNow, Smartsheet, ZOHO Projects, Trello, MS Excel (Advanced), Tableau, Power \nBI, Microsoft Dynamics 365, Cloud Applications\nProgram, Governance & Financial: PMO Governance, Program Roadmapping, Portfolio Management, Budget Forecasting, P&L Oversight, EVM, \nVendor & Partner Management, Executive & Client Stakeholder Communication, KPI/OKR/SLA Reporting, Strategic Planning, Execution Ownership & \nTalent Development, Customer Experience, Service Operations, B2B SaaS\nKEY ACHIEVEMENTS\n95% On-Time Delivery | 80+ Projects Delivered | 22% Sprint Velocity & Predictability Gain | 41% Data Error Reduction | 97% SLA Adherence | 15% \nCost Savings\nPROFESSIONAL EXPERIENCE\nTechnical Program Manager / AI Program Manager March 2026 – Present\nCogniQuest AI — Bengaluru, India\n\t● Own end-to-end delivery for an AI-driven Intelligent Document Processing pod, partnering closely with Engineering and Product on Agentic \nAI orchestration, RAG pipelines, and Azure Form Recognizer — hitting 95% on-time delivery and cutting time-to-market 20%.\n\n\t● Act as primary technical and delivery owner for the engagement, leading requirement discovery with stakeholders and converting business \nneeds into structured execution plans, milestones, and delivery roadmaps.\n\n\t● Managed end-to-end project schedules, cross-functional resources, deliverables, cost, quality, and delivery milestones through stage-gate \ngovernance, securing leadership sign-off at each phase of the product development lifecycle.\n\n\t● Lead cross-functional pod ceremonies (sprint planning, stand-ups, reviews, retrospectives) across AI/ML, Backend, and QA in JIRA — leading \nthrough influence across teams with no direct reporting line — improving sprint velocity 22%, strengthening sprint predictability, and cutting \nbacklog 30%.\n\n\t● Run a structured cadence of project and stage-gate governance meetings, documenting minutes and maintaining action item/action-rail \ntrackers, following up with owners to keep delivery unblocked.\n\n\t● Built Agentic AI workflows where autonomous agents handle multi-step document extraction, validation, and routing, cutting manual \nintervention 45%.\n\n\n\n\t● Designed RAG pipelines pairing vector databases (FAISS, Pinecone) with LLMs for context-aware document Q&A, improving retrieval \naccuracy 33%.\n\n\t● Ran fine-tuning on domain-specific LLMs, including GPT-4 and open-source models, lifting entity-extraction precision 18% on regulated \nclient datasets while maintaining data quality and security standards.\n\n\t● Took OCR pipeline accuracy from 84% to 96% and cut data validation errors 41% through business rule and fuzzy-matching frameworks — \nheld 97% SLA adherence throughout.\n\n\t● Owned P&L, budget forecasting, and stakeholder management across multiple enterprise accounts, driving renewals and upsell, and \nmaintained risk/issues registers with proactive escalation to leadership.\n\n\nTechnical Program Manager August 2025 – February 2026\nG7CR Technologies India Pvt Ltd — Bengaluru, India\n\t● Ran Agile/Scrum and SAFe ceremonies, including sprint retrospectives, across eight delivery teams and delivered KPI/OKR/SLA dashboards \nto C-suite leadership.\n\n\t● Drove GenAI program delivery including LLM-powered automation, AI agent orchestration, and Azure OpenAI integrations.\n\n\t● Directed program roadmaps and a portfolio of 40–50 concurrent projects spanning multiple product lines — Azure Cloud, Data & AI, GenAI, \nSoftware Development, Networking, and Data Centre Infrastructure — on time, in scope, on budget, applying stage-gate checkpoints from \nintake through on-time launch.\n\n\t● Reduced project disruption incidents 30% through proactive risk register and RAID log management across all programs, surfacing risk early \nand escalating appropriately.\n\n\t● Owned budget forecasting, P&L oversight, and cost control for the full portfolio, correcting overruns before they hit margins.\n\n\t● Standardized PMO workflows, SOW governance, and billing reconciliation, keeping delivery consistent and OKR-aligned.\n\n\nTechnical Program Manager April 2024 – August 2025\nInfocore Technologies Pvt Ltd — Bengaluru, India\n\t● Delivered 10+ Cloud, IoT, Data & AI, Network Security, and SaaS projects for KPMG, Bosch, HSBC, JW Marriott, and BEIC, all within scope, \nschedule, and budget.\n\n\t● Directed API integrations and full-stack workflow automation across service boundaries for client-facing web platforms, cutting client \nmanual effort 35%.\n\n\t● Managed Fortune 500 client relationships directly, presenting program status and governance updates to C-suite stakeholders and handling \nescalations, executive briefings, and project handover.\n\n\t● Led change management for enterprise system rollouts and maintained ISO 9001 compliance and PMO documentation across every delivery \nphase.\n\n\nProject Manager March 2023 – April 2024\nTejas Networks Pvt Ltd — Bengaluru, India\n\t● Ran Agile/Scrum ceremonies and authored BRDs, SRS documents, and SOPs — specifying work before build — while sustaining ISO 9001 \ncompliance.\n\n\t● Managed IT infrastructure, 4G/5G networking, automation, and software deployment projects across concurrent workstreams from kickoff \nthrough closure, including post-implementation reviews and client sign-off.\n\n\t● Owned budget tracking and P&L reporting, and led LAN/WAN infrastructure migrations with zero business disruption.\n\n\nProject Coordinator / Electrical Engineer June 2022 – December 2022\nSupreme Electricals — Bengaluru, India\n\t● Coordinated PLC-based automation, deployment, and commissioning across manufacturing system integration projects on factory-floor \nproduction lines, improving operational efficiency 15%.\n\n\t● Built real-time KPI and cost dashboards in Excel and Tableau to support management decision-making.\n\n\nEDUCATION\nHMS Institute of Technology\nBachelor of Engineering (B.E.) — Electrical & Electronics Engineering | 2019 – 2023\n\t● CGPA: 7.5 / 10.0\n\n\nCERTIFICATIONS & TRAINING\n\t● PG Diploma in Industrial Automation (PGDIA)\n\n\t● SAFe Agilist\n\n\t● Agile Methodologies (Scrum & Kanban); Project Management: Technical Projects — LinkedIn Learning\n\n\t● AI Fundamentals; CRM — Hewlett Packard Enterprise\n\n\t● Project Manager Job Simulation — Siemens\n\n\t● Microsoft Dynamics 365 Functional Consultant Training\n\n\t● Data Science & AI/ML — Bessant Technologies",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-05T12:38:22.177015+00:00",
+      "completed_at": "2026-11-05T12:38:25.098316+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "047031f4-7e96-40d2-8905-91230b2eeee6",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 10226,
+            "word_count": 1310,
+            "line_count": 151,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.13984,
+            "symbol_count": 61,
+            "symbol_ratio": 0.005965,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 10226,
+            "word_count": 1310,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "technical skills",
+              "Work Experience": "experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 10226,
+            "word_count": 1310,
+            "line_count": 151,
+            "non_empty_line_count": 111,
+            "short_line_count": 11,
+            "short_line_ratio": 0.099099,
+            "fragmented_line_count": 7,
+            "fragmented_line_ratio": 0.063063,
+            "mean_line_length": 90.05,
+            "median_line_length": 116.0,
+            "line_length_stdev": 49.34,
+            "line_length_cv": 0.547993,
+            "broken_sentence_count": 26,
+            "broken_sentence_ratio": 0.236364,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "047031f4-7e96-40d2-8905-91230b2eeee6-attempt-1",
+      "resume_id": "047031f4-7e96-40d2-8905-91230b2eeee6",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "MOHAMMED KHIZER SHARIFF\nTechnical Program Manager | MarTech & Web Platform Delivery | Client-Facing Technical Leadership | AI-Assisted Engineering Execution\nBengaluru, Karnataka, India | +91-9731437210 | mdkhizer.shariff0@gmail.com | linkedin.com/in/mohammed-khizer-shariff\nPROFESSIONAL SUMMARY\nTechnical Program Manager with 4+ years of experience progressing from an engineering foundation into technical delivery and client-facing \nleadership, owning end-to-end execution for enterprise MarTech, web platform, and AI/GenAI engagements. Acts as single delivery owner across \nconcurrent client accounts — leading requirement discovery, converting business and marketing needs into structured execution plans, milestones, \nand delivery roadmaps, and partnering with solution SMEs and domain experts to define the right technical and MarTech solutions. Hands-on \ntechnical leadership spanning full-stack web application development, CMS and MarTech execution (WordPress, Adobe Experience Manager (AEM), \nHeadless CMS/Contentful), API integrations, system architecture, and the broader MarTech ecosystem — content, SEO, analytics, and digital \nexperience platforms. Drives sprint planning, execution tracking, risk management, and dependency resolution with strong delivery governance, and \nleverages AI-assisted tools (ChatGPT, Cursor) and automation to improve delivery efficiency, quality, and speed. Track record includes 95% on-time \ndelivery, 22% sprint velocity gains, and direct C-suite/client stakeholder management across Fortune 500 and enterprise accounts including KPMG, \nBosch, and HSBC. Engineering foundation from a B.E. in Electrical & Electronics Engineering and a PG Diploma in Industrial Automation.\nTECHNICAL SKILLS\nProgram & Delivery Execution: Sprint Planning, Execution Tracking, Dependency Resolution, Delivery Predictability, Backlog Management & Health, \nSpillover & Cycle-Time Tracking, Spec-Driven Development, RAID & Risk/Issues Log Management, Escalation Management, Meeting Cadence \nManagement, Minutes & Action Item Tracking, Status Reporting to Senior Leadership & Clients, Product Delivery, Product Operations, Roadmap \nManagement, Cross-Functional Resource Coordination & Leadership, Leading Through Influence (No Direct Authority), Client & Engagement \nOwnership, Single-Owner Delivery Model (2–3 Concurrent Engagements), Cross-Functional Product Teams, Resource Planning & Capacity \nManagement, Project Schedule Management, Project Deliverables Management, On-Time Launch Management, Cost, Quality & Delivery \nManagement, Regional Project Management, Project Governance Approvals\nWeb, CMS & MarTech: Full-Stack Web Application Development, CMS & MarTech Execution (WordPress, Adobe Experience Manager (AEM), Headless \nCMS, Contentful), MarTech Ecosystem (Content, SEO, Analytics, Digital Experience Platforms), Requirement Discovery & Solution Alignment, Solution \nSME Partnership, Technical Feasibility & Scalability Planning\nTechnical & Systems Fluency: System Architecture, APIs & Service Integration, Frontend/Backend/ML Coordination, Full SDLC (Specs, Code Review, \nCI/CD, Testing/QA, Release, Monitoring), Design Doc / PRD Review\nAI & GenAI: Agentic AI, AI Agent Orchestration, RAG, LLM Fine-Tuning (GPT-4, Open-Source), Prompt Engineering, AI-Assisted Engineering & \nAutomation-Driven Workflows (ChatGPT, Cursor), Intelligent Document Processing, AI-Based Document/Data Defect & Error Detection, OCR, NLP, \nComputer Vision, Azure OpenAI, LangChain, LlamaIndex, Vector Databases (FAISS, Pinecone, Chroma), ML Pipelines, Python, SQL\nDelivery Frameworks: Agile, Scrum, Kanban, SAFe, Waterfall, Hybrid Delivery, Stage-Gate / New Product Development (NPD) Process, NPD Projects, \nProduct Development Lifecycle, Product Launch / Launch Readiness, RFQ-to-Release Lifecycle Coordination, Release Management, CI/CD, Customer \nSign-off & Project Handover\nTools & Platforms: JIRA, Azure DevOps, Confluence, MS Project, ServiceNow, Smartsheet, ZOHO Projects, Trello, MS Excel (Advanced), Tableau, Power \nBI, Microsoft Dynamics 365, Cloud Applications\nProgram, Governance & Financial: PMO Governance, Program Roadmapping, Portfolio Management, Budget Forecasting, P&L Oversight, EVM, \nVendor & Partner Management, Executive & Client Stakeholder Communication, KPI/OKR/SLA Reporting, Strategic Planning, Execution Ownership & \nTalent Development, Customer Experience, Service Operations, B2B SaaS\nKEY ACHIEVEMENTS\n95% On-Time Delivery | 80+ Projects Delivered | 22% Sprint Velocity & Predictability Gain | 41% Data Error Reduction | 97% SLA Adherence | 15% \nCost Savings\nPROFESSIONAL EXPERIENCE\nTechnical Program Manager / AI Program Manager March 2026 – Present\nCogniQuest AI — Bengaluru, India\n\t● Own end-to-end delivery for an AI-driven Intelligent Document Processing pod, partnering closely with Engineering and Product on Agentic \nAI orchestration, RAG pipelines, and Azure Form Recognizer — hitting 95% on-time delivery and cutting time-to-market 20%.\n\n\t● Act as primary technical and delivery owner for the engagement, leading requirement discovery with stakeholders and converting business \nneeds into structured execution plans, milestones, and delivery roadmaps.\n\n\t● Managed end-to-end project schedules, cross-functional resources, deliverables, cost, quality, and delivery milestones through stage-gate \ngovernance, securing leadership sign-off at each phase of the product development lifecycle.\n\n\t● Lead cross-functional pod ceremonies (sprint planning, stand-ups, reviews, retrospectives) across AI/ML, Backend, and QA in JIRA — leading \nthrough influence across teams with no direct reporting line — improving sprint velocity 22%, strengthening sprint predictability, and cutting \nbacklog 30%.\n\n\t● Run a structured cadence of project and stage-gate governance meetings, documenting minutes and maintaining action item/action-rail \ntrackers, following up with owners to keep delivery unblocked.\n\n\t● Built Agentic AI workflows where autonomous agents handle multi-step document extraction, validation, and routing, cutting manual \nintervention 45%.\n\n\n\n\t● Designed RAG pipelines pairing vector databases (FAISS, Pinecone) with LLMs for context-aware document Q&A, improving retrieval \naccuracy 33%.\n\n\t● Ran fine-tuning on domain-specific LLMs, including GPT-4 and open-source models, lifting entity-extraction precision 18% on regulated \nclient datasets while maintaining data quality and security standards.\n\n\t● Took OCR pipeline accuracy from 84% to 96% and cut data validation errors 41% through business rule and fuzzy-matching frameworks — \nheld 97% SLA adherence throughout.\n\n\t● Owned P&L, budget forecasting, and stakeholder management across multiple enterprise accounts, driving renewals and upsell, and \nmaintained risk/issues registers with proactive escalation to leadership.\n\n\nTechnical Program Manager August 2025 – February 2026\nG7CR Technologies India Pvt Ltd — Bengaluru, India\n\t● Ran Agile/Scrum and SAFe ceremonies, including sprint retrospectives, across eight delivery teams and delivered KPI/OKR/SLA dashboards \nto C-suite leadership.\n\n\t● Drove GenAI program delivery including LLM-powered automation, AI agent orchestration, and Azure OpenAI integrations.\n\n\t● Directed program roadmaps and a portfolio of 40–50 concurrent projects spanning multiple product lines — Azure Cloud, Data & AI, GenAI, \nSoftware Development, Networking, and Data Centre Infrastructure — on time, in scope, on budget, applying stage-gate checkpoints from \nintake through on-time launch.\n\n\t● Reduced project disruption incidents 30% through proactive risk register and RAID log management across all programs, surfacing risk early \nand escalating appropriately.\n\n\t● Owned budget forecasting, P&L oversight, and cost control for the full portfolio, correcting overruns before they hit margins.\n\n\t● Standardized PMO workflows, SOW governance, and billing reconciliation, keeping delivery consistent and OKR-aligned.\n\n\nTechnical Program Manager April 2024 – August 2025\nInfocore Technologies Pvt Ltd — Bengaluru, India\n\t● Delivered 10+ Cloud, IoT, Data & AI, Network Security, and SaaS projects for KPMG, Bosch, HSBC, JW Marriott, and BEIC, all within scope, \nschedule, and budget.\n\n\t● Directed API integrations and full-stack workflow automation across service boundaries for client-facing web platforms, cutting client \nmanual effort 35%.\n\n\t● Managed Fortune 500 client relationships directly, presenting program status and governance updates to C-suite stakeholders and handling \nescalations, executive briefings, and project handover.\n\n\t● Led change management for enterprise system rollouts and maintained ISO 9001 compliance and PMO documentation across every delivery \nphase.\n\n\nProject Manager March 2023 – April 2024\nTejas Networks Pvt Ltd — Bengaluru, India\n\t● Ran Agile/Scrum ceremonies and authored BRDs, SRS documents, and SOPs — specifying work before build — while sustaining ISO 9001 \ncompliance.\n\n\t● Managed IT infrastructure, 4G/5G networking, automation, and software deployment projects across concurrent workstreams from kickoff \nthrough closure, including post-implementation reviews and client sign-off.\n\n\t● Owned budget tracking and P&L reporting, and led LAN/WAN infrastructure migrations with zero business disruption.\n\n\nProject Coordinator / Electrical Engineer June 2022 – December 2022\nSupreme Electricals — Bengaluru, India\n\t● Coordinated PLC-based automation, deployment, and commissioning across manufacturing system integration projects on factory-floor \nproduction lines, improving operational efficiency 15%.\n\n\t● Built real-time KPI and cost dashboards in Excel and Tableau to support management decision-making.\n\n\nEDUCATION\nHMS Institute of Technology\nBachelor of Engineering (B.E.) — Electrical & Electronics Engineering | 2019 – 2023\n\t● CGPA: 7.5 / 10.0\n\n\nCERTIFICATIONS & TRAINING\n\t● PG Diploma in Industrial Automation (PGDIA)\n\n\t● SAFe Agilist\n\n\t● Agile Methodologies (Scrum & Kanban); Project Management: Technical Projects — LinkedIn Learning\n\n\t● AI Fundamentals; CRM — Hewlett Packard Enterprise\n\n\t● Project Manager Job Simulation — Siemens\n\n\t● Microsoft Dynamics 365 Functional Consultant Training\n\n\t● Data Science & AI/ML — Bessant Technologies",
+      "extracted_text_length": 10226,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "047031f4-7e96-40d2-8905-91230b2eeee6",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 10226,
+            "word_count": 1310,
+            "line_count": 151,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.13984,
+            "symbol_count": 61,
+            "symbol_ratio": 0.005965,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 10226,
+            "word_count": 1310,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "technical skills",
+              "Work Experience": "experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 10226,
+            "word_count": 1310,
+            "line_count": 151,
+            "non_empty_line_count": 111,
+            "short_line_count": 11,
+            "short_line_ratio": 0.099099,
+            "fragmented_line_count": 7,
+            "fragmented_line_ratio": 0.063063,
+            "mean_line_length": 90.05,
+            "median_line_length": 116.0,
+            "line_length_stdev": 49.34,
+            "line_length_cv": 0.547993,
+            "broken_sentence_count": 26,
+            "broken_sentence_ratio": 0.236364,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    }
+  ],
+  "extracted_text": "MOHAMMED KHIZER SHARIFF\nTechnical Program Manager | MarTech & Web Platform Delivery | Client-Facing Technical Leadership | AI-Assisted Engineering Execution\nBengaluru, Karnataka, India | +91-9731437210 | mdkhizer.shariff0@gmail.com | linkedin.com/in/mohammed-khizer-shariff\nPROFESSIONAL SUMMARY\nTechnical Program Manager with 4+ years of experience progressing from an engineering foundation into technical delivery and client-facing \nleadership, owning end-to-end execution for enterprise MarTech, web platform, and AI/GenAI engagements. Acts as single delivery owner across \nconcurrent client accounts — leading requirement discovery, converting business and marketing needs into structured execution plans, milestones, \nand delivery roadmaps, and partnering with solution SMEs and domain experts to define the right technical and MarTech solutions. Hands-on \ntechnical leadership spanning full-stack web application development, CMS and MarTech execution (WordPress, Adobe Experience Manager (AEM), \nHeadless CMS/Contentful), API integrations, system architecture, and the broader MarTech ecosystem — content, SEO, analytics, and digital \nexperience platforms. Drives sprint planning, execution tracking, risk management, and dependency resolution with strong delivery governance, and \nleverages AI-assisted tools (ChatGPT, Cursor) and automation to improve delivery efficiency, quality, and speed. Track record includes 95% on-time \ndelivery, 22% sprint velocity gains, and direct C-suite/client stakeholder management across Fortune 500 and enterprise accounts including KPMG, \nBosch, and HSBC. Engineering foundation from a B.E. in Electrical & Electronics Engineering and a PG Diploma in Industrial Automation.\nTECHNICAL SKILLS\nProgram & Delivery Execution: Sprint Planning, Execution Tracking, Dependency Resolution, Delivery Predictability, Backlog Management & Health, \nSpillover & Cycle-Time Tracking, Spec-Driven Development, RAID & Risk/Issues Log Management, Escalation Management, Meeting Cadence \nManagement, Minutes & Action Item Tracking, Status Reporting to Senior Leadership & Clients, Product Delivery, Product Operations, Roadmap \nManagement, Cross-Functional Resource Coordination & Leadership, Leading Through Influence (No Direct Authority), Client & Engagement \nOwnership, Single-Owner Delivery Model (2–3 Concurrent Engagements), Cross-Functional Product Teams, Resource Planning & Capacity \nManagement, Project Schedule Management, Project Deliverables Management, On-Time Launch Management, Cost, Quality & Delivery \nManagement, Regional Project Management, Project Governance Approvals\nWeb, CMS & MarTech: Full-Stack Web Application Development, CMS & MarTech Execution (WordPress, Adobe Experience Manager (AEM), Headless \nCMS, Contentful), MarTech Ecosystem (Content, SEO, Analytics, Digital Experience Platforms), Requirement Discovery & Solution Alignment, Solution \nSME Partnership, Technical Feasibility & Scalability Planning\nTechnical & Systems Fluency: System Architecture, APIs & Service Integration, Frontend/Backend/ML Coordination, Full SDLC (Specs, Code Review, \nCI/CD, Testing/QA, Release, Monitoring), Design Doc / PRD Review\nAI & GenAI: Agentic AI, AI Agent Orchestration, RAG, LLM Fine-Tuning (GPT-4, Open-Source), Prompt Engineering, AI-Assisted Engineering & \nAutomation-Driven Workflows (ChatGPT, Cursor), Intelligent Document Processing, AI-Based Document/Data Defect & Error Detection, OCR, NLP, \nComputer Vision, Azure OpenAI, LangChain, LlamaIndex, Vector Databases (FAISS, Pinecone, Chroma), ML Pipelines, Python, SQL\nDelivery Frameworks: Agile, Scrum, Kanban, SAFe, Waterfall, Hybrid Delivery, Stage-Gate / New Product Development (NPD) Process, NPD Projects, \nProduct Development Lifecycle, Product Launch / Launch Readiness, RFQ-to-Release Lifecycle Coordination, Release Management, CI/CD, Customer \nSign-off & Project Handover\nTools & Platforms: JIRA, Azure DevOps, Confluence, MS Project, ServiceNow, Smartsheet, ZOHO Projects, Trello, MS Excel (Advanced), Tableau, Power \nBI, Microsoft Dynamics 365, Cloud Applications\nProgram, Governance & Financial: PMO Governance, Program Roadmapping, Portfolio Management, Budget Forecasting, P&L Oversight, EVM, \nVendor & Partner Management, Executive & Client Stakeholder Communication, KPI/OKR/SLA Reporting, Strategic Planning, Execution Ownership & \nTalent Development, Customer Experience, Service Operations, B2B SaaS\nKEY ACHIEVEMENTS\n95% On-Time Delivery | 80+ Projects Delivered | 22% Sprint Velocity & Predictability Gain | 41% Data Error Reduction | 97% SLA Adherence | 15% \nCost Savings\nPROFESSIONAL EXPERIENCE\nTechnical Program Manager / AI Program Manager March 2026 – Present\nCogniQuest AI — Bengaluru, India\n\t● Own end-to-end delivery for an AI-driven Intelligent Document Processing pod, partnering closely with Engineering and Product on Agentic \nAI orchestration, RAG pipelines, and Azure Form Recognizer — hitting 95% on-time delivery and cutting time-to-market 20%.\n\n\t● Act as primary technical and delivery owner for the engagement, leading requirement discovery with stakeholders and converting business \nneeds into structured execution plans, milestones, and delivery roadmaps.\n\n\t● Managed end-to-end project schedules, cross-functional resources, deliverables, cost, quality, and delivery milestones through stage-gate \ngovernance, securing leadership sign-off at each phase of the product development lifecycle.\n\n\t● Lead cross-functional pod ceremonies (sprint planning, stand-ups, reviews, retrospectives) across AI/ML, Backend, and QA in JIRA — leading \nthrough influence across teams with no direct reporting line — improving sprint velocity 22%, strengthening sprint predictability, and cutting \nbacklog 30%.\n\n\t● Run a structured cadence of project and stage-gate governance meetings, documenting minutes and maintaining action item/action-rail \ntrackers, following up with owners to keep delivery unblocked.\n\n\t● Built Agentic AI workflows where autonomous agents handle multi-step document extraction, validation, and routing, cutting manual \nintervention 45%.\n\n\n\n\t● Designed RAG pipelines pairing vector databases (FAISS, Pinecone) with LLMs for context-aware document Q&A, improving retrieval \naccuracy 33%.\n\n\t● Ran fine-tuning on domain-specific LLMs, including GPT-4 and open-source models, lifting entity-extraction precision 18% on regulated \nclient datasets while maintaining data quality and security standards.\n\n\t● Took OCR pipeline accuracy from 84% to 96% and cut data validation errors 41% through business rule and fuzzy-matching frameworks — \nheld 97% SLA adherence throughout.\n\n\t● Owned P&L, budget forecasting, and stakeholder management across multiple enterprise accounts, driving renewals and upsell, and \nmaintained risk/issues registers with proactive escalation to leadership.\n\n\nTechnical Program Manager August 2025 – February 2026\nG7CR Technologies India Pvt Ltd — Bengaluru, India\n\t● Ran Agile/Scrum and SAFe ceremonies, including sprint retrospectives, across eight delivery teams and delivered KPI/OKR/SLA dashboards \nto C-suite leadership.\n\n\t● Drove GenAI program delivery including LLM-powered automation, AI agent orchestration, and Azure OpenAI integrations.\n\n\t● Directed program roadmaps and a portfolio of 40–50 concurrent projects spanning multiple product lines — Azure Cloud, Data & AI, GenAI, \nSoftware Development, Networking, and Data Centre Infrastructure — on time, in scope, on budget, applying stage-gate checkpoints from \nintake through on-time launch.\n\n\t● Reduced project disruption incidents 30% through proactive risk register and RAID log management across all programs, surfacing risk early \nand escalating appropriately.\n\n\t● Owned budget forecasting, P&L oversight, and cost control for the full portfolio, correcting overruns before they hit margins.\n\n\t● Standardized PMO workflows, SOW governance, and billing reconciliation, keeping delivery consistent and OKR-aligned.\n\n\nTechnical Program Manager April 2024 – August 2025\nInfocore Technologies Pvt Ltd — Bengaluru, India\n\t● Delivered 10+ Cloud, IoT, Data & AI, Network Security, and SaaS projects for KPMG, Bosch, HSBC, JW Marriott, and BEIC, all within scope, \nschedule, and budget.\n\n\t● Directed API integrations and full-stack workflow automation across service boundaries for client-facing web platforms, cutting client \nmanual effort 35%.\n\n\t● Managed Fortune 500 client relationships directly, presenting program status and governance updates to C-suite stakeholders and handling \nescalations, executive briefings, and project handover.\n\n\t● Led change management for enterprise system rollouts and maintained ISO 9001 compliance and PMO documentation across every delivery \nphase.\n\n\nProject Manager March 2023 – April 2024\nTejas Networks Pvt Ltd — Bengaluru, India\n\t● Ran Agile/Scrum ceremonies and authored BRDs, SRS documents, and SOPs — specifying work before build — while sustaining ISO 9001 \ncompliance.\n\n\t● Managed IT infrastructure, 4G/5G networking, automation, and software deployment projects across concurrent workstreams from kickoff \nthrough closure, including post-implementation reviews and client sign-off.\n\n\t● Owned budget tracking and P&L reporting, and led LAN/WAN infrastructure migrations with zero business disruption.\n\n\nProject Coordinator / Electrical Engineer June 2022 – December 2022\nSupreme Electricals — Bengaluru, India\n\t● Coordinated PLC-based automation, deployment, and commissioning across manufacturing system integration projects on factory-floor \nproduction lines, improving operational efficiency 15%.\n\n\t● Built real-time KPI and cost dashboards in Excel and Tableau to support management decision-making.\n\n\nEDUCATION\nHMS Institute of Technology\nBachelor of Engineering (B.E.) — Electrical & Electronics Engineering | 2019 – 2023\n\t● CGPA: 7.5 / 10.0\n\n\nCERTIFICATIONS & TRAINING\n\t● PG Diploma in Industrial Automation (PGDIA)\n\n\t● SAFe Agilist\n\n\t● Agile Methodologies (Scrum & Kanban); Project Management: Technical Projects — LinkedIn Learning\n\n\t● AI Fundamentals; CRM — Hewlett Packard Enterprise\n\n\t● Project Manager Job Simulation — Siemens\n\n\t● Microsoft Dynamics 365 Functional Consultant Training\n\n\t● Data Science & AI/ML — Bessant Technologies",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "MOHAMMED KHIZER SHARIFF\nTechnical Program Manager | MarTech & Web Platform Delivery | Client-Facing Technical Leadership | AI-Assisted Engineering Execution\nBengaluru, Karnataka, India | +91-9731437210 | mdkhizer.shariff0@gmail.com | linkedin.com/in/mohammed-khizer-shariff\nPROFESSIONAL SUMMARY\nTechnical Program Manager with 4+ years of experience progressing from an engineering foundation into technical delivery and client-facing \nleadership, owning end-to-end execution for enterprise MarTech, web platform, and AI/GenAI engagements. Acts as single delivery owner across \nconcurrent client accounts — leading requirement discovery, converting business and marketing needs into structured execution plans, milestones, \nand delivery roadmaps, and partnering with solution SMEs and domain experts to define the right technical and MarTech solutions. Hands-on \ntechnical leadership spanning full-stack web application development, CMS and MarTech execution (WordPress, Adobe Experience Manager (AEM), \nHeadless CMS/Contentful), API integrations, system architecture, and the broader MarTech ecosystem — content, SEO, analytics, and digital \nexperience platforms. Drives sprint planning, execution tracking, risk management, and dependency resolution with strong delivery governance, and \nleverages AI-assisted tools (ChatGPT, Cursor) and automation to improve delivery efficiency, quality, and speed. Track record includes 95% on-time \ndelivery, 22% sprint velocity gains, and direct C-suite/client stakeholder management across Fortune 500 and enterprise accounts including KPMG, \nBosch, and HSBC. Engineering foundation from a B.E. in Electrical & Electronics Engineering and a PG Diploma in Industrial Automation.\nTECHNICAL SKILLS\nProgram & Delivery Execution: Sprint Planning, Execution Tracking, Dependency Resolution, Delivery Predictability, Backlog Management & Health, \nSpillover & Cycle-Time Tracking, Spec-Driven Development, RAID & Risk/Issues Log Management, Escalation Management, Meeting Cadence \nManagement, Minutes & Action Item Tracking, Status Reporting to Senior Leadership & Clients, Product Delivery, Product Operations, Roadmap \nManagement, Cross-Functional Resource Coordination & Leadership, Leading Through Influence (No Direct Authority), Client & Engagement \nOwnership, Single-Owner Delivery Model (2–3 Concurrent Engagements), Cross-Functional Product Teams, Resource Planning & Capacity \nManagement, Project Schedule Management, Project Deliverables Management, On-Time Launch Management, Cost, Quality & Delivery \nManagement, Regional Project Management, Project Governance Approvals\nWeb, CMS & MarTech: Full-Stack Web Application Development, CMS & MarTech Execution (WordPress, Adobe Experience Manager (AEM), Headless \nCMS, Contentful), MarTech Ecosystem (Content, SEO, Analytics, Digital Experience Platforms), Requirement Discovery & Solution Alignment, Solution \nSME Partnership, Technical Feasibility & Scalability Planning\nTechnical & Systems Fluency: System Architecture, APIs & Service Integration, Frontend/Backend/ML Coordination, Full SDLC (Specs, Code Review, \nCI/CD, Testing/QA, Release, Monitoring), Design Doc / PRD Review\nAI & GenAI: Agentic AI, AI Agent Orchestration, RAG, LLM Fine-Tuning (GPT-4, Open-Source), Prompt Engineering, AI-Assisted Engineering & \nAutomation-Driven Workflows (ChatGPT, Cursor), Intelligent Document Processing, AI-Based Document/Data Defect & Error Detection, OCR, NLP, \nComputer Vision, Azure OpenAI, LangChain, LlamaIndex, Vector Databases (FAISS, Pinecone, Chroma), ML Pipelines, Python, SQL\nDelivery Frameworks: Agile, Scrum, Kanban, SAFe, Waterfall, Hybrid Delivery, Stage-Gate / New Product Development (NPD) Process, NPD Projects, \nProduct Development Lifecycle, Product Launch / Launch Readiness, RFQ-to-Release Lifecycle Coordination, Release Management, CI/CD, Customer \nSign-off & Project Handover\nTools & Platforms: JIRA, Azure DevOps, Confluence, MS Project, ServiceNow, Smartsheet, ZOHO Projects, Trello, MS Excel (Advanced), Tableau, Power \nBI, Microsoft Dynamics 365, Cloud Applications\nProgram, Governance & Financial: PMO Governance, Program Roadmapping, Portfolio Management, Budget Forecasting, P&L Oversight, EVM, \nVendor & Partner Management, Executive & Client Stakeholder Communication, KPI/OKR/SLA Reporting, Strategic Planning, Execution Ownership & \nTalent Development, Customer Experience, Service Operations, B2B SaaS\nKEY ACHIEVEMENTS\n95% On-Time Delivery | 80+ Projects Delivered | 22% Sprint Velocity & Predictability Gain | 41% Data Error Reduction | 97% SLA Adherence | 15% \nCost Savings\nPROFESSIONAL EXPERIENCE\nTechnical Program Manager / AI Program Manager March 2026 – Present\nCogniQuest AI — Bengaluru, India\n\t● Own end-to-end delivery for an AI-driven Intelligent Document Processing pod, partnering closely with Engineering and Product on Agentic \nAI orchestration, RAG pipelines, and Azure Form Recognizer — hitting 95% on-time delivery and cutting time-to-market 20%.\n\n\t● Act as primary technical and delivery owner for the engagement, leading requirement discovery with stakeholders and converting business \nneeds into structured execution plans, milestones, and delivery roadmaps.\n\n\t● Managed end-to-end project schedules, cross-functional resources, deliverables, cost, quality, and delivery milestones through stage-gate \ngovernance, securing leadership sign-off at each phase of the product development lifecycle.\n\n\t● Lead cross-functional pod ceremonies (sprint planning, stand-ups, reviews, retrospectives) across AI/ML, Backend, and QA in JIRA — leading \nthrough influence across teams with no direct reporting line — improving sprint velocity 22%, strengthening sprint predictability, and cutting \nbacklog 30%.\n\n\t● Run a structured cadence of project and stage-gate governance meetings, documenting minutes and maintaining action item/action-rail \ntrackers, following up with owners to keep delivery unblocked.\n\n\t● Built Agentic AI workflows where autonomous agents handle multi-step document extraction, validation, and routing, cutting manual \nintervention 45%.\n\n\n\n\t● Designed RAG pipelines pairing vector databases (FAISS, Pinecone) with LLMs for context-aware document Q&A, improving retrieval \naccuracy 33%.\n\n\t● Ran fine-tuning on domain-specific LLMs, including GPT-4 and open-source models, lifting entity-extraction precision 18% on regulated \nclient datasets while maintaining data quality and security standards.\n\n\t● Took OCR pipeline accuracy from 84% to 96% and cut data validation errors 41% through business rule and fuzzy-matching frameworks — \nheld 97% SLA adherence throughout.\n\n\t● Owned P&L, budget forecasting, and stakeholder management across multiple enterprise accounts, driving renewals and upsell, and \nmaintained risk/issues registers with proactive escalation to leadership.\n\n\nTechnical Program Manager August 2025 – February 2026\nG7CR Technologies India Pvt Ltd — Bengaluru, India\n\t● Ran Agile/Scrum and SAFe ceremonies, including sprint retrospectives, across eight delivery teams and delivered KPI/OKR/SLA dashboards \nto C-suite leadership.\n\n\t● Drove GenAI program delivery including LLM-powered automation, AI agent orchestration, and Azure OpenAI integrations.\n\n\t● Directed program roadmaps and a portfolio of 40–50 concurrent projects spanning multiple product lines — Azure Cloud, Data & AI, GenAI, \nSoftware Development, Networking, and Data Centre Infrastructure — on time, in scope, on budget, applying stage-gate checkpoints from \nintake through on-time launch.\n\n\t● Reduced project disruption incidents 30% through proactive risk register and RAID log management across all programs, surfacing risk early \nand escalating appropriately.\n\n\t● Owned budget forecasting, P&L oversight, and cost control for the full portfolio, correcting overruns before they hit margins.\n\n\t● Standardized PMO workflows, SOW governance, and billing reconciliation, keeping delivery consistent and OKR-aligned.\n\n\nTechnical Program Manager April 2024 – August 2025\nInfocore Technologies Pvt Ltd — Bengaluru, India\n\t● Delivered 10+ Cloud, IoT, Data & AI, Network Security, and SaaS projects for KPMG, Bosch, HSBC, JW Marriott, and BEIC, all within scope, \nschedule, and budget.\n\n\t● Directed API integrations and full-stack workflow automation across service boundaries for client-facing web platforms, cutting client \nmanual effort 35%.\n\n\t● Managed Fortune 500 client relationships directly, presenting program status and governance updates to C-suite stakeholders and handling \nescalations, executive briefings, and project handover.\n\n\t● Led change management for enterprise system rollouts and maintained ISO 9001 compliance and PMO documentation across every delivery \nphase.\n\n\nProject Manager March 2023 – April 2024\nTejas Networks Pvt Ltd — Bengaluru, India\n\t● Ran Agile/Scrum ceremonies and authored BRDs, SRS documents, and SOPs — specifying work before build — while sustaining ISO 9001 \ncompliance.\n\n\t● Managed IT infrastructure, 4G/5G networking, automation, and software deployment projects across concurrent workstreams from kickoff \nthrough closure, including post-implementation reviews and client sign-off.\n\n\t● Owned budget tracking and P&L reporting, and led LAN/WAN infrastructure migrations with zero business disruption.\n\n\nProject Coordinator / Electrical Engineer June 2022 – December 2022\nSupreme Electricals — Bengaluru, India\n\t● Coordinated PLC-based automation, deployment, and commissioning across manufacturing system integration projects on factory-floor \nproduction lines, improving operational efficiency 15%.\n\n\t● Built real-time KPI and cost dashboards in Excel and Tableau to support management decision-making.\n\n\nEDUCATION\nHMS Institute of Technology\nBachelor of Engineering (B.E.) — Electrical & Electronics Engineering | 2019 – 2023\n\t● CGPA: 7.5 / 10.0\n\n\nCERTIFICATIONS & TRAINING\n\t● PG Diploma in Industrial Automation (PGDIA)\n\n\t● SAFe Agilist\n\n\t● Agile Methodologies (Scrum & Kanban); Project Management: Technical Projects — LinkedIn Learning\n\n\t● AI Fundamentals; CRM — Hewlett Packard Enterprise\n\n\t● Project Manager Job Simulation — Siemens\n\n\t● Microsoft Dynamics 365 Functional Consultant Training\n\n\t● Data Science & AI/ML — Bessant Technologies",
+  "quality": {
+    "status": "PASS",
+    "document_id": "047031f4-7e96-40d2-8905-91230b2eeee6",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 10226,
+        "word_count": 1310,
+        "line_count": 151,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.13984,
+        "symbol_count": 61,
+        "symbol_ratio": 0.005965,
+        "max_repeated_char_run": 4,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 97.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 10226,
+        "word_count": 1310,
+        "configured_section_count": 7,
+        "detected_count": 6,
+        "missing_count": 1,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Projects"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Projects"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "professional summary",
+          "Skills": "technical skills",
+          "Work Experience": "experience",
+          "Education": "education",
+          "Certifications": "certifications"
+        }
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Projects"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Projects"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 10226,
+        "word_count": 1310,
+        "line_count": 151,
+        "non_empty_line_count": 111,
+        "short_line_count": 11,
+        "short_line_ratio": 0.099099,
+        "fragmented_line_count": 7,
+        "fragmented_line_ratio": 0.063063,
+        "mean_line_length": 90.05,
+        "median_line_length": 116.0,
+        "line_length_stdev": 49.34,
+        "line_length_cv": 0.547993,
+        "broken_sentence_count": 26,
+        "broken_sentence_ratio": 0.236364,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 60.0,
+  "resume_json": null,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "MOHAMMED KHIZER SHARIFF\nTechnical Program Manager | MarTech & Web Platform Delivery | Client-Facing Technical Leadership | AI-Assisted Engineering Execution\nBengaluru, Karnataka, India | +91-9731437210 | mdkhizer.shariff0@gmail.com | linkedin.com/in/mohammed-khizer-shariff\nPROFESSIONAL SUMMARY\nTechnical Program Manager with 4+ years of experience progressing from an engineering foundation into technical delivery and client-facing \nleadership, owning end-to-end execution for enterprise MarTech, web platform, and AI/GenAI engagements. Acts as single delivery owner across \nconcurrent client accounts — leading requirement discovery, converting business and marketing needs into structured execution plans, milestones, \nand delivery roadmaps, and partnering with solution SMEs and domain experts to define the right technical and MarTech solutions. Hands-on \ntechnical leadership spanning full-stack web application development, CMS and MarTech execution (WordPress, Adobe Experience Manager (AEM), \nHeadless CMS/Contentful), API integrations, system architecture, and the broader MarTech ecosystem — content, SEO, analytics, and digital \nexperience platforms. Drives sprint planning, execution tracking, risk management, and dependency resolution with strong delivery governance, and \nleverages AI-assisted tools (ChatGPT, Cursor) and automation to improve delivery efficiency, quality, and speed. Track record includes 95% on-time \ndelivery, 22% sprint velocity gains, and direct C-suite/client stakeholder management across Fortune 500 and enterprise accounts including KPMG, \nBosch, and HSBC. Engineering foundation from a B.E. in Electrical & Electronics Engineering and a PG Diploma in Industrial Automation.\nTECHNICAL SKILLS\nProgram & Delivery Execution: Sprint Planning, Execution Tracking, Dependency Resolution, Delivery Predictability, Backlog Management & Health, \nSpillover & Cycle-Time Tracking, Spec-Driven Development, RAID & Risk/Issues Log Management, Escalation Management, Meeting Cadence \nManagement, Minutes & Action Item Tracking, Status Reporting to Senior Leadership & Clients, Product Delivery, Product Operations, Roadmap \nManagement, Cross-Functional Resource Coordination & Leadership, Leading Through Influence (No Direct Authority), Client & Engagement \nOwnership, Single-Owner Delivery Model (2–3 Concurrent Engagements), Cross-Functional Product Teams, Resource Planning & Capacity \nManagement, Project Schedule Management, Project Deliverables Management, On-Time Launch Management, Cost, Quality & Delivery \nManagement, Regional Project Management, Project Governance Approvals\nWeb, CMS & MarTech: Full-Stack Web Application Development, CMS & MarTech Execution (WordPress, Adobe Experience Manager (AEM), Headless \nCMS, Contentful), MarTech Ecosystem (Content, SEO, Analytics, Digital Experience Platforms), Requirement Discovery & Solution Alignment, Solution \nSME Partnership, Technical Feasibility & Scalability Planning\nTechnical & Systems Fluency: System Architecture, APIs & Service Integration, Frontend/Backend/ML Coordination, Full SDLC (Specs, Code Review, \nCI/CD, Testing/QA, Release, Monitoring), Design Doc / PRD Review\nAI & GenAI: Agentic AI, AI Agent Orchestration, RAG, LLM Fine-Tuning (GPT-4, Open-Source), Prompt Engineering, AI-Assisted Engineering & \nAutomation-Driven Workflows (ChatGPT, Cursor), Intelligent Document Processing, AI-Based Document/Data Defect & Error Detection, OCR, NLP, \nComputer Vision, Azure OpenAI, LangChain, LlamaIndex, Vector Databases (FAISS, Pinecone, Chroma), ML Pipelines, Python, SQL\nDelivery Frameworks: Agile, Scrum, Kanban, SAFe, Waterfall, Hybrid Delivery, Stage-Gate / New Product Development (NPD) Process, NPD Projects, \nProduct Development Lifecycle, Product Launch / Launch Readiness, RFQ-to-Release Lifecycle Coordination, Release Management, CI/CD, Customer \nSign-off & Project Handover\nTools & Platforms: JIRA, Azure DevOps, Confluence, MS Project, ServiceNow, Smartsheet, ZOHO Projects, Trello, MS Excel (Advanced), Tableau, Power \nBI, Microsoft Dynamics 365, Cloud Applications\nProgram, Governance & Financial: PMO Governance, Program Roadmapping, Portfolio Management, Budget Forecasting, P&L Oversight, EVM, \nVendor & Partner Management, Executive & Client Stakeholder Communication, KPI/OKR/SLA Reporting, Strategic Planning, Execution Ownership & \nTalent Development, Customer Experience, Service Operations, B2B SaaS\nKEY ACHIEVEMENTS\n95% On-Time Delivery | 80+ Projects Delivered | 22% Sprint Velocity & Predictability Gain | 41% Data Error Reduction | 97% SLA Adherence | 15% \nCost Savings\nPROFESSIONAL EXPERIENCE\nTechnical Program Manager / AI Program Manager March 2026 – Present\nCogniQuest AI — Bengaluru, India\n\t● Own end-to-end delivery for an AI-driven Intelligent Document Processing pod, partnering closely with Engineering and Product on Agentic \nAI orchestration, RAG pipelines, and Azure Form Recognizer — hitting 95% on-time delivery and cutting time-to-market 20%.\n\n\t● Act as primary technical and delivery owner for the engagement, leading requirement discovery with stakeholders and converting business \nneeds into structured execution plans, milestones, and delivery roadmaps.\n\n\t● Managed end-to-end project schedules, cross-functional resources, deliverables, cost, quality, and delivery milestones through stage-gate \ngovernance, securing leadership sign-off at each phase of the product development lifecycle.\n\n\t● Lead cross-functional pod ceremonies (sprint planning, stand-ups, reviews, retrospectives) across AI/ML, Backend, and QA in JIRA — leading \nthrough influence across teams with no direct reporting line — improving sprint velocity 22%, strengthening sprint predictability, and cutting \nbacklog 30%.\n\n\t● Run a structured cadence of project and stage-gate governance meetings, documenting minutes and maintaining action item/action-rail \ntrackers, following up with owners to keep delivery unblocked.\n\n\t● Built Agentic AI workflows where autonomous agents handle multi-step document extraction, validation, and routing, cutting manual \nintervention 45%.\n\n\n\n\t● Designed RAG pipelines pairing vector databases (FAISS, Pinecone) with LLMs for context-aware document Q&A, improving retrieval \naccuracy 33%.\n\n\t● Ran fine-tuning on domain-specific LLMs, including GPT-4 and open-source models, lifting entity-extraction precision 18% on regulated \nclient datasets while maintaining data quality and security standards.\n\n\t● Took OCR pipeline accuracy from 84% to 96% and cut data validation errors 41% through business rule and fuzzy-matching frameworks — \nheld 97% SLA adherence throughout.\n\n\t● Owned P&L, budget forecasting, and stakeholder management across multiple enterprise accounts, driving renewals and upsell, and \nmaintained risk/issues registers with proactive escalation to leadership.\n\n\nTechnical Program Manager August 2025 – February 2026\nG7CR Technologies India Pvt Ltd — Bengaluru, India\n\t● Ran Agile/Scrum and SAFe ceremonies, including sprint retrospectives, across eight delivery teams and delivered KPI/OKR/SLA dashboards \nto C-suite leadership.\n\n\t● Drove GenAI program delivery including LLM-powered automation, AI agent orchestration, and Azure OpenAI integrations.\n\n\t● Directed program roadmaps and a portfolio of 40–50 concurrent projects spanning multiple product lines — Azure Cloud, Data & AI, GenAI, \nSoftware Development, Networking, and Data Centre Infrastructure — on time, in scope, on budget, applying stage-gate checkpoints from \nintake through on-time launch.\n\n\t● Reduced project disruption incidents 30% through proactive risk register and RAID log management across all programs, surfacing risk early \nand escalating appropriately.\n\n\t● Owned budget forecasting, P&L oversight, and cost control for the full portfolio, correcting overruns before they hit margins.\n\n\t● Standardized PMO workflows, SOW governance, and billing reconciliation, keeping delivery consistent and OKR-aligned.\n\n\nTechnical Program Manager April 2024 – August 2025\nInfocore Technologies Pvt Ltd — Bengaluru, India\n\t● Delivered 10+ Cloud, IoT, Data & AI, Network Security, and SaaS projects for KPMG, Bosch, HSBC, JW Marriott, and BEIC, all within scope, \nschedule, and budget.\n\n\t● Directed API integrations and full-stack workflow automation across service boundaries for client-facing web platforms, cutting client \nmanual effort 35%.\n\n\t● Managed Fortune 500 client relationships directly, presenting program status and governance updates to C-suite stakeholders and handling \nescalations, executive briefings, and project handover.\n\n\t● Led change management for enterprise system rollouts and maintained ISO 9001 compliance and PMO documentation across every delivery \nphase.\n\n\nProject Manager March 2023 – April 2024\nTejas Networks Pvt Ltd — Bengaluru, India\n\t● Ran Agile/Scrum ceremonies and authored BRDs, SRS documents, and SOPs — specifying work before build — while sustaining ISO 9001 \ncompliance.\n\n\t● Managed IT infrastructure, 4G/5G networking, automation, and software deployment projects across concurrent workstreams from kickoff \nthrough closure, including post-implementation reviews and client sign-off.\n\n\t● Owned budget tracking and P&L reporting, and led LAN/WAN infrastructure migrations with zero business disruption.\n\n\nProject Coordinator / Electrical Engineer June 2022 – December 2022\nSupreme Electricals — Bengaluru, India\n\t● Coordinated PLC-based automation, deployment, and commissioning across manufacturing system integration projects on factory-floor \nproduction lines, improving operational efficiency 15%.\n\n\t● Built real-time KPI and cost dashboards in Excel and Tableau to support management decision-making.\n\n\nEDUCATION\nHMS Institute of Technology\nBachelor of Engineering (B.E.) — Electrical & Electronics Engineering | 2019 – 2023\n\t● CGPA: 7.5 / 10.0\n\n\nCERTIFICATIONS & TRAINING\n\t● PG Diploma in Industrial Automation (PGDIA)\n\n\t● SAFe Agilist\n\n\t● Agile Methodologies (Scrum & Kanban); Project Management: Technical Projects — LinkedIn Learning\n\n\t● AI Fundamentals; CRM — Hewlett Packard Enterprise\n\n\t● Project Manager Job Simulation — Siemens\n\n\t● Microsoft Dynamics 365 Functional Consultant Training\n\n\t● Data Science & AI/ML — Bessant Technologies",
+    "normalized_text": "MOHAMMED KHIZER SHARIFF\nTechnical Program Manager | MarTech & Web Platform Delivery | Client-Facing Technical Leadership | AI-Assisted Engineering Execution\nBengaluru, Karnataka, India | +91-9731437210 | mdkhizer.shariff0@gmail.com | linkedin.com/in/mohammed-khizer-shariff\nPROFESSIONAL SUMMARY\nTechnical Program Manager with 4+ years of experience progressing from an engineering foundation into technical delivery and client-facing\nleadership, owning end-to-end execution for enterprise MarTech, web platform, and AI/GenAI engagements. Acts as single delivery owner across\nconcurrent client accounts — leading requirement discovery, converting business and marketing needs into structured execution plans, milestones,\nand delivery roadmaps, and partnering with solution SMEs and domain experts to define the right technical and MarTech solutions. Hands-on\ntechnical leadership spanning full-stack web application development, CMS and MarTech execution (WordPress, Adobe Experience Manager (AEM),\nHeadless CMS/Contentful), API integrations, system architecture, and the broader MarTech ecosystem — content, SEO, analytics, and digital\nexperience platforms. Drives sprint planning, execution tracking, risk management, and dependency resolution with strong delivery governance, and\nleverages AI-assisted tools (ChatGPT, Cursor) and automation to improve delivery efficiency, quality, and speed. Track record includes 95% on-time\ndelivery, 22% sprint velocity gains, and direct C-suite/client stakeholder management across Fortune 500 and enterprise accounts including KPMG,\nBosch, and HSBC. Engineering foundation from a B.E. in Electrical & Electronics Engineering and a PG Diploma in Industrial Automation.\nTECHNICAL SKILLS\nProgram & Delivery Execution: Sprint Planning, Execution Tracking, Dependency Resolution, Delivery Predictability, Backlog Management & Health,\nSpillover & Cycle-Time Tracking, Spec-Driven Development, RAID & Risk/Issues Log Management, Escalation Management, Meeting Cadence\nManagement, Minutes & Action Item Tracking, Status Reporting to Senior Leadership & Clients, Product Delivery, Product Operations, Roadmap\nManagement, Cross-Functional Resource Coordination & Leadership, Leading Through Influence (No Direct Authority), Client & Engagement\nOwnership, Single-Owner Delivery Model (2–3 Concurrent Engagements), Cross-Functional Product Teams, Resource Planning & Capacity\nManagement, Project Schedule Management, Project Deliverables Management, On-Time Launch Management, Cost, Quality & Delivery\nManagement, Regional Project Management, Project Governance Approvals\nWeb, CMS & MarTech: Full-Stack Web Application Development, CMS & MarTech Execution (WordPress, Adobe Experience Manager (AEM), Headless\nCMS, Contentful), MarTech Ecosystem (Content, SEO, Analytics, Digital Experience Platforms), Requirement Discovery & Solution Alignment, Solution\nSME Partnership, Technical Feasibility & Scalability Planning\nTechnical & Systems Fluency: System Architecture, APIs & Service Integration, Frontend/Backend/ML Coordination, Full SDLC (Specs, Code Review,\nCI/CD, Testing/QA, Release, Monitoring), Design Doc / PRD Review\nAI & GenAI: Agentic AI, AI Agent Orchestration, RAG, LLM Fine-Tuning (GPT-4, Open-Source), Prompt Engineering, AI-Assisted Engineering &\nAutomation-Driven Workflows (ChatGPT, Cursor), Intelligent Document Processing, AI-Based Document/Data Defect & Error Detection, OCR, NLP,\nComputer Vision, Azure OpenAI, LangChain, LlamaIndex, Vector Databases (FAISS, Pinecone, Chroma), ML Pipelines, Python, SQL\nDelivery Frameworks: Agile, Scrum, Kanban, SAFe, Waterfall, Hybrid Delivery, Stage-Gate / New Product Development (NPD) Process, NPD Projects,\nProduct Development Lifecycle, Product Launch / Launch Readiness, RFQ-to-Release Lifecycle Coordination, Release Management, CI/CD, Customer\nSign-off & Project Handover\nTools & Platforms: JIRA, Azure DevOps, Confluence, MS Project, ServiceNow, Smartsheet, ZOHO Projects, Trello, MS Excel (Advanced), Tableau, Power\nBI, Microsoft Dynamics 365, Cloud Applications\nProgram, Governance & Financial: PMO Governance, Program Roadmapping, Portfolio Management, Budget Forecasting, P&L Oversight, EVM,\nVendor & Partner Management, Executive & Client Stakeholder Communication, KPI/OKR/SLA Reporting, Strategic Planning, Execution Ownership &\nTalent Development, Customer Experience, Service Operations, B2B SaaS\nKEY ACHIEVEMENTS\n95% On-Time Delivery | 80+ Projects Delivered | 22% Sprint Velocity & Predictability Gain | 41% Data Error Reduction | 97% SLA Adherence | 15%\nCost Savings\nPROFESSIONAL EXPERIENCE\nTechnical Program Manager / AI Program Manager March 2026 – Present\nCogniQuest AI — Bengaluru, India\n● Own end-to-end delivery for an AI-driven Intelligent Document Processing pod, partnering closely with Engineering and Product on Agentic\nAI orchestration, RAG pipelines, and Azure Form Recognizer — hitting 95% on-time delivery and cutting time-to-market 20%.\n\n● Act as primary technical and delivery owner for the engagement, leading requirement discovery with stakeholders and converting business\nneeds into structured execution plans, milestones, and delivery roadmaps.\n\n● Managed end-to-end project schedules, cross-functional resources, deliverables, cost, quality, and delivery milestones through stage-gate\ngovernance, securing leadership sign-off at each phase of the product development lifecycle.\n\n● Lead cross-functional pod ceremonies (sprint planning, stand-ups, reviews, retrospectives) across AI/ML, Backend, and QA in JIRA — leading\nthrough influence across teams with no direct reporting line — improving sprint velocity 22%, strengthening sprint predictability, and cutting\nbacklog 30%.\n\n● Run a structured cadence of project and stage-gate governance meetings, documenting minutes and maintaining action item/action-rail\ntrackers, following up with owners to keep delivery unblocked.\n\n● Built Agentic AI workflows where autonomous agents handle multi-step document extraction, validation, and routing, cutting manual\nintervention 45%.\n\n● Designed RAG pipelines pairing vector databases (FAISS, Pinecone) with LLMs for context-aware document Q&A, improving retrieval\naccuracy 33%.\n\n● Ran fine-tuning on domain-specific LLMs, including GPT-4 and open-source models, lifting entity-extraction precision 18% on regulated\nclient datasets while maintaining data quality and security standards.\n\n● Took OCR pipeline accuracy from 84% to 96% and cut data validation errors 41% through business rule and fuzzy-matching frameworks —\nheld 97% SLA adherence throughout.\n\n● Owned P&L, budget forecasting, and stakeholder management across multiple enterprise accounts, driving renewals and upsell, and\nmaintained risk/issues registers with proactive escalation to leadership.\n\nTechnical Program Manager August 2025 – February 2026\nG7CR Technologies India Pvt Ltd — Bengaluru, India\n● Ran Agile/Scrum and SAFe ceremonies, including sprint retrospectives, across eight delivery teams and delivered KPI/OKR/SLA dashboards\nto C-suite leadership.\n\n● Drove GenAI program delivery including LLM-powered automation, AI agent orchestration, and Azure OpenAI integrations.\n\n● Directed program roadmaps and a portfolio of 40–50 concurrent projects spanning multiple product lines — Azure Cloud, Data & AI, GenAI,\nSoftware Development, Networking, and Data Centre Infrastructure — on time, in scope, on budget, applying stage-gate checkpoints from\nintake through on-time launch.\n\n● Reduced project disruption incidents 30% through proactive risk register and RAID log management across all programs, surfacing risk early\nand escalating appropriately.\n\n● Owned budget forecasting, P&L oversight, and cost control for the full portfolio, correcting overruns before they hit margins.\n\n● Standardized PMO workflows, SOW governance, and billing reconciliation, keeping delivery consistent and OKR-aligned.\n\nTechnical Program Manager April 2024 – August 2025\nInfocore Technologies Pvt Ltd — Bengaluru, India\n● Delivered 10+ Cloud, IoT, Data & AI, Network Security, and SaaS projects for KPMG, Bosch, HSBC, JW Marriott, and BEIC, all within scope,\nschedule, and budget.\n\n● Directed API integrations and full-stack workflow automation across service boundaries for client-facing web platforms, cutting client\nmanual effort 35%.\n\n● Managed Fortune 500 client relationships directly, presenting program status and governance updates to C-suite stakeholders and handling\nescalations, executive briefings, and project handover.\n\n● Led change management for enterprise system rollouts and maintained ISO 9001 compliance and PMO documentation across every delivery\nphase.\n\nProject Manager March 2023 – April 2024\nTejas Networks Pvt Ltd — Bengaluru, India\n● Ran Agile/Scrum ceremonies and authored BRDs, SRS documents, and SOPs — specifying work before build — while sustaining ISO 9001\ncompliance.\n\n● Managed IT infrastructure, 4G/5G networking, automation, and software deployment projects across concurrent workstreams from kickoff\nthrough closure, including post-implementation reviews and client sign-off.\n\n● Owned budget tracking and P&L reporting, and led LAN/WAN infrastructure migrations with zero business disruption.\n\nProject Coordinator / Electrical Engineer June 2022 – December 2022\nSupreme Electricals — Bengaluru, India\n● Coordinated PLC-based automation, deployment, and commissioning across manufacturing system integration projects on factory-floor\nproduction lines, improving operational efficiency 15%.\n\n● Built real-time KPI and cost dashboards in Excel and Tableau to support management decision-making.\n\nEDUCATION\nHMS Institute of Technology\nBachelor of Engineering (B.E.) — Electrical & Electronics Engineering | 2019 – 2023\n● CGPA: 7.5 / 10.0\n\nCERTIFICATIONS & TRAINING\n● PG Diploma in Industrial Automation (PGDIA)\n\n● SAFe Agilist\n\n● Agile Methodologies (Scrum & Kanban); Project Management: Technical Projects — LinkedIn Learning\n\n● AI Fundamentals; CRM — Hewlett Packard Enterprise\n\n● Project Manager Job Simulation — Siemens\n\n● Microsoft Dynamics 365 Functional Consultant Training\n\n● Data Science & AI/ML — Bessant Technologies",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 10226,
+    "normalized_chars": 10137,
+    "original_estimated_tokens": 2556,
+    "normalized_estimated_tokens": 2534,
+    "estimated_reduction_percent": 0.9
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "timed_out_calls": 1,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_source": null,
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Muse API request timed out after 20s.",
+    "input_type": "text",
+    "duration_ms": 20063.51,
+    "timeout_seconds": 20.0,
+    "usage": {},
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 10226,
+      "normalized_chars": 10137,
+      "estimated_reduction_percent": 0.9,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 2920.54,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "047031f4-7e96-40d2-8905-91230b2eeee6",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 10226,
+            "word_count": 1310,
+            "line_count": 151,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.13984,
+            "symbol_count": 61,
+            "symbol_ratio": 0.005965,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 10226,
+            "word_count": 1310,
+            "configured_section_count": 7,
+            "detected_count": 6,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "technical skills",
+              "Work Experience": "experience",
+              "Education": "education",
+              "Certifications": "certifications"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 10226,
+            "word_count": 1310,
+            "line_count": 151,
+            "non_empty_line_count": 111,
+            "short_line_count": 11,
+            "short_line_ratio": 0.099099,
+            "fragmented_line_count": 7,
+            "fragmented_line_ratio": 0.063063,
+            "mean_line_length": 90.05,
+            "median_line_length": 116.0,
+            "line_length_stdev": 49.34,
+            "line_length_cv": 0.547993,
+            "broken_sentence_count": 26,
+            "broken_sentence_ratio": 0.236364,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 20063.51,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 2920.54,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "047031f4-7e96-40d2-8905-91230b2eeee6_SHJ-5354_SHC-245975.pdf"
+}

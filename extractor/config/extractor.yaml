@@ -1,0 +1,129 @@
+# SATVIQ Document Extractor Engine configuration
+#
+# The ExtractionManager loads this file by default. Every value here can
+# be overridden programmatically:
+#   ExtractionManager(config={"extractors": {"ocr": {"enabled": False}}})
+# or by pointing the manager at a different file:
+#   ExtractionManager(config_path="path/to/extractor.yaml")
+
+manager:
+  # Extraction order — extractors are tried sequentially in this order.
+  order:
+    - tika
+    - pymupdf
+    - docling
+    - ocr
+  # Hard cap on the number of extractor attempts for one document,
+  # regardless of how many extractors are configured.
+  max_attempts: 4
+  # Total wall-clock budget for one document, across all attempts.
+  max_total_timeout_seconds: 300
+
+# Basic acceptance policy (NOT the Quality Checker).
+# A successful extraction is accepted only if it also contains
+# meaningful text. Otherwise the manager continues to the next
+# extractor and records the rejection reason in the attempt history.
+acceptance:
+  min_text_chars: 50
+  min_word_count: 10
+  require_success: true
+
+# Quality gate policy (used by the GUI/API integration layer,
+# api.pipeline.QualityGatePolicy — the manager itself does not read
+# this section). After every extraction attempt the real Quality
+# Checker scores the text and the gate decides:
+#   PASS    (all filters >= warn_below) -> accept, stop fallback
+#   WARNING (any filter < warn_below, but text_health and
+#            reading_order >= fail_below) -> hold the result as a
+#            candidate and try the next extractor, when the warning
+#            is significant: lowest filter score < warning_continue_below
+#            (default = warn_below, so any WARNING continues). A
+#            WARNING at/above warning_continue_below is accepted
+#            immediately. Missing sections lower Completeness but can
+#            never cause FAIL on their own.
+#   FAIL    (text_health or reading_order < fail_below) -> reject,
+#            try the next extractor
+# If no extractor is accepted outright, the best candidate is
+# returned: highest weakest-filter score, then highest average of the
+# three scores, then earliest in the configured order.
+quality_gate:
+  fail_below: 50
+  warn_below: 75
+  warning_continue_below: 75
+
+extractors:
+  tika:
+    enabled: true
+    # Hard cap for the Java subprocess (Tika 4 JVM startup + parse).
+    timeout_seconds: 120
+    # Apache Tika 4.2.0 runs as a Java subprocess on the local
+    # tika-app JAR — there is NO Tika server and no Python tika client.
+    #   jar_path resolution: this value -> TIKA_JAR_PATH env ->
+    #   TIKA_APP_JAR env -> Windows default C:\Apache\Tika\tika-app-4.2.0.jar
+    # Leave jar_path null to use the env/default resolution.
+    jar_path: null
+    # Java executable: this value -> JAVA_BIN env -> "java" from PATH.
+    # Apache Tika 4.x requires Java 17+.
+    java_bin: null
+    # --- OCR (Tesseract, running inside Tika) ---
+    # When enabled, each Tika run gets a generated Tika 4 JSON config:
+    # the Tesseract engine is registered as a text recognizer and the
+    # PDF page-text strategy below is applied. Scanned/image PDFs and
+    # raster images are OCR'd by Tika itself; text PDFs keep their
+    # text layer under "auto".
+    ocr_enabled: true
+    # Tesseract language (env TIKA_OCR_LANGUAGE overrides when set
+    # programmatically; the config file value is the default).
+    ocr_language: "eng"
+    # PDF strategy: auto | ocr_only | ocr_and_text | no_ocr
+    ocr_strategy: "auto"
+    # Render DPI for OCR'd PDF pages.
+    ocr_dpi: 300
+    # Tesseract's own per-call timeout, seconds.
+    ocr_timeout_seconds: 120
+    # Tesseract executable OR its install directory. Resolution:
+    # this value -> TESSERACT_PATH env -> PATH -> Windows default
+    # C:\Program Files\Tesseract-OCR. Leave null for auto-detection.
+    tesseract_path: null
+    # Optional tessdata directory (env TESSDATA_PATH). Only needed
+    # when language data is not in Tesseract's default location.
+    tessdata_path: null
+    # Use an existing Tika JSON config as-is instead of generating
+    # one (env TIKA_CONFIG_PATH), e.g. a Tika Server tika-config.json.
+    tika_config_path: null
+    # MIME types / extensions are not restricted by default: Tika is the
+    # primary, general-purpose extractor. List extensions (without dot)
+    # here only if you want to restrict it.
+    supported_extensions: []
+
+  pymupdf:
+    enabled: true
+    timeout_seconds: 30
+    # PDFs whose total embedded text is shorter than this are reported
+    # as having no meaningful embedded text (likely scanned) so the
+    # manager can fall through to Docling / OCR.
+    min_meaningful_text_chars: 20
+    # Password used for encrypted PDFs, if one is known. null = none.
+    password: null
+
+  docling:
+    enabled: true
+    timeout_seconds: 180
+    # Passed explicitly to Docling where the installed version supports
+    # them. Kept as plain data so config stays version-tolerant.
+    options:
+      do_ocr: false
+      do_table_structure: true
+
+  ocr:
+    enabled: true
+    timeout_seconds: 180
+    # Tesseract language(s), e.g. "eng" or "eng+hin".
+    language: "eng"
+    # Rendering resolution for PDF pages before OCR.
+    dpi: 300
+    # Optional explicit path to the tesseract binary.
+    # null = look it up on PATH. OCR is reported unavailable if the
+    # binary cannot be found — it is never faked.
+    tesseract_cmd: "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+

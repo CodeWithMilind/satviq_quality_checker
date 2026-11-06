@@ -1,0 +1,44 @@
+# Text Health filter configuration
+# All thresholds live here — the filter class contains no hardcoded limits.
+
+thresholds:
+  # A resume shorter than this is considered empty / nearly empty.
+  min_char_count: 200
+  min_word_count: 30
+  # Below optimum but above minimum: partial penalty instead of a hard fail.
+  good_char_count: 500
+  good_word_count: 80
+
+  # U+FFFD replacement character (classic sign of a broken decode).
+  replacement_char_warn_ratio: 0.001   # 0.1%
+  replacement_char_max_ratio: 0.02     # 2% -> maximum penalty
+
+  # Control / non-printable characters (tab, newline, CR are allowed).
+  non_printable_warn_ratio: 0.001
+  non_printable_max_ratio: 0.05
+
+  # Share of characters that are whitespace.
+  whitespace_warn_ratio: 0.35
+  whitespace_max_ratio: 0.70
+
+  # Symbols = non-alphanumeric, non-whitespace, non-basic-punctuation.
+  symbol_warn_ratio: 0.10
+  symbol_max_ratio: 0.35
+
+  # Long runs of the same character, e.g. "aaaaaaaa" or "==========".
+  repeated_char_run_warn: 12
+  repeated_char_run_max: 40
+  # Lines that are almost entirely one repeated character (rules, garbage).
+  repeated_line_ratio_warn: 0.10
+  repeated_line_ratio_max: 0.40
+
+# Maximum points deducted for each check (score starts at 100).
+penalties:
+  empty_text: 100
+  very_short_text: 60
+  short_text: 25
+  replacement_chars: 35
+  non_printable_chars: 30
+  abnormal_whitespace: 25
+  high_symbol_ratio: 25
+  repeated_characters: 20

@@ -1,0 +1,2191 @@
+{
+  "resume_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+  "filename": "SHJ-5412_SHC-382596.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 341635,
+  "uploaded_at": "2026-11-05T12:47:38.253596+00:00",
+  "success": true,
+  "extractor_used": "muse_ai",
+  "duration_ms": 9166.34,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 6963.63,
+      "text": "Kuldeep Sengar \n\n  kuldeepsengar9536@gmail.com \n\n  (+91) 9368317466 \n\n \n\n \n\n \n\nCAREER OBJECTIVE \n \n\n    Looking for a position in the Information Technology industry where I can \n\nleverage my skills and abilities to contribute to innovation and problem-solving, \n\nwhile fostering professional growth and adapting to new challenges \n \n\nPROFILE \n \n\n    A highly motivated tech support professional with expertise in troubleshooting, \n\nanalyzing, and resolving complex technical issues using advanced problem-\n\nsolving techniques. \n\n \n\nWORKING EXPERIENCE ( 2.5+ Years ) \n\n Customer Support Engineer at Niti Aayog (Module Informatics Private \n\nLimited, Noida) : December 2023- Present  \n\n Windows (Window 7, 10 & 11) -formatting, configure, Partition, \n\nDrivers Installation and Update, software configuration.  \n\n Manage Laptop, Desktop - Part Replacement and Troubleshooting. \n\n Printer Configuration (USB and Network Printer). \n\n Provide Support to Remote Client using TightVNC & Anydesk. \n\n Configure, Backup & Restore of Outlook Mail and MS Office – \n\n2010, 2013, 2016. \n\n Manage and Update IT Asset Inventory on Excel. \n\n Understand basic networking concepts LANs & WANs, IP Address, \n\nDNS and DHCP. \n\n Active Management of Service Requests, Incidents, and Activities. \n\n Document and Maintain IT support procedures, Guidelines and \n\nKnowledge-Base articles. \n\n \n\n IT Support Engineer  in SAIL( Steel Authority of India Limited ) Yard, \n\nBallabhgarh : August2022- November 2023  \n\n \n\n \n\n \n\n \n\n \n\n \n\nmailto:kuldeepsengar9536@gmail.com\n\n\n \n\n \n\nEDUCATIONAL QUALIFICATION \n \n\n High School, UP Board \n\n Intermediate, UP Board \n\n B. Sc. (PCM)  -DBRAU Agra \n\n \n\nPERSONAL DETAILS \n \nFather’s Name :    Mr.  Ramkishan Singh \nDate of Birth :  08/04/1994 \n\nReligion :    Hindu \nNationality :  Indian \nLanguages Known :   English and Hindi \n\n Permanent Address :   Vill- Punner, Dist.- Hathras, U.P.204102                          \n\n \n\n \n\nDECLARATION \n \n\nI hereby solemnly declare that above furnished particulars are true to the \n\nbest my knowledge and   belief. \n \n\n \n\n  Date:         Kuldeep Sengar \n\n \n\nPlace:",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-05T12:47:16.148399+00:00",
+      "completed_at": "2026-11-05T12:47:23.116067+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 86.56,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "14 non-printable characters found (0.66% of text).",
+            "Repeated-character corruption suspected: longest run is 26 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2117,
+            "word_count": 273,
+            "line_count": 131,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 14,
+            "non_printable_ratio": 0.006613,
+            "whitespace_ratio": 0.232877,
+            "symbol_count": 16,
+            "symbol_ratio": 0.007558,
+            "max_repeated_char_run": 26,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 58.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2117,
+            "word_count": 273,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Summary"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2117,
+            "word_count": 273,
+            "line_count": 131,
+            "non_empty_line_count": 46,
+            "short_line_count": 12,
+            "short_line_ratio": 0.26087,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.108696,
+            "mean_line_length": 40.78,
+            "median_line_length": 35.5,
+            "line_length_stdev": 22.6,
+            "line_length_cv": 0.554097,
+            "broken_sentence_count": 6,
+            "broken_sentence_ratio": 0.133333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": false,
+      "attempt_id": "c00159f3-0a1f-4166-add0-8afc81f892fb-attempt-1",
+      "resume_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "Kuldeep Sengar \n\n  kuldeepsengar9536@gmail.com \n\n  (+91) 9368317466 \n\n \n\n \n\n \n\nCAREER OBJECTIVE \n \n\n    Looking for a position in the Information Technology industry where I can \n\nleverage my skills and abilities to contribute to innovation and problem-solving, \n\nwhile fostering professional growth and adapting to new challenges \n \n\nPROFILE \n \n\n    A highly motivated tech support professional with expertise in troubleshooting, \n\nanalyzing, and resolving complex technical issues using advanced problem-\n\nsolving techniques. \n\n \n\nWORKING EXPERIENCE ( 2.5+ Years ) \n\n Customer Support Engineer at Niti Aayog (Module Informatics Private \n\nLimited, Noida) : December 2023- Present  \n\n Windows (Window 7, 10 & 11) -formatting, configure, Partition, \n\nDrivers Installation and Update, software configuration.  \n\n Manage Laptop, Desktop - Part Replacement and Troubleshooting. \n\n Printer Configuration (USB and Network Printer). \n\n Provide Support to Remote Client using TightVNC & Anydesk. \n\n Configure, Backup & Restore of Outlook Mail and MS Office – \n\n2010, 2013, 2016. \n\n Manage and Update IT Asset Inventory on Excel. \n\n Understand basic networking concepts LANs & WANs, IP Address, \n\nDNS and DHCP. \n\n Active Management of Service Requests, Incidents, and Activities. \n\n Document and Maintain IT support procedures, Guidelines and \n\nKnowledge-Base articles. \n\n \n\n IT Support Engineer  in SAIL( Steel Authority of India Limited ) Yard, \n\nBallabhgarh : August2022- November 2023  \n\n \n\n \n\n \n\n \n\n \n\n \n\nmailto:kuldeepsengar9536@gmail.com\n\n\n \n\n \n\nEDUCATIONAL QUALIFICATION \n \n\n High School, UP Board \n\n Intermediate, UP Board \n\n B. Sc. (PCM)  -DBRAU Agra \n\n \n\nPERSONAL DETAILS \n \nFather’s Name :    Mr.  Ramkishan Singh \nDate of Birth :  08/04/1994 \n\nReligion :    Hindu \nNationality :  Indian \nLanguages Known :   English and Hindi \n\n Permanent Address :   Vill- Punner, Dist.- Hathras, U.P.204102                          \n\n \n\n \n\nDECLARATION \n \n\nI hereby solemnly declare that above furnished particulars are true to the \n\nbest my knowledge and   belief. \n \n\n \n\n  Date:         Kuldeep Sengar \n\n \n\nPlace:",
+      "extracted_text_length": 2117,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 86.56,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "14 non-printable characters found (0.66% of text).",
+            "Repeated-character corruption suspected: longest run is 26 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2117,
+            "word_count": 273,
+            "line_count": 131,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 14,
+            "non_printable_ratio": 0.006613,
+            "whitespace_ratio": 0.232877,
+            "symbol_count": 16,
+            "symbol_ratio": 0.007558,
+            "max_repeated_char_run": 26,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 58.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2117,
+            "word_count": 273,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Summary"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2117,
+            "word_count": 273,
+            "line_count": 131,
+            "non_empty_line_count": 46,
+            "short_line_count": 12,
+            "short_line_ratio": 0.26087,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.108696,
+            "mean_line_length": 40.78,
+            "median_line_length": 35.5,
+            "line_length_stdev": 22.6,
+            "line_length_cv": 0.554097,
+            "broken_sentence_count": 6,
+            "broken_sentence_ratio": 0.133333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": false,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "extractor_name": "pymupdf",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 32.75,
+      "text": "Kuldeep Sengar \n  kuldeepsengar9536@gmail.com \n  (+91) 9368317466 \n \n \n \nCAREER OBJECTIVE \n \n    Looking for a position in the Information Technology industry where I can \nleverage my skills and abilities to contribute to innovation and problem-solving, \nwhile fostering professional growth and adapting to new challenges \n \nPROFILE \n \n    A highly motivated tech support professional with expertise in troubleshooting, \nanalyzing, and resolving complex technical issues using advanced problem-\nsolving techniques. \n \nWORKING EXPERIENCE ( 2.5+ Years ) \n Customer Support Engineer at Niti Aayog (Module Informatics Private \nLimited, Noida) : December 2023- Present  \n Windows (Window 7, 10 & 11) -formatting, configure, Partition, \nDrivers Installation and Update, software configuration.  \n Manage Laptop, Desktop - Part Replacement and Troubleshooting. \n Printer Configuration (USB and Network Printer). \n Provide Support to Remote Client using TightVNC & Anydesk. \n Configure, Backup & Restore of Outlook Mail and MS Office – \n2010, 2013, 2016. \n Manage and Update IT Asset Inventory on Excel. \n Understand basic networking concepts LANs & WANs, IP Address, \nDNS and DHCP. \n Active Management of Service Requests, Incidents, and Activities. \n Document and Maintain IT support procedures, Guidelines and \nKnowledge-Base articles. \n \n IT Support Engineer  in SAIL( Steel Authority of India Limited ) Yard, \nBallabhgarh : August2022- November 2023\nEDUCATIONAL QUALIFICATION \n \n \nHigh School, UP Board \n \nIntermediate, UP Board \n \nB. Sc. (PCM)  -DBRAU Agra \n \nPERSONAL DETAILS \n \nFather’s Name \n:    Mr.  Ramkishan Singh \nDate of Birth \n:  08/04/1994 \nReligion \n:    Hindu \nNationality \n:  Indian \nLanguages Known \n:   English and Hindi \n Permanent Address \n:   Vill- Punner, Dist.- Hathras, U.P.204102                          \n \n \nDECLARATION \n \nI hereby solemnly declare that above furnished particulars are true to the \nbest my knowledge and  belief. \n \n \n  Date: \n \n \n \n \n \n \n \n \nKuldeep Sengar \n \nPlace:",
+      "extractor_version": "1.28.2",
+      "started_at": "2026-11-05T12:47:23.125345+00:00",
+      "completed_at": "2026-11-05T12:47:23.159605+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "format": "PDF 1.5",
+        "author": "krishna PC",
+        "creator": "Aspose Ltd.",
+        "producer": "Aspose.PDF for Java 18.8",
+        "creationDate": "D:20241217104931+05'30'",
+        "modDate": "D:20261014123230+05'30'"
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 86.37,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "14 non-printable characters found (0.69% of text).",
+            "Repeated-character corruption suspected: longest run is 26 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2021,
+            "word_count": 272,
+            "line_count": 80,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 14,
+            "non_printable_ratio": 0.006927,
+            "whitespace_ratio": 0.213261,
+            "symbol_count": 16,
+            "symbol_ratio": 0.007917,
+            "max_repeated_char_run": 26,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 58.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2021,
+            "word_count": 272,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Summary"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 97.27,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES"
+          ],
+          "reasons": [
+            "43.6% of lines have 2 words or fewer — text may be fragmented or columns may have been split."
+          ],
+          "metrics": {
+            "char_count": 2021,
+            "word_count": 272,
+            "line_count": 80,
+            "non_empty_line_count": 55,
+            "short_line_count": 24,
+            "short_line_ratio": 0.436364,
+            "fragmented_line_count": 18,
+            "fragmented_line_ratio": 0.327273,
+            "mean_line_length": 33.15,
+            "median_line_length": 24.0,
+            "line_length_stdev": 24.73,
+            "line_length_cv": 0.746109,
+            "broken_sentence_count": 5,
+            "broken_sentence_ratio": 0.092593,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": false,
+      "attempt_id": "c00159f3-0a1f-4166-add0-8afc81f892fb-attempt-2",
+      "resume_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+      "attempt_number": 2,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "Kuldeep Sengar \n  kuldeepsengar9536@gmail.com \n  (+91) 9368317466 \n \n \n \nCAREER OBJECTIVE \n \n    Looking for a position in the Information Technology industry where I can \nleverage my skills and abilities to contribute to innovation and problem-solving, \nwhile fostering professional growth and adapting to new challenges \n \nPROFILE \n \n    A highly motivated tech support professional with expertise in troubleshooting, \nanalyzing, and resolving complex technical issues using advanced problem-\nsolving techniques. \n \nWORKING EXPERIENCE ( 2.5+ Years ) \n Customer Support Engineer at Niti Aayog (Module Informatics Private \nLimited, Noida) : December 2023- Present  \n Windows (Window 7, 10 & 11) -formatting, configure, Partition, \nDrivers Installation and Update, software configuration.  \n Manage Laptop, Desktop - Part Replacement and Troubleshooting. \n Printer Configuration (USB and Network Printer). \n Provide Support to Remote Client using TightVNC & Anydesk. \n Configure, Backup & Restore of Outlook Mail and MS Office – \n2010, 2013, 2016. \n Manage and Update IT Asset Inventory on Excel. \n Understand basic networking concepts LANs & WANs, IP Address, \nDNS and DHCP. \n Active Management of Service Requests, Incidents, and Activities. \n Document and Maintain IT support procedures, Guidelines and \nKnowledge-Base articles. \n \n IT Support Engineer  in SAIL( Steel Authority of India Limited ) Yard, \nBallabhgarh : August2022- November 2023\nEDUCATIONAL QUALIFICATION \n \n \nHigh School, UP Board \n \nIntermediate, UP Board \n \nB. Sc. (PCM)  -DBRAU Agra \n \nPERSONAL DETAILS \n \nFather’s Name \n:    Mr.  Ramkishan Singh \nDate of Birth \n:  08/04/1994 \nReligion \n:    Hindu \nNationality \n:  Indian \nLanguages Known \n:   English and Hindi \n Permanent Address \n:   Vill- Punner, Dist.- Hathras, U.P.204102                          \n \n \nDECLARATION \n \nI hereby solemnly declare that above furnished particulars are true to the \nbest my knowledge and  belief. \n \n \n  Date: \n \n \n \n \n \n \n \n \nKuldeep Sengar \n \nPlace:",
+      "extracted_text_length": 2021,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 86.37,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "14 non-printable characters found (0.69% of text).",
+            "Repeated-character corruption suspected: longest run is 26 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2021,
+            "word_count": 272,
+            "line_count": 80,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 14,
+            "non_printable_ratio": 0.006927,
+            "whitespace_ratio": 0.213261,
+            "symbol_count": 16,
+            "symbol_ratio": 0.007917,
+            "max_repeated_char_run": 26,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 58.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2021,
+            "word_count": 272,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Summary"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 97.27,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES"
+          ],
+          "reasons": [
+            "43.6% of lines have 2 words or fewer — text may be fragmented or columns may have been split."
+          ],
+          "metrics": {
+            "char_count": 2021,
+            "word_count": 272,
+            "line_count": 80,
+            "non_empty_line_count": 55,
+            "short_line_count": 24,
+            "short_line_ratio": 0.436364,
+            "fragmented_line_count": 18,
+            "fragmented_line_ratio": 0.327273,
+            "mean_line_length": 33.15,
+            "median_line_length": 24.0,
+            "line_length_stdev": 24.73,
+            "line_length_cv": 0.746109,
+            "broken_sentence_count": 5,
+            "broken_sentence_ratio": 0.092593,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "extractor_name": "docling",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 9166.34,
+      "text": "Kuldeep Sengar\n\nkuldeepsengar9536@gmail.com\n\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n\n- Customer Support Engineer at Niti Aayog (Module Informatics Private Limited, Noida) : December 2023- Present\n- Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\n- Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n- Printer Configuration (USB and Network Printer).\n- Provide Support to Remote Client using TightVNC & Anydesk.\n- Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.\n- Manage and Update IT Asset Inventory on Excel.\n- Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\n- Active Management of Service Requests, Incidents, and Activities.\n- Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\n- IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard, Ballabhgarh : August2022- November 2023\n\nEDUCATIONAL QUALIFICATION\n\n- High School, UP Board\n- Intermediate, UP Board\n- B. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather's Name : Mr. Ramkishan Singh Date of Birth : 08/04/1994 Religion : Hindu Nationality : Indian Languages Known : English and Hindi\n\nPermanent Address\n\n: Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the best my knowledge and belief.\n\nDate: Place:\n\nKuldeep Sengar",
+      "extractor_version": "2.146.0",
+      "started_at": "2026-11-05T12:47:23.171592+00:00",
+      "completed_at": "2026-11-05T12:47:32.339418+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+        "source_tool": "docling",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1877,
+            "word_count": 271,
+            "line_count": 49,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.153436,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 58.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1877,
+            "word_count": 271,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Summary"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1877,
+            "word_count": 271,
+            "line_count": 49,
+            "non_empty_line_count": 31,
+            "short_line_count": 11,
+            "short_line_ratio": 0.354839,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.16129,
+            "mean_line_length": 59.0,
+            "median_line_length": 42.0,
+            "line_length_stdev": 51.84,
+            "line_length_cv": 0.878565,
+            "broken_sentence_count": 1,
+            "broken_sentence_ratio": 0.033333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": false,
+      "attempt_id": "c00159f3-0a1f-4166-add0-8afc81f892fb-attempt-3",
+      "resume_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+      "attempt_number": 3,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "Kuldeep Sengar\n\nkuldeepsengar9536@gmail.com\n\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n\n- Customer Support Engineer at Niti Aayog (Module Informatics Private Limited, Noida) : December 2023- Present\n- Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\n- Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n- Printer Configuration (USB and Network Printer).\n- Provide Support to Remote Client using TightVNC & Anydesk.\n- Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.\n- Manage and Update IT Asset Inventory on Excel.\n- Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\n- Active Management of Service Requests, Incidents, and Activities.\n- Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\n- IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard, Ballabhgarh : August2022- November 2023\n\nEDUCATIONAL QUALIFICATION\n\n- High School, UP Board\n- Intermediate, UP Board\n- B. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather's Name : Mr. Ramkishan Singh Date of Birth : 08/04/1994 Religion : Hindu Nationality : Indian Languages Known : English and Hindi\n\nPermanent Address\n\n: Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the best my knowledge and belief.\n\nDate: Place:\n\nKuldeep Sengar",
+      "extracted_text_length": 1877,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+        "source_tool": "docling",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1877,
+            "word_count": 271,
+            "line_count": 49,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.153436,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 58.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1877,
+            "word_count": 271,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Summary"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1877,
+            "word_count": 271,
+            "line_count": 49,
+            "non_empty_line_count": 31,
+            "short_line_count": 11,
+            "short_line_ratio": 0.354839,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.16129,
+            "mean_line_length": 59.0,
+            "median_line_length": 42.0,
+            "line_length_stdev": 51.84,
+            "line_length_cv": 0.878565,
+            "broken_sentence_count": 1,
+            "broken_sentence_ratio": 0.033333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "extractor_name": "ocr",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 5889.55,
+      "text": "Kuldeep Sengar\n\nkuldeepsengar9536 @ gmail.com\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can\nleverage my skills and abilities to contribute to innovation and problem-solving,\nwhile fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting,\nanalyzing, and resolving complex technical issues using advanced problem-\nsolving techniques.\n\nWORKING EXPERIENCE (2.5+ Years )\n\ne Customer Support Engineer at Niti Aayog (Module Informatics Private\nLimited, Noida) : December 2023- Present\n\n> Windows (Window 7, 10 & 11) -formatting, configure, Partition,\nDrivers Installation and Update, software configuration.\n\nManage Laptop, Desktop - Part Replacement and Troubleshooting.\nPrinter Configuration (USB and Network Printer).\n\nConfigure, Backup & Restore of Outlook Mail and MS Office —\n2010, 2013, 2016.\n\nManage and Update IT Asset Inventory on Excel.\n\nUnderstand basic networking concepts LANs & WANs, IP Address,\nDNS and DHCP.\n\n> Active Management of Service Requests, Incidents, and Activities.\n\n>\n>\n> Provide Support to Remote Client using TightVNC & Anydesk.\n>\n>\n>\n\n> Document and Maintain IT support procedures, Guidelines and\nKnowledge-Base articles.\n\ne IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard,\nBallabhgarh : August2022- November 2023\nEDUCATIONAL QUALIFICATION\n\ne High School, UP Board\ne Intermediate, UP Board\ne B.Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather’s Name : Mr. Ramkishan Singh\n\nDate of Birth > 08/04/1994\n\nReligion : Hindu\n\nNationality : Indian\n\nLanguages Known : English and Hindi\n\nPermanent Address :  WVill- Punner, Dist.- Hathras, U.P.204102\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the\nbest my knowledge and belief.\n\nDate: Kuldeep Sengar\n\nPlace:",
+      "extractor_version": "0.3.13",
+      "started_at": "2026-11-05T12:47:32.352712+00:00",
+      "completed_at": "2026-11-05T12:47:38.243820+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "ocr_language": "eng",
+        "ocr_dpi": 300,
+        "tesseract_path": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+        "source_tool": "ocr",
+        "attempt_id": "attempt-4",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1890,
+            "word_count": 272,
+            "line_count": 77,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.158201,
+            "symbol_count": 2,
+            "symbol_ratio": 0.001058,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 58.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1890,
+            "word_count": 272,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Summary"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 98.88,
+          "flags": [
+            "REPEATED_ADJACENT_LINES"
+          ],
+          "reasons": [
+            "3 adjacent line(s) are exact repeats of the previous line."
+          ],
+          "metrics": {
+            "char_count": 1890,
+            "word_count": 272,
+            "line_count": 77,
+            "non_empty_line_count": 50,
+            "short_line_count": 15,
+            "short_line_ratio": 0.3,
+            "fragmented_line_count": 10,
+            "fragmented_line_ratio": 0.2,
+            "mean_line_length": 36.28,
+            "median_line_length": 29.0,
+            "line_length_stdev": 24.73,
+            "line_length_cv": 0.681525,
+            "broken_sentence_count": 8,
+            "broken_sentence_ratio": 0.163265,
+            "repeated_adjacent_count": 3,
+            "repeated_adjacent_ratio": 0.061224
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": false,
+      "attempt_id": "c00159f3-0a1f-4166-add0-8afc81f892fb-attempt-4",
+      "resume_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+      "attempt_number": 4,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "Kuldeep Sengar\n\nkuldeepsengar9536 @ gmail.com\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can\nleverage my skills and abilities to contribute to innovation and problem-solving,\nwhile fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting,\nanalyzing, and resolving complex technical issues using advanced problem-\nsolving techniques.\n\nWORKING EXPERIENCE (2.5+ Years )\n\ne Customer Support Engineer at Niti Aayog (Module Informatics Private\nLimited, Noida) : December 2023- Present\n\n> Windows (Window 7, 10 & 11) -formatting, configure, Partition,\nDrivers Installation and Update, software configuration.\n\nManage Laptop, Desktop - Part Replacement and Troubleshooting.\nPrinter Configuration (USB and Network Printer).\n\nConfigure, Backup & Restore of Outlook Mail and MS Office —\n2010, 2013, 2016.\n\nManage and Update IT Asset Inventory on Excel.\n\nUnderstand basic networking concepts LANs & WANs, IP Address,\nDNS and DHCP.\n\n> Active Management of Service Requests, Incidents, and Activities.\n\n>\n>\n> Provide Support to Remote Client using TightVNC & Anydesk.\n>\n>\n>\n\n> Document and Maintain IT support procedures, Guidelines and\nKnowledge-Base articles.\n\ne IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard,\nBallabhgarh : August2022- November 2023\nEDUCATIONAL QUALIFICATION\n\ne High School, UP Board\ne Intermediate, UP Board\ne B.Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather’s Name : Mr. Ramkishan Singh\n\nDate of Birth > 08/04/1994\n\nReligion : Hindu\n\nNationality : Indian\n\nLanguages Known : English and Hindi\n\nPermanent Address :  WVill- Punner, Dist.- Hathras, U.P.204102\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the\nbest my knowledge and belief.\n\nDate: Kuldeep Sengar\n\nPlace:",
+      "extracted_text_length": 1890,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+        "source_tool": "ocr",
+        "attempt_id": "attempt-4",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1890,
+            "word_count": 272,
+            "line_count": 77,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.158201,
+            "symbol_count": 2,
+            "symbol_ratio": 0.001058,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 58.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1890,
+            "word_count": 272,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Summary"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 98.88,
+          "flags": [
+            "REPEATED_ADJACENT_LINES"
+          ],
+          "reasons": [
+            "3 adjacent line(s) are exact repeats of the previous line."
+          ],
+          "metrics": {
+            "char_count": 1890,
+            "word_count": 272,
+            "line_count": 77,
+            "non_empty_line_count": 50,
+            "short_line_count": 15,
+            "short_line_ratio": 0.3,
+            "fragmented_line_count": 10,
+            "fragmented_line_ratio": 0.2,
+            "mean_line_length": 36.28,
+            "median_line_length": 29.0,
+            "line_length_stdev": 24.73,
+            "line_length_cv": 0.681525,
+            "broken_sentence_count": 8,
+            "broken_sentence_ratio": 0.163265,
+            "repeated_adjacent_count": 3,
+            "repeated_adjacent_ratio": 0.061224
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "attempt_id": "c00159f3-0a1f-4166-add0-8afc81f892fb-attempt-5",
+      "resume_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+      "attempt_number": 5,
+      "extractor_name": "muse_ai",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "decision": "accept",
+      "decision_reason": "Muse AI returned schema-valid Resume JSON.",
+      "quality_status": null,
+      "quality": null,
+      "quality_checker_report": null,
+      "duration_ms": 18853.34,
+      "text": "{\"full_name\": \"Kuldeep Sengar\", \"email\": \"kuldeepsengar9536@gmail.com\", \"phone\": \"(+91) 9368317466\", \"location\": \"Vill- Punner, Dist.- Hathras, U.P.204102\", \"summary\": \"A highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problem-solving techniques.\", \"skills\": {\"technical_skills\": [\"Windows 7, 10 & 11 formatting, configure, Partition, Drivers Installation and Update, software configuration\", \"Laptop, Desktop Part Replacement and Troubleshooting\", \"Printer Configuration (USB and Network Printer)\", \"Remote Client Support\", \"Configure, Backup & Restore of Outlook Mail and MS Office 2010, 2013, 2016\", \"IT Asset Inventory management on Excel\", \"LANs & WANs, IP Address, DNS and DHCP\", \"Service Requests, Incidents, and Activities management\", \"IT support procedures, Guidelines and Knowledge-Base documentation\"], \"soft_skills\": [\"problem-solving\"], \"tools\": [\"TightVNC\", \"Anydesk\", \"MS Office 2010, 2013, 2016\", \"Outlook Mail\", \"Excel\", \"Windows 7, 10, 11\"], \"taxonomy_skills\": [], \"other_skills\": []}, \"experience\": [{\"title\": \"Customer Support Engineer\", \"company\": \"Niti Aayog (Module Informatics Private Limited, Noida)\", \"location\": \"Noida\", \"start_date\": \"December 2023\", \"end_date\": \"Present\", \"highlights\": [\"Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\", \"Manage Laptop, Desktop - Part Replacement and Troubleshooting.\", \"Printer Configuration (USB and Network Printer).\", \"Provide Support to Remote Client using TightVNC & Anydesk.\", \"Configure, Backup & Restore of Outlook Mail and MS Office \\u2013 2010, 2013, 2016.\", \"Manage and Update IT Asset Inventory on Excel.\", \"Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\", \"Active Management of Service Requests, Incidents, and Activities.\", \"Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\"]}, {\"title\": \"IT Support Engineer\", \"company\": \"SAIL (Steel Authority of India Limited) Yard\", \"location\": \"Ballabhgarh\", \"start_date\": \"August 2022\", \"end_date\": \"November 2023\", \"highlights\": []}], \"education\": [{\"degree\": \"High School\", \"institution\": \"UP Board\", \"location\": \"\", \"start_date\": \"\", \"end_date\": \"\"}, {\"degree\": \"Intermediate\", \"institution\": \"UP Board\", \"location\": \"\", \"start_date\": \"\", \"end_date\": \"\"}, {\"degree\": \"B. Sc. (PCM)\", \"institution\": \"DBRAU Agra\", \"location\": \"\", \"start_date\": \"\", \"end_date\": \"\"}], \"certifications\": [], \"languages\": [\"English\", \"Hindi\"], \"links\": [\"mailto:kuldeepsengar9536@gmail.com\"]}",
+      "extracted_text": "{\"full_name\": \"Kuldeep Sengar\", \"email\": \"kuldeepsengar9536@gmail.com\", \"phone\": \"(+91) 9368317466\", \"location\": \"Vill- Punner, Dist.- Hathras, U.P.204102\", \"summary\": \"A highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problem-solving techniques.\", \"skills\": {\"technical_skills\": [\"Windows 7, 10 & 11 formatting, configure, Partition, Drivers Installation and Update, software configuration\", \"Laptop, Desktop Part Replacement and Troubleshooting\", \"Printer Configuration (USB and Network Printer)\", \"Remote Client Support\", \"Configure, Backup & Restore of Outlook Mail and MS Office 2010, 2013, 2016\", \"IT Asset Inventory management on Excel\", \"LANs & WANs, IP Address, DNS and DHCP\", \"Service Requests, Incidents, and Activities management\", \"IT support procedures, Guidelines and Knowledge-Base documentation\"], \"soft_skills\": [\"problem-solving\"], \"tools\": [\"TightVNC\", \"Anydesk\", \"MS Office 2010, 2013, 2016\", \"Outlook Mail\", \"Excel\", \"Windows 7, 10, 11\"], \"taxonomy_skills\": [], \"other_skills\": []}, \"experience\": [{\"title\": \"Customer Support Engineer\", \"company\": \"Niti Aayog (Module Informatics Private Limited, Noida)\", \"location\": \"Noida\", \"start_date\": \"December 2023\", \"end_date\": \"Present\", \"highlights\": [\"Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\", \"Manage Laptop, Desktop - Part Replacement and Troubleshooting.\", \"Printer Configuration (USB and Network Printer).\", \"Provide Support to Remote Client using TightVNC & Anydesk.\", \"Configure, Backup & Restore of Outlook Mail and MS Office \\u2013 2010, 2013, 2016.\", \"Manage and Update IT Asset Inventory on Excel.\", \"Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\", \"Active Management of Service Requests, Incidents, and Activities.\", \"Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\"]}, {\"title\": \"IT Support Engineer\", \"company\": \"SAIL (Steel Authority of India Limited) Yard\", \"location\": \"Ballabhgarh\", \"start_date\": \"August 2022\", \"end_date\": \"November 2023\", \"highlights\": []}], \"education\": [{\"degree\": \"High School\", \"institution\": \"UP Board\", \"location\": \"\", \"start_date\": \"\", \"end_date\": \"\"}, {\"degree\": \"Intermediate\", \"institution\": \"UP Board\", \"location\": \"\", \"start_date\": \"\", \"end_date\": \"\"}, {\"degree\": \"B. Sc. (PCM)\", \"institution\": \"DBRAU Agra\", \"location\": \"\", \"start_date\": \"\", \"end_date\": \"\"}], \"certifications\": [], \"languages\": [\"English\", \"Hindi\"], \"links\": [\"mailto:kuldeepsengar9536@gmail.com\"]}",
+      "extracted_text_length": 2623,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "selected": true,
+      "fallback_decision": "accept",
+      "fallback_reason": "Muse AI returned schema-valid Resume JSON.",
+      "is_final_selected": true,
+      "ocr": null,
+      "timeout_seconds": 20.0,
+      "model_config_id": null,
+      "provider": "Muse AI",
+      "model": "muse-spark-1.3-contributor",
+      "json_validation": "valid",
+      "input_type": "pdf",
+      "metadata": {
+        "input_type": "pdf",
+        "visual_provided": true,
+        "tika_text_provided": true,
+        "tika_text_chars": 1938,
+        "hyperlinks_provided": true,
+        "hyperlink_count": 1,
+        "hyperlink_extraction_error": null,
+        "request_id": "chatcmpl-01a1abc0-6f2e-76fb-b2fb-2811ee76ee79",
+        "usage_available": true,
+        "tika_text_normalization": {
+          "status": "applied",
+          "original_chars": 2117,
+          "normalized_chars": 1938,
+          "estimated_reduction_percent": 8.5,
+          "normalization_applied": true,
+          "normalization_steps": [
+            "whitespace_runs_collapsed",
+            "lines_trimmed",
+            "excessive_blank_lines_collapsed"
+          ],
+          "error": null
+        },
+        "page_count": 2,
+        "pages_processed": 2,
+        "pages_skipped": 0,
+        "pages_beyond_image_limit": 0,
+        "usage": {
+          "completion_tokens": 2710,
+          "prompt_tokens": 6785,
+          "total_tokens": 9495,
+          "completion_tokens_details": {
+            "reasoning_tokens": 2033
+          },
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          }
+        }
+      }
+    }
+  ],
+  "extracted_text": "Kuldeep Sengar\n\nkuldeepsengar9536@gmail.com\n\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n\n- Customer Support Engineer at Niti Aayog (Module Informatics Private Limited, Noida) : December 2023- Present\n- Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\n- Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n- Printer Configuration (USB and Network Printer).\n- Provide Support to Remote Client using TightVNC & Anydesk.\n- Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.\n- Manage and Update IT Asset Inventory on Excel.\n- Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\n- Active Management of Service Requests, Incidents, and Activities.\n- Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\n- IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard, Ballabhgarh : August2022- November 2023\n\nEDUCATIONAL QUALIFICATION\n\n- High School, UP Board\n- Intermediate, UP Board\n- B. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather's Name : Mr. Ramkishan Singh Date of Birth : 08/04/1994 Religion : Hindu Nationality : Indian Languages Known : English and Hindi\n\nPermanent Address\n\n: Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the best my knowledge and belief.\n\nDate: Place:\n\nKuldeep Sengar",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "WARNING",
+  "final_quality_status": "WARNING",
+  "final_extracted_text": "Kuldeep Sengar\n\nkuldeepsengar9536@gmail.com\n\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n\n- Customer Support Engineer at Niti Aayog (Module Informatics Private Limited, Noida) : December 2023- Present\n- Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\n- Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n- Printer Configuration (USB and Network Printer).\n- Provide Support to Remote Client using TightVNC & Anydesk.\n- Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.\n- Manage and Update IT Asset Inventory on Excel.\n- Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\n- Active Management of Service Requests, Incidents, and Activities.\n- Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\n- IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard, Ballabhgarh : August2022- November 2023\n\nEDUCATIONAL QUALIFICATION\n\n- High School, UP Board\n- Intermediate, UP Board\n- B. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather's Name : Mr. Ramkishan Singh Date of Birth : 08/04/1994 Religion : Hindu Nationality : Indian Languages Known : English and Hindi\n\nPermanent Address\n\n: Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the best my knowledge and belief.\n\nDate: Place:\n\nKuldeep Sengar",
+  "quality": {
+    "status": "WARNING",
+    "document_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+    "source_tool": "docling",
+    "attempt_id": "attempt-3",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 1877,
+        "word_count": 271,
+        "line_count": 49,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.153436,
+        "symbol_count": 0,
+        "symbol_ratio": 0.0,
+        "max_repeated_char_run": 2,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 58.0,
+      "flags": [
+        "MISSING_RECOMMENDED_SECTION",
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 1877,
+        "word_count": 271,
+        "configured_section_count": 7,
+        "detected_count": 2,
+        "missing_count": 5,
+        "detected_sections": [
+          "Contact Information",
+          "Summary"
+        ],
+        "missing_sections": [
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [
+          "Skills",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_optional": [
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "personal details",
+          "Summary": "profile"
+        }
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary"
+      ],
+      "missing_sections": [
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [
+        "Skills",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_optional": [
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 1877,
+        "word_count": 271,
+        "line_count": 49,
+        "non_empty_line_count": 31,
+        "short_line_count": 11,
+        "short_line_ratio": 0.354839,
+        "fragmented_line_count": 5,
+        "fragmented_line_ratio": 0.16129,
+        "mean_line_length": 59.0,
+        "median_line_length": 42.0,
+        "line_length_stdev": 51.84,
+        "line_length_cv": 0.878565,
+        "broken_sentence_count": 1,
+        "broken_sentence_ratio": 0.033333,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Best candidate selected after all extractors were tried: docling (quality WARNING; weakest filter 58.0, average 86.0). Candidates compared: tika (weakest 58.0, average 81.5); pymupdf (weakest 58.0, average 80.5); docling (weakest 58.0, average 86.0); ocr (weakest 58.0, average 85.6). Muse AI produced validated Resume JSON from the original file after the extractor chain did not reach PASS.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 60.0,
+  "resume_json": {
+    "full_name": "Kuldeep Sengar",
+    "email": "kuldeepsengar9536@gmail.com",
+    "phone": "(+91) 9368317466",
+    "location": "Vill- Punner, Dist.- Hathras, U.P.204102",
+    "summary": "A highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problem-solving techniques.",
+    "skills": {
+      "technical_skills": [
+        "Windows 7, 10 & 11 formatting, configure, Partition, Drivers Installation and Update, software configuration",
+        "Laptop, Desktop Part Replacement and Troubleshooting",
+        "Printer Configuration (USB and Network Printer)",
+        "Remote Client Support",
+        "Configure, Backup & Restore of Outlook Mail and MS Office 2010, 2013, 2016",
+        "IT Asset Inventory management on Excel",
+        "LANs & WANs, IP Address, DNS and DHCP",
+        "Service Requests, Incidents, and Activities management",
+        "IT support procedures, Guidelines and Knowledge-Base documentation"
+      ],
+      "soft_skills": [
+        "problem-solving"
+      ],
+      "tools": [
+        "TightVNC",
+        "Anydesk",
+        "MS Office 2010, 2013, 2016",
+        "Outlook Mail",
+        "Excel",
+        "Windows 7, 10, 11"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Customer Support Engineer",
+        "company": "Niti Aayog (Module Informatics Private Limited, Noida)",
+        "location": "Noida",
+        "start_date": "December 2023",
+        "end_date": "Present",
+        "highlights": [
+          "Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.",
+          "Manage Laptop, Desktop - Part Replacement and Troubleshooting.",
+          "Printer Configuration (USB and Network Printer).",
+          "Provide Support to Remote Client using TightVNC & Anydesk.",
+          "Configure, Backup & Restore of Outlook Mail and MS Office – 2010, 2013, 2016.",
+          "Manage and Update IT Asset Inventory on Excel.",
+          "Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.",
+          "Active Management of Service Requests, Incidents, and Activities.",
+          "Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles."
+        ]
+      },
+      {
+        "title": "IT Support Engineer",
+        "company": "SAIL (Steel Authority of India Limited) Yard",
+        "location": "Ballabhgarh",
+        "start_date": "August 2022",
+        "end_date": "November 2023",
+        "highlights": []
+      }
+    ],
+    "education": [
+      {
+        "degree": "High School",
+        "institution": "UP Board",
+        "location": "",
+        "start_date": "",
+        "end_date": ""
+      },
+      {
+        "degree": "Intermediate",
+        "institution": "UP Board",
+        "location": "",
+        "start_date": "",
+        "end_date": ""
+      },
+      {
+        "degree": "B. Sc. (PCM)",
+        "institution": "DBRAU Agra",
+        "location": "",
+        "start_date": "",
+        "end_date": ""
+      }
+    ],
+    "certifications": [],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "links": [
+      "mailto:kuldeepsengar9536@gmail.com"
+    ]
+  },
+  "hyperlinks": [
+    {
+      "page": 1,
+      "url": "mailto:kuldeepsengar9536@gmail.com",
+      "visible_text": "kuldeepsengar9536@gmail.com",
+      "type": "mailto",
+      "rect": [
+        76.75,
+        120.56,
+        262.48,
+        139.07
+      ]
+    }
+  ],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "docling",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Kuldeep Sengar\n\nkuldeepsengar9536@gmail.com\n\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n\n- Customer Support Engineer at Niti Aayog (Module Informatics Private Limited, Noida) : December 2023- Present\n- Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\n- Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n- Printer Configuration (USB and Network Printer).\n- Provide Support to Remote Client using TightVNC & Anydesk.\n- Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.\n- Manage and Update IT Asset Inventory on Excel.\n- Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\n- Active Management of Service Requests, Incidents, and Activities.\n- Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\n- IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard, Ballabhgarh : August2022- November 2023\n\nEDUCATIONAL QUALIFICATION\n\n- High School, UP Board\n- Intermediate, UP Board\n- B. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather's Name : Mr. Ramkishan Singh Date of Birth : 08/04/1994 Religion : Hindu Nationality : Indian Languages Known : English and Hindi\n\nPermanent Address\n\n: Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the best my knowledge and belief.\n\nDate: Place:\n\nKuldeep Sengar",
+    "normalized_text": "Kuldeep Sengar\n\nkuldeepsengar9536@gmail.com\n\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n\n- Customer Support Engineer at Niti Aayog (Module Informatics Private Limited, Noida) : December 2023- Present\n- Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\n- Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n- Printer Configuration (USB and Network Printer).\n- Provide Support to Remote Client using TightVNC & Anydesk.\n- Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.\n- Manage and Update IT Asset Inventory on Excel.\n- Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\n- Active Management of Service Requests, Incidents, and Activities.\n- Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\n- IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard, Ballabhgarh : August2022- November 2023\n\nEDUCATIONAL QUALIFICATION\n\n- High School, UP Board\n- Intermediate, UP Board\n- B. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather's Name : Mr. Ramkishan Singh Date of Birth : 08/04/1994 Religion : Hindu Nationality : Indian Languages Known : English and Hindi\n\nPermanent Address\n\n: Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the best my knowledge and belief.\n\nDate: Place:\n\nKuldeep Sengar",
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "original_chars": 1877,
+    "normalized_chars": 1877,
+    "original_estimated_tokens": 469,
+    "normalized_estimated_tokens": 469,
+    "estimated_reduction_percent": 0.0
+  },
+  "muse_requests": [
+    {
+      "stage": "vision",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": "chatcmpl-01a1abc0-6f2e-76fb-b2fb-2811ee76ee79",
+      "status": "success",
+      "duration_ms": 18853.34,
+      "input_tokens": 6785,
+      "output_tokens": 2710,
+      "total_tokens": 9495,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 6785,
+    "output_tokens": 2710,
+    "total_tokens": 9495,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_source": "muse_ai",
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "input_type": "pdf",
+    "duration_ms": 18853.34,
+    "timeout_seconds": 20.0,
+    "usage": {
+      "completion_tokens": 2710,
+      "prompt_tokens": 6785,
+      "total_tokens": 9495,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2033
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "pages_processed": 2,
+    "pages_skipped": 0
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 5,
+  "fallback_occurred": true,
+  "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 6963.63,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. A later extractor was accepted, so this candidate was not selected.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 86.56,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "14 non-printable characters found (0.66% of text).",
+            "Repeated-character corruption suspected: longest run is 26 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2117,
+            "word_count": 273,
+            "line_count": 131,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 14,
+            "non_printable_ratio": 0.006613,
+            "whitespace_ratio": 0.232877,
+            "symbol_count": 16,
+            "symbol_ratio": 0.007558,
+            "max_repeated_char_run": 26,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 58.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2117,
+            "word_count": 273,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Summary"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2117,
+            "word_count": 273,
+            "line_count": 131,
+            "non_empty_line_count": 46,
+            "short_line_count": 12,
+            "short_line_ratio": 0.26087,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.108696,
+            "mean_line_length": 40.78,
+            "median_line_length": 35.5,
+            "line_length_stdev": 22.6,
+            "line_length_cv": 0.554097,
+            "broken_sentence_count": 6,
+            "broken_sentence_ratio": 0.133333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": 32.75,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "pymupdf",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. A later extractor was accepted, so this candidate was not selected.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 86.37,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "14 non-printable characters found (0.69% of text).",
+            "Repeated-character corruption suspected: longest run is 26 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2021,
+            "word_count": 272,
+            "line_count": 80,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 14,
+            "non_printable_ratio": 0.006927,
+            "whitespace_ratio": 0.213261,
+            "symbol_count": 16,
+            "symbol_ratio": 0.007917,
+            "max_repeated_char_run": 26,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 58.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2021,
+            "word_count": 272,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Summary"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 97.27,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES"
+          ],
+          "reasons": [
+            "43.6% of lines have 2 words or fewer — text may be fragmented or columns may have been split."
+          ],
+          "metrics": {
+            "char_count": 2021,
+            "word_count": 272,
+            "line_count": 80,
+            "non_empty_line_count": 55,
+            "short_line_count": 24,
+            "short_line_ratio": 0.436364,
+            "fragmented_line_count": 18,
+            "fragmented_line_ratio": 0.327273,
+            "mean_line_length": 33.15,
+            "median_line_length": 24.0,
+            "line_length_stdev": 24.73,
+            "line_length_cv": 0.746109,
+            "broken_sentence_count": 5,
+            "broken_sentence_ratio": 0.092593,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 9166.34,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "docling",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. Selected as the best candidate after all extractors were tried.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+        "source_tool": "docling",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1877,
+            "word_count": 271,
+            "line_count": 49,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.153436,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 58.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1877,
+            "word_count": 271,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Summary"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1877,
+            "word_count": 271,
+            "line_count": 49,
+            "non_empty_line_count": 31,
+            "short_line_count": 11,
+            "short_line_ratio": 0.354839,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.16129,
+            "mean_line_length": 59.0,
+            "median_line_length": 42.0,
+            "line_length_stdev": 51.84,
+            "line_length_cv": 0.878565,
+            "broken_sentence_count": 1,
+            "broken_sentence_ratio": 0.033333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": true
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "PASS",
+      "duration_ms": 5889.55,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "ocr",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 58.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. A later extractor was accepted, so this candidate was not selected.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "c00159f3-0a1f-4166-add0-8afc81f892fb",
+        "source_tool": "ocr",
+        "attempt_id": "attempt-4",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1890,
+            "word_count": 272,
+            "line_count": 77,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.158201,
+            "symbol_count": 2,
+            "symbol_ratio": 0.001058,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 58.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1890,
+            "word_count": 272,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Summary"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 98.88,
+          "flags": [
+            "REPEATED_ADJACENT_LINES"
+          ],
+          "reasons": [
+            "3 adjacent line(s) are exact repeats of the previous line."
+          ],
+          "metrics": {
+            "char_count": 1890,
+            "word_count": 272,
+            "line_count": 77,
+            "non_empty_line_count": 50,
+            "short_line_count": 15,
+            "short_line_ratio": 0.3,
+            "fragmented_line_count": 10,
+            "fragmented_line_ratio": 0.2,
+            "mean_line_length": 36.28,
+            "median_line_length": 29.0,
+            "line_length_stdev": 24.73,
+            "line_length_cv": 0.681525,
+            "broken_sentence_count": 8,
+            "broken_sentence_ratio": 0.163265,
+            "repeated_adjacent_count": 3,
+            "repeated_adjacent_ratio": 0.061224
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Muse AI (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": "muse_ai",
+      "status": "PASS",
+      "duration_ms": 18853.34,
+      "message": "Sent to Muse AI: original document + Tika extracted text + 1 PDF hyperlink annotation(s). Schema-valid Resume JSON returned.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "muse_ai",
+      "status": "PASS",
+      "duration_ms": 9166.34,
+      "message": "Muse AI produced the final Resume JSON.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "final_extractor": "muse_ai",
+  "_stored_name": "c00159f3-0a1f-4166-add0-8afc81f892fb_SHJ-5412_SHC-382596.pdf"
+}

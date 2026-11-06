@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SATVIQ — Resume Intelligence</title>
+  <!-- Asset version: bump ?v= whenever the frontend changes, so a
+       browser can never pair new HTML with stale cached JS/CSS.
+       The server also sends Cache-Control: no-cache for these. -->
+  <link rel="stylesheet" href="css/style.css?v=14" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/process">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-text">
+          <strong>SATVIQ</strong>
+          <small>Resume Intelligence</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="#/process" data-nav="process">Process Resume</a>
+        <a href="#/history" data-nav="history">History</a>
+        <a href="#/settings" data-nav="settings">Settings</a>
+      </nav>
+      <div class="topbar-status" id="backendStatus" role="status">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span id="backendStatusText">Connecting…</span>
+      </div>
+    </div>
+    <div class="subbar">
+      <div class="subbar-inner">
+        <span id="engineInfo">Primary extraction engine: —</span>
+        <span id="aiInfo">LLM: —</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page" id="app" tabindex="-1">
+    <!-- Views are rendered by js/app.js into these sections. -->
+    <section id="view-process" class="view" hidden></section>
+    <section id="view-history" class="view" hidden></section>
+    <section id="view-resume" class="view" hidden></section>
+    <section id="view-settings" class="view" hidden></section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      Extraction quality scores measure extraction quality only — not
+      candidate suitability or ranking.
+    </div>
+  </footer>
+
+  <div id="toastRoot" class="toast-root" aria-live="polite"></div>
+
+  <script src="js/api.js?v=14"></script>
+  <script src="js/app.js?v=14"></script>
+</body>
+</html>

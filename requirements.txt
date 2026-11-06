@@ -1,0 +1,34 @@
+# SATVIQ — Resume Intelligence (full project: backend + GUI API)
+# Core
+pydantic>=2.5,<3
+PyYAML>=6.0,<7
+
+# API layer (serves the frontend and the JSON endpoints)
+fastapi>=0.110,<1
+uvicorn>=0.29,<1
+python-multipart>=0.0.9
+
+# Extractors (imported lazily by the extractor package — a missing one
+# degrades to a clean "unavailable" failure, it does not break the app)
+# (No tika pip package and no Tika server: the Tika extractor runs the
+#  local Apache Tika 4.2.0 app JAR via Java subprocess — Java 17+ and
+#  tika-app-4.2.0.jar are provided separately; see README.)
+PyMuPDF>=1.23,<2        # PDF text extraction + PDF rendering for OCR
+docling>=2.0,<3
+pytesseract>=0.3.10,<1  # needs the tesseract binary (provided separately)
+Pillow>=10.0,<12
+
+# Testing
+pytest>=7.4
+httpx>=0.27
+
+
+# Dependencies for the ai_model/ module ONLY.
+# These are additions on top of the existing project requirements;
+# nothing else in the project needs to change.
+pydantic>=2.5,<3
+openai>=1.30,<2
+Pillow>=10,<12
+
+# Development / testing only:
+pytest>=8,<9

@@ -1,0 +1,1563 @@
+{
+  "resume_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60",
+  "filename": "SHJ-5412_SHC-382573.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 138797,
+  "uploaded_at": "2026-11-05T12:46:55.915079+00:00",
+  "success": true,
+  "extractor_used": "docling",
+  "duration_ms": 34648.97,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 67.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 6829.98,
+      "text": "RAJ PRATAP\nIT Engineer\nUnmarried\n+91-9873479894\nIndian\nAs a IT Engineer I want to explore my career in the field of IT Engineering Services. Intend to work \nunder pressure and challenges, thus, to achieve the goals under Deadlines. Build my career in this \nfiled with my proficiency and skill. I am here to give my best to clients.\nIT SUPPORT ENGINEER, Mckinsol Consulting Incorporation 2023 Sep – present\nHardware Support Such as RAM, HARD DISK, GRAPHIC CARD Problem and \nHardware Problem Solving. Software\nSupport Software Installation Such as SAP and issue\nResolution and Access to BIM 360 & Windows Installation windows7,8,10,11 \nand windows issue Resolution.\nConfigure Firewall and Set Rules on Users View ISP line. \n Applying Policies to Users from Anti Antivirus Software.\nWindows Server2012,16,19 installation Creating and Applying policies to and \nusers in the Server.\nConfigure DHCP, DNS, FTP, WDS and Software Deployment.\nBachelor of Science, Agra University 2023\nMainpuri,India\n10th BND Adarsh inter college 2018 Jun\nEtawah, India\n12th HMS Islamia inter college 2020 Jun\nEtawah, India\nRAJETW6162@gmail.com 1 / 2\n\nmailto:RAJETW6162@gmail.com\n\nSkills\n\nInstallation windows 10, Windows 11 and dual \nbooting.\nWindows maintenance. \nMS outlook configuration.\nTroubleshooting of hardware and O/S. Basic \nNetworking.\nNetworking in Domain environment.\nSharing folder, sharing device and sharing drive \nWindows server installation 2016,19\nConfigure Firewall and Apply Rules on Users \nand Manage Different (ISP)\nBasic Troubleshooting Printer and manage. \nBasic NAS Manage and configuration\nAssembling, hardware up gradation \ntroubleshooting.\nUpgrade & update the windows. \nDisk Management, partitions.\nMap drive, Data sharing TCP/IP Configuration. \nUser Profiles Backup and Restore.\nWindows password break.\nCreate new OU and User in server and Apply \npolicy to OU and user.\nTroubleshooting LAN, WAN, PAN. \nManage IP Address Static & Dynamic.\nI do hereby declare that. the above information is true. and correct. to the best of my knowledge and \nbelief.\nRAJ PRATAP\nRAJETW6162@gmail.com 2 / 2\n\nmailto:RAJETW6162@gmail.com",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-05T12:46:14.368239+00:00",
+      "completed_at": "2026-11-05T12:46:21.199720+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2120,
+            "word_count": 309,
+            "line_count": 61,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.156132,
+            "symbol_count": 1,
+            "symbol_ratio": 0.000472,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 67.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2120,
+            "word_count": 309,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Skills"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2120,
+            "word_count": 309,
+            "line_count": 61,
+            "non_empty_line_count": 57,
+            "short_line_count": 17,
+            "short_line_ratio": 0.298246,
+            "fragmented_line_count": 13,
+            "fragmented_line_ratio": 0.22807,
+            "mean_line_length": 35.81,
+            "median_line_length": 33.0,
+            "line_length_stdev": 23.45,
+            "line_length_cv": 0.654779,
+            "broken_sentence_count": 11,
+            "broken_sentence_ratio": 0.196429,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 67.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": false,
+      "attempt_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60-attempt-1",
+      "resume_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "RAJ PRATAP\nIT Engineer\nUnmarried\n+91-9873479894\nIndian\nAs a IT Engineer I want to explore my career in the field of IT Engineering Services. Intend to work \nunder pressure and challenges, thus, to achieve the goals under Deadlines. Build my career in this \nfiled with my proficiency and skill. I am here to give my best to clients.\nIT SUPPORT ENGINEER, Mckinsol Consulting Incorporation 2023 Sep – present\nHardware Support Such as RAM, HARD DISK, GRAPHIC CARD Problem and \nHardware Problem Solving. Software\nSupport Software Installation Such as SAP and issue\nResolution and Access to BIM 360 & Windows Installation windows7,8,10,11 \nand windows issue Resolution.\nConfigure Firewall and Set Rules on Users View ISP line. \n Applying Policies to Users from Anti Antivirus Software.\nWindows Server2012,16,19 installation Creating and Applying policies to and \nusers in the Server.\nConfigure DHCP, DNS, FTP, WDS and Software Deployment.\nBachelor of Science, Agra University 2023\nMainpuri,India\n10th BND Adarsh inter college 2018 Jun\nEtawah, India\n12th HMS Islamia inter college 2020 Jun\nEtawah, India\nRAJETW6162@gmail.com 1 / 2\n\nmailto:RAJETW6162@gmail.com\n\nSkills\n\nInstallation windows 10, Windows 11 and dual \nbooting.\nWindows maintenance. \nMS outlook configuration.\nTroubleshooting of hardware and O/S. Basic \nNetworking.\nNetworking in Domain environment.\nSharing folder, sharing device and sharing drive \nWindows server installation 2016,19\nConfigure Firewall and Apply Rules on Users \nand Manage Different (ISP)\nBasic Troubleshooting Printer and manage. \nBasic NAS Manage and configuration\nAssembling, hardware up gradation \ntroubleshooting.\nUpgrade & update the windows. \nDisk Management, partitions.\nMap drive, Data sharing TCP/IP Configuration. \nUser Profiles Backup and Restore.\nWindows password break.\nCreate new OU and User in server and Apply \npolicy to OU and user.\nTroubleshooting LAN, WAN, PAN. \nManage IP Address Static & Dynamic.\nI do hereby declare that. the above information is true. and correct. to the best of my knowledge and \nbelief.\nRAJ PRATAP\nRAJETW6162@gmail.com 2 / 2\n\nmailto:RAJETW6162@gmail.com",
+      "extracted_text_length": 2120,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 67.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2120,
+            "word_count": 309,
+            "line_count": 61,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.156132,
+            "symbol_count": 1,
+            "symbol_ratio": 0.000472,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 67.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2120,
+            "word_count": 309,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Skills"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2120,
+            "word_count": 309,
+            "line_count": 61,
+            "non_empty_line_count": 57,
+            "short_line_count": 17,
+            "short_line_ratio": 0.298246,
+            "fragmented_line_count": 13,
+            "fragmented_line_ratio": 0.22807,
+            "mean_line_length": 35.81,
+            "median_line_length": 33.0,
+            "line_length_stdev": 23.45,
+            "line_length_cv": 0.654779,
+            "broken_sentence_count": 11,
+            "broken_sentence_ratio": 0.196429,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 67.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": false,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "extractor_name": "pymupdf",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 67.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 26.91,
+      "text": "RAJETW6162@gmail.com \n1 / 2 \n \n \n \n \nRAJ PRATAP \nIT Engineer \n \nUnmarried \n \n \n \n \n \n \n+91-9873479894 \nIndian \n \n \n \n \n \n \n \n \n   As a IT Engineer I want to explore my career in the field of IT Engineering Services. Intend to work \nunder pressure and challenges, thus, to achieve the goals under Deadlines. Build my career in this \nfiled with my proficiency and skill. I am here to give my best to clients. \n \n \n \n \n \nIT SUPPORT ENGINEER, Mckinsol Consulting Incorporation \n2023 Sep – present  \n \n Hardware Support Such as RAM, HARD DISK, GRAPHIC CARD Problem and \nHardware Problem Solving. Software \n Support Software Installation Such as SAP and issue \nResolution and Access to BIM 360 & Windows Installation windows7,8,10,11 \nand windows issue Resolution. \n Configure Firewall and Set Rules on Users View ISP line. \n Applying Policies to Users from Anti Antivirus Software. \n Windows Server2012,16,19 installation Creating and Applying policies to and \nusers in the Server. \n Configure DHCP, DNS, FTP, WDS and Software Deployment. \n \n \n \n \nBachelor of Science, Agra University \n2023 \nMainpuri,India \n10th BND Adarsh inter college \n2018 Jun \nEtawah, India \n12th HMS Islamia inter college \n2020 Jun \nEtawah, India\nRAJETW6162@gmail.com \n2 / 2 \n \n \n \nInstallation windows 10, Windows 11 and dual \nbooting. \nWindows maintenance. \nMS outlook configuration. \nTroubleshooting of hardware and O/S. Basic \nNetworking. \nNetworking in Domain environment. \nSharing folder, sharing device and sharing drive \nWindows server installation 2016,19 \nConfigure Firewall and Apply Rules on Users \nand Manage Different (ISP) \nBasic Troubleshooting Printer and manage. \nBasic NAS Manage and configuration \nAssembling, hardware up gradation \ntroubleshooting. \nUpgrade & update the windows. \nDisk Management, partitions. \nMap drive, Data sharing TCP/IP Configuration. \nUser Profiles Backup and Restore. \nWindows password break. \nCreate new OU and User in server and Apply \npolicy to OU and user. \nTroubleshooting LAN, WAN, PAN. \nManage IP Address Static & Dynamic.\n \n \n \n \n \n \nI do hereby declare that. the above information is true. and correct. to the best of my knowledge and \nbelief. \nRAJ PRATAP \nSkills",
+      "extractor_version": "1.28.2",
+      "started_at": "2026-11-05T12:46:21.207273+00:00",
+      "completed_at": "2026-11-05T12:46:21.235971+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "format": "PDF 1.7",
+        "author": "FlowCV - https://flowcv.com",
+        "keywords": "Free Online Resume Builder, FlowCV - https:/flowcv.com",
+        "creator": "Microsoft® Word LTSC",
+        "producer": "Microsoft® Word LTSC",
+        "creationDate": "D:20260313182224+05'30'",
+        "modDate": "D:20260313182224+05'30'"
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2185,
+            "word_count": 307,
+            "line_count": 99,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.20595,
+            "symbol_count": 1,
+            "symbol_ratio": 0.000458,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 67.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2185,
+            "word_count": 307,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Skills"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2185,
+            "word_count": 307,
+            "line_count": 99,
+            "non_empty_line_count": 61,
+            "short_line_count": 20,
+            "short_line_ratio": 0.327869,
+            "fragmented_line_count": 18,
+            "fragmented_line_ratio": 0.295082,
+            "mean_line_length": 32.48,
+            "median_line_length": 29.0,
+            "line_length_stdev": 23.8,
+            "line_length_cv": 0.733015,
+            "broken_sentence_count": 9,
+            "broken_sentence_ratio": 0.15,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 67.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": false,
+      "attempt_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60-attempt-2",
+      "resume_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60",
+      "attempt_number": 2,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "RAJETW6162@gmail.com \n1 / 2 \n \n \n \n \nRAJ PRATAP \nIT Engineer \n \nUnmarried \n \n \n \n \n \n \n+91-9873479894 \nIndian \n \n \n \n \n \n \n \n \n   As a IT Engineer I want to explore my career in the field of IT Engineering Services. Intend to work \nunder pressure and challenges, thus, to achieve the goals under Deadlines. Build my career in this \nfiled with my proficiency and skill. I am here to give my best to clients. \n \n \n \n \n \nIT SUPPORT ENGINEER, Mckinsol Consulting Incorporation \n2023 Sep – present  \n \n Hardware Support Such as RAM, HARD DISK, GRAPHIC CARD Problem and \nHardware Problem Solving. Software \n Support Software Installation Such as SAP and issue \nResolution and Access to BIM 360 & Windows Installation windows7,8,10,11 \nand windows issue Resolution. \n Configure Firewall and Set Rules on Users View ISP line. \n Applying Policies to Users from Anti Antivirus Software. \n Windows Server2012,16,19 installation Creating and Applying policies to and \nusers in the Server. \n Configure DHCP, DNS, FTP, WDS and Software Deployment. \n \n \n \n \nBachelor of Science, Agra University \n2023 \nMainpuri,India \n10th BND Adarsh inter college \n2018 Jun \nEtawah, India \n12th HMS Islamia inter college \n2020 Jun \nEtawah, India\nRAJETW6162@gmail.com \n2 / 2 \n \n \n \nInstallation windows 10, Windows 11 and dual \nbooting. \nWindows maintenance. \nMS outlook configuration. \nTroubleshooting of hardware and O/S. Basic \nNetworking. \nNetworking in Domain environment. \nSharing folder, sharing device and sharing drive \nWindows server installation 2016,19 \nConfigure Firewall and Apply Rules on Users \nand Manage Different (ISP) \nBasic Troubleshooting Printer and manage. \nBasic NAS Manage and configuration \nAssembling, hardware up gradation \ntroubleshooting. \nUpgrade & update the windows. \nDisk Management, partitions. \nMap drive, Data sharing TCP/IP Configuration. \nUser Profiles Backup and Restore. \nWindows password break. \nCreate new OU and User in server and Apply \npolicy to OU and user. \nTroubleshooting LAN, WAN, PAN. \nManage IP Address Static & Dynamic.\n \n \n \n \n \n \nI do hereby declare that. the above information is true. and correct. to the best of my knowledge and \nbelief. \nRAJ PRATAP \nSkills",
+      "extracted_text_length": 2185,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 67.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2185,
+            "word_count": 307,
+            "line_count": 99,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.20595,
+            "symbol_count": 1,
+            "symbol_ratio": 0.000458,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 67.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2185,
+            "word_count": 307,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Skills"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2185,
+            "word_count": 307,
+            "line_count": 99,
+            "non_empty_line_count": 61,
+            "short_line_count": 20,
+            "short_line_ratio": 0.327869,
+            "fragmented_line_count": 18,
+            "fragmented_line_ratio": 0.295082,
+            "mean_line_length": 32.48,
+            "median_line_length": 29.0,
+            "line_length_stdev": 23.8,
+            "line_length_cv": 0.733015,
+            "broken_sentence_count": 9,
+            "broken_sentence_ratio": 0.15,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 67.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "extractor_name": "docling",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 34648.97,
+      "text": "RAJ PRATAP\n\nIT Engineer\n\nUnmarried\n\nProfile\n\nAs a IT Engineer I want to explore my career in the field of IT Engineering Services. Intend to work under pressure and challenges, thus, to achieve the goals under Deadlines. Build my career in this filed with my proficiency and skill. I am here to give my best to clients.\n\nProfessional Experience\n\nIT SUPPORT ENGINEER, Mckinsol Consulting Incorporation\n\n2023 Sep - present\n\n- Hardware Support Such as RAM, HARD DISK, GRAPHIC CARD Problem and Hardware Problem Solving. Software\n- Support Software Installation Such as SAP and issue Resolution and Access to BIM 360 & Windows Installation windows7,8,10,11 and windows issue Resolution.\n- Configure Firewall and Set Rules on Users View ISP line.\n- Applying Policies to Users from Anti Antivirus Software.\n- Windows Server2012,16,19 installation Creating and Applying policies to and users in the Server.\n- Configure DHCP, DNS, FTP, WDS and Software Deployment.\n\nEducation\n\nMainpuri,India\n\nEtawah, India\n\n2023 2018 Jun 2020 Jun\n\nEtawah, India\n\n+91-9873479894\n\nIndian\n\nBachelor of Science, Agra University\n\n10th BND Adarsh inter college\n\n12th HMS Islamia inter college\n\n- Installation windows 10, Windows 11 and dual booting.\n- Windows maintenance.\n- MS outlook configuration.\n- Troubleshooting of hardware and O/S. Basic Networking.\n- Networking in Domain environment.\n- Sharing folder, sharing device and sharing drive\n- Windows server installation 2016,19\n- Configure Firewall and Apply Rules on Users and Manage Different (ISP)\n\nSkills\n\n- Assembling, hardware up gradation troubleshooting.\n- Upgrade & update the windows.\n- Disk Management, partitions.\n- Map drive, Data sharing TCP/IP Configuration.\n- User Profiles Backup and Restore.\n- Windows password break.\n- Create new OU and User in server and Apply policy to OU and user.\n- Troubleshooting LAN, WAN, PAN.\n- Manage IP Address Static & Dynamic.\n- Basic Troubleshooting Printer and manage.\n- Basic NAS Manage and configuration\n\nDeclaration\n\nI do hereby declare that. the above information is true. and correct. to the best of my knowledge and belief.\n\nRAJ PRATAP",
+      "extractor_version": "2.146.0",
+      "started_at": "2026-11-05T12:46:21.252685+00:00",
+      "completed_at": "2026-11-05T12:46:55.903159+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60",
+        "source_tool": "docling",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2115,
+            "word_count": 329,
+            "line_count": 71,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.16643,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2115,
+            "word_count": 329,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:(\\+?\\d[\\d\\s().-]{7,}\\d)",
+              "Summary": "profile",
+              "Skills": "skills",
+              "Work Experience": "professional experience",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 99.32,
+          "flags": [
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "Line lengths vary unusually (coefficient of variation 1.05) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 2115,
+            "word_count": 329,
+            "line_count": 71,
+            "non_empty_line_count": 47,
+            "short_line_count": 14,
+            "short_line_ratio": 0.297872,
+            "fragmented_line_count": 13,
+            "fragmented_line_ratio": 0.276596,
+            "mean_line_length": 43.51,
+            "median_line_length": 32.0,
+            "line_length_stdev": 45.48,
+            "line_length_cv": 1.045356,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60-attempt-3",
+      "resume_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60",
+      "attempt_number": 3,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "RAJ PRATAP\n\nIT Engineer\n\nUnmarried\n\nProfile\n\nAs a IT Engineer I want to explore my career in the field of IT Engineering Services. Intend to work under pressure and challenges, thus, to achieve the goals under Deadlines. Build my career in this filed with my proficiency and skill. I am here to give my best to clients.\n\nProfessional Experience\n\nIT SUPPORT ENGINEER, Mckinsol Consulting Incorporation\n\n2023 Sep - present\n\n- Hardware Support Such as RAM, HARD DISK, GRAPHIC CARD Problem and Hardware Problem Solving. Software\n- Support Software Installation Such as SAP and issue Resolution and Access to BIM 360 & Windows Installation windows7,8,10,11 and windows issue Resolution.\n- Configure Firewall and Set Rules on Users View ISP line.\n- Applying Policies to Users from Anti Antivirus Software.\n- Windows Server2012,16,19 installation Creating and Applying policies to and users in the Server.\n- Configure DHCP, DNS, FTP, WDS and Software Deployment.\n\nEducation\n\nMainpuri,India\n\nEtawah, India\n\n2023 2018 Jun 2020 Jun\n\nEtawah, India\n\n+91-9873479894\n\nIndian\n\nBachelor of Science, Agra University\n\n10th BND Adarsh inter college\n\n12th HMS Islamia inter college\n\n- Installation windows 10, Windows 11 and dual booting.\n- Windows maintenance.\n- MS outlook configuration.\n- Troubleshooting of hardware and O/S. Basic Networking.\n- Networking in Domain environment.\n- Sharing folder, sharing device and sharing drive\n- Windows server installation 2016,19\n- Configure Firewall and Apply Rules on Users and Manage Different (ISP)\n\nSkills\n\n- Assembling, hardware up gradation troubleshooting.\n- Upgrade & update the windows.\n- Disk Management, partitions.\n- Map drive, Data sharing TCP/IP Configuration.\n- User Profiles Backup and Restore.\n- Windows password break.\n- Create new OU and User in server and Apply policy to OU and user.\n- Troubleshooting LAN, WAN, PAN.\n- Manage IP Address Static & Dynamic.\n- Basic Troubleshooting Printer and manage.\n- Basic NAS Manage and configuration\n\nDeclaration\n\nI do hereby declare that. the above information is true. and correct. to the best of my knowledge and belief.\n\nRAJ PRATAP",
+      "extracted_text_length": 2115,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60",
+        "source_tool": "docling",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2115,
+            "word_count": 329,
+            "line_count": 71,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.16643,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2115,
+            "word_count": 329,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:(\\+?\\d[\\d\\s().-]{7,}\\d)",
+              "Summary": "profile",
+              "Skills": "skills",
+              "Work Experience": "professional experience",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 99.32,
+          "flags": [
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "Line lengths vary unusually (coefficient of variation 1.05) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 2115,
+            "word_count": 329,
+            "line_count": 71,
+            "non_empty_line_count": 47,
+            "short_line_count": 14,
+            "short_line_ratio": 0.297872,
+            "fragmented_line_count": 13,
+            "fragmented_line_ratio": 0.276596,
+            "mean_line_length": 43.51,
+            "median_line_length": 32.0,
+            "line_length_stdev": 45.48,
+            "line_length_cv": 1.045356,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": null,
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    }
+  ],
+  "extracted_text": "RAJ PRATAP\n\nIT Engineer\n\nUnmarried\n\nProfile\n\nAs a IT Engineer I want to explore my career in the field of IT Engineering Services. Intend to work under pressure and challenges, thus, to achieve the goals under Deadlines. Build my career in this filed with my proficiency and skill. I am here to give my best to clients.\n\nProfessional Experience\n\nIT SUPPORT ENGINEER, Mckinsol Consulting Incorporation\n\n2023 Sep - present\n\n- Hardware Support Such as RAM, HARD DISK, GRAPHIC CARD Problem and Hardware Problem Solving. Software\n- Support Software Installation Such as SAP and issue Resolution and Access to BIM 360 & Windows Installation windows7,8,10,11 and windows issue Resolution.\n- Configure Firewall and Set Rules on Users View ISP line.\n- Applying Policies to Users from Anti Antivirus Software.\n- Windows Server2012,16,19 installation Creating and Applying policies to and users in the Server.\n- Configure DHCP, DNS, FTP, WDS and Software Deployment.\n\nEducation\n\nMainpuri,India\n\nEtawah, India\n\n2023 2018 Jun 2020 Jun\n\nEtawah, India\n\n+91-9873479894\n\nIndian\n\nBachelor of Science, Agra University\n\n10th BND Adarsh inter college\n\n12th HMS Islamia inter college\n\n- Installation windows 10, Windows 11 and dual booting.\n- Windows maintenance.\n- MS outlook configuration.\n- Troubleshooting of hardware and O/S. Basic Networking.\n- Networking in Domain environment.\n- Sharing folder, sharing device and sharing drive\n- Windows server installation 2016,19\n- Configure Firewall and Apply Rules on Users and Manage Different (ISP)\n\nSkills\n\n- Assembling, hardware up gradation troubleshooting.\n- Upgrade & update the windows.\n- Disk Management, partitions.\n- Map drive, Data sharing TCP/IP Configuration.\n- User Profiles Backup and Restore.\n- Windows password break.\n- Create new OU and User in server and Apply policy to OU and user.\n- Troubleshooting LAN, WAN, PAN.\n- Manage IP Address Static & Dynamic.\n- Basic Troubleshooting Printer and manage.\n- Basic NAS Manage and configuration\n\nDeclaration\n\nI do hereby declare that. the above information is true. and correct. to the best of my knowledge and belief.\n\nRAJ PRATAP",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "RAJ PRATAP\n\nIT Engineer\n\nUnmarried\n\nProfile\n\nAs a IT Engineer I want to explore my career in the field of IT Engineering Services. Intend to work under pressure and challenges, thus, to achieve the goals under Deadlines. Build my career in this filed with my proficiency and skill. I am here to give my best to clients.\n\nProfessional Experience\n\nIT SUPPORT ENGINEER, Mckinsol Consulting Incorporation\n\n2023 Sep - present\n\n- Hardware Support Such as RAM, HARD DISK, GRAPHIC CARD Problem and Hardware Problem Solving. Software\n- Support Software Installation Such as SAP and issue Resolution and Access to BIM 360 & Windows Installation windows7,8,10,11 and windows issue Resolution.\n- Configure Firewall and Set Rules on Users View ISP line.\n- Applying Policies to Users from Anti Antivirus Software.\n- Windows Server2012,16,19 installation Creating and Applying policies to and users in the Server.\n- Configure DHCP, DNS, FTP, WDS and Software Deployment.\n\nEducation\n\nMainpuri,India\n\nEtawah, India\n\n2023 2018 Jun 2020 Jun\n\nEtawah, India\n\n+91-9873479894\n\nIndian\n\nBachelor of Science, Agra University\n\n10th BND Adarsh inter college\n\n12th HMS Islamia inter college\n\n- Installation windows 10, Windows 11 and dual booting.\n- Windows maintenance.\n- MS outlook configuration.\n- Troubleshooting of hardware and O/S. Basic Networking.\n- Networking in Domain environment.\n- Sharing folder, sharing device and sharing drive\n- Windows server installation 2016,19\n- Configure Firewall and Apply Rules on Users and Manage Different (ISP)\n\nSkills\n\n- Assembling, hardware up gradation troubleshooting.\n- Upgrade & update the windows.\n- Disk Management, partitions.\n- Map drive, Data sharing TCP/IP Configuration.\n- User Profiles Backup and Restore.\n- Windows password break.\n- Create new OU and User in server and Apply policy to OU and user.\n- Troubleshooting LAN, WAN, PAN.\n- Manage IP Address Static & Dynamic.\n- Basic Troubleshooting Printer and manage.\n- Basic NAS Manage and configuration\n\nDeclaration\n\nI do hereby declare that. the above information is true. and correct. to the best of my knowledge and belief.\n\nRAJ PRATAP",
+  "quality": {
+    "status": "PASS",
+    "document_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60",
+    "source_tool": "docling",
+    "attempt_id": "attempt-3",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 2115,
+        "word_count": 329,
+        "line_count": 71,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.16643,
+        "symbol_count": 0,
+        "symbol_ratio": 0.0,
+        "max_repeated_char_run": 2,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 94.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 2115,
+        "word_count": 329,
+        "configured_section_count": 7,
+        "detected_count": 5,
+        "missing_count": 2,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_sections": [
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:(\\+?\\d[\\d\\s().-]{7,}\\d)",
+          "Summary": "profile",
+          "Skills": "skills",
+          "Work Experience": "professional experience",
+          "Education": "education"
+        }
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_sections": [
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 99.32,
+      "flags": [
+        "HIGH_LINE_LENGTH_VARIATION"
+      ],
+      "reasons": [
+        "Line lengths vary unusually (coefficient of variation 1.05) — a possible sign of mixed or merged column text."
+      ],
+      "metrics": {
+        "char_count": 2115,
+        "word_count": 329,
+        "line_count": 71,
+        "non_empty_line_count": 47,
+        "short_line_count": 14,
+        "short_line_ratio": 0.297872,
+        "fragmented_line_count": 13,
+        "fragmented_line_ratio": 0.276596,
+        "mean_line_length": 43.51,
+        "median_line_length": 32.0,
+        "line_length_stdev": 45.48,
+        "line_length_cv": 1.045356,
+        "broken_sentence_count": 0,
+        "broken_sentence_ratio": 0.0,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 60.0,
+  "resume_json": null,
+  "hyperlinks": [
+    {
+      "page": 1,
+      "url": "mailto:RAJETW6162@gmail.com",
+      "visible_text": "RAJETW6162@gmail.com",
+      "type": "mailto",
+      "rect": [
+        54.25,
+        811.25,
+        174.78,
+        823.56
+      ]
+    },
+    {
+      "page": 2,
+      "url": "mailto:RAJETW6162@gmail.com",
+      "visible_text": "RAJETW6162@gmail.com",
+      "type": "mailto",
+      "rect": [
+        54.25,
+        811.25,
+        174.78,
+        823.56
+      ]
+    }
+  ],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "docling",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "RAJ PRATAP\n\nIT Engineer\n\nUnmarried\n\nProfile\n\nAs a IT Engineer I want to explore my career in the field of IT Engineering Services. Intend to work under pressure and challenges, thus, to achieve the goals under Deadlines. Build my career in this filed with my proficiency and skill. I am here to give my best to clients.\n\nProfessional Experience\n\nIT SUPPORT ENGINEER, Mckinsol Consulting Incorporation\n\n2023 Sep - present\n\n- Hardware Support Such as RAM, HARD DISK, GRAPHIC CARD Problem and Hardware Problem Solving. Software\n- Support Software Installation Such as SAP and issue Resolution and Access to BIM 360 & Windows Installation windows7,8,10,11 and windows issue Resolution.\n- Configure Firewall and Set Rules on Users View ISP line.\n- Applying Policies to Users from Anti Antivirus Software.\n- Windows Server2012,16,19 installation Creating and Applying policies to and users in the Server.\n- Configure DHCP, DNS, FTP, WDS and Software Deployment.\n\nEducation\n\nMainpuri,India\n\nEtawah, India\n\n2023 2018 Jun 2020 Jun\n\nEtawah, India\n\n+91-9873479894\n\nIndian\n\nBachelor of Science, Agra University\n\n10th BND Adarsh inter college\n\n12th HMS Islamia inter college\n\n- Installation windows 10, Windows 11 and dual booting.\n- Windows maintenance.\n- MS outlook configuration.\n- Troubleshooting of hardware and O/S. Basic Networking.\n- Networking in Domain environment.\n- Sharing folder, sharing device and sharing drive\n- Windows server installation 2016,19\n- Configure Firewall and Apply Rules on Users and Manage Different (ISP)\n\nSkills\n\n- Assembling, hardware up gradation troubleshooting.\n- Upgrade & update the windows.\n- Disk Management, partitions.\n- Map drive, Data sharing TCP/IP Configuration.\n- User Profiles Backup and Restore.\n- Windows password break.\n- Create new OU and User in server and Apply policy to OU and user.\n- Troubleshooting LAN, WAN, PAN.\n- Manage IP Address Static & Dynamic.\n- Basic Troubleshooting Printer and manage.\n- Basic NAS Manage and configuration\n\nDeclaration\n\nI do hereby declare that. the above information is true. and correct. to the best of my knowledge and belief.\n\nRAJ PRATAP",
+    "normalized_text": "RAJ PRATAP\n\nIT Engineer\n\nUnmarried\n\nProfile\n\nAs a IT Engineer I want to explore my career in the field of IT Engineering Services. Intend to work under pressure and challenges, thus, to achieve the goals under Deadlines. Build my career in this filed with my proficiency and skill. I am here to give my best to clients.\n\nProfessional Experience\n\nIT SUPPORT ENGINEER, Mckinsol Consulting Incorporation\n\n2023 Sep - present\n\n- Hardware Support Such as RAM, HARD DISK, GRAPHIC CARD Problem and Hardware Problem Solving. Software\n- Support Software Installation Such as SAP and issue Resolution and Access to BIM 360 & Windows Installation windows7,8,10,11 and windows issue Resolution.\n- Configure Firewall and Set Rules on Users View ISP line.\n- Applying Policies to Users from Anti Antivirus Software.\n- Windows Server2012,16,19 installation Creating and Applying policies to and users in the Server.\n- Configure DHCP, DNS, FTP, WDS and Software Deployment.\n\nEducation\n\nMainpuri,India\n\nEtawah, India\n\n2023 2018 Jun 2020 Jun\n\nEtawah, India\n\n+91-9873479894\n\nIndian\n\nBachelor of Science, Agra University\n\n10th BND Adarsh inter college\n\n12th HMS Islamia inter college\n\n- Installation windows 10, Windows 11 and dual booting.\n- Windows maintenance.\n- MS outlook configuration.\n- Troubleshooting of hardware and O/S. Basic Networking.\n- Networking in Domain environment.\n- Sharing folder, sharing device and sharing drive\n- Windows server installation 2016,19\n- Configure Firewall and Apply Rules on Users and Manage Different (ISP)\n\nSkills\n\n- Assembling, hardware up gradation troubleshooting.\n- Upgrade & update the windows.\n- Disk Management, partitions.\n- Map drive, Data sharing TCP/IP Configuration.\n- User Profiles Backup and Restore.\n- Windows password break.\n- Create new OU and User in server and Apply policy to OU and user.\n- Troubleshooting LAN, WAN, PAN.\n- Manage IP Address Static & Dynamic.\n- Basic Troubleshooting Printer and manage.\n- Basic NAS Manage and configuration\n\nDeclaration\n\nI do hereby declare that. the above information is true. and correct. to the best of my knowledge and belief.\n\nRAJ PRATAP",
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "original_chars": 2115,
+    "normalized_chars": 2115,
+    "original_estimated_tokens": 529,
+    "normalized_estimated_tokens": 529,
+    "estimated_reduction_percent": 0.0
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "timeout",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 0,
+    "timed_out_calls": 1,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_source": null,
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Muse API request timed out after 20s.",
+    "input_type": "text",
+    "duration_ms": 20052.42,
+    "timeout_seconds": 20.0,
+    "usage": {},
+    "text_normalization": {
+      "source": "docling",
+      "status": "applied",
+      "original_chars": 2115,
+      "normalized_chars": 2115,
+      "estimated_reduction_percent": 0.0,
+      "normalization_applied": false,
+      "normalization_steps": [],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 3,
+  "fallback_occurred": true,
+  "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 67.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 6829.98,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 67.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. A later extractor was accepted, so this candidate was not selected.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2120,
+            "word_count": 309,
+            "line_count": 61,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.156132,
+            "symbol_count": 1,
+            "symbol_ratio": 0.000472,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 67.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2120,
+            "word_count": 309,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Skills"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2120,
+            "word_count": 309,
+            "line_count": 61,
+            "non_empty_line_count": 57,
+            "short_line_count": 17,
+            "short_line_ratio": 0.298246,
+            "fragmented_line_count": 13,
+            "fragmented_line_ratio": 0.22807,
+            "mean_line_length": 35.81,
+            "median_line_length": 33.0,
+            "line_length_stdev": 23.45,
+            "line_length_cv": 0.654779,
+            "broken_sentence_count": 11,
+            "broken_sentence_ratio": 0.196429,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": 26.91,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "pymupdf",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 67.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. A later extractor was accepted, so this candidate was not selected.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2185,
+            "word_count": 307,
+            "line_count": 99,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.20595,
+            "symbol_count": 1,
+            "symbol_ratio": 0.000458,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 67.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2185,
+            "word_count": 307,
+            "configured_section_count": 7,
+            "detected_count": 2,
+            "missing_count": 5,
+            "detected_sections": [
+              "Contact Information",
+              "Skills"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2185,
+            "word_count": 307,
+            "line_count": 99,
+            "non_empty_line_count": 61,
+            "short_line_count": 20,
+            "short_line_ratio": 0.327869,
+            "fragmented_line_count": 18,
+            "fragmented_line_ratio": 0.295082,
+            "mean_line_length": 32.48,
+            "median_line_length": 29.0,
+            "line_length_stdev": 23.8,
+            "line_length_cv": 0.733015,
+            "broken_sentence_count": 9,
+            "broken_sentence_ratio": 0.15,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 34648.97,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60",
+        "source_tool": "docling",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2115,
+            "word_count": 329,
+            "line_count": 71,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.16643,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2115,
+            "word_count": 329,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:(\\+?\\d[\\d\\s().-]{7,}\\d)",
+              "Summary": "profile",
+              "Skills": "skills",
+              "Work Experience": "professional experience",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 99.32,
+          "flags": [
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "Line lengths vary unusually (coefficient of variation 1.05) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 2115,
+            "word_count": 329,
+            "line_count": 71,
+            "non_empty_line_count": 47,
+            "short_line_count": 14,
+            "short_line_ratio": 0.297872,
+            "fragmented_line_count": 13,
+            "fragmented_line_ratio": 0.276596,
+            "mean_line_length": 43.51,
+            "median_line_length": 32.0,
+            "line_length_stdev": 45.48,
+            "line_length_cv": 1.045356,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Docling was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 20052.42,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Muse API request timed out after 20s.",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 34648.97,
+      "message": "Final accepted text produced by Docling.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "f94ee1b2-bca2-41f9-97dd-e1308cb43f60_SHJ-5412_SHC-382573.pdf"
+}

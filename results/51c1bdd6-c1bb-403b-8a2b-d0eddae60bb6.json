@@ -1,0 +1,1110 @@
+{
+  "resume_id": "51c1bdd6-c1bb-403b-8a2b-d0eddae60bb6",
+  "filename": "SHJ-5442_SHC-322019.doc",
+  "file_type": "doc",
+  "mime_type": "application/msword",
+  "file_size_bytes": 43008,
+  "uploaded_at": "2026-11-05T13:35:58.255300+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 6516.8,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 6516.8,
+      "text": "CURRICULAM   VITAE\n\n                Address= Y 299 A Near Ramdwar \n\nMahaveer Nagar \n80 Feet Road \nSanganer Jaipur\n\n302029\n Mobile. No. – 06377518349\nEmail.arvindgurjar.2@gmail.com\nAnand Gurjar\n\nCareer Objective:\n\n· To become an integral part of the success of the Organization with which I shall be associated by rendering whatever knowledge and experience that I possess.\n\nExperience:\n·   10 Year Experience Publication Amar Ujjala Classify Desk \n·    3 Year Experience Bak Office & GR Department Ragani Pvt  Ltd  \n·    2 Year  Experience Mein Facture Kurtis & series  \nAcademic Qualification:\n· 12th from Board of Secondary Education, Ajmer, Rajasthan \n· 10th from Board of Secondary Education, Ajmer, Rajasthan\nProfessional Qualification:\n· Advertisement Course  \nStrength:\n· Punctual and Honest\n\n· Always willing to learn something new\n· Hard Working \n\nPersonal Details:\n\n\tFather’s Name\n\t:\n\tSh. Govind Narayan Gurjar    \n\n\tDate of Birth\n\t:\n\t28 June 1981\n\n\tGender\n\t:\n\tMale  \n\n\tMarital Status\n\t:\n\tMarried\n\n\tNationality\n\t:\n\tIndian\n\n\tLanguages Known\n\t:\n\tHindi &  (Read & write)\n\n\tParmanent Address\n\t\n\tY 299 A mahaveer Nagar Sanganer Jaipur Rajasthan \n\n\nI hereby declare that the above written particulars are true to the best of my knowledge & Belief.\n\nDate: …………\nPlace:  \n                                                                     (Anand  Gurjar )\nz",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-05T13:35:51.692436+00:00",
+      "completed_at": "2026-11-05T13:35:58.210917+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "51c1bdd6-c1bb-403b-8a2b-d0eddae60bb6",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 69 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 1360,
+            "word_count": 192,
+            "line_count": 69,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.258824,
+            "symbol_count": 16,
+            "symbol_ratio": 0.011765,
+            "max_repeated_char_run": 69,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1360,
+            "word_count": 192,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Work Experience": "experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 70.25,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "60.0% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "54.0% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.19) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 1360,
+            "word_count": 192,
+            "line_count": 69,
+            "non_empty_line_count": 50,
+            "short_line_count": 30,
+            "short_line_ratio": 0.6,
+            "fragmented_line_count": 27,
+            "fragmented_line_ratio": 0.54,
+            "mean_line_length": 23.28,
+            "median_line_length": 14.5,
+            "line_length_stdev": 27.74,
+            "line_length_cv": 1.191437,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": true,
+      "attempt_id": "51c1bdd6-c1bb-403b-8a2b-d0eddae60bb6-attempt-1",
+      "resume_id": "51c1bdd6-c1bb-403b-8a2b-d0eddae60bb6",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "CURRICULAM   VITAE\n\n                Address= Y 299 A Near Ramdwar \n\nMahaveer Nagar \n80 Feet Road \nSanganer Jaipur\n\n302029\n Mobile. No. – 06377518349\nEmail.arvindgurjar.2@gmail.com\nAnand Gurjar\n\nCareer Objective:\n\n· To become an integral part of the success of the Organization with which I shall be associated by rendering whatever knowledge and experience that I possess.\n\nExperience:\n·   10 Year Experience Publication Amar Ujjala Classify Desk \n·    3 Year Experience Bak Office & GR Department Ragani Pvt  Ltd  \n·    2 Year  Experience Mein Facture Kurtis & series  \nAcademic Qualification:\n· 12th from Board of Secondary Education, Ajmer, Rajasthan \n· 10th from Board of Secondary Education, Ajmer, Rajasthan\nProfessional Qualification:\n· Advertisement Course  \nStrength:\n· Punctual and Honest\n\n· Always willing to learn something new\n· Hard Working \n\nPersonal Details:\n\n\tFather’s Name\n\t:\n\tSh. Govind Narayan Gurjar    \n\n\tDate of Birth\n\t:\n\t28 June 1981\n\n\tGender\n\t:\n\tMale  \n\n\tMarital Status\n\t:\n\tMarried\n\n\tNationality\n\t:\n\tIndian\n\n\tLanguages Known\n\t:\n\tHindi &  (Read & write)\n\n\tParmanent Address\n\t\n\tY 299 A mahaveer Nagar Sanganer Jaipur Rajasthan \n\n\nI hereby declare that the above written particulars are true to the best of my knowledge & Belief.\n\nDate: …………\nPlace:  \n                                                                     (Anand  Gurjar )\nz",
+      "extracted_text_length": 1360,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "51c1bdd6-c1bb-403b-8a2b-d0eddae60bb6",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 69 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 1360,
+            "word_count": 192,
+            "line_count": 69,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.258824,
+            "symbol_count": 16,
+            "symbol_ratio": 0.011765,
+            "max_repeated_char_run": 69,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1360,
+            "word_count": 192,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Work Experience": "experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 70.25,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "60.0% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "54.0% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.19) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 1360,
+            "word_count": 192,
+            "line_count": 69,
+            "non_empty_line_count": 50,
+            "short_line_count": 30,
+            "short_line_ratio": 0.6,
+            "fragmented_line_count": 27,
+            "fragmented_line_ratio": 0.54,
+            "mean_line_length": 23.28,
+            "median_line_length": 14.5,
+            "line_length_stdev": 27.74,
+            "line_length_cv": 1.191437,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "extractor_name": "pymupdf",
+      "success": false,
+      "accepted": false,
+      "error": "pymupdf does not support file type 'doc'. Supported: pdf.",
+      "duration_ms": 0.92,
+      "text": "",
+      "extractor_version": "1.28.2",
+      "started_at": "2026-11-05T13:35:58.219859+00:00",
+      "completed_at": "2026-11-05T13:35:58.223625+00:00",
+      "error_type": "UnsupportedFileTypeError",
+      "error_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\codew\\Downloads\\SATVIQ_Resume_Quality_Checker\\satviq_quality_checker\\extractor\\base.py\", line 60, in extract\n    self._validate_type(path)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \"C:\\Users\\codew\\Downloads\\SATVIQ_Resume_Quality_Checker\\satviq_quality_checker\\extractor\\base.py\", line 105, in _validate_type\n    raise UnsupportedFileTypeError(\n    ...<2 lines>...\n    )\nextractor.exceptions.UnsupportedFileTypeError: pymupdf does not support file type 'doc'. Supported: pdf.\n",
+      "metadata": {},
+      "quality_status": null,
+      "quality": null,
+      "decision": "reject",
+      "decision_reason": "pymupdf does not support file type 'doc'. Supported: pdf.",
+      "selected": false,
+      "attempt_id": "51c1bdd6-c1bb-403b-8a2b-d0eddae60bb6-attempt-2",
+      "resume_id": "51c1bdd6-c1bb-403b-8a2b-d0eddae60bb6",
+      "attempt_number": 2,
+      "extraction_status": "FAILED",
+      "extracted_text": "",
+      "extracted_text_length": 0,
+      "error_message": "pymupdf does not support file type 'doc'. Supported: pdf.",
+      "quality_checker_report": null,
+      "fallback_decision": "reject",
+      "fallback_reason": "pymupdf does not support file type 'doc'. Supported: pdf.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "extractor_name": "docling",
+      "success": false,
+      "accepted": false,
+      "error": "docling does not support file type 'doc'. Supported: pdf, docx, pptx, xlsx, html, md, png, jpg, jpeg.",
+      "duration_ms": 0.95,
+      "text": "",
+      "extractor_version": "2.146.0",
+      "started_at": "2026-11-05T13:35:58.232846+00:00",
+      "completed_at": "2026-11-05T13:35:58.237408+00:00",
+      "error_type": "UnsupportedFileTypeError",
+      "error_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\codew\\Downloads\\SATVIQ_Resume_Quality_Checker\\satviq_quality_checker\\extractor\\base.py\", line 60, in extract\n    self._validate_type(path)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \"C:\\Users\\codew\\Downloads\\SATVIQ_Resume_Quality_Checker\\satviq_quality_checker\\extractor\\base.py\", line 105, in _validate_type\n    raise UnsupportedFileTypeError(\n    ...<2 lines>...\n    )\nextractor.exceptions.UnsupportedFileTypeError: docling does not support file type 'doc'. Supported: pdf, docx, pptx, xlsx, html, md, png, jpg, jpeg.\n",
+      "metadata": {},
+      "quality_status": null,
+      "quality": null,
+      "decision": "reject",
+      "decision_reason": "docling does not support file type 'doc'. Supported: pdf, docx, pptx, xlsx, html, md, png, jpg, jpeg.",
+      "selected": false,
+      "attempt_id": "51c1bdd6-c1bb-403b-8a2b-d0eddae60bb6-attempt-3",
+      "resume_id": "51c1bdd6-c1bb-403b-8a2b-d0eddae60bb6",
+      "attempt_number": 3,
+      "extraction_status": "FAILED",
+      "extracted_text": "",
+      "extracted_text_length": 0,
+      "error_message": "docling does not support file type 'doc'. Supported: pdf, docx, pptx, xlsx, html, md, png, jpg, jpeg.",
+      "quality_checker_report": null,
+      "fallback_decision": "reject",
+      "fallback_reason": "docling does not support file type 'doc'. Supported: pdf, docx, pptx, xlsx, html, md, png, jpg, jpeg.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "extractor_name": "ocr",
+      "success": false,
+      "accepted": false,
+      "error": "ocr does not support file type 'doc'. Supported: pdf, png, jpg, jpeg, tif, tiff, bmp, webp.",
+      "duration_ms": 1.41,
+      "text": "",
+      "extractor_version": "0.3.13",
+      "started_at": "2026-11-05T13:35:58.243887+00:00",
+      "completed_at": "2026-11-05T13:35:58.248691+00:00",
+      "error_type": "UnsupportedFileTypeError",
+      "error_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\codew\\Downloads\\SATVIQ_Resume_Quality_Checker\\satviq_quality_checker\\extractor\\base.py\", line 60, in extract\n    self._validate_type(path)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \"C:\\Users\\codew\\Downloads\\SATVIQ_Resume_Quality_Checker\\satviq_quality_checker\\extractor\\base.py\", line 105, in _validate_type\n    raise UnsupportedFileTypeError(\n    ...<2 lines>...\n    )\nextractor.exceptions.UnsupportedFileTypeError: ocr does not support file type 'doc'. Supported: pdf, png, jpg, jpeg, tif, tiff, bmp, webp.\n",
+      "metadata": {},
+      "quality_status": null,
+      "quality": null,
+      "decision": "reject",
+      "decision_reason": "ocr does not support file type 'doc'. Supported: pdf, png, jpg, jpeg, tif, tiff, bmp, webp.",
+      "selected": false,
+      "attempt_id": "51c1bdd6-c1bb-403b-8a2b-d0eddae60bb6-attempt-4",
+      "resume_id": "51c1bdd6-c1bb-403b-8a2b-d0eddae60bb6",
+      "attempt_number": 4,
+      "extraction_status": "FAILED",
+      "extracted_text": "",
+      "extracted_text_length": 0,
+      "error_message": "ocr does not support file type 'doc'. Supported: pdf, png, jpg, jpeg, tif, tiff, bmp, webp.",
+      "quality_checker_report": null,
+      "fallback_decision": "reject",
+      "fallback_reason": "ocr does not support file type 'doc'. Supported: pdf, png, jpg, jpeg, tif, tiff, bmp, webp.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "attempt_id": "51c1bdd6-c1bb-403b-8a2b-d0eddae60bb6-attempt-5",
+      "resume_id": "51c1bdd6-c1bb-403b-8a2b-d0eddae60bb6",
+      "attempt_number": 5,
+      "extractor_name": "muse_ai",
+      "extractor_version": null,
+      "success": false,
+      "accepted": false,
+      "decision": "reject",
+      "decision_reason": "Muse direct extraction supports PDF and image files; this file is '.doc'.",
+      "quality_status": null,
+      "quality": null,
+      "quality_checker_report": null,
+      "duration_ms": 4.25,
+      "text": "",
+      "extracted_text": "",
+      "extracted_text_length": 0,
+      "extraction_status": "FAILED",
+      "error": "Muse direct extraction supports PDF and image files; this file is '.doc'.",
+      "error_message": "Muse direct extraction supports PDF and image files; this file is '.doc'.",
+      "error_type": "MuseError",
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "selected": false,
+      "fallback_decision": "reject",
+      "fallback_reason": "Muse direct extraction supports PDF and image files; this file is '.doc'.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": 20.0,
+      "model_config_id": null,
+      "provider": "Muse AI",
+      "model": "muse-spark-1.3-contributor",
+      "json_validation": null,
+      "input_type": "unsupported",
+      "metadata": {
+        "input_type": "unsupported",
+        "visual_provided": false,
+        "tika_text_provided": false,
+        "tika_text_chars": 0,
+        "hyperlinks_provided": false,
+        "hyperlink_count": 0,
+        "hyperlink_extraction_error": null,
+        "request_id": null,
+        "usage_available": false,
+        "tika_text_normalization": {
+          "status": "applied",
+          "original_chars": 1360,
+          "normalized_chars": 1217,
+          "estimated_reduction_percent": 10.6,
+          "normalization_applied": true,
+          "normalization_steps": [
+            "whitespace_runs_collapsed",
+            "lines_trimmed",
+            "excessive_blank_lines_collapsed"
+          ],
+          "error": null
+        },
+        "page_count": null,
+        "pages_processed": null,
+        "pages_skipped": null,
+        "pages_beyond_image_limit": null,
+        "usage": {}
+      }
+    }
+  ],
+  "extracted_text": "CURRICULAM   VITAE\n\n                Address= Y 299 A Near Ramdwar \n\nMahaveer Nagar \n80 Feet Road \nSanganer Jaipur\n\n302029\n Mobile. No. – 06377518349\nEmail.arvindgurjar.2@gmail.com\nAnand Gurjar\n\nCareer Objective:\n\n· To become an integral part of the success of the Organization with which I shall be associated by rendering whatever knowledge and experience that I possess.\n\nExperience:\n·   10 Year Experience Publication Amar Ujjala Classify Desk \n·    3 Year Experience Bak Office & GR Department Ragani Pvt  Ltd  \n·    2 Year  Experience Mein Facture Kurtis & series  \nAcademic Qualification:\n· 12th from Board of Secondary Education, Ajmer, Rajasthan \n· 10th from Board of Secondary Education, Ajmer, Rajasthan\nProfessional Qualification:\n· Advertisement Course  \nStrength:\n· Punctual and Honest\n\n· Always willing to learn something new\n· Hard Working \n\nPersonal Details:\n\n\tFather’s Name\n\t:\n\tSh. Govind Narayan Gurjar    \n\n\tDate of Birth\n\t:\n\t28 June 1981\n\n\tGender\n\t:\n\tMale  \n\n\tMarital Status\n\t:\n\tMarried\n\n\tNationality\n\t:\n\tIndian\n\n\tLanguages Known\n\t:\n\tHindi &  (Read & write)\n\n\tParmanent Address\n\t\n\tY 299 A mahaveer Nagar Sanganer Jaipur Rajasthan \n\n\nI hereby declare that the above written particulars are true to the best of my knowledge & Belief.\n\nDate: …………\nPlace:  \n                                                                     (Anand  Gurjar )\nz",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "WARNING",
+  "final_quality_status": "WARNING",
+  "final_extracted_text": "CURRICULAM   VITAE\n\n                Address= Y 299 A Near Ramdwar \n\nMahaveer Nagar \n80 Feet Road \nSanganer Jaipur\n\n302029\n Mobile. No. – 06377518349\nEmail.arvindgurjar.2@gmail.com\nAnand Gurjar\n\nCareer Objective:\n\n· To become an integral part of the success of the Organization with which I shall be associated by rendering whatever knowledge and experience that I possess.\n\nExperience:\n·   10 Year Experience Publication Amar Ujjala Classify Desk \n·    3 Year Experience Bak Office & GR Department Ragani Pvt  Ltd  \n·    2 Year  Experience Mein Facture Kurtis & series  \nAcademic Qualification:\n· 12th from Board of Secondary Education, Ajmer, Rajasthan \n· 10th from Board of Secondary Education, Ajmer, Rajasthan\nProfessional Qualification:\n· Advertisement Course  \nStrength:\n· Punctual and Honest\n\n· Always willing to learn something new\n· Hard Working \n\nPersonal Details:\n\n\tFather’s Name\n\t:\n\tSh. Govind Narayan Gurjar    \n\n\tDate of Birth\n\t:\n\t28 June 1981\n\n\tGender\n\t:\n\tMale  \n\n\tMarital Status\n\t:\n\tMarried\n\n\tNationality\n\t:\n\tIndian\n\n\tLanguages Known\n\t:\n\tHindi &  (Read & write)\n\n\tParmanent Address\n\t\n\tY 299 A mahaveer Nagar Sanganer Jaipur Rajasthan \n\n\nI hereby declare that the above written particulars are true to the best of my knowledge & Belief.\n\nDate: …………\nPlace:  \n                                                                     (Anand  Gurjar )\nz",
+  "quality": {
+    "status": "WARNING",
+    "document_id": "51c1bdd6-c1bb-403b-8a2b-d0eddae60bb6",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 80.0,
+      "flags": [
+        "EXCESSIVE_REPEATED_CHARACTERS"
+      ],
+      "reasons": [
+        "Repeated-character corruption suspected: longest run is 69 characters, 0.0% of long lines are single-character repeats."
+      ],
+      "metrics": {
+        "char_count": 1360,
+        "word_count": 192,
+        "line_count": 69,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.258824,
+        "symbol_count": 16,
+        "symbol_ratio": 0.011765,
+        "max_repeated_char_run": 69,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 70.0,
+      "flags": [
+        "MISSING_RECOMMENDED_SECTION",
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 1360,
+        "word_count": 192,
+        "configured_section_count": 7,
+        "detected_count": 3,
+        "missing_count": 4,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Work Experience"
+        ],
+        "missing_sections": [
+          "Skills",
+          "Education",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [
+          "Skills",
+          "Education"
+        ],
+        "missing_optional": [
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "personal details",
+          "Summary": "career objective",
+          "Work Experience": "experience"
+        }
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Work Experience"
+      ],
+      "missing_sections": [
+        "Skills",
+        "Education",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [
+        "Skills",
+        "Education"
+      ],
+      "missing_optional": [
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 70.25,
+      "flags": [
+        "EXCESSIVE_SHORT_LINES",
+        "FRAGMENTED_LINES",
+        "HIGH_LINE_LENGTH_VARIATION"
+      ],
+      "reasons": [
+        "60.0% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+        "54.0% of lines are 15 characters or shorter.",
+        "Line lengths vary unusually (coefficient of variation 1.19) — a possible sign of mixed or merged column text."
+      ],
+      "metrics": {
+        "char_count": 1360,
+        "word_count": 192,
+        "line_count": 69,
+        "non_empty_line_count": 50,
+        "short_line_count": 30,
+        "short_line_ratio": 0.6,
+        "fragmented_line_count": 27,
+        "fragmented_line_ratio": 0.54,
+        "mean_line_length": 23.28,
+        "median_line_length": 14.5,
+        "line_length_stdev": 27.74,
+        "line_length_cv": 1.191437,
+        "broken_sentence_count": 0,
+        "broken_sentence_ratio": 0.0,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Best candidate selected after all extractors were tried: tika (quality WARNING; weakest filter 70.0, average 73.4). Candidates compared: tika (weakest 70.0, average 73.4).",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 60.0,
+  "resume_json": {
+    "full_name": "Anand Gurjar",
+    "email": "arvindgurjar.2@gmail.com",
+    "phone": "06377518349",
+    "location": "Y 299 A, Mahaveer Nagar, Sanganer, Jaipur, Rajasthan 302029",
+    "summary": "To become an integral part of the success of the Organization with which I shall be associated by rendering whatever knowledge and experience that I possess.",
+    "skills": {
+      "technical_skills": [],
+      "soft_skills": [
+        "Punctual and Honest",
+        "Always willing to learn something new",
+        "Hard Working"
+      ],
+      "tools": [],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Classify Desk",
+        "company": "Amar Ujjala",
+        "location": "",
+        "start_date": "",
+        "end_date": "",
+        "highlights": [
+          "10 Year Experience Publication Amar Ujjala Classify Desk"
+        ]
+      },
+      {
+        "title": "Bak Office & GR Department",
+        "company": "Ragani Pvt Ltd",
+        "location": "",
+        "start_date": "",
+        "end_date": "",
+        "highlights": [
+          "3 Year Experience Bak Office & GR Department Ragani Pvt Ltd"
+        ]
+      },
+      {
+        "title": "Mein Facture Kurtis & series",
+        "company": "",
+        "location": "",
+        "start_date": "",
+        "end_date": "",
+        "highlights": [
+          "2 Year Experience Mein Facture Kurtis & series"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "12th",
+        "institution": "Board of Secondary Education, Ajmer, Rajasthan",
+        "location": "",
+        "start_date": "",
+        "end_date": ""
+      },
+      {
+        "degree": "10th",
+        "institution": "Board of Secondary Education, Ajmer, Rajasthan",
+        "location": "",
+        "start_date": "",
+        "end_date": ""
+      }
+    ],
+    "certifications": [
+      "Advertisement Course"
+    ],
+    "languages": [
+      "Hindi"
+    ],
+    "links": []
+  },
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "CURRICULAM   VITAE\n\n                Address= Y 299 A Near Ramdwar \n\nMahaveer Nagar \n80 Feet Road \nSanganer Jaipur\n\n302029\n Mobile. No. – 06377518349\nEmail.arvindgurjar.2@gmail.com\nAnand Gurjar\n\nCareer Objective:\n\n· To become an integral part of the success of the Organization with which I shall be associated by rendering whatever knowledge and experience that I possess.\n\nExperience:\n·   10 Year Experience Publication Amar Ujjala Classify Desk \n·    3 Year Experience Bak Office & GR Department Ragani Pvt  Ltd  \n·    2 Year  Experience Mein Facture Kurtis & series  \nAcademic Qualification:\n· 12th from Board of Secondary Education, Ajmer, Rajasthan \n· 10th from Board of Secondary Education, Ajmer, Rajasthan\nProfessional Qualification:\n· Advertisement Course  \nStrength:\n· Punctual and Honest\n\n· Always willing to learn something new\n· Hard Working \n\nPersonal Details:\n\n\tFather’s Name\n\t:\n\tSh. Govind Narayan Gurjar    \n\n\tDate of Birth\n\t:\n\t28 June 1981\n\n\tGender\n\t:\n\tMale  \n\n\tMarital Status\n\t:\n\tMarried\n\n\tNationality\n\t:\n\tIndian\n\n\tLanguages Known\n\t:\n\tHindi &  (Read & write)\n\n\tParmanent Address\n\t\n\tY 299 A mahaveer Nagar Sanganer Jaipur Rajasthan \n\n\nI hereby declare that the above written particulars are true to the best of my knowledge & Belief.\n\nDate: …………\nPlace:  \n                                                                     (Anand  Gurjar )\nz",
+    "normalized_text": "CURRICULAM VITAE\n\nAddress= Y 299 A Near Ramdwar\n\nMahaveer Nagar\n80 Feet Road\nSanganer Jaipur\n\n302029\nMobile. No. – 06377518349\nEmail.arvindgurjar.2@gmail.com\nAnand Gurjar\n\nCareer Objective:\n\n· To become an integral part of the success of the Organization with which I shall be associated by rendering whatever knowledge and experience that I possess.\n\nExperience:\n· 10 Year Experience Publication Amar Ujjala Classify Desk\n· 3 Year Experience Bak Office & GR Department Ragani Pvt Ltd\n· 2 Year Experience Mein Facture Kurtis & series\nAcademic Qualification:\n· 12th from Board of Secondary Education, Ajmer, Rajasthan\n· 10th from Board of Secondary Education, Ajmer, Rajasthan\nProfessional Qualification:\n· Advertisement Course\nStrength:\n· Punctual and Honest\n\n· Always willing to learn something new\n· Hard Working\n\nPersonal Details:\n\nFather’s Name\n:\nSh. Govind Narayan Gurjar\n\nDate of Birth\n:\n28 June 1981\n\nGender\n:\nMale\n\nMarital Status\n:\nMarried\n\nNationality\n:\nIndian\n\nLanguages Known\n:\nHindi & (Read & write)\n\nParmanent Address\n\nY 299 A mahaveer Nagar Sanganer Jaipur Rajasthan\n\nI hereby declare that the above written particulars are true to the best of my knowledge & Belief.\n\nDate: …………\nPlace:\n(Anand Gurjar )\nz",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 1360,
+    "normalized_chars": 1217,
+    "original_estimated_tokens": 340,
+    "normalized_estimated_tokens": 304,
+    "estimated_reduction_percent": 10.6
+  },
+  "muse_requests": [
+    {
+      "stage": "vision",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "failed",
+      "duration_ms": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    },
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": "chatcmpl-01a1abec-b49b-7189-9509-4de418e87095",
+      "status": "success",
+      "duration_ms": 20150.14,
+      "input_tokens": 1138,
+      "output_tokens": 2196,
+      "total_tokens": 3334,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1138,
+    "output_tokens": 2196,
+    "total_tokens": 3334,
+    "cached_input_tokens": 0,
+    "api_calls": 2,
+    "successful_calls": 1,
+    "failed_calls": 1,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_source": "muse_ai",
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "input_type": "text",
+    "duration_ms": 20150.14,
+    "timeout_seconds": 20.0,
+    "usage": {
+      "completion_tokens": 2196,
+      "prompt_tokens": 1138,
+      "total_tokens": 3334,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1802
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 1360,
+      "normalized_chars": 1217,
+      "estimated_reduction_percent": 10.6,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 5,
+  "fallback_occurred": true,
+  "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/msword",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 6516.8,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 70.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. Selected as the best candidate after all extractors were tried.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "51c1bdd6-c1bb-403b-8a2b-d0eddae60bb6",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 69 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 1360,
+            "word_count": 192,
+            "line_count": 69,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.258824,
+            "symbol_count": 16,
+            "symbol_ratio": 0.011765,
+            "max_repeated_char_run": 69,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 70.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1360,
+            "word_count": 192,
+            "configured_section_count": 7,
+            "detected_count": 3,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Work Experience": "experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 70.25,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "60.0% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "54.0% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.19) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 1360,
+            "word_count": 192,
+            "line_count": 69,
+            "non_empty_line_count": 50,
+            "short_line_count": 30,
+            "short_line_ratio": 0.6,
+            "fragmented_line_count": 27,
+            "fragmented_line_ratio": 0.54,
+            "mean_line_length": 23.28,
+            "median_line_length": 14.5,
+            "line_length_stdev": 27.74,
+            "line_length_cv": 1.191437,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "FAIL",
+      "duration_ms": 0.92,
+      "message": "pymupdf does not support file type 'doc'. Supported: pdf.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Quality Checker did not run because extraction failed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "FAIL",
+      "duration_ms": 0.95,
+      "message": "docling does not support file type 'doc'. Supported: pdf, docx, pptx, xlsx, html, md, png, jpg, jpeg.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Quality Checker did not run because extraction failed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "FAIL",
+      "duration_ms": 1.41,
+      "message": "ocr does not support file type 'doc'. Supported: pdf, png, jpg, jpeg, tif, tiff, bmp, webp.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Quality Checker did not run because extraction failed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": "muse_ai",
+      "status": "FAIL",
+      "duration_ms": 4.25,
+      "message": "Muse direct extraction supports PDF and image files; this file is '.doc'.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 20150.14,
+      "message": "Structured Resume JSON generated by Muse AI and validated against the schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 6516.8,
+      "message": "Final accepted text produced by Tika — best candidate selected after all extractors were tried.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "51c1bdd6-c1bb-403b-8a2b-d0eddae60bb6_SHJ-5442_SHC-322019.doc"
+}

@@ -1,0 +1,777 @@
+{
+  "resume_id": "13886b93-d174-4d12-9463-e559166bc200",
+  "filename": "SHJ-5442_SHC-321955.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 91777,
+  "uploaded_at": "2026-11-05T13:35:38.072739+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 6996.47,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 6996.47,
+      "text": "RAHUL VAGHELA\n\nITI ELECTRICIAN (FRESHER)\n\nLocation: Metoda, Rajkot\n\nPhone: +91 7383931483\n\nEmail: vaghelarahul392@gmail.com\n\nCAREER OBJECTIVE\n\nA dedicated ITI Electrician fresher seeking an entry-level position to apply basic electrical knowledge, wiring skills,\n\nand safety principles while gaining practical experience in industrial and domestic electrical operations.\n\nEDUCATION & QUALIFICATION\n\nITI Electrician\n\nNCVT Board\n\nTECHNICAL SKILLS\n\nBasic House & Industrial Wiring (Single-Phase & Three-Phase)\n\nKnowledge of Switchboards, MCBs, and Control Panel Wiring\n\nMotor connection, Starters (AC/DC) & Transformer basics\n\nTesting instruments: Multimeter, Megger & Tester\n\nElectrical Safety Rules & Earthing Installation\n\nPRACTICAL TRAINING / ITI WORKSHOP\n\nCompleted practical training on circuit connections, lighting systems, and distribution boards during ITI\n\ncoursework.\n\nHandled basic testing, motor connections, and fault identification in laboratory exercises.\n\nFollowed workplace safety guidelines and standard precautions during practical work.\n\nPERSONAL DETAILS\n\nFull Name Rahul Vaghela\n\nDate of Birth 05-03-1997\n\nGender Male\n\nCurrent Location Metoda, Rajkot\n\nLanguages Known Gujarati, Hindi\n\n\n\nRahul Vaghela — Resume Page 1 of 1",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-05T13:35:31.069434+00:00",
+      "completed_at": "2026-11-05T13:35:38.067480+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "13886b93-d174-4d12-9463-e559166bc200",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1241,
+            "word_count": 156,
+            "line_count": 59,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.149073,
+            "symbol_count": 1,
+            "symbol_ratio": 0.000806,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1241,
+            "word_count": 156,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Education"
+            ],
+            "missing_sections": [
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Skills": "technical skills",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Education"
+          ],
+          "missing_sections": [
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1241,
+            "word_count": 156,
+            "line_count": 59,
+            "non_empty_line_count": 29,
+            "short_line_count": 9,
+            "short_line_ratio": 0.310345,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.172414,
+            "mean_line_length": 40.79,
+            "median_line_length": 31.0,
+            "line_length_stdev": 31.05,
+            "line_length_cv": 0.761101,
+            "broken_sentence_count": 2,
+            "broken_sentence_ratio": 0.071429,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "13886b93-d174-4d12-9463-e559166bc200-attempt-1",
+      "resume_id": "13886b93-d174-4d12-9463-e559166bc200",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "RAHUL VAGHELA\n\nITI ELECTRICIAN (FRESHER)\n\nLocation: Metoda, Rajkot\n\nPhone: +91 7383931483\n\nEmail: vaghelarahul392@gmail.com\n\nCAREER OBJECTIVE\n\nA dedicated ITI Electrician fresher seeking an entry-level position to apply basic electrical knowledge, wiring skills,\n\nand safety principles while gaining practical experience in industrial and domestic electrical operations.\n\nEDUCATION & QUALIFICATION\n\nITI Electrician\n\nNCVT Board\n\nTECHNICAL SKILLS\n\nBasic House & Industrial Wiring (Single-Phase & Three-Phase)\n\nKnowledge of Switchboards, MCBs, and Control Panel Wiring\n\nMotor connection, Starters (AC/DC) & Transformer basics\n\nTesting instruments: Multimeter, Megger & Tester\n\nElectrical Safety Rules & Earthing Installation\n\nPRACTICAL TRAINING / ITI WORKSHOP\n\nCompleted practical training on circuit connections, lighting systems, and distribution boards during ITI\n\ncoursework.\n\nHandled basic testing, motor connections, and fault identification in laboratory exercises.\n\nFollowed workplace safety guidelines and standard precautions during practical work.\n\nPERSONAL DETAILS\n\nFull Name Rahul Vaghela\n\nDate of Birth 05-03-1997\n\nGender Male\n\nCurrent Location Metoda, Rajkot\n\nLanguages Known Gujarati, Hindi\n\n\n\nRahul Vaghela — Resume Page 1 of 1",
+      "extracted_text_length": 1241,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "13886b93-d174-4d12-9463-e559166bc200",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1241,
+            "word_count": 156,
+            "line_count": 59,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.149073,
+            "symbol_count": 1,
+            "symbol_ratio": 0.000806,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1241,
+            "word_count": 156,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Education"
+            ],
+            "missing_sections": [
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Skills": "technical skills",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Education"
+          ],
+          "missing_sections": [
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1241,
+            "word_count": 156,
+            "line_count": 59,
+            "non_empty_line_count": 29,
+            "short_line_count": 9,
+            "short_line_ratio": 0.310345,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.172414,
+            "mean_line_length": 40.79,
+            "median_line_length": 31.0,
+            "line_length_stdev": 31.05,
+            "line_length_cv": 0.761101,
+            "broken_sentence_count": 2,
+            "broken_sentence_ratio": 0.071429,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    }
+  ],
+  "extracted_text": "RAHUL VAGHELA\n\nITI ELECTRICIAN (FRESHER)\n\nLocation: Metoda, Rajkot\n\nPhone: +91 7383931483\n\nEmail: vaghelarahul392@gmail.com\n\nCAREER OBJECTIVE\n\nA dedicated ITI Electrician fresher seeking an entry-level position to apply basic electrical knowledge, wiring skills,\n\nand safety principles while gaining practical experience in industrial and domestic electrical operations.\n\nEDUCATION & QUALIFICATION\n\nITI Electrician\n\nNCVT Board\n\nTECHNICAL SKILLS\n\nBasic House & Industrial Wiring (Single-Phase & Three-Phase)\n\nKnowledge of Switchboards, MCBs, and Control Panel Wiring\n\nMotor connection, Starters (AC/DC) & Transformer basics\n\nTesting instruments: Multimeter, Megger & Tester\n\nElectrical Safety Rules & Earthing Installation\n\nPRACTICAL TRAINING / ITI WORKSHOP\n\nCompleted practical training on circuit connections, lighting systems, and distribution boards during ITI\n\ncoursework.\n\nHandled basic testing, motor connections, and fault identification in laboratory exercises.\n\nFollowed workplace safety guidelines and standard precautions during practical work.\n\nPERSONAL DETAILS\n\nFull Name Rahul Vaghela\n\nDate of Birth 05-03-1997\n\nGender Male\n\nCurrent Location Metoda, Rajkot\n\nLanguages Known Gujarati, Hindi\n\n\n\nRahul Vaghela — Resume Page 1 of 1",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "RAHUL VAGHELA\n\nITI ELECTRICIAN (FRESHER)\n\nLocation: Metoda, Rajkot\n\nPhone: +91 7383931483\n\nEmail: vaghelarahul392@gmail.com\n\nCAREER OBJECTIVE\n\nA dedicated ITI Electrician fresher seeking an entry-level position to apply basic electrical knowledge, wiring skills,\n\nand safety principles while gaining practical experience in industrial and domestic electrical operations.\n\nEDUCATION & QUALIFICATION\n\nITI Electrician\n\nNCVT Board\n\nTECHNICAL SKILLS\n\nBasic House & Industrial Wiring (Single-Phase & Three-Phase)\n\nKnowledge of Switchboards, MCBs, and Control Panel Wiring\n\nMotor connection, Starters (AC/DC) & Transformer basics\n\nTesting instruments: Multimeter, Megger & Tester\n\nElectrical Safety Rules & Earthing Installation\n\nPRACTICAL TRAINING / ITI WORKSHOP\n\nCompleted practical training on circuit connections, lighting systems, and distribution boards during ITI\n\ncoursework.\n\nHandled basic testing, motor connections, and fault identification in laboratory exercises.\n\nFollowed workplace safety guidelines and standard precautions during practical work.\n\nPERSONAL DETAILS\n\nFull Name Rahul Vaghela\n\nDate of Birth 05-03-1997\n\nGender Male\n\nCurrent Location Metoda, Rajkot\n\nLanguages Known Gujarati, Hindi\n\n\n\nRahul Vaghela — Resume Page 1 of 1",
+  "quality": {
+    "status": "PASS",
+    "document_id": "13886b93-d174-4d12-9463-e559166bc200",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 1241,
+        "word_count": 156,
+        "line_count": 59,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.149073,
+        "symbol_count": 1,
+        "symbol_ratio": 0.000806,
+        "max_repeated_char_run": 4,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 82.0,
+      "flags": [
+        "MISSING_RECOMMENDED_SECTION",
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 1241,
+        "word_count": 156,
+        "configured_section_count": 7,
+        "detected_count": 4,
+        "missing_count": 3,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Education"
+        ],
+        "missing_sections": [
+          "Work Experience",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [
+          "Work Experience"
+        ],
+        "missing_optional": [
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "personal details",
+          "Summary": "career objective",
+          "Skills": "technical skills",
+          "Education": "education"
+        }
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Education"
+      ],
+      "missing_sections": [
+        "Work Experience",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [
+        "Work Experience"
+      ],
+      "missing_optional": [
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 1241,
+        "word_count": 156,
+        "line_count": 59,
+        "non_empty_line_count": 29,
+        "short_line_count": 9,
+        "short_line_ratio": 0.310345,
+        "fragmented_line_count": 5,
+        "fragmented_line_ratio": 0.172414,
+        "mean_line_length": 40.79,
+        "median_line_length": 31.0,
+        "line_length_stdev": 31.05,
+        "line_length_cv": 0.761101,
+        "broken_sentence_count": 2,
+        "broken_sentence_ratio": 0.071429,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 60.0,
+  "resume_json": {
+    "full_name": "Rahul Vaghela",
+    "email": "vaghelarahul392@gmail.com",
+    "phone": "+91 7383931483",
+    "location": "Metoda, Rajkot",
+    "summary": "A dedicated ITI Electrician fresher seeking an entry-level position to apply basic electrical knowledge, wiring skills, and safety principles while gaining practical experience in industrial and domestic electrical operations.",
+    "skills": {
+      "technical_skills": [
+        "Basic House & Industrial Wiring (Single-Phase & Three-Phase)",
+        "Knowledge of Switchboards, MCBs, and Control Panel Wiring",
+        "Motor connection, Starters (AC/DC) & Transformer basics",
+        "Testing instruments: Multimeter, Megger & Tester",
+        "Electrical Safety Rules & Earthing Installation"
+      ],
+      "soft_skills": [],
+      "tools": [],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [],
+    "education": [
+      {
+        "degree": "ITI Electrician",
+        "institution": "NCVT Board",
+        "location": "",
+        "start_date": "",
+        "end_date": ""
+      }
+    ],
+    "certifications": [],
+    "languages": [
+      "Gujarati",
+      "Hindi"
+    ],
+    "links": []
+  },
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "RAHUL VAGHELA\n\nITI ELECTRICIAN (FRESHER)\n\nLocation: Metoda, Rajkot\n\nPhone: +91 7383931483\n\nEmail: vaghelarahul392@gmail.com\n\nCAREER OBJECTIVE\n\nA dedicated ITI Electrician fresher seeking an entry-level position to apply basic electrical knowledge, wiring skills,\n\nand safety principles while gaining practical experience in industrial and domestic electrical operations.\n\nEDUCATION & QUALIFICATION\n\nITI Electrician\n\nNCVT Board\n\nTECHNICAL SKILLS\n\nBasic House & Industrial Wiring (Single-Phase & Three-Phase)\n\nKnowledge of Switchboards, MCBs, and Control Panel Wiring\n\nMotor connection, Starters (AC/DC) & Transformer basics\n\nTesting instruments: Multimeter, Megger & Tester\n\nElectrical Safety Rules & Earthing Installation\n\nPRACTICAL TRAINING / ITI WORKSHOP\n\nCompleted practical training on circuit connections, lighting systems, and distribution boards during ITI\n\ncoursework.\n\nHandled basic testing, motor connections, and fault identification in laboratory exercises.\n\nFollowed workplace safety guidelines and standard precautions during practical work.\n\nPERSONAL DETAILS\n\nFull Name Rahul Vaghela\n\nDate of Birth 05-03-1997\n\nGender Male\n\nCurrent Location Metoda, Rajkot\n\nLanguages Known Gujarati, Hindi\n\n\n\nRahul Vaghela — Resume Page 1 of 1",
+    "normalized_text": "RAHUL VAGHELA\n\nITI ELECTRICIAN (FRESHER)\n\nLocation: Metoda, Rajkot\n\nPhone: +91 7383931483\n\nEmail: vaghelarahul392@gmail.com\n\nCAREER OBJECTIVE\n\nA dedicated ITI Electrician fresher seeking an entry-level position to apply basic electrical knowledge, wiring skills,\n\nand safety principles while gaining practical experience in industrial and domestic electrical operations.\n\nEDUCATION & QUALIFICATION\n\nITI Electrician\n\nNCVT Board\n\nTECHNICAL SKILLS\n\nBasic House & Industrial Wiring (Single-Phase & Three-Phase)\n\nKnowledge of Switchboards, MCBs, and Control Panel Wiring\n\nMotor connection, Starters (AC/DC) & Transformer basics\n\nTesting instruments: Multimeter, Megger & Tester\n\nElectrical Safety Rules & Earthing Installation\n\nPRACTICAL TRAINING / ITI WORKSHOP\n\nCompleted practical training on circuit connections, lighting systems, and distribution boards during ITI\n\ncoursework.\n\nHandled basic testing, motor connections, and fault identification in laboratory exercises.\n\nFollowed workplace safety guidelines and standard precautions during practical work.\n\nPERSONAL DETAILS\n\nFull Name Rahul Vaghela\n\nDate of Birth 05-03-1997\n\nGender Male\n\nCurrent Location Metoda, Rajkot\n\nLanguages Known Gujarati, Hindi\n\nRahul Vaghela — Resume Page 1 of 1",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 1241,
+    "normalized_chars": 1239,
+    "original_estimated_tokens": 310,
+    "normalized_estimated_tokens": 310,
+    "estimated_reduction_percent": 0.0
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": "chatcmpl-01a1abec-4b6a-70b7-98b2-53105c9051c5",
+      "status": "success",
+      "duration_ms": 13494.21,
+      "input_tokens": 1112,
+      "output_tokens": 1298,
+      "total_tokens": 2410,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1112,
+    "output_tokens": 1298,
+    "total_tokens": 2410,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_source": "muse_ai",
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "input_type": "text",
+    "duration_ms": 13494.21,
+    "timeout_seconds": 20.0,
+    "usage": {
+      "completion_tokens": 1298,
+      "prompt_tokens": 1112,
+      "total_tokens": 2410,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1093
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 1241,
+      "normalized_chars": 1239,
+      "estimated_reduction_percent": 0.0,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 6996.47,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "13886b93-d174-4d12-9463-e559166bc200",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1241,
+            "word_count": 156,
+            "line_count": 59,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.149073,
+            "symbol_count": 1,
+            "symbol_ratio": 0.000806,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1241,
+            "word_count": 156,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Education"
+            ],
+            "missing_sections": [
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "career objective",
+              "Skills": "technical skills",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Education"
+          ],
+          "missing_sections": [
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1241,
+            "word_count": 156,
+            "line_count": 59,
+            "non_empty_line_count": 29,
+            "short_line_count": 9,
+            "short_line_ratio": 0.310345,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.172414,
+            "mean_line_length": 40.79,
+            "median_line_length": 31.0,
+            "line_length_stdev": 31.05,
+            "line_length_cv": 0.761101,
+            "broken_sentence_count": 2,
+            "broken_sentence_ratio": 0.071429,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 13494.21,
+      "message": "Structured Resume JSON generated by Muse AI and validated against the schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 6996.47,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "13886b93-d174-4d12-9463-e559166bc200_SHJ-5442_SHC-321955.pdf"
+}

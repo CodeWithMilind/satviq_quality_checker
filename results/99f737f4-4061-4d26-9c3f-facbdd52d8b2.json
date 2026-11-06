@@ -1,0 +1,846 @@
+{
+  "resume_id": "99f737f4-4061-4d26-9c3f-facbdd52d8b2",
+  "filename": "SHJ-5433_SHC-381531.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 236970,
+  "uploaded_at": "2026-11-05T12:58:52.728794+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 6574.25,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 6574.25,
+      "text": "ASHISH SHARMA \n\nSenior Technical Documentation Engineer \n\nSouth Delhi, India | +91 7905878113 | ashuguru54@gmail.com \n\nPROFESSIONAL SUMMARY: - \n\nResults-driven Senior Technical Documentation Engineer with 6+ years of experience in \n\ntechnical documentation, engineering documentation management, project documentation, \n\nvalidation documentation, technical submittals, compliance documentation, and client \n\ncoordination. \n\nCORE COMPETENCIES: - \n\nTechnical Documentation, Engineering Documentation, Technical Submittals, Method \n\nStatements, SOP Development, User Manuals, Validation Documentation (DQ/IQ/OQ/PQ), \n\nProject Handover Documentation, Compliance Documentation, Document Control, Material \n\nSubmittals, Vendor Documentation, BMS & EMS Documentation, Technical Specifications, \n\nClient Coordination, MS Word, MS Excel, PowerPoint. \n\nPROFESSIONAL EXPERIENCE: -  \n\n1. Koncept Engineers | Jul 2024 – Present \n\nSenior Technical Documentation Engineer  \n\n \n\n• Technical Documentation Management – Prepare, review, and maintain engineering \n\ndocuments, technical specifications, SOPs, manuals, and project documentation. \n\n \n\n• Technical Submittals – Develop and submit material submittals, datasheets, \n\ncatalogues, test certificates, and compliance documents. \n\n \n\n• Validation Documentation – Prepare and manage DQ, IQ, OQ, and PQ protocols and \n\nreports. \n\n \n\n• Document Control – Maintain document lifecycle, revision history, version control, and \n\ntracking systems. \n\n \n\n• Compliance Management – Ensure documentation compliance with project \n\nspecifications and quality standards. \n\n \n\n• Project Documentation – Prepare method statements, technical compliance reports, \n\nand project handover dossiers. \n\n \n\n\n\n• Engineering Coordination – Coordinate with engineering, procurement, project, and \n\nquality teams. \n\n \n\n• BMS & EMS Documentation – Manage system documentation throughout project \n\nexecution. \n\n \n\n• Drawing & Vendor Review – Review technical drawings, vendor documents, and \n\nspecifications. \n\n \n\n• Billing Documentation – Support preparation of RA Bills and BOQ documentation. \n\n \n\n• Client Management – Coordinate submissions, approvals, and project close-outs. \n\n \n\n• Process Improvement – Standardize documentation templates and workflows. \n\n \n\n 2. Anankand Paramount Products Pvt. Ltd. (SMC Corporation India)  \n\n     Jul 2019 – Jun 2024 (Technical Documentation Engineer) \n \n\n• Technical Documentation – Prepared technical documents, quotations, proposals, and \n\nproduct information sheets. \n\n \n\n• Customer Support – Provided technical assistance and documentation support. \n\n \n\n• Client Communication – Managed technical and commercial communications. \n\n \n\n• Documentation Control – Organized and maintained business records and technical \n\ndocuments. \n\n \n\n• Relationship Management – Built strong customer relationships through timely \n\nsupport. \n\nEDUCATIONAL QULIFICATIONS: - \n\n• B. Tech, Mechanical Engineering – JB Knowledge Park, Faridabad (2017) \n\n \n\n• Intermediate (12th) – SVN Inter College, Sultanpur, Uttar Pradesh (2013) \n\n \n\n• High School (10th) – Radhiant Inter College, Jalalpur, Uttar Pradesh (2011) \n\nTRAINING & CERTIFICATIONS: - \n\nIndustrial Training – KS Oils Ltd., Guna (M.P.) – 6-week training in oil refining processes. \nAutoCAD Training – DUCAT, JB Knowledge Park",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-05T12:58:46.144411+00:00",
+      "completed_at": "2026-11-05T12:58:52.720028+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "99f737f4-4061-4d26-9c3f-facbdd52d8b2",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3315,
+            "word_count": 394,
+            "line_count": 149,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.171946,
+            "symbol_count": 45,
+            "symbol_ratio": 0.013575,
+            "max_repeated_char_run": 5,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3315,
+            "word_count": 394,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "core competencies",
+              "Work Experience": "professional experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3315,
+            "word_count": 394,
+            "line_count": 149,
+            "non_empty_line_count": 55,
+            "short_line_count": 9,
+            "short_line_ratio": 0.163636,
+            "fragmented_line_count": 8,
+            "fragmented_line_ratio": 0.145455,
+            "mean_line_length": 56.07,
+            "median_line_length": 71.0,
+            "line_length_stdev": 27.75,
+            "line_length_cv": 0.49493,
+            "broken_sentence_count": 15,
+            "broken_sentence_ratio": 0.277778,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "99f737f4-4061-4d26-9c3f-facbdd52d8b2-attempt-1",
+      "resume_id": "99f737f4-4061-4d26-9c3f-facbdd52d8b2",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "ASHISH SHARMA \n\nSenior Technical Documentation Engineer \n\nSouth Delhi, India | +91 7905878113 | ashuguru54@gmail.com \n\nPROFESSIONAL SUMMARY: - \n\nResults-driven Senior Technical Documentation Engineer with 6+ years of experience in \n\ntechnical documentation, engineering documentation management, project documentation, \n\nvalidation documentation, technical submittals, compliance documentation, and client \n\ncoordination. \n\nCORE COMPETENCIES: - \n\nTechnical Documentation, Engineering Documentation, Technical Submittals, Method \n\nStatements, SOP Development, User Manuals, Validation Documentation (DQ/IQ/OQ/PQ), \n\nProject Handover Documentation, Compliance Documentation, Document Control, Material \n\nSubmittals, Vendor Documentation, BMS & EMS Documentation, Technical Specifications, \n\nClient Coordination, MS Word, MS Excel, PowerPoint. \n\nPROFESSIONAL EXPERIENCE: -  \n\n1. Koncept Engineers | Jul 2024 – Present \n\nSenior Technical Documentation Engineer  \n\n \n\n• Technical Documentation Management – Prepare, review, and maintain engineering \n\ndocuments, technical specifications, SOPs, manuals, and project documentation. \n\n \n\n• Technical Submittals – Develop and submit material submittals, datasheets, \n\ncatalogues, test certificates, and compliance documents. \n\n \n\n• Validation Documentation – Prepare and manage DQ, IQ, OQ, and PQ protocols and \n\nreports. \n\n \n\n• Document Control – Maintain document lifecycle, revision history, version control, and \n\ntracking systems. \n\n \n\n• Compliance Management – Ensure documentation compliance with project \n\nspecifications and quality standards. \n\n \n\n• Project Documentation – Prepare method statements, technical compliance reports, \n\nand project handover dossiers. \n\n \n\n\n\n• Engineering Coordination – Coordinate with engineering, procurement, project, and \n\nquality teams. \n\n \n\n• BMS & EMS Documentation – Manage system documentation throughout project \n\nexecution. \n\n \n\n• Drawing & Vendor Review – Review technical drawings, vendor documents, and \n\nspecifications. \n\n \n\n• Billing Documentation – Support preparation of RA Bills and BOQ documentation. \n\n \n\n• Client Management – Coordinate submissions, approvals, and project close-outs. \n\n \n\n• Process Improvement – Standardize documentation templates and workflows. \n\n \n\n 2. Anankand Paramount Products Pvt. Ltd. (SMC Corporation India)  \n\n     Jul 2019 – Jun 2024 (Technical Documentation Engineer) \n \n\n• Technical Documentation – Prepared technical documents, quotations, proposals, and \n\nproduct information sheets. \n\n \n\n• Customer Support – Provided technical assistance and documentation support. \n\n \n\n• Client Communication – Managed technical and commercial communications. \n\n \n\n• Documentation Control – Organized and maintained business records and technical \n\ndocuments. \n\n \n\n• Relationship Management – Built strong customer relationships through timely \n\nsupport. \n\nEDUCATIONAL QULIFICATIONS: - \n\n• B. Tech, Mechanical Engineering – JB Knowledge Park, Faridabad (2017) \n\n \n\n• Intermediate (12th) – SVN Inter College, Sultanpur, Uttar Pradesh (2013) \n\n \n\n• High School (10th) – Radhiant Inter College, Jalalpur, Uttar Pradesh (2011) \n\nTRAINING & CERTIFICATIONS: - \n\nIndustrial Training – KS Oils Ltd., Guna (M.P.) – 6-week training in oil refining processes. \nAutoCAD Training – DUCAT, JB Knowledge Park",
+      "extracted_text_length": 3315,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "99f737f4-4061-4d26-9c3f-facbdd52d8b2",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3315,
+            "word_count": 394,
+            "line_count": 149,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.171946,
+            "symbol_count": 45,
+            "symbol_ratio": 0.013575,
+            "max_repeated_char_run": 5,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3315,
+            "word_count": 394,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "core competencies",
+              "Work Experience": "professional experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3315,
+            "word_count": 394,
+            "line_count": 149,
+            "non_empty_line_count": 55,
+            "short_line_count": 9,
+            "short_line_ratio": 0.163636,
+            "fragmented_line_count": 8,
+            "fragmented_line_ratio": 0.145455,
+            "mean_line_length": 56.07,
+            "median_line_length": 71.0,
+            "line_length_stdev": 27.75,
+            "line_length_cv": 0.49493,
+            "broken_sentence_count": 15,
+            "broken_sentence_ratio": 0.277778,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    }
+  ],
+  "extracted_text": "ASHISH SHARMA \n\nSenior Technical Documentation Engineer \n\nSouth Delhi, India | +91 7905878113 | ashuguru54@gmail.com \n\nPROFESSIONAL SUMMARY: - \n\nResults-driven Senior Technical Documentation Engineer with 6+ years of experience in \n\ntechnical documentation, engineering documentation management, project documentation, \n\nvalidation documentation, technical submittals, compliance documentation, and client \n\ncoordination. \n\nCORE COMPETENCIES: - \n\nTechnical Documentation, Engineering Documentation, Technical Submittals, Method \n\nStatements, SOP Development, User Manuals, Validation Documentation (DQ/IQ/OQ/PQ), \n\nProject Handover Documentation, Compliance Documentation, Document Control, Material \n\nSubmittals, Vendor Documentation, BMS & EMS Documentation, Technical Specifications, \n\nClient Coordination, MS Word, MS Excel, PowerPoint. \n\nPROFESSIONAL EXPERIENCE: -  \n\n1. Koncept Engineers | Jul 2024 – Present \n\nSenior Technical Documentation Engineer  \n\n \n\n• Technical Documentation Management – Prepare, review, and maintain engineering \n\ndocuments, technical specifications, SOPs, manuals, and project documentation. \n\n \n\n• Technical Submittals – Develop and submit material submittals, datasheets, \n\ncatalogues, test certificates, and compliance documents. \n\n \n\n• Validation Documentation – Prepare and manage DQ, IQ, OQ, and PQ protocols and \n\nreports. \n\n \n\n• Document Control – Maintain document lifecycle, revision history, version control, and \n\ntracking systems. \n\n \n\n• Compliance Management – Ensure documentation compliance with project \n\nspecifications and quality standards. \n\n \n\n• Project Documentation – Prepare method statements, technical compliance reports, \n\nand project handover dossiers. \n\n \n\n\n\n• Engineering Coordination – Coordinate with engineering, procurement, project, and \n\nquality teams. \n\n \n\n• BMS & EMS Documentation – Manage system documentation throughout project \n\nexecution. \n\n \n\n• Drawing & Vendor Review – Review technical drawings, vendor documents, and \n\nspecifications. \n\n \n\n• Billing Documentation – Support preparation of RA Bills and BOQ documentation. \n\n \n\n• Client Management – Coordinate submissions, approvals, and project close-outs. \n\n \n\n• Process Improvement – Standardize documentation templates and workflows. \n\n \n\n 2. Anankand Paramount Products Pvt. Ltd. (SMC Corporation India)  \n\n     Jul 2019 – Jun 2024 (Technical Documentation Engineer) \n \n\n• Technical Documentation – Prepared technical documents, quotations, proposals, and \n\nproduct information sheets. \n\n \n\n• Customer Support – Provided technical assistance and documentation support. \n\n \n\n• Client Communication – Managed technical and commercial communications. \n\n \n\n• Documentation Control – Organized and maintained business records and technical \n\ndocuments. \n\n \n\n• Relationship Management – Built strong customer relationships through timely \n\nsupport. \n\nEDUCATIONAL QULIFICATIONS: - \n\n• B. Tech, Mechanical Engineering – JB Knowledge Park, Faridabad (2017) \n\n \n\n• Intermediate (12th) – SVN Inter College, Sultanpur, Uttar Pradesh (2013) \n\n \n\n• High School (10th) – Radhiant Inter College, Jalalpur, Uttar Pradesh (2011) \n\nTRAINING & CERTIFICATIONS: - \n\nIndustrial Training – KS Oils Ltd., Guna (M.P.) – 6-week training in oil refining processes. \nAutoCAD Training – DUCAT, JB Knowledge Park",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "ASHISH SHARMA \n\nSenior Technical Documentation Engineer \n\nSouth Delhi, India | +91 7905878113 | ashuguru54@gmail.com \n\nPROFESSIONAL SUMMARY: - \n\nResults-driven Senior Technical Documentation Engineer with 6+ years of experience in \n\ntechnical documentation, engineering documentation management, project documentation, \n\nvalidation documentation, technical submittals, compliance documentation, and client \n\ncoordination. \n\nCORE COMPETENCIES: - \n\nTechnical Documentation, Engineering Documentation, Technical Submittals, Method \n\nStatements, SOP Development, User Manuals, Validation Documentation (DQ/IQ/OQ/PQ), \n\nProject Handover Documentation, Compliance Documentation, Document Control, Material \n\nSubmittals, Vendor Documentation, BMS & EMS Documentation, Technical Specifications, \n\nClient Coordination, MS Word, MS Excel, PowerPoint. \n\nPROFESSIONAL EXPERIENCE: -  \n\n1. Koncept Engineers | Jul 2024 – Present \n\nSenior Technical Documentation Engineer  \n\n \n\n• Technical Documentation Management – Prepare, review, and maintain engineering \n\ndocuments, technical specifications, SOPs, manuals, and project documentation. \n\n \n\n• Technical Submittals – Develop and submit material submittals, datasheets, \n\ncatalogues, test certificates, and compliance documents. \n\n \n\n• Validation Documentation – Prepare and manage DQ, IQ, OQ, and PQ protocols and \n\nreports. \n\n \n\n• Document Control – Maintain document lifecycle, revision history, version control, and \n\ntracking systems. \n\n \n\n• Compliance Management – Ensure documentation compliance with project \n\nspecifications and quality standards. \n\n \n\n• Project Documentation – Prepare method statements, technical compliance reports, \n\nand project handover dossiers. \n\n \n\n\n\n• Engineering Coordination – Coordinate with engineering, procurement, project, and \n\nquality teams. \n\n \n\n• BMS & EMS Documentation – Manage system documentation throughout project \n\nexecution. \n\n \n\n• Drawing & Vendor Review – Review technical drawings, vendor documents, and \n\nspecifications. \n\n \n\n• Billing Documentation – Support preparation of RA Bills and BOQ documentation. \n\n \n\n• Client Management – Coordinate submissions, approvals, and project close-outs. \n\n \n\n• Process Improvement – Standardize documentation templates and workflows. \n\n \n\n 2. Anankand Paramount Products Pvt. Ltd. (SMC Corporation India)  \n\n     Jul 2019 – Jun 2024 (Technical Documentation Engineer) \n \n\n• Technical Documentation – Prepared technical documents, quotations, proposals, and \n\nproduct information sheets. \n\n \n\n• Customer Support – Provided technical assistance and documentation support. \n\n \n\n• Client Communication – Managed technical and commercial communications. \n\n \n\n• Documentation Control – Organized and maintained business records and technical \n\ndocuments. \n\n \n\n• Relationship Management – Built strong customer relationships through timely \n\nsupport. \n\nEDUCATIONAL QULIFICATIONS: - \n\n• B. Tech, Mechanical Engineering – JB Knowledge Park, Faridabad (2017) \n\n \n\n• Intermediate (12th) – SVN Inter College, Sultanpur, Uttar Pradesh (2013) \n\n \n\n• High School (10th) – Radhiant Inter College, Jalalpur, Uttar Pradesh (2011) \n\nTRAINING & CERTIFICATIONS: - \n\nIndustrial Training – KS Oils Ltd., Guna (M.P.) – 6-week training in oil refining processes. \nAutoCAD Training – DUCAT, JB Knowledge Park",
+  "quality": {
+    "status": "PASS",
+    "document_id": "99f737f4-4061-4d26-9c3f-facbdd52d8b2",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3315,
+        "word_count": 394,
+        "line_count": 149,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.171946,
+        "symbol_count": 45,
+        "symbol_ratio": 0.013575,
+        "max_repeated_char_run": 5,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 82.0,
+      "flags": [
+        "MISSING_RECOMMENDED_SECTION",
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 3315,
+        "word_count": 394,
+        "configured_section_count": 7,
+        "detected_count": 4,
+        "missing_count": 3,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience"
+        ],
+        "missing_sections": [
+          "Education",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [
+          "Education"
+        ],
+        "missing_optional": [
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "professional summary",
+          "Skills": "core competencies",
+          "Work Experience": "professional experience"
+        }
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience"
+      ],
+      "missing_sections": [
+        "Education",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [
+        "Education"
+      ],
+      "missing_optional": [
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3315,
+        "word_count": 394,
+        "line_count": 149,
+        "non_empty_line_count": 55,
+        "short_line_count": 9,
+        "short_line_ratio": 0.163636,
+        "fragmented_line_count": 8,
+        "fragmented_line_ratio": 0.145455,
+        "mean_line_length": 56.07,
+        "median_line_length": 71.0,
+        "line_length_stdev": 27.75,
+        "line_length_cv": 0.49493,
+        "broken_sentence_count": 15,
+        "broken_sentence_ratio": 0.277778,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 60.0,
+  "resume_json": {
+    "full_name": "ASHISH SHARMA",
+    "email": "ashuguru54@gmail.com",
+    "phone": "+91 7905878113",
+    "location": "South Delhi, India",
+    "summary": "Results-driven Senior Technical Documentation Engineer with 6+ years of experience in technical documentation, engineering documentation management, project documentation, validation documentation, technical submittals, compliance documentation, and client coordination.",
+    "skills": {
+      "technical_skills": [
+        "Technical Documentation",
+        "Engineering Documentation",
+        "Technical Submittals",
+        "Method Statements",
+        "SOP Development",
+        "User Manuals",
+        "Validation Documentation (DQ/IQ/OQ/PQ)",
+        "Project Handover Documentation",
+        "Compliance Documentation",
+        "Document Control",
+        "Material Submittals",
+        "Vendor Documentation",
+        "BMS & EMS Documentation",
+        "Technical Specifications"
+      ],
+      "soft_skills": [
+        "Client Coordination"
+      ],
+      "tools": [
+        "MS Word",
+        "MS Excel",
+        "PowerPoint"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Senior Technical Documentation Engineer",
+        "company": "Koncept Engineers",
+        "location": "",
+        "start_date": "Jul 2024",
+        "end_date": "Present",
+        "highlights": [
+          "Technical Documentation Management – Prepare, review, and maintain engineering documents, technical specifications, SOPs, manuals, and project documentation.",
+          "Technical Submittals – Develop and submit material submittals, datasheets, catalogues, test certificates, and compliance documents.",
+          "Validation Documentation – Prepare and manage DQ, IQ, OQ, and PQ protocols and reports.",
+          "Document Control – Maintain document lifecycle, revision history, version control, and tracking systems.",
+          "Compliance Management – Ensure documentation compliance with project specifications and quality standards.",
+          "Project Documentation – Prepare method statements, technical compliance reports, and project handover dossiers.",
+          "Engineering Coordination – Coordinate with engineering, procurement, project, and quality teams.",
+          "BMS & EMS Documentation – Manage system documentation throughout project execution.",
+          "Drawing & Vendor Review – Review technical drawings, vendor documents, and specifications.",
+          "Billing Documentation – Support preparation of RA Bills and BOQ documentation.",
+          "Client Management – Coordinate submissions, approvals, and project close-outs.",
+          "Process Improvement – Standardize documentation templates and workflows."
+        ]
+      },
+      {
+        "title": "Technical Documentation Engineer",
+        "company": "Anankand Paramount Products Pvt. Ltd. (SMC Corporation India)",
+        "location": "",
+        "start_date": "Jul 2019",
+        "end_date": "Jun 2024",
+        "highlights": [
+          "Technical Documentation – Prepared technical documents, quotations, proposals, and product information sheets.",
+          "Customer Support – Provided technical assistance and documentation support.",
+          "Client Communication – Managed technical and commercial communications.",
+          "Documentation Control – Organized and maintained business records and technical documents.",
+          "Relationship Management – Built strong customer relationships through timely support."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "B. Tech, Mechanical Engineering",
+        "institution": "JB Knowledge Park",
+        "location": "Faridabad",
+        "start_date": "",
+        "end_date": "2017"
+      },
+      {
+        "degree": "Intermediate (12th)",
+        "institution": "SVN Inter College",
+        "location": "Sultanpur, Uttar Pradesh",
+        "start_date": "",
+        "end_date": "2013"
+      },
+      {
+        "degree": "High School (10th)",
+        "institution": "Radhiant Inter College",
+        "location": "Jalalpur, Uttar Pradesh",
+        "start_date": "",
+        "end_date": "2011"
+      }
+    ],
+    "certifications": [
+      "Industrial Training – KS Oils Ltd., Guna (M.P.) – 6-week training in oil refining processes.",
+      "AutoCAD Training – DUCAT, JB Knowledge Park"
+    ],
+    "languages": [],
+    "links": []
+  },
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "ASHISH SHARMA \n\nSenior Technical Documentation Engineer \n\nSouth Delhi, India | +91 7905878113 | ashuguru54@gmail.com \n\nPROFESSIONAL SUMMARY: - \n\nResults-driven Senior Technical Documentation Engineer with 6+ years of experience in \n\ntechnical documentation, engineering documentation management, project documentation, \n\nvalidation documentation, technical submittals, compliance documentation, and client \n\ncoordination. \n\nCORE COMPETENCIES: - \n\nTechnical Documentation, Engineering Documentation, Technical Submittals, Method \n\nStatements, SOP Development, User Manuals, Validation Documentation (DQ/IQ/OQ/PQ), \n\nProject Handover Documentation, Compliance Documentation, Document Control, Material \n\nSubmittals, Vendor Documentation, BMS & EMS Documentation, Technical Specifications, \n\nClient Coordination, MS Word, MS Excel, PowerPoint. \n\nPROFESSIONAL EXPERIENCE: -  \n\n1. Koncept Engineers | Jul 2024 – Present \n\nSenior Technical Documentation Engineer  \n\n \n\n• Technical Documentation Management – Prepare, review, and maintain engineering \n\ndocuments, technical specifications, SOPs, manuals, and project documentation. \n\n \n\n• Technical Submittals – Develop and submit material submittals, datasheets, \n\ncatalogues, test certificates, and compliance documents. \n\n \n\n• Validation Documentation – Prepare and manage DQ, IQ, OQ, and PQ protocols and \n\nreports. \n\n \n\n• Document Control – Maintain document lifecycle, revision history, version control, and \n\ntracking systems. \n\n \n\n• Compliance Management – Ensure documentation compliance with project \n\nspecifications and quality standards. \n\n \n\n• Project Documentation – Prepare method statements, technical compliance reports, \n\nand project handover dossiers. \n\n \n\n\n\n• Engineering Coordination – Coordinate with engineering, procurement, project, and \n\nquality teams. \n\n \n\n• BMS & EMS Documentation – Manage system documentation throughout project \n\nexecution. \n\n \n\n• Drawing & Vendor Review – Review technical drawings, vendor documents, and \n\nspecifications. \n\n \n\n• Billing Documentation – Support preparation of RA Bills and BOQ documentation. \n\n \n\n• Client Management – Coordinate submissions, approvals, and project close-outs. \n\n \n\n• Process Improvement – Standardize documentation templates and workflows. \n\n \n\n 2. Anankand Paramount Products Pvt. Ltd. (SMC Corporation India)  \n\n     Jul 2019 – Jun 2024 (Technical Documentation Engineer) \n \n\n• Technical Documentation – Prepared technical documents, quotations, proposals, and \n\nproduct information sheets. \n\n \n\n• Customer Support – Provided technical assistance and documentation support. \n\n \n\n• Client Communication – Managed technical and commercial communications. \n\n \n\n• Documentation Control – Organized and maintained business records and technical \n\ndocuments. \n\n \n\n• Relationship Management – Built strong customer relationships through timely \n\nsupport. \n\nEDUCATIONAL QULIFICATIONS: - \n\n• B. Tech, Mechanical Engineering – JB Knowledge Park, Faridabad (2017) \n\n \n\n• Intermediate (12th) – SVN Inter College, Sultanpur, Uttar Pradesh (2013) \n\n \n\n• High School (10th) – Radhiant Inter College, Jalalpur, Uttar Pradesh (2011) \n\nTRAINING & CERTIFICATIONS: - \n\nIndustrial Training – KS Oils Ltd., Guna (M.P.) – 6-week training in oil refining processes. \nAutoCAD Training – DUCAT, JB Knowledge Park",
+    "normalized_text": "ASHISH SHARMA\n\nSenior Technical Documentation Engineer\n\nSouth Delhi, India | +91 7905878113 | ashuguru54@gmail.com\n\nPROFESSIONAL SUMMARY: -\n\nResults-driven Senior Technical Documentation Engineer with 6+ years of experience in\n\ntechnical documentation, engineering documentation management, project documentation,\n\nvalidation documentation, technical submittals, compliance documentation, and client\n\ncoordination.\n\nCORE COMPETENCIES: -\n\nTechnical Documentation, Engineering Documentation, Technical Submittals, Method\n\nStatements, SOP Development, User Manuals, Validation Documentation (DQ/IQ/OQ/PQ),\n\nProject Handover Documentation, Compliance Documentation, Document Control, Material\n\nSubmittals, Vendor Documentation, BMS & EMS Documentation, Technical Specifications,\n\nClient Coordination, MS Word, MS Excel, PowerPoint.\n\nPROFESSIONAL EXPERIENCE: -\n\n1. Koncept Engineers | Jul 2024 – Present\n\nSenior Technical Documentation Engineer\n\n• Technical Documentation Management – Prepare, review, and maintain engineering\n\ndocuments, technical specifications, SOPs, manuals, and project documentation.\n\n• Technical Submittals – Develop and submit material submittals, datasheets,\n\ncatalogues, test certificates, and compliance documents.\n\n• Validation Documentation – Prepare and manage DQ, IQ, OQ, and PQ protocols and\n\nreports.\n\n• Document Control – Maintain document lifecycle, revision history, version control, and\n\ntracking systems.\n\n• Compliance Management – Ensure documentation compliance with project\n\nspecifications and quality standards.\n\n• Project Documentation – Prepare method statements, technical compliance reports,\n\nand project handover dossiers.\n\n• Engineering Coordination – Coordinate with engineering, procurement, project, and\n\nquality teams.\n\n• BMS & EMS Documentation – Manage system documentation throughout project\n\nexecution.\n\n• Drawing & Vendor Review – Review technical drawings, vendor documents, and\n\nspecifications.\n\n• Billing Documentation – Support preparation of RA Bills and BOQ documentation.\n\n• Client Management – Coordinate submissions, approvals, and project close-outs.\n\n• Process Improvement – Standardize documentation templates and workflows.\n\n2. Anankand Paramount Products Pvt. Ltd. (SMC Corporation India)\n\nJul 2019 – Jun 2024 (Technical Documentation Engineer)\n\n• Technical Documentation – Prepared technical documents, quotations, proposals, and\n\nproduct information sheets.\n\n• Customer Support – Provided technical assistance and documentation support.\n\n• Client Communication – Managed technical and commercial communications.\n\n• Documentation Control – Organized and maintained business records and technical\n\ndocuments.\n\n• Relationship Management – Built strong customer relationships through timely\n\nsupport.\n\nEDUCATIONAL QULIFICATIONS: -\n\n• B. Tech, Mechanical Engineering – JB Knowledge Park, Faridabad (2017)\n\n• Intermediate (12th) – SVN Inter College, Sultanpur, Uttar Pradesh (2013)\n\n• High School (10th) – Radhiant Inter College, Jalalpur, Uttar Pradesh (2011)\n\nTRAINING & CERTIFICATIONS: -\n\nIndustrial Training – KS Oils Ltd., Guna (M.P.) – 6-week training in oil refining processes.\nAutoCAD Training – DUCAT, JB Knowledge Park",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 3315,
+    "normalized_chars": 3191,
+    "original_estimated_tokens": 829,
+    "normalized_estimated_tokens": 798,
+    "estimated_reduction_percent": 3.7
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": "chatcmpl-01a1abca-bd44-73de-896b-d75f8dd624c4",
+      "status": "success",
+      "duration_ms": 19755.17,
+      "input_tokens": 1446,
+      "output_tokens": 2506,
+      "total_tokens": 3952,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1446,
+    "output_tokens": 2506,
+    "total_tokens": 3952,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_source": "muse_ai",
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "input_type": "text",
+    "duration_ms": 19755.17,
+    "timeout_seconds": 20.0,
+    "usage": {
+      "completion_tokens": 2506,
+      "prompt_tokens": 1446,
+      "total_tokens": 3952,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1735
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 3315,
+      "normalized_chars": 3191,
+      "estimated_reduction_percent": 3.7,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 6574.25,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "99f737f4-4061-4d26-9c3f-facbdd52d8b2",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3315,
+            "word_count": 394,
+            "line_count": 149,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.171946,
+            "symbol_count": 45,
+            "symbol_ratio": 0.013575,
+            "max_repeated_char_run": 5,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3315,
+            "word_count": 394,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience"
+            ],
+            "missing_sections": [
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Education"
+            ],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "core competencies",
+              "Work Experience": "professional experience"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience"
+          ],
+          "missing_sections": [
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Education"
+          ],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3315,
+            "word_count": 394,
+            "line_count": 149,
+            "non_empty_line_count": 55,
+            "short_line_count": 9,
+            "short_line_ratio": 0.163636,
+            "fragmented_line_count": 8,
+            "fragmented_line_ratio": 0.145455,
+            "mean_line_length": 56.07,
+            "median_line_length": 71.0,
+            "line_length_stdev": 27.75,
+            "line_length_cv": 0.49493,
+            "broken_sentence_count": 15,
+            "broken_sentence_ratio": 0.277778,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 19755.17,
+      "message": "Structured Resume JSON generated by Muse AI and validated against the schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 6574.25,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "99f737f4-4061-4d26-9c3f-facbdd52d8b2_SHJ-5433_SHC-381531.pdf"
+}

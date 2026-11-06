@@ -1,0 +1,1631 @@
+{
+  "resume_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46",
+  "filename": "SHJ-5433_SHC-381365.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 494264,
+  "uploaded_at": "2026-11-05T12:56:11.501386+00:00",
+  "success": true,
+  "extractor_used": "docling",
+  "duration_ms": 8714.04,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 69.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 7397.64,
+      "text": "Ankit Choudhary\nSourcing & Vendor Development | NPD | Supply Chain & Operations\nRajpura, Punjab • +91-  •\nProfessional Summary\nSupply chain and sourcing professional with 8+ years of experience across vendor development, NPD sourcing, inventory \noptimization, and cost reduction. Proven results in tooling/lead time reduction, on time delivery improvement, and \nsupplier performance uplift using Oracle SCM/ERP, Power BI, and advanced Excel. Known for aligning design, production, \nand suppliers to deliver faster, cost effective launches and measurable P&L impact.\nCore Skills\nStrategic Sourcing • Vendor Development • NPD Gate Reviews • RFQ/RFP • Should Cost/Cost Breakdown • VA/VE •\nTooling Standardization • Supplier Scorecards (OTD/OTIF/PPM) • Contract & Terms Negotiation • Lead Time Reduction • \nInventory Optimization (MTO, Safety Stock) • Inter Unit Transfers • Oracle SCM/ERP • Power BI • Advanced Excel\nProfessional Experience\nTI Cycles of India — Senior Executive, Sourcing & Vendor Development\nRajpura, Punjab | 2023 – Present\n\t• Led NPD sourcing for bought out components; developed new sources and qualification plans aligned to design, \nquality, and cost targets.\n\t• Standardized component variants with design; reduced tooling cost and lead time by ~15%.\n\t• Negotiated terms and executed sourcing levers delivering ₹14.52 Cr annualized savings (≈₹1.21 Cr/month, 5%).\n\t• Improved on- time delivery from 62% → 80% by aligning POs to vendor lead times and instituting weekly expediting.\n\t• Adopted Make- to- Order (MTO) with 30- day consumption targets; improved inventory turns from 8 → 12/year in \nFY24.\n\t• Optimized inter unit stock transfers to consume available stock; avoided fresh purchases of ~₹25.27 Lakh/month.\n\t• Led monthly stock reviews and non-moving stock liquidation (own & supplier end); liquidated ~₹35 Lakh inventory in \nFY25.\n\t• Implemented supplier scorecards and quarterly reviews; supplier performance & compliance improved from 82% → \n89%.\n\nALPLA India Pvt. Ltd., Silvassa — Executive, Operational Excellence\nSilvassa, Dadra & Nagar Haveli | 2022 – 2023\n\t• Leveraged Power BI for data- led replenishment; reduced excess inventory by 11% and improved turns from 8 → \n9/year.\n\t• Collaborated with production, planning, and warehouse teams to streamline processes and eliminate waste across \nvalue streams.\n\n\n\nALPLA India Pvt. Ltd., Silvassa — Senior Process Engineer\nSilvassa, Dadra & Nagar Haveli | 2021 – 2022\n\t• Implemented and managed ERP (AlplaPROD) to enable accurate planning and traceability.\n\t• Analyzed eMIS KPI reports (NEE/OEE/TEEP/Waste Rate/Warehouse Utilization); drove targeted actions for ~8% \nefficiency improvement.\n\t• Implemented Automated Storage & Retrieval System (ASRS) to improve continuous stock movement and space \nutilization.\n\t• Streamlined ProLink (IoT with machine HMIs) to capture real time data; reduced unplanned downtime by ~4%.\n\nALPLA India Pvt. Ltd., Silvassa — Process Engineer\nSilvassa, Dadra & Nagar Haveli | 2018 – 2021\n\t• Led daily operations with a team of ~20 junior engineers to meet production and quality targets.\n\t• Eliminated redundant manpower via improved work methods; increased productivity by ~29%.\n\t• Managed mold changeovers and post molding processes ensuring first time right quality and minimal downtime.\n\t• Supported monthly stock takes and served as document controller ensuring Good Documentation Practices (GDP).\n\nALPLA India Pvt. Ltd., Baddi — Production Trainee\nBaddi, Himachal Pradesh | 2016 – 2018\n\t• Operated and supervised Extrusion Blow Molding (SEB & BMU) machines; performed troubleshooting and post \nmolding activities.\n\t• Operated labeling machines (Technoshell, Skanem, Maharishi) and vision inspection cameras (Optomech, Earth \nTeknics).\n\nEducation\nB.Tech (Mechanical Engineering), Baddi University of Emerging Sciences & Technology — 2018  \nHigher Secondary (Non-Medical), GAV Public School, Kangra — 2013\nTools & Technologies\nOracle SCM/ERP • Power BI • Advanced Excel • eMIS KPI Dashboards • ASRS • ProLink (IoT) • AlplaPROD • Microsoft Office\nAdditional\nLanguages: English (Professional), Hindi (Native)\n\n\n\tAnkit Choudhary\n\tProfessional Summary\n\tCore Skills\n\tProfessional Experience\n\tTI Cycles of India — Senior Executive, Sourcing & Vendor Development\n\tALPLA India Pvt. Ltd., Silvassa — Executive, Operational Excellence\n\tALPLA India Pvt. Ltd., Silvassa — Senior Process Engineer\n\tALPLA India Pvt. Ltd., Silvassa — Process Engineer\n\tALPLA India Pvt. Ltd., Baddi — Production Trainee\n\n\tEducation\n\tTools & Technologies\n\tAdditional",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-05T12:55:55.273435+00:00",
+      "completed_at": "2026-11-05T12:56:02.672800+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4545,
+            "word_count": 660,
+            "line_count": 82,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.157976,
+            "symbol_count": 69,
+            "symbol_ratio": 0.015182,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 69.0,
+          "flags": [
+            "MISSING_REQUIRED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Required section not detected: Contact Information. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4545,
+            "word_count": 660,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Contact Information",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [
+              "Contact Information"
+            ],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "professional experience",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Contact Information",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [
+            "Contact Information"
+          ],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4545,
+            "word_count": 660,
+            "line_count": 82,
+            "non_empty_line_count": 72,
+            "short_line_count": 21,
+            "short_line_ratio": 0.291667,
+            "fragmented_line_count": 15,
+            "fragmented_line_ratio": 0.208333,
+            "mean_line_length": 61.33,
+            "median_line_length": 57.0,
+            "line_length_stdev": 41.01,
+            "line_length_cv": 0.668699,
+            "broken_sentence_count": 8,
+            "broken_sentence_ratio": 0.112676,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 69.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": false,
+      "attempt_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46-attempt-1",
+      "resume_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "Ankit Choudhary\nSourcing & Vendor Development | NPD | Supply Chain & Operations\nRajpura, Punjab • +91-  •\nProfessional Summary\nSupply chain and sourcing professional with 8+ years of experience across vendor development, NPD sourcing, inventory \noptimization, and cost reduction. Proven results in tooling/lead time reduction, on time delivery improvement, and \nsupplier performance uplift using Oracle SCM/ERP, Power BI, and advanced Excel. Known for aligning design, production, \nand suppliers to deliver faster, cost effective launches and measurable P&L impact.\nCore Skills\nStrategic Sourcing • Vendor Development • NPD Gate Reviews • RFQ/RFP • Should Cost/Cost Breakdown • VA/VE •\nTooling Standardization • Supplier Scorecards (OTD/OTIF/PPM) • Contract & Terms Negotiation • Lead Time Reduction • \nInventory Optimization (MTO, Safety Stock) • Inter Unit Transfers • Oracle SCM/ERP • Power BI • Advanced Excel\nProfessional Experience\nTI Cycles of India — Senior Executive, Sourcing & Vendor Development\nRajpura, Punjab | 2023 – Present\n\t• Led NPD sourcing for bought out components; developed new sources and qualification plans aligned to design, \nquality, and cost targets.\n\t• Standardized component variants with design; reduced tooling cost and lead time by ~15%.\n\t• Negotiated terms and executed sourcing levers delivering ₹14.52 Cr annualized savings (≈₹1.21 Cr/month, 5%).\n\t• Improved on- time delivery from 62% → 80% by aligning POs to vendor lead times and instituting weekly expediting.\n\t• Adopted Make- to- Order (MTO) with 30- day consumption targets; improved inventory turns from 8 → 12/year in \nFY24.\n\t• Optimized inter unit stock transfers to consume available stock; avoided fresh purchases of ~₹25.27 Lakh/month.\n\t• Led monthly stock reviews and non-moving stock liquidation (own & supplier end); liquidated ~₹35 Lakh inventory in \nFY25.\n\t• Implemented supplier scorecards and quarterly reviews; supplier performance & compliance improved from 82% → \n89%.\n\nALPLA India Pvt. Ltd., Silvassa — Executive, Operational Excellence\nSilvassa, Dadra & Nagar Haveli | 2022 – 2023\n\t• Leveraged Power BI for data- led replenishment; reduced excess inventory by 11% and improved turns from 8 → \n9/year.\n\t• Collaborated with production, planning, and warehouse teams to streamline processes and eliminate waste across \nvalue streams.\n\n\n\nALPLA India Pvt. Ltd., Silvassa — Senior Process Engineer\nSilvassa, Dadra & Nagar Haveli | 2021 – 2022\n\t• Implemented and managed ERP (AlplaPROD) to enable accurate planning and traceability.\n\t• Analyzed eMIS KPI reports (NEE/OEE/TEEP/Waste Rate/Warehouse Utilization); drove targeted actions for ~8% \nefficiency improvement.\n\t• Implemented Automated Storage & Retrieval System (ASRS) to improve continuous stock movement and space \nutilization.\n\t• Streamlined ProLink (IoT with machine HMIs) to capture real time data; reduced unplanned downtime by ~4%.\n\nALPLA India Pvt. Ltd., Silvassa — Process Engineer\nSilvassa, Dadra & Nagar Haveli | 2018 – 2021\n\t• Led daily operations with a team of ~20 junior engineers to meet production and quality targets.\n\t• Eliminated redundant manpower via improved work methods; increased productivity by ~29%.\n\t• Managed mold changeovers and post molding processes ensuring first time right quality and minimal downtime.\n\t• Supported monthly stock takes and served as document controller ensuring Good Documentation Practices (GDP).\n\nALPLA India Pvt. Ltd., Baddi — Production Trainee\nBaddi, Himachal Pradesh | 2016 – 2018\n\t• Operated and supervised Extrusion Blow Molding (SEB & BMU) machines; performed troubleshooting and post \nmolding activities.\n\t• Operated labeling machines (Technoshell, Skanem, Maharishi) and vision inspection cameras (Optomech, Earth \nTeknics).\n\nEducation\nB.Tech (Mechanical Engineering), Baddi University of Emerging Sciences & Technology — 2018  \nHigher Secondary (Non-Medical), GAV Public School, Kangra — 2013\nTools & Technologies\nOracle SCM/ERP • Power BI • Advanced Excel • eMIS KPI Dashboards • ASRS • ProLink (IoT) • AlplaPROD • Microsoft Office\nAdditional\nLanguages: English (Professional), Hindi (Native)\n\n\n\tAnkit Choudhary\n\tProfessional Summary\n\tCore Skills\n\tProfessional Experience\n\tTI Cycles of India — Senior Executive, Sourcing & Vendor Development\n\tALPLA India Pvt. Ltd., Silvassa — Executive, Operational Excellence\n\tALPLA India Pvt. Ltd., Silvassa — Senior Process Engineer\n\tALPLA India Pvt. Ltd., Silvassa — Process Engineer\n\tALPLA India Pvt. Ltd., Baddi — Production Trainee\n\n\tEducation\n\tTools & Technologies\n\tAdditional",
+      "extracted_text_length": 4545,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 69.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4545,
+            "word_count": 660,
+            "line_count": 82,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.157976,
+            "symbol_count": 69,
+            "symbol_ratio": 0.015182,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 69.0,
+          "flags": [
+            "MISSING_REQUIRED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Required section not detected: Contact Information. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4545,
+            "word_count": 660,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Contact Information",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [
+              "Contact Information"
+            ],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "professional experience",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Contact Information",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [
+            "Contact Information"
+          ],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4545,
+            "word_count": 660,
+            "line_count": 82,
+            "non_empty_line_count": 72,
+            "short_line_count": 21,
+            "short_line_ratio": 0.291667,
+            "fragmented_line_count": 15,
+            "fragmented_line_ratio": 0.208333,
+            "mean_line_length": 61.33,
+            "median_line_length": 57.0,
+            "line_length_stdev": 41.01,
+            "line_length_cv": 0.668699,
+            "broken_sentence_count": 8,
+            "broken_sentence_ratio": 0.112676,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 69.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": false,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "extractor_name": "pymupdf",
+      "success": true,
+      "accepted": false,
+      "error": "Quality WARNING is significant under the configured policy (lowest filter score 69.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "duration_ms": 51.73,
+      "text": "Ankit Choudhary \nSourcing & Vendor Development | NPD | Supply Chain & Operations \nRajpura, Punjab • +91-\n • \n \n \n \nProfessional Summary \nSupply chain and sourcing professional with 8+ years of experience across vendor development, NPD sourcing, inventory \noptimization, and cost reduction. Proven results in tooling/lead time reduction, on time delivery improvement, and \nsupplier performance uplift using Oracle SCM/ERP, Power BI, and advanced Excel. Known for aligning design, production, \nand suppliers to deliver faster, cost effective launches and measurable P&L impact. \nCore Skills \nStrategic Sourcing • Vendor Development • NPD Gate Reviews • RFQ/RFP • Should Cost/Cost Breakdown • VA/VE • \nTooling Standardization • Supplier Scorecards (OTD/OTIF/PPM) • Contract & Terms Negotiation • Lead Time Reduction • \nInventory Optimization (MTO, Safety Stock) • Inter Unit Transfers • Oracle SCM/ERP • Power BI • Advanced Excel \nProfessional Experience \nTI Cycles of India — Senior Executive, Sourcing & Vendor Development \nRajpura, Punjab | 2023 – Present \n• Led NPD sourcing for bought out components; developed new sources and qualification plans aligned to design, \nquality, and cost targets. \n• Standardized component variants with design; reduced tooling cost and lead time by ~15%. \n• Negotiated terms and executed sourcing levers delivering ₹14.52 Cr annualized savings (≈₹1.21 Cr/month, 5%). \n• Improved on- time delivery from 62% → 80% by aligning POs to vendor lead times and instituting weekly expediting. \n• Adopted Make- to- Order (MTO) with 30- day consumption targets; improved inventory turns from 8 → 12/year in \nFY24. \n• Optimized inter unit stock transfers to consume available stock; avoided fresh purchases of ~₹25.27 Lakh/month. \n• Led monthly stock reviews and non-moving stock liquidation (own & supplier end); liquidated ~₹35 Lakh inventory in \nFY25. \n• Implemented supplier scorecards and quarterly reviews; supplier performance & compliance improved from 82% → \n89%. \n \nALPLA India Pvt. Ltd., Silvassa — Executive, Operational Excellence \nSilvassa, Dadra & Nagar Haveli | 2022 – 2023 \n• Leveraged Power BI for data- led replenishment; reduced excess inventory by 11% and improved turns from 8 → \n9/year. \n• Collaborated with production, planning, and warehouse teams to streamline processes and eliminate waste across \nvalue streams.\nALPLA India Pvt. Ltd., Silvassa — Senior Process Engineer \nSilvassa, Dadra & Nagar Haveli | 2021 – 2022 \n• Implemented and managed ERP (AlplaPROD) to enable accurate planning and traceability. \n• Analyzed eMIS KPI reports (NEE/OEE/TEEP/Waste Rate/Warehouse Utilization); drove targeted actions for ~8% \nefficiency improvement. \n• Implemented Automated Storage & Retrieval System (ASRS) to improve continuous stock movement and space \nutilization. \n• Streamlined ProLink (IoT with machine HMIs) to capture real time data; reduced unplanned downtime by ~4%. \n \nALPLA India Pvt. Ltd., Silvassa — Process Engineer \nSilvassa, Dadra & Nagar Haveli | 2018 – 2021 \n• Led daily operations with a team of ~20 junior engineers to meet production and quality targets. \n• Eliminated redundant manpower via improved work methods; increased productivity by ~29%. \n• Managed mold changeovers and post molding processes ensuring first time right quality and minimal downtime. \n• Supported monthly stock takes and served as document controller ensuring Good Documentation Practices (GDP). \n \nALPLA India Pvt. Ltd., Baddi — Production Trainee \nBaddi, Himachal Pradesh | 2016 – 2018 \n• Operated and supervised Extrusion Blow Molding (SEB & BMU) machines; performed troubleshooting and post \nmolding activities. \n• Operated labeling machines (Technoshell, Skanem, Maharishi) and vision inspection cameras (Optomech, Earth \nTeknics). \nEducation \nB.Tech (Mechanical Engineering), Baddi University of Emerging Sciences & Technology — 2018  \nHigher Secondary (Non-Medical), GAV Public School, Kangra — 2013 \nTools & Technologies \nOracle SCM/ERP • Power BI • Advanced Excel • eMIS KPI Dashboards • ASRS • ProLink (IoT) • AlplaPROD • Microsoft Office \nAdditional \nLanguages: English (Professional), Hindi (Native)",
+      "extractor_version": "1.28.2",
+      "started_at": "2026-11-05T12:56:02.690497+00:00",
+      "completed_at": "2026-11-05T12:56:02.743858+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "format": "PDF 1.5",
+        "author": "python-docx",
+        "creator": "Aspose Ltd.",
+        "producer": "Aspose.PDF for Java 18.8",
+        "creationDate": "D:20260617073637+00'00'",
+        "modDate": "D:20261008173513+05'30'"
+      },
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4147,
+            "word_count": 602,
+            "line_count": 67,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.162286,
+            "symbol_count": 64,
+            "symbol_ratio": 0.015433,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 69.0,
+          "flags": [
+            "MISSING_REQUIRED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Required section not detected: Contact Information. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4147,
+            "word_count": 602,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Contact Information",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [
+              "Contact Information"
+            ],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "professional experience",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Contact Information",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [
+            "Contact Information"
+          ],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4147,
+            "word_count": 602,
+            "line_count": 67,
+            "non_empty_line_count": 61,
+            "short_line_count": 16,
+            "short_line_ratio": 0.262295,
+            "fragmented_line_count": 12,
+            "fragmented_line_ratio": 0.196721,
+            "mean_line_length": 65.82,
+            "median_line_length": 67.0,
+            "line_length_stdev": 42.16,
+            "line_length_cv": 0.640566,
+            "broken_sentence_count": 8,
+            "broken_sentence_ratio": 0.133333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "decision_reason": "Quality WARNING is significant under the configured policy (lowest filter score 69.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "selected": false,
+      "attempt_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46-attempt-2",
+      "resume_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46",
+      "attempt_number": 2,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "Ankit Choudhary \nSourcing & Vendor Development | NPD | Supply Chain & Operations \nRajpura, Punjab • +91-\n • \n \n \n \nProfessional Summary \nSupply chain and sourcing professional with 8+ years of experience across vendor development, NPD sourcing, inventory \noptimization, and cost reduction. Proven results in tooling/lead time reduction, on time delivery improvement, and \nsupplier performance uplift using Oracle SCM/ERP, Power BI, and advanced Excel. Known for aligning design, production, \nand suppliers to deliver faster, cost effective launches and measurable P&L impact. \nCore Skills \nStrategic Sourcing • Vendor Development • NPD Gate Reviews • RFQ/RFP • Should Cost/Cost Breakdown • VA/VE • \nTooling Standardization • Supplier Scorecards (OTD/OTIF/PPM) • Contract & Terms Negotiation • Lead Time Reduction • \nInventory Optimization (MTO, Safety Stock) • Inter Unit Transfers • Oracle SCM/ERP • Power BI • Advanced Excel \nProfessional Experience \nTI Cycles of India — Senior Executive, Sourcing & Vendor Development \nRajpura, Punjab | 2023 – Present \n• Led NPD sourcing for bought out components; developed new sources and qualification plans aligned to design, \nquality, and cost targets. \n• Standardized component variants with design; reduced tooling cost and lead time by ~15%. \n• Negotiated terms and executed sourcing levers delivering ₹14.52 Cr annualized savings (≈₹1.21 Cr/month, 5%). \n• Improved on- time delivery from 62% → 80% by aligning POs to vendor lead times and instituting weekly expediting. \n• Adopted Make- to- Order (MTO) with 30- day consumption targets; improved inventory turns from 8 → 12/year in \nFY24. \n• Optimized inter unit stock transfers to consume available stock; avoided fresh purchases of ~₹25.27 Lakh/month. \n• Led monthly stock reviews and non-moving stock liquidation (own & supplier end); liquidated ~₹35 Lakh inventory in \nFY25. \n• Implemented supplier scorecards and quarterly reviews; supplier performance & compliance improved from 82% → \n89%. \n \nALPLA India Pvt. Ltd., Silvassa — Executive, Operational Excellence \nSilvassa, Dadra & Nagar Haveli | 2022 – 2023 \n• Leveraged Power BI for data- led replenishment; reduced excess inventory by 11% and improved turns from 8 → \n9/year. \n• Collaborated with production, planning, and warehouse teams to streamline processes and eliminate waste across \nvalue streams.\nALPLA India Pvt. Ltd., Silvassa — Senior Process Engineer \nSilvassa, Dadra & Nagar Haveli | 2021 – 2022 \n• Implemented and managed ERP (AlplaPROD) to enable accurate planning and traceability. \n• Analyzed eMIS KPI reports (NEE/OEE/TEEP/Waste Rate/Warehouse Utilization); drove targeted actions for ~8% \nefficiency improvement. \n• Implemented Automated Storage & Retrieval System (ASRS) to improve continuous stock movement and space \nutilization. \n• Streamlined ProLink (IoT with machine HMIs) to capture real time data; reduced unplanned downtime by ~4%. \n \nALPLA India Pvt. Ltd., Silvassa — Process Engineer \nSilvassa, Dadra & Nagar Haveli | 2018 – 2021 \n• Led daily operations with a team of ~20 junior engineers to meet production and quality targets. \n• Eliminated redundant manpower via improved work methods; increased productivity by ~29%. \n• Managed mold changeovers and post molding processes ensuring first time right quality and minimal downtime. \n• Supported monthly stock takes and served as document controller ensuring Good Documentation Practices (GDP). \n \nALPLA India Pvt. Ltd., Baddi — Production Trainee \nBaddi, Himachal Pradesh | 2016 – 2018 \n• Operated and supervised Extrusion Blow Molding (SEB & BMU) machines; performed troubleshooting and post \nmolding activities. \n• Operated labeling machines (Technoshell, Skanem, Maharishi) and vision inspection cameras (Optomech, Earth \nTeknics). \nEducation \nB.Tech (Mechanical Engineering), Baddi University of Emerging Sciences & Technology — 2018  \nHigher Secondary (Non-Medical), GAV Public School, Kangra — 2013 \nTools & Technologies \nOracle SCM/ERP • Power BI • Advanced Excel • eMIS KPI Dashboards • ASRS • ProLink (IoT) • AlplaPROD • Microsoft Office \nAdditional \nLanguages: English (Professional), Hindi (Native)",
+      "extracted_text_length": 4147,
+      "error_message": "Quality WARNING is significant under the configured policy (lowest filter score 69.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4147,
+            "word_count": 602,
+            "line_count": 67,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.162286,
+            "symbol_count": 64,
+            "symbol_ratio": 0.015433,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 69.0,
+          "flags": [
+            "MISSING_REQUIRED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Required section not detected: Contact Information. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4147,
+            "word_count": 602,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Contact Information",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [
+              "Contact Information"
+            ],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "professional experience",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Contact Information",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [
+            "Contact Information"
+          ],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4147,
+            "word_count": 602,
+            "line_count": 67,
+            "non_empty_line_count": 61,
+            "short_line_count": 16,
+            "short_line_ratio": 0.262295,
+            "fragmented_line_count": 12,
+            "fragmented_line_ratio": 0.196721,
+            "mean_line_length": 65.82,
+            "median_line_length": 67.0,
+            "line_length_stdev": 42.16,
+            "line_length_cv": 0.640566,
+            "broken_sentence_count": 8,
+            "broken_sentence_ratio": 0.133333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "continue",
+      "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 69.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+      "is_final_selected": false,
+      "ocr": null,
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    },
+    {
+      "extractor_name": "docling",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 8714.04,
+      "text": "Professional Summary\n\nSupply chain and sourcing professional with 8+ years of experience across vendor development, NPD sourcing, inventory optimization, and cost reduction. Proven results in tooling/lead time reduction, on time delivery improvement, and supplier performance uplift using Oracle SCM/ERP, Power BI, and advanced Excel. Known for aligning design, production, and suppliers to deliver faster, cost effective launches and measurable P&L impact.\n\nCore Skills\n\nStrategic Sourcing · Vendor Development · NPD Gate Reviews · RFQ/RFP · Should Cost/Cost Breakdown · VA/VE · Tooling Standardization · Supplier Scorecards (OTD/OTIF/PPM) · Contract & Terms Negotiation · Lead Time Reduction · Inventory Optimization (MTO, Safety Stock) · Inter Unit Transfers · Oracle SCM/ERP · Power BI · Advanced Excel\n\nProfessional Experience\n\nTI Cycles of India - Senior Executive, Sourcing & Vendor Development\n\nRajpura, Punjab | 2023 - Present\n\n- Led NPD sourcing for bought out components; developed new sources and qualification plans aligned to design, quality, and cost targets.\n- Standardized component variants with design; reduced tooling cost and lead time by ~15%.\n- Negotiated terms and executed sourcing levers delivering ₹14.52 Cr annualized savings (≈₹1.21 Cr/month, 5%).\n- Improved on- time delivery from 62% → 80% by aligning POs to vendor lead times and instituting weekly expediting.\n- Adopted Make- to- Order (MTO) with 30- day consumption targets; improved inventory turns from 8 → 12/year in FY24.\n- Optimized inter unit stock transfers to consume available stock; avoided fresh purchases of ~₹25.27 Lakh/month.\n- Led monthly stock reviews and non-moving stock liquidation (own & supplier end); liquidated ~₹35 Lakh inventory in FY25.\n- Implemented supplier scorecards and quarterly reviews; supplier performance & compliance improved from 82% → 89%.\n\nALPLA India Pvt. Ltd., Silvassa - Executive, Operational Excellence\n\nSilvassa, Dadra & Nagar Haveli | 2022 - 2023\n\n- Leveraged Power BI for data- led replenishment; reduced excess inventory by 11% and improved turns from 8 → 9/year.\n- Collaborated with production, planning, and warehouse teams to streamline processes and eliminate waste across value streams.\n\nAnkit Choudhary\n\nSourcing & Vendor Development | NPD | Supply Chain & Operations Rajpura, Punjab · +91-·\n\nALPLA India Pvt. Ltd., Silvassa - Senior Process Engineer\n\nSilvassa, Dadra & Nagar Haveli | 2021 - 2022\n\n- Implemented and managed ERP (AlplaPROD) to enable accurate planning and traceability.\n- Analyzed eMIS KPI reports (NEE/OEE/TEEP/Waste Rate/Warehouse Utilization); drove targeted actions for ~8% efficiency improvement.\n- Implemented Automated Storage & Retrieval System (ASRS) to improve continuous stock movement and space utilization.\n- Streamlined ProLink (IoT with machine HMIs) to capture real time data; reduced unplanned downtime by ~4%.\n\nALPLA India Pvt. Ltd., Silvassa - Process Engineer\n\nSilvassa, Dadra & Nagar Haveli | 2018 - 2021\n\n- Led daily operations with a team of ~20 junior engineers to meet production and quality targets.\n- Eliminated redundant manpower via improved work methods; increased productivity by ~29%.\n- Managed mold changeovers and post molding processes ensuring first time right quality and minimal downtime.\n- Supported monthly stock takes and served as document controller ensuring Good Documentation Practices (GDP).\n\nALPLA India Pvt. Ltd., Baddi - Production Trainee\n\nBaddi, Himachal Pradesh | 2016 - 2018\n\n- Operated and supervised Extrusion Blow Molding (SEB & BMU) machines; performed troubleshooting and post molding activities.\n- Operated labeling machines (Technoshell, Skanem, Maharishi) and vision inspection cameras (Optomech, Earth Teknics).\n\nEducation\n\nB.Tech (Mechanical Engineering), Baddi University of Emerging Sciences & Technology - 2018 Higher Secondary (Non-Medical), GAV Public School, Kangra - 2013\n\nTools & Technologies\n\nOracle SCM/ERP · Power BI · Advanced Excel · eMIS KPI Dashboards · ASRS · ProLink (IoT) · AlplaPROD · Microsoft Office\n\nAdditional\n\nLanguages: English (Professional), Hindi (Native)",
+      "extractor_version": "2.146.0",
+      "started_at": "2026-11-05T12:56:02.770352+00:00",
+      "completed_at": "2026-11-05T12:56:11.486030+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46",
+        "source_tool": "docling",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4101,
+            "word_count": 601,
+            "line_count": 70,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.15289,
+            "symbol_count": 32,
+            "symbol_ratio": 0.007803,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4101,
+            "word_count": 601,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:(\\+?\\d[\\d\\s().-]{7,}\\d)",
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "professional experience",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4101,
+            "word_count": 601,
+            "line_count": 70,
+            "non_empty_line_count": 43,
+            "short_line_count": 6,
+            "short_line_ratio": 0.139535,
+            "fragmented_line_count": 4,
+            "fragmented_line_ratio": 0.093023,
+            "mean_line_length": 93.77,
+            "median_line_length": 90.0,
+            "line_length_stdev": 77.07,
+            "line_length_cv": 0.821906,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46-attempt-3",
+      "resume_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46",
+      "attempt_number": 3,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "Professional Summary\n\nSupply chain and sourcing professional with 8+ years of experience across vendor development, NPD sourcing, inventory optimization, and cost reduction. Proven results in tooling/lead time reduction, on time delivery improvement, and supplier performance uplift using Oracle SCM/ERP, Power BI, and advanced Excel. Known for aligning design, production, and suppliers to deliver faster, cost effective launches and measurable P&L impact.\n\nCore Skills\n\nStrategic Sourcing · Vendor Development · NPD Gate Reviews · RFQ/RFP · Should Cost/Cost Breakdown · VA/VE · Tooling Standardization · Supplier Scorecards (OTD/OTIF/PPM) · Contract & Terms Negotiation · Lead Time Reduction · Inventory Optimization (MTO, Safety Stock) · Inter Unit Transfers · Oracle SCM/ERP · Power BI · Advanced Excel\n\nProfessional Experience\n\nTI Cycles of India - Senior Executive, Sourcing & Vendor Development\n\nRajpura, Punjab | 2023 - Present\n\n- Led NPD sourcing for bought out components; developed new sources and qualification plans aligned to design, quality, and cost targets.\n- Standardized component variants with design; reduced tooling cost and lead time by ~15%.\n- Negotiated terms and executed sourcing levers delivering ₹14.52 Cr annualized savings (≈₹1.21 Cr/month, 5%).\n- Improved on- time delivery from 62% → 80% by aligning POs to vendor lead times and instituting weekly expediting.\n- Adopted Make- to- Order (MTO) with 30- day consumption targets; improved inventory turns from 8 → 12/year in FY24.\n- Optimized inter unit stock transfers to consume available stock; avoided fresh purchases of ~₹25.27 Lakh/month.\n- Led monthly stock reviews and non-moving stock liquidation (own & supplier end); liquidated ~₹35 Lakh inventory in FY25.\n- Implemented supplier scorecards and quarterly reviews; supplier performance & compliance improved from 82% → 89%.\n\nALPLA India Pvt. Ltd., Silvassa - Executive, Operational Excellence\n\nSilvassa, Dadra & Nagar Haveli | 2022 - 2023\n\n- Leveraged Power BI for data- led replenishment; reduced excess inventory by 11% and improved turns from 8 → 9/year.\n- Collaborated with production, planning, and warehouse teams to streamline processes and eliminate waste across value streams.\n\nAnkit Choudhary\n\nSourcing & Vendor Development | NPD | Supply Chain & Operations Rajpura, Punjab · +91-·\n\nALPLA India Pvt. Ltd., Silvassa - Senior Process Engineer\n\nSilvassa, Dadra & Nagar Haveli | 2021 - 2022\n\n- Implemented and managed ERP (AlplaPROD) to enable accurate planning and traceability.\n- Analyzed eMIS KPI reports (NEE/OEE/TEEP/Waste Rate/Warehouse Utilization); drove targeted actions for ~8% efficiency improvement.\n- Implemented Automated Storage & Retrieval System (ASRS) to improve continuous stock movement and space utilization.\n- Streamlined ProLink (IoT with machine HMIs) to capture real time data; reduced unplanned downtime by ~4%.\n\nALPLA India Pvt. Ltd., Silvassa - Process Engineer\n\nSilvassa, Dadra & Nagar Haveli | 2018 - 2021\n\n- Led daily operations with a team of ~20 junior engineers to meet production and quality targets.\n- Eliminated redundant manpower via improved work methods; increased productivity by ~29%.\n- Managed mold changeovers and post molding processes ensuring first time right quality and minimal downtime.\n- Supported monthly stock takes and served as document controller ensuring Good Documentation Practices (GDP).\n\nALPLA India Pvt. Ltd., Baddi - Production Trainee\n\nBaddi, Himachal Pradesh | 2016 - 2018\n\n- Operated and supervised Extrusion Blow Molding (SEB & BMU) machines; performed troubleshooting and post molding activities.\n- Operated labeling machines (Technoshell, Skanem, Maharishi) and vision inspection cameras (Optomech, Earth Teknics).\n\nEducation\n\nB.Tech (Mechanical Engineering), Baddi University of Emerging Sciences & Technology - 2018 Higher Secondary (Non-Medical), GAV Public School, Kangra - 2013\n\nTools & Technologies\n\nOracle SCM/ERP · Power BI · Advanced Excel · eMIS KPI Dashboards · ASRS · ProLink (IoT) · AlplaPROD · Microsoft Office\n\nAdditional\n\nLanguages: English (Professional), Hindi (Native)",
+      "extracted_text_length": 4101,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46",
+        "source_tool": "docling",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4101,
+            "word_count": 601,
+            "line_count": 70,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.15289,
+            "symbol_count": 32,
+            "symbol_ratio": 0.007803,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4101,
+            "word_count": 601,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:(\\+?\\d[\\d\\s().-]{7,}\\d)",
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "professional experience",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4101,
+            "word_count": 601,
+            "line_count": 70,
+            "non_empty_line_count": 43,
+            "short_line_count": 6,
+            "short_line_ratio": 0.139535,
+            "fragmented_line_count": 4,
+            "fragmented_line_ratio": 0.093023,
+            "mean_line_length": 93.77,
+            "median_line_length": 90.0,
+            "line_length_stdev": 77.07,
+            "line_length_cv": 0.821906,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": null,
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    }
+  ],
+  "extracted_text": "Professional Summary\n\nSupply chain and sourcing professional with 8+ years of experience across vendor development, NPD sourcing, inventory optimization, and cost reduction. Proven results in tooling/lead time reduction, on time delivery improvement, and supplier performance uplift using Oracle SCM/ERP, Power BI, and advanced Excel. Known for aligning design, production, and suppliers to deliver faster, cost effective launches and measurable P&L impact.\n\nCore Skills\n\nStrategic Sourcing · Vendor Development · NPD Gate Reviews · RFQ/RFP · Should Cost/Cost Breakdown · VA/VE · Tooling Standardization · Supplier Scorecards (OTD/OTIF/PPM) · Contract & Terms Negotiation · Lead Time Reduction · Inventory Optimization (MTO, Safety Stock) · Inter Unit Transfers · Oracle SCM/ERP · Power BI · Advanced Excel\n\nProfessional Experience\n\nTI Cycles of India - Senior Executive, Sourcing & Vendor Development\n\nRajpura, Punjab | 2023 - Present\n\n- Led NPD sourcing for bought out components; developed new sources and qualification plans aligned to design, quality, and cost targets.\n- Standardized component variants with design; reduced tooling cost and lead time by ~15%.\n- Negotiated terms and executed sourcing levers delivering ₹14.52 Cr annualized savings (≈₹1.21 Cr/month, 5%).\n- Improved on- time delivery from 62% → 80% by aligning POs to vendor lead times and instituting weekly expediting.\n- Adopted Make- to- Order (MTO) with 30- day consumption targets; improved inventory turns from 8 → 12/year in FY24.\n- Optimized inter unit stock transfers to consume available stock; avoided fresh purchases of ~₹25.27 Lakh/month.\n- Led monthly stock reviews and non-moving stock liquidation (own & supplier end); liquidated ~₹35 Lakh inventory in FY25.\n- Implemented supplier scorecards and quarterly reviews; supplier performance & compliance improved from 82% → 89%.\n\nALPLA India Pvt. Ltd., Silvassa - Executive, Operational Excellence\n\nSilvassa, Dadra & Nagar Haveli | 2022 - 2023\n\n- Leveraged Power BI for data- led replenishment; reduced excess inventory by 11% and improved turns from 8 → 9/year.\n- Collaborated with production, planning, and warehouse teams to streamline processes and eliminate waste across value streams.\n\nAnkit Choudhary\n\nSourcing & Vendor Development | NPD | Supply Chain & Operations Rajpura, Punjab · +91-·\n\nALPLA India Pvt. Ltd., Silvassa - Senior Process Engineer\n\nSilvassa, Dadra & Nagar Haveli | 2021 - 2022\n\n- Implemented and managed ERP (AlplaPROD) to enable accurate planning and traceability.\n- Analyzed eMIS KPI reports (NEE/OEE/TEEP/Waste Rate/Warehouse Utilization); drove targeted actions for ~8% efficiency improvement.\n- Implemented Automated Storage & Retrieval System (ASRS) to improve continuous stock movement and space utilization.\n- Streamlined ProLink (IoT with machine HMIs) to capture real time data; reduced unplanned downtime by ~4%.\n\nALPLA India Pvt. Ltd., Silvassa - Process Engineer\n\nSilvassa, Dadra & Nagar Haveli | 2018 - 2021\n\n- Led daily operations with a team of ~20 junior engineers to meet production and quality targets.\n- Eliminated redundant manpower via improved work methods; increased productivity by ~29%.\n- Managed mold changeovers and post molding processes ensuring first time right quality and minimal downtime.\n- Supported monthly stock takes and served as document controller ensuring Good Documentation Practices (GDP).\n\nALPLA India Pvt. Ltd., Baddi - Production Trainee\n\nBaddi, Himachal Pradesh | 2016 - 2018\n\n- Operated and supervised Extrusion Blow Molding (SEB & BMU) machines; performed troubleshooting and post molding activities.\n- Operated labeling machines (Technoshell, Skanem, Maharishi) and vision inspection cameras (Optomech, Earth Teknics).\n\nEducation\n\nB.Tech (Mechanical Engineering), Baddi University of Emerging Sciences & Technology - 2018 Higher Secondary (Non-Medical), GAV Public School, Kangra - 2013\n\nTools & Technologies\n\nOracle SCM/ERP · Power BI · Advanced Excel · eMIS KPI Dashboards · ASRS · ProLink (IoT) · AlplaPROD · Microsoft Office\n\nAdditional\n\nLanguages: English (Professional), Hindi (Native)",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "Professional Summary\n\nSupply chain and sourcing professional with 8+ years of experience across vendor development, NPD sourcing, inventory optimization, and cost reduction. Proven results in tooling/lead time reduction, on time delivery improvement, and supplier performance uplift using Oracle SCM/ERP, Power BI, and advanced Excel. Known for aligning design, production, and suppliers to deliver faster, cost effective launches and measurable P&L impact.\n\nCore Skills\n\nStrategic Sourcing · Vendor Development · NPD Gate Reviews · RFQ/RFP · Should Cost/Cost Breakdown · VA/VE · Tooling Standardization · Supplier Scorecards (OTD/OTIF/PPM) · Contract & Terms Negotiation · Lead Time Reduction · Inventory Optimization (MTO, Safety Stock) · Inter Unit Transfers · Oracle SCM/ERP · Power BI · Advanced Excel\n\nProfessional Experience\n\nTI Cycles of India - Senior Executive, Sourcing & Vendor Development\n\nRajpura, Punjab | 2023 - Present\n\n- Led NPD sourcing for bought out components; developed new sources and qualification plans aligned to design, quality, and cost targets.\n- Standardized component variants with design; reduced tooling cost and lead time by ~15%.\n- Negotiated terms and executed sourcing levers delivering ₹14.52 Cr annualized savings (≈₹1.21 Cr/month, 5%).\n- Improved on- time delivery from 62% → 80% by aligning POs to vendor lead times and instituting weekly expediting.\n- Adopted Make- to- Order (MTO) with 30- day consumption targets; improved inventory turns from 8 → 12/year in FY24.\n- Optimized inter unit stock transfers to consume available stock; avoided fresh purchases of ~₹25.27 Lakh/month.\n- Led monthly stock reviews and non-moving stock liquidation (own & supplier end); liquidated ~₹35 Lakh inventory in FY25.\n- Implemented supplier scorecards and quarterly reviews; supplier performance & compliance improved from 82% → 89%.\n\nALPLA India Pvt. Ltd., Silvassa - Executive, Operational Excellence\n\nSilvassa, Dadra & Nagar Haveli | 2022 - 2023\n\n- Leveraged Power BI for data- led replenishment; reduced excess inventory by 11% and improved turns from 8 → 9/year.\n- Collaborated with production, planning, and warehouse teams to streamline processes and eliminate waste across value streams.\n\nAnkit Choudhary\n\nSourcing & Vendor Development | NPD | Supply Chain & Operations Rajpura, Punjab · +91-·\n\nALPLA India Pvt. Ltd., Silvassa - Senior Process Engineer\n\nSilvassa, Dadra & Nagar Haveli | 2021 - 2022\n\n- Implemented and managed ERP (AlplaPROD) to enable accurate planning and traceability.\n- Analyzed eMIS KPI reports (NEE/OEE/TEEP/Waste Rate/Warehouse Utilization); drove targeted actions for ~8% efficiency improvement.\n- Implemented Automated Storage & Retrieval System (ASRS) to improve continuous stock movement and space utilization.\n- Streamlined ProLink (IoT with machine HMIs) to capture real time data; reduced unplanned downtime by ~4%.\n\nALPLA India Pvt. Ltd., Silvassa - Process Engineer\n\nSilvassa, Dadra & Nagar Haveli | 2018 - 2021\n\n- Led daily operations with a team of ~20 junior engineers to meet production and quality targets.\n- Eliminated redundant manpower via improved work methods; increased productivity by ~29%.\n- Managed mold changeovers and post molding processes ensuring first time right quality and minimal downtime.\n- Supported monthly stock takes and served as document controller ensuring Good Documentation Practices (GDP).\n\nALPLA India Pvt. Ltd., Baddi - Production Trainee\n\nBaddi, Himachal Pradesh | 2016 - 2018\n\n- Operated and supervised Extrusion Blow Molding (SEB & BMU) machines; performed troubleshooting and post molding activities.\n- Operated labeling machines (Technoshell, Skanem, Maharishi) and vision inspection cameras (Optomech, Earth Teknics).\n\nEducation\n\nB.Tech (Mechanical Engineering), Baddi University of Emerging Sciences & Technology - 2018 Higher Secondary (Non-Medical), GAV Public School, Kangra - 2013\n\nTools & Technologies\n\nOracle SCM/ERP · Power BI · Advanced Excel · eMIS KPI Dashboards · ASRS · ProLink (IoT) · AlplaPROD · Microsoft Office\n\nAdditional\n\nLanguages: English (Professional), Hindi (Native)",
+  "quality": {
+    "status": "PASS",
+    "document_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46",
+    "source_tool": "docling",
+    "attempt_id": "attempt-3",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 4101,
+        "word_count": 601,
+        "line_count": 70,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.15289,
+        "symbol_count": 32,
+        "symbol_ratio": 0.007803,
+        "max_repeated_char_run": 2,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 94.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 4101,
+        "word_count": 601,
+        "configured_section_count": 7,
+        "detected_count": 5,
+        "missing_count": 2,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_sections": [
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:(\\+?\\d[\\d\\s().-]{7,}\\d)",
+          "Summary": "professional summary",
+          "Skills": "core skills",
+          "Work Experience": "professional experience",
+          "Education": "education"
+        }
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_sections": [
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 4101,
+        "word_count": 601,
+        "line_count": 70,
+        "non_empty_line_count": 43,
+        "short_line_count": 6,
+        "short_line_ratio": 0.139535,
+        "fragmented_line_count": 4,
+        "fragmented_line_ratio": 0.093023,
+        "mean_line_length": 93.77,
+        "median_line_length": 90.0,
+        "line_length_stdev": 77.07,
+        "line_length_cv": 0.821906,
+        "broken_sentence_count": 0,
+        "broken_sentence_ratio": 0.0,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 60.0,
+  "resume_json": {
+    "full_name": "Ankit Choudhary",
+    "email": "",
+    "phone": "",
+    "location": "Rajpura, Punjab",
+    "summary": "Supply chain and sourcing professional with 8+ years of experience across vendor development, NPD sourcing, inventory optimization, and cost reduction. Proven results in tooling/lead time reduction, on time delivery improvement, and supplier performance uplift using Oracle SCM/ERP, Power BI, and advanced Excel. Known for aligning design, production, and suppliers to deliver faster, cost effective launches and measurable P&L impact.",
+    "skills": {
+      "technical_skills": [
+        "Strategic Sourcing",
+        "Vendor Development",
+        "NPD Gate Reviews",
+        "RFQ/RFP",
+        "Should Cost/Cost Breakdown",
+        "VA/VE",
+        "Tooling Standardization",
+        "Supplier Scorecards (OTD/OTIF/PPM)",
+        "Contract & Terms Negotiation",
+        "Lead Time Reduction",
+        "Inventory Optimization (MTO, Safety Stock)",
+        "Inter Unit Transfers"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "Oracle SCM/ERP",
+        "Power BI",
+        "Advanced Excel",
+        "eMIS KPI Dashboards",
+        "ASRS",
+        "ProLink (IoT)",
+        "AlplaPROD",
+        "Microsoft Office"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Senior Executive, Sourcing & Vendor Development",
+        "company": "TI Cycles of India",
+        "location": "Rajpura, Punjab",
+        "start_date": "2023",
+        "end_date": "Present",
+        "highlights": [
+          "Led NPD sourcing for bought out components; developed new sources and qualification plans aligned to design, quality, and cost targets.",
+          "Standardized component variants with design; reduced tooling cost and lead time by ~15%.",
+          "Negotiated terms and executed sourcing levers delivering ₹14.52 Cr annualized savings (≈₹1.21 Cr/month, 5%).",
+          "Improved on-time delivery from 62% → 80% by aligning POs to vendor lead times and instituting weekly expediting.",
+          "Adopted Make-to-Order (MTO) with 30-day consumption targets; improved inventory turns from 8 → 12/year in FY24.",
+          "Optimized inter unit stock transfers to consume available stock; avoided fresh purchases of ~₹25.27 Lakh/month.",
+          "Led monthly stock reviews and non-moving stock liquidation (own & supplier end); liquidated ~₹35 Lakh inventory in FY25.",
+          "Implemented supplier scorecards and quarterly reviews; supplier performance & compliance improved from 82% → 89%."
+        ]
+      },
+      {
+        "title": "Executive, Operational Excellence",
+        "company": "ALPLA India Pvt. Ltd.",
+        "location": "Silvassa, Dadra & Nagar Haveli",
+        "start_date": "2022",
+        "end_date": "2023",
+        "highlights": [
+          "Leveraged Power BI for data-led replenishment; reduced excess inventory by 11% and improved turns from 8 → 9/year.",
+          "Collaborated with production, planning, and warehouse teams to streamline processes and eliminate waste across value streams."
+        ]
+      },
+      {
+        "title": "Senior Process Engineer",
+        "company": "ALPLA India Pvt. Ltd.",
+        "location": "Silvassa, Dadra & Nagar Haveli",
+        "start_date": "2021",
+        "end_date": "2022",
+        "highlights": [
+          "Implemented and managed ERP (AlplaPROD) to enable accurate planning and traceability.",
+          "Analyzed eMIS KPI reports (NEE/OEE/TEEP/Waste Rate/Warehouse Utilization); drove targeted actions for ~8% efficiency improvement.",
+          "Implemented Automated Storage & Retrieval System (ASRS) to improve continuous stock movement and space utilization.",
+          "Streamlined ProLink (IoT with machine HMIs) to capture real time data; reduced unplanned downtime by ~4%."
+        ]
+      },
+      {
+        "title": "Process Engineer",
+        "company": "ALPLA India Pvt. Ltd.",
+        "location": "Silvassa, Dadra & Nagar Haveli",
+        "start_date": "2018",
+        "end_date": "2021",
+        "highlights": [
+          "Led daily operations with a team of ~20 junior engineers to meet production and quality targets.",
+          "Eliminated redundant manpower via improved work methods; increased productivity by ~29%.",
+          "Managed mold changeovers and post molding processes ensuring first time right quality and minimal downtime.",
+          "Supported monthly stock takes and served as document controller ensuring Good Documentation Practices (GDP)."
+        ]
+      },
+      {
+        "title": "Production Trainee",
+        "company": "ALPLA India Pvt. Ltd.",
+        "location": "Baddi, Himachal Pradesh",
+        "start_date": "2016",
+        "end_date": "2018",
+        "highlights": [
+          "Operated and supervised Extrusion Blow Molding (SEB & BMU) machines; performed troubleshooting and post molding activities.",
+          "Operated labeling machines (Technoshell, Skanem, Maharishi) and vision inspection cameras (Optomech, Earth Teknics)."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Tech (Mechanical Engineering)",
+        "institution": "Baddi University of Emerging Sciences & Technology",
+        "location": "",
+        "start_date": "",
+        "end_date": "2018"
+      },
+      {
+        "degree": "Higher Secondary (Non-Medical)",
+        "institution": "GAV Public School",
+        "location": "Kangra",
+        "start_date": "",
+        "end_date": "2013"
+      }
+    ],
+    "certifications": [],
+    "languages": [
+      "English (Professional)",
+      "Hindi (Native)"
+    ],
+    "links": []
+  },
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "docling",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Professional Summary\n\nSupply chain and sourcing professional with 8+ years of experience across vendor development, NPD sourcing, inventory optimization, and cost reduction. Proven results in tooling/lead time reduction, on time delivery improvement, and supplier performance uplift using Oracle SCM/ERP, Power BI, and advanced Excel. Known for aligning design, production, and suppliers to deliver faster, cost effective launches and measurable P&L impact.\n\nCore Skills\n\nStrategic Sourcing · Vendor Development · NPD Gate Reviews · RFQ/RFP · Should Cost/Cost Breakdown · VA/VE · Tooling Standardization · Supplier Scorecards (OTD/OTIF/PPM) · Contract & Terms Negotiation · Lead Time Reduction · Inventory Optimization (MTO, Safety Stock) · Inter Unit Transfers · Oracle SCM/ERP · Power BI · Advanced Excel\n\nProfessional Experience\n\nTI Cycles of India - Senior Executive, Sourcing & Vendor Development\n\nRajpura, Punjab | 2023 - Present\n\n- Led NPD sourcing for bought out components; developed new sources and qualification plans aligned to design, quality, and cost targets.\n- Standardized component variants with design; reduced tooling cost and lead time by ~15%.\n- Negotiated terms and executed sourcing levers delivering ₹14.52 Cr annualized savings (≈₹1.21 Cr/month, 5%).\n- Improved on- time delivery from 62% → 80% by aligning POs to vendor lead times and instituting weekly expediting.\n- Adopted Make- to- Order (MTO) with 30- day consumption targets; improved inventory turns from 8 → 12/year in FY24.\n- Optimized inter unit stock transfers to consume available stock; avoided fresh purchases of ~₹25.27 Lakh/month.\n- Led monthly stock reviews and non-moving stock liquidation (own & supplier end); liquidated ~₹35 Lakh inventory in FY25.\n- Implemented supplier scorecards and quarterly reviews; supplier performance & compliance improved from 82% → 89%.\n\nALPLA India Pvt. Ltd., Silvassa - Executive, Operational Excellence\n\nSilvassa, Dadra & Nagar Haveli | 2022 - 2023\n\n- Leveraged Power BI for data- led replenishment; reduced excess inventory by 11% and improved turns from 8 → 9/year.\n- Collaborated with production, planning, and warehouse teams to streamline processes and eliminate waste across value streams.\n\nAnkit Choudhary\n\nSourcing & Vendor Development | NPD | Supply Chain & Operations Rajpura, Punjab · +91-·\n\nALPLA India Pvt. Ltd., Silvassa - Senior Process Engineer\n\nSilvassa, Dadra & Nagar Haveli | 2021 - 2022\n\n- Implemented and managed ERP (AlplaPROD) to enable accurate planning and traceability.\n- Analyzed eMIS KPI reports (NEE/OEE/TEEP/Waste Rate/Warehouse Utilization); drove targeted actions for ~8% efficiency improvement.\n- Implemented Automated Storage & Retrieval System (ASRS) to improve continuous stock movement and space utilization.\n- Streamlined ProLink (IoT with machine HMIs) to capture real time data; reduced unplanned downtime by ~4%.\n\nALPLA India Pvt. Ltd., Silvassa - Process Engineer\n\nSilvassa, Dadra & Nagar Haveli | 2018 - 2021\n\n- Led daily operations with a team of ~20 junior engineers to meet production and quality targets.\n- Eliminated redundant manpower via improved work methods; increased productivity by ~29%.\n- Managed mold changeovers and post molding processes ensuring first time right quality and minimal downtime.\n- Supported monthly stock takes and served as document controller ensuring Good Documentation Practices (GDP).\n\nALPLA India Pvt. Ltd., Baddi - Production Trainee\n\nBaddi, Himachal Pradesh | 2016 - 2018\n\n- Operated and supervised Extrusion Blow Molding (SEB & BMU) machines; performed troubleshooting and post molding activities.\n- Operated labeling machines (Technoshell, Skanem, Maharishi) and vision inspection cameras (Optomech, Earth Teknics).\n\nEducation\n\nB.Tech (Mechanical Engineering), Baddi University of Emerging Sciences & Technology - 2018 Higher Secondary (Non-Medical), GAV Public School, Kangra - 2013\n\nTools & Technologies\n\nOracle SCM/ERP · Power BI · Advanced Excel · eMIS KPI Dashboards · ASRS · ProLink (IoT) · AlplaPROD · Microsoft Office\n\nAdditional\n\nLanguages: English (Professional), Hindi (Native)",
+    "normalized_text": "Professional Summary\n\nSupply chain and sourcing professional with 8+ years of experience across vendor development, NPD sourcing, inventory optimization, and cost reduction. Proven results in tooling/lead time reduction, on time delivery improvement, and supplier performance uplift using Oracle SCM/ERP, Power BI, and advanced Excel. Known for aligning design, production, and suppliers to deliver faster, cost effective launches and measurable P&L impact.\n\nCore Skills\n\nStrategic Sourcing · Vendor Development · NPD Gate Reviews · RFQ/RFP · Should Cost/Cost Breakdown · VA/VE · Tooling Standardization · Supplier Scorecards (OTD/OTIF/PPM) · Contract & Terms Negotiation · Lead Time Reduction · Inventory Optimization (MTO, Safety Stock) · Inter Unit Transfers · Oracle SCM/ERP · Power BI · Advanced Excel\n\nProfessional Experience\n\nTI Cycles of India - Senior Executive, Sourcing & Vendor Development\n\nRajpura, Punjab | 2023 - Present\n\n- Led NPD sourcing for bought out components; developed new sources and qualification plans aligned to design, quality, and cost targets.\n- Standardized component variants with design; reduced tooling cost and lead time by ~15%.\n- Negotiated terms and executed sourcing levers delivering ₹14.52 Cr annualized savings (≈₹1.21 Cr/month, 5%).\n- Improved on- time delivery from 62% → 80% by aligning POs to vendor lead times and instituting weekly expediting.\n- Adopted Make- to- Order (MTO) with 30- day consumption targets; improved inventory turns from 8 → 12/year in FY24.\n- Optimized inter unit stock transfers to consume available stock; avoided fresh purchases of ~₹25.27 Lakh/month.\n- Led monthly stock reviews and non-moving stock liquidation (own & supplier end); liquidated ~₹35 Lakh inventory in FY25.\n- Implemented supplier scorecards and quarterly reviews; supplier performance & compliance improved from 82% → 89%.\n\nALPLA India Pvt. Ltd., Silvassa - Executive, Operational Excellence\n\nSilvassa, Dadra & Nagar Haveli | 2022 - 2023\n\n- Leveraged Power BI for data- led replenishment; reduced excess inventory by 11% and improved turns from 8 → 9/year.\n- Collaborated with production, planning, and warehouse teams to streamline processes and eliminate waste across value streams.\n\nAnkit Choudhary\n\nSourcing & Vendor Development | NPD | Supply Chain & Operations Rajpura, Punjab · +91-·\n\nALPLA India Pvt. Ltd., Silvassa - Senior Process Engineer\n\nSilvassa, Dadra & Nagar Haveli | 2021 - 2022\n\n- Implemented and managed ERP (AlplaPROD) to enable accurate planning and traceability.\n- Analyzed eMIS KPI reports (NEE/OEE/TEEP/Waste Rate/Warehouse Utilization); drove targeted actions for ~8% efficiency improvement.\n- Implemented Automated Storage & Retrieval System (ASRS) to improve continuous stock movement and space utilization.\n- Streamlined ProLink (IoT with machine HMIs) to capture real time data; reduced unplanned downtime by ~4%.\n\nALPLA India Pvt. Ltd., Silvassa - Process Engineer\n\nSilvassa, Dadra & Nagar Haveli | 2018 - 2021\n\n- Led daily operations with a team of ~20 junior engineers to meet production and quality targets.\n- Eliminated redundant manpower via improved work methods; increased productivity by ~29%.\n- Managed mold changeovers and post molding processes ensuring first time right quality and minimal downtime.\n- Supported monthly stock takes and served as document controller ensuring Good Documentation Practices (GDP).\n\nALPLA India Pvt. Ltd., Baddi - Production Trainee\n\nBaddi, Himachal Pradesh | 2016 - 2018\n\n- Operated and supervised Extrusion Blow Molding (SEB & BMU) machines; performed troubleshooting and post molding activities.\n- Operated labeling machines (Technoshell, Skanem, Maharishi) and vision inspection cameras (Optomech, Earth Teknics).\n\nEducation\n\nB.Tech (Mechanical Engineering), Baddi University of Emerging Sciences & Technology - 2018 Higher Secondary (Non-Medical), GAV Public School, Kangra - 2013\n\nTools & Technologies\n\nOracle SCM/ERP · Power BI · Advanced Excel · eMIS KPI Dashboards · ASRS · ProLink (IoT) · AlplaPROD · Microsoft Office\n\nAdditional\n\nLanguages: English (Professional), Hindi (Native)",
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "original_chars": 4101,
+    "normalized_chars": 4101,
+    "original_estimated_tokens": 1025,
+    "normalized_estimated_tokens": 1025,
+    "estimated_reduction_percent": 0.0
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": "chatcmpl-01a1abc8-469c-7506-8a94-f9ca996939b0",
+      "status": "success",
+      "duration_ms": 19472.39,
+      "input_tokens": 1774,
+      "output_tokens": 2590,
+      "total_tokens": 4364,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1774,
+    "output_tokens": 2590,
+    "total_tokens": 4364,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_source": "muse_ai",
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "input_type": "text",
+    "duration_ms": 19472.39,
+    "timeout_seconds": 20.0,
+    "usage": {
+      "completion_tokens": 2590,
+      "prompt_tokens": 1774,
+      "total_tokens": 4364,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1411
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "text_normalization": {
+      "source": "docling",
+      "status": "applied",
+      "original_chars": 4101,
+      "normalized_chars": 4101,
+      "estimated_reduction_percent": 0.0,
+      "normalization_applied": false,
+      "normalization_steps": [],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 3,
+  "fallback_occurred": true,
+  "fallback_reason": "Quality WARNING is significant under the configured policy (lowest filter score 69.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor.",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 7397.64,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 69.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. A later extractor was accepted, so this candidate was not selected.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4545,
+            "word_count": 660,
+            "line_count": 82,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.157976,
+            "symbol_count": 69,
+            "symbol_ratio": 0.015182,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 69.0,
+          "flags": [
+            "MISSING_REQUIRED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Required section not detected: Contact Information. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4545,
+            "word_count": 660,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Contact Information",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [
+              "Contact Information"
+            ],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "professional experience",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Contact Information",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [
+            "Contact Information"
+          ],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4545,
+            "word_count": 660,
+            "line_count": 82,
+            "non_empty_line_count": 72,
+            "short_line_count": 21,
+            "short_line_ratio": 0.291667,
+            "fragmented_line_count": 15,
+            "fragmented_line_ratio": 0.208333,
+            "mean_line_length": 61.33,
+            "median_line_length": 57.0,
+            "line_length_stdev": 41.01,
+            "line_length_cv": 0.668699,
+            "broken_sentence_count": 8,
+            "broken_sentence_ratio": 0.112676,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": 51.73,
+      "message": "Extraction succeeded; its output was held as a candidate while fallback continued.",
+      "accepted": false,
+      "quality": null,
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "pymupdf",
+      "status": "WARNING",
+      "duration_ms": null,
+      "message": "Quality WARNING is significant under the configured policy (lowest filter score 69.0 < warning_continue_below 75.0) — result held as a candidate; trying the next extractor. A later extractor was accepted, so this candidate was not selected.",
+      "accepted": false,
+      "quality": {
+        "status": "WARNING",
+        "document_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46",
+        "source_tool": "pymupdf",
+        "attempt_id": "attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4147,
+            "word_count": 602,
+            "line_count": 67,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.162286,
+            "symbol_count": 64,
+            "symbol_ratio": 0.015433,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 69.0,
+          "flags": [
+            "MISSING_REQUIRED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Required section not detected: Contact Information. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4147,
+            "word_count": 602,
+            "configured_section_count": 7,
+            "detected_count": 4,
+            "missing_count": 3,
+            "detected_sections": [
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Contact Information",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [
+              "Contact Information"
+            ],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "professional experience",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Contact Information",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [
+            "Contact Information"
+          ],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4147,
+            "word_count": 602,
+            "line_count": 67,
+            "non_empty_line_count": 61,
+            "short_line_count": 16,
+            "short_line_ratio": 0.262295,
+            "fragmented_line_count": 12,
+            "fragmented_line_ratio": 0.196721,
+            "mean_line_length": 65.82,
+            "median_line_length": 67.0,
+            "line_length_stdev": 42.16,
+            "line_length_cv": 0.640566,
+            "broken_sentence_count": 8,
+            "broken_sentence_ratio": 0.133333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "continue",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 8714.04,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "1a94ec75-d931-4123-b7b6-d1ba66689f46",
+        "source_tool": "docling",
+        "attempt_id": "attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4101,
+            "word_count": 601,
+            "line_count": 70,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.15289,
+            "symbol_count": 32,
+            "symbol_ratio": 0.007803,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4101,
+            "word_count": 601,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:(\\+?\\d[\\d\\s().-]{7,}\\d)",
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "professional experience",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4101,
+            "word_count": 601,
+            "line_count": 70,
+            "non_empty_line_count": 43,
+            "short_line_count": 6,
+            "short_line_ratio": 0.139535,
+            "fragmented_line_count": 4,
+            "fragmented_line_ratio": 0.093023,
+            "mean_line_length": 93.77,
+            "median_line_length": 90.0,
+            "line_length_stdev": 77.07,
+            "line_length_cv": 0.821906,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Docling was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 19472.39,
+      "message": "Structured Resume JSON generated by Muse AI and validated against the schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 8714.04,
+      "message": "Final accepted text produced by Docling.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "1a94ec75-d931-4123-b7b6-d1ba66689f46_SHJ-5433_SHC-381365.pdf"
+}

@@ -1,0 +1,15 @@
+# SATVIQ Document Extractor Engine — runtime dependencies
+pydantic>=2.5,<3
+PyYAML>=6.0,<7
+
+# Extractors (imported lazily, so a missing one degrades to a clean
+# "unavailable" failure result instead of breaking the package)
+# (No tika pip package: Tika runs via Java subprocess on the local
+#  tika-app-4.2.0.jar — Java 17+ provided separately.)
+PyMuPDF>=1.23,<2        # PDF text extraction + PDF page rendering for OCR
+docling>=2.0,<3         # Docling document parsing
+pytesseract>=0.3.10,<1  # Tesseract OCR client (needs the tesseract binary, provided separately)
+Pillow>=10.0,<12        # Image handling for OCR
+
+# Testing
+pytest>=7.4

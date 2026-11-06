@@ -1,0 +1,955 @@
+/* SATVIQ — Resume Intelligence: production UI.
+ *
+ * Vanilla JS, hash-routed pages:
+ *   #/process            upload + process + result cards
+ *   #/history            searchable, filterable, paginated history
+ *   #/resume/<id>        full-page inspector (texts, AI output,
+ *                        quality report, token usage, attempts)
+ *   #/settings           LLM system-prompt configuration
+ *
+ * All data comes from the backend through js/api.js (window.Api).
+ * Nothing is hardcoded: engine names, quality scores, token counts
+ * and statuses are rendered from API responses only. Where the
+ * backend has no value, the UI shows "N/A".
+ */
+"use strict";
+
+const $ = (id) => document.getElementById(id);
+
+const ENGINE_LABELS = {
+  tika: "Apache Tika",
+  pymupdf: "PyMuPDF",
+  docling: "Docling",
+  ocr: "OCR",
+  muse_ai: "Muse AI",
+  muse: "Muse AI",
+};
+
+const state = {
+  health: null,
+  selectedFiles: [], // { file, error }
+  processing: false,
+  history: { page: 1, pageSize: 10, q: "", status: "", data: null },
+  recordCache: {}, // resume_id -> full record
+  settings: null,
+};
+
+function engineLabel(name) {
+  if (!name) return "N/A";
+  return ENGINE_LABELS[String(name).toLowerCase()] || String(name);
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
+
+function fmtBytes(bytes) {
+  if (bytes === null || bytes === undefined) return "N/A";
+  if (bytes < 1024) return bytes + " B";
+  if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + " KB";
+  return (bytes / (1024 * 1024)).toFixed(2) + " MB";
+}
+
+function fmtMs(ms) {
+  if (ms === null || ms === undefined || Number.isNaN(Number(ms))) return "N/A";
+  const seconds = Number(ms) / 1000;
+  return seconds >= 60
+    ? (seconds / 60).toFixed(2) + " min"
+    : seconds.toFixed(2) + " sec";
+}
+
+function fmtNum(value) {
+  if (value === null || value === undefined) return "N/A";
+  return Number(value).toLocaleString("en-US");
+}
+
+function fmtDate(iso) {
+  if (!iso) return "N/A";
+  const d = new Date(iso);
+  return Number.isNaN(d.getTime()) ? String(iso) : d.toLocaleString();
+}
+
+function toast(message, kind) {
+  const root = $("toastRoot");
+  const el = document.createElement("div");
+  el.className = "toast" + (kind ? " " + kind : "");
+  el.textContent = message;
+  root.appendChild(el);
+  setTimeout(() => el.remove(), 5200);
+}
+
+/* ------------------------------------------------------------------ */
+/* Quality helpers — presentation only. The Quality Checker itself    */
+/* deliberately reports component scores; the headline "Quality       */
+/* Score" is the mean of the component scores the backend returned,   */
+/* shown alongside the components so nothing is hidden.               */
+/* ------------------------------------------------------------------ */
+
+function qualityComponents(quality) {
+  if (!quality) return [];
+  const defs = [
+    ["Text Health", quality.text_health],
+    ["Completeness", quality.completeness],
+    ["Reading Order", quality.reading_order],
+  ];
+  return defs
+    .filter(([, f]) => f && typeof f.score === "number")
+    .map(([label, f]) => ({ label, filter: f, score: f.score }));
+}
+
+function overallScore(record) {
+  const components = qualityComponents(record && record.quality);
+  if (!components.length) return null;
+  const mean = components.reduce((sum, c) => sum + c.score, 0) / components.length;
+  return Math.round(mean);
+}
+
+function scoreClass(score) {
+  return score >= 75 ? "high" : score >= 50 ? "mid" : "low";
+}
+
+function statusChip(record) {
+  if (!record.success) return '<span class="chip chip-bad">Failed</span>';
+  const q = record.final_quality_status || record.quality_status;
+  const cls = q === "PASS" ? "chip-ok" : q === "WARNING" ? "chip-warn" : q === "FAIL" ? "chip-bad" : "";
+  return '<span class="chip chip-ok">Processed</span>' +
+    (q ? ` <span class="chip ${cls}">Quality ${escapeHtml(q)}</span>` : "");
+}
+
+/* ------------------------------------------------------------------ */
+/* Three-dot menu                                                     */
+/* ------------------------------------------------------------------ */
+
+function menuHtml(record) {
+  const id = escapeHtml(record.resume_id);
+  return `
+  <div class="menu-wrap">
+    <button class="menu-btn" data-menu-btn="${id}" aria-haspopup="true"
+            aria-label="Actions for ${escapeHtml(record.filename || "resume")}">⋮</button>
+    <div class="menu" data-menu="${id}" hidden>
+      <button data-menu-action="open" data-id="${id}">Open Details</button>
+      <button data-menu-action="tab" data-tab="text" data-id="${id}">View Extracted Text</button>
+      <button data-menu-action="tab" data-tab="normalized" data-id="${id}">View Normalized Text</button>
+      <button data-menu-action="tab" data-tab="ai" data-id="${id}">View AI Output</button>
+      <button data-menu-action="section" data-section="quality" data-id="${id}">View Quality Report</button>
+      <button data-menu-action="section" data-section="attempts" data-id="${id}">View Extraction Attempts</button>
+      <hr />
+      <button data-menu-action="download-json" data-id="${id}">Download JSON</button>
+      ${record.has_original_file ? `<a href="${Api.downloadOriginalUrl(record.resume_id)}" download>Download Original File</a>` : ""}
+      ${(record.extracted_text || record.extracted_text_chars) ? `<a href="${Api.downloadTextUrl(record.resume_id)}" download>Download Extracted Text</a>` : ""}
+      <hr />
+      <button class="menu-danger" data-menu-action="delete" data-id="${id}">Delete Resume</button>
+    </div>
+  </div>`;
+}
+
+document.addEventListener("click", (event) => {
+  const btn = event.target.closest("[data-menu-btn]");
+  document.querySelectorAll(".menu").forEach((menu) => {
+    const wrap = menu.closest(".menu-wrap");
+    const owner = wrap ? wrap.querySelector("[data-menu-btn]") : null;
+    if (!btn || owner !== btn) menu.hidden = true;
+  });
+  if (btn) {
+    const menu = btn.closest(".menu-wrap").querySelector(".menu");
+    menu.hidden = !menu.hidden;
+    event.stopPropagation();
+    return;
+  }
+  const action = event.target.closest("[data-menu-action]");
+  if (action) {
+    event.stopPropagation();
+    handleMenuAction(action.dataset.menuAction, action.dataset.id, action.dataset);
+  }
+});
+
+async function handleMenuAction(action, id, dataset) {
+  if (action === "open") location.hash = "#/resume/" + id;
+  else if (action === "tab") location.hash = "#/resume/" + id + "?tab=" + dataset.tab;
+  else if (action === "section") location.hash = "#/resume/" + id + "?section=" + dataset.section;
+  else if (action === "download-json") {
+    try {
+      const record = state.recordCache[id] || (await Api.getResume(id));
+      const blob = new Blob([JSON.stringify(record, null, 2)], { type: "application/json" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = (record.filename || "resume").replace(/\.[^.]+$/, "") + "_record.json";
+      link.click();
+      URL.revokeObjectURL(link.href);
+    } catch (err) { toast(err.message, "error"); }
+  } else if (action === "delete") {
+    if (!confirm("Delete this resume and its stored result?")) return;
+    try {
+      await Api.deleteResume(id);
+      delete state.recordCache[id];
+      toast("Resume deleted.", "success");
+      if (location.hash.startsWith("#/resume/")) location.hash = "#/history";
+      else if (location.hash.startsWith("#/history")) renderHistory();
+      else renderProcessResults([]);
+    } catch (err) { toast(err.message, "error"); }
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Result card (shared by Process results and History)                */
+/* ------------------------------------------------------------------ */
+
+function resultCardHtml(record) {
+  const score = overallScore(record);
+  const tokens = record.token_usage || {};
+  const hasTokens = tokens.usage_available && tokens.total_tokens !== null && tokens.total_tokens !== undefined;
+  const attempts = record.attempt_count ??
+    (Array.isArray(record.attempts) ? record.attempts.length : null);
+  return `
+  <article class="card result-card" data-card-id="${escapeHtml(record.resume_id)}">
+    <div class="result-head">
+      <div>
+        <div class="result-title">${escapeHtml(record.filename || "Untitled")}</div>
+        <div class="result-meta">
+          ${escapeHtml(fmtBytes(record.file_size_bytes))} · Uploaded ${escapeHtml(fmtDate(record.uploaded_at))}
+          · Primary engine: ${escapeHtml(engineLabel(record.primary_extractor || record.extractor_used))}
+        </div>
+        <div style="margin-top:6px">${statusChip(record)}</div>
+      </div>
+      ${menuHtml(record)}
+    </div>
+    ${record.error ? `<div class="error-box">${escapeHtml(record.error)}</div>` : ""}
+    <div class="metric-grid">
+      <div class="metric"><div class="metric-label">Quality Score</div>
+        <div class="metric-value ${score === null ? "na" : ""}">${score === null ? "N/A" : score + "/100"}</div></div>
+      <div class="metric"><div class="metric-label">Input Tokens</div>
+        <div class="metric-value ${hasTokens ? "" : "na"}">${hasTokens ? fmtNum(tokens.input_tokens) : "N/A"}</div></div>
+      <div class="metric"><div class="metric-label">Output Tokens</div>
+        <div class="metric-value ${hasTokens ? "" : "na"}">${hasTokens ? fmtNum(tokens.output_tokens) : "N/A"}</div></div>
+      <div class="metric"><div class="metric-label">Total Tokens</div>
+        <div class="metric-value ${hasTokens ? "" : "na"}">${hasTokens ? fmtNum(tokens.total_tokens) : "N/A"}</div></div>
+      <div class="metric"><div class="metric-label">Duration</div>
+        <div class="metric-value ${record.duration_ms == null ? "na" : ""}">${fmtMs(record.duration_ms)}</div></div>
+      <div class="metric"><div class="metric-label">Attempts</div>
+        <div class="metric-value ${attempts === null ? "na" : ""}">${attempts === null ? "N/A" : attempts}</div></div>
+    </div>
+  </article>`;
+}
+
+/* ------------------------------------------------------------------ */
+/* Process page                                                       */
+/* ------------------------------------------------------------------ */
+
+function maxUploadBytes() {
+  return (state.health && state.health.max_upload_mb ? state.health.max_upload_mb : 5) * 1024 * 1024;
+}
+
+function validateFile(file) {
+  const max = maxUploadBytes();
+  const maxMb = state.health && state.health.max_upload_mb ? state.health.max_upload_mb : 5;
+  if (file.size > max) {
+    return `File exceeds the ${maxMb} MB limit. Please upload a smaller resume.`;
+  }
+  if (file.size === 0) return "File is empty.";
+  const ext = (file.name.split(".").pop() || "").toLowerCase();
+  const supported = (state.health && state.health.supported_extensions) || [];
+  if (supported.length && !supported.includes(ext)) {
+    return `Unsupported file type ".${ext}". Supported types: ${supported.join(", ")}.`;
+  }
+  return null;
+}
+
+function renderProcess() {
+  const view = $("view-process");
+  const supported = state.health ? (state.health.supported_extensions || []).join(", ") : "—";
+  const maxMb = state.health && state.health.max_upload_mb ? state.health.max_upload_mb : 5;
+  view.innerHTML = `
+    <h2>Process Resume</h2>
+    <p class="page-subtitle">Upload a resume and run it through the extraction pipeline.
+      Primary engine: <strong>${escapeHtml(engineLabel(state.health && state.health.extractor_order && state.health.extractor_order[0]))}</strong>
+      ${state.health && state.health.extractor_order ? `· Pipeline order: ${state.health.extractor_order.map(engineLabel).join(" → ")}` : ""}</p>
+    <div class="card">
+      <div class="dropzone" id="dropzone" tabindex="0" role="button"
+           aria-label="Upload resumes: drag and drop files or activate to browse">
+        <p class="dz-title">Drag &amp; drop resume files here</p>
+        <p class="hint">or</p>
+        <button class="btn btn-primary" id="browseBtn" type="button">Choose Files</button>
+        <p class="hint">Supported types: ${escapeHtml(supported)} · Maximum ${maxMb} MB per file</p>
+        <input type="file" id="fileInput" multiple hidden
+               accept="${state.health ? (state.health.supported_extensions || []).map((e) => "." + e).join(",") : ""}" />
+      </div>
+      <div class="selected-files" id="selectedFiles"></div>
+      <div class="inline-row mt">
+        <div class="field">
+          <label for="timeoutSelect">Per-attempt timeout</label>
+          <select id="timeoutSelect" class="select-input" style="width:auto">
+            <option value="15">15 seconds</option>
+            <option value="20" selected>20 seconds</option>
+            <option value="30">30 seconds</option>
+            <option value="60">60 seconds</option>
+          </select>
+        </div>
+        <div style="flex:1"></div>
+        <button class="btn btn-primary" id="processBtn" type="button" disabled>Process Resume</button>
+      </div>
+      <div class="progress-wrap" id="progressWrap" hidden>
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-label" id="progressLabel">Uploading…</div>
+      </div>
+    </div>
+    <div id="processResults"></div>`;
+
+  const dropzone = $("dropzone");
+  const input = $("fileInput");
+  $("browseBtn").addEventListener("click", (e) => { e.stopPropagation(); input.click(); });
+  dropzone.addEventListener("click", () => input.click());
+  dropzone.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); input.click(); }
+  });
+  input.addEventListener("change", () => { addFiles(Array.from(input.files)); input.value = ""; });
+  ["dragenter", "dragover"].forEach((name) =>
+    dropzone.addEventListener(name, (e) => { e.preventDefault(); dropzone.classList.add("dragging"); }));
+  ["dragleave", "drop"].forEach((name) =>
+    dropzone.addEventListener(name, (e) => { e.preventDefault(); dropzone.classList.remove("dragging"); }));
+  dropzone.addEventListener("drop", (e) => addFiles(Array.from(e.dataTransfer.files)));
+  $("processBtn").addEventListener("click", processSelected);
+  renderSelectedFiles();
+}
+
+function addFiles(files) {
+  files.forEach((file) => {
+    state.selectedFiles.push({ file, error: validateFile(file) });
+  });
+  renderSelectedFiles();
+}
+
+function renderSelectedFiles() {
+  const wrap = $("selectedFiles");
+  if (!wrap) return;
+  if (!state.selectedFiles.length) { wrap.innerHTML = ""; }
+  else {
+    wrap.innerHTML = state.selectedFiles.map((entry, index) => `
+      <div class="file-row ${entry.error ? "invalid" : ""}">
+        <div>
+          <div class="file-name">${escapeHtml(entry.file.name)}</div>
+          ${entry.error ? `<div class="file-error">${escapeHtml(entry.error)}</div>` : ""}
+        </div>
+        <div class="spacer"></div>
+        <span class="file-meta">${escapeHtml(fmtBytes(entry.file.size))} · ${escapeHtml(entry.file.type || entry.file.name.split(".").pop() || "file")}</span>
+        <button class="btn btn-small" data-remove-file="${index}" type="button">Remove</button>
+      </div>`).join("");
+    wrap.querySelectorAll("[data-remove-file]").forEach((btn) =>
+      btn.addEventListener("click", () => {
+        state.selectedFiles.splice(Number(btn.dataset.removeFile), 1);
+        renderSelectedFiles();
+      }));
+  }
+  const btn = $("processBtn");
+  if (btn) {
+    btn.disabled = state.processing ||
+      !state.selectedFiles.length ||
+      state.selectedFiles.some((entry) => entry.error);
+  }
+}
+
+async function processSelected() {
+  const valid = state.selectedFiles.filter((entry) => !entry.error);
+  if (!valid.length) return;
+  state.processing = true;
+  renderSelectedFiles();
+  const wrap = $("progressWrap");
+  const fill = $("progressFill");
+  const label = $("progressLabel");
+  wrap.hidden = false;
+  fill.style.width = "0%";
+  label.textContent = "Uploading…";
+  try {
+    const body = await Api.processResumes(
+      valid.map((entry) => entry.file),
+      Number($("timeoutSelect").value),
+      (percent) => {
+        fill.style.width = percent + "%";
+        label.textContent = percent >= 100
+          ? "Upload complete — processing on the server…"
+          : "Uploading… " + percent + "%";
+      });
+    const results = body.results || [];
+    results.forEach((r) => { state.recordCache[r.resume_id] = r; });
+    renderProcessResults(results);
+    const failed = results.filter((r) => !r.success).length;
+    if (failed) toast(failed + " file(s) could not be processed. See the result cards for details.", "error");
+    else toast(results.length + " resume(s) processed.", "success");
+    state.selectedFiles = [];
+    renderSelectedFiles();
+  } catch (err) {
+    toast(err.message, "error");
+  } finally {
+    state.processing = false;
+    wrap.hidden = true;
+    renderSelectedFiles();
+  }
+}
+
+function attachCardNav(container) {
+  container.querySelectorAll("[data-card-id]").forEach((card) => {
+    card.addEventListener("click", (event) => {
+      if (event.target.closest(".menu-wrap")) return;
+      location.hash = "#/resume/" + card.dataset.cardId;
+    });
+  });
+}
+
+function renderProcessResults(results) {
+  const wrap = $("processResults");
+  if (!wrap) return;
+  if (!results.length) { wrap.innerHTML = ""; return; }
+  wrap.innerHTML = "<h3 style='margin:18px 0 10px'>Results</h3>" +
+    results.map(resultCardHtml).join("");
+  attachCardNav(wrap);
+}
+
+/* ------------------------------------------------------------------ */
+/* History page (server-side search, filter, pagination)              */
+/* ------------------------------------------------------------------ */
+
+function renderHistory() {
+  const view = $("view-history");
+  view.innerHTML = `
+    <h2>Resume History</h2>
+    <p class="page-subtitle">Previously processed resumes, loaded page by page from the backend.</p>
+    <div class="history-toolbar">
+      <input type="search" class="text-input" id="historySearch" placeholder="Search by filename…"
+             value="${escapeHtml(state.history.q)}" aria-label="Search by filename" />
+      <select class="select-input" id="historyStatus" aria-label="Filter by status">
+        <option value="">All statuses</option>
+        <option value="PASS" ${state.history.status === "PASS" ? "selected" : ""}>Quality PASS</option>
+        <option value="WARNING" ${state.history.status === "WARNING" ? "selected" : ""}>Quality WARNING</option>
+        <option value="FAIL" ${state.history.status === "FAIL" ? "selected" : ""}>Quality FAIL</option>
+        <option value="failed" ${state.history.status === "failed" ? "selected" : ""}>Processing failed</option>
+      </select>
+      <button class="btn" id="historyRefresh" type="button">Refresh</button>
+    </div>
+    <div id="historyList"><div class="loading">Loading history…</div></div>
+    <div class="pagination" id="historyPagination"></div>`;
+
+  let debounce = null;
+  $("historySearch").addEventListener("input", (e) => {
+    clearTimeout(debounce);
+    debounce = setTimeout(() => {
+      state.history.q = e.target.value.trim();
+      state.history.page = 1;
+      loadHistory();
+    }, 300);
+  });
+  $("historyStatus").addEventListener("change", (e) => {
+    state.history.status = e.target.value;
+    state.history.page = 1;
+    loadHistory();
+  });
+  $("historyRefresh").addEventListener("click", loadHistory);
+  loadHistory();
+}
+
+async function loadHistory() {
+  const list = $("historyList");
+  const pager = $("historyPagination");
+  if (!list) return;
+  list.innerHTML = '<div class="loading">Loading history…</div>';
+  try {
+    const data = await Api.listResumes({
+      q: state.history.q,
+      status: state.history.status,
+      page: state.history.page,
+      page_size: state.history.pageSize,
+    });
+    state.history.data = data;
+    const resumes = data.resumes || [];
+    if (!resumes.length) {
+      list.innerHTML = '<div class="empty-state">No resumes found. Process a resume to see it here.</div>';
+    } else {
+      list.innerHTML = '<div class="history-list">' + resumes.map(resultCardHtml).join("") + "</div>";
+      attachCardNav(list);
+    }
+    const pages = data.pages || 0;
+    pager.innerHTML = pages > 0 ? `
+      <button class="btn btn-small" id="pagePrev" ${data.page <= 1 ? "disabled" : ""}>Previous</button>
+      <span>Page ${data.page} of ${pages} · ${fmtNum(data.total)} resume(s)</span>
+      <button class="btn btn-small" id="pageNext" ${data.page >= pages ? "disabled" : ""}>Next</button>` : "";
+    const prev = $("pagePrev");
+    const next = $("pageNext");
+    if (prev) prev.addEventListener("click", () => { state.history.page -= 1; loadHistory(); });
+    if (next) next.addEventListener("click", () => { state.history.page += 1; loadHistory(); });
+  } catch (err) {
+    list.innerHTML = `<div class="error-box">${escapeHtml(err.message)}</div>`;
+    pager.innerHTML = "";
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Resume inspector                                                   */
+/* ------------------------------------------------------------------ */
+
+function attemptStatus(attempt) {
+  if (attempt.error_message || attempt.error) return { label: "Failed", cls: "chip-bad" };
+  if (attempt.decision === "accept" || attempt.is_final_selected || attempt.selected) {
+    return { label: "Accepted", cls: "chip-ok" };
+  }
+  if (attempt.extraction_status) {
+    return { label: String(attempt.extraction_status), cls: "chip-info" };
+  }
+  if (attempt.success) return { label: "Completed", cls: "chip-info" };
+  return { label: "Rejected", cls: "chip-warn" };
+}
+
+function attemptText(attempt) {
+  return attempt.extracted_text ?? attempt.text ?? "";
+}
+
+function attemptCardHtml(attempt, index) {
+  const status = attemptStatus(attempt);
+  const text = attemptText(attempt);
+  const chars = attempt.extracted_text_length ?? text.length;
+  const shortError = attempt.error_message || attempt.error || "";
+  const quality = attempt.quality_checker_report || attempt.quality || null;
+  const qComponents = qualityComponents(quality);
+  const ocr = attempt.ocr && typeof attempt.ocr === "object" ? attempt.ocr : null;
+  const id = "attempt-detail-" + index;
+  return `
+  <div class="attempt-card">
+    <div class="attempt-head">
+      <span class="engine">${escapeHtml(engineLabel(attempt.extractor_name))}</span>
+      ${attempt.extractor_version ? `<span class="chip">v${escapeHtml(attempt.extractor_version)}</span>` : ""}
+      <span class="chip ${status.cls}">${escapeHtml(status.label)}</span>
+      ${quality && quality.status ? `<span class="chip">QC ${escapeHtml(quality.status)}</span>` : ""}
+      <span class="meta">${fmtNum(chars)} chars · ${fmtMs(attempt.duration_ms)}</span>
+      <span style="flex:1"></span>
+      <button class="btn btn-small" data-toggle-attempt="${id}" type="button">Details</button>
+    </div>
+    ${shortError ? `<div class="meta" style="color:var(--bad);margin-top:4px">${escapeHtml(String(shortError).slice(0, 160))}</div>` : ""}
+    <div class="attempt-detail" id="${id}" hidden>
+      ${attempt.decision_reason || attempt.fallback_reason ? `<p class="hint">${escapeHtml(attempt.decision_reason || attempt.fallback_reason)}</p>` : ""}
+      <table class="kv-table">
+        <tr><td>Configured timeout</td><td>${attempt.timeout_seconds != null ? escapeHtml(attempt.timeout_seconds) + " sec" : "N/A"}</td></tr>
+        <tr><td>Actual duration</td><td>${fmtMs(attempt.duration_ms)}</td></tr>
+        <tr><td>OCR</td><td>${ocr ? escapeHtml(Object.entries(ocr).map(([k, v]) => k + ": " + (typeof v === "object" ? JSON.stringify(v) : v)).join(" · ")) : "N/A"}</td></tr>
+        ${attempt.provider || attempt.model ? `<tr><td>LLM</td><td>${escapeHtml(attempt.provider || "")} ${escapeHtml(attempt.model || "")}</td></tr>` : ""}
+        ${attempt.json_validation ? `<tr><td>JSON validation</td><td>${escapeHtml(attempt.json_validation)}</td></tr>` : ""}
+        ${attempt.input_type ? `<tr><td>Input type</td><td>${escapeHtml(attempt.input_type)}</td></tr>` : ""}
+      </table>
+      ${qComponents.length ? `<p class="hint">Quality: ${qComponents.map((c) => escapeHtml(c.label) + " " + c.score).join(" · ")}</p>` : ""}
+      ${shortError ? `<div class="error-box">${escapeHtml(shortError)}${attempt.error_traceback ? "\n" + escapeHtml(attempt.error_traceback) : ""}</div>` : ""}
+      ${attempt.metadata ? `<details><summary class="hint">Engine metadata</summary><pre class="json-view" style="max-height:240px">${escapeHtml(JSON.stringify(attempt.metadata, null, 2))}</pre></details>` : ""}
+      <h4 style="margin-top:10px">Extracted text</h4>
+      ${text ? `<div class="text-panel">${escapeHtml(text)}</div>` : '<p class="hint">This attempt produced no text.</p>'}
+    </div>
+  </div>`;
+}
+
+function structuredValueHtml(value) {
+  if (value === null || value === undefined || value === "") return '<span class="hint">—</span>';
+  if (Array.isArray(value)) {
+    if (!value.length) return '<span class="hint">—</span>';
+    if (value.every((v) => typeof v !== "object")) {
+      return escapeHtml(value.join(", "));
+    }
+    return value.map((item) => `
+      <div style="border-left:3px solid var(--border);padding:2px 0 2px 10px;margin:4px 0">
+        ${Object.entries(item || {}).filter(([, v]) => v !== "" && v !== null && !(Array.isArray(v) && !v.length))
+          .map(([k, v]) => `<div><strong>${escapeHtml(k)}:</strong> ${structuredValueHtml(v)}</div>`).join("")}
+      </div>`).join("");
+  }
+  if (typeof value === "object") {
+    return Object.entries(value)
+      .map(([k, v]) => `<div><strong>${escapeHtml(k)}:</strong> ${structuredValueHtml(v)}</div>`).join("");
+  }
+  return escapeHtml(value);
+}
+
+function qualityReportHtml(record) {
+  const quality = record.quality;
+  const score = overallScore(record);
+  if (!quality) return '<p class="hint">No quality report is available for this resume.</p>';
+  const components = qualityComponents(quality);
+  const cards = components.map(({ label, filter }) => {
+    const flags = filter.flags || [];
+    const reasons = filter.reasons || [];
+    let extra = "";
+    if (label === "Completeness") {
+      const detected = (filter.detected_sections || []).map((s) => `<span class="chip chip-ok">${escapeHtml(s)}</span>`).join("");
+      const missing = (filter.missing_sections || []).map((s) => `<span class="chip chip-bad">${escapeHtml(s)}</span>`).join("");
+      extra = `${detected ? `<div class="hint" style="margin-top:8px">Detected sections</div><div class="section-chips">${detected}</div>` : ""}
+               ${missing ? `<div class="hint" style="margin-top:8px">Missing sections</div><div class="section-chips">${missing}</div>` : ""}`;
+    }
+    return `
+    <div class="qcard">
+      <h4><span>${escapeHtml(label)}</span><span>${filter.score}/100</span></h4>
+      <div class="score-bar"><div class="score-fill ${scoreClass(filter.score)}" style="width:${Math.max(0, Math.min(100, filter.score))}%"></div></div>
+      ${flags.length ? `<div class="hint">Checks flagged: ${flags.map(escapeHtml).join(", ")}</div>` : '<div class="hint">All checks passed for this component.</div>'}
+      ${reasons.length ? `<ul class="check-list">${reasons.map((r) => `<li>${escapeHtml(r)}</li>`).join("")}</ul>` : ""}
+      ${extra}
+    </div>`;
+  }).join("");
+  return `
+    <div class="inline-row mb">
+      <strong>Overall Quality Score: ${score === null ? "N/A" : score + "/100"}</strong>
+      <span class="chip ${quality.status === "PASS" ? "chip-ok" : quality.status === "WARNING" ? "chip-warn" : "chip-bad"}">${escapeHtml(quality.status || "")}</span>
+      <span class="hint">Overall = mean of the component scores below, as returned by the Quality Checker.</span>
+    </div>
+    ${record.selection_reason ? `<p class="hint">Selection: ${escapeHtml(record.selection_reason)}</p>` : ""}
+    ${(record.warnings || []).length ? `<p class="hint">Warnings: ${(record.warnings || []).map(escapeHtml).join(" · ")}</p>` : ""}
+    <div class="quality-components">${cards}</div>`;
+}
+
+function tokenUsageHtml(record) {
+  const tokens = record.token_usage || {};
+  const meta = record.resume_json_meta || {};
+  const requests = record.muse_requests || [];
+  if (!tokens.usage_available && !requests.length) {
+    return '<p class="hint">Token usage is not available for this resume (no LLM usage was reported).</p>';
+  }
+  const rows = requests.map((r) => `
+    <tr><td>${escapeHtml(r.stage || "")}</td><td>${escapeHtml(r.model || "")}</td>
+    <td>${r.input_tokens != null ? fmtNum(r.input_tokens) : "N/A"}</td>
+    <td>${r.output_tokens != null ? fmtNum(r.output_tokens) : "N/A"}</td>
+    <td>${r.total_tokens != null ? fmtNum(r.total_tokens) : "N/A"}</td>
+    <td>${fmtMs(r.duration_ms)}</td><td>${escapeHtml(r.status || "")}</td></tr>`).join("");
+  return `
+    <div class="metric-grid" style="margin-top:0">
+      <div class="metric"><div class="metric-label">Input Tokens</div><div class="metric-value">${tokens.input_tokens != null ? fmtNum(tokens.input_tokens) : "N/A"}</div></div>
+      <div class="metric"><div class="metric-label">Output Tokens</div><div class="metric-value">${tokens.output_tokens != null ? fmtNum(tokens.output_tokens) : "N/A"}</div></div>
+      <div class="metric"><div class="metric-label">Total Tokens</div><div class="metric-value">${tokens.total_tokens != null ? fmtNum(tokens.total_tokens) : "N/A"}</div></div>
+      <div class="metric"><div class="metric-label">Provider</div><div class="metric-value">${escapeHtml(meta.provider || "N/A")}</div></div>
+      <div class="metric"><div class="metric-label">Model</div><div class="metric-value">${escapeHtml(meta.model || (tokens.models || []).join(", ") || "N/A")}</div></div>
+      <div class="metric"><div class="metric-label">LLM Calls</div><div class="metric-value">${tokens.api_calls != null ? tokens.api_calls : requests.length}</div></div>
+    </div>
+    ${rows ? `<table class="kv-table mt"><thead><tr>
+      <td>Stage</td><td>Model</td><td>Input</td><td>Output</td><td>Total</td><td>Duration</td><td>Status</td></tr></thead>
+      <tbody>${rows}</tbody></table>` : ""}`;
+}
+
+async function renderResume(id, params) {
+  const view = $("view-resume");
+  view.innerHTML = '<div class="loading">Loading resume…</div>';
+  let record = state.recordCache[id];
+  try {
+    record = await Api.getResume(id);
+    state.recordCache[id] = record;
+  } catch (err) {
+    if (!record) {
+      view.innerHTML = `<p><a href="#/history">← Back to History</a></p><div class="error-box">${escapeHtml(err.message)}</div>`;
+      return;
+    }
+  }
+  const norm = record.text_normalization || {};
+  const extractedText = record.extracted_text || "";
+  const normalizedText = norm.normalized_text || "";
+  const activeTab = ["text", "normalized", "ai"].includes(params.tab) ? params.tab : "text";
+
+  view.innerHTML = `
+    <p><a href="#/history">← Back to History</a></p>
+    <div class="card">
+      <div class="inspector-head">
+        <div>
+          <div class="result-title">${escapeHtml(record.filename || "Untitled")}</div>
+          <div class="result-meta">${escapeHtml(fmtBytes(record.file_size_bytes))} · ${escapeHtml(record.file_type || "")} ·
+            Uploaded ${escapeHtml(fmtDate(record.uploaded_at))} ·
+            Extractor used: ${escapeHtml(engineLabel(record.extractor_used))}</div>
+          <div style="margin-top:6px">${statusChip(record)}</div>
+        </div>
+        ${menuHtml(record)}
+      </div>
+      ${record.error ? `<div class="error-box">${escapeHtml(record.error)}</div>` : ""}
+      <div class="metric-grid">
+        <div class="metric"><div class="metric-label">Quality Score</div><div class="metric-value">${overallScore(record) === null ? "N/A" : overallScore(record) + "/100"}</div></div>
+        <div class="metric"><div class="metric-label">Total Tokens</div><div class="metric-value">${record.token_usage && record.token_usage.usage_available ? fmtNum(record.token_usage.total_tokens) : "N/A"}</div></div>
+        <div class="metric"><div class="metric-label">Duration</div><div class="metric-value">${fmtMs(record.duration_ms)}</div></div>
+        <div class="metric"><div class="metric-label">Attempts</div><div class="metric-value">${(record.attempts || []).length}</div></div>
+        <div class="metric"><div class="metric-label">Pages</div><div class="metric-value">${record.page_count ?? "N/A"}</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="tabs" role="tablist">
+        <button data-tab="text" class="${activeTab === "text" ? "active" : ""}">Extracted Text</button>
+        <button data-tab="normalized" class="${activeTab === "normalized" ? "active" : ""}">Normalized Text</button>
+        <button data-tab="ai" class="${activeTab === "ai" ? "active" : ""}">AI Output</button>
+      </div>
+      <div id="tabPanel"></div>
+    </div>
+
+    <div class="card" id="qualitySection">
+      <h3>Quality Report</h3>
+      ${qualityReportHtml(record)}
+    </div>
+
+    <div class="card" id="tokenSection">
+      <h3>LLM Token Usage</h3>
+      ${tokenUsageHtml(record)}
+    </div>
+
+    ${(record.hyperlinks || []).length ? `
+    <div class="card" id="hyperlinksSection">
+      <h3>PDF Hyperlinks</h3>
+      <p class="hint">URLs captured from the document's link annotations — authoritative for links in the AI output.</p>
+      <table class="kv-table"><thead><tr><td>Page</td><td>URL</td><td>Visible text</td><td>Type</td></tr></thead>
+      <tbody>${(record.hyperlinks || []).map((h) => `
+        <tr><td>${h.page ?? "N/A"}</td><td style="word-break:break-all">${escapeHtml(h.url || "")}</td>
+        <td>${escapeHtml(h.visible_text || "")}</td><td>${escapeHtml(h.type || "")}</td></tr>`).join("")}
+      </tbody></table>
+    </div>` : ""}
+
+    <div class="card" id="attemptsSection">
+      <h3>Extraction Attempts</h3>
+      ${(record.attempts || []).length
+        ? (record.attempts || []).map(attemptCardHtml).join("")
+        : '<p class="hint">No extraction attempts were recorded for this resume.</p>'}
+    </div>`;
+
+  const panel = $("tabPanel");
+  function showTab(tab) {
+    view.querySelectorAll("[data-tab]").forEach((b) =>
+      b.classList.toggle("active", b.dataset.tab === tab));
+    if (tab === "text") {
+      panel.innerHTML = `
+        <div class="panel-toolbar">
+          <span class="hint">${extractedText.length.toLocaleString()} characters${record.page_count ? " · " + record.page_count + " page(s)" : ""}</span>
+          <span class="spacer"></span>
+          <label class="hint"><input type="checkbox" id="compareToggle" /> Compare with normalized text</label>
+          <button class="btn btn-small" id="copyTextBtn" type="button">Copy text</button>
+        </div>
+        <div id="compareArea">
+          ${extractedText ? `<div class="text-panel">${escapeHtml(extractedText)}</div>`
+            : '<p class="hint">No extracted text is stored for this resume. If the Resume JSON exists, it was produced by the AI stage directly from the document.</p>'}
+        </div>`;
+      $("copyTextBtn").addEventListener("click", () => copyText(extractedText));
+      $("compareToggle").addEventListener("change", (e) => {
+        $("compareArea").innerHTML = e.target.checked ? `
+          <div class="compare-grid">
+            <div><h4>Original extracted text</h4><div class="text-panel">${escapeHtml(extractedText)}</div></div>
+            <div><h4>Normalized text</h4><div class="text-panel">${escapeHtml(normalizedText)}</div></div>
+          </div>` : (extractedText ? `<div class="text-panel">${escapeHtml(extractedText)}</div>` : '<p class="hint">No extracted text is stored for this resume.</p>');
+      });
+    } else if (tab === "normalized") {
+      panel.innerHTML = `
+        <div class="panel-toolbar">
+          <span class="hint">Status: ${escapeHtml(norm.status || "N/A")}${norm.source ? " · Source: " + escapeHtml(engineLabel(norm.source)) : ""} · ${(normalizedText || "").length.toLocaleString()} characters${norm.original_chars != null ? " · Original: " + Number(norm.original_chars).toLocaleString() + " characters" : ""}${norm.estimated_reduction_percent != null ? " · Reduction: " + norm.estimated_reduction_percent + "%" : ""}</span>
+          <span class="spacer"></span>
+          <button class="btn btn-small" id="copyNormBtn" type="button">Copy text</button>
+        </div>
+        ${(norm.normalization_steps || []).length ? `<p class="hint">Steps applied: ${norm.normalization_steps.map(escapeHtml).join(" · ")}</p>` : ""}
+        ${norm.error ? `<div class="error-box">${escapeHtml(norm.error)}</div>` : ""}
+        ${normalizedText ? `<div class="text-panel">${escapeHtml(normalizedText)}</div>`
+          : '<p class="hint">No normalized text is available for this resume.</p>'}`;
+      $("copyNormBtn").addEventListener("click", () => copyText(normalizedText));
+    } else {
+      const resumeJson = record.resume_json;
+      panel.innerHTML = `
+        <div class="panel-toolbar">
+          <span class="hint">${record.resume_json_source ? "Source: " + escapeHtml(record.resume_json_source) : ""}${record.resume_json_meta && record.resume_json_meta.model ? " · Model: " + escapeHtml(record.resume_json_meta.model) : ""}${record.resume_json_meta && record.resume_json_meta.validation ? " · Validation: " + escapeHtml(record.resume_json_meta.validation) : ""}</span>
+          <span class="spacer"></span>
+          <label class="hint"><input type="checkbox" id="jsonToggle" /> JSON view</label>
+          <button class="btn btn-small" id="copyJsonBtn" type="button">Copy JSON</button>
+        </div>
+        <div id="aiOutputArea"></div>`;
+      const area = $("aiOutputArea");
+      function drawAi() {
+        if (!resumeJson) {
+          area.innerHTML = '<p class="hint">No AI output is stored for this resume.</p>';
+          return;
+        }
+        if ($("jsonToggle").checked) {
+          area.innerHTML = `<pre class="json-view">${escapeHtml(JSON.stringify(resumeJson, null, 2))}</pre>`;
+        } else {
+          area.innerHTML = Object.entries(resumeJson).map(([key, value]) => `
+            <div class="structured-field"><div class="sf-label">${escapeHtml(key)}</div>
+            <div class="sf-value">${structuredValueHtml(value)}</div></div>`).join("");
+        }
+      }
+      $("jsonToggle").addEventListener("change", drawAi);
+      $("copyJsonBtn").addEventListener("click", () =>
+        copyText(resumeJson ? JSON.stringify(resumeJson, null, 2) : ""));
+      drawAi();
+    }
+  }
+  view.querySelectorAll("[data-tab]").forEach((btn) =>
+    btn.addEventListener("click", () => showTab(btn.dataset.tab)));
+  view.querySelectorAll("[data-toggle-attempt]").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      const detail = $(btn.dataset.toggleAttempt);
+      detail.hidden = !detail.hidden;
+      btn.textContent = detail.hidden ? "Details" : "Hide";
+    }));
+  showTab(activeTab);
+  if (params.section === "quality") $("qualitySection").scrollIntoView();
+  if (params.section === "attempts") $("attemptsSection").scrollIntoView();
+  if (params.section === "tokens") $("tokenSection").scrollIntoView();
+}
+
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text || "");
+    toast("Copied to clipboard.", "success");
+  } catch {
+    toast("Copy failed — your browser blocked clipboard access.", "error");
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Settings page                                                      */
+/* ------------------------------------------------------------------ */
+
+async function renderSettings() {
+  const view = $("view-settings");
+  view.innerHTML = '<div class="loading">Loading settings…</div>';
+  try {
+    const data = await Api.getSystemPrompt();
+    state.settings = data;
+    const ai = data.ai || {};
+    view.innerHTML = `
+      <h2>Settings</h2>
+      <p class="page-subtitle">LLM configuration. The provider and model are configured on the
+        backend (environment); the API key is never shown here.</p>
+      <div class="card">
+        <h3>LLM Provider</h3>
+        <table class="kv-table">
+          <tr><td>Provider</td><td>${escapeHtml(ai.provider || "N/A")}</td></tr>
+          <tr><td>Model</td><td>${escapeHtml(ai.model || "N/A")}</td></tr>
+          <tr><td>Base URL</td><td>${escapeHtml(ai.base_url || "N/A")}</td></tr>
+          <tr><td>Vision enabled</td><td>${ai.vision_enabled === undefined ? "N/A" : ai.vision_enabled ? "Yes" : "No"}</td></tr>
+          <tr><td>Status</td><td>${ai.configured ? '<span class="chip chip-ok">Configured</span>' : '<span class="chip chip-bad">Not configured</span>'}</td></tr>
+        </table>
+        ${ai.error ? `<div class="error-box">${escapeHtml(ai.error)}</div>` : ""}
+      </div>
+      <div class="card">
+        <h3>System Prompt</h3>
+        <div class="inline-row mb">
+          ${data.is_custom
+            ? '<span class="chip chip-info">Custom prompt</span>'
+            : '<span class="chip">Default prompt</span>'}
+          ${data.updated_at ? `<span class="hint">Last saved ${escapeHtml(fmtDate(data.updated_at))}</span>` : ""}
+          <span class="hint" id="promptChars"></span>
+        </div>
+        <div class="field">
+          <textarea id="promptEditor" class="textarea-input" rows="16"
+                    maxlength="${data.max_chars || 50000}">${escapeHtml(data.system_prompt || "")}</textarea>
+        </div>
+        <p class="hint">This prompt is sent to the model as its instructions for resume
+          extraction. Saving applies it to new processing requests; already-processed
+          resumes are unchanged.</p>
+        <div class="inline-row mt">
+          <button class="btn btn-primary" id="promptSave" type="button">Save Configuration</button>
+          <button class="btn" id="promptTest" type="button">Test Prompt</button>
+          <button class="btn" id="promptReset" type="button">Reset to Default</button>
+        </div>
+        <div id="promptTestResult" class="mt"></div>
+      </div>`;
+
+    const editor = $("promptEditor");
+    const chars = $("promptChars");
+    const updateChars = () => {
+      chars.textContent = editor.value.length.toLocaleString() + " / " +
+        Number(data.max_chars || 50000).toLocaleString() + " characters";
+    };
+    editor.addEventListener("input", updateChars);
+    updateChars();
+
+    $("promptSave").addEventListener("click", async () => {
+      try {
+        const saved = await Api.saveSystemPrompt(editor.value);
+        state.settings = saved;
+        toast("System prompt saved.", "success");
+        renderSettings();
+      } catch (err) { toast(err.message, "error"); }
+    });
+    $("promptReset").addEventListener("click", async () => {
+      if (!confirm("Reset the system prompt to the built-in default?")) return;
+      try {
+        await Api.resetSystemPrompt();
+        toast("System prompt reset to default.", "success");
+        renderSettings();
+      } catch (err) { toast(err.message, "error"); }
+    });
+    $("promptTest").addEventListener("click", async () => {
+      const box = $("promptTestResult");
+      box.innerHTML = '<span class="hint">Running one real request with this prompt…</span>';
+      try {
+        const result = await Api.testSystemPrompt(editor.value);
+        if (!result.configured) {
+          box.innerHTML = `<div class="error-box">The LLM is not configured on the backend, so the prompt cannot be tested. ${escapeHtml(result.error || "")}</div>`;
+        } else if (result.ok) {
+          const usage = result.usage || {};
+          box.innerHTML = `<div class="hint" style="color:var(--ok)">Test passed — the model returned valid resume JSON.
+            Model: ${escapeHtml(result.model || "")} · Duration: ${fmtMs(result.duration_ms)} ·
+            Tokens: ${usage.total_tokens != null ? fmtNum(usage.total_tokens) : "N/A"}</div>`;
+        } else {
+          box.innerHTML = `<div class="error-box">Test failed: ${escapeHtml(result.error || "The model did not return valid JSON.")}</div>`;
+        }
+      } catch (err) {
+        box.innerHTML = `<div class="error-box">${escapeHtml(err.message)}</div>`;
+      }
+    });
+  } catch (err) {
+    view.innerHTML = `<h2>Settings</h2><div class="error-box">${escapeHtml(err.message)}</div>`;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Router + boot                                                      */
+/* ------------------------------------------------------------------ */
+
+const VIEWS = ["process", "history", "resume", "settings"];
+
+function parseHash() {
+  const raw = location.hash.replace(/^#\/?/, "");
+  const [pathPart, queryPart] = raw.split("?");
+  const params = Object.fromEntries(new URLSearchParams(queryPart || ""));
+  const segments = pathPart.split("/").filter(Boolean);
+  if (segments[0] === "resume" && segments[1]) {
+    return { view: "resume", id: decodeURIComponent(segments[1]), params };
+  }
+  if (["history", "settings", "process"].includes(segments[0])) {
+    return { view: segments[0], params };
+  }
+  return { view: "process", params };
+}
+
+function route() {
+  const { view, id, params } = parseHash();
+  VIEWS.forEach((name) => { $("view-" + name).hidden = name !== view; });
+  document.querySelectorAll("[data-nav]").forEach((link) => {
+    link.classList.toggle("active",
+      link.dataset.nav === view || (view === "resume" && link.dataset.nav === "history"));
+  });
+  if (view === "process" && !$("view-process").dataset.rendered) {
+    $("view-process").dataset.rendered = "1";
+    renderProcess();
+  }
+  if (view === "history") renderHistory();
+  if (view === "settings") renderSettings();
+  if (view === "resume") renderResume(id, params);
+  window.scrollTo(0, 0);
+}
+
+async function boot() {
+  try {
+    state.health = await Api.health();
+    const dot = $("backendStatus");
+    dot.classList.add("ok");
+    $("backendStatusText").textContent = "Backend connected";
+    const order = state.health.extractor_order || [];
+    $("engineInfo").textContent = order.length
+      ? "Primary extraction engine: " + engineLabel(order[0]) +
+        " · Pipeline: " + order.map(engineLabel).join(" → ")
+      : "Primary extraction engine: N/A";
+    const ai = state.health.ai || {};
+    $("aiInfo").textContent = "LLM: " + (ai.provider || "N/A") +
+      (ai.model ? " · " + ai.model : "") +
+      (ai.configured ? " · Configured" : " · Not configured");
+  } catch (err) {
+    const dot = $("backendStatus");
+    dot.classList.add("error");
+    $("backendStatusText").textContent = "Backend unavailable";
+  }
+  if (!location.hash) location.hash = "#/process";
+  route();
+}
+
+window.addEventListener("hashchange", route);
+boot();

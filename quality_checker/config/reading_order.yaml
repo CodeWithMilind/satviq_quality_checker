@@ -1,0 +1,40 @@
+# Reading Order filter configuration
+# This filter only evaluates clues in the extracted text itself.
+# It does NOT claim to reconstruct the original visual layout.
+
+thresholds:
+  # Lines with at most this many words count as "very short lines".
+  short_line_max_words: 2
+  short_line_warn_ratio: 0.40
+  short_line_max_ratio: 0.80
+
+  # Lines with at most this many characters count as fragmented lines.
+  fragmented_line_max_chars: 15
+  fragmented_warn_ratio: 0.35
+  fragmented_max_ratio: 0.75
+
+  # Coefficient of variation (stdev / mean) of line lengths.
+  line_length_cv_warn: 1.0
+  line_length_cv_max: 2.0
+
+  # A line ending with no sentence punctuation, followed by a line
+  # starting with a lowercase letter, is a possible broken sentence.
+  broken_sentence_warn_ratio: 0.30
+  broken_sentence_max_ratio: 0.70
+
+  # Identical neighbouring lines (after stripping whitespace).
+  repeated_adjacent_warn_ratio: 0.05
+  repeated_adjacent_max_ratio: 0.30
+
+  # Very few lines for a long text can indicate merged columns / blocks.
+  min_lines_for_long_text: 5
+  long_text_char_count: 1000
+
+penalties:
+  empty_text: 100
+  excessive_short_lines: 30
+  fragmented_lines: 25
+  line_length_variation: 15
+  broken_sentences: 20
+  repeated_adjacent_lines: 25
+  too_few_lines: 10

@@ -1,0 +1,826 @@
+{
+  "resume_id": "e54e7f04-f338-43f4-a413-fd2c00875213",
+  "filename": "SHJ-5434_SHC-201144.docx",
+  "file_type": "docx",
+  "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "file_size_bytes": 14681,
+  "uploaded_at": "2026-11-05T13:02:54.384710+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "duration_ms": 5646.09,
+  "attempts": [
+    {
+      "extractor_name": "tika",
+      "success": true,
+      "accepted": true,
+      "error": null,
+      "duration_ms": 5646.09,
+      "text": "Zaki Ahmed\nP.27 Narkeldanga Main Road,\nKolkata - 700011\n8961493637\nzakiahmedzaki5@gmail.com\nCareer Objectives\nMy career objective is to secure a role in a dynamic and growth-focused company, leveraging my 3+ years of experience and strong organizational and technical skills to drive the company’s success. I have managed payroll records for over 1,000 employees and have a proven track record of collaborating effectively with cross-functional teams and service providers.\nProfessional Summary\nPayroll Executive with over 3 years of experience in ADP, Garnishments, Calsavers as well as Quickbooks. In addition to this 10 months of experience in Sales.\nWork Experience\nPayroll Executive\nGCSM CONSULTANT PVT. LTD., Kolkata, West Bengal\nSeptember 2021 – Present\nCalculating hours manually and inputting hours on Excel and then entering data on ADP and successfully doing the payroll for the company in US on a weekly basis with all the audit tasks as well as emails. Doing the Payroll for the team here in Kolkata as well with handling other HR tasks sometimes.\nSales Executive\nFusion BPO Services, Kolkata, West Bengal \nJuly 2021 – September 2021\nManaged to onboard teachers as well as students willing to teach and to learn respectively for companies like LIDO & Cuemaths.\nProcess Associate\nTeleminds Infotech Pvt. Ltd., Kolkata, West Bengal \nMarch 2021 – June 2021\nI had an Excellent experience working as an AUSTRALIAN ENERGY Telesales Profile for Both Outbound & Inbound.\nCustomer Representative\nFusion BPO Services, Kolkata, West Bengal \nSeptember 2019 – November 2021\nI started my career as a customer representative working for a brand like OYO and it was an inbound process. I used to sell rooms or flats on monthly rent basis to the customers in need for PG’s, etc.\nEducation\nBachelor of Commerce in Accounting\nUniversity of Calcutta, Kolkata, West Bengal \nGraduated August 2016\nSkills\nADP Workforce Now\nADP Ireports\nQuickbooks\nGarnishments\nCalsavers\nACA\nGuard Card Tracking\nAuditing\nMicrosoft Office",
+      "extractor_version": "4.2.0",
+      "started_at": "2026-11-05T13:02:48.730916+00:00",
+      "completed_at": "2026-11-05T13:02:54.378384+00:00",
+      "error_type": null,
+      "error_traceback": null,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "e54e7f04-f338-43f4-a413-fd2c00875213",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2009,
+            "word_count": 313,
+            "line_count": 40,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.157292,
+            "symbol_count": 6,
+            "symbol_ratio": 0.002987,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2009,
+            "word_count": 313,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "skills",
+              "Work Experience": "work experience",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 85.9,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "47.5% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "Line lengths vary unusually (coefficient of variation 1.57) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 2009,
+            "word_count": 313,
+            "line_count": 40,
+            "non_empty_line_count": 40,
+            "short_line_count": 19,
+            "short_line_ratio": 0.475,
+            "fragmented_line_count": 12,
+            "fragmented_line_ratio": 0.3,
+            "mean_line_length": 49.15,
+            "median_line_length": 20.5,
+            "line_length_stdev": 76.95,
+            "line_length_cv": 1.565632,
+            "broken_sentence_count": 1,
+            "broken_sentence_ratio": 0.025641,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "decision_reason": "Quality PASS — result accepted; fallback stopped.",
+      "selected": true,
+      "attempt_id": "e54e7f04-f338-43f4-a413-fd2c00875213-attempt-1",
+      "resume_id": "e54e7f04-f338-43f4-a413-fd2c00875213",
+      "attempt_number": 1,
+      "extraction_status": "SUCCESS",
+      "extracted_text": "Zaki Ahmed\nP.27 Narkeldanga Main Road,\nKolkata - 700011\n8961493637\nzakiahmedzaki5@gmail.com\nCareer Objectives\nMy career objective is to secure a role in a dynamic and growth-focused company, leveraging my 3+ years of experience and strong organizational and technical skills to drive the company’s success. I have managed payroll records for over 1,000 employees and have a proven track record of collaborating effectively with cross-functional teams and service providers.\nProfessional Summary\nPayroll Executive with over 3 years of experience in ADP, Garnishments, Calsavers as well as Quickbooks. In addition to this 10 months of experience in Sales.\nWork Experience\nPayroll Executive\nGCSM CONSULTANT PVT. LTD., Kolkata, West Bengal\nSeptember 2021 – Present\nCalculating hours manually and inputting hours on Excel and then entering data on ADP and successfully doing the payroll for the company in US on a weekly basis with all the audit tasks as well as emails. Doing the Payroll for the team here in Kolkata as well with handling other HR tasks sometimes.\nSales Executive\nFusion BPO Services, Kolkata, West Bengal \nJuly 2021 – September 2021\nManaged to onboard teachers as well as students willing to teach and to learn respectively for companies like LIDO & Cuemaths.\nProcess Associate\nTeleminds Infotech Pvt. Ltd., Kolkata, West Bengal \nMarch 2021 – June 2021\nI had an Excellent experience working as an AUSTRALIAN ENERGY Telesales Profile for Both Outbound & Inbound.\nCustomer Representative\nFusion BPO Services, Kolkata, West Bengal \nSeptember 2019 – November 2021\nI started my career as a customer representative working for a brand like OYO and it was an inbound process. I used to sell rooms or flats on monthly rent basis to the customers in need for PG’s, etc.\nEducation\nBachelor of Commerce in Accounting\nUniversity of Calcutta, Kolkata, West Bengal \nGraduated August 2016\nSkills\nADP Workforce Now\nADP Ireports\nQuickbooks\nGarnishments\nCalsavers\nACA\nGuard Card Tracking\nAuditing\nMicrosoft Office",
+      "extracted_text_length": 2009,
+      "error_message": null,
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "e54e7f04-f338-43f4-a413-fd2c00875213",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2009,
+            "word_count": 313,
+            "line_count": 40,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.157292,
+            "symbol_count": 6,
+            "symbol_ratio": 0.002987,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2009,
+            "word_count": 313,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "skills",
+              "Work Experience": "work experience",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 85.9,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "47.5% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "Line lengths vary unusually (coefficient of variation 1.57) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 2009,
+            "word_count": 313,
+            "line_count": 40,
+            "non_empty_line_count": 40,
+            "short_line_count": 19,
+            "short_line_ratio": 0.475,
+            "fragmented_line_count": 12,
+            "fragmented_line_ratio": 0.3,
+            "mean_line_length": 49.15,
+            "median_line_length": 20.5,
+            "line_length_stdev": 76.95,
+            "line_length_cv": 1.565632,
+            "broken_sentence_count": 1,
+            "broken_sentence_ratio": 0.025641,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS — result accepted; fallback stopped.",
+      "is_final_selected": true,
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "timeout_seconds": 60.0,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null
+    }
+  ],
+  "extracted_text": "Zaki Ahmed\nP.27 Narkeldanga Main Road,\nKolkata - 700011\n8961493637\nzakiahmedzaki5@gmail.com\nCareer Objectives\nMy career objective is to secure a role in a dynamic and growth-focused company, leveraging my 3+ years of experience and strong organizational and technical skills to drive the company’s success. I have managed payroll records for over 1,000 employees and have a proven track record of collaborating effectively with cross-functional teams and service providers.\nProfessional Summary\nPayroll Executive with over 3 years of experience in ADP, Garnishments, Calsavers as well as Quickbooks. In addition to this 10 months of experience in Sales.\nWork Experience\nPayroll Executive\nGCSM CONSULTANT PVT. LTD., Kolkata, West Bengal\nSeptember 2021 – Present\nCalculating hours manually and inputting hours on Excel and then entering data on ADP and successfully doing the payroll for the company in US on a weekly basis with all the audit tasks as well as emails. Doing the Payroll for the team here in Kolkata as well with handling other HR tasks sometimes.\nSales Executive\nFusion BPO Services, Kolkata, West Bengal \nJuly 2021 – September 2021\nManaged to onboard teachers as well as students willing to teach and to learn respectively for companies like LIDO & Cuemaths.\nProcess Associate\nTeleminds Infotech Pvt. Ltd., Kolkata, West Bengal \nMarch 2021 – June 2021\nI had an Excellent experience working as an AUSTRALIAN ENERGY Telesales Profile for Both Outbound & Inbound.\nCustomer Representative\nFusion BPO Services, Kolkata, West Bengal \nSeptember 2019 – November 2021\nI started my career as a customer representative working for a brand like OYO and it was an inbound process. I used to sell rooms or flats on monthly rent basis to the customers in need for PG’s, etc.\nEducation\nBachelor of Commerce in Accounting\nUniversity of Calcutta, Kolkata, West Bengal \nGraduated August 2016\nSkills\nADP Workforce Now\nADP Ireports\nQuickbooks\nGarnishments\nCalsavers\nACA\nGuard Card Tracking\nAuditing\nMicrosoft Office",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "final_extracted_text": "Zaki Ahmed\nP.27 Narkeldanga Main Road,\nKolkata - 700011\n8961493637\nzakiahmedzaki5@gmail.com\nCareer Objectives\nMy career objective is to secure a role in a dynamic and growth-focused company, leveraging my 3+ years of experience and strong organizational and technical skills to drive the company’s success. I have managed payroll records for over 1,000 employees and have a proven track record of collaborating effectively with cross-functional teams and service providers.\nProfessional Summary\nPayroll Executive with over 3 years of experience in ADP, Garnishments, Calsavers as well as Quickbooks. In addition to this 10 months of experience in Sales.\nWork Experience\nPayroll Executive\nGCSM CONSULTANT PVT. LTD., Kolkata, West Bengal\nSeptember 2021 – Present\nCalculating hours manually and inputting hours on Excel and then entering data on ADP and successfully doing the payroll for the company in US on a weekly basis with all the audit tasks as well as emails. Doing the Payroll for the team here in Kolkata as well with handling other HR tasks sometimes.\nSales Executive\nFusion BPO Services, Kolkata, West Bengal \nJuly 2021 – September 2021\nManaged to onboard teachers as well as students willing to teach and to learn respectively for companies like LIDO & Cuemaths.\nProcess Associate\nTeleminds Infotech Pvt. Ltd., Kolkata, West Bengal \nMarch 2021 – June 2021\nI had an Excellent experience working as an AUSTRALIAN ENERGY Telesales Profile for Both Outbound & Inbound.\nCustomer Representative\nFusion BPO Services, Kolkata, West Bengal \nSeptember 2019 – November 2021\nI started my career as a customer representative working for a brand like OYO and it was an inbound process. I used to sell rooms or flats on monthly rent basis to the customers in need for PG’s, etc.\nEducation\nBachelor of Commerce in Accounting\nUniversity of Calcutta, Kolkata, West Bengal \nGraduated August 2016\nSkills\nADP Workforce Now\nADP Ireports\nQuickbooks\nGarnishments\nCalsavers\nACA\nGuard Card Tracking\nAuditing\nMicrosoft Office",
+  "quality": {
+    "status": "PASS",
+    "document_id": "e54e7f04-f338-43f4-a413-fd2c00875213",
+    "source_tool": "tika",
+    "attempt_id": "attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 2009,
+        "word_count": 313,
+        "line_count": 40,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.157292,
+        "symbol_count": 6,
+        "symbol_ratio": 0.002987,
+        "max_repeated_char_run": 3,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 94.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 2009,
+        "word_count": 313,
+        "configured_section_count": 7,
+        "detected_count": 5,
+        "missing_count": 2,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_sections": [
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "professional summary",
+          "Skills": "skills",
+          "Work Experience": "work experience",
+          "Education": "education"
+        }
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_sections": [
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 85.9,
+      "flags": [
+        "EXCESSIVE_SHORT_LINES",
+        "HIGH_LINE_LENGTH_VARIATION"
+      ],
+      "reasons": [
+        "47.5% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+        "Line lengths vary unusually (coefficient of variation 1.57) — a possible sign of mixed or merged column text."
+      ],
+      "metrics": {
+        "char_count": 2009,
+        "word_count": 313,
+        "line_count": 40,
+        "non_empty_line_count": 40,
+        "short_line_count": 19,
+        "short_line_ratio": 0.475,
+        "fragmented_line_count": 12,
+        "fragmented_line_ratio": 0.3,
+        "mean_line_length": 49.15,
+        "median_line_length": 20.5,
+        "line_length_stdev": 76.95,
+        "line_length_cv": 1.565632,
+        "broken_sentence_count": 1,
+        "broken_sentence_ratio": 0.025641,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS — result accepted; fallback stopped.",
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 60.0,
+  "resume_json": {
+    "full_name": "Zaki Ahmed",
+    "email": "zakiahmedzaki5@gmail.com",
+    "phone": "8961493637",
+    "location": "P.27 Narkeldanga Main Road, Kolkata - 700011",
+    "summary": "Payroll Executive with over 3 years of experience in ADP, Garnishments, Calsavers as well as Quickbooks. In addition to this 10 months of experience in Sales.",
+    "skills": {
+      "technical_skills": [
+        "Garnishments",
+        "Calsavers",
+        "ACA",
+        "Guard Card Tracking",
+        "Auditing"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "ADP Workforce Now",
+        "ADP Ireports",
+        "Quickbooks",
+        "Microsoft Office"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Payroll Executive",
+        "company": "GCSM CONSULTANT PVT. LTD.",
+        "location": "Kolkata, West Bengal",
+        "start_date": "September 2021",
+        "end_date": "Present",
+        "highlights": [
+          "Calculating hours manually and inputting hours on Excel and then entering data on ADP and successfully doing the payroll for the company in US on a weekly basis with all the audit tasks as well as emails.",
+          "Doing the Payroll for the team here in Kolkata as well with handling other HR tasks sometimes."
+        ]
+      },
+      {
+        "title": "Sales Executive",
+        "company": "Fusion BPO Services",
+        "location": "Kolkata, West Bengal",
+        "start_date": "July 2021",
+        "end_date": "September 2021",
+        "highlights": [
+          "Managed to onboard teachers as well as students willing to teach and to learn respectively for companies like LIDO & Cuemaths."
+        ]
+      },
+      {
+        "title": "Process Associate",
+        "company": "Teleminds Infotech Pvt. Ltd.",
+        "location": "Kolkata, West Bengal",
+        "start_date": "March 2021",
+        "end_date": "June 2021",
+        "highlights": [
+          "I had an Excellent experience working as an AUSTRALIAN ENERGY Telesales Profile for Both Outbound & Inbound."
+        ]
+      },
+      {
+        "title": "Customer Representative",
+        "company": "Fusion BPO Services",
+        "location": "Kolkata, West Bengal",
+        "start_date": "September 2019",
+        "end_date": "November 2021",
+        "highlights": [
+          "I started my career as a customer representative working for a brand like OYO and it was an inbound process.",
+          "I used to sell rooms or flats on monthly rent basis to the customers in need for PG’s, etc."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Commerce in Accounting",
+        "institution": "University of Calcutta",
+        "location": "Kolkata, West Bengal",
+        "start_date": "",
+        "end_date": "August 2016"
+      }
+    ],
+    "certifications": [],
+    "languages": [],
+    "links": []
+  },
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Zaki Ahmed\nP.27 Narkeldanga Main Road,\nKolkata - 700011\n8961493637\nzakiahmedzaki5@gmail.com\nCareer Objectives\nMy career objective is to secure a role in a dynamic and growth-focused company, leveraging my 3+ years of experience and strong organizational and technical skills to drive the company’s success. I have managed payroll records for over 1,000 employees and have a proven track record of collaborating effectively with cross-functional teams and service providers.\nProfessional Summary\nPayroll Executive with over 3 years of experience in ADP, Garnishments, Calsavers as well as Quickbooks. In addition to this 10 months of experience in Sales.\nWork Experience\nPayroll Executive\nGCSM CONSULTANT PVT. LTD., Kolkata, West Bengal\nSeptember 2021 – Present\nCalculating hours manually and inputting hours on Excel and then entering data on ADP and successfully doing the payroll for the company in US on a weekly basis with all the audit tasks as well as emails. Doing the Payroll for the team here in Kolkata as well with handling other HR tasks sometimes.\nSales Executive\nFusion BPO Services, Kolkata, West Bengal \nJuly 2021 – September 2021\nManaged to onboard teachers as well as students willing to teach and to learn respectively for companies like LIDO & Cuemaths.\nProcess Associate\nTeleminds Infotech Pvt. Ltd., Kolkata, West Bengal \nMarch 2021 – June 2021\nI had an Excellent experience working as an AUSTRALIAN ENERGY Telesales Profile for Both Outbound & Inbound.\nCustomer Representative\nFusion BPO Services, Kolkata, West Bengal \nSeptember 2019 – November 2021\nI started my career as a customer representative working for a brand like OYO and it was an inbound process. I used to sell rooms or flats on monthly rent basis to the customers in need for PG’s, etc.\nEducation\nBachelor of Commerce in Accounting\nUniversity of Calcutta, Kolkata, West Bengal \nGraduated August 2016\nSkills\nADP Workforce Now\nADP Ireports\nQuickbooks\nGarnishments\nCalsavers\nACA\nGuard Card Tracking\nAuditing\nMicrosoft Office",
+    "normalized_text": "Zaki Ahmed\nP.27 Narkeldanga Main Road,\nKolkata - 700011\n8961493637\nzakiahmedzaki5@gmail.com\nCareer Objectives\nMy career objective is to secure a role in a dynamic and growth-focused company, leveraging my 3+ years of experience and strong organizational and technical skills to drive the company’s success. I have managed payroll records for over 1,000 employees and have a proven track record of collaborating effectively with cross-functional teams and service providers.\nProfessional Summary\nPayroll Executive with over 3 years of experience in ADP, Garnishments, Calsavers as well as Quickbooks. In addition to this 10 months of experience in Sales.\nWork Experience\nPayroll Executive\nGCSM CONSULTANT PVT. LTD., Kolkata, West Bengal\nSeptember 2021 – Present\nCalculating hours manually and inputting hours on Excel and then entering data on ADP and successfully doing the payroll for the company in US on a weekly basis with all the audit tasks as well as emails. Doing the Payroll for the team here in Kolkata as well with handling other HR tasks sometimes.\nSales Executive\nFusion BPO Services, Kolkata, West Bengal\nJuly 2021 – September 2021\nManaged to onboard teachers as well as students willing to teach and to learn respectively for companies like LIDO & Cuemaths.\nProcess Associate\nTeleminds Infotech Pvt. Ltd., Kolkata, West Bengal\nMarch 2021 – June 2021\nI had an Excellent experience working as an AUSTRALIAN ENERGY Telesales Profile for Both Outbound & Inbound.\nCustomer Representative\nFusion BPO Services, Kolkata, West Bengal\nSeptember 2019 – November 2021\nI started my career as a customer representative working for a brand like OYO and it was an inbound process. I used to sell rooms or flats on monthly rent basis to the customers in need for PG’s, etc.\nEducation\nBachelor of Commerce in Accounting\nUniversity of Calcutta, Kolkata, West Bengal\nGraduated August 2016\nSkills\nADP Workforce Now\nADP Ireports\nQuickbooks\nGarnishments\nCalsavers\nACA\nGuard Card Tracking\nAuditing\nMicrosoft Office",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "lines_trimmed"
+    ],
+    "original_chars": 2009,
+    "normalized_chars": 2005,
+    "original_estimated_tokens": 502,
+    "normalized_estimated_tokens": 501,
+    "estimated_reduction_percent": 0.2
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": "chatcmpl-01a1abce-6def-7321-af89-20c0621ea475",
+      "status": "success",
+      "duration_ms": 19898.01,
+      "input_tokens": 1290,
+      "output_tokens": 2414,
+      "total_tokens": 3704,
+      "cached_input_tokens": 753,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1290,
+    "output_tokens": 2414,
+    "total_tokens": 3704,
+    "cached_input_tokens": 753,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_source": "muse_ai",
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "input_type": "text",
+    "duration_ms": 19898.01,
+    "timeout_seconds": 20.0,
+    "usage": {
+      "completion_tokens": 2414,
+      "prompt_tokens": 1290,
+      "total_tokens": 3704,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1795
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 753
+      }
+    },
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 2009,
+      "normalized_chars": 2005,
+      "estimated_reduction_percent": 0.2,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "lines_trimmed"
+      ],
+      "error": null
+    }
+  },
+  "primary_extractor": "tika",
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 5646.09,
+      "message": "Extraction succeeded and was accepted.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Checker",
+      "type": "quality",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS — result accepted; fallback stopped.",
+      "accepted": true,
+      "quality": {
+        "status": "PASS",
+        "document_id": "e54e7f04-f338-43f4-a413-fd2c00875213",
+        "source_tool": "tika",
+        "attempt_id": "attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2009,
+            "word_count": 313,
+            "line_count": 40,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.157292,
+            "symbol_count": 6,
+            "symbol_ratio": 0.002987,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2009,
+            "word_count": 313,
+            "configured_section_count": 7,
+            "detected_count": 5,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "skills",
+              "Work Experience": "work experience",
+              "Education": "education"
+            }
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 85.9,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "47.5% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "Line lengths vary unusually (coefficient of variation 1.57) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 2009,
+            "word_count": 313,
+            "line_count": 40,
+            "non_empty_line_count": 40,
+            "short_line_count": 19,
+            "short_line_ratio": 0.475,
+            "fragmented_line_count": 12,
+            "fragmented_line_ratio": 0.3,
+            "mean_line_length": 49.15,
+            "median_line_length": 20.5,
+            "line_length_stdev": 76.95,
+            "line_length_cv": 1.565632,
+            "broken_sentence_count": 1,
+            "broken_sentence_ratio": 0.025641,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika was accepted before this extractor was needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "extractor",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 19898.01,
+      "message": "Structured Resume JSON generated by Muse AI and validated against the schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 5646.09,
+      "message": "Final accepted text produced by Tika.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "_stored_name": "e54e7f04-f338-43f4-a413-fd2c00875213_SHJ-5434_SHC-201144.docx"
+}
