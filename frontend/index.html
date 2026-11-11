@@ -7,7 +7,7 @@
   <!-- Asset version: bump ?v= whenever the frontend changes, so a
        browser can never pair new HTML with stale cached JS/CSS.
        The server also sends Cache-Control: no-cache for these. -->
-  <link rel="stylesheet" href="css/style.css?v=16" />
+  <link rel="stylesheet" href="css/style.css?v=17" />
 </head>
 <body>
   <header class="topbar">
@@ -23,7 +23,6 @@
         <a href="#/process" data-nav="process">Process Resume</a>
         <a href="#/history" data-nav="history">History</a>
         <a href="#/analytics" data-nav="analytics">Analytics</a>
-        <a href="#/yaml-editor" data-nav="yaml-editor">YAML Editor AI</a>
         <a href="#/settings" data-nav="settings">Settings</a>
       </nav>
       <div class="topbar-status" id="backendStatus" role="status">
@@ -44,7 +43,6 @@
     <section id="view-process" class="view" hidden></section>
     <section id="view-history" class="view" hidden></section>
     <section id="view-analytics" class="view" hidden></section>
-    <section id="view-yaml-editor" class="view" hidden></section>
     <section id="view-resume" class="view" hidden></section>
     <section id="view-settings" class="view" hidden></section>
   </main>
@@ -58,7 +56,7 @@
 
   <div id="toastRoot" class="toast-root" aria-live="polite"></div>
 
-  <script src="js/api.js?v=27"></script>
-  <script src="js/app.js?v=29"></script>
+  <script src="js/api.js?v=28"></script>
+  <script src="js/app.js?v=30"></script>
 </body>
 </html>

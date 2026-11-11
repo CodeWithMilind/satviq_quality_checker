@@ -106,6 +106,27 @@ class ResumeJSON(BaseModel):
     email: str = ""
     phone: str = ""
     location: str = ""
+
+    @field_validator("phone", mode="before")
+    @classmethod
+    def _phone_normalized(cls, value):
+        """Standardize the phone field to ``+91 XXXXXXXXXX``.
+
+        Deterministic normalization (api.phone_numbers) applied to
+        the model's extracted value BEFORE it becomes the stored
+        Resume JSON: valid Indian mobiles are canonicalized, invalid
+        or ambiguous values pass through unchanged, and the original
+        extracted TEXT is never touched — only this structured
+        field. The import is local so this module stays importable
+        in isolation (the standalone schema tests load it without
+        the api package)."""
+        if value is None:
+            return ""
+        try:
+            from api.phone_numbers import normalize_phone_field
+            return normalize_phone_field(value)
+        except Exception:
+            return value
     summary: str = ""
     skills: Skills = Field(default_factory=Skills)
     experience: list[ExperienceItem] = Field(default_factory=list)

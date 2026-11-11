@@ -187,7 +187,12 @@ def test_stored_vision_record_is_repaired_on_read():
 FULL_PAYLOAD = {
     "full_name": "Priya Nair",
     "email": "priya@example.com",
-    "phone": "+91 98765 43210",
+    # Canonical Indian-mobile format (+91 XXXXXXXXXX): the schema's
+    # phone validator standardizes this field (see
+    # tests/test_phone_numbers.py), so the fixture carries the
+    # canonical form and every other field must still survive
+    # byte-identical.
+    "phone": "+91 9876543210",
     "location": "Pune, India",
     "summary": "Python developer.",
     "skills": {

@@ -852,8 +852,6 @@ async function renderResume(id, params) {
       ${tokenUsageHtml(record)}
     </div>
 
-    ${yamlEditorActivityHtml(record)}
-
     ${(record.hyperlinks || []).length ? `
     <div class="card" id="hyperlinksSection">
       <h3>PDF Hyperlinks</h3>
@@ -1455,7 +1453,6 @@ async function loadAnalytics() {
           : "");
     }
     body.innerHTML = analyticsHtml(data);
-    loadYamlEditorAnalytics();
   } catch (err) {
     body.innerHTML = `<div class="error-box">${escapeHtml(err.message)}</div>`;
   }
@@ -1599,336 +1596,14 @@ function analyticsHtml(data) {
       </table>
     </div>`;
 
-  return `<div class="kpi-grid">${kpiCards}</div>${extractorCard}${durationCard}${tokenCard}${qualityCard}${normCard}<div id="yamlEditorAnalytics"></div>`;
-}
-
-/* YAML Editor AI — separate analytics block, fed by its own
-   endpoints (/api/yaml-editor/*) and its own token store. Loaded
-   independently so a failure here never hides the main analytics. */
-async function loadYamlEditorAnalytics() {
-  const host = $("yamlEditorAnalytics");
-  if (!host) return;
-  try {
-    const data = await Api.getYamlEditorAnalytics();
-    host.innerHTML = yamlEditorHtml(data);
-  } catch (err) {
-    host.innerHTML = "";
-  }
-}
-
-function yamlEditorHtml(data) {
-  const s = data.summary || {};
-  const rows = (data.history || []).map((h) => `<tr>
-      <td>${escapeHtml(h.filename || h.resume_id || "—")}</td>
-      <td>${h.timestamp ? escapeHtml(String(h.timestamp).slice(0, 10)) : "—"}</td>
-      <td>${escapeHtml(h.model || "—")}</td>
-      <td>${h.input_tokens === null || h.input_tokens === undefined ? "—" : fmtNum(h.input_tokens)}</td>
-      <td>${h.output_tokens === null || h.output_tokens === undefined ? "—" : fmtNum(h.output_tokens)}</td>
-      <td>${fmtNum(h.keywords_added || 0)}</td>
-      <td>${escapeHtml(h.yaml_version || "—")}</td>
-      <td>${escapeHtml(h.status || "—")}</td></tr>`).join("");
-  const updates = (data.recent_updates || []).map((u) =>
-    `<li>${escapeHtml(u.new_version || "")} — ${fmtNum(u.keywords_added_count || 0)} keyword(s) in ${(u.categories_affected || []).map(escapeHtml).join(", ") || "—"} <span class="hint">(${escapeHtml(u.filename || u.resume_id || "")})</span></li>`).join("");
-  return `
-  <div class="card">
-    <h3>YAML Editor AI — Completeness self-improvement</h3>
-    <p class="hint">Independent agent: analyses only low-completeness resumes after processing and appends validated new section keywords to the versioned completeness YAML. Current YAML version: ${escapeHtml(data.current_version || "—")} · Model: ${escapeHtml(data.model || "—")} · ${data.configured ? "Configured" : "Not configured (no API key)"}</p>
-    <div class="kpi-grid">
-      <div class="kpi-card"><div class="kpi-value">${fmtNum(s.total_executions || 0)}</div><div class="kpi-label">AI executions</div></div>
-      <div class="kpi-card"><div class="kpi-value">${fmtNum(s.total_input_tokens || 0)}</div><div class="kpi-label">Input tokens</div></div>
-      <div class="kpi-card"><div class="kpi-value">${fmtNum(s.total_output_tokens || 0)}</div><div class="kpi-label">Output tokens</div></div>
-      <div class="kpi-card"><div class="kpi-value">${fmtNum(s.total_tokens || 0)}</div><div class="kpi-label">Total tokens</div></div>
-      <div class="kpi-card"><div class="kpi-value">${s.avg_tokens_per_execution === null || s.avg_tokens_per_execution === undefined ? "—" : fmtNum(s.avg_tokens_per_execution)}</div><div class="kpi-label">Avg tokens / resume</div></div>
-      <div class="kpi-card"><div class="kpi-value">${fmtNum(s.total_keywords_accepted || 0)}</div><div class="kpi-label">Keywords accepted</div></div>
-      <div class="kpi-card"><div class="kpi-value">${fmtNum(s.total_keywords_rejected || 0)}</div><div class="kpi-label">Keywords rejected</div></div>
-      <div class="kpi-card"><div class="kpi-value">${fmtNum(data.total_yaml_versions || 0)}</div><div class="kpi-label">YAML versions</div></div>
-      <div class="kpi-card"><div class="kpi-value">${s.avg_duration_ms === null || s.avg_duration_ms === undefined ? "—" : fmtMs(s.avg_duration_ms)}</div><div class="kpi-label">Avg execution time</div></div>
-      <div class="kpi-card"><div class="kpi-value">${fmtNum(s.api_failures || 0)}</div><div class="kpi-label">API failures</div></div>
-    </div>
-    ${updates ? `<h4>Recent YAML updates</h4><ul>${updates}</ul>` : ""}
-    ${rows ? `<div style="overflow-x:auto"><table class="data-table">
-      <thead><tr><th>Resume</th><th>Date</th><th>Model</th><th>Input tokens</th><th>Output tokens</th><th>Keywords added</th><th>YAML version</th><th>Status</th></tr></thead>
-      <tbody>${rows}</tbody></table></div>` : `<p class="hint">No YAML Editor AI executions yet — it runs only when a processed resume's completeness score is low.</p>`}
-  </div>`;
-}
-
-/* ------------------------------------------------------------------ */
-/* YAML Editor AI — Resume Details activity card (Part E)             */
-/* Every value comes from record.yaml_editor (stored at processing  */
-/* time, or derived on read from the execution history for older     */
-/* records). Nothing is hardcoded.                                    */
-/* ------------------------------------------------------------------ */
-
-function yamlEditorActivityHtml(record) {
-  const ye = record.yaml_editor;
-  if (!ye) return "";
-  const status = ye.status || "SKIPPED";
-  const trig = ye.trigger || {};
-  const executed = ["SUCCESS", "NO_CHANGE", "FAILED"].includes(status);
-  const stage = (label, st, detail) => {
-    const cls = st === "PASS" ? "chip chip-ok"
-      : st === "FAILED" ? "chip chip-bad"
-      : st === "RUNNING" ? "chip chip-warn" : "chip";
-    return `<tr><td>${escapeHtml(label)}</td><td><span class="${cls}">${escapeHtml(st)}</span></td><td>${detail || ""}</td></tr>`;
-  };
-  const scoreTxt = trig.completeness_score === null || trig.completeness_score === undefined
-    ? "—" : `${trig.completeness_score}/100 (threshold ${trig.threshold ?? "—"})`;
-  const jsonStage = status === "FAILED" && /invalid_json|empty_response/.test(ye.error || ye.reason || "")
-    ? "FAILED" : executed ? "PASS" : "NOT EXECUTED";
-  const kwStage = executed && status !== "FAILED" ? "PASS"
-    : status === "FAILED" && jsonStage === "PASS" ? "FAILED" : "NOT EXECUTED";
-  const addedEntries = Object.entries(ye.keywords_added || {});
-  const rows = [
-    stage("1. Completeness assessment", trig.completeness_score === null || trig.completeness_score === undefined ? "NOT EXECUTED" : "PASS",
-      `Completeness: ${escapeHtml(scoreTxt)}`),
-    stage("2. Trigger decision",
-      status === "SKIPPED" ? "SKIPPED" : "PASS",
-      status === "SKIPPED"
-        ? `Skipped: ${escapeHtml(humanizeReason(ye.reason || trig.reason))}`
-        : "Below configured threshold — agent executed"),
-    stage("3. Muse AI request", executed ? "PASS" : "NOT EXECUTED",
-      executed ? `Model: ${escapeHtml(ye.model || "—")} · ${ye.duration_ms === null || ye.duration_ms === undefined ? "" : fmtMs(ye.duration_ms)} · Tokens: in ${ye.input_tokens ?? "—"} / out ${ye.output_tokens ?? "—"}` : ""),
-    stage("4. JSON validation", jsonStage,
-      jsonStage === "FAILED" ? escapeHtml(ye.error || ye.reason || "") : ""),
-    stage("5. Keyword validation", kwStage,
-      executed ? `Suggested ${ye.keywords_suggested ?? "—"} · Accepted ${ye.keywords_accepted ?? "—"} · Rejected ${ye.keywords_rejected ?? "—"}` : ""),
-    stage("6. YAML update", status === "SUCCESS" ? "PASS" : status === "NO_CHANGE" ? "SKIPPED" : "NOT EXECUTED",
-      status === "SUCCESS" ? addedEntries.map(([c, kws]) => `${escapeHtml(c)}: ${kws.map(escapeHtml).join(", ")}`).join(" · ") : status === "NO_CHANGE" ? "No new keywords — nothing to update" : ""),
-    stage("7. Version creation", status === "SUCCESS" ? "PASS" : "NOT EXECUTED",
-      `Previous: ${escapeHtml(ye.yaml_version_before || "—")} · New: ${escapeHtml(ye.yaml_version_after || "—")} · Current: ${escapeHtml(ye.current_yaml_version || "—")}`),
-  ].join("");
-  const configNote = ye.enabled === false
-    ? '<p class="hint"><strong>YAML Editor AI is disabled</strong> (YAML_EDITOR_ENABLED=false).</p>'
-    : ye.configured === false
-      ? '<p class="hint"><strong>YAML Editor AI is not configured</strong> — no API key (YAML_EDITOR_API_KEY / MUSE_API_KEY), so it cannot run.</p>' : "";
-  return `
-    <div class="card" id="yamlEditorSection">
-      <h3>YAML Editor AI Activity</h3>
-      ${configNote}
-      <table class="kv-table"><tbody>${rows}</tbody></table>
-      ${(ye.rejected || []).length ? `<p class="hint">Rejected: ${ye.rejected.map((r) => `${escapeHtml(r.keyword || "")} (${escapeHtml(r.reason || "")})`).join(" · ")}</p>` : ""}
-    </div>`;
-}
-
-function humanizeReason(reason) {
-  const map = {
-    completeness_not_low: "Completeness at or above the configured threshold",
-    not_configured: "Not configured (no API key)",
-    disabled: "Disabled",
-    insufficient_text: "Extracted text too short to analyse",
-    no_completeness_score: "No completeness score available",
-    already_analyzed: "Already analysed for this resume",
-    not_executed: "Not executed for this record",
-    internal_error: "Internal error (see backend log)",
-    unavailable: "Unavailable",
-  };
-  return map[reason] || String(reason || "—");
-}
-
-/* ------------------------------------------------------------------ */
-/* YAML Editor AI — dedicated dashboard view (Part D)                 */
-/* ------------------------------------------------------------------ */
-
-const yamlEditorState = { version: null, compareFrom: null, compareTo: null };
-
-function yamlLinesHtml(content, addedSet) {
-  return String(content || "").split("\n").map((line) => {
-    const trimmed = line.trim();
-    let cls = "";
-    if (addedSet && addedSet.has(trimmed.replace(/^-\s*/, "").replace(/^"|"$/g, ""))) cls = ' class="ye-added"';
-    else if (/^  [a-z_]+:/.test(line)) cls = ' class="ye-key"';
-    else if (/^sections:|^content_probes:|^penalties/.test(line)) cls = ' class="ye-key"';
-    else if (trimmed.startsWith("#")) cls = ' class="ye-comment"';
-    return `<span${cls}>${escapeHtml(line) || " "}</span>`;
-  }).join("\n");
-}
-
-async function renderYamlEditor() {
-  const view = $("view-yaml-editor");
-  view.innerHTML = '<div class="loading">Loading YAML Editor AI…</div>';
-  try {
-    const [analytics, active, versions, changelog, history] = await Promise.all([
-      Api.getYamlEditorAnalytics(), Api.getYamlEditorActive(),
-      Api.getYamlEditorVersions(), Api.getYamlEditorChangelog(),
-      Api.getYamlEditorHistory()]);
-    const s = analytics.summary || {};
-    const versionNums = (versions.versions || []).map((v) => v.version);
-    if (!yamlEditorState.version) yamlEditorState.version = versions.current_version;
-    if (!yamlEditorState.compareTo) yamlEditorState.compareTo = versions.current_version;
-    if (!yamlEditorState.compareFrom) {
-      const idx = versionNums.indexOf(yamlEditorState.compareTo);
-      yamlEditorState.compareFrom = idx > 0 ? versionNums[idx - 1] : versionNums[0];
-    }
-    const kpiCards = [
-      { value: escapeHtml(versions.current_version || "—"), label: "Active YAML version" },
-      { value: fmtNum(s.total_executions || 0), label: "Total AI executions" },
-      { value: fmtNum(s.total_input_tokens || 0), label: "Input tokens" },
-      { value: fmtNum(s.total_output_tokens || 0), label: "Output tokens" },
-      { value: fmtNum(s.total_tokens || 0), label: "Total tokens" },
-      { value: fmtNum(s.total_keywords_suggested || 0), label: "Keywords discovered" },
-      { value: fmtNum(s.total_keywords_accepted || 0), label: "Keywords accepted" },
-      { value: fmtNum(s.total_keywords_rejected || 0), label: "Keywords rejected" },
-      { value: fmtNum(analytics.total_yaml_versions || 0), label: "YAML versions" },
-      { value: fmtNum(s.successful_executions || 0), label: "Successful updates" },
-      { value: fmtNum(s.failed_executions || 0), label: "Failed executions" },
-      { value: s.avg_duration_ms === null || s.avg_duration_ms === undefined ? "—" : fmtMs(s.avg_duration_ms), label: "Avg API latency" },
-    ].map((c) => `<div class="kpi-card"><div class="kpi-value">${c.value}</div><div class="kpi-label">${c.label}</div></div>`).join("");
-
-    const catRows = Object.entries(active.categories || {}).map(([name, c]) =>
-      `<tr><td>${escapeHtml(c.display_name || name)}</td><td>${escapeHtml(name)}</td><td>${fmtNum(c.keyword_count)}</td></tr>`).join("");
-
-    const versionList = (versions.versions || []).map((v) =>
-      `<button class="btn btn-small ${v.version === yamlEditorState.version ? "btn-primary" : ""}" data-ye-version="${escapeHtml(v.version)}" type="button">${escapeHtml(v.version)}${v.version === versions.current_version ? " (active)" : ""}</button>`).join(" ");
-
-    const changeRows = (changelog.changelog || []).filter((e) => e.status !== "initialized").slice().reverse().map((e) =>
-      `<tr data-ye-change="${escapeHtml(e.new_version || "")}" style="cursor:pointer"><td>${escapeHtml(e.filename || e.resume_id || "—")}</td><td>${e.timestamp ? escapeHtml(String(e.timestamp).slice(0, 10)) : "—"}</td><td>${escapeHtml(e.previous_version || "—")}</td><td>${escapeHtml(e.new_version || "—")}</td><td>${fmtNum(e.keywords_added_count || 0)}${e.categories_affected && e.categories_affected.length ? ` (${e.categories_affected.map(escapeHtml).join(", ")})` : ""}</td><td>${escapeHtml(e.status || "—")}</td></tr>`).join("");
-
-    const execRows = (history.history || []).map((h) =>
-      `<tr><td>${escapeHtml(h.filename || h.resume_id || "—")}</td><td>${escapeHtml(h.model || "—")}</td><td>${h.input_tokens ?? "—"}</td><td>${h.output_tokens ?? "—"}</td><td>${h.total_tokens ?? "—"}</td><td>${h.duration_ms === null || h.duration_ms === undefined ? "—" : fmtMs(h.duration_ms)}</td><td>${escapeHtml(h.status || "—")}</td><td>${escapeHtml(h.error || "")}</td></tr>`).join("");
-
-    view.innerHTML = `
-    <h2>YAML Editor AI</h2>
-    <p class="hint">Self-improving completeness keywords — independent from the main Muse AI resume extraction. Model: ${escapeHtml(analytics.model || "—")} · ${analytics.configured ? "Configured" : "Not configured (no API key)"} · Active YAML last updated: ${active.updated_at ? escapeHtml(new Date(active.updated_at * 1000).toLocaleString()) : "—"}</p>
-    <div class="kpi-grid">${kpiCards}</div>
-
-    <div class="card">
-      <h3>Active YAML — ${escapeHtml(active.version || "")} (read-only)</h3>
-      <p class="hint">${fmtNum(active.total_keywords || 0)} keywords across ${fmtNum(Object.keys(active.categories || {}).length)} categories. Content is read live from the backend file <code>yaml files/active/completeness.yaml</code>.</p>
-      <div class="panel-toolbar">
-        <input id="yeSearch" class="select-input" style="width:260px" type="search" placeholder="Search keywords…" />
-        <span class="spacer"></span>
-        <span class="hint" id="yeSearchMeta"></span>
-      </div>
-      <table class="kv-table"><thead><tr><td>Category</td><td>Key</td><td>Keywords</td></tr></thead><tbody>${catRows}</tbody></table>
-      <div id="yeSections"></div>
-    </div>
-
-    <div class="card">
-      <h3>YAML Version History</h3>
-      <div class="panel-toolbar">${versionList}</div>
-      <div id="yeVersionViewer"><p class="hint">Select a version to inspect its complete YAML.</p></div>
-    </div>
-
-    <div class="card">
-      <h3>Before vs After Comparison</h3>
-      <div class="panel-toolbar">
-        <label class="hint">From <select id="yeCompareFrom" class="select-input" style="width:auto">${versionNums.map((v) => `<option ${v === yamlEditorState.compareFrom ? "selected" : ""}>${escapeHtml(v)}</option>`).join("")}</select></label>
-        <label class="hint">To <select id="yeCompareTo" class="select-input" style="width:auto">${versionNums.map((v) => `<option ${v === yamlEditorState.compareTo ? "selected" : ""}>${escapeHtml(v)}</option>`).join("")}</select></label>
-        <button class="btn btn-small btn-primary" id="yeCompareBtn" type="button">Compare</button>
-      </div>
-      <div id="yeCompareArea"><p class="hint">Choose two versions and compare — added keywords are highlighted; the editor is append-only, so removals should always be none.</p></div>
-    </div>
-
-    <div class="card">
-      <h3>YAML Change History</h3>
-      ${changeRows ? `<div style="overflow-x:auto"><table class="data-table"><thead><tr><th>Resume</th><th>Date</th><th>Old Version</th><th>New Version</th><th>Keywords Added</th><th>Status</th></tr></thead><tbody>${changeRows}</tbody></table></div><p class="hint">Click a row to compare that change (before vs after).</p>` : '<p class="hint">No YAML changes yet — updates appear here after a low-completeness resume teaches the editor a new keyword.</p>'}
-    </div>
-
-    <div class="card">
-      <h3>AI Execution History</h3>
-      ${execRows ? `<div style="overflow-x:auto"><table class="data-table"><thead><tr><th>Resume</th><th>Model</th><th>Input</th><th>Output</th><th>Total</th><th>Duration</th><th>Status</th><th>Failure reason</th></tr></thead><tbody>${execRows}</tbody></table></div>` : '<p class="hint">No executions yet.</p>'}
-    </div>`;
-
-    // Active YAML: per-category expand/collapse sections.
-    const sectionsHost = $("yeSections");
-    const bySection = splitYamlSections(active.content || "");
-    sectionsHost.innerHTML = bySection.map((sec, i) => `
-      <details ${i === 0 ? "open" : ""} class="ye-section">
-        <summary><strong>${escapeHtml(sec.title)}</strong></summary>
-        <pre class="ye-yaml">${yamlLinesHtml(sec.body)}</pre>
-      </details>`).join("");
-    const searchInput = $("yeSearch");
-    searchInput.addEventListener("input", () => {
-      const q = searchInput.value.trim().toLowerCase();
-      let hits = 0;
-      sectionsHost.querySelectorAll("details.ye-section").forEach((d) => {
-        const match = !q || d.textContent.toLowerCase().includes(q);
-        d.style.display = match ? "" : "none";
-        if (q && match) { d.open = true; hits += (d.textContent.toLowerCase().split(q).length - 1); }
-      });
-      $("yeSearchMeta").textContent = q ? `${hits} match(es)` : "";
-    });
-
-    // Version viewer.
-    const loadVersion = async (v) => {
-      yamlEditorState.version = v;
-      view.querySelectorAll("[data-ye-version]").forEach((b) =>
-        b.classList.toggle("btn-primary", b.dataset.yeVersion === v));
-      const host = $("yeVersionViewer");
-      host.innerHTML = '<div class="loading">Loading…</div>';
-      try {
-        const data = await Api.getYamlEditorVersion(v);
-        host.innerHTML = `<pre class="ye-yaml">${yamlLinesHtml(data.content)}</pre>`;
-      } catch (err) {
-        host.innerHTML = `<div class="error-box">${escapeHtml(err.message)}</div>`;
-      }
-    };
-    view.querySelectorAll("[data-ye-version]").forEach((b) =>
-      b.addEventListener("click", () => loadVersion(b.dataset.yeVersion)));
-    if (yamlEditorState.version) loadVersion(yamlEditorState.version);
-
-    // Comparison.
-    const runCompare = async () => {
-      const from = $("yeCompareFrom").value, to = $("yeCompareTo").value;
-      yamlEditorState.compareFrom = from; yamlEditorState.compareTo = to;
-      const host = $("yeCompareArea");
-      host.innerHTML = '<div class="loading">Comparing…</div>';
-      try {
-        const data = await Api.getYamlEditorCompare(from, to);
-        const addedSet = new Set(Object.values(data.added || {}).flat());
-        const addedSummary = Object.entries(data.added || {}).map(([c, kws]) =>
-          `<li><strong>${escapeHtml(c)}</strong>: ${kws.map(escapeHtml).join(", ")}</li>`).join("");
-        const removedCount = Object.values(data.removed || {}).flat().length;
-        host.innerHTML = `
-          ${data.trigger ? `<p class="hint">Triggered by resume: <strong>${escapeHtml(data.trigger.filename || data.trigger.resume_id || "—")}</strong>${data.trigger.timestamp ? " · " + escapeHtml(String(data.trigger.timestamp).slice(0, 10)) : ""}</p>` : ""}
-          <p>${addedSet.size ? `Added ${fmtNum(addedSet.size)} keyword(s):` : "No keywords added between these versions."}</p>
-          ${addedSummary ? `<ul>${addedSummary}</ul>` : ""}
-          <p class="hint">Removed keywords: ${fmtNum(removedCount)} (the editor is append-only).</p>
-          <div class="compare-grid">
-            <div><h4>LEFT — ${escapeHtml(data.from_version)} (previous)</h4><pre class="ye-yaml">${yamlLinesHtml(data.from_content)}</pre></div>
-            <div><h4>RIGHT — ${escapeHtml(data.to_version)} (updated)</h4><pre class="ye-yaml">${yamlLinesHtml(data.to_content, addedSet)}</pre></div>
-          </div>`;
-      } catch (err) {
-        host.innerHTML = `<div class="error-box">${escapeHtml(err.message)}</div>`;
-      }
-    };
-    $("yeCompareBtn").addEventListener("click", runCompare);
-    view.querySelectorAll("[data-ye-change]").forEach((row) =>
-      row.addEventListener("click", () => {
-        const entry = (changelog.changelog || []).find((e) => e.new_version === row.dataset.yeChange);
-        if (entry && entry.previous_version) {
-          $("yeCompareFrom").value = entry.previous_version;
-          $("yeCompareTo").value = entry.new_version;
-          runCompare();
-          $("yeCompareArea").scrollIntoView({ behavior: "smooth" });
-        }
-      }));
-  } catch (err) {
-    view.innerHTML = `<h2>YAML Editor AI</h2><div class="error-box">${escapeHtml(err.message)}</div>`;
-  }
-}
-
-function splitYamlSections(content) {
-  const lines = String(content || "").split("\n");
-  const out = [];
-  let current = { title: "Header", body: [] };
-  let inSections = false;
-  for (const line of lines) {
-    if (/^sections:\s*$/.test(line)) { inSections = true; out.push(current); current = { title: "sections", body: [line] }; continue; }
-    const m = inSections && line.match(/^  ([a-z0-9_]+):\s*$/);
-    if (m) { out.push(current); current = { title: m[1], body: [line] }; continue; }
-    if (inSections && line && !line.startsWith(" ") && !line.startsWith("#")) inSections = false;
-    current.body.push(line);
-  }
-  out.push(current);
-  return out.filter((s) => s.body.length).map((s) => ({ title: s.title, body: s.body.join("\n") }));
+  return `<div class="kpi-grid">${kpiCards}</div>${extractorCard}${durationCard}${tokenCard}${qualityCard}${normCard}`;
 }
 
 /* ------------------------------------------------------------------ */
 /* Router + boot                                                      */
 /* ------------------------------------------------------------------ */
 
-const VIEWS = ["process", "history", "resume", "analytics", "yaml-editor", "settings"];
+const VIEWS = ["process", "history", "resume", "analytics", "settings"];
 
 function parseHash() {
   const raw = location.hash.replace(/^#\/?/, "");
@@ -1938,7 +1613,7 @@ function parseHash() {
   if (segments[0] === "resume" && segments[1]) {
     return { view: "resume", id: decodeURIComponent(segments[1]), params };
   }
-  if (["history", "settings", "process", "analytics", "yaml-editor"].includes(segments[0])) {
+  if (["history", "settings", "process", "analytics"].includes(segments[0])) {
     return { view: segments[0], params };
   }
   return { view: "process", params };
@@ -1957,7 +1632,6 @@ function route() {
   }
   if (view === "history") renderHistory();
   if (view === "analytics") renderAnalytics();
-  if (view === "yaml-editor") renderYamlEditor();
   if (view === "settings") renderSettings();
   if (view === "resume") renderResume(id, params);
   window.scrollTo(0, 0);

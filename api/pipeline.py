@@ -1677,36 +1677,6 @@ def _apply_direct_llm_routing(record: dict[str, Any], *,
     return routing
 
 
-def _yaml_editor_hook(record: dict[str, Any]) -> None:
-    """YAML Editor AI post-processing hook.
-
-    Runs AFTER the final extractor has been selected and the record
-    is complete. The agent itself decides whether the record
-    qualifies (low completeness + usable text + not already analysed
-    for the current YAML version + configured). The structured
-    outcome is stored on the record as ``record["yaml_editor"]``
-    (Part C) so the Resume Details page can show exactly what the
-    agent did — the outcome was previously computed and DISCARDED.
-    Fully guarded: any failure is logged inside the agent module and
-    can never affect the record's processing result or the request.
-    The record's stored quality scores are never modified — accepted
-    keywords apply to FUTURE resumes.
-    """
-    try:
-        from yaml_editor_ai import (maybe_improve_from_record,
-                                    record_yaml_editor_block)
-
-        outcome = maybe_improve_from_record(record)
-        record["yaml_editor"] = record_yaml_editor_block(record, outcome)
-        if outcome.get("status") not in ("skipped",):
-            logger.info("YAML Editor AI for resume_id=%s: %s",
-                        record.get("resume_id"), outcome.get("status"))
-    except Exception:
-        logger.exception("YAML Editor AI hook failed (record unaffected)")
-        record.setdefault("yaml_editor", {
-            "status": "SKIPPED", "reason": "internal_error"})
-
-
 def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
                                original_filename: str,
                                muse_service: Any | None = None,
@@ -2282,7 +2252,6 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
         "timings": timings,
     }
     _ensure_attempt_normalized_texts(record)
-    _yaml_editor_hook(record)
     return record
 
 
@@ -2592,7 +2561,6 @@ def process_resume_file(file_path: str | Path, *, resume_id: str,
     logger.info("Processed resume_id=%s success=%s extractor=%s quality=%s",
                 resume_id, result.success, record["extractor_used"],
                 record["quality_status"])
-    _yaml_editor_hook(record)
     return record
 
 

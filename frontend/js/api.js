@@ -107,28 +107,6 @@
       var suffix = query.toString() ? "?" + query.toString() : "";
       return request("/api/analytics/summary" + suffix);
     },
-    getYamlEditorAnalytics: function () {
-      return request("/api/yaml-editor/analytics");
-    },
-    getYamlEditorActive: function () {
-      return request("/api/yaml-editor/active");
-    },
-    getYamlEditorVersions: function () {
-      return request("/api/yaml-editor/versions");
-    },
-    getYamlEditorVersion: function (version) {
-      return request("/api/yaml-editor/versions/" + encodeURIComponent(version));
-    },
-    getYamlEditorCompare: function (fromVersion, toVersion) {
-      return request("/api/yaml-editor/compare?from_version=" +
-        encodeURIComponent(fromVersion) + "&to_version=" + encodeURIComponent(toVersion));
-    },
-    getYamlEditorChangelog: function () {
-      return request("/api/yaml-editor/changelog");
-    },
-    getYamlEditorHistory: function () {
-      return request("/api/yaml-editor/history?limit=100");
-    },
     processResumes: processResumes,
     listResumes: function (params) {
       var query = new URLSearchParams();

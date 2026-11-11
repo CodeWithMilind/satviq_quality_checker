@@ -48,19 +48,49 @@ def public(record: dict[str, Any]) -> dict[str, Any]:
     stored_name = record.get("_stored_name")
     item["has_original_file"] = bool(
         stored_name and (UPLOADS_DIR / stored_name).is_file())
-    # YAML Editor AI activity (Part C/E): records processed before
-    # the per-resume block existed get it derived on read from the
-    # agent's execution history — the stored file is never rewritten
-    # by a read. Fully guarded: a failure here must never break a
-    # record response.
-    if not isinstance(item.get("yaml_editor"), dict):
-        try:
-            from yaml_editor_ai import yaml_editor_block_for_record
+    # YAML Editor AI was removed from SATVIQ: records stored while
+    # it existed may still carry its per-resume block — never serve
+    # it (the stored file itself is left as-is).
+    item.pop("yaml_editor", None)
+    # Phone display consistency: the structured phone field is
+    # served in the canonical +91 XXXXXXXXXX format wherever the
+    # record is displayed. New records are already normalized at
+    # validation time (muse_ai.schema); this covers records stored
+    # before that. Read-time only — the stored file is never
+    # rewritten, and invalid/ambiguous values pass through unchanged.
+    try:
+        from .phone_numbers import normalize_phone_field
 
-            item["yaml_editor"] = yaml_editor_block_for_record(item)
-        except Exception:
-            item["yaml_editor"] = {
-                "status": "SKIPPED", "reason": "unavailable"}
+        for key in ("resume_json", "resume_data"):
+            data = item.get(key)
+            if isinstance(data, dict) and data.get("phone"):
+                data = dict(data)
+                data["phone"] = normalize_phone_field(data["phone"])
+                item[key] = data
+        llm_block = item.get("llm")
+        if isinstance(llm_block, dict) and isinstance(
+                llm_block.get("resume_json"), dict) \
+                and llm_block["resume_json"].get("phone"):
+            llm_block = dict(llm_block)
+            inner = dict(llm_block["resume_json"])
+            inner["phone"] = normalize_phone_field(inner["phone"])
+            llm_block["resume_json"] = inner
+            item["llm"] = llm_block
+        recovery = item.get("contact_recovery")
+        if isinstance(recovery, dict) and isinstance(
+                recovery.get("recovered"), dict) \
+                and isinstance(recovery["recovered"].get("phone"), dict):
+            recovery = dict(recovery)
+            recovered = dict(recovery["recovered"])
+            phone_entry = dict(recovered["phone"])
+            if phone_entry.get("value"):
+                phone_entry["value"] = normalize_phone_field(
+                    phone_entry["value"])
+                recovered["phone"] = phone_entry
+                recovery["recovered"] = recovered
+                item["contact_recovery"] = recovery
+    except Exception:
+        pass
     return item
 
 

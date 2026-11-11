@@ -18,17 +18,8 @@ logger = logging.getLogger(__name__)
 
 _CONFIG_DIR = Path(__file__).resolve().parent.parent / "config"
 
-# YAML Editor AI integration: when the versioned store exists, its
-# ACTIVE completeness YAML is the single source of truth for
-# completeness checks (the bundled file is only the seed/fallback).
-_ACTIVE_COMPLETENESS = (
-    Path(__file__).resolve().parents[2] / "yaml files" / "active"
-    / "completeness.yaml")
-
 
 def _default_path(filename: str) -> Path:
-    if filename == "completeness.yaml" and _ACTIVE_COMPLETENESS.is_file():
-        return _ACTIVE_COMPLETENESS
     return _CONFIG_DIR / filename
 
 

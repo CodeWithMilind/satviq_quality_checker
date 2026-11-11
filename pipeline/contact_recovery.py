@@ -215,6 +215,14 @@ def recover_contact_information(
         wanted = [f for f in missing if f not in recovered]
         found = extract_fields(text, wanted) if text and wanted else {}
         for field, value in found.items():
+            if field == "phone":
+                # Same canonical format as everywhere else in
+                # SATVIQ (+91 XXXXXXXXXX); the candidate was already
+                # validated by _valid_phone, and normalization never
+                # alters digits — invalid/ambiguous values pass
+                # through unchanged.
+                from api.phone_numbers import normalize_indian_mobile
+                value = normalize_indian_mobile(value)
             recovered[field] = {"value": value, "source": source_label,
                                 "method": method}
         block["sources_tried"].append({

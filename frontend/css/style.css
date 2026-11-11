@@ -348,13 +348,3 @@ pre.json-view {
 .chart-legend .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; }
 .analytics-section-title { margin: 22px 0 10px; font-size: 16px; }
 
-/* YAML Editor AI view (Parts D/E) — minimal syntax highlighting */
-.ye-yaml { background: var(--panel-2, #f6f8fa); border: 1px solid var(--border, #d8dee4);
-  border-radius: 8px; padding: 12px 14px; font-family: ui-monospace, Consolas, monospace;
-  font-size: 12.5px; line-height: 1.55; overflow-x: auto; white-space: pre; }
-.ye-yaml span { display: block; }
-.ye-yaml .ye-key { font-weight: 600; }
-.ye-yaml .ye-comment { color: var(--muted); font-style: italic; }
-.ye-yaml .ye-added { background: #d9fbe3; font-weight: 600; }
-.ye-section { margin-top: 10px; }
-.ye-section summary { cursor: pointer; padding: 4px 0; }
