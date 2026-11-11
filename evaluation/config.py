@@ -15,7 +15,7 @@ Two layers, deliberately separate:
    independent of the extraction stage's ``MUSE_*`` settings:
 
    - ``SATVIQ_EVALUATION_ENABLED`` (default true) — master switch.
-   - ``SATVIQ_EVALUATION_MAX_OUTPUT_TOKENS`` (default 6000 —
+   - ``SATVIQ_EVALUATION_MAX_OUTPUT_TOKENS`` (default 9000 —
      raised from 4000 after a real evaluation response was cut
      off mid-JSON; reasoning tokens share this budget).
    - ``SATVIQ_EVALUATION_REASONING_EFFORT`` (default ``low``) —
@@ -45,7 +45,7 @@ _CONFIG_PATH = _PACKAGE_DIR / "config.yaml"
 _COMPLETENESS_YAML = (PROJECT_ROOT / "quality_checker" / "config"
                       / "completeness.yaml")
 
-DEFAULT_MAX_OUTPUT_TOKENS = 6000
+DEFAULT_MAX_OUTPUT_TOKENS = 9000
 DEFAULT_REASONING_EFFORT = "low"
 _REASONING_EFFORTS = ("minimal", "low", "medium", "high", "xhigh", "max")
 

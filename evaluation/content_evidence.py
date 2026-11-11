@@ -172,3 +172,67 @@ def reconcile_content_sections(evaluation: dict[str, Any],
             "resume ({count} outcome statements found); no "
             "dedicated Achievements heading."),
     }
+
+
+# --------------------------------------------------------------------- #
+# Section classification reconciliation (deterministic, no scoring)
+# --------------------------------------------------------------------- #
+# Classification corrections that follow from the evaluation's OWN
+# content and the candidate's career stage. These adjust which
+# sections are REPORTED as missing; they never touch any score —
+# scores remain exactly what the model produced (changing scoring
+# requires a separate validation exercise).
+
+_ENTRY_STAGES = {"student", "fresher", "entry-level"}
+# Optional for entry-level candidates: reporting them "missing"
+# penalises candidates for sections their stage does not call for
+# (Publications also exists as a good-to-have section).
+_ENTRY_OPTIONAL_SECTIONS = {"publications", "research experience"}
+
+
+def _section_name(item: Any) -> str:
+    if isinstance(item, dict):
+        return str(item.get("section") or "").strip().lower()
+    return ""
+
+
+def reconcile_section_classification(
+        evaluation: dict[str, Any]) -> list[str]:
+    """Remove missing-section verdicts that misclassify the resume:
+
+    - "Academic Projects" is a subtype of "Projects": when Projects
+      content was recognised, a separate missing verdict for
+      Academic Projects double-counts one absence.
+    - For Student / Fresher / Entry-Level candidates, Publications
+      and Research Experience are optional sections, not expected
+      content — they are not reported missing for those stages.
+
+    Returns the list of corrections applied (stored on the entry
+    for transparency). Scores are never modified.
+    """
+    actions: list[str] = []
+    missing = evaluation.get("missing_sections")
+    if not isinstance(missing, list):
+        return actions
+    matching = {_section_name(s)
+                for s in evaluation.get("matching_sections") or []}
+    stage = str(evaluation.get("career_stage") or "").strip().lower()
+    kept = []
+    for item in missing:
+        name = _section_name(item)
+        if name == "academic projects" and "projects" in matching:
+            actions.append(
+                "Academic Projects not reported missing: Projects "
+                "content is present (Academic Projects is a subtype "
+                "of Projects).")
+            continue
+        if stage in _ENTRY_STAGES and name in _ENTRY_OPTIONAL_SECTIONS:
+            actions.append(
+                f"{item.get('section')} not reported missing: "
+                "optional section for the candidate's career stage "
+                f"({evaluation.get('career_stage')}).")
+            continue
+        kept.append(item)
+    if actions:
+        evaluation["missing_sections"] = kept
+    return actions

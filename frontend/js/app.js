@@ -1110,6 +1110,7 @@ function evalDetailsHtml(entry) {
   const tokens = entry.tokens || {};
   const rows = [
     ["Model", entry.model || "—"],
+    ["Prompt version", entry.prompt_version || "— (pre-dates version tracking)"],
     ["Analysis version", "v" + String(entry.analysis_version ?? "—")],
     ["YAML version", entry.yaml_version || "—"],
     ["Evaluation date", fmtDate(entry.created_at)],
@@ -1133,12 +1134,72 @@ function evalDetailsHtml(entry) {
   </details>`;
 }
 
+function evalPointList(items) {
+  const list = (items || []).filter((p) => p && p.point);
+  if (!list.length) return '<p class="hint">None recorded.</p>';
+  return `<ul class="eval-points">${list.map((p) => `
+    <li><div>${escapeHtml(p.point)}</div>
+    ${(p.evidence || []).length ? `<div class="eval-evidence">Evidence: ${p.evidence.map(escapeHtml).join(" · ")}</div>` : ""}
+    </li>`).join("")}</ul>`;
+}
+
+function evalRecruiterHtml(ev, entry) {
+  const ra = ev.recruiter_assessment;
+  if (!ra) {
+    const ranNewPrompt = entry && entry.prompt_version
+      && entry.prompt_version !== "eval-prompt/1.x";
+    if (ranNewPrompt) {
+      return `<div class="empty-state eval-empty">
+        <p><strong>Recruiter Assessment missing from this evaluation.</strong></p>
+        <p class="hint">This evaluation ran ${escapeHtml(entry.prompt_version)}, but its recruiter assessment did not survive: the model's first response was truncated and the JSON-correction recovery completed without it (see Evaluation Details). The rest of this evaluation is intact. Re-analyze the resume to generate the recruiter assessment.</p>
+      </div>`;
+    }
+    return `<div class="empty-state eval-empty">
+      <p><strong>No Recruiter Assessment for this evaluation.</strong></p>
+      <p class="hint">This evaluation was generated with the earlier candidate-facing prompt and is preserved as-is. Re-analyze the resume to generate the recruiter assessment (summary, evidenced strengths and limitations, verified gaps vs unmentioned areas, and verification points).</p>
+    </div>`;
+  }
+  const gaps = (ra.verified_skill_gaps || []).filter((g) => g && g.skill_or_area);
+  const unmentioned = (ra.unmentioned_areas || []).filter((u) => u && u.area);
+  return `
+    ${ra.summary ? `<div class="eval-panel"><h4>Professional Summary</h4><p>${escapeHtml(ra.summary)}</p></div>` : ""}
+    <div class="eval-cols">
+      <div class="eval-panel eval-panel-ok"><h4>Strengths (evidenced)</h4>${evalPointList(ra.strengths)}</div>
+      <div class="eval-panel eval-panel-warn"><h4>Limitations (evidenced)</h4>${evalPointList(ra.limitations)}</div>
+    </div>
+    <div class="eval-panel"><h4>Assessment Insights</h4>${evalPointList(ra.assessment_insights)}</div>
+    <div class="eval-cols">
+      <div class="eval-panel eval-panel-warn"><h4>Verified Skill Gaps</h4>
+        ${gaps.length ? `<ul class="eval-points">${gaps.map((g) => `<li><div><strong>${escapeHtml(g.skill_or_area)}</strong> — ${escapeHtml(g.basis || "")}</div>${(g.evidence || []).length ? `<div class="eval-evidence">Evidence: ${g.evidence.map(escapeHtml).join(" · ")}</div>` : ""}</li>`).join("")}</ul>` : '<p class="hint">No verified skill gaps — no shortfall is evidenced by the resume itself.</p>'}
+      </div>
+      <div class="eval-panel"><h4>Unmentioned Areas</h4>
+        ${unmentioned.length ? `<ul class="eval-points">${unmentioned.map((u) => `<li><div><strong>${escapeHtml(u.area)}</strong></div><div class="eval-evidence">${escapeHtml(u.relevance_note || "")}</div></li>`).join("")}</ul>` : '<p class="hint">None recorded.</p>'}
+        <p class="hint">Not mentioned in the resume. Absence of evidence is not evidence of absence — these are not deficiencies.</p>
+      </div>
+    </div>
+    <div class="eval-panel"><h4>Verification Points for Screening</h4>${evalList(ra.verification_points)}</div>
+    <div class="eval-cols">
+      <div class="eval-panel"><h4>Candidate Information Completeness${ev.completeness ? ` — ${escapeHtml(String(ev.completeness.score ?? "—"))} (${escapeHtml(ev.completeness.classification || "")})` : ""}</h4>
+        <p>${escapeHtml(ra.information_completeness_note || "")}</p>
+        <p class="hint">How much decision-relevant information this resume gives an assessor. A low score means limited information to decide with — not a judgement of the candidate's ability.</p></div>
+      <div class="eval-panel"><h4>Resume Data Reliability${ev.quality ? ` — ${escapeHtml(String(ev.quality.score ?? "—"))} (${escapeHtml(ev.quality.classification || "")})` : ""}</h4>
+        <p>${escapeHtml(ra.data_reliability_note || "")}</p>
+        <p class="hint">How far this document's claims can be relied on as-is. A low score means claims need verification — not that the candidate is unqualified.</p></div>
+    </div>`;
+}
+
 function evaluationEntryHtml(entry, record) {
   const ev = entry.evaluation || {};
   const cand = ev.candidate || {};
   const roles = [...(ev.role_suitability || [])]
     .sort((a, b) => (b.score || 0) - (a.score || 0));
-  const activeTab = evalTabState[record.resume_id] || "overview";
+  let activeTab = evalTabState[record.resume_id] || "overview";
+  // B2B evaluations (with a recruiter assessment) do not show the
+  // candidate-facing Improvement Insights tab — recruiter-facing
+  // actions live in the Recruiter Assessment tab. Historical
+  // evaluations keep the tab exactly as before.
+  const hideInsights = Boolean(ev.recruiter_assessment);
+  if (hideInsights && activeTab === "insights") activeTab = "overview";
   const tabBtn = (id, label) =>
     `<button type="button" class="eval-tab${activeTab === id ? " eval-tab-active" : ""}" data-eval-tab="${id}">${label}</button>`;
 
@@ -1150,11 +1211,11 @@ function evaluationEntryHtml(entry, record) {
     </div>
     ${roles.length ? evalRoleCompareHtml(roles.slice(0, 6)) : ""}
     ${evalSectionSummaryHtml(ev)}
-    <div class="eval-cols">
+    ${ev.recruiter_assessment ? "" : `<div class="eval-cols">
       <div class="eval-panel eval-panel-ok"><h4>Strengths</h4>${evalList(ev.strengths)}</div>
       <div class="eval-panel eval-panel-warn"><h4>Weaknesses</h4>${evalList(ev.weaknesses)}</div>
       <div class="eval-panel"><h4>Recommendations</h4>${evalList(ev.recommendations)}</div>
-    </div>`;
+    </div>`}`;
 
   const rolesTab = roles.length
     ? evalRoleCompareHtml(roles)
@@ -1176,6 +1237,8 @@ function evaluationEntryHtml(entry, record) {
 
   const insightsTab = evalInsightsHtml(ev);
 
+  const recruiterTab = evalRecruiterHtml(ev, entry);
+
   return `
     <div class="eval-candidate">
       <div class="eval-candidate-main">
@@ -1188,12 +1251,13 @@ function evaluationEntryHtml(entry, record) {
       <div class="hint">Evaluated ${escapeHtml(fmtDate(entry.created_at))} · Model ${escapeHtml(entry.model || "—")} · Analysis v${escapeHtml(String(entry.analysis_version ?? "—"))}</div>
     </div>
     <div class="eval-tabs" role="tablist">
-      ${tabBtn("overview", "Overview")}${tabBtn("roles", "Role Analysis")}${tabBtn("sections", "Section Analysis")}${tabBtn("insights", "Improvement Insights")}
+      ${tabBtn("overview", "Overview")}${tabBtn("roles", "Role Analysis")}${tabBtn("sections", "Section Analysis")}${hideInsights ? "" : tabBtn("insights", "Improvement Insights")}${tabBtn("recruiter", "Recruiter Assessment")}
     </div>
     <div class="eval-tab-panel" data-eval-panel="overview" ${activeTab !== "overview" ? "hidden" : ""}>${overviewTab}</div>
     <div class="eval-tab-panel" data-eval-panel="roles" ${activeTab !== "roles" ? "hidden" : ""}>${rolesTab}</div>
     <div class="eval-tab-panel" data-eval-panel="sections" ${activeTab !== "sections" ? "hidden" : ""}>${sectionsTab}</div>
-    <div class="eval-tab-panel" data-eval-panel="insights" ${activeTab !== "insights" ? "hidden" : ""}>${insightsTab}</div>
+    ${hideInsights ? "" : `<div class="eval-tab-panel" data-eval-panel="insights" ${activeTab !== "insights" ? "hidden" : ""}>${insightsTab}</div>`}
+    <div class="eval-tab-panel" data-eval-panel="recruiter" ${activeTab !== "recruiter" ? "hidden" : ""}>${recruiterTab}</div>
     ${evalDetailsHtml(entry)}`;
 }
 
@@ -1532,6 +1596,10 @@ async function renderResume(id, params) {
       <p class="hint">Extraction-stage (Resume JSON) token usage. AI Evaluation tokens are tracked separately, inside the AI Evaluation tab's Evaluation Details panel — the two are never merged.</p>
       ${tokenUsageHtml(record)}
     </div>
+    <div class="card" id="aiCostsCard">
+      <h3>AI Cost Breakdown</h3>
+      <div id="aiCostsBody"><p class="hint">Loading cost breakdown…</p></div>
+    </div>
     <div class="card">
       <h3>Evaluation History</h3>
       ${(record.analyses || []).length
@@ -1811,6 +1879,7 @@ async function renderResume(id, params) {
   // no API calls, no Muse calls. Mirrored into the URL so a tab
   // can be deep-linked (&ptab=quality) without a hashchange loop.
   function showPrimaryTab(tabId) {
+    if (tabId === "usage") loadAiCosts(record.resume_id);
     view.querySelectorAll("[data-ptab]").forEach((b) => {
       const on = b.dataset.ptab === tabId;
       b.classList.toggle("active", on);
@@ -2103,6 +2172,65 @@ function durationChart(d) {
   return `<svg class="chart-box" viewBox="0 0 ${width} ${height}" role="img">${bars}${line(d.mean_ms, "var(--warn)", "mean")}${line(d.median_ms, "var(--ok)", "median")}</svg>`;
 }
 
+function fmtUsd(value) {
+  if (value === null || value === undefined) return "Unavailable";
+  const n = Number(value);
+  return "$" + n.toFixed(6);
+}
+function fmtInr(value) {
+  if (value === null || value === undefined) return null;
+  return "₹" + Number(value).toFixed(4);
+}
+
+async function loadAiCosts(resumeId) {
+  const body = $("aiCostsBody");
+  if (!body || body.dataset.loaded === resumeId) return;
+  try {
+    const data = await Api.getResumeCosts(resumeId);
+    body.dataset.loaded = resumeId;
+    body.innerHTML = aiCostsHtml(data);
+  } catch (err) {
+    body.innerHTML = `<p class="hint">Cost breakdown unavailable: ${escapeHtml(err.message)}</p>`;
+  }
+}
+
+function aiCostsHtml(data) {
+  const s = data.summary || {};
+  const ext = s.json_extraction || {}, ev = s.ai_evaluation || {}, tot = s.totals || {};
+  const opRow = (label, op) => `
+    <tr><td>${label}</td><td>${fmtNum(op.calls || 0)}</td>
+    <td>${fmtNum(op.input_tokens || 0)}</td><td>${fmtNum(op.cached_input_tokens || 0)}</td>
+    <td>${fmtNum(op.output_tokens || 0)}</td><td>${fmtNum(op.total_tokens || 0)}</td>
+    <td>${op.calls ? fmtUsd(op.cost_usd) : "—"}</td>
+    <td>${op.cost_inr != null ? fmtInr(op.cost_inr) : "—"}</td></tr>`;
+  const models = [...new Set((data.calls || []).map((c) => c.model).filter(Boolean))];
+  const inrNote = tot.cost_inr != null
+    ? ` · Total in INR: <strong>${fmtInr(tot.cost_inr)}</strong> (at the USD→INR rate stamped on each cost row)`
+    : ` · INR unavailable — set SATVIQ_USD_INR_RATE in the backend .env to enable INR equivalents`;
+  const callRows = (data.calls || []).map((c) => `
+    <tr><td>${c.operation_type === "ai_evaluation" ? "AI Evaluation" : "JSON Extraction"}${c.stage ? " · " + escapeHtml(c.stage) : ""}</td>
+    <td>${escapeHtml(c.model || "—")}</td><td>${fmtNum(c.attempt || 1)}</td>
+    <td>${escapeHtml(c.status || "—")}</td>
+    <td>${fmtNum(c.input_tokens)} in (${fmtNum(c.cached_input_tokens || 0)} cached) · ${fmtNum(c.output_tokens)} out</td>
+    <td>${fmtUsd(c.total_cost_usd)}</td></tr>`).join("");
+  return `
+    <p class="hint">Actual provider-reported usage only — calls whose usage was not reported are excluded, never estimated. Costs use the centralized pricing in muse_ai/pricing.py.</p>
+    <div style="overflow-x:auto"><table class="data-table">
+      <thead><tr><th>Operation</th><th>API calls</th><th>Input tokens</th><th>Cached input</th><th>Output tokens</th><th>Total tokens</th><th>Cost (USD)</th><th>Cost (INR)</th></tr></thead>
+      <tbody>
+        ${opRow("Muse AI JSON Extraction", ext)}
+        ${opRow("AI Evaluation", ev)}
+        <tr><td><strong>Total AI Cost Per Resume</strong></td><td><strong>${fmtNum(tot.calls || 0)}</strong></td>
+        <td><strong>${fmtNum(tot.input_tokens || 0)}</strong></td><td><strong>${fmtNum(tot.cached_input_tokens || 0)}</strong></td>
+        <td><strong>${fmtNum(tot.output_tokens || 0)}</strong></td><td><strong>${fmtNum(tot.total_tokens || 0)}</strong></td>
+        <td><strong>${fmtUsd(tot.cost_usd)}</strong></td>
+        <td><strong>${tot.cost_inr != null ? fmtInr(tot.cost_inr) : "—"}</strong></td></tr>
+      </tbody></table></div>
+    <p class="hint">Model used: ${models.length ? models.map(escapeHtml).join(", ") : "—"}${inrNote}</p>
+    ${callRows ? `<details class="eval-group"><summary>Per-call detail (${(data.calls || []).length})</summary>
+      <div style="overflow-x:auto"><table class="data-table"><thead><tr><th>Call</th><th>Model</th><th>Attempt</th><th>Status</th><th>Tokens</th><th>Cost</th></tr></thead><tbody>${callRows}</tbody></table></div></details>` : ""}`;
+}
+
 function renderAnalytics() {
   const view = $("view-analytics");
   const days = state.analytics.days;
@@ -2291,6 +2419,28 @@ function analyticsHtml(data) {
       <td>${escapeHtml(r.role)}</td><td>${fmtNum(r.count)}</td></tr>`).join("");
   const evMissingRows = (ev.most_missing_sections || []).map((m) => `<tr>
       <td>${escapeHtml(m.section)}</td><td>${fmtNum(m.count)}</td></tr>`).join("");
+  const ac = data.ai_costs || {};
+  const acExt = ac.json_extraction || {}, acEv = ac.ai_evaluation || {};
+  const acOpCost = (op) => (op && op.cost_usd != null) ? fmtUsd(op.cost_usd)
+    : (op && op.calls ? fmtUsd(op.cost_usd) : "—");
+  const acTop = ac.most_expensive_resume;
+  const acMonthly = (ac.monthly || []).length ? `<h4 style="margin-top:14px">Monthly AI expenditure</h4>
+    <table class="data-table"><thead><tr><th>Month</th><th>Calls</th><th>Cost (USD)</th><th>Cost (INR)</th></tr></thead><tbody>
+    ${ac.monthly.map((m) => `<tr><td>${escapeHtml(m.month)}</td><td>${fmtNum(m.calls)}</td><td>${fmtUsd(m.cost_usd)}</td><td>${m.cost_inr != null ? fmtInr(m.cost_inr) : "—"}</td></tr>`).join("")}</tbody></table>` : "";
+  const costCard = `<div class="card">
+      <h3>AI Expenditure</h3>
+      <p class="hint">Actual provider-reported usage priced via muse_ai/pricing.py${ac.source === "postgresql" ? " — aggregated from PostgreSQL (ai_api_costs)" : " — derived from stored records (PostgreSQL aggregates appear when the database is connected)"}. Deterministic processing is never counted as AI cost.</p>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-value">${fmtUsd(ac.total_cost_usd)}</div><div class="kpi-label">Total AI expenditure</div></div>
+        <div class="kpi-card"><div class="kpi-value">${ac.average_cost_per_resume_usd != null ? fmtUsd(ac.average_cost_per_resume_usd) : "—"}</div><div class="kpi-label">Average cost per resume</div><div class="kpi-sub">over ${fmtNum(ac.resumes_with_costs || 0)} resumes with costed calls</div></div>
+        <div class="kpi-card"><div class="kpi-value">${acOpCost(acExt)}</div><div class="kpi-label">JSON extraction expenditure</div></div>
+        <div class="kpi-card"><div class="kpi-value">${acOpCost(acEv)}</div><div class="kpi-label">Evaluation expenditure</div></div>
+        <div class="kpi-card"><div class="kpi-value">${acTop ? fmtUsd(acTop.cost_usd) : "—"}</div><div class="kpi-label">Most expensive resume</div>${acTop ? `<div class="kpi-sub">${escapeHtml(acTop.filename || acTop.resume_id || "")}</div>` : ""}</div>
+        <div class="kpi-card"><div class="kpi-value">${ac.total_cost_inr != null ? fmtInr(ac.total_cost_inr) : "—"}</div><div class="kpi-label">Total in INR</div>${ac.total_cost_inr == null ? '<div class="kpi-sub">set SATVIQ_USD_INR_RATE to enable</div>' : ""}</div>
+      </div>
+      ${acMonthly}
+    </div>`;
+
   const evaluationCard = `
     <div class="card">
       <h3>AI Evaluation</h3>
@@ -2310,7 +2460,7 @@ function analyticsHtml(data) {
       : '<p class="hint">No AI evaluations yet — open a resume and run Analyze in its AI Evaluation section.</p>'}
     </div>`;
 
-  return `<div class="kpi-grid">${kpiCards}</div>${extractorCard}${durationCard}${tokenCard}${qualityCard}${normCard}${evaluationCard}`;
+  return `<div class="kpi-grid">${kpiCards}</div>${extractorCard}${durationCard}${tokenCard}${qualityCard}${normCard}${evaluationCard}${costCard}`;
 }
 
 /* ------------------------------------------------------------------ */

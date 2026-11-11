@@ -599,6 +599,8 @@ def sync_record(record: dict[str, Any], conn=None) -> int | None:
             _insert_evaluations(cur, pk, record)
             _insert_qc_sections(cur, pk, record)
             _insert_attempts(cur, pk, record)
+            _store_canonical(cur, pk, record)
+            _sync_ai_costs(cur, pk, record)
         conn.commit()
         return pk
     except Exception:
@@ -746,3 +748,225 @@ def fetch_all_records() -> list[dict[str, Any]]:
 def delete_candidate_by_resume(resume_id: str) -> bool:
     """Delete one candidate (children cascade)."""
     return delete_candidate(resume_id)
+
+
+# ----------------------------------------------------------------------
+# Canonical AI evaluation documents (ai-evaluation/1.x)
+# ----------------------------------------------------------------------
+
+def _store_canonical(cur, pk: int, record: dict) -> None:
+    """Build + validate + store the canonical document inside the
+    caller's transaction. Best-effort BY DESIGN: a canonical problem
+    (or migration 002 not having been run yet) must never fail the
+    record save. The INSERT runs under a SAVEPOINT so a failure rolls
+    back only the canonical step, never the record's own writes; the
+    document can be rebuilt at any time from the stored record."""
+    try:
+        from candidate_intelligence import build_canonical, check_canonical
+        doc = build_canonical(record)
+        ok, result = check_canonical(doc)
+        if not ok:
+            logger.warning("Canonical build invalid for %s: %s",
+                           record.get("resume_id"), result[:3])
+            return
+        cur.execute("SAVEPOINT canonical_sp")
+        try:
+            cur.execute(
+                "INSERT INTO candidate_canonical_evaluations"
+                " (candidate_id, resume_id, evaluation_id,"
+                " schema_version, canonical, built_at) VALUES"
+                " (%s,%s,%s,%s,%s, now()) ON CONFLICT"
+                " (resume_id, schema_version) DO UPDATE SET"
+                " candidate_id = EXCLUDED.candidate_id,"
+                " evaluation_id = EXCLUDED.evaluation_id,"
+                " canonical = EXCLUDED.canonical, built_at = now()",
+                (pk, record.get("resume_id"),
+                 doc["metadata"].get("evaluation_id"),
+                 doc["metadata"]["schema_version"], Jsonb(doc)))
+            cur.execute("RELEASE SAVEPOINT canonical_sp")
+        except Exception:
+            cur.execute("ROLLBACK TO SAVEPOINT canonical_sp")
+            cur.execute("RELEASE SAVEPOINT canonical_sp")
+            raise
+    except Exception as exc:  # noqa: BLE001 - never block the save
+        logger.warning("Canonical store skipped for %s: %s",
+                       record.get("resume_id"), type(exc).__name__)
+
+
+def upsert_canonical(candidate_pk: int, resume_id: str,
+                     evaluation_id: str | None, canonical: dict,
+                     conn=None) -> None:
+    """Store (or replace) the canonical document for one resume and
+    schema version. Called from sync_record inside its transaction."""
+    own = conn is None
+    if own:
+        conn = connect()
+    try:
+        with conn.cursor() as cur:
+            cur.execute(
+                "INSERT INTO candidate_canonical_evaluations"
+                " (candidate_id, resume_id, evaluation_id,"
+                " schema_version, canonical, built_at) VALUES"
+                " (%s,%s,%s,%s,%s, now()) ON CONFLICT"
+                " (resume_id, schema_version) DO UPDATE SET"
+                " candidate_id = EXCLUDED.candidate_id,"
+                " evaluation_id = EXCLUDED.evaluation_id,"
+                " canonical = EXCLUDED.canonical, built_at = now()",
+                (candidate_pk, resume_id, evaluation_id,
+                 canonical["metadata"]["schema_version"],
+                 Jsonb(canonical)))
+        if own:
+            conn.commit()
+    finally:
+        if own:
+            conn.close()
+
+
+def _sync_ai_costs(cur, pk: int, record: dict) -> None:
+    """Persist per-call AI cost rows inside the caller's
+    transaction. Best-effort under a SAVEPOINT (migration 003 may
+    not have run yet): a cost problem must never fail the record
+    save. Inserts are ON CONFLICT (call_ref) DO NOTHING — rows are
+    immutable historical facts, stamped with the pricing and FX
+    rate in force at first sync."""
+    try:
+        from api.ai_costs import derive_call_rows
+        rows = derive_call_rows(record)
+        if not rows:
+            return
+        cur.execute("SAVEPOINT ai_costs_sp")
+        try:
+            for row in rows:
+                cur.execute(
+                    "INSERT INTO ai_api_costs ("
+                    " call_ref, candidate_id, resume_id,"
+                    " operation_type, provider, model, prompt_version,"
+                    " stage, status, request_id, attempt, duration_ms,"
+                    " input_tokens, cached_input_tokens,"
+                    " non_cached_input_tokens, output_tokens,"
+                    " total_tokens, input_cost_usd,"
+                    " cached_input_cost_usd, output_cost_usd,"
+                    " total_cost_usd, usd_inr_rate, total_cost_inr,"
+                    " currency, cost_status, analysis_id)"
+                    " VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,"
+                    " %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,"
+                    " %s, %s, %s, %s)"
+                    " ON CONFLICT (call_ref) DO NOTHING",
+                    (row["call_ref"], pk, row["resume_id"],
+                     row["operation_type"], row["provider"],
+                     row["model"], row["prompt_version"], row["stage"],
+                     row["status"], row["request_id"], row["attempt"],
+                     row["duration_ms"], row["input_tokens"],
+                     row["cached_input_tokens"],
+                     row["non_cached_input_tokens"],
+                     row["output_tokens"], row["total_tokens"],
+                     row["input_cost_usd"],
+                     row["cached_input_cost_usd"],
+                     row["output_cost_usd"], row["total_cost_usd"],
+                     row["usd_inr_rate"], row["total_cost_inr"],
+                     row["currency"], row["cost_status"],
+                     row.get("analysis_id")))
+            cur.execute("RELEASE SAVEPOINT ai_costs_sp")
+        except Exception:
+            cur.execute("ROLLBACK TO SAVEPOINT ai_costs_sp")
+            cur.execute("RELEASE SAVEPOINT ai_costs_sp")
+            raise
+    except Exception as exc:  # noqa: BLE001 — best-effort step
+        logger.warning("AI cost sync skipped for %s: %s",
+                       record.get("resume_id"), exc)
+
+
+def fetch_resume_costs(resume_id: str) -> list[dict] | None:
+    """Stored cost rows for one resume (Decimal values preserved).
+    None when PostgreSQL is not configured/reachable; [] when the
+    resume has no cost rows."""
+    if not database_url():
+        return None
+    try:
+        with connect() as conn, conn.cursor(
+                row_factory=dict_row) as cur:
+            cur.execute(
+                "SELECT * FROM ai_api_costs WHERE resume_id = %s"
+                " ORDER BY id", (resume_id,))
+            return [dict(r) for r in cur.fetchall()]
+    except Exception as exc:  # noqa: BLE001
+        logger.warning("fetch_resume_costs failed: %s", exc)
+        return None
+
+
+def ai_cost_aggregates() -> dict | None:
+    """SQL aggregates over ai_api_costs for the Analytics page.
+    None when PostgreSQL is not configured/reachable."""
+    if not database_url():
+        return None
+    try:
+        with connect() as conn, conn.cursor(
+                row_factory=dict_row) as cur:
+            cur.execute(
+                "SELECT operation_type, COUNT(*) AS calls,"
+                " COALESCE(SUM(total_cost_usd), 0) AS cost_usd,"
+                " COALESCE(SUM(total_cost_inr), 0) AS cost_inr,"
+                " COALESCE(SUM(input_tokens), 0) AS input_tokens,"
+                " COALESCE(SUM(cached_input_tokens), 0)"
+                "   AS cached_input_tokens,"
+                " COALESCE(SUM(output_tokens), 0) AS output_tokens,"
+                " COALESCE(SUM(total_tokens), 0) AS total_tokens"
+                " FROM ai_api_costs GROUP BY operation_type")
+            by_op = {r["operation_type"]: dict(r)
+                     for r in cur.fetchall()}
+            cur.execute(
+                "SELECT COUNT(DISTINCT resume_id) AS n,"
+                " COALESCE(SUM(total_cost_usd), 0) AS cost_usd,"
+                " COALESCE(SUM(total_cost_inr), 0) AS cost_inr"
+                " FROM ai_api_costs")
+            totals = dict(cur.fetchone() or {})
+            cur.execute(
+                "SELECT a.resume_id, SUM(a.total_cost_usd)"
+                " AS cost_usd,"
+                " (SELECT c.pipeline_record->>'filename'"
+                "  FROM candidates c"
+                "  WHERE c.resume_id = a.resume_id) AS filename"
+                " FROM ai_api_costs a GROUP BY a.resume_id"
+                " ORDER BY cost_usd DESC NULLS LAST LIMIT 1")
+            top = cur.fetchone()
+            cur.execute(
+                "SELECT to_char(date_trunc('month', created_at),"
+                " 'YYYY-MM') AS month,"
+                " SUM(total_cost_usd) AS cost_usd,"
+                " SUM(total_cost_inr) AS cost_inr, COUNT(*) AS calls"
+                " FROM ai_api_costs GROUP BY 1 ORDER BY 1")
+            monthly = [dict(r) for r in cur.fetchall()]
+        return {"by_operation": by_op, "monthly": monthly,
+                "most_expensive_resume": dict(top) if top else None,
+                "resumes_with_costs": totals.get("n") or 0,
+                "total_cost_usd": totals.get("cost_usd"),
+                "total_cost_inr": totals.get("cost_inr")}
+    except Exception as exc:  # noqa: BLE001
+        logger.warning("ai_cost_aggregates failed: %s", exc)
+        return None
+
+
+def fetch_canonical(resume_id: str,
+                    schema_version: str = "ai-evaluation/1.1"
+                    ) -> dict | None:
+    """The stored canonical document for one resume, or None.
+
+    Returns None (never raises) when mirroring is unconfigured or
+    migration 002 has not been applied yet — callers then build the
+    document on demand from the stored record."""
+    if not db_enabled():
+        return None
+    try:
+        with connect() as conn:
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT canonical FROM"
+                    " candidate_canonical_evaluations"
+                    " WHERE resume_id = %s AND schema_version = %s",
+                    (resume_id, schema_version))
+                row = cur.fetchone()
+    except Exception as exc:  # noqa: BLE001 - degrade to on-demand
+        logger.warning("Canonical fetch unavailable: %s",
+                       type(exc).__name__)
+        return None
+    return row["canonical"] if row else None

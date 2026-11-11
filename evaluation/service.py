@@ -27,6 +27,7 @@ has NO timeout.
 
 from __future__ import annotations
 
+import json
 import logging
 import threading
 import time
@@ -40,6 +41,8 @@ from muse_ai.config import MuseConfig, load_muse_config
 from . import config as eval_config
 from . import prompt as eval_prompt
 from . import store as eval_store
+
+_PROMPT_VERSION = eval_prompt.PROMPT_VERSION
 from .schema import validate_evaluation
 
 logger = logging.getLogger(__name__)
@@ -127,9 +130,11 @@ def _base_entry(record: dict[str, Any], model: str | None) -> dict[str, Any]:
         "status": "failed",
         "created_at": datetime.now(timezone.utc).isoformat(),
         "model": model,
+        "prompt_version": _PROMPT_VERSION,
         "yaml_version": eval_store.yaml_version(),
         "usage_type": "evaluation",
         "tokens": {"input": None, "output": None, "total": None},
+        "api_calls": [],
         "reasoning_tokens": None,
         "duration_ms": None,
         "evaluation": None,
@@ -227,6 +232,24 @@ def _analyze_acquired(record: dict[str, Any],
                 total_tokens[key] = (total_tokens[key] or 0) + tokens[key]
         if reasoning is not None:
             total_reasoning = (total_reasoning or 0) + reasoning
+        # Per-call capture for cost tracking (api/ai_costs.py): the
+        # entry's aggregate tokens above are unchanged; this list
+        # preserves each call's own provider-reported usage —
+        # including the JSON-correction call — so retries and
+        # multi-call evaluations are costed per call, never folded.
+        usage = result.get("usage") or {}
+        details = usage.get("prompt_tokens_details")
+        cached = details.get("cached_tokens")             if isinstance(details, dict) else None
+        call_tokens = dict(tokens)
+        call_tokens["cached_input"] = int(cached)             if _is_num(cached) else None
+        entry["api_calls"].append({
+            "attempt": len(entry["api_calls"]) + 1,
+            "status": "success",
+            "model": result.get("model"),
+            "request_id": result.get("request_id"),
+            "duration_ms": result.get("duration_ms"),
+            "tokens": call_tokens,
+        })
 
     try:
         result = _call(extra)
@@ -265,18 +288,28 @@ def _analyze_acquired(record: dict[str, Any],
             "(category=%s, finish_reason=%s, response_chars=%d): %s",
             record.get("resume_id"), category,
             result.get("finish_reason"), len(raw_text), detail)
+        from .schema import Evaluation as _EvalModel
         correction_instructions = (
-            "You repair malformed JSON. The text you are given is a "
-            "resume-evaluation response that failed JSON validation "
-            f"({detail}). Return ONLY the same evaluation as one "
-            "valid JSON object matching the original schema: repair "
-            "the JSON syntax (fences, stray prose, truncation damage, "
-            "escaping) and null/mistyped fields ONLY. Never invent, "
-            "add or change any candidate information, skill, evidence, "
-            "score or recommendation that is not already in the "
-            "given text. If content is missing because the response "
-            "was truncated, keep what exists and use empty values "
-            "for the rest.")
+            "You repair a malformed resume-evaluation response. "
+            "The text you are given failed JSON validation "
+            f"({detail}). Return ONLY one valid JSON object "
+            "matching this schema:\n"
+            + json.dumps(_EvalModel.model_json_schema(),
+                         separators=(",", ":"))
+            + "\nRules: (1) PRESERVE every value present in the "
+            "given text exactly — repair JSON syntax (fences, stray "
+            "prose, truncation damage, escaping) and null/mistyped "
+            "fields only; never change a score, skill, evidence or "
+            "statement that is present. (2) The given text may be "
+            "TRUNCATED — the schema's later sections (up to and "
+            "including recruiter_assessment) may be missing "
+            "entirely. Complete ONLY those missing sections from "
+            "the RESUME TEXT provided with this request, under the "
+            "original evidence rules: base every statement on the "
+            "resume text, never invent; a limitation or verified "
+            "skill gap requires resume evidence — mere absence "
+            "belongs in unmentioned_areas. (3) Anything supported "
+            "by neither text stays empty. No commentary.")
         correction_extra = {
             "max_completion_tokens": eval_config.evaluation_max_output_tokens(),
             "reasoning_effort": "minimal",
@@ -286,7 +319,9 @@ def _analyze_acquired(record: dict[str, Any],
             corrected = active_client.chat_json(
                 correction_instructions,
                 "Repair this evaluation response into valid JSON "
-                "only:\n" + raw_text[:12000],
+                "only:\n" + raw_text[:12000]
+                + "\n\nRESUME TEXT (use ONLY to complete sections "
+                  "lost to truncation):\n" + text,
                 extra=correction_extra)
             _accumulate(corrected)
             evaluation, error = validate_evaluation(
@@ -332,10 +367,16 @@ def _analyze_acquired(record: dict[str, Any],
     # Checker detects HEADINGS, so duties/outcomes documented
     # inside Work Experience were reported "missing". The resume
     # TEXT is the authority — correct the verdicts before storing.
-    from .content_evidence import reconcile_content_sections
+    from .content_evidence import (
+        reconcile_content_sections, reconcile_section_classification)
 
     entry["content_evidence"] = reconcile_content_sections(
         evaluation, text)
+    classification_actions = reconcile_section_classification(
+        evaluation)
+    if classification_actions:
+        entry["content_evidence"]["section_classification"] = \
+            classification_actions
     entry["diagnostics"] = {
         "finish_reason": result.get("finish_reason"),
         "response_chars": len(raw_text),
@@ -346,6 +387,16 @@ def _analyze_acquired(record: dict[str, Any],
         entry["recovery"] = recovery
     entry["status"] = "success"
     entry["evaluation"] = evaluation
+    if evaluation.get("recruiter_assessment") is None:
+        # A eval-prompt/2.0 evaluation should always carry the
+        # recruiter assessment; record the loss explicitly instead
+        # of letting it pass silently (historical entries predate
+        # the field and are unaffected — this note is informational
+        # only and changes nothing about the stored evaluation).
+        entry.setdefault("diagnostics", {})[
+            "recruiter_assessment"] = (
+            "missing_after_json_correction"
+            if recovery.get("attempted") else "missing_from_response")
     entry["error"] = None
     eval_store.append_analysis(record, entry)
     logger.info("Evaluation %s for resume_id=%s completed "

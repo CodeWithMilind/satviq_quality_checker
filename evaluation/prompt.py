@@ -20,6 +20,18 @@ The instructions encode the spec's hard rules: evidence only, never
 invent; career-stage-aware criteria; three INDEPENDENT scores and
 no combined score; section equivalence by meaning, not by heading
 text; roles only with supporting evidence.
+
+Prompt version eval-prompt/2.0 (B2B transformation): the audience is
+a recruiter/assessor, not the candidate. The response gains a
+`recruiter_assessment` object (evidenced strengths/limitations,
+verified gaps strictly separated from unmentioned areas,
+verification points, and business-language notes for the two
+scores); the candidate-facing fields (recommendations, top-level
+strengths/weaknesses, explanation improvements/priorities) remain in
+the schema for historical compatibility and are instructed EMPTY.
+The instruction text was also tightened for token efficiency —
+rules are stated once, in compact form, without changing any
+scoring semantics.
 """
 
 from __future__ import annotations
@@ -29,6 +41,8 @@ from typing import Any
 
 from . import config as eval_config
 from .schema import Evaluation
+
+PROMPT_VERSION = "eval-prompt/2.1"
 
 # Section-equivalence examples from the spec (Part 3.1). These are
 # EXAMPLES of equivalent headings, not a fixed dictionary: the model
@@ -156,125 +170,153 @@ def _resume_json_summary(record: dict[str, Any]) -> str:
 
 
 def build_instructions(config: dict[str, Any] | None = None) -> str:
-    """The evaluation instructions (developer message)."""
+    """The evaluation instructions (developer message).
+
+    Token-optimized: dynamic lists use compact separators and every
+    rule is stated exactly once. Scoring semantics are identical to
+    eval-prompt/1.x; only wording, audience and the recruiter
+    assessment block changed.
+    """
     config = config or eval_config.load_config()
     sections = "; ".join(
         f"{s['name']} ({s['importance']})"
         for s in config["standard_sections"])
     good_to_have = "; ".join(config["good_to_have_sections"])
     stages = "\n".join(
-        f"- {stage['name']}: judge mainly on "
+        f"- {stage['name']}: "
         + ", ".join(stage.get("evaluation_focus") or [])
         for stage in config["career_stages"])
     roles = "\n".join(
-        f"- {role['name']} (also: "
-        + (", ".join(role.get("alt_titles") or []) or "—")
-        + ") — required: "
+        f"- {role['name']} ["
+        + (", ".join(role.get("alt_titles") or []) or "-")
+        + "] req: "
         + ", ".join(role.get("required_skills") or [])
-        + "; preferred: "
+        + "; pref: "
         + ", ".join(role.get("preferred_skills") or [])
         for role in config["role_taxonomy"])
     examples = "; ".join(
-        f'"{heading}" means {standard}'
+        f'"{heading}"={standard}'
         for heading, standard in _SECTION_EXAMPLES)
     bands = ", ".join(
-        f"{band['min_score']}-100 {band['label']}"
-        if band is config["classification_bands"][0]
-        else f"{band['min_score']}+ {band['label']}"
+        f"{band['min_score']}+ {band['label']}"
         for band in config["classification_bands"])
-    schema = json.dumps(Evaluation.model_json_schema())
+    schema = json.dumps(Evaluation.model_json_schema(),
+                        separators=(",", ":"))
     return (
-        "You are the resume EVALUATION engine of SATVIQ. You judge a "
-        "resume; you do not rewrite it and you do not extract it "
-        "again. Reply with ONLY a JSON object matching this schema:\n"
+        "You are SATVIQ's candidate ASSESSMENT engine. Your reader is "
+        "a recruiter assessing this candidate for business use — not "
+        "the candidate. Assess only; do not rewrite, coach or "
+        "re-extract. Reply with ONLY a JSON object matching:\n"
         f"{schema}\n\n"
-        "EVIDENCE RULES (absolute):\n"
-        "- Base every statement on the resume text provided. Never "
-        "invent candidate information, skills, experience, dates or "
-        "achievements that are not in the text.\n"
-        "- Every strength, weakness, missing section and role "
-        "recommendation must cite supporting evidence from the text "
-        "(or, for something missing, the absence you verified).\n"
-        "- Do not use protected personal characteristics (age, "
-        "gender, religion, caste, nationality, marital status, "
-        "photograph, etc.) for scoring in any way.\n\n"
+        "EVIDENCE (absolute): base every statement on the resume "
+        "text; never invent information, skills, dates or "
+        "achievements. Every finding cites evidence from the text "
+        "(for something missing, the absence you verified). Never "
+        "use protected characteristics (age, gender, religion, "
+        "caste, nationality, marital status, photograph) in scoring. "
+        "Write for a recruiter deciding whether and how to progress "
+        "this candidate — factual, specific, no advice addressed to "
+        "the candidate.\n\n"
         "SECTIONS:\n"
-        f"- Standard sections to look for: {sections}.\n"
-        "- Recognise sections by MEANING, not by exact heading text. "
-        f"Examples of equivalent headings: {examples}. These are "
-        "examples, not a fixed dictionary.\n"
-        "- NEVER classify a section as missing simply because its "
-        "heading is unfamiliar — read what the content actually is. "
-        "For each recognised section report the standardized name, "
-        "the original heading as written, whether it is complete, "
-        "partial or insufficient, a short summary of what it "
-        "contains, evidence, and remarks.\n"
-        "- For each standard section that is missing or contains "
-        "insufficient information, report its importance (Critical / "
-        "High / Medium / Low), why, the impact on the resume, and a "
-        "concrete improvement recommendation.\n"
-        "- CONTENT counts, not just headings — two sections in "
-        "particular: RESPONSIBILITIES are usually documented as the "
-        "duty bullets inside Work Experience / Professional "
-        "Experience entries, with no dedicated heading; when duty "
-        "statements exist there, Responsibilities is PRESENT "
-        "(report it under matching sections with the original "
-        "heading noted as embedded in Work Experience). ACHIEVEMENTS "
-        "are measurable outcomes — percentages, growth figures, "
-        "scaled results, awards — which usually live inside the "
-        "summary and job bullets; when such outcome evidence "
-        "exists, Achievements is PRESENT even without a dedicated "
-        "heading. For both: only report the section missing when "
-        "the CONTENT is absent from the whole resume; a dedicated "
-        "heading may be suggested as a presentation improvement in "
-        "remarks, never as missing content.\n"
-        f"- Good-to-have sections: {good_to_have}. Report whether "
-        "each is present and what it would add. NEVER penalise any "
-        "score for a missing good-to-have section.\n\n"
-        "CAREER STAGE:\n"
-        "- First identify the candidate's career stage, then judge "
-        "the resume against THAT stage's expectations:\n"
+        f"- Standard: {sections}.\n"
+        "- Recognise sections by MEANING, not heading text. "
+        f"Equivalences (examples, not a dictionary): {examples}. "
+        "Never mark a section missing for an unfamiliar heading — "
+        "judge its content. NEVER classify a section as missing for "
+        "an unfamiliar heading. For each recognised section: standard "
+        "name, original heading, complete/partial/insufficient, "
+        "summary, evidence, remarks.\n"
+        "- For each missing/insufficient standard section: "
+        "importance (Critical/High/Medium/Low), what "
+        "decision-relevant information is unavailable to an "
+        "assessor, and the impact on assessing this candidate. Its "
+        "`recommendation` field states what an assessor should note "
+        "or verify (may be empty) — never candidate advice.\n"
+        "- CONTENT over headings: RESPONSIBILITIES are the duty "
+        "bullets inside Work Experience entries (no dedicated "
+        "heading needed); ACHIEVEMENTS are measurable outcomes "
+        "(percentages, growth, scale, awards) anywhere in the text. "
+        "Report each as missing ONLY when its content is absent "
+        "from the whole resume; a dedicated heading may be noted in "
+        "remarks as presentation-only.\n"
+        "- APPLICABILITY: Academic Projects is a subtype of "
+        "Projects — never report it missing when Projects content "
+        "exists. Publications and Research Experience are OPTIONAL "
+        "for Student/Fresher/Entry-Level candidates: do not report "
+        "them missing or let them affect any score for those stages "
+        "unless the candidate's domain clearly requires them.\n"
+        f"- Good-to-have: {good_to_have}. Report presence/value; "
+        "never penalise any score for a missing one.\n\n"
+        "CAREER STAGE: identify it first, then judge against that "
+        "stage's expectations:\n"
         f"{stages}\n"
-        "- A fresher or student is NEVER penalised for missing "
-        "professional work experience; judge them on projects, "
-        "internships, skills, certifications and coursework. A "
-        "career changer is judged on transferable skills and "
-        "demonstrated practical knowledge of the target field, not "
-        "on missing direct experience.\n\n"
-        "THE THREE SCORES (each 0-100, each INDEPENDENT — never "
-        "compute or imply a combined/overall score):\n"
-        "1. completeness.score — important section presence, "
-        "information completeness, relevant candidate details, "
-        "measured against the candidate's career stage.\n"
-        "2. quality.score — readability, clarity, professional "
-        "presentation, relevance, summary quality, skills "
-        "presentation, project and experience descriptions, "
-        "measurable achievements, organisation, consistency, "
-        "repetition and irrelevant information.\n"
-        "3. role_suitability[].score — per role: matching skills, "
-        "relevant projects, work experience, education, "
-        "certifications and practical knowledge.\n"
-        f"Classification bands (for your understanding): {bands}. "
-        "For each of completeness and quality, the explanation must "
-        "say specifically why the score is what it is: which "
-        "sections contributed, what information is missing, what "
-        "problems were found, what to improve, and which "
-        "improvements to prioritise first. Avoid generic "
-        "explanations.\n\n"
-        "JOB ROLES:\n"
-        "- Recommend roles ONLY from the taxonomy below (closely "
-        "matching additional roles are allowed only when the resume "
-        "evidence clearly supports them). No job description is "
-        "provided — judge from the resume alone.\n"
-        "- A skill keyword match alone is NOT suitability: weigh "
-        "projects, experience, education and demonstrated practical "
-        "knowledge. Never recommend a role without supporting "
-        "evidence, and list the required skills the candidate is "
-        "missing for each role.\n"
+        "Freshers/students are NEVER penalised for missing "
+        "professional experience (judge projects, internships, "
+        "skills, certifications, coursework). Career changers are "
+        "judged on transferable skills and demonstrated knowledge "
+        "of the target field.\n\n"
+        "THREE SCORES (0-100 each, INDEPENDENT — never compute or "
+        "imply a combined/overall score):\n"
+        "1. completeness = CANDIDATE INFORMATION COMPLETENESS: how "
+        "much decision-relevant information the resume gives an "
+        "assessor, vs the candidate's stage. Low = the business has "
+        "little to decide with; NOT an ability judgement.\n"
+        "2. quality = RESUME DATA RELIABILITY: readability, "
+        "clarity, consistency, organisation, specificity, "
+        "measurable achievements, relevance. Low = claims need "
+        "verification before reliance; NOT a qualification "
+        "judgement.\n"
+        "3. role_suitability[] = per-role fit (skills, projects, "
+        "experience, education, certifications, practical "
+        "knowledge).\n"
+        f"Bands: {bands}. Each score explanation states why: "
+        "contributing sections, missing information, problems — "
+        "phrased as what the score means for assessing this "
+        "candidate. Leave explanation.improvements and "
+        "explanation.priorities EMPTY.\n\n"
+        "ROLES: recommend ONLY from this taxonomy (a close extra "
+        "role only when evidence clearly supports it). Judge from "
+        "the resume alone — no job description exists. A keyword "
+        "match alone is NOT suitability; never recommend without "
+        "evidence; list each role's missing required skills.\n"
         f"{roles}\n\n"
-        "Also provide strengths, weaknesses and prioritised "
-        "improvement recommendations for the candidate. Keep every "
-        "string concise and factual."
+        "RECRUITER ASSESSMENT (recruiter_assessment):\n"
+        "- summary: 2-4 sentences, who this candidate is "
+        "professionally, for a recruiter.\n"
+        "- strengths / limitations / assessment_insights: each "
+        "{point, evidence[]}. Limitations must be evidenced IN the "
+        "resume (thin descriptions, unquantified claims, narrow "
+        "scope, inconsistencies) — NEVER mere absences. Insights: "
+        "fit signals, trajectory, consistency between sections, "
+        "stage-appropriate strength of evidence.\n"
+        "- NOT verified gaps: missing metrics or quantified "
+        "outcomes, dataset sizes, deployment/production evidence "
+        "and project outcomes are DOCUMENTATION limitations "
+        "(record them under limitations) — they say the resume "
+        "under-documents the work, not that the candidate lacks a "
+        "competency — unless the resume explicitly demonstrates an "
+        "actual competency shortfall.\n"
+        "- verified_skill_gaps vs unmentioned_areas — keep "
+        "strictly separate. A gap {skill_or_area, basis, "
+        "evidence[]} requires the resume itself to evidence the "
+        "shortfall (claimed expertise contradicted by described "
+        "work; duties described without the role's standard "
+        "competency). unmentioned_areas {area, relevance_note} are "
+        "plausibly relevant but simply absent — absence of evidence "
+        "is NOT evidence of absence, never a deficiency. A role's "
+        "missing_skills entry (e.g. Docker for Python Developer) "
+        "is unmentioned unless independently evidenced as a gap.\n"
+        "- verification_points: what a recruiter should confirm in "
+        "screening/interview (unverified claims, chronology gaps, "
+        "skills without evidence, certifications without issuer).\n"
+        "- information_completeness_note / data_reliability_note: "
+        "1-2 sentences each, for THIS candidate, on what the two "
+        "scores mean in practice (see score definitions).\n"
+        "Leave EMPTY: top-level recommendations, strengths, "
+        "weaknesses (their content lives, with evidence, in "
+        "recruiter_assessment). Do not repeat the same evidence "
+        "verbatim across fields. Keep every string concise and "
+        "factual."
     )
 
 

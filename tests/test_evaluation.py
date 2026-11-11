@@ -218,7 +218,7 @@ def test_valid_evaluation_end_to_end(store_dir):
     extra = fake.calls[0]["extra"]
     assert extra["response_format"] == {"type": "json_object"}
     assert extra["reasoning_effort"] == "low"
-    assert extra["max_completion_tokens"] == 6000
+    assert extra["max_completion_tokens"] == 9000  # default raised 6000->9000 in the RA truncation fix (env override unchanged)
     # The prompt sent the selected text + QC context, nothing else.
     assert "Skill Inventory" in fake.calls[0]["user_text"]
     assert "DETERMINISTIC QUALITY CHECKER CONTEXT" in \

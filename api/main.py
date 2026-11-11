@@ -203,8 +203,73 @@ def analytics_summary(days: int | None = None, include_manual: bool = False) -> 
     all time). ``include_manual`` is accepted for the Phase 2 toggle shape;
     Phase 1 always excludes Manual Comparison runs from pipeline stats.
     """
-    return analytics.compute_analytics(
-        store.list_records(), days=days, include_manual=include_manual)
+    records = store.list_records()
+    result = analytics.compute_analytics(
+        records, days=days, include_manual=include_manual)
+    result["ai_costs"] = _ai_costs_block(records)
+    return result
+
+
+def _ai_costs_block(records: list) -> dict:
+    """AI expenditure block for Analytics. Prefers SQL aggregates
+    over the ai_api_costs table (PostgreSQL); falls back to deriving
+    from the stored records when no database is configured."""
+    from decimal import Decimal
+
+    from . import db as _db
+    from .ai_costs import derive_call_rows, jsonable, summarize_rows
+
+    sql = None
+    try:
+        sql = _db.ai_cost_aggregates()
+    except Exception:  # noqa: BLE001
+        sql = None
+    if sql is not None:
+        by_op = sql["by_operation"]
+        total = sql.get("total_cost_usd")
+        resumes = sql.get("resumes_with_costs") or 0
+        avg = (total / resumes) if (total is not None and resumes)             else None
+        return jsonable({
+            "source": "postgresql",
+            "total_cost_usd": total,
+            "total_cost_inr": sql.get("total_cost_inr"),
+            "average_cost_per_resume_usd": avg,
+            "resumes_with_costs": resumes,
+            "json_extraction": by_op.get("json_extraction"),
+            "ai_evaluation": by_op.get("ai_evaluation"),
+            "most_expensive_resume": sql.get("most_expensive_resume"),
+            "monthly": sql.get("monthly") or [],
+        })
+    all_rows: list = []
+    per_resume: dict[str, Decimal] = {}
+    filenames: dict[str, str] = {}
+    for record in records:
+        rows = derive_call_rows(record)
+        all_rows.extend(rows)
+        subtotal = sum((r["total_cost_usd"] for r in rows
+                        if r.get("total_cost_usd") is not None),
+                       Decimal("0"))
+        if rows:
+            per_resume[record["resume_id"]] = subtotal
+            filenames[record["resume_id"]] = record.get("filename")
+    summary = summarize_rows(all_rows)
+    total = summary["totals"]["cost_usd"]
+    avg = (total / len(per_resume)) if (total is not None
+                                        and per_resume) else None
+    top_id = max(per_resume, key=per_resume.get) if per_resume else None
+    return jsonable({
+        "source": "records",
+        "total_cost_usd": total,
+        "total_cost_inr": summary["totals"]["cost_inr"],
+        "average_cost_per_resume_usd": avg,
+        "resumes_with_costs": len(per_resume),
+        "json_extraction": summary["json_extraction"],
+        "ai_evaluation": summary["ai_evaluation"],
+        "most_expensive_resume": (
+            {"resume_id": top_id, "filename": filenames.get(top_id),
+             "cost_usd": per_resume[top_id]} if top_id else None),
+        "monthly": [],
+    })
 
 
 @app.post("/api/resumes/process")
@@ -619,6 +684,37 @@ def get_resume_analysis_history(resume_id: str) -> JSONResponse:
         "history": evaluation_store.history(record)})
 
 
+@app.get("/api/resumes/{resume_id}/canonical-evaluation",
+         response_model=None)
+def get_canonical_evaluation(resume_id: str) -> JSONResponse:
+    """The canonical AI evaluation document (schema ai-evaluation/1.0)
+    for one resume: served from PostgreSQL when stored there, built
+    on demand from the stored record otherwise. The existing
+    evaluation endpoints and shapes are unchanged — this is an
+    additional, versioned output."""
+    from . import db as _db
+
+    stored = None
+    try:
+        stored = _db.fetch_canonical(resume_id)
+    except Exception:  # noqa: BLE001 - fall back to on-demand build
+        stored = None
+    if stored is not None:
+        return JSONResponse(content=stored)
+    record = store.get_record(resume_id)
+    if record is None:
+        return JSONResponse(status_code=404,
+                            content={"detail": "Resume record not found."})
+    from candidate_intelligence import build_canonical, check_canonical
+
+    ok, result = check_canonical(build_canonical(record))
+    if not ok:
+        return JSONResponse(status_code=422, content={
+            "detail": "Canonical build failed validation.",
+            "errors": result[:10]})
+    return JSONResponse(content=result.model_dump(mode="json"))
+
+
 @app.get("/api/evaluation/config")
 def get_evaluation_config() -> dict:
     """Evaluation configuration metadata: versions, classification
@@ -778,4 +874,43 @@ async def unhandled_error(request: Request, exc: Exception) -> JSONResponse:
 
 
 # Frontend (mounted last so /api/* routes take precedence).
+@app.get("/api/resumes/{resume_id}/costs", response_model=None)
+def get_resume_costs(resume_id: str) -> JSONResponse:
+    """Per-resume AI cost breakdown: one row per actual Muse API
+    call (JSON extraction and AI evaluation separately), priced
+    from provider-reported usage. Stored PostgreSQL rows are
+    preferred (immutable history, incl. the FX rate stamped at sync
+    time); derivation from the stored record is the fallback."""
+    from . import db as _db
+    from .ai_costs import derive_call_rows, jsonable, summarize_rows
+    from muse_ai import pricing as _pricing
+
+    record = store.get_record(resume_id)
+    if record is None:
+        return JSONResponse(status_code=404,
+                            content={"detail": "Resume record not found."})
+    rows = None
+    try:
+        rows = _db.fetch_resume_costs(resume_id)
+    except Exception:  # noqa: BLE001
+        rows = None
+    if not rows:
+        rows = derive_call_rows(record)
+    summary = summarize_rows(rows)
+    models = sorted({r.get("model") for r in rows if r.get("model")})
+    return JSONResponse(content=jsonable({
+        "resume_id": resume_id,
+        "filename": record.get("filename"),
+        "calls": rows,
+        "summary": summary,
+        "pricing": {
+            "provider": _pricing.PROVIDER,
+            "currency": _pricing.CURRENCY,
+            "rates_per_mtok_usd": {
+                m: _pricing.pricing_for(m) for m in models},
+            "usd_inr_rate_configured": _pricing.usd_inr_rate(),
+        },
+    }))
+
+
 app.mount("/", StaticFiles(directory=str(FRONTEND_DIR), html=True), name="frontend")

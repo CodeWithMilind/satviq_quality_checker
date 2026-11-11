@@ -107,6 +107,9 @@
       var suffix = query.toString() ? "?" + query.toString() : "";
       return request("/api/analytics/summary" + suffix);
     },
+    getResumeCosts: function (resumeId) {
+      return request("/api/resumes/" + encodeURIComponent(resumeId) + "/costs");
+    },
     processResumes: processResumes,
     listResumes: function (params) {
       var query = new URLSearchParams();

@@ -59,10 +59,27 @@ def main() -> int:
     group.add_argument("--check", action="store_true")
     group.add_argument("--import", dest="do_import", action="store_true")
     group.add_argument("--create-schema", action="store_true")
+    group.add_argument("--migrate", action="store_true",
+                       help="apply pending migrations from"
+                            " database/migrations/ in order")
     args = parser.parse_args()
 
     _load_env()
     from api import db
+
+    if args.migrate:
+        mig_dir = PROJECT_ROOT / "database" / "migrations"
+        files = sorted(mig_dir.glob("*.sql"))
+        if not files:
+            print("No migration files found.")
+            return 0
+        with db.connect() as conn:
+            with conn.cursor() as cur:
+                for mig in files:
+                    cur.execute(mig.read_text(encoding="utf-8"))
+                    print("Applied:", mig.name)
+            conn.commit()
+        return 0
 
     if args.create_schema:
         sql = (PROJECT_ROOT / "database" / "schema_v2.sql").read_text(

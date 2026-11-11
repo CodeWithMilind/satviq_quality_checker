@@ -121,6 +121,48 @@ class RoleSuitability(BaseModel):
     explanation: str = ""
 
 
+class AssessmentPoint(BaseModel):
+    """One evidenced observation."""
+
+    point: str = ""
+    evidence: list[str] = Field(default_factory=list)
+
+
+class VerifiedSkillGap(BaseModel):
+    """An evidenced shortfall (never a mere absence)."""
+
+    skill_or_area: str = ""
+    basis: str = ""
+    evidence: list[str] = Field(default_factory=list)
+
+
+class UnmentionedArea(BaseModel):
+    """Relevant but absent — not a deficiency."""
+
+    area: str = ""
+    relevance_note: str = ""
+
+
+class RecruiterAssessment(BaseModel):
+    """B2B recruiter assessment (eval-prompt/2.0+)."""
+    # Business-facing replacement for the candidate-facing
+    # strengths/weaknesses/recommendations lists, which remain in
+    # the schema for historical evaluations. Evidence rules are
+    # enforced deterministically in _post_validate: points without
+    # evidence are dropped; a 'verified' gap without basis+evidence
+    # is demoted to an unmentioned area, never stored as verified.
+
+    summary: str = ""
+    strengths: list[AssessmentPoint] = Field(default_factory=list)
+    limitations: list[AssessmentPoint] = Field(default_factory=list)
+    assessment_insights: list[AssessmentPoint] = Field(default_factory=list)
+    verified_skill_gaps: list[VerifiedSkillGap] = Field(default_factory=list)
+    unmentioned_areas: list[UnmentionedArea] = Field(default_factory=list)
+    verification_points: list[str] = Field(default_factory=list)
+    information_completeness_note: str = ""
+    data_reliability_note: str = ""
+
+
 class Evaluation(BaseModel):
     """The full evaluation of one resume (spec Parts 2-6)."""
 
@@ -137,6 +179,9 @@ class Evaluation(BaseModel):
     strengths: list[str] = Field(default_factory=list)
     weaknesses: list[str] = Field(default_factory=list)
     recommendations: list[str] = Field(default_factory=list)
+    # B2B recruiter assessment. Optional so historical evaluations
+    # (which predate it) still validate unchanged.
+    recruiter_assessment: RecruiterAssessment | None = None
 
 
 _FENCE_RE = re.compile(r"^\s*```(?:json)?\s*|\s*```\s*$", re.MULTILINE)
@@ -180,7 +225,89 @@ def _post_validate(evaluation: Evaluation,
         if stage.lower() == known.lower():
             data["career_stage"] = known
             break
+    _enforce_assessment_evidence(data)
     return data
+
+
+# A "verified gap" must be a COMPETENCY shortfall. These topics are
+# properties of the resume's DOCUMENTATION, not of the candidate's
+# ability — when one is reported as a verified gap it is reclassified
+# as what it is: an evidenced limitation of the document.
+_DOCUMENTATION_GAP_PATTERNS = (
+    "metric", "quantif", "dataset", "data size", "deployment",
+    "deploy", "outcome", "production evidence", "documentation",
+    "measurable result", "project result", "impact evidence",
+)
+
+
+def _is_documentation_topic(area: str) -> bool:
+    text = area.lower()
+    return any(p in text for p in _DOCUMENTATION_GAP_PATTERNS)
+
+
+def _enforce_assessment_evidence(data: dict[str, Any]) -> None:
+    """Deterministic evidence rules for recruiter_assessment.
+
+    - strengths / limitations / assessment_insights entries without
+      evidence are dropped (an unevidenced claim is not stored as an
+      assessment finding);
+    - a verified_skill_gap missing its basis or its evidence is NOT
+      a verified gap: it is demoted to unmentioned_areas, preserving
+      the information without overstating it;
+    - duplicates (same area/skill) are removed.
+    Historical evaluations (recruiter_assessment is None) pass
+    through untouched.
+    """
+    ra = data.get("recruiter_assessment")
+    if not isinstance(ra, dict):
+        return
+    for key in ("strengths", "limitations", "assessment_insights"):
+        items = ra.get(key) or []
+        ra[key] = [item for item in items
+                   if isinstance(item, dict)
+                   and str(item.get("point") or "").strip()
+                   and [e for e in (item.get("evidence") or [])
+                        if str(e).strip()]]
+    unmentioned = ra.get("unmentioned_areas") or []
+    seen_areas = {str(u.get("area") or "").strip().lower()
+                  for u in unmentioned if isinstance(u, dict)}
+    kept_gaps = []
+    for gap in ra.get("verified_skill_gaps") or []:
+        if not isinstance(gap, dict):
+            continue
+        skill = str(gap.get("skill_or_area") or "").strip()
+        basis = str(gap.get("basis") or "").strip()
+        evidence = [e for e in (gap.get("evidence") or [])
+                    if str(e).strip()]
+        if skill and basis and evidence:
+            gap["evidence"] = evidence
+            if _is_documentation_topic(skill):
+                # Documentation shortfall, not a competency gap:
+                # reclassify as a limitation (its evidence is
+                # preserved; it is NOT an unmentioned area either —
+                # the resume does demonstrate the weakness of
+                # documentation).
+                point = f"{skill} — {basis}"
+                existing = {str(i.get("point") or "").strip().lower()
+                            for i in ra.get("limitations") or []
+                            if isinstance(i, dict)}
+                if point.strip().lower() not in existing:
+                    ra.setdefault("limitations", []).append(
+                        {"point": point, "evidence": evidence})
+                continue
+            kept_gaps.append(gap)
+        elif skill and skill.lower() not in seen_areas:
+            # Demote: reported as a gap but not evidenced as one.
+            seen_areas.add(skill.lower())
+            unmentioned.append({
+                "area": skill,
+                "relevance_note": basis or (
+                    "Reported without supporting evidence; treated "
+                    "as unmentioned — absence of evidence is not "
+                    "evidence of absence."),
+            })
+    ra["verified_skill_gaps"] = kept_gaps
+    ra["unmentioned_areas"] = unmentioned
 
 
 # --------------------------------------------------------------------- #
