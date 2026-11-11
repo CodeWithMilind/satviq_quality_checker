@@ -555,7 +555,7 @@ def test_health_simple_pipeline_key():
     resp = client.get("/api/health")
     assert resp.status_code == 200
     body = resp.json()
-    assert body["extractor_order"] == ["tika", "pymupdf", "docling", "ocr"]
+    assert body["extractor_order"] == ["tika", "ocr", "pymupdf", "docling"]
     assert "simple_pipeline" in body
     assert body["simple_pipeline"]["extractors"] == ["tika", "pymupdf", "docling"]
     assert body["simple_pipeline"]["min_quality_threshold"] == 60.0

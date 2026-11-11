@@ -495,7 +495,7 @@ function makeEl() {
     querySelectorAll() { return []; }, closest() { return null; } };
 }
 const elements = {};
-const healthStub = { extractor_order: ["tika", "pymupdf", "docling", "ocr"],
+const healthStub = { extractor_order: ["tika", "ocr", "pymupdf", "docling"],
   supported_extensions: ["pdf"], max_upload_mb: 5,
   ai: { provider: "Muse AI", model: "muse-spark-1.3", configured: false } };
 const ctx = vm.createContext({

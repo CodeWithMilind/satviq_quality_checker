@@ -203,11 +203,81 @@ def analytics_summary(days: int | None = None, include_manual: bool = False) -> 
     all time). ``include_manual`` is accepted for the Phase 2 toggle shape;
     Phase 1 always excludes Manual Comparison runs from pipeline stats.
     """
+    # PostgreSQL is the source of truth when configured: the SQL
+    # builder aggregates the relational tables + stored JSON.
+    try:
+        from . import db_analytics as _dba
+        sql_result = _dba.analytics_summary(days=days)
+    except Exception:  # noqa: BLE001
+        sql_result = None
+    if sql_result is not None:
+        return sql_result
     records = store.list_records()
     result = analytics.compute_analytics(
         records, days=days, include_manual=include_manual)
     result["ai_costs"] = _ai_costs_block(records)
+    result["llm"] = _llm_block(records)
     return result
+
+
+def _llm_block(records: list) -> dict:
+    """LLM analytics for the no-database fallback: derived from the
+    same per-call rows the cost tracker uses (PostgreSQL path
+    computes this in SQL instead)."""
+    from .ai_costs import derive_call_rows
+
+    by_op: dict = {}
+    by_model: dict = {}
+    resumes = set()
+    for record in records:
+        for row in derive_call_rows(record):
+            resumes.add(row["resume_id"])
+            op = by_op.setdefault(row["operation_type"], {
+                "calls": 0, "input_tokens": 0,
+                "cached_input_tokens": 0, "output_tokens": 0,
+                "reasoning_tokens": 0, "total_tokens": 0,
+                "cost_usd": None})
+            op["calls"] += 1
+            op["input_tokens"] += row["input_tokens"]
+            op["cached_input_tokens"] +=                 row.get("cached_input_tokens") or 0
+            op["output_tokens"] += row["output_tokens"]
+            op["reasoning_tokens"] +=                 row.get("reasoning_tokens") or 0
+            op["total_tokens"] += row["total_tokens"]
+            if row.get("total_cost_usd") is not None:
+                op["cost_usd"] = (op["cost_usd"] or 0)                     + row["total_cost_usd"]
+            mm = by_model.setdefault(row.get("model") or "—", {
+                "model": row.get("model"), "calls": 0,
+                "total_tokens": 0, "cost_usd": None})
+            mm["calls"] += 1
+            mm["total_tokens"] += row["total_tokens"]
+            if row.get("total_cost_usd") is not None:
+                mm["cost_usd"] = (mm["cost_usd"] or 0)                     + row["total_cost_usd"]
+    from .ai_costs import jsonable
+    total_tokens = sum(v["total_tokens"] for v in by_op.values())
+    corr = by_op.get("json_correction") or {}
+    ev = by_op.get("ai_evaluation") or {}
+    return jsonable({
+        "total_input_tokens": sum(v["input_tokens"]
+                                  for v in by_op.values()),
+        "total_output_tokens": sum(v["output_tokens"]
+                                   for v in by_op.values()),
+        "total_reasoning_tokens": sum(v["reasoning_tokens"]
+                                      for v in by_op.values()),
+        "total_tokens": total_tokens,
+        "by_operation": by_op,
+        "by_model": sorted(by_model.values(),
+                           key=lambda x: -x["total_tokens"]),
+        "avg_tokens_per_resume": (
+            round(total_tokens / len(resumes), 1) if resumes else None),
+        "json_correction": {
+            "calls": corr.get("calls", 0),
+            "cost_usd": corr.get("cost_usd"),
+            "frequency_percent": round(
+                (corr.get("calls", 0)
+                 / max(1, ev.get("calls", 0) + corr.get("calls", 0)))
+                * 100, 1),
+        },
+    })
 
 
 def _ai_costs_block(records: list) -> dict:
@@ -237,6 +307,7 @@ def _ai_costs_block(records: list) -> dict:
             "resumes_with_costs": resumes,
             "json_extraction": by_op.get("json_extraction"),
             "ai_evaluation": by_op.get("ai_evaluation"),
+            "json_correction": by_op.get("json_correction"),
             "most_expensive_resume": sql.get("most_expensive_resume"),
             "monthly": sql.get("monthly") or [],
         })
@@ -265,6 +336,7 @@ def _ai_costs_block(records: list) -> dict:
         "resumes_with_costs": len(per_resume),
         "json_extraction": summary["json_extraction"],
         "ai_evaluation": summary["ai_evaluation"],
+        "json_correction": summary["json_correction"],
         "most_expensive_resume": (
             {"resume_id": top_id, "filename": filenames.get(top_id),
              "cost_usd": per_resume[top_id]} if top_id else None),

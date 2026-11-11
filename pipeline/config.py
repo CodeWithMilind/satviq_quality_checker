@@ -23,7 +23,7 @@ DEFAULT_WEIGHTS: dict[str, float] = {
     "structure": 0.10,
 }
 
-_DEFAULT_TIE_BREAK = ["tika", "pymupdf", "docling"]
+_DEFAULT_TIE_BREAK = ["tika", "ocr", "pymupdf", "docling"]
 
 
 @dataclass

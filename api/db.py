@@ -35,6 +35,7 @@ import json
 import logging
 import os
 import re
+from datetime import datetime, timezone
 from typing import Any
 
 logger = logging.getLogger(__name__)
@@ -332,10 +333,12 @@ _CANDIDATE_COLUMNS = [
 
 
 def _delete_children(cur, candidate_pk: int) -> None:
+    # NOTE: candidate_extraction_attempts is deliberately NOT in
+    # this list — attempts are append-only processing history,
+    # linked to resume_processing_runs (migration 004).
     for table in ("candidate_role_suitability",
                   "candidate_section_analysis",
                   "candidate_evaluations",
-                  "candidate_extraction_attempts",
                   "candidate_experiences",
                   "candidate_education",
                   "candidate_projects"):
@@ -417,7 +420,110 @@ def _ocr_used(attempt: dict[str, Any]) -> bool | None:
     return None  # unknown — the schema stores NULL, by design
 
 
-def _insert_attempts(cur, pk, record):
+def _parse_iso(value: Any):
+    """ISO timestamp -> aware datetime (or None)."""
+    if not isinstance(value, str) or not value.strip():
+        return None
+    try:
+        dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+
+
+def _run_key(record: dict) -> str:
+    """Fingerprint of one processing run: the resume + its attempt
+    set. Re-saving identical state reproduces the same key (no
+    duplicate run); reprocessing creates new attempt ids and
+    therefore a new key (a new historical run)."""
+    import hashlib
+    parts = [str(record.get("resume_id") or "")]
+    for attempt in record.get("attempts") or []:
+        if not isinstance(attempt, dict):
+            continue
+        parts.append(str(attempt.get("attempt_id")
+                         or attempt.get("extractor_name") or ""))
+        parts.append(str(attempt.get("started_at") or ""))
+    parts.append(str(record.get("final_extractor")
+                     or record.get("selected_extractor") or ""))
+    return hashlib.sha256("|".join(parts).encode()).hexdigest()[:40]
+
+
+def _processing_run(cur, pk: int, record: dict):
+    """Insert the processing-run row for this record state.
+    Returns (run_id, is_new). An existing run (same fingerprint)
+    is returned with is_new=False and never modified."""
+    attempts = [a for a in (record.get("attempts") or [])
+                if isinstance(a, dict)
+                and (a.get("extractor_name") or "").lower()
+                != "muse_ai"]
+    completed = [dt for a in attempts
+                 if (dt := _parse_iso(a.get("completed_at")))]
+    uploaded = _parse_iso(record.get("uploaded_at"))
+    quality = record.get("quality") or {}
+    page_count = _int(record.get("page_count"))
+    if page_count is None:
+        for a in attempts:
+            meta = a.get("metadata") or {}
+            page_count = _int(meta.get("page_count")
+                              or meta.get("pages"))
+            if page_count is not None:
+                break
+    run_key = _run_key(record)
+    cur.execute(
+        "INSERT INTO resume_processing_runs (candidate_id, resume_id,"
+        " run_key, filename, uploaded_at, processed_at, duration_ms,"
+        " status, success, file_type, file_size_bytes, page_count,"
+        " final_extractor, attempt_count, successful_attempts,"
+        " failed_attempts, skipped_attempts, selected_quality_score,"
+        " quality_status, qc_text_health_score, qc_completeness_score,"
+        " qc_reading_order_score, fallback_occurred, fallback_reason,"
+        " error) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,"
+        "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+        " ON CONFLICT (run_key) DO NOTHING RETURNING id",
+        (pk, record.get("resume_id"), run_key,
+         _clean(record.get("filename")), uploaded,
+         max(completed) if completed else uploaded,
+         _int(record.get("duration_ms")),
+         "success" if record.get("success") else "failed",
+         bool(record.get("success")),
+         _clean(record.get("file_type")),
+         _int(record.get("file_size_bytes")), page_count,
+         _clean(record.get("final_extractor")
+                or record.get("selected_extractor")),
+         len(attempts),
+         sum(1 for a in attempts if a.get("success") is True),
+         sum(1 for a in attempts if a.get("success") is not True),
+         len(record.get("skipped_extractors") or []),
+         record.get("selected_quality_score"),
+         _clean(record.get("final_quality_status")
+                or record.get("quality_status")),
+         _filter_score(quality, "text_health"),
+         _filter_score(quality, "completeness"),
+         _filter_score(quality, "reading_order"),
+         bool(record.get("fallback_occurred")),
+         _clean(record.get("fallback_reason")),
+         _clean(record.get("error"))))
+    row = cur.fetchone()
+    if row:
+        return row["id"], True
+    cur.execute("SELECT id FROM resume_processing_runs"
+                " WHERE run_key = %s", (run_key,))
+    row = cur.fetchone()
+    return (row["id"] if row else None), False
+
+
+def _insert_attempts(cur, pk, record, run_id=None,
+                     is_new_run: bool = True):
+    if not is_new_run:
+        return  # this run's attempts are already stored
+    if run_id is not None:
+        # First time this candidate's attempts are linked
+        # to runs: replace the unlinked pre-migration rows
+        # with this run's identical set (no data loss).
+        cur.execute("DELETE FROM candidate_extraction_attempts"
+                    " WHERE candidate_id = %s AND run_id IS NULL",
+                    (pk,))
     skipped = {str(s).lower() for s in
                (record.get("skipped_extractors") or [])}
     seen: set[str] = set()
@@ -436,7 +542,11 @@ def _insert_attempts(cur, pk, record):
             " extractor, attempt_order, accepted, selected, skipped,"
             " quality_status, text_health_score, completeness_score,"
             " reading_order_score, char_count, duration_ms, ocr_used,"
-            " error) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
+            " error, run_id, success, quality_score, started_at,"
+            " completed_at, technical_status, decision,"
+            " decision_reason)"
+            " VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,"
+            "%s,%s,%s,%s,%s,%s,%s)",
             (pk, name, order, bool(attempt.get("accepted")),
              bool(attempt.get("is_final_selected")
                   or attempt.get("selected")), False,
@@ -448,13 +558,22 @@ def _insert_attempts(cur, pk, record):
              len(text), _int(attempt.get("duration_ms")),
              _ocr_used(attempt),
              _clean(attempt.get("error_message"))
-             or _clean(attempt.get("error"))))
+             or _clean(attempt.get("error")),
+             run_id, bool(attempt.get("success")),
+             attempt.get("quality_score"),
+             _parse_iso(attempt.get("started_at")),
+             _parse_iso(attempt.get("completed_at")),
+             _clean(attempt.get("extraction_status"))
+             or ("SUCCESS" if attempt.get("success") else "FAILED"),
+             _clean(attempt.get("decision")),
+             _clean(attempt.get("decision_reason"))))
     for name in sorted(skipped - seen):
         order += 1
         cur.execute(
             "INSERT INTO candidate_extraction_attempts (candidate_id,"
-            " extractor, attempt_order, accepted, selected, skipped)"
-            " VALUES (%s,%s,%s,false,false,true)", (pk, name, order))
+            " extractor, attempt_order, accepted, selected, skipped,"
+            " run_id) VALUES (%s,%s,%s,false,false,true,%s)",
+            (pk, name, order, run_id))
 
 
 def _insert_evaluations(cur, pk, record):
@@ -592,13 +711,31 @@ def sync_record(record: dict[str, Any], conn=None) -> int | None:
                 f" SET {updates}, updatedat = now() RETURNING id",
                 params)
             pk = cur.fetchone()["id"]
+            # Processing-run persistence (migration 004) is
+            # best-effort like canonical/costs: if the migration
+            # has not been applied yet, the record save must still
+            # succeed — the run/attempt tables simply lag until
+            # --migrate runs. Never fail an upload over analytics.
+            run_id, is_new_run = None, False
+            cur.execute("SAVEPOINT run_sp")
+            try:
+                run_id, is_new_run = _processing_run(cur, pk, record)
+                cur.execute("RELEASE SAVEPOINT run_sp")
+            except Exception as exc:  # noqa: BLE001
+                cur.execute("ROLLBACK TO SAVEPOINT run_sp")
+                cur.execute("RELEASE SAVEPOINT run_sp")
+                logger.warning(
+                    "Processing-run persistence skipped for %s: %s "
+                    "(apply database migrations with "
+                    "scripts/import_to_postgres.py --migrate)",
+                    record.get("resume_id"), exc)
             _delete_children(cur, pk)
             _insert_experiences(cur, pk, record)
             _insert_education(cur, pk, record)
             _insert_projects(cur, pk, record)
             _insert_evaluations(cur, pk, record)
             _insert_qc_sections(cur, pk, record)
-            _insert_attempts(cur, pk, record)
+            _insert_attempts(cur, pk, record, run_id, is_new_run)
             _store_canonical(cur, pk, record)
             _sync_ai_costs(cur, pk, record)
         conn.commit()
@@ -847,10 +984,11 @@ def _sync_ai_costs(cur, pk: int, record: dict) -> None:
                     " total_tokens, input_cost_usd,"
                     " cached_input_cost_usd, output_cost_usd,"
                     " total_cost_usd, usd_inr_rate, total_cost_inr,"
-                    " currency, cost_status, analysis_id)"
+                    " currency, cost_status, analysis_id,"
+                    " reasoning_tokens, error, pricing_version)"
                     " VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s,"
                     " %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,"
-                    " %s, %s, %s, %s)"
+                    " %s, %s, %s, %s, %s, %s, %s)"
                     " ON CONFLICT (call_ref) DO NOTHING",
                     (row["call_ref"], pk, row["resume_id"],
                      row["operation_type"], row["provider"],
@@ -865,7 +1003,9 @@ def _sync_ai_costs(cur, pk: int, record: dict) -> None:
                      row["output_cost_usd"], row["total_cost_usd"],
                      row["usd_inr_rate"], row["total_cost_inr"],
                      row["currency"], row["cost_status"],
-                     row.get("analysis_id")))
+                     row.get("analysis_id"),
+                     row.get("reasoning_tokens"), row.get("error"),
+                     row.get("pricing_version")))
             cur.execute("RELEASE SAVEPOINT ai_costs_sp")
         except Exception:
             cur.execute("ROLLBACK TO SAVEPOINT ai_costs_sp")
@@ -937,6 +1077,7 @@ def ai_cost_aggregates() -> dict | None:
                 " FROM ai_api_costs GROUP BY 1 ORDER BY 1")
             monthly = [dict(r) for r in cur.fetchall()]
         return {"by_operation": by_op, "monthly": monthly,
+                "by_model": [],
                 "most_expensive_resume": dict(top) if top else None,
                 "resumes_with_costs": totals.get("n") or 0,
                 "total_cost_usd": totals.get("cost_usd"),

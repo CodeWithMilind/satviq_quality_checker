@@ -201,7 +201,7 @@ def test_configuration_overrides(sample_file):
 
 def test_default_order_comes_from_yaml_config():
     manager = ExtractionManager()
-    assert manager.order == ["tika", "pymupdf", "docling", "ocr"]
+    assert manager.order == ["tika", "ocr", "pymupdf", "docling"]
     assert manager.max_attempts == 4
     assert all(manager.is_enabled(name) for name in manager.order)
 

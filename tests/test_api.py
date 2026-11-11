@@ -73,7 +73,7 @@ def test_health_endpoint():
     assert response.status_code == 200
     body = response.json()
     assert body["status"] == "ok"
-    assert body["extractor_order"] == ["tika", "pymupdf", "docling", "ocr"]
+    assert body["extractor_order"] == ["tika", "ocr", "pymupdf", "docling"]
     assert body["quality_filters"] == ["text_health", "completeness", "reading_order"]
     assert "pdf" in body["supported_extensions"]
 
@@ -106,7 +106,7 @@ def test_process_pdf_with_fallback_and_quality():
     assert attempts, "attempt history must be recorded"
     assert attempts[0]["extractor_name"] == "tika"  # configured order starts with Tika
     attempted_names = [a["extractor_name"] for a in attempts]
-    configured_order = ["tika", "pymupdf", "docling", "ocr"]
+    configured_order = ["tika", "ocr", "pymupdf", "docling"]
     assert attempted_names == configured_order[:len(attempted_names)]
 
     # Exactly one attempt is *selected* as the final result: either

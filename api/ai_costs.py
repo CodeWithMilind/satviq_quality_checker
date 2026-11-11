@@ -102,6 +102,9 @@ def derive_call_rows(record: dict[str, Any],
             "output_tokens": out,
             "total_tokens": _int_or_none(req.get("total_tokens"))
                             or (inp + out),
+            "reasoning_tokens": None,
+            "error": None,
+            "pricing_version": pricing.PRICING_VERSION,
             "currency": pricing.CURRENCY,
         }, rate))
 
@@ -119,7 +122,9 @@ def derive_call_rows(record: dict[str, Any],
                     and _int_or_none(tokens.get("output")) is None:
                 continue
             iterable = [(0, {
-                "tokens": tokens, "attempt": 1,
+                "tokens": tokens, "attempt": 1, "kind": "evaluation",
+                "reasoning_tokens":
+                    _int_or_none(entry.get("reasoning_tokens")),
                 "request_id": None, "duration_ms":
                     _int_or_none(entry.get("duration_ms")),
                 "model": entry.get("model"), "status":
@@ -135,7 +140,10 @@ def derive_call_rows(record: dict[str, Any],
             rows.append(_priced({
                 "call_ref": f"eval:{analysis_id}:{call_idx}",
                 "resume_id": resume_id,
-                "operation_type": "ai_evaluation",
+                "operation_type": (
+                    "json_correction"
+                    if call.get("kind") == "json_correction"
+                    else "ai_evaluation"),
                 "provider": pricing.PROVIDER,
                 "model": call.get("model") or entry.get("model"),
                 "prompt_version": entry.get("prompt_version"),
@@ -152,6 +160,12 @@ def derive_call_rows(record: dict[str, Any],
                 "output_tokens": out,
                 "total_tokens": _int_or_none(tokens.get("total"))
                                 or (inp + out),
+                "reasoning_tokens":
+                    _int_or_none(call.get("reasoning_tokens")),
+                "error": (str(entry.get("error"))[:500]
+                          if entry.get("status") == "failed"
+                          and entry.get("error") else None),
+                "pricing_version": pricing.PRICING_VERSION,
                 "currency": pricing.CURRENCY,
                 "analysis_id": analysis_id,
             }, rate))
@@ -171,7 +185,7 @@ def summarize_rows(rows: list[dict[str, Any]]) -> dict[str, Any]:
     totals = {"input": 0, "cached_input": 0, "output": 0, "total": 0}
     grand_usd = None
     grand_inr = None
-    for op in ("json_extraction", "ai_evaluation"):
+    for op in ("json_extraction", "ai_evaluation", "json_correction"):
         items = [r for r in rows if r["operation_type"] == op]
         usd = _sum(items, "total_cost_usd")
         summary[op] = {

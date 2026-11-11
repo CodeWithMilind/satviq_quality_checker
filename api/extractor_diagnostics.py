@@ -33,7 +33,7 @@ LABELS = {
     "docling": "Docling",
     "ocr": "Tesseract OCR",
 }
-ORDER = ["tika", "pymupdf", "docling", "ocr"]
+ORDER = ["tika", "ocr", "pymupdf", "docling"]
 
 
 def _now() -> str:

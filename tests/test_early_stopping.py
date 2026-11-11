@@ -153,13 +153,15 @@ def test_tika_pass_runs_tika_only(dummy_pdf):
     assert result["selected_extractor"] == "tika"
     assert result["gate_decisions"]["tika"]["status"] == "PASS"
     assert result["gate_decisions"]["tika"]["decision"] == "accept"
-    assert result["skipped_extractors"] == ["pymupdf", "docling", "ocr"]
+    assert result["skipped_extractors"] == ["ocr", "pymupdf", "docling"]
     assert [r["extractor"] for r in result["extractor_results"]] == ["tika"]
     assert result["status"] == "success"
 
 
 # --- Spec scenario 2: Tika FAIL, PyMuPDF PASS ------------------------
 def test_tika_fail_pymupdf_pass(dummy_pdf):
+    # Order tika -> ocr -> pymupdf -> docling: after Tika fails,
+    # OCR is next and passes, so PyMuPDF/Docling never run.
     log: list = []
     result = _run({
         "tika": RecordingExtractor("tika", "", success=False,
@@ -168,9 +170,9 @@ def test_tika_fail_pymupdf_pass(dummy_pdf):
         "docling": RecordingExtractor("docling", PASS_TEXT, log=log),
         "ocr": RecordingExtractor("ocr", PASS_TEXT, log=log),
     }, dummy_pdf)
-    assert log == ["tika", "pymupdf"]
-    assert result["selected_extractor"] == "pymupdf"
-    assert result["skipped_extractors"] == ["docling", "ocr"]
+    assert log == ["tika", "ocr"]
+    assert result["selected_extractor"] == "ocr"
+    assert result["skipped_extractors"] == ["pymupdf", "docling"]
 
 
 # --- Spec scenario 3: Tika PASS regardless of Docling availability ---
@@ -193,7 +195,7 @@ def test_tika_pass_with_broken_docling_still_tika_only(dummy_pdf):
     assert result["selected_extractor"] == "tika"
 
 
-# --- Spec scenario 4: Tika FAIL, PyMuPDF FAIL, Docling PASS ----------
+# --- Spec scenario 4: everything before Docling fails, Docling PASS --
 def test_tika_and_pymupdf_fail_docling_pass(dummy_pdf):
     log: list = []
     result = _run({
@@ -201,15 +203,16 @@ def test_tika_and_pymupdf_fail_docling_pass(dummy_pdf):
         "pymupdf": RecordingExtractor("pymupdf", "", success=False,
                                       error="pymupdf boom", log=log),
         "docling": RecordingExtractor("docling", PASS_TEXT, log=log),
-        "ocr": RecordingExtractor("ocr", PASS_TEXT, log=log),
+        "ocr": RecordingExtractor("ocr", "", success=False,
+                                   error="ocr boom", log=log),
     }, dummy_pdf)
-    assert log == ["tika", "pymupdf", "docling"]
+    assert log == ["tika", "ocr", "pymupdf", "docling"]
     assert result["selected_extractor"] == "docling"
     assert result["gate_decisions"]["tika"]["status"] == "FAIL"
-    assert result["skipped_extractors"] == ["ocr"]
+    assert result["skipped_extractors"] == []
 
 
-# --- Spec scenario 5: all three fail -> OCR runs and can pass --------
+# --- Spec scenario 5: OCR (second) rescues a scanned document -------
 def test_all_three_fail_then_ocr(dummy_pdf):
     log: list = []
     result = _run({
@@ -219,9 +222,9 @@ def test_all_three_fail_then_ocr(dummy_pdf):
                                       error="docling boom", log=log),
         "ocr": RecordingExtractor("ocr", PASS_TEXT, log=log),
     }, dummy_pdf)
-    assert log == ["tika", "pymupdf", "docling", "ocr"]
+    assert log == ["tika", "ocr"]
     assert result["selected_extractor"] == "ocr"
-    assert result["skipped_extractors"] == []
+    assert result["skipped_extractors"] == ["pymupdf", "docling"]
 
 
 # --- Spec scenario 6: every extractor fails -> FAILED/REJECTED -------
@@ -233,17 +236,22 @@ def test_all_extractors_fail_is_rejected(dummy_pdf):
         "docling": RecordingExtractor("docling", "", success=False, log=log),
         "ocr": RecordingExtractor("ocr", "", success=False, log=log),
     }, dummy_pdf)
-    assert log == ["tika", "pymupdf", "docling", "ocr"]
+    assert log == ["tika", "ocr", "pymupdf", "docling"]
     assert result["selected_extractor"] is None
     assert result["status"] in ("extraction_failed", "below_threshold")
     assert result["llm"]["status"] == "skipped"
 
 
-# --- Completeness-only WARNING accepts immediately (Part A fix) -------
-# WARN_TEXT has Text Health 100 / Reading Order 100 and low
-# Completeness (prose, no resume sections): the text is perfectly
-# readable, so extraction MUST stop at Tika — completeness is the
-# YAML Editor AI's concern, never a reason to burn fallback time.
+# --- WARNING continues (revised 2026-11-12) ---------------------------
+# This test previously asserted the 2026-11-11 Part A behaviour: a
+# completeness-only WARNING from Tika was ACCEPTED immediately and
+# PyMuPDF/Docling never ran. That rule caused the download_11_.pdf
+# incident (Tika WARNING fragment accepted, everything skipped), and
+# Milind's 2026-11-12 spec reversed it: a WARNING is held as a
+# candidate and the next extractor is tried. The Part A scenario is
+# still protected — by the convergence stop (see
+# test_convergence_stops_when_extractors_agree), not by accepting
+# the first WARNING.
 def test_warning_continues_to_next_extractor(dummy_pdf):
     log: list = []
     result = _run({
@@ -251,12 +259,145 @@ def test_warning_continues_to_next_extractor(dummy_pdf):
         "pymupdf": RecordingExtractor("pymupdf", PASS_TEXT, log=log),
         "docling": RecordingExtractor("docling", PASS_TEXT, log=log),
     }, dummy_pdf)
-    assert log == ["tika"]
+    assert log == ["tika", "pymupdf"]
     assert result["gate_decisions"]["tika"]["status"] == "WARNING"
-    assert result["gate_decisions"]["tika"]["decision"] == "accept"
-    assert "Completeness only" in result["gate_decisions"]["tika"]["reason"]
-    assert result["selected_extractor"] == "tika"
+    assert result["gate_decisions"]["tika"]["decision"] == "continue"
+    assert result["selected_extractor"] == "pymupdf"
+    assert result["skipped_extractors"] == ["docling"]
+
+
+def test_convergence_stops_when_extractors_agree(dummy_pdf):
+    # Two extractors return substantially the same WARNING text:
+    # the content is genuinely what the document holds, so the
+    # chain stops and Docling never runs. The texts are long
+    # (~2,800 chars), so OCR is necessity-skipped before PyMuPDF.
+    log: list = []
+    long_warn = WARN_TEXT * 3
+    result = _run({
+        "tika": RecordingExtractor("tika", long_warn, log=log),
+        "pymupdf": RecordingExtractor("pymupdf", long_warn, log=log),
+        "docling": RecordingExtractor("docling", PASS_TEXT, log=log),
+        "ocr": RecordingExtractor("ocr", PASS_TEXT, log=log),
+    }, dummy_pdf)
+    assert log == ["tika", "pymupdf"]
+    assert result["gate_decisions"]["ocr"]["decision"] == "skip"
+    assert result["skipped_extractors"] == ["ocr", "docling"]
+    assert result["selected_extractor"] in ("tika", "pymupdf")
+    reason = result["gate_decisions"][result["selected_extractor"]]["reason"]
+    assert "convergence" in reason
+
+
+# --- download_11_.pdf regression --------------------------------------
+# Real file (tests/fixtures/download_11_.pdf): a one-page,
+# image-composed graphic-designer resume with NO text layer.
+# Measured on the real file: PyMuPDF extracts 0 characters. On
+# Milind's machine Tika returned a 771-character WARNING fragment
+# detecting only Contact Information, and the old gate accepted it
+# and skipped every other extractor. TIKA_FRAGMENT below reproduces
+# that fragment's QC profile against the real checker (748 chars,
+# Text Health 100 / Completeness 52 / Reading Order 65.7, detected:
+# Contact Information only -> WARNING).
+TIKA_FRAGMENT = """Yogesh M
+Graphic Designer
+8939785374
+Yogeshraj006@gmail.com
+Portfolio - click here
+I am an aspiring graphic designer who is always curious to learn new things, both within and beyond the field of graphic design. I have worked with design teams on branding, print layouts, brochures, magazines, motion graphics and image editing projects for clients in retail, interiors and agriculture businesses over the last four years, handling everything from concept sketches to final print ready files, coordinating with printers and clients, revising artwork based on feedback, and delivering creatives for social media campaigns, product catalogues and exhibition displays on tight deadlines while keeping a consistent visual style across all deliverables."""
+
+DOCLING_FRAGMENT = """Yogesh M Graphic Designer 8939785374 Yogeshraj006@gmail.com
+Portfolio click here About I am an aspiring graphic designer who is
+always curious to learn new things both within and beyond the field
+of graphic design. Education Bsc MultiMedia Image Creative Education
+2021-2024 Graphic Designing 2019-2020 Higher Secondary 2017-2018
+Experience Sameera groups Jun 2024 to Present Mebel Interiors
+Dosindia Richtech Agrofarms Languages Tamil English"""
+
+OCR_FULL = """Yogesh M
+Graphic Designer
+8939785374
+Yogeshraj006@gmail.com
+Portfolio - click here
+
+About
+I am an aspiring graphic designer who is always curious to learn new things, both within and beyond the field of graphic design.
+
+Education
+Bsc MultiMedia, Image Creative Education, 2021-2024
+Graphic Designing, Image Creative Education, 2019-2020
+Higher Secondary, Rcm Hr Sec School, 2017-2018
+
+Software Skills
+Photoshop, Premiere Pro, Illustrator, After Effects, Lightroom, InDesign
+
+Experience
+Sameera groups, Jun 2024 to Present
+Mebel Interiors, Jun to May 2023-24
+Dosindia, Apr to May 2022-23
+Richtech Agrofarms india limited, Aug to Apr 2021-22
+
+Technical Skills
+Image Editing and Manipulation, Motion Graphics, Print Design and Production, Print Layouts, Brochures, Magazines
+
+Languages
+Tamil, English
+"""
+
+
+def test_download11_warning_fragment_never_final(dummy_pdf):
+    log: list = []
+    result = _run({
+        "tika": RecordingExtractor("tika", TIKA_FRAGMENT, log=log),
+        # The real file has no text layer: PyMuPDF genuinely fails.
+        "pymupdf": RecordingExtractor("pymupdf", "", success=False,
+                                      log=log),
+        "docling": RecordingExtractor("docling", DOCLING_FRAGMENT,
+                                      log=log),
+        "ocr": RecordingExtractor("ocr", OCR_FULL, log=log),
+    }, dummy_pdf)
+    # OCR is second in the chain now: it runs immediately after
+    # the Tika WARNING (image-based signals: 1 section, <800 chars)
+    # and its complete extraction PASSes, so PyMuPDF and Docling
+    # are never needed. The Tika fragment is never final.
+    assert log == ["tika", "ocr"]
     assert result["skipped_extractors"] == ["pymupdf", "docling"]
+    assert result["gate_decisions"]["tika"]["status"] == "WARNING"
+    assert result["gate_decisions"]["tika"]["decision"] == "continue"
+    sig = result["gate_decisions"]["tika"]["signals"]
+    assert sig["detected_sections"] == 1
+    assert sig["chars"] < 800
+    # The complete OCR extraction wins — not the Tika fragment.
+    assert result["selected_extractor"] == "ocr"
+
+
+def test_ocr_skipped_when_text_candidate_adequate(dummy_pdf):
+    log: list = []
+    long_warning = DOCLING_FRAGMENT * 5  # ~2,215 chars, WARNING
+    result = _run({
+        "tika": RecordingExtractor("tika", long_warning, log=log),
+        "pymupdf": RecordingExtractor("pymupdf", FAIL_TEXT, log=log),
+        "docling": RecordingExtractor("docling", WARN_TEXT, log=log),
+        "ocr": RecordingExtractor("ocr", PASS_TEXT, log=log),
+    }, dummy_pdf)
+    assert "ocr" not in log
+    assert result["gate_decisions"]["ocr"]["decision"] == "skip"
+    assert "OCR skipped" in result["gate_decisions"]["ocr"]["reason"]
+    assert result["skipped_extractors"] == ["ocr"]
+
+
+def test_real_pymupdf_extracts_nothing_from_download11():
+    # Anchor against the real file and the real extractor: the PDF
+    # has no text layer, so a text extractor MUST come back empty —
+    # the pipeline can never rely on it for this document.
+    from pipeline.extractors import (default_sequential_extractors,
+                                     run_one_extractor)
+    fixture = Path(__file__).parent / "fixtures" / "download_11_.pdf"
+    if not fixture.exists():
+        pytest.skip("download_11_.pdf fixture not present")
+    extractors = default_sequential_extractors()
+    if "pymupdf" not in extractors:
+        pytest.skip("pymupdf extractor unavailable")
+    res = run_one_extractor("pymupdf", extractors["pymupdf"], fixture)
+    assert len((res.get("extracted_text") or "").strip()) == 0
 
 
 def test_warning_candidate_selected_when_nothing_passes(dummy_pdf):
@@ -300,16 +441,16 @@ def test_record_shows_skipped_and_real_attempt_count(dummy_pdf):
     assert record["attempts"][0]["quality_status"] == "PASS"
     assert record["quality_status"] == "PASS"
     assert record["fallback_occurred"] is False
-    assert record["skipped_extractors"] == ["pymupdf", "docling", "ocr"]
+    assert record["skipped_extractors"] == ["ocr", "pymupdf", "docling"]
     # Trace shows every non-executed extractor as SKIPPED, in order.
     stages = [(s["stage"], s["status"]) for s in record["pipeline_trace"]]
     extractor_stages = [(n, st) for n, st in stages
                         if n.endswith("Extractor")]
     assert extractor_stages == [
         ("Tika Extractor", "PASS"),
+        ("OCR Extractor", "SKIPPED"),
         ("PyMuPDF Extractor", "SKIPPED"),
         ("Docling Extractor", "SKIPPED"),
-        ("OCR Extractor", "SKIPPED"),
     ]
     # Only the selected extractor's text was sent onward.
     assert record["text_normalization"]["source"] == "tika"

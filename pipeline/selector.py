@@ -28,7 +28,7 @@ def select_best_extractor(results: list[dict[str, Any]], reports: Any, config: P
     """
     cfg = config or PipelineConfig()
     threshold = float(cfg.min_quality_threshold)
-    tie_order = list(cfg.tie_break_order or ["tika", "pymupdf", "docling"])
+    tie_order = list(cfg.tie_break_order or ["tika", "ocr", "pymupdf", "docling"])
     report_map = _reports_map(reports)
 
     def tie_index(name: str) -> int:

@@ -53,7 +53,7 @@ def test_probe_ocr_missing_tesseract_is_unavailable():
 def test_probe_all_shape_and_order():
     payload = diag.probe_extractors()
     names = [row["name"] for row in payload["extractors"]]
-    assert names == ["tika", "pymupdf", "docling", "ocr"]
+    assert names == ["tika", "ocr", "pymupdf", "docling"]
     for row in payload["extractors"]:
         assert row["status"] in ("available", "unavailable")
         assert row["label"]
@@ -66,7 +66,7 @@ def test_status_endpoint():
     assert response.status_code == 200
     body = response.json()
     assert [r["name"] for r in body["extractors"]] == [
-        "tika", "pymupdf", "docling", "ocr"]
+        "tika", "ocr", "pymupdf", "docling"]
     assert body["checked_at"]
 
 
@@ -104,7 +104,7 @@ def test_live_tests_map_production_results(monkeypatch, tmp_path):
     payload = diag.run_live_tests(sample)
     assert payload["file"] == "sample_resume.pdf"
     results = payload["results"]
-    assert list(results) == ["tika", "pymupdf", "docling", "ocr"]
+    assert list(results) == ["tika", "ocr", "pymupdf", "docling"]
     assert results["tika"] == {"status": "success", "chars": 10,
                                 "duration_ms": 1500, "error": None}
     assert results["docling"]["status"] == "failed"

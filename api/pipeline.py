@@ -1734,7 +1734,7 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
     gate_decisions: dict[str, Any] = result.get("gate_decisions") or {}
     # Canonical order for attempts
     _canonical = list(result.get("extractor_order") or
-                      ["tika", "pymupdf", "docling", "ocr"])
+                      ["tika", "ocr", "pymupdf", "docling"])
     by_name = {r.get("extractor"): r for r in extractor_results if isinstance(r, dict)}
     ordered_results: list[dict[str, Any]] = []
     for _n in _canonical:
@@ -2084,15 +2084,18 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
         disp = extractor_display_name(nm)
         att = _attempts_by_name.get(nm)
         if att is None:
-            # Never invoked: an earlier extractor passed its quality
-            # gate and the pipeline stopped before this one.
+            # Never invoked: show the gate's recorded reason when
+            # one exists (early PASS, convergence, OCR necessity),
+            # else the generic early-acceptance message.
+            _gate_reason = (gate_decisions.get(nm) or {}).get("reason")
             trace.append(_stage(
                 f"{disp} Extractor", "extractor", "SKIPPED",
                 extractor=nm,
-                message=(f"Skipped — {extractor_display_name(selected)} passed "
-                         "quality checks and was accepted before this "
-                         "extractor was needed."
-                         if selected else "Skipped — not executed."),
+                message=(_gate_reason
+                         or (f"Skipped — {extractor_display_name(selected)} passed "
+                             "quality checks and was accepted before this "
+                             "extractor was needed."
+                             if selected else "Skipped — not executed.")),
                 accepted=False, decision="skipped", selected=False))
             continue
         trace.append(_stage(f"{disp} Extractor", "extractor", "PASS" if att["success"] else "FAIL",

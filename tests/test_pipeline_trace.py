@@ -56,7 +56,7 @@ RESUME_LINES = [
 ]
 GOOD_TEXT = "\n".join(RESUME_LINES)  # line structure kept: a genuine quality PASS
 CORRUPTED_TEXT = "�" * 500
-ORDER = ["tika", "pymupdf", "docling", "ocr"]
+ORDER = ["tika", "ocr", "pymupdf", "docling"]
 
 
 class FakeExtractor(BaseExtractor):
@@ -140,7 +140,7 @@ def test_trace_first_extractor_accepted_immediately(tmp_path):
 
     stages = {s["extractor"]: s for s in _extractor_stages(record)}
     assert stages["tika"]["status"] == "PASS"
-    for name in ("pymupdf", "docling", "ocr"):
+    for name in ("ocr", "pymupdf", "docling"):
         assert stages[name]["status"] == "SKIPPED"
         assert "accepted" in stages[name]["message"]
     qc = _quality_stage(record, "tika")
@@ -203,10 +203,10 @@ def test_trace_quality_rejection_then_fallback(tmp_path):
 
 def test_trace_multiple_fallback_attempts(tmp_path):
     record = _run_pipeline(
-        tmp_path, [("tika", "fail"), ("pymupdf", "corrupted"),
-                   ("docling", "good"), ("ocr", "good")])
+        tmp_path, [("tika", "fail"), ("ocr", "corrupted"),
+                   ("pymupdf", "good"), ("docling", "good")])
     assert record["success"] is True
-    assert record["extractor_used"] == "docling"
+    assert record["extractor_used"] == "pymupdf"
     assert record["attempt_count"] == 3
     assert record["fallback_occurred"] is True
 
@@ -214,13 +214,13 @@ def test_trace_multiple_fallback_attempts(tmp_path):
     assert [s["extractor"] for s in stages] == ORDER
     assert [s["status"] for s in stages] == ["FAIL", "PASS", "PASS", "SKIPPED"]
     assert _quality_stage(record, "tika")["status"] == "SKIPPED"
-    assert _quality_stage(record, "pymupdf")["status"] == "REJECTED"
-    assert _quality_stage(record, "docling")["status"] in ("PASS", "WARNING")
+    assert _quality_stage(record, "ocr")["status"] == "REJECTED"
+    assert _quality_stage(record, "pymupdf")["status"] in ("PASS", "WARNING")
     # Every non-accepted attempt carries its real reason.
     for attempt in record["attempts"][:-1]:
         assert attempt["accepted"] is False
         assert attempt["error"]
-    assert _final_stage(record)["extractor"] == "docling"
+    assert _final_stage(record)["extractor"] == "pymupdf"
 
 
 # 5 — the same resume uploaded twice stays two separate runs --------------
@@ -343,13 +343,15 @@ def test_api_process_response_trace_matches_attempts():
     assert attempted == ORDER[:len(attempted)]
     skipped = [s["extractor"] for s in _extractor_stages(record)
                if s["status"] == "SKIPPED"]
-    # Default (simple) pipeline is now the sequential quality-gated
-    # flow: extractors execute in order and the flow stops at the
-    # first quality PASS. On this sandbox PDF Tika produces no usable
-    # text, PyMuPDF's real extraction passes the gate, and Docling +
-    # OCR are honestly shown as SKIPPED — never as attempts.
-    assert attempted == ["tika", "pymupdf"]
-    assert skipped == ["docling", "ocr"]
+    # Default (simple) pipeline is the sequential quality-gated
+    # flow (tika -> ocr -> pymupdf -> docling): extractors execute
+    # in order and the flow stops at the first quality PASS. On
+    # this sandbox PDF Tika produces no usable text, OCR is
+    # unavailable in the sandbox and fails fast, PyMuPDF's real
+    # extraction passes the gate, and Docling is honestly shown
+    # as SKIPPED — never as an attempt.
+    assert attempted == ["tika", "ocr", "pymupdf"]
+    assert skipped == ["docling"]
     # The final stage honestly reflects the WHOLE flow: PASS only
     # when a validated Resume JSON was produced. (Muse is not
     # configured in the test environment, so the AI stage's outcome
@@ -394,7 +396,7 @@ def test_legacy_record_without_trace_is_backfilled(tmp_path):
         assert _final_stage(detail)["extractor"] == "tika"
         skipped = [s["extractor"] for s in _extractor_stages(detail)
                    if s["status"] == "SKIPPED"]
-        assert skipped == ["pymupdf", "docling", "ocr"]
+        assert skipped == ["ocr", "pymupdf", "docling"]
         qc = _quality_stage(detail, "tika")
         assert qc["quality"]["text_health"]["score"] == \
             record["quality"]["text_health"]["score"]

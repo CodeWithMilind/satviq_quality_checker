@@ -12,7 +12,7 @@ Two runners share the same unified result dicts:
   gate, so a passing Tika never pays for Docling/OCR time.
 
 Results are returned in canonical order
-[tika, pymupdf, docling, ocr] as unified dicts.
+[tika, ocr, pymupdf, docling] as unified dicts.
 """
 from __future__ import annotations
 
@@ -25,7 +25,7 @@ from typing import Any
 
 logger = logging.getLogger(__name__)
 
-CANONICAL_ORDER = ["tika", "pymupdf", "docling", "ocr"]
+CANONICAL_ORDER = ["tika", "ocr", "pymupdf", "docling"]
 
 
 def _default_extractors() -> dict[str, Any]:

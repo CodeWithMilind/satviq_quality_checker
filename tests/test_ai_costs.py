@@ -163,3 +163,34 @@ def test_frontend_has_cost_views():
     app_js = open("frontend/js/app.js").read()
     assert "AI Cost Breakdown" in app_js
     assert "AI Expenditure" in app_js
+
+
+def test_correction_call_is_its_own_operation():
+    record = _record()
+    record["analyses"][0]["api_calls"][1]["kind"] = "json_correction"
+    record["analyses"][0]["api_calls"][1]["reasoning_tokens"] = 55
+    rows = derive_call_rows(record, rate=None)
+    corr = [r for r in rows if r["operation_type"] == "json_correction"]
+    assert len(corr) == 1
+    assert corr[0]["reasoning_tokens"] == 55
+    assert corr[0]["pricing_version"] is not None
+    summary = summarize_rows(rows)
+    assert summary["json_correction"]["calls"] == 1
+    # correction cost is NOT folded into ai_evaluation
+    assert summary["ai_evaluation"]["calls"] == 1
+
+
+def test_run_key_fingerprint_dedupes_and_detects_reprocess():
+    from api.db import _run_key
+    record = _record()
+    record["attempts"] = [{"attempt_id": "a1", "extractor_name": "tika",
+                           "started_at": "2026-11-12T00:00:00+00:00"}]
+    record["final_extractor"] = "tika"
+    assert _run_key(record) == _run_key(record)
+    record["attempts"] = [{"attempt_id": "a2", "extractor_name": "tika",
+                           "started_at": "2026-11-12T01:00:00+00:00"}]
+    assert _run_key(record) != _run_key(
+        {**record, "attempts": [{"attempt_id": "a1",
+                                 "extractor_name": "tika",
+                                 "started_at":
+                                     "2026-11-12T00:00:00+00:00"}]})

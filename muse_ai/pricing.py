@@ -33,6 +33,10 @@ from typing import Any
 
 PROVIDER = "meta-muse"
 CURRENCY = "USD"
+# Version of this pricing configuration; stamped on every cost
+# row so historical costs can be traced to the rates that
+# produced them. Bump when rates change.
+PRICING_VERSION = "1.0"
 
 # model id -> {"input": Decimal, "cached_input": Decimal,
 #              "output": Decimal}  (USD per 1M tokens)

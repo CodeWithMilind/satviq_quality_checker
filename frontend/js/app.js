@@ -1392,7 +1392,7 @@ async function renderResume(id, params) {
   const toolAttempts = (record.attempts || []).filter(
     (a) => a.extractor_name && a.extractor_name !== "muse_ai");
   const viewerTools = [];
-  ["tika", "pymupdf", "docling", "ocr"].forEach((name) => {
+  ["tika", "ocr", "pymupdf", "docling"].forEach((name) => {
     if (toolAttempts.some((a) => a.extractor_name === name) || manualResults[name]) viewerTools.push(name);
   });
   toolAttempts.forEach((a) => { if (!viewerTools.includes(a.extractor_name)) viewerTools.push(a.extractor_name); });
@@ -1471,7 +1471,7 @@ async function renderResume(id, params) {
 
   const skippedSet = new Set((record.skipped_extractors || [])
     .map((s) => String(s).toLowerCase()));
-  const pipelineStages = ["tika", "pymupdf", "docling", "ocr"].map((name) => {
+  const pipelineStages = ["tika", "ocr", "pymupdf", "docling"].map((name) => {
     const a = toolAttempts.find((x) => x.extractor_name === name);
     const isFinal = a && (a.is_final_selected || a.selected
       || (finalAttempt && a === finalAttempt));
@@ -2435,10 +2435,30 @@ function analyticsHtml(data) {
         <div class="kpi-card"><div class="kpi-value">${ac.average_cost_per_resume_usd != null ? fmtUsd(ac.average_cost_per_resume_usd) : "—"}</div><div class="kpi-label">Average cost per resume</div><div class="kpi-sub">over ${fmtNum(ac.resumes_with_costs || 0)} resumes with costed calls</div></div>
         <div class="kpi-card"><div class="kpi-value">${acOpCost(acExt)}</div><div class="kpi-label">JSON extraction expenditure</div></div>
         <div class="kpi-card"><div class="kpi-value">${acOpCost(acEv)}</div><div class="kpi-label">Evaluation expenditure</div></div>
+        <div class="kpi-card"><div class="kpi-value">${acOpCost(ac.json_correction || {})}</div><div class="kpi-label">JSON correction expenditure</div></div>
         <div class="kpi-card"><div class="kpi-value">${acTop ? fmtUsd(acTop.cost_usd) : "—"}</div><div class="kpi-label">Most expensive resume</div>${acTop ? `<div class="kpi-sub">${escapeHtml(acTop.filename || acTop.resume_id || "")}</div>` : ""}</div>
         <div class="kpi-card"><div class="kpi-value">${ac.total_cost_inr != null ? fmtInr(ac.total_cost_inr) : "—"}</div><div class="kpi-label">Total in INR</div>${ac.total_cost_inr == null ? '<div class="kpi-sub">set SATVIQ_USD_INR_RATE to enable</div>' : ""}</div>
       </div>
       ${acMonthly}
+    </div>`;
+
+  const ll = data.llm || {};
+  const llOps = ll.by_operation || {};
+  const llOpRow = (label, op) => op ? `<tr><td>${label}</td><td>${fmtNum(op.calls || 0)}</td><td>${fmtNum(op.input_tokens ?? op.inp ?? 0)}</td><td>${fmtNum(op.cached_input_tokens ?? op.cached ?? 0)}</td><td>${fmtNum(op.output_tokens ?? op.outp ?? 0)}</td><td>${fmtNum(op.reasoning_tokens ?? op.reasoning ?? 0)}</td><td>${fmtNum(op.total_tokens ?? op.total ?? 0)}</td></tr>` : "";
+  const llModelRows = (ll.by_model || []).map((m) => `<tr><td>${escapeHtml(m.model || "—")}</td><td>${fmtNum(m.calls || 0)}</td><td>${fmtNum(m.total_tokens ?? m.total ?? 0)}</td><td>${fmtUsd(m.cost_usd)}</td></tr>`).join("");
+  const llmCard = `<div class="card">
+      <h3>LLM Analytics</h3>
+      <p class="hint">Every Muse operation is persisted per call (including JSON-correction calls and retries) — aggregates reconcile with the per-resume cost records.</p>
+      <div style="overflow-x:auto"><table class="data-table">
+        <thead><tr><th>Operation</th><th>Calls</th><th>Input</th><th>Cached</th><th>Output</th><th>Reasoning</th><th>Total tokens</th></tr></thead>
+        <tbody>
+          ${llOpRow("JSON extraction", llOps.json_extraction)}
+          ${llOpRow("AI evaluation", llOps.ai_evaluation)}
+          ${llOpRow("JSON correction", llOps.json_correction)}
+        </tbody></table></div>
+      <p class="hint">Average tokens per resume: <strong>${ll.avg_tokens_per_resume != null ? fmtNum(ll.avg_tokens_per_resume) : "—"}</strong>
+      · JSON correction frequency: <strong>${ll.json_correction ? fmtPct(ll.json_correction.frequency_percent) : "—"}</strong> (${ll.json_correction ? fmtNum(ll.json_correction.calls) : 0} correction calls)</p>
+      ${llModelRows ? `<h4 style="margin-top:14px">Tokens by model</h4><table class="data-table"><thead><tr><th>Model</th><th>Calls</th><th>Total tokens</th><th>Cost</th></tr></thead><tbody>${llModelRows}</tbody></table>` : ""}
     </div>`;
 
   const evaluationCard = `
@@ -2460,7 +2480,7 @@ function analyticsHtml(data) {
       : '<p class="hint">No AI evaluations yet — open a resume and run Analyze in its AI Evaluation section.</p>'}
     </div>`;
 
-  return `<div class="kpi-grid">${kpiCards}</div>${extractorCard}${durationCard}${tokenCard}${qualityCard}${normCard}${evaluationCard}${costCard}`;
+  return `<div class="kpi-grid">${kpiCards}</div>${extractorCard}${durationCard}${tokenCard}${qualityCard}${normCard}${evaluationCard}${costCard}${llmCard}`;
 }
 
 /* ------------------------------------------------------------------ */

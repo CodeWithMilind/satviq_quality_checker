@@ -1,43 +1,56 @@
 """Simple production extraction pipeline.
 
 DOCUMENT -> Sequential Extraction-Gated Extraction
-(Tika -> Extraction Check -> STOP on accept; otherwise PyMuPDF ->
-Extraction Check -> STOP on accept; otherwise Docling -> Extraction
-Check; otherwise OCR) -> Best Extractor Selection (only when no
+(Tika -> Extraction Check -> STOP on accept; otherwise OCR ->
+Extraction Check -> STOP on accept; otherwise PyMuPDF -> Extraction
+Check; otherwise Docling) -> Best Extractor Selection (only when no
 extractor was accepted outright) -> Text Normalization -> One LLM
 Stage -> Validated Resume JSON.
 
-EXTRACTION GATING vs COMPLETENESS (fixed 2026-11-11): the gate that
-decides whether fallback continues judges EXTRACTION QUALITY ONLY —
-actual extraction failure, Text Health below ``fail_below``, or
-Reading Order below ``fail_below`` (the ``quality_gate:`` thresholds
-in ``extractor/config/extractor.yaml``). Completeness measures how
-many resume SECTIONS were recognised; it is reported in full on
-every attempt (score + missing sections) but NEVER drives fallback:
-a readable resume with unfamiliar section headings (e.g. Text
-Health 100 / Reading Order 99 / Completeness 67) is accepted at the
-first extractor, and its low completeness is handled afterwards by
-the YAML Editor AI, not by burning time in Docling/OCR.
+EXTRACTION GATING (revised 2026-11-12 — WARNING no longer accepts):
+technical extraction status (success/failed/timeout) and extraction
+QUALITY (PASS/WARNING/FAIL from the Quality Checker) are separate
+decisions. A technically successful WARNING is NOT a final result
+while another extractor remains untried: the result is held as a
+candidate and the chain continues, because a WARNING fragment can
+hide extraction loss (the download_11_.pdf case: Tika returned 771
+characters with only Contact Information detected on a resume that
+visibly contains education, experience, skills and languages, and
+the old gate accepted it and skipped every other extractor).
 
 Gate outcomes per attempt:
-- **PASS** (Text Health and Reading Order both >= ``warn_below``) —
-  accept immediately; later extractors are SKIPPED.
-- **WARNING** — extraction is usable (neither technical filter below
-  ``fail_below``) but a technical filter is below ``warn_below``,
-  OR completeness is below ``warn_below``. WARNING accepts
-  immediately UNLESS the warning comes from a technical filter
-  (Text Health / Reading Order) whose score is below
-  ``warning_continue_below`` — only then is the result held as a
-  candidate and the next extractor tried. A completeness-only
-  warning NEVER continues the chain.
-- **FAIL** — rejected; the next extractor is tried. FAIL requires
-  extraction failure or Text Health / Reading Order below
-  ``fail_below``.
+- **PASS** (all filters >= ``warn_below``) — accept immediately;
+  later extractors are SKIPPED. Clean documents still stop at the
+  first extractor.
+- **WARNING** — held as a candidate; the next extractor is tried.
+  Completeness is never the SOLE signal: the decision reason records
+  the adequacy signals (characters, words, detected sections,
+  characters per page when the page count is known) alongside the
+  filter scores.
+- **FAIL** (extraction failure, or Text Health / Reading Order
+  below ``fail_below``) — rejected; the next extractor is tried.
+
+Two protections keep WARNING-continue from wasting time:
+- **Convergence stop** — when a new candidate's text is
+  substantially the same as the best earlier candidate (token-set
+  similarity >= ``convergence_similarity``) and detects no
+  additional sections, the extractors agree: the content is
+  genuinely what the document contains, so the chain stops and the
+  best candidate is selected. A readable resume with unfamiliar
+  headings (the case the 2026-11-11 Part A fix protected) stops at
+  the second extractor instead of burning Docling/OCR time.
+- **OCR necessity** — OCR runs only when no adequate candidate
+  exists: every earlier attempt failed, or the best candidate shows
+  image/scanned-document signals (very low characters per page, or
+  at most ``ocr_max_detected_sections`` detected sections in under
+  ``ocr_max_candidate_chars`` characters). Otherwise OCR is SKIPPED
+  with the reason recorded.
 
 If no extractor is accepted outright, the existing selector picks
 the best-scoring executed candidate (``min_quality_threshold`` still
 applies); if none qualifies, the resume is failed/rejected exactly
 as before.
+
 """
 from __future__ import annotations
 
@@ -61,7 +74,11 @@ logger = logging.getLogger(__name__)
 # the configured values are read from the SAME ``quality_gate:``
 # section of extractor/config/extractor.yaml the legacy chain uses.
 _GATE_DEFAULTS = {"fail_below": 50.0, "warn_below": 75.0,
-                  "warning_continue_below": 75.0}
+                  "warning_continue_below": 75.0,
+                  "convergence_similarity": 0.90,
+                  "ocr_min_chars_per_page": 500,
+                  "ocr_max_detected_sections": 3,
+                  "ocr_max_candidate_chars": 2000}
 
 
 def _load_gate_thresholds() -> dict[str, float]:
@@ -97,6 +114,36 @@ def _gate_status(report: Any, fail_below: float, warn_below: float) -> str:
            report.reading_order.score) < warn_below:
         return "WARNING"
     return "PASS"
+
+
+def _token_similarity(a: str, b: str) -> float:
+    """Jaccard similarity of the two texts' word-token sets."""
+    ta = set(a.lower().split())
+    tb = set(b.lower().split())
+    if not ta or not tb:
+        return 0.0
+    return len(ta & tb) / len(ta | tb)
+
+
+def _signals(res: dict[str, Any], report: Any) -> dict[str, Any]:
+    """Deterministic extraction-adequacy signals for one attempt."""
+    text = res.get("extracted_text") or ""
+    pages = res.get("page_count")
+    try:
+        pages = int(pages) if pages else None
+    except (TypeError, ValueError):
+        pages = None
+    completeness = getattr(report, "completeness", None)
+    return {
+        "chars": len(text),
+        "words": len(text.split()),
+        "page_count": pages,
+        "chars_per_page": (round(len(text) / pages, 1)
+                           if pages else None),
+        "detected_sections": len(
+            getattr(completeness, "detected_sections", []) or []),
+        "completeness_score": getattr(completeness, "score", None),
+    }
 
 
 def _default_llm_service() -> Any | None:
@@ -147,6 +194,11 @@ class ExtractionPipeline:
         if res.get("status") != "success" or not text.strip():
             return {
                 "status": "FAIL", "decision": "reject",
+                "signals": {"chars": len(text), "words": len(text.split()),
+                            "page_count": res.get("page_count"),
+                            "chars_per_page": None,
+                            "detected_sections": 0,
+                            "completeness_score": None},
                 "reason": res.get("error")
                 or "Extraction failed or produced no usable text."}
         if checker is None:
@@ -167,48 +219,59 @@ class ExtractionPipeline:
                           "decision was made for this attempt."}
         status = _gate_status(report, thresholds["fail_below"],
                               thresholds["warn_below"])
+        signals = _signals(res, report)
         scores = (f"Text Health {report.text_health.score}, "
                   f"Completeness {report.completeness.score}, "
                   f"Reading Order {report.reading_order.score}")
+        sig_text = (
+            f"{signals['chars']} characters, {signals['words']} words, "
+            f"{signals['detected_sections']} resume sections detected"
+            + (f", {signals['chars_per_page']} characters/page across "
+               f"{signals['page_count']} page(s)"
+               if signals["chars_per_page"] is not None else ""))
         if status == "PASS":
             return {
                 "status": status, "decision": "accept",
-                "reason": f"Quality PASS ({scores}) — result accepted; "
-                          "fallback stopped."}
+                "signals": signals,
+                "reason": f"Quality PASS ({scores}; {sig_text}) — "
+                          "result accepted; fallback stopped."}
         if status == "FAIL":
             return {
                 "status": status, "decision": "reject",
-                "reason": f"Quality FAIL ({scores}) — Text Health or "
-                          "Reading Order below "
+                "signals": signals,
+                "reason": f"Quality FAIL ({scores}; {sig_text}) — "
+                          "Text Health or Reading Order below "
                           f"{thresholds['fail_below']:g}; result rejected."}
-        # WARNING — decide on the TECHNICAL filters only. Completeness
-        # never drives fallback: a completeness-only warning means the
-        # text is readable but its section headings are unfamiliar,
-        # which is the YAML Editor AI's job, not another extractor's.
+        # WARNING — never a final result while another extractor
+        # remains: a technically successful fragment can hide
+        # extraction loss (download_11_.pdf: 771 characters, one
+        # section detected, on a visibly complete resume). Hold as
+        # a candidate and try the next extractor; the loop's
+        # convergence and OCR-necessity rules stop the chain when
+        # further extraction demonstrably adds nothing.
+        weak = []
         tech_lowest = min(report.text_health.score,
                           report.reading_order.score)
-        if report.completeness.score < thresholds["warn_below"] \
-                and tech_lowest >= thresholds["warn_below"]:
-            return {
-                "status": status, "decision": "accept",
-                "reason": f"Extraction accepted ({scores}) — Text "
-                          "Health and Reading Order pass; the "
-                          "WARNING is Completeness only, which never "
-                          "triggers extractor fallback. Fallback "
-                          "stopped."}
-        if tech_lowest >= thresholds["warning_continue_below"]:
-            return {
-                "status": status, "decision": "accept",
-                "reason": f"Quality WARNING ({scores}) accepted — "
-                          "lowest technical filter score is at/above "
-                          "the continue threshold "
-                          f"{thresholds['warning_continue_below']:g}."}
+        if tech_lowest < thresholds["warning_continue_below"]:
+            weak.append("a technical filter is below the continue "
+                        "threshold")
+        if report.completeness.score < thresholds["warn_below"]:
+            weak.append("content coverage is incomplete — sections "
+                        "may be genuinely absent OR lost in extraction, "
+                        "which only another extractor can distinguish")
+        if signals["chars_per_page"] is not None and \
+                signals["chars_per_page"] < \
+                thresholds["ocr_min_chars_per_page"]:
+            weak.append("text density is very low for the page "
+                        "count, suggesting image-based content")
         return {
             "status": status, "decision": "continue",
-            "reason": f"Quality WARNING ({scores}) — Text Health or "
-                      "Reading Order below the continue threshold; "
-                      "result held as a candidate; trying the next "
-                      "extractor."}
+            "signals": signals,
+            "reason": f"Quality WARNING ({scores}; {sig_text}) — "
+                      + ("; ".join(weak) if weak else "quality below "
+                         "PASS")
+                      + ". Result held as a candidate; trying the "
+                        "next extractor for comparison."}
 
     def run(self, file_path: str | Path, include_extractor_texts: bool = False) -> dict[str, Any]:
         total_started = time.perf_counter()
@@ -242,10 +305,49 @@ class ExtractionPipeline:
         reports: dict[str, Any] = {}
         gate_decisions: dict[str, dict[str, Any]] = {}
         skipped: list[str] = []
+        candidates: list[str] = []  # WARNING attempts held for comparison
         accepted_name: str | None = None
         extraction_seconds = 0.0
         quality_seconds = 0.0
         for position, name in enumerate(order):
+            # --- OCR necessity: OCR is for scanned/image-based
+            # documents. When a text-layer candidate is already
+            # adequate, OCR is skipped with the reason recorded.
+            if name == "ocr" and candidates:
+                # Adequacy is judged on the MOST COMPLETE candidate
+                # (sections detected, then characters), not the
+                # highest quality score: a short high-scoring
+                # fragment must not suppress OCR.
+                best_so_far = max(
+                    candidates,
+                    key=lambda n: (
+                        (gate_decisions[n].get("signals") or {}).get(
+                            "detected_sections", 0),
+                        (gate_decisions[n].get("signals") or {}).get(
+                            "chars", 0)))
+                sig = gate_decisions[best_so_far].get("signals") or {}
+                cpp = sig.get("chars_per_page")
+                ocr_needed = (
+                    (cpp is not None and cpp < thresholds[
+                        "ocr_min_chars_per_page"])
+                    or (sig.get("detected_sections", 99) <= thresholds[
+                            "ocr_max_detected_sections"]
+                        and sig.get("chars", 0) < thresholds[
+                            "ocr_max_candidate_chars"]))
+                if not ocr_needed:
+                    gate_decisions[name] = {
+                        "status": None, "decision": "skip",
+                        "signals": sig,
+                        "reason": (
+                            f"OCR skipped — the best text-layer "
+                            f"candidate ('{best_so_far}') already "
+                            f"provides {sig.get('chars')} characters "
+                            f"across {sig.get('detected_sections')} "
+                            "detected sections; OCR is reserved for "
+                            "scanned/image-based documents where text "
+                            "extraction is inadequate.")}
+                    skipped.append(name)
+                    continue
             t0 = time.perf_counter()
             res = run_one_extractor(
                 name, extractor_map[name], file_path,
@@ -264,8 +366,51 @@ class ExtractionPipeline:
             gate_decisions[name] = decision
             if decision["decision"] == "accept":
                 accepted_name = name
-                skipped = order[position + 1:]
+                skipped = skipped + [n for n in order[position + 1:]
+                                     if n not in skipped]
                 break
+            # --- Convergence stop: a new WARNING candidate that
+            # substantially duplicates the best earlier candidate
+            # (and detects no additional sections) proves the
+            # extractors agree — the content is genuinely what the
+            # document contains, so stop and select the best.
+            if decision["decision"] == "continue" \
+                    and decision.get("status") == "WARNING":
+                candidates.append(name)
+                if len(candidates) >= 2:
+                    prior = max(
+                        candidates[:-1],
+                        key=lambda n: reports[n].get("quality_score")
+                        or 0)
+                    sim = _token_similarity(
+                        res.get("extracted_text") or "",
+                        next(r.get("extracted_text") or ""
+                             for r in results
+                             if r.get("extractor") == prior))
+                    new_det = (decision.get("signals") or {}).get(
+                        "detected_sections", 0)
+                    prior_det = (gate_decisions[prior].get("signals")
+                                 or {}).get("detected_sections", 0)
+                    if sim >= thresholds["convergence_similarity"] \
+                            and new_det <= prior_det:
+                        best = max(
+                            candidates,
+                            key=lambda n: reports[n].get(
+                                "quality_score") or 0)
+                        gate_decisions[best]["reason"] += (
+                            f" Extraction stopped by convergence: "
+                            f"'{name}' produced substantially the "
+                            f"same text as '{prior}' (token "
+                            f"similarity {sim:.2f}) with no "
+                            "additional sections detected — the "
+                            "extractors agree, so unlisted sections "
+                            "are genuinely absent from the document "
+                            "rather than lost in extraction.")
+                        accepted_name = best
+                        skipped = skipped + [n for n in
+                                             order[position + 1:]
+                                             if n not in skipped]
+                        break
 
         # --- Selection ---
         if accepted_name is not None:

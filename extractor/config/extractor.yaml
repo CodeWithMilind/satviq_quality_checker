@@ -10,9 +10,9 @@ manager:
   # Extraction order — extractors are tried sequentially in this order.
   order:
     - tika
+    - ocr
     - pymupdf
     - docling
-    - ocr
   # Hard cap on the number of extractor attempts for one document,
   # regardless of how many extractors are configured.
   max_attempts: 4
@@ -30,28 +30,36 @@ acceptance:
   min_word_count: 10
   require_success: true
 
-# Quality gate policy (used by the GUI/API integration layer,
-# api.pipeline.QualityGatePolicy — the manager itself does not read
-# this section). After every extraction attempt the real Quality
-# Checker scores the text and the gate decides:
-#   PASS    (all filters >= warn_below) -> accept, stop fallback
-#   WARNING (any filter < warn_below, but text_health and
-#            reading_order >= fail_below) -> hold the result as a
-#            candidate and try the next extractor, when the warning
-#            is significant: lowest filter score < warning_continue_below
-#            (default = warn_below, so any WARNING continues). A
-#            WARNING at/above warning_continue_below is accepted
-#            immediately. Missing sections lower Completeness but can
-#            never cause FAIL on their own.
+# Quality gate policy (used by the sequential pipeline gate in
+# pipeline/extraction_pipeline.py and the legacy QualityGatePolicy).
+# After every extraction attempt the real Quality Checker scores
+# the text and the gate decides:
+#   PASS    (all filters >= warn_below) -> accept, stop fallback.
+#   WARNING -> hold as a candidate and try the next extractor. A
+#            technically successful WARNING is never final while
+#            another extractor remains (revised 2026-11-12: a
+#            WARNING fragment can hide extraction loss). Two rules
+#            stop the chain early: convergence (a new candidate
+#            substantially duplicates the best earlier candidate,
+#            token similarity >= convergence_similarity, with no
+#            additional sections detected) and OCR necessity (OCR
+#            runs only for scanned/image-based signals: best
+#            candidate below ocr_min_chars_per_page, or at most
+#            ocr_max_detected_sections sections in under
+#            ocr_max_candidate_chars characters).
 #   FAIL    (text_health or reading_order < fail_below) -> reject,
-#            try the next extractor
-# If no extractor is accepted outright, the best candidate is
-# returned: highest weakest-filter score, then highest average of the
-# three scores, then earliest in the configured order.
+#            try the next extractor. Completeness can never cause
+#            FAIL on its own.
+# If no extractor is accepted outright, the best executed candidate
+# is selected by quality score.
 quality_gate:
   fail_below: 50
   warn_below: 75
   warning_continue_below: 75
+  convergence_similarity: 0.90
+  ocr_min_chars_per_page: 500
+  ocr_max_detected_sections: 3
+  ocr_max_candidate_chars: 2000
 
 extractors:
   tika:

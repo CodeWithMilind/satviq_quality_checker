@@ -224,7 +224,8 @@ def _analyze_acquired(record: dict[str, Any],
                                            "total": None}
     total_reasoning: int | None = None
 
-    def _accumulate(result: dict[str, Any]) -> None:
+    def _accumulate(result: dict[str, Any],
+                    kind: str = "evaluation") -> None:
         nonlocal total_reasoning
         tokens, reasoning = _usage_tokens(result.get("usage"))
         for key in total_tokens:
@@ -244,6 +245,8 @@ def _analyze_acquired(record: dict[str, Any],
         call_tokens["cached_input"] = int(cached)             if _is_num(cached) else None
         entry["api_calls"].append({
             "attempt": len(entry["api_calls"]) + 1,
+            "kind": kind,
+            "reasoning_tokens": reasoning,
             "status": "success",
             "model": result.get("model"),
             "request_id": result.get("request_id"),
@@ -323,7 +326,7 @@ def _analyze_acquired(record: dict[str, Any],
                 + "\n\nRESUME TEXT (use ONLY to complete sections "
                   "lost to truncation):\n" + text,
                 extra=correction_extra)
-            _accumulate(corrected)
+            _accumulate(corrected, kind="json_correction")
             evaluation, error = validate_evaluation(
                 corrected.get("text") or "", eval_cfg)
             recovery["success"] = evaluation is not None
