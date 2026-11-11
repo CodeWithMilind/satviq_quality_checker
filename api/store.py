@@ -100,6 +100,11 @@ def summary(record: dict[str, Any]) -> dict[str, Any]:
     text = item.pop("extracted_text", "") or ""
     item["extracted_text_chars"] = len(text)
     item["attempt_count"] = len(item.get("attempts") or [])
+    # Evaluation history can be large; list views carry only the
+    # latest successful analysis plus the attempt count. The full
+    # history stays on the record (detail view / analysis endpoints).
+    analyses = item.pop("analyses", None)
+    item["analysis_count"] = len(analyses) if isinstance(analyses, list) else 0
     return item
 
 

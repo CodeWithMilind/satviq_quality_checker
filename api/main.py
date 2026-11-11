@@ -522,6 +522,91 @@ async def generate_resume_ai_output(resume_id: str) -> JSONResponse:
     return JSONResponse(content=store.public(record))
 
 
+# ------------------------------------------------------------------------
+# AI Evaluation (evaluation/ package) — Muse AI judgement of the
+# already-processed record: section intelligence, three independent
+# scores, role suitability. Extraction is never re-run; exactly one
+# evaluation call is made per request (plus transient retries).
+# ------------------------------------------------------------------------
+
+@app.post("/api/resumes/{resume_id}/analyze", response_model=None)
+async def analyze_resume(resume_id: str) -> JSONResponse:
+    """Run the Muse AI evaluation for an EXISTING record.
+
+    The evaluation is based only on the record's stored Selected
+    Normalized Text (+ deterministic Quality Checker context + the
+    stored Resume JSON digest). The attempt — success or failure —
+    is appended to the record's analysis history; a failure never
+    overwrites the latest successful analysis, whose scores keep
+    being served. Returns 409 when an evaluation for this resume is
+    already running or the feature is disabled. Like the AI
+    generation endpoint, a Muse failure is surfaced in the
+    returned entry (``status: "failed"`` + ``error``), not hidden.
+    """
+    from evaluation.service import analysis_in_progress, analyze_record
+
+    record = store.get_record(resume_id)
+    if record is None:
+        return JSONResponse(status_code=404,
+                            content={"detail": "Resume record not found."})
+    if analysis_in_progress(resume_id):
+        return JSONResponse(
+            status_code=409,
+            content={"detail": "AI evaluation is already running for "
+                               "this resume. Wait for it to finish — "
+                               "a slow Muse response is still "
+                               "running, not failed."})
+    entry, error = await run_in_threadpool(analyze_record, record)
+    if entry is None:
+        detail = ("AI evaluation is disabled "
+                  "(SATVIQ_EVALUATION_ENABLED=false)."
+                  if error == "evaluation_disabled"
+                  else "AI evaluation is already running for this "
+                       "resume.")
+        return JSONResponse(status_code=409, content={"detail": detail})
+    updated = store.get_record(resume_id)
+    return JSONResponse(content={
+        "analysis": entry,
+        "record": store.public(updated) if updated else None,
+    })
+
+
+@app.get("/api/resumes/{resume_id}/analysis", response_model=None)
+def get_resume_analysis(resume_id: str) -> JSONResponse:
+    """The resume's latest SUCCESSFUL evaluation, or null."""
+    from evaluation import store as evaluation_store
+
+    record = store.get_record(resume_id)
+    if record is None:
+        return JSONResponse(status_code=404,
+                            content={"detail": "Resume record not found."})
+    return JSONResponse(content={
+        "analysis": evaluation_store.latest_success(record)})
+
+
+@app.get("/api/resumes/{resume_id}/analysis/history", response_model=None)
+def get_resume_analysis_history(resume_id: str) -> JSONResponse:
+    """Every evaluation attempt for the resume (oldest first)."""
+    from evaluation import store as evaluation_store
+
+    record = store.get_record(resume_id)
+    if record is None:
+        return JSONResponse(status_code=404,
+                            content={"detail": "Resume record not found."})
+    return JSONResponse(content={
+        "history": evaluation_store.history(record)})
+
+
+@app.get("/api/evaluation/config")
+def get_evaluation_config() -> dict:
+    """Evaluation configuration metadata: versions, classification
+    bands, section and role catalogues. Metadata only — no
+    credentials, no prompt text."""
+    from evaluation.config import public_metadata
+
+    return public_metadata()
+
+
 @app.get("/api/resumes/{resume_id}/text", response_model=None)
 def get_resume_text(resume_id: str) -> PlainTextResponse | JSONResponse:
     record = store.get_record(resume_id)

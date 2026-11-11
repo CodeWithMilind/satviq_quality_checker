@@ -238,12 +238,30 @@ async function handleMenuAction(action, id, dataset) {
 /* Result card (shared by Process results and History)                */
 /* ------------------------------------------------------------------ */
 
+function finalExtractorName(record) {
+  /* The ACTUAL final selected extractor for this record — from the
+     stored pipeline selection, never the configured primary engine.
+     Preference order: an attempt flagged final-selected, then the
+     record's selected_extractor / extractor_used fields (both are
+     written from the pipeline's real selection). Returns null when
+     nothing was selected (e.g. processing failed before selection). */
+  const attempts = (record.attempts || []).filter(
+    (a) => a && a.extractor_name && a.extractor_name !== "muse_ai");
+  const flagged = attempts.find((a) => a.is_final_selected || a.selected);
+  if (flagged) return flagged.extractor_name;
+  return record.selected_extractor || record.extractor_used || null;
+}
+
 function resultCardHtml(record) {
   const score = overallScore(record);
   const tokens = record.token_usage || {};
   const hasTokens = tokens.usage_available && tokens.total_tokens !== null && tokens.total_tokens !== undefined;
   const attempts = record.attempt_count ??
     (Array.isArray(record.attempts) ? record.attempts.length : null);
+  const finalExtractor = finalExtractorName(record);
+  const analysis = record.analysis && record.analysis.status === "success"
+    ? record.analysis : null;
+  const evalEv = analysis ? (analysis.evaluation || {}) : null;
   return `
   <article class="card result-card" data-card-id="${escapeHtml(record.resume_id)}">
     <div class="result-head">
@@ -251,15 +269,23 @@ function resultCardHtml(record) {
         <div class="result-title">${escapeHtml(record.filename || "Untitled")}</div>
         <div class="result-meta">
           ${escapeHtml(fmtBytes(record.file_size_bytes))} · Uploaded ${escapeHtml(fmtDate(record.uploaded_at))}
-          · Primary engine: ${escapeHtml(engineLabel(record.primary_extractor || record.extractor_used))}
         </div>
-        <div style="margin-top:6px">${statusChip(record)}</div>
+        <div style="margin-top:6px">${statusChip(record)}
+          ${finalExtractor
+            ? `<span class="chip chip-info">Final Extractor: ${escapeHtml(engineLabel(finalExtractor))}</span>`
+            : '<span class="chip">Final Extractor: Not selected</span>'}
+          ${analysis
+            ? '<span class="chip chip-ok">AI Evaluation: Completed</span>'
+            : (record.analysis_count > 0
+              ? '<span class="chip chip-warn">AI Evaluation: Attempted, none succeeded</span>'
+              : '<span class="chip">AI Evaluation: Not run</span>')}
+        </div>
       </div>
       ${menuHtml(record)}
     </div>
     ${record.error ? `<div class="error-box">${escapeHtml(record.error)}</div>` : ""}
     <div class="metric-grid">
-      <div class="metric"><div class="metric-label">Quality Score</div>
+      <div class="metric"><div class="metric-label">Quality Score (Rule-Based)</div>
         <div class="metric-value ${score === null ? "na" : ""}">${score === null ? "N/A" : score + "/100"}</div></div>
       <div class="metric"><div class="metric-label">Input Tokens</div>
         <div class="metric-value ${hasTokens ? "" : "na"}">${hasTokens ? fmtNum(tokens.input_tokens) : "N/A"}</div></div>
@@ -271,6 +297,11 @@ function resultCardHtml(record) {
         <div class="metric-value ${record.duration_ms == null ? "na" : ""}">${fmtMs(record.duration_ms)}</div></div>
       <div class="metric"><div class="metric-label">Attempts</div>
         <div class="metric-value ${attempts === null ? "na" : ""}">${attempts === null ? "N/A" : attempts}</div></div>
+      ${evalEv ? `
+      <div class="metric"><div class="metric-label">AI Completeness</div>
+        <div class="metric-value">${evalEv.completeness && evalEv.completeness.score != null ? escapeHtml(String(evalEv.completeness.score)) + "/100" : "N/A"}</div></div>
+      <div class="metric"><div class="metric-label">AI Resume Quality</div>
+        <div class="metric-value">${evalEv.quality && evalEv.quality.score != null ? escapeHtml(String(evalEv.quality.score)) + "/100" : "N/A"}</div></div>` : ""}
     </div>
   </article>`;
 }
@@ -610,6 +641,76 @@ function qualityReportHtml(record) {
   const score = overallScore(record);
   if (!quality) return '<p class="hint">No quality report is available for this resume.</p>';
   const components = qualityComponents(quality);
+  const compFilter = quality.completeness || quality.filters?.completeness || {};
+  const detectedNames = new Set((compFilter.detected_sections || [])
+    .map((s) => String(s).toLowerCase()));
+  const missingNames = new Set((compFilter.missing_sections || [])
+    .map((s) => String(s).toLowerCase()));
+  const compLabel = (name) =>
+    (compFilter.detected_sections || []).find(
+      (s) => String(s).toLowerCase() === name)
+    || (compFilter.missing_sections || []).find(
+      (s) => String(s).toLowerCase() === name) || name;
+  const canonName = (raw) => {
+    const n = String(raw || "").toLowerCase();
+    if (n.includes("responsib")) return "responsibilities";
+    if (n.includes("summary") || n.includes("objective")
+        || n.includes("profile")) return "professional summary";
+    if (n.includes("achiev")) return "achievements";
+    if (n.includes("skill")) return "skills";
+    if (n.includes("experience")) return "work experience";
+    if (n.includes("education")) return "education";
+    if (n.includes("project")) return "projects";
+    if (n.includes("certif")) return "certifications";
+    if (n.includes("contact")) return "contact information";
+    return n;
+  };
+  const aiVerdict = {};
+  const analysis = record.analysis && record.analysis.status === "success"
+    ? record.analysis : null;
+  if (analysis) {
+    const ev = analysis.evaluation || {};
+    for (const s of ev.matching_sections || []) {
+      aiVerdict[canonName(s.section)] =
+        s.original_heading && !/heading/i.test(s.original_heading)
+          ? `Present — found as “${s.original_heading}”`
+          : "Present (content identified)";
+    }
+    for (const s of ev.missing_sections || []) {
+      aiVerdict[canonName(s.section)] = "Not identified";
+    }
+  }
+  const compared = new Set();
+  const comparisonRows = [];
+  for (const key of [...detectedNames, ...missingNames]) {
+    if (!aiVerdict[key]) continue;
+    compared.add(key);
+    const yamlText = detectedNames.has(key)
+      ? "Detected by YAML rules"
+      : "Not detected by YAML rules";
+    const differs = (detectedNames.has(key) && aiVerdict[key].startsWith("Not"))
+      || (missingNames.has(key) && !aiVerdict[key].startsWith("Not"));
+    comparisonRows.push(`<tr>
+      <td><strong>${escapeHtml(compLabel(key))}</strong></td>
+      <td>${escapeHtml(yamlText)}</td>
+      <td>${escapeHtml(aiVerdict[key])}</td>
+      <td>${differs
+        ? '<span class="chip chip-warn">Different method, different result</span>'
+        : '<span class="chip chip-ok">Agree</span>'}</td>
+    </tr>`);
+  }
+  const comparisonHtml = comparisonRows.length ? `
+    <details class="eval-group" style="margin:12px 0">
+      <summary>YAML rules vs AI interpretation — same resume, two methods</summary>
+      <p class="hint" style="margin:6px 0">The rule-based checker detects configured headings and patterns; the AI reads meaning. A section can be invisible to the YAML rules yet present in the content (for example, responsibilities inside Work Experience) — that is a difference in detection method, not necessarily an error in either system. Neither result overwrites the other.</p>
+      <div style="overflow-x:auto"><table class="data-table">
+        <thead><tr><th>Section</th><th>Rule-Based (YAML)</th><th>AI Semantic (Muse AI)</th><th></th></tr></thead>
+        <tbody>${comparisonRows.join("")}</tbody></table></div>
+    </details>` : "";
+  const sourceBanner = `<div class="sys-banner sys-banner-yaml">
+      <strong>Rule-Based Quality Check (YAML)</strong>
+      <span class="hint">Deterministic Python checks driven by the YAML configuration: text health, reading order, and detection of configured section headings and patterns. This validates extraction quality and drives extractor acceptance/fallback. “Not detected” means the rules did not identify the section — not that the content is absent. This score is a different metric from the AI Completeness Score and is never combined with it.</span>
+    </div>`;
   const cards = components.map(({ label, filter }) => {
     const flags = filter.flags || [];
     const reasons = filter.reasons || [];
@@ -630,14 +731,16 @@ function qualityReportHtml(record) {
     </div>`;
   }).join("");
   return `
+    ${sourceBanner}
     <div class="inline-row mb">
-      <strong>Overall Quality Score: ${score === null ? "N/A" : score + "/100"}</strong>
+      <strong>Rule-Based Quality Score: ${score === null ? "N/A" : score + "/100"}</strong>
       <span class="chip ${quality.status === "PASS" ? "chip-ok" : quality.status === "WARNING" ? "chip-warn" : "chip-bad"}">${escapeHtml(quality.status || "")}</span>
-      <span class="hint">Overall = mean of the component scores below, as returned by the Quality Checker.</span>
+      <span class="hint">Mean of the three rule-based components below, as returned by the Quality Checker. A different metric from the AI scores — never combined with them.</span>
     </div>
     ${record.selection_reason ? `<p class="hint">Selection: ${escapeHtml(record.selection_reason)}</p>` : ""}
     ${(record.warnings || []).length ? `<p class="hint">Warnings: ${(record.warnings || []).map(escapeHtml).join(" · ")}</p>` : ""}
-    <div class="quality-components">${cards}</div>`;
+    <div class="quality-components">${cards}</div>
+    ${comparisonHtml}`;
 }
 
 function tokenUsageHtml(record) {
@@ -689,6 +792,503 @@ function tokenUsageHtml(record) {
       <tbody>${rows}</tbody></table>` : ""}`;
 }
 
+/* ------------------------------------------------------------------ */
+/* AI Evaluation (evaluation/ package) — Resume Details section.     */
+/* Everything renders from the record's stored analysis entries;     */
+/* no score is ever shown that the backend did not store.            */
+/* ------------------------------------------------------------------ */
+
+const evalViewState = {}; // resume_id -> analysis_id being viewed
+
+/* Failure kinds the backend records on a failed analysis entry
+   (evaluation/service.py + schema.py categories), so the banner
+   tells the user WHAT failed instead of one generic message. */
+const EVAL_FAILURE_LABELS = {
+  empty_response: "Empty response from the model",
+  token_limit: "Output token limit — response truncated",
+  invalid_json: "Response was not valid JSON",
+  schema_invalid: "Response failed schema validation",
+  api: "Muse API failure",
+};
+
+function evalFailureCategory(entry) {
+  const d = (entry && entry.diagnostics) || {};
+  if (d.failure_category) return d.failure_category;
+  const err = String((entry && entry.error) || "");
+  const m = err.match(/(empty_response|token_limit|invalid_json|schema_invalid)/);
+  if (m) return m[1];
+  if (/not configured|api key/i.test(err)) return "api";
+  if (/Evaluation response failed validation/.test(err)) return "invalid_json";
+  return "api";
+}
+
+function evalFailureLabel(entry) {
+  return EVAL_FAILURE_LABELS[evalFailureCategory(entry)] || "Evaluation failed";
+}
+
+function evalFailureDetail(entry) {
+  const d = (entry && entry.diagnostics) || {};
+  if (d.failure_detail) return d.failure_detail;
+  return String((entry && entry.error) || "unknown error")
+    .replace(/^Evaluation response failed validation: /, "")
+    .replace(/^(empty_response|token_limit|invalid_json|schema_invalid): /, "");
+}
+
+function evalClassChip(classification) {
+  const map = { "Excellent": "chip-ok", "Good": "chip-info",
+    "Average": "chip-warn", "Needs Improvement": "chip-warn",
+    "Poor": "chip-bad" };
+  return `<span class="chip ${map[classification] || ""}">${escapeHtml(classification || "")}</span>`;
+}
+
+function evalImportanceChip(importance) {
+  const map = { "Critical": "chip-bad", "High": "chip-warn",
+    "Medium": "chip-info", "Low": "" };
+  return `<span class="chip ${map[importance] || ""}">${escapeHtml(importance || "")}</span>`;
+}
+
+function evalScoreBar(score) {
+  const pct = Math.max(0, Math.min(100, Number(score) || 0));
+  const color = pct >= 85 ? "var(--ok)" : pct >= 70 ? "var(--primary)"
+    : pct >= 50 ? "var(--warn)" : "var(--bad)";
+  return `<div class="score-bar"><div class="score-fill" style="width:${pct}%;background:${color}"></div></div>`;
+}
+
+function evalList(items) {
+  const list = (items || []).filter((x) => x != null && String(x).trim());
+  if (!list.length) return '<p class="hint">None recorded.</p>';
+  return `<ul class="eval-list">${list.map((x) => `<li>${escapeHtml(x)}</li>`).join("")}</ul>`;
+}
+
+function evalExplanationHtml(explanation) {
+  const e = explanation || {};
+  const parts = [];
+  if (e.why_low) parts.push(`<p>${escapeHtml(e.why_low)}</p>`);
+  const block = (title, items) => {
+    if ((items || []).length) {
+      parts.push(`<h5>${title}</h5>${evalList(items)}`);
+    }
+  };
+  block("Contributing sections", e.contributing_sections);
+  block("Missing information", e.missing_information);
+  block("Problems found", e.problems);
+  block("Improvements", e.improvements);
+  block("Do these first", e.priorities);
+  if (!parts.length) return '<p class="hint">No explanation was stored for this score.</p>';
+  return parts.join("");
+}
+
+function evalScoreRing(score, size) {
+  /* Circular progress ring (SVG, same hand-rolled style as the
+     Analytics charts — no chart library in this project). Colour
+     follows the classification bands: green >= 85, blue 70-84,
+     amber 50-69, red below 50. */
+  const pct = Math.max(0, Math.min(100, Number(score) || 0));
+  const radius = 34, circumference = 2 * Math.PI * radius;
+  const color = pct >= 85 ? "var(--ok)" : pct >= 70 ? "var(--primary)"
+    : pct >= 50 ? "var(--warn)" : "var(--bad)";
+  const px = size || 84;
+  return `<svg class="eval-ring" width="${px}" height="${px}" viewBox="0 0 84 84" role="img" aria-label="Score ${pct} of 100">
+    <circle cx="42" cy="42" r="${radius}" fill="none" stroke="var(--border)" stroke-width="7"/>
+    <circle cx="42" cy="42" r="${radius}" fill="none" stroke="${color}" stroke-width="7"
+      stroke-linecap="round" stroke-dasharray="${(circumference * pct / 100).toFixed(1)} ${circumference.toFixed(1)}"
+      transform="rotate(-90 42 42)"/>
+    <text x="42" y="40" text-anchor="middle" class="eval-ring-score">${score != null ? escapeHtml(String(Math.round(Number(score)))) : "—"}</text>
+    <text x="42" y="56" text-anchor="middle" class="eval-ring-max">/ 100</text>
+  </svg>`;
+}
+
+function evalScoreCardHtml(label, block) {
+  const b = block || {};
+  const e = b.explanation || {};
+  return `<div class="eval-score-card">
+    <div class="eval-score-ringwrap">${evalScoreRing(b.score)}
+      <div class="eval-score-side">
+        <div class="eval-score-label">${escapeHtml(label)}</div>
+        <div title="85–100 Excellent · 70–84 Good · 50–69 Average · 30–49 Needs Improvement · 0–29 Poor">${evalClassChip(b.classification)}</div>
+        ${e.why_low ? `<p class="eval-score-why">${escapeHtml(e.why_low)}</p>` : ""}
+      </div>
+    </div>
+    <details class="eval-details"><summary>Why this score</summary>
+      ${evalExplanationHtml(b.explanation)}</details>
+  </div>`;
+}
+
+const evalTabState = {}; // resume_id -> active dashboard tab
+
+function evalBandOf(score) {
+  const n = Number(score) || 0;
+  return n >= 85 ? "Excellent" : n >= 70 ? "Good" : n >= 50 ? "Average"
+    : n >= 30 ? "Needs Improvement" : "Poor";
+}
+
+function evalTopRoleCardHtml(ev, roles) {
+  /* Third score card: role suitability summary — highlights the
+     best role, NEVER merges the three independent scores. */
+  const top = roles && roles.length ? roles[0] : null;
+  const suitableCount = (ev.suitable_roles || []).length;
+  if (!top) {
+    return `<div class="eval-score-card">
+      <div class="eval-score-label">Role Suitability</div>
+      <p class="hint">No role reached the suitability threshold in this evaluation.</p>
+    </div>`;
+  }
+  return `<div class="eval-score-card eval-top-role">
+    <div class="eval-score-ringwrap">${evalScoreRing(top.score)}
+      <div class="eval-score-side">
+        <div class="eval-score-label">Top Role Match</div>
+        <div class="eval-top-role-name">${escapeHtml(top.role)}</div>
+        <div title="85–100 Excellent · 70–84 Good · 50–69 Average · 30–49 Needs Improvement · 0–29 Poor">${evalClassChip(evalBandOf(top.score))}</div>
+        <p class="eval-score-why">${suitableCount} suitable role${suitableCount === 1 ? "" : "s"} in this evaluation — see the Role Analysis tab for all ${roles.length} evaluated roles.</p>
+      </div>
+    </div>
+  </div>`;
+}
+
+function evalRoleCompareHtml(roles) {
+  /* Compact comparison strip: every evaluated role, one bar each,
+     sorted by score (the caller sorts). Complements the cards. */
+  if (!roles.length) return "";
+  const rows = roles.map((r) => {
+    const pct = Math.max(0, Math.min(100, Number(r.score) || 0));
+    const color = pct >= 85 ? "var(--ok)" : pct >= 70 ? "var(--primary)"
+      : pct >= 50 ? "var(--warn)" : "var(--bad)";
+    return `<div class="eval-compare-row">
+      <span class="eval-compare-name">${escapeHtml(r.role)}</span>
+      <span class="eval-compare-track"><span class="eval-compare-fill" style="width:${pct}%;background:${color}"></span></span>
+      <span class="eval-compare-score">${r.score != null ? escapeHtml(String(r.score)) : "—"}</span>
+    </div>`;
+  }).join("");
+  return `<div class="eval-compare"><h4>Role Comparison — all evaluated roles</h4>${rows}</div>`;
+}
+
+function evalRoleCardHtml(r, isTop) {
+  return `<div class="role-card${isTop ? " role-card-top" : ""}">
+      <div class="role-head"><strong>${escapeHtml(r.role)}</strong>${isTop ? ' <span class="chip chip-ok">Top match</span>' : ""}
+        <span class="role-score">${r.score != null ? escapeHtml(String(r.score)) : "—"}/100</span></div>
+      ${evalScoreBar(r.score)}
+      <div class="role-class">${evalClassChip(evalBandOf(r.score))}</div>
+      ${r.explanation ? `<p>${escapeHtml(r.explanation)}</p>` : ""}
+      ${(r.matching_skills || []).length ? `<div class="role-line"><span class="role-line-label">Matching skills</span>${r.matching_skills.map((s) => `<span class="chip chip-ok">${escapeHtml(s)}</span>`).join(" ")}</div>` : ""}
+      ${(r.missing_skills || []).length ? `<div class="role-line"><span class="role-line-label">Missing skills</span>${r.missing_skills.map((s) => `<span class="chip chip-warn">${escapeHtml(s)}</span>`).join(" ")}</div>` : ""}
+      ${(r.relevant_projects || []).length ? `<div class="role-line"><span class="role-line-label">Relevant projects</span>${r.relevant_projects.map((p) => `<span class="chip">${escapeHtml(p)}</span>`).join(" ")}</div>` : ""}
+      ${(r.relevant_experience || []).length ? `<div class="role-line"><span class="role-line-label">Relevant experience</span>${r.relevant_experience.map((p) => `<span class="chip">${escapeHtml(p)}</span>`).join(" ")}</div>` : ""}
+      ${(r.evidence || []).length ? `<details class="eval-details"><summary>Supporting evidence</summary>${evalList(r.evidence)}</details>` : ""}
+    </div>`;
+}
+
+function evalSectionStatus(s) {
+  const raw = String(s.completeness_status || s.presence_status || "")
+    .toLowerCase();
+  if (raw.includes("insufficient")) return "insufficient";
+  if (raw.includes("partial")) return "partial";
+  if (raw.includes("complete") || raw.includes("present")) return "complete";
+  return "partial";
+}
+
+function evalSectionSummaryHtml(ev) {
+  /* Section completeness overview (spec §4): counts + a stacked
+     bar + stored quality text. "Average section quality" is shown
+     only when the evaluation stored a numeric value — the section
+     quality_assessment field is free text in this schema, so the
+     UI shows the distribution instead of inventing a number. */
+  const matching = ev.matching_sections || [];
+  const missing = ev.missing_sections || [];
+  let complete = 0, partial = 0, insufficient = 0;
+  for (const s of matching) {
+    const st = evalSectionStatus(s);
+    if (st === "complete") complete += 1;
+    else if (st === "insufficient") insufficient += 1;
+    else partial += 1;
+  }
+  const missingCount = missing.filter(
+    (m) => String(m.status || "missing").toLowerCase() !== "insufficient").length;
+  const insuffCount = insufficient + missing.filter(
+    (m) => String(m.status || "").toLowerCase() === "insufficient").length;
+  const total = matching.length + missing.length;
+  if (!total) return "";
+  const seg = (n, color) => n > 0
+    ? `<span style="width:${(n / total * 100).toFixed(1)}%;background:${color}"></span>` : "";
+  return `<div class="eval-section-summary">
+    <div class="eval-stat-row">
+      <span><strong>${total}</strong> sections evaluated</span>
+      <span class="eval-stat-ok"><strong>${complete}</strong> complete</span>
+      <span class="eval-stat-warn"><strong>${partial}</strong> partial</span>
+      <span class="eval-stat-bad"><strong>${insuffCount}</strong> insufficient</span>
+      <span class="eval-stat-bad"><strong>${missingCount}</strong> missing</span>
+    </div>
+    <div class="eval-stack">${seg(complete, "var(--ok)")}${seg(partial, "var(--warn)")}${seg(insuffCount, "#f59e0b")}${seg(missingCount, "var(--bad)")}</div>
+  </div>`;
+}
+
+function evalMatchingCardHtml(s) {
+  const st = evalSectionStatus(s);
+  const chip = st === "complete" ? '<span class="chip chip-ok">Complete</span>'
+    : st === "insufficient" ? '<span class="chip chip-bad">Insufficient</span>'
+    : '<span class="chip chip-warn">Partial</span>';
+  return `<div class="eval-item-card">
+    <div class="eval-item-head"><strong>${escapeHtml(s.section)}</strong>${chip}</div>
+    ${s.original_heading ? `<div class="hint">Found as: “${escapeHtml(s.original_heading)}”</div>` : ""}
+    ${s.summary ? `<p>${escapeHtml(s.summary)}</p>` : ""}
+    ${s.quality_assessment ? `<div class="hint">Quality: ${escapeHtml(s.quality_assessment)}</div>` : ""}
+    ${s.remarks ? `<div class="hint">${escapeHtml(s.remarks)}</div>` : ""}
+    ${(s.evidence || []).length ? `<details class="eval-details"><summary>Evidence</summary>${evalList(s.evidence)}</details>` : ""}
+  </div>`;
+}
+
+function evalMissingCardHtml(s) {
+  const status = String(s.status || "missing").toLowerCase() === "insufficient"
+    ? '<span class="chip chip-warn">Insufficient</span>'
+    : '<span class="chip chip-bad">Missing</span>';
+  return `<div class="eval-item-card eval-item-missing">
+    <div class="eval-item-head"><strong>${escapeHtml(s.section)}</strong>${status}${evalImportanceChip(s.importance)}</div>
+    ${s.reason ? `<p>${escapeHtml(s.reason)}</p>` : ""}
+    ${s.impact ? `<div class="hint">Impact: ${escapeHtml(s.impact)}</div>` : ""}
+    ${s.recommendation ? `<div class="hint">Improvement: ${escapeHtml(s.recommendation)}</div>` : ""}
+    ${(s.evidence || []).length ? `<details class="eval-details"><summary>Evidence</summary>${evalList(s.evidence)}</details>` : ""}
+  </div>`;
+}
+
+function evalGthCardHtml(g) {
+  return `<div class="eval-item-card">
+    <div class="eval-item-head"><strong>${escapeHtml(g.section)}</strong>${g.present ? '<span class="chip chip-ok">Present</span>' : '<span class="chip">Not present</span>'}</div>
+    ${g.relevance ? `<div class="hint">Relevance: ${escapeHtml(g.relevance)}</div>` : ""}
+    ${g.potential_value ? `<div class="hint">Potential value: ${escapeHtml(g.potential_value)}</div>` : ""}
+    ${g.recommendation ? `<div class="hint">Recommendation: ${escapeHtml(g.recommendation)}</div>` : ""}
+  </div>`;
+}
+
+function evalInsightsHtml(ev) {
+  /* Resume Improvement Insights (spec §6): built ONLY from data
+     the evaluation actually stored — the score explanations'
+     priorities/improvements, missing sections' recommendations,
+     and the two explanations' problem/missing lists. Every card
+     traces to a stored field: priority (from the stored order /
+     section importance), current issue (stored reason/problem),
+     suggested improvement (stored recommendation), expected
+     benefit (stored impact where one exists). */
+  const cards = [];
+  const push = (priority, issue, improvement, benefit) => {
+    if (!improvement && !issue) return;
+    cards.push({ priority, issue: issue || "", improvement: improvement || "",
+                 benefit: benefit || "" });
+  };
+  for (const block of [ev.completeness, ev.quality]) {
+    const e = (block && block.explanation) || {};
+    (e.priorities || []).forEach((p, i) => push(
+      i === 0 ? "High" : "Medium", e.why_low || "", p, ""));
+    (e.improvements || []).forEach((imp) => {
+      if (!(e.priorities || []).includes(imp)) push("Medium", "", imp, "");
+    });
+  }
+  const impRank = { "Critical": 0, "High": 1, "Medium": 2, "Low": 3 };
+  const missing = [...(ev.missing_sections || [])].sort(
+    (a, b) => (impRank[a.importance] ?? 2) - (impRank[b.importance] ?? 2));
+  for (const m of missing) {
+    push(m.importance || "Medium",
+         m.reason ? `${m.section}: ${m.reason}` : m.section,
+         m.recommendation || "", m.impact || "");
+  }
+  (ev.recommendations || []).forEach((r) => push("Medium", "", r, ""));
+  const seen = new Set();
+  const unique = cards.filter((c) => {
+    const key = (c.improvement || c.issue).toLowerCase();
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  }).slice(0, 8);
+  if (!unique.length) return '<p class="hint">No improvement insights were stored for this evaluation.</p>';
+  return `<div class="eval-insights">${unique.map((c, i) => `
+    <div class="eval-insight-card">
+      <div class="eval-item-head"><span class="eval-insight-num">${i + 1}</span><strong>${escapeHtml(c.improvement || c.issue)}</strong>${evalImportanceChip(c.priority)}</div>
+      ${c.issue && c.improvement ? `<div class="hint">Current issue: ${escapeHtml(c.issue)}</div>` : ""}
+      ${c.benefit ? `<div class="hint">Expected benefit: ${escapeHtml(c.benefit)}</div>` : ""}
+    </div>`).join("")}</div>`;
+}
+
+function evalDetailsHtml(entry) {
+  const tokens = entry.tokens || {};
+  const rows = [
+    ["Model", entry.model || "—"],
+    ["Analysis version", "v" + String(entry.analysis_version ?? "—")],
+    ["YAML version", entry.yaml_version || "—"],
+    ["Evaluation date", fmtDate(entry.created_at)],
+    ["Input tokens", tokens.input != null ? fmtNum(tokens.input) : "—"],
+    ["Output tokens", tokens.output != null ? fmtNum(tokens.output) : "—"],
+    ["Total tokens", tokens.total != null ? fmtNum(tokens.total) : "—"],
+    ["Reasoning tokens", entry.reasoning_tokens != null ? fmtNum(entry.reasoning_tokens) : "—"],
+    ["Duration", entry.duration_ms != null ? fmtMs(entry.duration_ms) : "—"],
+    ["Status", entry.status || "—"],
+  ];
+  if (entry.recovery && entry.recovery.attempted) {
+    rows.push(["JSON recovery", entry.recovery.success
+      ? "Recovered via one JSON-correction call"
+      : "Correction attempted, still failed"]);
+  }
+  return `<details class="eval-details eval-tech-details"><summary>Evaluation Details (technical)</summary>
+    <table class="data-table eval-meta-table"><tbody>
+    ${rows.map(([k, v]) => `<tr><td><strong>${escapeHtml(k)}</strong></td><td>${escapeHtml(String(v))}</td></tr>`).join("")}
+    </tbody></table>
+    <p class="hint">Evaluation tokens only — extraction token usage is tracked separately on this record.</p>
+  </details>`;
+}
+
+function evaluationEntryHtml(entry, record) {
+  const ev = entry.evaluation || {};
+  const cand = ev.candidate || {};
+  const roles = [...(ev.role_suitability || [])]
+    .sort((a, b) => (b.score || 0) - (a.score || 0));
+  const activeTab = evalTabState[record.resume_id] || "overview";
+  const tabBtn = (id, label) =>
+    `<button type="button" class="eval-tab${activeTab === id ? " eval-tab-active" : ""}" data-eval-tab="${id}">${label}</button>`;
+
+  const overviewTab = `
+    <div class="eval-score-grid">
+      ${evalScoreCardHtml("Completeness Score", ev.completeness)}
+      ${evalScoreCardHtml("Resume Quality Score", ev.quality)}
+      ${evalTopRoleCardHtml(ev, roles)}
+    </div>
+    ${roles.length ? evalRoleCompareHtml(roles.slice(0, 6)) : ""}
+    ${evalSectionSummaryHtml(ev)}
+    <div class="eval-cols">
+      <div class="eval-panel eval-panel-ok"><h4>Strengths</h4>${evalList(ev.strengths)}</div>
+      <div class="eval-panel eval-panel-warn"><h4>Weaknesses</h4>${evalList(ev.weaknesses)}</div>
+      <div class="eval-panel"><h4>Recommendations</h4>${evalList(ev.recommendations)}</div>
+    </div>`;
+
+  const rolesTab = roles.length
+    ? evalRoleCompareHtml(roles)
+      + roles.map((r, i) => evalRoleCardHtml(r, i === 0)).join("")
+    : '<p class="hint">No roles were evaluated for this resume.</p>';
+
+  const gthPresent = (ev.good_to_have || []).filter((g) => g.present);
+  const gthMissing = (ev.good_to_have || []).filter((g) => !g.present);
+  const sectionsTab = `
+    ${evalSectionSummaryHtml(ev)}
+    ${(ev.matching_sections || []).length ? `<details open class="eval-group"><summary>Matching Sections (${(ev.matching_sections || []).length})</summary>
+      <div class="eval-card-grid">${(ev.matching_sections || []).map(evalMatchingCardHtml).join("")}</div></details>` : ""}
+    ${(ev.missing_sections || []).length ? `<details open class="eval-group"><summary>Missing / Insufficient Sections (${(ev.missing_sections || []).length})</summary>
+      <div class="eval-card-grid">${(ev.missing_sections || []).map(evalMissingCardHtml).join("")}</div></details>` : ""}
+    ${gthPresent.length ? `<details class="eval-group"><summary>Good-to-Have — Present (${gthPresent.length})</summary>
+      <div class="eval-card-grid">${gthPresent.map(evalGthCardHtml).join("")}</div></details>` : ""}
+    ${gthMissing.length ? `<details class="eval-group"><summary>Good-to-Have — Not Present (${gthMissing.length})</summary>
+      <div class="eval-card-grid">${gthMissing.map(evalGthCardHtml).join("")}</div></details>` : ""}`;
+
+  const insightsTab = evalInsightsHtml(ev);
+
+  return `
+    <div class="eval-candidate">
+      <div class="eval-candidate-main">
+        ${cand.name ? `<span class="eval-candidate-name">${escapeHtml(cand.name)}</span>` : ""}
+        ${cand.headline ? `<span class="eval-candidate-headline">${escapeHtml(cand.headline)}</span>` : ""}
+        ${ev.career_stage ? `<span class="chip chip-info">${escapeHtml(ev.career_stage)}</span>` : ""}
+        ${ev.professional_domain ? `<span class="chip">${escapeHtml(ev.professional_domain)}</span>` : ""}
+      </div>
+      ${cand.summary ? `<div class="hint eval-candidate-summary">${escapeHtml(cand.summary)}</div>` : ""}
+      <div class="hint">Evaluated ${escapeHtml(fmtDate(entry.created_at))} · Model ${escapeHtml(entry.model || "—")} · Analysis v${escapeHtml(String(entry.analysis_version ?? "—"))}</div>
+    </div>
+    <div class="eval-tabs" role="tablist">
+      ${tabBtn("overview", "Overview")}${tabBtn("roles", "Role Analysis")}${tabBtn("sections", "Section Analysis")}${tabBtn("insights", "Improvement Insights")}
+    </div>
+    <div class="eval-tab-panel" data-eval-panel="overview" ${activeTab !== "overview" ? "hidden" : ""}>${overviewTab}</div>
+    <div class="eval-tab-panel" data-eval-panel="roles" ${activeTab !== "roles" ? "hidden" : ""}>${rolesTab}</div>
+    <div class="eval-tab-panel" data-eval-panel="sections" ${activeTab !== "sections" ? "hidden" : ""}>${sectionsTab}</div>
+    <div class="eval-tab-panel" data-eval-panel="insights" ${activeTab !== "insights" ? "hidden" : ""}>${insightsTab}</div>
+    ${evalDetailsHtml(entry)}`;
+}
+
+function evaluationBodyHtml(record) {
+  const analyses = Array.isArray(record.analyses) ? record.analyses : [];
+  const successes = analyses.filter((a) => a && a.status === "success");
+  const latest = analyses.length ? analyses[analyses.length - 1] : null;
+  const latestSuccess = (record.analysis && record.analysis.status === "success")
+    ? record.analysis : (successes.length ? successes[successes.length - 1] : null);
+  const viewedId = evalViewState[record.resume_id];
+  const entry = successes.find((a) => a.analysis_id === viewedId) || latestSuccess;
+  const viewingOlder = entry && latestSuccess && entry.analysis_id !== latestSuccess.analysis_id;
+  const versionOptions = successes.map((a) =>
+    `<option value="${escapeHtml(a.analysis_id)}" ${entry && a.analysis_id === entry.analysis_id ? "selected" : ""}>v${escapeHtml(String(a.analysis_version))} — ${escapeHtml(fmtDate(a.created_at))}</option>`).join("");
+  const failedBanner = latest && latest.status === "failed"
+    && (!entry || (latest.created_at || "") > (entry.created_at || ""))
+    ? `<div class="error-box">Latest evaluation attempt failed — ${escapeHtml(evalFailureLabel(latest))}: ${escapeHtml(evalFailureDetail(latest))} The previous successful evaluation below is unchanged.</div>` : "";
+  const sourceBanner = `<div class="sys-banner sys-banner-ai">
+      <strong>AI Semantic Evaluation (Muse AI)</strong>
+      <span class="hint">Understands the resume's content — responsibilities embedded in Work Experience, achievements without headings, completeness, quality and role suitability. Independent of the rule-based Quality Report; the two systems measure different things and may legitimately differ on the same section.</span>
+    </div>`;
+  return `
+    <div class="panel-toolbar">
+      <button class="btn btn-small btn-primary" id="analyzeBtn" type="button">${entry ? "Re-analyze" : "Analyze Resume"}</button>
+      ${successes.length > 1 ? `<label class="hint">Version
+        <select id="evalVersionSelect" class="select-input" style="width:auto">${versionOptions}</select></label>` : ""}
+      ${viewingOlder ? '<span class="chip chip-warn">Viewing an older analysis (read-only)</span>' : ""}
+      <span class="hint">${analyses.length ? `${analyses.length} evaluation attempt(s) recorded` : "Muse AI evaluation of this resume — sections, three independent scores, and role suitability."}</span>
+    </div>
+    ${sourceBanner}
+    ${failedBanner}
+    ${entry ? evaluationEntryHtml(entry, record)
+      : `<div class="empty-state eval-empty">
+           <p><strong>No AI evaluation yet for this resume.</strong></p>
+           <p class="hint">Run Analyze to generate one from the stored Selected Normalized Text. Extraction is not re-run, and the rule-based Quality Report is unaffected.</p>
+         </div>`}`;
+}
+
+function wireEvaluation(record) {
+  // Dashboard tabs (Overview / Role Analysis / Section Analysis /
+  // Improvement Insights): clicking swaps the visible panel in
+  // place — the stored evaluation is already fully rendered.
+  document.querySelectorAll("[data-eval-tab]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const tab = btn.getAttribute("data-eval-tab");
+      evalTabState[record.resume_id] = tab;
+      document.querySelectorAll("[data-eval-tab]").forEach((b) =>
+        b.classList.toggle("eval-tab-active",
+                           b.getAttribute("data-eval-tab") === tab));
+      document.querySelectorAll("[data-eval-panel]").forEach((panel) => {
+        panel.hidden = panel.getAttribute("data-eval-panel") !== tab;
+      });
+    });
+  });
+  const analyzeBtn = $("analyzeBtn");
+  if (analyzeBtn) {
+    analyzeBtn.addEventListener("click", async () => {
+      const body = $("evaluationBody");
+      if (body) body.innerHTML = '<div class="loading">Evaluating with Muse AI… (no timeout — a slow response is still running)</div>';
+      try {
+        const result = await Api.analyzeResume(record.resume_id);
+        if (result && result.record) {
+          state.recordCache[record.resume_id] = result.record;
+          record = result.record;
+        }
+        delete evalViewState[record.resume_id];
+        if (result && result.analysis && result.analysis.status === "success") {
+          toast("AI evaluation completed.", "success");
+        } else {
+          toast((result && result.analysis && result.analysis.error) || "Evaluation failed.", "error");
+        }
+      } catch (err) {
+        toast(err.message, "error");
+        record = state.recordCache[record.resume_id] || record;
+      }
+      const bodyEl = $("evaluationBody");
+      if (bodyEl) {
+        bodyEl.innerHTML = evaluationBodyHtml(record);
+        wireEvaluation(record);
+      }
+    });
+  }
+  const versionSelect = $("evalVersionSelect");
+  if (versionSelect) {
+    versionSelect.addEventListener("change", (e) => {
+      evalViewState[record.resume_id] = e.target.value;
+      const body = $("evaluationBody");
+      if (body) {
+        body.innerHTML = evaluationBodyHtml(record);
+        wireEvaluation(record);
+      }
+    });
+  }
+}
+
 async function renderResume(id, params) {
   const view = $("view-resume");
   view.innerHTML = '<div class="loading">Loading resume…</div>';
@@ -707,6 +1307,14 @@ async function renderResume(id, params) {
   const normalizedText = norm.normalized_text
     || (record.normalization && record.normalization.normalized_text) || "";
   const activeTab = ["text", "normalized", "selected", "ai"].includes(params.tab) ? params.tab : "text";
+  // Primary details tab: AI Evaluation is the default view whenever
+  // a successful evaluation exists (or an attempt was recorded);
+  // a URL #...&tab= deep link may still choose another tab.
+  const hasEvaluation = !!((record.analysis
+      && record.analysis.status === "success")
+    || (record.analyses || []).length);
+  const primaryTab = params.ptab
+    || (hasEvaluation ? "evaluation" : "extracted");
 
   // --- Shared extractor viewer state -------------------------------------
   // ONE extractor selector above the tabs drives BOTH the Extracted and
@@ -797,6 +1405,31 @@ async function renderResume(id, params) {
     </div>`;
   }
 
+  const skippedSet = new Set((record.skipped_extractors || [])
+    .map((s) => String(s).toLowerCase()));
+  const pipelineStages = ["tika", "pymupdf", "docling", "ocr"].map((name) => {
+    const a = toolAttempts.find((x) => x.extractor_name === name);
+    const isFinal = a && (a.is_final_selected || a.selected
+      || (finalAttempt && a === finalAttempt));
+    let status, chipCls;
+    if (isFinal) { status = "Accepted — final selected"; chipCls = "chip-ok"; }
+    else if (a && a.accepted) { status = "Accepted"; chipCls = "chip-ok"; }
+    else if (a && a.success === false) { status = "Failed"; chipCls = "chip-bad"; }
+    else if (a) { status = "Not selected"; chipCls = "chip-warn"; }
+    else if (skippedSet.has(name)) { status = "Skipped"; chipCls = ""; }
+    else { status = "Not executed"; chipCls = ""; }
+    return `<div class="pipe-stage${isFinal ? " pipe-stage-final" : ""}">
+      <div class="pipe-stage-name">${escapeHtml(engineLabel(name))}</div>
+      <span class="chip ${chipCls}">${status}</span>
+      ${a ? `<div class="hint">${a.quality_status ? "Quality " + escapeHtml(a.quality_status) + " · " : ""}${a.duration_ms != null ? fmtMs(a.duration_ms) : ""}${(a.error || a.error_message) ? " · " + escapeHtml(String(a.error || a.error_message).slice(0, 120)) : ""}</div>` : ""}
+    </div>`;
+  }).join('<div class="pipe-arrow" aria-hidden="true">→</div>');
+
+  const ptabBtn = (id, label) =>
+    `<button type="button" data-ptab="${id}" class="${primaryTab === id ? "active" : ""}" role="tab" aria-selected="${primaryTab === id}">${label}</button>`;
+  const ptabPanel = (id, inner) =>
+    `<div data-ppanel="${id}" ${primaryTab === id ? "" : "hidden"}>${inner}</div>`;
+
   view.innerHTML = `
     <p><a href="#/history">← Back to History</a></p>
     <div class="card">
@@ -805,14 +1438,14 @@ async function renderResume(id, params) {
           <div class="result-title">${escapeHtml(record.filename || "Untitled")}</div>
           <div class="result-meta">${escapeHtml(fmtBytes(record.file_size_bytes))} · ${escapeHtml(record.file_type || "")} ·
             Uploaded ${escapeHtml(fmtDate(record.uploaded_at))} ·
-            Extractor used: ${escapeHtml(engineLabel(record.extractor_used))}</div>
+            Final Extractor: ${escapeHtml(engineLabel(finalExtractorName(record) || record.extractor_used))}</div>
           <div style="margin-top:6px">${statusChip(record)}</div>
         </div>
         ${menuHtml(record)}
       </div>
       ${record.error ? `<div class="error-box">${escapeHtml(record.error)}</div>` : ""}
       <div class="metric-grid">
-        <div class="metric"><div class="metric-label">Quality Score</div><div class="metric-value">${overallScore(record) === null ? "N/A" : overallScore(record) + "/100"}</div></div>
+        <div class="metric"><div class="metric-label">Quality Score (Rule-Based)</div><div class="metric-value">${overallScore(record) === null ? "N/A" : overallScore(record) + "/100"}</div></div>
         <div class="metric"><div class="metric-label">Total Tokens</div><div class="metric-value">${record.token_usage && record.token_usage.usage_available ? fmtNum(record.token_usage.total_tokens) : "N/A"}</div></div>
         <div class="metric"><div class="metric-label">Duration</div><div class="metric-value">${fmtMs(record.duration_ms)}</div></div>
         <div class="metric"><div class="metric-label">Attempts</div><div class="metric-value">${(record.attempts || []).length}</div></div>
@@ -820,6 +1453,27 @@ async function renderResume(id, params) {
       </div>
     </div>
 
+    <div class="tabs detail-tabs" role="tablist" aria-label="Resume detail sections">
+      ${ptabBtn("evaluation", "AI Evaluation")}
+      ${ptabBtn("quality", "Quality Report")}
+      ${ptabBtn("extracted", "Extracted Data")}
+      ${ptabBtn("pipeline", "Extraction Pipeline")}
+      ${ptabBtn("usage", "Usage & History")}
+    </div>
+
+    ${ptabPanel("evaluation", `
+    <div class="card" id="evaluationSection">
+      <h3>AI Evaluation <span class="hint" style="font-weight:400">— AI Semantic Evaluation (Muse AI)</span></h3>
+      <div id="evaluationBody">${evaluationBodyHtml(record)}</div>
+    </div>`)}
+
+    ${ptabPanel("quality", `
+    <div class="card" id="qualitySection">
+      <h3>Quality Report <span class="hint" style="font-weight:400">— Rule-Based Quality Check (YAML)</span></h3>
+      ${qualityReportHtml(record)}
+    </div>`)}
+
+    ${ptabPanel("extracted", `
     <div class="card" id="textViewerCard">
       <div class="panel-toolbar">
         <label class="hint">Extractor
@@ -841,17 +1495,6 @@ async function renderResume(id, params) {
       </div>
       <div id="tabPanel"></div>
     </div>
-
-    <div class="card" id="qualitySection">
-      <h3>Quality Report</h3>
-      ${qualityReportHtml(record)}
-    </div>
-
-    <div class="card" id="tokenSection">
-      <h3>LLM Token Usage</h3>
-      ${tokenUsageHtml(record)}
-    </div>
-
     ${(record.hyperlinks || []).length ? `
     <div class="card" id="hyperlinksSection">
       <h3>PDF Hyperlinks</h3>
@@ -861,10 +1504,14 @@ async function renderResume(id, params) {
         <tr><td>${h.page ?? "N/A"}</td><td style="word-break:break-all">${escapeHtml(h.url || "")}</td>
         <td>${escapeHtml(h.visible_text || "")}</td><td>${escapeHtml(h.type || "")}</td></tr>`).join("")}
       </tbody></table>
-    </div>` : ""}
+    </div>` : ""}`)}
 
+    ${ptabPanel("pipeline", `
     <div class="card" id="attemptsSection">
-      <h3>Extraction Attempts</h3>
+      <h3>Extraction Pipeline</h3>
+      <p class="hint">The recorded extraction sequence for this resume. The final selected extractor is highlighted; skipped stages were never run, by design of the quality-gated pipeline.</p>
+      <div class="pipe-flow">${pipelineStages}</div>
+      <h4 style="margin-top:18px">Extraction Attempts</h4>
       ${(record.attempts || []).length
         ? (record.attempts || []).map(attemptCardHtml).join("")
         : '<p class="hint">No extraction attempts were recorded for this resume.</p>'}
@@ -877,7 +1524,29 @@ async function renderResume(id, params) {
         </div>
         <div id="manualResults">${MANUAL_TOOLS.map(manualCardHtml).join("")}</div>
       </div>
-    </div>`;
+    </div>`)}
+
+    ${ptabPanel("usage", `
+    <div class="card" id="tokenSection">
+      <h3>LLM Token Usage</h3>
+      <p class="hint">Extraction-stage (Resume JSON) token usage. AI Evaluation tokens are tracked separately, inside the AI Evaluation tab's Evaluation Details panel — the two are never merged.</p>
+      ${tokenUsageHtml(record)}
+    </div>
+    <div class="card">
+      <h3>Evaluation History</h3>
+      ${(record.analyses || []).length
+        ? `<div style="overflow-x:auto"><table class="data-table"><thead><tr><th>Version</th><th>Status</th><th>When</th><th>Model</th><th>Tokens</th><th>Duration</th><th>Error</th></tr></thead><tbody>
+           ${[...(record.analyses || [])].reverse().map((a) => `<tr>
+             <td>v${escapeHtml(String(a.analysis_version ?? "—"))}</td>
+             <td>${a.status === "success" ? '<span class="chip chip-ok">Success</span>' : '<span class="chip chip-bad">Failed</span>'}</td>
+             <td>${escapeHtml(fmtDate(a.created_at))}</td>
+             <td>${escapeHtml(a.model || "—")}</td>
+             <td>${a.tokens && a.tokens.total != null ? fmtNum(a.tokens.total) : "—"}</td>
+             <td>${a.duration_ms != null ? fmtMs(a.duration_ms) : "—"}</td>
+             <td>${a.error ? escapeHtml(String(a.error).slice(0, 140)) : "—"}</td>
+           </tr>`).join("")}</tbody></table></div>`
+        : '<p class="hint">No AI evaluations have been run for this resume yet.</p>'}
+    </div>`)}`;
 
   const panel = $("tabPanel");
   function showTab(tab) {
@@ -1137,9 +1806,30 @@ async function renderResume(id, params) {
     }));
   showTab(activeTab);
   drawExtractorMeta();
-  if (params.section === "quality") $("qualitySection").scrollIntoView();
-  if (params.section === "attempts") $("attemptsSection").scrollIntoView();
-  if (params.section === "tokens") $("tokenSection").scrollIntoView();
+  wireEvaluation(record);
+  // Primary details tabs: pure client-side switching — no reload,
+  // no API calls, no Muse calls. Mirrored into the URL so a tab
+  // can be deep-linked (&ptab=quality) without a hashchange loop.
+  function showPrimaryTab(tabId) {
+    view.querySelectorAll("[data-ptab]").forEach((b) => {
+      const on = b.dataset.ptab === tabId;
+      b.classList.toggle("active", on);
+      b.setAttribute("aria-selected", String(on));
+    });
+    view.querySelectorAll("[data-ppanel]").forEach((panel) => {
+      panel.hidden = panel.dataset.ppanel !== tabId;
+    });
+  }
+  view.querySelectorAll("[data-ptab]").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      showPrimaryTab(btn.dataset.ptab);
+      const url = new URL(location.href);
+      url.hash = url.hash.split("?")[0] + "?ptab=" + btn.dataset.ptab;
+      history.replaceState(null, "", url);
+    }));
+  if (params.section === "quality") { showPrimaryTab("quality"); $("qualitySection").scrollIntoView(); }
+  if (params.section === "attempts") { showPrimaryTab("pipeline"); $("attemptsSection").scrollIntoView(); }
+  if (params.section === "tokens") { showPrimaryTab("usage"); $("tokenSection").scrollIntoView(); }
 }
 
 async function copyText(text) {
@@ -1596,7 +2286,31 @@ function analyticsHtml(data) {
       </table>
     </div>`;
 
-  return `<div class="kpi-grid">${kpiCards}</div>${extractorCard}${durationCard}${tokenCard}${qualityCard}${normCard}`;
+  const ev = data.evaluation || {};
+  const evRoleRows = (ev.most_recommended_roles || []).map((r) => `<tr>
+      <td>${escapeHtml(r.role)}</td><td>${fmtNum(r.count)}</td></tr>`).join("");
+  const evMissingRows = (ev.most_missing_sections || []).map((m) => `<tr>
+      <td>${escapeHtml(m.section)}</td><td>${fmtNum(m.count)}</td></tr>`).join("");
+  const evaluationCard = `
+    <div class="card">
+      <h3>AI Evaluation</h3>
+      ${ev.total_evaluations ? `
+      <table class="kv-table">
+        <tr><td>Total evaluations</td><td>${fmtNum(ev.total_evaluations)} — ${fmtNum(ev.successful_evaluations)} ok · ${fmtNum(ev.failed_evaluations)} failed${ev.invalid_json_failures ? ` · ${fmtNum(ev.invalid_json_failures)} invalid JSON` : ""}</td></tr>
+        <tr><td>Avg completeness score</td><td>${ev.avg_completeness_score === null || ev.avg_completeness_score === undefined ? "—" : fmtScore(ev.avg_completeness_score)}</td></tr>
+        <tr><td>Avg quality score</td><td>${ev.avg_quality_score === null || ev.avg_quality_score === undefined ? "—" : fmtScore(ev.avg_quality_score)}</td></tr>
+        <tr><td>Evaluation tokens (separate from extraction)</td><td>${fmtNum((ev.tokens || {}).input || 0)} in · ${fmtNum((ev.tokens || {}).output || 0)} out · ${fmtNum((ev.tokens || {}).total || 0)} total</td></tr>
+        <tr><td>Avg evaluation time</td><td>${ev.avg_duration_ms === null || ev.avg_duration_ms === undefined ? "—" : fmtMs(ev.avg_duration_ms)}</td></tr>
+        <tr><td>YAML versions used</td><td>${(ev.yaml_versions_used || []).length ? ev.yaml_versions_used.map(escapeHtml).join(", ") : "—"}</td></tr>
+      </table>
+      <div class="analytics-split" style="margin-top:14px">
+        <div><h4>Most recommended roles</h4>${evRoleRows ? `<table class="data-table"><thead><tr><th>Role</th><th>Count</th></tr></thead><tbody>${evRoleRows}</tbody></table>` : '<p class="hint">No role recommendations yet.</p>'}</div>
+        <div><h4>Most-missed sections (evaluations)</h4>${evMissingRows ? `<table class="data-table"><thead><tr><th>Section</th><th>Count</th></tr></thead><tbody>${evMissingRows}</tbody></table>` : '<p class="hint">No missing sections recorded.</p>'}</div>
+      </div>`
+      : '<p class="hint">No AI evaluations yet — open a resume and run Analyze in its AI Evaluation section.</p>'}
+    </div>`;
+
+  return `<div class="kpi-grid">${kpiCards}</div>${extractorCard}${durationCard}${tokenCard}${qualityCard}${normCard}${evaluationCard}`;
 }
 
 /* ------------------------------------------------------------------ */

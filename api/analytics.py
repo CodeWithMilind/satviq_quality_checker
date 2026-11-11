@@ -457,6 +457,97 @@ def compute_analytics(
         "estimated_tokens_saved": norm_tokens_saved,
     }
 
+    # ---------------------------------------------------------------- #
+    # AI Evaluation (evaluation/ package) — strictly separate from
+    # the extraction metrics above: evaluation token usage lives on
+    # the analysis entries (record["analyses"]) and is never merged
+    # into the extraction token totals. Averages cover successful
+    # analyses only; token totals sum only entries whose API call
+    # actually reported usage.
+    # ---------------------------------------------------------------- #
+    ev_total = ev_succeeded = ev_failed = 0
+    ev_invalid_json = 0
+    ev_completeness: list[float] = []
+    ev_quality: list[float] = []
+    ev_role_counts: Counter[str] = Counter()
+    ev_missing_counts: Counter[str] = Counter()
+    ev_tok_in = ev_tok_out = ev_tok_total = 0
+    ev_with_usage = 0
+    ev_durations: list[float] = []
+    ev_yaml_versions: set[str] = set()
+
+    for record in in_range:
+        entries = record.get("analyses")
+        if not isinstance(entries, list):
+            continue
+        for entry in entries:
+            if not isinstance(entry, dict):
+                continue
+            ev_total += 1
+            if isinstance(entry.get("yaml_version"), str):
+                ev_yaml_versions.add(entry["yaml_version"])
+            if _is_num(entry.get("duration_ms")):
+                ev_durations.append(float(entry["duration_ms"]))
+            tokens = entry.get("tokens")
+            if isinstance(tokens, dict):
+                tin, tout, ttot = (tokens.get("input"),
+                                   tokens.get("output"),
+                                   tokens.get("total"))
+                if _is_num(tin) or _is_num(tout) or _is_num(ttot):
+                    ev_with_usage += 1
+                    if _is_num(tin):
+                        ev_tok_in += int(tin)
+                    if _is_num(tout):
+                        ev_tok_out += int(tout)
+                    if _is_num(ttot):
+                        ev_tok_total += int(ttot)
+                    elif _is_num(tin) and _is_num(tout):
+                        ev_tok_total += int(tin) + int(tout)
+            if entry.get("status") == "success":
+                ev_succeeded += 1
+                evaluation = entry.get("evaluation")
+                if isinstance(evaluation, dict):
+                    for key, bucket in (("completeness", ev_completeness),
+                                        ("quality", ev_quality)):
+                        block = evaluation.get(key)
+                        if isinstance(block, dict) and _is_num(block.get("score")):
+                            bucket.append(float(block["score"]))
+                    for role in evaluation.get("suitable_roles") or []:
+                        if isinstance(role, str) and role:
+                            ev_role_counts[role] += 1
+                    for missing in evaluation.get("missing_sections") or []:
+                        if isinstance(missing, dict):
+                            section = missing.get("section")
+                            if isinstance(section, str) and section:
+                                ev_missing_counts[section] += 1
+            elif entry.get("status") == "failed":
+                ev_failed += 1
+                error_text = str(entry.get("error") or "").lower()
+                if "validation" in error_text or "json" in error_text:
+                    ev_invalid_json += 1
+
+    evaluation_block = {
+        "total_evaluations": ev_total,
+        "successful_evaluations": ev_succeeded,
+        "failed_evaluations": ev_failed,
+        "invalid_json_failures": ev_invalid_json,
+        "avg_completeness_score": _round1(_mean(ev_completeness)),
+        "avg_quality_score": _round1(_mean(ev_quality)),
+        "most_recommended_roles": [
+            {"role": role, "count": count}
+            for role, count in ev_role_counts.most_common(8)],
+        "most_missing_sections": [
+            {"section": section, "count": count}
+            for section, count in ev_missing_counts.most_common(8)],
+        "tokens": {
+            "input": ev_tok_in, "output": ev_tok_out,
+            "total": ev_tok_total, "evaluations_with_usage": ev_with_usage,
+        },
+        "avg_duration_ms": (
+            int(round(_mean(ev_durations))) if ev_durations else None),
+        "yaml_versions_used": sorted(ev_yaml_versions),
+    }
+
     return {
         "meta": {
             "generated_at": now_utc.isoformat().replace("+00:00", "Z"),
@@ -475,4 +566,5 @@ def compute_analytics(
         "tokens": tokens_block,
         "quality": quality_block,
         "normalization": normalization_block,
+        "evaluation": evaluation_block,
     }

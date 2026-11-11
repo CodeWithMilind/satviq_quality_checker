@@ -124,13 +124,17 @@ class MuseClient:
             payload["temperature"] = self.config.temperature
         return payload
 
-    def _send(self, messages: list[dict]) -> dict:
+    def _send(self, messages: list[dict],
+              extra: dict | None = None) -> dict:
         key = self._require_key()
         url = f"{self.config.base_url}/chat/completions"
         started = time.perf_counter()
+        payload = self._payload(messages)
+        if extra:
+            payload.update(extra)
         try:
             data = http_post_json(
-                url, self._payload(messages),
+                url, payload,
                 {"Authorization": f"Bearer {key}"},
                 timeout=self.config.timeout_seconds)
         except MuseError as exc:
@@ -140,13 +144,15 @@ class MuseClient:
             raise
         duration_ms = round((time.perf_counter() - started) * 1000, 2)
         try:
-            text = data["choices"][0]["message"]["content"] or ""
+            choice = data["choices"][0]
+            text = choice["message"]["content"] or ""
         except (KeyError, IndexError, TypeError) as exc:
             raise MuseError(
                 "Muse API reply had no message content.") from exc
         return {"text": text, "model": data.get("model"),
                 "usage": data.get("usage") or {},
                 "request_id": data.get("id"),
+                "finish_reason": choice.get("finish_reason"),
                 "duration_ms": duration_ms}
 
     # -- public calls ----------------------------------------------------
@@ -155,6 +161,39 @@ class MuseClient:
         return self._send([
             {"role": "developer", "content": instructions},
             {"role": "user", "content": user_text}])
+
+    def chat_json(self, instructions: str, user_text: str,
+                  extra: dict | None = None) -> dict:
+        """One text completion with caller-supplied payload extras.
+
+        ``extra`` keys (e.g. ``response_format``,
+        ``reasoning_effort``, ``max_completion_tokens``) are merged
+        into the request payload. Some models/deployments reject
+        optional parameters with HTTP 400; on a 400 ONLY, the call
+        is retried with the optional parameters dropped one at a
+        time — ``response_format`` first, then ``reasoning_effort``
+        — at most one retry per dropped parameter. Any other error
+        (auth, rate limit, 5xx, transport) is raised unchanged.
+        Existing call sites are unaffected: nothing about
+        :meth:`chat_text` changes.
+        """
+        payload_extra = dict(extra or {})
+        messages = [
+            {"role": "developer", "content": instructions},
+            {"role": "user", "content": user_text}]
+        while True:
+            try:
+                return self._send(messages, extra=payload_extra)
+            except MuseError as exc:
+                if exc.status != 400:
+                    raise
+                if "response_format" in payload_extra:
+                    payload_extra.pop("response_format")
+                    continue
+                if "reasoning_effort" in payload_extra:
+                    payload_extra.pop("reasoning_effort")
+                    continue
+                raise
 
     @staticmethod
     def text_part(text: str) -> dict:

@@ -1,18 +1,18 @@
 {
-  "resume_id": "a97b9b96-3715-4052-9df2-e1dfc471d3ba",
+  "resume_id": "777a45ec-c679-4982-8551-5d136129a108",
   "filename": "SHJ-5329_SHC-363912.pdf",
   "file_type": "pdf",
   "mime_type": "application/pdf",
   "file_size_bytes": 449917,
-  "uploaded_at": "2026-11-11T11:41:18.320801+00:00",
+  "uploaded_at": "2026-11-11T14:21:50.569700+00:00",
   "success": true,
   "extractor_used": "tika",
   "final_extractor": "tika",
   "primary_extractor": "tika",
   "attempts": [
     {
-      "attempt_id": "a97b9b96-3715-4052-9df2-e1dfc471d3ba-attempt-1",
-      "resume_id": "a97b9b96-3715-4052-9df2-e1dfc471d3ba",
+      "attempt_id": "777a45ec-c679-4982-8551-5d136129a108-attempt-1",
+      "resume_id": "777a45ec-c679-4982-8551-5d136129a108",
       "attempt_number": 1,
       "extractor_name": "tika",
       "extractor_version": null,
@@ -27,9 +27,9 @@
       "quality_status": "PASS",
       "quality": {
         "status": "PASS",
-        "document_id": "a97b9b96-3715-4052-9df2-e1dfc471d3ba",
+        "document_id": "777a45ec-c679-4982-8551-5d136129a108",
         "source_tool": "tika",
-        "attempt_id": "a97b9b96-3715-4052-9df2-e1dfc471d3ba-attempt-1",
+        "attempt_id": "777a45ec-c679-4982-8551-5d136129a108-attempt-1",
         "text_health": {
           "filter_name": "text_health",
           "score": 100.0,
@@ -202,9 +202,9 @@
       },
       "quality_checker_report": {
         "status": "PASS",
-        "document_id": "a97b9b96-3715-4052-9df2-e1dfc471d3ba",
+        "document_id": "777a45ec-c679-4982-8551-5d136129a108",
         "source_tool": "tika",
-        "attempt_id": "a97b9b96-3715-4052-9df2-e1dfc471d3ba-attempt-1",
+        "attempt_id": "777a45ec-c679-4982-8551-5d136129a108-attempt-1",
         "text_health": {
           "filter_name": "text_health",
           "score": 100.0,
@@ -376,7 +376,7 @@
         }
       },
       "quality_score": 98.7,
-      "duration_ms": 6665.79,
+      "duration_ms": 3365.09,
       "text": "RAHUL PIMOLI\nCreative Lead | Multimedia Designer | Video Editor & Motion Graphics | Content Specialist \n\nGurugram, India  |  +91-9289887978  |  Paulrahul396@gmail.com \nlinkedin.com/in/rahul-pimoli-971a73167 \n\nPROFESSIONAL SUMMARY \n\nMultimedia Designer with 5 years of experience in video editing, motion graphics, graphic design, and social \nmedia strategy. Proven track record delivering high-impact content for sports, luxury, and lifestyle brands. Skilled \nin LED broadcast graphics, highlight reel production, UGC content, and social media management. Experienced \nteam leader who has trained 10+ employees and managed a 10-member creative team. Adept at translating \nmarket trends into compelling visual content with measurable results. \n\nWORK EXPERIENCE \n\nCreative Media Associate  |  Stupa Sports Analytics \nApril 2024 - Present  |  Gurugram, Haryana, India | On-site \n\n- Led creative production across Marketing, Media, Founders, and Broadcast teams. \n- Designed LED broadcast graphics for Ultimate Table Tennis (UTT) including player entries, team vs team, \n\nand champion showcase sequences during live events. \n- Developed complete visual branding for Shriram Table Tennis Smash 2026. \n- Produced highlight reels for World Table Tennis, ITTF, and European Badminton events, increasing online \n\nengagement. \n- Managed live social media for ETTU during international events, creating real-time reels and driving \n\naudience engagement. \n- Created investor pitch videos and software demo videos for the Founders team. \n- Trained 10+ employees in Adobe Premiere Pro, Photoshop, and Final Cut Pro; led a 10-member media \n\nteam. \n\nSenior Video Editor and Graphic Designer  |  Sumvaik Consulting Group \nDecember 2023 - March 2024  |  Gurugram, Haryana, India | On-site \n\n- Managed video editing and graphic design deliverables for 12+ clients simultaneously. \n- Produced 50+ UGC videos that improved engagement and follower growth across client social channels. \n- Created social media content calendars, carousel advertisements, and trend-based content strategies. \n- Conducted ongoing market and social media trend research to keep client campaigns current and \n\ncompetitive. \n\nCreative Head  |  Tushar Batra Films and Photos \nMarch 2022 - June 2023  |  Gurugram, Haryana, India | On-site \n\n- Promoted from Video Editor to Creative Head within 14 months based on creative performance and \nleadership. \n\n- Oversaw full creative pipeline including shoot planning, content ideation, post-production, and final delivery. \n- Produced viral social media reels and brand films achieving 242K max Instagram views and 500K YouTube \n\nviews. \n- Secured high-profile luxury clients through the quality and reach of produced content. \n- Mentored junior editors and established quality and efficiency standards for the creative team. \n\nVideo Editor  |  Tushar Batra Films and Photos \nJanuary 2021 - March 2022  |  Gurugram, Haryana, India | On-site \n\n- Edited 50+ luxury wedding and commercial films ranging from 1-minute highlight reels to 50-minute long-\nform features. \n\n- Managed full post-production workflow including colour grading, audio mixing, motion graphics, and export. \n- Researched video trends and competitor content to continuously improve creative output. \n\nrahulpimoli.com | behance.net/rahulpimoli | linkedin.com/in/rahul-pimoli-971a73167\n\n\n\nGraphic Designer  |  ABP News \nOctober 2020 - December 2020  |  India | Remote \n\n- Designed 10+ YouTube thumbnails daily for multiple regional news channels across Hindi, English, and \nPunjabi language audiences. \n\n- Optimised thumbnail design for click-through rate across multi-language digital news properties. \n\nFREELANCE EXPERIENCE \n\n- Devasyah Studios (Luxury Production) - Edited reels for weddings, fashion shoots, and corporate brand \ncampaigns. \n\n- Hydrama, Levernashia, and hospitality brands - Created short-form social media content for restaurants, \nclubs, and corporate clients. \n\n- Joypur Calling and Manali Manor Hotel - Built and managed Instagram accounts, creating consistent visual \nidentity from the ground up. \n\n- Kanchan Rawat (Travel Content Creator, 5K followers) - Managed full content pipeline from ideation to \nposting; achieved 3 million+ views on a single reel. \n\nEDUCATION AND CERTIFICATIONS \n\nBachelor of Science in Animation  |  Graphic Era Hill University \nApril 2018 - July 2021 \n\nDigital Marketing Certificate  |  Google \nIssued June 2023 \n\nSKILLS \n\nVideo Editing and Post-Production \nAdobe Premiere Pro, Final Cut Pro, After Effects, DaVinci Resolve, Video Colour Grading, Audio Mixing, Motion \nGraphics, Long-form Editing, Short-form Editing, Reel Editing, UGC Video Production, Highlight Reel Production, \nBroadcast Graphics, LED Graphic Design \nGraphic Design \nAdobe Photoshop, Adobe Illustrator, Adobe Lightroom, Canva, Thumbnail Design, Social Media Graphics, \nCarousel Design, Brand Identity, Visual Branding \nSocial Media and Content Strategy \nInstagram Strategy, Content Planning, Social Media Management, Content Calendar Creation, Trend Analysis, \nAudience Engagement, Real-time Social Media, Campaign Execution \nAI Creative Tools \nHiggsfield, VEO 3, ChatGPT, Magnific, Seedance, Nano Banana, Flow, Gemini, Claude, AI Video Generation, AI \nImage Generation \nLeadership and Management \nTeam Leadership, Creative Direction, Project Management, Client Management, Training and Mentoring, End-to-\nEnd Production Management, Cross-functional Collaboration",
       "extracted_text": "RAHUL PIMOLI\nCreative Lead | Multimedia Designer | Video Editor & Motion Graphics | Content Specialist \n\nGurugram, India  |  +91-9289887978  |  Paulrahul396@gmail.com \nlinkedin.com/in/rahul-pimoli-971a73167 \n\nPROFESSIONAL SUMMARY \n\nMultimedia Designer with 5 years of experience in video editing, motion graphics, graphic design, and social \nmedia strategy. Proven track record delivering high-impact content for sports, luxury, and lifestyle brands. Skilled \nin LED broadcast graphics, highlight reel production, UGC content, and social media management. Experienced \nteam leader who has trained 10+ employees and managed a 10-member creative team. Adept at translating \nmarket trends into compelling visual content with measurable results. \n\nWORK EXPERIENCE \n\nCreative Media Associate  |  Stupa Sports Analytics \nApril 2024 - Present  |  Gurugram, Haryana, India | On-site \n\n- Led creative production across Marketing, Media, Founders, and Broadcast teams. \n- Designed LED broadcast graphics for Ultimate Table Tennis (UTT) including player entries, team vs team, \n\nand champion showcase sequences during live events. \n- Developed complete visual branding for Shriram Table Tennis Smash 2026. \n- Produced highlight reels for World Table Tennis, ITTF, and European Badminton events, increasing online \n\nengagement. \n- Managed live social media for ETTU during international events, creating real-time reels and driving \n\naudience engagement. \n- Created investor pitch videos and software demo videos for the Founders team. \n- Trained 10+ employees in Adobe Premiere Pro, Photoshop, and Final Cut Pro; led a 10-member media \n\nteam. \n\nSenior Video Editor and Graphic Designer  |  Sumvaik Consulting Group \nDecember 2023 - March 2024  |  Gurugram, Haryana, India | On-site \n\n- Managed video editing and graphic design deliverables for 12+ clients simultaneously. \n- Produced 50+ UGC videos that improved engagement and follower growth across client social channels. \n- Created social media content calendars, carousel advertisements, and trend-based content strategies. \n- Conducted ongoing market and social media trend research to keep client campaigns current and \n\ncompetitive. \n\nCreative Head  |  Tushar Batra Films and Photos \nMarch 2022 - June 2023  |  Gurugram, Haryana, India | On-site \n\n- Promoted from Video Editor to Creative Head within 14 months based on creative performance and \nleadership. \n\n- Oversaw full creative pipeline including shoot planning, content ideation, post-production, and final delivery. \n- Produced viral social media reels and brand films achieving 242K max Instagram views and 500K YouTube \n\nviews. \n- Secured high-profile luxury clients through the quality and reach of produced content. \n- Mentored junior editors and established quality and efficiency standards for the creative team. \n\nVideo Editor  |  Tushar Batra Films and Photos \nJanuary 2021 - March 2022  |  Gurugram, Haryana, India | On-site \n\n- Edited 50+ luxury wedding and commercial films ranging from 1-minute highlight reels to 50-minute long-\nform features. \n\n- Managed full post-production workflow including colour grading, audio mixing, motion graphics, and export. \n- Researched video trends and competitor content to continuously improve creative output. \n\nrahulpimoli.com | behance.net/rahulpimoli | linkedin.com/in/rahul-pimoli-971a73167\n\n\n\nGraphic Designer  |  ABP News \nOctober 2020 - December 2020  |  India | Remote \n\n- Designed 10+ YouTube thumbnails daily for multiple regional news channels across Hindi, English, and \nPunjabi language audiences. \n\n- Optimised thumbnail design for click-through rate across multi-language digital news properties. \n\nFREELANCE EXPERIENCE \n\n- Devasyah Studios (Luxury Production) - Edited reels for weddings, fashion shoots, and corporate brand \ncampaigns. \n\n- Hydrama, Levernashia, and hospitality brands - Created short-form social media content for restaurants, \nclubs, and corporate clients. \n\n- Joypur Calling and Manali Manor Hotel - Built and managed Instagram accounts, creating consistent visual \nidentity from the ground up. \n\n- Kanchan Rawat (Travel Content Creator, 5K followers) - Managed full content pipeline from ideation to \nposting; achieved 3 million+ views on a single reel. \n\nEDUCATION AND CERTIFICATIONS \n\nBachelor of Science in Animation  |  Graphic Era Hill University \nApril 2018 - July 2021 \n\nDigital Marketing Certificate  |  Google \nIssued June 2023 \n\nSKILLS \n\nVideo Editing and Post-Production \nAdobe Premiere Pro, Final Cut Pro, After Effects, DaVinci Resolve, Video Colour Grading, Audio Mixing, Motion \nGraphics, Long-form Editing, Short-form Editing, Reel Editing, UGC Video Production, Highlight Reel Production, \nBroadcast Graphics, LED Graphic Design \nGraphic Design \nAdobe Photoshop, Adobe Illustrator, Adobe Lightroom, Canva, Thumbnail Design, Social Media Graphics, \nCarousel Design, Brand Identity, Visual Branding \nSocial Media and Content Strategy \nInstagram Strategy, Content Planning, Social Media Management, Content Calendar Creation, Trend Analysis, \nAudience Engagement, Real-time Social Media, Campaign Execution \nAI Creative Tools \nHiggsfield, VEO 3, ChatGPT, Magnific, Seedance, Nano Banana, Flow, Gemini, Claude, AI Video Generation, AI \nImage Generation \nLeadership and Management \nTeam Leadership, Creative Direction, Project Management, Client Management, Training and Mentoring, End-to-\nEnd Production Management, Cross-functional Collaboration",
       "extracted_text_length": 5450,
@@ -438,9 +438,9 @@
   "final_quality_status": "PASS",
   "quality": {
     "status": "PASS",
-    "document_id": "a97b9b96-3715-4052-9df2-e1dfc471d3ba",
+    "document_id": "777a45ec-c679-4982-8551-5d136129a108",
     "source_tool": "tika",
-    "attempt_id": "a97b9b96-3715-4052-9df2-e1dfc471d3ba-attempt-1",
+    "attempt_id": "777a45ec-c679-4982-8551-5d136129a108-attempt-1",
     "text_health": {
       "filter_name": "text_health",
       "score": 100.0,
@@ -642,7 +642,7 @@
       "type": "extractor",
       "extractor": "tika",
       "status": "PASS",
-      "duration_ms": 6665.79,
+      "duration_ms": 3365.09,
       "message": "Extraction succeeded.",
       "accepted": true,
       "quality": null,
@@ -738,7 +738,7 @@
       "type": "llm",
       "extractor": null,
       "status": "PASS",
-      "duration_ms": 29667.18,
+      "duration_ms": 24312.8,
       "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
       "accepted": true,
       "quality": null,
@@ -762,7 +762,7 @@
       "type": "final",
       "extractor": "tika",
       "status": "PASS",
-      "duration_ms": 46997.0,
+      "duration_ms": 32081.899999999998,
       "message": "Muse AI produced validated Resume JSON from the Tika extraction.",
       "accepted": true,
       "quality": null,
@@ -770,7 +770,7 @@
       "selected": true
     }
   ],
-  "duration_ms": 46997.0,
+  "duration_ms": 32081.899999999998,
   "extractor_order": [
     "tika",
     "pymupdf",
@@ -834,7 +834,7 @@
     ],
     "applied": false,
     "pre_recovery_normalized_text": null,
-    "at": "2026-11-11T11:40:38.009519+00:00"
+    "at": "2026-11-11T14:21:21.906421+00:00"
   },
   "muse_requests": [
     {
@@ -842,18 +842,18 @@
       "model": "muse-spark-1.3-contributor",
       "request_id": null,
       "status": "success",
-      "duration_ms": 29667.18,
+      "duration_ms": 24312.8,
       "input_tokens": 1974,
-      "output_tokens": 3701,
-      "total_tokens": 5675,
+      "output_tokens": 4252,
+      "total_tokens": 6226,
       "cached_input_tokens": 0,
       "usage_available": true
     }
   ],
   "token_usage": {
     "input_tokens": 1974,
-    "output_tokens": 3701,
-    "total_tokens": 5675,
+    "output_tokens": 4252,
+    "total_tokens": 6226,
     "cached_input_tokens": 0,
     "api_calls": 1,
     "successful_calls": 1,
@@ -873,13 +873,13 @@
     "error_type": null,
     "status": "success",
     "input_type": "text",
-    "duration_ms": 29667.18,
+    "duration_ms": 24312.8,
     "usage": {
-      "completion_tokens": 3701,
+      "completion_tokens": 4252,
       "prompt_tokens": 1974,
-      "total_tokens": 5675,
+      "total_tokens": 6226,
       "completion_tokens_details": {
-        "reasoning_tokens": 2496
+        "reasoning_tokens": 3039
       },
       "prompt_tokens_details": {
         "cached_tokens": 0
@@ -966,9 +966,9 @@
     "provider": "Muse AI",
     "model": "muse-spark-1.3-contributor",
     "resume_json": {
-      "full_name": "Rahul Pimoli",
+      "full_name": "RAHUL PIMOLI",
       "email": "Paulrahul396@gmail.com",
-      "phone": "+91-9289887978",
+      "phone": "+91 9289887978",
       "location": "Gurugram, India",
       "summary": "Multimedia Designer with 5 years of experience in video editing, motion graphics, graphic design, and social media strategy. Proven track record delivering high-impact content for sports, luxury, and lifestyle brands. Skilled in LED broadcast graphics, highlight reel production, UGC content, and social media management. Experienced team leader who has trained 10+ employees and managed a 10-member creative team. Adept at translating market trends into compelling visual content with measurable results.",
       "skills": {
@@ -1108,7 +1108,7 @@
         }
       ],
       "certifications": [
-        "Digital Marketing Certificate - Google"
+        "Digital Marketing Certificate - Google (Issued June 2023)"
       ],
       "languages": [],
       "links": [
@@ -1121,13 +1121,13 @@
     "error": null,
     "error_type": null,
     "attempts": 1,
-    "duration_ms": 29667.18,
+    "duration_ms": 24312.8,
     "usage": {
-      "completion_tokens": 3701,
+      "completion_tokens": 4252,
       "prompt_tokens": 1974,
-      "total_tokens": 5675,
+      "total_tokens": 6226,
       "completion_tokens_details": {
-        "reasoning_tokens": 2496
+        "reasoning_tokens": 3039
       },
       "prompt_tokens_details": {
         "cached_tokens": 0
@@ -1137,9 +1137,9 @@
   },
   "llm_status": "success",
   "resume_data": {
-    "full_name": "Rahul Pimoli",
+    "full_name": "RAHUL PIMOLI",
     "email": "Paulrahul396@gmail.com",
-    "phone": "+91-9289887978",
+    "phone": "+91 9289887978",
     "location": "Gurugram, India",
     "summary": "Multimedia Designer with 5 years of experience in video editing, motion graphics, graphic design, and social media strategy. Proven track record delivering high-impact content for sports, luxury, and lifestyle brands. Skilled in LED broadcast graphics, highlight reel production, UGC content, and social media management. Experienced team leader who has trained 10+ employees and managed a 10-member creative team. Adept at translating market trends into compelling visual content with measurable results.",
     "skills": {
@@ -1279,7 +1279,7 @@
       }
     ],
     "certifications": [
-      "Digital Marketing Certificate - Google"
+      "Digital Marketing Certificate - Google (Issued June 2023)"
     ],
     "languages": [],
     "links": [
@@ -1289,9 +1289,9 @@
     ]
   },
   "resume_json": {
-    "full_name": "Rahul Pimoli",
+    "full_name": "RAHUL PIMOLI",
     "email": "Paulrahul396@gmail.com",
-    "phone": "+91-9289887978",
+    "phone": "+91 9289887978",
     "location": "Gurugram, India",
     "summary": "Multimedia Designer with 5 years of experience in video editing, motion graphics, graphic design, and social media strategy. Proven track record delivering high-impact content for sports, luxury, and lifestyle brands. Skilled in LED broadcast graphics, highlight reel production, UGC content, and social media management. Experienced team leader who has trained 10+ employees and managed a 10-member creative team. Adept at translating market trends into compelling visual content with measurable results.",
     "skills": {
@@ -1431,7 +1431,7 @@
       }
     ],
     "certifications": [
-      "Digital Marketing Certificate - Google"
+      "Digital Marketing Certificate - Google (Issued June 2023)"
     ],
     "languages": [],
     "links": [
@@ -1442,12 +1442,976 @@
   },
   "resume_json_source": "muse_ai",
   "timings": {
-    "extraction_seconds": 6.6668,
-    "quality_seconds": 0.1073,
-    "normalization_seconds": 0.0011,
-    "recovery_seconds": 10.4687,
-    "llm_seconds": 29.6695,
-    "total_seconds": 46.997
+    "extraction_seconds": 3.3659,
+    "quality_seconds": 0.0569,
+    "normalization_seconds": 0.0005,
+    "recovery_seconds": 4.2795,
+    "llm_seconds": 24.3139,
+    "total_seconds": 32.0819
   },
-  "_stored_name": "a97b9b96-3715-4052-9df2-e1dfc471d3ba_SHJ-5329_SHC-363912.pdf"
+  "_stored_name": "777a45ec-c679-4982-8551-5d136129a108_SHJ-5329_SHC-363912.pdf",
+  "direct_llm_routing": null,
+  "extractor_results": {},
+  "analyses": [
+    {
+      "analysis_id": "e14daad3-7ab2-4eb1-8fe0-a1288bf26cf9",
+      "resume_id": "777a45ec-c679-4982-8551-5d136129a108",
+      "analysis_version": 1,
+      "status": "success",
+      "created_at": "2026-11-11T15:01:17.246020+00:00",
+      "model": "muse-spark-1.3-contributor",
+      "yaml_version": "completeness@1ca214852186+eval-1.0.0",
+      "usage_type": "evaluation",
+      "tokens": {
+        "input": 5849,
+        "output": 4836,
+        "total": 10685
+      },
+      "reasoning_tokens": 1040,
+      "duration_ms": 37400.99,
+      "evaluation": {
+        "candidate": {
+          "name": "RAHUL PIMOLI",
+          "headline": "Creative Lead | Multimedia Designer | Video Editor & Motion Graphics | Content Specialist",
+          "location": "Gurugram, India",
+          "email": "Paulrahul396@gmail.com",
+          "summary": "Multimedia Designer with 5 years of experience in video editing, motion graphics, graphic design and social media strategy for sports, luxury and lifestyle brands."
+        },
+        "career_stage": "Experienced Professional",
+        "professional_domain": "Creative Media, Video Production and Social Content Design",
+        "matching_sections": [
+          {
+            "section": "Contact Information",
+            "original_heading": "Header block",
+            "presence_status": "present",
+            "completeness_status": "complete",
+            "quality_assessment": "Excellent - phone, email, location, LinkedIn, portfolio and website provided",
+            "summary": "Full contact with phone, email, location, LinkedIn, Behance and personal website",
+            "evidence": [
+              "Gurugram, India | +91-9289887978 | Paulrahul396@gmail.com",
+              "linkedin.com/in/rahul-pimoli-971a73167",
+              "rahulpimoli.com | behance.net/rahulpimoli"
+            ],
+            "remarks": "Strong contact coverage for creative roles"
+          },
+          {
+            "section": "Professional Summary",
+            "original_heading": "PROFESSIONAL SUMMARY",
+            "presence_status": "present",
+            "completeness_status": "complete",
+            "quality_assessment": "Good - concise, role-relevant, quantified leadership and domains",
+            "summary": "5-year multimedia designer summary with domains, broadcast/UGC/social skills and leadership",
+            "evidence": [
+              "Multimedia Designer with 5 years of experience in video editing, motion graphics, graphic design, and social media strategy.",
+              "Proven track record delivering high-impact content for sports, luxury, and lifestyle brands.",
+              "Experienced team leader who has trained 10+ employees and managed a 10-member creative team."
+            ],
+            "remarks": "Well tailored to video, design and content roles"
+          },
+          {
+            "section": "Technical Skills",
+            "original_heading": "SKILLS",
+            "presence_status": "present",
+            "completeness_status": "complete",
+            "quality_assessment": "Excellent - grouped into Video, Graphic Design, Social/Content, AI Tools, Leadership",
+            "summary": "Categorized skills across video post-production, graphic design, social strategy, AI creative tools and leadership",
+            "evidence": [
+              "Adobe Premiere Pro, Final Cut Pro, After Effects, DaVinci Resolve, Video Colour Grading, Audio Mixing",
+              "Adobe Photoshop, Adobe Illustrator, Adobe Lightroom, Canva, Thumbnail Design, Brand Identity",
+              "Instagram Strategy, Content Planning, Social Media Management, Content Calendar Creation",
+              "Higgsfield, VEO 3, ChatGPT, Magnific, Seedance, Nano Banana, Flow, Gemini, Claude"
+            ],
+            "remarks": "Comprehensive and well-organized for creative and content roles"
+          },
+          {
+            "section": "Work Experience",
+            "original_heading": "WORK EXPERIENCE + FREELANCE EXPERIENCE",
+            "presence_status": "present",
+            "completeness_status": "complete",
+            "quality_assessment": "Good - 5 roles with dates, locations, progression from Video Editor to Creative Head to Creative Media Associate",
+            "summary": "5 years continuous experience from ABP News to Stupa Sports Analytics with promotion and leadership",
+            "evidence": [
+              "Creative Media Associate | Stupa Sports Analytics April 2024 - Present",
+              "Senior Video Editor and Graphic Designer | Sumvaik Consulting Group December 2023 - March 2024",
+              "Creative Head | Tushar Batra Films and Photos March 2022 - June 2023",
+              "Video Editor | Tushar Batra Films and Photos January 2021 - March 2022",
+              "Graphic Designer | ABP News October 2020 - December 2020"
+            ],
+            "remarks": "Clear progression; freelance experience adds breadth"
+          },
+          {
+            "section": "Responsibilities",
+            "original_heading": "Embedded in WORK EXPERIENCE",
+            "presence_status": "present",
+            "completeness_status": "complete",
+            "quality_assessment": "Good - duty bullets clearly document ownership across broadcast, social and post-production",
+            "summary": "Production leadership, broadcast graphics, social management, post-production and team training duties",
+            "evidence": [
+              "Led creative production across Marketing, Media, Founders, and Broadcast teams.",
+              "Designed LED broadcast graphics for Ultimate Table Tennis including player entries and champion showcase",
+              "Managed live social media for ETTU during international events, creating real-time reels",
+              "Oversaw full creative pipeline including shoot planning, content ideation, post-production, and final delivery.",
+              "Managed full post-production workflow including colour grading, audio mixing, motion graphics"
+            ],
+            "remarks": "No dedicated heading needed; content is present in job bullets"
+          },
+          {
+            "section": "Achievements",
+            "original_heading": "Embedded in PROFESSIONAL SUMMARY and WORK EXPERIENCE",
+            "presence_status": "present",
+            "completeness_status": "complete",
+            "quality_assessment": "Good - multiple quantified outcomes across views, volume and team scale",
+            "summary": "Measurable views, volume and leadership outcomes across summary and experience bullets",
+            "evidence": [
+              "Produced viral reels achieving 242K max Instagram views and 500K YouTube views",
+              "achieved 3 million+ views on a single reel for Kanchan Rawat",
+              "Produced 50+ UGC videos that improved engagement and follower growth",
+              "Trained 10+ employees; led a 10-member media team",
+              "Edited 50+ luxury wedding and commercial films"
+            ],
+            "remarks": "Achievements present via metrics; dedicated Achievements heading could improve scanability"
+          },
+          {
+            "section": "Education",
+            "original_heading": "EDUCATION AND CERTIFICATIONS",
+            "presence_status": "present",
+            "completeness_status": "complete",
+            "quality_assessment": "Good - degree, institution and dates provided",
+            "summary": "B.Sc in Animation from Graphic Era Hill University",
+            "evidence": [
+              "Bachelor of Science in Animation | Graphic Era Hill University April 2018 - July 2021"
+            ],
+            "remarks": "Directly relevant animation degree"
+          },
+          {
+            "section": "Certifications",
+            "original_heading": "EDUCATION AND CERTIFICATIONS",
+            "presence_status": "present",
+            "completeness_status": "partial",
+            "quality_assessment": "Average - issuer and date present but no credential ID or skills detail",
+            "summary": "Google Digital Marketing Certificate issued June 2023",
+            "evidence": [
+              "Digital Marketing Certificate | Google Issued June 2023"
+            ],
+            "remarks": "Should be separate section with credential detail"
+          }
+        ],
+        "missing_sections": [
+          {
+            "section": "Projects",
+            "importance": "High",
+            "status": "missing",
+            "reason": "No dedicated Projects / Selected Work heading; freelance work lists client outcomes but not as structured projects",
+            "impact": "Low impact for experienced hire; projects are shown via freelance bullets but less scannable",
+            "recommendation": "Add Selected Projects section with 3-4 items: UTT LED graphics, ETTU live reels, luxury brand films, 3M-view reel with role, tools and metrics",
+            "evidence": []
+          },
+          {
+            "section": "Core Competencies",
+            "importance": "Medium",
+            "status": "missing",
+            "reason": "No Core Competencies keyword block separate from Skills",
+            "impact": "Minor; transferable strengths could be summarized faster for hiring managers",
+            "recommendation": "Add 1-line Core Competencies: Video Editing, Motion Graphics, Broadcast Graphics, Brand Identity, Social Strategy, Team Leadership",
+            "evidence": []
+          },
+          {
+            "section": "Internship Experience",
+            "importance": "High",
+            "status": "missing",
+            "reason": "No internship listed, which is appropriate for experienced stage",
+            "impact": "None for Experienced Professional with 5 years work; correctly not expected",
+            "recommendation": "No action needed given experience level",
+            "evidence": []
+          },
+          {
+            "section": "Career Objective",
+            "importance": "Medium",
+            "status": "missing",
+            "reason": "No objective statement, which is appropriate given present Professional Summary",
+            "impact": "None for experienced creative; objective not needed with strong summary",
+            "recommendation": "No action needed",
+            "evidence": []
+          },
+          {
+            "section": "Publications",
+            "importance": "Low",
+            "status": "missing",
+            "reason": "No publications, research or academic projects stated",
+            "impact": "Low for industry creative track",
+            "recommendation": "Optional; add only if relevant papers or studies exist",
+            "evidence": []
+          }
+        ],
+        "good_to_have": [
+          {
+            "section": "LinkedIn",
+            "present": true,
+            "relevance": "Direct professional profile link provided",
+            "potential_value": "Professional networking and credibility verification",
+            "recommendation": "Keep URL hyperlinked and consistent"
+          },
+          {
+            "section": "Portfolio",
+            "present": true,
+            "relevance": "Behance portfolio shows creative output",
+            "potential_value": "Visual proof of editing, design and branding work",
+            "recommendation": "Keep links clickable and add Selected Work section"
+          },
+          {
+            "section": "Personal Website",
+            "present": true,
+            "relevance": "Personal domain listed: rahulpimoli.com",
+            "potential_value": "Centralized reel, case studies and client work",
+            "recommendation": "Ensure site is current with best 2024-2026 sports and luxury work"
+          },
+          {
+            "section": "Leadership Experience",
+            "present": true,
+            "relevance": "Led 10-member team and trained 10+ employees",
+            "potential_value": "Proves team leadership at scale",
+            "recommendation": "Quantify team outcomes further"
+          },
+          {
+            "section": "Open-source Contributions",
+            "present": false,
+            "relevance": "No code or open-source work stated",
+            "potential_value": "Low for this creative track",
+            "recommendation": "Not needed unless targeting open-source creative tools"
+          },
+          {
+            "section": "Volunteer Experience",
+            "present": false,
+            "relevance": "No volunteer work stated",
+            "potential_value": "Low for this track",
+            "recommendation": "Optional"
+          },
+          {
+            "section": "Languages",
+            "present": false,
+            "relevance": "Designed for Hindi, English, Punjabi audiences but no Languages section",
+            "potential_value": "Useful for multi-language thumbnail work",
+            "recommendation": "Could add Hindi, English, Punjabi proficiency if applicable"
+          }
+        ],
+        "completeness": {
+          "score": 78.0,
+          "classification": "Good",
+          "explanation": {
+            "why_low": "All critical sections for Experienced Professional are present, but dedicated Projects section is absent and Certifications are merged with Education, preventing Excellent.",
+            "contributing_sections": [
+              "Contact Information",
+              "Professional Summary",
+              "Technical Skills",
+              "Work Experience",
+              "Education",
+              "Certifications",
+              "Responsibilities",
+              "Achievements"
+            ],
+            "missing_information": [
+              "Dedicated Projects section",
+              "Career Objective (optional for experienced)",
+              "Core Competencies"
+            ],
+            "problems": [
+              "No dedicated Projects heading despite freelance and brand campaign work",
+              "Certifications combined with Education"
+            ],
+            "improvements": [
+              "Add dedicated Projects/Portfolio showcase section with links and outcomes",
+              "Add Core Competencies summary for quick scanning",
+              "Separate Certifications from Education with credential detail"
+            ],
+            "priorities": [
+              "Add Projects / Selected Work section leveraging freelance and brand work",
+              "Separate and detail Certifications"
+            ]
+          }
+        },
+        "quality": {
+          "score": 82.0,
+          "classification": "Good",
+          "explanation": {
+            "why_low": "Clear, well-organized and quantified for most roles, but some experience bullets are generic and portfolio work is not structured as Projects, preventing Excellent.",
+            "contributing_sections": [
+              "Professional Summary",
+              "Technical Skills",
+              "Work Experience",
+              "Responsibilities",
+              "Achievements"
+            ],
+            "missing_information": [
+              "Project links with outcomes",
+              "Certification details",
+              "Consistent bullet quantification"
+            ],
+            "problems": [
+              "Some bullets lack metrics (e.g., increasing online engagement without numbers)",
+              "Minor formatting breaks and merged Education/Certifications"
+            ],
+            "improvements": [
+              "Separate Projects and Certifications into distinct sections",
+              "Add metrics to more bullets (engagement %, CTR, follower growth)",
+              "Fix line-break hyphenation in bullets"
+            ],
+            "priorities": [
+              "Create Selected Work/Projects with portfolio links",
+              "Quantify Stupa and Sumvaik engagement results"
+            ]
+          }
+        },
+        "role_suitability": [
+          {
+            "role": "Video Content Creator",
+            "score": 89.0,
+            "matching_skills": [
+              "Video production",
+              "Video editing",
+              "Short-form video",
+              "Motion graphics",
+              "Thumbnail design",
+              "Storytelling"
+            ],
+            "missing_skills": [
+              "Scripting (not explicitly stated)",
+              "YouTube optimization beyond thumbnails"
+            ],
+            "relevant_projects": [
+              "Freelance reels for Devasyah Studios weddings and fashion shoots",
+              "3M+ view reel for travel creator Kanchan Rawat"
+            ],
+            "relevant_experience": [
+              "Creative Media Associate - highlight reels for World Table Tennis, ITTF, European Badminton",
+              "Video Editor - 50+ luxury films with grading, mixing, motion graphics"
+            ],
+            "evidence": [
+              "Edited 50+ luxury wedding and commercial films ranging from 1-minute highlight reels to 50-minute long-form",
+              "Produced viral reels achieving 242K Instagram views and 500K YouTube views; 3 million+ views on single reel",
+              "Adobe Premiere Pro, Final Cut Pro, After Effects, DaVinci Resolve, Video Colour Grading, Audio Mixing, Motion Graphics",
+              "Thumbnail Design, Short-form Editing, Reel Editing, UGC Video Production, Higgsfield, VEO 3 AI Video Generation"
+            ],
+            "explanation": "Direct expert match: professional video editing, motion graphics, short-form reels, YouTube performance and thumbnail design with measurable viral outcomes."
+          },
+          {
+            "role": "Social Media Manager",
+            "score": 82.0,
+            "matching_skills": [
+              "Social media platforms",
+              "Content calendars",
+              "Campaign execution",
+              "Short-form video",
+              "Audience engagement"
+            ],
+            "missing_skills": [
+              "Community management",
+              "Paid social",
+              "Analytics tools"
+            ],
+            "relevant_projects": [
+              "Instagram build-out for hospitality brands",
+              "Content pipeline management for 5K-follower creator"
+            ],
+            "relevant_experience": [
+              "Creative Media Associate - live social for ETTU international events",
+              "Senior Video Editor - calendars and trend strategies for 12+ clients"
+            ],
+            "evidence": [
+              "Managed live social media for ETTU creating real-time reels and driving audience engagement",
+              "Produced 50+ UGC videos that improved engagement and follower growth",
+              "Created social media content calendars, carousel advertisements, and trend-based content strategies",
+              "Built and managed Instagram accounts for Joypur Calling and Manali Manor Hotel"
+            ],
+            "explanation": "Strong match for social execution: calendars, real-time content, UGC, trend analysis and account growth, but community management and paid social not detailed."
+          },
+          {
+            "role": "Brand Content Manager",
+            "score": 80.0,
+            "matching_skills": [
+              "Content strategy",
+              "Storytelling",
+              "Campaign management",
+              "Creative direction",
+              "Social media",
+              "Video"
+            ],
+            "missing_skills": [
+              "Brand strategy documentation",
+              "Brand guidelines"
+            ],
+            "relevant_projects": [
+              "Shriram Table Tennis Smash 2026 branding",
+              "Luxury brand films with 242K-500K views"
+            ],
+            "relevant_experience": [
+              "Creative Head - viral brand films and luxury client acquisition",
+              "Creative Media Associate - complete visual branding for sports property"
+            ],
+            "evidence": [
+              "Developed complete visual branding for Shriram Table Tennis Smash 2026",
+              "Secured high-profile luxury clients through quality and reach of produced content",
+              "Brand Identity, Visual Branding, Creative Direction, Campaign Execution",
+              "Oversaw full creative pipeline including shoot planning, ideation, post-production and delivery"
+            ],
+            "explanation": "Good fit for brand storytelling and campaign leadership with visual branding and creative direction, but formal brand strategy frameworks and guidelines not detailed."
+          },
+          {
+            "role": "Content Strategist",
+            "score": 76.0,
+            "matching_skills": [
+              "Content strategy",
+              "Content calendars",
+              "Audience analysis",
+              "Brand storytelling"
+            ],
+            "missing_skills": [
+              "Editorial planning",
+              "SEO",
+              "CMS",
+              "Analytics"
+            ],
+            "relevant_projects": [
+              "Content calendars and carousel ads for clients"
+            ],
+            "relevant_experience": [
+              "Senior Video Editor - trend-based content strategies for 12+ clients",
+              "Creative Head - content ideation and pipeline oversight"
+            ],
+            "evidence": [
+              "Instagram Strategy, Content Planning, Social Media Management, Content Calendar Creation, Trend Analysis",
+              "Conducted market and social media trend research to keep campaigns current",
+              "Managed video and design deliverables for 12+ clients simultaneously"
+            ],
+            "explanation": "Solid content planning and audience engagement background, but editorial planning workflows and SEO/CMS skills are not evidenced."
+          }
+        ],
+        "suitable_roles": [
+          "Video Content Creator",
+          "Social Media Manager",
+          "Brand Content Manager",
+          "Content Strategist"
+        ],
+        "strengths": [
+          "5 years progressive experience from Graphic Designer to Creative Head to Creative Media Associate with promotion in 14 months",
+          "Expert video and design stack: Premiere Pro, Final Cut Pro, After Effects, DaVinci Resolve, Photoshop, Illustrator plus AI video tools",
+          "Viral measurable outcomes: 242K Instagram views, 500K YouTube views, 3M+ views on single reel, 50+ UGC videos and 50+ films",
+          "Broadcast and sports expertise: LED graphics for UTT, branding for Table Tennis Smash 2026, reels for WTT/ITTF/European Badminton",
+          "Leadership at scale: led 10-member team and trained 10+ employees in Premiere, Photoshop, Final Cut Pro"
+        ],
+        "weaknesses": [
+          "No dedicated Projects/Selected Work section; freelance outcomes buried in bullets without structured links",
+          "Some impact bullets lack numbers: increasing online engagement and follower growth without percentages",
+          "Certifications merged with Education with minimal detail on Google Digital Marketing Certificate",
+          "Missing SEO, analytics, CMS and paid social evidence limiting content marketing role fit",
+          "Minor formatting line-breaks and hyphenation disrupt readability"
+        ],
+        "recommendations": [
+          "Add Selected Work / Projects section with 3-4 portfolio items, tools used, links and metrics",
+          "Quantify all impact bullets: engagement lift %, follower growth, CTR, clients secured",
+          "Separate Education and Certifications and add credential details for Google certificate",
+          "Add Core Competencies line for ATS and recruiter scanning",
+          "Ensure portfolio links are hyperlinked and showcase UTT broadcast, ETTU live reels and luxury films"
+        ]
+      },
+      "error": null,
+      "content_evidence": {
+        "responsibilities": {
+          "found": true,
+          "evidence_count": 36,
+          "action": "already_matching"
+        },
+        "achievements": {
+          "found": true,
+          "evidence_count": 4,
+          "action": "already_matching"
+        }
+      },
+      "diagnostics": {
+        "finish_reason": "stop",
+        "response_chars": 17724,
+        "model": "muse-spark-1.3-contributor",
+        "recovered_via_correction": false
+      }
+    }
+  ],
+  "analysis": {
+    "analysis_id": "e14daad3-7ab2-4eb1-8fe0-a1288bf26cf9",
+    "resume_id": "777a45ec-c679-4982-8551-5d136129a108",
+    "analysis_version": 1,
+    "status": "success",
+    "created_at": "2026-11-11T15:01:17.246020+00:00",
+    "model": "muse-spark-1.3-contributor",
+    "yaml_version": "completeness@1ca214852186+eval-1.0.0",
+    "usage_type": "evaluation",
+    "tokens": {
+      "input": 5849,
+      "output": 4836,
+      "total": 10685
+    },
+    "reasoning_tokens": 1040,
+    "duration_ms": 37400.99,
+    "evaluation": {
+      "candidate": {
+        "name": "RAHUL PIMOLI",
+        "headline": "Creative Lead | Multimedia Designer | Video Editor & Motion Graphics | Content Specialist",
+        "location": "Gurugram, India",
+        "email": "Paulrahul396@gmail.com",
+        "summary": "Multimedia Designer with 5 years of experience in video editing, motion graphics, graphic design and social media strategy for sports, luxury and lifestyle brands."
+      },
+      "career_stage": "Experienced Professional",
+      "professional_domain": "Creative Media, Video Production and Social Content Design",
+      "matching_sections": [
+        {
+          "section": "Contact Information",
+          "original_heading": "Header block",
+          "presence_status": "present",
+          "completeness_status": "complete",
+          "quality_assessment": "Excellent - phone, email, location, LinkedIn, portfolio and website provided",
+          "summary": "Full contact with phone, email, location, LinkedIn, Behance and personal website",
+          "evidence": [
+            "Gurugram, India | +91-9289887978 | Paulrahul396@gmail.com",
+            "linkedin.com/in/rahul-pimoli-971a73167",
+            "rahulpimoli.com | behance.net/rahulpimoli"
+          ],
+          "remarks": "Strong contact coverage for creative roles"
+        },
+        {
+          "section": "Professional Summary",
+          "original_heading": "PROFESSIONAL SUMMARY",
+          "presence_status": "present",
+          "completeness_status": "complete",
+          "quality_assessment": "Good - concise, role-relevant, quantified leadership and domains",
+          "summary": "5-year multimedia designer summary with domains, broadcast/UGC/social skills and leadership",
+          "evidence": [
+            "Multimedia Designer with 5 years of experience in video editing, motion graphics, graphic design, and social media strategy.",
+            "Proven track record delivering high-impact content for sports, luxury, and lifestyle brands.",
+            "Experienced team leader who has trained 10+ employees and managed a 10-member creative team."
+          ],
+          "remarks": "Well tailored to video, design and content roles"
+        },
+        {
+          "section": "Technical Skills",
+          "original_heading": "SKILLS",
+          "presence_status": "present",
+          "completeness_status": "complete",
+          "quality_assessment": "Excellent - grouped into Video, Graphic Design, Social/Content, AI Tools, Leadership",
+          "summary": "Categorized skills across video post-production, graphic design, social strategy, AI creative tools and leadership",
+          "evidence": [
+            "Adobe Premiere Pro, Final Cut Pro, After Effects, DaVinci Resolve, Video Colour Grading, Audio Mixing",
+            "Adobe Photoshop, Adobe Illustrator, Adobe Lightroom, Canva, Thumbnail Design, Brand Identity",
+            "Instagram Strategy, Content Planning, Social Media Management, Content Calendar Creation",
+            "Higgsfield, VEO 3, ChatGPT, Magnific, Seedance, Nano Banana, Flow, Gemini, Claude"
+          ],
+          "remarks": "Comprehensive and well-organized for creative and content roles"
+        },
+        {
+          "section": "Work Experience",
+          "original_heading": "WORK EXPERIENCE + FREELANCE EXPERIENCE",
+          "presence_status": "present",
+          "completeness_status": "complete",
+          "quality_assessment": "Good - 5 roles with dates, locations, progression from Video Editor to Creative Head to Creative Media Associate",
+          "summary": "5 years continuous experience from ABP News to Stupa Sports Analytics with promotion and leadership",
+          "evidence": [
+            "Creative Media Associate | Stupa Sports Analytics April 2024 - Present",
+            "Senior Video Editor and Graphic Designer | Sumvaik Consulting Group December 2023 - March 2024",
+            "Creative Head | Tushar Batra Films and Photos March 2022 - June 2023",
+            "Video Editor | Tushar Batra Films and Photos January 2021 - March 2022",
+            "Graphic Designer | ABP News October 2020 - December 2020"
+          ],
+          "remarks": "Clear progression; freelance experience adds breadth"
+        },
+        {
+          "section": "Responsibilities",
+          "original_heading": "Embedded in WORK EXPERIENCE",
+          "presence_status": "present",
+          "completeness_status": "complete",
+          "quality_assessment": "Good - duty bullets clearly document ownership across broadcast, social and post-production",
+          "summary": "Production leadership, broadcast graphics, social management, post-production and team training duties",
+          "evidence": [
+            "Led creative production across Marketing, Media, Founders, and Broadcast teams.",
+            "Designed LED broadcast graphics for Ultimate Table Tennis including player entries and champion showcase",
+            "Managed live social media for ETTU during international events, creating real-time reels",
+            "Oversaw full creative pipeline including shoot planning, content ideation, post-production, and final delivery.",
+            "Managed full post-production workflow including colour grading, audio mixing, motion graphics"
+          ],
+          "remarks": "No dedicated heading needed; content is present in job bullets"
+        },
+        {
+          "section": "Achievements",
+          "original_heading": "Embedded in PROFESSIONAL SUMMARY and WORK EXPERIENCE",
+          "presence_status": "present",
+          "completeness_status": "complete",
+          "quality_assessment": "Good - multiple quantified outcomes across views, volume and team scale",
+          "summary": "Measurable views, volume and leadership outcomes across summary and experience bullets",
+          "evidence": [
+            "Produced viral reels achieving 242K max Instagram views and 500K YouTube views",
+            "achieved 3 million+ views on a single reel for Kanchan Rawat",
+            "Produced 50+ UGC videos that improved engagement and follower growth",
+            "Trained 10+ employees; led a 10-member media team",
+            "Edited 50+ luxury wedding and commercial films"
+          ],
+          "remarks": "Achievements present via metrics; dedicated Achievements heading could improve scanability"
+        },
+        {
+          "section": "Education",
+          "original_heading": "EDUCATION AND CERTIFICATIONS",
+          "presence_status": "present",
+          "completeness_status": "complete",
+          "quality_assessment": "Good - degree, institution and dates provided",
+          "summary": "B.Sc in Animation from Graphic Era Hill University",
+          "evidence": [
+            "Bachelor of Science in Animation | Graphic Era Hill University April 2018 - July 2021"
+          ],
+          "remarks": "Directly relevant animation degree"
+        },
+        {
+          "section": "Certifications",
+          "original_heading": "EDUCATION AND CERTIFICATIONS",
+          "presence_status": "present",
+          "completeness_status": "partial",
+          "quality_assessment": "Average - issuer and date present but no credential ID or skills detail",
+          "summary": "Google Digital Marketing Certificate issued June 2023",
+          "evidence": [
+            "Digital Marketing Certificate | Google Issued June 2023"
+          ],
+          "remarks": "Should be separate section with credential detail"
+        }
+      ],
+      "missing_sections": [
+        {
+          "section": "Projects",
+          "importance": "High",
+          "status": "missing",
+          "reason": "No dedicated Projects / Selected Work heading; freelance work lists client outcomes but not as structured projects",
+          "impact": "Low impact for experienced hire; projects are shown via freelance bullets but less scannable",
+          "recommendation": "Add Selected Projects section with 3-4 items: UTT LED graphics, ETTU live reels, luxury brand films, 3M-view reel with role, tools and metrics",
+          "evidence": []
+        },
+        {
+          "section": "Core Competencies",
+          "importance": "Medium",
+          "status": "missing",
+          "reason": "No Core Competencies keyword block separate from Skills",
+          "impact": "Minor; transferable strengths could be summarized faster for hiring managers",
+          "recommendation": "Add 1-line Core Competencies: Video Editing, Motion Graphics, Broadcast Graphics, Brand Identity, Social Strategy, Team Leadership",
+          "evidence": []
+        },
+        {
+          "section": "Internship Experience",
+          "importance": "High",
+          "status": "missing",
+          "reason": "No internship listed, which is appropriate for experienced stage",
+          "impact": "None for Experienced Professional with 5 years work; correctly not expected",
+          "recommendation": "No action needed given experience level",
+          "evidence": []
+        },
+        {
+          "section": "Career Objective",
+          "importance": "Medium",
+          "status": "missing",
+          "reason": "No objective statement, which is appropriate given present Professional Summary",
+          "impact": "None for experienced creative; objective not needed with strong summary",
+          "recommendation": "No action needed",
+          "evidence": []
+        },
+        {
+          "section": "Publications",
+          "importance": "Low",
+          "status": "missing",
+          "reason": "No publications, research or academic projects stated",
+          "impact": "Low for industry creative track",
+          "recommendation": "Optional; add only if relevant papers or studies exist",
+          "evidence": []
+        }
+      ],
+      "good_to_have": [
+        {
+          "section": "LinkedIn",
+          "present": true,
+          "relevance": "Direct professional profile link provided",
+          "potential_value": "Professional networking and credibility verification",
+          "recommendation": "Keep URL hyperlinked and consistent"
+        },
+        {
+          "section": "Portfolio",
+          "present": true,
+          "relevance": "Behance portfolio shows creative output",
+          "potential_value": "Visual proof of editing, design and branding work",
+          "recommendation": "Keep links clickable and add Selected Work section"
+        },
+        {
+          "section": "Personal Website",
+          "present": true,
+          "relevance": "Personal domain listed: rahulpimoli.com",
+          "potential_value": "Centralized reel, case studies and client work",
+          "recommendation": "Ensure site is current with best 2024-2026 sports and luxury work"
+        },
+        {
+          "section": "Leadership Experience",
+          "present": true,
+          "relevance": "Led 10-member team and trained 10+ employees",
+          "potential_value": "Proves team leadership at scale",
+          "recommendation": "Quantify team outcomes further"
+        },
+        {
+          "section": "Open-source Contributions",
+          "present": false,
+          "relevance": "No code or open-source work stated",
+          "potential_value": "Low for this creative track",
+          "recommendation": "Not needed unless targeting open-source creative tools"
+        },
+        {
+          "section": "Volunteer Experience",
+          "present": false,
+          "relevance": "No volunteer work stated",
+          "potential_value": "Low for this track",
+          "recommendation": "Optional"
+        },
+        {
+          "section": "Languages",
+          "present": false,
+          "relevance": "Designed for Hindi, English, Punjabi audiences but no Languages section",
+          "potential_value": "Useful for multi-language thumbnail work",
+          "recommendation": "Could add Hindi, English, Punjabi proficiency if applicable"
+        }
+      ],
+      "completeness": {
+        "score": 78.0,
+        "classification": "Good",
+        "explanation": {
+          "why_low": "All critical sections for Experienced Professional are present, but dedicated Projects section is absent and Certifications are merged with Education, preventing Excellent.",
+          "contributing_sections": [
+            "Contact Information",
+            "Professional Summary",
+            "Technical Skills",
+            "Work Experience",
+            "Education",
+            "Certifications",
+            "Responsibilities",
+            "Achievements"
+          ],
+          "missing_information": [
+            "Dedicated Projects section",
+            "Career Objective (optional for experienced)",
+            "Core Competencies"
+          ],
+          "problems": [
+            "No dedicated Projects heading despite freelance and brand campaign work",
+            "Certifications combined with Education"
+          ],
+          "improvements": [
+            "Add dedicated Projects/Portfolio showcase section with links and outcomes",
+            "Add Core Competencies summary for quick scanning",
+            "Separate Certifications from Education with credential detail"
+          ],
+          "priorities": [
+            "Add Projects / Selected Work section leveraging freelance and brand work",
+            "Separate and detail Certifications"
+          ]
+        }
+      },
+      "quality": {
+        "score": 82.0,
+        "classification": "Good",
+        "explanation": {
+          "why_low": "Clear, well-organized and quantified for most roles, but some experience bullets are generic and portfolio work is not structured as Projects, preventing Excellent.",
+          "contributing_sections": [
+            "Professional Summary",
+            "Technical Skills",
+            "Work Experience",
+            "Responsibilities",
+            "Achievements"
+          ],
+          "missing_information": [
+            "Project links with outcomes",
+            "Certification details",
+            "Consistent bullet quantification"
+          ],
+          "problems": [
+            "Some bullets lack metrics (e.g., increasing online engagement without numbers)",
+            "Minor formatting breaks and merged Education/Certifications"
+          ],
+          "improvements": [
+            "Separate Projects and Certifications into distinct sections",
+            "Add metrics to more bullets (engagement %, CTR, follower growth)",
+            "Fix line-break hyphenation in bullets"
+          ],
+          "priorities": [
+            "Create Selected Work/Projects with portfolio links",
+            "Quantify Stupa and Sumvaik engagement results"
+          ]
+        }
+      },
+      "role_suitability": [
+        {
+          "role": "Video Content Creator",
+          "score": 89.0,
+          "matching_skills": [
+            "Video production",
+            "Video editing",
+            "Short-form video",
+            "Motion graphics",
+            "Thumbnail design",
+            "Storytelling"
+          ],
+          "missing_skills": [
+            "Scripting (not explicitly stated)",
+            "YouTube optimization beyond thumbnails"
+          ],
+          "relevant_projects": [
+            "Freelance reels for Devasyah Studios weddings and fashion shoots",
+            "3M+ view reel for travel creator Kanchan Rawat"
+          ],
+          "relevant_experience": [
+            "Creative Media Associate - highlight reels for World Table Tennis, ITTF, European Badminton",
+            "Video Editor - 50+ luxury films with grading, mixing, motion graphics"
+          ],
+          "evidence": [
+            "Edited 50+ luxury wedding and commercial films ranging from 1-minute highlight reels to 50-minute long-form",
+            "Produced viral reels achieving 242K Instagram views and 500K YouTube views; 3 million+ views on single reel",
+            "Adobe Premiere Pro, Final Cut Pro, After Effects, DaVinci Resolve, Video Colour Grading, Audio Mixing, Motion Graphics",
+            "Thumbnail Design, Short-form Editing, Reel Editing, UGC Video Production, Higgsfield, VEO 3 AI Video Generation"
+          ],
+          "explanation": "Direct expert match: professional video editing, motion graphics, short-form reels, YouTube performance and thumbnail design with measurable viral outcomes."
+        },
+        {
+          "role": "Social Media Manager",
+          "score": 82.0,
+          "matching_skills": [
+            "Social media platforms",
+            "Content calendars",
+            "Campaign execution",
+            "Short-form video",
+            "Audience engagement"
+          ],
+          "missing_skills": [
+            "Community management",
+            "Paid social",
+            "Analytics tools"
+          ],
+          "relevant_projects": [
+            "Instagram build-out for hospitality brands",
+            "Content pipeline management for 5K-follower creator"
+          ],
+          "relevant_experience": [
+            "Creative Media Associate - live social for ETTU international events",
+            "Senior Video Editor - calendars and trend strategies for 12+ clients"
+          ],
+          "evidence": [
+            "Managed live social media for ETTU creating real-time reels and driving audience engagement",
+            "Produced 50+ UGC videos that improved engagement and follower growth",
+            "Created social media content calendars, carousel advertisements, and trend-based content strategies",
+            "Built and managed Instagram accounts for Joypur Calling and Manali Manor Hotel"
+          ],
+          "explanation": "Strong match for social execution: calendars, real-time content, UGC, trend analysis and account growth, but community management and paid social not detailed."
+        },
+        {
+          "role": "Brand Content Manager",
+          "score": 80.0,
+          "matching_skills": [
+            "Content strategy",
+            "Storytelling",
+            "Campaign management",
+            "Creative direction",
+            "Social media",
+            "Video"
+          ],
+          "missing_skills": [
+            "Brand strategy documentation",
+            "Brand guidelines"
+          ],
+          "relevant_projects": [
+            "Shriram Table Tennis Smash 2026 branding",
+            "Luxury brand films with 242K-500K views"
+          ],
+          "relevant_experience": [
+            "Creative Head - viral brand films and luxury client acquisition",
+            "Creative Media Associate - complete visual branding for sports property"
+          ],
+          "evidence": [
+            "Developed complete visual branding for Shriram Table Tennis Smash 2026",
+            "Secured high-profile luxury clients through quality and reach of produced content",
+            "Brand Identity, Visual Branding, Creative Direction, Campaign Execution",
+            "Oversaw full creative pipeline including shoot planning, ideation, post-production and delivery"
+          ],
+          "explanation": "Good fit for brand storytelling and campaign leadership with visual branding and creative direction, but formal brand strategy frameworks and guidelines not detailed."
+        },
+        {
+          "role": "Content Strategist",
+          "score": 76.0,
+          "matching_skills": [
+            "Content strategy",
+            "Content calendars",
+            "Audience analysis",
+            "Brand storytelling"
+          ],
+          "missing_skills": [
+            "Editorial planning",
+            "SEO",
+            "CMS",
+            "Analytics"
+          ],
+          "relevant_projects": [
+            "Content calendars and carousel ads for clients"
+          ],
+          "relevant_experience": [
+            "Senior Video Editor - trend-based content strategies for 12+ clients",
+            "Creative Head - content ideation and pipeline oversight"
+          ],
+          "evidence": [
+            "Instagram Strategy, Content Planning, Social Media Management, Content Calendar Creation, Trend Analysis",
+            "Conducted market and social media trend research to keep campaigns current",
+            "Managed video and design deliverables for 12+ clients simultaneously"
+          ],
+          "explanation": "Solid content planning and audience engagement background, but editorial planning workflows and SEO/CMS skills are not evidenced."
+        }
+      ],
+      "suitable_roles": [
+        "Video Content Creator",
+        "Social Media Manager",
+        "Brand Content Manager",
+        "Content Strategist"
+      ],
+      "strengths": [
+        "5 years progressive experience from Graphic Designer to Creative Head to Creative Media Associate with promotion in 14 months",
+        "Expert video and design stack: Premiere Pro, Final Cut Pro, After Effects, DaVinci Resolve, Photoshop, Illustrator plus AI video tools",
+        "Viral measurable outcomes: 242K Instagram views, 500K YouTube views, 3M+ views on single reel, 50+ UGC videos and 50+ films",
+        "Broadcast and sports expertise: LED graphics for UTT, branding for Table Tennis Smash 2026, reels for WTT/ITTF/European Badminton",
+        "Leadership at scale: led 10-member team and trained 10+ employees in Premiere, Photoshop, Final Cut Pro"
+      ],
+      "weaknesses": [
+        "No dedicated Projects/Selected Work section; freelance outcomes buried in bullets without structured links",
+        "Some impact bullets lack numbers: increasing online engagement and follower growth without percentages",
+        "Certifications merged with Education with minimal detail on Google Digital Marketing Certificate",
+        "Missing SEO, analytics, CMS and paid social evidence limiting content marketing role fit",
+        "Minor formatting line-breaks and hyphenation disrupt readability"
+      ],
+      "recommendations": [
+        "Add Selected Work / Projects section with 3-4 portfolio items, tools used, links and metrics",
+        "Quantify all impact bullets: engagement lift %, follower growth, CTR, clients secured",
+        "Separate Education and Certifications and add credential details for Google certificate",
+        "Add Core Competencies line for ATS and recruiter scanning",
+        "Ensure portfolio links are hyperlinked and showcase UTT broadcast, ETTU live reels and luxury films"
+      ]
+    },
+    "error": null,
+    "content_evidence": {
+      "responsibilities": {
+        "found": true,
+        "evidence_count": 36,
+        "action": "already_matching"
+      },
+      "achievements": {
+        "found": true,
+        "evidence_count": 4,
+        "action": "already_matching"
+      }
+    },
+    "diagnostics": {
+      "finish_reason": "stop",
+      "response_chars": 17724,
+      "model": "muse-spark-1.3-contributor",
+      "recovered_via_correction": false
+    }
+  }
 }

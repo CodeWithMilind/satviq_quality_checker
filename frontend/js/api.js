@@ -138,6 +138,22 @@
         signal: signal,
       });
     },
+    analyzeResume: function (id) {
+      /* No timeout (as everywhere): the evaluation waits for Muse
+         however long the response takes. */
+      return request("/api/resumes/" + encodeURIComponent(id) + "/analyze", {
+        method: "POST",
+      });
+    },
+    getAnalysis: function (id) {
+      return request("/api/resumes/" + encodeURIComponent(id) + "/analysis");
+    },
+    getAnalysisHistory: function (id) {
+      return request("/api/resumes/" + encodeURIComponent(id) + "/analysis/history");
+    },
+    getEvaluationConfig: function () {
+      return request("/api/evaluation/config");
+    },
     extractorStatus: function () {
       return request("/api/extractors/status");
     },

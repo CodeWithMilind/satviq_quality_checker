@@ -1,0 +1,1783 @@
+{
+  "resume_id": "977adbb0-f536-43d8-aa01-e9a3d9535af7",
+  "filename": "SHJ-5442_SHC-322085.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 1197408,
+  "uploaded_at": "2026-11-11T17:24:02.880903+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "final_extractor": "tika",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "977adbb0-f536-43d8-aa01-e9a3d9535af7-attempt-1",
+      "resume_id": "977adbb0-f536-43d8-aa01-e9a3d9535af7",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Extraction accepted (Text Health 75.0, Completeness 64.0, Reading Order 100.0) — Text Health and Reading Order pass; the WARNING is Completeness only, which never triggers extractor fallback. Fallback stopped.",
+      "fallback_decision": "accept",
+      "fallback_reason": "Extraction accepted (Text Health 75.0, Completeness 64.0, Reading Order 100.0) — Text Health and Reading Order pass; the WARNING is Completeness only, which never triggers extractor fallback. Fallback stopped.",
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "977adbb0-f536-43d8-aa01-e9a3d9535af7",
+        "source_tool": "tika",
+        "attempt_id": "977adbb0-f536-43d8-aa01-e9a3d9535af7-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 75.0,
+          "flags": [
+            "SHORT_TEXT"
+          ],
+          "reasons": [
+            "Text is short for a resume: 448 characters / 64 words."
+          ],
+          "metrics": {
+            "char_count": 448,
+            "word_count": 64,
+            "line_count": 21,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.160714,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 64.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 448,
+            "word_count": 64,
+            "configured_section_count": 8,
+            "detected_count": 2,
+            "missing_count": 6,
+            "detected_sections": [
+              "Contact Information",
+              "Education"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "Personal Details",
+                "detection_method": "heading",
+                "line_number": 3,
+                "evidence": "Personal Details",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Education": "detected",
+              "Summary": "missing",
+              "Skills": "missing",
+              "Work Experience": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 75.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Education"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 448,
+            "word_count": 64,
+            "line_count": 21,
+            "non_empty_line_count": 12,
+            "short_line_count": 2,
+            "short_line_ratio": 0.166667,
+            "fragmented_line_count": 1,
+            "fragmented_line_ratio": 0.083333,
+            "mean_line_length": 35.67,
+            "median_line_length": 39.0,
+            "line_length_stdev": 15.81,
+            "line_length_cv": 0.443359,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "977adbb0-f536-43d8-aa01-e9a3d9535af7",
+        "source_tool": "tika",
+        "attempt_id": "977adbb0-f536-43d8-aa01-e9a3d9535af7-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 75.0,
+          "flags": [
+            "SHORT_TEXT"
+          ],
+          "reasons": [
+            "Text is short for a resume: 448 characters / 64 words."
+          ],
+          "metrics": {
+            "char_count": 448,
+            "word_count": 64,
+            "line_count": 21,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.160714,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 64.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 448,
+            "word_count": 64,
+            "configured_section_count": 8,
+            "detected_count": 2,
+            "missing_count": 6,
+            "detected_sections": [
+              "Contact Information",
+              "Education"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "Personal Details",
+                "detection_method": "heading",
+                "line_number": 3,
+                "evidence": "Personal Details",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Education": "detected",
+              "Summary": "missing",
+              "Skills": "missing",
+              "Work Experience": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 75.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Education"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 448,
+            "word_count": 64,
+            "line_count": 21,
+            "non_empty_line_count": 12,
+            "short_line_count": 2,
+            "short_line_ratio": 0.166667,
+            "fragmented_line_count": 1,
+            "fragmented_line_ratio": 0.083333,
+            "mean_line_length": 35.67,
+            "median_line_length": 39.0,
+            "line_length_stdev": 15.81,
+            "line_length_cv": 0.443359,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 65.5,
+      "duration_ms": 7325.37,
+      "text": "BHARDA CHIRAG HARISH BHAI\n\nPersonal Details\n\nPhone : 9809801540\nEmail : bhardachirag4@gmail.co.\nAddress : Near koteshvar temple bokhira porbandar gujarat-360575\n\nEducation\n\nCourse / Degree School / University Grade / Score Year\n\nCRTI COURSE ON COMPUTER CONCEPT (C.C.C ITMS A+ 2016\n\n10th NAVYUG VIDYALAYA PORBANDAR 54.66 2019\n\n12th NAVYUG VIDYALAYA PORBANDAR 47% 2021\n\nITI WIREMAN 1YEAR PORBANDAR 74.83% 2024\n\nITI WIREMAN 2YEAR PORBANDAR 76.33% 2025",
+      "extracted_text": "BHARDA CHIRAG HARISH BHAI\n\nPersonal Details\n\nPhone : 9809801540\nEmail : bhardachirag4@gmail.co.\nAddress : Near koteshvar temple bokhira porbandar gujarat-360575\n\nEducation\n\nCourse / Degree School / University Grade / Score Year\n\nCRTI COURSE ON COMPUTER CONCEPT (C.C.C ITMS A+ 2016\n\n10th NAVYUG VIDYALAYA PORBANDAR 54.66 2019\n\n12th NAVYUG VIDYALAYA PORBANDAR 47% 2021\n\nITI WIREMAN 1YEAR PORBANDAR 74.83% 2024\n\nITI WIREMAN 2YEAR PORBANDAR 76.33% 2025",
+      "extracted_text_length": 448,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "BHARDA CHIRAG HARISH BHAI\n\nPersonal Details\n\nPhone : 9809801540\nEmail : bhardachirag4@gmail.co.\nAddress : Near koteshvar temple bokhira porbandar gujarat-360575\n\nEducation\n\nCourse / Degree School / University Grade / Score Year\n\nCRTI COURSE ON COMPUTER CONCEPT (C.C.C ITMS A+ 2016\n\n10th NAVYUG VIDYALAYA PORBANDAR 54.66 2019\n\n12th NAVYUG VIDYALAYA PORBANDAR 47% 2021\n\nITI WIREMAN 1YEAR PORBANDAR 74.83% 2024\n\nITI WIREMAN 2YEAR PORBANDAR 76.33% 2025"
+    }
+  ],
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "skipped_extractors": [
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "gate_decisions": {
+    "tika": {
+      "status": "WARNING",
+      "decision": "accept",
+      "reason": "Extraction accepted (Text Health 75.0, Completeness 64.0, Reading Order 100.0) — Text Health and Reading Order pass; the WARNING is Completeness only, which never triggers extractor fallback. Fallback stopped."
+    }
+  },
+  "extracted_text": "BHARDA CHIRAG HARISH BHAI\n\nPersonal Details\n\nPhone : 9809801540\nEmail : bhardachirag4@gmail.co.\nAddress : Near koteshvar temple bokhira porbandar gujarat-360575\n\nEducation\n\nCourse / Degree School / University Grade / Score Year\n\nCRTI COURSE ON COMPUTER CONCEPT (C.C.C ITMS A+ 2016\n\n10th NAVYUG VIDYALAYA PORBANDAR 54.66 2019\n\n12th NAVYUG VIDYALAYA PORBANDAR 47% 2021\n\nITI WIREMAN 1YEAR PORBANDAR 74.83% 2024\n\nITI WIREMAN 2YEAR PORBANDAR 76.33% 2025",
+  "final_extracted_text": "BHARDA CHIRAG HARISH BHAI\n\nPersonal Details\n\nPhone : 9809801540\nEmail : bhardachirag4@gmail.co.\nAddress : Near koteshvar temple bokhira porbandar gujarat-360575\n\nEducation\n\nCourse / Degree School / University Grade / Score Year\n\nCRTI COURSE ON COMPUTER CONCEPT (C.C.C ITMS A+ 2016\n\n10th NAVYUG VIDYALAYA PORBANDAR 54.66 2019\n\n12th NAVYUG VIDYALAYA PORBANDAR 47% 2021\n\nITI WIREMAN 1YEAR PORBANDAR 74.83% 2024\n\nITI WIREMAN 2YEAR PORBANDAR 76.33% 2025",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "WARNING",
+  "final_quality_status": "WARNING",
+  "quality": {
+    "status": "WARNING",
+    "document_id": "977adbb0-f536-43d8-aa01-e9a3d9535af7",
+    "source_tool": "tika",
+    "attempt_id": "977adbb0-f536-43d8-aa01-e9a3d9535af7-attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 75.0,
+      "flags": [
+        "SHORT_TEXT"
+      ],
+      "reasons": [
+        "Text is short for a resume: 448 characters / 64 words."
+      ],
+      "metrics": {
+        "char_count": 448,
+        "word_count": 64,
+        "line_count": 21,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.160714,
+        "symbol_count": 0,
+        "symbol_ratio": 0.0,
+        "max_repeated_char_run": 2,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 64.0,
+      "flags": [
+        "MISSING_RECOMMENDED_SECTION",
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 448,
+        "word_count": 64,
+        "configured_section_count": 8,
+        "detected_count": 2,
+        "missing_count": 6,
+        "detected_sections": [
+          "Contact Information",
+          "Education"
+        ],
+        "missing_sections": [
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [
+          "Skills",
+          "Work Experience"
+        ],
+        "missing_optional": [
+          "Summary",
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "personal details",
+          "Education": "education"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": "Personal Details",
+            "detection_method": "heading",
+            "line_number": 3,
+            "evidence": "Personal Details",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "Education",
+            "detection_method": "heading",
+            "line_number": 9,
+            "evidence": "Education",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Education": "detected",
+          "Summary": "missing",
+          "Skills": "missing",
+          "Work Experience": "missing",
+          "Responsibilities": "missing",
+          "Projects": "missing",
+          "Certifications": "missing"
+        },
+        "extraction_quality": 75.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Education"
+      ],
+      "missing_sections": [
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [
+        "Skills",
+        "Work Experience"
+      ],
+      "missing_optional": [
+        "Summary",
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 448,
+        "word_count": 64,
+        "line_count": 21,
+        "non_empty_line_count": 12,
+        "short_line_count": 2,
+        "short_line_ratio": 0.166667,
+        "fragmented_line_count": 1,
+        "fragmented_line_ratio": 0.083333,
+        "mean_line_length": 35.67,
+        "median_line_length": 39.0,
+        "line_length_stdev": 15.81,
+        "line_length_cv": 0.443359,
+        "broken_sentence_count": 0,
+        "broken_sentence_ratio": 0.0,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Extraction accepted (Text Health 75.0, Completeness 64.0, Reading Order 100.0) — Text Health and Reading Order pass; the WARNING is Completeness only, which never triggers extractor fallback. Fallback stopped. Selected 'tika' with quality score 65.5. Skipped (never executed): pymupdf, docling, ocr.",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 7325.37,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika passed quality checks and was accepted before this extractor was needed.",
+      "accepted": false,
+      "quality": null,
+      "decision": "skipped",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika passed quality checks and was accepted before this extractor was needed.",
+      "accepted": false,
+      "quality": null,
+      "decision": "skipped",
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika passed quality checks and was accepted before this extractor was needed.",
+      "accepted": false,
+      "quality": null,
+      "decision": "skipped",
+      "selected": false
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=65.5",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Extraction accepted (Text Health 75.0, Completeness 64.0, Reading Order 100.0) — Text Health and Reading Order pass; the WARNING is Completeness only, which never triggers extractor fallback. Fallback stopped. Selected 'tika' with quality score 65.5. Skipped (never executed): pymupdf, docling, ocr.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Tika text normalized: 448 → 448 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Contact Information Recovery",
+      "type": "contact_recovery",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Contact information missing and could not be recovered from any source (extractor outputs, first-page text layer, OCR). Still missing: location.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 17592.92,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 25913.2,
+      "message": "Muse AI produced validated Resume JSON from the Tika extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 25913.2,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "BHARDA CHIRAG HARISH BHAI\n\nPersonal Details\n\nPhone : 9809801540\nEmail : bhardachirag4@gmail.co.\nAddress : Near koteshvar temple bokhira porbandar gujarat-360575\n\nEducation\n\nCourse / Degree School / University Grade / Score Year\n\nCRTI COURSE ON COMPUTER CONCEPT (C.C.C ITMS A+ 2016\n\n10th NAVYUG VIDYALAYA PORBANDAR 54.66 2019\n\n12th NAVYUG VIDYALAYA PORBANDAR 47% 2021\n\nITI WIREMAN 1YEAR PORBANDAR 74.83% 2024\n\nITI WIREMAN 2YEAR PORBANDAR 76.33% 2025",
+    "normalized_text": "BHARDA CHIRAG HARISH BHAI\n\nPersonal Details\n\nPhone : 9809801540\nEmail : bhardachirag4@gmail.co.\nAddress : Near koteshvar temple bokhira porbandar gujarat-360575\n\nEducation\n\nCourse / Degree School / University Grade / Score Year\n\nCRTI COURSE ON COMPUTER CONCEPT (C.C.C ITMS A+ 2016\n\n10th NAVYUG VIDYALAYA PORBANDAR 54.66 2019\n\n12th NAVYUG VIDYALAYA PORBANDAR 47% 2021\n\nITI WIREMAN 1YEAR PORBANDAR 74.83% 2024\n\nITI WIREMAN 2YEAR PORBANDAR 76.33% 2025",
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "original_chars": 448,
+    "normalized_chars": 448,
+    "original_estimated_tokens": 112,
+    "normalized_estimated_tokens": 112,
+    "estimated_reduction_percent": 0.0
+  },
+  "contact_recovery": {
+    "status": "not_recovered",
+    "selected_extractor": "tika",
+    "present_before": [
+      "phone",
+      "email"
+    ],
+    "missing_before": [
+      "location"
+    ],
+    "recovered": {},
+    "still_missing": [
+      "location"
+    ],
+    "sources_tried": [
+      {
+        "source": "Tika",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "PyMuPDF",
+        "method": "first_page_text_layer",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "OCR",
+        "method": "ocr_first_page",
+        "found": [],
+        "error": null
+      }
+    ],
+    "applied": false,
+    "pre_recovery_normalized_text": null,
+    "at": "2026-11-11T17:23:44.298082+00:00"
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 17592.92,
+      "input_tokens": 995,
+      "output_tokens": 2262,
+      "total_tokens": 3257,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 995,
+    "output_tokens": 2262,
+    "total_tokens": 3257,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 17592.92,
+    "usage": {
+      "completion_tokens": 2262,
+      "prompt_tokens": 995,
+      "total_tokens": 3257,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1941
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 448,
+      "normalized_chars": 448,
+      "estimated_reduction_percent": 0.0,
+      "normalization_applied": false,
+      "normalization_steps": [],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "tika",
+  "selected_quality_score": 65.5,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 65.5,
+      "status": "success",
+      "word_count": 64,
+      "char_count": 448,
+      "meaningful_char_count": 376,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 80.0,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": false,
+        "has_experience_section": false,
+        "has_education_section": true,
+        "sections_found": [
+          "education"
+        ]
+      },
+      "structure": {
+        "heading_count": 1,
+        "paragraph_count": 10,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 0.2507,
+        "readability": 0.8,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 0.6,
+        "structure": 0.7
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 448,
+    "normalized_chars": 448,
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "error": null,
+    "original_text": "BHARDA CHIRAG HARISH BHAI\n\nPersonal Details\n\nPhone : 9809801540\nEmail : bhardachirag4@gmail.co.\nAddress : Near koteshvar temple bokhira porbandar gujarat-360575\n\nEducation\n\nCourse / Degree School / University Grade / Score Year\n\nCRTI COURSE ON COMPUTER CONCEPT (C.C.C ITMS A+ 2016\n\n10th NAVYUG VIDYALAYA PORBANDAR 54.66 2019\n\n12th NAVYUG VIDYALAYA PORBANDAR 47% 2021\n\nITI WIREMAN 1YEAR PORBANDAR 74.83% 2024\n\nITI WIREMAN 2YEAR PORBANDAR 76.33% 2025",
+    "normalized_text": "BHARDA CHIRAG HARISH BHAI\n\nPersonal Details\n\nPhone : 9809801540\nEmail : bhardachirag4@gmail.co.\nAddress : Near koteshvar temple bokhira porbandar gujarat-360575\n\nEducation\n\nCourse / Degree School / University Grade / Score Year\n\nCRTI COURSE ON COMPUTER CONCEPT (C.C.C ITMS A+ 2016\n\n10th NAVYUG VIDYALAYA PORBANDAR 54.66 2019\n\n12th NAVYUG VIDYALAYA PORBANDAR 47% 2021\n\nITI WIREMAN 1YEAR PORBANDAR 74.83% 2024\n\nITI WIREMAN 2YEAR PORBANDAR 76.33% 2025"
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "BHARDA CHIRAG HARISH BHAI",
+      "email": "bhardachirag4@gmail.co.",
+      "phone": "+91 9809801540",
+      "location": "Near koteshvar temple bokhira porbandar gujarat-360575",
+      "summary": "",
+      "skills": {
+        "technical_skills": [],
+        "soft_skills": [],
+        "tools": [],
+        "taxonomy_skills": [],
+        "other_skills": []
+      },
+      "experience": [],
+      "education": [
+        {
+          "degree": "CRTI COURSE ON COMPUTER CONCEPT (C.C.C",
+          "institution": "ITMS",
+          "location": "",
+          "start_date": "",
+          "end_date": "2016"
+        },
+        {
+          "degree": "10th",
+          "institution": "NAVYUG VIDYALAYA PORBANDAR",
+          "location": "",
+          "start_date": "",
+          "end_date": "2019"
+        },
+        {
+          "degree": "12th",
+          "institution": "NAVYUG VIDYALAYA PORBANDAR",
+          "location": "",
+          "start_date": "",
+          "end_date": "2021"
+        },
+        {
+          "degree": "ITI WIREMAN 1YEAR",
+          "institution": "PORBANDAR",
+          "location": "",
+          "start_date": "",
+          "end_date": "2024"
+        },
+        {
+          "degree": "ITI WIREMAN 2YEAR",
+          "institution": "PORBANDAR",
+          "location": "",
+          "start_date": "",
+          "end_date": "2025"
+        }
+      ],
+      "certifications": [],
+      "languages": [],
+      "links": []
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 17592.92,
+    "usage": {
+      "completion_tokens": 2262,
+      "prompt_tokens": 995,
+      "total_tokens": 3257,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1941
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "BHARDA CHIRAG HARISH BHAI",
+    "email": "bhardachirag4@gmail.co.",
+    "phone": "+91 9809801540",
+    "location": "Near koteshvar temple bokhira porbandar gujarat-360575",
+    "summary": "",
+    "skills": {
+      "technical_skills": [],
+      "soft_skills": [],
+      "tools": [],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [],
+    "education": [
+      {
+        "degree": "CRTI COURSE ON COMPUTER CONCEPT (C.C.C",
+        "institution": "ITMS",
+        "location": "",
+        "start_date": "",
+        "end_date": "2016"
+      },
+      {
+        "degree": "10th",
+        "institution": "NAVYUG VIDYALAYA PORBANDAR",
+        "location": "",
+        "start_date": "",
+        "end_date": "2019"
+      },
+      {
+        "degree": "12th",
+        "institution": "NAVYUG VIDYALAYA PORBANDAR",
+        "location": "",
+        "start_date": "",
+        "end_date": "2021"
+      },
+      {
+        "degree": "ITI WIREMAN 1YEAR",
+        "institution": "PORBANDAR",
+        "location": "",
+        "start_date": "",
+        "end_date": "2024"
+      },
+      {
+        "degree": "ITI WIREMAN 2YEAR",
+        "institution": "PORBANDAR",
+        "location": "",
+        "start_date": "",
+        "end_date": "2025"
+      }
+    ],
+    "certifications": [],
+    "languages": [],
+    "links": []
+  },
+  "resume_json": {
+    "full_name": "BHARDA CHIRAG HARISH BHAI",
+    "email": "bhardachirag4@gmail.co.",
+    "phone": "+91 9809801540",
+    "location": "Near koteshvar temple bokhira porbandar gujarat-360575",
+    "summary": "",
+    "skills": {
+      "technical_skills": [],
+      "soft_skills": [],
+      "tools": [],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [],
+    "education": [
+      {
+        "degree": "CRTI COURSE ON COMPUTER CONCEPT (C.C.C",
+        "institution": "ITMS",
+        "location": "",
+        "start_date": "",
+        "end_date": "2016"
+      },
+      {
+        "degree": "10th",
+        "institution": "NAVYUG VIDYALAYA PORBANDAR",
+        "location": "",
+        "start_date": "",
+        "end_date": "2019"
+      },
+      {
+        "degree": "12th",
+        "institution": "NAVYUG VIDYALAYA PORBANDAR",
+        "location": "",
+        "start_date": "",
+        "end_date": "2021"
+      },
+      {
+        "degree": "ITI WIREMAN 1YEAR",
+        "institution": "PORBANDAR",
+        "location": "",
+        "start_date": "",
+        "end_date": "2024"
+      },
+      {
+        "degree": "ITI WIREMAN 2YEAR",
+        "institution": "PORBANDAR",
+        "location": "",
+        "start_date": "",
+        "end_date": "2025"
+      }
+    ],
+    "certifications": [],
+    "languages": [],
+    "links": []
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 7.3275,
+    "quality_seconds": 0.0448,
+    "normalization_seconds": 0.0001,
+    "recovery_seconds": 0.8959,
+    "llm_seconds": 17.6038,
+    "total_seconds": 25.9132
+  },
+  "_stored_name": "977adbb0-f536-43d8-aa01-e9a3d9535af7_SHJ-5442_SHC-322085.pdf",
+  "direct_llm_routing": null,
+  "extractor_results": {},
+  "analyses": [
+    {
+      "analysis_id": "e426b319-fd64-4c10-9ab8-397173a90d60",
+      "resume_id": "977adbb0-f536-43d8-aa01-e9a3d9535af7",
+      "analysis_version": 1,
+      "status": "success",
+      "created_at": "2026-11-11T17:25:09.436207+00:00",
+      "model": "muse-spark-1.3-contributor",
+      "yaml_version": "completeness@1ca214852186+eval-1.0.0",
+      "usage_type": "evaluation",
+      "tokens": {
+        "input": 4685,
+        "output": 3160,
+        "total": 7845
+      },
+      "reasoning_tokens": 982,
+      "duration_ms": 33982.03,
+      "evaluation": {
+        "candidate": {
+          "name": "BHARDA CHIRAG HARISH BHAI",
+          "headline": "",
+          "location": "Near koteshvar temple bokhira porbandar gujarat-360575",
+          "email": "bhardachirag4@gmail.co.",
+          "summary": ""
+        },
+        "career_stage": "Fresher",
+        "professional_domain": "Vocational Trade - ITI Wireman / Electrical",
+        "matching_sections": [
+          {
+            "section": "Contact Information",
+            "original_heading": "Personal Details",
+            "presence_status": "present",
+            "completeness_status": "partial",
+            "quality_assessment": "Basic contact provided but email appears truncated",
+            "summary": "Phone, email and address listed under Personal Details",
+            "evidence": [
+              "Phone : 9809801540",
+              "Email : bhardachirag4@gmail.co.",
+              "Address : Near koteshvar temple bokhira porbandar gujarat-360575"
+            ],
+            "remarks": "Email likely incomplete (.co. vs .com); no LinkedIn or alternate contact"
+          },
+          {
+            "section": "Education",
+            "original_heading": "Education",
+            "presence_status": "present",
+            "completeness_status": "complete",
+            "quality_assessment": "Clear list of qualifications with grades and years",
+            "summary": "CCC 2016 A+, 10th 2019, 12th 2021, ITI Wireman 1yr 2024 and 2yr 2025",
+            "evidence": [
+              "CRTI COURSE ON COMPUTER CONCEPT (C.C.C ITMS A+ 2016",
+              "10th NAVYUG VIDYALAYA PORBANDAR 54.66 2019",
+              "12th NAVYUG VIDYALAYA PORBANDAR 47% 2021",
+              "ITI WIREMAN 1YEAR PORBANDAR 74.83% 2024",
+              "ITI WIREMAN 2YEAR PORBANDAR 76.33% 2025"
+            ],
+            "remarks": "Strongest section; vocational progression clearly shown"
+          },
+          {
+            "section": "Achievements",
+            "original_heading": "Embedded in Work Experience / Summary (no dedicated heading)",
+            "presence_status": "present",
+            "completeness_status": "partial",
+            "quality_assessment": "",
+            "summary": "Measurable achievement content documented in the resume (3 outcome statements found); no dedicated Achievements heading.",
+            "evidence": [
+              "12th NAVYUG VIDYALAYA PORBANDAR 47% 2021",
+              "ITI WIREMAN 1YEAR PORBANDAR 74.83% 2024",
+              "ITI WIREMAN 2YEAR PORBANDAR 76.33% 2025"
+            ],
+            "remarks": "Content verified present in the resume text by deterministic scan; it is documented inside Work Experience / Summary rather than under a dedicated Achievements heading. Adding a dedicated heading is a presentation suggestion only — the content itself is not missing."
+          }
+        ],
+        "missing_sections": [
+          {
+            "section": "Professional Summary",
+            "importance": "High",
+            "status": "missing",
+            "reason": "No summary or profile statement found in text",
+            "impact": "No career intent or trade focus communicated for fresher evaluation",
+            "recommendation": "Add 2-3 line summary: ITI Wireman fresher, key trade skills, job sought",
+            "evidence": []
+          },
+          {
+            "section": "Technical Skills",
+            "importance": "Critical",
+            "status": "missing",
+            "reason": "No skills list or trade skills described",
+            "impact": "Cannot assess practical wireman/electrical capability",
+            "recommendation": "Add Technical Skills: wiring, tools, safety, measurements learned in ITI",
+            "evidence": []
+          },
+          {
+            "section": "Work Experience",
+            "importance": "Critical",
+            "status": "missing",
+            "reason": "No employment history in text, expected for fresher to be absent but must be confirmed",
+            "impact": "No applied experience to evaluate; judged as fresher on training only",
+            "recommendation": "If any apprenticeship/site work done, add; otherwise state Fresher",
+            "evidence": []
+          },
+          {
+            "section": "Internship Experience",
+            "importance": "High",
+            "status": "missing",
+            "reason": "No internship or apprenticeship mentioned",
+            "impact": "Misses practical training evidence critical for ITI fresher",
+            "recommendation": "Add ITI practical training, workshop, on-job training details",
+            "evidence": []
+          },
+          {
+            "section": "Projects",
+            "importance": "High",
+            "status": "missing",
+            "reason": "No projects or practical work described",
+            "impact": "No demonstrable application of trade skills",
+            "recommendation": "Add 1-2 practical works: wiring installations, repairs done during ITI",
+            "evidence": []
+          },
+          {
+            "section": "Certifications",
+            "importance": "Medium",
+            "status": "missing",
+            "reason": "CCC and ITI listed under Education, no separate certification details",
+            "impact": "CCC computer knowledge not presented as certifiable skill",
+            "recommendation": "Separate Certifications section with CCC certificate details",
+            "evidence": [
+              "CRTI COURSE ON COMPUTER CONCEPT (C.C.C ITMS A+ 2016"
+            ]
+          },
+          {
+            "section": "Career Objective",
+            "importance": "Medium",
+            "status": "missing",
+            "reason": "No objective statement",
+            "impact": "Target role (electrician/wireman/helper) unclear",
+            "recommendation": "Add objective for wireman/electrical helper role",
+            "evidence": []
+          },
+          {
+            "section": "Responsibilities",
+            "importance": "High",
+            "status": "missing",
+            "reason": "No duty bullets anywhere in resume",
+            "impact": "No understanding of what candidate can handle on job",
+            "recommendation": "Add responsibilities from ITI workshop/apprenticeship",
+            "evidence": []
+          },
+          {
+            "section": "Core Competencies",
+            "importance": "Medium",
+            "status": "missing",
+            "reason": "No competencies listed",
+            "impact": "Soft and safety competencies unknown",
+            "recommendation": "Add safety awareness, teamwork, tools handling if applicable",
+            "evidence": []
+          }
+        ],
+        "good_to_have": [
+          {
+            "section": "Languages",
+            "present": false,
+            "relevance": "Useful for site work communication",
+            "potential_value": "Would show regional/workplace communication ability",
+            "recommendation": "Add languages known"
+          },
+          {
+            "section": "LinkedIn",
+            "present": false,
+            "relevance": "Low for trade roles",
+            "potential_value": "Minimal",
+            "recommendation": "Optional"
+          },
+          {
+            "section": "Certifications",
+            "present": false,
+            "relevance": "CCC could serve as IT literacy proof",
+            "potential_value": "Supports computer basics claim",
+            "recommendation": "List CCC separately with full name"
+          },
+          {
+            "section": "Relevant Coursework",
+            "present": false,
+            "relevance": "High for ITI fresher",
+            "potential_value": "Would detail wireman trade subjects",
+            "recommendation": "Add trade subjects and workshop skills"
+          }
+        ],
+        "completeness": {
+          "score": 25.0,
+          "classification": "Poor",
+          "explanation": {
+            "why_low": "Only Contact Information and Education present; no skills, experience, summary, projects, or responsibilities",
+            "contributing_sections": [
+              "Education",
+              "Contact Information"
+            ],
+            "missing_information": [
+              "Technical Skills",
+              "Work Experience",
+              "Internship Experience",
+              "Professional Summary",
+              "Projects",
+              "Responsibilities",
+              "Certifications"
+            ],
+            "problems": [
+              "No demonstrable trade skills listed",
+              "Email appears truncated",
+              "No career intent stated"
+            ],
+            "improvements": [
+              "Add Technical Skills and ITI practical details",
+              "Add summary and objective",
+              "Fix email and add complete contact"
+            ],
+            "priorities": [
+              "Add Technical Skills",
+              "Add internship/apprenticeship and responsibilities"
+            ]
+          }
+        },
+        "quality": {
+          "score": 32.0,
+          "classification": "Needs Improvement",
+          "explanation": {
+            "why_low": "Minimal content, plain listing, truncated email, no descriptions of capability or achievements",
+            "contributing_sections": [
+              "Education"
+            ],
+            "missing_information": [
+              "Skill presentation",
+              "Project/experience descriptions",
+              "Measurable achievements"
+            ],
+            "problems": [
+              "Very sparse content with only 5 education rows",
+              "No summary, skills or descriptions",
+              "Email typo bhardachirag4@gmail.co.",
+              "Inconsistent formatting (CRTI, grade formats)"
+            ],
+            "improvements": [
+              "Expand with skills and training descriptions",
+              "Correct email and formatting consistency",
+              "Add clear headings and bullet structure"
+            ],
+            "priorities": [
+              "Fix email accuracy",
+              "Add skills and training narrative"
+            ]
+          }
+        },
+        "role_suitability": [
+          {
+            "role": "Technical Support Engineer",
+            "score": 8.0,
+            "matching_skills": [],
+            "missing_skills": [
+              "Troubleshooting",
+              "Operating systems",
+              "Communication"
+            ],
+            "relevant_projects": [],
+            "relevant_experience": [],
+            "evidence": [
+              "No troubleshooting, OS, or support experience in text",
+              "Only CCC computer concept course 2016"
+            ],
+            "explanation": "CCC alone does not demonstrate support skills; no systems, troubleshooting or communication evidence"
+          },
+          {
+            "role": "System Administrator",
+            "score": 5.0,
+            "matching_skills": [],
+            "missing_skills": [
+              "Linux/Windows administration",
+              "User management",
+              "Troubleshooting"
+            ],
+            "relevant_projects": [],
+            "relevant_experience": [],
+            "evidence": [
+              "No administration or OS skills listed"
+            ],
+            "explanation": "No IT administration background; profile is electrical trade, not IT systems"
+          },
+          {
+            "role": "Software Tester",
+            "score": 3.0,
+            "matching_skills": [],
+            "missing_skills": [
+              "Manual testing",
+              "Test documentation",
+              "Defect reporting"
+            ],
+            "relevant_projects": [],
+            "relevant_experience": [],
+            "evidence": [
+              "No testing or SDLC content"
+            ],
+            "explanation": "No relevance to testing; included only as taxonomy check, not suitable"
+          }
+        ],
+        "suitable_roles": [],
+        "strengths": [
+          "Completed ITI Wireman 1-year 74.83% in 2024 and 2-year 76.33% in 2025 at Porbandar showing trade progression",
+          "CCC Computer Concept course with A+ in 2016 showing basic computer literacy",
+          "Consistent education trail: 10th 2019, 12th 2021, ITI 2024-2025 from Navyug Vidyalaya and Porbandar"
+        ],
+        "weaknesses": [
+          "No Technical Skills section - wireman tools, wiring, safety skills not described",
+          "No work, internship, apprenticeship or responsibilities content to prove practical ability",
+          "Email bhardachirag4@gmail.co. appears truncated and unprofessional",
+          "No Professional Summary, Career Objective or Achievements to position as fresher"
+        ],
+        "recommendations": [
+          "Add Technical Skills section with ITI trade skills, tools, wiring types and safety practices",
+          "Add Internship/Apprenticeship and Responsibilities with workshop and field work details",
+          "Fix email to full valid address and verify phone formatting",
+          "Add 2-3 line Professional Summary and Career Objective targeting wireman/electrician helper roles",
+          "Separate CCC as Certification and add any ITI practical projects or on-job training"
+        ]
+      },
+      "error": null,
+      "content_evidence": {
+        "responsibilities": {
+          "found": false,
+          "evidence_count": 0,
+          "action": "none"
+        },
+        "achievements": {
+          "found": true,
+          "evidence_count": 3,
+          "action": "moved_to_matching"
+        }
+      },
+      "diagnostics": {
+        "finish_reason": "stop",
+        "response_chars": 9128,
+        "model": "muse-spark-1.3-contributor",
+        "recovered_via_correction": false
+      }
+    }
+  ],
+  "analysis": {
+    "analysis_id": "e426b319-fd64-4c10-9ab8-397173a90d60",
+    "resume_id": "977adbb0-f536-43d8-aa01-e9a3d9535af7",
+    "analysis_version": 1,
+    "status": "success",
+    "created_at": "2026-11-11T17:25:09.436207+00:00",
+    "model": "muse-spark-1.3-contributor",
+    "yaml_version": "completeness@1ca214852186+eval-1.0.0",
+    "usage_type": "evaluation",
+    "tokens": {
+      "input": 4685,
+      "output": 3160,
+      "total": 7845
+    },
+    "reasoning_tokens": 982,
+    "duration_ms": 33982.03,
+    "evaluation": {
+      "candidate": {
+        "name": "BHARDA CHIRAG HARISH BHAI",
+        "headline": "",
+        "location": "Near koteshvar temple bokhira porbandar gujarat-360575",
+        "email": "bhardachirag4@gmail.co.",
+        "summary": ""
+      },
+      "career_stage": "Fresher",
+      "professional_domain": "Vocational Trade - ITI Wireman / Electrical",
+      "matching_sections": [
+        {
+          "section": "Contact Information",
+          "original_heading": "Personal Details",
+          "presence_status": "present",
+          "completeness_status": "partial",
+          "quality_assessment": "Basic contact provided but email appears truncated",
+          "summary": "Phone, email and address listed under Personal Details",
+          "evidence": [
+            "Phone : 9809801540",
+            "Email : bhardachirag4@gmail.co.",
+            "Address : Near koteshvar temple bokhira porbandar gujarat-360575"
+          ],
+          "remarks": "Email likely incomplete (.co. vs .com); no LinkedIn or alternate contact"
+        },
+        {
+          "section": "Education",
+          "original_heading": "Education",
+          "presence_status": "present",
+          "completeness_status": "complete",
+          "quality_assessment": "Clear list of qualifications with grades and years",
+          "summary": "CCC 2016 A+, 10th 2019, 12th 2021, ITI Wireman 1yr 2024 and 2yr 2025",
+          "evidence": [
+            "CRTI COURSE ON COMPUTER CONCEPT (C.C.C ITMS A+ 2016",
+            "10th NAVYUG VIDYALAYA PORBANDAR 54.66 2019",
+            "12th NAVYUG VIDYALAYA PORBANDAR 47% 2021",
+            "ITI WIREMAN 1YEAR PORBANDAR 74.83% 2024",
+            "ITI WIREMAN 2YEAR PORBANDAR 76.33% 2025"
+          ],
+          "remarks": "Strongest section; vocational progression clearly shown"
+        },
+        {
+          "section": "Achievements",
+          "original_heading": "Embedded in Work Experience / Summary (no dedicated heading)",
+          "presence_status": "present",
+          "completeness_status": "partial",
+          "quality_assessment": "",
+          "summary": "Measurable achievement content documented in the resume (3 outcome statements found); no dedicated Achievements heading.",
+          "evidence": [
+            "12th NAVYUG VIDYALAYA PORBANDAR 47% 2021",
+            "ITI WIREMAN 1YEAR PORBANDAR 74.83% 2024",
+            "ITI WIREMAN 2YEAR PORBANDAR 76.33% 2025"
+          ],
+          "remarks": "Content verified present in the resume text by deterministic scan; it is documented inside Work Experience / Summary rather than under a dedicated Achievements heading. Adding a dedicated heading is a presentation suggestion only — the content itself is not missing."
+        }
+      ],
+      "missing_sections": [
+        {
+          "section": "Professional Summary",
+          "importance": "High",
+          "status": "missing",
+          "reason": "No summary or profile statement found in text",
+          "impact": "No career intent or trade focus communicated for fresher evaluation",
+          "recommendation": "Add 2-3 line summary: ITI Wireman fresher, key trade skills, job sought",
+          "evidence": []
+        },
+        {
+          "section": "Technical Skills",
+          "importance": "Critical",
+          "status": "missing",
+          "reason": "No skills list or trade skills described",
+          "impact": "Cannot assess practical wireman/electrical capability",
+          "recommendation": "Add Technical Skills: wiring, tools, safety, measurements learned in ITI",
+          "evidence": []
+        },
+        {
+          "section": "Work Experience",
+          "importance": "Critical",
+          "status": "missing",
+          "reason": "No employment history in text, expected for fresher to be absent but must be confirmed",
+          "impact": "No applied experience to evaluate; judged as fresher on training only",
+          "recommendation": "If any apprenticeship/site work done, add; otherwise state Fresher",
+          "evidence": []
+        },
+        {
+          "section": "Internship Experience",
+          "importance": "High",
+          "status": "missing",
+          "reason": "No internship or apprenticeship mentioned",
+          "impact": "Misses practical training evidence critical for ITI fresher",
+          "recommendation": "Add ITI practical training, workshop, on-job training details",
+          "evidence": []
+        },
+        {
+          "section": "Projects",
+          "importance": "High",
+          "status": "missing",
+          "reason": "No projects or practical work described",
+          "impact": "No demonstrable application of trade skills",
+          "recommendation": "Add 1-2 practical works: wiring installations, repairs done during ITI",
+          "evidence": []
+        },
+        {
+          "section": "Certifications",
+          "importance": "Medium",
+          "status": "missing",
+          "reason": "CCC and ITI listed under Education, no separate certification details",
+          "impact": "CCC computer knowledge not presented as certifiable skill",
+          "recommendation": "Separate Certifications section with CCC certificate details",
+          "evidence": [
+            "CRTI COURSE ON COMPUTER CONCEPT (C.C.C ITMS A+ 2016"
+          ]
+        },
+        {
+          "section": "Career Objective",
+          "importance": "Medium",
+          "status": "missing",
+          "reason": "No objective statement",
+          "impact": "Target role (electrician/wireman/helper) unclear",
+          "recommendation": "Add objective for wireman/electrical helper role",
+          "evidence": []
+        },
+        {
+          "section": "Responsibilities",
+          "importance": "High",
+          "status": "missing",
+          "reason": "No duty bullets anywhere in resume",
+          "impact": "No understanding of what candidate can handle on job",
+          "recommendation": "Add responsibilities from ITI workshop/apprenticeship",
+          "evidence": []
+        },
+        {
+          "section": "Core Competencies",
+          "importance": "Medium",
+          "status": "missing",
+          "reason": "No competencies listed",
+          "impact": "Soft and safety competencies unknown",
+          "recommendation": "Add safety awareness, teamwork, tools handling if applicable",
+          "evidence": []
+        }
+      ],
+      "good_to_have": [
+        {
+          "section": "Languages",
+          "present": false,
+          "relevance": "Useful for site work communication",
+          "potential_value": "Would show regional/workplace communication ability",
+          "recommendation": "Add languages known"
+        },
+        {
+          "section": "LinkedIn",
+          "present": false,
+          "relevance": "Low for trade roles",
+          "potential_value": "Minimal",
+          "recommendation": "Optional"
+        },
+        {
+          "section": "Certifications",
+          "present": false,
+          "relevance": "CCC could serve as IT literacy proof",
+          "potential_value": "Supports computer basics claim",
+          "recommendation": "List CCC separately with full name"
+        },
+        {
+          "section": "Relevant Coursework",
+          "present": false,
+          "relevance": "High for ITI fresher",
+          "potential_value": "Would detail wireman trade subjects",
+          "recommendation": "Add trade subjects and workshop skills"
+        }
+      ],
+      "completeness": {
+        "score": 25.0,
+        "classification": "Poor",
+        "explanation": {
+          "why_low": "Only Contact Information and Education present; no skills, experience, summary, projects, or responsibilities",
+          "contributing_sections": [
+            "Education",
+            "Contact Information"
+          ],
+          "missing_information": [
+            "Technical Skills",
+            "Work Experience",
+            "Internship Experience",
+            "Professional Summary",
+            "Projects",
+            "Responsibilities",
+            "Certifications"
+          ],
+          "problems": [
+            "No demonstrable trade skills listed",
+            "Email appears truncated",
+            "No career intent stated"
+          ],
+          "improvements": [
+            "Add Technical Skills and ITI practical details",
+            "Add summary and objective",
+            "Fix email and add complete contact"
+          ],
+          "priorities": [
+            "Add Technical Skills",
+            "Add internship/apprenticeship and responsibilities"
+          ]
+        }
+      },
+      "quality": {
+        "score": 32.0,
+        "classification": "Needs Improvement",
+        "explanation": {
+          "why_low": "Minimal content, plain listing, truncated email, no descriptions of capability or achievements",
+          "contributing_sections": [
+            "Education"
+          ],
+          "missing_information": [
+            "Skill presentation",
+            "Project/experience descriptions",
+            "Measurable achievements"
+          ],
+          "problems": [
+            "Very sparse content with only 5 education rows",
+            "No summary, skills or descriptions",
+            "Email typo bhardachirag4@gmail.co.",
+            "Inconsistent formatting (CRTI, grade formats)"
+          ],
+          "improvements": [
+            "Expand with skills and training descriptions",
+            "Correct email and formatting consistency",
+            "Add clear headings and bullet structure"
+          ],
+          "priorities": [
+            "Fix email accuracy",
+            "Add skills and training narrative"
+          ]
+        }
+      },
+      "role_suitability": [
+        {
+          "role": "Technical Support Engineer",
+          "score": 8.0,
+          "matching_skills": [],
+          "missing_skills": [
+            "Troubleshooting",
+            "Operating systems",
+            "Communication"
+          ],
+          "relevant_projects": [],
+          "relevant_experience": [],
+          "evidence": [
+            "No troubleshooting, OS, or support experience in text",
+            "Only CCC computer concept course 2016"
+          ],
+          "explanation": "CCC alone does not demonstrate support skills; no systems, troubleshooting or communication evidence"
+        },
+        {
+          "role": "System Administrator",
+          "score": 5.0,
+          "matching_skills": [],
+          "missing_skills": [
+            "Linux/Windows administration",
+            "User management",
+            "Troubleshooting"
+          ],
+          "relevant_projects": [],
+          "relevant_experience": [],
+          "evidence": [
+            "No administration or OS skills listed"
+          ],
+          "explanation": "No IT administration background; profile is electrical trade, not IT systems"
+        },
+        {
+          "role": "Software Tester",
+          "score": 3.0,
+          "matching_skills": [],
+          "missing_skills": [
+            "Manual testing",
+            "Test documentation",
+            "Defect reporting"
+          ],
+          "relevant_projects": [],
+          "relevant_experience": [],
+          "evidence": [
+            "No testing or SDLC content"
+          ],
+          "explanation": "No relevance to testing; included only as taxonomy check, not suitable"
+        }
+      ],
+      "suitable_roles": [],
+      "strengths": [
+        "Completed ITI Wireman 1-year 74.83% in 2024 and 2-year 76.33% in 2025 at Porbandar showing trade progression",
+        "CCC Computer Concept course with A+ in 2016 showing basic computer literacy",
+        "Consistent education trail: 10th 2019, 12th 2021, ITI 2024-2025 from Navyug Vidyalaya and Porbandar"
+      ],
+      "weaknesses": [
+        "No Technical Skills section - wireman tools, wiring, safety skills not described",
+        "No work, internship, apprenticeship or responsibilities content to prove practical ability",
+        "Email bhardachirag4@gmail.co. appears truncated and unprofessional",
+        "No Professional Summary, Career Objective or Achievements to position as fresher"
+      ],
+      "recommendations": [
+        "Add Technical Skills section with ITI trade skills, tools, wiring types and safety practices",
+        "Add Internship/Apprenticeship and Responsibilities with workshop and field work details",
+        "Fix email to full valid address and verify phone formatting",
+        "Add 2-3 line Professional Summary and Career Objective targeting wireman/electrician helper roles",
+        "Separate CCC as Certification and add any ITI practical projects or on-job training"
+      ]
+    },
+    "error": null,
+    "content_evidence": {
+      "responsibilities": {
+        "found": false,
+        "evidence_count": 0,
+        "action": "none"
+      },
+      "achievements": {
+        "found": true,
+        "evidence_count": 3,
+        "action": "moved_to_matching"
+      }
+    },
+    "diagnostics": {
+      "finish_reason": "stop",
+      "response_chars": 9128,
+      "model": "muse-spark-1.3-contributor",
+      "recovered_via_correction": false
+    }
+  }
+}

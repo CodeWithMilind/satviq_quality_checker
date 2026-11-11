@@ -1,0 +1,2222 @@
+{
+  "resume_id": "b5384b5f-ca44-48ea-84cf-911449f18284",
+  "filename": "Milind_Python_Dev.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 116968,
+  "uploaded_at": "2026-11-11T15:16:49.651798+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "final_extractor": "tika",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "b5384b5f-ca44-48ea-84cf-911449f18284-attempt-1",
+      "resume_id": "b5384b5f-ca44-48ea-84cf-911449f18284",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Quality PASS (Text Health 100.0, Completeness 94.0, Reading Order 100.0) — result accepted; fallback stopped.",
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS (Text Health 100.0, Completeness 94.0, Reading Order 100.0) — result accepted; fallback stopped.",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "b5384b5f-ca44-48ea-84cf-911449f18284",
+        "source_tool": "tika",
+        "attempt_id": "b5384b5f-ca44-48ea-84cf-911449f18284-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2967,
+            "word_count": 319,
+            "line_count": 67,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.117964,
+            "symbol_count": 25,
+            "symbol_ratio": 0.008426,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2967,
+            "word_count": 319,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Responsibilities"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "technical skills",
+              "Work Experience": "experience",
+              "Education": "education",
+              "Projects": "projects",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "milind.py2004@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "TECHNICAL SKILLS",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "TECHNICAL SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 53,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "PROJECTS",
+                "detection_method": "heading",
+                "line_number": 20,
+                "evidence": "PROJECTS",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 37,
+                "evidence": "CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "detected",
+              "Certifications": "detected",
+              "Summary": "missing",
+              "Responsibilities": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Responsibilities"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2967,
+            "word_count": 319,
+            "line_count": 67,
+            "non_empty_line_count": 53,
+            "short_line_count": 17,
+            "short_line_ratio": 0.320755,
+            "fragmented_line_count": 7,
+            "fragmented_line_ratio": 0.132075,
+            "mean_line_length": 54.4,
+            "median_line_length": 43.0,
+            "line_length_stdev": 36.3,
+            "line_length_cv": 0.667245,
+            "broken_sentence_count": 9,
+            "broken_sentence_ratio": 0.173077,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "b5384b5f-ca44-48ea-84cf-911449f18284",
+        "source_tool": "tika",
+        "attempt_id": "b5384b5f-ca44-48ea-84cf-911449f18284-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2967,
+            "word_count": 319,
+            "line_count": 67,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.117964,
+            "symbol_count": 25,
+            "symbol_ratio": 0.008426,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2967,
+            "word_count": 319,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Responsibilities"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "technical skills",
+              "Work Experience": "experience",
+              "Education": "education",
+              "Projects": "projects",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "milind.py2004@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "TECHNICAL SKILLS",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "TECHNICAL SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 53,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "PROJECTS",
+                "detection_method": "heading",
+                "line_number": 20,
+                "evidence": "PROJECTS",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 37,
+                "evidence": "CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "detected",
+              "Certifications": "detected",
+              "Summary": "missing",
+              "Responsibilities": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Responsibilities"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2967,
+            "word_count": 319,
+            "line_count": 67,
+            "non_empty_line_count": 53,
+            "short_line_count": 17,
+            "short_line_ratio": 0.320755,
+            "fragmented_line_count": 7,
+            "fragmented_line_ratio": 0.132075,
+            "mean_line_length": 54.4,
+            "median_line_length": 43.0,
+            "line_length_stdev": 36.3,
+            "line_length_cv": 0.667245,
+            "broken_sentence_count": 9,
+            "broken_sentence_ratio": 0.173077,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 94.1,
+      "duration_ms": 13519.02,
+      "text": "Milind Chaudhari\n\t+91 8530871762 | Pune | milind.py2004@gmail.com\n\tLinkedIn | GitHub | Portfolio\n\nTECHNICAL SKILLS\nLanguages: Python, SQL, C, C++, Java\nBackend Development: FastAPI, Flask, REST APIs, API Integration, Swagger/OpenAPI\nWeb Scraping & Automation: Requests, BeautifulSoup, Selenium, Python Automation, Data Collection\nDatabases: MySQL, MongoDB\nPython Libraries: Pandas, NumPy, Matplotlib, Scikit-learn\nTools & Technologies: Git, GitHub, Postman, Docker, Jupyter Notebook, VS Code, Ollama\nAdditional: Data Structures & Algorithms, Data Processing, Exploratory Data Analysis, Machine Learning\nEXPERIENCE\nData Scientist Intern – Rubixe AI Solutions May 2025 – Nov 2025\n\tDeveloped Python-based data processing and machine learning workflows using Pandas, NumPy, and Scikit-learn.\n\tBuilt preprocessing and feature engineering pipelines for structured datasets.\n\tAutomated repetitive data processing and reporting tasks using Python.\n\tWorked with SQL and data analysis workflows to prepare datasets for predictive modeling.\n\nPROJECTS\nHirevia – Python Job Aggregation Platform\nPython • FastAPI • Web Scraping • Ollama • Telegram\n\tDeveloped a Python-based job discovery platform integrating multiple sources with automated data collection and\nprocessing.\n\tImplemented job normalization, deduplication, filtering, and relevance-based matching.\n\nData4Viz – AI Data Analysis Platform\nPython • FastAPI • Pandas • NumPy • Scikit-learn\n\tDeveloped a Python-based platform for automated data preprocessing, exploratory data analysis, and visualization.\n\tBuilt backend workflows for dataset profiling, analysis, and AI-assisted insights.\n\nVizion – Python Data Analysis Library\nPython • Pandas • NumPy • Matplotlib\n\tDeveloped a reusable Python library to automate exploratory data analysis and visualization tasks.\n\tImplemented functions for dataset summaries, missing-value analysis, column-type detection, and outlier analysis.\n\nCERTIFICATIONS\n\tCertified Data Scientist – NASSCOM\n\n\tData Scientist – IABAC\n\n\tData Scientist Intern – Rubixe AI Solutions\n\n\tData Scientist Trainee Certificate\n\n\nACHIEVEMENTS\n\t1st Place – Problem Solving Hackathon, Modern College of Engineering\n\n\t1st Place – Hackathon, SNBP Spurthi Fest 2K26\n\n\nEDUCATION\nDPGU School of Management & Research, Pune\nMCA — 84% 2025 – 2027\nMJ College, Jalgaon\nBCA — 75% 2023 – 2025\n|\n\nmailto:milind.py2004@gmail.com\nhttps://linkedin.com/in/milind-chaudhari-604734237\nhttps://github.com/CodeWithMilind\nhttps://codewithmilind.github.io/PortFolio/\nhttps://fsp-assessment-certificates.s3.ap-southeast-1.amazonaws.com/%27/s3/buckets/fsp-assessment-certificates%27/Milind%2BNitin%2BChaudhari_156429340.pdf.pdf\nhttps://iabac.org/certifications/verify-certificate?page_journey=&certNum=IAB1120177654\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/RX1763978472.pdf\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/COCMPL25091617580132244165.pdf",
+      "extracted_text": "Milind Chaudhari\n\t+91 8530871762 | Pune | milind.py2004@gmail.com\n\tLinkedIn | GitHub | Portfolio\n\nTECHNICAL SKILLS\nLanguages: Python, SQL, C, C++, Java\nBackend Development: FastAPI, Flask, REST APIs, API Integration, Swagger/OpenAPI\nWeb Scraping & Automation: Requests, BeautifulSoup, Selenium, Python Automation, Data Collection\nDatabases: MySQL, MongoDB\nPython Libraries: Pandas, NumPy, Matplotlib, Scikit-learn\nTools & Technologies: Git, GitHub, Postman, Docker, Jupyter Notebook, VS Code, Ollama\nAdditional: Data Structures & Algorithms, Data Processing, Exploratory Data Analysis, Machine Learning\nEXPERIENCE\nData Scientist Intern – Rubixe AI Solutions May 2025 – Nov 2025\n\tDeveloped Python-based data processing and machine learning workflows using Pandas, NumPy, and Scikit-learn.\n\tBuilt preprocessing and feature engineering pipelines for structured datasets.\n\tAutomated repetitive data processing and reporting tasks using Python.\n\tWorked with SQL and data analysis workflows to prepare datasets for predictive modeling.\n\nPROJECTS\nHirevia – Python Job Aggregation Platform\nPython • FastAPI • Web Scraping • Ollama • Telegram\n\tDeveloped a Python-based job discovery platform integrating multiple sources with automated data collection and\nprocessing.\n\tImplemented job normalization, deduplication, filtering, and relevance-based matching.\n\nData4Viz – AI Data Analysis Platform\nPython • FastAPI • Pandas • NumPy • Scikit-learn\n\tDeveloped a Python-based platform for automated data preprocessing, exploratory data analysis, and visualization.\n\tBuilt backend workflows for dataset profiling, analysis, and AI-assisted insights.\n\nVizion – Python Data Analysis Library\nPython • Pandas • NumPy • Matplotlib\n\tDeveloped a reusable Python library to automate exploratory data analysis and visualization tasks.\n\tImplemented functions for dataset summaries, missing-value analysis, column-type detection, and outlier analysis.\n\nCERTIFICATIONS\n\tCertified Data Scientist – NASSCOM\n\n\tData Scientist – IABAC\n\n\tData Scientist Intern – Rubixe AI Solutions\n\n\tData Scientist Trainee Certificate\n\n\nACHIEVEMENTS\n\t1st Place – Problem Solving Hackathon, Modern College of Engineering\n\n\t1st Place – Hackathon, SNBP Spurthi Fest 2K26\n\n\nEDUCATION\nDPGU School of Management & Research, Pune\nMCA — 84% 2025 – 2027\nMJ College, Jalgaon\nBCA — 75% 2023 – 2025\n|\n\nmailto:milind.py2004@gmail.com\nhttps://linkedin.com/in/milind-chaudhari-604734237\nhttps://github.com/CodeWithMilind\nhttps://codewithmilind.github.io/PortFolio/\nhttps://fsp-assessment-certificates.s3.ap-southeast-1.amazonaws.com/%27/s3/buckets/fsp-assessment-certificates%27/Milind%2BNitin%2BChaudhari_156429340.pdf.pdf\nhttps://iabac.org/certifications/verify-certificate?page_journey=&certNum=IAB1120177654\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/RX1763978472.pdf\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/COCMPL25091617580132244165.pdf",
+      "extracted_text_length": 2967,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Milind Chaudhari\n+91 8530871762 | Pune | milind.py2004@gmail.com\nLinkedIn | GitHub | Portfolio\n\nTECHNICAL SKILLS\nLanguages: Python, SQL, C, C++, Java\nBackend Development: FastAPI, Flask, REST APIs, API Integration, Swagger/OpenAPI\nWeb Scraping & Automation: Requests, BeautifulSoup, Selenium, Python Automation, Data Collection\nDatabases: MySQL, MongoDB\nPython Libraries: Pandas, NumPy, Matplotlib, Scikit-learn\nTools & Technologies: Git, GitHub, Postman, Docker, Jupyter Notebook, VS Code, Ollama\nAdditional: Data Structures & Algorithms, Data Processing, Exploratory Data Analysis, Machine Learning\nEXPERIENCE\nData Scientist Intern – Rubixe AI Solutions May 2025 – Nov 2025\nDeveloped Python-based data processing and machine learning workflows using Pandas, NumPy, and Scikit-learn.\nBuilt preprocessing and feature engineering pipelines for structured datasets.\nAutomated repetitive data processing and reporting tasks using Python.\nWorked with SQL and data analysis workflows to prepare datasets for predictive modeling.\n\nPROJECTS\nHirevia – Python Job Aggregation Platform\nPython • FastAPI • Web Scraping • Ollama • Telegram\nDeveloped a Python-based job discovery platform integrating multiple sources with automated data collection and\nprocessing.\nImplemented job normalization, deduplication, filtering, and relevance-based matching.\n\nData4Viz – AI Data Analysis Platform\nPython • FastAPI • Pandas • NumPy • Scikit-learn\nDeveloped a Python-based platform for automated data preprocessing, exploratory data analysis, and visualization.\nBuilt backend workflows for dataset profiling, analysis, and AI-assisted insights.\n\nVizion – Python Data Analysis Library\nPython • Pandas • NumPy • Matplotlib\nDeveloped a reusable Python library to automate exploratory data analysis and visualization tasks.\nImplemented functions for dataset summaries, missing-value analysis, column-type detection, and outlier analysis.\n\nCERTIFICATIONS\nCertified Data Scientist – NASSCOM\n\nData Scientist – IABAC\n\nData Scientist Intern – Rubixe AI Solutions\n\nData Scientist Trainee Certificate\n\nACHIEVEMENTS\n1st Place – Problem Solving Hackathon, Modern College of Engineering\n\n1st Place – Hackathon, SNBP Spurthi Fest 2K26\n\nEDUCATION\nDPGU School of Management & Research, Pune\nMCA — 84% 2025 – 2027\nMJ College, Jalgaon\nBCA — 75% 2023 – 2025\n|\n\nmailto:milind.py2004@gmail.com\nhttps://linkedin.com/in/milind-chaudhari-604734237\nhttps://github.com/CodeWithMilind\nhttps://codewithmilind.github.io/PortFolio/\nhttps://fsp-assessment-certificates.s3.ap-southeast-1.amazonaws.com/%27/s3/buckets/fsp-assessment-certificates%27/Milind%2BNitin%2BChaudhari_156429340.pdf.pdf\nhttps://iabac.org/certifications/verify-certificate?page_journey=&certNum=IAB1120177654\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/RX1763978472.pdf\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/COCMPL25091617580132244165.pdf"
+    }
+  ],
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "skipped_extractors": [
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "gate_decisions": {
+    "tika": {
+      "status": "PASS",
+      "decision": "accept",
+      "reason": "Quality PASS (Text Health 100.0, Completeness 94.0, Reading Order 100.0) — result accepted; fallback stopped."
+    }
+  },
+  "extracted_text": "Milind Chaudhari\n\t+91 8530871762 | Pune | milind.py2004@gmail.com\n\tLinkedIn | GitHub | Portfolio\n\nTECHNICAL SKILLS\nLanguages: Python, SQL, C, C++, Java\nBackend Development: FastAPI, Flask, REST APIs, API Integration, Swagger/OpenAPI\nWeb Scraping & Automation: Requests, BeautifulSoup, Selenium, Python Automation, Data Collection\nDatabases: MySQL, MongoDB\nPython Libraries: Pandas, NumPy, Matplotlib, Scikit-learn\nTools & Technologies: Git, GitHub, Postman, Docker, Jupyter Notebook, VS Code, Ollama\nAdditional: Data Structures & Algorithms, Data Processing, Exploratory Data Analysis, Machine Learning\nEXPERIENCE\nData Scientist Intern – Rubixe AI Solutions May 2025 – Nov 2025\n\tDeveloped Python-based data processing and machine learning workflows using Pandas, NumPy, and Scikit-learn.\n\tBuilt preprocessing and feature engineering pipelines for structured datasets.\n\tAutomated repetitive data processing and reporting tasks using Python.\n\tWorked with SQL and data analysis workflows to prepare datasets for predictive modeling.\n\nPROJECTS\nHirevia – Python Job Aggregation Platform\nPython • FastAPI • Web Scraping • Ollama • Telegram\n\tDeveloped a Python-based job discovery platform integrating multiple sources with automated data collection and\nprocessing.\n\tImplemented job normalization, deduplication, filtering, and relevance-based matching.\n\nData4Viz – AI Data Analysis Platform\nPython • FastAPI • Pandas • NumPy • Scikit-learn\n\tDeveloped a Python-based platform for automated data preprocessing, exploratory data analysis, and visualization.\n\tBuilt backend workflows for dataset profiling, analysis, and AI-assisted insights.\n\nVizion – Python Data Analysis Library\nPython • Pandas • NumPy • Matplotlib\n\tDeveloped a reusable Python library to automate exploratory data analysis and visualization tasks.\n\tImplemented functions for dataset summaries, missing-value analysis, column-type detection, and outlier analysis.\n\nCERTIFICATIONS\n\tCertified Data Scientist – NASSCOM\n\n\tData Scientist – IABAC\n\n\tData Scientist Intern – Rubixe AI Solutions\n\n\tData Scientist Trainee Certificate\n\n\nACHIEVEMENTS\n\t1st Place – Problem Solving Hackathon, Modern College of Engineering\n\n\t1st Place – Hackathon, SNBP Spurthi Fest 2K26\n\n\nEDUCATION\nDPGU School of Management & Research, Pune\nMCA — 84% 2025 – 2027\nMJ College, Jalgaon\nBCA — 75% 2023 – 2025\n|\n\nmailto:milind.py2004@gmail.com\nhttps://linkedin.com/in/milind-chaudhari-604734237\nhttps://github.com/CodeWithMilind\nhttps://codewithmilind.github.io/PortFolio/\nhttps://fsp-assessment-certificates.s3.ap-southeast-1.amazonaws.com/%27/s3/buckets/fsp-assessment-certificates%27/Milind%2BNitin%2BChaudhari_156429340.pdf.pdf\nhttps://iabac.org/certifications/verify-certificate?page_journey=&certNum=IAB1120177654\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/RX1763978472.pdf\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/COCMPL25091617580132244165.pdf",
+  "final_extracted_text": "Milind Chaudhari\n\t+91 8530871762 | Pune | milind.py2004@gmail.com\n\tLinkedIn | GitHub | Portfolio\n\nTECHNICAL SKILLS\nLanguages: Python, SQL, C, C++, Java\nBackend Development: FastAPI, Flask, REST APIs, API Integration, Swagger/OpenAPI\nWeb Scraping & Automation: Requests, BeautifulSoup, Selenium, Python Automation, Data Collection\nDatabases: MySQL, MongoDB\nPython Libraries: Pandas, NumPy, Matplotlib, Scikit-learn\nTools & Technologies: Git, GitHub, Postman, Docker, Jupyter Notebook, VS Code, Ollama\nAdditional: Data Structures & Algorithms, Data Processing, Exploratory Data Analysis, Machine Learning\nEXPERIENCE\nData Scientist Intern – Rubixe AI Solutions May 2025 – Nov 2025\n\tDeveloped Python-based data processing and machine learning workflows using Pandas, NumPy, and Scikit-learn.\n\tBuilt preprocessing and feature engineering pipelines for structured datasets.\n\tAutomated repetitive data processing and reporting tasks using Python.\n\tWorked with SQL and data analysis workflows to prepare datasets for predictive modeling.\n\nPROJECTS\nHirevia – Python Job Aggregation Platform\nPython • FastAPI • Web Scraping • Ollama • Telegram\n\tDeveloped a Python-based job discovery platform integrating multiple sources with automated data collection and\nprocessing.\n\tImplemented job normalization, deduplication, filtering, and relevance-based matching.\n\nData4Viz – AI Data Analysis Platform\nPython • FastAPI • Pandas • NumPy • Scikit-learn\n\tDeveloped a Python-based platform for automated data preprocessing, exploratory data analysis, and visualization.\n\tBuilt backend workflows for dataset profiling, analysis, and AI-assisted insights.\n\nVizion – Python Data Analysis Library\nPython • Pandas • NumPy • Matplotlib\n\tDeveloped a reusable Python library to automate exploratory data analysis and visualization tasks.\n\tImplemented functions for dataset summaries, missing-value analysis, column-type detection, and outlier analysis.\n\nCERTIFICATIONS\n\tCertified Data Scientist – NASSCOM\n\n\tData Scientist – IABAC\n\n\tData Scientist Intern – Rubixe AI Solutions\n\n\tData Scientist Trainee Certificate\n\n\nACHIEVEMENTS\n\t1st Place – Problem Solving Hackathon, Modern College of Engineering\n\n\t1st Place – Hackathon, SNBP Spurthi Fest 2K26\n\n\nEDUCATION\nDPGU School of Management & Research, Pune\nMCA — 84% 2025 – 2027\nMJ College, Jalgaon\nBCA — 75% 2023 – 2025\n|\n\nmailto:milind.py2004@gmail.com\nhttps://linkedin.com/in/milind-chaudhari-604734237\nhttps://github.com/CodeWithMilind\nhttps://codewithmilind.github.io/PortFolio/\nhttps://fsp-assessment-certificates.s3.ap-southeast-1.amazonaws.com/%27/s3/buckets/fsp-assessment-certificates%27/Milind%2BNitin%2BChaudhari_156429340.pdf.pdf\nhttps://iabac.org/certifications/verify-certificate?page_journey=&certNum=IAB1120177654\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/RX1763978472.pdf\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/COCMPL25091617580132244165.pdf",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "quality": {
+    "status": "PASS",
+    "document_id": "b5384b5f-ca44-48ea-84cf-911449f18284",
+    "source_tool": "tika",
+    "attempt_id": "b5384b5f-ca44-48ea-84cf-911449f18284-attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 2967,
+        "word_count": 319,
+        "line_count": 67,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.117964,
+        "symbol_count": 25,
+        "symbol_ratio": 0.008426,
+        "max_repeated_char_run": 3,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 94.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 2967,
+        "word_count": 319,
+        "configured_section_count": 8,
+        "detected_count": 6,
+        "missing_count": 2,
+        "detected_sections": [
+          "Contact Information",
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Summary",
+          "Responsibilities"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Summary",
+          "Responsibilities"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Skills": "technical skills",
+          "Work Experience": "experience",
+          "Education": "education",
+          "Projects": "projects",
+          "Certifications": "certifications"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "milind.py2004@gmail.com",
+            "confidence": 0.8
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "TECHNICAL SKILLS",
+            "detection_method": "heading",
+            "line_number": 5,
+            "evidence": "TECHNICAL SKILLS",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 13,
+            "evidence": "EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATION",
+            "detection_method": "heading",
+            "line_number": 53,
+            "evidence": "EDUCATION",
+            "confidence": 0.98
+          },
+          "Projects": {
+            "canonical_name": "Projects",
+            "original_heading": "PROJECTS",
+            "detection_method": "heading",
+            "line_number": 20,
+            "evidence": "PROJECTS",
+            "confidence": 0.98
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": "CERTIFICATIONS",
+            "detection_method": "heading",
+            "line_number": 37,
+            "evidence": "CERTIFICATIONS",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Projects": "detected",
+          "Certifications": "detected",
+          "Summary": "missing",
+          "Responsibilities": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Summary",
+        "Responsibilities"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Summary",
+        "Responsibilities"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 2967,
+        "word_count": 319,
+        "line_count": 67,
+        "non_empty_line_count": 53,
+        "short_line_count": 17,
+        "short_line_ratio": 0.320755,
+        "fragmented_line_count": 7,
+        "fragmented_line_ratio": 0.132075,
+        "mean_line_length": 54.4,
+        "median_line_length": 43.0,
+        "line_length_stdev": 36.3,
+        "line_length_cv": 0.667245,
+        "broken_sentence_count": 9,
+        "broken_sentence_ratio": 0.173077,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS (Text Health 100.0, Completeness 94.0, Reading Order 100.0) — result accepted; fallback stopped. Selected 'tika' with quality score 94.1. Skipped (never executed): pymupdf, docling, ocr.",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 13519.02,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika passed quality checks and was accepted before this extractor was needed.",
+      "accepted": false,
+      "quality": null,
+      "decision": "skipped",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika passed quality checks and was accepted before this extractor was needed.",
+      "accepted": false,
+      "quality": null,
+      "decision": "skipped",
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika passed quality checks and was accepted before this extractor was needed.",
+      "accepted": false,
+      "quality": null,
+      "decision": "skipped",
+      "selected": false
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=94.1",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS (Text Health 100.0, Completeness 94.0, Reading Order 100.0) — result accepted; fallback stopped. Selected 'tika' with quality score 94.1. Skipped (never executed): pymupdf, docling, ocr.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Tika text normalized: 2967 → 2947 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Contact Information Recovery",
+      "type": "contact_recovery",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Contact information missing and could not be recovered from any source (extractor outputs, first-page text layer, OCR). Still missing: location.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 12852.92,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 34172.0,
+      "message": "Muse AI produced validated Resume JSON from the Tika extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 34172.0,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Milind Chaudhari\n\t+91 8530871762 | Pune | milind.py2004@gmail.com\n\tLinkedIn | GitHub | Portfolio\n\nTECHNICAL SKILLS\nLanguages: Python, SQL, C, C++, Java\nBackend Development: FastAPI, Flask, REST APIs, API Integration, Swagger/OpenAPI\nWeb Scraping & Automation: Requests, BeautifulSoup, Selenium, Python Automation, Data Collection\nDatabases: MySQL, MongoDB\nPython Libraries: Pandas, NumPy, Matplotlib, Scikit-learn\nTools & Technologies: Git, GitHub, Postman, Docker, Jupyter Notebook, VS Code, Ollama\nAdditional: Data Structures & Algorithms, Data Processing, Exploratory Data Analysis, Machine Learning\nEXPERIENCE\nData Scientist Intern – Rubixe AI Solutions May 2025 – Nov 2025\n\tDeveloped Python-based data processing and machine learning workflows using Pandas, NumPy, and Scikit-learn.\n\tBuilt preprocessing and feature engineering pipelines for structured datasets.\n\tAutomated repetitive data processing and reporting tasks using Python.\n\tWorked with SQL and data analysis workflows to prepare datasets for predictive modeling.\n\nPROJECTS\nHirevia – Python Job Aggregation Platform\nPython • FastAPI • Web Scraping • Ollama • Telegram\n\tDeveloped a Python-based job discovery platform integrating multiple sources with automated data collection and\nprocessing.\n\tImplemented job normalization, deduplication, filtering, and relevance-based matching.\n\nData4Viz – AI Data Analysis Platform\nPython • FastAPI • Pandas • NumPy • Scikit-learn\n\tDeveloped a Python-based platform for automated data preprocessing, exploratory data analysis, and visualization.\n\tBuilt backend workflows for dataset profiling, analysis, and AI-assisted insights.\n\nVizion – Python Data Analysis Library\nPython • Pandas • NumPy • Matplotlib\n\tDeveloped a reusable Python library to automate exploratory data analysis and visualization tasks.\n\tImplemented functions for dataset summaries, missing-value analysis, column-type detection, and outlier analysis.\n\nCERTIFICATIONS\n\tCertified Data Scientist – NASSCOM\n\n\tData Scientist – IABAC\n\n\tData Scientist Intern – Rubixe AI Solutions\n\n\tData Scientist Trainee Certificate\n\n\nACHIEVEMENTS\n\t1st Place – Problem Solving Hackathon, Modern College of Engineering\n\n\t1st Place – Hackathon, SNBP Spurthi Fest 2K26\n\n\nEDUCATION\nDPGU School of Management & Research, Pune\nMCA — 84% 2025 – 2027\nMJ College, Jalgaon\nBCA — 75% 2023 – 2025\n|\n\nmailto:milind.py2004@gmail.com\nhttps://linkedin.com/in/milind-chaudhari-604734237\nhttps://github.com/CodeWithMilind\nhttps://codewithmilind.github.io/PortFolio/\nhttps://fsp-assessment-certificates.s3.ap-southeast-1.amazonaws.com/%27/s3/buckets/fsp-assessment-certificates%27/Milind%2BNitin%2BChaudhari_156429340.pdf.pdf\nhttps://iabac.org/certifications/verify-certificate?page_journey=&certNum=IAB1120177654\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/RX1763978472.pdf\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/COCMPL25091617580132244165.pdf",
+    "normalized_text": "Milind Chaudhari\n+91 8530871762 | Pune | milind.py2004@gmail.com\nLinkedIn | GitHub | Portfolio\n\nTECHNICAL SKILLS\nLanguages: Python, SQL, C, C++, Java\nBackend Development: FastAPI, Flask, REST APIs, API Integration, Swagger/OpenAPI\nWeb Scraping & Automation: Requests, BeautifulSoup, Selenium, Python Automation, Data Collection\nDatabases: MySQL, MongoDB\nPython Libraries: Pandas, NumPy, Matplotlib, Scikit-learn\nTools & Technologies: Git, GitHub, Postman, Docker, Jupyter Notebook, VS Code, Ollama\nAdditional: Data Structures & Algorithms, Data Processing, Exploratory Data Analysis, Machine Learning\nEXPERIENCE\nData Scientist Intern – Rubixe AI Solutions May 2025 – Nov 2025\nDeveloped Python-based data processing and machine learning workflows using Pandas, NumPy, and Scikit-learn.\nBuilt preprocessing and feature engineering pipelines for structured datasets.\nAutomated repetitive data processing and reporting tasks using Python.\nWorked with SQL and data analysis workflows to prepare datasets for predictive modeling.\n\nPROJECTS\nHirevia – Python Job Aggregation Platform\nPython • FastAPI • Web Scraping • Ollama • Telegram\nDeveloped a Python-based job discovery platform integrating multiple sources with automated data collection and\nprocessing.\nImplemented job normalization, deduplication, filtering, and relevance-based matching.\n\nData4Viz – AI Data Analysis Platform\nPython • FastAPI • Pandas • NumPy • Scikit-learn\nDeveloped a Python-based platform for automated data preprocessing, exploratory data analysis, and visualization.\nBuilt backend workflows for dataset profiling, analysis, and AI-assisted insights.\n\nVizion – Python Data Analysis Library\nPython • Pandas • NumPy • Matplotlib\nDeveloped a reusable Python library to automate exploratory data analysis and visualization tasks.\nImplemented functions for dataset summaries, missing-value analysis, column-type detection, and outlier analysis.\n\nCERTIFICATIONS\nCertified Data Scientist – NASSCOM\n\nData Scientist – IABAC\n\nData Scientist Intern – Rubixe AI Solutions\n\nData Scientist Trainee Certificate\n\nACHIEVEMENTS\n1st Place – Problem Solving Hackathon, Modern College of Engineering\n\n1st Place – Hackathon, SNBP Spurthi Fest 2K26\n\nEDUCATION\nDPGU School of Management & Research, Pune\nMCA — 84% 2025 – 2027\nMJ College, Jalgaon\nBCA — 75% 2023 – 2025\n|\n\nmailto:milind.py2004@gmail.com\nhttps://linkedin.com/in/milind-chaudhari-604734237\nhttps://github.com/CodeWithMilind\nhttps://codewithmilind.github.io/PortFolio/\nhttps://fsp-assessment-certificates.s3.ap-southeast-1.amazonaws.com/%27/s3/buckets/fsp-assessment-certificates%27/Milind%2BNitin%2BChaudhari_156429340.pdf.pdf\nhttps://iabac.org/certifications/verify-certificate?page_journey=&certNum=IAB1120177654\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/RX1763978472.pdf\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/COCMPL25091617580132244165.pdf",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 2967,
+    "normalized_chars": 2947,
+    "original_estimated_tokens": 742,
+    "normalized_estimated_tokens": 737,
+    "estimated_reduction_percent": 0.7
+  },
+  "contact_recovery": {
+    "status": "not_recovered",
+    "selected_extractor": "tika",
+    "present_before": [
+      "phone",
+      "email"
+    ],
+    "missing_before": [
+      "location"
+    ],
+    "recovered": {},
+    "still_missing": [
+      "location"
+    ],
+    "sources_tried": [
+      {
+        "source": "Tika",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "PyMuPDF",
+        "method": "first_page_text_layer",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "OCR",
+        "method": "ocr_first_page",
+        "found": [],
+        "error": null
+      }
+    ],
+    "applied": false,
+    "pre_recovery_normalized_text": null,
+    "at": "2026-11-11T15:16:29.110237+00:00"
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 12852.92,
+      "input_tokens": 1532,
+      "output_tokens": 2296,
+      "total_tokens": 3828,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1532,
+    "output_tokens": 2296,
+    "total_tokens": 3828,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 12852.92,
+    "usage": {
+      "completion_tokens": 2296,
+      "prompt_tokens": 1532,
+      "total_tokens": 3828,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1639
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 2967,
+      "normalized_chars": 2947,
+      "estimated_reduction_percent": 0.7,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "tika",
+  "selected_quality_score": 94.1,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 94.1,
+      "status": "success",
+      "word_count": 319,
+      "char_count": 2967,
+      "meaningful_char_count": 2617,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 80.5,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "projects",
+          "certifications"
+        ]
+      },
+      "structure": {
+        "heading_count": 6,
+        "paragraph_count": 13,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.8046,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 1.0,
+        "structure": 0.7
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 2967,
+    "normalized_chars": 2947,
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "error": null,
+    "original_text": "Milind Chaudhari\n\t+91 8530871762 | Pune | milind.py2004@gmail.com\n\tLinkedIn | GitHub | Portfolio\n\nTECHNICAL SKILLS\nLanguages: Python, SQL, C, C++, Java\nBackend Development: FastAPI, Flask, REST APIs, API Integration, Swagger/OpenAPI\nWeb Scraping & Automation: Requests, BeautifulSoup, Selenium, Python Automation, Data Collection\nDatabases: MySQL, MongoDB\nPython Libraries: Pandas, NumPy, Matplotlib, Scikit-learn\nTools & Technologies: Git, GitHub, Postman, Docker, Jupyter Notebook, VS Code, Ollama\nAdditional: Data Structures & Algorithms, Data Processing, Exploratory Data Analysis, Machine Learning\nEXPERIENCE\nData Scientist Intern – Rubixe AI Solutions May 2025 – Nov 2025\n\tDeveloped Python-based data processing and machine learning workflows using Pandas, NumPy, and Scikit-learn.\n\tBuilt preprocessing and feature engineering pipelines for structured datasets.\n\tAutomated repetitive data processing and reporting tasks using Python.\n\tWorked with SQL and data analysis workflows to prepare datasets for predictive modeling.\n\nPROJECTS\nHirevia – Python Job Aggregation Platform\nPython • FastAPI • Web Scraping • Ollama • Telegram\n\tDeveloped a Python-based job discovery platform integrating multiple sources with automated data collection and\nprocessing.\n\tImplemented job normalization, deduplication, filtering, and relevance-based matching.\n\nData4Viz – AI Data Analysis Platform\nPython • FastAPI • Pandas • NumPy • Scikit-learn\n\tDeveloped a Python-based platform for automated data preprocessing, exploratory data analysis, and visualization.\n\tBuilt backend workflows for dataset profiling, analysis, and AI-assisted insights.\n\nVizion – Python Data Analysis Library\nPython • Pandas • NumPy • Matplotlib\n\tDeveloped a reusable Python library to automate exploratory data analysis and visualization tasks.\n\tImplemented functions for dataset summaries, missing-value analysis, column-type detection, and outlier analysis.\n\nCERTIFICATIONS\n\tCertified Data Scientist – NASSCOM\n\n\tData Scientist – IABAC\n\n\tData Scientist Intern – Rubixe AI Solutions\n\n\tData Scientist Trainee Certificate\n\n\nACHIEVEMENTS\n\t1st Place – Problem Solving Hackathon, Modern College of Engineering\n\n\t1st Place – Hackathon, SNBP Spurthi Fest 2K26\n\n\nEDUCATION\nDPGU School of Management & Research, Pune\nMCA — 84% 2025 – 2027\nMJ College, Jalgaon\nBCA — 75% 2023 – 2025\n|\n\nmailto:milind.py2004@gmail.com\nhttps://linkedin.com/in/milind-chaudhari-604734237\nhttps://github.com/CodeWithMilind\nhttps://codewithmilind.github.io/PortFolio/\nhttps://fsp-assessment-certificates.s3.ap-southeast-1.amazonaws.com/%27/s3/buckets/fsp-assessment-certificates%27/Milind%2BNitin%2BChaudhari_156429340.pdf.pdf\nhttps://iabac.org/certifications/verify-certificate?page_journey=&certNum=IAB1120177654\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/RX1763978472.pdf\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/COCMPL25091617580132244165.pdf",
+    "normalized_text": "Milind Chaudhari\n+91 8530871762 | Pune | milind.py2004@gmail.com\nLinkedIn | GitHub | Portfolio\n\nTECHNICAL SKILLS\nLanguages: Python, SQL, C, C++, Java\nBackend Development: FastAPI, Flask, REST APIs, API Integration, Swagger/OpenAPI\nWeb Scraping & Automation: Requests, BeautifulSoup, Selenium, Python Automation, Data Collection\nDatabases: MySQL, MongoDB\nPython Libraries: Pandas, NumPy, Matplotlib, Scikit-learn\nTools & Technologies: Git, GitHub, Postman, Docker, Jupyter Notebook, VS Code, Ollama\nAdditional: Data Structures & Algorithms, Data Processing, Exploratory Data Analysis, Machine Learning\nEXPERIENCE\nData Scientist Intern – Rubixe AI Solutions May 2025 – Nov 2025\nDeveloped Python-based data processing and machine learning workflows using Pandas, NumPy, and Scikit-learn.\nBuilt preprocessing and feature engineering pipelines for structured datasets.\nAutomated repetitive data processing and reporting tasks using Python.\nWorked with SQL and data analysis workflows to prepare datasets for predictive modeling.\n\nPROJECTS\nHirevia – Python Job Aggregation Platform\nPython • FastAPI • Web Scraping • Ollama • Telegram\nDeveloped a Python-based job discovery platform integrating multiple sources with automated data collection and\nprocessing.\nImplemented job normalization, deduplication, filtering, and relevance-based matching.\n\nData4Viz – AI Data Analysis Platform\nPython • FastAPI • Pandas • NumPy • Scikit-learn\nDeveloped a Python-based platform for automated data preprocessing, exploratory data analysis, and visualization.\nBuilt backend workflows for dataset profiling, analysis, and AI-assisted insights.\n\nVizion – Python Data Analysis Library\nPython • Pandas • NumPy • Matplotlib\nDeveloped a reusable Python library to automate exploratory data analysis and visualization tasks.\nImplemented functions for dataset summaries, missing-value analysis, column-type detection, and outlier analysis.\n\nCERTIFICATIONS\nCertified Data Scientist – NASSCOM\n\nData Scientist – IABAC\n\nData Scientist Intern – Rubixe AI Solutions\n\nData Scientist Trainee Certificate\n\nACHIEVEMENTS\n1st Place – Problem Solving Hackathon, Modern College of Engineering\n\n1st Place – Hackathon, SNBP Spurthi Fest 2K26\n\nEDUCATION\nDPGU School of Management & Research, Pune\nMCA — 84% 2025 – 2027\nMJ College, Jalgaon\nBCA — 75% 2023 – 2025\n|\n\nmailto:milind.py2004@gmail.com\nhttps://linkedin.com/in/milind-chaudhari-604734237\nhttps://github.com/CodeWithMilind\nhttps://codewithmilind.github.io/PortFolio/\nhttps://fsp-assessment-certificates.s3.ap-southeast-1.amazonaws.com/%27/s3/buckets/fsp-assessment-certificates%27/Milind%2BNitin%2BChaudhari_156429340.pdf.pdf\nhttps://iabac.org/certifications/verify-certificate?page_journey=&certNum=IAB1120177654\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/RX1763978472.pdf\nhttps://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/COCMPL25091617580132244165.pdf"
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "Milind Chaudhari",
+      "email": "milind.py2004@gmail.com",
+      "phone": "+91 8530871762",
+      "location": "Pune",
+      "summary": "",
+      "skills": {
+        "technical_skills": [
+          "Python",
+          "SQL",
+          "C",
+          "C++",
+          "Java",
+          "FastAPI",
+          "Flask",
+          "REST APIs",
+          "API Integration",
+          "Swagger/OpenAPI",
+          "Requests",
+          "BeautifulSoup",
+          "Selenium",
+          "Python Automation",
+          "Data Collection",
+          "MySQL",
+          "MongoDB",
+          "Pandas",
+          "NumPy",
+          "Matplotlib",
+          "Scikit-learn",
+          "Data Structures & Algorithms",
+          "Data Processing",
+          "Exploratory Data Analysis",
+          "Machine Learning"
+        ],
+        "soft_skills": [],
+        "tools": [
+          "Git",
+          "GitHub",
+          "Postman",
+          "Docker",
+          "Jupyter Notebook",
+          "VS Code",
+          "Ollama"
+        ],
+        "taxonomy_skills": [],
+        "other_skills": []
+      },
+      "experience": [
+        {
+          "title": "Data Scientist Intern",
+          "company": "Rubixe AI Solutions",
+          "location": "",
+          "start_date": "May 2025",
+          "end_date": "Nov 2025",
+          "highlights": [
+            "Developed Python-based data processing and machine learning workflows using Pandas, NumPy, and Scikit-learn.",
+            "Built preprocessing and feature engineering pipelines for structured datasets.",
+            "Automated repetitive data processing and reporting tasks using Python.",
+            "Worked with SQL and data analysis workflows to prepare datasets for predictive modeling."
+          ]
+        }
+      ],
+      "education": [
+        {
+          "degree": "MCA — 84%",
+          "institution": "DPGU School of Management & Research",
+          "location": "Pune",
+          "start_date": "2025",
+          "end_date": "2027"
+        },
+        {
+          "degree": "BCA — 75%",
+          "institution": "MJ College",
+          "location": "Jalgaon",
+          "start_date": "2023",
+          "end_date": "2025"
+        }
+      ],
+      "certifications": [
+        "Certified Data Scientist – NASSCOM",
+        "Data Scientist – IABAC",
+        "Data Scientist Intern – Rubixe AI Solutions",
+        "Data Scientist Trainee Certificate"
+      ],
+      "languages": [],
+      "links": [
+        "https://linkedin.com/in/milind-chaudhari-604734237",
+        "https://github.com/CodeWithMilind",
+        "https://codewithmilind.github.io/PortFolio/",
+        "https://fsp-assessment-certificates.s3.ap-southeast-1.amazonaws.com/%27/s3/buckets/fsp-assessment-certificates%27/Milind%2BNitin%2BChaudhari_156429340.pdf.pdf",
+        "https://iabac.org/certifications/verify-certificate?page_journey=&certNum=IAB1120177654",
+        "https://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/RX1763978472.pdf",
+        "https://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/COCMPL25091617580132244165.pdf"
+      ]
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 12852.92,
+    "usage": {
+      "completion_tokens": 2296,
+      "prompt_tokens": 1532,
+      "total_tokens": 3828,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1639
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "Milind Chaudhari",
+    "email": "milind.py2004@gmail.com",
+    "phone": "+91 8530871762",
+    "location": "Pune",
+    "summary": "",
+    "skills": {
+      "technical_skills": [
+        "Python",
+        "SQL",
+        "C",
+        "C++",
+        "Java",
+        "FastAPI",
+        "Flask",
+        "REST APIs",
+        "API Integration",
+        "Swagger/OpenAPI",
+        "Requests",
+        "BeautifulSoup",
+        "Selenium",
+        "Python Automation",
+        "Data Collection",
+        "MySQL",
+        "MongoDB",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Scikit-learn",
+        "Data Structures & Algorithms",
+        "Data Processing",
+        "Exploratory Data Analysis",
+        "Machine Learning"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "Git",
+        "GitHub",
+        "Postman",
+        "Docker",
+        "Jupyter Notebook",
+        "VS Code",
+        "Ollama"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Data Scientist Intern",
+        "company": "Rubixe AI Solutions",
+        "location": "",
+        "start_date": "May 2025",
+        "end_date": "Nov 2025",
+        "highlights": [
+          "Developed Python-based data processing and machine learning workflows using Pandas, NumPy, and Scikit-learn.",
+          "Built preprocessing and feature engineering pipelines for structured datasets.",
+          "Automated repetitive data processing and reporting tasks using Python.",
+          "Worked with SQL and data analysis workflows to prepare datasets for predictive modeling."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "MCA — 84%",
+        "institution": "DPGU School of Management & Research",
+        "location": "Pune",
+        "start_date": "2025",
+        "end_date": "2027"
+      },
+      {
+        "degree": "BCA — 75%",
+        "institution": "MJ College",
+        "location": "Jalgaon",
+        "start_date": "2023",
+        "end_date": "2025"
+      }
+    ],
+    "certifications": [
+      "Certified Data Scientist – NASSCOM",
+      "Data Scientist – IABAC",
+      "Data Scientist Intern – Rubixe AI Solutions",
+      "Data Scientist Trainee Certificate"
+    ],
+    "languages": [],
+    "links": [
+      "https://linkedin.com/in/milind-chaudhari-604734237",
+      "https://github.com/CodeWithMilind",
+      "https://codewithmilind.github.io/PortFolio/",
+      "https://fsp-assessment-certificates.s3.ap-southeast-1.amazonaws.com/%27/s3/buckets/fsp-assessment-certificates%27/Milind%2BNitin%2BChaudhari_156429340.pdf.pdf",
+      "https://iabac.org/certifications/verify-certificate?page_journey=&certNum=IAB1120177654",
+      "https://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/RX1763978472.pdf",
+      "https://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/COCMPL25091617580132244165.pdf"
+    ]
+  },
+  "resume_json": {
+    "full_name": "Milind Chaudhari",
+    "email": "milind.py2004@gmail.com",
+    "phone": "+91 8530871762",
+    "location": "Pune",
+    "summary": "",
+    "skills": {
+      "technical_skills": [
+        "Python",
+        "SQL",
+        "C",
+        "C++",
+        "Java",
+        "FastAPI",
+        "Flask",
+        "REST APIs",
+        "API Integration",
+        "Swagger/OpenAPI",
+        "Requests",
+        "BeautifulSoup",
+        "Selenium",
+        "Python Automation",
+        "Data Collection",
+        "MySQL",
+        "MongoDB",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Scikit-learn",
+        "Data Structures & Algorithms",
+        "Data Processing",
+        "Exploratory Data Analysis",
+        "Machine Learning"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "Git",
+        "GitHub",
+        "Postman",
+        "Docker",
+        "Jupyter Notebook",
+        "VS Code",
+        "Ollama"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Data Scientist Intern",
+        "company": "Rubixe AI Solutions",
+        "location": "",
+        "start_date": "May 2025",
+        "end_date": "Nov 2025",
+        "highlights": [
+          "Developed Python-based data processing and machine learning workflows using Pandas, NumPy, and Scikit-learn.",
+          "Built preprocessing and feature engineering pipelines for structured datasets.",
+          "Automated repetitive data processing and reporting tasks using Python.",
+          "Worked with SQL and data analysis workflows to prepare datasets for predictive modeling."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "MCA — 84%",
+        "institution": "DPGU School of Management & Research",
+        "location": "Pune",
+        "start_date": "2025",
+        "end_date": "2027"
+      },
+      {
+        "degree": "BCA — 75%",
+        "institution": "MJ College",
+        "location": "Jalgaon",
+        "start_date": "2023",
+        "end_date": "2025"
+      }
+    ],
+    "certifications": [
+      "Certified Data Scientist – NASSCOM",
+      "Data Scientist – IABAC",
+      "Data Scientist Intern – Rubixe AI Solutions",
+      "Data Scientist Trainee Certificate"
+    ],
+    "languages": [],
+    "links": [
+      "https://linkedin.com/in/milind-chaudhari-604734237",
+      "https://github.com/CodeWithMilind",
+      "https://codewithmilind.github.io/PortFolio/",
+      "https://fsp-assessment-certificates.s3.ap-southeast-1.amazonaws.com/%27/s3/buckets/fsp-assessment-certificates%27/Milind%2BNitin%2BChaudhari_156429340.pdf.pdf",
+      "https://iabac.org/certifications/verify-certificate?page_journey=&certNum=IAB1120177654",
+      "https://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/RX1763978472.pdf",
+      "https://s3uploadobject.s3.amazonaws.com/erp_webinar_certificate/erp_enroll_certificate/COCMPL25091617580132244165.pdf"
+    ]
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 13.5205,
+    "quality_seconds": 0.0954,
+    "normalization_seconds": 0.0011,
+    "recovery_seconds": 7.5188,
+    "llm_seconds": 12.8565,
+    "total_seconds": 34.172
+  },
+  "_stored_name": "b5384b5f-ca44-48ea-84cf-911449f18284_Milind_Python_Dev.pdf",
+  "direct_llm_routing": null,
+  "extractor_results": {},
+  "analyses": [
+    {
+      "analysis_id": "fbbc856d-4f2d-4678-931b-1dd5fa12fa38",
+      "resume_id": "b5384b5f-ca44-48ea-84cf-911449f18284",
+      "analysis_version": 1,
+      "status": "success",
+      "created_at": "2026-11-11T15:18:36.138491+00:00",
+      "model": "muse-spark-1.3-contributor",
+      "yaml_version": "completeness@1ca214852186+eval-1.0.0",
+      "usage_type": "evaluation",
+      "tokens": {
+        "input": 5308,
+        "output": 4174,
+        "total": 9482
+      },
+      "reasoning_tokens": 1140,
+      "duration_ms": 28503.15,
+      "evaluation": {
+        "candidate": {
+          "name": "Milind Chaudhari",
+          "headline": "Data Scientist Intern | Python Developer",
+          "location": "Pune",
+          "email": "milind.py2004@gmail.com",
+          "summary": "MCA student and Data Scientist Intern with Python, FastAPI, data processing and machine learning skills"
+        },
+        "career_stage": "Fresher",
+        "professional_domain": "Data Science and Python Backend Development",
+        "matching_sections": [
+          {
+            "section": "Contact Information",
+            "original_heading": "Milind Chaudhari header",
+            "presence_status": "present",
+            "completeness_status": "complete",
+            "quality_assessment": "Excellent",
+            "summary": "Phone, Pune location, email, LinkedIn, GitHub and Portfolio links provided",
+            "evidence": [
+              "+91 8530871762 | Pune | milind.py2004@gmail.com",
+              "LinkedIn | GitHub | Portfolio"
+            ],
+            "remarks": "Fully contactable with professional links"
+          },
+          {
+            "section": "Technical Skills",
+            "original_heading": "TECHNICAL SKILLS",
+            "presence_status": "present",
+            "completeness_status": "complete",
+            "quality_assessment": "Good",
+            "summary": "Categorized skills across languages, backend, scraping, databases, Python libraries and tools",
+            "evidence": [
+              "Languages: Python, SQL, C, C++, Java",
+              "Backend Development: FastAPI, Flask, REST APIs, API Integration, Swagger/OpenAPI",
+              "Databases: MySQL, MongoDB",
+              "Python Libraries: Pandas, NumPy, Matplotlib, Scikit-learn"
+            ],
+            "remarks": "Well organized by category, directly supports data and backend roles"
+          },
+          {
+            "section": "Work Experience",
+            "original_heading": "EXPERIENCE",
+            "presence_status": "present",
+            "completeness_status": "partial",
+            "quality_assessment": "Average",
+            "summary": "Data Scientist Intern at Rubixe AI Solutions May 2025-Nov 2025 with data processing and ML workflows",
+            "evidence": [
+              "Data Scientist Intern – Rubixe AI Solutions May 2025 – Nov 2025",
+              "Developed Python-based data processing and machine learning workflows using Pandas, NumPy, and Scikit-learn.",
+              "Worked with SQL and data analysis workflows to prepare datasets for predictive modeling."
+            ],
+            "remarks": "Relevant duties listed but no quantified outcomes, team size or scale"
+          },
+          {
+            "section": "Internship Experience",
+            "original_heading": "EXPERIENCE",
+            "presence_status": "present",
+            "completeness_status": "partial",
+            "quality_assessment": "Average",
+            "summary": "6-month Data Scientist Internship used as practical experience",
+            "evidence": [
+              "Data Scientist Intern – Rubixe AI Solutions May 2025 – Nov 2025",
+              "Built preprocessing and feature engineering pipelines for structured datasets."
+            ],
+            "remarks": "Appropriate for fresher stage; counted under Work Experience heading"
+          },
+          {
+            "section": "Projects",
+            "original_heading": "PROJECTS",
+            "presence_status": "present",
+            "completeness_status": "partial",
+            "quality_assessment": "Good",
+            "summary": "Three Python-based projects: Hirevia job platform, Data4Viz analysis platform, Vizion EDA library",
+            "evidence": [
+              "Hirevia – Python Job Aggregation Platform",
+              "Data4Viz – AI Data Analysis Platform",
+              "Vizion – Python Data Analysis Library"
+            ],
+            "remarks": "Strong relevance and tech-stack detail, lacks live links, metrics and outcome quantification"
+          },
+          {
+            "section": "Education",
+            "original_heading": "EDUCATION",
+            "presence_status": "present",
+            "completeness_status": "complete",
+            "quality_assessment": "Good",
+            "summary": "MCA 84% 2025-2027 DPGU Pune and BCA 75% 2023-2025 MJ College Jalgaon",
+            "evidence": [
+              "DPGU School of Management & Research, Pune MCA — 84% 2025 – 2027",
+              "MJ College, Jalgaon BCA — 75% 2023 – 2025"
+            ],
+            "remarks": "Clear degrees, institutions, percentages and dates"
+          },
+          {
+            "section": "Certifications",
+            "original_heading": "CERTIFICATIONS",
+            "presence_status": "present",
+            "completeness_status": "partial",
+            "quality_assessment": "Average",
+            "summary": "Four data scientist certificates including NASSCOM and IABAC",
+            "evidence": [
+              "Certified Data Scientist – NASSCOM",
+              "Data Scientist – IABAC",
+              "Data Scientist Intern – Rubixe AI Solutions"
+            ],
+            "remarks": "Credible issuers but no dates or credential IDs in text body"
+          },
+          {
+            "section": "Achievements",
+            "original_heading": "ACHIEVEMENTS",
+            "presence_status": "present",
+            "completeness_status": "partial",
+            "quality_assessment": "Good",
+            "summary": "Two 1st place hackathon wins",
+            "evidence": [
+              "1st Place – Problem Solving Hackathon, Modern College of Engineering",
+              "1st Place – Hackathon, SNBP Spurthi Fest 2K26"
+            ],
+            "remarks": "Measurable wins add differentiation; could include dates and team context"
+          },
+          {
+            "section": "Responsibilities",
+            "original_heading": "embedded in Work Experience",
+            "presence_status": "present",
+            "completeness_status": "partial",
+            "quality_assessment": "Average",
+            "summary": "Duty bullets for data processing, pipelines, automation and SQL preparation inside intern role",
+            "evidence": [
+              "Built preprocessing and feature engineering pipelines for structured datasets.",
+              "Automated repetitive data processing and reporting tasks using Python."
+            ],
+            "remarks": "No dedicated heading but content present; checker missed due to embedded format"
+          }
+        ],
+        "missing_sections": [
+          {
+            "section": "Professional Summary",
+            "importance": "High",
+            "status": "missing",
+            "reason": "No summary or snapshot paragraph at top; resume starts directly with skills",
+            "impact": "Recruiter lacks quick overview of career focus in data science vs backend",
+            "recommendation": "Add 3-4 line summary highlighting fresher data scientist with Python, ML, FastAPI and intern experience",
+            "evidence": []
+          },
+          {
+            "section": "Core Competencies",
+            "importance": "Medium",
+            "status": "missing",
+            "reason": "No concise competency keywords separate from detailed skills list",
+            "impact": "Less quick scanability for ATS and role match",
+            "recommendation": "Add competency line e.g., Data Processing, EDA, Feature Engineering, REST API Development",
+            "evidence": []
+          }
+        ],
+        "good_to_have": [
+          {
+            "section": "LinkedIn",
+            "present": true,
+            "relevance": "Professional networking and verification",
+            "potential_value": "Recruiter can verify internship and projects",
+            "recommendation": "Keep clickable URL in header"
+          },
+          {
+            "section": "GitHub",
+            "present": true,
+            "relevance": "Code proof for Python, FastAPI and scraping projects",
+            "potential_value": "Demonstrates Hirevia, Data4Viz, Vizion implementation quality",
+            "recommendation": "Ensure repos have READMEs and live demos"
+          },
+          {
+            "section": "Portfolio",
+            "present": true,
+            "relevance": "Central showcase of projects and certificates",
+            "potential_value": "Helps differentiate as fresher",
+            "recommendation": "Keep updated with project links"
+          },
+          {
+            "section": "Awards",
+            "present": true,
+            "relevance": "Hackathon wins show problem-solving ability",
+            "potential_value": "Supports competitive capability claim",
+            "recommendation": "Add year and project built during hackathon"
+          },
+          {
+            "section": "Languages",
+            "present": false,
+            "relevance": "",
+            "potential_value": "Communication clarity for support roles",
+            "recommendation": "Optional; add only if relevant"
+          }
+        ],
+        "completeness": {
+          "score": 78.0,
+          "classification": "Good",
+          "explanation": {
+            "why_low": "Missing Professional Summary and limited detail in experience, certifications and achievements prevents higher score",
+            "contributing_sections": [
+              "Contact Information",
+              "Technical Skills",
+              "Work Experience",
+              "Projects",
+              "Education",
+              "Certifications",
+              "Achievements",
+              "Responsibilities"
+            ],
+            "missing_information": [
+              "Professional Summary",
+              "Certification dates and IDs in body",
+              "Quantified work outcomes"
+            ],
+            "problems": [
+              "No summary overview",
+              "Experience bullets without metrics",
+              "Projects without links or results"
+            ],
+            "improvements": [
+              "Add professional summary",
+              "Add metrics to experience and projects",
+              "Add certification dates"
+            ],
+            "priorities": [
+              "Add Professional Summary",
+              "Quantify experience and project impact"
+            ]
+          }
+        },
+        "quality": {
+          "score": 71.0,
+          "classification": "Good",
+          "explanation": {
+            "why_low": "Clear structure and relevant content but generic duty descriptions without measurable achievements and missing summary reduce impact",
+            "contributing_sections": [
+              "Technical Skills",
+              "Projects",
+              "Education",
+              "Achievements"
+            ],
+            "missing_information": [
+              "Measurable achievements in experience",
+              "Project outcomes and links",
+              "Summary quality"
+            ],
+            "problems": [
+              "Repetitive phrasing Developed Python-based in all projects",
+              "No quantification of dataset size, accuracy, performance",
+              "Four certifications listed without detail"
+            ],
+            "improvements": [
+              "Use action-impact-metric bullets",
+              "Differentiate project descriptions",
+              "Add GitHub/portfolio links to projects"
+            ],
+            "priorities": [
+              "Quantify internship and project results",
+              "Add summary and tighten language"
+            ]
+          }
+        },
+        "role_suitability": [
+          {
+            "role": "Data Scientist",
+            "score": 80.0,
+            "matching_skills": [
+              "Python",
+              "SQL",
+              "pandas",
+              "NumPy",
+              "Scikit-learn",
+              "Machine Learning",
+              "Exploratory Data Analysis",
+              "Data Processing"
+            ],
+            "missing_skills": [
+              "Statistics basics evidence",
+              "Data visualization tools like Power BI/Tableau",
+              "Experimentation"
+            ],
+            "relevant_projects": [
+              "Data4Viz – AI Data Analysis Platform",
+              "Vizion – Python Data Analysis Library"
+            ],
+            "relevant_experience": [
+              "Data Scientist Intern – Rubixe AI Solutions"
+            ],
+            "evidence": [
+              "Developed Python-based data processing and machine learning workflows using Pandas, NumPy, and Scikit-learn.",
+              "Certified Data Scientist – NASSCOM",
+              "Data Scientist – IABAC"
+            ],
+            "explanation": "Direct intern experience, ML stack and two analysis projects strongly align with entry data scientist work"
+          },
+          {
+            "role": "Python Developer",
+            "score": 78.0,
+            "matching_skills": [
+              "Python",
+              "OOP",
+              "REST APIs",
+              "SQL",
+              "Git",
+              "FastAPI",
+              "Flask"
+            ],
+            "missing_skills": [
+              "Unit testing",
+              "Docker deployment detail"
+            ],
+            "relevant_projects": [
+              "Hirevia – Python Job Aggregation Platform",
+              "Data4Viz – AI Data Analysis Platform"
+            ],
+            "relevant_experience": [
+              "Data Scientist Intern – Rubixe AI Solutions"
+            ],
+            "evidence": [
+              "Backend Development: FastAPI, Flask, REST APIs, API Integration, Swagger/OpenAPI",
+              "Developed a Python-based job discovery platform integrating multiple sources"
+            ],
+            "explanation": "Strong Python backend evidence with FastAPI, Flask and REST APIs plus automation libraries"
+          },
+          {
+            "role": "Machine Learning Engineer",
+            "score": 73.0,
+            "matching_skills": [
+              "Python",
+              "Machine Learning",
+              "Scikit-learn",
+              "Model evaluation",
+              "pandas"
+            ],
+            "missing_skills": [
+              "TensorFlow",
+              "PyTorch",
+              "MLOps",
+              "Feature engineering depth",
+              "Model deployment"
+            ],
+            "relevant_projects": [
+              "Data4Viz – AI Data Analysis Platform"
+            ],
+            "relevant_experience": [
+              "Built preprocessing and feature engineering pipelines for structured datasets."
+            ],
+            "evidence": [
+              "Built preprocessing and feature engineering pipelines for structured datasets.",
+              "Python Libraries: Pandas, NumPy, Matplotlib, Scikit-learn"
+            ],
+            "explanation": "Has core ML workflow and feature engineering but lacks deep learning and deployment proof"
+          },
+          {
+            "role": "Backend Developer",
+            "score": 70.0,
+            "matching_skills": [
+              "REST APIs",
+              "SQL",
+              "Server-side programming",
+              "Git",
+              "FastAPI",
+              "MySQL",
+              "MongoDB"
+            ],
+            "missing_skills": [
+              "Authentication",
+              "Caching",
+              "Message queues",
+              "System design"
+            ],
+            "relevant_projects": [
+              "Hirevia – Python Job Aggregation Platform",
+              "Data4Viz – AI Data Analysis Platform"
+            ],
+            "relevant_experience": [],
+            "evidence": [
+              "Implemented job normalization, deduplication, filtering, and relevance-based matching.",
+              "Built backend workflows for dataset profiling, analysis, and AI-assisted insights."
+            ],
+            "explanation": "Backend project work with FastAPI and databases shows foundation but auth, caching and scale missing"
+          },
+          {
+            "role": "AI Engineer",
+            "score": 58.0,
+            "matching_skills": [
+              "Python",
+              "Machine learning basics",
+              "Ollama"
+            ],
+            "missing_skills": [
+              "LLM APIs",
+              "Prompt engineering",
+              "RAG",
+              "LangChain",
+              "Vector databases"
+            ],
+            "relevant_projects": [
+              "Hirevia – Python Job Aggregation Platform"
+            ],
+            "relevant_experience": [],
+            "evidence": [
+              "Hirevia Python • FastAPI • Web Scraping • Ollama • Telegram"
+            ],
+            "explanation": "Ollama mention suggests LLM exposure but no prompt, RAG or agent detail to support strong fit"
+          }
+        ],
+        "suitable_roles": [
+          "Data Scientist",
+          "Python Developer",
+          "Machine Learning Engineer",
+          "Backend Developer",
+          "AI Engineer"
+        ],
+        "strengths": [
+          "6-month Data Scientist Intern at Rubixe AI Solutions with ML pipelines",
+          "Three relevant Python projects covering aggregation, analysis platform and reusable EDA library",
+          "Broad technical stack: Python, FastAPI, Flask, SQL, MongoDB, Pandas, Scikit-learn, Docker",
+          "NASSCOM and IABAC data scientist certifications",
+          "Two 1st place hackathon wins showing problem-solving"
+        ],
+        "weaknesses": [
+          "No professional summary to clarify target role and value proposition",
+          "Work bullets lack metrics like dataset size, accuracy, time saved or automation impact",
+          "Projects lack quantified outcomes, links or deployment details",
+          "No evidence of testing, authentication, cloud deployment or deep learning frameworks"
+        ],
+        "recommendations": [
+          "Add 3-4 line professional summary focused on data science and Python backend",
+          "Quantify internship: datasets size, model performance, automation hours saved",
+          "Add GitHub links and 1-2 metric bullets per project e.g., sources integrated, EDA speedup",
+          "Add certification dates and keep only most credible two if space needed",
+          "Clarify Ollama/LLM work if targeting AI roles or remove to keep focus"
+        ]
+      },
+      "error": null,
+      "content_evidence": {
+        "responsibilities": {
+          "found": true,
+          "evidence_count": 8,
+          "action": "already_matching"
+        },
+        "achievements": {
+          "found": true,
+          "evidence_count": 2,
+          "action": "already_matching"
+        }
+      },
+      "diagnostics": {
+        "finish_reason": "stop",
+        "response_chars": 13147,
+        "model": "muse-spark-1.3-contributor",
+        "recovered_via_correction": false
+      }
+    }
+  ],
+  "analysis": {
+    "analysis_id": "fbbc856d-4f2d-4678-931b-1dd5fa12fa38",
+    "resume_id": "b5384b5f-ca44-48ea-84cf-911449f18284",
+    "analysis_version": 1,
+    "status": "success",
+    "created_at": "2026-11-11T15:18:36.138491+00:00",
+    "model": "muse-spark-1.3-contributor",
+    "yaml_version": "completeness@1ca214852186+eval-1.0.0",
+    "usage_type": "evaluation",
+    "tokens": {
+      "input": 5308,
+      "output": 4174,
+      "total": 9482
+    },
+    "reasoning_tokens": 1140,
+    "duration_ms": 28503.15,
+    "evaluation": {
+      "candidate": {
+        "name": "Milind Chaudhari",
+        "headline": "Data Scientist Intern | Python Developer",
+        "location": "Pune",
+        "email": "milind.py2004@gmail.com",
+        "summary": "MCA student and Data Scientist Intern with Python, FastAPI, data processing and machine learning skills"
+      },
+      "career_stage": "Fresher",
+      "professional_domain": "Data Science and Python Backend Development",
+      "matching_sections": [
+        {
+          "section": "Contact Information",
+          "original_heading": "Milind Chaudhari header",
+          "presence_status": "present",
+          "completeness_status": "complete",
+          "quality_assessment": "Excellent",
+          "summary": "Phone, Pune location, email, LinkedIn, GitHub and Portfolio links provided",
+          "evidence": [
+            "+91 8530871762 | Pune | milind.py2004@gmail.com",
+            "LinkedIn | GitHub | Portfolio"
+          ],
+          "remarks": "Fully contactable with professional links"
+        },
+        {
+          "section": "Technical Skills",
+          "original_heading": "TECHNICAL SKILLS",
+          "presence_status": "present",
+          "completeness_status": "complete",
+          "quality_assessment": "Good",
+          "summary": "Categorized skills across languages, backend, scraping, databases, Python libraries and tools",
+          "evidence": [
+            "Languages: Python, SQL, C, C++, Java",
+            "Backend Development: FastAPI, Flask, REST APIs, API Integration, Swagger/OpenAPI",
+            "Databases: MySQL, MongoDB",
+            "Python Libraries: Pandas, NumPy, Matplotlib, Scikit-learn"
+          ],
+          "remarks": "Well organized by category, directly supports data and backend roles"
+        },
+        {
+          "section": "Work Experience",
+          "original_heading": "EXPERIENCE",
+          "presence_status": "present",
+          "completeness_status": "partial",
+          "quality_assessment": "Average",
+          "summary": "Data Scientist Intern at Rubixe AI Solutions May 2025-Nov 2025 with data processing and ML workflows",
+          "evidence": [
+            "Data Scientist Intern – Rubixe AI Solutions May 2025 – Nov 2025",
+            "Developed Python-based data processing and machine learning workflows using Pandas, NumPy, and Scikit-learn.",
+            "Worked with SQL and data analysis workflows to prepare datasets for predictive modeling."
+          ],
+          "remarks": "Relevant duties listed but no quantified outcomes, team size or scale"
+        },
+        {
+          "section": "Internship Experience",
+          "original_heading": "EXPERIENCE",
+          "presence_status": "present",
+          "completeness_status": "partial",
+          "quality_assessment": "Average",
+          "summary": "6-month Data Scientist Internship used as practical experience",
+          "evidence": [
+            "Data Scientist Intern – Rubixe AI Solutions May 2025 – Nov 2025",
+            "Built preprocessing and feature engineering pipelines for structured datasets."
+          ],
+          "remarks": "Appropriate for fresher stage; counted under Work Experience heading"
+        },
+        {
+          "section": "Projects",
+          "original_heading": "PROJECTS",
+          "presence_status": "present",
+          "completeness_status": "partial",
+          "quality_assessment": "Good",
+          "summary": "Three Python-based projects: Hirevia job platform, Data4Viz analysis platform, Vizion EDA library",
+          "evidence": [
+            "Hirevia – Python Job Aggregation Platform",
+            "Data4Viz – AI Data Analysis Platform",
+            "Vizion – Python Data Analysis Library"
+          ],
+          "remarks": "Strong relevance and tech-stack detail, lacks live links, metrics and outcome quantification"
+        },
+        {
+          "section": "Education",
+          "original_heading": "EDUCATION",
+          "presence_status": "present",
+          "completeness_status": "complete",
+          "quality_assessment": "Good",
+          "summary": "MCA 84% 2025-2027 DPGU Pune and BCA 75% 2023-2025 MJ College Jalgaon",
+          "evidence": [
+            "DPGU School of Management & Research, Pune MCA — 84% 2025 – 2027",
+            "MJ College, Jalgaon BCA — 75% 2023 – 2025"
+          ],
+          "remarks": "Clear degrees, institutions, percentages and dates"
+        },
+        {
+          "section": "Certifications",
+          "original_heading": "CERTIFICATIONS",
+          "presence_status": "present",
+          "completeness_status": "partial",
+          "quality_assessment": "Average",
+          "summary": "Four data scientist certificates including NASSCOM and IABAC",
+          "evidence": [
+            "Certified Data Scientist – NASSCOM",
+            "Data Scientist – IABAC",
+            "Data Scientist Intern – Rubixe AI Solutions"
+          ],
+          "remarks": "Credible issuers but no dates or credential IDs in text body"
+        },
+        {
+          "section": "Achievements",
+          "original_heading": "ACHIEVEMENTS",
+          "presence_status": "present",
+          "completeness_status": "partial",
+          "quality_assessment": "Good",
+          "summary": "Two 1st place hackathon wins",
+          "evidence": [
+            "1st Place – Problem Solving Hackathon, Modern College of Engineering",
+            "1st Place – Hackathon, SNBP Spurthi Fest 2K26"
+          ],
+          "remarks": "Measurable wins add differentiation; could include dates and team context"
+        },
+        {
+          "section": "Responsibilities",
+          "original_heading": "embedded in Work Experience",
+          "presence_status": "present",
+          "completeness_status": "partial",
+          "quality_assessment": "Average",
+          "summary": "Duty bullets for data processing, pipelines, automation and SQL preparation inside intern role",
+          "evidence": [
+            "Built preprocessing and feature engineering pipelines for structured datasets.",
+            "Automated repetitive data processing and reporting tasks using Python."
+          ],
+          "remarks": "No dedicated heading but content present; checker missed due to embedded format"
+        }
+      ],
+      "missing_sections": [
+        {
+          "section": "Professional Summary",
+          "importance": "High",
+          "status": "missing",
+          "reason": "No summary or snapshot paragraph at top; resume starts directly with skills",
+          "impact": "Recruiter lacks quick overview of career focus in data science vs backend",
+          "recommendation": "Add 3-4 line summary highlighting fresher data scientist with Python, ML, FastAPI and intern experience",
+          "evidence": []
+        },
+        {
+          "section": "Core Competencies",
+          "importance": "Medium",
+          "status": "missing",
+          "reason": "No concise competency keywords separate from detailed skills list",
+          "impact": "Less quick scanability for ATS and role match",
+          "recommendation": "Add competency line e.g., Data Processing, EDA, Feature Engineering, REST API Development",
+          "evidence": []
+        }
+      ],
+      "good_to_have": [
+        {
+          "section": "LinkedIn",
+          "present": true,
+          "relevance": "Professional networking and verification",
+          "potential_value": "Recruiter can verify internship and projects",
+          "recommendation": "Keep clickable URL in header"
+        },
+        {
+          "section": "GitHub",
+          "present": true,
+          "relevance": "Code proof for Python, FastAPI and scraping projects",
+          "potential_value": "Demonstrates Hirevia, Data4Viz, Vizion implementation quality",
+          "recommendation": "Ensure repos have READMEs and live demos"
+        },
+        {
+          "section": "Portfolio",
+          "present": true,
+          "relevance": "Central showcase of projects and certificates",
+          "potential_value": "Helps differentiate as fresher",
+          "recommendation": "Keep updated with project links"
+        },
+        {
+          "section": "Awards",
+          "present": true,
+          "relevance": "Hackathon wins show problem-solving ability",
+          "potential_value": "Supports competitive capability claim",
+          "recommendation": "Add year and project built during hackathon"
+        },
+        {
+          "section": "Languages",
+          "present": false,
+          "relevance": "",
+          "potential_value": "Communication clarity for support roles",
+          "recommendation": "Optional; add only if relevant"
+        }
+      ],
+      "completeness": {
+        "score": 78.0,
+        "classification": "Good",
+        "explanation": {
+          "why_low": "Missing Professional Summary and limited detail in experience, certifications and achievements prevents higher score",
+          "contributing_sections": [
+            "Contact Information",
+            "Technical Skills",
+            "Work Experience",
+            "Projects",
+            "Education",
+            "Certifications",
+            "Achievements",
+            "Responsibilities"
+          ],
+          "missing_information": [
+            "Professional Summary",
+            "Certification dates and IDs in body",
+            "Quantified work outcomes"
+          ],
+          "problems": [
+            "No summary overview",
+            "Experience bullets without metrics",
+            "Projects without links or results"
+          ],
+          "improvements": [
+            "Add professional summary",
+            "Add metrics to experience and projects",
+            "Add certification dates"
+          ],
+          "priorities": [
+            "Add Professional Summary",
+            "Quantify experience and project impact"
+          ]
+        }
+      },
+      "quality": {
+        "score": 71.0,
+        "classification": "Good",
+        "explanation": {
+          "why_low": "Clear structure and relevant content but generic duty descriptions without measurable achievements and missing summary reduce impact",
+          "contributing_sections": [
+            "Technical Skills",
+            "Projects",
+            "Education",
+            "Achievements"
+          ],
+          "missing_information": [
+            "Measurable achievements in experience",
+            "Project outcomes and links",
+            "Summary quality"
+          ],
+          "problems": [
+            "Repetitive phrasing Developed Python-based in all projects",
+            "No quantification of dataset size, accuracy, performance",
+            "Four certifications listed without detail"
+          ],
+          "improvements": [
+            "Use action-impact-metric bullets",
+            "Differentiate project descriptions",
+            "Add GitHub/portfolio links to projects"
+          ],
+          "priorities": [
+            "Quantify internship and project results",
+            "Add summary and tighten language"
+          ]
+        }
+      },
+      "role_suitability": [
+        {
+          "role": "Data Scientist",
+          "score": 80.0,
+          "matching_skills": [
+            "Python",
+            "SQL",
+            "pandas",
+            "NumPy",
+            "Scikit-learn",
+            "Machine Learning",
+            "Exploratory Data Analysis",
+            "Data Processing"
+          ],
+          "missing_skills": [
+            "Statistics basics evidence",
+            "Data visualization tools like Power BI/Tableau",
+            "Experimentation"
+          ],
+          "relevant_projects": [
+            "Data4Viz – AI Data Analysis Platform",
+            "Vizion – Python Data Analysis Library"
+          ],
+          "relevant_experience": [
+            "Data Scientist Intern – Rubixe AI Solutions"
+          ],
+          "evidence": [
+            "Developed Python-based data processing and machine learning workflows using Pandas, NumPy, and Scikit-learn.",
+            "Certified Data Scientist – NASSCOM",
+            "Data Scientist – IABAC"
+          ],
+          "explanation": "Direct intern experience, ML stack and two analysis projects strongly align with entry data scientist work"
+        },
+        {
+          "role": "Python Developer",
+          "score": 78.0,
+          "matching_skills": [
+            "Python",
+            "OOP",
+            "REST APIs",
+            "SQL",
+            "Git",
+            "FastAPI",
+            "Flask"
+          ],
+          "missing_skills": [
+            "Unit testing",
+            "Docker deployment detail"
+          ],
+          "relevant_projects": [
+            "Hirevia – Python Job Aggregation Platform",
+            "Data4Viz – AI Data Analysis Platform"
+          ],
+          "relevant_experience": [
+            "Data Scientist Intern – Rubixe AI Solutions"
+          ],
+          "evidence": [
+            "Backend Development: FastAPI, Flask, REST APIs, API Integration, Swagger/OpenAPI",
+            "Developed a Python-based job discovery platform integrating multiple sources"
+          ],
+          "explanation": "Strong Python backend evidence with FastAPI, Flask and REST APIs plus automation libraries"
+        },
+        {
+          "role": "Machine Learning Engineer",
+          "score": 73.0,
+          "matching_skills": [
+            "Python",
+            "Machine Learning",
+            "Scikit-learn",
+            "Model evaluation",
+            "pandas"
+          ],
+          "missing_skills": [
+            "TensorFlow",
+            "PyTorch",
+            "MLOps",
+            "Feature engineering depth",
+            "Model deployment"
+          ],
+          "relevant_projects": [
+            "Data4Viz – AI Data Analysis Platform"
+          ],
+          "relevant_experience": [
+            "Built preprocessing and feature engineering pipelines for structured datasets."
+          ],
+          "evidence": [
+            "Built preprocessing and feature engineering pipelines for structured datasets.",
+            "Python Libraries: Pandas, NumPy, Matplotlib, Scikit-learn"
+          ],
+          "explanation": "Has core ML workflow and feature engineering but lacks deep learning and deployment proof"
+        },
+        {
+          "role": "Backend Developer",
+          "score": 70.0,
+          "matching_skills": [
+            "REST APIs",
+            "SQL",
+            "Server-side programming",
+            "Git",
+            "FastAPI",
+            "MySQL",
+            "MongoDB"
+          ],
+          "missing_skills": [
+            "Authentication",
+            "Caching",
+            "Message queues",
+            "System design"
+          ],
+          "relevant_projects": [
+            "Hirevia – Python Job Aggregation Platform",
+            "Data4Viz – AI Data Analysis Platform"
+          ],
+          "relevant_experience": [],
+          "evidence": [
+            "Implemented job normalization, deduplication, filtering, and relevance-based matching.",
+            "Built backend workflows for dataset profiling, analysis, and AI-assisted insights."
+          ],
+          "explanation": "Backend project work with FastAPI and databases shows foundation but auth, caching and scale missing"
+        },
+        {
+          "role": "AI Engineer",
+          "score": 58.0,
+          "matching_skills": [
+            "Python",
+            "Machine learning basics",
+            "Ollama"
+          ],
+          "missing_skills": [
+            "LLM APIs",
+            "Prompt engineering",
+            "RAG",
+            "LangChain",
+            "Vector databases"
+          ],
+          "relevant_projects": [
+            "Hirevia – Python Job Aggregation Platform"
+          ],
+          "relevant_experience": [],
+          "evidence": [
+            "Hirevia Python • FastAPI • Web Scraping • Ollama • Telegram"
+          ],
+          "explanation": "Ollama mention suggests LLM exposure but no prompt, RAG or agent detail to support strong fit"
+        }
+      ],
+      "suitable_roles": [
+        "Data Scientist",
+        "Python Developer",
+        "Machine Learning Engineer",
+        "Backend Developer",
+        "AI Engineer"
+      ],
+      "strengths": [
+        "6-month Data Scientist Intern at Rubixe AI Solutions with ML pipelines",
+        "Three relevant Python projects covering aggregation, analysis platform and reusable EDA library",
+        "Broad technical stack: Python, FastAPI, Flask, SQL, MongoDB, Pandas, Scikit-learn, Docker",
+        "NASSCOM and IABAC data scientist certifications",
+        "Two 1st place hackathon wins showing problem-solving"
+      ],
+      "weaknesses": [
+        "No professional summary to clarify target role and value proposition",
+        "Work bullets lack metrics like dataset size, accuracy, time saved or automation impact",
+        "Projects lack quantified outcomes, links or deployment details",
+        "No evidence of testing, authentication, cloud deployment or deep learning frameworks"
+      ],
+      "recommendations": [
+        "Add 3-4 line professional summary focused on data science and Python backend",
+        "Quantify internship: datasets size, model performance, automation hours saved",
+        "Add GitHub links and 1-2 metric bullets per project e.g., sources integrated, EDA speedup",
+        "Add certification dates and keep only most credible two if space needed",
+        "Clarify Ollama/LLM work if targeting AI roles or remove to keep focus"
+      ]
+    },
+    "error": null,
+    "content_evidence": {
+      "responsibilities": {
+        "found": true,
+        "evidence_count": 8,
+        "action": "already_matching"
+      },
+      "achievements": {
+        "found": true,
+        "evidence_count": 2,
+        "action": "already_matching"
+      }
+    },
+    "diagnostics": {
+      "finish_reason": "stop",
+      "response_chars": 13147,
+      "model": "muse-spark-1.3-contributor",
+      "recovered_via_correction": false
+    }
+  }
+}

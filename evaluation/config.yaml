@@ -1,0 +1,301 @@
+# SATVIQ — Muse AI Resume Evaluation configuration.
+#
+# This file configures the EVALUATION stage only (evaluation/ package):
+# score classification bands, the standard-section catalogue, the
+# good-to-have catalogue, career stages and the job-role taxonomy the
+# evaluation prompt works against. It is NOT a replacement for the
+# deterministic Quality Checker's configuration
+# (quality_checker/config/completeness.yaml), which is untouched and
+# remains the single source for extraction-time completeness checks.
+#
+# Changes to this file change FUTURE evaluations only. Every stored
+# analysis records the configuration version below plus a hash of the
+# Quality Checker's completeness.yaml, so any evaluation can be tied
+# to the exact configuration that produced it.
+#
+# Versioning discipline (see yaml_versions/README.md): candidate
+# change -> validation (evaluation.config.validate_config) ->
+# regression tests -> human approval -> activation. Nothing in this
+# project edits this file automatically.
+
+config_version: "eval-1.0.0"
+
+# Score classification bands, highest first. A score belongs to the
+# first band whose min_score it reaches. Bands must be strictly
+# decreasing and the last band must start at 0 so every score in
+# 0-100 is classified. The SAME bands classify the Completeness
+# Score, the Resume Quality Score and each Role Suitability Score;
+# the three scores stay independent — no combined score exists.
+classification_bands:
+  - {min_score: 85, label: "Excellent"}
+  - {min_score: 70, label: "Good"}
+  - {min_score: 50, label: "Average"}
+  - {min_score: 30, label: "Needs Improvement"}
+  - {min_score: 0, label: "Poor"}
+
+# Minimum Role Suitability Score for a role to be listed in the
+# evaluation's suitable_roles array. The array is recomputed
+# deterministically from the detailed role results after validation,
+# so it always matches them.
+suitable_role_min_score: 50
+
+# The standard resume sections the evaluation recognises
+# (spec Part 3.1). `importance` is the evaluation importance used in
+# missing-section reporting; evaluation/config.py maps it onto the
+# Quality Checker's importance scale (required / recommended /
+# optional) for cross-checks. `qc_display_name` names the equivalent
+# section in the deterministic Quality Checker, where one exists.
+standard_sections:
+  - name: "Contact Information"
+    importance: "Critical"
+    qc_display_name: "Contact Information"
+  - name: "Professional Summary"
+    importance: "High"
+    qc_display_name: "Summary"
+  - name: "Career Objective"
+    importance: "Medium"
+    qc_display_name: "Summary"
+  - name: "Technical Skills"
+    importance: "Critical"
+    qc_display_name: "Skills"
+  - name: "Core Competencies"
+    importance: "Medium"
+    qc_display_name: "Skills"
+  - name: "Work Experience"
+    importance: "Critical"
+    qc_display_name: "Work Experience"
+  - name: "Internship Experience"
+    importance: "High"
+    qc_display_name: null
+  - name: "Projects"
+    importance: "High"
+    qc_display_name: "Projects"
+  - name: "Academic Projects"
+    importance: "Medium"
+    qc_display_name: "Projects"
+  - name: "Education"
+    importance: "Critical"
+    qc_display_name: "Education"
+  - name: "Certifications"
+    importance: "Medium"
+    qc_display_name: "Certifications"
+  - name: "Achievements"
+    importance: "Medium"
+    qc_display_name: "Achievements"
+  - name: "Responsibilities"
+    importance: "High"
+    qc_display_name: "Responsibilities"
+  - name: "Publications"
+    importance: "Low"
+    qc_display_name: "Publications"
+  - name: "Research Experience"
+    importance: "Low"
+    qc_display_name: null
+
+# Optional sections (spec Part 3.3). Missing good-to-have sections
+# are reported as opportunities, never penalised in any score.
+good_to_have_sections:
+  - "LinkedIn"
+  - "GitHub"
+  - "Portfolio"
+  - "Personal Website"
+  - "Open-source Contributions"
+  - "Leadership Experience"
+  - "Volunteer Experience"
+  - "Languages"
+  - "Awards"
+  - "Professional Memberships"
+  - "Relevant Coursework"
+  - "Publications"
+
+# Career stages (spec Part 4) with the evidence each stage is judged
+# on. A candidate is NEVER penalised for evidence their stage does
+# not call for (e.g. a fresher is never penalised for missing
+# professional work experience).
+career_stages:
+  - name: "Student"
+    evaluation_focus:
+      - "academic projects and coursework"
+      - "technical skills being learned"
+      - "internships, training and hackathons where present"
+      - "certifications and self-learning evidence"
+  - name: "Fresher"
+    evaluation_focus:
+      - "academic and personal projects"
+      - "internships and training"
+      - "technical skills"
+      - "certifications and relevant coursework"
+      - "practical, demonstrable work"
+  - name: "Entry-Level"
+    evaluation_focus:
+      - "early work or internship experience"
+      - "applied technical skills"
+      - "projects with real outcomes"
+      - "certifications and continued learning"
+  - name: "Experienced Professional"
+    evaluation_focus:
+      - "work experience depth and relevance"
+      - "responsibilities and measurable achievements"
+      - "technical expertise"
+      - "career progression"
+  - name: "Senior Professional"
+    evaluation_focus:
+      - "leadership and ownership"
+      - "impact and measurable outcomes at scale"
+      - "mentoring and cross-team work"
+      - "deep domain expertise and progression"
+  - name: "Career Transition"
+    evaluation_focus:
+      - "transferable skills from the previous field"
+      - "relevant projects in the target field"
+      - "training and certifications in the target field"
+      - "demonstrated practical knowledge of the target field"
+
+# Job-role taxonomy (spec Part 6). Roles are recommended ONLY from
+# resume evidence — a keyword match alone is not suitability.
+# required_skills / preferred_skills guide the evaluation's
+# matching/missing skill lists; new roles are added here, not in
+# code.
+role_taxonomy:
+  - name: "Python Developer"
+    alt_titles: ["Python Programmer", "Python Software Developer"]
+    required_skills: ["Python", "OOP", "REST APIs", "SQL", "Git"]
+    preferred_skills: ["FastAPI", "Django", "Unit testing", "Docker"]
+  - name: "Java Developer"
+    alt_titles: ["Java Programmer", "Java Software Engineer"]
+    required_skills: ["Java", "OOP", "Spring", "SQL", "REST APIs"]
+    preferred_skills: ["Spring Boot", "Microservices", "Maven", "JUnit"]
+  - name: "Backend Developer"
+    alt_titles: ["Backend Engineer", "Server-Side Developer"]
+    required_skills: ["REST APIs", "SQL", "Server-side programming", "Git", "Authentication"]
+    preferred_skills: ["Caching", "Message queues", "Docker", "System design"]
+  - name: "Frontend Developer"
+    alt_titles: ["Frontend Engineer", "UI Developer"]
+    required_skills: ["HTML", "CSS", "JavaScript", "Responsive design"]
+    preferred_skills: ["React", "TypeScript", "State management", "Build tooling"]
+  - name: "Full Stack Developer"
+    alt_titles: ["Full-Stack Engineer"]
+    required_skills: ["JavaScript", "HTML/CSS", "REST APIs", "SQL", "Git"]
+    preferred_skills: ["React", "Node.js", "Deployment", "NoSQL"]
+  - name: "Software Developer"
+    alt_titles: ["Software Engineer", "Programmer"]
+    required_skills: ["Programming fundamentals", "Data structures", "OOP", "Git", "Debugging"]
+    preferred_skills: ["Testing", "CI/CD", "Agile"]
+  - name: "Data Analyst"
+    alt_titles: ["Business Data Analyst", "Reporting Analyst"]
+    required_skills: ["SQL", "Excel", "Data visualization", "Statistics basics"]
+    preferred_skills: ["Python (pandas)", "Power BI", "Tableau"]
+  - name: "Data Engineer"
+    alt_titles: ["ETL Developer", "Data Pipeline Engineer"]
+    required_skills: ["SQL", "Python", "ETL", "Data modeling"]
+    preferred_skills: ["Spark", "Airflow", "Cloud data services", "Kafka"]
+  - name: "Data Scientist"
+    alt_titles: ["Data Science Associate"]
+    required_skills: ["Python", "Statistics", "Machine learning", "pandas", "scikit-learn"]
+    preferred_skills: ["Experimentation", "NLP", "Deep learning", "Model deployment"]
+  - name: "Machine Learning Engineer"
+    alt_titles: ["ML Engineer", "AI/ML Engineer"]
+    required_skills: ["Python", "Machine learning", "scikit-learn", "Model evaluation"]
+    preferred_skills: ["TensorFlow", "PyTorch", "MLOps", "Feature engineering"]
+  - name: "AI Engineer"
+    alt_titles: ["GenAI Engineer", "LLM Engineer", "AI Developer"]
+    required_skills: ["Python", "LLM APIs", "Prompt engineering", "Machine learning basics"]
+    preferred_skills: ["RAG", "LangChain", "Vector databases", "AI agents", "Fine-tuning"]
+  - name: "Business Intelligence Analyst"
+    alt_titles: ["BI Analyst", "BI Developer"]
+    required_skills: ["SQL", "Power BI or Tableau", "Data modeling", "Excel"]
+    preferred_skills: ["DAX", "ETL", "Dashboard design"]
+  - name: "Cloud Engineer"
+    alt_titles: ["Cloud Developer", "Cloud Associate"]
+    required_skills: ["Cloud fundamentals (AWS/Azure/GCP)", "Linux", "Networking basics"]
+    preferred_skills: ["Terraform", "Kubernetes", "CI/CD", "Serverless"]
+  - name: "DevOps Engineer"
+    alt_titles: ["DevOps Associate", "Build and Release Engineer"]
+    required_skills: ["Linux", "Git", "CI/CD", "Scripting"]
+    preferred_skills: ["Docker", "Kubernetes", "Terraform", "Monitoring"]
+  - name: "Database Developer"
+    alt_titles: ["SQL Developer", "Database Engineer"]
+    required_skills: ["SQL", "Database design", "Query optimization", "Stored procedures"]
+    preferred_skills: ["PostgreSQL", "MySQL", "NoSQL", "Indexing"]
+  - name: "QA Engineer"
+    alt_titles: ["QA Analyst", "Quality Engineer"]
+    required_skills: ["Test cases", "SDLC", "Bug tracking", "Manual testing"]
+    preferred_skills: ["Selenium", "API testing", "Test automation"]
+  - name: "Software Tester"
+    alt_titles: ["Test Engineer", "Manual Tester"]
+    required_skills: ["Manual testing", "Test documentation", "Defect reporting"]
+    preferred_skills: ["Automation basics", "Selenium", "JIRA"]
+  - name: "Cybersecurity Analyst"
+    alt_titles: ["Security Analyst", "InfoSec Analyst"]
+    required_skills: ["Networking fundamentals", "Operating systems", "Security concepts"]
+    preferred_skills: ["SIEM", "Vulnerability scanning", "Scripting"]
+  - name: "Network Engineer"
+    alt_titles: ["Network Associate", "NOC Engineer"]
+    required_skills: ["TCP/IP", "Routing and switching", "DNS/DHCP"]
+    preferred_skills: ["CCNA", "Firewalls", "Network monitoring"]
+  - name: "System Administrator"
+    alt_titles: ["SysAdmin", "IT Administrator"]
+    required_skills: ["Linux/Windows administration", "User management", "Troubleshooting"]
+    preferred_skills: ["Scripting", "Virtualization", "Backups"]
+  - name: "Technical Support Engineer"
+    alt_titles: ["IT Support Engineer", "Support Analyst"]
+    required_skills: ["Troubleshooting", "Operating systems", "Communication"]
+    preferred_skills: ["Ticketing systems", "Networking basics", "SQL basics"]
+  - name: "UI/UX Designer"
+    alt_titles: ["Product Designer", "UX Designer"]
+    required_skills: ["Figma", "Wireframing", "Prototyping", "Design principles"]
+    preferred_skills: ["User research", "Design systems", "HTML/CSS basics"]
+  - name: "Mobile Application Developer"
+    alt_titles: ["Mobile Developer", "Android Developer", "iOS Developer"]
+    required_skills: ["Kotlin, Swift, Flutter or React Native", "Mobile UI", "REST APIs"]
+    preferred_skills: ["App publishing", "Firebase", "Offline storage"]
+  - name: "Site Reliability Engineer"
+    alt_titles: ["SRE", "Reliability Engineer"]
+    required_skills: ["Linux", "Scripting", "Monitoring", "Incident response"]
+    preferred_skills: ["Kubernetes", "Terraform", "SLOs", "Automation"]
+  # -- Content, editorial and marketing roles (added after a real
+  # non-technical candidate — a content strategist / journalist —
+  # could only be matched to technical roles; suitability is still
+  # evidence-based: a role qualifies only from documented skills,
+  # experience, responsibilities and achievements, never from a
+  # title resemblance alone.)
+  - name: "Content Strategist"
+    alt_titles: ["Content Strategy Manager", "Content Lead"]
+    required_skills: ["Content strategy", "Editorial planning", "Content calendars", "Audience analysis"]
+    preferred_skills: ["SEO", "CMS", "Analytics", "Brand storytelling"]
+  - name: "Content Writer"
+    alt_titles: ["Content Developer", "Copywriter", "Web Content Writer"]
+    required_skills: ["Content writing", "Editing", "Research", "Grammar and style"]
+    preferred_skills: ["SEO writing", "CMS", "Blogging", "Proofreading"]
+  - name: "Content Marketing Manager"
+    alt_titles: ["Content Marketing Lead"]
+    required_skills: ["Content marketing", "Campaign management", "SEO", "Analytics"]
+    preferred_skills: ["Email marketing", "Social media", "Lead generation", "Marketing automation"]
+  - name: "Editorial Manager"
+    alt_titles: ["Managing Editor", "Editorial Lead", "Content Editor"]
+    required_skills: ["Editing", "Editorial planning", "Team management", "Content workflows"]
+    preferred_skills: ["CMS", "Style guides", "Journalism", "Proofreading"]
+  - name: "Journalist"
+    alt_titles: ["Reporter", "Editorial Journalist", "News Writer"]
+    required_skills: ["News writing", "Reporting", "Interviewing", "Research"]
+    preferred_skills: ["Multimedia storytelling", "Beat reporting", "Fact-checking", "Video"]
+  - name: "Social Media Manager"
+    alt_titles: ["Social Media Specialist", "Community Manager"]
+    required_skills: ["Social media platforms", "Content calendars", "Community management", "Campaign execution"]
+    preferred_skills: ["Paid social", "Analytics", "Short-form video", "Influencer outreach"]
+  - name: "Digital Marketing Specialist"
+    alt_titles: ["Digital Marketer", "Online Marketing Specialist"]
+    required_skills: ["Digital marketing", "SEO", "Social media", "Campaign management"]
+    preferred_skills: ["Google Analytics", "PPC", "Email marketing", "Content marketing"]
+  - name: "SEO Content Specialist"
+    alt_titles: ["SEO Specialist", "SEO Writer"]
+    required_skills: ["SEO", "Keyword research", "Content optimization", "On-page SEO"]
+    preferred_skills: ["Ahrefs", "Semrush", "Google Analytics", "Technical SEO basics"]
+  - name: "Brand Content Manager"
+    alt_titles: ["Brand Manager (Content)", "Content and Brand Manager"]
+    required_skills: ["Brand strategy", "Content strategy", "Storytelling", "Campaign management"]
+    preferred_skills: ["Brand guidelines", "Creative direction", "Social media", "Video"]
+  - name: "Video Content Creator"
+    alt_titles: ["Video Creator", "Content Creator", "YouTuber"]
+    required_skills: ["Video production", "Video editing", "Scripting", "Storytelling"]
+    preferred_skills: ["Short-form video", "YouTube", "Motion graphics", "Thumbnail design"]

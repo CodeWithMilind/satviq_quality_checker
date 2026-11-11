@@ -50,7 +50,7 @@ input, select, textarea { font: inherit; color: var(--text); }
   z-index: 40;
 }
 .topbar-inner {
-  max-width: 1080px;
+  max-width: 1600px; width: 94%;
   margin: 0 auto;
   padding: 10px 20px;
   display: flex;
@@ -83,16 +83,16 @@ input, select, textarea { font: inherit; color: var(--text); }
 .topbar-status.error .status-dot { background: var(--bad); }
 .subbar { border-top: 1px solid var(--border); background: var(--bg); }
 .subbar-inner {
-  max-width: 1080px; margin: 0 auto; padding: 5px 20px;
+  max-width: 1600px; width: 94%; margin: 0 auto; padding: 5px 20px;
   display: flex; gap: 24px; flex-wrap: wrap;
   color: var(--muted); font-size: 12.5px;
 }
 
 /* ---------- Layout ---------- */
-.page { max-width: 1080px; margin: 0 auto; padding: 24px 20px 40px; }
+.page { max-width: 1600px; width: 94%; margin: 0 auto; padding: 24px 20px 40px; }
 .footer { border-top: 1px solid var(--border); background: var(--card); }
 .footer-inner {
-  max-width: 1080px; margin: 0 auto; padding: 14px 20px;
+  max-width: 1600px; width: 94%; margin: 0 auto; padding: 14px 20px;
   color: var(--muted); font-size: 12.5px;
 }
 .view > h2 { font-size: 20px; margin: 0 0 4px; }
@@ -348,3 +348,99 @@ pre.json-view {
 .chart-legend .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; }
 .analytics-section-title { margin: 22px 0 10px; font-size: 16px; }
 
+
+/* AI Evaluation section (Resume Details) */
+.eval-candidate { margin-bottom: 12px; }
+.eval-score-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 12px 0; }
+.eval-score-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; background: var(--bg); }
+.eval-score-label { color: var(--muted); font-size: 12.5px; font-weight: 600; }
+.eval-score-value { font-size: 30px; font-weight: 700; line-height: 1.2; }
+.eval-score-max { font-size: 14px; color: var(--faint); font-weight: 500; }
+.score-bar { height: 8px; border-radius: 4px; background: var(--border); overflow: hidden; margin: 8px 0; }
+.score-fill { height: 100%; border-radius: 4px; }
+.eval-details { margin-top: 8px; }
+.eval-details summary { cursor: pointer; color: var(--primary); font-size: 13px; }
+.eval-details h5 { margin: 10px 0 4px; font-size: 12.5px; color: var(--muted); }
+.eval-list { margin: 4px 0 8px; padding-left: 18px; }
+.eval-list li { margin: 2px 0; }
+.role-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; margin: 10px 0; }
+.role-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.role-score { font-weight: 700; white-space: nowrap; }
+.role-line { margin: 6px 0; font-size: 13px; }
+.role-line-label { display: inline-block; min-width: 130px; color: var(--muted); font-size: 12.5px; font-weight: 600; }
+.eval-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 14px; }
+#evaluationSection h4 { margin: 16px 0 8px; }
+#evaluationSection .data-table td { white-space: normal; }
+
+/* AI Evaluation dashboard redesign — tabs, score rings, role
+   comparison, section cards, insight cards. Existing palette only:
+   primary blue, green/amber/red bands, subtle borders. */
+.eval-candidate-main { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; }
+.eval-candidate-name { font-size: 17px; font-weight: 700; }
+.eval-candidate-headline { color: var(--muted); font-size: 13.5px; }
+.eval-candidate-summary { margin: 4px 0 2px; }
+.eval-tabs { display: flex; flex-wrap: wrap; gap: 4px; border-bottom: 1px solid var(--border); margin: 14px 0 12px; }
+.eval-tab { background: none; border: none; border-bottom: 2px solid transparent; padding: 7px 12px; font: inherit; font-size: 13.5px; font-weight: 600; color: var(--muted); cursor: pointer; }
+.eval-tab:hover { color: var(--primary); }
+.eval-tab-active { color: var(--primary); border-bottom-color: var(--primary); }
+.eval-score-ringwrap { display: flex; gap: 14px; align-items: flex-start; }
+.eval-ring { flex: 0 0 auto; }
+.eval-ring-score { font-size: 22px; font-weight: 700; fill: var(--text); }
+.eval-ring-max { font-size: 10.5px; fill: var(--faint); }
+.eval-score-side { min-width: 0; }
+.eval-score-why { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
+.eval-top-role-name { font-size: 16.5px; font-weight: 700; margin: 2px 0 4px; }
+.role-card-top { border-color: var(--ok); background: var(--ok-bg); }
+.role-class { margin: 2px 0 4px; }
+.eval-compare { margin: 10px 0 4px; }
+.eval-compare-row { display: grid; grid-template-columns: minmax(110px, 200px) 1fr 38px; align-items: center; gap: 10px; margin: 5px 0; font-size: 13px; }
+.eval-compare-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.eval-compare-track { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; display: block; }
+.eval-compare-fill { display: block; height: 100%; border-radius: 4px; }
+.eval-compare-score { font-weight: 700; text-align: right; }
+.eval-section-summary { border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; margin: 12px 0; background: var(--card); }
+.eval-stat-row { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13.5px; color: var(--muted); }
+.eval-stat-row strong { color: var(--text); }
+.eval-stat-ok strong { color: var(--ok); }
+.eval-stat-warn strong { color: var(--warn); }
+.eval-stat-bad strong { color: var(--bad); }
+.eval-stack { display: flex; height: 10px; border-radius: 5px; overflow: hidden; background: var(--border); margin-top: 10px; }
+.eval-stack span { display: block; height: 100%; }
+.eval-card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px; margin: 10px 0; }
+.eval-item-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 12px; background: var(--card); font-size: 13.5px; }
+.eval-item-card p { margin: 5px 0; }
+.eval-item-missing { border-left: 3px solid var(--bad); }
+.eval-item-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
+.eval-group { margin: 12px 0; }
+.eval-group > summary { cursor: pointer; font-weight: 700; font-size: 14.5px; padding: 4px 0; }
+.eval-panel { border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px; background: var(--card); }
+.eval-panel-ok { border-left: 3px solid var(--ok); background: var(--ok-bg); }
+.eval-panel-warn { border-left: 3px solid var(--warn); background: var(--warn-bg); }
+.eval-insights { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; }
+.eval-insight-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; background: var(--card); font-size: 13.5px; }
+.eval-insight-num { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: var(--primary); color: #fff; font-size: 12.5px; font-weight: 700; flex: 0 0 auto; }
+.eval-tech-details { margin-top: 16px; border-top: 1px solid var(--border); padding-top: 8px; }
+.eval-meta-table { max-width: 520px; }
+@media (max-width: 640px) {
+  .eval-score-ringwrap { flex-direction: column; }
+  .eval-compare-row { grid-template-columns: minmax(90px, 130px) 1fr 34px; }
+}
+
+/* Enterprise redesign: details tabs, system source banners,
+   pipeline flow, wide-layout rules. Existing palette only. */
+.detail-tabs { position: sticky; top: 0; z-index: 30; background: var(--bg); padding-top: 8px; }
+.sys-banner { border: 1px solid var(--border); border-left: 3px solid var(--primary); border-radius: var(--radius); padding: 10px 14px; margin: 0 0 12px; background: var(--primary-soft); display: flex; flex-direction: column; gap: 2px; font-size: 13.5px; }
+.sys-banner-yaml { border-left-color: var(--warn); background: var(--warn-bg); }
+.sys-banner-ai { border-left-color: var(--primary); background: var(--primary-soft); }
+.eval-empty { text-align: left; padding: 18px 16px; }
+.pipe-flow { display: flex; align-items: stretch; gap: 8px; flex-wrap: wrap; margin: 10px 0 4px; }
+.pipe-stage { flex: 1 1 150px; border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 12px; background: var(--card); }
+.pipe-stage-final { border-color: var(--ok); background: var(--ok-bg); }
+.pipe-stage-name { font-weight: 700; margin-bottom: 4px; }
+.pipe-arrow { align-self: center; color: var(--faint); font-size: 16px; }
+@media (max-width: 760px) {
+  .pipe-arrow { display: none; }
+  .pipe-stage { flex-basis: 100%; }
+  .topbar-inner, .subbar-inner, .page, .footer-inner { width: 100%; padding-left: 14px; padding-right: 14px; }
+}
+.text-panel, .eval-item-card p, .role-card p { max-width: 110ch; }
