@@ -107,6 +107,9 @@
       var suffix = query.toString() ? "?" + query.toString() : "";
       return request("/api/analytics/summary" + suffix);
     },
+    getYamlEditorAnalytics: function () {
+      return request("/api/yaml-editor/analytics");
+    },
     processResumes: processResumes,
     listResumes: function (params) {
       var query = new URLSearchParams();

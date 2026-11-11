@@ -1,0 +1,1456 @@
+{
+  "resume_id": "107c6cc3-f1e5-4792-a73d-c8bfcf5cdc18",
+  "filename": "SHJ-5329_SHC-363888.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 608846,
+  "uploaded_at": "2026-11-11T11:40:31.094213+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "final_extractor": "tika",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "107c6cc3-f1e5-4792-a73d-c8bfcf5cdc18-attempt-1",
+      "resume_id": "107c6cc3-f1e5-4792-a73d-c8bfcf5cdc18",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Quality PASS (Text Health 100.0, Completeness 91.0, Reading Order 99.32) — result accepted; fallback stopped.",
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS (Text Health 100.0, Completeness 91.0, Reading Order 99.32) — result accepted; fallback stopped.",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "107c6cc3-f1e5-4792-a73d-c8bfcf5cdc18",
+        "source_tool": "tika",
+        "attempt_id": "107c6cc3-f1e5-4792-a73d-c8bfcf5cdc18-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 7295,
+            "word_count": 991,
+            "line_count": 243,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.148321,
+            "symbol_count": 19,
+            "symbol_ratio": 0.002605,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 7295,
+            "word_count": 991,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "thesanjaysirsanjaysharma767835@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 61,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 142,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 203,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "Certifications",
+                "detection_method": "heading",
+                "line_number": 201,
+                "evidence": "Certifications",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Summary": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 99.32,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES"
+          ],
+          "reasons": [
+            "40.9% of lines have 2 words or fewer — text may be fragmented or columns may have been split."
+          ],
+          "metrics": {
+            "char_count": 7295,
+            "word_count": 991,
+            "line_count": 243,
+            "non_empty_line_count": 198,
+            "short_line_count": 81,
+            "short_line_ratio": 0.409091,
+            "fragmented_line_count": 60,
+            "fragmented_line_ratio": 0.30303,
+            "mean_line_length": 35.39,
+            "median_line_length": 19.5,
+            "line_length_stdev": 32.69,
+            "line_length_cv": 0.923738,
+            "broken_sentence_count": 27,
+            "broken_sentence_ratio": 0.137056,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "107c6cc3-f1e5-4792-a73d-c8bfcf5cdc18",
+        "source_tool": "tika",
+        "attempt_id": "107c6cc3-f1e5-4792-a73d-c8bfcf5cdc18-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 7295,
+            "word_count": 991,
+            "line_count": 243,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.148321,
+            "symbol_count": 19,
+            "symbol_ratio": 0.002605,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 7295,
+            "word_count": 991,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "thesanjaysirsanjaysharma767835@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 61,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 142,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 203,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "Certifications",
+                "detection_method": "heading",
+                "line_number": 201,
+                "evidence": "Certifications",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Summary": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 99.32,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES"
+          ],
+          "reasons": [
+            "40.9% of lines have 2 words or fewer — text may be fragmented or columns may have been split."
+          ],
+          "metrics": {
+            "char_count": 7295,
+            "word_count": 991,
+            "line_count": 243,
+            "non_empty_line_count": 198,
+            "short_line_count": 81,
+            "short_line_ratio": 0.409091,
+            "fragmented_line_count": 60,
+            "fragmented_line_ratio": 0.30303,
+            "mean_line_length": 35.39,
+            "median_line_length": 19.5,
+            "line_length_stdev": 32.69,
+            "line_length_cv": 0.923738,
+            "broken_sentence_count": 27,
+            "broken_sentence_ratio": 0.137056,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 97.6,
+      "duration_ms": 8692.76,
+      "text": "Graphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer \nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer \nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nSANJAY SHARMA\nGraphic Designer | Motion Designer | Video Editor | Videographer | Content Strategist\n\nMotion Graphic Designer & Creative Strategist with 6+ years of experience delivering performance-driven \ndesign & video communication. Worked with 50+ brands including LG Electronics India, Myntra helping \n\nimprove CTR, conversions & audience engagement across digital platforms. Strong at merging storytelling \nwith business goals to create measurable results. Skilled in leveraging AI-driven creative workflows to deliver \n\nfaster, smarter & more impactful campaigns.\n\nDelivered 200+ product and DIY informational videos for LG Electronics India, improving product understanding and \ncommunication outcomes.\n\nCreated 500+ performance-driven digital ad creatives for Hippo Homes (Dalmia Bharat Group), supporting its growth \nfrom 1 to 4 stores.\n\nProduced 200+ campaigns for Remote Resource, contributing to increased lead generation and customer acquisition.\n\nImproved campaign results with 20 to 30% higher CTR, 15 to 35% better conversions, 10 to 50% revenue uplift and \n20 to 40% reduced ad fatigue for multiple clients.\n\nDesigned and edited over 5,000 videos and 4,000 static creatives, improving brand visibility and audience retention.\n\nCampaign creatives featured on TV and print media, increasing brand trust and visibility at a national level.\n\nWorked with more than 50 brands across multiple industries delivering results-focused visual communication.\n\nKEY ACHIEVEMENTS\n\nSOFTWARE & TOOLS\n\nSKILLS\n• Motion Graphics\n• Graphic Designing\n\n• Video Editing\n• Animation\n\n• Visual Design \n• Content Creation\n\n• Creative Design \n• AI Designer\n\n• UI & UX\n• Videography\n\nAdobe Photoshop \nAdobe Illustrator \nAdobe After Effects \nAdobe Premiere Pro \nAdobe Audition \nAdobe InDesign \nAdobe Character Animator \nAdobe XD\nDavinci Resolve\nFigma\nHTML\nCSS\nJava Script\n\nMicrosoft Office 365\nMicrosoft Excel\nMicrosoft Word\nMicrosoft Power Point\nMicrosoft Outlook\nMicrosoft Copilot\nCanva\nCapcut\nAdobe Express\nPhotopea \nVyond Animator\nVideoscribe Animation\nTweenCraft Animation\n\nGoogle Gemini \nGoogle Stitch ui/ux AI\nVeed io\nMeta Luma AI\nSuno AI\nGenerative AI by Adobe\nWondershare Filmora \nKinemaster\nHiggsfield AI Video Effects\nJson Prompt\n\nMotion Bro\nAnimate Composer\nMeta/Facebook Ads\nRunway ML\nLeonardo AI\nMiniMax Hailuoai\nFreepik AI\nPerplexity Sonar AI\nElevenlabs io\nGoogle Flow/ Google Veo\nGoogle Nano Banana\nGrok AI\nGoogle Docs\n\n+91-7678352717 www.linkedin.com/in/thesanjaysirsanjaysharma767835@gmail.com www.behance.net/thesanjaysir\n\nPause here. Because what I bring isn’t common.\nI convert ideas into results — using design, motion, content and strategy together.\nHave delivered growth to 50+ brands across industries. \nHiring me means one person replacing multiple creative roles — \ndesigner, editor, animator, videographer and strategist — all aligned to business outcomes.\nI know how audiences think, what stops their scroll, and what makes them act.\nIf I could convince you to pause and read this, imagine what I can make your audience do.\n\n\n\nWORK EXPERIENCE\n11/2024 – Present\nNoida\n\n08/2020 – 02/2022 \nNoida\n\nApplied various art forms, including typography, videography, graphic design, and photogra-\nphy, to translate original ideas into visual storytelling for early-stage sales pitches and client \nproposals.\n\n02/2022 – 04/2023 \nDelhi\n\n04/2023 – 11/2024 \nNoida\n\nMarvy Group (Client-LG Electronic India) - Creative Producer (Motion & Visual \nDesign)\nProduct Video Production: Shoot, edit, & produce high-quality product videos to enhance brand \npresence.\nWorked with LG Electronics India during its IPO phase, contributing to brand-aligned visual \nprojects and internal communications.\nDIY Informational Videos: Plan, script, shoot, direct, and provide voiceovers for engaging DIY and \ninstructional content.\nEnd-to-End Content Creation: Oversee the entire content production process from ideation to \nexecution, ensuring high-quality visual storytelling.\n\nRemote Resource - Motion & Graphics Designer\n\nMaintained awareness of current industry and technology standards, social media, competi-\ntive landscape, and market trends.\nEnsured all produced material is correctly optimized for chosen dissemination (web, social \nmedia, large presentation screen, social media).\nManaged multiple clients and created over 200+ static and video ads for company services, which \nhelped the company acquire more clients.\n\nHippo Homes(Dalmia Bharat Group) - Motion & Graphics Designer\n\nAligned with top management to roll out key campaigns on service excellence and engage-\nment, participated in the new store launch, and created over 500+ Google ads.\nCreating some eye-catching designs like, Promotional offers, New schemes and weekly \noffers, Study creative ideas and develop videos whether they are Testimonials videos, opener \nvideos, store guest welcome Videos, store product category videos, store tour videos, & New offer \nand scheme videos. \nManaged multiple design projects simultaneously, ensuring deadlines were met and delivera-bles \nwere of high quality.\n\nNew Vision Digital - Team Lead: Motion Graphics Designer\n\nProvided creative direction and guidance to the design team, ensuring all visual content \naligned with the brand's vision and goals.\nWorked with over 50+ different clients worldwide across various business niches.\n\n2021 Bachelor of Commerce from Delhi University, New Delhi, India\n\n2019\nGraphics Design, Animation, Video Editing and Web Design \nOxford Software Institute, Delhi, India\nCertifications\n\nEDUCATION\n\n2022 Linkedin Learning\nVideo Editing Fundamentals Typography: Type in Motion\nPractical Creativity for Everyone, Graphics Design Techniques\nCreative Video Editing Techniques,Video Production & Editing\n\nGraphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer \nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer \nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nTop Clients & Brand Experience\n\nWorked with leading brands across India including LG Electronics India, Myntra, Punjab National Bank, Greenlam \nIndustries, FIS and Indostar Capital Finance, Ujala Cygnus Hospital, Hippo Homes, ISKCON, Decowood Premium Veneers,\nAshok Singhal Foundation   — delivering business-aligned creatives across retail, finance, manufacturing, ed tech, real \nestate, electronics and lifestyle sectors.",
+      "extracted_text": "Graphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer \nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer \nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nSANJAY SHARMA\nGraphic Designer | Motion Designer | Video Editor | Videographer | Content Strategist\n\nMotion Graphic Designer & Creative Strategist with 6+ years of experience delivering performance-driven \ndesign & video communication. Worked with 50+ brands including LG Electronics India, Myntra helping \n\nimprove CTR, conversions & audience engagement across digital platforms. Strong at merging storytelling \nwith business goals to create measurable results. Skilled in leveraging AI-driven creative workflows to deliver \n\nfaster, smarter & more impactful campaigns.\n\nDelivered 200+ product and DIY informational videos for LG Electronics India, improving product understanding and \ncommunication outcomes.\n\nCreated 500+ performance-driven digital ad creatives for Hippo Homes (Dalmia Bharat Group), supporting its growth \nfrom 1 to 4 stores.\n\nProduced 200+ campaigns for Remote Resource, contributing to increased lead generation and customer acquisition.\n\nImproved campaign results with 20 to 30% higher CTR, 15 to 35% better conversions, 10 to 50% revenue uplift and \n20 to 40% reduced ad fatigue for multiple clients.\n\nDesigned and edited over 5,000 videos and 4,000 static creatives, improving brand visibility and audience retention.\n\nCampaign creatives featured on TV and print media, increasing brand trust and visibility at a national level.\n\nWorked with more than 50 brands across multiple industries delivering results-focused visual communication.\n\nKEY ACHIEVEMENTS\n\nSOFTWARE & TOOLS\n\nSKILLS\n• Motion Graphics\n• Graphic Designing\n\n• Video Editing\n• Animation\n\n• Visual Design \n• Content Creation\n\n• Creative Design \n• AI Designer\n\n• UI & UX\n• Videography\n\nAdobe Photoshop \nAdobe Illustrator \nAdobe After Effects \nAdobe Premiere Pro \nAdobe Audition \nAdobe InDesign \nAdobe Character Animator \nAdobe XD\nDavinci Resolve\nFigma\nHTML\nCSS\nJava Script\n\nMicrosoft Office 365\nMicrosoft Excel\nMicrosoft Word\nMicrosoft Power Point\nMicrosoft Outlook\nMicrosoft Copilot\nCanva\nCapcut\nAdobe Express\nPhotopea \nVyond Animator\nVideoscribe Animation\nTweenCraft Animation\n\nGoogle Gemini \nGoogle Stitch ui/ux AI\nVeed io\nMeta Luma AI\nSuno AI\nGenerative AI by Adobe\nWondershare Filmora \nKinemaster\nHiggsfield AI Video Effects\nJson Prompt\n\nMotion Bro\nAnimate Composer\nMeta/Facebook Ads\nRunway ML\nLeonardo AI\nMiniMax Hailuoai\nFreepik AI\nPerplexity Sonar AI\nElevenlabs io\nGoogle Flow/ Google Veo\nGoogle Nano Banana\nGrok AI\nGoogle Docs\n\n+91-7678352717 www.linkedin.com/in/thesanjaysirsanjaysharma767835@gmail.com www.behance.net/thesanjaysir\n\nPause here. Because what I bring isn’t common.\nI convert ideas into results — using design, motion, content and strategy together.\nHave delivered growth to 50+ brands across industries. \nHiring me means one person replacing multiple creative roles — \ndesigner, editor, animator, videographer and strategist — all aligned to business outcomes.\nI know how audiences think, what stops their scroll, and what makes them act.\nIf I could convince you to pause and read this, imagine what I can make your audience do.\n\n\n\nWORK EXPERIENCE\n11/2024 – Present\nNoida\n\n08/2020 – 02/2022 \nNoida\n\nApplied various art forms, including typography, videography, graphic design, and photogra-\nphy, to translate original ideas into visual storytelling for early-stage sales pitches and client \nproposals.\n\n02/2022 – 04/2023 \nDelhi\n\n04/2023 – 11/2024 \nNoida\n\nMarvy Group (Client-LG Electronic India) - Creative Producer (Motion & Visual \nDesign)\nProduct Video Production: Shoot, edit, & produce high-quality product videos to enhance brand \npresence.\nWorked with LG Electronics India during its IPO phase, contributing to brand-aligned visual \nprojects and internal communications.\nDIY Informational Videos: Plan, script, shoot, direct, and provide voiceovers for engaging DIY and \ninstructional content.\nEnd-to-End Content Creation: Oversee the entire content production process from ideation to \nexecution, ensuring high-quality visual storytelling.\n\nRemote Resource - Motion & Graphics Designer\n\nMaintained awareness of current industry and technology standards, social media, competi-\ntive landscape, and market trends.\nEnsured all produced material is correctly optimized for chosen dissemination (web, social \nmedia, large presentation screen, social media).\nManaged multiple clients and created over 200+ static and video ads for company services, which \nhelped the company acquire more clients.\n\nHippo Homes(Dalmia Bharat Group) - Motion & Graphics Designer\n\nAligned with top management to roll out key campaigns on service excellence and engage-\nment, participated in the new store launch, and created over 500+ Google ads.\nCreating some eye-catching designs like, Promotional offers, New schemes and weekly \noffers, Study creative ideas and develop videos whether they are Testimonials videos, opener \nvideos, store guest welcome Videos, store product category videos, store tour videos, & New offer \nand scheme videos. \nManaged multiple design projects simultaneously, ensuring deadlines were met and delivera-bles \nwere of high quality.\n\nNew Vision Digital - Team Lead: Motion Graphics Designer\n\nProvided creative direction and guidance to the design team, ensuring all visual content \naligned with the brand's vision and goals.\nWorked with over 50+ different clients worldwide across various business niches.\n\n2021 Bachelor of Commerce from Delhi University, New Delhi, India\n\n2019\nGraphics Design, Animation, Video Editing and Web Design \nOxford Software Institute, Delhi, India\nCertifications\n\nEDUCATION\n\n2022 Linkedin Learning\nVideo Editing Fundamentals Typography: Type in Motion\nPractical Creativity for Everyone, Graphics Design Techniques\nCreative Video Editing Techniques,Video Production & Editing\n\nGraphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer \nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer \nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nTop Clients & Brand Experience\n\nWorked with leading brands across India including LG Electronics India, Myntra, Punjab National Bank, Greenlam \nIndustries, FIS and Indostar Capital Finance, Ujala Cygnus Hospital, Hippo Homes, ISKCON, Decowood Premium Veneers,\nAshok Singhal Foundation   — delivering business-aligned creatives across retail, finance, manufacturing, ed tech, real \nestate, electronics and lifestyle sectors.",
+      "extracted_text_length": 7295,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Graphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer\nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer\nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nSANJAY SHARMA\nGraphic Designer | Motion Designer | Video Editor | Videographer | Content Strategist\n\nMotion Graphic Designer & Creative Strategist with 6+ years of experience delivering performance-driven\ndesign & video communication. Worked with 50+ brands including LG Electronics India, Myntra helping\n\nimprove CTR, conversions & audience engagement across digital platforms. Strong at merging storytelling\nwith business goals to create measurable results. Skilled in leveraging AI-driven creative workflows to deliver\n\nfaster, smarter & more impactful campaigns.\n\nDelivered 200+ product and DIY informational videos for LG Electronics India, improving product understanding and\ncommunication outcomes.\n\nCreated 500+ performance-driven digital ad creatives for Hippo Homes (Dalmia Bharat Group), supporting its growth\nfrom 1 to 4 stores.\n\nProduced 200+ campaigns for Remote Resource, contributing to increased lead generation and customer acquisition.\n\nImproved campaign results with 20 to 30% higher CTR, 15 to 35% better conversions, 10 to 50% revenue uplift and\n20 to 40% reduced ad fatigue for multiple clients.\n\nDesigned and edited over 5,000 videos and 4,000 static creatives, improving brand visibility and audience retention.\n\nCampaign creatives featured on TV and print media, increasing brand trust and visibility at a national level.\n\nWorked with more than 50 brands across multiple industries delivering results-focused visual communication.\n\nKEY ACHIEVEMENTS\n\nSOFTWARE & TOOLS\n\nSKILLS\n• Motion Graphics\n• Graphic Designing\n\n• Video Editing\n• Animation\n\n• Visual Design\n• Content Creation\n\n• Creative Design\n• AI Designer\n\n• UI & UX\n• Videography\n\nAdobe Photoshop\nAdobe Illustrator\nAdobe After Effects\nAdobe Premiere Pro\nAdobe Audition\nAdobe InDesign\nAdobe Character Animator\nAdobe XD\nDavinci Resolve\nFigma\nHTML\nCSS\nJava Script\n\nMicrosoft Office 365\nMicrosoft Excel\nMicrosoft Word\nMicrosoft Power Point\nMicrosoft Outlook\nMicrosoft Copilot\nCanva\nCapcut\nAdobe Express\nPhotopea\nVyond Animator\nVideoscribe Animation\nTweenCraft Animation\n\nGoogle Gemini\nGoogle Stitch ui/ux AI\nVeed io\nMeta Luma AI\nSuno AI\nGenerative AI by Adobe\nWondershare Filmora\nKinemaster\nHiggsfield AI Video Effects\nJson Prompt\n\nMotion Bro\nAnimate Composer\nMeta/Facebook Ads\nRunway ML\nLeonardo AI\nMiniMax Hailuoai\nFreepik AI\nPerplexity Sonar AI\nElevenlabs io\nGoogle Flow/ Google Veo\nGoogle Nano Banana\nGrok AI\nGoogle Docs\n\n+91-7678352717 www.linkedin.com/in/thesanjaysirsanjaysharma767835@gmail.com www.behance.net/thesanjaysir\n\nPause here. Because what I bring isn’t common.\nI convert ideas into results — using design, motion, content and strategy together.\nHave delivered growth to 50+ brands across industries.\nHiring me means one person replacing multiple creative roles —\ndesigner, editor, animator, videographer and strategist — all aligned to business outcomes.\nI know how audiences think, what stops their scroll, and what makes them act.\nIf I could convince you to pause and read this, imagine what I can make your audience do.\n\nWORK EXPERIENCE\n11/2024 – Present\nNoida\n\n08/2020 – 02/2022\nNoida\n\nApplied various art forms, including typography, videography, graphic design, and photogra-\nphy, to translate original ideas into visual storytelling for early-stage sales pitches and client\nproposals.\n\n02/2022 – 04/2023\nDelhi\n\n04/2023 – 11/2024\nNoida\n\nMarvy Group (Client-LG Electronic India) - Creative Producer (Motion & Visual\nDesign)\nProduct Video Production: Shoot, edit, & produce high-quality product videos to enhance brand\npresence.\nWorked with LG Electronics India during its IPO phase, contributing to brand-aligned visual\nprojects and internal communications.\nDIY Informational Videos: Plan, script, shoot, direct, and provide voiceovers for engaging DIY and\ninstructional content.\nEnd-to-End Content Creation: Oversee the entire content production process from ideation to\nexecution, ensuring high-quality visual storytelling.\n\nRemote Resource - Motion & Graphics Designer\n\nMaintained awareness of current industry and technology standards, social media, competi-\ntive landscape, and market trends.\nEnsured all produced material is correctly optimized for chosen dissemination (web, social\nmedia, large presentation screen, social media).\nManaged multiple clients and created over 200+ static and video ads for company services, which\nhelped the company acquire more clients.\n\nHippo Homes(Dalmia Bharat Group) - Motion & Graphics Designer\n\nAligned with top management to roll out key campaigns on service excellence and engage-\nment, participated in the new store launch, and created over 500+ Google ads.\nCreating some eye-catching designs like, Promotional offers, New schemes and weekly\noffers, Study creative ideas and develop videos whether they are Testimonials videos, opener\nvideos, store guest welcome Videos, store product category videos, store tour videos, & New offer\nand scheme videos.\nManaged multiple design projects simultaneously, ensuring deadlines were met and delivera-bles\nwere of high quality.\n\nNew Vision Digital - Team Lead: Motion Graphics Designer\n\nProvided creative direction and guidance to the design team, ensuring all visual content\naligned with the brand's vision and goals.\nWorked with over 50+ different clients worldwide across various business niches.\n\n2021 Bachelor of Commerce from Delhi University, New Delhi, India\n\n2019\nGraphics Design, Animation, Video Editing and Web Design\nOxford Software Institute, Delhi, India\nCertifications\n\nEDUCATION\n\n2022 Linkedin Learning\nVideo Editing Fundamentals Typography: Type in Motion\nPractical Creativity for Everyone, Graphics Design Techniques\nCreative Video Editing Techniques,Video Production & Editing\n\nGraphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer\nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer\nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nTop Clients & Brand Experience\n\nWorked with leading brands across India including LG Electronics India, Myntra, Punjab National Bank, Greenlam\nIndustries, FIS and Indostar Capital Finance, Ujala Cygnus Hospital, Hippo Homes, ISKCON, Decowood Premium Veneers,\nAshok Singhal Foundation — delivering business-aligned creatives across retail, finance, manufacturing, ed tech, real\nestate, electronics and lifestyle sectors."
+    }
+  ],
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "skipped_extractors": [
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "gate_decisions": {
+    "tika": {
+      "status": "PASS",
+      "decision": "accept",
+      "reason": "Quality PASS (Text Health 100.0, Completeness 91.0, Reading Order 99.32) — result accepted; fallback stopped."
+    }
+  },
+  "extracted_text": "Graphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer \nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer \nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nSANJAY SHARMA\nGraphic Designer | Motion Designer | Video Editor | Videographer | Content Strategist\n\nMotion Graphic Designer & Creative Strategist with 6+ years of experience delivering performance-driven \ndesign & video communication. Worked with 50+ brands including LG Electronics India, Myntra helping \n\nimprove CTR, conversions & audience engagement across digital platforms. Strong at merging storytelling \nwith business goals to create measurable results. Skilled in leveraging AI-driven creative workflows to deliver \n\nfaster, smarter & more impactful campaigns.\n\nDelivered 200+ product and DIY informational videos for LG Electronics India, improving product understanding and \ncommunication outcomes.\n\nCreated 500+ performance-driven digital ad creatives for Hippo Homes (Dalmia Bharat Group), supporting its growth \nfrom 1 to 4 stores.\n\nProduced 200+ campaigns for Remote Resource, contributing to increased lead generation and customer acquisition.\n\nImproved campaign results with 20 to 30% higher CTR, 15 to 35% better conversions, 10 to 50% revenue uplift and \n20 to 40% reduced ad fatigue for multiple clients.\n\nDesigned and edited over 5,000 videos and 4,000 static creatives, improving brand visibility and audience retention.\n\nCampaign creatives featured on TV and print media, increasing brand trust and visibility at a national level.\n\nWorked with more than 50 brands across multiple industries delivering results-focused visual communication.\n\nKEY ACHIEVEMENTS\n\nSOFTWARE & TOOLS\n\nSKILLS\n• Motion Graphics\n• Graphic Designing\n\n• Video Editing\n• Animation\n\n• Visual Design \n• Content Creation\n\n• Creative Design \n• AI Designer\n\n• UI & UX\n• Videography\n\nAdobe Photoshop \nAdobe Illustrator \nAdobe After Effects \nAdobe Premiere Pro \nAdobe Audition \nAdobe InDesign \nAdobe Character Animator \nAdobe XD\nDavinci Resolve\nFigma\nHTML\nCSS\nJava Script\n\nMicrosoft Office 365\nMicrosoft Excel\nMicrosoft Word\nMicrosoft Power Point\nMicrosoft Outlook\nMicrosoft Copilot\nCanva\nCapcut\nAdobe Express\nPhotopea \nVyond Animator\nVideoscribe Animation\nTweenCraft Animation\n\nGoogle Gemini \nGoogle Stitch ui/ux AI\nVeed io\nMeta Luma AI\nSuno AI\nGenerative AI by Adobe\nWondershare Filmora \nKinemaster\nHiggsfield AI Video Effects\nJson Prompt\n\nMotion Bro\nAnimate Composer\nMeta/Facebook Ads\nRunway ML\nLeonardo AI\nMiniMax Hailuoai\nFreepik AI\nPerplexity Sonar AI\nElevenlabs io\nGoogle Flow/ Google Veo\nGoogle Nano Banana\nGrok AI\nGoogle Docs\n\n+91-7678352717 www.linkedin.com/in/thesanjaysirsanjaysharma767835@gmail.com www.behance.net/thesanjaysir\n\nPause here. Because what I bring isn’t common.\nI convert ideas into results — using design, motion, content and strategy together.\nHave delivered growth to 50+ brands across industries. \nHiring me means one person replacing multiple creative roles — \ndesigner, editor, animator, videographer and strategist — all aligned to business outcomes.\nI know how audiences think, what stops their scroll, and what makes them act.\nIf I could convince you to pause and read this, imagine what I can make your audience do.\n\n\n\nWORK EXPERIENCE\n11/2024 – Present\nNoida\n\n08/2020 – 02/2022 \nNoida\n\nApplied various art forms, including typography, videography, graphic design, and photogra-\nphy, to translate original ideas into visual storytelling for early-stage sales pitches and client \nproposals.\n\n02/2022 – 04/2023 \nDelhi\n\n04/2023 – 11/2024 \nNoida\n\nMarvy Group (Client-LG Electronic India) - Creative Producer (Motion & Visual \nDesign)\nProduct Video Production: Shoot, edit, & produce high-quality product videos to enhance brand \npresence.\nWorked with LG Electronics India during its IPO phase, contributing to brand-aligned visual \nprojects and internal communications.\nDIY Informational Videos: Plan, script, shoot, direct, and provide voiceovers for engaging DIY and \ninstructional content.\nEnd-to-End Content Creation: Oversee the entire content production process from ideation to \nexecution, ensuring high-quality visual storytelling.\n\nRemote Resource - Motion & Graphics Designer\n\nMaintained awareness of current industry and technology standards, social media, competi-\ntive landscape, and market trends.\nEnsured all produced material is correctly optimized for chosen dissemination (web, social \nmedia, large presentation screen, social media).\nManaged multiple clients and created over 200+ static and video ads for company services, which \nhelped the company acquire more clients.\n\nHippo Homes(Dalmia Bharat Group) - Motion & Graphics Designer\n\nAligned with top management to roll out key campaigns on service excellence and engage-\nment, participated in the new store launch, and created over 500+ Google ads.\nCreating some eye-catching designs like, Promotional offers, New schemes and weekly \noffers, Study creative ideas and develop videos whether they are Testimonials videos, opener \nvideos, store guest welcome Videos, store product category videos, store tour videos, & New offer \nand scheme videos. \nManaged multiple design projects simultaneously, ensuring deadlines were met and delivera-bles \nwere of high quality.\n\nNew Vision Digital - Team Lead: Motion Graphics Designer\n\nProvided creative direction and guidance to the design team, ensuring all visual content \naligned with the brand's vision and goals.\nWorked with over 50+ different clients worldwide across various business niches.\n\n2021 Bachelor of Commerce from Delhi University, New Delhi, India\n\n2019\nGraphics Design, Animation, Video Editing and Web Design \nOxford Software Institute, Delhi, India\nCertifications\n\nEDUCATION\n\n2022 Linkedin Learning\nVideo Editing Fundamentals Typography: Type in Motion\nPractical Creativity for Everyone, Graphics Design Techniques\nCreative Video Editing Techniques,Video Production & Editing\n\nGraphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer \nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer \nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nTop Clients & Brand Experience\n\nWorked with leading brands across India including LG Electronics India, Myntra, Punjab National Bank, Greenlam \nIndustries, FIS and Indostar Capital Finance, Ujala Cygnus Hospital, Hippo Homes, ISKCON, Decowood Premium Veneers,\nAshok Singhal Foundation   — delivering business-aligned creatives across retail, finance, manufacturing, ed tech, real \nestate, electronics and lifestyle sectors.",
+  "final_extracted_text": "Graphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer \nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer \nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nSANJAY SHARMA\nGraphic Designer | Motion Designer | Video Editor | Videographer | Content Strategist\n\nMotion Graphic Designer & Creative Strategist with 6+ years of experience delivering performance-driven \ndesign & video communication. Worked with 50+ brands including LG Electronics India, Myntra helping \n\nimprove CTR, conversions & audience engagement across digital platforms. Strong at merging storytelling \nwith business goals to create measurable results. Skilled in leveraging AI-driven creative workflows to deliver \n\nfaster, smarter & more impactful campaigns.\n\nDelivered 200+ product and DIY informational videos for LG Electronics India, improving product understanding and \ncommunication outcomes.\n\nCreated 500+ performance-driven digital ad creatives for Hippo Homes (Dalmia Bharat Group), supporting its growth \nfrom 1 to 4 stores.\n\nProduced 200+ campaigns for Remote Resource, contributing to increased lead generation and customer acquisition.\n\nImproved campaign results with 20 to 30% higher CTR, 15 to 35% better conversions, 10 to 50% revenue uplift and \n20 to 40% reduced ad fatigue for multiple clients.\n\nDesigned and edited over 5,000 videos and 4,000 static creatives, improving brand visibility and audience retention.\n\nCampaign creatives featured on TV and print media, increasing brand trust and visibility at a national level.\n\nWorked with more than 50 brands across multiple industries delivering results-focused visual communication.\n\nKEY ACHIEVEMENTS\n\nSOFTWARE & TOOLS\n\nSKILLS\n• Motion Graphics\n• Graphic Designing\n\n• Video Editing\n• Animation\n\n• Visual Design \n• Content Creation\n\n• Creative Design \n• AI Designer\n\n• UI & UX\n• Videography\n\nAdobe Photoshop \nAdobe Illustrator \nAdobe After Effects \nAdobe Premiere Pro \nAdobe Audition \nAdobe InDesign \nAdobe Character Animator \nAdobe XD\nDavinci Resolve\nFigma\nHTML\nCSS\nJava Script\n\nMicrosoft Office 365\nMicrosoft Excel\nMicrosoft Word\nMicrosoft Power Point\nMicrosoft Outlook\nMicrosoft Copilot\nCanva\nCapcut\nAdobe Express\nPhotopea \nVyond Animator\nVideoscribe Animation\nTweenCraft Animation\n\nGoogle Gemini \nGoogle Stitch ui/ux AI\nVeed io\nMeta Luma AI\nSuno AI\nGenerative AI by Adobe\nWondershare Filmora \nKinemaster\nHiggsfield AI Video Effects\nJson Prompt\n\nMotion Bro\nAnimate Composer\nMeta/Facebook Ads\nRunway ML\nLeonardo AI\nMiniMax Hailuoai\nFreepik AI\nPerplexity Sonar AI\nElevenlabs io\nGoogle Flow/ Google Veo\nGoogle Nano Banana\nGrok AI\nGoogle Docs\n\n+91-7678352717 www.linkedin.com/in/thesanjaysirsanjaysharma767835@gmail.com www.behance.net/thesanjaysir\n\nPause here. Because what I bring isn’t common.\nI convert ideas into results — using design, motion, content and strategy together.\nHave delivered growth to 50+ brands across industries. \nHiring me means one person replacing multiple creative roles — \ndesigner, editor, animator, videographer and strategist — all aligned to business outcomes.\nI know how audiences think, what stops their scroll, and what makes them act.\nIf I could convince you to pause and read this, imagine what I can make your audience do.\n\n\n\nWORK EXPERIENCE\n11/2024 – Present\nNoida\n\n08/2020 – 02/2022 \nNoida\n\nApplied various art forms, including typography, videography, graphic design, and photogra-\nphy, to translate original ideas into visual storytelling for early-stage sales pitches and client \nproposals.\n\n02/2022 – 04/2023 \nDelhi\n\n04/2023 – 11/2024 \nNoida\n\nMarvy Group (Client-LG Electronic India) - Creative Producer (Motion & Visual \nDesign)\nProduct Video Production: Shoot, edit, & produce high-quality product videos to enhance brand \npresence.\nWorked with LG Electronics India during its IPO phase, contributing to brand-aligned visual \nprojects and internal communications.\nDIY Informational Videos: Plan, script, shoot, direct, and provide voiceovers for engaging DIY and \ninstructional content.\nEnd-to-End Content Creation: Oversee the entire content production process from ideation to \nexecution, ensuring high-quality visual storytelling.\n\nRemote Resource - Motion & Graphics Designer\n\nMaintained awareness of current industry and technology standards, social media, competi-\ntive landscape, and market trends.\nEnsured all produced material is correctly optimized for chosen dissemination (web, social \nmedia, large presentation screen, social media).\nManaged multiple clients and created over 200+ static and video ads for company services, which \nhelped the company acquire more clients.\n\nHippo Homes(Dalmia Bharat Group) - Motion & Graphics Designer\n\nAligned with top management to roll out key campaigns on service excellence and engage-\nment, participated in the new store launch, and created over 500+ Google ads.\nCreating some eye-catching designs like, Promotional offers, New schemes and weekly \noffers, Study creative ideas and develop videos whether they are Testimonials videos, opener \nvideos, store guest welcome Videos, store product category videos, store tour videos, & New offer \nand scheme videos. \nManaged multiple design projects simultaneously, ensuring deadlines were met and delivera-bles \nwere of high quality.\n\nNew Vision Digital - Team Lead: Motion Graphics Designer\n\nProvided creative direction and guidance to the design team, ensuring all visual content \naligned with the brand's vision and goals.\nWorked with over 50+ different clients worldwide across various business niches.\n\n2021 Bachelor of Commerce from Delhi University, New Delhi, India\n\n2019\nGraphics Design, Animation, Video Editing and Web Design \nOxford Software Institute, Delhi, India\nCertifications\n\nEDUCATION\n\n2022 Linkedin Learning\nVideo Editing Fundamentals Typography: Type in Motion\nPractical Creativity for Everyone, Graphics Design Techniques\nCreative Video Editing Techniques,Video Production & Editing\n\nGraphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer \nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer \nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nTop Clients & Brand Experience\n\nWorked with leading brands across India including LG Electronics India, Myntra, Punjab National Bank, Greenlam \nIndustries, FIS and Indostar Capital Finance, Ujala Cygnus Hospital, Hippo Homes, ISKCON, Decowood Premium Veneers,\nAshok Singhal Foundation   — delivering business-aligned creatives across retail, finance, manufacturing, ed tech, real \nestate, electronics and lifestyle sectors.",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "quality": {
+    "status": "PASS",
+    "document_id": "107c6cc3-f1e5-4792-a73d-c8bfcf5cdc18",
+    "source_tool": "tika",
+    "attempt_id": "107c6cc3-f1e5-4792-a73d-c8bfcf5cdc18-attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 7295,
+        "word_count": 991,
+        "line_count": 243,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.148321,
+        "symbol_count": 19,
+        "symbol_ratio": 0.002605,
+        "max_repeated_char_run": 4,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 91.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 7295,
+        "word_count": 991,
+        "configured_section_count": 8,
+        "detected_count": 5,
+        "missing_count": 3,
+        "detected_sections": [
+          "Contact Information",
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Summary",
+          "Responsibilities",
+          "Projects"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Summary",
+          "Responsibilities",
+          "Projects"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Skills": "skills",
+          "Work Experience": "WORKEXPERIENCE",
+          "Education": "education",
+          "Certifications": "certifications"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "thesanjaysirsanjaysharma767835@gmail.com",
+            "confidence": 0.8
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "SKILLS",
+            "detection_method": "heading",
+            "line_number": 61,
+            "evidence": "SKILLS",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "WORK EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 142,
+            "evidence": "WORK EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATION",
+            "detection_method": "heading",
+            "line_number": 203,
+            "evidence": "EDUCATION",
+            "confidence": 0.98
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": "Certifications",
+            "detection_method": "heading",
+            "line_number": 201,
+            "evidence": "Certifications",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Certifications": "detected",
+          "Summary": "missing",
+          "Responsibilities": "missing",
+          "Projects": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Summary",
+        "Responsibilities",
+        "Projects"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Summary",
+        "Responsibilities",
+        "Projects"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 99.32,
+      "flags": [
+        "EXCESSIVE_SHORT_LINES"
+      ],
+      "reasons": [
+        "40.9% of lines have 2 words or fewer — text may be fragmented or columns may have been split."
+      ],
+      "metrics": {
+        "char_count": 7295,
+        "word_count": 991,
+        "line_count": 243,
+        "non_empty_line_count": 198,
+        "short_line_count": 81,
+        "short_line_ratio": 0.409091,
+        "fragmented_line_count": 60,
+        "fragmented_line_ratio": 0.30303,
+        "mean_line_length": 35.39,
+        "median_line_length": 19.5,
+        "line_length_stdev": 32.69,
+        "line_length_cv": 0.923738,
+        "broken_sentence_count": 27,
+        "broken_sentence_ratio": 0.137056,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS (Text Health 100.0, Completeness 91.0, Reading Order 99.32) — result accepted; fallback stopped. Selected 'tika' with quality score 97.6. Skipped (never executed): pymupdf, docling, ocr.",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 8692.76,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika passed quality checks and was accepted before this extractor was needed.",
+      "accepted": false,
+      "quality": null,
+      "decision": "skipped",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika passed quality checks and was accepted before this extractor was needed.",
+      "accepted": false,
+      "quality": null,
+      "decision": "skipped",
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika passed quality checks and was accepted before this extractor was needed.",
+      "accepted": false,
+      "quality": null,
+      "decision": "skipped",
+      "selected": false
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=97.6",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS (Text Health 100.0, Completeness 91.0, Reading Order 99.32) — result accepted; fallback stopped. Selected 'tika' with quality score 97.6. Skipped (never executed): pymupdf, docling, ocr.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Tika text normalized: 7295 → 7246 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Contact Information Recovery",
+      "type": "contact_recovery",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Contact information missing and could not be recovered from any source (extractor outputs, first-page text layer, OCR). Still missing: location.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 32749.08,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 53575.299999999996,
+      "message": "Muse AI produced validated Resume JSON from the Tika extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 53575.299999999996,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Graphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer \nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer \nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nSANJAY SHARMA\nGraphic Designer | Motion Designer | Video Editor | Videographer | Content Strategist\n\nMotion Graphic Designer & Creative Strategist with 6+ years of experience delivering performance-driven \ndesign & video communication. Worked with 50+ brands including LG Electronics India, Myntra helping \n\nimprove CTR, conversions & audience engagement across digital platforms. Strong at merging storytelling \nwith business goals to create measurable results. Skilled in leveraging AI-driven creative workflows to deliver \n\nfaster, smarter & more impactful campaigns.\n\nDelivered 200+ product and DIY informational videos for LG Electronics India, improving product understanding and \ncommunication outcomes.\n\nCreated 500+ performance-driven digital ad creatives for Hippo Homes (Dalmia Bharat Group), supporting its growth \nfrom 1 to 4 stores.\n\nProduced 200+ campaigns for Remote Resource, contributing to increased lead generation and customer acquisition.\n\nImproved campaign results with 20 to 30% higher CTR, 15 to 35% better conversions, 10 to 50% revenue uplift and \n20 to 40% reduced ad fatigue for multiple clients.\n\nDesigned and edited over 5,000 videos and 4,000 static creatives, improving brand visibility and audience retention.\n\nCampaign creatives featured on TV and print media, increasing brand trust and visibility at a national level.\n\nWorked with more than 50 brands across multiple industries delivering results-focused visual communication.\n\nKEY ACHIEVEMENTS\n\nSOFTWARE & TOOLS\n\nSKILLS\n• Motion Graphics\n• Graphic Designing\n\n• Video Editing\n• Animation\n\n• Visual Design \n• Content Creation\n\n• Creative Design \n• AI Designer\n\n• UI & UX\n• Videography\n\nAdobe Photoshop \nAdobe Illustrator \nAdobe After Effects \nAdobe Premiere Pro \nAdobe Audition \nAdobe InDesign \nAdobe Character Animator \nAdobe XD\nDavinci Resolve\nFigma\nHTML\nCSS\nJava Script\n\nMicrosoft Office 365\nMicrosoft Excel\nMicrosoft Word\nMicrosoft Power Point\nMicrosoft Outlook\nMicrosoft Copilot\nCanva\nCapcut\nAdobe Express\nPhotopea \nVyond Animator\nVideoscribe Animation\nTweenCraft Animation\n\nGoogle Gemini \nGoogle Stitch ui/ux AI\nVeed io\nMeta Luma AI\nSuno AI\nGenerative AI by Adobe\nWondershare Filmora \nKinemaster\nHiggsfield AI Video Effects\nJson Prompt\n\nMotion Bro\nAnimate Composer\nMeta/Facebook Ads\nRunway ML\nLeonardo AI\nMiniMax Hailuoai\nFreepik AI\nPerplexity Sonar AI\nElevenlabs io\nGoogle Flow/ Google Veo\nGoogle Nano Banana\nGrok AI\nGoogle Docs\n\n+91-7678352717 www.linkedin.com/in/thesanjaysirsanjaysharma767835@gmail.com www.behance.net/thesanjaysir\n\nPause here. Because what I bring isn’t common.\nI convert ideas into results — using design, motion, content and strategy together.\nHave delivered growth to 50+ brands across industries. \nHiring me means one person replacing multiple creative roles — \ndesigner, editor, animator, videographer and strategist — all aligned to business outcomes.\nI know how audiences think, what stops their scroll, and what makes them act.\nIf I could convince you to pause and read this, imagine what I can make your audience do.\n\n\n\nWORK EXPERIENCE\n11/2024 – Present\nNoida\n\n08/2020 – 02/2022 \nNoida\n\nApplied various art forms, including typography, videography, graphic design, and photogra-\nphy, to translate original ideas into visual storytelling for early-stage sales pitches and client \nproposals.\n\n02/2022 – 04/2023 \nDelhi\n\n04/2023 – 11/2024 \nNoida\n\nMarvy Group (Client-LG Electronic India) - Creative Producer (Motion & Visual \nDesign)\nProduct Video Production: Shoot, edit, & produce high-quality product videos to enhance brand \npresence.\nWorked with LG Electronics India during its IPO phase, contributing to brand-aligned visual \nprojects and internal communications.\nDIY Informational Videos: Plan, script, shoot, direct, and provide voiceovers for engaging DIY and \ninstructional content.\nEnd-to-End Content Creation: Oversee the entire content production process from ideation to \nexecution, ensuring high-quality visual storytelling.\n\nRemote Resource - Motion & Graphics Designer\n\nMaintained awareness of current industry and technology standards, social media, competi-\ntive landscape, and market trends.\nEnsured all produced material is correctly optimized for chosen dissemination (web, social \nmedia, large presentation screen, social media).\nManaged multiple clients and created over 200+ static and video ads for company services, which \nhelped the company acquire more clients.\n\nHippo Homes(Dalmia Bharat Group) - Motion & Graphics Designer\n\nAligned with top management to roll out key campaigns on service excellence and engage-\nment, participated in the new store launch, and created over 500+ Google ads.\nCreating some eye-catching designs like, Promotional offers, New schemes and weekly \noffers, Study creative ideas and develop videos whether they are Testimonials videos, opener \nvideos, store guest welcome Videos, store product category videos, store tour videos, & New offer \nand scheme videos. \nManaged multiple design projects simultaneously, ensuring deadlines were met and delivera-bles \nwere of high quality.\n\nNew Vision Digital - Team Lead: Motion Graphics Designer\n\nProvided creative direction and guidance to the design team, ensuring all visual content \naligned with the brand's vision and goals.\nWorked with over 50+ different clients worldwide across various business niches.\n\n2021 Bachelor of Commerce from Delhi University, New Delhi, India\n\n2019\nGraphics Design, Animation, Video Editing and Web Design \nOxford Software Institute, Delhi, India\nCertifications\n\nEDUCATION\n\n2022 Linkedin Learning\nVideo Editing Fundamentals Typography: Type in Motion\nPractical Creativity for Everyone, Graphics Design Techniques\nCreative Video Editing Techniques,Video Production & Editing\n\nGraphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer \nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer \nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nTop Clients & Brand Experience\n\nWorked with leading brands across India including LG Electronics India, Myntra, Punjab National Bank, Greenlam \nIndustries, FIS and Indostar Capital Finance, Ujala Cygnus Hospital, Hippo Homes, ISKCON, Decowood Premium Veneers,\nAshok Singhal Foundation   — delivering business-aligned creatives across retail, finance, manufacturing, ed tech, real \nestate, electronics and lifestyle sectors.",
+    "normalized_text": "Graphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer\nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer\nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nSANJAY SHARMA\nGraphic Designer | Motion Designer | Video Editor | Videographer | Content Strategist\n\nMotion Graphic Designer & Creative Strategist with 6+ years of experience delivering performance-driven\ndesign & video communication. Worked with 50+ brands including LG Electronics India, Myntra helping\n\nimprove CTR, conversions & audience engagement across digital platforms. Strong at merging storytelling\nwith business goals to create measurable results. Skilled in leveraging AI-driven creative workflows to deliver\n\nfaster, smarter & more impactful campaigns.\n\nDelivered 200+ product and DIY informational videos for LG Electronics India, improving product understanding and\ncommunication outcomes.\n\nCreated 500+ performance-driven digital ad creatives for Hippo Homes (Dalmia Bharat Group), supporting its growth\nfrom 1 to 4 stores.\n\nProduced 200+ campaigns for Remote Resource, contributing to increased lead generation and customer acquisition.\n\nImproved campaign results with 20 to 30% higher CTR, 15 to 35% better conversions, 10 to 50% revenue uplift and\n20 to 40% reduced ad fatigue for multiple clients.\n\nDesigned and edited over 5,000 videos and 4,000 static creatives, improving brand visibility and audience retention.\n\nCampaign creatives featured on TV and print media, increasing brand trust and visibility at a national level.\n\nWorked with more than 50 brands across multiple industries delivering results-focused visual communication.\n\nKEY ACHIEVEMENTS\n\nSOFTWARE & TOOLS\n\nSKILLS\n• Motion Graphics\n• Graphic Designing\n\n• Video Editing\n• Animation\n\n• Visual Design\n• Content Creation\n\n• Creative Design\n• AI Designer\n\n• UI & UX\n• Videography\n\nAdobe Photoshop\nAdobe Illustrator\nAdobe After Effects\nAdobe Premiere Pro\nAdobe Audition\nAdobe InDesign\nAdobe Character Animator\nAdobe XD\nDavinci Resolve\nFigma\nHTML\nCSS\nJava Script\n\nMicrosoft Office 365\nMicrosoft Excel\nMicrosoft Word\nMicrosoft Power Point\nMicrosoft Outlook\nMicrosoft Copilot\nCanva\nCapcut\nAdobe Express\nPhotopea\nVyond Animator\nVideoscribe Animation\nTweenCraft Animation\n\nGoogle Gemini\nGoogle Stitch ui/ux AI\nVeed io\nMeta Luma AI\nSuno AI\nGenerative AI by Adobe\nWondershare Filmora\nKinemaster\nHiggsfield AI Video Effects\nJson Prompt\n\nMotion Bro\nAnimate Composer\nMeta/Facebook Ads\nRunway ML\nLeonardo AI\nMiniMax Hailuoai\nFreepik AI\nPerplexity Sonar AI\nElevenlabs io\nGoogle Flow/ Google Veo\nGoogle Nano Banana\nGrok AI\nGoogle Docs\n\n+91-7678352717 www.linkedin.com/in/thesanjaysirsanjaysharma767835@gmail.com www.behance.net/thesanjaysir\n\nPause here. Because what I bring isn’t common.\nI convert ideas into results — using design, motion, content and strategy together.\nHave delivered growth to 50+ brands across industries.\nHiring me means one person replacing multiple creative roles —\ndesigner, editor, animator, videographer and strategist — all aligned to business outcomes.\nI know how audiences think, what stops their scroll, and what makes them act.\nIf I could convince you to pause and read this, imagine what I can make your audience do.\n\nWORK EXPERIENCE\n11/2024 – Present\nNoida\n\n08/2020 – 02/2022\nNoida\n\nApplied various art forms, including typography, videography, graphic design, and photogra-\nphy, to translate original ideas into visual storytelling for early-stage sales pitches and client\nproposals.\n\n02/2022 – 04/2023\nDelhi\n\n04/2023 – 11/2024\nNoida\n\nMarvy Group (Client-LG Electronic India) - Creative Producer (Motion & Visual\nDesign)\nProduct Video Production: Shoot, edit, & produce high-quality product videos to enhance brand\npresence.\nWorked with LG Electronics India during its IPO phase, contributing to brand-aligned visual\nprojects and internal communications.\nDIY Informational Videos: Plan, script, shoot, direct, and provide voiceovers for engaging DIY and\ninstructional content.\nEnd-to-End Content Creation: Oversee the entire content production process from ideation to\nexecution, ensuring high-quality visual storytelling.\n\nRemote Resource - Motion & Graphics Designer\n\nMaintained awareness of current industry and technology standards, social media, competi-\ntive landscape, and market trends.\nEnsured all produced material is correctly optimized for chosen dissemination (web, social\nmedia, large presentation screen, social media).\nManaged multiple clients and created over 200+ static and video ads for company services, which\nhelped the company acquire more clients.\n\nHippo Homes(Dalmia Bharat Group) - Motion & Graphics Designer\n\nAligned with top management to roll out key campaigns on service excellence and engage-\nment, participated in the new store launch, and created over 500+ Google ads.\nCreating some eye-catching designs like, Promotional offers, New schemes and weekly\noffers, Study creative ideas and develop videos whether they are Testimonials videos, opener\nvideos, store guest welcome Videos, store product category videos, store tour videos, & New offer\nand scheme videos.\nManaged multiple design projects simultaneously, ensuring deadlines were met and delivera-bles\nwere of high quality.\n\nNew Vision Digital - Team Lead: Motion Graphics Designer\n\nProvided creative direction and guidance to the design team, ensuring all visual content\naligned with the brand's vision and goals.\nWorked with over 50+ different clients worldwide across various business niches.\n\n2021 Bachelor of Commerce from Delhi University, New Delhi, India\n\n2019\nGraphics Design, Animation, Video Editing and Web Design\nOxford Software Institute, Delhi, India\nCertifications\n\nEDUCATION\n\n2022 Linkedin Learning\nVideo Editing Fundamentals Typography: Type in Motion\nPractical Creativity for Everyone, Graphics Design Techniques\nCreative Video Editing Techniques,Video Production & Editing\n\nGraphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer\nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer\nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nTop Clients & Brand Experience\n\nWorked with leading brands across India including LG Electronics India, Myntra, Punjab National Bank, Greenlam\nIndustries, FIS and Indostar Capital Finance, Ujala Cygnus Hospital, Hippo Homes, ISKCON, Decowood Premium Veneers,\nAshok Singhal Foundation — delivering business-aligned creatives across retail, finance, manufacturing, ed tech, real\nestate, electronics and lifestyle sectors.",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 7295,
+    "normalized_chars": 7246,
+    "original_estimated_tokens": 1824,
+    "normalized_estimated_tokens": 1812,
+    "estimated_reduction_percent": 0.7
+  },
+  "contact_recovery": {
+    "status": "not_recovered",
+    "selected_extractor": "tika",
+    "present_before": [
+      "phone",
+      "email"
+    ],
+    "missing_before": [
+      "location"
+    ],
+    "recovered": {},
+    "still_missing": [
+      "location"
+    ],
+    "sources_tried": [
+      {
+        "source": "Tika",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "PyMuPDF",
+        "method": "first_page_text_layer",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "OCR",
+        "method": "ocr_first_page",
+        "found": [],
+        "error": null
+      }
+    ],
+    "applied": false,
+    "pre_recovery_normalized_text": null,
+    "at": "2026-11-11T11:39:46.292953+00:00"
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 32749.08,
+      "input_tokens": 2371,
+      "output_tokens": 4295,
+      "total_tokens": 6666,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 2371,
+    "output_tokens": 4295,
+    "total_tokens": 6666,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 32749.08,
+    "usage": {
+      "completion_tokens": 4295,
+      "prompt_tokens": 2371,
+      "total_tokens": 6666,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3124
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 7295,
+      "normalized_chars": 7246,
+      "estimated_reduction_percent": 0.7,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "tika",
+  "selected_quality_score": 97.6,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 97.6,
+      "status": "success",
+      "word_count": 991,
+      "char_count": 7295,
+      "meaningful_char_count": 6213,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.1465,
+      "readability_score": 94.0,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "projects",
+          "certifications"
+        ]
+      },
+      "structure": {
+        "heading_count": 5,
+        "paragraph_count": 44,
+        "bullet_count": 10
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.9403,
+        "cleanliness": 1.0,
+        "non_duplication": 0.8535,
+        "completeness": 1.0,
+        "structure": 1.0
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 7295,
+    "normalized_chars": 7246,
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "error": null,
+    "original_text": "Graphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer \nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer \nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nSANJAY SHARMA\nGraphic Designer | Motion Designer | Video Editor | Videographer | Content Strategist\n\nMotion Graphic Designer & Creative Strategist with 6+ years of experience delivering performance-driven \ndesign & video communication. Worked with 50+ brands including LG Electronics India, Myntra helping \n\nimprove CTR, conversions & audience engagement across digital platforms. Strong at merging storytelling \nwith business goals to create measurable results. Skilled in leveraging AI-driven creative workflows to deliver \n\nfaster, smarter & more impactful campaigns.\n\nDelivered 200+ product and DIY informational videos for LG Electronics India, improving product understanding and \ncommunication outcomes.\n\nCreated 500+ performance-driven digital ad creatives for Hippo Homes (Dalmia Bharat Group), supporting its growth \nfrom 1 to 4 stores.\n\nProduced 200+ campaigns for Remote Resource, contributing to increased lead generation and customer acquisition.\n\nImproved campaign results with 20 to 30% higher CTR, 15 to 35% better conversions, 10 to 50% revenue uplift and \n20 to 40% reduced ad fatigue for multiple clients.\n\nDesigned and edited over 5,000 videos and 4,000 static creatives, improving brand visibility and audience retention.\n\nCampaign creatives featured on TV and print media, increasing brand trust and visibility at a national level.\n\nWorked with more than 50 brands across multiple industries delivering results-focused visual communication.\n\nKEY ACHIEVEMENTS\n\nSOFTWARE & TOOLS\n\nSKILLS\n• Motion Graphics\n• Graphic Designing\n\n• Video Editing\n• Animation\n\n• Visual Design \n• Content Creation\n\n• Creative Design \n• AI Designer\n\n• UI & UX\n• Videography\n\nAdobe Photoshop \nAdobe Illustrator \nAdobe After Effects \nAdobe Premiere Pro \nAdobe Audition \nAdobe InDesign \nAdobe Character Animator \nAdobe XD\nDavinci Resolve\nFigma\nHTML\nCSS\nJava Script\n\nMicrosoft Office 365\nMicrosoft Excel\nMicrosoft Word\nMicrosoft Power Point\nMicrosoft Outlook\nMicrosoft Copilot\nCanva\nCapcut\nAdobe Express\nPhotopea \nVyond Animator\nVideoscribe Animation\nTweenCraft Animation\n\nGoogle Gemini \nGoogle Stitch ui/ux AI\nVeed io\nMeta Luma AI\nSuno AI\nGenerative AI by Adobe\nWondershare Filmora \nKinemaster\nHiggsfield AI Video Effects\nJson Prompt\n\nMotion Bro\nAnimate Composer\nMeta/Facebook Ads\nRunway ML\nLeonardo AI\nMiniMax Hailuoai\nFreepik AI\nPerplexity Sonar AI\nElevenlabs io\nGoogle Flow/ Google Veo\nGoogle Nano Banana\nGrok AI\nGoogle Docs\n\n+91-7678352717 www.linkedin.com/in/thesanjaysirsanjaysharma767835@gmail.com www.behance.net/thesanjaysir\n\nPause here. Because what I bring isn’t common.\nI convert ideas into results — using design, motion, content and strategy together.\nHave delivered growth to 50+ brands across industries. \nHiring me means one person replacing multiple creative roles — \ndesigner, editor, animator, videographer and strategist — all aligned to business outcomes.\nI know how audiences think, what stops their scroll, and what makes them act.\nIf I could convince you to pause and read this, imagine what I can make your audience do.\n\n\n\nWORK EXPERIENCE\n11/2024 – Present\nNoida\n\n08/2020 – 02/2022 \nNoida\n\nApplied various art forms, including typography, videography, graphic design, and photogra-\nphy, to translate original ideas into visual storytelling for early-stage sales pitches and client \nproposals.\n\n02/2022 – 04/2023 \nDelhi\n\n04/2023 – 11/2024 \nNoida\n\nMarvy Group (Client-LG Electronic India) - Creative Producer (Motion & Visual \nDesign)\nProduct Video Production: Shoot, edit, & produce high-quality product videos to enhance brand \npresence.\nWorked with LG Electronics India during its IPO phase, contributing to brand-aligned visual \nprojects and internal communications.\nDIY Informational Videos: Plan, script, shoot, direct, and provide voiceovers for engaging DIY and \ninstructional content.\nEnd-to-End Content Creation: Oversee the entire content production process from ideation to \nexecution, ensuring high-quality visual storytelling.\n\nRemote Resource - Motion & Graphics Designer\n\nMaintained awareness of current industry and technology standards, social media, competi-\ntive landscape, and market trends.\nEnsured all produced material is correctly optimized for chosen dissemination (web, social \nmedia, large presentation screen, social media).\nManaged multiple clients and created over 200+ static and video ads for company services, which \nhelped the company acquire more clients.\n\nHippo Homes(Dalmia Bharat Group) - Motion & Graphics Designer\n\nAligned with top management to roll out key campaigns on service excellence and engage-\nment, participated in the new store launch, and created over 500+ Google ads.\nCreating some eye-catching designs like, Promotional offers, New schemes and weekly \noffers, Study creative ideas and develop videos whether they are Testimonials videos, opener \nvideos, store guest welcome Videos, store product category videos, store tour videos, & New offer \nand scheme videos. \nManaged multiple design projects simultaneously, ensuring deadlines were met and delivera-bles \nwere of high quality.\n\nNew Vision Digital - Team Lead: Motion Graphics Designer\n\nProvided creative direction and guidance to the design team, ensuring all visual content \naligned with the brand's vision and goals.\nWorked with over 50+ different clients worldwide across various business niches.\n\n2021 Bachelor of Commerce from Delhi University, New Delhi, India\n\n2019\nGraphics Design, Animation, Video Editing and Web Design \nOxford Software Institute, Delhi, India\nCertifications\n\nEDUCATION\n\n2022 Linkedin Learning\nVideo Editing Fundamentals Typography: Type in Motion\nPractical Creativity for Everyone, Graphics Design Techniques\nCreative Video Editing Techniques,Video Production & Editing\n\nGraphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer \nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer \nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nTop Clients & Brand Experience\n\nWorked with leading brands across India including LG Electronics India, Myntra, Punjab National Bank, Greenlam \nIndustries, FIS and Indostar Capital Finance, Ujala Cygnus Hospital, Hippo Homes, ISKCON, Decowood Premium Veneers,\nAshok Singhal Foundation   — delivering business-aligned creatives across retail, finance, manufacturing, ed tech, real \nestate, electronics and lifestyle sectors.",
+    "normalized_text": "Graphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer\nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer\nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nSANJAY SHARMA\nGraphic Designer | Motion Designer | Video Editor | Videographer | Content Strategist\n\nMotion Graphic Designer & Creative Strategist with 6+ years of experience delivering performance-driven\ndesign & video communication. Worked with 50+ brands including LG Electronics India, Myntra helping\n\nimprove CTR, conversions & audience engagement across digital platforms. Strong at merging storytelling\nwith business goals to create measurable results. Skilled in leveraging AI-driven creative workflows to deliver\n\nfaster, smarter & more impactful campaigns.\n\nDelivered 200+ product and DIY informational videos for LG Electronics India, improving product understanding and\ncommunication outcomes.\n\nCreated 500+ performance-driven digital ad creatives for Hippo Homes (Dalmia Bharat Group), supporting its growth\nfrom 1 to 4 stores.\n\nProduced 200+ campaigns for Remote Resource, contributing to increased lead generation and customer acquisition.\n\nImproved campaign results with 20 to 30% higher CTR, 15 to 35% better conversions, 10 to 50% revenue uplift and\n20 to 40% reduced ad fatigue for multiple clients.\n\nDesigned and edited over 5,000 videos and 4,000 static creatives, improving brand visibility and audience retention.\n\nCampaign creatives featured on TV and print media, increasing brand trust and visibility at a national level.\n\nWorked with more than 50 brands across multiple industries delivering results-focused visual communication.\n\nKEY ACHIEVEMENTS\n\nSOFTWARE & TOOLS\n\nSKILLS\n• Motion Graphics\n• Graphic Designing\n\n• Video Editing\n• Animation\n\n• Visual Design\n• Content Creation\n\n• Creative Design\n• AI Designer\n\n• UI & UX\n• Videography\n\nAdobe Photoshop\nAdobe Illustrator\nAdobe After Effects\nAdobe Premiere Pro\nAdobe Audition\nAdobe InDesign\nAdobe Character Animator\nAdobe XD\nDavinci Resolve\nFigma\nHTML\nCSS\nJava Script\n\nMicrosoft Office 365\nMicrosoft Excel\nMicrosoft Word\nMicrosoft Power Point\nMicrosoft Outlook\nMicrosoft Copilot\nCanva\nCapcut\nAdobe Express\nPhotopea\nVyond Animator\nVideoscribe Animation\nTweenCraft Animation\n\nGoogle Gemini\nGoogle Stitch ui/ux AI\nVeed io\nMeta Luma AI\nSuno AI\nGenerative AI by Adobe\nWondershare Filmora\nKinemaster\nHiggsfield AI Video Effects\nJson Prompt\n\nMotion Bro\nAnimate Composer\nMeta/Facebook Ads\nRunway ML\nLeonardo AI\nMiniMax Hailuoai\nFreepik AI\nPerplexity Sonar AI\nElevenlabs io\nGoogle Flow/ Google Veo\nGoogle Nano Banana\nGrok AI\nGoogle Docs\n\n+91-7678352717 www.linkedin.com/in/thesanjaysirsanjaysharma767835@gmail.com www.behance.net/thesanjaysir\n\nPause here. Because what I bring isn’t common.\nI convert ideas into results — using design, motion, content and strategy together.\nHave delivered growth to 50+ brands across industries.\nHiring me means one person replacing multiple creative roles —\ndesigner, editor, animator, videographer and strategist — all aligned to business outcomes.\nI know how audiences think, what stops their scroll, and what makes them act.\nIf I could convince you to pause and read this, imagine what I can make your audience do.\n\nWORK EXPERIENCE\n11/2024 – Present\nNoida\n\n08/2020 – 02/2022\nNoida\n\nApplied various art forms, including typography, videography, graphic design, and photogra-\nphy, to translate original ideas into visual storytelling for early-stage sales pitches and client\nproposals.\n\n02/2022 – 04/2023\nDelhi\n\n04/2023 – 11/2024\nNoida\n\nMarvy Group (Client-LG Electronic India) - Creative Producer (Motion & Visual\nDesign)\nProduct Video Production: Shoot, edit, & produce high-quality product videos to enhance brand\npresence.\nWorked with LG Electronics India during its IPO phase, contributing to brand-aligned visual\nprojects and internal communications.\nDIY Informational Videos: Plan, script, shoot, direct, and provide voiceovers for engaging DIY and\ninstructional content.\nEnd-to-End Content Creation: Oversee the entire content production process from ideation to\nexecution, ensuring high-quality visual storytelling.\n\nRemote Resource - Motion & Graphics Designer\n\nMaintained awareness of current industry and technology standards, social media, competi-\ntive landscape, and market trends.\nEnsured all produced material is correctly optimized for chosen dissemination (web, social\nmedia, large presentation screen, social media).\nManaged multiple clients and created over 200+ static and video ads for company services, which\nhelped the company acquire more clients.\n\nHippo Homes(Dalmia Bharat Group) - Motion & Graphics Designer\n\nAligned with top management to roll out key campaigns on service excellence and engage-\nment, participated in the new store launch, and created over 500+ Google ads.\nCreating some eye-catching designs like, Promotional offers, New schemes and weekly\noffers, Study creative ideas and develop videos whether they are Testimonials videos, opener\nvideos, store guest welcome Videos, store product category videos, store tour videos, & New offer\nand scheme videos.\nManaged multiple design projects simultaneously, ensuring deadlines were met and delivera-bles\nwere of high quality.\n\nNew Vision Digital - Team Lead: Motion Graphics Designer\n\nProvided creative direction and guidance to the design team, ensuring all visual content\naligned with the brand's vision and goals.\nWorked with over 50+ different clients worldwide across various business niches.\n\n2021 Bachelor of Commerce from Delhi University, New Delhi, India\n\n2019\nGraphics Design, Animation, Video Editing and Web Design\nOxford Software Institute, Delhi, India\nCertifications\n\nEDUCATION\n\n2022 Linkedin Learning\nVideo Editing Fundamentals Typography: Type in Motion\nPractical Creativity for Everyone, Graphics Design Techniques\nCreative Video Editing Techniques,Video Production & Editing\n\nGraphic Designer\nGraphic Designer/Video Editor\nSenior Associate\nMotion Graphic Design\nFounding Graphic Designer\nLead Product Designer\nCommunications Designer\nVideographer\nVideo Editor & Motion Graphics\nSenior Visual Designer\nCreative Visual Designer\nVideo Editor\nDigital AI Artist\nDirect Response Graphic Designer\nSr. Graphic Designer\nSenior Social Media Designer\nGraphic Design Manager\nSenior Visualizer\nUI & UX designer\nmultimedia designer\nGraphic/Visual Communication Designer\nGraphic designing\nvideo editing\nanimation\nCeative designer\nCreative head\nvisual designer\n\nTop Clients & Brand Experience\n\nWorked with leading brands across India including LG Electronics India, Myntra, Punjab National Bank, Greenlam\nIndustries, FIS and Indostar Capital Finance, Ujala Cygnus Hospital, Hippo Homes, ISKCON, Decowood Premium Veneers,\nAshok Singhal Foundation — delivering business-aligned creatives across retail, finance, manufacturing, ed tech, real\nestate, electronics and lifestyle sectors."
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "SANJAY SHARMA",
+      "email": "sanjaysharma767835@gmail.com",
+      "phone": "+91-7678352717",
+      "location": "",
+      "summary": "Motion Graphic Designer & Creative Strategist with 6+ years of experience delivering performance-driven design & video communication. Worked with 50+ brands including LG Electronics India, Myntra helping improve CTR, conversions & audience engagement across digital platforms. Strong at merging storytelling with business goals to create measurable results. Skilled in leveraging AI-driven creative workflows to deliver faster, smarter & more impactful campaigns.",
+      "skills": {
+        "technical_skills": [
+          "Motion Graphics",
+          "Graphic Designing",
+          "Video Editing",
+          "Animation",
+          "Visual Design",
+          "Content Creation",
+          "Creative Design",
+          "AI Designer",
+          "UI & UX",
+          "Videography"
+        ],
+        "soft_skills": [],
+        "tools": [
+          "Adobe Photoshop",
+          "Adobe Illustrator",
+          "Adobe After Effects",
+          "Adobe Premiere Pro",
+          "Adobe Audition",
+          "Adobe InDesign",
+          "Adobe Character Animator",
+          "Adobe XD",
+          "Davinci Resolve",
+          "Figma",
+          "HTML",
+          "CSS",
+          "Java Script",
+          "Microsoft Office 365",
+          "Microsoft Excel",
+          "Microsoft Word",
+          "Microsoft Power Point",
+          "Microsoft Outlook",
+          "Microsoft Copilot",
+          "Canva",
+          "Capcut",
+          "Adobe Express",
+          "Photopea",
+          "Vyond Animator",
+          "Videoscribe Animation",
+          "TweenCraft Animation",
+          "Google Gemini",
+          "Google Stitch ui/ux AI",
+          "Veed io",
+          "Meta Luma AI",
+          "Suno AI",
+          "Generative AI by Adobe",
+          "Wondershare Filmora",
+          "Kinemaster",
+          "Higgsfield AI Video Effects",
+          "Json Prompt",
+          "Motion Bro",
+          "Animate Composer",
+          "Meta/Facebook Ads",
+          "Runway ML",
+          "Leonardo AI",
+          "MiniMax Hailuoai",
+          "Freepik AI",
+          "Perplexity Sonar AI",
+          "Elevenlabs io",
+          "Google Flow/ Google Veo",
+          "Google Nano Banana",
+          "Grok AI",
+          "Google Docs"
+        ],
+        "taxonomy_skills": [],
+        "other_skills": []
+      },
+      "experience": [
+        {
+          "title": "Creative Producer (Motion & Visual Design)",
+          "company": "Marvy Group (Client - LG Electronics India)",
+          "location": "Noida",
+          "start_date": "11/2024",
+          "end_date": "Present",
+          "highlights": [
+            "Product Video Production: Shoot, edit, & produce high-quality product videos to enhance brand presence.",
+            "Worked with LG Electronics India during its IPO phase, contributing to brand-aligned visual projects and internal communications.",
+            "DIY Informational Videos: Plan, script, shoot, direct, and provide voiceovers for engaging DIY and instructional content.",
+            "End-to-End Content Creation: Oversee the entire content production process from ideation to execution, ensuring high-quality visual storytelling."
+          ]
+        },
+        {
+          "title": "Motion & Graphics Designer",
+          "company": "Hippo Homes (Dalmia Bharat Group)",
+          "location": "Noida",
+          "start_date": "04/2023",
+          "end_date": "11/2024",
+          "highlights": [
+            "Aligned with top management to roll out key campaigns on service excellence and engagement, participated in the new store launch, and created over 500+ Google ads.",
+            "Creating some eye-catching designs like, Promotional offers, New schemes and weekly offers, Study creative ideas and develop videos whether they are Testimonials videos, opener videos, store guest welcome Videos, store product category videos, store tour videos, & New offer and scheme videos.",
+            "Managed multiple design projects simultaneously, ensuring deadlines were met and deliverables were of high quality."
+          ]
+        },
+        {
+          "title": "Motion & Graphics Designer",
+          "company": "Remote Resource",
+          "location": "Delhi",
+          "start_date": "02/2022",
+          "end_date": "04/2023",
+          "highlights": [
+            "Maintained awareness of current industry and technology standards, social media, competitive landscape, and market trends.",
+            "Ensured all produced material is correctly optimized for chosen dissemination (web, social media, large presentation screen, social media).",
+            "Managed multiple clients and created over 200+ static and video ads for company services, which helped the company acquire more clients."
+          ]
+        },
+        {
+          "title": "Team Lead: Motion Graphics Designer",
+          "company": "New Vision Digital",
+          "location": "Noida",
+          "start_date": "08/2020",
+          "end_date": "02/2022",
+          "highlights": [
+            "Applied various art forms, including typography, videography, graphic design, and photography, to translate original ideas into visual storytelling for early-stage sales pitches and client proposals.",
+            "Provided creative direction and guidance to the design team, ensuring all visual content aligned with the brand's vision and goals.",
+            "Worked with over 50+ different clients worldwide across various business niches."
+          ]
+        }
+      ],
+      "education": [
+        {
+          "degree": "Bachelor of Commerce",
+          "institution": "Delhi University",
+          "location": "New Delhi, India",
+          "start_date": "",
+          "end_date": "2021"
+        },
+        {
+          "degree": "Graphics Design, Animation, Video Editing and Web Design",
+          "institution": "Oxford Software Institute",
+          "location": "Delhi, India",
+          "start_date": "",
+          "end_date": "2019"
+        }
+      ],
+      "certifications": [
+        "Video Editing Fundamentals",
+        "Typography: Type in Motion",
+        "Practical Creativity for Everyone",
+        "Graphics Design Techniques",
+        "Creative Video Editing Techniques",
+        "Video Production & Editing"
+      ],
+      "languages": [],
+      "links": [
+        "www.linkedin.com/in/thesanjaysir",
+        "www.behance.net/thesanjaysir"
+      ]
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 32749.08,
+    "usage": {
+      "completion_tokens": 4295,
+      "prompt_tokens": 2371,
+      "total_tokens": 6666,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3124
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "SANJAY SHARMA",
+    "email": "sanjaysharma767835@gmail.com",
+    "phone": "+91-7678352717",
+    "location": "",
+    "summary": "Motion Graphic Designer & Creative Strategist with 6+ years of experience delivering performance-driven design & video communication. Worked with 50+ brands including LG Electronics India, Myntra helping improve CTR, conversions & audience engagement across digital platforms. Strong at merging storytelling with business goals to create measurable results. Skilled in leveraging AI-driven creative workflows to deliver faster, smarter & more impactful campaigns.",
+    "skills": {
+      "technical_skills": [
+        "Motion Graphics",
+        "Graphic Designing",
+        "Video Editing",
+        "Animation",
+        "Visual Design",
+        "Content Creation",
+        "Creative Design",
+        "AI Designer",
+        "UI & UX",
+        "Videography"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Adobe After Effects",
+        "Adobe Premiere Pro",
+        "Adobe Audition",
+        "Adobe InDesign",
+        "Adobe Character Animator",
+        "Adobe XD",
+        "Davinci Resolve",
+        "Figma",
+        "HTML",
+        "CSS",
+        "Java Script",
+        "Microsoft Office 365",
+        "Microsoft Excel",
+        "Microsoft Word",
+        "Microsoft Power Point",
+        "Microsoft Outlook",
+        "Microsoft Copilot",
+        "Canva",
+        "Capcut",
+        "Adobe Express",
+        "Photopea",
+        "Vyond Animator",
+        "Videoscribe Animation",
+        "TweenCraft Animation",
+        "Google Gemini",
+        "Google Stitch ui/ux AI",
+        "Veed io",
+        "Meta Luma AI",
+        "Suno AI",
+        "Generative AI by Adobe",
+        "Wondershare Filmora",
+        "Kinemaster",
+        "Higgsfield AI Video Effects",
+        "Json Prompt",
+        "Motion Bro",
+        "Animate Composer",
+        "Meta/Facebook Ads",
+        "Runway ML",
+        "Leonardo AI",
+        "MiniMax Hailuoai",
+        "Freepik AI",
+        "Perplexity Sonar AI",
+        "Elevenlabs io",
+        "Google Flow/ Google Veo",
+        "Google Nano Banana",
+        "Grok AI",
+        "Google Docs"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Creative Producer (Motion & Visual Design)",
+        "company": "Marvy Group (Client - LG Electronics India)",
+        "location": "Noida",
+        "start_date": "11/2024",
+        "end_date": "Present",
+        "highlights": [
+          "Product Video Production: Shoot, edit, & produce high-quality product videos to enhance brand presence.",
+          "Worked with LG Electronics India during its IPO phase, contributing to brand-aligned visual projects and internal communications.",
+          "DIY Informational Videos: Plan, script, shoot, direct, and provide voiceovers for engaging DIY and instructional content.",
+          "End-to-End Content Creation: Oversee the entire content production process from ideation to execution, ensuring high-quality visual storytelling."
+        ]
+      },
+      {
+        "title": "Motion & Graphics Designer",
+        "company": "Hippo Homes (Dalmia Bharat Group)",
+        "location": "Noida",
+        "start_date": "04/2023",
+        "end_date": "11/2024",
+        "highlights": [
+          "Aligned with top management to roll out key campaigns on service excellence and engagement, participated in the new store launch, and created over 500+ Google ads.",
+          "Creating some eye-catching designs like, Promotional offers, New schemes and weekly offers, Study creative ideas and develop videos whether they are Testimonials videos, opener videos, store guest welcome Videos, store product category videos, store tour videos, & New offer and scheme videos.",
+          "Managed multiple design projects simultaneously, ensuring deadlines were met and deliverables were of high quality."
+        ]
+      },
+      {
+        "title": "Motion & Graphics Designer",
+        "company": "Remote Resource",
+        "location": "Delhi",
+        "start_date": "02/2022",
+        "end_date": "04/2023",
+        "highlights": [
+          "Maintained awareness of current industry and technology standards, social media, competitive landscape, and market trends.",
+          "Ensured all produced material is correctly optimized for chosen dissemination (web, social media, large presentation screen, social media).",
+          "Managed multiple clients and created over 200+ static and video ads for company services, which helped the company acquire more clients."
+        ]
+      },
+      {
+        "title": "Team Lead: Motion Graphics Designer",
+        "company": "New Vision Digital",
+        "location": "Noida",
+        "start_date": "08/2020",
+        "end_date": "02/2022",
+        "highlights": [
+          "Applied various art forms, including typography, videography, graphic design, and photography, to translate original ideas into visual storytelling for early-stage sales pitches and client proposals.",
+          "Provided creative direction and guidance to the design team, ensuring all visual content aligned with the brand's vision and goals.",
+          "Worked with over 50+ different clients worldwide across various business niches."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Commerce",
+        "institution": "Delhi University",
+        "location": "New Delhi, India",
+        "start_date": "",
+        "end_date": "2021"
+      },
+      {
+        "degree": "Graphics Design, Animation, Video Editing and Web Design",
+        "institution": "Oxford Software Institute",
+        "location": "Delhi, India",
+        "start_date": "",
+        "end_date": "2019"
+      }
+    ],
+    "certifications": [
+      "Video Editing Fundamentals",
+      "Typography: Type in Motion",
+      "Practical Creativity for Everyone",
+      "Graphics Design Techniques",
+      "Creative Video Editing Techniques",
+      "Video Production & Editing"
+    ],
+    "languages": [],
+    "links": [
+      "www.linkedin.com/in/thesanjaysir",
+      "www.behance.net/thesanjaysir"
+    ]
+  },
+  "resume_json": {
+    "full_name": "SANJAY SHARMA",
+    "email": "sanjaysharma767835@gmail.com",
+    "phone": "+91-7678352717",
+    "location": "",
+    "summary": "Motion Graphic Designer & Creative Strategist with 6+ years of experience delivering performance-driven design & video communication. Worked with 50+ brands including LG Electronics India, Myntra helping improve CTR, conversions & audience engagement across digital platforms. Strong at merging storytelling with business goals to create measurable results. Skilled in leveraging AI-driven creative workflows to deliver faster, smarter & more impactful campaigns.",
+    "skills": {
+      "technical_skills": [
+        "Motion Graphics",
+        "Graphic Designing",
+        "Video Editing",
+        "Animation",
+        "Visual Design",
+        "Content Creation",
+        "Creative Design",
+        "AI Designer",
+        "UI & UX",
+        "Videography"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Adobe After Effects",
+        "Adobe Premiere Pro",
+        "Adobe Audition",
+        "Adobe InDesign",
+        "Adobe Character Animator",
+        "Adobe XD",
+        "Davinci Resolve",
+        "Figma",
+        "HTML",
+        "CSS",
+        "Java Script",
+        "Microsoft Office 365",
+        "Microsoft Excel",
+        "Microsoft Word",
+        "Microsoft Power Point",
+        "Microsoft Outlook",
+        "Microsoft Copilot",
+        "Canva",
+        "Capcut",
+        "Adobe Express",
+        "Photopea",
+        "Vyond Animator",
+        "Videoscribe Animation",
+        "TweenCraft Animation",
+        "Google Gemini",
+        "Google Stitch ui/ux AI",
+        "Veed io",
+        "Meta Luma AI",
+        "Suno AI",
+        "Generative AI by Adobe",
+        "Wondershare Filmora",
+        "Kinemaster",
+        "Higgsfield AI Video Effects",
+        "Json Prompt",
+        "Motion Bro",
+        "Animate Composer",
+        "Meta/Facebook Ads",
+        "Runway ML",
+        "Leonardo AI",
+        "MiniMax Hailuoai",
+        "Freepik AI",
+        "Perplexity Sonar AI",
+        "Elevenlabs io",
+        "Google Flow/ Google Veo",
+        "Google Nano Banana",
+        "Grok AI",
+        "Google Docs"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Creative Producer (Motion & Visual Design)",
+        "company": "Marvy Group (Client - LG Electronics India)",
+        "location": "Noida",
+        "start_date": "11/2024",
+        "end_date": "Present",
+        "highlights": [
+          "Product Video Production: Shoot, edit, & produce high-quality product videos to enhance brand presence.",
+          "Worked with LG Electronics India during its IPO phase, contributing to brand-aligned visual projects and internal communications.",
+          "DIY Informational Videos: Plan, script, shoot, direct, and provide voiceovers for engaging DIY and instructional content.",
+          "End-to-End Content Creation: Oversee the entire content production process from ideation to execution, ensuring high-quality visual storytelling."
+        ]
+      },
+      {
+        "title": "Motion & Graphics Designer",
+        "company": "Hippo Homes (Dalmia Bharat Group)",
+        "location": "Noida",
+        "start_date": "04/2023",
+        "end_date": "11/2024",
+        "highlights": [
+          "Aligned with top management to roll out key campaigns on service excellence and engagement, participated in the new store launch, and created over 500+ Google ads.",
+          "Creating some eye-catching designs like, Promotional offers, New schemes and weekly offers, Study creative ideas and develop videos whether they are Testimonials videos, opener videos, store guest welcome Videos, store product category videos, store tour videos, & New offer and scheme videos.",
+          "Managed multiple design projects simultaneously, ensuring deadlines were met and deliverables were of high quality."
+        ]
+      },
+      {
+        "title": "Motion & Graphics Designer",
+        "company": "Remote Resource",
+        "location": "Delhi",
+        "start_date": "02/2022",
+        "end_date": "04/2023",
+        "highlights": [
+          "Maintained awareness of current industry and technology standards, social media, competitive landscape, and market trends.",
+          "Ensured all produced material is correctly optimized for chosen dissemination (web, social media, large presentation screen, social media).",
+          "Managed multiple clients and created over 200+ static and video ads for company services, which helped the company acquire more clients."
+        ]
+      },
+      {
+        "title": "Team Lead: Motion Graphics Designer",
+        "company": "New Vision Digital",
+        "location": "Noida",
+        "start_date": "08/2020",
+        "end_date": "02/2022",
+        "highlights": [
+          "Applied various art forms, including typography, videography, graphic design, and photography, to translate original ideas into visual storytelling for early-stage sales pitches and client proposals.",
+          "Provided creative direction and guidance to the design team, ensuring all visual content aligned with the brand's vision and goals.",
+          "Worked with over 50+ different clients worldwide across various business niches."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Commerce",
+        "institution": "Delhi University",
+        "location": "New Delhi, India",
+        "start_date": "",
+        "end_date": "2021"
+      },
+      {
+        "degree": "Graphics Design, Animation, Video Editing and Web Design",
+        "institution": "Oxford Software Institute",
+        "location": "Delhi, India",
+        "start_date": "",
+        "end_date": "2019"
+      }
+    ],
+    "certifications": [
+      "Video Editing Fundamentals",
+      "Typography: Type in Motion",
+      "Practical Creativity for Everyone",
+      "Graphics Design Techniques",
+      "Creative Video Editing Techniques",
+      "Video Production & Editing"
+    ],
+    "languages": [],
+    "links": [
+      "www.linkedin.com/in/thesanjaysir",
+      "www.behance.net/thesanjaysir"
+    ]
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 8.694,
+    "quality_seconds": 0.3585,
+    "normalization_seconds": 0.0017,
+    "recovery_seconds": 11.6818,
+    "llm_seconds": 32.7515,
+    "total_seconds": 53.5753
+  },
+  "_stored_name": "107c6cc3-f1e5-4792-a73d-c8bfcf5cdc18_SHJ-5329_SHC-363888.pdf"
+}

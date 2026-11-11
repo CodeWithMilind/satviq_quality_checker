@@ -343,11 +343,13 @@ def test_api_process_response_trace_matches_attempts():
     assert attempted == ORDER[:len(attempted)]
     skipped = [s["extractor"] for s in _extractor_stages(record)
                if s["status"] == "SKIPPED"]
-    # Default (simple) pipeline: exactly the three concurrent
-    # extractors are attempted — there is no OCR stage and no
-    # extractor stage is skipped.
-    assert attempted == ["tika", "pymupdf", "docling"]
-    assert skipped == []
+    # Default (simple) pipeline is now the sequential quality-gated
+    # flow: extractors execute in order and the flow stops at the
+    # first quality PASS. On this sandbox PDF Tika produces no usable
+    # text, PyMuPDF's real extraction passes the gate, and Docling +
+    # OCR are honestly shown as SKIPPED — never as attempts.
+    assert attempted == ["tika", "pymupdf"]
+    assert skipped == ["docling", "ocr"]
     # The final stage honestly reflects the WHOLE flow: PASS only
     # when a validated Resume JSON was produced. (Muse is not
     # configured in the test environment, so the AI stage's outcome

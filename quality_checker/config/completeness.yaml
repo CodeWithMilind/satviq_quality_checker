@@ -184,6 +184,7 @@ sections:
       # Combined heading: one line covering two sections. The same
       # alias is also listed under certifications, so BOTH sections
       # are detected from the single heading. [corpus] x2
+      - "Education And Training"
       - "education and certifications"
       - "educational qualification"           # [cv100] x6 (singular form)
       - "technical qualification"             # [cv100] x3

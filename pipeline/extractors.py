@@ -1,9 +1,18 @@
-"""Concurrent execution of the three independent extractors.
+"""Execution of the independent extractors.
 
-Every supported document is processed independently by Tika, PyMuPDF
-and Docling. A failure in one extractor never stops the others.
-Results are returned in canonical order [tika, pymupdf, docling] as
-unified dicts.
+Two runners share the same unified result dicts:
+
+- :func:`run_extractors` — the original CONCURRENT runner (all
+  extractors at once). Still used by the extractor diagnostics live
+  test, which deliberately exercises every installed extractor.
+- :func:`run_one_extractor` — runs ONE extractor, used by the
+  production pipeline's sequential quality-gated flow
+  (Tika → PyMuPDF → Docling → OCR with early stopping): the next
+  extractor is only invoked when the previous one fails its quality
+  gate, so a passing Tika never pays for Docling/OCR time.
+
+Results are returned in canonical order
+[tika, pymupdf, docling, ocr] as unified dicts.
 """
 from __future__ import annotations
 
@@ -16,7 +25,7 @@ from typing import Any
 
 logger = logging.getLogger(__name__)
 
-CANONICAL_ORDER = ["tika", "pymupdf", "docling"]
+CANONICAL_ORDER = ["tika", "pymupdf", "docling", "ocr"]
 
 
 def _default_extractors() -> dict[str, Any]:
@@ -119,6 +128,112 @@ def _coerce_raw(name: str, raw: Any, elapsed: float) -> dict[str, Any]:
         "page_count": getattr(raw, "page_count", None),
         "page_texts": getattr(raw, "page_texts", None) or [],
     }
+
+
+def default_sequential_extractors() -> dict[str, Any]:
+    """The default extractor map for the sequential production flow:
+    the three document extractors plus the OCR extractor as the final
+    fallback. An OCR that cannot be constructed becomes a failing
+    stub whose honest error is recorded if — and only if — the flow
+    actually reaches it."""
+    extractors = _default_extractors()
+    if "ocr" not in extractors:
+        per_extractor: dict[str, Any] = {}
+        try:
+            from extractor.manager import load_manager_config
+            per_extractor = load_manager_config().get("extractors", {}) or {}
+        except Exception:
+            per_extractor = {}
+        try:
+            from extractor.extractors.ocr import OCRExtractor
+            extractors["ocr"] = OCRExtractor(config=per_extractor.get("ocr", {}))
+        except Exception as exc:
+            logger.warning("OCR extractor construction failed: %s", exc)
+            extractors["ocr"] = _FailingExtractor(
+                "ocr", f"OCR extractor unavailable: {exc}")
+    return extractors
+
+
+def ordered_extractor_names(extractor_map: dict[str, Any],
+                            preferred: list[str] | None = None) -> list[str]:
+    """Execution order for a sequential run: the preferred order
+    first (configured tie-break order), then any remaining canonical
+    extractors, then any extras — restricted to names actually
+    present in the map."""
+    names: list[str] = []
+    for n in list(preferred or []) + CANONICAL_ORDER:
+        if n in extractor_map and n not in names:
+            names.append(n)
+    for n in extractor_map:
+        if n not in names:
+            names.append(n)
+    return names
+
+
+def _failed_result(name: str, elapsed: float, error: str,
+                   error_type: str | None) -> dict[str, Any]:
+    return {
+        "extractor": name,
+        "status": "failed",
+        "extracted_text": "",
+        "execution_time": float(elapsed),
+        "metadata": {},
+        "error": error,
+        "error_type": error_type,
+        "page_count": None,
+        "page_texts": [],
+    }
+
+
+def _timeout_result(name: str, timeout: float | None,
+                    elapsed: float) -> dict[str, Any]:
+    return {
+        "extractor": name,
+        "status": "timeout",
+        "extracted_text": "",
+        "execution_time": float(timeout if timeout else elapsed),
+        "metadata": {},
+        "error": f"Extractor '{name}' timed out after {timeout:g}s" if timeout else f"Extractor '{name}' timed out",
+        "error_type": "TimeoutError",
+        "page_count": None,
+        "page_texts": [],
+    }
+
+
+def run_one_extractor(name: str, extractor_obj: Any, file_path: str | Path,
+                      timeout_seconds: float | None = None) -> dict[str, Any]:
+    """Run exactly ONE extractor and return its unified result dict.
+
+    Same result shape and same EXTRACTION-ONLY timeout semantics as
+    :func:`run_extractors` (``timeout_seconds`` is the maximum time to
+    WAIT for this extractor; None waits however long it takes). Used
+    by the sequential quality-gated pipeline so fallback extractors
+    are never invoked once an earlier extractor passes.
+    """
+    timeout = float(timeout_seconds) if timeout_seconds else None
+    started = time.perf_counter()
+    if timeout is None:
+        try:
+            raw = _run_one(name, extractor_obj, file_path)
+            return _coerce_raw(name, raw, time.perf_counter() - started)
+        except Exception as exc:
+            return _failed_result(name, time.perf_counter() - started,
+                                  f"{type(exc).__name__}: {exc}",
+                                  type(exc).__name__)
+    executor = ThreadPoolExecutor(max_workers=1)
+    try:
+        future = executor.submit(_run_one, name, extractor_obj, file_path)
+        try:
+            raw = future.result(timeout=timeout)
+            return _coerce_raw(name, raw, time.perf_counter() - started)
+        except FutureTimeoutError:
+            return _timeout_result(name, timeout, time.perf_counter() - started)
+        except Exception as exc:
+            return _failed_result(name, time.perf_counter() - started,
+                                  f"{type(exc).__name__}: {exc}",
+                                  type(exc).__name__)
+    finally:
+        executor.shutdown(wait=False)
 
 
 def _run_one(name: str, extractor_obj: Any, file_path: str | Path) -> Any:

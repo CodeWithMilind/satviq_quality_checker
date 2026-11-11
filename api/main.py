@@ -185,6 +185,79 @@ def analytics_summary(days: int | None = None, include_manual: bool = False) -> 
         store.list_records(), days=days, include_manual=include_manual)
 
 
+# --- YAML Editor AI (independent module: yaml_editor_ai/) ---------------
+# Separate analytics + audit endpoints for the self-improving
+# completeness YAML agent. Metadata only — no API credentials and no
+# resume content are ever exposed here.
+
+def _yaml_editor_agent():
+    from yaml_editor_ai import get_default_agent
+
+    return get_default_agent()
+
+
+@app.get("/api/yaml-editor/analytics")
+def yaml_editor_analytics() -> dict:
+    """Aggregated YAML Editor AI analytics (own token store)."""
+    return _yaml_editor_agent().analytics()
+
+
+@app.get("/api/yaml-editor/history")
+def yaml_editor_history(limit: int = 50) -> dict:
+    """Newest-first execution history (metadata only)."""
+    agent = _yaml_editor_agent()
+    return {"history": agent.tracker.history(limit=limit)}
+
+
+@app.get("/api/yaml-editor/versions")
+def yaml_editor_versions() -> dict:
+    """All YAML versions in the store + the current one."""
+    from yaml_editor_ai import version_manager
+
+    agent = _yaml_editor_agent()
+    agent.store.ensure_seeded()
+    numbers = agent.store.version_numbers()
+    return {
+        "current_version": version_manager.version_label(
+            agent.store.current_version()),
+        "versions": [
+            {"version": version_manager.version_label(n),
+             "file": f"completeness_v{n:03d}.yaml"}
+            for n in numbers],
+    }
+
+
+@app.get("/api/yaml-editor/versions/{version}")
+def yaml_editor_version_content(version: str) -> dict:
+    """The stored content of one YAML version (e.g. v002)."""
+    import re as _re
+
+    from yaml_editor_ai import version_manager
+
+    match = _re.fullmatch(r"v(\d{1,4})", version.strip().lower())
+    if not match:
+        raise HTTPException(status_code=404,
+                            detail=f"Unknown YAML version {version!r}.")
+    agent = _yaml_editor_agent()
+    agent.store.ensure_seeded()
+    path = version_manager.version_file(agent.store, int(match.group(1)))
+    if not path.is_file():
+        raise HTTPException(status_code=404,
+                            detail=f"YAML version {version} not found.")
+    return {"version": version_manager.version_label(int(match.group(1))),
+            "content": path.read_text(encoding="utf-8")}
+
+
+@app.get("/api/yaml-editor/changelog")
+def yaml_editor_changelog() -> dict:
+    """The full YAML change audit trail."""
+    from yaml_editor_ai import version_manager
+
+    agent = _yaml_editor_agent()
+    agent.store.ensure_seeded()
+    return {"changelog": version_manager.read_changelog(agent.store)}
+
+
 @app.post("/api/resumes/process")
 async def process_resumes(files: list[UploadFile] = File(...)) -> dict:
     """Process one or more uploaded resumes through the full pipeline.

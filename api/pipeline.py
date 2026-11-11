@@ -1647,6 +1647,28 @@ def _apply_direct_llm_routing(record: dict[str, Any], *,
     return routing
 
 
+def _yaml_editor_hook(record: dict[str, Any]) -> None:
+    """YAML Editor AI post-processing hook.
+
+    Runs AFTER the final extractor has been selected and the record
+    is complete. The agent itself decides whether the record
+    qualifies (low completeness + usable text + not already analysed
+    for the current YAML version + configured). Fully guarded: any
+    failure is logged inside the agent module and can never affect
+    the record or the request. The record's stored quality scores
+    are never modified — accepted keywords apply to FUTURE resumes.
+    """
+    try:
+        from yaml_editor_ai import maybe_improve_from_record
+
+        outcome = maybe_improve_from_record(record)
+        if outcome.get("status") not in ("skipped",):
+            logger.info("YAML Editor AI for resume_id=%s: %s",
+                        record.get("resume_id"), outcome.get("status"))
+    except Exception:
+        logger.exception("YAML Editor AI hook failed (record unaffected)")
+
+
 def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
                                original_filename: str,
                                muse_service: Any | None = None,
@@ -1697,8 +1719,14 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
     selection_reason = result.get("selection_reason")
     reports: dict[str, Any] = result.get("extractor_reports") or {}
     extractor_results: list[dict[str, Any]] = result.get("extractor_results") or []
+    # Sequential quality-gated flow facts: extractors that were never
+    # invoked because an earlier one passed (NOT attempts), and the
+    # gate's per-attempt verdicts that explain each decision.
+    skipped_extractors: list[str] = list(result.get("skipped_extractors") or [])
+    gate_decisions: dict[str, Any] = result.get("gate_decisions") or {}
     # Canonical order for attempts
-    _canonical = ["tika", "pymupdf", "docling"]
+    _canonical = list(result.get("extractor_order") or
+                      ["tika", "pymupdf", "docling", "ocr"])
     by_name = {r.get("extractor"): r for r in extractor_results if isinstance(r, dict)}
     ordered_results: list[dict[str, Any]] = []
     for _n in _canonical:
@@ -1767,12 +1795,23 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
         err_val = res.get("error")
         report = reports.get(name) or {}
         score_val = report.get("quality_score") if isinstance(report, dict) else None
+        gate = gate_decisions.get(name) or {}
+        gate_reason = gate.get("reason")
         if is_selected:
             decision = "accept"
-            decision_reason = selection_reason
+            if gate.get("decision") == "continue" and gate_reason:
+                decision_reason = (
+                    gate_reason
+                    + " Selected as the best candidate after all "
+                      "executed extractors were tried.")
+            else:
+                decision_reason = gate_reason or selection_reason
         elif not is_success:
             decision = "reject"
             decision_reason = err_val or "Extraction failed."
+        elif gate_reason:
+            decision = "reject"
+            decision_reason = gate_reason
         else:
             decision = "reject"
             decision_reason = (
@@ -2022,9 +2061,32 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
         _stage("Resume Upload", "upload", "PASS", message="File received and stored for processing."),
         _stage("MIME Type Detection", "mime", "PASS", message=mime_type or REASON_UNAVAILABLE),
     ]
-    for att in attempts:
-        nm = att["extractor_name"]
+    _attempts_by_name = {a["extractor_name"]: a for a in attempts}
+    _stage_names: list[str] = []
+    for _nm in _canonical:
+        if _nm in _attempts_by_name or _nm in skipped_extractors:
+            _stage_names.append(_nm)
+    for _nm in _attempts_by_name:
+        if _nm not in _stage_names:
+            _stage_names.append(_nm)
+    for _nm in skipped_extractors:
+        if _nm not in _stage_names:
+            _stage_names.append(_nm)
+    for nm in _stage_names:
         disp = extractor_display_name(nm)
+        att = _attempts_by_name.get(nm)
+        if att is None:
+            # Never invoked: an earlier extractor passed its quality
+            # gate and the pipeline stopped before this one.
+            trace.append(_stage(
+                f"{disp} Extractor", "extractor", "SKIPPED",
+                extractor=nm,
+                message=(f"Skipped — {extractor_display_name(selected)} passed "
+                         "quality checks and was accepted before this "
+                         "extractor was needed."
+                         if selected else "Skipped — not executed."),
+                accepted=False, decision="skipped", selected=False))
+            continue
         trace.append(_stage(f"{disp} Extractor", "extractor", "PASS" if att["success"] else "FAIL",
                             extractor=nm, duration_ms=att.get("duration_ms"),
                             message=("Extraction succeeded." if att["success"] else (att.get("error") or REASON_UNAVAILABLE)),
@@ -2139,8 +2201,14 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
         "primary_extractor": "tika",
         "attempts": attempts,
         "attempt_count": len(attempts),
-        "fallback_occurred": False,
-        "fallback_reason": None,
+        "fallback_occurred": len(attempts) > 1,
+        "fallback_reason": (
+            next((a.get("error") or a.get("decision_reason")
+                  for a in attempts if not a.get("is_final_selected")),
+                 None)
+            if len(attempts) > 1 else None),
+        "skipped_extractors": skipped_extractors,
+        "gate_decisions": gate_decisions,
         "extracted_text": original_text,
         "final_extracted_text": original_text,
         "page_count": page_count,
@@ -2176,6 +2244,7 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
         "timings": timings,
     }
     _ensure_attempt_normalized_texts(record)
+    _yaml_editor_hook(record)
     return record
 
 
@@ -2485,6 +2554,7 @@ def process_resume_file(file_path: str | Path, *, resume_id: str,
     logger.info("Processed resume_id=%s success=%s extractor=%s quality=%s",
                 resume_id, result.success, record["extractor_used"],
                 record["quality_status"])
+    _yaml_editor_hook(record)
     return record
 
 

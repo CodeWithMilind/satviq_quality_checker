@@ -121,14 +121,17 @@ def dummy_pdf(tmp_path):
     return p
 
 
-# 1. All three extractors succeed
+# 1. All three extractors CAN succeed — but the sequential quality
+# gate stops at Tika's PASS, so only Tika is executed/reported and
+# the later extractors are reported as skipped, never as attempts.
 def test_01_all_three_extractors_succeed(dummy_pdf):
     pipe = ExtractionPipeline(config=PipelineConfig(), extractors=_good_extractors(), llm_callable=_valid_llm)
     result = pipe.run(dummy_pdf)
-    assert set(result["extractor_reports"].keys()) == {"tika", "pymupdf", "docling"}
+    assert set(result["extractor_reports"].keys()) == {"tika"}
     assert all(r["status"] == "success" for r in result["extractor_reports"].values())
     assert result["status"] == "success"
-    assert result["selected_extractor"] in ("tika", "pymupdf", "docling")
+    assert result["selected_extractor"] == "tika"
+    assert result["skipped_extractors"] == ["pymupdf", "docling"]
     assert result["resume_data"] is not None
     assert result["resume_data"]["full_name"] == "Jane Doe"
 
@@ -506,9 +509,12 @@ def test_process_resume_file_simple_record_compat(tmp_path):
     assert record["filename"] == "resume.pdf"
     assert record["file_type"] == "pdf"
     assert record["primary_extractor"] == "tika"
-    assert record["attempt_count"] == 3
-    assert len(record["attempts"]) == 3
-    assert [a["extractor_name"] for a in record["attempts"]] == ["tika", "pymupdf", "docling"]
+    # Early stopping: Tika's text passes the quality gate, so it is
+    # the ONLY attempt; PyMuPDF/Docling are skipped, not attempts.
+    assert record["attempt_count"] == 1
+    assert len(record["attempts"]) == 1
+    assert [a["extractor_name"] for a in record["attempts"]] == ["tika"]
+    assert record["skipped_extractors"] == ["pymupdf", "docling"]
     selected_attempts = [a for a in record["attempts"] if a["is_final_selected"]]
     assert len(selected_attempts) == 1
     assert record["selected_extractor"] == selected_attempts[0]["extractor_name"]

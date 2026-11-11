@@ -1453,6 +1453,7 @@ async function loadAnalytics() {
           : "");
     }
     body.innerHTML = analyticsHtml(data);
+    loadYamlEditorAnalytics();
   } catch (err) {
     body.innerHTML = `<div class="error-box">${escapeHtml(err.message)}</div>`;
   }
@@ -1596,7 +1597,57 @@ function analyticsHtml(data) {
       </table>
     </div>`;
 
-  return `<div class="kpi-grid">${kpiCards}</div>${extractorCard}${durationCard}${tokenCard}${qualityCard}${normCard}`;
+  return `<div class="kpi-grid">${kpiCards}</div>${extractorCard}${durationCard}${tokenCard}${qualityCard}${normCard}<div id="yamlEditorAnalytics"></div>`;
+}
+
+/* YAML Editor AI — separate analytics block, fed by its own
+   endpoints (/api/yaml-editor/*) and its own token store. Loaded
+   independently so a failure here never hides the main analytics. */
+async function loadYamlEditorAnalytics() {
+  const host = $("yamlEditorAnalytics");
+  if (!host) return;
+  try {
+    const data = await Api.getYamlEditorAnalytics();
+    host.innerHTML = yamlEditorHtml(data);
+  } catch (err) {
+    host.innerHTML = "";
+  }
+}
+
+function yamlEditorHtml(data) {
+  const s = data.summary || {};
+  const rows = (data.history || []).map((h) => `<tr>
+      <td>${escapeHtml(h.filename || h.resume_id || "—")}</td>
+      <td>${h.timestamp ? escapeHtml(String(h.timestamp).slice(0, 10)) : "—"}</td>
+      <td>${escapeHtml(h.model || "—")}</td>
+      <td>${h.input_tokens === null || h.input_tokens === undefined ? "—" : fmtNum(h.input_tokens)}</td>
+      <td>${h.output_tokens === null || h.output_tokens === undefined ? "—" : fmtNum(h.output_tokens)}</td>
+      <td>${fmtNum(h.keywords_added || 0)}</td>
+      <td>${escapeHtml(h.yaml_version || "—")}</td>
+      <td>${escapeHtml(h.status || "—")}</td></tr>`).join("");
+  const updates = (data.recent_updates || []).map((u) =>
+    `<li>${escapeHtml(u.new_version || "")} — ${fmtNum(u.keywords_added_count || 0)} keyword(s) in ${(u.categories_affected || []).map(escapeHtml).join(", ") || "—"} <span class="hint">(${escapeHtml(u.filename || u.resume_id || "")})</span></li>`).join("");
+  return `
+  <div class="card">
+    <h3>YAML Editor AI — Completeness self-improvement</h3>
+    <p class="hint">Independent agent: analyses only low-completeness resumes after processing and appends validated new section keywords to the versioned completeness YAML. Current YAML version: ${escapeHtml(data.current_version || "—")} · Model: ${escapeHtml(data.model || "—")} · ${data.configured ? "Configured" : "Not configured (no API key)"}</p>
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-value">${fmtNum(s.total_executions || 0)}</div><div class="kpi-label">AI executions</div></div>
+      <div class="kpi-card"><div class="kpi-value">${fmtNum(s.total_input_tokens || 0)}</div><div class="kpi-label">Input tokens</div></div>
+      <div class="kpi-card"><div class="kpi-value">${fmtNum(s.total_output_tokens || 0)}</div><div class="kpi-label">Output tokens</div></div>
+      <div class="kpi-card"><div class="kpi-value">${fmtNum(s.total_tokens || 0)}</div><div class="kpi-label">Total tokens</div></div>
+      <div class="kpi-card"><div class="kpi-value">${s.avg_tokens_per_execution === null || s.avg_tokens_per_execution === undefined ? "—" : fmtNum(s.avg_tokens_per_execution)}</div><div class="kpi-label">Avg tokens / resume</div></div>
+      <div class="kpi-card"><div class="kpi-value">${fmtNum(s.total_keywords_accepted || 0)}</div><div class="kpi-label">Keywords accepted</div></div>
+      <div class="kpi-card"><div class="kpi-value">${fmtNum(s.total_keywords_rejected || 0)}</div><div class="kpi-label">Keywords rejected</div></div>
+      <div class="kpi-card"><div class="kpi-value">${fmtNum(data.total_yaml_versions || 0)}</div><div class="kpi-label">YAML versions</div></div>
+      <div class="kpi-card"><div class="kpi-value">${s.avg_duration_ms === null || s.avg_duration_ms === undefined ? "—" : fmtMs(s.avg_duration_ms)}</div><div class="kpi-label">Avg execution time</div></div>
+      <div class="kpi-card"><div class="kpi-value">${fmtNum(s.api_failures || 0)}</div><div class="kpi-label">API failures</div></div>
+    </div>
+    ${updates ? `<h4>Recent YAML updates</h4><ul>${updates}</ul>` : ""}
+    ${rows ? `<div style="overflow-x:auto"><table class="data-table">
+      <thead><tr><th>Resume</th><th>Date</th><th>Model</th><th>Input tokens</th><th>Output tokens</th><th>Keywords added</th><th>YAML version</th><th>Status</th></tr></thead>
+      <tbody>${rows}</tbody></table></div>` : `<p class="hint">No YAML Editor AI executions yet — it runs only when a processed resume's completeness score is low.</p>`}
+  </div>`;
 }
 
 /* ------------------------------------------------------------------ */

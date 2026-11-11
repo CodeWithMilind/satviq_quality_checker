@@ -1,0 +1,1309 @@
+{
+  "resume_id": "008fa902-0224-4899-b0e0-ef7bb78ef05b",
+  "filename": "SHJ-5329_SHC-363823.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 96332,
+  "uploaded_at": "2026-11-11T11:38:51.496493+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "final_extractor": "tika",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "008fa902-0224-4899-b0e0-ef7bb78ef05b-attempt-1",
+      "resume_id": "008fa902-0224-4899-b0e0-ef7bb78ef05b",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Quality PASS (Text Health 100.0, Completeness 91.0, Reading Order 100.0) — result accepted; fallback stopped.",
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS (Text Health 100.0, Completeness 91.0, Reading Order 100.0) — result accepted; fallback stopped.",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "008fa902-0224-4899-b0e0-ef7bb78ef05b",
+        "source_tool": "tika",
+        "attempt_id": "008fa902-0224-4899-b0e0-ef7bb78ef05b-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3112,
+            "word_count": 379,
+            "line_count": 144,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.138817,
+            "symbol_count": 11,
+            "symbol_ratio": 0.003535,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3112,
+            "word_count": 379,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact information",
+              "Summary": "summary",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "Contact Information",
+                "detection_method": "heading",
+                "line_number": 1,
+                "evidence": "Contact Information",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 50,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 56,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 52,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 58,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3112,
+            "word_count": 379,
+            "line_count": 144,
+            "non_empty_line_count": 90,
+            "short_line_count": 32,
+            "short_line_ratio": 0.355556,
+            "fragmented_line_count": 23,
+            "fragmented_line_ratio": 0.255556,
+            "mean_line_length": 32.99,
+            "median_line_length": 27.0,
+            "line_length_stdev": 22.44,
+            "line_length_cv": 0.680193,
+            "broken_sentence_count": 24,
+            "broken_sentence_ratio": 0.269663,
+            "repeated_adjacent_count": 4,
+            "repeated_adjacent_ratio": 0.044944
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "008fa902-0224-4899-b0e0-ef7bb78ef05b",
+        "source_tool": "tika",
+        "attempt_id": "008fa902-0224-4899-b0e0-ef7bb78ef05b-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3112,
+            "word_count": 379,
+            "line_count": 144,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.138817,
+            "symbol_count": 11,
+            "symbol_ratio": 0.003535,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3112,
+            "word_count": 379,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact information",
+              "Summary": "summary",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "Contact Information",
+                "detection_method": "heading",
+                "line_number": 1,
+                "evidence": "Contact Information",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 50,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 56,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 52,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 58,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3112,
+            "word_count": 379,
+            "line_count": 144,
+            "non_empty_line_count": 90,
+            "short_line_count": 32,
+            "short_line_ratio": 0.355556,
+            "fragmented_line_count": 23,
+            "fragmented_line_ratio": 0.255556,
+            "mean_line_length": 32.99,
+            "median_line_length": 27.0,
+            "line_length_stdev": 22.44,
+            "line_length_cv": 0.680193,
+            "broken_sentence_count": 24,
+            "broken_sentence_ratio": 0.269663,
+            "repeated_adjacent_count": 4,
+            "repeated_adjacent_ratio": 0.044944
+          }
+        }
+      },
+      "quality_score": 98.2,
+      "duration_ms": 9562.08,
+      "text": "ABHISHEK KARNIK\n Visualizer | Motion Graphics | Video Editor\n\n +91 9890175228\n\n07/2021 - 11/2021 \n\n07/2024 - Present \n\n11/2021 - 06/2024 \n\n02/2021 - 07/2021 \n\nA telecom service provider offering innovative solutions\n\nPune\n\nPune\n\nPune\n\nPune\n\nA company focused on creating engaging video content\n\nAn interactive lab specializing in media and technology\n\nabhishekkarnik123@gmail.com My Work:  Portfolio | Achievements\n\n01/2017 - 12/2020 \n\n01/2020 - 12/2020 \n\nPune\n\nPune\n\nPune, Maharashtra\n\nI am a Strategic Visualizer and Motion Designer with over 5 years of\nexperience, specializing in creating impactful visual narratives for global\nbrands. My expertise lies in blending creative conceptualization with\nperformance-driven execution, having successfully boosted campaign\nreach and audience engagement through innovative motion graphics \nand advanced post-production techniques\n\nSUMMARY\n\nEXPERIENCE\n\nSenior Visualizer - Motion Graphics\n\nSKILLS\n\nEDUCATION\nDiploma\n\nKEY ACHIEVEMENTS\n\n•Assisted in the production of dynamic video content and motion \ngraphics\n•Enhanced the visual storytelling of projects through high-quality \nediting\n\n•Increased audience engagement by directing motion graphics and \nlive-action editing projects.\n•Collaborated with creative teams to produce innovative visual \ncontent.\n\n•Conceptualized and created motion graphic designs for various \ncampaigns\n•Worked closely with clients to understand their visual content needs\n\nMarketing technologies company specializing in driving growth through\ncontent and technology\n•Transform complex marketing briefs into high-impact, motion-led \ncreatives for B2B and B2C growth campaigns\n•Developed video assets that contributed to a measurable increase in \ncampaign engagement and 'thumb-stop' rates (approx. 30-40%\nhook rate)\n•Leveraged AI-driven tools to reduce production turnaround time for\nrapid-response social content by 20% while maintaining premium\nbrand standards\n•Design and animate 'unforgettable' content ranging from technical \nexplainers to high-octane product reels\n\nImplemented a DaVinci Resolve-to-After\nEffects workflow that improved color- grading\nefficiency\n\nConsistently recognised by global clients for\ndelivering work that exceeds technological and\ncreative expectations\n\nSuccessfully executed visual projects for\nleading brands like BMW Techworks and\nCummins\n\n \n\nVideo and Motion graphic designer\n \n\nMotion graphic designer / Video Editor\n \n\nEditing Executive - Motion Graphics & Live-action\n \n\n \n\nBachelor’s Degree\n \n\nAntriksh Global\n\nArmoks Interactive Labs\n\nUniinfo Telecom Services\n\nAmura Marketing Technologies\n\nBrand Experience\n\nPipeline Optimisation\n\nGarware College of Commerce\n\nGlobal Client Recognition\n\nMAAC (Maya Academy of Advanced \nCinematics)\n\nVideo Editing Animation\n\nTypography Video Production\n\nStoryboarding Adobe After Effects\n\nAdobe Premiere Final Cut\n\nAdobe Illustrator Photoshop\n\nFigma AI Voiceover\n\nDaVinci Resolve HeyGen Gen AI\n\nhttps://drive.google.com/drive/folders/1BP7_RbVoTPA3FUkSAyT-2DfIBrt85EYf?usp=drive_link\nhttps://drive.google.com/file/d/15tm1SoRbyV42WcfwrJ8Bbn2e7JMREjQd/view",
+      "extracted_text": "ABHISHEK KARNIK\n Visualizer | Motion Graphics | Video Editor\n\n +91 9890175228\n\n07/2021 - 11/2021 \n\n07/2024 - Present \n\n11/2021 - 06/2024 \n\n02/2021 - 07/2021 \n\nA telecom service provider offering innovative solutions\n\nPune\n\nPune\n\nPune\n\nPune\n\nA company focused on creating engaging video content\n\nAn interactive lab specializing in media and technology\n\nabhishekkarnik123@gmail.com My Work:  Portfolio | Achievements\n\n01/2017 - 12/2020 \n\n01/2020 - 12/2020 \n\nPune\n\nPune\n\nPune, Maharashtra\n\nI am a Strategic Visualizer and Motion Designer with over 5 years of\nexperience, specializing in creating impactful visual narratives for global\nbrands. My expertise lies in blending creative conceptualization with\nperformance-driven execution, having successfully boosted campaign\nreach and audience engagement through innovative motion graphics \nand advanced post-production techniques\n\nSUMMARY\n\nEXPERIENCE\n\nSenior Visualizer - Motion Graphics\n\nSKILLS\n\nEDUCATION\nDiploma\n\nKEY ACHIEVEMENTS\n\n•Assisted in the production of dynamic video content and motion \ngraphics\n•Enhanced the visual storytelling of projects through high-quality \nediting\n\n•Increased audience engagement by directing motion graphics and \nlive-action editing projects.\n•Collaborated with creative teams to produce innovative visual \ncontent.\n\n•Conceptualized and created motion graphic designs for various \ncampaigns\n•Worked closely with clients to understand their visual content needs\n\nMarketing technologies company specializing in driving growth through\ncontent and technology\n•Transform complex marketing briefs into high-impact, motion-led \ncreatives for B2B and B2C growth campaigns\n•Developed video assets that contributed to a measurable increase in \ncampaign engagement and 'thumb-stop' rates (approx. 30-40%\nhook rate)\n•Leveraged AI-driven tools to reduce production turnaround time for\nrapid-response social content by 20% while maintaining premium\nbrand standards\n•Design and animate 'unforgettable' content ranging from technical \nexplainers to high-octane product reels\n\nImplemented a DaVinci Resolve-to-After\nEffects workflow that improved color- grading\nefficiency\n\nConsistently recognised by global clients for\ndelivering work that exceeds technological and\ncreative expectations\n\nSuccessfully executed visual projects for\nleading brands like BMW Techworks and\nCummins\n\n \n\nVideo and Motion graphic designer\n \n\nMotion graphic designer / Video Editor\n \n\nEditing Executive - Motion Graphics & Live-action\n \n\n \n\nBachelor’s Degree\n \n\nAntriksh Global\n\nArmoks Interactive Labs\n\nUniinfo Telecom Services\n\nAmura Marketing Technologies\n\nBrand Experience\n\nPipeline Optimisation\n\nGarware College of Commerce\n\nGlobal Client Recognition\n\nMAAC (Maya Academy of Advanced \nCinematics)\n\nVideo Editing Animation\n\nTypography Video Production\n\nStoryboarding Adobe After Effects\n\nAdobe Premiere Final Cut\n\nAdobe Illustrator Photoshop\n\nFigma AI Voiceover\n\nDaVinci Resolve HeyGen Gen AI\n\nhttps://drive.google.com/drive/folders/1BP7_RbVoTPA3FUkSAyT-2DfIBrt85EYf?usp=drive_link\nhttps://drive.google.com/file/d/15tm1SoRbyV42WcfwrJ8Bbn2e7JMREjQd/view",
+      "extracted_text_length": 3096,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "ABHISHEK KARNIK\nVisualizer | Motion Graphics | Video Editor\n\n+91 9890175228\n\n07/2021 - 11/2021\n\n07/2024 - Present\n\n11/2021 - 06/2024\n\n02/2021 - 07/2021\n\nA telecom service provider offering innovative solutions\n\nPune\n\nPune\n\nPune\n\nPune\n\nA company focused on creating engaging video content\n\nAn interactive lab specializing in media and technology\n\nabhishekkarnik123@gmail.com My Work: Portfolio | Achievements\n\n01/2017 - 12/2020\n\n01/2020 - 12/2020\n\nPune\n\nPune\n\nPune, Maharashtra\n\nI am a Strategic Visualizer and Motion Designer with over 5 years of\nexperience, specializing in creating impactful visual narratives for global\nbrands. My expertise lies in blending creative conceptualization with\nperformance-driven execution, having successfully boosted campaign\nreach and audience engagement through innovative motion graphics\nand advanced post-production techniques\n\nSUMMARY\n\nEXPERIENCE\n\nSenior Visualizer - Motion Graphics\n\nSKILLS\n\nEDUCATION\nDiploma\n\nKEY ACHIEVEMENTS\n\n•Assisted in the production of dynamic video content and motion\ngraphics\n•Enhanced the visual storytelling of projects through high-quality\nediting\n\n•Increased audience engagement by directing motion graphics and\nlive-action editing projects.\n•Collaborated with creative teams to produce innovative visual\ncontent.\n\n•Conceptualized and created motion graphic designs for various\ncampaigns\n•Worked closely with clients to understand their visual content needs\n\nMarketing technologies company specializing in driving growth through\ncontent and technology\n•Transform complex marketing briefs into high-impact, motion-led\ncreatives for B2B and B2C growth campaigns\n•Developed video assets that contributed to a measurable increase in\ncampaign engagement and 'thumb-stop' rates (approx. 30-40%\nhook rate)\n•Leveraged AI-driven tools to reduce production turnaround time for\nrapid-response social content by 20% while maintaining premium\nbrand standards\n•Design and animate 'unforgettable' content ranging from technical\nexplainers to high-octane product reels\n\nImplemented a DaVinci Resolve-to-After\nEffects workflow that improved color- grading\nefficiency\n\nConsistently recognised by global clients for\ndelivering work that exceeds technological and\ncreative expectations\n\nSuccessfully executed visual projects for\nleading brands like BMW Techworks and\nCummins\n\nVideo and Motion graphic designer\n\nMotion graphic designer / Video Editor\n\nEditing Executive - Motion Graphics & Live-action\n\nBachelor’s Degree\n\nAntriksh Global\n\nArmoks Interactive Labs\n\nUniinfo Telecom Services\n\nAmura Marketing Technologies\n\nBrand Experience\n\nPipeline Optimisation\n\nGarware College of Commerce\n\nGlobal Client Recognition\n\nMAAC (Maya Academy of Advanced\nCinematics)\n\nVideo Editing Animation\n\nTypography Video Production\n\nStoryboarding Adobe After Effects\n\nAdobe Premiere Final Cut\n\nAdobe Illustrator Photoshop\n\nFigma AI Voiceover\n\nDaVinci Resolve HeyGen Gen AI\n\nhttps://drive.google.com/drive/folders/1BP7_RbVoTPA3FUkSAyT-2DfIBrt85EYf?usp=drive_link\nhttps://drive.google.com/file/d/15tm1SoRbyV42WcfwrJ8Bbn2e7JMREjQd/view"
+    }
+  ],
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "skipped_extractors": [
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "gate_decisions": {
+    "tika": {
+      "status": "PASS",
+      "decision": "accept",
+      "reason": "Quality PASS (Text Health 100.0, Completeness 91.0, Reading Order 100.0) — result accepted; fallback stopped."
+    }
+  },
+  "extracted_text": "ABHISHEK KARNIK\n Visualizer | Motion Graphics | Video Editor\n\n +91 9890175228\n\n07/2021 - 11/2021 \n\n07/2024 - Present \n\n11/2021 - 06/2024 \n\n02/2021 - 07/2021 \n\nA telecom service provider offering innovative solutions\n\nPune\n\nPune\n\nPune\n\nPune\n\nA company focused on creating engaging video content\n\nAn interactive lab specializing in media and technology\n\nabhishekkarnik123@gmail.com My Work:  Portfolio | Achievements\n\n01/2017 - 12/2020 \n\n01/2020 - 12/2020 \n\nPune\n\nPune\n\nPune, Maharashtra\n\nI am a Strategic Visualizer and Motion Designer with over 5 years of\nexperience, specializing in creating impactful visual narratives for global\nbrands. My expertise lies in blending creative conceptualization with\nperformance-driven execution, having successfully boosted campaign\nreach and audience engagement through innovative motion graphics \nand advanced post-production techniques\n\nSUMMARY\n\nEXPERIENCE\n\nSenior Visualizer - Motion Graphics\n\nSKILLS\n\nEDUCATION\nDiploma\n\nKEY ACHIEVEMENTS\n\n•Assisted in the production of dynamic video content and motion \ngraphics\n•Enhanced the visual storytelling of projects through high-quality \nediting\n\n•Increased audience engagement by directing motion graphics and \nlive-action editing projects.\n•Collaborated with creative teams to produce innovative visual \ncontent.\n\n•Conceptualized and created motion graphic designs for various \ncampaigns\n•Worked closely with clients to understand their visual content needs\n\nMarketing technologies company specializing in driving growth through\ncontent and technology\n•Transform complex marketing briefs into high-impact, motion-led \ncreatives for B2B and B2C growth campaigns\n•Developed video assets that contributed to a measurable increase in \ncampaign engagement and 'thumb-stop' rates (approx. 30-40%\nhook rate)\n•Leveraged AI-driven tools to reduce production turnaround time for\nrapid-response social content by 20% while maintaining premium\nbrand standards\n•Design and animate 'unforgettable' content ranging from technical \nexplainers to high-octane product reels\n\nImplemented a DaVinci Resolve-to-After\nEffects workflow that improved color- grading\nefficiency\n\nConsistently recognised by global clients for\ndelivering work that exceeds technological and\ncreative expectations\n\nSuccessfully executed visual projects for\nleading brands like BMW Techworks and\nCummins\n\n \n\nVideo and Motion graphic designer\n \n\nMotion graphic designer / Video Editor\n \n\nEditing Executive - Motion Graphics & Live-action\n \n\n \n\nBachelor’s Degree\n \n\nAntriksh Global\n\nArmoks Interactive Labs\n\nUniinfo Telecom Services\n\nAmura Marketing Technologies\n\nBrand Experience\n\nPipeline Optimisation\n\nGarware College of Commerce\n\nGlobal Client Recognition\n\nMAAC (Maya Academy of Advanced \nCinematics)\n\nVideo Editing Animation\n\nTypography Video Production\n\nStoryboarding Adobe After Effects\n\nAdobe Premiere Final Cut\n\nAdobe Illustrator Photoshop\n\nFigma AI Voiceover\n\nDaVinci Resolve HeyGen Gen AI\n\nhttps://drive.google.com/drive/folders/1BP7_RbVoTPA3FUkSAyT-2DfIBrt85EYf?usp=drive_link\nhttps://drive.google.com/file/d/15tm1SoRbyV42WcfwrJ8Bbn2e7JMREjQd/view",
+  "final_extracted_text": "ABHISHEK KARNIK\n Visualizer | Motion Graphics | Video Editor\n\n +91 9890175228\n\n07/2021 - 11/2021 \n\n07/2024 - Present \n\n11/2021 - 06/2024 \n\n02/2021 - 07/2021 \n\nA telecom service provider offering innovative solutions\n\nPune\n\nPune\n\nPune\n\nPune\n\nA company focused on creating engaging video content\n\nAn interactive lab specializing in media and technology\n\nabhishekkarnik123@gmail.com My Work:  Portfolio | Achievements\n\n01/2017 - 12/2020 \n\n01/2020 - 12/2020 \n\nPune\n\nPune\n\nPune, Maharashtra\n\nI am a Strategic Visualizer and Motion Designer with over 5 years of\nexperience, specializing in creating impactful visual narratives for global\nbrands. My expertise lies in blending creative conceptualization with\nperformance-driven execution, having successfully boosted campaign\nreach and audience engagement through innovative motion graphics \nand advanced post-production techniques\n\nSUMMARY\n\nEXPERIENCE\n\nSenior Visualizer - Motion Graphics\n\nSKILLS\n\nEDUCATION\nDiploma\n\nKEY ACHIEVEMENTS\n\n•Assisted in the production of dynamic video content and motion \ngraphics\n•Enhanced the visual storytelling of projects through high-quality \nediting\n\n•Increased audience engagement by directing motion graphics and \nlive-action editing projects.\n•Collaborated with creative teams to produce innovative visual \ncontent.\n\n•Conceptualized and created motion graphic designs for various \ncampaigns\n•Worked closely with clients to understand their visual content needs\n\nMarketing technologies company specializing in driving growth through\ncontent and technology\n•Transform complex marketing briefs into high-impact, motion-led \ncreatives for B2B and B2C growth campaigns\n•Developed video assets that contributed to a measurable increase in \ncampaign engagement and 'thumb-stop' rates (approx. 30-40%\nhook rate)\n•Leveraged AI-driven tools to reduce production turnaround time for\nrapid-response social content by 20% while maintaining premium\nbrand standards\n•Design and animate 'unforgettable' content ranging from technical \nexplainers to high-octane product reels\n\nImplemented a DaVinci Resolve-to-After\nEffects workflow that improved color- grading\nefficiency\n\nConsistently recognised by global clients for\ndelivering work that exceeds technological and\ncreative expectations\n\nSuccessfully executed visual projects for\nleading brands like BMW Techworks and\nCummins\n\n \n\nVideo and Motion graphic designer\n \n\nMotion graphic designer / Video Editor\n \n\nEditing Executive - Motion Graphics & Live-action\n \n\n \n\nBachelor’s Degree\n \n\nAntriksh Global\n\nArmoks Interactive Labs\n\nUniinfo Telecom Services\n\nAmura Marketing Technologies\n\nBrand Experience\n\nPipeline Optimisation\n\nGarware College of Commerce\n\nGlobal Client Recognition\n\nMAAC (Maya Academy of Advanced \nCinematics)\n\nVideo Editing Animation\n\nTypography Video Production\n\nStoryboarding Adobe After Effects\n\nAdobe Premiere Final Cut\n\nAdobe Illustrator Photoshop\n\nFigma AI Voiceover\n\nDaVinci Resolve HeyGen Gen AI\n\nhttps://drive.google.com/drive/folders/1BP7_RbVoTPA3FUkSAyT-2DfIBrt85EYf?usp=drive_link\nhttps://drive.google.com/file/d/15tm1SoRbyV42WcfwrJ8Bbn2e7JMREjQd/view",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "quality": {
+    "status": "PASS",
+    "document_id": "008fa902-0224-4899-b0e0-ef7bb78ef05b",
+    "source_tool": "tika",
+    "attempt_id": "008fa902-0224-4899-b0e0-ef7bb78ef05b-attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3112,
+        "word_count": 379,
+        "line_count": 144,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.138817,
+        "symbol_count": 11,
+        "symbol_ratio": 0.003535,
+        "max_repeated_char_run": 2,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 91.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 3112,
+        "word_count": 379,
+        "configured_section_count": 8,
+        "detected_count": 5,
+        "missing_count": 3,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_sections": [
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "contact information",
+          "Summary": "summary",
+          "Skills": "skills",
+          "Work Experience": "experience",
+          "Education": "education"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": "Contact Information",
+            "detection_method": "heading",
+            "line_number": 1,
+            "evidence": "Contact Information",
+            "confidence": 0.98
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "SUMMARY",
+            "detection_method": "heading",
+            "line_number": 50,
+            "evidence": "SUMMARY",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "SKILLS",
+            "detection_method": "heading",
+            "line_number": 56,
+            "evidence": "SKILLS",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 52,
+            "evidence": "EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATION",
+            "detection_method": "heading",
+            "line_number": 58,
+            "evidence": "EDUCATION",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Responsibilities": "missing",
+          "Projects": "missing",
+          "Certifications": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_sections": [
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3112,
+        "word_count": 379,
+        "line_count": 144,
+        "non_empty_line_count": 90,
+        "short_line_count": 32,
+        "short_line_ratio": 0.355556,
+        "fragmented_line_count": 23,
+        "fragmented_line_ratio": 0.255556,
+        "mean_line_length": 32.99,
+        "median_line_length": 27.0,
+        "line_length_stdev": 22.44,
+        "line_length_cv": 0.680193,
+        "broken_sentence_count": 24,
+        "broken_sentence_ratio": 0.269663,
+        "repeated_adjacent_count": 4,
+        "repeated_adjacent_ratio": 0.044944
+      }
+    }
+  },
+  "selection_reason": "Quality PASS (Text Health 100.0, Completeness 91.0, Reading Order 100.0) — result accepted; fallback stopped. Selected 'tika' with quality score 98.2. Skipped (never executed): pymupdf, docling, ocr.",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 9562.08,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika passed quality checks and was accepted before this extractor was needed.",
+      "accepted": false,
+      "quality": null,
+      "decision": "skipped",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika passed quality checks and was accepted before this extractor was needed.",
+      "accepted": false,
+      "quality": null,
+      "decision": "skipped",
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika passed quality checks and was accepted before this extractor was needed.",
+      "accepted": false,
+      "quality": null,
+      "decision": "skipped",
+      "selected": false
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=98.2",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS (Text Health 100.0, Completeness 91.0, Reading Order 100.0) — result accepted; fallback stopped. Selected 'tika' with quality score 98.2. Skipped (never executed): pymupdf, docling, ocr.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Tika text normalized: 3096 → 3063 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Contact Information Recovery",
+      "type": "contact_recovery",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Recovered location from OCR and merged them into the selected normalized text sent to Muse AI.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 18952.11,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 35524.6,
+      "message": "Muse AI produced validated Resume JSON from the Tika extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 35524.6,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "ABHISHEK KARNIK\n Visualizer | Motion Graphics | Video Editor\n\n +91 9890175228\n\n07/2021 - 11/2021 \n\n07/2024 - Present \n\n11/2021 - 06/2024 \n\n02/2021 - 07/2021 \n\nA telecom service provider offering innovative solutions\n\nPune\n\nPune\n\nPune\n\nPune\n\nA company focused on creating engaging video content\n\nAn interactive lab specializing in media and technology\n\nabhishekkarnik123@gmail.com My Work:  Portfolio | Achievements\n\n01/2017 - 12/2020 \n\n01/2020 - 12/2020 \n\nPune\n\nPune\n\nPune, Maharashtra\n\nI am a Strategic Visualizer and Motion Designer with over 5 years of\nexperience, specializing in creating impactful visual narratives for global\nbrands. My expertise lies in blending creative conceptualization with\nperformance-driven execution, having successfully boosted campaign\nreach and audience engagement through innovative motion graphics \nand advanced post-production techniques\n\nSUMMARY\n\nEXPERIENCE\n\nSenior Visualizer - Motion Graphics\n\nSKILLS\n\nEDUCATION\nDiploma\n\nKEY ACHIEVEMENTS\n\n•Assisted in the production of dynamic video content and motion \ngraphics\n•Enhanced the visual storytelling of projects through high-quality \nediting\n\n•Increased audience engagement by directing motion graphics and \nlive-action editing projects.\n•Collaborated with creative teams to produce innovative visual \ncontent.\n\n•Conceptualized and created motion graphic designs for various \ncampaigns\n•Worked closely with clients to understand their visual content needs\n\nMarketing technologies company specializing in driving growth through\ncontent and technology\n•Transform complex marketing briefs into high-impact, motion-led \ncreatives for B2B and B2C growth campaigns\n•Developed video assets that contributed to a measurable increase in \ncampaign engagement and 'thumb-stop' rates (approx. 30-40%\nhook rate)\n•Leveraged AI-driven tools to reduce production turnaround time for\nrapid-response social content by 20% while maintaining premium\nbrand standards\n•Design and animate 'unforgettable' content ranging from technical \nexplainers to high-octane product reels\n\nImplemented a DaVinci Resolve-to-After\nEffects workflow that improved color- grading\nefficiency\n\nConsistently recognised by global clients for\ndelivering work that exceeds technological and\ncreative expectations\n\nSuccessfully executed visual projects for\nleading brands like BMW Techworks and\nCummins\n\n \n\nVideo and Motion graphic designer\n \n\nMotion graphic designer / Video Editor\n \n\nEditing Executive - Motion Graphics & Live-action\n \n\n \n\nBachelor’s Degree\n \n\nAntriksh Global\n\nArmoks Interactive Labs\n\nUniinfo Telecom Services\n\nAmura Marketing Technologies\n\nBrand Experience\n\nPipeline Optimisation\n\nGarware College of Commerce\n\nGlobal Client Recognition\n\nMAAC (Maya Academy of Advanced \nCinematics)\n\nVideo Editing Animation\n\nTypography Video Production\n\nStoryboarding Adobe After Effects\n\nAdobe Premiere Final Cut\n\nAdobe Illustrator Photoshop\n\nFigma AI Voiceover\n\nDaVinci Resolve HeyGen Gen AI\n\nhttps://drive.google.com/drive/folders/1BP7_RbVoTPA3FUkSAyT-2DfIBrt85EYf?usp=drive_link\nhttps://drive.google.com/file/d/15tm1SoRbyV42WcfwrJ8Bbn2e7JMREjQd/view",
+    "normalized_text": "Contact Information\nLocation: Pune, Maharashtra\n\nABHISHEK KARNIK\nVisualizer | Motion Graphics | Video Editor\n\n+91 9890175228\n\n07/2021 - 11/2021\n\n07/2024 - Present\n\n11/2021 - 06/2024\n\n02/2021 - 07/2021\n\nA telecom service provider offering innovative solutions\n\nPune\n\nPune\n\nPune\n\nPune\n\nA company focused on creating engaging video content\n\nAn interactive lab specializing in media and technology\n\nabhishekkarnik123@gmail.com My Work: Portfolio | Achievements\n\n01/2017 - 12/2020\n\n01/2020 - 12/2020\n\nPune\n\nPune\n\nPune, Maharashtra\n\nI am a Strategic Visualizer and Motion Designer with over 5 years of\nexperience, specializing in creating impactful visual narratives for global\nbrands. My expertise lies in blending creative conceptualization with\nperformance-driven execution, having successfully boosted campaign\nreach and audience engagement through innovative motion graphics\nand advanced post-production techniques\n\nSUMMARY\n\nEXPERIENCE\n\nSenior Visualizer - Motion Graphics\n\nSKILLS\n\nEDUCATION\nDiploma\n\nKEY ACHIEVEMENTS\n\n•Assisted in the production of dynamic video content and motion\ngraphics\n•Enhanced the visual storytelling of projects through high-quality\nediting\n\n•Increased audience engagement by directing motion graphics and\nlive-action editing projects.\n•Collaborated with creative teams to produce innovative visual\ncontent.\n\n•Conceptualized and created motion graphic designs for various\ncampaigns\n•Worked closely with clients to understand their visual content needs\n\nMarketing technologies company specializing in driving growth through\ncontent and technology\n•Transform complex marketing briefs into high-impact, motion-led\ncreatives for B2B and B2C growth campaigns\n•Developed video assets that contributed to a measurable increase in\ncampaign engagement and 'thumb-stop' rates (approx. 30-40%\nhook rate)\n•Leveraged AI-driven tools to reduce production turnaround time for\nrapid-response social content by 20% while maintaining premium\nbrand standards\n•Design and animate 'unforgettable' content ranging from technical\nexplainers to high-octane product reels\n\nImplemented a DaVinci Resolve-to-After\nEffects workflow that improved color- grading\nefficiency\n\nConsistently recognised by global clients for\ndelivering work that exceeds technological and\ncreative expectations\n\nSuccessfully executed visual projects for\nleading brands like BMW Techworks and\nCummins\n\nVideo and Motion graphic designer\n\nMotion graphic designer / Video Editor\n\nEditing Executive - Motion Graphics & Live-action\n\nBachelor’s Degree\n\nAntriksh Global\n\nArmoks Interactive Labs\n\nUniinfo Telecom Services\n\nAmura Marketing Technologies\n\nBrand Experience\n\nPipeline Optimisation\n\nGarware College of Commerce\n\nGlobal Client Recognition\n\nMAAC (Maya Academy of Advanced\nCinematics)\n\nVideo Editing Animation\n\nTypography Video Production\n\nStoryboarding Adobe After Effects\n\nAdobe Premiere Final Cut\n\nAdobe Illustrator Photoshop\n\nFigma AI Voiceover\n\nDaVinci Resolve HeyGen Gen AI\n\nhttps://drive.google.com/drive/folders/1BP7_RbVoTPA3FUkSAyT-2DfIBrt85EYf?usp=drive_link\nhttps://drive.google.com/file/d/15tm1SoRbyV42WcfwrJ8Bbn2e7JMREjQd/view",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "non_breaking_spaces_normalized",
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 3096,
+    "normalized_chars": 3063,
+    "original_estimated_tokens": 774,
+    "normalized_estimated_tokens": 766,
+    "estimated_reduction_percent": 1.0
+  },
+  "contact_recovery": {
+    "status": "recovered",
+    "selected_extractor": "tika",
+    "present_before": [
+      "phone",
+      "email"
+    ],
+    "missing_before": [
+      "location"
+    ],
+    "recovered": {
+      "location": {
+        "value": "Pune, Maharashtra",
+        "source": "OCR",
+        "method": "ocr_first_page"
+      }
+    },
+    "still_missing": [],
+    "sources_tried": [
+      {
+        "source": "Tika",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "PyMuPDF",
+        "method": "first_page_text_layer",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "OCR",
+        "method": "ocr_first_page",
+        "found": [
+          "location"
+        ],
+        "error": null
+      }
+    ],
+    "applied": true,
+    "pre_recovery_normalized_text": "ABHISHEK KARNIK\nVisualizer | Motion Graphics | Video Editor\n\n+91 9890175228\n\n07/2021 - 11/2021\n\n07/2024 - Present\n\n11/2021 - 06/2024\n\n02/2021 - 07/2021\n\nA telecom service provider offering innovative solutions\n\nPune\n\nPune\n\nPune\n\nPune\n\nA company focused on creating engaging video content\n\nAn interactive lab specializing in media and technology\n\nabhishekkarnik123@gmail.com My Work: Portfolio | Achievements\n\n01/2017 - 12/2020\n\n01/2020 - 12/2020\n\nPune\n\nPune\n\nPune, Maharashtra\n\nI am a Strategic Visualizer and Motion Designer with over 5 years of\nexperience, specializing in creating impactful visual narratives for global\nbrands. My expertise lies in blending creative conceptualization with\nperformance-driven execution, having successfully boosted campaign\nreach and audience engagement through innovative motion graphics\nand advanced post-production techniques\n\nSUMMARY\n\nEXPERIENCE\n\nSenior Visualizer - Motion Graphics\n\nSKILLS\n\nEDUCATION\nDiploma\n\nKEY ACHIEVEMENTS\n\n•Assisted in the production of dynamic video content and motion\ngraphics\n•Enhanced the visual storytelling of projects through high-quality\nediting\n\n•Increased audience engagement by directing motion graphics and\nlive-action editing projects.\n•Collaborated with creative teams to produce innovative visual\ncontent.\n\n•Conceptualized and created motion graphic designs for various\ncampaigns\n•Worked closely with clients to understand their visual content needs\n\nMarketing technologies company specializing in driving growth through\ncontent and technology\n•Transform complex marketing briefs into high-impact, motion-led\ncreatives for B2B and B2C growth campaigns\n•Developed video assets that contributed to a measurable increase in\ncampaign engagement and 'thumb-stop' rates (approx. 30-40%\nhook rate)\n•Leveraged AI-driven tools to reduce production turnaround time for\nrapid-response social content by 20% while maintaining premium\nbrand standards\n•Design and animate 'unforgettable' content ranging from technical\nexplainers to high-octane product reels\n\nImplemented a DaVinci Resolve-to-After\nEffects workflow that improved color- grading\nefficiency\n\nConsistently recognised by global clients for\ndelivering work that exceeds technological and\ncreative expectations\n\nSuccessfully executed visual projects for\nleading brands like BMW Techworks and\nCummins\n\nVideo and Motion graphic designer\n\nMotion graphic designer / Video Editor\n\nEditing Executive - Motion Graphics & Live-action\n\nBachelor’s Degree\n\nAntriksh Global\n\nArmoks Interactive Labs\n\nUniinfo Telecom Services\n\nAmura Marketing Technologies\n\nBrand Experience\n\nPipeline Optimisation\n\nGarware College of Commerce\n\nGlobal Client Recognition\n\nMAAC (Maya Academy of Advanced\nCinematics)\n\nVideo Editing Animation\n\nTypography Video Production\n\nStoryboarding Adobe After Effects\n\nAdobe Premiere Final Cut\n\nAdobe Illustrator Photoshop\n\nFigma AI Voiceover\n\nDaVinci Resolve HeyGen Gen AI\n\nhttps://drive.google.com/drive/folders/1BP7_RbVoTPA3FUkSAyT-2DfIBrt85EYf?usp=drive_link\nhttps://drive.google.com/file/d/15tm1SoRbyV42WcfwrJ8Bbn2e7JMREjQd/view",
+    "at": "2026-11-11T11:38:25.674408+00:00",
+    "completeness_before": {
+      "score": 91.0,
+      "contact_information_detected": true,
+      "missing_sections": [
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "completeness_after": {
+      "score": 91.0,
+      "contact_information_detected": true,
+      "missing_sections": [
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ]
+    }
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 18952.11,
+      "input_tokens": 1536,
+      "output_tokens": 2535,
+      "total_tokens": 4071,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1536,
+    "output_tokens": 2535,
+    "total_tokens": 4071,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 18952.11,
+    "usage": {
+      "completion_tokens": 2535,
+      "prompt_tokens": 1536,
+      "total_tokens": 4071,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1746
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 3096,
+      "normalized_chars": 3063,
+      "estimated_reduction_percent": 1.0,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "non_breaking_spaces_normalized",
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "tika",
+  "selected_quality_score": 98.2,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 98.2,
+      "status": "success",
+      "word_count": 374,
+      "char_count": 3096,
+      "meaningful_char_count": 2637,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0568,
+      "readability_score": 91.9,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary",
+          "projects"
+        ]
+      },
+      "structure": {
+        "heading_count": 5,
+        "paragraph_count": 54,
+        "bullet_count": 10
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.9187,
+        "cleanliness": 1.0,
+        "non_duplication": 0.9432,
+        "completeness": 1.0,
+        "structure": 1.0
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 3096,
+    "normalized_chars": 3063,
+    "normalization_applied": true,
+    "normalization_steps": [
+      "non_breaking_spaces_normalized",
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "error": null,
+    "original_text": "ABHISHEK KARNIK\n Visualizer | Motion Graphics | Video Editor\n\n +91 9890175228\n\n07/2021 - 11/2021 \n\n07/2024 - Present \n\n11/2021 - 06/2024 \n\n02/2021 - 07/2021 \n\nA telecom service provider offering innovative solutions\n\nPune\n\nPune\n\nPune\n\nPune\n\nA company focused on creating engaging video content\n\nAn interactive lab specializing in media and technology\n\nabhishekkarnik123@gmail.com My Work:  Portfolio | Achievements\n\n01/2017 - 12/2020 \n\n01/2020 - 12/2020 \n\nPune\n\nPune\n\nPune, Maharashtra\n\nI am a Strategic Visualizer and Motion Designer with over 5 years of\nexperience, specializing in creating impactful visual narratives for global\nbrands. My expertise lies in blending creative conceptualization with\nperformance-driven execution, having successfully boosted campaign\nreach and audience engagement through innovative motion graphics \nand advanced post-production techniques\n\nSUMMARY\n\nEXPERIENCE\n\nSenior Visualizer - Motion Graphics\n\nSKILLS\n\nEDUCATION\nDiploma\n\nKEY ACHIEVEMENTS\n\n•Assisted in the production of dynamic video content and motion \ngraphics\n•Enhanced the visual storytelling of projects through high-quality \nediting\n\n•Increased audience engagement by directing motion graphics and \nlive-action editing projects.\n•Collaborated with creative teams to produce innovative visual \ncontent.\n\n•Conceptualized and created motion graphic designs for various \ncampaigns\n•Worked closely with clients to understand their visual content needs\n\nMarketing technologies company specializing in driving growth through\ncontent and technology\n•Transform complex marketing briefs into high-impact, motion-led \ncreatives for B2B and B2C growth campaigns\n•Developed video assets that contributed to a measurable increase in \ncampaign engagement and 'thumb-stop' rates (approx. 30-40%\nhook rate)\n•Leveraged AI-driven tools to reduce production turnaround time for\nrapid-response social content by 20% while maintaining premium\nbrand standards\n•Design and animate 'unforgettable' content ranging from technical \nexplainers to high-octane product reels\n\nImplemented a DaVinci Resolve-to-After\nEffects workflow that improved color- grading\nefficiency\n\nConsistently recognised by global clients for\ndelivering work that exceeds technological and\ncreative expectations\n\nSuccessfully executed visual projects for\nleading brands like BMW Techworks and\nCummins\n\n \n\nVideo and Motion graphic designer\n \n\nMotion graphic designer / Video Editor\n \n\nEditing Executive - Motion Graphics & Live-action\n \n\n \n\nBachelor’s Degree\n \n\nAntriksh Global\n\nArmoks Interactive Labs\n\nUniinfo Telecom Services\n\nAmura Marketing Technologies\n\nBrand Experience\n\nPipeline Optimisation\n\nGarware College of Commerce\n\nGlobal Client Recognition\n\nMAAC (Maya Academy of Advanced \nCinematics)\n\nVideo Editing Animation\n\nTypography Video Production\n\nStoryboarding Adobe After Effects\n\nAdobe Premiere Final Cut\n\nAdobe Illustrator Photoshop\n\nFigma AI Voiceover\n\nDaVinci Resolve HeyGen Gen AI\n\nhttps://drive.google.com/drive/folders/1BP7_RbVoTPA3FUkSAyT-2DfIBrt85EYf?usp=drive_link\nhttps://drive.google.com/file/d/15tm1SoRbyV42WcfwrJ8Bbn2e7JMREjQd/view",
+    "normalized_text": "Contact Information\nLocation: Pune, Maharashtra\n\nABHISHEK KARNIK\nVisualizer | Motion Graphics | Video Editor\n\n+91 9890175228\n\n07/2021 - 11/2021\n\n07/2024 - Present\n\n11/2021 - 06/2024\n\n02/2021 - 07/2021\n\nA telecom service provider offering innovative solutions\n\nPune\n\nPune\n\nPune\n\nPune\n\nA company focused on creating engaging video content\n\nAn interactive lab specializing in media and technology\n\nabhishekkarnik123@gmail.com My Work: Portfolio | Achievements\n\n01/2017 - 12/2020\n\n01/2020 - 12/2020\n\nPune\n\nPune\n\nPune, Maharashtra\n\nI am a Strategic Visualizer and Motion Designer with over 5 years of\nexperience, specializing in creating impactful visual narratives for global\nbrands. My expertise lies in blending creative conceptualization with\nperformance-driven execution, having successfully boosted campaign\nreach and audience engagement through innovative motion graphics\nand advanced post-production techniques\n\nSUMMARY\n\nEXPERIENCE\n\nSenior Visualizer - Motion Graphics\n\nSKILLS\n\nEDUCATION\nDiploma\n\nKEY ACHIEVEMENTS\n\n•Assisted in the production of dynamic video content and motion\ngraphics\n•Enhanced the visual storytelling of projects through high-quality\nediting\n\n•Increased audience engagement by directing motion graphics and\nlive-action editing projects.\n•Collaborated with creative teams to produce innovative visual\ncontent.\n\n•Conceptualized and created motion graphic designs for various\ncampaigns\n•Worked closely with clients to understand their visual content needs\n\nMarketing technologies company specializing in driving growth through\ncontent and technology\n•Transform complex marketing briefs into high-impact, motion-led\ncreatives for B2B and B2C growth campaigns\n•Developed video assets that contributed to a measurable increase in\ncampaign engagement and 'thumb-stop' rates (approx. 30-40%\nhook rate)\n•Leveraged AI-driven tools to reduce production turnaround time for\nrapid-response social content by 20% while maintaining premium\nbrand standards\n•Design and animate 'unforgettable' content ranging from technical\nexplainers to high-octane product reels\n\nImplemented a DaVinci Resolve-to-After\nEffects workflow that improved color- grading\nefficiency\n\nConsistently recognised by global clients for\ndelivering work that exceeds technological and\ncreative expectations\n\nSuccessfully executed visual projects for\nleading brands like BMW Techworks and\nCummins\n\nVideo and Motion graphic designer\n\nMotion graphic designer / Video Editor\n\nEditing Executive - Motion Graphics & Live-action\n\nBachelor’s Degree\n\nAntriksh Global\n\nArmoks Interactive Labs\n\nUniinfo Telecom Services\n\nAmura Marketing Technologies\n\nBrand Experience\n\nPipeline Optimisation\n\nGarware College of Commerce\n\nGlobal Client Recognition\n\nMAAC (Maya Academy of Advanced\nCinematics)\n\nVideo Editing Animation\n\nTypography Video Production\n\nStoryboarding Adobe After Effects\n\nAdobe Premiere Final Cut\n\nAdobe Illustrator Photoshop\n\nFigma AI Voiceover\n\nDaVinci Resolve HeyGen Gen AI\n\nhttps://drive.google.com/drive/folders/1BP7_RbVoTPA3FUkSAyT-2DfIBrt85EYf?usp=drive_link\nhttps://drive.google.com/file/d/15tm1SoRbyV42WcfwrJ8Bbn2e7JMREjQd/view"
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "ABHISHEK KARNIK",
+      "email": "abhishekkarnik123@gmail.com",
+      "phone": "+91 9890175228",
+      "location": "Pune, Maharashtra",
+      "summary": "I am a Strategic Visualizer and Motion Designer with over 5 years of experience, specializing in creating impactful visual narratives for global brands. My expertise lies in blending creative conceptualization with performance-driven execution, having successfully boosted campaign reach and audience engagement through innovative motion graphics and advanced post-production techniques",
+      "skills": {
+        "technical_skills": [
+          "Video Editing",
+          "Animation",
+          "Typography",
+          "Video Production",
+          "Storyboarding"
+        ],
+        "soft_skills": [],
+        "tools": [
+          "Adobe After Effects",
+          "Adobe Premiere",
+          "Final Cut",
+          "Adobe Illustrator",
+          "Photoshop",
+          "Figma",
+          "DaVinci Resolve",
+          "HeyGen",
+          "AI Voiceover",
+          "Gen AI"
+        ],
+        "taxonomy_skills": [],
+        "other_skills": []
+      },
+      "experience": [
+        {
+          "title": "Senior Visualizer - Motion Graphics",
+          "company": "Amura Marketing Technologies",
+          "location": "Pune",
+          "start_date": "07/2024",
+          "end_date": "Present",
+          "highlights": [
+            "Transform complex marketing briefs into high-impact, motion-led creatives for B2B and B2C growth campaigns",
+            "Developed video assets that contributed to a measurable increase in campaign engagement and 'thumb-stop' rates (approx. 30-40% hook rate)",
+            "Leveraged AI-driven tools to reduce production turnaround time for rapid-response social content by 20% while maintaining premium brand standards",
+            "Design and animate 'unforgettable' content ranging from technical explainers to high-octane product reels"
+          ]
+        },
+        {
+          "title": "Motion graphic designer / Video Editor",
+          "company": "Uniinfo Telecom Services",
+          "location": "Pune",
+          "start_date": "11/2021",
+          "end_date": "06/2024",
+          "highlights": [
+            "Conceptualized and created motion graphic designs for various campaigns",
+            "Worked closely with clients to understand their visual content needs"
+          ]
+        },
+        {
+          "title": "Video and Motion graphic designer",
+          "company": "Armoks Interactive Labs",
+          "location": "Pune",
+          "start_date": "07/2021",
+          "end_date": "11/2021",
+          "highlights": [
+            "Increased audience engagement by directing motion graphics and live-action editing projects.",
+            "Collaborated with creative teams to produce innovative visual content."
+          ]
+        },
+        {
+          "title": "Editing Executive - Motion Graphics & Live-action",
+          "company": "Antriksh Global",
+          "location": "Pune",
+          "start_date": "02/2021",
+          "end_date": "07/2021",
+          "highlights": [
+            "Assisted in the production of dynamic video content and motion graphics",
+            "Enhanced the visual storytelling of projects through high-quality editing"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "degree": "Bachelor’s Degree",
+          "institution": "Garware College of Commerce",
+          "location": "Pune",
+          "start_date": "01/2017",
+          "end_date": "12/2020"
+        },
+        {
+          "degree": "Diploma",
+          "institution": "MAAC (Maya Academy of Advanced Cinematics)",
+          "location": "Pune",
+          "start_date": "01/2020",
+          "end_date": "12/2020"
+        }
+      ],
+      "certifications": [],
+      "languages": [],
+      "links": [
+        "https://drive.google.com/drive/folders/1BP7_RbVoTPA3FUkSAyT-2DfIBrt85EYf?usp=drive_link",
+        "https://drive.google.com/file/d/15tm1SoRbyV42WcfwrJ8Bbn2e7JMREjQd/view"
+      ]
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 18952.11,
+    "usage": {
+      "completion_tokens": 2535,
+      "prompt_tokens": 1536,
+      "total_tokens": 4071,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1746
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "ABHISHEK KARNIK",
+    "email": "abhishekkarnik123@gmail.com",
+    "phone": "+91 9890175228",
+    "location": "Pune, Maharashtra",
+    "summary": "I am a Strategic Visualizer and Motion Designer with over 5 years of experience, specializing in creating impactful visual narratives for global brands. My expertise lies in blending creative conceptualization with performance-driven execution, having successfully boosted campaign reach and audience engagement through innovative motion graphics and advanced post-production techniques",
+    "skills": {
+      "technical_skills": [
+        "Video Editing",
+        "Animation",
+        "Typography",
+        "Video Production",
+        "Storyboarding"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "Adobe After Effects",
+        "Adobe Premiere",
+        "Final Cut",
+        "Adobe Illustrator",
+        "Photoshop",
+        "Figma",
+        "DaVinci Resolve",
+        "HeyGen",
+        "AI Voiceover",
+        "Gen AI"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Senior Visualizer - Motion Graphics",
+        "company": "Amura Marketing Technologies",
+        "location": "Pune",
+        "start_date": "07/2024",
+        "end_date": "Present",
+        "highlights": [
+          "Transform complex marketing briefs into high-impact, motion-led creatives for B2B and B2C growth campaigns",
+          "Developed video assets that contributed to a measurable increase in campaign engagement and 'thumb-stop' rates (approx. 30-40% hook rate)",
+          "Leveraged AI-driven tools to reduce production turnaround time for rapid-response social content by 20% while maintaining premium brand standards",
+          "Design and animate 'unforgettable' content ranging from technical explainers to high-octane product reels"
+        ]
+      },
+      {
+        "title": "Motion graphic designer / Video Editor",
+        "company": "Uniinfo Telecom Services",
+        "location": "Pune",
+        "start_date": "11/2021",
+        "end_date": "06/2024",
+        "highlights": [
+          "Conceptualized and created motion graphic designs for various campaigns",
+          "Worked closely with clients to understand their visual content needs"
+        ]
+      },
+      {
+        "title": "Video and Motion graphic designer",
+        "company": "Armoks Interactive Labs",
+        "location": "Pune",
+        "start_date": "07/2021",
+        "end_date": "11/2021",
+        "highlights": [
+          "Increased audience engagement by directing motion graphics and live-action editing projects.",
+          "Collaborated with creative teams to produce innovative visual content."
+        ]
+      },
+      {
+        "title": "Editing Executive - Motion Graphics & Live-action",
+        "company": "Antriksh Global",
+        "location": "Pune",
+        "start_date": "02/2021",
+        "end_date": "07/2021",
+        "highlights": [
+          "Assisted in the production of dynamic video content and motion graphics",
+          "Enhanced the visual storytelling of projects through high-quality editing"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor’s Degree",
+        "institution": "Garware College of Commerce",
+        "location": "Pune",
+        "start_date": "01/2017",
+        "end_date": "12/2020"
+      },
+      {
+        "degree": "Diploma",
+        "institution": "MAAC (Maya Academy of Advanced Cinematics)",
+        "location": "Pune",
+        "start_date": "01/2020",
+        "end_date": "12/2020"
+      }
+    ],
+    "certifications": [],
+    "languages": [],
+    "links": [
+      "https://drive.google.com/drive/folders/1BP7_RbVoTPA3FUkSAyT-2DfIBrt85EYf?usp=drive_link",
+      "https://drive.google.com/file/d/15tm1SoRbyV42WcfwrJ8Bbn2e7JMREjQd/view"
+    ]
+  },
+  "resume_json": {
+    "full_name": "ABHISHEK KARNIK",
+    "email": "abhishekkarnik123@gmail.com",
+    "phone": "+91 9890175228",
+    "location": "Pune, Maharashtra",
+    "summary": "I am a Strategic Visualizer and Motion Designer with over 5 years of experience, specializing in creating impactful visual narratives for global brands. My expertise lies in blending creative conceptualization with performance-driven execution, having successfully boosted campaign reach and audience engagement through innovative motion graphics and advanced post-production techniques",
+    "skills": {
+      "technical_skills": [
+        "Video Editing",
+        "Animation",
+        "Typography",
+        "Video Production",
+        "Storyboarding"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "Adobe After Effects",
+        "Adobe Premiere",
+        "Final Cut",
+        "Adobe Illustrator",
+        "Photoshop",
+        "Figma",
+        "DaVinci Resolve",
+        "HeyGen",
+        "AI Voiceover",
+        "Gen AI"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Senior Visualizer - Motion Graphics",
+        "company": "Amura Marketing Technologies",
+        "location": "Pune",
+        "start_date": "07/2024",
+        "end_date": "Present",
+        "highlights": [
+          "Transform complex marketing briefs into high-impact, motion-led creatives for B2B and B2C growth campaigns",
+          "Developed video assets that contributed to a measurable increase in campaign engagement and 'thumb-stop' rates (approx. 30-40% hook rate)",
+          "Leveraged AI-driven tools to reduce production turnaround time for rapid-response social content by 20% while maintaining premium brand standards",
+          "Design and animate 'unforgettable' content ranging from technical explainers to high-octane product reels"
+        ]
+      },
+      {
+        "title": "Motion graphic designer / Video Editor",
+        "company": "Uniinfo Telecom Services",
+        "location": "Pune",
+        "start_date": "11/2021",
+        "end_date": "06/2024",
+        "highlights": [
+          "Conceptualized and created motion graphic designs for various campaigns",
+          "Worked closely with clients to understand their visual content needs"
+        ]
+      },
+      {
+        "title": "Video and Motion graphic designer",
+        "company": "Armoks Interactive Labs",
+        "location": "Pune",
+        "start_date": "07/2021",
+        "end_date": "11/2021",
+        "highlights": [
+          "Increased audience engagement by directing motion graphics and live-action editing projects.",
+          "Collaborated with creative teams to produce innovative visual content."
+        ]
+      },
+      {
+        "title": "Editing Executive - Motion Graphics & Live-action",
+        "company": "Antriksh Global",
+        "location": "Pune",
+        "start_date": "02/2021",
+        "end_date": "07/2021",
+        "highlights": [
+          "Assisted in the production of dynamic video content and motion graphics",
+          "Enhanced the visual storytelling of projects through high-quality editing"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor’s Degree",
+        "institution": "Garware College of Commerce",
+        "location": "Pune",
+        "start_date": "01/2017",
+        "end_date": "12/2020"
+      },
+      {
+        "degree": "Diploma",
+        "institution": "MAAC (Maya Academy of Advanced Cinematics)",
+        "location": "Pune",
+        "start_date": "01/2020",
+        "end_date": "12/2020"
+      }
+    ],
+    "certifications": [],
+    "languages": [],
+    "links": [
+      "https://drive.google.com/drive/folders/1BP7_RbVoTPA3FUkSAyT-2DfIBrt85EYf?usp=drive_link",
+      "https://drive.google.com/file/d/15tm1SoRbyV42WcfwrJ8Bbn2e7JMREjQd/view"
+    ]
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 9.5639,
+    "quality_seconds": 0.2101,
+    "normalization_seconds": 0.0008,
+    "recovery_seconds": 6.6176,
+    "llm_seconds": 18.9543,
+    "total_seconds": 35.5246
+  },
+  "_stored_name": "008fa902-0224-4899-b0e0-ef7bb78ef05b_SHJ-5329_SHC-363823.pdf"
+}

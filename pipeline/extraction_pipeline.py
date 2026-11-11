@@ -1,8 +1,31 @@
 """Simple production extraction pipeline.
 
-DOCUMENT -> Tika + PyMuPDF + Docling (concurrent) -> Quality Evaluation
--> Best Extractor Selection -> Text Normalization -> One LLM Stage
+DOCUMENT -> Sequential Quality-Gated Extraction
+(Tika -> Quality Check -> STOP on PASS; otherwise PyMuPDF ->
+Quality Check -> STOP on PASS; otherwise Docling -> Quality Check;
+otherwise OCR) -> Best Extractor Selection (only when no extractor
+passed outright) -> Text Normalization -> One LLM Stage
 -> Validated Resume JSON.
+
+The quality gate is the project's existing QualityChecker with the
+configured ``quality_gate:`` thresholds from
+``extractor/config/extractor.yaml`` — the same checker, thresholds
+and PASS / WARNING / FAIL semantics the legacy chain's
+QualityGatePolicy uses:
+
+- **PASS** — accept immediately; every later extractor is SKIPPED
+  (never invoked, never counted as an attempt).
+- **WARNING** — held as a candidate; the next extractor is tried
+  (unless the warning's lowest filter score is at/above
+  ``warning_continue_below``, in which case it is accepted at once).
+- **FAIL** — rejected; the next extractor is tried. FAIL requires
+  Text Health or Reading Order below ``fail_below``; Completeness
+  alone can never cause FAIL.
+
+If no extractor passes outright, the existing selector picks the
+best-scoring executed candidate (``min_quality_threshold`` still
+applies); if none qualifies, the resume is failed/rejected exactly
+as before.
 """
 from __future__ import annotations
 
@@ -13,13 +36,52 @@ from typing import Any
 
 from .config import PipelineConfig, load_pipeline_config
 from .contact_recovery import recover_contact_information
-from .extractors import run_extractors
+from .extractors import (default_sequential_extractors,
+                         ordered_extractor_names, run_one_extractor)
 from .llm import LLMProcessor
 from .normalization import normalize_extracted_text
 from .quality import evaluate_extraction_quality
 from .selector import select_best_extractor
 
 logger = logging.getLogger(__name__)
+
+# Quality-gate thresholds — defaults identical to QualityGatePolicy;
+# the configured values are read from the SAME ``quality_gate:``
+# section of extractor/config/extractor.yaml the legacy chain uses.
+_GATE_DEFAULTS = {"fail_below": 50.0, "warn_below": 75.0,
+                  "warning_continue_below": 75.0}
+
+
+def _load_gate_thresholds() -> dict[str, float]:
+    thresholds = dict(_GATE_DEFAULTS)
+    try:
+        from extractor.manager import load_manager_config
+        gate = (load_manager_config() or {}).get("quality_gate") or {}
+        for key in thresholds:
+            if gate.get(key) is not None:
+                thresholds[key] = float(gate[key])
+        if gate.get("warning_continue_below") is None \
+                and gate.get("warn_below") is not None:
+            thresholds["warning_continue_below"] = thresholds["warn_below"]
+    except Exception:
+        logger.warning(
+            "Could not read quality_gate thresholds; using defaults",
+            exc_info=True)
+    return thresholds
+
+
+def _gate_status(report: Any, fail_below: float, warn_below: float) -> str:
+    """PASS / WARNING / FAIL for a QualityChecker report — the same
+    mapping as api.pipeline.quality_status_for / QualityGatePolicy:
+    FAIL only when Text Health or Reading Order is below fail_below;
+    WARNING when any filter is below warn_below; PASS otherwise."""
+    if report.text_health.score < fail_below \
+            or report.reading_order.score < fail_below:
+        return "FAIL"
+    if min(report.text_health.score, report.completeness.score,
+           report.reading_order.score) < warn_below:
+        return "WARNING"
+    return "PASS"
 
 
 def _default_llm_service() -> Any | None:
@@ -52,25 +114,159 @@ class ExtractionPipeline:
         else:
             self.llm_service = None
 
+    @staticmethod
+    def _gate_decision(res: dict[str, Any], *, checker: Any | None,
+                       thresholds: dict[str, float], document_id: str,
+                       attempt_number: int) -> dict[str, Any]:
+        """The quality gate's verdict for ONE executed extraction.
+
+        Returns {"status": PASS|WARNING|FAIL|None, "decision":
+        "accept"|"continue"|"reject", "reason": str}. Only a real
+        QualityChecker PASS (or a WARNING at/above the configured
+        continue threshold) accepts — a successful extraction or
+        non-empty text alone never qualifies.
+        """
+        name = res.get("extractor")
+        text = res.get("extracted_text") or ""
+        if res.get("status") != "success" or not text.strip():
+            return {
+                "status": "FAIL", "decision": "reject",
+                "reason": res.get("error")
+                or "Extraction failed or produced no usable text."}
+        if checker is None:
+            return {
+                "status": None, "decision": "continue",
+                "reason": "Quality Checker unavailable — no early-stop "
+                          "decision was made for this attempt."}
+        try:
+            report = checker.check(
+                text, document_id=document_id, source_tool=name,
+                attempt_id=f"attempt-{attempt_number}")
+        except Exception:
+            logger.exception(
+                "Quality Checker failed for gate attempt %s", name)
+            return {
+                "status": None, "decision": "continue",
+                "reason": "Quality Checker error — no early-stop "
+                          "decision was made for this attempt."}
+        status = _gate_status(report, thresholds["fail_below"],
+                              thresholds["warn_below"])
+        scores = (f"Text Health {report.text_health.score}, "
+                  f"Completeness {report.completeness.score}, "
+                  f"Reading Order {report.reading_order.score}")
+        if status == "PASS":
+            return {
+                "status": status, "decision": "accept",
+                "reason": f"Quality PASS ({scores}) — result accepted; "
+                          "fallback stopped."}
+        if status == "FAIL":
+            return {
+                "status": status, "decision": "reject",
+                "reason": f"Quality FAIL ({scores}) — Text Health or "
+                          "Reading Order below "
+                          f"{thresholds['fail_below']:g}; result rejected."}
+        lowest = min(report.text_health.score, report.completeness.score,
+                     report.reading_order.score)
+        if lowest >= thresholds["warning_continue_below"]:
+            return {
+                "status": status, "decision": "accept",
+                "reason": f"Quality WARNING ({scores}) accepted — lowest "
+                          "filter score is at/above the continue "
+                          "threshold "
+                          f"{thresholds['warning_continue_below']:g}."}
+        return {
+            "status": status, "decision": "continue",
+            "reason": f"Quality WARNING ({scores}) — result held as a "
+                      "candidate; trying the next extractor."}
+
     def run(self, file_path: str | Path, include_extractor_texts: bool = False) -> dict[str, Any]:
         total_started = time.perf_counter()
         cfg = self.config
 
-        # --- Extraction (concurrent) ---
-        t0 = time.perf_counter()
-        results = run_extractors(file_path, extractors=self.extractors, timeout_seconds=cfg.per_extractor_timeout_seconds)
-        extraction_seconds = time.perf_counter() - t0
+        # --- Extraction (sequential, quality-gated, early stopping) --
+        # Extractors run ONE AT A TIME in configured order. After each
+        # extraction the result goes through the existing quality
+        # validation (the deterministic scorer AND the real
+        # QualityChecker gate). A gate PASS accepts the extractor and
+        # STOPS the flow — later extractors are never invoked and are
+        # reported as skipped, not as attempts.
+        if self.extractors is not None:
+            extractor_map: dict[str, Any] = dict(self.extractors)
+        else:
+            extractor_map = default_sequential_extractors()
+        order = ordered_extractor_names(
+            extractor_map, preferred=list(cfg.tie_break_order or []))
+        thresholds = _load_gate_thresholds()
+        checker: Any | None = None
+        try:
+            from quality_checker import QualityChecker
+            checker = QualityChecker()
+        except Exception:
+            logger.exception(
+                "Quality Checker unavailable for the sequential gate; "
+                "early stopping is disabled for this run and selection "
+                "falls back to the quality-score selector")
 
-        # --- Quality evaluation ---
-        t0 = time.perf_counter()
+        results: list[dict[str, Any]] = []
         reports: dict[str, Any] = {}
-        for res in results:
-            name = res.get("extractor")
-            reports[name] = evaluate_extraction_quality(res, weights=cfg.effective_weights())
-        quality_seconds = time.perf_counter() - t0
+        gate_decisions: dict[str, dict[str, Any]] = {}
+        skipped: list[str] = []
+        accepted_name: str | None = None
+        extraction_seconds = 0.0
+        quality_seconds = 0.0
+        for position, name in enumerate(order):
+            t0 = time.perf_counter()
+            res = run_one_extractor(
+                name, extractor_map[name], file_path,
+                timeout_seconds=cfg.per_extractor_timeout_seconds)
+            extraction_seconds += time.perf_counter() - t0
+            results.append(res)
+
+            t0 = time.perf_counter()
+            reports[name] = evaluate_extraction_quality(
+                res, weights=cfg.effective_weights())
+            decision = self._gate_decision(
+                res, checker=checker, thresholds=thresholds,
+                document_id=Path(file_path).name,
+                attempt_number=position + 1)
+            quality_seconds += time.perf_counter() - t0
+            gate_decisions[name] = decision
+            if decision["decision"] == "accept":
+                accepted_name = name
+                skipped = order[position + 1:]
+                break
 
         # --- Selection ---
-        selection = select_best_extractor(results, reports, cfg)
+        if accepted_name is not None:
+            selection = {
+                "selected_extractor": accepted_name,
+                "selected_quality_score":
+                    reports[accepted_name].get("quality_score"),
+                "selection_reason":
+                    gate_decisions[accepted_name]["reason"]
+                    + f" Selected '{accepted_name}' with quality score "
+                      f"{reports[accepted_name].get('quality_score')}."
+                    + (f" Skipped (never executed): "
+                       f"{', '.join(skipped)}." if skipped else ""),
+                "status": "selected",
+            }
+        else:
+            # No extractor passed outright — the existing acceptance
+            # policy decides: the selector picks the best-scoring
+            # executed candidate (WARNING candidates included) when it
+            # meets the configured minimum threshold; otherwise the
+            # resume is failed/rejected as before.
+            selection = select_best_extractor(results, reports, cfg)
+            if selection.get("selected_extractor") is not None:
+                _sel = selection["selected_extractor"]
+                _gate = gate_decisions.get(_sel) or {}
+                if _gate.get("decision") == "continue":
+                    selection["selection_reason"] = (
+                        _gate["reason"]
+                        + " No extractor passed outright, so this "
+                          "candidate was selected as the best of the "
+                          "executed extractors. "
+                        + str(selection.get("selection_reason") or ""))
         selected_name = selection.get("selected_extractor")
         selected_score = selection.get("selected_quality_score")
         selection_reason = selection.get("selection_reason")
@@ -103,6 +299,9 @@ class ExtractionPipeline:
                 "selection_reason": selection_reason,
                 "extractor_reports": reports,
                 "extractor_results": extractor_results_out,
+                "skipped_extractors": skipped,
+                "gate_decisions": gate_decisions,
+                "extractor_order": order,
                 "original_text": None,
                 "normalized_text": None,
                 "normalization": {
@@ -199,6 +398,9 @@ class ExtractionPipeline:
             "selection_reason": selection_reason,
             "extractor_reports": reports,
             "extractor_results": extractor_results_out,
+            "skipped_extractors": skipped,
+            "gate_decisions": gate_decisions,
+            "extractor_order": order,
             "original_text": original_text,
             "normalized_text": normalized_text,
             "normalization": normalization_block,

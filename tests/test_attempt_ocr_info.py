@@ -129,10 +129,12 @@ def test_simple_pipeline_attempt_carries_tika_ocr_info(tmp_path):
     assert tika_ocr["ocr_tesseract_path"] == \
         "C:\\Program Files\\Tesseract-OCR"
     # PDF: ocr_used stays unknown (None) — never claimed without
-    # evidence. Extractors without OCR metadata keep ocr=None.
+    # evidence. Tika's text passes the quality gate, so the failing
+    # fallback extractors are SKIPPED under early stopping — they
+    # never execute and produce no attempts at all.
     assert tika_ocr["ocr_used"] is None
-    assert by_name["pymupdf"]["ocr"] is None
-    assert by_name["docling"]["ocr"] is None
+    assert set(by_name) == {"tika"}
+    assert record["skipped_extractors"] == ["pymupdf", "docling"]
 
 
 def test_backfill_lifts_ocr_info_for_stored_records():

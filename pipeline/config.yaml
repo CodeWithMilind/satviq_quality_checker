@@ -9,15 +9,20 @@
 min_quality_threshold: 60.0
 
 # EXTRACTION-ONLY safety limit (seconds): the maximum time to
-# WAIT for one extractor in the concurrent run. A stuck-process
+# WAIT for one extractor in the sequential run. A stuck-process
 # guard, deliberately generous so it never clips legitimate
 # extraction (Docling on a large PDF legitimately takes minutes).
 # This NEVER applies to Muse AI — Muse calls have no timeout.
 # Set to null to disable the guard entirely.
 per_extractor_timeout_seconds: 600.0
 
-# Deterministic tie-breaking order when two extractors score exactly
-# the same. Earlier in the list wins.
+# Execution order for the sequential quality-gated flow (Tika first,
+# then PyMuPDF, then Docling, then OCR) AND the deterministic
+# tie-breaking order when two executed extractors score exactly the
+# same. Earlier in the list wins. Extraction stops at the first
+# extractor whose text passes the Quality Checker gate (the
+# quality_gate thresholds in extractor/config/extractor.yaml);
+# later extractors are skipped, never executed.
 tie_break_order:
   - tika
   - pymupdf
