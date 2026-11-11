@@ -52,6 +52,28 @@ app = FastAPI(title="SATVIQ — Resume Intelligence", version="1.0.0")
 store.ensure_dirs()
 
 
+@app.on_event("startup")
+def _check_database() -> None:
+    """PostgreSQL is the primary store: verify the connection at boot
+    and log the result loudly. A failure here does not block boot —
+    the store raises a clear error on the first read/write instead —
+    but the console and log show the database state immediately."""
+    import logging
+    log = logging.getLogger(__name__)
+    try:
+        from . import db
+        status = db.check_connection()
+        if status["ok"]:
+            log.info("Database check: %s", status["detail"])
+            print(f"[SATVIQ] Database: {status['detail']}")
+        else:
+            log.error("Database check FAILED: %s", status["detail"])
+            print(f"[SATVIQ] WARNING — database unavailable: "
+                  f"{status['detail']}")
+    except Exception:  # noqa: BLE001 - startup check never blocks boot
+        log.exception("Database startup check raised")
+
+
 @app.middleware("http")
 async def _frontend_no_cache(request: Request, call_next):
     """Never let browsers heuristically cache the frontend.

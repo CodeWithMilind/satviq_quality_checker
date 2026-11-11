@@ -32,3 +32,6 @@ Pillow>=10,<12
 
 # Development / testing only:
 pytest>=8,<9
+
+# PostgreSQL mirror (schema V2) — only used when SATVIQ_DATABASE_URL is set
+psycopg[binary]>=3.2
