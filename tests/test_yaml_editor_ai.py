@@ -367,3 +367,316 @@ def test_api_endpoints(tmp_path, monkeypatch):
     blob = json.dumps(analytics.json()) + json.dumps(history.json())
     assert "test-key" not in blob
     assert "Competency Profile" not in blob
+
+
+# =======================================================================
+# Gating fix + response handling + per-resume records (Parts A/B/C/F)
+# =======================================================================
+import yaml_editor_ai.agent as agent_module
+from yaml_editor_ai.agent import _default_client, record_yaml_editor_block
+
+
+def test_empty_response_is_failure_with_reasoning_diagnosis(tmp_path):
+    # Production shape: 600-token budget fully consumed by reasoning,
+    # finish_reason=length, visible content empty. The agent makes
+    # ONE compact retry; it is also empty here, and the recorded
+    # failure must carry the SUMMED usage of both attempts.
+    usage = {"prompt_tokens": 847, "completion_tokens": 600,
+             "total_tokens": 1447,
+             "completion_tokens_details": {"reasoning_tokens": 600}}
+    calls = []
+
+    def client(instruction, user_text):
+        calls.append(user_text)
+        return {"text": "", "usage": dict(usage), "model": "m",
+                "duration_ms": 7331.0, "finish_reason": "length",
+                "content_shape": "string"}
+
+    agent = make_agent(tmp_path, client=client)
+    before = agent.store.read_active_text()
+    result = analyze(agent)
+    assert result["status"] == "failed"
+    assert result["error"].startswith("empty_response")
+    assert "reasoning tokens" in result["error"]
+    assert result["diagnostics"]["reasoning_tokens"] == 1200  # both calls
+    assert result["diagnostics"]["attempts"] == 2
+    assert result["input_tokens"] == 847 * 2
+    assert result["output_tokens"] == 600 * 2
+    assert len(calls) == 2, "exactly one compact retry, never more"
+    assert len(calls[1]) < len(calls[0]), "retry request is compact"
+    assert agent.store.read_active_text() == before
+    assert agent.store.version_numbers() == [1]
+
+
+def test_nonobject_json_is_failure(tmp_path):
+    agent = make_agent(tmp_path, reply_text='["skills"]')
+    result = analyze(agent)
+    assert result["status"] == "failed"
+    assert "not an object" in result["error"]
+
+
+def test_default_client_json_mode_and_extraction(tmp_path, monkeypatch):
+    cfg = EditorConfig(env={"YAML_EDITOR_API_KEY": "test-key"},
+                       file_config={"_store_root": str(tmp_path)})
+    sent = {}
+
+    def fake_post(url, payload, headers, timeout=None):
+        sent.update(payload)
+        return {"model": "muse-spark-1.3-contributor",
+                "choices": [{"finish_reason": "stop", "message": {
+                    "content": [{"type": "text", "text": '{"skills": []}'}]}}],
+                "usage": {"prompt_tokens": 3, "completion_tokens": 4}}
+
+    monkeypatch.setattr("muse_ai.client.http_post_json", fake_post)
+    reply = _default_client(cfg)("instruction", "user")
+    assert sent["response_format"] == {"type": "json_object"}
+    assert reply["text"] == '{"skills": []}'
+    assert reply["finish_reason"] == "stop"
+    assert reply["content_shape"] == "list"
+
+
+def test_default_client_retries_once_without_json_mode_on_400(tmp_path, monkeypatch):
+    from muse_ai.client import MuseError
+
+    cfg = EditorConfig(env={"YAML_EDITOR_API_KEY": "test-key"},
+                       file_config={"_store_root": str(tmp_path)})
+    calls = []
+
+    def fake_post(url, payload, headers, timeout=None):
+        calls.append("response_format" in payload)
+        if len(calls) == 1:
+            raise MuseError("bad request", status=400)
+        return {"choices": [{"finish_reason": "stop",
+                             "message": {"content": "{}"}}], "usage": {}}
+
+    monkeypatch.setattr("muse_ai.client.http_post_json", fake_post)
+    reply = _default_client(cfg)("instruction", "user")
+    assert calls == [True, False]  # exactly one compatibility retry
+    assert reply["text"] == "{}"
+
+
+def test_record_block_from_success_outcome(tmp_path):
+    agent = make_agent(tmp_path, reply_text=json.dumps(
+        {"skills": ["competency profile"]}))
+    outcome = analyze(agent)
+    record = {"resume_id": "r-1", "filename": "asha.pdf",
+              "attempts": [{"is_final_selected": True, "quality": {
+                  "completeness": {"score": 55.0,
+                                   "missing_sections": ["Skills"]}}}],
+              "final_extracted_text": LOW_TEXT}
+    block = record_yaml_editor_block(record, outcome, agent=agent)
+    assert block["status"] == "SUCCESS"
+    assert block["trigger"]["completeness_score"] == 55.0
+    assert block["trigger"]["threshold"] == 75.0
+    assert block["input_tokens"] == 812
+    assert block["output_tokens"] == 41
+    assert block["total_tokens"] == 853
+    assert block["keywords_added"] == {"skills": ["competency profile"]}
+    assert block["categories_modified"] == ["skills"]
+    assert block["yaml_version_before"] == "v001"
+    assert block["yaml_version_after"] == "v002"
+
+
+def test_record_block_for_skipped_outcome(tmp_path):
+    agent = make_agent(tmp_path)
+    outcome = analyze(agent, completeness_score=97.0)
+    block = record_yaml_editor_block({"resume_id": "r-9"}, outcome,
+                                     agent=agent)
+    assert block["status"] == "SKIPPED"
+    assert block["reason"] == "completeness_not_low"
+    assert block["total_tokens"] is None  # never invented
+    assert block["keywords_added"] == {}
+
+
+def test_new_endpoints_active_and_compare(tmp_path, monkeypatch):
+    import api.main as main_module
+    from fastapi.testclient import TestClient
+
+    agent = make_agent(tmp_path, reply_text=json.dumps(
+        {"skills": ["competency profile"]}))
+    analyze(agent)
+    monkeypatch.setattr(agent_module, "_default_agent", agent)
+    client = TestClient(main_module.app)
+    active = client.get("/api/yaml-editor/active")
+    assert active.status_code == 200
+    body = active.json()
+    assert body["version"] == "v002"
+    assert "competency profile" in body["content"]
+    assert body["total_keywords"] > 0
+    assert body["categories"]["skills"]["keyword_count"] >= 1
+    compare = client.get("/api/yaml-editor/compare",
+                         params={"from_version": "v001",
+                                 "to_version": "v002"})
+    assert compare.status_code == 200
+    data = compare.json()
+    assert data["added"] == {"skills": ["competency profile"]}
+    assert data["removed"] == {}
+    assert data["trigger"]["filename"] == "asha.pdf"
+    assert client.get("/api/yaml-editor/compare",
+                      params={"from_version": "v099",
+                              "to_version": "v002"}).status_code == 404
+
+
+# =======================================================================
+# Empty-response fix: budget, schema extraction, one compact retry
+# =======================================================================
+
+def test_completion_budget_is_1000_tokens(tmp_path):
+    agent = make_agent(tmp_path)
+    assert agent.config.max_output_tokens == 1000
+
+
+def test_empty_then_valid_json_retries_once_and_updates(tmp_path):
+    # Spec scenario: first reply empty (budget eaten by reasoning),
+    # the single compact retry returns valid JSON -> YAML updates.
+    replies = [
+        {"text": "", "usage": {"prompt_tokens": 847,
+                               "completion_tokens": 600,
+                               "completion_tokens_details":
+                                   {"reasoning_tokens": 600}},
+         "model": "muse-spark-1.3-contributor", "duration_ms": 7000.0,
+         "finish_reason": "length", "content_shape": "string"},
+        {"text": json.dumps({"skills": ["competency profile"]}),
+         "usage": dict(USAGE), "model": "muse-spark-1.3-contributor",
+         "duration_ms": 900.0, "finish_reason": "stop",
+         "content_shape": "string"},
+    ]
+    calls = []
+
+    def client(instruction, user_text):
+        calls.append((instruction, user_text))
+        return replies[len(calls) - 1]
+
+    agent = make_agent(tmp_path, client=client)
+    result = analyze(agent)
+    assert result["status"] == "success"
+    assert result["keywords_added"] == {"skills": ["competency profile"]}
+    assert result["yaml_version_after"] == "v002"
+    assert len(calls) == 2, "exactly one retry"
+    assert "no explanation" in calls[1][0]
+    assert len(calls[1][1]) < len(calls[0][1]), "retry sends compact text"
+    # Recorded usage is the true total of both calls.
+    assert result["input_tokens"] == 847 + USAGE["prompt_tokens"]
+    assert result["output_tokens"] == 600 + USAGE["completion_tokens"]
+    assert "competency profile" in agent.store.read_active_text()
+
+
+def test_malformed_json_is_not_retried(tmp_path):
+    calls = []
+
+    def client(instruction, user_text):
+        calls.append(user_text)
+        return {"text": "{not json", "usage": dict(USAGE), "model": "m",
+                "duration_ms": 5.0, "finish_reason": "stop",
+                "content_shape": "string"}
+
+    agent = make_agent(tmp_path, client=client)
+    before = agent.store.read_active_text()
+    result = analyze(agent)
+    assert result["status"] == "failed"
+    assert result["error"].startswith("invalid_json")
+    assert len(calls) == 1, "a non-empty malformed reply is never retried"
+    assert agent.store.read_active_text() == before
+
+
+def test_refusal_is_reported_as_refusal(tmp_path):
+    def client(instruction, user_text):
+        return {"text": "", "usage": dict(USAGE), "model": "m",
+                "duration_ms": 5.0, "finish_reason": "stop",
+                "content_shape": "list", "refusal": "cannot help"}
+
+    agent = make_agent(tmp_path, client=client)
+    before = agent.store.read_active_text()
+    result = analyze(agent)
+    assert result["status"] == "failed"
+    assert result["error"].startswith("refusal")
+    assert result["diagnostics"]["refusal"] is True
+    assert agent.store.read_active_text() == before
+
+
+def test_default_client_extracts_typed_parts_and_refusal(tmp_path, monkeypatch):
+    cfg = EditorConfig(env={"YAML_EDITOR_API_KEY": "test-key"},
+                       file_config={"_store_root": str(tmp_path)})
+    sent = {}
+
+    def fake_post(url, payload, headers, timeout=None):
+        sent.update(payload)
+        return {"model": "muse-spark-1.3-contributor",
+                "choices": [{"finish_reason": "stop", "message": {
+                    "content": [
+                        {"type": "reasoning", "text": "hidden"},
+                        {"type": "text", "text": '{"skills": '},
+                        {"type": "text", "text": '["x"]}'},
+                        {"type": "tool_calls", "text": "ignore me"},
+                    ]}}],
+                "usage": {"prompt_tokens": 3, "completion_tokens": 4}}
+
+    monkeypatch.setattr("muse_ai.client.http_post_json", fake_post)
+    reply = _default_client(cfg)("instruction", "user")
+    assert sent["max_completion_tokens"] == 1000
+    assert reply["text"] == '{"skills": ["x"]}'  # text parts only
+    assert reply["refusal"] is None
+
+    def fake_post_refusal(url, payload, headers, timeout=None):
+        return {"choices": [{"finish_reason": "stop", "message": {
+                    "content": [{"type": "refusal",
+                                 "refusal": "I cannot help with that."}]}}],
+                "usage": {}}
+
+    monkeypatch.setattr("muse_ai.client.http_post_json", fake_post_refusal)
+    reply = _default_client(cfg)("instruction", "user")
+    assert reply["text"] == ""
+    assert reply["refusal"] == "I cannot help with that."
+
+
+# =======================================================================
+# Reasoning-effort fix: default "high" reasoning ate the whole budget
+# =======================================================================
+
+def test_reasoning_effort_defaults_to_minimal(tmp_path):
+    agent = make_agent(tmp_path)
+    assert agent.config.reasoning_effort == "minimal"
+
+
+def test_default_client_sends_reasoning_effort(tmp_path, monkeypatch):
+    cfg = EditorConfig(env={"YAML_EDITOR_API_KEY": "test-key"},
+                       file_config={"_store_root": str(tmp_path)})
+    sent = {}
+
+    def fake_post(url, payload, headers, timeout=None):
+        sent.update(payload)
+        return {"choices": [{"finish_reason": "stop",
+                             "message": {"content": "{}"}}], "usage": {}}
+
+    monkeypatch.setattr("muse_ai.client.http_post_json", fake_post)
+    reply = _default_client(cfg)("instruction", "user")
+    assert sent["reasoning_effort"] == "minimal"
+    assert sent["response_format"] == {"type": "json_object"}
+    assert sent["max_completion_tokens"] == 1000
+    assert reply["text"] == "{}"
+
+
+def test_default_client_400_fallback_drops_params_one_at_a_time(
+        tmp_path, monkeypatch):
+    # Endpoint rejects reasoning_effort but accepts response_format:
+    # the fallback must drop response_format first, fail again, then
+    # drop reasoning_effort and succeed — never dropping both at once
+    # on the first failure.
+    from muse_ai.client import MuseError
+
+    cfg = EditorConfig(env={"YAML_EDITOR_API_KEY": "test-key"},
+                       file_config={"_store_root": str(tmp_path)})
+    seen = []
+
+    def fake_post(url, payload, headers, timeout=None):
+        seen.append((("response_format" in payload),
+                     ("reasoning_effort" in payload)))
+        if "reasoning_effort" in payload:
+            raise MuseError("bad request", status=400)
+        return {"choices": [{"finish_reason": "stop",
+                             "message": {"content": "{}"}}], "usage": {}}
+
+    monkeypatch.setattr("muse_ai.client.http_post_json", fake_post)
+    reply = _default_client(cfg)("instruction", "user")
+    assert seen == [(True, True), (False, True), (False, False)]
+    assert reply["text"] == "{}"

@@ -67,6 +67,21 @@ WARN_TEXT = (
 
 FAIL_TEXT = "\ufffd" * 500
 
+# Mixed good lines + fragmented lines: Text Health 100 / Reading
+# Order 60 against the real QualityChecker — a genuine TECHNICAL
+# warning (Reading Order between fail_below 50 and
+# warning_continue_below 75), unlike WARN_TEXT whose only problem is
+# unfamiliar sections. The gate must CONTINUE on this, not accept.
+_TECH_WORDS = ("python developer building practical backend systems "
+               "with fastapi sql docker and data pipelines for real "
+               "product teams across india").split()
+_TECH_GOOD_LINE = ("Jane Doe builds practical backend systems with "
+                   "fastapi and sql, designs data pipelines, writes "
+                   "tests and documents her work.")
+TECH_WARN_TEXT = "\n".join(
+    [_TECH_GOOD_LINE] * 4
+    + [" ".join(_TECH_WORDS[i:i + 3]) for i in range(0, 45, 3)])
+
 VALID_JSON_STR = json.dumps({
     "full_name": "Jane Doe",
     "email": "jane.doe@example.com",
@@ -224,7 +239,11 @@ def test_all_extractors_fail_is_rejected(dummy_pdf):
     assert result["llm"]["status"] == "skipped"
 
 
-# --- WARNING is a candidate, not a PASS: fallback continues ----------
+# --- Completeness-only WARNING accepts immediately (Part A fix) -------
+# WARN_TEXT has Text Health 100 / Reading Order 100 and low
+# Completeness (prose, no resume sections): the text is perfectly
+# readable, so extraction MUST stop at Tika — completeness is the
+# YAML Editor AI's concern, never a reason to burn fallback time.
 def test_warning_continues_to_next_extractor(dummy_pdf):
     log: list = []
     result = _run({
@@ -232,26 +251,31 @@ def test_warning_continues_to_next_extractor(dummy_pdf):
         "pymupdf": RecordingExtractor("pymupdf", PASS_TEXT, log=log),
         "docling": RecordingExtractor("docling", PASS_TEXT, log=log),
     }, dummy_pdf)
-    assert log == ["tika", "pymupdf"]
+    assert log == ["tika"]
     assert result["gate_decisions"]["tika"]["status"] == "WARNING"
-    assert result["gate_decisions"]["tika"]["decision"] == "continue"
-    assert result["selected_extractor"] == "pymupdf"
+    assert result["gate_decisions"]["tika"]["decision"] == "accept"
+    assert "Completeness only" in result["gate_decisions"]["tika"]["reason"]
+    assert result["selected_extractor"] == "tika"
+    assert result["skipped_extractors"] == ["pymupdf", "docling"]
 
 
 def test_warning_candidate_selected_when_nothing_passes(dummy_pdf):
+    # A TECHNICAL warning (garbled order -> low technical scores)
+    # still continues the chain and is held as a candidate; when
+    # nothing passes outright the selector may pick it as best.
     log: list = []
     result = _run({
-        "tika": RecordingExtractor("tika", WARN_TEXT, log=log),
+        "tika": RecordingExtractor("tika", TECH_WARN_TEXT, log=log),
         "pymupdf": RecordingExtractor("pymupdf", "", success=False,
                                       error="pymupdf boom", log=log),
         "docling": RecordingExtractor("docling", FAIL_TEXT, log=log),
     }, dummy_pdf)
     assert log == ["tika", "pymupdf", "docling"]
-    # Existing acceptance policy: the best executed candidate at/above
-    # the configured minimum quality threshold is selected.
-    assert result["selected_extractor"] == "tika"
-    assert "best of the executed extractors" in (
-        result["selection_reason"] or "")
+    assert result["gate_decisions"]["tika"]["decision"] == "continue"
+    # The fragmented candidate's deterministic score is below the
+    # selector threshold too, so nothing is selected — the point of
+    # this scenario is the CONTINUE decision, not the final pick.
+    assert result["selected_extractor"] is None
 
 
 # --- Dashboard/record accuracy via the API record builder ------------

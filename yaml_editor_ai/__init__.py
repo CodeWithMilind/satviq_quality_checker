@@ -21,6 +21,10 @@ Independence guarantees:
 
 from __future__ import annotations
 
-from .agent import YamlEditorAgent, get_default_agent, maybe_improve_from_record
+from .agent import (YamlEditorAgent, get_default_agent,
+                    maybe_improve_from_record, record_yaml_editor_block,
+                    yaml_editor_block_for_record)
 
-__all__ = ["YamlEditorAgent", "get_default_agent", "maybe_improve_from_record"]
+__all__ = ["YamlEditorAgent", "get_default_agent",
+           "maybe_improve_from_record", "record_yaml_editor_block",
+           "yaml_editor_block_for_record"]

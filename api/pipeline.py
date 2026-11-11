@@ -166,13 +166,13 @@ class QualityGatePolicy:
     and decided on its actual status:
 
     - **PASS** — accept immediately; fallback stops.
-    - **WARNING** — the result is held as a *candidate* (its text and
-      quality report are kept) and the next extractor is tried, when
-      the warning is significant under the configured policy: the
-      lowest filter score is below ``warning_continue_below``
-      (default: the WARNING threshold itself, so any WARNING
-      continues). A WARNING whose lowest score is at/above that
-      threshold is accepted immediately.
+    - **WARNING** — held as a *candidate* and the next extractor is
+      tried only when a TECHNICAL filter (Text Health / Reading
+      Order) makes the warning significant under the configured
+      policy. A WARNING caused by Completeness alone is accepted
+      immediately: Text Health and Reading Order pass, and missing
+      resume sections describe the resume's content, not extraction
+      quality — Completeness never triggers extractor fallback.
     - **FAIL** — reject and try the next extractor. FAIL requires
       Text Health or Reading Order below ``fail_below``; missing
       resume sections (Completeness) alone can never cause FAIL.
@@ -248,6 +248,36 @@ class QualityGatePolicy:
                 f"reading_order={scores[2]:.1f} "
                 f"(FAIL when text_health or reading_order < {self.fail_below:.0f}). "
                 "Trying the next fallback extractor."
+            )
+            # A FAIL is rejected, but its text is still the best
+            # available evidence if every extractor fails technically:
+            # hold it as a fallback candidate so best_candidate_result
+            # can nominate the least-broken text instead of returning
+            # nothing. (Pre-existing behaviour: FAIL extractions such
+            # as CORRUPT_TEXT were held this way; the candidate pool
+            # therefore contains WARNING holds and FAIL rejects.)
+            self.candidates.append({
+                "extractor_name": result.extractor_name,
+                "result": result,
+                "report": report,
+                "status": status,
+            })
+        elif (scores[1] < self.warn_below
+                and min(scores[0], scores[2]) >= self.warn_below):
+            # Extraction-only gating (same rule as the simple pipeline):
+            # Text Health and Reading Order pass and the WARNING comes
+            # from Completeness alone. Completeness describes the
+            # resume's content, not extraction quality, so it never
+            # triggers extractor fallback.
+            decision, accepted = "accept", True
+            reason = (
+                "Extraction accepted "
+                f"(text_health={scores[0]:.1f}, "
+                f"completeness={scores[1]:.1f}, "
+                f"reading_order={scores[2]:.1f}) — Text Health and "
+                "Reading Order pass; the WARNING is Completeness only, "
+                "which never triggers extractor fallback. "
+                "Fallback stopped."
             )
         elif lowest >= self.warning_continue_below:
             decision, accepted = "accept", True
@@ -1653,20 +1683,28 @@ def _yaml_editor_hook(record: dict[str, Any]) -> None:
     Runs AFTER the final extractor has been selected and the record
     is complete. The agent itself decides whether the record
     qualifies (low completeness + usable text + not already analysed
-    for the current YAML version + configured). Fully guarded: any
-    failure is logged inside the agent module and can never affect
-    the record or the request. The record's stored quality scores
-    are never modified — accepted keywords apply to FUTURE resumes.
+    for the current YAML version + configured). The structured
+    outcome is stored on the record as ``record["yaml_editor"]``
+    (Part C) so the Resume Details page can show exactly what the
+    agent did — the outcome was previously computed and DISCARDED.
+    Fully guarded: any failure is logged inside the agent module and
+    can never affect the record's processing result or the request.
+    The record's stored quality scores are never modified — accepted
+    keywords apply to FUTURE resumes.
     """
     try:
-        from yaml_editor_ai import maybe_improve_from_record
+        from yaml_editor_ai import (maybe_improve_from_record,
+                                    record_yaml_editor_block)
 
         outcome = maybe_improve_from_record(record)
+        record["yaml_editor"] = record_yaml_editor_block(record, outcome)
         if outcome.get("status") not in ("skipped",):
             logger.info("YAML Editor AI for resume_id=%s: %s",
                         record.get("resume_id"), outcome.get("status"))
     except Exception:
         logger.exception("YAML Editor AI hook failed (record unaffected)")
+        record.setdefault("yaml_editor", {
+            "status": "SKIPPED", "reason": "internal_error"})
 
 
 def process_resume_file_simple(file_path: str | Path, *, resume_id: str,

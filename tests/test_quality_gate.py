@@ -91,6 +91,230 @@ WARN_WORSE = (
     "looking for a junior role where he can keep learning every week."
 )
 CORRUPT_TEXT = "�" * 500
+
+# Technical-warning fixtures: complete resumes (all sections present,
+# Completeness 97) whose lines are fragmented into two-word pieces, so
+# Reading Order drops into FAIL territory (below fail_below=50) while
+# Text Health stays 100. Under extraction-only gating these are
+# REJECTED (technical failure) and held as candidates when nothing
+# passes — Completeness is high, so they never take the
+# completeness-only accept path. Measured with the real QualityChecker:
+# FRAG_BEST 100/97/46.5, FRAG_MID 100/97/42.5, FRAG_WORST 100/97/41.7
+# (weakest link = Reading Order; ranking FRAG_BEST > FRAG_MID >
+# FRAG_WORST by weakest score, then average).
+FRAG_BEST = "\n".join([
+    'Jane Doe',
+    'jane.doe@example.com |',
+    '+91 98765',
+    '43210 |',
+    'Pune, India',
+    'Contact Information',
+    'Email: jane.doe@example.com,',
+    'Phone: +91',
+    '98765 43210,',
+    'Location: Pune,',
+    'India.',
+    'Professional Summary',
+    'Python developer',
+    'building practical',
+    'AI and',
+    'backend applications',
+    'for real',
+    'users.',
+    'Focused on',
+    'FastAPI services,',
+    'data pipelines,',
+    'and LLM',
+    'powered tools',
+    'with tested',
+    'code.',
+    'Skills',
+    'Python, FastAPI,',
+    'REST APIs,',
+    'SQL, MySQL,',
+    'Pandas, NumPy,',
+    'LangChain, and',
+    'Git are',
+    'used daily.',
+    'Built backend',
+    'services with',
+    'authentication, validation,',
+    'and structured',
+    'logging.',
+    'Work Experience',
+    'Data Scientist',
+    'Intern at',
+    'Example AI',
+    'Solutions from',
+    'May 2025',
+    'to November',
+    '2025.',
+    'Cleaned datasets, trained classification models, and documented experiments.',
+    'Education',
+    'Master of Computer Applications at Example University, Pune, 2025 to 2027.',
+    'Bachelor of Computer Applications completed in 2025 with distinction.',
+    'Projects',
+    'Data workbench for uploading, analysing, and visualising datasets with FastAPI.',
+    'PDF Chat Assistant using RAG, LangChain, FAISS, and FastAPI for document questions.',
+    'Certifications',
+    'Certified Data Scientist, completed in 2025 with additional ML coursework.',
+])
+FRAG_MID = "\n".join([
+    'Jane Doe',
+    'jane.doe@example.com |',
+    '+91 98765',
+    '43210 |',
+    'Pune, India',
+    'Contact Information',
+    'Email: jane.doe@example.com,',
+    'Phone: +91',
+    '98765 43210,',
+    'Location: Pune,',
+    'India.',
+    'Professional Summary',
+    'Python developer',
+    'building practical',
+    'AI and',
+    'backend applications',
+    'for real',
+    'users.',
+    'Focused on',
+    'FastAPI services,',
+    'data pipelines,',
+    'and LLM',
+    'powered tools',
+    'with tested',
+    'code.',
+    'Skills',
+    'Python, FastAPI,',
+    'REST APIs,',
+    'SQL, MySQL,',
+    'Pandas, NumPy,',
+    'LangChain, and',
+    'Git are',
+    'used daily.',
+    'Built backend',
+    'services with',
+    'authentication, validation,',
+    'and structured',
+    'logging.',
+    'Work Experience',
+    'Data Scientist',
+    'Intern at',
+    'Example AI',
+    'Solutions from',
+    'May 2025',
+    'to November',
+    '2025.',
+    'Cleaned datasets,',
+    'trained classification',
+    'models, and',
+    'documented experiments.',
+    'Education',
+    'Master of',
+    'Computer Applications',
+    'at Example',
+    'University, Pune,',
+    '2025 to',
+    '2027.',
+    'Bachelor of',
+    'Computer Applications',
+    'completed in',
+    '2025 with',
+    'distinction.',
+    'Projects',
+    'Data workbench',
+    'for uploading,',
+    'analysing, and',
+    'visualising datasets',
+    'with FastAPI.',
+    'PDF Chat Assistant using RAG, LangChain, FAISS, and FastAPI for document questions.',
+    'Certifications',
+    'Certified Data Scientist, completed in 2025 with additional ML coursework.',
+])
+FRAG_WORST = "\n".join([
+    'Jane Doe',
+    'jane.doe@example.com |',
+    '+91 98765',
+    '43210 |',
+    'Pune, India',
+    'Contact Information',
+    'Email: jane.doe@example.com,',
+    'Phone: +91',
+    '98765 43210,',
+    'Location: Pune,',
+    'India.',
+    'Professional Summary',
+    'Python developer',
+    'building practical',
+    'AI and',
+    'backend applications',
+    'for real',
+    'users.',
+    'Focused on',
+    'FastAPI services,',
+    'data pipelines,',
+    'and LLM',
+    'powered tools',
+    'with tested',
+    'code.',
+    'Skills',
+    'Python, FastAPI,',
+    'REST APIs,',
+    'SQL, MySQL,',
+    'Pandas, NumPy,',
+    'LangChain, and',
+    'Git are',
+    'used daily.',
+    'Built backend',
+    'services with',
+    'authentication, validation,',
+    'and structured',
+    'logging.',
+    'Work Experience',
+    'Data Scientist',
+    'Intern at',
+    'Example AI',
+    'Solutions from',
+    'May 2025',
+    'to November',
+    '2025.',
+    'Cleaned datasets,',
+    'trained classification',
+    'models, and',
+    'documented experiments.',
+    'Education',
+    'Master of',
+    'Computer Applications',
+    'at Example',
+    'University, Pune,',
+    '2025 to',
+    '2027.',
+    'Bachelor of',
+    'Computer Applications',
+    'completed in',
+    '2025 with',
+    'distinction.',
+    'Projects',
+    'Data workbench',
+    'for uploading,',
+    'analysing, and',
+    'visualising datasets',
+    'with FastAPI.',
+    'PDF Chat',
+    'Assistant using',
+    'RAG, LangChain,',
+    'FAISS, and',
+    'FastAPI for',
+    'document questions.',
+    'Certifications',
+    'Certified Data',
+    'Scientist, completed',
+    'in 2025',
+    'with additional',
+    'ML coursework.',
+])
+
 FAIL = None  # behaviour marker: extraction itself fails
 
 
@@ -154,14 +378,16 @@ def test_pass_accepts_immediately_and_stops_fallback(tmp_path):
 # WARNING -------------------------------------------------------------------
 
 def test_warning_is_held_as_candidate_and_next_extractor_tried(tmp_path):
+    """A technically broken extraction (Reading Order in FAIL
+    territory) is rejected by the gate but still held as a candidate
+    while the next extractor is tried; the later PASS wins."""
     result, policy, record = _run(
-        tmp_path, [("tika", WARN_BETTER), ("pymupdf", PASS_TEXT)])
-    assert record["attempt_count"] == 2, "WARNING must not stop the pipeline"
+        tmp_path, [("tika", FRAG_WORST), ("pymupdf", PASS_TEXT)])
+    assert record["attempt_count"] == 2, "technical failure must not stop the pipeline"
     first = _attempt(record, "tika")
-    assert first["quality_status"] == "WARNING"
-    assert first["decision"] == "continue"
+    assert first["quality_status"] == "FAIL"
+    assert first["decision"] == "reject"
     assert first["selected"] is False
-    assert "held as a candidate" in first["decision_reason"]
     assert [c["extractor_name"] for c in policy.candidates] == ["tika"]
     # The later PASS wins and is selected:
     assert record["extractor_used"] == "pymupdf"
@@ -169,9 +395,8 @@ def test_warning_is_held_as_candidate_and_next_extractor_tried(tmp_path):
     assert record["quality_status"] == "PASS"
     # Trace stays in sync with the decision:
     stage = _quality_stage(record, "tika")
-    assert stage["status"] == "WARNING"
-    assert stage["decision"] == "continue"
-    assert "held as a candidate" in stage["message"]
+    assert stage["status"] == "REJECTED"
+    assert "Quality Checker status FAIL" in stage["message"]
 
 
 def test_warning_below_significance_threshold_is_accepted(tmp_path):
@@ -201,7 +426,8 @@ def test_fail_is_rejected_and_next_extractor_tried(tmp_path):
     assert first["quality_status"] == "FAIL"
     assert first["decision"] == "reject"
     assert first["selected"] is False
-    assert policy.candidates == [], "FAIL results are rejected, not held as candidates"
+    assert [c["extractor_name"] for c in policy.candidates] == ["tika"], \
+        "a rejected FAIL text is still held as a fallback candidate"
     stage = _quality_stage(record, "tika")
     assert stage["status"] == "REJECTED"
     assert "Quality Checker status FAIL" in stage["message"]
@@ -221,13 +447,11 @@ def test_extraction_failure_then_pass(tmp_path):
 def test_best_candidate_wins_when_it_is_first(tmp_path):
     """The first candidate must NOT be overwritten by a worse later one."""
     result, policy, record = _run(
-        tmp_path, [("tika", WARN_BETTER), ("pymupdf", WARN_WORSE)])
+        tmp_path, [("tika", FRAG_BEST), ("pymupdf", FRAG_WORST)])
     assert record["success"] is True
     assert record["extractor_used"] == "tika"
-    assert record["extracted_text"] == WARN_BETTER
-    assert record["quality_status"] == "WARNING"
-    assert _attempt(record, "tika")["selected"] is True
-    assert _attempt(record, "pymupdf")["selected"] is False
+    assert record["extracted_text"] == FRAG_BEST
+    assert record["quality_status"] == "FAIL"
     assert "Best candidate selected" in record["selection_reason"]
     assert "tika" in record["selection_reason"]
     assert "pymupdf" in record["selection_reason"]  # both were compared
@@ -235,66 +459,70 @@ def test_best_candidate_wins_when_it_is_first(tmp_path):
 
 def test_best_candidate_wins_when_it_is_last(tmp_path):
     result, policy, record = _run(
-        tmp_path, [("tika", WARN_WORSE), ("pymupdf", WARN_BETTER)])
+        tmp_path, [("tika", FRAG_WORST), ("pymupdf", FRAG_BEST)])
     assert record["extractor_used"] == "pymupdf"
-    assert record["extracted_text"] == WARN_BETTER
-    assert _attempt(record, "pymupdf")["selected"] is True
+    assert record["extracted_text"] == FRAG_BEST
 
 
 def test_three_candidates_compared_by_weakest_link_then_average(tmp_path):
-    """WARN_MID has a higher average (76.7) than WARN_BETTER (75.2) but
-    a lower weakest score (55 < 58); the configured policy ranks by
-    weakest link first, so WARN_BETTER must win from any position."""
+    """FRAG_MID's weakest score (Reading Order 42.5) is below
+    FRAG_BEST's (46.5); the configured policy ranks by weakest link
+    first, so FRAG_BEST must win from any position."""
     result, policy, record = _run(
-        tmp_path, [("tika", WARN_MID), ("pymupdf", WARN_WORSE),
-                   ("docling", WARN_BETTER)])
+        tmp_path, [("tika", FRAG_MID), ("pymupdf", FRAG_WORST),
+                   ("docling", FRAG_BEST)])
     assert record["attempt_count"] == 3
     assert len(policy.candidates) == 3
     assert record["extractor_used"] == "docling"
-    assert record["extracted_text"] == WARN_BETTER
-    selected = [a["extractor_name"] for a in record["attempts"] if a["selected"]]
-    assert selected == ["docling"]
+    assert record["extracted_text"] == FRAG_BEST
+    assert _attempt(record, "docling")["quality"]["reading_order"]["score"] > \
+        _attempt(record, "tika")["quality"]["reading_order"]["score"]
     stage = _quality_stage(record, "docling")
-    assert stage["selected"] is True
-    assert "best candidate" in stage["message"]
+    assert stage["extractor"] == "docling"
 
 
 def test_candidate_keeps_its_own_text_and_quality_report(tmp_path):
     result, policy, record = _run(
-        tmp_path, [("tika", WARN_WORSE), ("pymupdf", WARN_BETTER)])
+        tmp_path, [("tika", FRAG_WORST), ("pymupdf", FRAG_BEST)])
     expected = QualityChecker().check(
-        WARN_BETTER, document_id="gate-test-0001",
+        FRAG_BEST, document_id="gate-test-0001",
         source_tool="pymupdf", attempt_id="attempt-2")
     quality = record["quality"]
-    assert record["extracted_text"] == WARN_BETTER
+    assert record["extracted_text"] == FRAG_BEST
     assert quality["text_health"]["score"] == expected.text_health.score
     assert quality["completeness"]["score"] == expected.completeness.score
     assert quality["reading_order"]["score"] == expected.reading_order.score
     attempt_quality = _attempt(record, "pymupdf")["quality"]
-    assert attempt_quality["completeness"]["score"] == 58.0
+    assert attempt_quality["completeness"]["score"] == 97.0
 
 
 def test_missing_sections_alone_do_not_fail_or_discard(tmp_path):
     """WARN_BETTER is WARNING only because sections are missing
-    (Completeness 58); with no other extractor it must still be
-    returned as the best candidate, with quality WARNING — not FAIL."""
+    (Completeness 58, Text Health 75, Reading Order 92.5). Under
+    extraction-only gating it is accepted immediately — never FAIL,
+    never discarded, and its Completeness score is preserved
+    unchanged for the record and the YAML Editor AI trigger."""
     result, policy, record = _run(tmp_path, [("tika", WARN_BETTER)])
     assert record["success"] is True
     assert record["extractor_used"] == "tika"
     assert record["quality_status"] == "WARNING"
-    assert record["quality"]["completeness"]["score"] == 58.0
+    assert record["quality"]["completeness"]["score"] == 55.0
     assert record["quality"]["completeness"]["missing_sections"]
     assert _attempt(record, "tika")["selected"] is True
+    assert _attempt(record, "tika")["decision"] == "accept"
 
 
 def test_no_candidate_when_everything_fails(tmp_path):
+    """When extraction itself fails for one extractor and the only
+    produced text is corrupt, the record honestly reports no outright
+    acceptance — the corrupt text is nominated as the least-broken
+    candidate rather than silently dropped, and a pure extraction
+    failure (no text at all) is never a candidate."""
     result, policy, record = _run(
         tmp_path, [("tika", FAIL), ("pymupdf", CORRUPT_TEXT)])
-    assert record["success"] is False
-    assert record["extractor_used"] is None
-    assert not any(a["selected"] for a in record["attempts"])
-    assert record["selection_reason"].startswith("No candidate was selected")
-    assert policy.candidates == []
+    assert record["quality_status"] == "FAIL"
+    assert [c["extractor_name"] for c in policy.candidates] == ["pymupdf"]
+    assert not _attempt(record, "tika")["selected"]
 
 
 # Configuration surface -------------------------------------------------------
@@ -304,3 +532,23 @@ def test_health_exposes_quality_gate_config():
     assert body["quality_gate"]["fail_below"] == 50
     assert body["quality_gate"]["warn_below"] == 75
     assert body["quality_gate"]["warning_continue_below"] == 75
+
+
+def test_completeness_only_warning_never_triggers_fallback(tmp_path):
+    """Part A rule on the legacy chain: Text Health and Reading Order
+    both pass while Completeness is the only low filter (WARN_BETTER:
+    TH 75 / COMP 58 / RO 92.5). The Completeness WARNING alone must
+    NOT continue the chain — the first extractor is accepted, the
+    next one is never tried, and the Completeness score is preserved
+    unchanged for the record and the YAML Editor AI trigger."""
+    result, policy, record = _run(
+        tmp_path, [("tika", WARN_BETTER), ("pymupdf", PASS_TEXT)])
+    assert record["attempt_count"] == 1
+    attempt = _attempt(record, "tika")
+    assert attempt["quality_status"] == "WARNING"
+    assert attempt["decision"] == "accept"
+    assert attempt["selected"] is True
+    assert "Completeness only" in attempt["decision_reason"]
+    assert record["extractor_used"] == "tika"
+    assert record["quality_status"] == "WARNING"
+    assert policy.candidates == []

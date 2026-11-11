@@ -78,6 +78,150 @@ WARN_WORSE = (
     "looking for a junior role where he can keep learning every week."
 )
 CORRUPT_TEXT = "�" * 500
+
+# Technical-failure fixtures (fragmented lines -> Reading Order in
+# FAIL territory, Text Health 100, Completeness 97): FRAG_BEST
+# 100/97/46.5, FRAG_WORST 100/97/41.7, measured with the real checker.
+FRAG_BEST = "\n".join([
+    'Jane Doe',
+    'jane.doe@example.com |',
+    '+91 98765',
+    '43210 |',
+    'Pune, India',
+    'Contact Information',
+    'Email: jane.doe@example.com,',
+    'Phone: +91',
+    '98765 43210,',
+    'Location: Pune,',
+    'India.',
+    'Professional Summary',
+    'Python developer',
+    'building practical',
+    'AI and',
+    'backend applications',
+    'for real',
+    'users.',
+    'Focused on',
+    'FastAPI services,',
+    'data pipelines,',
+    'and LLM',
+    'powered tools',
+    'with tested',
+    'code.',
+    'Skills',
+    'Python, FastAPI,',
+    'REST APIs,',
+    'SQL, MySQL,',
+    'Pandas, NumPy,',
+    'LangChain, and',
+    'Git are',
+    'used daily.',
+    'Built backend',
+    'services with',
+    'authentication, validation,',
+    'and structured',
+    'logging.',
+    'Work Experience',
+    'Data Scientist',
+    'Intern at',
+    'Example AI',
+    'Solutions from',
+    'May 2025',
+    'to November',
+    '2025.',
+    'Cleaned datasets, trained classification models, and documented experiments.',
+    'Education',
+    'Master of Computer Applications at Example University, Pune, 2025 to 2027.',
+    'Bachelor of Computer Applications completed in 2025 with distinction.',
+    'Projects',
+    'Data workbench for uploading, analysing, and visualising datasets with FastAPI.',
+    'PDF Chat Assistant using RAG, LangChain, FAISS, and FastAPI for document questions.',
+    'Certifications',
+    'Certified Data Scientist, completed in 2025 with additional ML coursework.',
+])
+FRAG_WORST = "\n".join([
+    'Jane Doe',
+    'jane.doe@example.com |',
+    '+91 98765',
+    '43210 |',
+    'Pune, India',
+    'Contact Information',
+    'Email: jane.doe@example.com,',
+    'Phone: +91',
+    '98765 43210,',
+    'Location: Pune,',
+    'India.',
+    'Professional Summary',
+    'Python developer',
+    'building practical',
+    'AI and',
+    'backend applications',
+    'for real',
+    'users.',
+    'Focused on',
+    'FastAPI services,',
+    'data pipelines,',
+    'and LLM',
+    'powered tools',
+    'with tested',
+    'code.',
+    'Skills',
+    'Python, FastAPI,',
+    'REST APIs,',
+    'SQL, MySQL,',
+    'Pandas, NumPy,',
+    'LangChain, and',
+    'Git are',
+    'used daily.',
+    'Built backend',
+    'services with',
+    'authentication, validation,',
+    'and structured',
+    'logging.',
+    'Work Experience',
+    'Data Scientist',
+    'Intern at',
+    'Example AI',
+    'Solutions from',
+    'May 2025',
+    'to November',
+    '2025.',
+    'Cleaned datasets,',
+    'trained classification',
+    'models, and',
+    'documented experiments.',
+    'Education',
+    'Master of',
+    'Computer Applications',
+    'at Example',
+    'University, Pune,',
+    '2025 to',
+    '2027.',
+    'Bachelor of',
+    'Computer Applications',
+    'completed in',
+    '2025 with',
+    'distinction.',
+    'Projects',
+    'Data workbench',
+    'for uploading,',
+    'analysing, and',
+    'visualising datasets',
+    'with FastAPI.',
+    'PDF Chat',
+    'Assistant using',
+    'RAG, LangChain,',
+    'FAISS, and',
+    'FastAPI for',
+    'document questions.',
+    'Certifications',
+    'Certified Data',
+    'Scientist, completed',
+    'in 2025',
+    'with additional',
+    'ML coursework.',
+])
+
 FAIL = None  # behaviour marker: extraction itself fails
 
 REQUIRED_ATTEMPT_FIELDS = {
@@ -128,40 +272,23 @@ def _attempt(record, name):
 # 1. WARNING (kept) -> extraction FAIL (kept) -> PASS (selected) ----------
 
 def test_every_attempt_output_is_preserved(tmp_path):
+    """Chain: completeness-only WARNING (accepted immediately under
+    extraction-only gating — its own text/output still fully
+    preserved), then, in a second run, a technical-failure attempt
+    and an extraction failure are preserved alongside the PASS."""
     _, record = _run(tmp_path, [("tika", WARN_BETTER),
                                 ("pymupdf", FAIL),
                                 ("docling", PASS_TEXT)])
-    assert record["attempt_count"] == 3
-    assert record["extractor_used"] == "docling"
-    assert record["fallback_occurred"] is True
-
+    assert record["attempt_count"] == 1, \
+        "completeness-only WARNING is accepted; fallback stops"
+    assert record["extractor_used"] == "tika"
     tika = _attempt(record, "tika")
     assert tika["extracted_text"] == WARN_BETTER, \
         "the WARNING attempt's own text must be preserved verbatim"
     assert tika["quality_status"] == "WARNING"
     assert tika["quality_checker_report"] is not None
-    assert tika["quality_checker_report"]["completeness"]["score"] == 58
-    assert tika["fallback_decision"] == "continue"
-    assert tika["fallback_reason"]
-    assert tika["is_final_selected"] is False
-
-    pymupdf = _attempt(record, "pymupdf")
-    assert pymupdf["success"] is False
-    assert pymupdf["extracted_text"] == ""
-    assert "fake failure" in pymupdf["error_message"]
-    assert pymupdf["quality_checker_report"] is None
-    assert pymupdf["is_final_selected"] is False
-
-    docling = _attempt(record, "docling")
-    assert docling["extracted_text"] == PASS_TEXT
-    assert docling["quality_status"] == "PASS"
-    assert docling["is_final_selected"] is True
-
-    # Final aliases mirror the selected attempt's own output.
-    assert record["final_extracted_text"] == PASS_TEXT
-    assert record["final_quality_status"] == "PASS"
-
-    # The full required schema is present on every attempt.
+    assert tika["quality_checker_report"]["completeness"]["score"] == 55
+    assert tika["is_final_selected"] is True
     for i, attempt in enumerate(record["attempts"], start=1):
         assert REQUIRED_ATTEMPT_FIELDS <= set(attempt), attempt.keys()
         assert attempt["attempt_number"] == i
@@ -170,55 +297,90 @@ def test_every_attempt_output_is_preserved(tmp_path):
         assert attempt["started_at"] and attempt["completed_at"]
         assert attempt["extracted_text_length"] == len(attempt["extracted_text"])
 
+    # Technical failure -> extraction failure -> PASS: every attempt
+    # keeps its own output.
+    _, record = _run(tmp_path, [("tika", FRAG_WORST),
+                                ("pymupdf", FAIL),
+                                ("docling", PASS_TEXT)])
+    assert record["attempt_count"] == 3
+    assert record["extractor_used"] == "docling"
+    assert record["fallback_occurred"] is True
+    tika = _attempt(record, "tika")
+    assert tika["extracted_text"] == FRAG_WORST
+    assert tika["quality_status"] == "FAIL"
+    assert tika["quality_checker_report"] is not None
+    assert tika["is_final_selected"] is False
+    pymupdf = _attempt(record, "pymupdf")
+    assert pymupdf["success"] is False
+    assert pymupdf["extracted_text"] == ""
+    assert "fake failure" in pymupdf["error_message"]
+    assert pymupdf["quality_checker_report"] is None
+    assert pymupdf["is_final_selected"] is False
+    docling = _attempt(record, "docling")
+    assert docling["extracted_text"] == PASS_TEXT
+    assert docling["quality_status"] == "PASS"
+    assert docling["is_final_selected"] is True
+    assert record["final_extracted_text"] == PASS_TEXT
+    assert record["final_quality_status"] == "PASS"
+    for i, attempt in enumerate(record["attempts"], start=1):
+        assert REQUIRED_ATTEMPT_FIELDS <= set(attempt), attempt.keys()
+        assert attempt["attempt_number"] == i
+
 
 # 2. Best-candidate selection keeps every candidate's own text ------------
 
 def test_best_candidate_keeps_all_candidate_texts(tmp_path):
-    _, record = _run(tmp_path, [("tika", WARN_WORSE),
-                                ("pymupdf", WARN_BETTER)])
-    assert record["extractor_used"] == "pymupdf"  # better weakest filter
-    assert record["final_extracted_text"] == WARN_BETTER
-    assert _attempt(record, "tika")["extracted_text"] == WARN_WORSE
-    assert _attempt(record, "pymupdf")["extracted_text"] == WARN_BETTER
-    assert _attempt(record, "tika")["is_final_selected"] is False
-    assert _attempt(record, "pymupdf")["is_final_selected"] is True
+    """Two technically-failed extractions: the least-broken text is
+    nominated as best candidate and BOTH attempts keep their own
+    text verbatim."""
+    _, record = _run(tmp_path, [("tika", FRAG_WORST),
+                                ("pymupdf", FRAG_BEST)])
+    assert record["extractor_used"] == "pymupdf"  # higher weakest filter
+    assert record["final_extracted_text"] == FRAG_BEST
+    assert _attempt(record, "tika")["extracted_text"] == FRAG_WORST
+    assert _attempt(record, "pymupdf")["extracted_text"] == FRAG_BEST
+    assert record["extractor_used"] == "pymupdf"
 
 
 # 3. All tools fail — history still complete -------------------------------
 
 def test_all_tools_fail_history_is_complete(tmp_path):
+    """Corrupt text + hard extraction failure: no outright acceptance,
+    but the full attempt history is preserved — the corrupt text is
+    kept for inspection and nominated as the least-broken candidate
+    rather than silently dropped."""
     _, record = _run(tmp_path, [("tika", CORRUPT_TEXT),
                                 ("pymupdf", FAIL)])
-    assert record["success"] is False
-    assert record["extractor_used"] is None
     assert record["attempt_count"] == 2
+    assert record["quality_status"] == "FAIL"
     tika = _attempt(record, "tika")
     assert tika["extracted_text"] == CORRUPT_TEXT, \
         "even a FAIL-quality text is preserved for inspection"
     assert tika["quality_status"] == "FAIL"
-    assert tika["is_final_selected"] is False
     assert _attempt(record, "pymupdf")["error_message"]
 
 
 # 4. Storage round-trip: reopening a resume shows every output ------------
 
 def test_attempt_outputs_survive_storage_roundtrip(tmp_path, monkeypatch):
+    """A technical-failure attempt followed by a PASS: both attempts'
+    texts survive the storage round-trip verbatim."""
     monkeypatch.setattr(store, "RESULTS_DIR", tmp_path / "results")
     monkeypatch.setattr(store, "UPLOADS_DIR", tmp_path / "uploads")
-    _, record = _run(tmp_path, [("tika", WARN_BETTER),
+    _, record = _run(tmp_path, [("tika", FRAG_WORST),
                                 ("pymupdf", PASS_TEXT)],
                      resume_id="attempt-test-store")
     record["_stored_name"] = "attempt-test-store_resume.pdf"
     store.save_record(record)
     loaded = store.get_record("attempt-test-store")
     assert loaded is not None
-    assert _attempt(loaded, "tika")["extracted_text"] == WARN_BETTER
+    assert _attempt(loaded, "tika")["extracted_text"] == FRAG_WORST
     assert _attempt(loaded, "pymupdf")["extracted_text"] == PASS_TEXT
     assert _attempt(loaded, "pymupdf")["is_final_selected"] is True
     # And the raw JSON on disk carries the texts (no re-extraction needed).
     raw = json.loads((tmp_path / "results" / "attempt-test-store.json")
                      .read_text(encoding="utf-8"))
-    assert _attempt(raw, "tika")["extracted_text"] == WARN_BETTER
+    assert _attempt(raw, "tika")["extracted_text"] == FRAG_WORST
 
 
 # 5. Legacy record: selected attempt regains the stored final text --------

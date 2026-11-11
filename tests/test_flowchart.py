@@ -65,6 +65,150 @@ WARN_TEXT = (  # Completeness 58 -> WARNING (measured against the real filters)
     "defects methodically over time."
 )
 CORRUPT_TEXT = "�" * 500
+
+# Technical-failure fixtures (fragmented lines -> Reading Order in
+# FAIL territory, Text Health 100, Completeness 97): FRAG_BEST
+# 100/97/46.5, FRAG_WORST 100/97/41.7, measured with the real checker.
+FRAG_BEST = "\n".join([
+    'Jane Doe',
+    'jane.doe@example.com |',
+    '+91 98765',
+    '43210 |',
+    'Pune, India',
+    'Contact Information',
+    'Email: jane.doe@example.com,',
+    'Phone: +91',
+    '98765 43210,',
+    'Location: Pune,',
+    'India.',
+    'Professional Summary',
+    'Python developer',
+    'building practical',
+    'AI and',
+    'backend applications',
+    'for real',
+    'users.',
+    'Focused on',
+    'FastAPI services,',
+    'data pipelines,',
+    'and LLM',
+    'powered tools',
+    'with tested',
+    'code.',
+    'Skills',
+    'Python, FastAPI,',
+    'REST APIs,',
+    'SQL, MySQL,',
+    'Pandas, NumPy,',
+    'LangChain, and',
+    'Git are',
+    'used daily.',
+    'Built backend',
+    'services with',
+    'authentication, validation,',
+    'and structured',
+    'logging.',
+    'Work Experience',
+    'Data Scientist',
+    'Intern at',
+    'Example AI',
+    'Solutions from',
+    'May 2025',
+    'to November',
+    '2025.',
+    'Cleaned datasets, trained classification models, and documented experiments.',
+    'Education',
+    'Master of Computer Applications at Example University, Pune, 2025 to 2027.',
+    'Bachelor of Computer Applications completed in 2025 with distinction.',
+    'Projects',
+    'Data workbench for uploading, analysing, and visualising datasets with FastAPI.',
+    'PDF Chat Assistant using RAG, LangChain, FAISS, and FastAPI for document questions.',
+    'Certifications',
+    'Certified Data Scientist, completed in 2025 with additional ML coursework.',
+])
+FRAG_WORST = "\n".join([
+    'Jane Doe',
+    'jane.doe@example.com |',
+    '+91 98765',
+    '43210 |',
+    'Pune, India',
+    'Contact Information',
+    'Email: jane.doe@example.com,',
+    'Phone: +91',
+    '98765 43210,',
+    'Location: Pune,',
+    'India.',
+    'Professional Summary',
+    'Python developer',
+    'building practical',
+    'AI and',
+    'backend applications',
+    'for real',
+    'users.',
+    'Focused on',
+    'FastAPI services,',
+    'data pipelines,',
+    'and LLM',
+    'powered tools',
+    'with tested',
+    'code.',
+    'Skills',
+    'Python, FastAPI,',
+    'REST APIs,',
+    'SQL, MySQL,',
+    'Pandas, NumPy,',
+    'LangChain, and',
+    'Git are',
+    'used daily.',
+    'Built backend',
+    'services with',
+    'authentication, validation,',
+    'and structured',
+    'logging.',
+    'Work Experience',
+    'Data Scientist',
+    'Intern at',
+    'Example AI',
+    'Solutions from',
+    'May 2025',
+    'to November',
+    '2025.',
+    'Cleaned datasets,',
+    'trained classification',
+    'models, and',
+    'documented experiments.',
+    'Education',
+    'Master of',
+    'Computer Applications',
+    'at Example',
+    'University, Pune,',
+    '2025 to',
+    '2027.',
+    'Bachelor of',
+    'Computer Applications',
+    'completed in',
+    '2025 with',
+    'distinction.',
+    'Projects',
+    'Data workbench',
+    'for uploading,',
+    'analysing, and',
+    'visualising datasets',
+    'with FastAPI.',
+    'PDF Chat',
+    'Assistant using',
+    'RAG, LangChain,',
+    'FAISS, and',
+    'FastAPI for',
+    'document questions.',
+    'Certifications',
+    'Certified Data',
+    'Scientist, completed',
+    'in 2025',
+    'with additional',
+    'ML coursework.',
+])
+
 FAIL = None
 
 
@@ -113,7 +257,9 @@ def test_trace_has_everything_the_flowchart_needs(tmp_path):
     assert quality["quality"] is not None
     for key in ("text_health", "completeness", "reading_order"):
         assert isinstance(quality["quality"][key]["score"], (int, float))
-    assert quality["decision"] == "continue"
+    # WARN_TEXT is a completeness-only WARNING: under extraction-only
+    # gating it is accepted immediately (fallback stops).
+    assert quality["decision"] == "accept"
 
 
 def test_scenario_a_accepted_first_extractor_rest_skipped(tmp_path):
@@ -146,15 +292,18 @@ def test_scenario_c_extraction_pass_but_quality_rejected(tmp_path):
 
 
 def test_scenario_d_all_attempted_best_candidate_selected(tmp_path):
-    record = _record(tmp_path, [("tika", WARN_TEXT), ("pymupdf", WARN_TEXT),
+    """All extractors attempted with technically-failed texts: the
+    least-broken candidate is nominated and the trace shows every
+    attempt's real gate decision."""
+    record = _record(tmp_path, [("tika", FRAG_WORST), ("pymupdf", FRAG_BEST),
                                 ("docling", FAIL)])
     assert record["attempt_count"] == 3
     final = _stage(record, "final")
     assert final["selected"] is True
-    assert record["extractor_used"] in ("tika", "pymupdf")
+    assert record["extractor_used"] == "pymupdf"
     assert "Best candidate selected" in record["selection_reason"]
     held = _stage(record, "quality", "tika")
-    assert held["status"] == "WARNING" and held["decision"] == "continue"
+    assert held["status"] == "REJECTED" and held["decision"] == "reject"
 
 
 # Frontend rendering (Node, real app.js) -----------------------------------------

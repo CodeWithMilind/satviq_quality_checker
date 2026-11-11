@@ -66,6 +66,7 @@ sections:
       - "career brief"                       # [cv100] x1
       - "about myself"                       # [cv100] x1
       - "job objective"                      # [cv100] x1
+      - "candidate snapshot"            # [yaml-editor-ai]
 
   skills:
     display_name: "Skills"
@@ -111,6 +112,7 @@ sections:
       - "software exposure"                   # [cv100] x1
       - "skills and certifications"           # [cv100] x1 (combined; also under certifications)
       - "certificates and skills"             # [cv100] x1 (combined; also under certifications)
+      - "skill inventory"               # [yaml-editor-ai]
     conditional_aliases:
       # "Tools" alone can be a genuine skills heading ([corpus] x1,
       # followed by a tool list) but is weak on its own — the content
@@ -149,6 +151,7 @@ sections:
       - "PROFESSIONAL EXPERIENCE"
       - "WORK HISTORY"
       - "EXPERIENCE"
+      - "professional journey"          # [yaml-editor-ai]
 
 
 
@@ -164,6 +167,7 @@ sections:
       - "duties and responsibilities"
       - "roles and responsibilities"
       - "responsibility"
+      - "role contributions"            # [yaml-editor-ai]
     conditional_aliases: []
 
   education:
@@ -238,6 +242,7 @@ sections:
       - "relevant projects"                    # [spec]
       - "project work"                        # [cv100] x1
       - "internship and academic project"     # [cv100] x1
+      - "build showcase"                # [yaml-editor-ai]
     conditional_aliases:
       # These headings can also be a bare link label (e.g.
       # "Portfolio: https://example.com" in a contact block), so they

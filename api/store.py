@@ -48,6 +48,19 @@ def public(record: dict[str, Any]) -> dict[str, Any]:
     stored_name = record.get("_stored_name")
     item["has_original_file"] = bool(
         stored_name and (UPLOADS_DIR / stored_name).is_file())
+    # YAML Editor AI activity (Part C/E): records processed before
+    # the per-resume block existed get it derived on read from the
+    # agent's execution history — the stored file is never rewritten
+    # by a read. Fully guarded: a failure here must never break a
+    # record response.
+    if not isinstance(item.get("yaml_editor"), dict):
+        try:
+            from yaml_editor_ai import yaml_editor_block_for_record
+
+            item["yaml_editor"] = yaml_editor_block_for_record(item)
+        except Exception:
+            item["yaml_editor"] = {
+                "status": "SKIPPED", "reason": "unavailable"}
     return item
 
 

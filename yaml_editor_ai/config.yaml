@@ -28,8 +28,27 @@ default_base_url: "https://api.meta.ai/v1"
 # improvement call must never hang post-processing: on timeout the
 # update is skipped and logged, the resume record is unaffected.
 timeout_seconds: 60
-max_output_tokens: 600
+# Completion budget. 600 was the PROVEN root cause of the empty
+# responses: Muse Spark spends part of this budget on hidden
+# reasoning tokens BEFORE any visible text, so a 600 cap could be
+# exhausted with zero content produced (finish_reason=length,
+# reasoning_tokens=600, content empty). 1000 leaves room for the
+# reasoning share plus the small JSON answer (the validator caps
+# accepted output at 12 keywords, so replies stay tiny).
+max_output_tokens: 1000
 temperature: 0.0
+
+# Reasoning depth. Muse Spark is a reasoning model: it reasons at
+# "high" effort BY DEFAULT when reasoning_effort is omitted, and
+# reasoning tokens are charged against max_completion_tokens BEFORE
+# any visible text — at high effort the model consumed the ENTIRE
+# 600-token budget (first failure) and then the entire 2000-token
+# combined budget (second failure) without emitting any content.
+# This task is a direct lookup/extraction, so "minimal" (the
+# shortest reasoning pass the API supports; "none" is rejected with
+# HTTP 400 on Muse reasoning models) keeps reasoning to a small
+# fraction of the budget and leaves the rest for the JSON answer.
+reasoning_effort: "minimal"
 
 # Trigger: run ONLY as a post-processing step after the final
 # extractor has been selected, and only when the SELECTED attempt's

@@ -258,6 +258,125 @@ def yaml_editor_changelog() -> dict:
     return {"changelog": version_manager.read_changelog(agent.store)}
 
 
+@app.get("/api/yaml-editor/active")
+def yaml_editor_active() -> dict:
+    """The ACTIVE completeness YAML, read from the actual backend
+    file (never a frontend copy): content, current version, last
+    updated timestamp, total keywords, and per-category keyword
+    counts for the viewer."""
+    import os as _os
+
+    import yaml as _yaml
+
+    agent = _yaml_editor_agent()
+    agent.store.ensure_seeded()
+    path = agent.store.active_path
+    content = path.read_text(encoding="utf-8")
+    parsed = _yaml.safe_load(content) or {}
+    categories: dict[str, Any] = {}
+    total = 0
+    for name, section in (parsed.get("sections") or {}).items():
+        section = section or {}
+        count = len(section.get("aliases") or []) \
+            + len(section.get("conditional_aliases") or [])
+        categories[name] = {
+            "display_name": section.get("display_name") or name,
+            "importance": section.get("importance"),
+            "keyword_count": count}
+        total += count
+    from yaml_editor_ai import version_manager
+
+    return {
+        "version": version_manager.version_label(
+            agent.store.current_version()),
+        "content": content,
+        "updated_at": _os.path.getmtime(path),
+        "total_keywords": total,
+        "categories": categories,
+    }
+
+
+@app.get("/api/yaml-editor/compare")
+def yaml_editor_compare(from_version: str, to_version: str) -> dict:
+    """Before-vs-after comparison of two stored versions: full
+    contents of both, plus the keyword-level diff computed from the
+    parsed YAML (additions only — the editor is append-only, so
+    removed/modified lists are computed honestly and are empty in
+    practice; they are never fabricated)."""
+    import re as _re
+
+    import yaml as _yaml
+
+    from yaml_editor_ai import version_manager
+
+    def _load(raw: str) -> tuple[str, Path]:
+        match = _re.fullmatch(r"v(\d{1,4})", raw.strip().lower())
+        if not match:
+            raise HTTPException(status_code=404,
+                                detail=f"Unknown YAML version {raw!r}.")
+        agent = _yaml_editor_agent()
+        agent.store.ensure_seeded()
+        path = version_manager.version_file(agent.store,
+                                            int(match.group(1)))
+        if not path.is_file():
+            raise HTTPException(
+                status_code=404,
+                detail=f"YAML version {raw} not found.")
+        return version_manager.version_label(int(match.group(1))), path
+
+    from_label, from_path = _load(from_version)
+    to_label, to_path = _load(to_version)
+    from_text = from_path.read_text(encoding="utf-8")
+    to_text = to_path.read_text(encoding="utf-8")
+
+    def _aliases(text: str) -> dict[str, set[str]]:
+        parsed = _yaml.safe_load(text) or {}
+        out: dict[str, set[str]] = {}
+        for name, section in (parsed.get("sections") or {}).items():
+            section = section or {}
+            out[name] = {str(a) for a in (section.get("aliases") or [])} \
+                | {str(a) for a in (section.get("conditional_aliases")
+                                   or [])}
+        return out
+
+    before, after = _aliases(from_text), _aliases(to_text)
+    added: dict[str, list[str]] = {}
+    removed: dict[str, list[str]] = {}
+    for name in sorted(set(before) | set(after)):
+        new = sorted(after.get(name, set()) - before.get(name, set()))
+        gone = sorted(before.get(name, set()) - after.get(name, set()))
+        if new:
+            added[name] = new
+        if gone:
+            removed[name] = gone
+    changelog = version_manager.read_changelog(_yaml_editor_agent().store)
+    trigger = next((e for e in reversed(changelog)
+                    if e.get("new_version") == to_label
+                    and e.get("status") == "success"), None)
+    return {
+        "from_version": from_label, "to_version": to_label,
+        "from_content": from_text, "to_content": to_text,
+        "added": added, "removed": removed,
+        "modified_sections": sorted(set(added) | set(removed)),
+        "trigger": ({"resume_id": trigger.get("resume_id"),
+                     "filename": trigger.get("filename"),
+                     "timestamp": trigger.get("timestamp")}
+                    if trigger else None),
+    }
+
+
+@app.get("/api/resumes/{resume_id}/yaml-editor")
+def resume_yaml_editor(resume_id: str) -> dict:
+    """One resume's YAML Editor AI activity (stored block, or the
+    history-derived block for older records)."""
+    record = store.get_record(resume_id)
+    if record is None:
+        raise HTTPException(status_code=404,
+                            detail="Resume record not found.")
+    return {"resume_id": resume_id,
+            "yaml_editor": store.public(record)["yaml_editor"]}
+
+
 @app.post("/api/resumes/process")
 async def process_resumes(files: list[UploadFile] = File(...)) -> dict:
     """Process one or more uploaded resumes through the full pipeline.

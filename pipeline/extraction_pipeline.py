@@ -1,29 +1,41 @@
 """Simple production extraction pipeline.
 
-DOCUMENT -> Sequential Quality-Gated Extraction
-(Tika -> Quality Check -> STOP on PASS; otherwise PyMuPDF ->
-Quality Check -> STOP on PASS; otherwise Docling -> Quality Check;
-otherwise OCR) -> Best Extractor Selection (only when no extractor
-passed outright) -> Text Normalization -> One LLM Stage
--> Validated Resume JSON.
+DOCUMENT -> Sequential Extraction-Gated Extraction
+(Tika -> Extraction Check -> STOP on accept; otherwise PyMuPDF ->
+Extraction Check -> STOP on accept; otherwise Docling -> Extraction
+Check; otherwise OCR) -> Best Extractor Selection (only when no
+extractor was accepted outright) -> Text Normalization -> One LLM
+Stage -> Validated Resume JSON.
 
-The quality gate is the project's existing QualityChecker with the
-configured ``quality_gate:`` thresholds from
-``extractor/config/extractor.yaml`` — the same checker, thresholds
-and PASS / WARNING / FAIL semantics the legacy chain's
-QualityGatePolicy uses:
+EXTRACTION GATING vs COMPLETENESS (fixed 2026-11-11): the gate that
+decides whether fallback continues judges EXTRACTION QUALITY ONLY —
+actual extraction failure, Text Health below ``fail_below``, or
+Reading Order below ``fail_below`` (the ``quality_gate:`` thresholds
+in ``extractor/config/extractor.yaml``). Completeness measures how
+many resume SECTIONS were recognised; it is reported in full on
+every attempt (score + missing sections) but NEVER drives fallback:
+a readable resume with unfamiliar section headings (e.g. Text
+Health 100 / Reading Order 99 / Completeness 67) is accepted at the
+first extractor, and its low completeness is handled afterwards by
+the YAML Editor AI, not by burning time in Docling/OCR.
 
-- **PASS** — accept immediately; every later extractor is SKIPPED
-  (never invoked, never counted as an attempt).
-- **WARNING** — held as a candidate; the next extractor is tried
-  (unless the warning's lowest filter score is at/above
-  ``warning_continue_below``, in which case it is accepted at once).
+Gate outcomes per attempt:
+- **PASS** (Text Health and Reading Order both >= ``warn_below``) —
+  accept immediately; later extractors are SKIPPED.
+- **WARNING** — extraction is usable (neither technical filter below
+  ``fail_below``) but a technical filter is below ``warn_below``,
+  OR completeness is below ``warn_below``. WARNING accepts
+  immediately UNLESS the warning comes from a technical filter
+  (Text Health / Reading Order) whose score is below
+  ``warning_continue_below`` — only then is the result held as a
+  candidate and the next extractor tried. A completeness-only
+  warning NEVER continues the chain.
 - **FAIL** — rejected; the next extractor is tried. FAIL requires
-  Text Health or Reading Order below ``fail_below``; Completeness
-  alone can never cause FAIL.
+  extraction failure or Text Health / Reading Order below
+  ``fail_below``.
 
-If no extractor passes outright, the existing selector picks the
-best-scoring executed candidate (``min_quality_threshold`` still
+If no extractor is accepted outright, the existing selector picks
+the best-scoring executed candidate (``min_quality_threshold`` still
 applies); if none qualifies, the resume is failed/rejected exactly
 as before.
 """
@@ -71,10 +83,13 @@ def _load_gate_thresholds() -> dict[str, float]:
 
 
 def _gate_status(report: Any, fail_below: float, warn_below: float) -> str:
-    """PASS / WARNING / FAIL for a QualityChecker report — the same
-    mapping as api.pipeline.quality_status_for / QualityGatePolicy:
-    FAIL only when Text Health or Reading Order is below fail_below;
-    WARNING when any filter is below warn_below; PASS otherwise."""
+    """Overall quality status for a QualityChecker report — the same
+    mapping as api.pipeline.quality_status_for: FAIL only when Text
+    Health or Reading Order is below fail_below; WARNING when any
+    filter (Completeness included) is below warn_below; PASS
+    otherwise. This is the REPORTED status; the gate's accept /
+    continue decision is computed separately in _gate_decision and
+    never lets Completeness drive fallback."""
     if report.text_health.score < fail_below \
             or report.reading_order.score < fail_below:
         return "FAIL"
@@ -118,13 +133,14 @@ class ExtractionPipeline:
     def _gate_decision(res: dict[str, Any], *, checker: Any | None,
                        thresholds: dict[str, float], document_id: str,
                        attempt_number: int) -> dict[str, Any]:
-        """The quality gate's verdict for ONE executed extraction.
+        """The extraction gate's verdict for ONE executed extraction.
 
         Returns {"status": PASS|WARNING|FAIL|None, "decision":
-        "accept"|"continue"|"reject", "reason": str}. Only a real
-        QualityChecker PASS (or a WARNING at/above the configured
-        continue threshold) accepts — a successful extraction or
-        non-empty text alone never qualifies.
+        "accept"|"continue"|"reject", "reason": str}. The DECISION
+        judges extraction quality only — extraction failure, Text
+        Health, Reading Order. Completeness is reported in the
+        status/reason but can never cause a continue or a reject:
+        a completeness-only WARNING is accepted immediately.
         """
         name = res.get("extractor")
         text = res.get("extracted_text") or ""
@@ -165,19 +181,34 @@ class ExtractionPipeline:
                 "reason": f"Quality FAIL ({scores}) — Text Health or "
                           "Reading Order below "
                           f"{thresholds['fail_below']:g}; result rejected."}
-        lowest = min(report.text_health.score, report.completeness.score,
-                     report.reading_order.score)
-        if lowest >= thresholds["warning_continue_below"]:
+        # WARNING — decide on the TECHNICAL filters only. Completeness
+        # never drives fallback: a completeness-only warning means the
+        # text is readable but its section headings are unfamiliar,
+        # which is the YAML Editor AI's job, not another extractor's.
+        tech_lowest = min(report.text_health.score,
+                          report.reading_order.score)
+        if report.completeness.score < thresholds["warn_below"] \
+                and tech_lowest >= thresholds["warn_below"]:
             return {
                 "status": status, "decision": "accept",
-                "reason": f"Quality WARNING ({scores}) accepted — lowest "
-                          "filter score is at/above the continue "
-                          "threshold "
+                "reason": f"Extraction accepted ({scores}) — Text "
+                          "Health and Reading Order pass; the "
+                          "WARNING is Completeness only, which never "
+                          "triggers extractor fallback. Fallback "
+                          "stopped."}
+        if tech_lowest >= thresholds["warning_continue_below"]:
+            return {
+                "status": status, "decision": "accept",
+                "reason": f"Quality WARNING ({scores}) accepted — "
+                          "lowest technical filter score is at/above "
+                          "the continue threshold "
                           f"{thresholds['warning_continue_below']:g}."}
         return {
             "status": status, "decision": "continue",
-            "reason": f"Quality WARNING ({scores}) — result held as a "
-                      "candidate; trying the next extractor."}
+            "reason": f"Quality WARNING ({scores}) — Text Health or "
+                      "Reading Order below the continue threshold; "
+                      "result held as a candidate; trying the next "
+                      "extractor."}
 
     def run(self, file_path: str | Path, include_extractor_texts: bool = False) -> dict[str, Any]:
         total_started = time.perf_counter()

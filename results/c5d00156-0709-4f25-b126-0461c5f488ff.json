@@ -1,0 +1,1259 @@
+{
+  "resume_id": "c5d00156-0709-4f25-b126-0461c5f488ff",
+  "filename": "YAML_Editor_Test_Resume.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 2168,
+  "uploaded_at": "2026-11-11T12:45:21.164587+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "final_extractor": "tika",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "c5d00156-0709-4f25-b126-0461c5f488ff-attempt-1",
+      "resume_id": "c5d00156-0709-4f25-b126-0461c5f488ff",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Quality PASS (Text Health 100.0, Completeness 100.0, Reading Order 99.06) — result accepted; fallback stopped.",
+      "fallback_decision": "accept",
+      "fallback_reason": "Quality PASS (Text Health 100.0, Completeness 100.0, Reading Order 99.06) — result accepted; fallback stopped.",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "c5d00156-0709-4f25-b126-0461c5f488ff",
+        "source_tool": "tika",
+        "attempt_id": "c5d00156-0709-4f25-b126-0461c5f488ff-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1550,
+            "word_count": 211,
+            "line_count": 53,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.152258,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1550,
+            "word_count": 211,
+            "configured_section_count": 8,
+            "detected_count": 8,
+            "missing_count": 0,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Responsibilities",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "candidate snapshot",
+              "Skills": "skill inventory",
+              "Work Experience": "professional journey",
+              "Responsibilities": "role contributions",
+              "Education": "pattern:(?i)\\b(PGDM|MBA|MCA|BCA|B\\.?Com\\.?|M\\.?C",
+              "Projects": "build showcase",
+              "Certifications": "pattern:(?i)\\bcertified\\b|\\bcertifications?\\s+(?"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "rohan.deshmukh@example.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Candidate Snapshot",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "Candidate Snapshot",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Skill Inventory",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "Skill Inventory",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Professional Journey",
+                "detection_method": "heading",
+                "line_number": 21,
+                "evidence": "Professional Journey",
+                "confidence": 0.98
+              },
+              "Responsibilities": {
+                "canonical_name": "Responsibilities",
+                "original_heading": "Role Contributions",
+                "detection_method": "heading",
+                "line_number": 29,
+                "evidence": "Role Contributions",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "Master of",
+                "confidence": 0.8
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "Build Showcase",
+                "detection_method": "heading",
+                "line_number": 41,
+                "evidence": "Build Showcase",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "Certified",
+                "confidence": 0.8
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Responsibilities": "detected",
+              "Education": "detected",
+              "Projects": "detected",
+              "Certifications": "detected"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Responsibilities",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": []
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 99.06,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "POSSIBLE_BROKEN_SENTENCES"
+          ],
+          "reasons": [
+            "40.7% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "30.8% of line transitions look like a sentence broken across lines without punctuation."
+          ],
+          "metrics": {
+            "char_count": 1550,
+            "word_count": 211,
+            "line_count": 53,
+            "non_empty_line_count": 27,
+            "short_line_count": 11,
+            "short_line_ratio": 0.407407,
+            "fragmented_line_count": 6,
+            "fragmented_line_ratio": 0.222222,
+            "mean_line_length": 55.48,
+            "median_line_length": 73.0,
+            "line_length_stdev": 36.32,
+            "line_length_cv": 0.654632,
+            "broken_sentence_count": 8,
+            "broken_sentence_ratio": 0.307692,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "c5d00156-0709-4f25-b126-0461c5f488ff",
+        "source_tool": "tika",
+        "attempt_id": "c5d00156-0709-4f25-b126-0461c5f488ff-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1550,
+            "word_count": 211,
+            "line_count": 53,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.152258,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1550,
+            "word_count": 211,
+            "configured_section_count": 8,
+            "detected_count": 8,
+            "missing_count": 0,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Responsibilities",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "candidate snapshot",
+              "Skills": "skill inventory",
+              "Work Experience": "professional journey",
+              "Responsibilities": "role contributions",
+              "Education": "pattern:(?i)\\b(PGDM|MBA|MCA|BCA|B\\.?Com\\.?|M\\.?C",
+              "Projects": "build showcase",
+              "Certifications": "pattern:(?i)\\bcertified\\b|\\bcertifications?\\s+(?"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "rohan.deshmukh@example.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Candidate Snapshot",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "Candidate Snapshot",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Skill Inventory",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "Skill Inventory",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Professional Journey",
+                "detection_method": "heading",
+                "line_number": 21,
+                "evidence": "Professional Journey",
+                "confidence": 0.98
+              },
+              "Responsibilities": {
+                "canonical_name": "Responsibilities",
+                "original_heading": "Role Contributions",
+                "detection_method": "heading",
+                "line_number": 29,
+                "evidence": "Role Contributions",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "Master of",
+                "confidence": 0.8
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "Build Showcase",
+                "detection_method": "heading",
+                "line_number": 41,
+                "evidence": "Build Showcase",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "Certified",
+                "confidence": 0.8
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Responsibilities": "detected",
+              "Education": "detected",
+              "Projects": "detected",
+              "Certifications": "detected"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Responsibilities",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": []
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 99.06,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "POSSIBLE_BROKEN_SENTENCES"
+          ],
+          "reasons": [
+            "40.7% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "30.8% of line transitions look like a sentence broken across lines without punctuation."
+          ],
+          "metrics": {
+            "char_count": 1550,
+            "word_count": 211,
+            "line_count": 53,
+            "non_empty_line_count": 27,
+            "short_line_count": 11,
+            "short_line_ratio": 0.407407,
+            "fragmented_line_count": 6,
+            "fragmented_line_ratio": 0.222222,
+            "mean_line_length": 55.48,
+            "median_line_length": 73.0,
+            "line_length_stdev": 36.32,
+            "line_length_cv": 0.654632,
+            "broken_sentence_count": 8,
+            "broken_sentence_ratio": 0.307692,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 84.9,
+      "duration_ms": 3440.39,
+      "text": "Rohan Deshmukh\n\nrohan.deshmukh@example.com | +91 98220 44551 | Pune, Maharashtra 411045\n\nCandidate Snapshot\n\nBackend developer with three years of experience designing APIs, data pipelines and internal\n\ntools for product teams. Comfortable owning features end to end, from database schema to\n\ndeployment and monitoring.\n\nSkill Inventory\n\nPython, FastAPI, REST APIs, SQL, PostgreSQL, Pandas, NumPy, Docker, Git, Linux, Redis, Celery,\n\npytest, and CI pipelines. Also experienced with basic machine learning workflows using scikit-\n\nlearn.\n\nProfessional Journey\n\nSoftware Developer at Nexwave Systems, Pune, from June 2023 to present. Data Analyst at\n\nBrightMetrics, Mumbai, from July 2021 to May 2023, working on reporting automation and\n\ndashboards.\n\nRole Contributions\n\nDesigned and maintained REST services used by five internal teams, reviewed code, mentored two\n\njunior developers, automated weekly data quality checks, and documented deployment runbooks.\n\nLearning Journey\n\nMaster of Computer Applications from Savitri Institute of Technology, Pune, completed in 2021.\n\nBachelor of Computer Applications from City College, Nashik, completed in 2019.\n\nBuild Showcase\n\nInvoice Parser: OCR plus FastAPI service that extracts fields from vendor invoices. Stock\n\nWatch: a small alerting tool that tracks price movements and emails a daily digest to\n\nsubscribers.\n\nCredential Vault\n\nAWS Certified Cloud Practitioner, earned in 2024. Google Data Analytics Certificate, completed\n\nin 2023, along with an internal Docker and Kubernetes training programme.",
+      "extracted_text": "Rohan Deshmukh\n\nrohan.deshmukh@example.com | +91 98220 44551 | Pune, Maharashtra 411045\n\nCandidate Snapshot\n\nBackend developer with three years of experience designing APIs, data pipelines and internal\n\ntools for product teams. Comfortable owning features end to end, from database schema to\n\ndeployment and monitoring.\n\nSkill Inventory\n\nPython, FastAPI, REST APIs, SQL, PostgreSQL, Pandas, NumPy, Docker, Git, Linux, Redis, Celery,\n\npytest, and CI pipelines. Also experienced with basic machine learning workflows using scikit-\n\nlearn.\n\nProfessional Journey\n\nSoftware Developer at Nexwave Systems, Pune, from June 2023 to present. Data Analyst at\n\nBrightMetrics, Mumbai, from July 2021 to May 2023, working on reporting automation and\n\ndashboards.\n\nRole Contributions\n\nDesigned and maintained REST services used by five internal teams, reviewed code, mentored two\n\njunior developers, automated weekly data quality checks, and documented deployment runbooks.\n\nLearning Journey\n\nMaster of Computer Applications from Savitri Institute of Technology, Pune, completed in 2021.\n\nBachelor of Computer Applications from City College, Nashik, completed in 2019.\n\nBuild Showcase\n\nInvoice Parser: OCR plus FastAPI service that extracts fields from vendor invoices. Stock\n\nWatch: a small alerting tool that tracks price movements and emails a daily digest to\n\nsubscribers.\n\nCredential Vault\n\nAWS Certified Cloud Practitioner, earned in 2024. Google Data Analytics Certificate, completed\n\nin 2023, along with an internal Docker and Kubernetes training programme.",
+      "extracted_text_length": 1550,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Rohan Deshmukh\n\nrohan.deshmukh@example.com | +91 98220 44551 | Pune, Maharashtra 411045\n\nCandidate Snapshot\n\nBackend developer with three years of experience designing APIs, data pipelines and internal\n\ntools for product teams. Comfortable owning features end to end, from database schema to\n\ndeployment and monitoring.\n\nSkill Inventory\n\nPython, FastAPI, REST APIs, SQL, PostgreSQL, Pandas, NumPy, Docker, Git, Linux, Redis, Celery,\n\npytest, and CI pipelines. Also experienced with basic machine learning workflows using scikit-\n\nlearn.\n\nProfessional Journey\n\nSoftware Developer at Nexwave Systems, Pune, from June 2023 to present. Data Analyst at\n\nBrightMetrics, Mumbai, from July 2021 to May 2023, working on reporting automation and\n\ndashboards.\n\nRole Contributions\n\nDesigned and maintained REST services used by five internal teams, reviewed code, mentored two\n\njunior developers, automated weekly data quality checks, and documented deployment runbooks.\n\nLearning Journey\n\nMaster of Computer Applications from Savitri Institute of Technology, Pune, completed in 2021.\n\nBachelor of Computer Applications from City College, Nashik, completed in 2019.\n\nBuild Showcase\n\nInvoice Parser: OCR plus FastAPI service that extracts fields from vendor invoices. Stock\n\nWatch: a small alerting tool that tracks price movements and emails a daily digest to\n\nsubscribers.\n\nCredential Vault\n\nAWS Certified Cloud Practitioner, earned in 2024. Google Data Analytics Certificate, completed\n\nin 2023, along with an internal Docker and Kubernetes training programme."
+    }
+  ],
+  "attempt_count": 1,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "skipped_extractors": [
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "gate_decisions": {
+    "tika": {
+      "status": "PASS",
+      "decision": "accept",
+      "reason": "Quality PASS (Text Health 100.0, Completeness 100.0, Reading Order 99.06) — result accepted; fallback stopped."
+    }
+  },
+  "extracted_text": "Rohan Deshmukh\n\nrohan.deshmukh@example.com | +91 98220 44551 | Pune, Maharashtra 411045\n\nCandidate Snapshot\n\nBackend developer with three years of experience designing APIs, data pipelines and internal\n\ntools for product teams. Comfortable owning features end to end, from database schema to\n\ndeployment and monitoring.\n\nSkill Inventory\n\nPython, FastAPI, REST APIs, SQL, PostgreSQL, Pandas, NumPy, Docker, Git, Linux, Redis, Celery,\n\npytest, and CI pipelines. Also experienced with basic machine learning workflows using scikit-\n\nlearn.\n\nProfessional Journey\n\nSoftware Developer at Nexwave Systems, Pune, from June 2023 to present. Data Analyst at\n\nBrightMetrics, Mumbai, from July 2021 to May 2023, working on reporting automation and\n\ndashboards.\n\nRole Contributions\n\nDesigned and maintained REST services used by five internal teams, reviewed code, mentored two\n\njunior developers, automated weekly data quality checks, and documented deployment runbooks.\n\nLearning Journey\n\nMaster of Computer Applications from Savitri Institute of Technology, Pune, completed in 2021.\n\nBachelor of Computer Applications from City College, Nashik, completed in 2019.\n\nBuild Showcase\n\nInvoice Parser: OCR plus FastAPI service that extracts fields from vendor invoices. Stock\n\nWatch: a small alerting tool that tracks price movements and emails a daily digest to\n\nsubscribers.\n\nCredential Vault\n\nAWS Certified Cloud Practitioner, earned in 2024. Google Data Analytics Certificate, completed\n\nin 2023, along with an internal Docker and Kubernetes training programme.",
+  "final_extracted_text": "Rohan Deshmukh\n\nrohan.deshmukh@example.com | +91 98220 44551 | Pune, Maharashtra 411045\n\nCandidate Snapshot\n\nBackend developer with three years of experience designing APIs, data pipelines and internal\n\ntools for product teams. Comfortable owning features end to end, from database schema to\n\ndeployment and monitoring.\n\nSkill Inventory\n\nPython, FastAPI, REST APIs, SQL, PostgreSQL, Pandas, NumPy, Docker, Git, Linux, Redis, Celery,\n\npytest, and CI pipelines. Also experienced with basic machine learning workflows using scikit-\n\nlearn.\n\nProfessional Journey\n\nSoftware Developer at Nexwave Systems, Pune, from June 2023 to present. Data Analyst at\n\nBrightMetrics, Mumbai, from July 2021 to May 2023, working on reporting automation and\n\ndashboards.\n\nRole Contributions\n\nDesigned and maintained REST services used by five internal teams, reviewed code, mentored two\n\njunior developers, automated weekly data quality checks, and documented deployment runbooks.\n\nLearning Journey\n\nMaster of Computer Applications from Savitri Institute of Technology, Pune, completed in 2021.\n\nBachelor of Computer Applications from City College, Nashik, completed in 2019.\n\nBuild Showcase\n\nInvoice Parser: OCR plus FastAPI service that extracts fields from vendor invoices. Stock\n\nWatch: a small alerting tool that tracks price movements and emails a daily digest to\n\nsubscribers.\n\nCredential Vault\n\nAWS Certified Cloud Practitioner, earned in 2024. Google Data Analytics Certificate, completed\n\nin 2023, along with an internal Docker and Kubernetes training programme.",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "quality": {
+    "status": "PASS",
+    "document_id": "c5d00156-0709-4f25-b126-0461c5f488ff",
+    "source_tool": "tika",
+    "attempt_id": "c5d00156-0709-4f25-b126-0461c5f488ff-attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 1550,
+        "word_count": 211,
+        "line_count": 53,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.152258,
+        "symbol_count": 0,
+        "symbol_ratio": 0.0,
+        "max_repeated_char_run": 2,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 1550,
+        "word_count": 211,
+        "configured_section_count": 8,
+        "detected_count": 8,
+        "missing_count": 0,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Responsibilities",
+          "Education",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_sections": [],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "candidate snapshot",
+          "Skills": "skill inventory",
+          "Work Experience": "professional journey",
+          "Responsibilities": "role contributions",
+          "Education": "pattern:(?i)\\b(PGDM|MBA|MCA|BCA|B\\.?Com\\.?|M\\.?C",
+          "Projects": "build showcase",
+          "Certifications": "pattern:(?i)\\bcertified\\b|\\bcertifications?\\s+(?"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "rohan.deshmukh@example.com",
+            "confidence": 0.8
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "Candidate Snapshot",
+            "detection_method": "heading",
+            "line_number": 5,
+            "evidence": "Candidate Snapshot",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "Skill Inventory",
+            "detection_method": "heading",
+            "line_number": 13,
+            "evidence": "Skill Inventory",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "Professional Journey",
+            "detection_method": "heading",
+            "line_number": 21,
+            "evidence": "Professional Journey",
+            "confidence": 0.98
+          },
+          "Responsibilities": {
+            "canonical_name": "Responsibilities",
+            "original_heading": "Role Contributions",
+            "detection_method": "heading",
+            "line_number": 29,
+            "evidence": "Role Contributions",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "Master of",
+            "confidence": 0.8
+          },
+          "Projects": {
+            "canonical_name": "Projects",
+            "original_heading": "Build Showcase",
+            "detection_method": "heading",
+            "line_number": 41,
+            "evidence": "Build Showcase",
+            "confidence": 0.98
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "Certified",
+            "confidence": 0.8
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Responsibilities": "detected",
+          "Education": "detected",
+          "Projects": "detected",
+          "Certifications": "detected"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Responsibilities",
+        "Education",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_sections": [],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": []
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 99.06,
+      "flags": [
+        "EXCESSIVE_SHORT_LINES",
+        "POSSIBLE_BROKEN_SENTENCES"
+      ],
+      "reasons": [
+        "40.7% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+        "30.8% of line transitions look like a sentence broken across lines without punctuation."
+      ],
+      "metrics": {
+        "char_count": 1550,
+        "word_count": 211,
+        "line_count": 53,
+        "non_empty_line_count": 27,
+        "short_line_count": 11,
+        "short_line_ratio": 0.407407,
+        "fragmented_line_count": 6,
+        "fragmented_line_ratio": 0.222222,
+        "mean_line_length": 55.48,
+        "median_line_length": 73.0,
+        "line_length_stdev": 36.32,
+        "line_length_cv": 0.654632,
+        "broken_sentence_count": 8,
+        "broken_sentence_ratio": 0.307692,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Quality PASS (Text Health 100.0, Completeness 100.0, Reading Order 99.06) — result accepted; fallback stopped. Selected 'tika' with quality score 84.9. Skipped (never executed): pymupdf, docling, ocr.",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 3440.39,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika passed quality checks and was accepted before this extractor was needed.",
+      "accepted": false,
+      "quality": null,
+      "decision": "skipped",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika passed quality checks and was accepted before this extractor was needed.",
+      "accepted": false,
+      "quality": null,
+      "decision": "skipped",
+      "selected": false
+    },
+    {
+      "stage": "OCR Extractor",
+      "type": "extractor",
+      "extractor": "ocr",
+      "status": "SKIPPED",
+      "duration_ms": null,
+      "message": "Skipped — Tika passed quality checks and was accepted before this extractor was needed.",
+      "accepted": false,
+      "quality": null,
+      "decision": "skipped",
+      "selected": false
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=84.9",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality PASS (Text Health 100.0, Completeness 100.0, Reading Order 99.06) — result accepted; fallback stopped. Selected 'tika' with quality score 84.9. Skipped (never executed): pymupdf, docling, ocr.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Tika text normalized: 1550 → 1550 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Contact Information Recovery",
+      "type": "contact_recovery",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Phone, email and location already present in the selected text — no recovery needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 21225.51,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 24770.7,
+      "message": "Muse AI produced validated Resume JSON from the Tika extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 24770.7,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling",
+    "ocr"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Rohan Deshmukh\n\nrohan.deshmukh@example.com | +91 98220 44551 | Pune, Maharashtra 411045\n\nCandidate Snapshot\n\nBackend developer with three years of experience designing APIs, data pipelines and internal\n\ntools for product teams. Comfortable owning features end to end, from database schema to\n\ndeployment and monitoring.\n\nSkill Inventory\n\nPython, FastAPI, REST APIs, SQL, PostgreSQL, Pandas, NumPy, Docker, Git, Linux, Redis, Celery,\n\npytest, and CI pipelines. Also experienced with basic machine learning workflows using scikit-\n\nlearn.\n\nProfessional Journey\n\nSoftware Developer at Nexwave Systems, Pune, from June 2023 to present. Data Analyst at\n\nBrightMetrics, Mumbai, from July 2021 to May 2023, working on reporting automation and\n\ndashboards.\n\nRole Contributions\n\nDesigned and maintained REST services used by five internal teams, reviewed code, mentored two\n\njunior developers, automated weekly data quality checks, and documented deployment runbooks.\n\nLearning Journey\n\nMaster of Computer Applications from Savitri Institute of Technology, Pune, completed in 2021.\n\nBachelor of Computer Applications from City College, Nashik, completed in 2019.\n\nBuild Showcase\n\nInvoice Parser: OCR plus FastAPI service that extracts fields from vendor invoices. Stock\n\nWatch: a small alerting tool that tracks price movements and emails a daily digest to\n\nsubscribers.\n\nCredential Vault\n\nAWS Certified Cloud Practitioner, earned in 2024. Google Data Analytics Certificate, completed\n\nin 2023, along with an internal Docker and Kubernetes training programme.",
+    "normalized_text": "Rohan Deshmukh\n\nrohan.deshmukh@example.com | +91 98220 44551 | Pune, Maharashtra 411045\n\nCandidate Snapshot\n\nBackend developer with three years of experience designing APIs, data pipelines and internal\n\ntools for product teams. Comfortable owning features end to end, from database schema to\n\ndeployment and monitoring.\n\nSkill Inventory\n\nPython, FastAPI, REST APIs, SQL, PostgreSQL, Pandas, NumPy, Docker, Git, Linux, Redis, Celery,\n\npytest, and CI pipelines. Also experienced with basic machine learning workflows using scikit-\n\nlearn.\n\nProfessional Journey\n\nSoftware Developer at Nexwave Systems, Pune, from June 2023 to present. Data Analyst at\n\nBrightMetrics, Mumbai, from July 2021 to May 2023, working on reporting automation and\n\ndashboards.\n\nRole Contributions\n\nDesigned and maintained REST services used by five internal teams, reviewed code, mentored two\n\njunior developers, automated weekly data quality checks, and documented deployment runbooks.\n\nLearning Journey\n\nMaster of Computer Applications from Savitri Institute of Technology, Pune, completed in 2021.\n\nBachelor of Computer Applications from City College, Nashik, completed in 2019.\n\nBuild Showcase\n\nInvoice Parser: OCR plus FastAPI service that extracts fields from vendor invoices. Stock\n\nWatch: a small alerting tool that tracks price movements and emails a daily digest to\n\nsubscribers.\n\nCredential Vault\n\nAWS Certified Cloud Practitioner, earned in 2024. Google Data Analytics Certificate, completed\n\nin 2023, along with an internal Docker and Kubernetes training programme.",
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "original_chars": 1550,
+    "normalized_chars": 1550,
+    "original_estimated_tokens": 388,
+    "normalized_estimated_tokens": 388,
+    "estimated_reduction_percent": 0.0
+  },
+  "contact_recovery": {
+    "status": "not_needed",
+    "selected_extractor": "tika",
+    "present_before": [
+      "phone",
+      "email",
+      "location"
+    ],
+    "missing_before": [],
+    "recovered": {},
+    "still_missing": [],
+    "sources_tried": [],
+    "applied": false,
+    "pre_recovery_normalized_text": null,
+    "at": "2026-11-11T12:44:59.839222+00:00"
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 21225.51,
+      "input_tokens": 1158,
+      "output_tokens": 2633,
+      "total_tokens": 3791,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1158,
+    "output_tokens": 2633,
+    "total_tokens": 3791,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 21225.51,
+    "usage": {
+      "completion_tokens": 2633,
+      "prompt_tokens": 1158,
+      "total_tokens": 3791,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2206
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 1550,
+      "normalized_chars": 1550,
+      "estimated_reduction_percent": 0.0,
+      "normalization_applied": false,
+      "normalization_steps": [],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "tika",
+  "selected_quality_score": 84.9,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 84.9,
+      "status": "success",
+      "word_count": 211,
+      "char_count": 1550,
+      "meaningful_char_count": 1314,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 97.7,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": false,
+        "has_experience_section": true,
+        "has_education_section": false,
+        "sections_found": [
+          "experience",
+          "certifications"
+        ]
+      },
+      "structure": {
+        "heading_count": 0,
+        "paragraph_count": 27,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 0.876,
+        "readability": 0.9773,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 0.6,
+        "structure": 0.5
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 1550,
+    "normalized_chars": 1550,
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "error": null,
+    "original_text": "Rohan Deshmukh\n\nrohan.deshmukh@example.com | +91 98220 44551 | Pune, Maharashtra 411045\n\nCandidate Snapshot\n\nBackend developer with three years of experience designing APIs, data pipelines and internal\n\ntools for product teams. Comfortable owning features end to end, from database schema to\n\ndeployment and monitoring.\n\nSkill Inventory\n\nPython, FastAPI, REST APIs, SQL, PostgreSQL, Pandas, NumPy, Docker, Git, Linux, Redis, Celery,\n\npytest, and CI pipelines. Also experienced with basic machine learning workflows using scikit-\n\nlearn.\n\nProfessional Journey\n\nSoftware Developer at Nexwave Systems, Pune, from June 2023 to present. Data Analyst at\n\nBrightMetrics, Mumbai, from July 2021 to May 2023, working on reporting automation and\n\ndashboards.\n\nRole Contributions\n\nDesigned and maintained REST services used by five internal teams, reviewed code, mentored two\n\njunior developers, automated weekly data quality checks, and documented deployment runbooks.\n\nLearning Journey\n\nMaster of Computer Applications from Savitri Institute of Technology, Pune, completed in 2021.\n\nBachelor of Computer Applications from City College, Nashik, completed in 2019.\n\nBuild Showcase\n\nInvoice Parser: OCR plus FastAPI service that extracts fields from vendor invoices. Stock\n\nWatch: a small alerting tool that tracks price movements and emails a daily digest to\n\nsubscribers.\n\nCredential Vault\n\nAWS Certified Cloud Practitioner, earned in 2024. Google Data Analytics Certificate, completed\n\nin 2023, along with an internal Docker and Kubernetes training programme.",
+    "normalized_text": "Rohan Deshmukh\n\nrohan.deshmukh@example.com | +91 98220 44551 | Pune, Maharashtra 411045\n\nCandidate Snapshot\n\nBackend developer with three years of experience designing APIs, data pipelines and internal\n\ntools for product teams. Comfortable owning features end to end, from database schema to\n\ndeployment and monitoring.\n\nSkill Inventory\n\nPython, FastAPI, REST APIs, SQL, PostgreSQL, Pandas, NumPy, Docker, Git, Linux, Redis, Celery,\n\npytest, and CI pipelines. Also experienced with basic machine learning workflows using scikit-\n\nlearn.\n\nProfessional Journey\n\nSoftware Developer at Nexwave Systems, Pune, from June 2023 to present. Data Analyst at\n\nBrightMetrics, Mumbai, from July 2021 to May 2023, working on reporting automation and\n\ndashboards.\n\nRole Contributions\n\nDesigned and maintained REST services used by five internal teams, reviewed code, mentored two\n\njunior developers, automated weekly data quality checks, and documented deployment runbooks.\n\nLearning Journey\n\nMaster of Computer Applications from Savitri Institute of Technology, Pune, completed in 2021.\n\nBachelor of Computer Applications from City College, Nashik, completed in 2019.\n\nBuild Showcase\n\nInvoice Parser: OCR plus FastAPI service that extracts fields from vendor invoices. Stock\n\nWatch: a small alerting tool that tracks price movements and emails a daily digest to\n\nsubscribers.\n\nCredential Vault\n\nAWS Certified Cloud Practitioner, earned in 2024. Google Data Analytics Certificate, completed\n\nin 2023, along with an internal Docker and Kubernetes training programme."
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "Rohan Deshmukh",
+      "email": "rohan.deshmukh@example.com",
+      "phone": "+91 98220 44551",
+      "location": "Pune, Maharashtra 411045",
+      "summary": "Backend developer with three years of experience designing APIs, data pipelines and internal tools for product teams. Comfortable owning features end to end, from database schema to deployment and monitoring.",
+      "skills": {
+        "technical_skills": [
+          "Python",
+          "FastAPI",
+          "REST APIs",
+          "SQL",
+          "PostgreSQL",
+          "Pandas",
+          "NumPy",
+          "Redis",
+          "Celery",
+          "pytest",
+          "scikit-learn",
+          "CI pipelines"
+        ],
+        "soft_skills": [],
+        "tools": [
+          "Docker",
+          "Git",
+          "Linux"
+        ],
+        "taxonomy_skills": [],
+        "other_skills": []
+      },
+      "experience": [
+        {
+          "title": "Software Developer",
+          "company": "Nexwave Systems",
+          "location": "Pune",
+          "start_date": "June 2023",
+          "end_date": "present",
+          "highlights": [
+            "Designed and maintained REST services used by five internal teams",
+            "Reviewed code",
+            "Mentored two junior developers",
+            "Documented deployment runbooks"
+          ]
+        },
+        {
+          "title": "Data Analyst",
+          "company": "BrightMetrics",
+          "location": "Mumbai",
+          "start_date": "July 2021",
+          "end_date": "May 2023",
+          "highlights": [
+            "Working on reporting automation and dashboards",
+            "Automated weekly data quality checks"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "degree": "Master of Computer Applications",
+          "institution": "Savitri Institute of Technology",
+          "location": "Pune",
+          "start_date": "",
+          "end_date": "2021"
+        },
+        {
+          "degree": "Bachelor of Computer Applications",
+          "institution": "City College",
+          "location": "Nashik",
+          "start_date": "",
+          "end_date": "2019"
+        }
+      ],
+      "certifications": [
+        "AWS Certified Cloud Practitioner",
+        "Google Data Analytics Certificate"
+      ],
+      "languages": [],
+      "links": []
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 21225.51,
+    "usage": {
+      "completion_tokens": 2633,
+      "prompt_tokens": 1158,
+      "total_tokens": 3791,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2206
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "Rohan Deshmukh",
+    "email": "rohan.deshmukh@example.com",
+    "phone": "+91 98220 44551",
+    "location": "Pune, Maharashtra 411045",
+    "summary": "Backend developer with three years of experience designing APIs, data pipelines and internal tools for product teams. Comfortable owning features end to end, from database schema to deployment and monitoring.",
+    "skills": {
+      "technical_skills": [
+        "Python",
+        "FastAPI",
+        "REST APIs",
+        "SQL",
+        "PostgreSQL",
+        "Pandas",
+        "NumPy",
+        "Redis",
+        "Celery",
+        "pytest",
+        "scikit-learn",
+        "CI pipelines"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "Docker",
+        "Git",
+        "Linux"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Software Developer",
+        "company": "Nexwave Systems",
+        "location": "Pune",
+        "start_date": "June 2023",
+        "end_date": "present",
+        "highlights": [
+          "Designed and maintained REST services used by five internal teams",
+          "Reviewed code",
+          "Mentored two junior developers",
+          "Documented deployment runbooks"
+        ]
+      },
+      {
+        "title": "Data Analyst",
+        "company": "BrightMetrics",
+        "location": "Mumbai",
+        "start_date": "July 2021",
+        "end_date": "May 2023",
+        "highlights": [
+          "Working on reporting automation and dashboards",
+          "Automated weekly data quality checks"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master of Computer Applications",
+        "institution": "Savitri Institute of Technology",
+        "location": "Pune",
+        "start_date": "",
+        "end_date": "2021"
+      },
+      {
+        "degree": "Bachelor of Computer Applications",
+        "institution": "City College",
+        "location": "Nashik",
+        "start_date": "",
+        "end_date": "2019"
+      }
+    ],
+    "certifications": [
+      "AWS Certified Cloud Practitioner",
+      "Google Data Analytics Certificate"
+    ],
+    "languages": [],
+    "links": []
+  },
+  "resume_json": {
+    "full_name": "Rohan Deshmukh",
+    "email": "rohan.deshmukh@example.com",
+    "phone": "+91 98220 44551",
+    "location": "Pune, Maharashtra 411045",
+    "summary": "Backend developer with three years of experience designing APIs, data pipelines and internal tools for product teams. Comfortable owning features end to end, from database schema to deployment and monitoring.",
+    "skills": {
+      "technical_skills": [
+        "Python",
+        "FastAPI",
+        "REST APIs",
+        "SQL",
+        "PostgreSQL",
+        "Pandas",
+        "NumPy",
+        "Redis",
+        "Celery",
+        "pytest",
+        "scikit-learn",
+        "CI pipelines"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "Docker",
+        "Git",
+        "Linux"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Software Developer",
+        "company": "Nexwave Systems",
+        "location": "Pune",
+        "start_date": "June 2023",
+        "end_date": "present",
+        "highlights": [
+          "Designed and maintained REST services used by five internal teams",
+          "Reviewed code",
+          "Mentored two junior developers",
+          "Documented deployment runbooks"
+        ]
+      },
+      {
+        "title": "Data Analyst",
+        "company": "BrightMetrics",
+        "location": "Mumbai",
+        "start_date": "July 2021",
+        "end_date": "May 2023",
+        "highlights": [
+          "Working on reporting automation and dashboards",
+          "Automated weekly data quality checks"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master of Computer Applications",
+        "institution": "Savitri Institute of Technology",
+        "location": "Pune",
+        "start_date": "",
+        "end_date": "2021"
+      },
+      {
+        "degree": "Bachelor of Computer Applications",
+        "institution": "City College",
+        "location": "Nashik",
+        "start_date": "",
+        "end_date": "2019"
+      }
+    ],
+    "certifications": [
+      "AWS Certified Cloud Practitioner",
+      "Google Data Analytics Certificate"
+    ],
+    "languages": [],
+    "links": []
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 3.441,
+    "quality_seconds": 0.037,
+    "normalization_seconds": 0.0001,
+    "recovery_seconds": 0.0001,
+    "llm_seconds": 21.2265,
+    "total_seconds": 24.7707
+  },
+  "yaml_editor": {
+    "status": "SKIPPED",
+    "reason": "completeness_not_low",
+    "trigger": {
+      "completeness_score": 100.0,
+      "threshold": 75.0,
+      "triggered": false,
+      "reason": "completeness_not_low"
+    },
+    "model": "muse-spark-1.3-contributor",
+    "configured": true,
+    "enabled": true,
+    "duration_ms": null,
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "keywords_suggested": null,
+    "keywords_accepted": null,
+    "keywords_rejected": null,
+    "keywords_added": {},
+    "categories_modified": [],
+    "rejected": [],
+    "diagnostics": null,
+    "error": null,
+    "yaml_version_before": null,
+    "yaml_version_after": null,
+    "current_yaml_version": "v002",
+    "timestamp": null
+  },
+  "_stored_name": "c5d00156-0709-4f25-b126-0461c5f488ff_YAML_Editor_Test_Resume.pdf"
+}

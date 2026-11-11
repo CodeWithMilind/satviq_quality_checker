@@ -89,8 +89,14 @@ class EditorConfig:
                       or "muse-spark-1.3-contributor").strip()
         self.provider = cfg.get("provider") or "Muse AI"
         self.timeout_seconds = float(cfg.get("timeout_seconds") or 60)
-        self.max_output_tokens = int(cfg.get("max_output_tokens") or 600)
+        self.max_output_tokens = int(cfg.get("max_output_tokens") or 1000)
         self.temperature = float(cfg.get("temperature") or 0.0)
+        # Reasoning depth for the editor's calls (see config.yaml):
+        # "minimal" by default — the documented shortest pass. An
+        # explicit empty/invalid value disables the parameter.
+        _effort = str(cfg.get("reasoning_effort") or "minimal").strip().lower()
+        self.reasoning_effort = _effort if _effort in (
+            "minimal", "low", "medium", "high", "xhigh", "max") else None
         self.trigger_below = float(
             cfg.get("trigger_completeness_below") or 75.0)
         self.min_text_chars = int(cfg.get("min_text_chars") or 200)
@@ -117,8 +123,82 @@ class EditorConfig:
 # ---------------------------------------------------------------------------
 
 def _default_client(config: EditorConfig) -> Callable[..., dict]:
+    """The editor's own Muse transport.
+
+    JSON mode: the Meta Model API documents ``response_format``
+    (``{"type": "json_object"}`` / ``json_schema``) for Chat
+    Completions, so it is requested by default. If the endpoint
+    rejects the parameter (HTTP 400), the SAME request is retried
+    once WITHOUT it — a compatibility fallback for a rejected
+    parameter, not a retry of the model's answer, and the only
+    retry this client ever makes.
+
+    Root cause of the 2026-11-11 production failure this replaces:
+    the model spent the entire 600-token output budget on hidden
+    reasoning (usage showed completion_tokens=600,
+    reasoning_tokens=600, visible text 0) and the old client
+    flattened the empty content into "invalid JSON at char 0".
+    The reply dict therefore carries finish_reason, the content
+    shape, and the usage block so the agent can classify empty /
+    truncated / non-JSON outcomes precisely.
+
+    Content extraction follows the documented Chat Completions
+    schema: ``choices[0].message.content``, either a plain string or
+    a list of typed parts. For list parts, text is taken from parts
+    whose ``type`` is ``"text"`` (their ``text`` field); part types
+    the schema also defines — ``refusal``, ``reasoning``,
+    ``tool_calls`` — carry NO answer text and are skipped, never
+    stringified into the reply (a refusal is surfaced via its own
+    field so the agent can report it instead of misreading it as
+    empty or invalid JSON). The documented ``delta`` field belongs
+    to streaming chunks and is never present on a complete
+    (non-streamed) response, so it is not consulted.
+    """
+    def _extract(data: dict, duration_ms: float) -> dict:
+        choice = {}
+        message: Any = {}
+        try:
+            choice = data["choices"][0] or {}
+            message = choice.get("message") or {}
+        except (KeyError, IndexError, TypeError):
+            pass
+        raw_content = message.get("content") if isinstance(message, dict) else None
+        parts: list[str] = []
+        shape = type(raw_content).__name__
+        refusal_text = None
+        if isinstance(raw_content, str):
+            parts = [raw_content] if raw_content else []
+            shape = "string"
+        elif isinstance(raw_content, list):
+            shape = "list"
+            for part in raw_content:
+                if not isinstance(part, dict):
+                    continue
+                ptype = part.get("type")
+                if ptype in (None, "text") and isinstance(part.get("text"), str):
+                    parts.append(part["text"])
+                elif ptype == "refusal":
+                    refusal = part.get("refusal")
+                    refusal_text = refusal if isinstance(refusal, str) else ""
+                # reasoning / tool_calls / any other part type carries
+                # no answer text — skipped, never stringified.
+        if isinstance(message, dict):
+            top_refusal = message.get("refusal")
+            if isinstance(top_refusal, str) and top_refusal:
+                refusal_text = top_refusal
+        return {
+            "text": "".join(parts),
+            "usage": data.get("usage") or {},
+            "model": data.get("model") or config.model,
+            "duration_ms": duration_ms,
+            "finish_reason": choice.get("finish_reason")
+            if isinstance(choice, dict) else None,
+            "content_shape": shape,
+            "refusal": refusal_text,
+        }
+
     def call(instruction: str, user_text: str) -> dict:
-        from muse_ai.client import http_post_json
+        from muse_ai.client import MuseError, http_post_json
         payload = {
             "model": config.model,
             "messages": [
@@ -126,22 +206,74 @@ def _default_client(config: EditorConfig) -> Callable[..., dict]:
                 {"role": "user", "content": user_text}],
             "max_completion_tokens": config.max_output_tokens,
             "temperature": config.temperature,
+            "response_format": {"type": "json_object"},
         }
+        # THE fix for the recurring empty responses: cap the model's
+        # reasoning depth. Without reasoning_effort, Muse Spark
+        # reasons at "high" by default and the reasoning pass alone
+        # consumed first the 600-token budget, then a 2000-token
+        # combined budget — both times finish_reason=length with
+        # zero visible content. "minimal" is the shortest supported
+        # pass ("none" returns HTTP 400 on Muse reasoning models).
+        if config.reasoning_effort:
+            payload["reasoning_effort"] = config.reasoning_effort
+        url = f"{config.base_url}/chat/completions"
+        headers = {"Authorization": f"Bearer {config.api_key}"}
         started = time.perf_counter()
-        data = http_post_json(
-            f"{config.base_url}/chat/completions", payload,
-            {"Authorization": f"Bearer {config.api_key}"},
-            timeout=config.timeout_seconds)
-        duration_ms = round((time.perf_counter() - started) * 1000, 2)
         try:
-            text = data["choices"][0]["message"]["content"] or ""
-        except (KeyError, IndexError, TypeError) as exc:
-            raise ValueError(
-                "Muse API reply had no message content.") from exc
-        return {"text": text, "usage": data.get("usage") or {},
-                "model": data.get("model") or config.model,
-                "duration_ms": duration_ms}
+            data = http_post_json(url, payload, headers,
+                                  timeout=config.timeout_seconds)
+        except MuseError as exc:
+            if exc.status != 400:
+                raise
+            # HTTP 400 = a request parameter was rejected. Drop the
+            # optional parameters ONE at a time — response_format
+            # first, then reasoning_effort — so a rejection of one
+            # never silently disables the other. At most two
+            # compatibility retries, only ever on HTTP 400.
+            dropped = []
+            for optional in ("response_format", "reasoning_effort"):
+                if optional not in payload:
+                    continue
+                payload.pop(optional, None)
+                dropped.append(optional)
+                logger.info("YAML Editor AI: endpoint returned HTTP "
+                            "400; retrying the same request without "
+                            "%s", ", ".join(dropped))
+                try:
+                    data = http_post_json(url, payload, headers,
+                                          timeout=config.timeout_seconds)
+                    break
+                except MuseError as exc2:
+                    if exc2.status != 400:
+                        raise
+                    data = None
+            if data is None:
+                raise
+        duration_ms = round((time.perf_counter() - started) * 1000, 2)
+        return _extract(data, duration_ms)
     return call
+
+
+def _compact_resume_text(text: str, cap: int) -> str:
+    """Shorten resume text for the single empty-response retry.
+
+    Keeps section-heading-like lines (short lines, or lines ending
+    with a colon) plus the first lines of the document (contact
+    block), capped at ``cap`` characters. The editor only needs
+    headings and terminology, so body prose can go — this roughly
+    halves the input tokens of the retry."""
+    lines = (text or "").splitlines()
+    picked: list[str] = []
+    for idx, line in enumerate(lines):
+        stripped = line.strip()
+        if not stripped:
+            continue
+        is_heading = len(stripped.split()) <= 6 or stripped.endswith(":")
+        if idx < 12 or is_heading:
+            picked.append(stripped)
+    compact = "\n".join(picked)
+    return compact[:cap] if len(compact) > cap else compact
 
 
 def _parse_json_reply(text: str) -> Any:
@@ -213,14 +345,27 @@ class YamlEditorAgent:
         ok, reason = self.should_trigger(completeness_score, text)
         if not ok:
             return {"status": "skipped", "reason": reason,
-                    "resume_id": resume_id}
+                    "resume_id": resume_id,
+                    "trigger": {
+                        "completeness_score": completeness_score,
+                        "threshold": self.config.trigger_below,
+                        "reason": reason},
+                    "model": self.config.model,
+                    "configured": self.config.configured,
+                    "enabled": self.config.enabled}
         self.store.ensure_seeded()
         current_version = version_manager.version_label(
             self.store.current_version())
         if self.tracker.already_analyzed(resume_id, current_version):
             return {"status": "skipped", "reason": "already_analyzed",
                     "resume_id": resume_id,
-                    "yaml_version": current_version}
+                    "trigger": {
+                        "completeness_score": completeness_score,
+                        "threshold": self.config.trigger_below,
+                        "reason": "already_analyzed"},
+                    "model": self.config.model,
+                    "yaml_version_before": current_version,
+                    "yaml_version_after": current_version}
         config = self.store.read_active()
         # Missing sections arrive as display names from the checker;
         # map them to YAML category keys for the prompt.
@@ -244,6 +389,50 @@ class YamlEditorAgent:
             return self._record_failure(
                 resume_id, filename, current_version, None,
                 duration_ms, f"api_error: {exc}")
+        # ONE controlled retry, only for an EMPTY reply: resend a
+        # COMPACT request (headings + short lines only, capped well
+        # below the normal resume cap, with an explicit
+        # no-explanation instruction). A truncated or malformed reply
+        # is NOT retried — the model did answer, and re-asking would
+        # only re-spend tokens. Never more than one retry.
+        if not (reply.get("text") or "").strip():
+            compact_text = _compact_resume_text(
+                text, self.config.max_resume_chars // 2)
+            c_instruction, c_user, _ = prompt_builder.build_prompt(
+                config, compact_text, missing_sections=missing_keys or None,
+                max_resume_chars=self.config.max_resume_chars // 2)
+            c_instruction = (
+                c_instruction
+                + " Output the JSON object immediately with no "
+                  "explanation, no reasoning and no other text.")
+            logger.info("YAML Editor AI: empty first reply for %s — "
+                        "one compact retry", resume_id)
+            try:
+                retry_reply = client(c_instruction, c_user)
+                retry_reply["attempts"] = 2
+                retry_reply["retry_reason"] = "empty_response"
+                prev_usage = reply.get("usage") or {}
+                retry_usage = retry_reply.get("usage") or {}
+                # Analytics must show the TRUE total spend of the
+                # execution: sum both calls' usage.
+                for key in ("prompt_tokens", "completion_tokens",
+                            "total_tokens"):
+                    a, b = prev_usage.get(key), retry_usage.get(key)
+                    if isinstance(a, int) or isinstance(b, int):
+                        retry_usage[key] = (a or 0) + (b or 0)
+                d_prev = ((prev_usage.get("completion_tokens_details")
+                           or {}).get("reasoning_tokens"))
+                d_retry = ((retry_usage.get("completion_tokens_details")
+                            or {}).get("reasoning_tokens"))
+                if isinstance(d_prev, int) or isinstance(d_retry, int):
+                    retry_usage.setdefault(
+                        "completion_tokens_details", {})[
+                        "reasoning_tokens"] = (d_prev or 0) + (d_retry or 0)
+                retry_reply["usage"] = retry_usage
+                reply = retry_reply
+            except Exception as exc:
+                logger.warning("YAML Editor AI compact retry failed "
+                               "for %s: %s", resume_id, exc)
         duration_ms = float(reply.get("duration_ms")
                             or round((time.perf_counter() - started)
                                      * 1000, 2))
@@ -251,15 +440,78 @@ class YamlEditorAgent:
         input_tokens = usage.get("prompt_tokens")
         output_tokens = usage.get("completion_tokens")
         model = reply.get("model") or self.config.model
+        # --- Response classification (Part B) -------------------------
+        # Safe diagnostics ONLY: finish reason, response length,
+        # content shape, model, token usage. NEVER the response body
+        # or any resume content.
+        reply_text = reply.get("text") or ""
+        details = (usage.get("completion_tokens_details") or {}) \
+            if isinstance(usage, dict) else {}
+        diagnostics = {
+            "finish_reason": reply.get("finish_reason"),
+            "response_chars": len(reply_text),
+            "content_shape": reply.get("content_shape"),
+            "reasoning_tokens": details.get("reasoning_tokens"),
+            "completion_tokens": output_tokens,
+            "attempts": reply.get("attempts", 1),
+            "retry_reason": reply.get("retry_reason"),
+            "refusal": bool(reply.get("refusal")),
+        }
+        if reply.get("refusal") and not reply_text.strip():
+            # The model declined (documented ``refusal`` content):
+            # report it as what it is — not as an empty response and
+            # not as invalid JSON. The refusal TEXT is never logged
+            # or stored, only the fact that one occurred.
+            logger.warning("YAML Editor AI refusal for %s: %s",
+                           resume_id, diagnostics)
+            return self._record_failure(
+                resume_id, filename, current_version, model, duration_ms,
+                "refusal: model declined to answer (refusal content "
+                "present, no JSON produced)",
+                input_tokens=input_tokens,
+                output_tokens=output_tokens, diagnostics=diagnostics)
+        if not reply_text.strip():
+            # An empty reply is a FAILURE, never an empty success.
+            # The known production cause: the whole output budget
+            # was spent on hidden reasoning tokens.
+            if diagnostics["reasoning_tokens"] and output_tokens \
+                    and diagnostics["reasoning_tokens"] >= output_tokens:
+                error = ("empty_response: model returned no visible "
+                         "content — the full output budget was spent "
+                         "on reasoning tokens "
+                         f"({diagnostics['reasoning_tokens']} of "
+                         f"{output_tokens} completion tokens); no "
+                         "JSON was produced")
+            else:
+                error = ("empty_response: model returned no content "
+                         f"(finish_reason={diagnostics['finish_reason']}, "
+                         f"completion_tokens={output_tokens})")
+            logger.warning("YAML Editor AI empty response for %s: %s",
+                           resume_id, diagnostics)
+            return self._record_failure(
+                resume_id, filename, current_version, model, duration_ms,
+                error, input_tokens=input_tokens,
+                output_tokens=output_tokens, diagnostics=diagnostics)
         try:
-            raw = _parse_json_reply(reply.get("text") or "")
+            raw = _parse_json_reply(reply_text)
         except (json.JSONDecodeError, TypeError) as exc:
             logger.warning("YAML Editor AI returned invalid JSON for "
-                           "%s: %s", resume_id, exc)
+                           "%s: %s | diagnostics=%s",
+                           resume_id, exc, diagnostics)
             return self._record_failure(
                 resume_id, filename, current_version, model, duration_ms,
                 f"invalid_json: {exc}",
-                input_tokens=input_tokens, output_tokens=output_tokens)
+                input_tokens=input_tokens, output_tokens=output_tokens,
+                diagnostics=diagnostics)
+        if not isinstance(raw, dict):
+            logger.warning("YAML Editor AI returned non-object JSON "
+                           "for %s | diagnostics=%s",
+                           resume_id, diagnostics)
+            return self._record_failure(
+                resume_id, filename, current_version, model, duration_ms,
+                "invalid_json: top-level JSON value is not an object",
+                input_tokens=input_tokens, output_tokens=output_tokens,
+                diagnostics=diagnostics)
         # Critical section: re-read the CURRENT version (another
         # resume may have updated it while our call was in flight),
         # re-validate against it, and apply atomically under the lock.
@@ -269,7 +521,13 @@ class YamlEditorAgent:
             if self.tracker.already_analyzed(resume_id, version_before):
                 return {"status": "skipped", "reason": "already_analyzed",
                         "resume_id": resume_id,
-                        "yaml_version": version_before}
+                        "trigger": {
+                            "completeness_score": completeness_score,
+                            "threshold": self.config.trigger_below,
+                            "reason": "already_analyzed"},
+                        "model": self.config.model,
+                        "yaml_version_before": version_before,
+                        "yaml_version_after": version_before}
             current_text = self.store.read_active_text()
             current_config = self.store.read_active()
             accepted, rejected = validate_suggestions(
@@ -329,7 +587,8 @@ class YamlEditorAgent:
                         version_before: str, model: str | None,
                         duration_ms: float, error: str, *,
                         input_tokens: int | None = None,
-                        output_tokens: int | None = None) -> dict[str, Any]:
+                        output_tokens: int | None = None,
+                        diagnostics: dict[str, Any] | None = None) -> dict[str, Any]:
         entry = {
             "resume_id": resume_id, "filename": filename,
             "timestamp": version_manager._now_iso(),
@@ -338,6 +597,7 @@ class YamlEditorAgent:
             "yaml_version_after": version_before,
             "input_tokens": input_tokens, "output_tokens": output_tokens,
             "duration_ms": duration_ms,
+            "diagnostics": diagnostics,
             "keywords_suggested": 0, "keywords_accepted": 0,
             "keywords_rejected": 0, "keywords_added": {},
             "rejected": [], "status": "failed", "error": error,
@@ -390,7 +650,7 @@ def maybe_improve_from_record(record: dict[str, Any], *,
     """Post-processing hook for api.pipeline: analyse a finished
     record when it qualifies. Fully guarded — ANY failure here is
     logged and swallowed; resume processing is never affected, and
-    the record (including its quality scores) is never modified."""
+    the record's quality scores are never modified."""
     try:
         agent = agent or get_default_agent()
         score, text, missing = _record_inputs(record)
@@ -402,3 +662,94 @@ def maybe_improve_from_record(record: dict[str, Any], *,
     except Exception:  # pragma: no cover - absolute guard
         logger.exception("YAML Editor AI post-processing failed")
         return {"status": "skipped", "reason": "internal_error"}
+
+
+def record_yaml_editor_block(record: dict[str, Any],
+                             outcome: dict[str, Any], *,
+                             agent: YamlEditorAgent | None = None) -> dict[str, Any]:
+    """Build the structured ``record["yaml_editor"]`` block (Part C)
+    from an analyze() outcome. Every value comes from the actual
+    execution — token/keyword values stay null when the execution
+    never produced them; nothing is invented. Also used to backfill
+    OLD records from the token-tracker history (see
+    ``yaml_editor_block_for_record``)."""
+    agent = agent or get_default_agent()
+    cfg = agent.config
+    status_raw = str(outcome.get("status") or "skipped").lower()
+    status = {"success": "SUCCESS", "no_change": "NO_CHANGE",
+              "failed": "FAILED"}.get(status_raw, "SKIPPED")
+    trigger_in = outcome.get("trigger") or {}
+    score = trigger_in.get("completeness_score")
+    if score is None:
+        score = _record_inputs(record)[0]
+    reason = outcome.get("reason") or outcome.get("error")
+    if status == "FAILED" and outcome.get("error"):
+        reason = outcome["error"]
+    input_tokens = outcome.get("input_tokens")
+    output_tokens = outcome.get("output_tokens")
+    total_tokens = (input_tokens + output_tokens) \
+        if isinstance(input_tokens, int) \
+        and isinstance(output_tokens, int) else None
+    keywords_added = outcome.get("keywords_added") or {}
+    try:
+        current_version = version_manager.version_label(
+            agent.store.current_version())
+    except Exception:
+        current_version = None
+    return {
+        "status": status,
+        "reason": reason,
+        "trigger": {
+            "completeness_score": score,
+            "threshold": trigger_in.get("threshold", cfg.trigger_below),
+            "triggered": status != "SKIPPED"
+            or trigger_in.get("reason") == "already_analyzed",
+            "reason": trigger_in.get("reason")
+            or ("below_threshold" if status in ("SUCCESS", "NO_CHANGE", "FAILED")
+                else reason),
+        },
+        "model": outcome.get("model") or cfg.model,
+        "configured": cfg.configured,
+        "enabled": cfg.enabled,
+        "duration_ms": outcome.get("duration_ms"),
+        "input_tokens": input_tokens,
+        "output_tokens": output_tokens,
+        "total_tokens": total_tokens,
+        "keywords_suggested": outcome.get("keywords_suggested"),
+        "keywords_accepted": outcome.get("keywords_accepted"),
+        "keywords_rejected": outcome.get("keywords_rejected"),
+        "keywords_added": keywords_added,
+        "categories_modified": sorted(keywords_added.keys()),
+        "rejected": outcome.get("rejected") or [],
+        "diagnostics": outcome.get("diagnostics"),
+        "error": outcome.get("error"),
+        "yaml_version_before": outcome.get("yaml_version_before"),
+        "yaml_version_after": outcome.get("yaml_version_after"),
+        "current_yaml_version": current_version,
+        "timestamp": outcome.get("timestamp"),
+    }
+
+
+def yaml_editor_block_for_record(record: dict[str, Any], *,
+                                 agent: YamlEditorAgent | None = None) -> dict[str, Any]:
+    """The record's yaml_editor block: the stored one when present;
+    for records processed before Part C existed, a block derived
+    from the execution-history entry for that resume (so the test
+    resume processed on 2026-11-11 shows its real failed execution);
+    otherwise an honest SKIPPED/not-executed block."""
+    stored = record.get("yaml_editor")
+    if isinstance(stored, dict) and stored.get("status"):
+        return stored
+    agent = agent or get_default_agent()
+    resume_id = str(record.get("resume_id") or "")
+    for entry in reversed(agent.tracker.all()):
+        if entry.get("resume_id") == resume_id:
+            return record_yaml_editor_block(record, entry, agent=agent)
+    score = _record_inputs(record)[0]
+    return record_yaml_editor_block(
+        record,
+        {"status": "skipped", "reason": "not_executed",
+         "trigger": {"completeness_score": score,
+                     "threshold": agent.config.trigger_below,
+                     "reason": "not_executed"}},
+        agent=agent)
