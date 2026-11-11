@@ -1,0 +1,1594 @@
+{
+  "resume_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6",
+  "filename": "download_11_.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 990142,
+  "uploaded_at": "2026-11-11T05:39:27.779596+00:00",
+  "success": true,
+  "extractor_used": "docling",
+  "final_extractor": "docling",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6-attempt-1",
+      "resume_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 75.2 (selected 'docling' scored 79.9).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 75.2 (selected 'docling' scored 79.9).",
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6",
+        "source_tool": "tika",
+        "attempt_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 771,
+            "word_count": 120,
+            "line_count": 44,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.1738,
+            "symbol_count": 1,
+            "symbol_ratio": 0.001297,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 52.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 771,
+            "word_count": 120,
+            "configured_section_count": 8,
+            "detected_count": 1,
+            "missing_count": 7,
+            "detected_sections": [
+              "Contact Information"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Responsibilities",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "YogeshrajO06@gmail.com",
+                "confidence": 0.8
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "missing",
+              "Skills": "missing",
+              "Work Experience": "missing",
+              "Responsibilities": "missing",
+              "Education": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Responsibilities",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 93.79,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES"
+          ],
+          "reasons": [
+            "48.3% of lines have 2 words or fewer — text may be fragmented or columns may have been split."
+          ],
+          "metrics": {
+            "char_count": 771,
+            "word_count": 120,
+            "line_count": 44,
+            "non_empty_line_count": 29,
+            "short_line_count": 14,
+            "short_line_ratio": 0.482759,
+            "fragmented_line_count": 9,
+            "fragmented_line_ratio": 0.310345,
+            "mean_line_length": 25.1,
+            "median_line_length": 24.0,
+            "line_length_stdev": 15.41,
+            "line_length_cv": 0.613954,
+            "broken_sentence_count": 1,
+            "broken_sentence_ratio": 0.035714,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6",
+        "source_tool": "tika",
+        "attempt_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 771,
+            "word_count": 120,
+            "line_count": 44,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.1738,
+            "symbol_count": 1,
+            "symbol_ratio": 0.001297,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 52.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 771,
+            "word_count": 120,
+            "configured_section_count": 8,
+            "detected_count": 1,
+            "missing_count": 7,
+            "detected_sections": [
+              "Contact Information"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Responsibilities",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "YogeshrajO06@gmail.com",
+                "confidence": 0.8
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "missing",
+              "Skills": "missing",
+              "Work Experience": "missing",
+              "Responsibilities": "missing",
+              "Education": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Responsibilities",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 93.79,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES"
+          ],
+          "reasons": [
+            "48.3% of lines have 2 words or fewer — text may be fragmented or columns may have been split."
+          ],
+          "metrics": {
+            "char_count": 771,
+            "word_count": 120,
+            "line_count": 44,
+            "non_empty_line_count": 29,
+            "short_line_count": 14,
+            "short_line_ratio": 0.482759,
+            "fragmented_line_count": 9,
+            "fragmented_line_ratio": 0.310345,
+            "mean_line_length": 25.1,
+            "median_line_length": 24.0,
+            "line_length_stdev": 15.41,
+            "line_length_cv": 0.613954,
+            "broken_sentence_count": 1,
+            "broken_sentence_ratio": 0.035714,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 75.2,
+      "duration_ms": 44702.18,
+      "text": "https://www.behance.net/yogeshraj0aa4567\nYOGESH M\n\nGRAPHIC DESIGNER\n\n@ 8939785374\n@ YogeshrajO06@gmail.com\n\n® Portfolio - click here\n\nABOUT\n\n| am an aspiring graphic designer who is always curious to learn new things,\nboth within and beyond the field of graphic design.\n\nEDUCATION SOFTWARE SKILLS\n\nBse MultiMedia\n\nImage Creative Education (Ps) (Pr (Ly)\n2021-2024\n\nGraphic Designing\n\nImage Creative Education EXPERIENCE\n2019-2020\n. Sameera groups Jun 2024 to Present\nHigher Secondary\nRem Hr Sec School\nMebel Interiors Junto May 2023 - 24\n2017-2018\nDosindia Apr to May 2022 - 23\nRichtech Agrofarms Aug to Apr 2021-22\n\nImage Editing & Manipulation Ute oN eal te\n\nMotion Graphics\n\nPrint Design & Production\n\nPrint Layouts L A N G U A G E Ss\nBrochures\n\nMagazines TAMIL English",
+      "extracted_text": "https://www.behance.net/yogeshraj0aa4567\nYOGESH M\n\nGRAPHIC DESIGNER\n\n@ 8939785374\n@ YogeshrajO06@gmail.com\n\n® Portfolio - click here\n\nABOUT\n\n| am an aspiring graphic designer who is always curious to learn new things,\nboth within and beyond the field of graphic design.\n\nEDUCATION SOFTWARE SKILLS\n\nBse MultiMedia\n\nImage Creative Education (Ps) (Pr (Ly)\n2021-2024\n\nGraphic Designing\n\nImage Creative Education EXPERIENCE\n2019-2020\n. Sameera groups Jun 2024 to Present\nHigher Secondary\nRem Hr Sec School\nMebel Interiors Junto May 2023 - 24\n2017-2018\nDosindia Apr to May 2022 - 23\nRichtech Agrofarms Aug to Apr 2021-22\n\nImage Editing & Manipulation Ute oN eal te\n\nMotion Graphics\n\nPrint Design & Production\n\nPrint Layouts L A N G U A G E Ss\nBrochures\n\nMagazines TAMIL English",
+      "extracted_text_length": 771,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "https://www.behance.net/yogeshraj0aa4567\nYOGESH M\n\nGRAPHIC DESIGNER\n\n@ 8939785374\n@ YogeshrajO06@gmail.com\n\n® Portfolio - click here\n\nABOUT\n\n| am an aspiring graphic designer who is always curious to learn new things,\nboth within and beyond the field of graphic design.\n\nEDUCATION SOFTWARE SKILLS\n\nBse MultiMedia\n\nImage Creative Education (Ps) (Pr (Ly)\n2021-2024\n\nGraphic Designing\n\nImage Creative Education EXPERIENCE\n2019-2020\n. Sameera groups Jun 2024 to Present\nHigher Secondary\nRem Hr Sec School\nMebel Interiors Junto May 2023 - 24\n2017-2018\nDosindia Apr to May 2022 - 23\nRichtech Agrofarms Aug to Apr 2021-22\n\nImage Editing & Manipulation Ute oN eal te\n\nMotion Graphics\n\nPrint Design & Production\n\nPrint Layouts L A N G U A G E Ss\nBrochures\n\nMagazines TAMIL English"
+    },
+    {
+      "attempt_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6-attempt-2",
+      "resume_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6",
+      "attempt_number": 2,
+      "extractor_name": "pymupdf",
+      "extractor_version": null,
+      "success": false,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "fallback_decision": "reject",
+      "fallback_reason": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "quality_status": null,
+      "quality": null,
+      "quality_checker_report": null,
+      "quality_score": 0.0,
+      "duration_ms": 47.05,
+      "text": "",
+      "extracted_text": "",
+      "extracted_text_length": 0,
+      "extraction_status": "FAILED",
+      "error": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "error_message": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "format": "PDF 1.4",
+        "title": "Yogesh_CV.pdf",
+        "author": "ravanan ",
+        "keywords": "DAGfjLgwtTI,BAE7OilMBWM,0",
+        "creator": "Canva",
+        "producer": "Canva",
+        "creationDate": "D:20250219121439+00'00'",
+        "modDate": "D:20250219121438+00'00'"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": ""
+    },
+    {
+      "attempt_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6-attempt-3",
+      "resume_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6",
+      "attempt_number": 3,
+      "extractor_name": "docling",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Selected 'docling' with the highest quality score 79.9 (threshold 60.0).",
+      "fallback_decision": "accept",
+      "fallback_reason": "Selected 'docling' with the highest quality score 79.9 (threshold 60.0).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6",
+        "source_tool": "docling",
+        "attempt_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 739,
+            "word_count": 116,
+            "line_count": 50,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.184032,
+            "symbol_count": 4,
+            "symbol_ratio": 0.005413,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 88.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 739,
+            "word_count": 116,
+            "configured_section_count": 8,
+            "detected_count": 4,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "software skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "Yogeshraj006@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SOFTWARE SKILLS",
+                "detection_method": "heading",
+                "line_number": 34,
+                "evidence": "SOFTWARE SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 36,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Summary": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 78.17,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "55.2% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "51.7% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 739,
+            "word_count": 116,
+            "line_count": 50,
+            "non_empty_line_count": 29,
+            "short_line_count": 16,
+            "short_line_ratio": 0.551724,
+            "fragmented_line_count": 15,
+            "fragmented_line_ratio": 0.517241,
+            "mean_line_length": 23.79,
+            "median_line_length": 15.0,
+            "line_length_stdev": 23.77,
+            "line_length_cv": 0.998949,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6",
+        "source_tool": "docling",
+        "attempt_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 739,
+            "word_count": 116,
+            "line_count": 50,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.184032,
+            "symbol_count": 4,
+            "symbol_ratio": 0.005413,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 88.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 739,
+            "word_count": 116,
+            "configured_section_count": 8,
+            "detected_count": 4,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "software skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "Yogeshraj006@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SOFTWARE SKILLS",
+                "detection_method": "heading",
+                "line_number": 34,
+                "evidence": "SOFTWARE SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 36,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Summary": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 78.17,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "55.2% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "51.7% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 739,
+            "word_count": 116,
+            "line_count": 50,
+            "non_empty_line_count": 29,
+            "short_line_count": 16,
+            "short_line_ratio": 0.551724,
+            "fragmented_line_count": 15,
+            "fragmented_line_ratio": 0.517241,
+            "mean_line_length": 23.79,
+            "median_line_length": 15.0,
+            "line_length_stdev": 23.77,
+            "line_length_cv": 0.998949,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 79.9,
+      "duration_ms": 78533.02,
+      "text": "YOGESH M\n\nGRAPHIC DESIGNER\n\n- 8939785374\n- Yogeshraj006@gmail.com\n- Bē Portfolio – click here\n\nABOUT\n\nI am an aspiring graphic designer who is always curious to learn new things, both within and beyond the field of graphic design.\n\nEDUCATION\n\nBsc MultiMedia\n\nImage Creative Education\n\n2021-2024\n\nGraphic Designing Image Creative Education 2019-2020\n\nHigher Secondary Rcm Hr Sec School 2017-2018\n\nTECHNICAL\n\n- Image Editing & Manipulation\n- Motion Graphics\n- Print Design & Production\n- Print Layouts\n- Brochures\n- Magazines\n\nSOFTWARE SKILLS\n\nEXPERIENCE\n\nSameera groups Jun 2024 to Present\n\nMebel Interiors Jun to May 2023 – 24\n\nDosindia Apr to May 2022 – 23\n\nRichtech Agrofarms india limited Aug to Apr 2021 – 22\n\nLANGUAGES\n\nTAMIL\n\nEnglish",
+      "extracted_text": "YOGESH M\n\nGRAPHIC DESIGNER\n\n- 8939785374\n- Yogeshraj006@gmail.com\n- Bē Portfolio – click here\n\nABOUT\n\nI am an aspiring graphic designer who is always curious to learn new things, both within and beyond the field of graphic design.\n\nEDUCATION\n\nBsc MultiMedia\n\nImage Creative Education\n\n2021-2024\n\nGraphic Designing Image Creative Education 2019-2020\n\nHigher Secondary Rcm Hr Sec School 2017-2018\n\nTECHNICAL\n\n- Image Editing & Manipulation\n- Motion Graphics\n- Print Design & Production\n- Print Layouts\n- Brochures\n- Magazines\n\nSOFTWARE SKILLS\n\nEXPERIENCE\n\nSameera groups Jun 2024 to Present\n\nMebel Interiors Jun to May 2023 – 24\n\nDosindia Apr to May 2022 – 23\n\nRichtech Agrofarms india limited Aug to Apr 2021 – 22\n\nLANGUAGES\n\nTAMIL\n\nEnglish",
+      "extracted_text_length": 739,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "YOGESH M\n\nGRAPHIC DESIGNER\n\n- 8939785374\n- Yogeshraj006@gmail.com\n- Bē Portfolio – click here\n\nABOUT\n\nI am an aspiring graphic designer who is always curious to learn new things, both within and beyond the field of graphic design.\n\nEDUCATION\n\nBsc MultiMedia\n\nImage Creative Education\n\n2021-2024\n\nGraphic Designing Image Creative Education 2019-2020\n\nHigher Secondary Rcm Hr Sec School 2017-2018\n\nTECHNICAL\n\n- Image Editing & Manipulation\n- Motion Graphics\n- Print Design & Production\n- Print Layouts\n- Brochures\n- Magazines\n\nSOFTWARE SKILLS\n\nEXPERIENCE\n\nSameera groups Jun 2024 to Present\n\nMebel Interiors Jun to May 2023 – 24\n\nDosindia Apr to May 2022 – 23\n\nRichtech Agrofarms india limited Aug to Apr 2021 – 22\n\nLANGUAGES\n\nTAMIL\n\nEnglish"
+    }
+  ],
+  "attempt_count": 3,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "extracted_text": "YOGESH M\n\nGRAPHIC DESIGNER\n\n- 8939785374\n- Yogeshraj006@gmail.com\n- Bē Portfolio – click here\n\nABOUT\n\nI am an aspiring graphic designer who is always curious to learn new things, both within and beyond the field of graphic design.\n\nEDUCATION\n\nBsc MultiMedia\n\nImage Creative Education\n\n2021-2024\n\nGraphic Designing Image Creative Education 2019-2020\n\nHigher Secondary Rcm Hr Sec School 2017-2018\n\nTECHNICAL\n\n- Image Editing & Manipulation\n- Motion Graphics\n- Print Design & Production\n- Print Layouts\n- Brochures\n- Magazines\n\nSOFTWARE SKILLS\n\nEXPERIENCE\n\nSameera groups Jun 2024 to Present\n\nMebel Interiors Jun to May 2023 – 24\n\nDosindia Apr to May 2022 – 23\n\nRichtech Agrofarms india limited Aug to Apr 2021 – 22\n\nLANGUAGES\n\nTAMIL\n\nEnglish",
+  "final_extracted_text": "YOGESH M\n\nGRAPHIC DESIGNER\n\n- 8939785374\n- Yogeshraj006@gmail.com\n- Bē Portfolio – click here\n\nABOUT\n\nI am an aspiring graphic designer who is always curious to learn new things, both within and beyond the field of graphic design.\n\nEDUCATION\n\nBsc MultiMedia\n\nImage Creative Education\n\n2021-2024\n\nGraphic Designing Image Creative Education 2019-2020\n\nHigher Secondary Rcm Hr Sec School 2017-2018\n\nTECHNICAL\n\n- Image Editing & Manipulation\n- Motion Graphics\n- Print Design & Production\n- Print Layouts\n- Brochures\n- Magazines\n\nSOFTWARE SKILLS\n\nEXPERIENCE\n\nSameera groups Jun 2024 to Present\n\nMebel Interiors Jun to May 2023 – 24\n\nDosindia Apr to May 2022 – 23\n\nRichtech Agrofarms india limited Aug to Apr 2021 – 22\n\nLANGUAGES\n\nTAMIL\n\nEnglish",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "quality": {
+    "status": "PASS",
+    "document_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6",
+    "source_tool": "docling",
+    "attempt_id": "ceba8e7c-e59a-4fbf-a924-252bc46025e6-attempt-3",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 739,
+        "word_count": 116,
+        "line_count": 50,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.184032,
+        "symbol_count": 4,
+        "symbol_ratio": 0.005413,
+        "max_repeated_char_run": 2,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 88.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 739,
+        "word_count": 116,
+        "configured_section_count": 8,
+        "detected_count": 4,
+        "missing_count": 4,
+        "detected_sections": [
+          "Contact Information",
+          "Skills",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_sections": [
+          "Summary",
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Summary",
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Skills": "software skills",
+          "Work Experience": "experience",
+          "Education": "education"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "Yogeshraj006@gmail.com",
+            "confidence": 0.8
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "SOFTWARE SKILLS",
+            "detection_method": "heading",
+            "line_number": 34,
+            "evidence": "SOFTWARE SKILLS",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 36,
+            "evidence": "EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATION",
+            "detection_method": "heading",
+            "line_number": 13,
+            "evidence": "EDUCATION",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Summary": "missing",
+          "Responsibilities": "missing",
+          "Projects": "missing",
+          "Certifications": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Skills",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_sections": [
+        "Summary",
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Summary",
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 78.17,
+      "flags": [
+        "EXCESSIVE_SHORT_LINES",
+        "FRAGMENTED_LINES"
+      ],
+      "reasons": [
+        "55.2% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+        "51.7% of lines are 15 characters or shorter."
+      ],
+      "metrics": {
+        "char_count": 739,
+        "word_count": 116,
+        "line_count": 50,
+        "non_empty_line_count": 29,
+        "short_line_count": 16,
+        "short_line_ratio": 0.551724,
+        "fragmented_line_count": 15,
+        "fragmented_line_ratio": 0.517241,
+        "mean_line_length": 23.79,
+        "median_line_length": 15.0,
+        "line_length_stdev": 23.77,
+        "line_length_cv": 0.998949,
+        "broken_sentence_count": 0,
+        "broken_sentence_ratio": 0.0,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Selected 'docling' with the highest quality score 79.9 (threshold 60.0).",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 44702.18,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "FAIL",
+      "duration_ms": 47.05,
+      "message": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 78533.02,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=75.2, pymupdf=0.0, docling=79.9",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected 'docling' with the highest quality score 79.9 (threshold 60.0).",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Docling text normalized: 739 → 739 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 23842.68,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 102402.1,
+      "message": "Muse AI produced validated Resume JSON from the Docling extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 102402.1,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "docling",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "YOGESH M\n\nGRAPHIC DESIGNER\n\n- 8939785374\n- Yogeshraj006@gmail.com\n- Bē Portfolio – click here\n\nABOUT\n\nI am an aspiring graphic designer who is always curious to learn new things, both within and beyond the field of graphic design.\n\nEDUCATION\n\nBsc MultiMedia\n\nImage Creative Education\n\n2021-2024\n\nGraphic Designing Image Creative Education 2019-2020\n\nHigher Secondary Rcm Hr Sec School 2017-2018\n\nTECHNICAL\n\n- Image Editing & Manipulation\n- Motion Graphics\n- Print Design & Production\n- Print Layouts\n- Brochures\n- Magazines\n\nSOFTWARE SKILLS\n\nEXPERIENCE\n\nSameera groups Jun 2024 to Present\n\nMebel Interiors Jun to May 2023 – 24\n\nDosindia Apr to May 2022 – 23\n\nRichtech Agrofarms india limited Aug to Apr 2021 – 22\n\nLANGUAGES\n\nTAMIL\n\nEnglish",
+    "normalized_text": "YOGESH M\n\nGRAPHIC DESIGNER\n\n- 8939785374\n- Yogeshraj006@gmail.com\n- Bē Portfolio – click here\n\nABOUT\n\nI am an aspiring graphic designer who is always curious to learn new things, both within and beyond the field of graphic design.\n\nEDUCATION\n\nBsc MultiMedia\n\nImage Creative Education\n\n2021-2024\n\nGraphic Designing Image Creative Education 2019-2020\n\nHigher Secondary Rcm Hr Sec School 2017-2018\n\nTECHNICAL\n\n- Image Editing & Manipulation\n- Motion Graphics\n- Print Design & Production\n- Print Layouts\n- Brochures\n- Magazines\n\nSOFTWARE SKILLS\n\nEXPERIENCE\n\nSameera groups Jun 2024 to Present\n\nMebel Interiors Jun to May 2023 – 24\n\nDosindia Apr to May 2022 – 23\n\nRichtech Agrofarms india limited Aug to Apr 2021 – 22\n\nLANGUAGES\n\nTAMIL\n\nEnglish",
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "original_chars": 739,
+    "normalized_chars": 739,
+    "original_estimated_tokens": 185,
+    "normalized_estimated_tokens": 185,
+    "estimated_reduction_percent": 0.0
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 23842.68,
+      "input_tokens": 1041,
+      "output_tokens": 2056,
+      "total_tokens": 3097,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1041,
+    "output_tokens": 2056,
+    "total_tokens": 3097,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 23842.68,
+    "usage": {
+      "completion_tokens": 2056,
+      "prompt_tokens": 1041,
+      "total_tokens": 3097,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1617
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "docling",
+      "status": "applied",
+      "original_chars": 739,
+      "normalized_chars": 739,
+      "estimated_reduction_percent": 0.0,
+      "normalization_applied": false,
+      "normalization_steps": [],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "docling",
+  "selected_quality_score": 79.9,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 75.2,
+      "status": "success",
+      "word_count": 120,
+      "char_count": 771,
+      "meaningful_char_count": 637,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 83.3,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education"
+        ]
+      },
+      "structure": {
+        "heading_count": 0,
+        "paragraph_count": 16,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 0.4247,
+        "readability": 0.8333,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 1.0,
+        "structure": 0.5
+      }
+    },
+    "pymupdf": {
+      "extractor": "pymupdf",
+      "quality_score": 0.0,
+      "status": "failed",
+      "word_count": 0,
+      "char_count": 0,
+      "meaningful_char_count": 0,
+      "empty_page_ratio": 1.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 0.0,
+      "completeness": {
+        "has_email": false,
+        "has_phone": false,
+        "has_skills_section": false,
+        "has_experience_section": false,
+        "has_education_section": false,
+        "sections_found": []
+      },
+      "structure": {
+        "heading_count": 0,
+        "paragraph_count": 0,
+        "bullet_count": 0
+      },
+      "error": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required."
+    },
+    "docling": {
+      "extractor": "docling",
+      "quality_score": 79.9,
+      "status": "success",
+      "word_count": 116,
+      "char_count": 739,
+      "meaningful_char_count": 603,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 85.5,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education"
+        ]
+      },
+      "structure": {
+        "heading_count": 4,
+        "paragraph_count": 22,
+        "bullet_count": 9
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 0.402,
+        "readability": 0.8552,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 1.0,
+        "structure": 1.0
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 739,
+    "normalized_chars": 739,
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "error": null,
+    "original_text": "YOGESH M\n\nGRAPHIC DESIGNER\n\n- 8939785374\n- Yogeshraj006@gmail.com\n- Bē Portfolio – click here\n\nABOUT\n\nI am an aspiring graphic designer who is always curious to learn new things, both within and beyond the field of graphic design.\n\nEDUCATION\n\nBsc MultiMedia\n\nImage Creative Education\n\n2021-2024\n\nGraphic Designing Image Creative Education 2019-2020\n\nHigher Secondary Rcm Hr Sec School 2017-2018\n\nTECHNICAL\n\n- Image Editing & Manipulation\n- Motion Graphics\n- Print Design & Production\n- Print Layouts\n- Brochures\n- Magazines\n\nSOFTWARE SKILLS\n\nEXPERIENCE\n\nSameera groups Jun 2024 to Present\n\nMebel Interiors Jun to May 2023 – 24\n\nDosindia Apr to May 2022 – 23\n\nRichtech Agrofarms india limited Aug to Apr 2021 – 22\n\nLANGUAGES\n\nTAMIL\n\nEnglish",
+    "normalized_text": "YOGESH M\n\nGRAPHIC DESIGNER\n\n- 8939785374\n- Yogeshraj006@gmail.com\n- Bē Portfolio – click here\n\nABOUT\n\nI am an aspiring graphic designer who is always curious to learn new things, both within and beyond the field of graphic design.\n\nEDUCATION\n\nBsc MultiMedia\n\nImage Creative Education\n\n2021-2024\n\nGraphic Designing Image Creative Education 2019-2020\n\nHigher Secondary Rcm Hr Sec School 2017-2018\n\nTECHNICAL\n\n- Image Editing & Manipulation\n- Motion Graphics\n- Print Design & Production\n- Print Layouts\n- Brochures\n- Magazines\n\nSOFTWARE SKILLS\n\nEXPERIENCE\n\nSameera groups Jun 2024 to Present\n\nMebel Interiors Jun to May 2023 – 24\n\nDosindia Apr to May 2022 – 23\n\nRichtech Agrofarms india limited Aug to Apr 2021 – 22\n\nLANGUAGES\n\nTAMIL\n\nEnglish"
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "YOGESH M",
+      "email": "Yogeshraj006@gmail.com",
+      "phone": "8939785374",
+      "location": "",
+      "summary": "I am an aspiring graphic designer who is always curious to learn new things, both within and beyond the field of graphic design.",
+      "skills": {
+        "technical_skills": [
+          "Image Editing & Manipulation",
+          "Motion Graphics",
+          "Print Design & Production",
+          "Print Layouts",
+          "Brochures",
+          "Magazines"
+        ],
+        "soft_skills": [],
+        "tools": [],
+        "taxonomy_skills": [],
+        "other_skills": []
+      },
+      "experience": [
+        {
+          "title": "",
+          "company": "Sameera groups",
+          "location": "",
+          "start_date": "Jun 2024",
+          "end_date": "Present",
+          "highlights": []
+        },
+        {
+          "title": "",
+          "company": "Mebel Interiors",
+          "location": "",
+          "start_date": "Jun 2023",
+          "end_date": "May 2024",
+          "highlights": []
+        },
+        {
+          "title": "",
+          "company": "Dosindia",
+          "location": "",
+          "start_date": "Apr 2022",
+          "end_date": "May 2023",
+          "highlights": []
+        },
+        {
+          "title": "",
+          "company": "Richtech Agrofarms india limited",
+          "location": "",
+          "start_date": "Aug 2021",
+          "end_date": "Apr 2022",
+          "highlights": []
+        }
+      ],
+      "education": [
+        {
+          "degree": "Bsc MultiMedia",
+          "institution": "Image Creative Education",
+          "location": "",
+          "start_date": "2021",
+          "end_date": "2024"
+        },
+        {
+          "degree": "Graphic Designing",
+          "institution": "Image Creative Education",
+          "location": "",
+          "start_date": "2019",
+          "end_date": "2020"
+        },
+        {
+          "degree": "Higher Secondary",
+          "institution": "Rcm Hr Sec School",
+          "location": "",
+          "start_date": "2017",
+          "end_date": "2018"
+        }
+      ],
+      "certifications": [],
+      "languages": [
+        "TAMIL",
+        "English"
+      ],
+      "links": []
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 23842.68,
+    "usage": {
+      "completion_tokens": 2056,
+      "prompt_tokens": 1041,
+      "total_tokens": 3097,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1617
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "YOGESH M",
+    "email": "Yogeshraj006@gmail.com",
+    "phone": "8939785374",
+    "location": "",
+    "summary": "I am an aspiring graphic designer who is always curious to learn new things, both within and beyond the field of graphic design.",
+    "skills": {
+      "technical_skills": [
+        "Image Editing & Manipulation",
+        "Motion Graphics",
+        "Print Design & Production",
+        "Print Layouts",
+        "Brochures",
+        "Magazines"
+      ],
+      "soft_skills": [],
+      "tools": [],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "",
+        "company": "Sameera groups",
+        "location": "",
+        "start_date": "Jun 2024",
+        "end_date": "Present",
+        "highlights": []
+      },
+      {
+        "title": "",
+        "company": "Mebel Interiors",
+        "location": "",
+        "start_date": "Jun 2023",
+        "end_date": "May 2024",
+        "highlights": []
+      },
+      {
+        "title": "",
+        "company": "Dosindia",
+        "location": "",
+        "start_date": "Apr 2022",
+        "end_date": "May 2023",
+        "highlights": []
+      },
+      {
+        "title": "",
+        "company": "Richtech Agrofarms india limited",
+        "location": "",
+        "start_date": "Aug 2021",
+        "end_date": "Apr 2022",
+        "highlights": []
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bsc MultiMedia",
+        "institution": "Image Creative Education",
+        "location": "",
+        "start_date": "2021",
+        "end_date": "2024"
+      },
+      {
+        "degree": "Graphic Designing",
+        "institution": "Image Creative Education",
+        "location": "",
+        "start_date": "2019",
+        "end_date": "2020"
+      },
+      {
+        "degree": "Higher Secondary",
+        "institution": "Rcm Hr Sec School",
+        "location": "",
+        "start_date": "2017",
+        "end_date": "2018"
+      }
+    ],
+    "certifications": [],
+    "languages": [
+      "TAMIL",
+      "English"
+    ],
+    "links": []
+  },
+  "resume_json": {
+    "full_name": "YOGESH M",
+    "email": "Yogeshraj006@gmail.com",
+    "phone": "8939785374",
+    "location": "",
+    "summary": "I am an aspiring graphic designer who is always curious to learn new things, both within and beyond the field of graphic design.",
+    "skills": {
+      "technical_skills": [
+        "Image Editing & Manipulation",
+        "Motion Graphics",
+        "Print Design & Production",
+        "Print Layouts",
+        "Brochures",
+        "Magazines"
+      ],
+      "soft_skills": [],
+      "tools": [],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "",
+        "company": "Sameera groups",
+        "location": "",
+        "start_date": "Jun 2024",
+        "end_date": "Present",
+        "highlights": []
+      },
+      {
+        "title": "",
+        "company": "Mebel Interiors",
+        "location": "",
+        "start_date": "Jun 2023",
+        "end_date": "May 2024",
+        "highlights": []
+      },
+      {
+        "title": "",
+        "company": "Dosindia",
+        "location": "",
+        "start_date": "Apr 2022",
+        "end_date": "May 2023",
+        "highlights": []
+      },
+      {
+        "title": "",
+        "company": "Richtech Agrofarms india limited",
+        "location": "",
+        "start_date": "Aug 2021",
+        "end_date": "Apr 2022",
+        "highlights": []
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bsc MultiMedia",
+        "institution": "Image Creative Education",
+        "location": "",
+        "start_date": "2021",
+        "end_date": "2024"
+      },
+      {
+        "degree": "Graphic Designing",
+        "institution": "Image Creative Education",
+        "location": "",
+        "start_date": "2019",
+        "end_date": "2020"
+      },
+      {
+        "degree": "Higher Secondary",
+        "institution": "Rcm Hr Sec School",
+        "location": "",
+        "start_date": "2017",
+        "end_date": "2018"
+      }
+    ],
+    "certifications": [],
+    "languages": [
+      "TAMIL",
+      "English"
+    ],
+    "links": []
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 78.5535,
+    "quality_seconds": 0.0034,
+    "normalization_seconds": 0.0003,
+    "llm_seconds": 23.8448,
+    "total_seconds": 102.4021
+  },
+  "_stored_name": "ceba8e7c-e59a-4fbf-a924-252bc46025e6_download_11_.pdf"
+}

@@ -343,8 +343,17 @@ def test_api_process_response_trace_matches_attempts():
     assert attempted == ORDER[:len(attempted)]
     skipped = [s["extractor"] for s in _extractor_stages(record)
                if s["status"] == "SKIPPED"]
-    assert skipped == ORDER[len(attempted):]
-    assert _final_stage(record)["status"] == "PASS"
+    # Default (simple) pipeline: exactly the three concurrent
+    # extractors are attempted — there is no OCR stage and no
+    # extractor stage is skipped.
+    assert attempted == ["tika", "pymupdf", "docling"]
+    assert skipped == []
+    # The final stage honestly reflects the WHOLE flow: PASS only
+    # when a validated Resume JSON was produced. (Muse is not
+    # configured in the test environment, so the AI stage's outcome
+    # is reported — never hidden behind an extraction-only PASS.)
+    assert _final_stage(record)["status"] == (
+        "PASS" if record.get("resume_json") else "FAIL")
     assert _final_stage(record)["extractor"] == record["extractor_used"]
 
 

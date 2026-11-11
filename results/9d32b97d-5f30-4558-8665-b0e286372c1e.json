@@ -1,0 +1,1812 @@
+{
+  "resume_id": "9d32b97d-5f30-4558-8665-b0e286372c1e",
+  "filename": "SHJ-5354_SHC-353993.docx",
+  "file_type": "docx",
+  "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "file_size_bytes": 14820,
+  "uploaded_at": "2026-11-11T06:52:57.213493+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "final_extractor": "tika",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "9d32b97d-5f30-4558-8665-b0e286372c1e-attempt-1",
+      "resume_id": "9d32b97d-5f30-4558-8665-b0e286372c1e",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Selected 'tika' with quality score 98.2 (tie among ['tika', 'docling'] broken by configured tie-break order ['tika', 'pymupdf', 'docling']).",
+      "fallback_decision": "accept",
+      "fallback_reason": "Selected 'tika' with quality score 98.2 (tie among ['tika', 'docling'] broken by configured tie-break order ['tika', 'pymupdf', 'docling']).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "9d32b97d-5f30-4558-8665-b0e286372c1e",
+        "source_tool": "tika",
+        "attempt_id": "9d32b97d-5f30-4558-8665-b0e286372c1e-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4716,
+            "word_count": 636,
+            "line_count": 47,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.152884,
+            "symbol_count": 45,
+            "symbol_ratio": 0.009542,
+            "max_repeated_char_run": 5,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4716,
+            "word_count": 636,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education and certifications",
+              "Certifications": "education and certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "mafazshaik@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 8,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 12,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION & CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 40,
+                "evidence": "EDUCATION & CERTIFICATIONS",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "EDUCATION & CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 40,
+                "evidence": "EDUCATION & CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4716,
+            "word_count": 636,
+            "line_count": 47,
+            "non_empty_line_count": 39,
+            "short_line_count": 4,
+            "short_line_ratio": 0.102564,
+            "fragmented_line_count": 3,
+            "fragmented_line_ratio": 0.076923,
+            "mean_line_length": 119.56,
+            "median_line_length": 132.0,
+            "line_length_stdev": 113.77,
+            "line_length_cv": 0.951569,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "9d32b97d-5f30-4558-8665-b0e286372c1e",
+        "source_tool": "tika",
+        "attempt_id": "9d32b97d-5f30-4558-8665-b0e286372c1e-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4716,
+            "word_count": 636,
+            "line_count": 47,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.152884,
+            "symbol_count": 45,
+            "symbol_ratio": 0.009542,
+            "max_repeated_char_run": 5,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4716,
+            "word_count": 636,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education and certifications",
+              "Certifications": "education and certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "mafazshaik@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 8,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 12,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION & CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 40,
+                "evidence": "EDUCATION & CERTIFICATIONS",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "EDUCATION & CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 40,
+                "evidence": "EDUCATION & CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4716,
+            "word_count": 636,
+            "line_count": 47,
+            "non_empty_line_count": 39,
+            "short_line_count": 4,
+            "short_line_ratio": 0.102564,
+            "fragmented_line_count": 3,
+            "fragmented_line_ratio": 0.076923,
+            "mean_line_length": 119.56,
+            "median_line_length": 132.0,
+            "line_length_stdev": 113.77,
+            "line_length_cv": 0.951569,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 98.2,
+      "duration_ms": 13038.81,
+      "text": "SHAIK MAFAZ BASHA\n\n+91 79819 24381   |   mafazshaik@gmail.com   |   Bengaluru, India   |   PMP  ·  MBA — HTW Berlin\n\nPROFESSIONAL SUMMARY\n\nDigital Project Manager with 4+ years of experience delivering enterprise software and digital transformation programs across IT Services, Healthcare, and Manufacturing. Proven expertise in end-to-end project delivery — planning, scheduling, resource coordination, risk management, and PMO governance — across Agile, Waterfall, and Hybrid environments. Proficient in JIRA, Monday.com, Smartsheet, and Excel (Macros, Pivot Tables). Track record coordinating cross-functional and offshore teams, managing NRE and compute forecasts, and presenting delivery status to senior stakeholders. International exposure at Meyer Werft GmbH, Germany. PMP Certified.\nSKILLS\n\nProject Planning & Scheduling  |  PMO Governance & Reporting  |  Risk & Dependency Management  |  Agile / Waterfall / Hybrid  |  Stakeholder Management  |  Cross-Functional Coordination  |  Resource & Workload Planning  |  Budget & NRE Tracking  |  JIRA  |  Smartsheet  |  MS Project  |  Excel — Macros & Pivot Tables  |  Gantt Charts & Dashboards  |  SQL  |  Azure DevOps  |  Confluence\n\nWORK EXPERIENCE\n\n\tDigital Project Manager \tMar 2026 – Present\nITC Limited  |  Bengaluru, India\n· Manage end-to-end delivery of enterprise digital platform projects — developing project plans, timelines, milestones, and delivery schedules aligned to business and IT priorities.\n· Coordinate across business, IT, and vendor teams; track and manage risks, issues, and dependencies using structured escalation and resolution frameworks.\n· Maintain PMO governance — status reporting, risk registers, project documentation, and delivery audits; present weekly dashboards to senior leadership.\n· Build JIRA dashboards and Excel-based Gantt charts monitoring project health, NRE forecasts, and milestone progress — reduced reporting turnaround by 35%.\n· Facilitate project meetings, delivery reviews, and milestone checkpoints across cross-functional and offshore teams; manage action trackers ensuring on-schedule delivery.\n· Introduced structured requirement sign-off frameworks reducing mid-sprint rework cycles and aligning delivery scope to business outcomes.\n\tAssistant Project Manager\tFeb 2025 – Jun 2025\nMeyer Werft GmbH  |  Wismar, Germany\n· Supported end-to-end project coordination across engineering and cross-functional teams in an international manufacturing environment; maintained project plans, schedules, and resource trackers.\n· Prepared executive dashboards, Gantt charts, weekly status reports, and action trackers — improved project visibility across 4 departments.\n· Tracked milestones, coordinated stakeholder meetings, and followed up on critical actions — contributed to 15% reduction in inter-departmental coordination lag.\n· Maintained process and change management documentation; supported workflow standardisation reducing manual operational activities.\n\tBusiness Analyst — Project Delivery\tJun 2023 – Oct 2024\nTata Consultancy Services  |  Hyderabad, India\n· Managed project planning and scheduling across enterprise software delivery programs — coordinated business, IT, and QA teams through full SDLC.\n· Led requirement workshops, maintained JIRA backlogs, and tracked delivery milestones — reduced cycle timelines by 20% through structured requirement management.\n· Owned UAT end-to-end — test case design, defect triage in JIRA, release validation — achieving 30% reduction in production defects across all projects.\n· Produced Power BI and Excel dashboards tracking delivery KPIs; supported data-driven project decisions presented to senior stakeholders.\n· Coordinated cross-functional and offshore teams across delivery cycles; managed dependency tracking and escalation to keep programs on schedule.\n\tBusiness Analyst\tNov 2021 – Apr 2023\nCitiusTech Healthcare Technology  |  India\n· Coordinated delivery of 5+ concurrent Healthcare IT modules — 100% on-time across all milestones through Agile execution and JIRA-based tracking.\n· Managed cross-functional coordination across product, engineering, business, and QA teams; maintained full requirement traceability and project documentation.\n· Reduced requirement clarification cycles by 30%; resolved 150+ pre-production UAT defects through structured triage — improved reporting accuracy by 25%.\nEDUCATION & CERTIFICATIONS\n\n\tMBA — Strategy, Finance & International Business\tHTW Berlin  |  Germany  |  2024 – 2025\n\tB.Tech — Electronics & Communication Engineering\tJNTUA  |  India  |  2021\n\tProject Management Professional (PMP)\tPMI  |  Certified\nLANGUAGES\n\nEnglish — IELTS 7.5 (Professional)     German — B1 (HTW Berlin)     Hindi & Telugu — Native",
+      "extracted_text": "SHAIK MAFAZ BASHA\n\n+91 79819 24381   |   mafazshaik@gmail.com   |   Bengaluru, India   |   PMP  ·  MBA — HTW Berlin\n\nPROFESSIONAL SUMMARY\n\nDigital Project Manager with 4+ years of experience delivering enterprise software and digital transformation programs across IT Services, Healthcare, and Manufacturing. Proven expertise in end-to-end project delivery — planning, scheduling, resource coordination, risk management, and PMO governance — across Agile, Waterfall, and Hybrid environments. Proficient in JIRA, Monday.com, Smartsheet, and Excel (Macros, Pivot Tables). Track record coordinating cross-functional and offshore teams, managing NRE and compute forecasts, and presenting delivery status to senior stakeholders. International exposure at Meyer Werft GmbH, Germany. PMP Certified.\nSKILLS\n\nProject Planning & Scheduling  |  PMO Governance & Reporting  |  Risk & Dependency Management  |  Agile / Waterfall / Hybrid  |  Stakeholder Management  |  Cross-Functional Coordination  |  Resource & Workload Planning  |  Budget & NRE Tracking  |  JIRA  |  Smartsheet  |  MS Project  |  Excel — Macros & Pivot Tables  |  Gantt Charts & Dashboards  |  SQL  |  Azure DevOps  |  Confluence\n\nWORK EXPERIENCE\n\n\tDigital Project Manager \tMar 2026 – Present\nITC Limited  |  Bengaluru, India\n· Manage end-to-end delivery of enterprise digital platform projects — developing project plans, timelines, milestones, and delivery schedules aligned to business and IT priorities.\n· Coordinate across business, IT, and vendor teams; track and manage risks, issues, and dependencies using structured escalation and resolution frameworks.\n· Maintain PMO governance — status reporting, risk registers, project documentation, and delivery audits; present weekly dashboards to senior leadership.\n· Build JIRA dashboards and Excel-based Gantt charts monitoring project health, NRE forecasts, and milestone progress — reduced reporting turnaround by 35%.\n· Facilitate project meetings, delivery reviews, and milestone checkpoints across cross-functional and offshore teams; manage action trackers ensuring on-schedule delivery.\n· Introduced structured requirement sign-off frameworks reducing mid-sprint rework cycles and aligning delivery scope to business outcomes.\n\tAssistant Project Manager\tFeb 2025 – Jun 2025\nMeyer Werft GmbH  |  Wismar, Germany\n· Supported end-to-end project coordination across engineering and cross-functional teams in an international manufacturing environment; maintained project plans, schedules, and resource trackers.\n· Prepared executive dashboards, Gantt charts, weekly status reports, and action trackers — improved project visibility across 4 departments.\n· Tracked milestones, coordinated stakeholder meetings, and followed up on critical actions — contributed to 15% reduction in inter-departmental coordination lag.\n· Maintained process and change management documentation; supported workflow standardisation reducing manual operational activities.\n\tBusiness Analyst — Project Delivery\tJun 2023 – Oct 2024\nTata Consultancy Services  |  Hyderabad, India\n· Managed project planning and scheduling across enterprise software delivery programs — coordinated business, IT, and QA teams through full SDLC.\n· Led requirement workshops, maintained JIRA backlogs, and tracked delivery milestones — reduced cycle timelines by 20% through structured requirement management.\n· Owned UAT end-to-end — test case design, defect triage in JIRA, release validation — achieving 30% reduction in production defects across all projects.\n· Produced Power BI and Excel dashboards tracking delivery KPIs; supported data-driven project decisions presented to senior stakeholders.\n· Coordinated cross-functional and offshore teams across delivery cycles; managed dependency tracking and escalation to keep programs on schedule.\n\tBusiness Analyst\tNov 2021 – Apr 2023\nCitiusTech Healthcare Technology  |  India\n· Coordinated delivery of 5+ concurrent Healthcare IT modules — 100% on-time across all milestones through Agile execution and JIRA-based tracking.\n· Managed cross-functional coordination across product, engineering, business, and QA teams; maintained full requirement traceability and project documentation.\n· Reduced requirement clarification cycles by 30%; resolved 150+ pre-production UAT defects through structured triage — improved reporting accuracy by 25%.\nEDUCATION & CERTIFICATIONS\n\n\tMBA — Strategy, Finance & International Business\tHTW Berlin  |  Germany  |  2024 – 2025\n\tB.Tech — Electronics & Communication Engineering\tJNTUA  |  India  |  2021\n\tProject Management Professional (PMP)\tPMI  |  Certified\nLANGUAGES\n\nEnglish — IELTS 7.5 (Professional)     German — B1 (HTW Berlin)     Hindi & Telugu — Native",
+      "extracted_text_length": 4716,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "SHAIK MAFAZ BASHA\n\n+91 79819 24381 | mafazshaik@gmail.com | Bengaluru, India | PMP · MBA — HTW Berlin\n\nPROFESSIONAL SUMMARY\n\nDigital Project Manager with 4+ years of experience delivering enterprise software and digital transformation programs across IT Services, Healthcare, and Manufacturing. Proven expertise in end-to-end project delivery — planning, scheduling, resource coordination, risk management, and PMO governance — across Agile, Waterfall, and Hybrid environments. Proficient in JIRA, Monday.com, Smartsheet, and Excel (Macros, Pivot Tables). Track record coordinating cross-functional and offshore teams, managing NRE and compute forecasts, and presenting delivery status to senior stakeholders. International exposure at Meyer Werft GmbH, Germany. PMP Certified.\nSKILLS\n\nProject Planning & Scheduling | PMO Governance & Reporting | Risk & Dependency Management | Agile / Waterfall / Hybrid | Stakeholder Management | Cross-Functional Coordination | Resource & Workload Planning | Budget & NRE Tracking | JIRA | Smartsheet | MS Project | Excel — Macros & Pivot Tables | Gantt Charts & Dashboards | SQL | Azure DevOps | Confluence\n\nWORK EXPERIENCE\n\nDigital Project Manager Mar 2026 – Present\nITC Limited | Bengaluru, India\n· Manage end-to-end delivery of enterprise digital platform projects — developing project plans, timelines, milestones, and delivery schedules aligned to business and IT priorities.\n· Coordinate across business, IT, and vendor teams; track and manage risks, issues, and dependencies using structured escalation and resolution frameworks.\n· Maintain PMO governance — status reporting, risk registers, project documentation, and delivery audits; present weekly dashboards to senior leadership.\n· Build JIRA dashboards and Excel-based Gantt charts monitoring project health, NRE forecasts, and milestone progress — reduced reporting turnaround by 35%.\n· Facilitate project meetings, delivery reviews, and milestone checkpoints across cross-functional and offshore teams; manage action trackers ensuring on-schedule delivery.\n· Introduced structured requirement sign-off frameworks reducing mid-sprint rework cycles and aligning delivery scope to business outcomes.\nAssistant Project Manager Feb 2025 – Jun 2025\nMeyer Werft GmbH | Wismar, Germany\n· Supported end-to-end project coordination across engineering and cross-functional teams in an international manufacturing environment; maintained project plans, schedules, and resource trackers.\n· Prepared executive dashboards, Gantt charts, weekly status reports, and action trackers — improved project visibility across 4 departments.\n· Tracked milestones, coordinated stakeholder meetings, and followed up on critical actions — contributed to 15% reduction in inter-departmental coordination lag.\n· Maintained process and change management documentation; supported workflow standardisation reducing manual operational activities.\nBusiness Analyst — Project Delivery Jun 2023 – Oct 2024\nTata Consultancy Services | Hyderabad, India\n· Managed project planning and scheduling across enterprise software delivery programs — coordinated business, IT, and QA teams through full SDLC.\n· Led requirement workshops, maintained JIRA backlogs, and tracked delivery milestones — reduced cycle timelines by 20% through structured requirement management.\n· Owned UAT end-to-end — test case design, defect triage in JIRA, release validation — achieving 30% reduction in production defects across all projects.\n· Produced Power BI and Excel dashboards tracking delivery KPIs; supported data-driven project decisions presented to senior stakeholders.\n· Coordinated cross-functional and offshore teams across delivery cycles; managed dependency tracking and escalation to keep programs on schedule.\nBusiness Analyst Nov 2021 – Apr 2023\nCitiusTech Healthcare Technology | India\n· Coordinated delivery of 5+ concurrent Healthcare IT modules — 100% on-time across all milestones through Agile execution and JIRA-based tracking.\n· Managed cross-functional coordination across product, engineering, business, and QA teams; maintained full requirement traceability and project documentation.\n· Reduced requirement clarification cycles by 30%; resolved 150+ pre-production UAT defects through structured triage — improved reporting accuracy by 25%.\nEDUCATION & CERTIFICATIONS\n\nMBA — Strategy, Finance & International Business HTW Berlin | Germany | 2024 – 2025\nB.Tech — Electronics & Communication Engineering JNTUA | India | 2021\nProject Management Professional (PMP) PMI | Certified\nLANGUAGES\n\nEnglish — IELTS 7.5 (Professional) German — B1 (HTW Berlin) Hindi & Telugu — Native"
+    },
+    {
+      "attempt_id": "9d32b97d-5f30-4558-8665-b0e286372c1e-attempt-2",
+      "resume_id": "9d32b97d-5f30-4558-8665-b0e286372c1e",
+      "attempt_number": 2,
+      "extractor_name": "pymupdf",
+      "extractor_version": null,
+      "success": false,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "pymupdf does not support file type 'docx'. Supported: pdf.",
+      "fallback_decision": "reject",
+      "fallback_reason": "pymupdf does not support file type 'docx'. Supported: pdf.",
+      "quality_status": null,
+      "quality": null,
+      "quality_checker_report": null,
+      "quality_score": 0.0,
+      "duration_ms": 4.93,
+      "text": "",
+      "extracted_text": "",
+      "extracted_text_length": 0,
+      "extraction_status": "FAILED",
+      "error": "pymupdf does not support file type 'docx'. Supported: pdf.",
+      "error_message": "pymupdf does not support file type 'docx'. Supported: pdf.",
+      "error_type": "UnsupportedFileTypeError",
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {},
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": ""
+    },
+    {
+      "attempt_id": "9d32b97d-5f30-4558-8665-b0e286372c1e-attempt-3",
+      "resume_id": "9d32b97d-5f30-4558-8665-b0e286372c1e",
+      "attempt_number": 3,
+      "extractor_name": "docling",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 98.2 (selected 'tika' scored 98.2).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 98.2 (selected 'tika' scored 98.2).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "9d32b97d-5f30-4558-8665-b0e286372c1e",
+        "source_tool": "docling",
+        "attempt_id": "9d32b97d-5f30-4558-8665-b0e286372c1e-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4716,
+            "word_count": 636,
+            "line_count": 63,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.152884,
+            "symbol_count": 27,
+            "symbol_ratio": 0.005725,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4716,
+            "word_count": 636,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education and certifications",
+              "Certifications": "education and certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "mafazshaik@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION & CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 53,
+                "evidence": "EDUCATION & CERTIFICATIONS",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "EDUCATION & CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 53,
+                "evidence": "EDUCATION & CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4716,
+            "word_count": 636,
+            "line_count": 63,
+            "non_empty_line_count": 39,
+            "short_line_count": 4,
+            "short_line_ratio": 0.102564,
+            "fragmented_line_count": 3,
+            "fragmented_line_ratio": 0.076923,
+            "mean_line_length": 119.33,
+            "median_line_length": 132.0,
+            "line_length_stdev": 113.85,
+            "line_length_cv": 0.954044,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "9d32b97d-5f30-4558-8665-b0e286372c1e",
+        "source_tool": "docling",
+        "attempt_id": "9d32b97d-5f30-4558-8665-b0e286372c1e-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4716,
+            "word_count": 636,
+            "line_count": 63,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.152884,
+            "symbol_count": 27,
+            "symbol_ratio": 0.005725,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4716,
+            "word_count": 636,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education and certifications",
+              "Certifications": "education and certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "mafazshaik@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION & CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 53,
+                "evidence": "EDUCATION & CERTIFICATIONS",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "EDUCATION & CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 53,
+                "evidence": "EDUCATION & CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4716,
+            "word_count": 636,
+            "line_count": 63,
+            "non_empty_line_count": 39,
+            "short_line_count": 4,
+            "short_line_ratio": 0.102564,
+            "fragmented_line_count": 3,
+            "fragmented_line_ratio": 0.076923,
+            "mean_line_length": 119.33,
+            "median_line_length": 132.0,
+            "line_length_stdev": 113.85,
+            "line_length_cv": 0.954044,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 98.2,
+      "duration_ms": 1565.85,
+      "text": "SHAIK MAFAZ BASHA\n\n+91 79819 24381   |   mafazshaik@gmail.com   |   Bengaluru, India   |   PMP  ·  MBA — HTW Berlin\n\nPROFESSIONAL SUMMARY\n\nDigital Project Manager with 4+ years of experience delivering enterprise software and digital transformation programs across IT Services, Healthcare, and Manufacturing. Proven expertise in end-to-end project delivery — planning, scheduling, resource coordination, risk management, and PMO governance — across Agile, Waterfall, and Hybrid environments. Proficient in JIRA, Monday.com, Smartsheet, and Excel (Macros, Pivot Tables). Track record coordinating cross-functional and offshore teams, managing NRE and compute forecasts, and presenting delivery status to senior stakeholders. International exposure at Meyer Werft GmbH, Germany. PMP Certified.\n\nSKILLS\n\nProject Planning & Scheduling  |  PMO Governance & Reporting  |  Risk & Dependency Management  |  Agile / Waterfall / Hybrid  |  Stakeholder Management  |  Cross-Functional Coordination  |  Resource & Workload Planning  |  Budget & NRE Tracking  |  JIRA  |  Smartsheet  |  MS Project  |  Excel — Macros & Pivot Tables  |  Gantt Charts & Dashboards  |  SQL  |  Azure DevOps  |  Confluence\n\nWORK EXPERIENCE\n\nDigital Project Manager Mar 2026 – Present\n\nITC Limited  |  Bengaluru, India\n\n- Manage end-to-end delivery of enterprise digital platform projects — developing project plans, timelines, milestones, and delivery schedules aligned to business and IT priorities.\n- Coordinate across business, IT, and vendor teams; track and manage risks, issues, and dependencies using structured escalation and resolution frameworks.\n- Maintain PMO governance — status reporting, risk registers, project documentation, and delivery audits; present weekly dashboards to senior leadership.\n- Build JIRA dashboards and Excel-based Gantt charts monitoring project health, NRE forecasts, and milestone progress — reduced reporting turnaround by 35%.\n- Facilitate project meetings, delivery reviews, and milestone checkpoints across cross-functional and offshore teams; manage action trackers ensuring on-schedule delivery.\n- Introduced structured requirement sign-off frameworks reducing mid-sprint rework cycles and aligning delivery scope to business outcomes.\n\nAssistant Project Manager Feb 2025 – Jun 2025\n\nMeyer Werft GmbH  |  Wismar, Germany\n\n- Supported end-to-end project coordination across engineering and cross-functional teams in an international manufacturing environment; maintained project plans, schedules, and resource trackers.\n- Prepared executive dashboards, Gantt charts, weekly status reports, and action trackers — improved project visibility across 4 departments.\n- Tracked milestones, coordinated stakeholder meetings, and followed up on critical actions — contributed to 15% reduction in inter-departmental coordination lag.\n- Maintained process and change management documentation; supported workflow standardisation reducing manual operational activities.\n\nBusiness Analyst — Project Delivery Jun 2023 – Oct 2024\n\nTata Consultancy Services  |  Hyderabad, India\n\n- Managed project planning and scheduling across enterprise software delivery programs — coordinated business, IT, and QA teams through full SDLC.\n- Led requirement workshops, maintained JIRA backlogs, and tracked delivery milestones — reduced cycle timelines by 20% through structured requirement management.\n- Owned UAT end-to-end — test case design, defect triage in JIRA, release validation — achieving 30% reduction in production defects across all projects.\n- Produced Power BI and Excel dashboards tracking delivery KPIs; supported data-driven project decisions presented to senior stakeholders.\n- Coordinated cross-functional and offshore teams across delivery cycles; managed dependency tracking and escalation to keep programs on schedule.\n\nBusiness Analyst Nov 2021 – Apr 2023\n\nCitiusTech Healthcare Technology  |  India\n\n- Coordinated delivery of 5+ concurrent Healthcare IT modules — 100% on-time across all milestones through Agile execution and JIRA-based tracking.\n- Managed cross-functional coordination across product, engineering, business, and QA teams; maintained full requirement traceability and project documentation.\n- Reduced requirement clarification cycles by 30%; resolved 150+ pre-production UAT defects through structured triage — improved reporting accuracy by 25%.\n\nEDUCATION & CERTIFICATIONS\n\nMBA — Strategy, Finance & International Business HTW Berlin  |  Germany  |  2024 – 2025\n\nB.Tech — Electronics & Communication Engineering JNTUA  |  India  |  2021\n\nProject Management Professional (PMP) PMI  |  Certified\n\nLANGUAGES\n\nEnglish — IELTS 7.5 (Professional) German — B1 (HTW Berlin) Hindi & Telugu — Native",
+      "extracted_text": "SHAIK MAFAZ BASHA\n\n+91 79819 24381   |   mafazshaik@gmail.com   |   Bengaluru, India   |   PMP  ·  MBA — HTW Berlin\n\nPROFESSIONAL SUMMARY\n\nDigital Project Manager with 4+ years of experience delivering enterprise software and digital transformation programs across IT Services, Healthcare, and Manufacturing. Proven expertise in end-to-end project delivery — planning, scheduling, resource coordination, risk management, and PMO governance — across Agile, Waterfall, and Hybrid environments. Proficient in JIRA, Monday.com, Smartsheet, and Excel (Macros, Pivot Tables). Track record coordinating cross-functional and offshore teams, managing NRE and compute forecasts, and presenting delivery status to senior stakeholders. International exposure at Meyer Werft GmbH, Germany. PMP Certified.\n\nSKILLS\n\nProject Planning & Scheduling  |  PMO Governance & Reporting  |  Risk & Dependency Management  |  Agile / Waterfall / Hybrid  |  Stakeholder Management  |  Cross-Functional Coordination  |  Resource & Workload Planning  |  Budget & NRE Tracking  |  JIRA  |  Smartsheet  |  MS Project  |  Excel — Macros & Pivot Tables  |  Gantt Charts & Dashboards  |  SQL  |  Azure DevOps  |  Confluence\n\nWORK EXPERIENCE\n\nDigital Project Manager Mar 2026 – Present\n\nITC Limited  |  Bengaluru, India\n\n- Manage end-to-end delivery of enterprise digital platform projects — developing project plans, timelines, milestones, and delivery schedules aligned to business and IT priorities.\n- Coordinate across business, IT, and vendor teams; track and manage risks, issues, and dependencies using structured escalation and resolution frameworks.\n- Maintain PMO governance — status reporting, risk registers, project documentation, and delivery audits; present weekly dashboards to senior leadership.\n- Build JIRA dashboards and Excel-based Gantt charts monitoring project health, NRE forecasts, and milestone progress — reduced reporting turnaround by 35%.\n- Facilitate project meetings, delivery reviews, and milestone checkpoints across cross-functional and offshore teams; manage action trackers ensuring on-schedule delivery.\n- Introduced structured requirement sign-off frameworks reducing mid-sprint rework cycles and aligning delivery scope to business outcomes.\n\nAssistant Project Manager Feb 2025 – Jun 2025\n\nMeyer Werft GmbH  |  Wismar, Germany\n\n- Supported end-to-end project coordination across engineering and cross-functional teams in an international manufacturing environment; maintained project plans, schedules, and resource trackers.\n- Prepared executive dashboards, Gantt charts, weekly status reports, and action trackers — improved project visibility across 4 departments.\n- Tracked milestones, coordinated stakeholder meetings, and followed up on critical actions — contributed to 15% reduction in inter-departmental coordination lag.\n- Maintained process and change management documentation; supported workflow standardisation reducing manual operational activities.\n\nBusiness Analyst — Project Delivery Jun 2023 – Oct 2024\n\nTata Consultancy Services  |  Hyderabad, India\n\n- Managed project planning and scheduling across enterprise software delivery programs — coordinated business, IT, and QA teams through full SDLC.\n- Led requirement workshops, maintained JIRA backlogs, and tracked delivery milestones — reduced cycle timelines by 20% through structured requirement management.\n- Owned UAT end-to-end — test case design, defect triage in JIRA, release validation — achieving 30% reduction in production defects across all projects.\n- Produced Power BI and Excel dashboards tracking delivery KPIs; supported data-driven project decisions presented to senior stakeholders.\n- Coordinated cross-functional and offshore teams across delivery cycles; managed dependency tracking and escalation to keep programs on schedule.\n\nBusiness Analyst Nov 2021 – Apr 2023\n\nCitiusTech Healthcare Technology  |  India\n\n- Coordinated delivery of 5+ concurrent Healthcare IT modules — 100% on-time across all milestones through Agile execution and JIRA-based tracking.\n- Managed cross-functional coordination across product, engineering, business, and QA teams; maintained full requirement traceability and project documentation.\n- Reduced requirement clarification cycles by 30%; resolved 150+ pre-production UAT defects through structured triage — improved reporting accuracy by 25%.\n\nEDUCATION & CERTIFICATIONS\n\nMBA — Strategy, Finance & International Business HTW Berlin  |  Germany  |  2024 – 2025\n\nB.Tech — Electronics & Communication Engineering JNTUA  |  India  |  2021\n\nProject Management Professional (PMP) PMI  |  Certified\n\nLANGUAGES\n\nEnglish — IELTS 7.5 (Professional) German — B1 (HTW Berlin) Hindi & Telugu — Native",
+      "extracted_text_length": 4716,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "SHAIK MAFAZ BASHA\n\n+91 79819 24381 | mafazshaik@gmail.com | Bengaluru, India | PMP · MBA — HTW Berlin\n\nPROFESSIONAL SUMMARY\n\nDigital Project Manager with 4+ years of experience delivering enterprise software and digital transformation programs across IT Services, Healthcare, and Manufacturing. Proven expertise in end-to-end project delivery — planning, scheduling, resource coordination, risk management, and PMO governance — across Agile, Waterfall, and Hybrid environments. Proficient in JIRA, Monday.com, Smartsheet, and Excel (Macros, Pivot Tables). Track record coordinating cross-functional and offshore teams, managing NRE and compute forecasts, and presenting delivery status to senior stakeholders. International exposure at Meyer Werft GmbH, Germany. PMP Certified.\n\nSKILLS\n\nProject Planning & Scheduling | PMO Governance & Reporting | Risk & Dependency Management | Agile / Waterfall / Hybrid | Stakeholder Management | Cross-Functional Coordination | Resource & Workload Planning | Budget & NRE Tracking | JIRA | Smartsheet | MS Project | Excel — Macros & Pivot Tables | Gantt Charts & Dashboards | SQL | Azure DevOps | Confluence\n\nWORK EXPERIENCE\n\nDigital Project Manager Mar 2026 – Present\n\nITC Limited | Bengaluru, India\n\n- Manage end-to-end delivery of enterprise digital platform projects — developing project plans, timelines, milestones, and delivery schedules aligned to business and IT priorities.\n- Coordinate across business, IT, and vendor teams; track and manage risks, issues, and dependencies using structured escalation and resolution frameworks.\n- Maintain PMO governance — status reporting, risk registers, project documentation, and delivery audits; present weekly dashboards to senior leadership.\n- Build JIRA dashboards and Excel-based Gantt charts monitoring project health, NRE forecasts, and milestone progress — reduced reporting turnaround by 35%.\n- Facilitate project meetings, delivery reviews, and milestone checkpoints across cross-functional and offshore teams; manage action trackers ensuring on-schedule delivery.\n- Introduced structured requirement sign-off frameworks reducing mid-sprint rework cycles and aligning delivery scope to business outcomes.\n\nAssistant Project Manager Feb 2025 – Jun 2025\n\nMeyer Werft GmbH | Wismar, Germany\n\n- Supported end-to-end project coordination across engineering and cross-functional teams in an international manufacturing environment; maintained project plans, schedules, and resource trackers.\n- Prepared executive dashboards, Gantt charts, weekly status reports, and action trackers — improved project visibility across 4 departments.\n- Tracked milestones, coordinated stakeholder meetings, and followed up on critical actions — contributed to 15% reduction in inter-departmental coordination lag.\n- Maintained process and change management documentation; supported workflow standardisation reducing manual operational activities.\n\nBusiness Analyst — Project Delivery Jun 2023 – Oct 2024\n\nTata Consultancy Services | Hyderabad, India\n\n- Managed project planning and scheduling across enterprise software delivery programs — coordinated business, IT, and QA teams through full SDLC.\n- Led requirement workshops, maintained JIRA backlogs, and tracked delivery milestones — reduced cycle timelines by 20% through structured requirement management.\n- Owned UAT end-to-end — test case design, defect triage in JIRA, release validation — achieving 30% reduction in production defects across all projects.\n- Produced Power BI and Excel dashboards tracking delivery KPIs; supported data-driven project decisions presented to senior stakeholders.\n- Coordinated cross-functional and offshore teams across delivery cycles; managed dependency tracking and escalation to keep programs on schedule.\n\nBusiness Analyst Nov 2021 – Apr 2023\n\nCitiusTech Healthcare Technology | India\n\n- Coordinated delivery of 5+ concurrent Healthcare IT modules — 100% on-time across all milestones through Agile execution and JIRA-based tracking.\n- Managed cross-functional coordination across product, engineering, business, and QA teams; maintained full requirement traceability and project documentation.\n- Reduced requirement clarification cycles by 30%; resolved 150+ pre-production UAT defects through structured triage — improved reporting accuracy by 25%.\n\nEDUCATION & CERTIFICATIONS\n\nMBA — Strategy, Finance & International Business HTW Berlin | Germany | 2024 – 2025\n\nB.Tech — Electronics & Communication Engineering JNTUA | India | 2021\n\nProject Management Professional (PMP) PMI | Certified\n\nLANGUAGES\n\nEnglish — IELTS 7.5 (Professional) German — B1 (HTW Berlin) Hindi & Telugu — Native"
+    }
+  ],
+  "attempt_count": 3,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "extracted_text": "SHAIK MAFAZ BASHA\n\n+91 79819 24381   |   mafazshaik@gmail.com   |   Bengaluru, India   |   PMP  ·  MBA — HTW Berlin\n\nPROFESSIONAL SUMMARY\n\nDigital Project Manager with 4+ years of experience delivering enterprise software and digital transformation programs across IT Services, Healthcare, and Manufacturing. Proven expertise in end-to-end project delivery — planning, scheduling, resource coordination, risk management, and PMO governance — across Agile, Waterfall, and Hybrid environments. Proficient in JIRA, Monday.com, Smartsheet, and Excel (Macros, Pivot Tables). Track record coordinating cross-functional and offshore teams, managing NRE and compute forecasts, and presenting delivery status to senior stakeholders. International exposure at Meyer Werft GmbH, Germany. PMP Certified.\nSKILLS\n\nProject Planning & Scheduling  |  PMO Governance & Reporting  |  Risk & Dependency Management  |  Agile / Waterfall / Hybrid  |  Stakeholder Management  |  Cross-Functional Coordination  |  Resource & Workload Planning  |  Budget & NRE Tracking  |  JIRA  |  Smartsheet  |  MS Project  |  Excel — Macros & Pivot Tables  |  Gantt Charts & Dashboards  |  SQL  |  Azure DevOps  |  Confluence\n\nWORK EXPERIENCE\n\n\tDigital Project Manager \tMar 2026 – Present\nITC Limited  |  Bengaluru, India\n· Manage end-to-end delivery of enterprise digital platform projects — developing project plans, timelines, milestones, and delivery schedules aligned to business and IT priorities.\n· Coordinate across business, IT, and vendor teams; track and manage risks, issues, and dependencies using structured escalation and resolution frameworks.\n· Maintain PMO governance — status reporting, risk registers, project documentation, and delivery audits; present weekly dashboards to senior leadership.\n· Build JIRA dashboards and Excel-based Gantt charts monitoring project health, NRE forecasts, and milestone progress — reduced reporting turnaround by 35%.\n· Facilitate project meetings, delivery reviews, and milestone checkpoints across cross-functional and offshore teams; manage action trackers ensuring on-schedule delivery.\n· Introduced structured requirement sign-off frameworks reducing mid-sprint rework cycles and aligning delivery scope to business outcomes.\n\tAssistant Project Manager\tFeb 2025 – Jun 2025\nMeyer Werft GmbH  |  Wismar, Germany\n· Supported end-to-end project coordination across engineering and cross-functional teams in an international manufacturing environment; maintained project plans, schedules, and resource trackers.\n· Prepared executive dashboards, Gantt charts, weekly status reports, and action trackers — improved project visibility across 4 departments.\n· Tracked milestones, coordinated stakeholder meetings, and followed up on critical actions — contributed to 15% reduction in inter-departmental coordination lag.\n· Maintained process and change management documentation; supported workflow standardisation reducing manual operational activities.\n\tBusiness Analyst — Project Delivery\tJun 2023 – Oct 2024\nTata Consultancy Services  |  Hyderabad, India\n· Managed project planning and scheduling across enterprise software delivery programs — coordinated business, IT, and QA teams through full SDLC.\n· Led requirement workshops, maintained JIRA backlogs, and tracked delivery milestones — reduced cycle timelines by 20% through structured requirement management.\n· Owned UAT end-to-end — test case design, defect triage in JIRA, release validation — achieving 30% reduction in production defects across all projects.\n· Produced Power BI and Excel dashboards tracking delivery KPIs; supported data-driven project decisions presented to senior stakeholders.\n· Coordinated cross-functional and offshore teams across delivery cycles; managed dependency tracking and escalation to keep programs on schedule.\n\tBusiness Analyst\tNov 2021 – Apr 2023\nCitiusTech Healthcare Technology  |  India\n· Coordinated delivery of 5+ concurrent Healthcare IT modules — 100% on-time across all milestones through Agile execution and JIRA-based tracking.\n· Managed cross-functional coordination across product, engineering, business, and QA teams; maintained full requirement traceability and project documentation.\n· Reduced requirement clarification cycles by 30%; resolved 150+ pre-production UAT defects through structured triage — improved reporting accuracy by 25%.\nEDUCATION & CERTIFICATIONS\n\n\tMBA — Strategy, Finance & International Business\tHTW Berlin  |  Germany  |  2024 – 2025\n\tB.Tech — Electronics & Communication Engineering\tJNTUA  |  India  |  2021\n\tProject Management Professional (PMP)\tPMI  |  Certified\nLANGUAGES\n\nEnglish — IELTS 7.5 (Professional)     German — B1 (HTW Berlin)     Hindi & Telugu — Native",
+  "final_extracted_text": "SHAIK MAFAZ BASHA\n\n+91 79819 24381   |   mafazshaik@gmail.com   |   Bengaluru, India   |   PMP  ·  MBA — HTW Berlin\n\nPROFESSIONAL SUMMARY\n\nDigital Project Manager with 4+ years of experience delivering enterprise software and digital transformation programs across IT Services, Healthcare, and Manufacturing. Proven expertise in end-to-end project delivery — planning, scheduling, resource coordination, risk management, and PMO governance — across Agile, Waterfall, and Hybrid environments. Proficient in JIRA, Monday.com, Smartsheet, and Excel (Macros, Pivot Tables). Track record coordinating cross-functional and offshore teams, managing NRE and compute forecasts, and presenting delivery status to senior stakeholders. International exposure at Meyer Werft GmbH, Germany. PMP Certified.\nSKILLS\n\nProject Planning & Scheduling  |  PMO Governance & Reporting  |  Risk & Dependency Management  |  Agile / Waterfall / Hybrid  |  Stakeholder Management  |  Cross-Functional Coordination  |  Resource & Workload Planning  |  Budget & NRE Tracking  |  JIRA  |  Smartsheet  |  MS Project  |  Excel — Macros & Pivot Tables  |  Gantt Charts & Dashboards  |  SQL  |  Azure DevOps  |  Confluence\n\nWORK EXPERIENCE\n\n\tDigital Project Manager \tMar 2026 – Present\nITC Limited  |  Bengaluru, India\n· Manage end-to-end delivery of enterprise digital platform projects — developing project plans, timelines, milestones, and delivery schedules aligned to business and IT priorities.\n· Coordinate across business, IT, and vendor teams; track and manage risks, issues, and dependencies using structured escalation and resolution frameworks.\n· Maintain PMO governance — status reporting, risk registers, project documentation, and delivery audits; present weekly dashboards to senior leadership.\n· Build JIRA dashboards and Excel-based Gantt charts monitoring project health, NRE forecasts, and milestone progress — reduced reporting turnaround by 35%.\n· Facilitate project meetings, delivery reviews, and milestone checkpoints across cross-functional and offshore teams; manage action trackers ensuring on-schedule delivery.\n· Introduced structured requirement sign-off frameworks reducing mid-sprint rework cycles and aligning delivery scope to business outcomes.\n\tAssistant Project Manager\tFeb 2025 – Jun 2025\nMeyer Werft GmbH  |  Wismar, Germany\n· Supported end-to-end project coordination across engineering and cross-functional teams in an international manufacturing environment; maintained project plans, schedules, and resource trackers.\n· Prepared executive dashboards, Gantt charts, weekly status reports, and action trackers — improved project visibility across 4 departments.\n· Tracked milestones, coordinated stakeholder meetings, and followed up on critical actions — contributed to 15% reduction in inter-departmental coordination lag.\n· Maintained process and change management documentation; supported workflow standardisation reducing manual operational activities.\n\tBusiness Analyst — Project Delivery\tJun 2023 – Oct 2024\nTata Consultancy Services  |  Hyderabad, India\n· Managed project planning and scheduling across enterprise software delivery programs — coordinated business, IT, and QA teams through full SDLC.\n· Led requirement workshops, maintained JIRA backlogs, and tracked delivery milestones — reduced cycle timelines by 20% through structured requirement management.\n· Owned UAT end-to-end — test case design, defect triage in JIRA, release validation — achieving 30% reduction in production defects across all projects.\n· Produced Power BI and Excel dashboards tracking delivery KPIs; supported data-driven project decisions presented to senior stakeholders.\n· Coordinated cross-functional and offshore teams across delivery cycles; managed dependency tracking and escalation to keep programs on schedule.\n\tBusiness Analyst\tNov 2021 – Apr 2023\nCitiusTech Healthcare Technology  |  India\n· Coordinated delivery of 5+ concurrent Healthcare IT modules — 100% on-time across all milestones through Agile execution and JIRA-based tracking.\n· Managed cross-functional coordination across product, engineering, business, and QA teams; maintained full requirement traceability and project documentation.\n· Reduced requirement clarification cycles by 30%; resolved 150+ pre-production UAT defects through structured triage — improved reporting accuracy by 25%.\nEDUCATION & CERTIFICATIONS\n\n\tMBA — Strategy, Finance & International Business\tHTW Berlin  |  Germany  |  2024 – 2025\n\tB.Tech — Electronics & Communication Engineering\tJNTUA  |  India  |  2021\n\tProject Management Professional (PMP)\tPMI  |  Certified\nLANGUAGES\n\nEnglish — IELTS 7.5 (Professional)     German — B1 (HTW Berlin)     Hindi & Telugu — Native",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "quality": {
+    "status": "PASS",
+    "document_id": "9d32b97d-5f30-4558-8665-b0e286372c1e",
+    "source_tool": "tika",
+    "attempt_id": "9d32b97d-5f30-4558-8665-b0e286372c1e-attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 4716,
+        "word_count": 636,
+        "line_count": 47,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.152884,
+        "symbol_count": 45,
+        "symbol_ratio": 0.009542,
+        "max_repeated_char_run": 5,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 94.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 4716,
+        "word_count": 636,
+        "configured_section_count": 8,
+        "detected_count": 6,
+        "missing_count": 2,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Responsibilities",
+          "Projects"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Responsibilities",
+          "Projects"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "professional summary",
+          "Skills": "skills",
+          "Work Experience": "WORKEXPERIENCE",
+          "Education": "education and certifications",
+          "Certifications": "education and certifications"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "mafazshaik@gmail.com",
+            "confidence": 0.8
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "PROFESSIONAL SUMMARY",
+            "detection_method": "heading",
+            "line_number": 5,
+            "evidence": "PROFESSIONAL SUMMARY",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "SKILLS",
+            "detection_method": "heading",
+            "line_number": 8,
+            "evidence": "SKILLS",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "WORK EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 12,
+            "evidence": "WORK EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATION & CERTIFICATIONS",
+            "detection_method": "heading",
+            "line_number": 40,
+            "evidence": "EDUCATION & CERTIFICATIONS",
+            "confidence": 0.98
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": "EDUCATION & CERTIFICATIONS",
+            "detection_method": "heading",
+            "line_number": 40,
+            "evidence": "EDUCATION & CERTIFICATIONS",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Certifications": "detected",
+          "Responsibilities": "missing",
+          "Projects": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Responsibilities",
+        "Projects"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Responsibilities",
+        "Projects"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 4716,
+        "word_count": 636,
+        "line_count": 47,
+        "non_empty_line_count": 39,
+        "short_line_count": 4,
+        "short_line_ratio": 0.102564,
+        "fragmented_line_count": 3,
+        "fragmented_line_ratio": 0.076923,
+        "mean_line_length": 119.56,
+        "median_line_length": 132.0,
+        "line_length_stdev": 113.77,
+        "line_length_cv": 0.951569,
+        "broken_sentence_count": 0,
+        "broken_sentence_ratio": 0.0,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Selected 'tika' with quality score 98.2 (tie among ['tika', 'docling'] broken by configured tie-break order ['tika', 'pymupdf', 'docling']).",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 13038.81,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "FAIL",
+      "duration_ms": 4.93,
+      "message": "pymupdf does not support file type 'docx'. Supported: pdf.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 1565.85,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=98.2, pymupdf=0.0, docling=98.2",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected 'tika' with quality score 98.2 (tie among ['tika', 'docling'] broken by configured tie-break order ['tika', 'pymupdf', 'docling']).",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Tika text normalized: 4716 → 4638 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Contact Information Recovery",
+      "type": "contact_recovery",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Contact information missing and could not be recovered from any source (extractor outputs, first-page text layer, OCR). Still missing: location.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 20258.36,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 33459.0,
+      "message": "Muse AI produced validated Resume JSON from the Tika extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 33459.0,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "SHAIK MAFAZ BASHA\n\n+91 79819 24381   |   mafazshaik@gmail.com   |   Bengaluru, India   |   PMP  ·  MBA — HTW Berlin\n\nPROFESSIONAL SUMMARY\n\nDigital Project Manager with 4+ years of experience delivering enterprise software and digital transformation programs across IT Services, Healthcare, and Manufacturing. Proven expertise in end-to-end project delivery — planning, scheduling, resource coordination, risk management, and PMO governance — across Agile, Waterfall, and Hybrid environments. Proficient in JIRA, Monday.com, Smartsheet, and Excel (Macros, Pivot Tables). Track record coordinating cross-functional and offshore teams, managing NRE and compute forecasts, and presenting delivery status to senior stakeholders. International exposure at Meyer Werft GmbH, Germany. PMP Certified.\nSKILLS\n\nProject Planning & Scheduling  |  PMO Governance & Reporting  |  Risk & Dependency Management  |  Agile / Waterfall / Hybrid  |  Stakeholder Management  |  Cross-Functional Coordination  |  Resource & Workload Planning  |  Budget & NRE Tracking  |  JIRA  |  Smartsheet  |  MS Project  |  Excel — Macros & Pivot Tables  |  Gantt Charts & Dashboards  |  SQL  |  Azure DevOps  |  Confluence\n\nWORK EXPERIENCE\n\n\tDigital Project Manager \tMar 2026 – Present\nITC Limited  |  Bengaluru, India\n· Manage end-to-end delivery of enterprise digital platform projects — developing project plans, timelines, milestones, and delivery schedules aligned to business and IT priorities.\n· Coordinate across business, IT, and vendor teams; track and manage risks, issues, and dependencies using structured escalation and resolution frameworks.\n· Maintain PMO governance — status reporting, risk registers, project documentation, and delivery audits; present weekly dashboards to senior leadership.\n· Build JIRA dashboards and Excel-based Gantt charts monitoring project health, NRE forecasts, and milestone progress — reduced reporting turnaround by 35%.\n· Facilitate project meetings, delivery reviews, and milestone checkpoints across cross-functional and offshore teams; manage action trackers ensuring on-schedule delivery.\n· Introduced structured requirement sign-off frameworks reducing mid-sprint rework cycles and aligning delivery scope to business outcomes.\n\tAssistant Project Manager\tFeb 2025 – Jun 2025\nMeyer Werft GmbH  |  Wismar, Germany\n· Supported end-to-end project coordination across engineering and cross-functional teams in an international manufacturing environment; maintained project plans, schedules, and resource trackers.\n· Prepared executive dashboards, Gantt charts, weekly status reports, and action trackers — improved project visibility across 4 departments.\n· Tracked milestones, coordinated stakeholder meetings, and followed up on critical actions — contributed to 15% reduction in inter-departmental coordination lag.\n· Maintained process and change management documentation; supported workflow standardisation reducing manual operational activities.\n\tBusiness Analyst — Project Delivery\tJun 2023 – Oct 2024\nTata Consultancy Services  |  Hyderabad, India\n· Managed project planning and scheduling across enterprise software delivery programs — coordinated business, IT, and QA teams through full SDLC.\n· Led requirement workshops, maintained JIRA backlogs, and tracked delivery milestones — reduced cycle timelines by 20% through structured requirement management.\n· Owned UAT end-to-end — test case design, defect triage in JIRA, release validation — achieving 30% reduction in production defects across all projects.\n· Produced Power BI and Excel dashboards tracking delivery KPIs; supported data-driven project decisions presented to senior stakeholders.\n· Coordinated cross-functional and offshore teams across delivery cycles; managed dependency tracking and escalation to keep programs on schedule.\n\tBusiness Analyst\tNov 2021 – Apr 2023\nCitiusTech Healthcare Technology  |  India\n· Coordinated delivery of 5+ concurrent Healthcare IT modules — 100% on-time across all milestones through Agile execution and JIRA-based tracking.\n· Managed cross-functional coordination across product, engineering, business, and QA teams; maintained full requirement traceability and project documentation.\n· Reduced requirement clarification cycles by 30%; resolved 150+ pre-production UAT defects through structured triage — improved reporting accuracy by 25%.\nEDUCATION & CERTIFICATIONS\n\n\tMBA — Strategy, Finance & International Business\tHTW Berlin  |  Germany  |  2024 – 2025\n\tB.Tech — Electronics & Communication Engineering\tJNTUA  |  India  |  2021\n\tProject Management Professional (PMP)\tPMI  |  Certified\nLANGUAGES\n\nEnglish — IELTS 7.5 (Professional)     German — B1 (HTW Berlin)     Hindi & Telugu — Native",
+    "normalized_text": "SHAIK MAFAZ BASHA\n\n+91 79819 24381 | mafazshaik@gmail.com | Bengaluru, India | PMP · MBA — HTW Berlin\n\nPROFESSIONAL SUMMARY\n\nDigital Project Manager with 4+ years of experience delivering enterprise software and digital transformation programs across IT Services, Healthcare, and Manufacturing. Proven expertise in end-to-end project delivery — planning, scheduling, resource coordination, risk management, and PMO governance — across Agile, Waterfall, and Hybrid environments. Proficient in JIRA, Monday.com, Smartsheet, and Excel (Macros, Pivot Tables). Track record coordinating cross-functional and offshore teams, managing NRE and compute forecasts, and presenting delivery status to senior stakeholders. International exposure at Meyer Werft GmbH, Germany. PMP Certified.\nSKILLS\n\nProject Planning & Scheduling | PMO Governance & Reporting | Risk & Dependency Management | Agile / Waterfall / Hybrid | Stakeholder Management | Cross-Functional Coordination | Resource & Workload Planning | Budget & NRE Tracking | JIRA | Smartsheet | MS Project | Excel — Macros & Pivot Tables | Gantt Charts & Dashboards | SQL | Azure DevOps | Confluence\n\nWORK EXPERIENCE\n\nDigital Project Manager Mar 2026 – Present\nITC Limited | Bengaluru, India\n· Manage end-to-end delivery of enterprise digital platform projects — developing project plans, timelines, milestones, and delivery schedules aligned to business and IT priorities.\n· Coordinate across business, IT, and vendor teams; track and manage risks, issues, and dependencies using structured escalation and resolution frameworks.\n· Maintain PMO governance — status reporting, risk registers, project documentation, and delivery audits; present weekly dashboards to senior leadership.\n· Build JIRA dashboards and Excel-based Gantt charts monitoring project health, NRE forecasts, and milestone progress — reduced reporting turnaround by 35%.\n· Facilitate project meetings, delivery reviews, and milestone checkpoints across cross-functional and offshore teams; manage action trackers ensuring on-schedule delivery.\n· Introduced structured requirement sign-off frameworks reducing mid-sprint rework cycles and aligning delivery scope to business outcomes.\nAssistant Project Manager Feb 2025 – Jun 2025\nMeyer Werft GmbH | Wismar, Germany\n· Supported end-to-end project coordination across engineering and cross-functional teams in an international manufacturing environment; maintained project plans, schedules, and resource trackers.\n· Prepared executive dashboards, Gantt charts, weekly status reports, and action trackers — improved project visibility across 4 departments.\n· Tracked milestones, coordinated stakeholder meetings, and followed up on critical actions — contributed to 15% reduction in inter-departmental coordination lag.\n· Maintained process and change management documentation; supported workflow standardisation reducing manual operational activities.\nBusiness Analyst — Project Delivery Jun 2023 – Oct 2024\nTata Consultancy Services | Hyderabad, India\n· Managed project planning and scheduling across enterprise software delivery programs — coordinated business, IT, and QA teams through full SDLC.\n· Led requirement workshops, maintained JIRA backlogs, and tracked delivery milestones — reduced cycle timelines by 20% through structured requirement management.\n· Owned UAT end-to-end — test case design, defect triage in JIRA, release validation — achieving 30% reduction in production defects across all projects.\n· Produced Power BI and Excel dashboards tracking delivery KPIs; supported data-driven project decisions presented to senior stakeholders.\n· Coordinated cross-functional and offshore teams across delivery cycles; managed dependency tracking and escalation to keep programs on schedule.\nBusiness Analyst Nov 2021 – Apr 2023\nCitiusTech Healthcare Technology | India\n· Coordinated delivery of 5+ concurrent Healthcare IT modules — 100% on-time across all milestones through Agile execution and JIRA-based tracking.\n· Managed cross-functional coordination across product, engineering, business, and QA teams; maintained full requirement traceability and project documentation.\n· Reduced requirement clarification cycles by 30%; resolved 150+ pre-production UAT defects through structured triage — improved reporting accuracy by 25%.\nEDUCATION & CERTIFICATIONS\n\nMBA — Strategy, Finance & International Business HTW Berlin | Germany | 2024 – 2025\nB.Tech — Electronics & Communication Engineering JNTUA | India | 2021\nProject Management Professional (PMP) PMI | Certified\nLANGUAGES\n\nEnglish — IELTS 7.5 (Professional) German — B1 (HTW Berlin) Hindi & Telugu — Native",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed"
+    ],
+    "original_chars": 4716,
+    "normalized_chars": 4638,
+    "original_estimated_tokens": 1179,
+    "normalized_estimated_tokens": 1160,
+    "estimated_reduction_percent": 1.6
+  },
+  "contact_recovery": {
+    "status": "not_recovered",
+    "selected_extractor": "tika",
+    "present_before": [
+      "phone",
+      "email"
+    ],
+    "missing_before": [
+      "location"
+    ],
+    "recovered": {},
+    "still_missing": [
+      "location"
+    ],
+    "sources_tried": [
+      {
+        "source": "Tika",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "Docling",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "OCR",
+        "method": "ocr_first_page",
+        "found": [],
+        "error": "ocr does not support file type 'docx'. Supported: pdf, png, jpg, jpeg, tif, tiff, bmp, webp."
+      }
+    ],
+    "applied": false,
+    "pre_recovery_normalized_text": null,
+    "at": "2026-11-11T06:52:36.543059+00:00"
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 20258.36,
+      "input_tokens": 1741,
+      "output_tokens": 3269,
+      "total_tokens": 5010,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1741,
+    "output_tokens": 3269,
+    "total_tokens": 5010,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 20258.36,
+    "usage": {
+      "completion_tokens": 3269,
+      "prompt_tokens": 1741,
+      "total_tokens": 5010,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2069
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 4716,
+      "normalized_chars": 4638,
+      "estimated_reduction_percent": 1.6,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed"
+      ],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "tika",
+  "selected_quality_score": 98.2,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 98.2,
+      "status": "success",
+      "word_count": 636,
+      "char_count": 4716,
+      "meaningful_char_count": 3995,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 87.7,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary",
+          "projects",
+          "certifications"
+        ]
+      },
+      "structure": {
+        "heading_count": 4,
+        "paragraph_count": 9,
+        "bullet_count": 18
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.8767,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 1.0,
+        "structure": 1.0
+      }
+    },
+    "pymupdf": {
+      "extractor": "pymupdf",
+      "quality_score": 0.0,
+      "status": "failed",
+      "word_count": 0,
+      "char_count": 0,
+      "meaningful_char_count": 0,
+      "empty_page_ratio": 1.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 0.0,
+      "completeness": {
+        "has_email": false,
+        "has_phone": false,
+        "has_skills_section": false,
+        "has_experience_section": false,
+        "has_education_section": false,
+        "sections_found": []
+      },
+      "structure": {
+        "heading_count": 0,
+        "paragraph_count": 0,
+        "bullet_count": 0
+      },
+      "error": "pymupdf does not support file type 'docx'. Supported: pdf."
+    },
+    "docling": {
+      "extractor": "docling",
+      "quality_score": 98.2,
+      "status": "success",
+      "word_count": 636,
+      "char_count": 4716,
+      "meaningful_char_count": 3995,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 87.7,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary",
+          "projects",
+          "certifications"
+        ]
+      },
+      "structure": {
+        "heading_count": 4,
+        "paragraph_count": 25,
+        "bullet_count": 18
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.8767,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 1.0,
+        "structure": 1.0
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 4716,
+    "normalized_chars": 4638,
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed"
+    ],
+    "error": null,
+    "original_text": "SHAIK MAFAZ BASHA\n\n+91 79819 24381   |   mafazshaik@gmail.com   |   Bengaluru, India   |   PMP  ·  MBA — HTW Berlin\n\nPROFESSIONAL SUMMARY\n\nDigital Project Manager with 4+ years of experience delivering enterprise software and digital transformation programs across IT Services, Healthcare, and Manufacturing. Proven expertise in end-to-end project delivery — planning, scheduling, resource coordination, risk management, and PMO governance — across Agile, Waterfall, and Hybrid environments. Proficient in JIRA, Monday.com, Smartsheet, and Excel (Macros, Pivot Tables). Track record coordinating cross-functional and offshore teams, managing NRE and compute forecasts, and presenting delivery status to senior stakeholders. International exposure at Meyer Werft GmbH, Germany. PMP Certified.\nSKILLS\n\nProject Planning & Scheduling  |  PMO Governance & Reporting  |  Risk & Dependency Management  |  Agile / Waterfall / Hybrid  |  Stakeholder Management  |  Cross-Functional Coordination  |  Resource & Workload Planning  |  Budget & NRE Tracking  |  JIRA  |  Smartsheet  |  MS Project  |  Excel — Macros & Pivot Tables  |  Gantt Charts & Dashboards  |  SQL  |  Azure DevOps  |  Confluence\n\nWORK EXPERIENCE\n\n\tDigital Project Manager \tMar 2026 – Present\nITC Limited  |  Bengaluru, India\n· Manage end-to-end delivery of enterprise digital platform projects — developing project plans, timelines, milestones, and delivery schedules aligned to business and IT priorities.\n· Coordinate across business, IT, and vendor teams; track and manage risks, issues, and dependencies using structured escalation and resolution frameworks.\n· Maintain PMO governance — status reporting, risk registers, project documentation, and delivery audits; present weekly dashboards to senior leadership.\n· Build JIRA dashboards and Excel-based Gantt charts monitoring project health, NRE forecasts, and milestone progress — reduced reporting turnaround by 35%.\n· Facilitate project meetings, delivery reviews, and milestone checkpoints across cross-functional and offshore teams; manage action trackers ensuring on-schedule delivery.\n· Introduced structured requirement sign-off frameworks reducing mid-sprint rework cycles and aligning delivery scope to business outcomes.\n\tAssistant Project Manager\tFeb 2025 – Jun 2025\nMeyer Werft GmbH  |  Wismar, Germany\n· Supported end-to-end project coordination across engineering and cross-functional teams in an international manufacturing environment; maintained project plans, schedules, and resource trackers.\n· Prepared executive dashboards, Gantt charts, weekly status reports, and action trackers — improved project visibility across 4 departments.\n· Tracked milestones, coordinated stakeholder meetings, and followed up on critical actions — contributed to 15% reduction in inter-departmental coordination lag.\n· Maintained process and change management documentation; supported workflow standardisation reducing manual operational activities.\n\tBusiness Analyst — Project Delivery\tJun 2023 – Oct 2024\nTata Consultancy Services  |  Hyderabad, India\n· Managed project planning and scheduling across enterprise software delivery programs — coordinated business, IT, and QA teams through full SDLC.\n· Led requirement workshops, maintained JIRA backlogs, and tracked delivery milestones — reduced cycle timelines by 20% through structured requirement management.\n· Owned UAT end-to-end — test case design, defect triage in JIRA, release validation — achieving 30% reduction in production defects across all projects.\n· Produced Power BI and Excel dashboards tracking delivery KPIs; supported data-driven project decisions presented to senior stakeholders.\n· Coordinated cross-functional and offshore teams across delivery cycles; managed dependency tracking and escalation to keep programs on schedule.\n\tBusiness Analyst\tNov 2021 – Apr 2023\nCitiusTech Healthcare Technology  |  India\n· Coordinated delivery of 5+ concurrent Healthcare IT modules — 100% on-time across all milestones through Agile execution and JIRA-based tracking.\n· Managed cross-functional coordination across product, engineering, business, and QA teams; maintained full requirement traceability and project documentation.\n· Reduced requirement clarification cycles by 30%; resolved 150+ pre-production UAT defects through structured triage — improved reporting accuracy by 25%.\nEDUCATION & CERTIFICATIONS\n\n\tMBA — Strategy, Finance & International Business\tHTW Berlin  |  Germany  |  2024 – 2025\n\tB.Tech — Electronics & Communication Engineering\tJNTUA  |  India  |  2021\n\tProject Management Professional (PMP)\tPMI  |  Certified\nLANGUAGES\n\nEnglish — IELTS 7.5 (Professional)     German — B1 (HTW Berlin)     Hindi & Telugu — Native",
+    "normalized_text": "SHAIK MAFAZ BASHA\n\n+91 79819 24381 | mafazshaik@gmail.com | Bengaluru, India | PMP · MBA — HTW Berlin\n\nPROFESSIONAL SUMMARY\n\nDigital Project Manager with 4+ years of experience delivering enterprise software and digital transformation programs across IT Services, Healthcare, and Manufacturing. Proven expertise in end-to-end project delivery — planning, scheduling, resource coordination, risk management, and PMO governance — across Agile, Waterfall, and Hybrid environments. Proficient in JIRA, Monday.com, Smartsheet, and Excel (Macros, Pivot Tables). Track record coordinating cross-functional and offshore teams, managing NRE and compute forecasts, and presenting delivery status to senior stakeholders. International exposure at Meyer Werft GmbH, Germany. PMP Certified.\nSKILLS\n\nProject Planning & Scheduling | PMO Governance & Reporting | Risk & Dependency Management | Agile / Waterfall / Hybrid | Stakeholder Management | Cross-Functional Coordination | Resource & Workload Planning | Budget & NRE Tracking | JIRA | Smartsheet | MS Project | Excel — Macros & Pivot Tables | Gantt Charts & Dashboards | SQL | Azure DevOps | Confluence\n\nWORK EXPERIENCE\n\nDigital Project Manager Mar 2026 – Present\nITC Limited | Bengaluru, India\n· Manage end-to-end delivery of enterprise digital platform projects — developing project plans, timelines, milestones, and delivery schedules aligned to business and IT priorities.\n· Coordinate across business, IT, and vendor teams; track and manage risks, issues, and dependencies using structured escalation and resolution frameworks.\n· Maintain PMO governance — status reporting, risk registers, project documentation, and delivery audits; present weekly dashboards to senior leadership.\n· Build JIRA dashboards and Excel-based Gantt charts monitoring project health, NRE forecasts, and milestone progress — reduced reporting turnaround by 35%.\n· Facilitate project meetings, delivery reviews, and milestone checkpoints across cross-functional and offshore teams; manage action trackers ensuring on-schedule delivery.\n· Introduced structured requirement sign-off frameworks reducing mid-sprint rework cycles and aligning delivery scope to business outcomes.\nAssistant Project Manager Feb 2025 – Jun 2025\nMeyer Werft GmbH | Wismar, Germany\n· Supported end-to-end project coordination across engineering and cross-functional teams in an international manufacturing environment; maintained project plans, schedules, and resource trackers.\n· Prepared executive dashboards, Gantt charts, weekly status reports, and action trackers — improved project visibility across 4 departments.\n· Tracked milestones, coordinated stakeholder meetings, and followed up on critical actions — contributed to 15% reduction in inter-departmental coordination lag.\n· Maintained process and change management documentation; supported workflow standardisation reducing manual operational activities.\nBusiness Analyst — Project Delivery Jun 2023 – Oct 2024\nTata Consultancy Services | Hyderabad, India\n· Managed project planning and scheduling across enterprise software delivery programs — coordinated business, IT, and QA teams through full SDLC.\n· Led requirement workshops, maintained JIRA backlogs, and tracked delivery milestones — reduced cycle timelines by 20% through structured requirement management.\n· Owned UAT end-to-end — test case design, defect triage in JIRA, release validation — achieving 30% reduction in production defects across all projects.\n· Produced Power BI and Excel dashboards tracking delivery KPIs; supported data-driven project decisions presented to senior stakeholders.\n· Coordinated cross-functional and offshore teams across delivery cycles; managed dependency tracking and escalation to keep programs on schedule.\nBusiness Analyst Nov 2021 – Apr 2023\nCitiusTech Healthcare Technology | India\n· Coordinated delivery of 5+ concurrent Healthcare IT modules — 100% on-time across all milestones through Agile execution and JIRA-based tracking.\n· Managed cross-functional coordination across product, engineering, business, and QA teams; maintained full requirement traceability and project documentation.\n· Reduced requirement clarification cycles by 30%; resolved 150+ pre-production UAT defects through structured triage — improved reporting accuracy by 25%.\nEDUCATION & CERTIFICATIONS\n\nMBA — Strategy, Finance & International Business HTW Berlin | Germany | 2024 – 2025\nB.Tech — Electronics & Communication Engineering JNTUA | India | 2021\nProject Management Professional (PMP) PMI | Certified\nLANGUAGES\n\nEnglish — IELTS 7.5 (Professional) German — B1 (HTW Berlin) Hindi & Telugu — Native"
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "SHAIK MAFAZ BASHA",
+      "email": "mafazshaik@gmail.com",
+      "phone": "+91 79819 24381",
+      "location": "Bengaluru, India",
+      "summary": "Digital Project Manager with 4+ years of experience delivering enterprise software and digital transformation programs across IT Services, Healthcare, and Manufacturing. Proven expertise in end-to-end project delivery — planning, scheduling, resource coordination, risk management, and PMO governance — across Agile, Waterfall, and Hybrid environments. Proficient in JIRA, Monday.com, Smartsheet, and Excel (Macros, Pivot Tables). Track record coordinating cross-functional and offshore teams, managing NRE and compute forecasts, and presenting delivery status to senior stakeholders. International exposure at Meyer Werft GmbH, Germany. PMP Certified.",
+      "skills": {
+        "technical_skills": [
+          "Project Planning & Scheduling",
+          "PMO Governance & Reporting",
+          "Risk & Dependency Management",
+          "Agile / Waterfall / Hybrid",
+          "Resource & Workload Planning",
+          "Budget & NRE Tracking",
+          "Gantt Charts & Dashboards",
+          "SQL"
+        ],
+        "soft_skills": [
+          "Stakeholder Management",
+          "Cross-Functional Coordination"
+        ],
+        "tools": [
+          "JIRA",
+          "Smartsheet",
+          "MS Project",
+          "Excel — Macros & Pivot Tables",
+          "Azure DevOps",
+          "Confluence"
+        ],
+        "taxonomy_skills": [],
+        "other_skills": []
+      },
+      "experience": [
+        {
+          "title": "Digital Project Manager",
+          "company": "ITC Limited",
+          "location": "Bengaluru, India",
+          "start_date": "Mar 2026",
+          "end_date": "Present",
+          "highlights": [
+            "Manage end-to-end delivery of enterprise digital platform projects — developing project plans, timelines, milestones, and delivery schedules aligned to business and IT priorities.",
+            "Coordinate across business, IT, and vendor teams; track and manage risks, issues, and dependencies using structured escalation and resolution frameworks.",
+            "Maintain PMO governance — status reporting, risk registers, project documentation, and delivery audits; present weekly dashboards to senior leadership.",
+            "Build JIRA dashboards and Excel-based Gantt charts monitoring project health, NRE forecasts, and milestone progress — reduced reporting turnaround by 35%.",
+            "Facilitate project meetings, delivery reviews, and milestone checkpoints across cross-functional and offshore teams; manage action trackers ensuring on-schedule delivery.",
+            "Introduced structured requirement sign-off frameworks reducing mid-sprint rework cycles and aligning delivery scope to business outcomes."
+          ]
+        },
+        {
+          "title": "Assistant Project Manager",
+          "company": "Meyer Werft GmbH",
+          "location": "Wismar, Germany",
+          "start_date": "Feb 2025",
+          "end_date": "Jun 2025",
+          "highlights": [
+            "Supported end-to-end project coordination across engineering and cross-functional teams in an international manufacturing environment; maintained project plans, schedules, and resource trackers.",
+            "Prepared executive dashboards, Gantt charts, weekly status reports, and action trackers — improved project visibility across 4 departments.",
+            "Tracked milestones, coordinated stakeholder meetings, and followed up on critical actions — contributed to 15% reduction in inter-departmental coordination lag.",
+            "Maintained process and change management documentation; supported workflow standardisation reducing manual operational activities."
+          ]
+        },
+        {
+          "title": "Business Analyst — Project Delivery",
+          "company": "Tata Consultancy Services",
+          "location": "Hyderabad, India",
+          "start_date": "Jun 2023",
+          "end_date": "Oct 2024",
+          "highlights": [
+            "Managed project planning and scheduling across enterprise software delivery programs — coordinated business, IT, and QA teams through full SDLC.",
+            "Led requirement workshops, maintained JIRA backlogs, and tracked delivery milestones — reduced cycle timelines by 20% through structured requirement management.",
+            "Owned UAT end-to-end — test case design, defect triage in JIRA, release validation — achieving 30% reduction in production defects across all projects.",
+            "Produced Power BI and Excel dashboards tracking delivery KPIs; supported data-driven project decisions presented to senior stakeholders.",
+            "Coordinated cross-functional and offshore teams across delivery cycles; managed dependency tracking and escalation to keep programs on schedule."
+          ]
+        },
+        {
+          "title": "Business Analyst",
+          "company": "CitiusTech Healthcare Technology",
+          "location": "India",
+          "start_date": "Nov 2021",
+          "end_date": "Apr 2023",
+          "highlights": [
+            "Coordinated delivery of 5+ concurrent Healthcare IT modules — 100% on-time across all milestones through Agile execution and JIRA-based tracking.",
+            "Managed cross-functional coordination across product, engineering, business, and QA teams; maintained full requirement traceability and project documentation.",
+            "Reduced requirement clarification cycles by 30%; resolved 150+ pre-production UAT defects through structured triage — improved reporting accuracy by 25%."
+          ]
+        }
+      ],
+      "education": [
+        {
+          "degree": "MBA — Strategy, Finance & International Business",
+          "institution": "HTW Berlin",
+          "location": "Germany",
+          "start_date": "2024",
+          "end_date": "2025"
+        },
+        {
+          "degree": "B.Tech — Electronics & Communication Engineering",
+          "institution": "JNTUA",
+          "location": "India",
+          "start_date": "",
+          "end_date": "2021"
+        }
+      ],
+      "certifications": [
+        "Project Management Professional (PMP)"
+      ],
+      "languages": [
+        "English — IELTS 7.5 (Professional)",
+        "German — B1 (HTW Berlin)",
+        "Hindi & Telugu — Native"
+      ],
+      "links": []
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 20258.36,
+    "usage": {
+      "completion_tokens": 3269,
+      "prompt_tokens": 1741,
+      "total_tokens": 5010,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2069
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "SHAIK MAFAZ BASHA",
+    "email": "mafazshaik@gmail.com",
+    "phone": "+91 79819 24381",
+    "location": "Bengaluru, India",
+    "summary": "Digital Project Manager with 4+ years of experience delivering enterprise software and digital transformation programs across IT Services, Healthcare, and Manufacturing. Proven expertise in end-to-end project delivery — planning, scheduling, resource coordination, risk management, and PMO governance — across Agile, Waterfall, and Hybrid environments. Proficient in JIRA, Monday.com, Smartsheet, and Excel (Macros, Pivot Tables). Track record coordinating cross-functional and offshore teams, managing NRE and compute forecasts, and presenting delivery status to senior stakeholders. International exposure at Meyer Werft GmbH, Germany. PMP Certified.",
+    "skills": {
+      "technical_skills": [
+        "Project Planning & Scheduling",
+        "PMO Governance & Reporting",
+        "Risk & Dependency Management",
+        "Agile / Waterfall / Hybrid",
+        "Resource & Workload Planning",
+        "Budget & NRE Tracking",
+        "Gantt Charts & Dashboards",
+        "SQL"
+      ],
+      "soft_skills": [
+        "Stakeholder Management",
+        "Cross-Functional Coordination"
+      ],
+      "tools": [
+        "JIRA",
+        "Smartsheet",
+        "MS Project",
+        "Excel — Macros & Pivot Tables",
+        "Azure DevOps",
+        "Confluence"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Digital Project Manager",
+        "company": "ITC Limited",
+        "location": "Bengaluru, India",
+        "start_date": "Mar 2026",
+        "end_date": "Present",
+        "highlights": [
+          "Manage end-to-end delivery of enterprise digital platform projects — developing project plans, timelines, milestones, and delivery schedules aligned to business and IT priorities.",
+          "Coordinate across business, IT, and vendor teams; track and manage risks, issues, and dependencies using structured escalation and resolution frameworks.",
+          "Maintain PMO governance — status reporting, risk registers, project documentation, and delivery audits; present weekly dashboards to senior leadership.",
+          "Build JIRA dashboards and Excel-based Gantt charts monitoring project health, NRE forecasts, and milestone progress — reduced reporting turnaround by 35%.",
+          "Facilitate project meetings, delivery reviews, and milestone checkpoints across cross-functional and offshore teams; manage action trackers ensuring on-schedule delivery.",
+          "Introduced structured requirement sign-off frameworks reducing mid-sprint rework cycles and aligning delivery scope to business outcomes."
+        ]
+      },
+      {
+        "title": "Assistant Project Manager",
+        "company": "Meyer Werft GmbH",
+        "location": "Wismar, Germany",
+        "start_date": "Feb 2025",
+        "end_date": "Jun 2025",
+        "highlights": [
+          "Supported end-to-end project coordination across engineering and cross-functional teams in an international manufacturing environment; maintained project plans, schedules, and resource trackers.",
+          "Prepared executive dashboards, Gantt charts, weekly status reports, and action trackers — improved project visibility across 4 departments.",
+          "Tracked milestones, coordinated stakeholder meetings, and followed up on critical actions — contributed to 15% reduction in inter-departmental coordination lag.",
+          "Maintained process and change management documentation; supported workflow standardisation reducing manual operational activities."
+        ]
+      },
+      {
+        "title": "Business Analyst — Project Delivery",
+        "company": "Tata Consultancy Services",
+        "location": "Hyderabad, India",
+        "start_date": "Jun 2023",
+        "end_date": "Oct 2024",
+        "highlights": [
+          "Managed project planning and scheduling across enterprise software delivery programs — coordinated business, IT, and QA teams through full SDLC.",
+          "Led requirement workshops, maintained JIRA backlogs, and tracked delivery milestones — reduced cycle timelines by 20% through structured requirement management.",
+          "Owned UAT end-to-end — test case design, defect triage in JIRA, release validation — achieving 30% reduction in production defects across all projects.",
+          "Produced Power BI and Excel dashboards tracking delivery KPIs; supported data-driven project decisions presented to senior stakeholders.",
+          "Coordinated cross-functional and offshore teams across delivery cycles; managed dependency tracking and escalation to keep programs on schedule."
+        ]
+      },
+      {
+        "title": "Business Analyst",
+        "company": "CitiusTech Healthcare Technology",
+        "location": "India",
+        "start_date": "Nov 2021",
+        "end_date": "Apr 2023",
+        "highlights": [
+          "Coordinated delivery of 5+ concurrent Healthcare IT modules — 100% on-time across all milestones through Agile execution and JIRA-based tracking.",
+          "Managed cross-functional coordination across product, engineering, business, and QA teams; maintained full requirement traceability and project documentation.",
+          "Reduced requirement clarification cycles by 30%; resolved 150+ pre-production UAT defects through structured triage — improved reporting accuracy by 25%."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "MBA — Strategy, Finance & International Business",
+        "institution": "HTW Berlin",
+        "location": "Germany",
+        "start_date": "2024",
+        "end_date": "2025"
+      },
+      {
+        "degree": "B.Tech — Electronics & Communication Engineering",
+        "institution": "JNTUA",
+        "location": "India",
+        "start_date": "",
+        "end_date": "2021"
+      }
+    ],
+    "certifications": [
+      "Project Management Professional (PMP)"
+    ],
+    "languages": [
+      "English — IELTS 7.5 (Professional)",
+      "German — B1 (HTW Berlin)",
+      "Hindi & Telugu — Native"
+    ],
+    "links": []
+  },
+  "resume_json": {
+    "full_name": "SHAIK MAFAZ BASHA",
+    "email": "mafazshaik@gmail.com",
+    "phone": "+91 79819 24381",
+    "location": "Bengaluru, India",
+    "summary": "Digital Project Manager with 4+ years of experience delivering enterprise software and digital transformation programs across IT Services, Healthcare, and Manufacturing. Proven expertise in end-to-end project delivery — planning, scheduling, resource coordination, risk management, and PMO governance — across Agile, Waterfall, and Hybrid environments. Proficient in JIRA, Monday.com, Smartsheet, and Excel (Macros, Pivot Tables). Track record coordinating cross-functional and offshore teams, managing NRE and compute forecasts, and presenting delivery status to senior stakeholders. International exposure at Meyer Werft GmbH, Germany. PMP Certified.",
+    "skills": {
+      "technical_skills": [
+        "Project Planning & Scheduling",
+        "PMO Governance & Reporting",
+        "Risk & Dependency Management",
+        "Agile / Waterfall / Hybrid",
+        "Resource & Workload Planning",
+        "Budget & NRE Tracking",
+        "Gantt Charts & Dashboards",
+        "SQL"
+      ],
+      "soft_skills": [
+        "Stakeholder Management",
+        "Cross-Functional Coordination"
+      ],
+      "tools": [
+        "JIRA",
+        "Smartsheet",
+        "MS Project",
+        "Excel — Macros & Pivot Tables",
+        "Azure DevOps",
+        "Confluence"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Digital Project Manager",
+        "company": "ITC Limited",
+        "location": "Bengaluru, India",
+        "start_date": "Mar 2026",
+        "end_date": "Present",
+        "highlights": [
+          "Manage end-to-end delivery of enterprise digital platform projects — developing project plans, timelines, milestones, and delivery schedules aligned to business and IT priorities.",
+          "Coordinate across business, IT, and vendor teams; track and manage risks, issues, and dependencies using structured escalation and resolution frameworks.",
+          "Maintain PMO governance — status reporting, risk registers, project documentation, and delivery audits; present weekly dashboards to senior leadership.",
+          "Build JIRA dashboards and Excel-based Gantt charts monitoring project health, NRE forecasts, and milestone progress — reduced reporting turnaround by 35%.",
+          "Facilitate project meetings, delivery reviews, and milestone checkpoints across cross-functional and offshore teams; manage action trackers ensuring on-schedule delivery.",
+          "Introduced structured requirement sign-off frameworks reducing mid-sprint rework cycles and aligning delivery scope to business outcomes."
+        ]
+      },
+      {
+        "title": "Assistant Project Manager",
+        "company": "Meyer Werft GmbH",
+        "location": "Wismar, Germany",
+        "start_date": "Feb 2025",
+        "end_date": "Jun 2025",
+        "highlights": [
+          "Supported end-to-end project coordination across engineering and cross-functional teams in an international manufacturing environment; maintained project plans, schedules, and resource trackers.",
+          "Prepared executive dashboards, Gantt charts, weekly status reports, and action trackers — improved project visibility across 4 departments.",
+          "Tracked milestones, coordinated stakeholder meetings, and followed up on critical actions — contributed to 15% reduction in inter-departmental coordination lag.",
+          "Maintained process and change management documentation; supported workflow standardisation reducing manual operational activities."
+        ]
+      },
+      {
+        "title": "Business Analyst — Project Delivery",
+        "company": "Tata Consultancy Services",
+        "location": "Hyderabad, India",
+        "start_date": "Jun 2023",
+        "end_date": "Oct 2024",
+        "highlights": [
+          "Managed project planning and scheduling across enterprise software delivery programs — coordinated business, IT, and QA teams through full SDLC.",
+          "Led requirement workshops, maintained JIRA backlogs, and tracked delivery milestones — reduced cycle timelines by 20% through structured requirement management.",
+          "Owned UAT end-to-end — test case design, defect triage in JIRA, release validation — achieving 30% reduction in production defects across all projects.",
+          "Produced Power BI and Excel dashboards tracking delivery KPIs; supported data-driven project decisions presented to senior stakeholders.",
+          "Coordinated cross-functional and offshore teams across delivery cycles; managed dependency tracking and escalation to keep programs on schedule."
+        ]
+      },
+      {
+        "title": "Business Analyst",
+        "company": "CitiusTech Healthcare Technology",
+        "location": "India",
+        "start_date": "Nov 2021",
+        "end_date": "Apr 2023",
+        "highlights": [
+          "Coordinated delivery of 5+ concurrent Healthcare IT modules — 100% on-time across all milestones through Agile execution and JIRA-based tracking.",
+          "Managed cross-functional coordination across product, engineering, business, and QA teams; maintained full requirement traceability and project documentation.",
+          "Reduced requirement clarification cycles by 30%; resolved 150+ pre-production UAT defects through structured triage — improved reporting accuracy by 25%."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "MBA — Strategy, Finance & International Business",
+        "institution": "HTW Berlin",
+        "location": "Germany",
+        "start_date": "2024",
+        "end_date": "2025"
+      },
+      {
+        "degree": "B.Tech — Electronics & Communication Engineering",
+        "institution": "JNTUA",
+        "location": "India",
+        "start_date": "",
+        "end_date": "2021"
+      }
+    ],
+    "certifications": [
+      "Project Management Professional (PMP)"
+    ],
+    "languages": [
+      "English — IELTS 7.5 (Professional)",
+      "German — B1 (HTW Berlin)",
+      "Hindi & Telugu — Native"
+    ],
+    "links": []
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 13.069,
+    "quality_seconds": 0.0307,
+    "normalization_seconds": 0.0022,
+    "recovery_seconds": 0.0938,
+    "llm_seconds": 20.2632,
+    "total_seconds": 33.459
+  },
+  "_stored_name": "9d32b97d-5f30-4558-8665-b0e286372c1e_SHJ-5354_SHC-353993.docx"
+}

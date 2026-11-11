@@ -1,0 +1,2104 @@
+{
+  "resume_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de",
+  "filename": "SHJ-5354_SHC-368853.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 83599,
+  "uploaded_at": "2026-11-11T06:54:16.572652+00:00",
+  "success": true,
+  "extractor_used": "pymupdf",
+  "final_extractor": "pymupdf",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de-attempt-1",
+      "resume_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 94.1 (selected 'pymupdf' scored 96.1).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 94.1 (selected 'pymupdf' scored 96.1).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de",
+        "source_tool": "tika",
+        "attempt_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2869,
+            "word_count": 374,
+            "line_count": 119,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.151969,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2869,
+            "word_count": 374,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "profile",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "CONTACT",
+                "detection_method": "heading",
+                "line_number": 3,
+                "evidence": "CONTACT",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFILE",
+                "detection_method": "heading",
+                "line_number": 43,
+                "evidence": "PROFILE",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 39,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 41,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 92.54,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "47.0% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "38.6% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 2869,
+            "word_count": 374,
+            "line_count": 119,
+            "non_empty_line_count": 83,
+            "short_line_count": 39,
+            "short_line_ratio": 0.46988,
+            "fragmented_line_count": 32,
+            "fragmented_line_ratio": 0.385542,
+            "mean_line_length": 32.82,
+            "median_line_length": 22.0,
+            "line_length_stdev": 26.32,
+            "line_length_cv": 0.801861,
+            "broken_sentence_count": 10,
+            "broken_sentence_ratio": 0.121951,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de",
+        "source_tool": "tika",
+        "attempt_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2869,
+            "word_count": 374,
+            "line_count": 119,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.151969,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2869,
+            "word_count": 374,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "profile",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "CONTACT",
+                "detection_method": "heading",
+                "line_number": 3,
+                "evidence": "CONTACT",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFILE",
+                "detection_method": "heading",
+                "line_number": 43,
+                "evidence": "PROFILE",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 39,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 41,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 92.54,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "47.0% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "38.6% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 2869,
+            "word_count": 374,
+            "line_count": 119,
+            "non_empty_line_count": 83,
+            "short_line_count": 39,
+            "short_line_ratio": 0.46988,
+            "fragmented_line_count": 32,
+            "fragmented_line_ratio": 0.385542,
+            "mean_line_length": 32.82,
+            "median_line_length": 22.0,
+            "line_length_stdev": 26.32,
+            "line_length_cv": 0.801861,
+            "broken_sentence_count": 10,
+            "broken_sentence_ratio": 0.121951,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 94.1,
+      "duration_ms": 39019.66,
+      "text": "LANGUAGE\n\nCONTACT\n\nSKILLS\n\nCERTIFICATIONS\n\n9126449063\n\nchandramitrab16@gmail.com\n\nNavi Mumbai, Maharashtra\n\nProject Management \n\nRisk Management \n\nStakeholder Management\n\nJira\n\nConfluence\n\nAgile/Scrum/Kanban\n\nMS Office\n\nMS Project\n\nPrimavera P6\n\nPRINCE2 7 Foundation & Practitioner\nITIL 4 Foundation\n\nCHANDRAMITRA BARUAH\nIT PMO\n\nWORK EXPERIENCE\n\nEDUCATION\n\nPROFILE\nDetail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of\nexperience in project governance, tracking, reporting of projects, and contributing\nto the successful execution of IT initiatives/projects. Skilled in PMO tools and\nmethodologies, with a strong focus on communication and efficiency.\n\nMAY 2025 - PRESENTL&T Finance\nManager - IT PMO\n\nManaging and providing project governance for the Testing CoE and DevOps\nvertical.\nOverall Project Advisory Governance: Project Charter (Scope/Change\nManagement), Risk/Issue Governance, Monitoring & Tracking, Communication\nStrategy, Manage Dependencies & Challenges for the projects assigned.\nImplemented, tracked and managed projects such as SonarQube, SAST, SCA &\nDAST Implementation, Automation Regression Testing, Performance Testing in\nthe Cloud ensuring timely execution, risk mitigation and stakeholder alignment.\nWorking on the presentations of IT events throughout the year such as, IT\nSteering Committee, IT Strategy Committee and LRP.\nDelivery and preparation of Weekly, Monthly & Quarterly Reports,\nScorecards/Dashboards and maintaining documentation through Confluence.\nEngaging with stakeholders at all levels, including CDO & CTO for Project\nReview Meetings (Biweekly, Monthly, Quarterly)\n\n2021- 2023PGP in Project Engineering Management\nNational Institute of Construction Management & Research, Pune \n\nEnglish\nHindi\nAssamese\n\nL&T Finance MAY 2023 - MAY 2025\n\nAssistant Manager - IT PMO\n\nImplementation of governance standards across the projects, including\ntracking, monitoring and updating of project progress status.\nCollaborated with IT Project Managers , third parties/vendors for execution of\nprojects. Managed project delivery specific issues, changes and risks.\nDeveloped comprehensive project plans for PMO meets and internal reviews.\nConfigured and maintained Jira for project tracking, reporting and dashboards\nfor executive level reporting.\nManaged resource capacity and headcount across all the IT verticals.\n\nBTech in Civil Engineering \nKIIT University, Bhubaneswar \n\n2017- 2021\n\n\n\tCHANDRAMITRA BARUAH\n\tIT PMO\n\tCONTACT\n\tchandramitrab16@gmail.com\n\n\tSKILLS\n\tCERTIFICATIONS\n\tLANGUAGE\n\tPROFILE\n\tWORK EXPERIENCE\n\tL&T Finance\n\tManager - IT PMO\n\tMAY 2025 - PRESENT\n\n\tL&T Finance\n\tMAY 2023 - MAY 2025\n\n\tAssistant Manager - IT PMO\n\n\tEDUCATION\n\tPGP in Project Engineering Management\n\t2021- 2023\n\tNational Institute of Construction Management & Research, Pune\n\n\tBTech in Civil Engineering\n\t2017- 2021\n\tKIIT University, Bhubaneswar",
+      "extracted_text": "LANGUAGE\n\nCONTACT\n\nSKILLS\n\nCERTIFICATIONS\n\n9126449063\n\nchandramitrab16@gmail.com\n\nNavi Mumbai, Maharashtra\n\nProject Management \n\nRisk Management \n\nStakeholder Management\n\nJira\n\nConfluence\n\nAgile/Scrum/Kanban\n\nMS Office\n\nMS Project\n\nPrimavera P6\n\nPRINCE2 7 Foundation & Practitioner\nITIL 4 Foundation\n\nCHANDRAMITRA BARUAH\nIT PMO\n\nWORK EXPERIENCE\n\nEDUCATION\n\nPROFILE\nDetail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of\nexperience in project governance, tracking, reporting of projects, and contributing\nto the successful execution of IT initiatives/projects. Skilled in PMO tools and\nmethodologies, with a strong focus on communication and efficiency.\n\nMAY 2025 - PRESENTL&T Finance\nManager - IT PMO\n\nManaging and providing project governance for the Testing CoE and DevOps\nvertical.\nOverall Project Advisory Governance: Project Charter (Scope/Change\nManagement), Risk/Issue Governance, Monitoring & Tracking, Communication\nStrategy, Manage Dependencies & Challenges for the projects assigned.\nImplemented, tracked and managed projects such as SonarQube, SAST, SCA &\nDAST Implementation, Automation Regression Testing, Performance Testing in\nthe Cloud ensuring timely execution, risk mitigation and stakeholder alignment.\nWorking on the presentations of IT events throughout the year such as, IT\nSteering Committee, IT Strategy Committee and LRP.\nDelivery and preparation of Weekly, Monthly & Quarterly Reports,\nScorecards/Dashboards and maintaining documentation through Confluence.\nEngaging with stakeholders at all levels, including CDO & CTO for Project\nReview Meetings (Biweekly, Monthly, Quarterly)\n\n2021- 2023PGP in Project Engineering Management\nNational Institute of Construction Management & Research, Pune \n\nEnglish\nHindi\nAssamese\n\nL&T Finance MAY 2023 - MAY 2025\n\nAssistant Manager - IT PMO\n\nImplementation of governance standards across the projects, including\ntracking, monitoring and updating of project progress status.\nCollaborated with IT Project Managers , third parties/vendors for execution of\nprojects. Managed project delivery specific issues, changes and risks.\nDeveloped comprehensive project plans for PMO meets and internal reviews.\nConfigured and maintained Jira for project tracking, reporting and dashboards\nfor executive level reporting.\nManaged resource capacity and headcount across all the IT verticals.\n\nBTech in Civil Engineering \nKIIT University, Bhubaneswar \n\n2017- 2021\n\n\n\tCHANDRAMITRA BARUAH\n\tIT PMO\n\tCONTACT\n\tchandramitrab16@gmail.com\n\n\tSKILLS\n\tCERTIFICATIONS\n\tLANGUAGE\n\tPROFILE\n\tWORK EXPERIENCE\n\tL&T Finance\n\tManager - IT PMO\n\tMAY 2025 - PRESENT\n\n\tL&T Finance\n\tMAY 2023 - MAY 2025\n\n\tAssistant Manager - IT PMO\n\n\tEDUCATION\n\tPGP in Project Engineering Management\n\t2021- 2023\n\tNational Institute of Construction Management & Research, Pune\n\n\tBTech in Civil Engineering\n\t2017- 2021\n\tKIIT University, Bhubaneswar",
+      "extracted_text_length": 2869,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "LANGUAGE\n\nCONTACT\n\nSKILLS\n\nCERTIFICATIONS\n\n9126449063\n\nchandramitrab16@gmail.com\n\nNavi Mumbai, Maharashtra\n\nProject Management\n\nRisk Management\n\nStakeholder Management\n\nJira\n\nConfluence\n\nAgile/Scrum/Kanban\n\nMS Office\n\nMS Project\n\nPrimavera P6\n\nPRINCE2 7 Foundation & Practitioner\nITIL 4 Foundation\n\nCHANDRAMITRA BARUAH\nIT PMO\n\nWORK EXPERIENCE\n\nEDUCATION\n\nPROFILE\nDetail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of\nexperience in project governance, tracking, reporting of projects, and contributing\nto the successful execution of IT initiatives/projects. Skilled in PMO tools and\nmethodologies, with a strong focus on communication and efficiency.\n\nMAY 2025 - PRESENTL&T Finance\nManager - IT PMO\n\nManaging and providing project governance for the Testing CoE and DevOps\nvertical.\nOverall Project Advisory Governance: Project Charter (Scope/Change\nManagement), Risk/Issue Governance, Monitoring & Tracking, Communication\nStrategy, Manage Dependencies & Challenges for the projects assigned.\nImplemented, tracked and managed projects such as SonarQube, SAST, SCA &\nDAST Implementation, Automation Regression Testing, Performance Testing in\nthe Cloud ensuring timely execution, risk mitigation and stakeholder alignment.\nWorking on the presentations of IT events throughout the year such as, IT\nSteering Committee, IT Strategy Committee and LRP.\nDelivery and preparation of Weekly, Monthly & Quarterly Reports,\nScorecards/Dashboards and maintaining documentation through Confluence.\nEngaging with stakeholders at all levels, including CDO & CTO for Project\nReview Meetings (Biweekly, Monthly, Quarterly)\n\n2021- 2023PGP in Project Engineering Management\nNational Institute of Construction Management & Research, Pune\n\nEnglish\nHindi\nAssamese\n\nL&T Finance MAY 2023 - MAY 2025\n\nAssistant Manager - IT PMO\n\nImplementation of governance standards across the projects, including\ntracking, monitoring and updating of project progress status.\nCollaborated with IT Project Managers , third parties/vendors for execution of\nprojects. Managed project delivery specific issues, changes and risks.\nDeveloped comprehensive project plans for PMO meets and internal reviews.\nConfigured and maintained Jira for project tracking, reporting and dashboards\nfor executive level reporting.\nManaged resource capacity and headcount across all the IT verticals.\n\nBTech in Civil Engineering\nKIIT University, Bhubaneswar\n\n2017- 2021\n\nCHANDRAMITRA BARUAH\nIT PMO\nCONTACT\nchandramitrab16@gmail.com\n\nSKILLS\nCERTIFICATIONS\nLANGUAGE\nPROFILE\nWORK EXPERIENCE\nL&T Finance\nManager - IT PMO\nMAY 2025 - PRESENT\n\nL&T Finance\nMAY 2023 - MAY 2025\n\nAssistant Manager - IT PMO\n\nEDUCATION\nPGP in Project Engineering Management\n2021- 2023\nNational Institute of Construction Management & Research, Pune\n\nBTech in Civil Engineering\n2017- 2021\nKIIT University, Bhubaneswar"
+    },
+    {
+      "attempt_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de-attempt-2",
+      "resume_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de",
+      "attempt_number": 2,
+      "extractor_name": "pymupdf",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Selected 'pymupdf' with the highest quality score 96.1 (threshold 60.0).",
+      "fallback_decision": "accept",
+      "fallback_reason": "Selected 'pymupdf' with the highest quality score 96.1 (threshold 60.0).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de",
+        "source_tool": "pymupdf",
+        "attempt_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2401,
+            "word_count": 317,
+            "line_count": 64,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.133694,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2401,
+            "word_count": 317,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "profile",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "CONTACT",
+                "detection_method": "heading",
+                "line_number": 2,
+                "evidence": "CONTACT",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFILE",
+                "detection_method": "heading",
+                "line_number": 23,
+                "evidence": "PROFILE",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 3,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 21,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 22,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 4,
+                "evidence": "CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 96.6,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "43.8% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "35.9% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 2401,
+            "word_count": 317,
+            "line_count": 64,
+            "non_empty_line_count": 64,
+            "short_line_count": 28,
+            "short_line_ratio": 0.4375,
+            "fragmented_line_count": 23,
+            "fragmented_line_ratio": 0.359375,
+            "mean_line_length": 36.45,
+            "median_line_length": 24.5,
+            "line_length_stdev": 27.89,
+            "line_length_cv": 0.764979,
+            "broken_sentence_count": 9,
+            "broken_sentence_ratio": 0.142857,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de",
+        "source_tool": "pymupdf",
+        "attempt_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2401,
+            "word_count": 317,
+            "line_count": 64,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.133694,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2401,
+            "word_count": 317,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "profile",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "CONTACT",
+                "detection_method": "heading",
+                "line_number": 2,
+                "evidence": "CONTACT",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFILE",
+                "detection_method": "heading",
+                "line_number": 23,
+                "evidence": "PROFILE",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 3,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 21,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 22,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERTIFICATIONS",
+                "detection_method": "heading",
+                "line_number": 4,
+                "evidence": "CERTIFICATIONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 96.6,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "43.8% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "35.9% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 2401,
+            "word_count": 317,
+            "line_count": 64,
+            "non_empty_line_count": 64,
+            "short_line_count": 28,
+            "short_line_ratio": 0.4375,
+            "fragmented_line_count": 23,
+            "fragmented_line_ratio": 0.359375,
+            "mean_line_length": 36.45,
+            "median_line_length": 24.5,
+            "line_length_stdev": 27.89,
+            "line_length_cv": 0.764979,
+            "broken_sentence_count": 9,
+            "broken_sentence_ratio": 0.142857,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 96.1,
+      "duration_ms": 123.93,
+      "text": "LANGUAGE\nCONTACT\nSKILLS\nCERTIFICATIONS\n9126449063\nchandramitrab16@gmail.com\nNavi Mumbai, Maharashtra\nProject Management \nRisk Management \nStakeholder Management\nJira\nConfluence\nAgile/Scrum/Kanban\nMS Office\nMS Project\nPrimavera P6\nPRINCE2 7 Foundation & Practitioner\nITIL 4 Foundation\nCHANDRAMITRA BARUAH\nIT PMO\nWORK EXPERIENCE\nEDUCATION\nPROFILE\nDetail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of\nexperience in project governance, tracking, reporting of projects, and contributing\nto the successful execution of IT initiatives/projects. Skilled in PMO tools and\nmethodologies, with a strong focus on communication and efficiency.\nMAY 2025 - PRESENT\nL&T Finance\nManager - IT PMO\nManaging and providing project governance for the Testing CoE and DevOps\nvertical.\nOverall Project Advisory Governance: Project Charter (Scope/Change\nManagement), Risk/Issue Governance, Monitoring & Tracking, Communication\nStrategy, Manage Dependencies & Challenges for the projects assigned.\nImplemented, tracked and managed projects such as SonarQube, SAST, SCA &\nDAST Implementation, Automation Regression Testing, Performance Testing in\nthe Cloud ensuring timely execution, risk mitigation and stakeholder alignment.\nWorking on the presentations of IT events throughout the year such as, IT\nSteering Committee, IT Strategy Committee and LRP.\nDelivery and preparation of Weekly, Monthly & Quarterly Reports,\nScorecards/Dashboards and maintaining documentation through Confluence.\nEngaging with stakeholders at all levels, including CDO & CTO for Project\nReview Meetings (Biweekly, Monthly, Quarterly)\n2021- 2023\nPGP in Project Engineering Management\nNational Institute of Construction Management & Research, Pune \nEnglish\nHindi\nAssamese\nL&T Finance\nMAY 2023 - MAY 2025\nAssistant Manager - IT PMO\nImplementation of governance standards across the projects, including\ntracking, monitoring and updating of project progress status.\nCollaborated with IT Project Managers , third parties/vendors for execution of\nprojects. Managed project delivery specific issues, changes and risks.\nDeveloped comprehensive project plans for PMO meets and internal reviews.\nConfigured and maintained Jira for project tracking, reporting and dashboards\nfor executive level reporting.\nManaged resource capacity and headcount across all the IT verticals.\nBTech in Civil Engineering \nKIIT University, Bhubaneswar \n2017- 2021",
+      "extracted_text": "LANGUAGE\nCONTACT\nSKILLS\nCERTIFICATIONS\n9126449063\nchandramitrab16@gmail.com\nNavi Mumbai, Maharashtra\nProject Management \nRisk Management \nStakeholder Management\nJira\nConfluence\nAgile/Scrum/Kanban\nMS Office\nMS Project\nPrimavera P6\nPRINCE2 7 Foundation & Practitioner\nITIL 4 Foundation\nCHANDRAMITRA BARUAH\nIT PMO\nWORK EXPERIENCE\nEDUCATION\nPROFILE\nDetail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of\nexperience in project governance, tracking, reporting of projects, and contributing\nto the successful execution of IT initiatives/projects. Skilled in PMO tools and\nmethodologies, with a strong focus on communication and efficiency.\nMAY 2025 - PRESENT\nL&T Finance\nManager - IT PMO\nManaging and providing project governance for the Testing CoE and DevOps\nvertical.\nOverall Project Advisory Governance: Project Charter (Scope/Change\nManagement), Risk/Issue Governance, Monitoring & Tracking, Communication\nStrategy, Manage Dependencies & Challenges for the projects assigned.\nImplemented, tracked and managed projects such as SonarQube, SAST, SCA &\nDAST Implementation, Automation Regression Testing, Performance Testing in\nthe Cloud ensuring timely execution, risk mitigation and stakeholder alignment.\nWorking on the presentations of IT events throughout the year such as, IT\nSteering Committee, IT Strategy Committee and LRP.\nDelivery and preparation of Weekly, Monthly & Quarterly Reports,\nScorecards/Dashboards and maintaining documentation through Confluence.\nEngaging with stakeholders at all levels, including CDO & CTO for Project\nReview Meetings (Biweekly, Monthly, Quarterly)\n2021- 2023\nPGP in Project Engineering Management\nNational Institute of Construction Management & Research, Pune \nEnglish\nHindi\nAssamese\nL&T Finance\nMAY 2023 - MAY 2025\nAssistant Manager - IT PMO\nImplementation of governance standards across the projects, including\ntracking, monitoring and updating of project progress status.\nCollaborated with IT Project Managers , third parties/vendors for execution of\nprojects. Managed project delivery specific issues, changes and risks.\nDeveloped comprehensive project plans for PMO meets and internal reviews.\nConfigured and maintained Jira for project tracking, reporting and dashboards\nfor executive level reporting.\nManaged resource capacity and headcount across all the IT verticals.\nBTech in Civil Engineering \nKIIT University, Bhubaneswar \n2017- 2021",
+      "extracted_text_length": 2401,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "format": "PDF 1.4",
+        "title": "Chandramitra baruah",
+        "author": "Chandramitra Baruah",
+        "keywords": "DAHOhWWaQoY,BAHHSYVM2oY,0",
+        "creator": "Aspose Ltd.",
+        "producer": "Aspose.PDF for Java 18.8",
+        "creationDate": "D:20260705143902+00'00'",
+        "modDate": "D:20260825145412+05'30'"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "LANGUAGE\nCONTACT\nSKILLS\nCERTIFICATIONS\n9126449063\nchandramitrab16@gmail.com\nNavi Mumbai, Maharashtra\nProject Management\nRisk Management\nStakeholder Management\nJira\nConfluence\nAgile/Scrum/Kanban\nMS Office\nMS Project\nPrimavera P6\nPRINCE2 7 Foundation & Practitioner\nITIL 4 Foundation\nCHANDRAMITRA BARUAH\nIT PMO\nWORK EXPERIENCE\nEDUCATION\nPROFILE\nDetail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of\nexperience in project governance, tracking, reporting of projects, and contributing\nto the successful execution of IT initiatives/projects. Skilled in PMO tools and\nmethodologies, with a strong focus on communication and efficiency.\nMAY 2025 - PRESENT\nL&T Finance\nManager - IT PMO\nManaging and providing project governance for the Testing CoE and DevOps\nvertical.\nOverall Project Advisory Governance: Project Charter (Scope/Change\nManagement), Risk/Issue Governance, Monitoring & Tracking, Communication\nStrategy, Manage Dependencies & Challenges for the projects assigned.\nImplemented, tracked and managed projects such as SonarQube, SAST, SCA &\nDAST Implementation, Automation Regression Testing, Performance Testing in\nthe Cloud ensuring timely execution, risk mitigation and stakeholder alignment.\nWorking on the presentations of IT events throughout the year such as, IT\nSteering Committee, IT Strategy Committee and LRP.\nDelivery and preparation of Weekly, Monthly & Quarterly Reports,\nScorecards/Dashboards and maintaining documentation through Confluence.\nEngaging with stakeholders at all levels, including CDO & CTO for Project\nReview Meetings (Biweekly, Monthly, Quarterly)\n2021- 2023\nPGP in Project Engineering Management\nNational Institute of Construction Management & Research, Pune\nEnglish\nHindi\nAssamese\nL&T Finance\nMAY 2023 - MAY 2025\nAssistant Manager - IT PMO\nImplementation of governance standards across the projects, including\ntracking, monitoring and updating of project progress status.\nCollaborated with IT Project Managers , third parties/vendors for execution of\nprojects. Managed project delivery specific issues, changes and risks.\nDeveloped comprehensive project plans for PMO meets and internal reviews.\nConfigured and maintained Jira for project tracking, reporting and dashboards\nfor executive level reporting.\nManaged resource capacity and headcount across all the IT verticals.\nBTech in Civil Engineering\nKIIT University, Bhubaneswar\n2017- 2021"
+    },
+    {
+      "attempt_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de-attempt-3",
+      "resume_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de",
+      "attempt_number": 3,
+      "extractor_name": "docling",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 95.1 (selected 'pymupdf' scored 96.1).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 95.1 (selected 'pymupdf' scored 96.1).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de",
+        "source_tool": "docling",
+        "attempt_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2491,
+            "word_count": 355,
+            "line_count": 77,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.152951,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2491,
+            "word_count": 355,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "profile",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "CONTACT",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "CONTACT",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROF I LE",
+                "detection_method": "heading",
+                "line_number": 34,
+                "evidence": "PROF I LE",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKI LLS",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "SKI LLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 38,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCAT ION",
+                "detection_method": "heading",
+                "line_number": 61,
+                "evidence": "EDUCAT ION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERT I F ICAT IONS",
+                "detection_method": "heading",
+                "line_number": 23,
+                "evidence": "CERT I F ICAT IONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 91.75,
+          "flags": [
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "40.0% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.34) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 2491,
+            "word_count": 355,
+            "line_count": 77,
+            "non_empty_line_count": 50,
+            "short_line_count": 18,
+            "short_line_ratio": 0.36,
+            "fragmented_line_count": 20,
+            "fragmented_line_ratio": 0.4,
+            "mean_line_length": 48.3,
+            "median_line_length": 19.0,
+            "line_length_stdev": 64.8,
+            "line_length_cv": 1.341527,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de",
+        "source_tool": "docling",
+        "attempt_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2491,
+            "word_count": 355,
+            "line_count": 77,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.152951,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 94.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2491,
+            "word_count": 355,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact",
+              "Summary": "profile",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "CONTACT",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "CONTACT",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROF I LE",
+                "detection_method": "heading",
+                "line_number": 34,
+                "evidence": "PROF I LE",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKI LLS",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "SKI LLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 38,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCAT ION",
+                "detection_method": "heading",
+                "line_number": 61,
+                "evidence": "EDUCAT ION",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "CERT I F ICAT IONS",
+                "detection_method": "heading",
+                "line_number": 23,
+                "evidence": "CERT I F ICAT IONS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 91.75,
+          "flags": [
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "40.0% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.34) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 2491,
+            "word_count": 355,
+            "line_count": 77,
+            "non_empty_line_count": 50,
+            "short_line_count": 18,
+            "short_line_ratio": 0.36,
+            "fragmented_line_count": 20,
+            "fragmented_line_ratio": 0.4,
+            "mean_line_length": 48.3,
+            "median_line_length": 19.0,
+            "line_length_stdev": 64.8,
+            "line_length_cv": 1.341527,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 95.1,
+      "duration_ms": 59858.09,
+      "text": "CHANDRAMITRA BARUAH\n\nIT PMO\n\nCONTACT\n\n- 9126449063 C\n- chandramitrab16@gmail.com\n- Navi Mumbai, Maharashtra 9\n\nSKI LLS\n\n- Project Management\n- Risk Management\n- Stakeholder Management\n- Jira\n- Confluence\n- Agile/Scrum/Kanban\n- MS Office\n- MS Project\n- Primavera P6\n\nCERT I F ICAT IONS\n\n- PRINCE2 7 Foundation & Practitioner\n- ITIL 4 Foundation\n\nLANGUAGE\n\n- English\n- Hindi\n- Assamese\n\nPROF I LE\n\nDetail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of experience in project governance, tracking, reporting of projects, and contributing to the successful execution of IT initiatives/projects. Skilled in PMO tools and methodologies, with a strong focus on communication and efficiency.\n\nWORK EXPERIENCE\n\nL&T Finance\n\nManager - IT PMO\n\n- Managing and providing project governance for the Testing CoE and DevOps vertical.\n- Overall Project Advisory Governance: Project Charter (Scope/Change Management), Risk/Issue Governance, Monitoring & Tracking, Communication Strategy, Manage Dependencies & Challenges for the projects assigned.\n- Implemented, tracked and managed projects such as SonarQube, SAST, SCA & DAST Implementation, Automation Regression Testing, Performance Testing in the Cloud ensuring timely execution, risk mitigation and stakeholder alignment.\n- Working on the presentations of IT events throughout the year such as, IT Steering Committee, IT Strategy Committee and LRP.\n- Delivery and preparation of Weekly, Monthly & Quarterly Reports, Scorecards/Dashboards and maintaining documentation through Confluence.\n- Engaging with stakeholders at all levels, including CDO & CTO for Project Review Meetings (Biweekly, Monthly, Quarterly)\n\nL&T Finance\n\nAssistant Manager - IT PMO\n\n- Implementation of governance standards across the projects, including tracking, monitoring and updating of project progress status.\n- Collaborated with IT Project Managers , third parties/vendors for execution of projects. Managed project delivery specific issues, changes and risks.\n- Developed comprehensive project plans for PMO meets and internal reviews.\n- Configured and maintained Jira for project tracking, reporting and dashboards for executive level reporting.\n- Managed resource capacity and headcount across all the IT verticals.\n\nEDUCAT ION\n\nPGP in Project Engineering Management\n\n2021- 2023\n\nNational Institute of Construction Management & Research, Pune\n\nBTech in Civil Engineering\n\nKIIT University, Bhubaneswar\n\n2017- 2021\n\nMAY 2023 - MAY 2025\n\nMAY 2025 - PRESENT",
+      "extracted_text": "CHANDRAMITRA BARUAH\n\nIT PMO\n\nCONTACT\n\n- 9126449063 C\n- chandramitrab16@gmail.com\n- Navi Mumbai, Maharashtra 9\n\nSKI LLS\n\n- Project Management\n- Risk Management\n- Stakeholder Management\n- Jira\n- Confluence\n- Agile/Scrum/Kanban\n- MS Office\n- MS Project\n- Primavera P6\n\nCERT I F ICAT IONS\n\n- PRINCE2 7 Foundation & Practitioner\n- ITIL 4 Foundation\n\nLANGUAGE\n\n- English\n- Hindi\n- Assamese\n\nPROF I LE\n\nDetail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of experience in project governance, tracking, reporting of projects, and contributing to the successful execution of IT initiatives/projects. Skilled in PMO tools and methodologies, with a strong focus on communication and efficiency.\n\nWORK EXPERIENCE\n\nL&T Finance\n\nManager - IT PMO\n\n- Managing and providing project governance for the Testing CoE and DevOps vertical.\n- Overall Project Advisory Governance: Project Charter (Scope/Change Management), Risk/Issue Governance, Monitoring & Tracking, Communication Strategy, Manage Dependencies & Challenges for the projects assigned.\n- Implemented, tracked and managed projects such as SonarQube, SAST, SCA & DAST Implementation, Automation Regression Testing, Performance Testing in the Cloud ensuring timely execution, risk mitigation and stakeholder alignment.\n- Working on the presentations of IT events throughout the year such as, IT Steering Committee, IT Strategy Committee and LRP.\n- Delivery and preparation of Weekly, Monthly & Quarterly Reports, Scorecards/Dashboards and maintaining documentation through Confluence.\n- Engaging with stakeholders at all levels, including CDO & CTO for Project Review Meetings (Biweekly, Monthly, Quarterly)\n\nL&T Finance\n\nAssistant Manager - IT PMO\n\n- Implementation of governance standards across the projects, including tracking, monitoring and updating of project progress status.\n- Collaborated with IT Project Managers , third parties/vendors for execution of projects. Managed project delivery specific issues, changes and risks.\n- Developed comprehensive project plans for PMO meets and internal reviews.\n- Configured and maintained Jira for project tracking, reporting and dashboards for executive level reporting.\n- Managed resource capacity and headcount across all the IT verticals.\n\nEDUCAT ION\n\nPGP in Project Engineering Management\n\n2021- 2023\n\nNational Institute of Construction Management & Research, Pune\n\nBTech in Civil Engineering\n\nKIIT University, Bhubaneswar\n\n2017- 2021\n\nMAY 2023 - MAY 2025\n\nMAY 2025 - PRESENT",
+      "extracted_text_length": 2491,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "CHANDRAMITRA BARUAH\n\nIT PMO\n\nCONTACT\n\n- 9126449063 C\n- chandramitrab16@gmail.com\n- Navi Mumbai, Maharashtra 9\n\nSKI LLS\n\n- Project Management\n- Risk Management\n- Stakeholder Management\n- Jira\n- Confluence\n- Agile/Scrum/Kanban\n- MS Office\n- MS Project\n- Primavera P6\n\nCERT I F ICAT IONS\n\n- PRINCE2 7 Foundation & Practitioner\n- ITIL 4 Foundation\n\nLANGUAGE\n\n- English\n- Hindi\n- Assamese\n\nPROF I LE\n\nDetail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of experience in project governance, tracking, reporting of projects, and contributing to the successful execution of IT initiatives/projects. Skilled in PMO tools and methodologies, with a strong focus on communication and efficiency.\n\nWORK EXPERIENCE\n\nL&T Finance\n\nManager - IT PMO\n\n- Managing and providing project governance for the Testing CoE and DevOps vertical.\n- Overall Project Advisory Governance: Project Charter (Scope/Change Management), Risk/Issue Governance, Monitoring & Tracking, Communication Strategy, Manage Dependencies & Challenges for the projects assigned.\n- Implemented, tracked and managed projects such as SonarQube, SAST, SCA & DAST Implementation, Automation Regression Testing, Performance Testing in the Cloud ensuring timely execution, risk mitigation and stakeholder alignment.\n- Working on the presentations of IT events throughout the year such as, IT Steering Committee, IT Strategy Committee and LRP.\n- Delivery and preparation of Weekly, Monthly & Quarterly Reports, Scorecards/Dashboards and maintaining documentation through Confluence.\n- Engaging with stakeholders at all levels, including CDO & CTO for Project Review Meetings (Biweekly, Monthly, Quarterly)\n\nL&T Finance\n\nAssistant Manager - IT PMO\n\n- Implementation of governance standards across the projects, including tracking, monitoring and updating of project progress status.\n- Collaborated with IT Project Managers , third parties/vendors for execution of projects. Managed project delivery specific issues, changes and risks.\n- Developed comprehensive project plans for PMO meets and internal reviews.\n- Configured and maintained Jira for project tracking, reporting and dashboards for executive level reporting.\n- Managed resource capacity and headcount across all the IT verticals.\n\nEDUCAT ION\n\nPGP in Project Engineering Management\n\n2021- 2023\n\nNational Institute of Construction Management & Research, Pune\n\nBTech in Civil Engineering\n\nKIIT University, Bhubaneswar\n\n2017- 2021\n\nMAY 2023 - MAY 2025\n\nMAY 2025 - PRESENT"
+    }
+  ],
+  "attempt_count": 3,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "extracted_text": "LANGUAGE\nCONTACT\nSKILLS\nCERTIFICATIONS\n9126449063\nchandramitrab16@gmail.com\nNavi Mumbai, Maharashtra\nProject Management \nRisk Management \nStakeholder Management\nJira\nConfluence\nAgile/Scrum/Kanban\nMS Office\nMS Project\nPrimavera P6\nPRINCE2 7 Foundation & Practitioner\nITIL 4 Foundation\nCHANDRAMITRA BARUAH\nIT PMO\nWORK EXPERIENCE\nEDUCATION\nPROFILE\nDetail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of\nexperience in project governance, tracking, reporting of projects, and contributing\nto the successful execution of IT initiatives/projects. Skilled in PMO tools and\nmethodologies, with a strong focus on communication and efficiency.\nMAY 2025 - PRESENT\nL&T Finance\nManager - IT PMO\nManaging and providing project governance for the Testing CoE and DevOps\nvertical.\nOverall Project Advisory Governance: Project Charter (Scope/Change\nManagement), Risk/Issue Governance, Monitoring & Tracking, Communication\nStrategy, Manage Dependencies & Challenges for the projects assigned.\nImplemented, tracked and managed projects such as SonarQube, SAST, SCA &\nDAST Implementation, Automation Regression Testing, Performance Testing in\nthe Cloud ensuring timely execution, risk mitigation and stakeholder alignment.\nWorking on the presentations of IT events throughout the year such as, IT\nSteering Committee, IT Strategy Committee and LRP.\nDelivery and preparation of Weekly, Monthly & Quarterly Reports,\nScorecards/Dashboards and maintaining documentation through Confluence.\nEngaging with stakeholders at all levels, including CDO & CTO for Project\nReview Meetings (Biweekly, Monthly, Quarterly)\n2021- 2023\nPGP in Project Engineering Management\nNational Institute of Construction Management & Research, Pune \nEnglish\nHindi\nAssamese\nL&T Finance\nMAY 2023 - MAY 2025\nAssistant Manager - IT PMO\nImplementation of governance standards across the projects, including\ntracking, monitoring and updating of project progress status.\nCollaborated with IT Project Managers , third parties/vendors for execution of\nprojects. Managed project delivery specific issues, changes and risks.\nDeveloped comprehensive project plans for PMO meets and internal reviews.\nConfigured and maintained Jira for project tracking, reporting and dashboards\nfor executive level reporting.\nManaged resource capacity and headcount across all the IT verticals.\nBTech in Civil Engineering \nKIIT University, Bhubaneswar \n2017- 2021",
+  "final_extracted_text": "LANGUAGE\nCONTACT\nSKILLS\nCERTIFICATIONS\n9126449063\nchandramitrab16@gmail.com\nNavi Mumbai, Maharashtra\nProject Management \nRisk Management \nStakeholder Management\nJira\nConfluence\nAgile/Scrum/Kanban\nMS Office\nMS Project\nPrimavera P6\nPRINCE2 7 Foundation & Practitioner\nITIL 4 Foundation\nCHANDRAMITRA BARUAH\nIT PMO\nWORK EXPERIENCE\nEDUCATION\nPROFILE\nDetail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of\nexperience in project governance, tracking, reporting of projects, and contributing\nto the successful execution of IT initiatives/projects. Skilled in PMO tools and\nmethodologies, with a strong focus on communication and efficiency.\nMAY 2025 - PRESENT\nL&T Finance\nManager - IT PMO\nManaging and providing project governance for the Testing CoE and DevOps\nvertical.\nOverall Project Advisory Governance: Project Charter (Scope/Change\nManagement), Risk/Issue Governance, Monitoring & Tracking, Communication\nStrategy, Manage Dependencies & Challenges for the projects assigned.\nImplemented, tracked and managed projects such as SonarQube, SAST, SCA &\nDAST Implementation, Automation Regression Testing, Performance Testing in\nthe Cloud ensuring timely execution, risk mitigation and stakeholder alignment.\nWorking on the presentations of IT events throughout the year such as, IT\nSteering Committee, IT Strategy Committee and LRP.\nDelivery and preparation of Weekly, Monthly & Quarterly Reports,\nScorecards/Dashboards and maintaining documentation through Confluence.\nEngaging with stakeholders at all levels, including CDO & CTO for Project\nReview Meetings (Biweekly, Monthly, Quarterly)\n2021- 2023\nPGP in Project Engineering Management\nNational Institute of Construction Management & Research, Pune \nEnglish\nHindi\nAssamese\nL&T Finance\nMAY 2023 - MAY 2025\nAssistant Manager - IT PMO\nImplementation of governance standards across the projects, including\ntracking, monitoring and updating of project progress status.\nCollaborated with IT Project Managers , third parties/vendors for execution of\nprojects. Managed project delivery specific issues, changes and risks.\nDeveloped comprehensive project plans for PMO meets and internal reviews.\nConfigured and maintained Jira for project tracking, reporting and dashboards\nfor executive level reporting.\nManaged resource capacity and headcount across all the IT verticals.\nBTech in Civil Engineering \nKIIT University, Bhubaneswar \n2017- 2021",
+  "page_count": 1,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "quality": {
+    "status": "PASS",
+    "document_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de",
+    "source_tool": "pymupdf",
+    "attempt_id": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de-attempt-2",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 2401,
+        "word_count": 317,
+        "line_count": 64,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.133694,
+        "symbol_count": 0,
+        "symbol_ratio": 0.0,
+        "max_repeated_char_run": 2,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 94.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 2401,
+        "word_count": 317,
+        "configured_section_count": 8,
+        "detected_count": 6,
+        "missing_count": 2,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Responsibilities",
+          "Projects"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Responsibilities",
+          "Projects"
+        ],
+        "matched_aliases": {
+          "Contact Information": "contact",
+          "Summary": "profile",
+          "Skills": "skills",
+          "Work Experience": "WORKEXPERIENCE",
+          "Education": "education",
+          "Certifications": "certifications"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": "CONTACT",
+            "detection_method": "heading",
+            "line_number": 2,
+            "evidence": "CONTACT",
+            "confidence": 0.98
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "PROFILE",
+            "detection_method": "heading",
+            "line_number": 23,
+            "evidence": "PROFILE",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "SKILLS",
+            "detection_method": "heading",
+            "line_number": 3,
+            "evidence": "SKILLS",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "WORK EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 21,
+            "evidence": "WORK EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATION",
+            "detection_method": "heading",
+            "line_number": 22,
+            "evidence": "EDUCATION",
+            "confidence": 0.98
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": "CERTIFICATIONS",
+            "detection_method": "heading",
+            "line_number": 4,
+            "evidence": "CERTIFICATIONS",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Certifications": "detected",
+          "Responsibilities": "missing",
+          "Projects": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Responsibilities",
+        "Projects"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Responsibilities",
+        "Projects"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 96.6,
+      "flags": [
+        "EXCESSIVE_SHORT_LINES",
+        "FRAGMENTED_LINES"
+      ],
+      "reasons": [
+        "43.8% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+        "35.9% of lines are 15 characters or shorter."
+      ],
+      "metrics": {
+        "char_count": 2401,
+        "word_count": 317,
+        "line_count": 64,
+        "non_empty_line_count": 64,
+        "short_line_count": 28,
+        "short_line_ratio": 0.4375,
+        "fragmented_line_count": 23,
+        "fragmented_line_ratio": 0.359375,
+        "mean_line_length": 36.45,
+        "median_line_length": 24.5,
+        "line_length_stdev": 27.89,
+        "line_length_cv": 0.764979,
+        "broken_sentence_count": 9,
+        "broken_sentence_ratio": 0.142857,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Selected 'pymupdf' with the highest quality score 96.1 (threshold 60.0).",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 39019.66,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": 123.93,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 59858.09,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=94.1, pymupdf=96.1, docling=95.1",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected 'pymupdf' with the highest quality score 96.1 (threshold 60.0).",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected PyMuPDF text normalized: 2401 → 2396 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Contact Information Recovery",
+      "type": "contact_recovery",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Phone, email and location already present in the selected text — no recovery needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 18105.13,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": 78125.4,
+      "message": "Muse AI produced validated Resume JSON from the PyMuPDF extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 78125.4,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "pymupdf",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "LANGUAGE\nCONTACT\nSKILLS\nCERTIFICATIONS\n9126449063\nchandramitrab16@gmail.com\nNavi Mumbai, Maharashtra\nProject Management \nRisk Management \nStakeholder Management\nJira\nConfluence\nAgile/Scrum/Kanban\nMS Office\nMS Project\nPrimavera P6\nPRINCE2 7 Foundation & Practitioner\nITIL 4 Foundation\nCHANDRAMITRA BARUAH\nIT PMO\nWORK EXPERIENCE\nEDUCATION\nPROFILE\nDetail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of\nexperience in project governance, tracking, reporting of projects, and contributing\nto the successful execution of IT initiatives/projects. Skilled in PMO tools and\nmethodologies, with a strong focus on communication and efficiency.\nMAY 2025 - PRESENT\nL&T Finance\nManager - IT PMO\nManaging and providing project governance for the Testing CoE and DevOps\nvertical.\nOverall Project Advisory Governance: Project Charter (Scope/Change\nManagement), Risk/Issue Governance, Monitoring & Tracking, Communication\nStrategy, Manage Dependencies & Challenges for the projects assigned.\nImplemented, tracked and managed projects such as SonarQube, SAST, SCA &\nDAST Implementation, Automation Regression Testing, Performance Testing in\nthe Cloud ensuring timely execution, risk mitigation and stakeholder alignment.\nWorking on the presentations of IT events throughout the year such as, IT\nSteering Committee, IT Strategy Committee and LRP.\nDelivery and preparation of Weekly, Monthly & Quarterly Reports,\nScorecards/Dashboards and maintaining documentation through Confluence.\nEngaging with stakeholders at all levels, including CDO & CTO for Project\nReview Meetings (Biweekly, Monthly, Quarterly)\n2021- 2023\nPGP in Project Engineering Management\nNational Institute of Construction Management & Research, Pune \nEnglish\nHindi\nAssamese\nL&T Finance\nMAY 2023 - MAY 2025\nAssistant Manager - IT PMO\nImplementation of governance standards across the projects, including\ntracking, monitoring and updating of project progress status.\nCollaborated with IT Project Managers , third parties/vendors for execution of\nprojects. Managed project delivery specific issues, changes and risks.\nDeveloped comprehensive project plans for PMO meets and internal reviews.\nConfigured and maintained Jira for project tracking, reporting and dashboards\nfor executive level reporting.\nManaged resource capacity and headcount across all the IT verticals.\nBTech in Civil Engineering \nKIIT University, Bhubaneswar \n2017- 2021",
+    "normalized_text": "LANGUAGE\nCONTACT\nSKILLS\nCERTIFICATIONS\n9126449063\nchandramitrab16@gmail.com\nNavi Mumbai, Maharashtra\nProject Management\nRisk Management\nStakeholder Management\nJira\nConfluence\nAgile/Scrum/Kanban\nMS Office\nMS Project\nPrimavera P6\nPRINCE2 7 Foundation & Practitioner\nITIL 4 Foundation\nCHANDRAMITRA BARUAH\nIT PMO\nWORK EXPERIENCE\nEDUCATION\nPROFILE\nDetail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of\nexperience in project governance, tracking, reporting of projects, and contributing\nto the successful execution of IT initiatives/projects. Skilled in PMO tools and\nmethodologies, with a strong focus on communication and efficiency.\nMAY 2025 - PRESENT\nL&T Finance\nManager - IT PMO\nManaging and providing project governance for the Testing CoE and DevOps\nvertical.\nOverall Project Advisory Governance: Project Charter (Scope/Change\nManagement), Risk/Issue Governance, Monitoring & Tracking, Communication\nStrategy, Manage Dependencies & Challenges for the projects assigned.\nImplemented, tracked and managed projects such as SonarQube, SAST, SCA &\nDAST Implementation, Automation Regression Testing, Performance Testing in\nthe Cloud ensuring timely execution, risk mitigation and stakeholder alignment.\nWorking on the presentations of IT events throughout the year such as, IT\nSteering Committee, IT Strategy Committee and LRP.\nDelivery and preparation of Weekly, Monthly & Quarterly Reports,\nScorecards/Dashboards and maintaining documentation through Confluence.\nEngaging with stakeholders at all levels, including CDO & CTO for Project\nReview Meetings (Biweekly, Monthly, Quarterly)\n2021- 2023\nPGP in Project Engineering Management\nNational Institute of Construction Management & Research, Pune\nEnglish\nHindi\nAssamese\nL&T Finance\nMAY 2023 - MAY 2025\nAssistant Manager - IT PMO\nImplementation of governance standards across the projects, including\ntracking, monitoring and updating of project progress status.\nCollaborated with IT Project Managers , third parties/vendors for execution of\nprojects. Managed project delivery specific issues, changes and risks.\nDeveloped comprehensive project plans for PMO meets and internal reviews.\nConfigured and maintained Jira for project tracking, reporting and dashboards\nfor executive level reporting.\nManaged resource capacity and headcount across all the IT verticals.\nBTech in Civil Engineering\nKIIT University, Bhubaneswar\n2017- 2021",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "lines_trimmed"
+    ],
+    "original_chars": 2401,
+    "normalized_chars": 2396,
+    "original_estimated_tokens": 600,
+    "normalized_estimated_tokens": 599,
+    "estimated_reduction_percent": 0.2
+  },
+  "contact_recovery": {
+    "status": "not_needed",
+    "selected_extractor": "pymupdf",
+    "present_before": [
+      "phone",
+      "email",
+      "location"
+    ],
+    "missing_before": [],
+    "recovered": {},
+    "still_missing": [],
+    "sources_tried": [],
+    "applied": false,
+    "pre_recovery_normalized_text": null,
+    "at": "2026-11-11T06:53:57.306291+00:00"
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 18105.13,
+      "input_tokens": 1356,
+      "output_tokens": 2619,
+      "total_tokens": 3975,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1356,
+    "output_tokens": 2619,
+    "total_tokens": 3975,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 18105.13,
+    "usage": {
+      "completion_tokens": 2619,
+      "prompt_tokens": 1356,
+      "total_tokens": 3975,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1932
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "pymupdf",
+      "status": "applied",
+      "original_chars": 2401,
+      "normalized_chars": 2396,
+      "estimated_reduction_percent": 0.2,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "lines_trimmed"
+      ],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "pymupdf",
+  "selected_quality_score": 96.1,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 94.1,
+      "status": "success",
+      "word_count": 374,
+      "char_count": 2869,
+      "meaningful_char_count": 2433,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.2048,
+      "readability_score": 94.2,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary",
+          "projects",
+          "certifications"
+        ]
+      },
+      "structure": {
+        "heading_count": 12,
+        "paragraph_count": 36,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.9422,
+        "cleanliness": 1.0,
+        "non_duplication": 0.7952,
+        "completeness": 1.0,
+        "structure": 0.7
+      }
+    },
+    "pymupdf": {
+      "extractor": "pymupdf",
+      "quality_score": 96.1,
+      "status": "success",
+      "word_count": 317,
+      "char_count": 2401,
+      "meaningful_char_count": 2080,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0156,
+      "readability_score": 95.2,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary",
+          "projects",
+          "certifications"
+        ]
+      },
+      "structure": {
+        "heading_count": 6,
+        "paragraph_count": 5,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.9521,
+        "cleanliness": 1.0,
+        "non_duplication": 0.9844,
+        "completeness": 1.0,
+        "structure": 0.7
+      }
+    },
+    "docling": {
+      "extractor": "docling",
+      "quality_score": 95.1,
+      "status": "success",
+      "word_count": 355,
+      "char_count": 2491,
+      "meaningful_char_count": 2110,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.02,
+      "readability_score": 88.5,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": false,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "experience",
+          "education",
+          "projects",
+          "certifications"
+        ]
+      },
+      "structure": {
+        "heading_count": 2,
+        "paragraph_count": 28,
+        "bullet_count": 28
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.8851,
+        "cleanliness": 1.0,
+        "non_duplication": 0.98,
+        "completeness": 0.8,
+        "structure": 1.0
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 2401,
+    "normalized_chars": 2396,
+    "normalization_applied": true,
+    "normalization_steps": [
+      "lines_trimmed"
+    ],
+    "error": null,
+    "original_text": "LANGUAGE\nCONTACT\nSKILLS\nCERTIFICATIONS\n9126449063\nchandramitrab16@gmail.com\nNavi Mumbai, Maharashtra\nProject Management \nRisk Management \nStakeholder Management\nJira\nConfluence\nAgile/Scrum/Kanban\nMS Office\nMS Project\nPrimavera P6\nPRINCE2 7 Foundation & Practitioner\nITIL 4 Foundation\nCHANDRAMITRA BARUAH\nIT PMO\nWORK EXPERIENCE\nEDUCATION\nPROFILE\nDetail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of\nexperience in project governance, tracking, reporting of projects, and contributing\nto the successful execution of IT initiatives/projects. Skilled in PMO tools and\nmethodologies, with a strong focus on communication and efficiency.\nMAY 2025 - PRESENT\nL&T Finance\nManager - IT PMO\nManaging and providing project governance for the Testing CoE and DevOps\nvertical.\nOverall Project Advisory Governance: Project Charter (Scope/Change\nManagement), Risk/Issue Governance, Monitoring & Tracking, Communication\nStrategy, Manage Dependencies & Challenges for the projects assigned.\nImplemented, tracked and managed projects such as SonarQube, SAST, SCA &\nDAST Implementation, Automation Regression Testing, Performance Testing in\nthe Cloud ensuring timely execution, risk mitigation and stakeholder alignment.\nWorking on the presentations of IT events throughout the year such as, IT\nSteering Committee, IT Strategy Committee and LRP.\nDelivery and preparation of Weekly, Monthly & Quarterly Reports,\nScorecards/Dashboards and maintaining documentation through Confluence.\nEngaging with stakeholders at all levels, including CDO & CTO for Project\nReview Meetings (Biweekly, Monthly, Quarterly)\n2021- 2023\nPGP in Project Engineering Management\nNational Institute of Construction Management & Research, Pune \nEnglish\nHindi\nAssamese\nL&T Finance\nMAY 2023 - MAY 2025\nAssistant Manager - IT PMO\nImplementation of governance standards across the projects, including\ntracking, monitoring and updating of project progress status.\nCollaborated with IT Project Managers , third parties/vendors for execution of\nprojects. Managed project delivery specific issues, changes and risks.\nDeveloped comprehensive project plans for PMO meets and internal reviews.\nConfigured and maintained Jira for project tracking, reporting and dashboards\nfor executive level reporting.\nManaged resource capacity and headcount across all the IT verticals.\nBTech in Civil Engineering \nKIIT University, Bhubaneswar \n2017- 2021",
+    "normalized_text": "LANGUAGE\nCONTACT\nSKILLS\nCERTIFICATIONS\n9126449063\nchandramitrab16@gmail.com\nNavi Mumbai, Maharashtra\nProject Management\nRisk Management\nStakeholder Management\nJira\nConfluence\nAgile/Scrum/Kanban\nMS Office\nMS Project\nPrimavera P6\nPRINCE2 7 Foundation & Practitioner\nITIL 4 Foundation\nCHANDRAMITRA BARUAH\nIT PMO\nWORK EXPERIENCE\nEDUCATION\nPROFILE\nDetail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of\nexperience in project governance, tracking, reporting of projects, and contributing\nto the successful execution of IT initiatives/projects. Skilled in PMO tools and\nmethodologies, with a strong focus on communication and efficiency.\nMAY 2025 - PRESENT\nL&T Finance\nManager - IT PMO\nManaging and providing project governance for the Testing CoE and DevOps\nvertical.\nOverall Project Advisory Governance: Project Charter (Scope/Change\nManagement), Risk/Issue Governance, Monitoring & Tracking, Communication\nStrategy, Manage Dependencies & Challenges for the projects assigned.\nImplemented, tracked and managed projects such as SonarQube, SAST, SCA &\nDAST Implementation, Automation Regression Testing, Performance Testing in\nthe Cloud ensuring timely execution, risk mitigation and stakeholder alignment.\nWorking on the presentations of IT events throughout the year such as, IT\nSteering Committee, IT Strategy Committee and LRP.\nDelivery and preparation of Weekly, Monthly & Quarterly Reports,\nScorecards/Dashboards and maintaining documentation through Confluence.\nEngaging with stakeholders at all levels, including CDO & CTO for Project\nReview Meetings (Biweekly, Monthly, Quarterly)\n2021- 2023\nPGP in Project Engineering Management\nNational Institute of Construction Management & Research, Pune\nEnglish\nHindi\nAssamese\nL&T Finance\nMAY 2023 - MAY 2025\nAssistant Manager - IT PMO\nImplementation of governance standards across the projects, including\ntracking, monitoring and updating of project progress status.\nCollaborated with IT Project Managers , third parties/vendors for execution of\nprojects. Managed project delivery specific issues, changes and risks.\nDeveloped comprehensive project plans for PMO meets and internal reviews.\nConfigured and maintained Jira for project tracking, reporting and dashboards\nfor executive level reporting.\nManaged resource capacity and headcount across all the IT verticals.\nBTech in Civil Engineering\nKIIT University, Bhubaneswar\n2017- 2021"
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "Chandramitra Baruah",
+      "email": "chandramitrab16@gmail.com",
+      "phone": "9126449063",
+      "location": "Navi Mumbai, Maharashtra",
+      "summary": "Detail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of experience in project governance, tracking, reporting of projects, and contributing to the successful execution of IT initiatives/projects. Skilled in PMO tools and methodologies, with a strong focus on communication and efficiency.",
+      "skills": {
+        "technical_skills": [
+          "Project Management",
+          "Risk Management",
+          "Stakeholder Management",
+          "Agile/Scrum/Kanban"
+        ],
+        "soft_skills": [],
+        "tools": [
+          "Jira",
+          "Confluence",
+          "MS Office",
+          "MS Project",
+          "Primavera P6"
+        ],
+        "taxonomy_skills": [],
+        "other_skills": []
+      },
+      "experience": [
+        {
+          "title": "Manager - IT PMO",
+          "company": "L&T Finance",
+          "location": "",
+          "start_date": "MAY 2025",
+          "end_date": "PRESENT",
+          "highlights": [
+            "Managing and providing project governance for the Testing CoE and DevOps vertical.",
+            "Overall Project Advisory Governance: Project Charter (Scope/Change Management), Risk/Issue Governance, Monitoring & Tracking, Communication Strategy, Manage Dependencies & Challenges for the projects assigned.",
+            "Implemented, tracked and managed projects such as SonarQube, SAST, SCA & DAST Implementation, Automation Regression Testing, Performance Testing in the Cloud ensuring timely execution, risk mitigation and stakeholder alignment.",
+            "Working on the presentations of IT events throughout the year such as, IT Steering Committee, IT Strategy Committee and LRP.",
+            "Delivery and preparation of Weekly, Monthly & Quarterly Reports, Scorecards/Dashboards and maintaining documentation through Confluence.",
+            "Engaging with stakeholders at all levels, including CDO & CTO for Project Review Meetings (Biweekly, Monthly, Quarterly)"
+          ]
+        },
+        {
+          "title": "Assistant Manager - IT PMO",
+          "company": "L&T Finance",
+          "location": "",
+          "start_date": "MAY 2023",
+          "end_date": "MAY 2025",
+          "highlights": [
+            "Implementation of governance standards across the projects, including tracking, monitoring and updating of project progress status.",
+            "Collaborated with IT Project Managers, third parties/vendors for execution of projects. Managed project delivery specific issues, changes and risks.",
+            "Developed comprehensive project plans for PMO meets and internal reviews.",
+            "Configured and maintained Jira for project tracking, reporting and dashboards for executive level reporting.",
+            "Managed resource capacity and headcount across all the IT verticals."
+          ]
+        }
+      ],
+      "education": [
+        {
+          "degree": "PGP in Project Engineering Management",
+          "institution": "National Institute of Construction Management & Research",
+          "location": "Pune",
+          "start_date": "2021",
+          "end_date": "2023"
+        },
+        {
+          "degree": "BTech in Civil Engineering",
+          "institution": "KIIT University",
+          "location": "Bhubaneswar",
+          "start_date": "2017",
+          "end_date": "2021"
+        }
+      ],
+      "certifications": [
+        "PRINCE2 7 Foundation & Practitioner",
+        "ITIL 4 Foundation"
+      ],
+      "languages": [
+        "English",
+        "Hindi",
+        "Assamese"
+      ],
+      "links": []
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 18105.13,
+    "usage": {
+      "completion_tokens": 2619,
+      "prompt_tokens": 1356,
+      "total_tokens": 3975,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1932
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "Chandramitra Baruah",
+    "email": "chandramitrab16@gmail.com",
+    "phone": "9126449063",
+    "location": "Navi Mumbai, Maharashtra",
+    "summary": "Detail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of experience in project governance, tracking, reporting of projects, and contributing to the successful execution of IT initiatives/projects. Skilled in PMO tools and methodologies, with a strong focus on communication and efficiency.",
+    "skills": {
+      "technical_skills": [
+        "Project Management",
+        "Risk Management",
+        "Stakeholder Management",
+        "Agile/Scrum/Kanban"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "Jira",
+        "Confluence",
+        "MS Office",
+        "MS Project",
+        "Primavera P6"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Manager - IT PMO",
+        "company": "L&T Finance",
+        "location": "",
+        "start_date": "MAY 2025",
+        "end_date": "PRESENT",
+        "highlights": [
+          "Managing and providing project governance for the Testing CoE and DevOps vertical.",
+          "Overall Project Advisory Governance: Project Charter (Scope/Change Management), Risk/Issue Governance, Monitoring & Tracking, Communication Strategy, Manage Dependencies & Challenges for the projects assigned.",
+          "Implemented, tracked and managed projects such as SonarQube, SAST, SCA & DAST Implementation, Automation Regression Testing, Performance Testing in the Cloud ensuring timely execution, risk mitigation and stakeholder alignment.",
+          "Working on the presentations of IT events throughout the year such as, IT Steering Committee, IT Strategy Committee and LRP.",
+          "Delivery and preparation of Weekly, Monthly & Quarterly Reports, Scorecards/Dashboards and maintaining documentation through Confluence.",
+          "Engaging with stakeholders at all levels, including CDO & CTO for Project Review Meetings (Biweekly, Monthly, Quarterly)"
+        ]
+      },
+      {
+        "title": "Assistant Manager - IT PMO",
+        "company": "L&T Finance",
+        "location": "",
+        "start_date": "MAY 2023",
+        "end_date": "MAY 2025",
+        "highlights": [
+          "Implementation of governance standards across the projects, including tracking, monitoring and updating of project progress status.",
+          "Collaborated with IT Project Managers, third parties/vendors for execution of projects. Managed project delivery specific issues, changes and risks.",
+          "Developed comprehensive project plans for PMO meets and internal reviews.",
+          "Configured and maintained Jira for project tracking, reporting and dashboards for executive level reporting.",
+          "Managed resource capacity and headcount across all the IT verticals."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "PGP in Project Engineering Management",
+        "institution": "National Institute of Construction Management & Research",
+        "location": "Pune",
+        "start_date": "2021",
+        "end_date": "2023"
+      },
+      {
+        "degree": "BTech in Civil Engineering",
+        "institution": "KIIT University",
+        "location": "Bhubaneswar",
+        "start_date": "2017",
+        "end_date": "2021"
+      }
+    ],
+    "certifications": [
+      "PRINCE2 7 Foundation & Practitioner",
+      "ITIL 4 Foundation"
+    ],
+    "languages": [
+      "English",
+      "Hindi",
+      "Assamese"
+    ],
+    "links": []
+  },
+  "resume_json": {
+    "full_name": "Chandramitra Baruah",
+    "email": "chandramitrab16@gmail.com",
+    "phone": "9126449063",
+    "location": "Navi Mumbai, Maharashtra",
+    "summary": "Detail-oriented PRINCE2 7 certified IT PMO professional with 3.2 years of experience in project governance, tracking, reporting of projects, and contributing to the successful execution of IT initiatives/projects. Skilled in PMO tools and methodologies, with a strong focus on communication and efficiency.",
+    "skills": {
+      "technical_skills": [
+        "Project Management",
+        "Risk Management",
+        "Stakeholder Management",
+        "Agile/Scrum/Kanban"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "Jira",
+        "Confluence",
+        "MS Office",
+        "MS Project",
+        "Primavera P6"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Manager - IT PMO",
+        "company": "L&T Finance",
+        "location": "",
+        "start_date": "MAY 2025",
+        "end_date": "PRESENT",
+        "highlights": [
+          "Managing and providing project governance for the Testing CoE and DevOps vertical.",
+          "Overall Project Advisory Governance: Project Charter (Scope/Change Management), Risk/Issue Governance, Monitoring & Tracking, Communication Strategy, Manage Dependencies & Challenges for the projects assigned.",
+          "Implemented, tracked and managed projects such as SonarQube, SAST, SCA & DAST Implementation, Automation Regression Testing, Performance Testing in the Cloud ensuring timely execution, risk mitigation and stakeholder alignment.",
+          "Working on the presentations of IT events throughout the year such as, IT Steering Committee, IT Strategy Committee and LRP.",
+          "Delivery and preparation of Weekly, Monthly & Quarterly Reports, Scorecards/Dashboards and maintaining documentation through Confluence.",
+          "Engaging with stakeholders at all levels, including CDO & CTO for Project Review Meetings (Biweekly, Monthly, Quarterly)"
+        ]
+      },
+      {
+        "title": "Assistant Manager - IT PMO",
+        "company": "L&T Finance",
+        "location": "",
+        "start_date": "MAY 2023",
+        "end_date": "MAY 2025",
+        "highlights": [
+          "Implementation of governance standards across the projects, including tracking, monitoring and updating of project progress status.",
+          "Collaborated with IT Project Managers, third parties/vendors for execution of projects. Managed project delivery specific issues, changes and risks.",
+          "Developed comprehensive project plans for PMO meets and internal reviews.",
+          "Configured and maintained Jira for project tracking, reporting and dashboards for executive level reporting.",
+          "Managed resource capacity and headcount across all the IT verticals."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "PGP in Project Engineering Management",
+        "institution": "National Institute of Construction Management & Research",
+        "location": "Pune",
+        "start_date": "2021",
+        "end_date": "2023"
+      },
+      {
+        "degree": "BTech in Civil Engineering",
+        "institution": "KIIT University",
+        "location": "Bhubaneswar",
+        "start_date": "2017",
+        "end_date": "2021"
+      }
+    ],
+    "certifications": [
+      "PRINCE2 7 Foundation & Practitioner",
+      "ITIL 4 Foundation"
+    ],
+    "languages": [
+      "English",
+      "Hindi",
+      "Assamese"
+    ],
+    "links": []
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 59.9937,
+    "quality_seconds": 0.0189,
+    "normalization_seconds": 0.0011,
+    "recovery_seconds": 0.0033,
+    "llm_seconds": 18.1084,
+    "total_seconds": 78.1254
+  },
+  "_stored_name": "d02c8a2f-c3e7-4be4-8c88-2b5a05f5f2de_SHJ-5354_SHC-368853.pdf"
+}

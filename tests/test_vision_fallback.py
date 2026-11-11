@@ -1,5 +1,9 @@
 """Muse AI pipeline stages — direct extraction fallback + JSON gen.
 
+These tests pin the LEGACY pipeline explicitly
+(pipeline_mode="legacy"): the vision fallback exists only there.
+The default pipeline for new uploads is the simple pipeline.
+
 A fake Muse service proves the pipeline wiring without provider
 calls: the direct-extraction stage runs only when the extractor
 chain does not PASS, receives the ORIGINAL file, and its attempt is
@@ -72,7 +76,7 @@ def test_unconfigured_muse_records_a_configuration_attempt(tmp_path):
     png = _failed_chain_png(tmp_path)
     record = process_resume_file(
         png, resume_id="muse-test-1", original_filename="resume.png",
-        muse_service=FakeMuseService(configured=False))
+        muse_service=FakeMuseService(configured=False), pipeline_mode="legacy")
     muse_attempts = [a for a in record["attempts"]
                      if a["extractor_name"] == "muse_ai"]
     assert len(muse_attempts) == 1
@@ -90,7 +94,7 @@ def test_muse_vision_rescues_failed_chain(tmp_path):
     service = FakeMuseService(vision_outcome=_outcome())
     record = process_resume_file(
         png, resume_id="muse-test-2", original_filename="resume.png",
-        muse_service=service)
+        muse_service=service, pipeline_mode="legacy")
     assert service.vision_calls == [png]  # the ORIGINAL file
     assert record["success"] is True
     assert record["extractor_used"] == "muse_ai"
@@ -114,7 +118,7 @@ def test_muse_invalid_json_is_recorded_not_fabricated(tmp_path):
     service = FakeMuseService(vision_outcome=_outcome(ok=False))
     record = process_resume_file(
         png, resume_id="muse-test-3", original_filename="resume.png",
-        muse_service=service)
+        muse_service=service, pipeline_mode="legacy")
     assert record["success"] is False
     assert record["resume_json"] is None
     attempt = record["attempts"][-1]
@@ -128,7 +132,7 @@ def test_vision_disabled_records_configuration_attempt(tmp_path):
     service = FakeMuseService(vision_enabled=False)
     record = process_resume_file(
         png, resume_id="muse-test-4", original_filename="resume.png",
-        muse_service=service)
+        muse_service=service, pipeline_mode="legacy")
     attempt = record["attempts"][-1]
     assert attempt["extractor_name"] == "muse_ai"
     assert attempt["error_type"] == "ConfigurationError"

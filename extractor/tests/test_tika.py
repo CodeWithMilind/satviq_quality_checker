@@ -49,7 +49,7 @@ def _completed(returncode=0, stdout=GOOD_TEXT, stderr=""):
 
 
 def _stub_cli(extractor, monkeypatch, completed=None, capture=None):
-    def fake_run_cli(argv, timeout):
+    def fake_run_cli(argv, timeout=None):
         if capture is not None:
             capture["argv"] = argv
             capture["timeout"] = timeout
@@ -88,6 +88,8 @@ def test_successful_extraction_via_cli(sample_file, fake_jar, monkeypatch):
     assert argv[3].startswith("--config=")
     assert argv[4] == "--text"
     assert argv[5] == str(sample_file)
+    # The configured extraction-only safety cap is passed through
+    # to the subprocess (spec §5).
     assert capture["timeout"] == 45.0
     # Version comes from the JAR filename and rides in the metadata.
     assert extractor.version == "4.2.0"
@@ -166,18 +168,23 @@ def test_empty_output_is_failure_not_silent_success(sample_file, fake_jar, monke
     assert result.text == ""
 
 
-def test_cli_timeout_is_reported(sample_file, fake_jar, monkeypatch):
-    def timing_out_run(*args, **kwargs):
-        raise subprocess.TimeoutExpired(cmd="java", timeout=kwargs.get("timeout", 1))
+def test_cli_runs_without_timeout_when_unconfigured(sample_file, fake_jar, monkeypatch):
+    # With no timeout_seconds configured, the real _run_cli invokes
+    # subprocess.run with timeout=None (wait however long it
+    # takes). The cap exists only when configured (spec §5).
+    captured = {}
+    def recording_run(*args, **kwargs):
+        captured.update(kwargs)
+        return subprocess.CompletedProcess(
+            args=args[0] if args else [], returncode=0,
+            stdout=GOOD_TEXT, stderr="")
     monkeypatch.setattr(tika_module, "subprocess", SimpleNamespace(
-        run=timing_out_run, TimeoutExpired=subprocess.TimeoutExpired,
+        run=recording_run, TimeoutExpired=subprocess.TimeoutExpired,
         CompletedProcess=subprocess.CompletedProcess))
-    extractor = TikaExtractor(config={"jar_path": str(fake_jar),
-                                      "timeout_seconds": 1})
+    extractor = TikaExtractor(config={"jar_path": str(fake_jar)})
     result = extractor.extract(sample_file)
-    assert result.success is False
-    assert "timed out" in result.error
-    assert result.error_type == "ExtractionFailedError"
+    assert result.success is True
+    assert captured.get("timeout") is None
 
 
 def test_invalid_file_path(tmp_path, fake_jar):
@@ -222,7 +229,9 @@ def test_generated_ocr_config_structure(sample_file, fake_jar, monkeypatch):
     assert pdf["pages"]["render"]["dpi"] == 300
     ocr_parser = config["engines"]["tesseract"]["tesseract-ocr-parser"]
     assert ocr_parser["language"] == "eng"
-    assert ocr_parser["timeoutMillis"] == 120000
+    # Timeouts were removed: Tika requires a timeoutMillis value,
+    # so it is set to 24h — effectively no cap.
+    assert ocr_parser["timeoutMillis"] == 86400000
 
 
 def test_ocr_disabled_runs_without_config(sample_file, fake_jar, monkeypatch):

@@ -1,0 +1,2163 @@
+{
+  "resume_id": "568bead6-c852-4c9d-a86c-5584bf42de1f",
+  "filename": "SHJ-5412_SHC-381592.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 510463,
+  "uploaded_at": "2026-11-11T07:08:35.854121+00:00",
+  "success": true,
+  "extractor_used": "docling",
+  "final_extractor": "docling",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "568bead6-c852-4c9d-a86c-5584bf42de1f-attempt-1",
+      "resume_id": "568bead6-c852-4c9d-a86c-5584bf42de1f",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 94.4 (selected 'docling' scored 98.2).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 94.4 (selected 'docling' scored 98.2).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "568bead6-c852-4c9d-a86c-5584bf42de1f",
+        "source_tool": "tika",
+        "attempt_id": "568bead6-c852-4c9d-a86c-5584bf42de1f-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 99.55,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS"
+          ],
+          "reasons": [
+            "4 non-printable characters found (0.17% of text)."
+          ],
+          "metrics": {
+            "char_count": 2298,
+            "word_count": 339,
+            "line_count": 73,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 4,
+            "non_printable_ratio": 0.001741,
+            "whitespace_ratio": 0.162315,
+            "symbol_count": 13,
+            "symbol_ratio": 0.005657,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2298,
+            "word_count": 339,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "permanent address",
+              "Summary": "career objective",
+              "Work Experience": "experience",
+              "Education": "educational qualification",
+              "Certifications": "technical qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERMANENT  ADDRESS",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "PERMANENT  ADDRESS",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE:-",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "CAREER OBJECTIVE:-",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE:-",
+                "detection_method": "heading",
+                "line_number": 23,
+                "evidence": "EXPERIENCE:-",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATIONAL QUALIFICATION:-",
+                "detection_method": "heading",
+                "line_number": 15,
+                "evidence": "EDUCATIONAL QUALIFICATION:-",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "TECHNICAL QUALIFICATION:-",
+                "detection_method": "heading",
+                "line_number": 19,
+                "evidence": "TECHNICAL QUALIFICATION:-",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Skills": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 99.55
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2298,
+            "word_count": 339,
+            "line_count": 73,
+            "non_empty_line_count": 62,
+            "short_line_count": 19,
+            "short_line_ratio": 0.306452,
+            "fragmented_line_count": 10,
+            "fragmented_line_ratio": 0.16129,
+            "mean_line_length": 35.58,
+            "median_line_length": 29.0,
+            "line_length_stdev": 20.99,
+            "line_length_cv": 0.58981,
+            "broken_sentence_count": 4,
+            "broken_sentence_ratio": 0.065574,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "568bead6-c852-4c9d-a86c-5584bf42de1f",
+        "source_tool": "tika",
+        "attempt_id": "568bead6-c852-4c9d-a86c-5584bf42de1f-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 99.55,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS"
+          ],
+          "reasons": [
+            "4 non-printable characters found (0.17% of text)."
+          ],
+          "metrics": {
+            "char_count": 2298,
+            "word_count": 339,
+            "line_count": 73,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 4,
+            "non_printable_ratio": 0.001741,
+            "whitespace_ratio": 0.162315,
+            "symbol_count": 13,
+            "symbol_ratio": 0.005657,
+            "max_repeated_char_run": 4,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2298,
+            "word_count": 339,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "permanent address",
+              "Summary": "career objective",
+              "Work Experience": "experience",
+              "Education": "educational qualification",
+              "Certifications": "technical qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERMANENT  ADDRESS",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "PERMANENT  ADDRESS",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE:-",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "CAREER OBJECTIVE:-",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE:-",
+                "detection_method": "heading",
+                "line_number": 23,
+                "evidence": "EXPERIENCE:-",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATIONAL QUALIFICATION:-",
+                "detection_method": "heading",
+                "line_number": 15,
+                "evidence": "EDUCATIONAL QUALIFICATION:-",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "TECHNICAL QUALIFICATION:-",
+                "detection_method": "heading",
+                "line_number": 19,
+                "evidence": "TECHNICAL QUALIFICATION:-",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Skills": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 99.55
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2298,
+            "word_count": 339,
+            "line_count": 73,
+            "non_empty_line_count": 62,
+            "short_line_count": 19,
+            "short_line_ratio": 0.306452,
+            "fragmented_line_count": 10,
+            "fragmented_line_ratio": 0.16129,
+            "mean_line_length": 35.58,
+            "median_line_length": 29.0,
+            "line_length_stdev": 20.99,
+            "line_length_cv": 0.58981,
+            "broken_sentence_count": 4,
+            "broken_sentence_ratio": 0.065574,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 94.4,
+      "duration_ms": 50616.49,
+      "text": "CURRICULUM VITAE\n\nMr. Praveen\nS/O Mr. Shiv Prasad\nPERMANENT  ADDRESS\nVillage : Ranapur Pure Jhagru\nPost : Ranapur\nDistrict : Ayodhya Pin-224164\nContact No   : 8423031170, 9532870993\nE-mail id : py6664089@gmail.com\nCAREER OBJECTIVE:-\nTo work with an organization, which match my profile & provide me a \nplatform to develop my skills at grow in proportion to my quality endeavors in \nthe leaning phase of my career.\nEDUCATIONAL QUALIFICATION:-\nHigh school Passed in 2010 From with Second Division. \n Intermediate Passed in 2012 from with First Division.\nB.A. Passed in 2015 form with First Division.\nTECHNICAL QUALIFICATION:-\nPG Diploma Computer Hardware and Networking (Year-2022-2023).\nCCC (Course on Computer Concepts)\nBasic Computer Knowledge (Hindi & English) Typing.\nEXPERIENCE:-\n\t CURRENT COMPANY – Client side Cholamandalam pay role of the SP Solution point. \nDate – 03-January-2023 – Till now.\n\nDesignation – Customer Support Engineer.\n\t 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow \nDate – 13th, Jun-2021 – 20-January-2022\n\n\nmailto:py6664089@gmail.com\n\nSkill:-  Ticketing Tools – ITSM and Service now.\nOS installation and hardware Troubleshooting, Outlook configuration,\nManage LAN, Wan, Wi-Fi and internet connectivity\nCoordinating with ISP OEM Vendor for Link issue.\nProvide L1 & L2 troubleshooting on hardware and software related issues.\nResolving issue on time with in SLA day to day it issue resolved\nMaintain IT Assets for all IP Devices\nKnowledge of CCTV and Access control hardware and software.\nHandling switches and router\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and \nOutlook support, GWS migration support, Physical Asset verification, \nRemote support, EUC support, Maintain daily Branch check list.\nSTRENGTH:-\n\t\t Positive attitude\n\t Confidence\n\n\n\nPERSONAL PROFILE:-\nFather’s name : Mr. Shiv Prasad\nMother’s Name : Mrs. Sumitra Devi\nDate of Birth : 15 July 1996\nGender : Male\nLanguage : English & Hindi\nMarital Status : Unmarried\nNationality : Indian\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of \nmy knowledge & belief.\nDate : Mr. Praveen\nPlace -\n\n\n\tCAREER OBJECTIVE:-\n\tEDUCATIONAL QUALIFICATION:-\n\tTECHNICAL QUALIFICATION:-\n\tEXPERIENCE:-\n\tSTRENGTH:-\n\tPERSONAL PROFILE:-",
+      "extracted_text": "CURRICULUM VITAE\n\nMr. Praveen\nS/O Mr. Shiv Prasad\nPERMANENT  ADDRESS\nVillage : Ranapur Pure Jhagru\nPost : Ranapur\nDistrict : Ayodhya Pin-224164\nContact No   : 8423031170, 9532870993\nE-mail id : py6664089@gmail.com\nCAREER OBJECTIVE:-\nTo work with an organization, which match my profile & provide me a \nplatform to develop my skills at grow in proportion to my quality endeavors in \nthe leaning phase of my career.\nEDUCATIONAL QUALIFICATION:-\nHigh school Passed in 2010 From with Second Division. \n Intermediate Passed in 2012 from with First Division.\nB.A. Passed in 2015 form with First Division.\nTECHNICAL QUALIFICATION:-\nPG Diploma Computer Hardware and Networking (Year-2022-2023).\nCCC (Course on Computer Concepts)\nBasic Computer Knowledge (Hindi & English) Typing.\nEXPERIENCE:-\n\t CURRENT COMPANY – Client side Cholamandalam pay role of the SP Solution point. \nDate – 03-January-2023 – Till now.\n\nDesignation – Customer Support Engineer.\n\t 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow \nDate – 13th, Jun-2021 – 20-January-2022\n\n\nmailto:py6664089@gmail.com\n\nSkill:-  Ticketing Tools – ITSM and Service now.\nOS installation and hardware Troubleshooting, Outlook configuration,\nManage LAN, Wan, Wi-Fi and internet connectivity\nCoordinating with ISP OEM Vendor for Link issue.\nProvide L1 & L2 troubleshooting on hardware and software related issues.\nResolving issue on time with in SLA day to day it issue resolved\nMaintain IT Assets for all IP Devices\nKnowledge of CCTV and Access control hardware and software.\nHandling switches and router\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and \nOutlook support, GWS migration support, Physical Asset verification, \nRemote support, EUC support, Maintain daily Branch check list.\nSTRENGTH:-\n\t\t Positive attitude\n\t Confidence\n\n\n\nPERSONAL PROFILE:-\nFather’s name : Mr. Shiv Prasad\nMother’s Name : Mrs. Sumitra Devi\nDate of Birth : 15 July 1996\nGender : Male\nLanguage : English & Hindi\nMarital Status : Unmarried\nNationality : Indian\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of \nmy knowledge & belief.\nDate : Mr. Praveen\nPlace -\n\n\n\tCAREER OBJECTIVE:-\n\tEDUCATIONAL QUALIFICATION:-\n\tTECHNICAL QUALIFICATION:-\n\tEXPERIENCE:-\n\tSTRENGTH:-\n\tPERSONAL PROFILE:-",
+      "extracted_text_length": 2298,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "CURRICULUM VITAE\n\nMr. Praveen\nS/O Mr. Shiv Prasad\nPERMANENT ADDRESS\nVillage : Ranapur Pure Jhagru\nPost : Ranapur\nDistrict : Ayodhya Pin-224164\nContact No : 8423031170, 9532870993\nE-mail id : py6664089@gmail.com\nCAREER OBJECTIVE:-\nTo work with an organization, which match my profile & provide me a\nplatform to develop my skills at grow in proportion to my quality endeavors in\nthe leaning phase of my career.\nEDUCATIONAL QUALIFICATION:-\nHigh school Passed in 2010 From with Second Division.\nIntermediate Passed in 2012 from with First Division.\nB.A. Passed in 2015 form with First Division.\nTECHNICAL QUALIFICATION:-\nPG Diploma Computer Hardware and Networking (Year-2022-2023).\nCCC (Course on Computer Concepts)\nBasic Computer Knowledge (Hindi & English) Typing.\nEXPERIENCE:-\n CURRENT COMPANY – Client side Cholamandalam pay role of the SP Solution point.\nDate – 03-January-2023 – Till now.\n\nDesignation – Customer Support Engineer.\n 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow\nDate – 13th, Jun-2021 – 20-January-2022\n\nmailto:py6664089@gmail.com\n\nSkill:- Ticketing Tools – ITSM and Service now.\nOS installation and hardware Troubleshooting, Outlook configuration,\nManage LAN, Wan, Wi-Fi and internet connectivity\nCoordinating with ISP OEM Vendor for Link issue.\nProvide L1 & L2 troubleshooting on hardware and software related issues.\nResolving issue on time with in SLA day to day it issue resolved\nMaintain IT Assets for all IP Devices\nKnowledge of CCTV and Access control hardware and software.\nHandling switches and router\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\nOutlook support, GWS migration support, Physical Asset verification,\nRemote support, EUC support, Maintain daily Branch check list.\nSTRENGTH:-\n Positive attitude\n Confidence\n\nPERSONAL PROFILE:-\nFather’s name : Mr. Shiv Prasad\nMother’s Name : Mrs. Sumitra Devi\nDate of Birth : 15 July 1996\nGender : Male\nLanguage : English & Hindi\nMarital Status : Unmarried\nNationality : Indian\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of\nmy knowledge & belief.\nDate : Mr. Praveen\nPlace -\n\nCAREER OBJECTIVE:-\nEDUCATIONAL QUALIFICATION:-\nTECHNICAL QUALIFICATION:-\nEXPERIENCE:-\nSTRENGTH:-\nPERSONAL PROFILE:-"
+    },
+    {
+      "attempt_id": "568bead6-c852-4c9d-a86c-5584bf42de1f-attempt-2",
+      "resume_id": "568bead6-c852-4c9d-a86c-5584bf42de1f",
+      "attempt_number": 2,
+      "extractor_name": "pymupdf",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 94.0 (selected 'docling' scored 98.2).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 94.0 (selected 'docling' scored 98.2).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "568bead6-c852-4c9d-a86c-5584bf42de1f",
+        "source_tool": "pymupdf",
+        "attempt_id": "568bead6-c852-4c9d-a86c-5584bf42de1f-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 99.53,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS"
+          ],
+          "reasons": [
+            "4 non-printable characters found (0.18% of text)."
+          ],
+          "metrics": {
+            "char_count": 2262,
+            "word_count": 328,
+            "line_count": 104,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 4,
+            "non_printable_ratio": 0.001768,
+            "whitespace_ratio": 0.207339,
+            "symbol_count": 13,
+            "symbol_ratio": 0.005747,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2262,
+            "word_count": 328,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "permanent address",
+              "Summary": "career objective",
+              "Work Experience": "experience",
+              "Education": "educational qualification",
+              "Certifications": "technical qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERMANENT  ADDRESS",
+                "detection_method": "heading",
+                "line_number": 3,
+                "evidence": "PERMANENT  ADDRESS",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE:-",
+                "detection_method": "heading",
+                "line_number": 19,
+                "evidence": "CAREER OBJECTIVE:-",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE:-",
+                "detection_method": "heading",
+                "line_number": 40,
+                "evidence": "EXPERIENCE:-",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATIONAL QUALIFICATION:-",
+                "detection_method": "heading",
+                "line_number": 26,
+                "evidence": "EDUCATIONAL QUALIFICATION:-",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "TECHNICAL QUALIFICATION:-",
+                "detection_method": "heading",
+                "line_number": 33,
+                "evidence": "TECHNICAL QUALIFICATION:-",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Skills": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 99.53
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 81.94,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "53.2% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "48.1% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 2262,
+            "word_count": 328,
+            "line_count": 104,
+            "non_empty_line_count": 79,
+            "short_line_count": 42,
+            "short_line_ratio": 0.531646,
+            "fragmented_line_count": 38,
+            "fragmented_line_ratio": 0.481013,
+            "mean_line_length": 25.9,
+            "median_line_length": 17.0,
+            "line_length_stdev": 23.78,
+            "line_length_cv": 0.918373,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.038462,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "568bead6-c852-4c9d-a86c-5584bf42de1f",
+        "source_tool": "pymupdf",
+        "attempt_id": "568bead6-c852-4c9d-a86c-5584bf42de1f-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 99.53,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS"
+          ],
+          "reasons": [
+            "4 non-printable characters found (0.18% of text)."
+          ],
+          "metrics": {
+            "char_count": 2262,
+            "word_count": 328,
+            "line_count": 104,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 4,
+            "non_printable_ratio": 0.001768,
+            "whitespace_ratio": 0.207339,
+            "symbol_count": 13,
+            "symbol_ratio": 0.005747,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2262,
+            "word_count": 328,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "permanent address",
+              "Summary": "career objective",
+              "Work Experience": "experience",
+              "Education": "educational qualification",
+              "Certifications": "technical qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERMANENT  ADDRESS",
+                "detection_method": "heading",
+                "line_number": 3,
+                "evidence": "PERMANENT  ADDRESS",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE:-",
+                "detection_method": "heading",
+                "line_number": 19,
+                "evidence": "CAREER OBJECTIVE:-",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE:-",
+                "detection_method": "heading",
+                "line_number": 40,
+                "evidence": "EXPERIENCE:-",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATIONAL QUALIFICATION:-",
+                "detection_method": "heading",
+                "line_number": 26,
+                "evidence": "EDUCATIONAL QUALIFICATION:-",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "TECHNICAL QUALIFICATION:-",
+                "detection_method": "heading",
+                "line_number": 33,
+                "evidence": "TECHNICAL QUALIFICATION:-",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Skills": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 99.53
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 81.94,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "53.2% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "48.1% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 2262,
+            "word_count": 328,
+            "line_count": 104,
+            "non_empty_line_count": 79,
+            "short_line_count": 42,
+            "short_line_ratio": 0.531646,
+            "fragmented_line_count": 38,
+            "fragmented_line_ratio": 0.481013,
+            "mean_line_length": 25.9,
+            "median_line_length": 17.0,
+            "line_length_stdev": 23.78,
+            "line_length_cv": 0.918373,
+            "broken_sentence_count": 3,
+            "broken_sentence_ratio": 0.038462,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 94.0,
+      "duration_ms": 100.59,
+      "text": "Mr. Praveen \nS/O Mr. Shiv Prasad \nPERMANENT  ADDRESS \nVillage \n: \nRanapur Pure Jhagru \nPost \n: \nRanapur \nDistrict \n: \nAyodhya Pin-224164 \nContact No   : \n8423031170, 9532870993 \nE-mail id \n: \npy6664089@gmail.com \n \nCAREER OBJECTIVE:- \n \n \nTo work with an organization, which match my profile & provide me a \nplatform to develop my skills at grow in proportion to my quality endeavors in \nthe leaning phase of my career. \n \nEDUCATIONAL QUALIFICATION:- \n \n \n High school Passed in 2010 From with Second Division. \n Intermediate Passed in 2012 from with First Division. \nB.A. Passed in 2015 form with First Division. \n \nTECHNICAL QUALIFICATION:- \n \n PG Diploma Computer Hardware and Networking (Year-2022-2023). \n CCC (Course on Computer Concepts) \n Basic Computer Knowledge (Hindi & English) Typing. \n \n \nEXPERIENCE:- \n \n CURRENT COMPANY – Client side Cholamandalam pay role of the SP Solution point. \nDate – 03-January-2023 – Till now. \nDesignation – Customer Support Engineer. \n \n 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow \nDate – 13th, Jun-2021 – 20-January-2022 \nCURRICULUM VITAE\nSkill:-  Ticketing Tools – ITSM and Service now. \nOS installation and hardware Troubleshooting, Outlook configuration,  \nManage LAN, Wan, Wi-Fi and internet connectivity \nCoordinating with ISP OEM Vendor for Link issue.  \nProvide L1 & L2 troubleshooting on hardware and software related issues.  \nResolving issue on time with in SLA day to day it issue resolved \nMaintain IT Assets for all IP Devices  \nKnowledge of CCTV and Access control hardware and software.  \nHandling switches and router  \nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and \nOutlook support, GWS migration support, Physical Asset verification, \nRemote support, EUC support, Maintain daily Branch check list. \nSTRENGTH:- \n \n Positive attitude \n Confidence \nPERSONAL PROFILE:- \n \nFather’s name \n: \nMr. Shiv Prasad \n \nMother’s Name \n: \nMrs. Sumitra Devi \n \nDate of Birth \n: \n15 July 1996 \n \nGender \n: \nMale \n \nLanguage \n: \nEnglish & Hindi \n \nMarital Status \n: \nUnmarried \n \nNationality \n: \nIndian \n \n \n \n \nI hereby declare that all true above information furnished by me is correct the best of \nmy knowledge & belief. \nDate : \nMr. Praveen \n \nPlace - \nDECLARATION",
+      "extracted_text": "Mr. Praveen \nS/O Mr. Shiv Prasad \nPERMANENT  ADDRESS \nVillage \n: \nRanapur Pure Jhagru \nPost \n: \nRanapur \nDistrict \n: \nAyodhya Pin-224164 \nContact No   : \n8423031170, 9532870993 \nE-mail id \n: \npy6664089@gmail.com \n \nCAREER OBJECTIVE:- \n \n \nTo work with an organization, which match my profile & provide me a \nplatform to develop my skills at grow in proportion to my quality endeavors in \nthe leaning phase of my career. \n \nEDUCATIONAL QUALIFICATION:- \n \n \n High school Passed in 2010 From with Second Division. \n Intermediate Passed in 2012 from with First Division. \nB.A. Passed in 2015 form with First Division. \n \nTECHNICAL QUALIFICATION:- \n \n PG Diploma Computer Hardware and Networking (Year-2022-2023). \n CCC (Course on Computer Concepts) \n Basic Computer Knowledge (Hindi & English) Typing. \n \n \nEXPERIENCE:- \n \n CURRENT COMPANY – Client side Cholamandalam pay role of the SP Solution point. \nDate – 03-January-2023 – Till now. \nDesignation – Customer Support Engineer. \n \n 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow \nDate – 13th, Jun-2021 – 20-January-2022 \nCURRICULUM VITAE\nSkill:-  Ticketing Tools – ITSM and Service now. \nOS installation and hardware Troubleshooting, Outlook configuration,  \nManage LAN, Wan, Wi-Fi and internet connectivity \nCoordinating with ISP OEM Vendor for Link issue.  \nProvide L1 & L2 troubleshooting on hardware and software related issues.  \nResolving issue on time with in SLA day to day it issue resolved \nMaintain IT Assets for all IP Devices  \nKnowledge of CCTV and Access control hardware and software.  \nHandling switches and router  \nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and \nOutlook support, GWS migration support, Physical Asset verification, \nRemote support, EUC support, Maintain daily Branch check list. \nSTRENGTH:- \n \n Positive attitude \n Confidence \nPERSONAL PROFILE:- \n \nFather’s name \n: \nMr. Shiv Prasad \n \nMother’s Name \n: \nMrs. Sumitra Devi \n \nDate of Birth \n: \n15 July 1996 \n \nGender \n: \nMale \n \nLanguage \n: \nEnglish & Hindi \n \nMarital Status \n: \nUnmarried \n \nNationality \n: \nIndian \n \n \n \n \nI hereby declare that all true above information furnished by me is correct the best of \nmy knowledge & belief. \nDate : \nMr. Praveen \n \nPlace - \nDECLARATION",
+      "extracted_text_length": 2262,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "format": "PDF 1.5",
+        "title": "Microsoft Word - update cv praveen (1) (1)",
+        "creator": "Aspose Ltd.",
+        "producer": "Aspose.PDF for Java 18.8",
+        "creationDate": "D:20260121120100+00'00'",
+        "modDate": "D:20261009120000+05'30'"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Mr. Praveen\nS/O Mr. Shiv Prasad\nPERMANENT ADDRESS\nVillage\n:\nRanapur Pure Jhagru\nPost\n:\nRanapur\nDistrict\n:\nAyodhya Pin-224164\nContact No :\n8423031170, 9532870993\nE-mail id\n:\npy6664089@gmail.com\n\nCAREER OBJECTIVE:-\n\nTo work with an organization, which match my profile & provide me a\nplatform to develop my skills at grow in proportion to my quality endeavors in\nthe leaning phase of my career.\n\nEDUCATIONAL QUALIFICATION:-\n\nHigh school Passed in 2010 From with Second Division.\nIntermediate Passed in 2012 from with First Division.\nB.A. Passed in 2015 form with First Division.\n\nTECHNICAL QUALIFICATION:-\n\nPG Diploma Computer Hardware and Networking (Year-2022-2023).\nCCC (Course on Computer Concepts)\nBasic Computer Knowledge (Hindi & English) Typing.\n\nEXPERIENCE:-\n\n CURRENT COMPANY – Client side Cholamandalam pay role of the SP Solution point.\nDate – 03-January-2023 – Till now.\nDesignation – Customer Support Engineer.\n\n 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow\nDate – 13th, Jun-2021 – 20-January-2022\nCURRICULUM VITAE\nSkill:- Ticketing Tools – ITSM and Service now.\nOS installation and hardware Troubleshooting, Outlook configuration,\nManage LAN, Wan, Wi-Fi and internet connectivity\nCoordinating with ISP OEM Vendor for Link issue.\nProvide L1 & L2 troubleshooting on hardware and software related issues.\nResolving issue on time with in SLA day to day it issue resolved\nMaintain IT Assets for all IP Devices\nKnowledge of CCTV and Access control hardware and software.\nHandling switches and router\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\nOutlook support, GWS migration support, Physical Asset verification,\nRemote support, EUC support, Maintain daily Branch check list.\nSTRENGTH:-\n\n Positive attitude\n Confidence\nPERSONAL PROFILE:-\n\nFather’s name\n:\nMr. Shiv Prasad\n\nMother’s Name\n:\nMrs. Sumitra Devi\n\nDate of Birth\n:\n15 July 1996\n\nGender\n:\nMale\n\nLanguage\n:\nEnglish & Hindi\n\nMarital Status\n:\nUnmarried\n\nNationality\n:\nIndian\n\nI hereby declare that all true above information furnished by me is correct the best of\nmy knowledge & belief.\nDate :\nMr. Praveen\n\nPlace -\nDECLARATION"
+    },
+    {
+      "attempt_id": "568bead6-c852-4c9d-a86c-5584bf42de1f-attempt-3",
+      "resume_id": "568bead6-c852-4c9d-a86c-5584bf42de1f",
+      "attempt_number": 3,
+      "extractor_name": "docling",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Selected 'docling' with the highest quality score 98.2 (threshold 60.0).",
+      "fallback_decision": "accept",
+      "fallback_reason": "Selected 'docling' with the highest quality score 98.2 (threshold 60.0).",
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "568bead6-c852-4c9d-a86c-5584bf42de1f",
+        "source_tool": "docling",
+        "attempt_id": "568bead6-c852-4c9d-a86c-5584bf42de1f-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2183,
+            "word_count": 335,
+            "line_count": 104,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.175447,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2183,
+            "word_count": 335,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "permanent address",
+              "Summary": "career objective",
+              "Work Experience": "experience",
+              "Education": "educational qualification",
+              "Certifications": "technical qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERMANENT ADDRESS",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "PERMANENT ADDRESS",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE:-",
+                "detection_method": "heading",
+                "line_number": 27,
+                "evidence": "CAREER OBJECTIVE:-",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE:-",
+                "detection_method": "heading",
+                "line_number": 43,
+                "evidence": "EXPERIENCE:-",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATIONAL QUALIFICATION:-",
+                "detection_method": "heading",
+                "line_number": 31,
+                "evidence": "EDUCATIONAL QUALIFICATION:-",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "TECHNICAL QUALIFICATION:-",
+                "detection_method": "heading",
+                "line_number": 37,
+                "evidence": "TECHNICAL QUALIFICATION:-",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Skills": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 71.56,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "52.7% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "45.5% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.82) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 2183,
+            "word_count": 335,
+            "line_count": 104,
+            "non_empty_line_count": 55,
+            "short_line_count": 29,
+            "short_line_ratio": 0.527273,
+            "fragmented_line_count": 25,
+            "fragmented_line_ratio": 0.454545,
+            "mean_line_length": 37.82,
+            "median_line_length": 17.0,
+            "line_length_stdev": 68.98,
+            "line_length_cv": 1.82398,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "568bead6-c852-4c9d-a86c-5584bf42de1f",
+        "source_tool": "docling",
+        "attempt_id": "568bead6-c852-4c9d-a86c-5584bf42de1f-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2183,
+            "word_count": 335,
+            "line_count": 104,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.175447,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 82.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2183,
+            "word_count": 335,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Responsibilities",
+              "Projects"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects"
+            ],
+            "matched_aliases": {
+              "Contact Information": "permanent address",
+              "Summary": "career objective",
+              "Work Experience": "experience",
+              "Education": "educational qualification",
+              "Certifications": "technical qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERMANENT ADDRESS",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "PERMANENT ADDRESS",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "CAREER OBJECTIVE:-",
+                "detection_method": "heading",
+                "line_number": 27,
+                "evidence": "CAREER OBJECTIVE:-",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE:-",
+                "detection_method": "heading",
+                "line_number": 43,
+                "evidence": "EXPERIENCE:-",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATIONAL QUALIFICATION:-",
+                "detection_method": "heading",
+                "line_number": 31,
+                "evidence": "EDUCATIONAL QUALIFICATION:-",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "TECHNICAL QUALIFICATION:-",
+                "detection_method": "heading",
+                "line_number": 37,
+                "evidence": "TECHNICAL QUALIFICATION:-",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Certifications": "detected",
+              "Skills": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Responsibilities",
+            "Projects"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 71.56,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "52.7% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "45.5% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.82) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 2183,
+            "word_count": 335,
+            "line_count": 104,
+            "non_empty_line_count": 55,
+            "short_line_count": 29,
+            "short_line_ratio": 0.527273,
+            "fragmented_line_count": 25,
+            "fragmented_line_ratio": 0.454545,
+            "mean_line_length": 37.82,
+            "median_line_length": 17.0,
+            "line_length_stdev": 68.98,
+            "line_length_cv": 1.82398,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 98.2,
+      "duration_ms": 101032.6,
+      "text": "Mr. Praveen\n\nS/O Mr. Shiv Prasad\n\nPERMANENT ADDRESS\n\nVillage :\n\nRanapur Pure Jhagru\n\nPost :\n\nRanapur\n\nDistrict :\n\nAyodhya Pin-224164\n\nContact No :\n\n8423031170, 9532870993\n\nE-mail id :\n\npy6664089@gmail.com\n\nCAREER OBJECTIVE:-\n\nTo work with an organization, which match my profile & provide me a platform to develop my skills at grow in proportion to my quality endeavors in the leaning phase of my career.\n\nEDUCATIONAL QUALIFICATION:-\n\n- High school Passed in 2010 From with Second Division.\n- Intermediate Passed in 2012 from with First Division.\n- B.A. Passed in 2015 form with First Division.\n\nTECHNICAL QUALIFICATION:-\n\n- PG Diploma Computer Hardware and Networking (Year-2022-2023).\n- CCC (Course on Computer Concepts)\n- Basic Computer Knowledge (Hindi & English) Typing.\n\nEXPERIENCE:-\n\n- CURRENT COMPANY - Client side Cholamandalam pay role of the SP Solution point.\n\nDate - 03-January-2023 - Till now.\n\nDesignation - Customer Support Engineer.\n\n- 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow Date - 13th, Jun-2021 - 20-January-2022\n\nCURRICULUM VITAE\n\nA\n\nSkill:- Ticketing Tools - ITSM and Service now. OS installation and hardware Troubleshooting, Outlook configuration, Manage LAN, Wan, Wi-Fi and internet connectivity Coordinating with ISP OEM Vendor for Link issue. Provide L1 & L2 troubleshooting on hardware and software related issues. Resolving issue on time with in SLA day to day it issue resolved Maintain IT Assets for all IP Devices Knowledge of CCTV and Access control hardware and software. Handling switches and router\n\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\n\nOutlook support, GWS migration support, Physical Asset verification, Remote support, EUC support, Maintain daily Branch check list.\n\nSTRENGTH:-\n\n- Positive attitude\n- Confidence\n\nPERSONAL PROFILE:-\n\nFather's name\n\n: Mr. Shiv Prasad\n\nMother's Name\n\n: Mrs. Sumitra Devi\n\nDate of Birth :\n\n15 July 1996\n\nGender\n\n: Male\n\nLanguage :\n\nEnglish & Hindi\n\nMarital Status\n\n: Unmarried\n\nNationality :\n\nIndian\n\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of my knowledge & belief.\n\nDate :\n\nPlace - Mr. Praveen",
+      "extracted_text": "Mr. Praveen\n\nS/O Mr. Shiv Prasad\n\nPERMANENT ADDRESS\n\nVillage :\n\nRanapur Pure Jhagru\n\nPost :\n\nRanapur\n\nDistrict :\n\nAyodhya Pin-224164\n\nContact No :\n\n8423031170, 9532870993\n\nE-mail id :\n\npy6664089@gmail.com\n\nCAREER OBJECTIVE:-\n\nTo work with an organization, which match my profile & provide me a platform to develop my skills at grow in proportion to my quality endeavors in the leaning phase of my career.\n\nEDUCATIONAL QUALIFICATION:-\n\n- High school Passed in 2010 From with Second Division.\n- Intermediate Passed in 2012 from with First Division.\n- B.A. Passed in 2015 form with First Division.\n\nTECHNICAL QUALIFICATION:-\n\n- PG Diploma Computer Hardware and Networking (Year-2022-2023).\n- CCC (Course on Computer Concepts)\n- Basic Computer Knowledge (Hindi & English) Typing.\n\nEXPERIENCE:-\n\n- CURRENT COMPANY - Client side Cholamandalam pay role of the SP Solution point.\n\nDate - 03-January-2023 - Till now.\n\nDesignation - Customer Support Engineer.\n\n- 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow Date - 13th, Jun-2021 - 20-January-2022\n\nCURRICULUM VITAE\n\nA\n\nSkill:- Ticketing Tools - ITSM and Service now. OS installation and hardware Troubleshooting, Outlook configuration, Manage LAN, Wan, Wi-Fi and internet connectivity Coordinating with ISP OEM Vendor for Link issue. Provide L1 & L2 troubleshooting on hardware and software related issues. Resolving issue on time with in SLA day to day it issue resolved Maintain IT Assets for all IP Devices Knowledge of CCTV and Access control hardware and software. Handling switches and router\n\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\n\nOutlook support, GWS migration support, Physical Asset verification, Remote support, EUC support, Maintain daily Branch check list.\n\nSTRENGTH:-\n\n- Positive attitude\n- Confidence\n\nPERSONAL PROFILE:-\n\nFather's name\n\n: Mr. Shiv Prasad\n\nMother's Name\n\n: Mrs. Sumitra Devi\n\nDate of Birth :\n\n15 July 1996\n\nGender\n\n: Male\n\nLanguage :\n\nEnglish & Hindi\n\nMarital Status\n\n: Unmarried\n\nNationality :\n\nIndian\n\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of my knowledge & belief.\n\nDate :\n\nPlace - Mr. Praveen",
+      "extracted_text_length": 2183,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Mr. Praveen\n\nS/O Mr. Shiv Prasad\n\nPERMANENT ADDRESS\n\nVillage :\n\nRanapur Pure Jhagru\n\nPost :\n\nRanapur\n\nDistrict :\n\nAyodhya Pin-224164\n\nContact No :\n\n8423031170, 9532870993\n\nE-mail id :\n\npy6664089@gmail.com\n\nCAREER OBJECTIVE:-\n\nTo work with an organization, which match my profile & provide me a platform to develop my skills at grow in proportion to my quality endeavors in the leaning phase of my career.\n\nEDUCATIONAL QUALIFICATION:-\n\n- High school Passed in 2010 From with Second Division.\n- Intermediate Passed in 2012 from with First Division.\n- B.A. Passed in 2015 form with First Division.\n\nTECHNICAL QUALIFICATION:-\n\n- PG Diploma Computer Hardware and Networking (Year-2022-2023).\n- CCC (Course on Computer Concepts)\n- Basic Computer Knowledge (Hindi & English) Typing.\n\nEXPERIENCE:-\n\n- CURRENT COMPANY - Client side Cholamandalam pay role of the SP Solution point.\n\nDate - 03-January-2023 - Till now.\n\nDesignation - Customer Support Engineer.\n\n- 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow Date - 13th, Jun-2021 - 20-January-2022\n\nCURRICULUM VITAE\n\nA\n\nSkill:- Ticketing Tools - ITSM and Service now. OS installation and hardware Troubleshooting, Outlook configuration, Manage LAN, Wan, Wi-Fi and internet connectivity Coordinating with ISP OEM Vendor for Link issue. Provide L1 & L2 troubleshooting on hardware and software related issues. Resolving issue on time with in SLA day to day it issue resolved Maintain IT Assets for all IP Devices Knowledge of CCTV and Access control hardware and software. Handling switches and router\n\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\n\nOutlook support, GWS migration support, Physical Asset verification, Remote support, EUC support, Maintain daily Branch check list.\n\nSTRENGTH:-\n\n- Positive attitude\n- Confidence\n\nPERSONAL PROFILE:-\n\nFather's name\n\n: Mr. Shiv Prasad\n\nMother's Name\n\n: Mrs. Sumitra Devi\n\nDate of Birth :\n\n15 July 1996\n\nGender\n\n: Male\n\nLanguage :\n\nEnglish & Hindi\n\nMarital Status\n\n: Unmarried\n\nNationality :\n\nIndian\n\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of my knowledge & belief.\n\nDate :\n\nPlace - Mr. Praveen"
+    }
+  ],
+  "attempt_count": 3,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "extracted_text": "Mr. Praveen\n\nS/O Mr. Shiv Prasad\n\nPERMANENT ADDRESS\n\nVillage :\n\nRanapur Pure Jhagru\n\nPost :\n\nRanapur\n\nDistrict :\n\nAyodhya Pin-224164\n\nContact No :\n\n8423031170, 9532870993\n\nE-mail id :\n\npy6664089@gmail.com\n\nCAREER OBJECTIVE:-\n\nTo work with an organization, which match my profile & provide me a platform to develop my skills at grow in proportion to my quality endeavors in the leaning phase of my career.\n\nEDUCATIONAL QUALIFICATION:-\n\n- High school Passed in 2010 From with Second Division.\n- Intermediate Passed in 2012 from with First Division.\n- B.A. Passed in 2015 form with First Division.\n\nTECHNICAL QUALIFICATION:-\n\n- PG Diploma Computer Hardware and Networking (Year-2022-2023).\n- CCC (Course on Computer Concepts)\n- Basic Computer Knowledge (Hindi & English) Typing.\n\nEXPERIENCE:-\n\n- CURRENT COMPANY - Client side Cholamandalam pay role of the SP Solution point.\n\nDate - 03-January-2023 - Till now.\n\nDesignation - Customer Support Engineer.\n\n- 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow Date - 13th, Jun-2021 - 20-January-2022\n\nCURRICULUM VITAE\n\nA\n\nSkill:- Ticketing Tools - ITSM and Service now. OS installation and hardware Troubleshooting, Outlook configuration, Manage LAN, Wan, Wi-Fi and internet connectivity Coordinating with ISP OEM Vendor for Link issue. Provide L1 & L2 troubleshooting on hardware and software related issues. Resolving issue on time with in SLA day to day it issue resolved Maintain IT Assets for all IP Devices Knowledge of CCTV and Access control hardware and software. Handling switches and router\n\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\n\nOutlook support, GWS migration support, Physical Asset verification, Remote support, EUC support, Maintain daily Branch check list.\n\nSTRENGTH:-\n\n- Positive attitude\n- Confidence\n\nPERSONAL PROFILE:-\n\nFather's name\n\n: Mr. Shiv Prasad\n\nMother's Name\n\n: Mrs. Sumitra Devi\n\nDate of Birth :\n\n15 July 1996\n\nGender\n\n: Male\n\nLanguage :\n\nEnglish & Hindi\n\nMarital Status\n\n: Unmarried\n\nNationality :\n\nIndian\n\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of my knowledge & belief.\n\nDate :\n\nPlace - Mr. Praveen",
+  "final_extracted_text": "Mr. Praveen\n\nS/O Mr. Shiv Prasad\n\nPERMANENT ADDRESS\n\nVillage :\n\nRanapur Pure Jhagru\n\nPost :\n\nRanapur\n\nDistrict :\n\nAyodhya Pin-224164\n\nContact No :\n\n8423031170, 9532870993\n\nE-mail id :\n\npy6664089@gmail.com\n\nCAREER OBJECTIVE:-\n\nTo work with an organization, which match my profile & provide me a platform to develop my skills at grow in proportion to my quality endeavors in the leaning phase of my career.\n\nEDUCATIONAL QUALIFICATION:-\n\n- High school Passed in 2010 From with Second Division.\n- Intermediate Passed in 2012 from with First Division.\n- B.A. Passed in 2015 form with First Division.\n\nTECHNICAL QUALIFICATION:-\n\n- PG Diploma Computer Hardware and Networking (Year-2022-2023).\n- CCC (Course on Computer Concepts)\n- Basic Computer Knowledge (Hindi & English) Typing.\n\nEXPERIENCE:-\n\n- CURRENT COMPANY - Client side Cholamandalam pay role of the SP Solution point.\n\nDate - 03-January-2023 - Till now.\n\nDesignation - Customer Support Engineer.\n\n- 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow Date - 13th, Jun-2021 - 20-January-2022\n\nCURRICULUM VITAE\n\nA\n\nSkill:- Ticketing Tools - ITSM and Service now. OS installation and hardware Troubleshooting, Outlook configuration, Manage LAN, Wan, Wi-Fi and internet connectivity Coordinating with ISP OEM Vendor for Link issue. Provide L1 & L2 troubleshooting on hardware and software related issues. Resolving issue on time with in SLA day to day it issue resolved Maintain IT Assets for all IP Devices Knowledge of CCTV and Access control hardware and software. Handling switches and router\n\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\n\nOutlook support, GWS migration support, Physical Asset verification, Remote support, EUC support, Maintain daily Branch check list.\n\nSTRENGTH:-\n\n- Positive attitude\n- Confidence\n\nPERSONAL PROFILE:-\n\nFather's name\n\n: Mr. Shiv Prasad\n\nMother's Name\n\n: Mrs. Sumitra Devi\n\nDate of Birth :\n\n15 July 1996\n\nGender\n\n: Male\n\nLanguage :\n\nEnglish & Hindi\n\nMarital Status\n\n: Unmarried\n\nNationality :\n\nIndian\n\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of my knowledge & belief.\n\nDate :\n\nPlace - Mr. Praveen",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "WARNING",
+  "final_quality_status": "WARNING",
+  "quality": {
+    "status": "WARNING",
+    "document_id": "568bead6-c852-4c9d-a86c-5584bf42de1f",
+    "source_tool": "docling",
+    "attempt_id": "568bead6-c852-4c9d-a86c-5584bf42de1f-attempt-3",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 2183,
+        "word_count": 335,
+        "line_count": 104,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.175447,
+        "symbol_count": 0,
+        "symbol_ratio": 0.0,
+        "max_repeated_char_run": 3,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 82.0,
+      "flags": [
+        "MISSING_RECOMMENDED_SECTION",
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 2183,
+        "word_count": 335,
+        "configured_section_count": 8,
+        "detected_count": 5,
+        "missing_count": 3,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Work Experience",
+          "Education",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Skills",
+          "Responsibilities",
+          "Projects"
+        ],
+        "missing_required": [],
+        "missing_recommended": [
+          "Skills"
+        ],
+        "missing_optional": [
+          "Responsibilities",
+          "Projects"
+        ],
+        "matched_aliases": {
+          "Contact Information": "permanent address",
+          "Summary": "career objective",
+          "Work Experience": "experience",
+          "Education": "educational qualification",
+          "Certifications": "technical qualification"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": "PERMANENT ADDRESS",
+            "detection_method": "heading",
+            "line_number": 5,
+            "evidence": "PERMANENT ADDRESS",
+            "confidence": 0.98
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "CAREER OBJECTIVE:-",
+            "detection_method": "heading",
+            "line_number": 27,
+            "evidence": "CAREER OBJECTIVE:-",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "EXPERIENCE:-",
+            "detection_method": "heading",
+            "line_number": 43,
+            "evidence": "EXPERIENCE:-",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATIONAL QUALIFICATION:-",
+            "detection_method": "heading",
+            "line_number": 31,
+            "evidence": "EDUCATIONAL QUALIFICATION:-",
+            "confidence": 0.98
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": "TECHNICAL QUALIFICATION:-",
+            "detection_method": "heading",
+            "line_number": 37,
+            "evidence": "TECHNICAL QUALIFICATION:-",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Certifications": "detected",
+          "Skills": "missing",
+          "Responsibilities": "missing",
+          "Projects": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Work Experience",
+        "Education",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Skills",
+        "Responsibilities",
+        "Projects"
+      ],
+      "missing_required": [],
+      "missing_recommended": [
+        "Skills"
+      ],
+      "missing_optional": [
+        "Responsibilities",
+        "Projects"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 71.56,
+      "flags": [
+        "EXCESSIVE_SHORT_LINES",
+        "FRAGMENTED_LINES",
+        "HIGH_LINE_LENGTH_VARIATION"
+      ],
+      "reasons": [
+        "52.7% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+        "45.5% of lines are 15 characters or shorter.",
+        "Line lengths vary unusually (coefficient of variation 1.82) — a possible sign of mixed or merged column text."
+      ],
+      "metrics": {
+        "char_count": 2183,
+        "word_count": 335,
+        "line_count": 104,
+        "non_empty_line_count": 55,
+        "short_line_count": 29,
+        "short_line_ratio": 0.527273,
+        "fragmented_line_count": 25,
+        "fragmented_line_ratio": 0.454545,
+        "mean_line_length": 37.82,
+        "median_line_length": 17.0,
+        "line_length_stdev": 68.98,
+        "line_length_cv": 1.82398,
+        "broken_sentence_count": 0,
+        "broken_sentence_ratio": 0.0,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Selected 'docling' with the highest quality score 98.2 (threshold 60.0).",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 50616.49,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": 100.59,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 101032.6,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=94.4, pymupdf=94.0, docling=98.2",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected 'docling' with the highest quality score 98.2 (threshold 60.0).",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Docling text normalized: 2183 → 2183 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Contact Information Recovery",
+      "type": "contact_recovery",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Contact information missing and could not be recovered from any source (extractor outputs, first-page text layer, OCR). Still missing: location.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 36137.91,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 160612.0,
+      "message": "Muse AI produced validated Resume JSON from the Docling extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 160612.0,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "docling",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Mr. Praveen\n\nS/O Mr. Shiv Prasad\n\nPERMANENT ADDRESS\n\nVillage :\n\nRanapur Pure Jhagru\n\nPost :\n\nRanapur\n\nDistrict :\n\nAyodhya Pin-224164\n\nContact No :\n\n8423031170, 9532870993\n\nE-mail id :\n\npy6664089@gmail.com\n\nCAREER OBJECTIVE:-\n\nTo work with an organization, which match my profile & provide me a platform to develop my skills at grow in proportion to my quality endeavors in the leaning phase of my career.\n\nEDUCATIONAL QUALIFICATION:-\n\n- High school Passed in 2010 From with Second Division.\n- Intermediate Passed in 2012 from with First Division.\n- B.A. Passed in 2015 form with First Division.\n\nTECHNICAL QUALIFICATION:-\n\n- PG Diploma Computer Hardware and Networking (Year-2022-2023).\n- CCC (Course on Computer Concepts)\n- Basic Computer Knowledge (Hindi & English) Typing.\n\nEXPERIENCE:-\n\n- CURRENT COMPANY - Client side Cholamandalam pay role of the SP Solution point.\n\nDate - 03-January-2023 - Till now.\n\nDesignation - Customer Support Engineer.\n\n- 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow Date - 13th, Jun-2021 - 20-January-2022\n\nCURRICULUM VITAE\n\nA\n\nSkill:- Ticketing Tools - ITSM and Service now. OS installation and hardware Troubleshooting, Outlook configuration, Manage LAN, Wan, Wi-Fi and internet connectivity Coordinating with ISP OEM Vendor for Link issue. Provide L1 & L2 troubleshooting on hardware and software related issues. Resolving issue on time with in SLA day to day it issue resolved Maintain IT Assets for all IP Devices Knowledge of CCTV and Access control hardware and software. Handling switches and router\n\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\n\nOutlook support, GWS migration support, Physical Asset verification, Remote support, EUC support, Maintain daily Branch check list.\n\nSTRENGTH:-\n\n- Positive attitude\n- Confidence\n\nPERSONAL PROFILE:-\n\nFather's name\n\n: Mr. Shiv Prasad\n\nMother's Name\n\n: Mrs. Sumitra Devi\n\nDate of Birth :\n\n15 July 1996\n\nGender\n\n: Male\n\nLanguage :\n\nEnglish & Hindi\n\nMarital Status\n\n: Unmarried\n\nNationality :\n\nIndian\n\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of my knowledge & belief.\n\nDate :\n\nPlace - Mr. Praveen",
+    "normalized_text": "Mr. Praveen\n\nS/O Mr. Shiv Prasad\n\nPERMANENT ADDRESS\n\nVillage :\n\nRanapur Pure Jhagru\n\nPost :\n\nRanapur\n\nDistrict :\n\nAyodhya Pin-224164\n\nContact No :\n\n8423031170, 9532870993\n\nE-mail id :\n\npy6664089@gmail.com\n\nCAREER OBJECTIVE:-\n\nTo work with an organization, which match my profile & provide me a platform to develop my skills at grow in proportion to my quality endeavors in the leaning phase of my career.\n\nEDUCATIONAL QUALIFICATION:-\n\n- High school Passed in 2010 From with Second Division.\n- Intermediate Passed in 2012 from with First Division.\n- B.A. Passed in 2015 form with First Division.\n\nTECHNICAL QUALIFICATION:-\n\n- PG Diploma Computer Hardware and Networking (Year-2022-2023).\n- CCC (Course on Computer Concepts)\n- Basic Computer Knowledge (Hindi & English) Typing.\n\nEXPERIENCE:-\n\n- CURRENT COMPANY - Client side Cholamandalam pay role of the SP Solution point.\n\nDate - 03-January-2023 - Till now.\n\nDesignation - Customer Support Engineer.\n\n- 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow Date - 13th, Jun-2021 - 20-January-2022\n\nCURRICULUM VITAE\n\nA\n\nSkill:- Ticketing Tools - ITSM and Service now. OS installation and hardware Troubleshooting, Outlook configuration, Manage LAN, Wan, Wi-Fi and internet connectivity Coordinating with ISP OEM Vendor for Link issue. Provide L1 & L2 troubleshooting on hardware and software related issues. Resolving issue on time with in SLA day to day it issue resolved Maintain IT Assets for all IP Devices Knowledge of CCTV and Access control hardware and software. Handling switches and router\n\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\n\nOutlook support, GWS migration support, Physical Asset verification, Remote support, EUC support, Maintain daily Branch check list.\n\nSTRENGTH:-\n\n- Positive attitude\n- Confidence\n\nPERSONAL PROFILE:-\n\nFather's name\n\n: Mr. Shiv Prasad\n\nMother's Name\n\n: Mrs. Sumitra Devi\n\nDate of Birth :\n\n15 July 1996\n\nGender\n\n: Male\n\nLanguage :\n\nEnglish & Hindi\n\nMarital Status\n\n: Unmarried\n\nNationality :\n\nIndian\n\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of my knowledge & belief.\n\nDate :\n\nPlace - Mr. Praveen",
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "original_chars": 2183,
+    "normalized_chars": 2183,
+    "original_estimated_tokens": 546,
+    "normalized_estimated_tokens": 546,
+    "estimated_reduction_percent": 0.0
+  },
+  "contact_recovery": {
+    "status": "not_recovered",
+    "selected_extractor": "docling",
+    "present_before": [
+      "phone",
+      "email"
+    ],
+    "missing_before": [
+      "location"
+    ],
+    "recovered": {},
+    "still_missing": [
+      "location"
+    ],
+    "sources_tried": [
+      {
+        "source": "Tika",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "PyMuPDF",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "Docling",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "PyMuPDF",
+        "method": "first_page_text_layer",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "OCR",
+        "method": "ocr_first_page",
+        "found": [],
+        "error": null
+      }
+    ],
+    "applied": false,
+    "pre_recovery_normalized_text": null,
+    "at": "2026-11-11T07:07:35.059468+00:00"
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 36137.91,
+      "input_tokens": 1356,
+      "output_tokens": 3350,
+      "total_tokens": 4706,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1356,
+    "output_tokens": 3350,
+    "total_tokens": 4706,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 36137.91,
+    "usage": {
+      "completion_tokens": 3350,
+      "prompt_tokens": 1356,
+      "total_tokens": 4706,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2828
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "docling",
+      "status": "applied",
+      "original_chars": 2183,
+      "normalized_chars": 2183,
+      "estimated_reduction_percent": 0.0,
+      "normalization_applied": false,
+      "normalization_steps": [],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "docling",
+  "selected_quality_score": 98.2,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 94.4,
+      "status": "success",
+      "word_count": 339,
+      "char_count": 2298,
+      "meaningful_char_count": 1925,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0968,
+      "readability_score": 89.4,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary"
+        ]
+      },
+      "structure": {
+        "heading_count": 1,
+        "paragraph_count": 8,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.8938,
+        "cleanliness": 1.0,
+        "non_duplication": 0.9032,
+        "completeness": 1.0,
+        "structure": 0.7
+      }
+    },
+    "pymupdf": {
+      "extractor": "pymupdf",
+      "quality_score": 94.0,
+      "status": "success",
+      "word_count": 328,
+      "char_count": 2262,
+      "meaningful_char_count": 1793,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.1392,
+      "readability_score": 89.3,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary"
+        ]
+      },
+      "structure": {
+        "heading_count": 1,
+        "paragraph_count": 20,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.8927,
+        "cleanliness": 1.0,
+        "non_duplication": 0.8608,
+        "completeness": 1.0,
+        "structure": 0.7
+      }
+    },
+    "docling": {
+      "extractor": "docling",
+      "quality_score": 98.2,
+      "status": "success",
+      "word_count": 335,
+      "char_count": 2183,
+      "meaningful_char_count": 1800,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 87.8,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary"
+        ]
+      },
+      "structure": {
+        "heading_count": 1,
+        "paragraph_count": 50,
+        "bullet_count": 10
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.8782,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 1.0,
+        "structure": 1.0
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 2183,
+    "normalized_chars": 2183,
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "error": null,
+    "original_text": "Mr. Praveen\n\nS/O Mr. Shiv Prasad\n\nPERMANENT ADDRESS\n\nVillage :\n\nRanapur Pure Jhagru\n\nPost :\n\nRanapur\n\nDistrict :\n\nAyodhya Pin-224164\n\nContact No :\n\n8423031170, 9532870993\n\nE-mail id :\n\npy6664089@gmail.com\n\nCAREER OBJECTIVE:-\n\nTo work with an organization, which match my profile & provide me a platform to develop my skills at grow in proportion to my quality endeavors in the leaning phase of my career.\n\nEDUCATIONAL QUALIFICATION:-\n\n- High school Passed in 2010 From with Second Division.\n- Intermediate Passed in 2012 from with First Division.\n- B.A. Passed in 2015 form with First Division.\n\nTECHNICAL QUALIFICATION:-\n\n- PG Diploma Computer Hardware and Networking (Year-2022-2023).\n- CCC (Course on Computer Concepts)\n- Basic Computer Knowledge (Hindi & English) Typing.\n\nEXPERIENCE:-\n\n- CURRENT COMPANY - Client side Cholamandalam pay role of the SP Solution point.\n\nDate - 03-January-2023 - Till now.\n\nDesignation - Customer Support Engineer.\n\n- 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow Date - 13th, Jun-2021 - 20-January-2022\n\nCURRICULUM VITAE\n\nA\n\nSkill:- Ticketing Tools - ITSM and Service now. OS installation and hardware Troubleshooting, Outlook configuration, Manage LAN, Wan, Wi-Fi and internet connectivity Coordinating with ISP OEM Vendor for Link issue. Provide L1 & L2 troubleshooting on hardware and software related issues. Resolving issue on time with in SLA day to day it issue resolved Maintain IT Assets for all IP Devices Knowledge of CCTV and Access control hardware and software. Handling switches and router\n\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\n\nOutlook support, GWS migration support, Physical Asset verification, Remote support, EUC support, Maintain daily Branch check list.\n\nSTRENGTH:-\n\n- Positive attitude\n- Confidence\n\nPERSONAL PROFILE:-\n\nFather's name\n\n: Mr. Shiv Prasad\n\nMother's Name\n\n: Mrs. Sumitra Devi\n\nDate of Birth :\n\n15 July 1996\n\nGender\n\n: Male\n\nLanguage :\n\nEnglish & Hindi\n\nMarital Status\n\n: Unmarried\n\nNationality :\n\nIndian\n\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of my knowledge & belief.\n\nDate :\n\nPlace - Mr. Praveen",
+    "normalized_text": "Mr. Praveen\n\nS/O Mr. Shiv Prasad\n\nPERMANENT ADDRESS\n\nVillage :\n\nRanapur Pure Jhagru\n\nPost :\n\nRanapur\n\nDistrict :\n\nAyodhya Pin-224164\n\nContact No :\n\n8423031170, 9532870993\n\nE-mail id :\n\npy6664089@gmail.com\n\nCAREER OBJECTIVE:-\n\nTo work with an organization, which match my profile & provide me a platform to develop my skills at grow in proportion to my quality endeavors in the leaning phase of my career.\n\nEDUCATIONAL QUALIFICATION:-\n\n- High school Passed in 2010 From with Second Division.\n- Intermediate Passed in 2012 from with First Division.\n- B.A. Passed in 2015 form with First Division.\n\nTECHNICAL QUALIFICATION:-\n\n- PG Diploma Computer Hardware and Networking (Year-2022-2023).\n- CCC (Course on Computer Concepts)\n- Basic Computer Knowledge (Hindi & English) Typing.\n\nEXPERIENCE:-\n\n- CURRENT COMPANY - Client side Cholamandalam pay role of the SP Solution point.\n\nDate - 03-January-2023 - Till now.\n\nDesignation - Customer Support Engineer.\n\n- 1 YEAR In NSEIT LTD For The Position Of Associate In Lucknow Date - 13th, Jun-2021 - 20-January-2022\n\nCURRICULUM VITAE\n\nA\n\nSkill:- Ticketing Tools - ITSM and Service now. OS installation and hardware Troubleshooting, Outlook configuration, Manage LAN, Wan, Wi-Fi and internet connectivity Coordinating with ISP OEM Vendor for Link issue. Provide L1 & L2 troubleshooting on hardware and software related issues. Resolving issue on time with in SLA day to day it issue resolved Maintain IT Assets for all IP Devices Knowledge of CCTV and Access control hardware and software. Handling switches and router\n\nNetwork Printer, AP configuration, Extender Configuration , Thunderbird and\n\nOutlook support, GWS migration support, Physical Asset verification, Remote support, EUC support, Maintain daily Branch check list.\n\nSTRENGTH:-\n\n- Positive attitude\n- Confidence\n\nPERSONAL PROFILE:-\n\nFather's name\n\n: Mr. Shiv Prasad\n\nMother's Name\n\n: Mrs. Sumitra Devi\n\nDate of Birth :\n\n15 July 1996\n\nGender\n\n: Male\n\nLanguage :\n\nEnglish & Hindi\n\nMarital Status\n\n: Unmarried\n\nNationality :\n\nIndian\n\nDECLARATION\n\nI hereby declare that all true above information furnished by me is correct the best of my knowledge & belief.\n\nDate :\n\nPlace - Mr. Praveen"
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "Mr. Praveen",
+      "email": "py6664089@gmail.com",
+      "phone": "8423031170, 9532870993",
+      "location": "Village Ranapur Pure Jhagru, Post Ranapur, District Ayodhya Pin-224164",
+      "summary": "To work with an organization, which match my profile & provide me a platform to develop my skills at grow in proportion to my quality endeavors in the leaning phase of my career.",
+      "skills": {
+        "technical_skills": [
+          "Computer Hardware and Networking",
+          "OS installation",
+          "hardware Troubleshooting",
+          "Outlook configuration",
+          "Manage LAN, Wan, Wi-Fi and internet connectivity",
+          "L1 & L2 troubleshooting on hardware and software",
+          "IT Assets maintenance",
+          "CCTV",
+          "Access control hardware and software",
+          "switches and router handling",
+          "Network Printer",
+          "AP configuration",
+          "Extender Configuration",
+          "Thunderbird support",
+          "Outlook support",
+          "GWS migration support",
+          "Physical Asset verification",
+          "Remote support",
+          "EUC support",
+          "Basic Computer Knowledge",
+          "Hindi & English Typing"
+        ],
+        "soft_skills": [
+          "Positive attitude",
+          "Confidence"
+        ],
+        "tools": [
+          "ITSM",
+          "Service now"
+        ],
+        "taxonomy_skills": [],
+        "other_skills": []
+      },
+      "experience": [
+        {
+          "title": "Customer Support Engineer",
+          "company": "SP Solution point",
+          "location": "",
+          "start_date": "03-January-2023",
+          "end_date": "Till now",
+          "highlights": []
+        },
+        {
+          "title": "Associate",
+          "company": "NSEIT LTD",
+          "location": "Lucknow",
+          "start_date": "13th, Jun-2021",
+          "end_date": "20-January-2022",
+          "highlights": []
+        }
+      ],
+      "education": [
+        {
+          "degree": "High school",
+          "institution": "",
+          "location": "",
+          "start_date": "",
+          "end_date": "2010"
+        },
+        {
+          "degree": "Intermediate",
+          "institution": "",
+          "location": "",
+          "start_date": "",
+          "end_date": "2012"
+        },
+        {
+          "degree": "B.A.",
+          "institution": "",
+          "location": "",
+          "start_date": "",
+          "end_date": "2015"
+        },
+        {
+          "degree": "PG Diploma Computer Hardware and Networking",
+          "institution": "",
+          "location": "",
+          "start_date": "2022",
+          "end_date": "2023"
+        }
+      ],
+      "certifications": [
+        "CCC (Course on Computer Concepts)"
+      ],
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "links": []
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 36137.91,
+    "usage": {
+      "completion_tokens": 3350,
+      "prompt_tokens": 1356,
+      "total_tokens": 4706,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2828
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "Mr. Praveen",
+    "email": "py6664089@gmail.com",
+    "phone": "8423031170, 9532870993",
+    "location": "Village Ranapur Pure Jhagru, Post Ranapur, District Ayodhya Pin-224164",
+    "summary": "To work with an organization, which match my profile & provide me a platform to develop my skills at grow in proportion to my quality endeavors in the leaning phase of my career.",
+    "skills": {
+      "technical_skills": [
+        "Computer Hardware and Networking",
+        "OS installation",
+        "hardware Troubleshooting",
+        "Outlook configuration",
+        "Manage LAN, Wan, Wi-Fi and internet connectivity",
+        "L1 & L2 troubleshooting on hardware and software",
+        "IT Assets maintenance",
+        "CCTV",
+        "Access control hardware and software",
+        "switches and router handling",
+        "Network Printer",
+        "AP configuration",
+        "Extender Configuration",
+        "Thunderbird support",
+        "Outlook support",
+        "GWS migration support",
+        "Physical Asset verification",
+        "Remote support",
+        "EUC support",
+        "Basic Computer Knowledge",
+        "Hindi & English Typing"
+      ],
+      "soft_skills": [
+        "Positive attitude",
+        "Confidence"
+      ],
+      "tools": [
+        "ITSM",
+        "Service now"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Customer Support Engineer",
+        "company": "SP Solution point",
+        "location": "",
+        "start_date": "03-January-2023",
+        "end_date": "Till now",
+        "highlights": []
+      },
+      {
+        "title": "Associate",
+        "company": "NSEIT LTD",
+        "location": "Lucknow",
+        "start_date": "13th, Jun-2021",
+        "end_date": "20-January-2022",
+        "highlights": []
+      }
+    ],
+    "education": [
+      {
+        "degree": "High school",
+        "institution": "",
+        "location": "",
+        "start_date": "",
+        "end_date": "2010"
+      },
+      {
+        "degree": "Intermediate",
+        "institution": "",
+        "location": "",
+        "start_date": "",
+        "end_date": "2012"
+      },
+      {
+        "degree": "B.A.",
+        "institution": "",
+        "location": "",
+        "start_date": "",
+        "end_date": "2015"
+      },
+      {
+        "degree": "PG Diploma Computer Hardware and Networking",
+        "institution": "",
+        "location": "",
+        "start_date": "2022",
+        "end_date": "2023"
+      }
+    ],
+    "certifications": [
+      "CCC (Course on Computer Concepts)"
+    ],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "links": []
+  },
+  "resume_json": {
+    "full_name": "Mr. Praveen",
+    "email": "py6664089@gmail.com",
+    "phone": "8423031170, 9532870993",
+    "location": "Village Ranapur Pure Jhagru, Post Ranapur, District Ayodhya Pin-224164",
+    "summary": "To work with an organization, which match my profile & provide me a platform to develop my skills at grow in proportion to my quality endeavors in the leaning phase of my career.",
+    "skills": {
+      "technical_skills": [
+        "Computer Hardware and Networking",
+        "OS installation",
+        "hardware Troubleshooting",
+        "Outlook configuration",
+        "Manage LAN, Wan, Wi-Fi and internet connectivity",
+        "L1 & L2 troubleshooting on hardware and software",
+        "IT Assets maintenance",
+        "CCTV",
+        "Access control hardware and software",
+        "switches and router handling",
+        "Network Printer",
+        "AP configuration",
+        "Extender Configuration",
+        "Thunderbird support",
+        "Outlook support",
+        "GWS migration support",
+        "Physical Asset verification",
+        "Remote support",
+        "EUC support",
+        "Basic Computer Knowledge",
+        "Hindi & English Typing"
+      ],
+      "soft_skills": [
+        "Positive attitude",
+        "Confidence"
+      ],
+      "tools": [
+        "ITSM",
+        "Service now"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Customer Support Engineer",
+        "company": "SP Solution point",
+        "location": "",
+        "start_date": "03-January-2023",
+        "end_date": "Till now",
+        "highlights": []
+      },
+      {
+        "title": "Associate",
+        "company": "NSEIT LTD",
+        "location": "Lucknow",
+        "start_date": "13th, Jun-2021",
+        "end_date": "20-January-2022",
+        "highlights": []
+      }
+    ],
+    "education": [
+      {
+        "degree": "High school",
+        "institution": "",
+        "location": "",
+        "start_date": "",
+        "end_date": "2010"
+      },
+      {
+        "degree": "Intermediate",
+        "institution": "",
+        "location": "",
+        "start_date": "",
+        "end_date": "2012"
+      },
+      {
+        "degree": "B.A.",
+        "institution": "",
+        "location": "",
+        "start_date": "",
+        "end_date": "2015"
+      },
+      {
+        "degree": "PG Diploma Computer Hardware and Networking",
+        "institution": "",
+        "location": "",
+        "start_date": "2022",
+        "end_date": "2023"
+      }
+    ],
+    "certifications": [
+      "CCC (Course on Computer Concepts)"
+    ],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "links": []
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 101.1676,
+    "quality_seconds": 0.0264,
+    "normalization_seconds": 0.0108,
+    "recovery_seconds": 23.2652,
+    "llm_seconds": 36.1417,
+    "total_seconds": 160.612
+  },
+  "_stored_name": "568bead6-c852-4c9d-a86c-5584bf42de1f_SHJ-5412_SHC-381592.pdf"
+}

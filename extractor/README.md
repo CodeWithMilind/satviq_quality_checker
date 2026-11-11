@@ -191,8 +191,9 @@ The manager:
 - records every attempt in `result.attempts`, and if all fail, the
   final `error` summarises **every** failure reason (nothing is
   silently discarded);
-- deduplicates the configured order, honours `max_attempts` and a
-  total timeout budget (`max_total_timeout_seconds`);
+- deduplicates the configured order, honours `max_attempts` and
+  the configurable extraction safety budget
+  (`max_total_timeout_seconds`, a stuck-process guard);
 - skips disabled extractors.
 
 ### Configuring fallback

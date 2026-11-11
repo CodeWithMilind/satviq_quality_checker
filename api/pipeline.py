@@ -55,6 +55,7 @@ from __future__ import annotations
 import logging
 import mimetypes
 import os
+import threading
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -757,7 +758,13 @@ def _normalize_attempt_fields(record: dict[str, Any]) -> None:
         entry.setdefault("completed_at", None)
         entry.setdefault("error_type", None)
         entry.setdefault("error_traceback", None)
-        if "ocr" not in entry:
+        if not entry.get("ocr"):
+            # Lift the OCR facts from the attempt's stored extractor
+            # metadata when the attempt itself recorded none (the
+            # concurrent pipeline stored ocr=None while keeping the
+            # metadata). _ocr_info returns None when the metadata
+            # carries no OCR information, so attempts without OCR
+            # evidence honestly keep None — nothing is invented.
             entry["ocr"] = _ocr_info(entry.get("metadata"))
         entry.setdefault("timeout_seconds", None)
         entry.setdefault("model_config_id", None)
@@ -1647,7 +1654,14 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
     """Run the SIMPLE pipeline (pipeline.ExtractionPipeline) for one
     upload and build a record compatible with existing records.
 
-    Additive mode: the legacy chain remains the default elsewhere.
+    This is the DEFAULT pipeline for new uploads (see
+    :func:`process_resume_file`); the legacy chain runs only when
+    explicitly requested. The record carries the full integration
+    surface the frontend/API rely on: ``text_normalization`` (the
+    selected extractor's original + normalized text — the normalized
+    text is byte-for-byte what Muse received), ``resume_json`` +
+    ``resume_json_source`` + ``resume_json_meta``, ``muse_requests``
+    and ``token_usage`` from the actual Muse response.
     Never raises for bad documents -- failures are recorded.
     """
     path = Path(file_path)
@@ -1717,12 +1731,26 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
         quality_status = "FAIL"
 
     pipeline_status = result.get("status")
-    success = bool(pipeline_status == "success" or (pipeline_status == "llm_not_configured" and selected is not None))
+    # Extraction success and LLM success are tracked SEPARATELY:
+    # ``success`` means an extractor was selected and its text stored
+    # (the meaning the flag has on legacy records); the Muse outcome
+    # lives in ``llm`` / ``llm_status`` / ``resume_json_meta`` and
+    # never flips the extraction result.
+    success = selected is not None
 
     attempts: list[dict[str, Any]] = []
+    selected_qc_payload: dict[str, Any] | None = None
+    selected_qc_status: str | None = None
+    try:
+        _checker: QualityChecker | None = QualityChecker()
+    except Exception:
+        logger.exception("Quality Checker unavailable for simple-pipeline records")
+        _checker = None
+    # The extraction-only safety limit in force for this run
+    # (recorded on each attempt; never applies to Muse AI).
     timeout_seconds_val: float | None = None
     try:
-        timeout_seconds_val = float(pipe.config.per_extractor_timeout_seconds) if getattr(pipe, "config", None) is not None else None
+        timeout_seconds_val = float(pipe.config.per_extractor_timeout_seconds) if getattr(pipe, "config", None) is not None and pipe.config.per_extractor_timeout_seconds is not None else None
     except Exception:
         timeout_seconds_val = None
 
@@ -1753,6 +1781,29 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
         err_type = res.get("error_type")
         if res.get("status") == "timeout" and not err_type:
             err_type = "TimeoutError"
+        # Real Quality Checker report for this attempt's OWN text
+        # (the same checker the legacy pipeline uses), so simple
+        # records carry the same quality payload shape as legacy
+        # records. Presentation/record parity only — SELECTION
+        # already happened with the simple pipeline's own quality
+        # scores and is never re-decided here.
+        qc_payload: dict[str, Any] | None = None
+        qc_status: str | None = None
+        if is_success and text_val.strip() and _checker is not None:
+            try:
+                _report = _checker.check(
+                    text_val, document_id=resume_id, source_tool=name,
+                    attempt_id=f"{resume_id}-attempt-{index}")
+                qc_status = quality_status_for(_report, True)
+                qc_payload = _quality_payload(_report, qc_status)
+            except Exception:
+                logger.exception(
+                    "Quality Checker failed for simple-pipeline attempt %s", name)
+                qc_payload = None
+                qc_status = None
+        if is_selected:
+            selected_qc_payload = qc_payload
+            selected_qc_status = qc_status
         attempts.append({
             "attempt_id": f"{resume_id}-attempt-{index}",
             "resume_id": resume_id,
@@ -1767,9 +1818,10 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
             "decision_reason": decision_reason,
             "fallback_decision": decision,
             "fallback_reason": decision_reason,
-            "quality_status": None,
-            "quality": None,
-            "quality_checker_report": None,
+            "quality_status": qc_status,
+            "quality": qc_payload,
+            "quality_checker_report": qc_payload,
+            "quality_score": score_val,
             "duration_ms": duration_ms,
             "text": text_val,
             "extracted_text": text_val,
@@ -1783,13 +1835,19 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
             "completed_at": None,
             "timeout_seconds": timeout_seconds_val,
             "metadata": res.get("metadata") or {},
-            "ocr": None,
+            "ocr": _ocr_info(res.get("metadata")),
             "model_config_id": None,
             "provider": None,
             "model": None,
             "json_validation": None,
             "input_type": None,
         })
+
+    # The record's headline quality status is the Quality Checker's
+    # real status for the SELECTED extractor's text when the checker
+    # ran; the score-derived mapping above remains the fallback.
+    if selected_qc_status is not None:
+        quality_status = selected_qc_status
 
     selected_result = by_name.get(selected) if selected else None
     page_count = selected_result.get("page_count") if selected_result else None
@@ -1804,7 +1862,162 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
         except Exception:
             total_ms = None
 
-    # Pipeline trace -- simple, honest trace for the simple pipeline
+    # --- Selected normalized text (the EXACT text sent to Muse) -----
+    # The pipeline result carries the selected extractor's original
+    # text and its normalized form as separate top-level fields; the
+    # record's text_normalization block (the shape the frontend and
+    # legacy records use) is built from those exact strings and then
+    # PINNED to them, so the Selected Normalized Text tab shows
+    # byte-for-byte what Muse received — never a re-normalization
+    # that could drift from the sent text.
+    normalized_text = result.get("normalized_text")
+    if normalized_text is None:
+        normalized_text = original_text
+    norm_block = result.get("normalization") or {}
+    if selected is not None:
+        from .text_normalization import normalization_block as _make_norm_block
+
+        text_normalization = _make_norm_block(original_text, source=selected)
+        text_normalization["normalized_text"] = normalized_text
+        text_normalization["original_extracted_text"] = original_text
+        text_normalization["normalization_applied"] = bool(
+            norm_block.get("normalization_applied"))
+        text_normalization["normalization_steps"] = list(
+            norm_block.get("normalization_steps") or [])
+        if norm_block.get("status") == "success":
+            text_normalization["status"] = "applied"
+        elif text_normalization.get("status") == "applied":
+            text_normalization["status"] = "bypassed"
+            text_normalization["error"] = norm_block.get("error")
+    else:
+        text_normalization = {
+            "source": "none", "status": "unavailable", "error": None,
+            "original_extracted_text": None, "normalized_text": None,
+            "normalization_applied": False, "normalization_steps": [],
+            "original_chars": 0, "normalized_chars": 0,
+            "original_estimated_tokens": 0, "normalized_estimated_tokens": 0,
+            "estimated_reduction_percent": 0.0,
+        }
+    normalization_out = dict(norm_block)
+    normalization_out.setdefault("original_text", original_text)
+    normalization_out.setdefault("normalized_text", normalized_text)
+
+    # --- Contact Information Recovery: completeness re-check -------
+    # The pipeline's recovery stage may have corrected the selected
+    # normalized text (validated contact fields merged in before the
+    # Muse call). Re-run the Quality Checker against the CORRECTED
+    # text — the text actually sent to Muse — and let the selected
+    # attempt and the record quality show that updated result.
+    # Before/after completeness is preserved on the recovery block;
+    # the attempts' original extracted texts, the other attempts'
+    # reports and the selection itself are untouched.
+    recovery_block = result.get("contact_recovery")
+    if isinstance(recovery_block, dict) and recovery_block.get("applied"):
+        _corrected = text_normalization.get("normalized_text") or ""
+        _sel_attempt = next(
+            (a for a in attempts if a.get("is_final_selected")), None)
+        if _checker is not None and _sel_attempt is not None and _corrected:
+            def _comp_summary(payload: dict[str, Any] | None) -> dict[str, Any]:
+                comp = (payload or {}).get("completeness") or {}
+                metrics = comp.get("metrics") or {}
+                return {
+                    "score": comp.get("score"),
+                    "contact_information_detected":
+                        "Contact Information" in
+                        (metrics.get("detected_sections") or []),
+                    "missing_sections":
+                        metrics.get("missing_sections") or [],
+                }
+
+            try:
+                _report2 = _checker.check(
+                    _corrected, document_id=resume_id,
+                    source_tool=selected,
+                    attempt_id=_sel_attempt.get("attempt_id"))
+                _status2 = quality_status_for(_report2, True)
+                _payload2 = _quality_payload(_report2, _status2)
+                recovery_block["completeness_before"] = _comp_summary(
+                    selected_qc_payload)
+                recovery_block["completeness_after"] = _comp_summary(
+                    _payload2)
+                _sel_attempt["quality"] = _payload2
+                _sel_attempt["quality_checker_report"] = _payload2
+                _sel_attempt["quality_status"] = _status2
+                selected_qc_payload = _payload2
+                selected_qc_status = _status2
+                quality_status = _status2
+            except Exception:
+                logger.exception(
+                    "Completeness re-check after contact recovery "
+                    "failed for %s", resume_id)
+
+    # --- Muse AI outcome → persisted record fields --------------------
+    # The LLM block already carries the real outcome of the single
+    # Muse call (provider, model, validation, duration, usage,
+    # error). Map it onto the record fields the frontend/API have
+    # always used — resume_json_meta, muse_requests, token_usage —
+    # instead of dropping it (the previous build stored None/[] here,
+    # which is why the AI Output tab and token panel were empty even
+    # when Muse had run).
+    llm_block = result.get("llm") or {}
+    llm_status_str = llm_block.get("status")
+    resume_json = result.get("resume_data")
+    if resume_json is None and llm_status_str == "success":
+        resume_json = llm_block.get("resume_json")
+    if llm_status_str != "success":
+        resume_json = None
+    normalization_info = {
+        "source": selected, "status": text_normalization.get("status"),
+        "original_chars": text_normalization.get("original_chars"),
+        "normalized_chars": text_normalization.get("normalized_chars"),
+        "estimated_reduction_percent":
+            text_normalization.get("estimated_reduction_percent"),
+        "normalization_applied":
+            text_normalization.get("normalization_applied", False),
+        "normalization_steps":
+            text_normalization.get("normalization_steps", []),
+        "error": text_normalization.get("error"),
+    }
+    resume_json_meta: dict[str, Any] = {
+        "provider": llm_block.get("provider") or "Muse AI",
+        "model": llm_block.get("model"),
+        "validation": llm_block.get("validation"),
+        "error": llm_block.get("error"),
+        "error_type": llm_block.get("error_type"),
+        "status": llm_status_str,
+        "input_type": "text",
+        "duration_ms": llm_block.get("duration_ms"),
+        "usage": llm_block.get("usage") or {},
+        "attempts": llm_block.get("attempts"),
+        "text_normalization": normalization_info,
+    }
+    muse_requests: list[dict[str, Any]] = []
+    if llm_block.get("attempts"):
+        _req_status = (
+            "success" if llm_status_str == "success"
+            else "timeout" if llm_block.get("error_type") == "TimeoutError"
+            else "failed")
+        muse_requests.append(_muse_request_entry("resume_json", {
+            "usage": llm_block.get("usage") or {},
+            "model": llm_block.get("model"),
+            "request_id": None,
+            "duration_ms": llm_block.get("duration_ms"),
+        }, _req_status))
+    token_usage = None
+    if muse_requests:
+        _window = None
+        try:
+            from muse_ai import load_muse_config as _load_muse_cfg
+
+            _window = _load_muse_cfg().context_window_tokens
+        except Exception:
+            _window = None
+        token_usage = _aggregate_token_usage(muse_requests, _window)
+
+    # Pipeline trace -- honest stages for the required flow:
+    # Upload → MIME → extractors → Quality Evaluation → Best
+    # Extractor Selection → Text Normalization → Muse AI — Resume
+    # JSON Generation → JSON Validation → Final Extraction Result.
     trace: list[dict[str, Any]] = [
         _stage("Resume Upload", "upload", "PASS", message="File received and stored for processing."),
         _stage("MIME Type Detection", "mime", "PASS", message=mime_type or REASON_UNAVAILABLE),
@@ -1821,20 +2034,97 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
                         selected=bool(selected)))
     trace.append(_stage("Best Extractor Selection", "selection", "PASS" if selected else "FAIL",
                         extractor=selected, message=selection_reason or REASON_UNAVAILABLE, selected=bool(selected)))
-    norm_block = result.get("normalization") or {}
-    trace.append(_stage("Text Normalization", "normalization", "PASS" if norm_block.get("status") == "success" else ("SKIPPED" if not selected else "FAIL"),
-                        message=f"Normalization status: {norm_block.get('status')}", selected=bool(selected)))
-    llm_block = result.get("llm") or {}
-    llm_status_str = llm_block.get("status")
-    trace.append(_stage("LLM Processing", "llm", "PASS" if llm_status_str == "success" else ("SKIPPED" if llm_status_str == "skipped" else "FAIL"),
-                        message=(llm_block.get("error") or f"LLM status: {llm_status_str}"), selected=False))
+    if selected is None:
+        _norm_stage = ("SKIPPED", "Skipped — no extractor was selected.")
+    elif norm_block.get("status") == "success":
+        _norm_stage = ("PASS", (
+            f"Selected {extractor_display_name(selected)} text normalized: "
+            f"{text_normalization.get('original_chars')} → "
+            f"{text_normalization.get('normalized_chars')} characters."))
+    else:
+        _norm_stage = ("FAIL", norm_block.get("error") or "Text normalization failed.")
+    trace.append(_stage("Text Normalization", "normalization", _norm_stage[0],
+                        message=_norm_stage[1], selected=bool(selected)))
+    if isinstance(recovery_block, dict):
+        _rec = recovery_block.get("recovered") or {}
+        _rec_fields = ", ".join(
+            f"{f} from {_rec[f]['source']}"
+            for f in ("phone", "email", "location") if f in _rec)
+        _rec_status = recovery_block.get("status")
+        if _rec_status == "not_needed":
+            _rec_stage = ("PASS", "Phone, email and location already "
+                                  "present in the selected text — no "
+                                  "recovery needed.")
+        elif _rec_status == "recovered":
+            _rec_stage = ("PASS", f"Recovered {_rec_fields} and merged "
+                                  "them into the selected normalized "
+                                  "text sent to Muse AI.")
+        elif _rec_status == "partial":
+            _rec_stage = ("WARNING",
+                          f"Recovered {_rec_fields}; still missing: "
+                          + ", ".join(recovery_block.get("still_missing")
+                                      or []) + ".")
+        elif _rec_status == "error":
+            _rec_stage = ("FAIL", "Contact recovery error: "
+                                  + str(recovery_block.get("error")))
+        else:
+            _rec_stage = ("FAIL", "Contact information missing and "
+                                  "could not be recovered from any "
+                                  "source (extractor outputs, "
+                                  "first-page text layer, OCR). Still "
+                                  "missing: "
+                                  + ", ".join(recovery_block.get(
+                                      "still_missing") or []) + ".")
+        trace.append(_stage("Contact Information Recovery",
+                            "contact_recovery", _rec_stage[0],
+                            message=_rec_stage[1],
+                            selected=bool(selected)))
+    if llm_status_str == "success":
+        _muse_stage = ("PASS", "Structured Resume JSON generated by Muse AI "
+                               "from the selected normalized text.")
+    elif llm_status_str == "not_configured":
+        _muse_stage = ("FAIL", "NOT CONFIGURED — "
+                       + (llm_block.get("error")
+                          or "Muse AI is not configured; no LLM call was made."))
+    elif llm_status_str == "skipped":
+        _muse_stage = ("SKIPPED", "Skipped — no extractor was selected, "
+                                  "so no text was sent to Muse AI.")
+    else:
+        _muse_stage = ("FAIL", llm_block.get("error")
+                       or "Muse AI Resume JSON generation failed.")
+    trace.append(_stage(
+        f"Muse AI — Resume JSON Generation ({llm_block.get('model') or 'Muse AI'})",
+        "llm", _muse_stage[0], duration_ms=llm_block.get("duration_ms"),
+        message=_muse_stage[1], accepted=llm_status_str == "success",
+        selected=False))
     validation_val = llm_block.get("validation")
-    trace.append(_stage("JSON Validation", "quality", "PASS" if validation_val == "valid" else ("SKIPPED" if llm_status_str in ("skipped", "not_configured") else "FAIL"),
-                        message=("Resume JSON matches the project schema." if validation_val == "valid" else (llm_block.get("error") or f"Validation: {validation_val}")), selected=False))
-    trace.append(_stage("Final Extraction Result", "final", "PASS" if success else "FAIL",
+    if validation_val == "valid":
+        _val_stage = ("PASS", "Resume JSON matches the project schema.")
+    elif llm_status_str in ("skipped", "not_configured"):
+        _val_stage = ("SKIPPED", "Skipped — Muse AI produced no JSON to validate.")
+    else:
+        _val_stage = ("FAIL", llm_block.get("error")
+                      or f"Validation: {validation_val}")
+    trace.append(_stage("JSON Validation", "quality", _val_stage[0],
+                        message=_val_stage[1],
+                        accepted=validation_val == "valid", selected=False))
+    _full_success = bool(selected is not None and resume_json is not None)
+    if _full_success:
+        _final_msg = (f"Muse AI produced validated Resume JSON from the "
+                      f"{extractor_display_name(selected)} extraction.")
+    elif selected is not None:
+        _final_msg = (
+            f"Extraction selected {extractor_display_name(selected)} and "
+            "its normalized text is stored, but the Muse AI stage did "
+            "not produce Resume JSON: "
+            + (llm_block.get("error") or f"LLM status: {llm_status_str}"))
+    else:
+        _final_msg = result.get("error") or REASON_UNAVAILABLE
+    trace.append(_stage("Final Extraction Result", "final",
+                        "PASS" if _full_success else "FAIL",
                         extractor=selected, duration_ms=total_ms,
-                        message=(f"Final accepted text produced by {extractor_display_name(selected)}." if success and selected else (result.get("error") or REASON_UNAVAILABLE)),
-                        accepted=bool(success), selected=bool(success and selected)))
+                        message=_final_msg,
+                        accepted=_full_success, selected=bool(selected)))
 
     record: dict[str, Any] = {
         "resume_id": resume_id,
@@ -1844,7 +2134,7 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
         "file_size_bytes": file_size,
         "uploaded_at": datetime.now(timezone.utc).isoformat(),
         "success": success,
-        "extractor_used": selected if success or selected else None,
+        "extractor_used": selected,
         "final_extractor": selected,
         "primary_extractor": "tika",
         "attempts": attempts,
@@ -1855,10 +2145,10 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
         "final_extracted_text": original_text,
         "page_count": page_count,
         "warnings": [],
-        "error": None if success else result.get("error"),
+        "error": None if selected is not None else result.get("error"),
         "quality_status": quality_status,
         "final_quality_status": quality_status,
-        "quality": None,
+        "quality": selected_qc_payload,
         "selection_reason": selection_reason,
         "pipeline_trace": trace,
         "duration_ms": total_ms or 0.0,
@@ -1866,47 +2156,270 @@ def process_resume_file_simple(file_path: str | Path, *, resume_id: str,
         "extraction_timeout_seconds": timeout_seconds_val,
         "hyperlinks": [],
         "hyperlink_error": None,
-        "text_normalization": None,
-        "muse_requests": [],
-        "token_usage": None,
-        "resume_json_meta": None,
-        # New simple-pipeline fields (additive, backward-compatible)
+        "text_normalization": text_normalization,
+        "contact_recovery": recovery_block
+        if isinstance(recovery_block, dict) else None,
+        "muse_requests": muse_requests,
+        "token_usage": token_usage,
+        "resume_json_meta": resume_json_meta,
+        # Simple-pipeline fields (additive, backward-compatible)
         "pipeline_mode": "simple",
         "selected_extractor": selected,
         "selected_quality_score": selected_score,
         "extractor_reports": reports,
-        "normalization": norm_block,
+        "normalization": normalization_out,
         "llm": llm_block,
-        "resume_data": result.get("resume_data"),
-        "resume_json": result.get("resume_data"),
-        "resume_json_source": "muse_ai" if pipeline_status == "success" else None,
+        "llm_status": llm_status_str,
+        "resume_data": resume_json,
+        "resume_json": resume_json,
+        "resume_json_source": "muse_ai" if resume_json is not None else None,
         "timings": timings,
     }
-    # extractor_used should reflect selection even when LLM not configured case already handled;
-    # when extraction succeeded but LLM failed, legacy semantics keep extractor_used as selected
-    if selected and record["extractor_used"] is None:
-        record["extractor_used"] = selected
     _ensure_attempt_normalized_texts(record)
     return record
+
+
+def _upsert_ai_trace_stages(record: dict[str, Any],
+                            outcome: dict[str, Any],
+                            duration_ms: float | None, ok: bool) -> None:
+    """Refresh the record's Muse AI / JSON Validation trace stages
+    after an on-demand generation: any previous stages for that step
+    are replaced by the latest real outcome, inserted before the
+    final stage, and the final stage is upgraded to PASS when the
+    record now holds validated Resume JSON."""
+    trace = [s for s in (record.get("pipeline_trace") or [])
+             if not (str(s.get("stage", "")).startswith(
+                 "Muse AI — Resume JSON Generation")
+                     or s.get("stage") == "JSON Validation")]
+    validation = outcome.get("validation")
+    stages = [
+        _stage(
+            f"Muse AI — Resume JSON Generation "
+            f"({outcome.get('model') or 'Muse AI'})",
+            "llm", "PASS" if ok else "FAIL", duration_ms=duration_ms,
+            message=("Structured Resume JSON generated by Muse AI "
+                     "from the selected normalized text "
+                     "(on-demand generation)."
+                     if ok else (outcome.get("error")
+                                 or "Muse AI Resume JSON generation "
+                                    "failed.")),
+            accepted=ok, selected=False),
+        _stage(
+            "JSON Validation", "quality",
+            "PASS" if validation == "valid" else "FAIL",
+            message=("Resume JSON matches the project schema."
+                     if validation == "valid"
+                     else (outcome.get("error")
+                           or f"Validation result: {validation}")),
+            accepted=validation == "valid", selected=False),
+    ]
+    final_index = next(
+        (i for i, s in enumerate(trace) if s.get("type") == "final"),
+        len(trace))
+    record["pipeline_trace"] = (trace[:final_index] + stages
+                                + trace[final_index:])
+    if record.get("resume_json"):
+        final_stage = record["pipeline_trace"][-1]
+        final_stage["status"] = "PASS"
+        final_stage["accepted"] = True
+        final_stage["selected"] = True
+        final_stage["extractor"] = record.get("extractor_used")
+        final_stage["message"] = (
+            "Muse AI produced validated Resume JSON from the "
+            "selected normalized text.")
+
+
+# --- On-demand AI generation guard --------------------------------------
+# Only ONE active AI generation per resume: a second request while
+# one is running is refused (the endpoint maps it to HTTP 409)
+# instead of firing a duplicate Muse call. The registry is
+# in-process state only — it never touches the stored record.
+_AI_GENERATION_LOCK = threading.Lock()
+_AI_GENERATION_RUNNING: set[str] = set()
+
+
+def ai_generation_in_progress(resume_id: str | None) -> bool:
+    """True while an on-demand AI generation is running for a resume."""
+    if not resume_id:
+        return False
+    with _AI_GENERATION_LOCK:
+        return resume_id in _AI_GENERATION_RUNNING
+
+
+def _try_acquire_ai_generation(resume_id: str) -> bool:
+    with _AI_GENERATION_LOCK:
+        if resume_id in _AI_GENERATION_RUNNING:
+            return False
+        _AI_GENERATION_RUNNING.add(resume_id)
+        return True
+
+
+def _release_ai_generation(resume_id: str) -> None:
+    with _AI_GENERATION_LOCK:
+        _AI_GENERATION_RUNNING.discard(resume_id)
+
+
+def generate_ai_output_for_record(
+        record: dict[str, Any],
+        service: Any | None = None) -> tuple[dict[str, Any], dict[str, Any]]:
+    """Run ONLY the Muse AI Resume-JSON stage for an existing record.
+
+    On-demand generation for the AI Output tab's button: the text
+    sent to Muse is EXACTLY the record's stored Selected Normalized
+    Text (the ``text_normalization`` block's normalized text, or the
+    selected original text when normalization was bypassed) — no
+    extractor is re-run, no other extractor's text is sent, and
+    exactly one Muse call is made. The outcome is recorded on the
+    record (``ai_last_attempt`` always; ``resume_json`` /
+    ``resume_json_meta`` / ``llm`` / ``muse_requests`` /
+    ``token_usage`` / trace stages on a real API outcome).
+
+    A failed regeneration never destroys an existing stored
+    ``resume_json`` — the failure is reported through
+    ``ai_last_attempt`` instead. Returns ``(record, attempt)`` where
+    attempt["status"] is one of "success", "failed",
+    "not_configured", "no_text" or "already_running" (a generation
+    for this resume is already in progress; no call was made).
+    There is NO timeout on the Muse call: however long the API
+    takes, the generation waits for it.
+    """
+    _ensure_text_normalization(record)
+    block = record.get("text_normalization") or {}
+    sent_text = None
+    if block.get("status") == "applied":
+        sent_text = block.get("normalized_text")
+    if not sent_text:
+        sent_text = block.get("normalized_text") \
+            or block.get("original_extracted_text")
+    if not sent_text or not str(sent_text).strip():
+        return record, {
+            "status": "no_text", "ok": False,
+            "error": "No selected normalized text is stored for "
+                     "this resume, so there is nothing to send to "
+                     "Muse AI. Reprocess the resume first."}
+    resume_id = record.get("resume_id")
+    if resume_id is not None \
+            and not _try_acquire_ai_generation(resume_id):
+        return record, {
+            "status": "already_running", "ok": False,
+            "error": "AI generation is already running for this "
+                     "resume. Wait for it to finish — a slow Muse "
+                     "response is still running, not failed."}
+    try:
+        return _generate_ai_output_acquired(
+            record, service, block, sent_text)
+    finally:
+        if resume_id is not None:
+            _release_ai_generation(resume_id)
+
+
+def _generate_ai_output_acquired(
+        record: dict[str, Any], service: Any | None,
+        block: dict[str, Any], sent_text: str,
+        ) -> tuple[dict[str, Any], dict[str, Any]]:
+    """The on-demand Muse call itself (guard already held)."""
+    import time as _time
+
+    svc = service if service is not None else _default_muse_service()
+    attempted_at = datetime.now(timezone.utc).isoformat()
+    if svc is None or not getattr(svc, "configured", False):
+        error = None
+        if svc is not None:
+            error = getattr(svc, "configuration_error", None)
+        attempt = {
+            "at": attempted_at, "status": "not_configured",
+            "ok": False, "provider": "Muse AI",
+            "model": getattr(svc, "model", None),
+            "validation": None,
+            "error": error or ("Muse AI is not configured — set "
+                               "MUSE_API_KEY in the backend .env "
+                               "file."),
+            "error_type": "ConfigurationError", "duration_ms": None}
+        record["ai_last_attempt"] = attempt
+        if not record.get("resume_json"):
+            record["llm_status"] = "not_configured"
+        return record, attempt
+    hyperlinks = record.get("hyperlinks") or []
+    started = _time.perf_counter()
+    outcome = svc.generate_resume_json(sent_text, hyperlinks=hyperlinks)
+    duration_ms = outcome.get("duration_ms")
+    if duration_ms is None:
+        duration_ms = round((_time.perf_counter() - started) * 1000, 2)
+    ok = bool(outcome.get("ok")) \
+        and outcome.get("resume_json") is not None
+    requests = list(record.get("muse_requests") or [])
+    requests.append(_muse_request_entry(
+        "resume_json", outcome, _request_status(outcome)))
+    record["muse_requests"] = requests
+    window = getattr(getattr(svc, "config", None),
+                     "context_window_tokens", None)
+    record["token_usage"] = _aggregate_token_usage(requests, window)
+    attempt = {
+        "at": attempted_at, "status": "success" if ok else "failed",
+        "ok": ok, "provider": outcome.get("provider") or "Muse AI",
+        "model": outcome.get("model"),
+        "validation": outcome.get("validation"),
+        "error": None if ok else outcome.get("error"),
+        "error_type": None if ok else outcome.get("error_type"),
+        "duration_ms": duration_ms}
+    record["ai_last_attempt"] = attempt
+    if ok:
+        record["resume_json"] = outcome.get("resume_json")
+        record["resume_data"] = outcome.get("resume_json")
+        record["resume_json_source"] = "muse_ai"
+        record["resume_json_meta"] = {
+            "provider": outcome.get("provider") or "Muse AI",
+            "model": outcome.get("model"),
+            "validation": outcome.get("validation"),
+            "error": None,
+            "input_type": "text",
+            "duration_ms": duration_ms,
+            "timeout_seconds": outcome.get("timeout_seconds"),
+            "usage": outcome.get("usage") or {},
+            "text_normalization": _normalization_info(block),
+        }
+        record["llm"] = {
+            "status": "success",
+            "provider": outcome.get("provider") or "Muse AI",
+            "model": outcome.get("model"),
+            "resume_json": outcome.get("resume_json"),
+            "validation": outcome.get("validation") or "valid",
+            "error": None, "error_type": None, "attempts": 1,
+            "duration_ms": duration_ms,
+            "usage": outcome.get("usage") or {},
+        }
+        record["llm_status"] = "success"
+        record["success"] = True
+        record["error"] = None
+    elif not record.get("resume_json"):
+        record["llm_status"] = "failed"
+    _upsert_ai_trace_stages(record, outcome, duration_ms, ok)
+    return record, attempt
 
 
 def process_resume_file(file_path: str | Path, *, resume_id: str,
                         original_filename: str,
                         muse_service: Any | None = None,
                         ai_service: Any | None = None,
-                        pipeline_mode: str = "legacy") -> dict[str, Any]:
+                        pipeline_mode: str | None = None) -> dict[str, Any]:
     """Run the full pipeline for one stored upload and build its record.
 
-    Pipeline: MIME detection → ExtractionManager (configured extractor
-    order) with the QualityChecker as its acceptance policy → record.
-    Never raises for bad documents — failures are recorded.
+    The DEFAULT pipeline is the simple production pipeline: MIME
+    detection → Tika + PyMuPDF + Docling concurrently → quality
+    evaluation → best-extractor selection → normalization of the
+    SELECTED extractor's text only → one Muse AI call
+    (``MuseService.generate_resume_json``) → schema validation →
+    persisted record. Never raises for bad documents — failures are
+    recorded.
 
-    ``pipeline_mode="simple"`` (or env SATVIQ_PIPELINE_MODE=simple)
-    delegates to the simple concurrent pipeline; default is "legacy"
-    and legacy behaviour/defaults are unchanged.
+    The legacy sequential chain (ExtractionManager + QualityChecker
+    gate + vision fallback) remains available ONLY when explicitly
+    requested with ``pipeline_mode="legacy"``. The
+    ``SATVIQ_PIPELINE_MODE`` environment variable ("simple" or
+    "legacy") chooses the mode only when the caller passes none.
     """
-    _mode = pipeline_mode or "legacy"
-    if _mode != "simple" and os.environ.get("SATVIQ_PIPELINE_MODE") == "simple":
+    _mode = pipeline_mode or os.environ.get("SATVIQ_PIPELINE_MODE") or "simple"
+    if _mode not in ("simple", "legacy"):
         _mode = "simple"
     if _mode == "simple":
         _svc = muse_service if muse_service is not None else ai_service

@@ -1,0 +1,1885 @@
+{
+  "resume_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18",
+  "filename": "SHJ-5354_SHC-287405.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 153791,
+  "uploaded_at": "2026-11-11T06:47:37.896049+00:00",
+  "success": true,
+  "extractor_used": "docling",
+  "final_extractor": "docling",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18-attempt-1",
+      "resume_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 94.2 (selected 'docling' scored 95.4).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 94.2 (selected 'docling' scored 95.4).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18",
+        "source_tool": "tika",
+        "attempt_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3509,
+            "word_count": 412,
+            "line_count": 282,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.180108,
+            "symbol_count": 17,
+            "symbol_ratio": 0.004845,
+            "max_repeated_char_run": 9,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 85.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3509,
+            "word_count": 412,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Education"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Education"
+            ],
+            "missing_optional": [
+              "Responsibilities"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "summary",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Projects": "projects",
+              "Certifications": "pattern:(?i)\\b(CFA|PMP|CPA|FRM|CISSP|CISA|PRINCE"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "msabyasachi58@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 163,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 184,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "PROJECTS",
+                "detection_method": "heading",
+                "line_number": 80,
+                "evidence": "PROJECTS",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "PMP",
+                "confidence": 0.8
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Projects": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing",
+              "Education": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Education"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Education"
+          ],
+          "missing_optional": [
+            "Responsibilities"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 94.7,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "45.4% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "37.0% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 3509,
+            "word_count": 412,
+            "line_count": 282,
+            "non_empty_line_count": 108,
+            "short_line_count": 49,
+            "short_line_ratio": 0.453704,
+            "fragmented_line_count": 40,
+            "fragmented_line_ratio": 0.37037,
+            "mean_line_length": 29.45,
+            "median_line_length": 26.5,
+            "line_length_stdev": 21.94,
+            "line_length_cv": 0.744966,
+            "broken_sentence_count": 32,
+            "broken_sentence_ratio": 0.299065,
+            "repeated_adjacent_count": 1,
+            "repeated_adjacent_ratio": 0.009346
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18",
+        "source_tool": "tika",
+        "attempt_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3509,
+            "word_count": 412,
+            "line_count": 282,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.180108,
+            "symbol_count": 17,
+            "symbol_ratio": 0.004845,
+            "max_repeated_char_run": 9,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 85.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3509,
+            "word_count": 412,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Education"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Education"
+            ],
+            "missing_optional": [
+              "Responsibilities"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "summary",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Projects": "projects",
+              "Certifications": "pattern:(?i)\\b(CFA|PMP|CPA|FRM|CISSP|CISA|PRINCE"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "msabyasachi58@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 163,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 184,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "PROJECTS",
+                "detection_method": "heading",
+                "line_number": 80,
+                "evidence": "PROJECTS",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "PMP",
+                "confidence": 0.8
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Projects": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing",
+              "Education": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Education"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Education"
+          ],
+          "missing_optional": [
+            "Responsibilities"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 94.7,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "45.4% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "37.0% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 3509,
+            "word_count": 412,
+            "line_count": 282,
+            "non_empty_line_count": 108,
+            "short_line_count": 49,
+            "short_line_ratio": 0.453704,
+            "fragmented_line_count": 40,
+            "fragmented_line_ratio": 0.37037,
+            "mean_line_length": 29.45,
+            "median_line_length": 26.5,
+            "line_length_stdev": 21.94,
+            "line_length_cv": 0.744966,
+            "broken_sentence_count": 32,
+            "broken_sentence_ratio": 0.299065,
+            "repeated_adjacent_count": 1,
+            "repeated_adjacent_ratio": 0.009346
+          }
+        }
+      },
+      "quality_score": 94.2,
+      "duration_ms": 5631.98,
+      "text": "SABYASACHI MISHRA\n\n\nProject Manager | PMP® Certified\n\n\n+91-7749837873\n\n\nmsabyasachi58@gmail.com\n\n\nEXPERIENCE\n\n\nProject Manager\n\n\nLogic-Square Technology\n\n\n01/2022 - 09/2025 \n\t•\nLed cross-functional teams comprising software developers, \ndesigners, QA engineers, and business stakeholders to deliver \nenterprise web applications using Agile Scrum\n\n\n\n\t•\nServed as the primary point of contact for clients, translating \nbusiness requirements into actionable project plans and coordinating \ncommunication across teams\n\n\n\n\t•\nCreated detailed project plans, project scope, milestones, timelines, \nresource allocation, dependencies, and delivery roadmaps\n\n\n\n\t•\nAssigned work, monitored sprint progress, conducted sprint \nplanning, stand-ups, sprint reviews, and retrospectives while \nensuring quality and timeline adherence\n\n\n\n\t•\nManaged project documentation including BRDs, FRDs, RAID logs, \nrelease notes, sprint reports, and status reports\n\n\n\n\t•\nIdentified and mitigated risks, scope changes, dependencies, and \nresource constraints through proactive stakeholder communication\n\n\n\n\t•\nContinuously improved delivery processes using retrospective \ninsights and Agile metrics\n\n\n\n\t•\nWorked closely with MERN Stack teams (MongoDB, Express.js, \nReact.js, Node.js) through requirement discussions, sprint planning, \ntesting coordination, and production deployments\n\n\n\n\n\n\n\n\nPROJECTS\n\n\nClosewise - FinTech Digital Signing Platform\n\n\n\t•\nManaged end-to-end delivery of an enterprise FinTech platform \nleading a team of 10-12 members and 3 vendors with $200K-$400K \nbudget\n\n\n\n\t•\nAchieved 90-95% on-time milestones and 90%+ sprint predictability\n\n\n\n\n\n\nGrouped - Fan Community Platform\n\n\n\t•\nLed Agile Scrum delivery, coordinating cross-functional teams and \nachieving 93-97% on-time releases with improved sprint velocity\n\n\n\n\n\n\nSmoothire - Applicant Tracking System\n\n\n\t•\nManaged end-to-end ATS development, collaborating with \ndevelopers, QA, and stakeholders to automate recruitment \nworkflows and improve hiring efficiency\n\n\n\n\n\n\nStronger Veteran - GovTech Platform\n\n\n\t•\nDelivered GIS-based analytics platform for public-sector \nstakeholders\n\n\n\n\n\n\nKonnect - Peer-to-Peer Car Rental Platform\n\n\n\t•\nCoordinated rapid product delivery, testing cycles, and successful \nlaunch\n\n\n\n\n\n\nProject Deck\n\n\n\t•Led development of a project management platform with \ncollaboration and reporting capabilities\n\n\n\n\n\n\n\n\nSUMMARY\n\n\nPMP® Certified Project Manager with 4 years of \nexperience leading end-to-end software \ndelivery across FinTech, HRTech, GovTech, \nSocial Media, and Marketplace products. \nExperienced in managing cross-functional \nteams of developers, designers, QA engineers, \nand vendors while acting as the primary client \npoint of contact. Skilled in Agile/Scrum project \nexecution, project planning, scope \nmanagement, stakeholder communication, \nenterprise SaaS delivery, and continuous \nprocess improvement\n\n\n\n\n\n\nSKILLS\n\n\nCore Competencies\n\n\nEnd-to-End SDLC\n\n\nAgile Scrum\n\n\nClient & Stakeholder Management\n\n\nProject Planning & Roadmaps\n\n\nSprint Planning & Release Management\n\n\nCross-functional Team Leadership\n\n\nScope, Budget & Resource Planning\n\n\nRisk, Issue & Change Management\n\n\nRequirements Gathering (BRD/FRD)\n\n\nProject Documentation\n\n\nJira\n\n\nClickUp\n\n\nTrello\n\n\nEnterprise SaaS Delivery\n\n\n\n\nTools & Technologies\n\n\nJira\n\n\nClickUp\n\n\nTrello\n\n\nGitHub\n\n\nAgile Scrum\n\n\nAWS (Basics)\n\n\nDocker (Basics)\n\n\nJenkins (Basics)\n\n\nLinux\n\n\nMaven\n\n\n\n\n\n\n\nwww.enhancv.com\n\n\nPowered by\n\n\n\n\n\nhttps://enhancv.com/resume\nhttps://enhancv.com/resume",
+      "extracted_text": "SABYASACHI MISHRA\n\n\nProject Manager | PMP® Certified\n\n\n+91-7749837873\n\n\nmsabyasachi58@gmail.com\n\n\nEXPERIENCE\n\n\nProject Manager\n\n\nLogic-Square Technology\n\n\n01/2022 - 09/2025 \n\t•\nLed cross-functional teams comprising software developers, \ndesigners, QA engineers, and business stakeholders to deliver \nenterprise web applications using Agile Scrum\n\n\n\n\t•\nServed as the primary point of contact for clients, translating \nbusiness requirements into actionable project plans and coordinating \ncommunication across teams\n\n\n\n\t•\nCreated detailed project plans, project scope, milestones, timelines, \nresource allocation, dependencies, and delivery roadmaps\n\n\n\n\t•\nAssigned work, monitored sprint progress, conducted sprint \nplanning, stand-ups, sprint reviews, and retrospectives while \nensuring quality and timeline adherence\n\n\n\n\t•\nManaged project documentation including BRDs, FRDs, RAID logs, \nrelease notes, sprint reports, and status reports\n\n\n\n\t•\nIdentified and mitigated risks, scope changes, dependencies, and \nresource constraints through proactive stakeholder communication\n\n\n\n\t•\nContinuously improved delivery processes using retrospective \ninsights and Agile metrics\n\n\n\n\t•\nWorked closely with MERN Stack teams (MongoDB, Express.js, \nReact.js, Node.js) through requirement discussions, sprint planning, \ntesting coordination, and production deployments\n\n\n\n\n\n\n\n\nPROJECTS\n\n\nClosewise - FinTech Digital Signing Platform\n\n\n\t•\nManaged end-to-end delivery of an enterprise FinTech platform \nleading a team of 10-12 members and 3 vendors with $200K-$400K \nbudget\n\n\n\n\t•\nAchieved 90-95% on-time milestones and 90%+ sprint predictability\n\n\n\n\n\n\nGrouped - Fan Community Platform\n\n\n\t•\nLed Agile Scrum delivery, coordinating cross-functional teams and \nachieving 93-97% on-time releases with improved sprint velocity\n\n\n\n\n\n\nSmoothire - Applicant Tracking System\n\n\n\t•\nManaged end-to-end ATS development, collaborating with \ndevelopers, QA, and stakeholders to automate recruitment \nworkflows and improve hiring efficiency\n\n\n\n\n\n\nStronger Veteran - GovTech Platform\n\n\n\t•\nDelivered GIS-based analytics platform for public-sector \nstakeholders\n\n\n\n\n\n\nKonnect - Peer-to-Peer Car Rental Platform\n\n\n\t•\nCoordinated rapid product delivery, testing cycles, and successful \nlaunch\n\n\n\n\n\n\nProject Deck\n\n\n\t•Led development of a project management platform with \ncollaboration and reporting capabilities\n\n\n\n\n\n\n\n\nSUMMARY\n\n\nPMP® Certified Project Manager with 4 years of \nexperience leading end-to-end software \ndelivery across FinTech, HRTech, GovTech, \nSocial Media, and Marketplace products. \nExperienced in managing cross-functional \nteams of developers, designers, QA engineers, \nand vendors while acting as the primary client \npoint of contact. Skilled in Agile/Scrum project \nexecution, project planning, scope \nmanagement, stakeholder communication, \nenterprise SaaS delivery, and continuous \nprocess improvement\n\n\n\n\n\n\nSKILLS\n\n\nCore Competencies\n\n\nEnd-to-End SDLC\n\n\nAgile Scrum\n\n\nClient & Stakeholder Management\n\n\nProject Planning & Roadmaps\n\n\nSprint Planning & Release Management\n\n\nCross-functional Team Leadership\n\n\nScope, Budget & Resource Planning\n\n\nRisk, Issue & Change Management\n\n\nRequirements Gathering (BRD/FRD)\n\n\nProject Documentation\n\n\nJira\n\n\nClickUp\n\n\nTrello\n\n\nEnterprise SaaS Delivery\n\n\n\n\nTools & Technologies\n\n\nJira\n\n\nClickUp\n\n\nTrello\n\n\nGitHub\n\n\nAgile Scrum\n\n\nAWS (Basics)\n\n\nDocker (Basics)\n\n\nJenkins (Basics)\n\n\nLinux\n\n\nMaven\n\n\n\n\n\n\n\nwww.enhancv.com\n\n\nPowered by\n\n\n\n\n\nhttps://enhancv.com/resume\nhttps://enhancv.com/resume",
+      "extracted_text_length": 3509,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "SABYASACHI MISHRA\n\nProject Manager | PMP® Certified\n\n+91-7749837873\n\nmsabyasachi58@gmail.com\n\nEXPERIENCE\n\nProject Manager\n\nLogic-Square Technology\n\n01/2022 - 09/2025\nLed cross-functional teams comprising software developers,\ndesigners, QA engineers, and business stakeholders to deliver\nenterprise web applications using Agile Scrum\n\nServed as the primary point of contact for clients, translating\nbusiness requirements into actionable project plans and coordinating\ncommunication across teams\n\nCreated detailed project plans, project scope, milestones, timelines,\nresource allocation, dependencies, and delivery roadmaps\n\nAssigned work, monitored sprint progress, conducted sprint\nplanning, stand-ups, sprint reviews, and retrospectives while\nensuring quality and timeline adherence\n\nManaged project documentation including BRDs, FRDs, RAID logs,\nrelease notes, sprint reports, and status reports\n\nIdentified and mitigated risks, scope changes, dependencies, and\nresource constraints through proactive stakeholder communication\n\nContinuously improved delivery processes using retrospective\ninsights and Agile metrics\n\nWorked closely with MERN Stack teams (MongoDB, Express.js,\nReact.js, Node.js) through requirement discussions, sprint planning,\ntesting coordination, and production deployments\n\nPROJECTS\n\nClosewise - FinTech Digital Signing Platform\n\nManaged end-to-end delivery of an enterprise FinTech platform\nleading a team of 10-12 members and 3 vendors with $200K-$400K\nbudget\n\nAchieved 90-95% on-time milestones and 90%+ sprint predictability\n\nGrouped - Fan Community Platform\n\nLed Agile Scrum delivery, coordinating cross-functional teams and\nachieving 93-97% on-time releases with improved sprint velocity\n\nSmoothire - Applicant Tracking System\n\nManaged end-to-end ATS development, collaborating with\ndevelopers, QA, and stakeholders to automate recruitment\nworkflows and improve hiring efficiency\n\nStronger Veteran - GovTech Platform\n\nDelivered GIS-based analytics platform for public-sector\nstakeholders\n\nKonnect - Peer-to-Peer Car Rental Platform\n\nCoordinated rapid product delivery, testing cycles, and successful\nlaunch\n\nProject Deck\n\n•Led development of a project management platform with\ncollaboration and reporting capabilities\n\nSUMMARY\n\nPMP® Certified Project Manager with 4 years of\nexperience leading end-to-end software\ndelivery across FinTech, HRTech, GovTech,\nSocial Media, and Marketplace products.\nExperienced in managing cross-functional\nteams of developers, designers, QA engineers,\nand vendors while acting as the primary client\npoint of contact. Skilled in Agile/Scrum project\nexecution, project planning, scope\nmanagement, stakeholder communication,\nenterprise SaaS delivery, and continuous\nprocess improvement\n\nSKILLS\n\nCore Competencies\n\nEnd-to-End SDLC\n\nAgile Scrum\n\nClient & Stakeholder Management\n\nProject Planning & Roadmaps\n\nSprint Planning & Release Management\n\nCross-functional Team Leadership\n\nScope, Budget & Resource Planning\n\nRisk, Issue & Change Management\n\nRequirements Gathering (BRD/FRD)\n\nProject Documentation\n\nJira\n\nClickUp\n\nTrello\n\nEnterprise SaaS Delivery\n\nTools & Technologies\n\nJira\n\nClickUp\n\nTrello\n\nGitHub\n\nAgile Scrum\n\nAWS (Basics)\n\nDocker (Basics)\n\nJenkins (Basics)\n\nLinux\n\nMaven\n\nwww.enhancv.com\n\nPowered by\n\nhttps://enhancv.com/resume\nhttps://enhancv.com/resume"
+    },
+    {
+      "attempt_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18-attempt-2",
+      "resume_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18",
+      "attempt_number": 2,
+      "extractor_name": "pymupdf",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 94.2 (selected 'docling' scored 95.4).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 94.2 (selected 'docling' scored 95.4).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18",
+        "source_tool": "pymupdf",
+        "attempt_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3267,
+            "word_count": 411,
+            "line_count": 107,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.135292,
+            "symbol_count": 17,
+            "symbol_ratio": 0.005204,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 85.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3267,
+            "word_count": 411,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Education"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Education"
+            ],
+            "missing_optional": [
+              "Responsibilities"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "summary",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Projects": "projects",
+              "Certifications": "pattern:(?i)\\b(CFA|PMP|CPA|FRM|CISSP|CISA|PRINCE"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "msabyasachi58@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 51,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 64,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "PROJECTS",
+                "detection_method": "heading",
+                "line_number": 29,
+                "evidence": "PROJECTS",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "PMP",
+                "confidence": 0.8
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Projects": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing",
+              "Education": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Education"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Education"
+          ],
+          "missing_optional": [
+            "Responsibilities"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 86.08,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "REPEATED_ADJACENT_LINES"
+          ],
+          "reasons": [
+            "44.9% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "38.3% of lines are 15 characters or shorter.",
+            "14 adjacent line(s) are exact repeats of the previous line."
+          ],
+          "metrics": {
+            "char_count": 3267,
+            "word_count": 411,
+            "line_count": 107,
+            "non_empty_line_count": 107,
+            "short_line_count": 48,
+            "short_line_ratio": 0.448598,
+            "fragmented_line_count": 41,
+            "fragmented_line_ratio": 0.383178,
+            "mean_line_length": 29.24,
+            "median_line_length": 27.0,
+            "line_length_stdev": 22.2,
+            "line_length_cv": 0.759126,
+            "broken_sentence_count": 30,
+            "broken_sentence_ratio": 0.283019,
+            "repeated_adjacent_count": 14,
+            "repeated_adjacent_ratio": 0.132075
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18",
+        "source_tool": "pymupdf",
+        "attempt_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3267,
+            "word_count": 411,
+            "line_count": 107,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.135292,
+            "symbol_count": 17,
+            "symbol_ratio": 0.005204,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 85.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3267,
+            "word_count": 411,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Education"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Education"
+            ],
+            "missing_optional": [
+              "Responsibilities"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "summary",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Projects": "projects",
+              "Certifications": "pattern:(?i)\\b(CFA|PMP|CPA|FRM|CISSP|CISA|PRINCE"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "msabyasachi58@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 51,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 64,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "PROJECTS",
+                "detection_method": "heading",
+                "line_number": 29,
+                "evidence": "PROJECTS",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "PMP",
+                "confidence": 0.8
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Projects": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing",
+              "Education": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Education"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Education"
+          ],
+          "missing_optional": [
+            "Responsibilities"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 86.08,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "REPEATED_ADJACENT_LINES"
+          ],
+          "reasons": [
+            "44.9% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "38.3% of lines are 15 characters or shorter.",
+            "14 adjacent line(s) are exact repeats of the previous line."
+          ],
+          "metrics": {
+            "char_count": 3267,
+            "word_count": 411,
+            "line_count": 107,
+            "non_empty_line_count": 107,
+            "short_line_count": 48,
+            "short_line_ratio": 0.448598,
+            "fragmented_line_count": 41,
+            "fragmented_line_ratio": 0.383178,
+            "mean_line_length": 29.24,
+            "median_line_length": 27.0,
+            "line_length_stdev": 22.2,
+            "line_length_cv": 0.759126,
+            "broken_sentence_count": 30,
+            "broken_sentence_ratio": 0.283019,
+            "repeated_adjacent_count": 14,
+            "repeated_adjacent_ratio": 0.132075
+          }
+        }
+      },
+      "quality_score": 94.2,
+      "duration_ms": 26.75,
+      "text": "SABYASACHI MISHRA\nProject Manager | PMP® Certified\n+91-7749837873\nmsabyasachi58@gmail.com\nEXPERIENCE\nProject Manager\nLogic-Square Technology\n01/2022 - 09/2025 \nLed cross-functional teams comprising software developers, \ndesigners, QA engineers, and business stakeholders to deliver \nenterprise web applications using Agile Scrum\nServed as the primary point of contact for clients, translating \nbusiness requirements into actionable project plans and coordinating \ncommunication across teams\nCreated detailed project plans, project scope, milestones, timelines, \nresource allocation, dependencies, and delivery roadmaps\nAssigned work, monitored sprint progress, conducted sprint \nplanning, stand-ups, sprint reviews, and retrospectives while \nensuring quality and timeline adherence\nManaged project documentation including BRDs, FRDs, RAID logs, \nrelease notes, sprint reports, and status reports\nIdentified and mitigated risks, scope changes, dependencies, and \nresource constraints through proactive stakeholder communication\nContinuously improved delivery processes using retrospective \ninsights and Agile metrics\nWorked closely with MERN Stack teams (MongoDB, Express.js, \nReact.js, Node.js) through requirement discussions, sprint planning, \ntesting coordination, and production deployments\nPROJECTS\nClosewise - FinTech Digital Signing Platform\nManaged end-to-end delivery of an enterprise FinTech platform \nleading a team of 10-12 members and 3 vendors with $200K-$400K \nbudget\nAchieved 90-95% on-time milestones and 90%+ sprint predictability\nGrouped - Fan Community Platform\nLed Agile Scrum delivery, coordinating cross-functional teams and \nachieving 93-97% on-time releases with improved sprint velocity\nSmoothire - Applicant Tracking System\nManaged end-to-end ATS development, collaborating with \ndevelopers, QA, and stakeholders to automate recruitment \nworkflows and improve hiring efficiency\nStronger Veteran - GovTech Platform\nDelivered GIS-based analytics platform for public-sector \nstakeholders\nKonnect - Peer-to-Peer Car Rental Platform\nCoordinated rapid product delivery, testing cycles, and successful \nlaunch\nProject Deck\nLed development of a project management platform with \ncollaboration and reporting capabilities\nSUMMARY\nPMP® Certified Project Manager with 4 years of \nexperience leading end-to-end software \ndelivery across FinTech, HRTech, GovTech, \nSocial Media, and Marketplace products. \nExperienced in managing cross-functional \nteams of developers, designers, QA engineers, \nand vendors while acting as the primary client \npoint of contact. Skilled in Agile/Scrum project \nexecution, project planning, scope \nmanagement, stakeholder communication, \nenterprise SaaS delivery, and continuous \nprocess improvement\nSKILLS\nCore Competencies\nEnd-to-End SDLC\nAgile Scrum\nClient & Stakeholder Management\nProject Planning & Roadmaps\nSprint Planning & Release Management\nCross-functional Team Leadership\nScope, Budget & Resource Planning\nRisk, Issue & Change Management\nRequirements Gathering (BRD/FRD)\nProject Documentation\nJira\nClickUp\nTrello\nEnterprise SaaS Delivery\nTools & Technologies\nJira\nClickUp\nTrello\nGitHub\nAgile Scrum\nAWS (Basics)\nDocker (Basics)\nJenkins (Basics)\nLinux\nMaven\nwww.enhancv.com\nPowered by\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•",
+      "extracted_text": "SABYASACHI MISHRA\nProject Manager | PMP® Certified\n+91-7749837873\nmsabyasachi58@gmail.com\nEXPERIENCE\nProject Manager\nLogic-Square Technology\n01/2022 - 09/2025 \nLed cross-functional teams comprising software developers, \ndesigners, QA engineers, and business stakeholders to deliver \nenterprise web applications using Agile Scrum\nServed as the primary point of contact for clients, translating \nbusiness requirements into actionable project plans and coordinating \ncommunication across teams\nCreated detailed project plans, project scope, milestones, timelines, \nresource allocation, dependencies, and delivery roadmaps\nAssigned work, monitored sprint progress, conducted sprint \nplanning, stand-ups, sprint reviews, and retrospectives while \nensuring quality and timeline adherence\nManaged project documentation including BRDs, FRDs, RAID logs, \nrelease notes, sprint reports, and status reports\nIdentified and mitigated risks, scope changes, dependencies, and \nresource constraints through proactive stakeholder communication\nContinuously improved delivery processes using retrospective \ninsights and Agile metrics\nWorked closely with MERN Stack teams (MongoDB, Express.js, \nReact.js, Node.js) through requirement discussions, sprint planning, \ntesting coordination, and production deployments\nPROJECTS\nClosewise - FinTech Digital Signing Platform\nManaged end-to-end delivery of an enterprise FinTech platform \nleading a team of 10-12 members and 3 vendors with $200K-$400K \nbudget\nAchieved 90-95% on-time milestones and 90%+ sprint predictability\nGrouped - Fan Community Platform\nLed Agile Scrum delivery, coordinating cross-functional teams and \nachieving 93-97% on-time releases with improved sprint velocity\nSmoothire - Applicant Tracking System\nManaged end-to-end ATS development, collaborating with \ndevelopers, QA, and stakeholders to automate recruitment \nworkflows and improve hiring efficiency\nStronger Veteran - GovTech Platform\nDelivered GIS-based analytics platform for public-sector \nstakeholders\nKonnect - Peer-to-Peer Car Rental Platform\nCoordinated rapid product delivery, testing cycles, and successful \nlaunch\nProject Deck\nLed development of a project management platform with \ncollaboration and reporting capabilities\nSUMMARY\nPMP® Certified Project Manager with 4 years of \nexperience leading end-to-end software \ndelivery across FinTech, HRTech, GovTech, \nSocial Media, and Marketplace products. \nExperienced in managing cross-functional \nteams of developers, designers, QA engineers, \nand vendors while acting as the primary client \npoint of contact. Skilled in Agile/Scrum project \nexecution, project planning, scope \nmanagement, stakeholder communication, \nenterprise SaaS delivery, and continuous \nprocess improvement\nSKILLS\nCore Competencies\nEnd-to-End SDLC\nAgile Scrum\nClient & Stakeholder Management\nProject Planning & Roadmaps\nSprint Planning & Release Management\nCross-functional Team Leadership\nScope, Budget & Resource Planning\nRisk, Issue & Change Management\nRequirements Gathering (BRD/FRD)\nProject Documentation\nJira\nClickUp\nTrello\nEnterprise SaaS Delivery\nTools & Technologies\nJira\nClickUp\nTrello\nGitHub\nAgile Scrum\nAWS (Basics)\nDocker (Basics)\nJenkins (Basics)\nLinux\nMaven\nwww.enhancv.com\nPowered by\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•",
+      "extracted_text_length": 3267,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "format": "PDF 1.7",
+        "title": "Sabyasachi_professional_resume",
+        "creator": "Aspose Ltd.",
+        "producer": "Aspose.PDF for Java 18.8",
+        "creationDate": "D:20260803075104+00'00'",
+        "modDate": "D:20260903175127+05'30'"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "SABYASACHI MISHRA\nProject Manager | PMP® Certified\n+91-7749837873\nmsabyasachi58@gmail.com\nEXPERIENCE\nProject Manager\nLogic-Square Technology\n01/2022 - 09/2025\nLed cross-functional teams comprising software developers,\ndesigners, QA engineers, and business stakeholders to deliver\nenterprise web applications using Agile Scrum\nServed as the primary point of contact for clients, translating\nbusiness requirements into actionable project plans and coordinating\ncommunication across teams\nCreated detailed project plans, project scope, milestones, timelines,\nresource allocation, dependencies, and delivery roadmaps\nAssigned work, monitored sprint progress, conducted sprint\nplanning, stand-ups, sprint reviews, and retrospectives while\nensuring quality and timeline adherence\nManaged project documentation including BRDs, FRDs, RAID logs,\nrelease notes, sprint reports, and status reports\nIdentified and mitigated risks, scope changes, dependencies, and\nresource constraints through proactive stakeholder communication\nContinuously improved delivery processes using retrospective\ninsights and Agile metrics\nWorked closely with MERN Stack teams (MongoDB, Express.js,\nReact.js, Node.js) through requirement discussions, sprint planning,\ntesting coordination, and production deployments\nPROJECTS\nClosewise - FinTech Digital Signing Platform\nManaged end-to-end delivery of an enterprise FinTech platform\nleading a team of 10-12 members and 3 vendors with $200K-$400K\nbudget\nAchieved 90-95% on-time milestones and 90%+ sprint predictability\nGrouped - Fan Community Platform\nLed Agile Scrum delivery, coordinating cross-functional teams and\nachieving 93-97% on-time releases with improved sprint velocity\nSmoothire - Applicant Tracking System\nManaged end-to-end ATS development, collaborating with\ndevelopers, QA, and stakeholders to automate recruitment\nworkflows and improve hiring efficiency\nStronger Veteran - GovTech Platform\nDelivered GIS-based analytics platform for public-sector\nstakeholders\nKonnect - Peer-to-Peer Car Rental Platform\nCoordinated rapid product delivery, testing cycles, and successful\nlaunch\nProject Deck\nLed development of a project management platform with\ncollaboration and reporting capabilities\nSUMMARY\nPMP® Certified Project Manager with 4 years of\nexperience leading end-to-end software\ndelivery across FinTech, HRTech, GovTech,\nSocial Media, and Marketplace products.\nExperienced in managing cross-functional\nteams of developers, designers, QA engineers,\nand vendors while acting as the primary client\npoint of contact. Skilled in Agile/Scrum project\nexecution, project planning, scope\nmanagement, stakeholder communication,\nenterprise SaaS delivery, and continuous\nprocess improvement\nSKILLS\nCore Competencies\nEnd-to-End SDLC\nAgile Scrum\nClient & Stakeholder Management\nProject Planning & Roadmaps\nSprint Planning & Release Management\nCross-functional Team Leadership\nScope, Budget & Resource Planning\nRisk, Issue & Change Management\nRequirements Gathering (BRD/FRD)\nProject Documentation\nJira\nClickUp\nTrello\nEnterprise SaaS Delivery\nTools & Technologies\nJira\nClickUp\nTrello\nGitHub\nAgile Scrum\nAWS (Basics)\nDocker (Basics)\nJenkins (Basics)\nLinux\nMaven\nwww.enhancv.com\nPowered by"
+    },
+    {
+      "attempt_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18-attempt-3",
+      "resume_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18",
+      "attempt_number": 3,
+      "extractor_name": "docling",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Selected 'docling' with the highest quality score 95.4 (threshold 60.0).",
+      "fallback_decision": "accept",
+      "fallback_reason": "Selected 'docling' with the highest quality score 95.4 (threshold 60.0).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18",
+        "source_tool": "docling",
+        "attempt_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3296,
+            "word_count": 428,
+            "line_count": 93,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.142294,
+            "symbol_count": 17,
+            "symbol_ratio": 0.005158,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 85.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3296,
+            "word_count": 428,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Education"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Education"
+            ],
+            "missing_optional": [
+              "Responsibilities"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "summary",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Projects": "projects",
+              "Certifications": "pattern:(?i)\\b(CFA|PMP|CPA|FRM|CISSP|CISA|PRINCE"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "msabyasachi58@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 51,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 55,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "PROJECTS",
+                "detection_method": "heading",
+                "line_number": 24,
+                "evidence": "PROJECTS",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "PMP",
+                "confidence": 0.8
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Projects": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing",
+              "Education": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Education"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Education"
+          ],
+          "missing_optional": [
+            "Responsibilities"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 96.25,
+          "flags": [
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "Line lengths vary unusually (coefficient of variation 1.25) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 3296,
+            "word_count": 428,
+            "line_count": 93,
+            "non_empty_line_count": 51,
+            "short_line_count": 13,
+            "short_line_ratio": 0.254902,
+            "fragmented_line_count": 10,
+            "fragmented_line_ratio": 0.196078,
+            "mean_line_length": 62.82,
+            "median_line_length": 32.0,
+            "line_length_stdev": 78.53,
+            "line_length_cv": 1.250074,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18",
+        "source_tool": "docling",
+        "attempt_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3296,
+            "word_count": 428,
+            "line_count": 93,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.142294,
+            "symbol_count": 17,
+            "symbol_ratio": 0.005158,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 85.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3296,
+            "word_count": 428,
+            "configured_section_count": 8,
+            "detected_count": 6,
+            "missing_count": 2,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Education"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Education"
+            ],
+            "missing_optional": [
+              "Responsibilities"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "summary",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Projects": "projects",
+              "Certifications": "pattern:(?i)\\b(CFA|PMP|CPA|FRM|CISSP|CISA|PRINCE"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "msabyasachi58@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 51,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 55,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "PROJECTS",
+                "detection_method": "heading",
+                "line_number": 24,
+                "evidence": "PROJECTS",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "PMP",
+                "confidence": 0.8
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Projects": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing",
+              "Education": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Education"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Education"
+          ],
+          "missing_optional": [
+            "Responsibilities"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 96.25,
+          "flags": [
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "Line lengths vary unusually (coefficient of variation 1.25) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 3296,
+            "word_count": 428,
+            "line_count": 93,
+            "non_empty_line_count": 51,
+            "short_line_count": 13,
+            "short_line_ratio": 0.254902,
+            "fragmented_line_count": 10,
+            "fragmented_line_ratio": 0.196078,
+            "mean_line_length": 62.82,
+            "median_line_length": 32.0,
+            "line_length_stdev": 78.53,
+            "line_length_cv": 1.250074,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 95.4,
+      "duration_ms": 13673.08,
+      "text": "SABYASACHI MISHRA\n\nProject Manager | PMP® Certified\n\n+91-7749837873 msabyasachi58@gmail.com\n\nEXPERIENCE\n\nProject Manager\n\nLogic-Square Technology\n\n01/2022 - 09/2025\n\n- Led cross-functional teams comprising software developers, designers, QA engineers, and business stakeholders to deliver enterprise web applications using Agile Scrum ·\n- Served as the primary point of contact for clients, translating business requirements into actionable project plans and coordinating communication across teams ·\n- Created detailed project plans, project scope, milestones, timelines, resource allocation, dependencies, and delivery roadmaps ·\n- Assigned work, monitored sprint progress, conducted sprint planning, stand-ups, sprint reviews, and retrospectives while ensuring quality and timeline adherence ·\n- Managed project documentation including BRDs, FRDs, RAID logs, release notes, sprint reports, and status reports ·\n- Identified and mitigated risks, scope changes, dependencies, and resource constraints through proactive stakeholder communication ·\n- Continuously improved delivery processes using retrospective insights and Agile metrics ·\n- Worked closely with MERN Stack teams (MongoDB, Express.js, React.js, Node.js) through requirement discussions, sprint planning, testing coordination, and production deployments ·\n\nPROJECTS\n\nClosewise - FinTech Digital Signing Platform\n\n- Managed end-to-end delivery of an enterprise FinTech platform leading a team of 10-12 members and 3 vendors with $200K-$400K budget ·\n- Achieved 90-95% on-time milestones and 90%+ sprint predictability ·\n\nGrouped - Fan Community Platform\n\n- Led Agile Scrum delivery, coordinating cross-functional teams and achieving 93-97% on-time releases with improved sprint velocity ·\n\nSmoothire - Applicant Tracking System\n\n- Managed end-to-end ATS development, collaborating with developers, QA, and stakeholders to automate recruitment workflows and improve hiring efficiency ·\n\nStronger Veteran - GovTech Platform\n\n- Delivered GIS-based analytics platform for public-sector stakeholders ·\n\nKonnect - Peer-to-Peer Car Rental Platform\n\n- Coordinated rapid product delivery, testing cycles, and successful launch ·\n\nProject Deck\n\n- Led development of a project management platform with collaboration and reporting capabilities ·\n\nSUMMARY\n\nPMP® Certified Project Manager with 4 years of experience leading end-to-end software delivery across FinTech, HRTech, GovTech, Social Media, and Marketplace products. Experienced in managing cross-functional teams of developers, designers, QA engineers, and vendors while acting as the primary client point of contact. Skilled in Agile/Scrum project execution, project planning, scope management, stakeholder communication, enterprise SaaS delivery, and continuous process improvement\n\nSKILLS\n\nCore Competencies\n\nEnd-to-End SDLC Agile Scrum\n\nClient & Stakeholder Management\n\nProject Planning & Roadmaps\n\nSprint Planning & Release Management\n\nCross-functional Team Leadership\n\nScope, Budget & Resource Planning\n\nRisk, Issue & Change Management\n\nRequirements Gathering (BRD/FRD)\n\nProject Documentation Jira\n\nClickUp Trello\n\nEnterprise SaaS Delivery\n\nTools & Technologies\n\nJira ClickUp Trello GitHub\n\nAgile Scrum AWS (Basics)\n\nDocker (Basics) Jenkins (Basics)\n\nLinux Maven\n\n- [ ] 2\n\nEnhancu",
+      "extracted_text": "SABYASACHI MISHRA\n\nProject Manager | PMP® Certified\n\n+91-7749837873 msabyasachi58@gmail.com\n\nEXPERIENCE\n\nProject Manager\n\nLogic-Square Technology\n\n01/2022 - 09/2025\n\n- Led cross-functional teams comprising software developers, designers, QA engineers, and business stakeholders to deliver enterprise web applications using Agile Scrum ·\n- Served as the primary point of contact for clients, translating business requirements into actionable project plans and coordinating communication across teams ·\n- Created detailed project plans, project scope, milestones, timelines, resource allocation, dependencies, and delivery roadmaps ·\n- Assigned work, monitored sprint progress, conducted sprint planning, stand-ups, sprint reviews, and retrospectives while ensuring quality and timeline adherence ·\n- Managed project documentation including BRDs, FRDs, RAID logs, release notes, sprint reports, and status reports ·\n- Identified and mitigated risks, scope changes, dependencies, and resource constraints through proactive stakeholder communication ·\n- Continuously improved delivery processes using retrospective insights and Agile metrics ·\n- Worked closely with MERN Stack teams (MongoDB, Express.js, React.js, Node.js) through requirement discussions, sprint planning, testing coordination, and production deployments ·\n\nPROJECTS\n\nClosewise - FinTech Digital Signing Platform\n\n- Managed end-to-end delivery of an enterprise FinTech platform leading a team of 10-12 members and 3 vendors with $200K-$400K budget ·\n- Achieved 90-95% on-time milestones and 90%+ sprint predictability ·\n\nGrouped - Fan Community Platform\n\n- Led Agile Scrum delivery, coordinating cross-functional teams and achieving 93-97% on-time releases with improved sprint velocity ·\n\nSmoothire - Applicant Tracking System\n\n- Managed end-to-end ATS development, collaborating with developers, QA, and stakeholders to automate recruitment workflows and improve hiring efficiency ·\n\nStronger Veteran - GovTech Platform\n\n- Delivered GIS-based analytics platform for public-sector stakeholders ·\n\nKonnect - Peer-to-Peer Car Rental Platform\n\n- Coordinated rapid product delivery, testing cycles, and successful launch ·\n\nProject Deck\n\n- Led development of a project management platform with collaboration and reporting capabilities ·\n\nSUMMARY\n\nPMP® Certified Project Manager with 4 years of experience leading end-to-end software delivery across FinTech, HRTech, GovTech, Social Media, and Marketplace products. Experienced in managing cross-functional teams of developers, designers, QA engineers, and vendors while acting as the primary client point of contact. Skilled in Agile/Scrum project execution, project planning, scope management, stakeholder communication, enterprise SaaS delivery, and continuous process improvement\n\nSKILLS\n\nCore Competencies\n\nEnd-to-End SDLC Agile Scrum\n\nClient & Stakeholder Management\n\nProject Planning & Roadmaps\n\nSprint Planning & Release Management\n\nCross-functional Team Leadership\n\nScope, Budget & Resource Planning\n\nRisk, Issue & Change Management\n\nRequirements Gathering (BRD/FRD)\n\nProject Documentation Jira\n\nClickUp Trello\n\nEnterprise SaaS Delivery\n\nTools & Technologies\n\nJira ClickUp Trello GitHub\n\nAgile Scrum AWS (Basics)\n\nDocker (Basics) Jenkins (Basics)\n\nLinux Maven\n\n- [ ] 2\n\nEnhancu",
+      "extracted_text_length": 3296,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "SABYASACHI MISHRA\n\nProject Manager | PMP® Certified\n\n+91-7749837873 msabyasachi58@gmail.com\n\nEXPERIENCE\n\nProject Manager\n\nLogic-Square Technology\n\n01/2022 - 09/2025\n\n- Led cross-functional teams comprising software developers, designers, QA engineers, and business stakeholders to deliver enterprise web applications using Agile Scrum ·\n- Served as the primary point of contact for clients, translating business requirements into actionable project plans and coordinating communication across teams ·\n- Created detailed project plans, project scope, milestones, timelines, resource allocation, dependencies, and delivery roadmaps ·\n- Assigned work, monitored sprint progress, conducted sprint planning, stand-ups, sprint reviews, and retrospectives while ensuring quality and timeline adherence ·\n- Managed project documentation including BRDs, FRDs, RAID logs, release notes, sprint reports, and status reports ·\n- Identified and mitigated risks, scope changes, dependencies, and resource constraints through proactive stakeholder communication ·\n- Continuously improved delivery processes using retrospective insights and Agile metrics ·\n- Worked closely with MERN Stack teams (MongoDB, Express.js, React.js, Node.js) through requirement discussions, sprint planning, testing coordination, and production deployments ·\n\nPROJECTS\n\nClosewise - FinTech Digital Signing Platform\n\n- Managed end-to-end delivery of an enterprise FinTech platform leading a team of 10-12 members and 3 vendors with $200K-$400K budget ·\n- Achieved 90-95% on-time milestones and 90%+ sprint predictability ·\n\nGrouped - Fan Community Platform\n\n- Led Agile Scrum delivery, coordinating cross-functional teams and achieving 93-97% on-time releases with improved sprint velocity ·\n\nSmoothire - Applicant Tracking System\n\n- Managed end-to-end ATS development, collaborating with developers, QA, and stakeholders to automate recruitment workflows and improve hiring efficiency ·\n\nStronger Veteran - GovTech Platform\n\n- Delivered GIS-based analytics platform for public-sector stakeholders ·\n\nKonnect - Peer-to-Peer Car Rental Platform\n\n- Coordinated rapid product delivery, testing cycles, and successful launch ·\n\nProject Deck\n\n- Led development of a project management platform with collaboration and reporting capabilities ·\n\nSUMMARY\n\nPMP® Certified Project Manager with 4 years of experience leading end-to-end software delivery across FinTech, HRTech, GovTech, Social Media, and Marketplace products. Experienced in managing cross-functional teams of developers, designers, QA engineers, and vendors while acting as the primary client point of contact. Skilled in Agile/Scrum project execution, project planning, scope management, stakeholder communication, enterprise SaaS delivery, and continuous process improvement\n\nSKILLS\n\nCore Competencies\n\nEnd-to-End SDLC Agile Scrum\n\nClient & Stakeholder Management\n\nProject Planning & Roadmaps\n\nSprint Planning & Release Management\n\nCross-functional Team Leadership\n\nScope, Budget & Resource Planning\n\nRisk, Issue & Change Management\n\nRequirements Gathering (BRD/FRD)\n\nProject Documentation Jira\n\nClickUp Trello\n\nEnterprise SaaS Delivery\n\nTools & Technologies\n\nJira ClickUp Trello GitHub\n\nAgile Scrum AWS (Basics)\n\nDocker (Basics) Jenkins (Basics)\n\nLinux Maven\n\n- [ ] 2\n\nEnhancu"
+    }
+  ],
+  "attempt_count": 3,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "extracted_text": "SABYASACHI MISHRA\n\nProject Manager | PMP® Certified\n\n+91-7749837873 msabyasachi58@gmail.com\n\nEXPERIENCE\n\nProject Manager\n\nLogic-Square Technology\n\n01/2022 - 09/2025\n\n- Led cross-functional teams comprising software developers, designers, QA engineers, and business stakeholders to deliver enterprise web applications using Agile Scrum ·\n- Served as the primary point of contact for clients, translating business requirements into actionable project plans and coordinating communication across teams ·\n- Created detailed project plans, project scope, milestones, timelines, resource allocation, dependencies, and delivery roadmaps ·\n- Assigned work, monitored sprint progress, conducted sprint planning, stand-ups, sprint reviews, and retrospectives while ensuring quality and timeline adherence ·\n- Managed project documentation including BRDs, FRDs, RAID logs, release notes, sprint reports, and status reports ·\n- Identified and mitigated risks, scope changes, dependencies, and resource constraints through proactive stakeholder communication ·\n- Continuously improved delivery processes using retrospective insights and Agile metrics ·\n- Worked closely with MERN Stack teams (MongoDB, Express.js, React.js, Node.js) through requirement discussions, sprint planning, testing coordination, and production deployments ·\n\nPROJECTS\n\nClosewise - FinTech Digital Signing Platform\n\n- Managed end-to-end delivery of an enterprise FinTech platform leading a team of 10-12 members and 3 vendors with $200K-$400K budget ·\n- Achieved 90-95% on-time milestones and 90%+ sprint predictability ·\n\nGrouped - Fan Community Platform\n\n- Led Agile Scrum delivery, coordinating cross-functional teams and achieving 93-97% on-time releases with improved sprint velocity ·\n\nSmoothire - Applicant Tracking System\n\n- Managed end-to-end ATS development, collaborating with developers, QA, and stakeholders to automate recruitment workflows and improve hiring efficiency ·\n\nStronger Veteran - GovTech Platform\n\n- Delivered GIS-based analytics platform for public-sector stakeholders ·\n\nKonnect - Peer-to-Peer Car Rental Platform\n\n- Coordinated rapid product delivery, testing cycles, and successful launch ·\n\nProject Deck\n\n- Led development of a project management platform with collaboration and reporting capabilities ·\n\nSUMMARY\n\nPMP® Certified Project Manager with 4 years of experience leading end-to-end software delivery across FinTech, HRTech, GovTech, Social Media, and Marketplace products. Experienced in managing cross-functional teams of developers, designers, QA engineers, and vendors while acting as the primary client point of contact. Skilled in Agile/Scrum project execution, project planning, scope management, stakeholder communication, enterprise SaaS delivery, and continuous process improvement\n\nSKILLS\n\nCore Competencies\n\nEnd-to-End SDLC Agile Scrum\n\nClient & Stakeholder Management\n\nProject Planning & Roadmaps\n\nSprint Planning & Release Management\n\nCross-functional Team Leadership\n\nScope, Budget & Resource Planning\n\nRisk, Issue & Change Management\n\nRequirements Gathering (BRD/FRD)\n\nProject Documentation Jira\n\nClickUp Trello\n\nEnterprise SaaS Delivery\n\nTools & Technologies\n\nJira ClickUp Trello GitHub\n\nAgile Scrum AWS (Basics)\n\nDocker (Basics) Jenkins (Basics)\n\nLinux Maven\n\n- [ ] 2\n\nEnhancu",
+  "final_extracted_text": "SABYASACHI MISHRA\n\nProject Manager | PMP® Certified\n\n+91-7749837873 msabyasachi58@gmail.com\n\nEXPERIENCE\n\nProject Manager\n\nLogic-Square Technology\n\n01/2022 - 09/2025\n\n- Led cross-functional teams comprising software developers, designers, QA engineers, and business stakeholders to deliver enterprise web applications using Agile Scrum ·\n- Served as the primary point of contact for clients, translating business requirements into actionable project plans and coordinating communication across teams ·\n- Created detailed project plans, project scope, milestones, timelines, resource allocation, dependencies, and delivery roadmaps ·\n- Assigned work, monitored sprint progress, conducted sprint planning, stand-ups, sprint reviews, and retrospectives while ensuring quality and timeline adherence ·\n- Managed project documentation including BRDs, FRDs, RAID logs, release notes, sprint reports, and status reports ·\n- Identified and mitigated risks, scope changes, dependencies, and resource constraints through proactive stakeholder communication ·\n- Continuously improved delivery processes using retrospective insights and Agile metrics ·\n- Worked closely with MERN Stack teams (MongoDB, Express.js, React.js, Node.js) through requirement discussions, sprint planning, testing coordination, and production deployments ·\n\nPROJECTS\n\nClosewise - FinTech Digital Signing Platform\n\n- Managed end-to-end delivery of an enterprise FinTech platform leading a team of 10-12 members and 3 vendors with $200K-$400K budget ·\n- Achieved 90-95% on-time milestones and 90%+ sprint predictability ·\n\nGrouped - Fan Community Platform\n\n- Led Agile Scrum delivery, coordinating cross-functional teams and achieving 93-97% on-time releases with improved sprint velocity ·\n\nSmoothire - Applicant Tracking System\n\n- Managed end-to-end ATS development, collaborating with developers, QA, and stakeholders to automate recruitment workflows and improve hiring efficiency ·\n\nStronger Veteran - GovTech Platform\n\n- Delivered GIS-based analytics platform for public-sector stakeholders ·\n\nKonnect - Peer-to-Peer Car Rental Platform\n\n- Coordinated rapid product delivery, testing cycles, and successful launch ·\n\nProject Deck\n\n- Led development of a project management platform with collaboration and reporting capabilities ·\n\nSUMMARY\n\nPMP® Certified Project Manager with 4 years of experience leading end-to-end software delivery across FinTech, HRTech, GovTech, Social Media, and Marketplace products. Experienced in managing cross-functional teams of developers, designers, QA engineers, and vendors while acting as the primary client point of contact. Skilled in Agile/Scrum project execution, project planning, scope management, stakeholder communication, enterprise SaaS delivery, and continuous process improvement\n\nSKILLS\n\nCore Competencies\n\nEnd-to-End SDLC Agile Scrum\n\nClient & Stakeholder Management\n\nProject Planning & Roadmaps\n\nSprint Planning & Release Management\n\nCross-functional Team Leadership\n\nScope, Budget & Resource Planning\n\nRisk, Issue & Change Management\n\nRequirements Gathering (BRD/FRD)\n\nProject Documentation Jira\n\nClickUp Trello\n\nEnterprise SaaS Delivery\n\nTools & Technologies\n\nJira ClickUp Trello GitHub\n\nAgile Scrum AWS (Basics)\n\nDocker (Basics) Jenkins (Basics)\n\nLinux Maven\n\n- [ ] 2\n\nEnhancu",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "quality": {
+    "status": "PASS",
+    "document_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18",
+    "source_tool": "docling",
+    "attempt_id": "51e32b3f-0ff3-4388-9799-2e7de3be1f18-attempt-3",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3296,
+        "word_count": 428,
+        "line_count": 93,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.142294,
+        "symbol_count": 17,
+        "symbol_ratio": 0.005158,
+        "max_repeated_char_run": 2,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 85.0,
+      "flags": [
+        "MISSING_RECOMMENDED_SECTION",
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 3296,
+        "word_count": 428,
+        "configured_section_count": 8,
+        "detected_count": 6,
+        "missing_count": 2,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Responsibilities",
+          "Education"
+        ],
+        "missing_required": [],
+        "missing_recommended": [
+          "Education"
+        ],
+        "missing_optional": [
+          "Responsibilities"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "summary",
+          "Skills": "skills",
+          "Work Experience": "experience",
+          "Projects": "projects",
+          "Certifications": "pattern:(?i)\\b(CFA|PMP|CPA|FRM|CISSP|CISA|PRINCE"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "msabyasachi58@gmail.com",
+            "confidence": 0.8
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "SUMMARY",
+            "detection_method": "heading",
+            "line_number": 51,
+            "evidence": "SUMMARY",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "SKILLS",
+            "detection_method": "heading",
+            "line_number": 55,
+            "evidence": "SKILLS",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 7,
+            "evidence": "EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Projects": {
+            "canonical_name": "Projects",
+            "original_heading": "PROJECTS",
+            "detection_method": "heading",
+            "line_number": 24,
+            "evidence": "PROJECTS",
+            "confidence": 0.98
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "PMP",
+            "confidence": 0.8
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Projects": "detected",
+          "Certifications": "detected",
+          "Responsibilities": "missing",
+          "Education": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Responsibilities",
+        "Education"
+      ],
+      "missing_required": [],
+      "missing_recommended": [
+        "Education"
+      ],
+      "missing_optional": [
+        "Responsibilities"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 96.25,
+      "flags": [
+        "HIGH_LINE_LENGTH_VARIATION"
+      ],
+      "reasons": [
+        "Line lengths vary unusually (coefficient of variation 1.25) — a possible sign of mixed or merged column text."
+      ],
+      "metrics": {
+        "char_count": 3296,
+        "word_count": 428,
+        "line_count": 93,
+        "non_empty_line_count": 51,
+        "short_line_count": 13,
+        "short_line_ratio": 0.254902,
+        "fragmented_line_count": 10,
+        "fragmented_line_ratio": 0.196078,
+        "mean_line_length": 62.82,
+        "median_line_length": 32.0,
+        "line_length_stdev": 78.53,
+        "line_length_cv": 1.250074,
+        "broken_sentence_count": 0,
+        "broken_sentence_ratio": 0.0,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Selected 'docling' with the highest quality score 95.4 (threshold 60.0).",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 5631.98,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": 26.75,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 13673.08,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=94.2, pymupdf=94.2, docling=95.4",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected 'docling' with the highest quality score 95.4 (threshold 60.0).",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Docling text normalized: 3296 → 3296 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Contact Information Recovery",
+      "type": "contact_recovery",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Contact information missing and could not be recovered from any source (extractor outputs, first-page text layer, OCR). Still missing: location.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": 11142.93,
+      "message": "Could not reach the Muse API: [Errno 11001] getaddrinfo failed",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Could not reach the Muse API: [Errno 11001] getaddrinfo failed",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "docling",
+      "status": "FAIL",
+      "duration_ms": 27936.9,
+      "message": "Extraction selected Docling and its normalized text is stored, but the Muse AI stage did not produce Resume JSON: Could not reach the Muse API: [Errno 11001] getaddrinfo failed",
+      "accepted": false,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 27936.9,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "docling",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "SABYASACHI MISHRA\n\nProject Manager | PMP® Certified\n\n+91-7749837873 msabyasachi58@gmail.com\n\nEXPERIENCE\n\nProject Manager\n\nLogic-Square Technology\n\n01/2022 - 09/2025\n\n- Led cross-functional teams comprising software developers, designers, QA engineers, and business stakeholders to deliver enterprise web applications using Agile Scrum ·\n- Served as the primary point of contact for clients, translating business requirements into actionable project plans and coordinating communication across teams ·\n- Created detailed project plans, project scope, milestones, timelines, resource allocation, dependencies, and delivery roadmaps ·\n- Assigned work, monitored sprint progress, conducted sprint planning, stand-ups, sprint reviews, and retrospectives while ensuring quality and timeline adherence ·\n- Managed project documentation including BRDs, FRDs, RAID logs, release notes, sprint reports, and status reports ·\n- Identified and mitigated risks, scope changes, dependencies, and resource constraints through proactive stakeholder communication ·\n- Continuously improved delivery processes using retrospective insights and Agile metrics ·\n- Worked closely with MERN Stack teams (MongoDB, Express.js, React.js, Node.js) through requirement discussions, sprint planning, testing coordination, and production deployments ·\n\nPROJECTS\n\nClosewise - FinTech Digital Signing Platform\n\n- Managed end-to-end delivery of an enterprise FinTech platform leading a team of 10-12 members and 3 vendors with $200K-$400K budget ·\n- Achieved 90-95% on-time milestones and 90%+ sprint predictability ·\n\nGrouped - Fan Community Platform\n\n- Led Agile Scrum delivery, coordinating cross-functional teams and achieving 93-97% on-time releases with improved sprint velocity ·\n\nSmoothire - Applicant Tracking System\n\n- Managed end-to-end ATS development, collaborating with developers, QA, and stakeholders to automate recruitment workflows and improve hiring efficiency ·\n\nStronger Veteran - GovTech Platform\n\n- Delivered GIS-based analytics platform for public-sector stakeholders ·\n\nKonnect - Peer-to-Peer Car Rental Platform\n\n- Coordinated rapid product delivery, testing cycles, and successful launch ·\n\nProject Deck\n\n- Led development of a project management platform with collaboration and reporting capabilities ·\n\nSUMMARY\n\nPMP® Certified Project Manager with 4 years of experience leading end-to-end software delivery across FinTech, HRTech, GovTech, Social Media, and Marketplace products. Experienced in managing cross-functional teams of developers, designers, QA engineers, and vendors while acting as the primary client point of contact. Skilled in Agile/Scrum project execution, project planning, scope management, stakeholder communication, enterprise SaaS delivery, and continuous process improvement\n\nSKILLS\n\nCore Competencies\n\nEnd-to-End SDLC Agile Scrum\n\nClient & Stakeholder Management\n\nProject Planning & Roadmaps\n\nSprint Planning & Release Management\n\nCross-functional Team Leadership\n\nScope, Budget & Resource Planning\n\nRisk, Issue & Change Management\n\nRequirements Gathering (BRD/FRD)\n\nProject Documentation Jira\n\nClickUp Trello\n\nEnterprise SaaS Delivery\n\nTools & Technologies\n\nJira ClickUp Trello GitHub\n\nAgile Scrum AWS (Basics)\n\nDocker (Basics) Jenkins (Basics)\n\nLinux Maven\n\n- [ ] 2\n\nEnhancu",
+    "normalized_text": "SABYASACHI MISHRA\n\nProject Manager | PMP® Certified\n\n+91-7749837873 msabyasachi58@gmail.com\n\nEXPERIENCE\n\nProject Manager\n\nLogic-Square Technology\n\n01/2022 - 09/2025\n\n- Led cross-functional teams comprising software developers, designers, QA engineers, and business stakeholders to deliver enterprise web applications using Agile Scrum ·\n- Served as the primary point of contact for clients, translating business requirements into actionable project plans and coordinating communication across teams ·\n- Created detailed project plans, project scope, milestones, timelines, resource allocation, dependencies, and delivery roadmaps ·\n- Assigned work, monitored sprint progress, conducted sprint planning, stand-ups, sprint reviews, and retrospectives while ensuring quality and timeline adherence ·\n- Managed project documentation including BRDs, FRDs, RAID logs, release notes, sprint reports, and status reports ·\n- Identified and mitigated risks, scope changes, dependencies, and resource constraints through proactive stakeholder communication ·\n- Continuously improved delivery processes using retrospective insights and Agile metrics ·\n- Worked closely with MERN Stack teams (MongoDB, Express.js, React.js, Node.js) through requirement discussions, sprint planning, testing coordination, and production deployments ·\n\nPROJECTS\n\nClosewise - FinTech Digital Signing Platform\n\n- Managed end-to-end delivery of an enterprise FinTech platform leading a team of 10-12 members and 3 vendors with $200K-$400K budget ·\n- Achieved 90-95% on-time milestones and 90%+ sprint predictability ·\n\nGrouped - Fan Community Platform\n\n- Led Agile Scrum delivery, coordinating cross-functional teams and achieving 93-97% on-time releases with improved sprint velocity ·\n\nSmoothire - Applicant Tracking System\n\n- Managed end-to-end ATS development, collaborating with developers, QA, and stakeholders to automate recruitment workflows and improve hiring efficiency ·\n\nStronger Veteran - GovTech Platform\n\n- Delivered GIS-based analytics platform for public-sector stakeholders ·\n\nKonnect - Peer-to-Peer Car Rental Platform\n\n- Coordinated rapid product delivery, testing cycles, and successful launch ·\n\nProject Deck\n\n- Led development of a project management platform with collaboration and reporting capabilities ·\n\nSUMMARY\n\nPMP® Certified Project Manager with 4 years of experience leading end-to-end software delivery across FinTech, HRTech, GovTech, Social Media, and Marketplace products. Experienced in managing cross-functional teams of developers, designers, QA engineers, and vendors while acting as the primary client point of contact. Skilled in Agile/Scrum project execution, project planning, scope management, stakeholder communication, enterprise SaaS delivery, and continuous process improvement\n\nSKILLS\n\nCore Competencies\n\nEnd-to-End SDLC Agile Scrum\n\nClient & Stakeholder Management\n\nProject Planning & Roadmaps\n\nSprint Planning & Release Management\n\nCross-functional Team Leadership\n\nScope, Budget & Resource Planning\n\nRisk, Issue & Change Management\n\nRequirements Gathering (BRD/FRD)\n\nProject Documentation Jira\n\nClickUp Trello\n\nEnterprise SaaS Delivery\n\nTools & Technologies\n\nJira ClickUp Trello GitHub\n\nAgile Scrum AWS (Basics)\n\nDocker (Basics) Jenkins (Basics)\n\nLinux Maven\n\n- [ ] 2\n\nEnhancu",
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "original_chars": 3296,
+    "normalized_chars": 3296,
+    "original_estimated_tokens": 824,
+    "normalized_estimated_tokens": 824,
+    "estimated_reduction_percent": 0.0
+  },
+  "contact_recovery": {
+    "status": "not_recovered",
+    "selected_extractor": "docling",
+    "present_before": [
+      "phone",
+      "email"
+    ],
+    "missing_before": [
+      "location"
+    ],
+    "recovered": {},
+    "still_missing": [
+      "location"
+    ],
+    "sources_tried": [
+      {
+        "source": "Tika",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "PyMuPDF",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "Docling",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "PyMuPDF",
+        "method": "first_page_text_layer",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "OCR",
+        "method": "ocr_first_page",
+        "found": [],
+        "error": null
+      }
+    ],
+    "applied": false,
+    "pre_recovery_normalized_text": null,
+    "at": "2026-11-11T06:47:17.846614+00:00"
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "failed",
+      "duration_ms": 11142.93,
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "cached_input_tokens": null,
+      "usage_available": false
+    }
+  ],
+  "token_usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "api_calls": 1,
+    "successful_calls": 0,
+    "failed_calls": 1,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": false,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": null,
+    "error": "Could not reach the Muse API: [Errno 11001] getaddrinfo failed",
+    "error_type": "MuseError",
+    "status": "failed",
+    "input_type": "text",
+    "duration_ms": 11142.93,
+    "usage": {},
+    "attempts": 1,
+    "text_normalization": {
+      "source": "docling",
+      "status": "applied",
+      "original_chars": 3296,
+      "normalized_chars": 3296,
+      "estimated_reduction_percent": 0.0,
+      "normalization_applied": false,
+      "normalization_steps": [],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "docling",
+  "selected_quality_score": 95.4,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 94.2,
+      "status": "success",
+      "word_count": 412,
+      "char_count": 3509,
+      "meaningful_char_count": 2877,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.1667,
+      "readability_score": 92.2,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": false,
+        "sections_found": [
+          "skills",
+          "experience",
+          "summary",
+          "projects",
+          "certifications"
+        ]
+      },
+      "structure": {
+        "heading_count": 4,
+        "paragraph_count": 61,
+        "bullet_count": 15
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.9223,
+        "cleanliness": 1.0,
+        "non_duplication": 0.8333,
+        "completeness": 0.8,
+        "structure": 1.0
+      }
+    },
+    "pymupdf": {
+      "extractor": "pymupdf",
+      "quality_score": 94.2,
+      "status": "success",
+      "word_count": 411,
+      "char_count": 3267,
+      "meaningful_char_count": 2825,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.1682,
+      "readability_score": 92.4,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": false,
+        "sections_found": [
+          "skills",
+          "experience",
+          "summary",
+          "projects",
+          "certifications"
+        ]
+      },
+      "structure": {
+        "heading_count": 4,
+        "paragraph_count": 5,
+        "bullet_count": 15
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.9241,
+        "cleanliness": 1.0,
+        "non_duplication": 0.8318,
+        "completeness": 0.8,
+        "structure": 1.0
+      }
+    },
+    "docling": {
+      "extractor": "docling",
+      "quality_score": 95.4,
+      "status": "success",
+      "word_count": 428,
+      "char_count": 3296,
+      "meaningful_char_count": 2827,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 89.3,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": false,
+        "sections_found": [
+          "skills",
+          "experience",
+          "summary",
+          "projects",
+          "certifications"
+        ]
+      },
+      "structure": {
+        "heading_count": 4,
+        "paragraph_count": 43,
+        "bullet_count": 16
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.8935,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 0.8,
+        "structure": 1.0
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 3296,
+    "normalized_chars": 3296,
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "error": null,
+    "original_text": "SABYASACHI MISHRA\n\nProject Manager | PMP® Certified\n\n+91-7749837873 msabyasachi58@gmail.com\n\nEXPERIENCE\n\nProject Manager\n\nLogic-Square Technology\n\n01/2022 - 09/2025\n\n- Led cross-functional teams comprising software developers, designers, QA engineers, and business stakeholders to deliver enterprise web applications using Agile Scrum ·\n- Served as the primary point of contact for clients, translating business requirements into actionable project plans and coordinating communication across teams ·\n- Created detailed project plans, project scope, milestones, timelines, resource allocation, dependencies, and delivery roadmaps ·\n- Assigned work, monitored sprint progress, conducted sprint planning, stand-ups, sprint reviews, and retrospectives while ensuring quality and timeline adherence ·\n- Managed project documentation including BRDs, FRDs, RAID logs, release notes, sprint reports, and status reports ·\n- Identified and mitigated risks, scope changes, dependencies, and resource constraints through proactive stakeholder communication ·\n- Continuously improved delivery processes using retrospective insights and Agile metrics ·\n- Worked closely with MERN Stack teams (MongoDB, Express.js, React.js, Node.js) through requirement discussions, sprint planning, testing coordination, and production deployments ·\n\nPROJECTS\n\nClosewise - FinTech Digital Signing Platform\n\n- Managed end-to-end delivery of an enterprise FinTech platform leading a team of 10-12 members and 3 vendors with $200K-$400K budget ·\n- Achieved 90-95% on-time milestones and 90%+ sprint predictability ·\n\nGrouped - Fan Community Platform\n\n- Led Agile Scrum delivery, coordinating cross-functional teams and achieving 93-97% on-time releases with improved sprint velocity ·\n\nSmoothire - Applicant Tracking System\n\n- Managed end-to-end ATS development, collaborating with developers, QA, and stakeholders to automate recruitment workflows and improve hiring efficiency ·\n\nStronger Veteran - GovTech Platform\n\n- Delivered GIS-based analytics platform for public-sector stakeholders ·\n\nKonnect - Peer-to-Peer Car Rental Platform\n\n- Coordinated rapid product delivery, testing cycles, and successful launch ·\n\nProject Deck\n\n- Led development of a project management platform with collaboration and reporting capabilities ·\n\nSUMMARY\n\nPMP® Certified Project Manager with 4 years of experience leading end-to-end software delivery across FinTech, HRTech, GovTech, Social Media, and Marketplace products. Experienced in managing cross-functional teams of developers, designers, QA engineers, and vendors while acting as the primary client point of contact. Skilled in Agile/Scrum project execution, project planning, scope management, stakeholder communication, enterprise SaaS delivery, and continuous process improvement\n\nSKILLS\n\nCore Competencies\n\nEnd-to-End SDLC Agile Scrum\n\nClient & Stakeholder Management\n\nProject Planning & Roadmaps\n\nSprint Planning & Release Management\n\nCross-functional Team Leadership\n\nScope, Budget & Resource Planning\n\nRisk, Issue & Change Management\n\nRequirements Gathering (BRD/FRD)\n\nProject Documentation Jira\n\nClickUp Trello\n\nEnterprise SaaS Delivery\n\nTools & Technologies\n\nJira ClickUp Trello GitHub\n\nAgile Scrum AWS (Basics)\n\nDocker (Basics) Jenkins (Basics)\n\nLinux Maven\n\n- [ ] 2\n\nEnhancu",
+    "normalized_text": "SABYASACHI MISHRA\n\nProject Manager | PMP® Certified\n\n+91-7749837873 msabyasachi58@gmail.com\n\nEXPERIENCE\n\nProject Manager\n\nLogic-Square Technology\n\n01/2022 - 09/2025\n\n- Led cross-functional teams comprising software developers, designers, QA engineers, and business stakeholders to deliver enterprise web applications using Agile Scrum ·\n- Served as the primary point of contact for clients, translating business requirements into actionable project plans and coordinating communication across teams ·\n- Created detailed project plans, project scope, milestones, timelines, resource allocation, dependencies, and delivery roadmaps ·\n- Assigned work, monitored sprint progress, conducted sprint planning, stand-ups, sprint reviews, and retrospectives while ensuring quality and timeline adherence ·\n- Managed project documentation including BRDs, FRDs, RAID logs, release notes, sprint reports, and status reports ·\n- Identified and mitigated risks, scope changes, dependencies, and resource constraints through proactive stakeholder communication ·\n- Continuously improved delivery processes using retrospective insights and Agile metrics ·\n- Worked closely with MERN Stack teams (MongoDB, Express.js, React.js, Node.js) through requirement discussions, sprint planning, testing coordination, and production deployments ·\n\nPROJECTS\n\nClosewise - FinTech Digital Signing Platform\n\n- Managed end-to-end delivery of an enterprise FinTech platform leading a team of 10-12 members and 3 vendors with $200K-$400K budget ·\n- Achieved 90-95% on-time milestones and 90%+ sprint predictability ·\n\nGrouped - Fan Community Platform\n\n- Led Agile Scrum delivery, coordinating cross-functional teams and achieving 93-97% on-time releases with improved sprint velocity ·\n\nSmoothire - Applicant Tracking System\n\n- Managed end-to-end ATS development, collaborating with developers, QA, and stakeholders to automate recruitment workflows and improve hiring efficiency ·\n\nStronger Veteran - GovTech Platform\n\n- Delivered GIS-based analytics platform for public-sector stakeholders ·\n\nKonnect - Peer-to-Peer Car Rental Platform\n\n- Coordinated rapid product delivery, testing cycles, and successful launch ·\n\nProject Deck\n\n- Led development of a project management platform with collaboration and reporting capabilities ·\n\nSUMMARY\n\nPMP® Certified Project Manager with 4 years of experience leading end-to-end software delivery across FinTech, HRTech, GovTech, Social Media, and Marketplace products. Experienced in managing cross-functional teams of developers, designers, QA engineers, and vendors while acting as the primary client point of contact. Skilled in Agile/Scrum project execution, project planning, scope management, stakeholder communication, enterprise SaaS delivery, and continuous process improvement\n\nSKILLS\n\nCore Competencies\n\nEnd-to-End SDLC Agile Scrum\n\nClient & Stakeholder Management\n\nProject Planning & Roadmaps\n\nSprint Planning & Release Management\n\nCross-functional Team Leadership\n\nScope, Budget & Resource Planning\n\nRisk, Issue & Change Management\n\nRequirements Gathering (BRD/FRD)\n\nProject Documentation Jira\n\nClickUp Trello\n\nEnterprise SaaS Delivery\n\nTools & Technologies\n\nJira ClickUp Trello GitHub\n\nAgile Scrum AWS (Basics)\n\nDocker (Basics) Jenkins (Basics)\n\nLinux Maven\n\n- [ ] 2\n\nEnhancu"
+  },
+  "llm": {
+    "status": "failed",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": null,
+    "validation": null,
+    "error": "Could not reach the Muse API: [Errno 11001] getaddrinfo failed",
+    "error_type": "MuseError",
+    "attempts": 1,
+    "duration_ms": 11142.93,
+    "usage": {},
+    "temperature": null
+  },
+  "llm_status": "failed",
+  "resume_data": null,
+  "resume_json": null,
+  "resume_json_source": null,
+  "timings": {
+    "extraction_seconds": 13.6797,
+    "quality_seconds": 0.0047,
+    "normalization_seconds": 0.0003,
+    "recovery_seconds": 3.1091,
+    "llm_seconds": 11.1431,
+    "total_seconds": 27.9369
+  },
+  "_stored_name": "51e32b3f-0ff3-4388-9799-2e7de3be1f18_SHJ-5354_SHC-287405.pdf"
+}

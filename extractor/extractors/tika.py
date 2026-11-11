@@ -47,7 +47,9 @@ or programmatic config):
   Linux/macOS, where the environment variable is the supported way).
 - ``java_bin`` — the Java executable (config → ``JAVA_BIN`` env →
   ``"java"`` from PATH). Tika 4.x requires Java 17+.
-- ``timeout_seconds`` — hard cap for the Java process.
+- ``timeout_seconds`` — EXTRACTION-ONLY safety cap for the Java
+  process (extractor.yaml; a stuck-process guard, never a
+  processing limit). Unset = no cap.
 - ``ocr_enabled`` — default ``true``. When false, no ``--config`` is
   generated and Tika runs with its built-in defaults.
 - ``ocr_language`` — Tesseract language (config → ``TIKA_OCR_LANGUAGE``
@@ -56,7 +58,8 @@ or programmatic config):
   ``ocr_only``, ``ocr_and_text`` or ``no_ocr``.
 - ``ocr_dpi`` — render DPI for OCR'd PDF pages (default 300).
 - ``ocr_timeout_seconds`` — Tesseract's own per-call timeout
-  (default 120).
+  inside Tika (default 86400 = 24h, i.e. effectively no cap, since
+  timeouts have been removed and Tika requires a value).
 - ``tesseract_path`` — the Tesseract executable *or its install
   directory* (config → ``TESSERACT_PATH`` env → PATH lookup →
   Windows default ``C:\\Program Files\\Tesseract-OCR``). Tika's
@@ -149,8 +152,10 @@ class TikaExtractor(BaseExtractor):
         self.ocr_strategy: str = str(
             self.config.get("ocr_strategy") or "auto").lower()
         self.ocr_dpi: int = int(self.config.get("ocr_dpi") or 300)
+        # Tika requires a timeoutMillis value for Tesseract; with
+        # timeouts removed, the default is 24h — effectively no cap.
         self.ocr_timeout_seconds: float = float(
-            self.config.get("ocr_timeout_seconds") or 120)
+            self.config.get("ocr_timeout_seconds") or 86400)
         tesseract = self.config.get("tesseract_path") or \
             os.environ.get("TESSERACT_PATH")
         self.tesseract_path: str | None = str(tesseract) if tesseract else None
@@ -359,10 +364,12 @@ class TikaExtractor(BaseExtractor):
                 "whether specific pages were OCR'd is not reported.")
         return base
 
-    def _run_cli(self, argv: list[str], timeout: float) -> subprocess.CompletedProcess:
+    def _run_cli(self, argv: list[str], timeout: float | None = None) -> subprocess.CompletedProcess:
         """Seam for tests: run the Tika CLI process and return the
-        completed process. Java-not-found and timeouts are mapped to
-        precise extractor errors here."""
+        completed process. ``timeout=None`` (the default) waits
+        however long the Java process takes; the extractor passes
+        its configured extraction-only safety cap when one is set.
+        Java-not-found is mapped to a precise extractor error here."""
         try:
             return subprocess.run(
                 argv, capture_output=True, text=True,
@@ -375,11 +382,14 @@ class TikaExtractor(BaseExtractor):
         except subprocess.TimeoutExpired as exc:
             raise ExtractionFailedError(
                 f"Apache Tika CLI timed out after {timeout:.0f}s and was "
-                "terminated.") from exc
+                "terminated." if timeout is not None else
+                "Apache Tika CLI timed out and was terminated.") from exc
 
     def _extract(self, path: Path) -> ExtractionResult:
         jar = self._require_jar()
-        timeout = float(self.timeout_seconds or 120)
+        # Extraction-only safety cap from config (None = no cap).
+        timeout = float(self.timeout_seconds) \
+            if self.timeout_seconds else None
         warnings: list[str] = []
         argv = [self.java_bin, "-jar", str(jar)]
         tesseract_dir: Path | None = None

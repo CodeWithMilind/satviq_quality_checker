@@ -15,8 +15,6 @@ from __future__ import annotations
 
 import json
 import time
-from concurrent.futures import ThreadPoolExecutor
-from concurrent.futures import TimeoutError as FutureTimeoutError
 from typing import Any
 
 from .config import PipelineConfig
@@ -135,18 +133,9 @@ class LLMProcessor:
         return self.service.generate_resume_json(text)  # type: ignore[union-attr]
 
     def _call_callable_once(self, text: str) -> Any:
-        fn = self.llm_callable
-        timeout = float(self.config.llm_timeout_seconds) if self.config.llm_timeout_seconds else None
-        if not timeout:
-            return fn(text)
-        executor = ThreadPoolExecutor(max_workers=1)
-        try:
-            future = executor.submit(fn, text)
-            return future.result(timeout=timeout)
-        except FutureTimeoutError:
-            raise TimeoutError(f"LLM call timed out after {timeout:g}s")
-        finally:
-            executor.shutdown(wait=False)
+        # No timeout is applied (timeouts were removed): the
+        # callable is invoked directly and waited out.
+        return self.llm_callable(text)
 
     # -- main ------------------------------------------------------------
     def process(self, normalized_text: str) -> dict[str, Any]:

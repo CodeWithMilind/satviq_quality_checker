@@ -1,0 +1,2093 @@
+{
+  "resume_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5",
+  "filename": "SHJ-5412_SHC-379412.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 153045,
+  "uploaded_at": "2026-11-11T06:59:49.856494+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "final_extractor": "tika",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5-attempt-1",
+      "resume_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Selected 'tika' with quality score 96.1 (tie among ['tika', 'pymupdf'] broken by configured tie-break order ['tika', 'pymupdf', 'docling']).",
+      "fallback_decision": "accept",
+      "fallback_reason": "Selected 'tika' with quality score 96.1 (tie among ['tika', 'pymupdf'] broken by configured tie-break order ['tika', 'pymupdf', 'docling']).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5",
+        "source_tool": "tika",
+        "attempt_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 117 characters, 4.7% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2893,
+            "word_count": 274,
+            "line_count": 59,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.335638,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 117,
+            "repeated_line_ratio": 0.046512
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2893,
+            "word_count": 274,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "profile",
+              "Skills": "technical skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "harsh122hy@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Profile",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "Profile",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Technical Skills",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "Technical Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Experience",
+                "detection_method": "heading",
+                "line_number": 33,
+                "evidence": "Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 51,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 80.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2893,
+            "word_count": 274,
+            "line_count": 59,
+            "non_empty_line_count": 44,
+            "short_line_count": 9,
+            "short_line_ratio": 0.204545,
+            "fragmented_line_count": 7,
+            "fragmented_line_ratio": 0.159091,
+            "mean_line_length": 60.48,
+            "median_line_length": 53.0,
+            "line_length_stdev": 38.42,
+            "line_length_cv": 0.635205,
+            "broken_sentence_count": 5,
+            "broken_sentence_ratio": 0.116279,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5",
+        "source_tool": "tika",
+        "attempt_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 117 characters, 4.7% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2893,
+            "word_count": 274,
+            "line_count": 59,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.335638,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 117,
+            "repeated_line_ratio": 0.046512
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2893,
+            "word_count": 274,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "profile",
+              "Skills": "technical skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "harsh122hy@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Profile",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "Profile",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Technical Skills",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "Technical Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Experience",
+                "detection_method": "heading",
+                "line_number": 33,
+                "evidence": "Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 51,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 80.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2893,
+            "word_count": 274,
+            "line_count": 59,
+            "non_empty_line_count": 44,
+            "short_line_count": 9,
+            "short_line_ratio": 0.204545,
+            "fragmented_line_count": 7,
+            "fragmented_line_ratio": 0.159091,
+            "mean_line_length": 60.48,
+            "median_line_length": 53.0,
+            "line_length_stdev": 38.42,
+            "line_length_cv": 0.635205,
+            "broken_sentence_count": 5,
+            "broken_sentence_ratio": 0.116279,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 96.1,
+      "duration_ms": 21851.9,
+      "text": "Harsh Yadav \n                         +91 8737811439   |    harsh122hy@gmail.com   |   linkedin.com/in/harsh-yadav-404a9a356 \n\n \nProfile  \nInformation Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess \nknowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting \nconcepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT \ninfrastructure and cloud technologies. \n\nTechnical Skills \nOS:                                  Windows 10/11, Windows Server 2022/2025, Red Hat Enterprise Linux (Basic) \nNetworking:                   TCP/IP, IP Addressing, DNS, DHCP, LAN/WAN, VPN, Wi-Fi Troubleshooting,  \n                                         Ping, Tracert \nUser Administration:    Active Directory, Password Reset, Outlook Configuration, MS Office, Office 365 \nSupport:                         Remote Desktop (RDP), Printer Configuration, Hardware & Software  \n                                        Troubleshooting \nHardware:                      PC Assembly, Component Installation, Hardware Configuration & Upgrades \nTools:                              Event Viewer, Task Manager, Ticket Handling, System Monitoring, Documentation \nCloud:                             AWS EC2, S3, IAM, VPC   \n \n\nHands-On Practice \n Installed and configured Windows 10/11, Windows Server 2022/2025 and Red Hat Enterprise Linux virtual \n\nmachines using VMware \n Configured TCP/IP settings and tested connectivity using Ping and Tracert. \n Performed hardware and software troubleshooting. \n Installed device drivers and configured printers. \n Practiced Active Directory, DNS and DHCP concepts. \n \n\nExperience \nEvo Technology                                                                                                                     Aug 2025  Present \nLucknow, Uttar Pradesh \nDesktop Support Engineer \n \n Troubleshooting of Desktop. \n Installing Microsoft Operating System updating and maintenance. \n Configure and troubleshooting of MS Outlook 2019. \n Performed general maintenance tasks on Computers, Laptops, Printers and other authorized network \n\nequipment. \n Basic LAN/WAN connectivity and internet troubleshooting. \n Solve internet related problems configuring basic TCP/IP settings. \n Solving laptop issues through Remote Support. \n Creating & Managing user accounts through domain & workgroup. \n\n \n\nEducation \nBachelor of Technology (Information Technology)                                        2020  2024 \nDr. A.P.J Abdul Kalam Technical University \n \nSenior Secondary Education                                                                                        2019 \nMaharaja Agrasen Public School, Lucknow \n \nSecondary Education                                                                                                     2017 \nMaharaja Agrasen Public School, Lucknow",
+      "extracted_text": "Harsh Yadav \n                         +91 8737811439   |    harsh122hy@gmail.com   |   linkedin.com/in/harsh-yadav-404a9a356 \n\n \nProfile  \nInformation Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess \nknowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting \nconcepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT \ninfrastructure and cloud technologies. \n\nTechnical Skills \nOS:                                  Windows 10/11, Windows Server 2022/2025, Red Hat Enterprise Linux (Basic) \nNetworking:                   TCP/IP, IP Addressing, DNS, DHCP, LAN/WAN, VPN, Wi-Fi Troubleshooting,  \n                                         Ping, Tracert \nUser Administration:    Active Directory, Password Reset, Outlook Configuration, MS Office, Office 365 \nSupport:                         Remote Desktop (RDP), Printer Configuration, Hardware & Software  \n                                        Troubleshooting \nHardware:                      PC Assembly, Component Installation, Hardware Configuration & Upgrades \nTools:                              Event Viewer, Task Manager, Ticket Handling, System Monitoring, Documentation \nCloud:                             AWS EC2, S3, IAM, VPC   \n \n\nHands-On Practice \n Installed and configured Windows 10/11, Windows Server 2022/2025 and Red Hat Enterprise Linux virtual \n\nmachines using VMware \n Configured TCP/IP settings and tested connectivity using Ping and Tracert. \n Performed hardware and software troubleshooting. \n Installed device drivers and configured printers. \n Practiced Active Directory, DNS and DHCP concepts. \n \n\nExperience \nEvo Technology                                                                                                                     Aug 2025  Present \nLucknow, Uttar Pradesh \nDesktop Support Engineer \n \n Troubleshooting of Desktop. \n Installing Microsoft Operating System updating and maintenance. \n Configure and troubleshooting of MS Outlook 2019. \n Performed general maintenance tasks on Computers, Laptops, Printers and other authorized network \n\nequipment. \n Basic LAN/WAN connectivity and internet troubleshooting. \n Solve internet related problems configuring basic TCP/IP settings. \n Solving laptop issues through Remote Support. \n Creating & Managing user accounts through domain & workgroup. \n\n \n\nEducation \nBachelor of Technology (Information Technology)                                        2020  2024 \nDr. A.P.J Abdul Kalam Technical University \n \nSenior Secondary Education                                                                                        2019 \nMaharaja Agrasen Public School, Lucknow \n \nSecondary Education                                                                                                     2017 \nMaharaja Agrasen Public School, Lucknow",
+      "extracted_text_length": 2893,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Harsh Yadav\n+91 8737811439 | harsh122hy@gmail.com | linkedin.com/in/harsh-yadav-404a9a356\n\nProfile\nInformation Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess\nknowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting\nconcepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT\ninfrastructure and cloud technologies.\n\nTechnical Skills\nOS: Windows 10/11, Windows Server 2022/2025, Red Hat Enterprise Linux (Basic)\nNetworking: TCP/IP, IP Addressing, DNS, DHCP, LAN/WAN, VPN, Wi-Fi Troubleshooting,\nPing, Tracert\nUser Administration: Active Directory, Password Reset, Outlook Configuration, MS Office, Office 365\nSupport: Remote Desktop (RDP), Printer Configuration, Hardware & Software\nTroubleshooting\nHardware: PC Assembly, Component Installation, Hardware Configuration & Upgrades\nTools: Event Viewer, Task Manager, Ticket Handling, System Monitoring, Documentation\nCloud: AWS EC2, S3, IAM, VPC\n\nHands-On Practice\nInstalled and configured Windows 10/11, Windows Server 2022/2025 and Red Hat Enterprise Linux virtual\n\nmachines using VMware\nConfigured TCP/IP settings and tested connectivity using Ping and Tracert.\nPerformed hardware and software troubleshooting.\nInstalled device drivers and configured printers.\nPracticed Active Directory, DNS and DHCP concepts.\n\nExperience\nEvo Technology Aug 2025 Present\nLucknow, Uttar Pradesh\nDesktop Support Engineer\n\nTroubleshooting of Desktop.\nInstalling Microsoft Operating System updating and maintenance.\nConfigure and troubleshooting of MS Outlook 2019.\nPerformed general maintenance tasks on Computers, Laptops, Printers and other authorized network\n\nequipment.\nBasic LAN/WAN connectivity and internet troubleshooting.\nSolve internet related problems configuring basic TCP/IP settings.\nSolving laptop issues through Remote Support.\nCreating & Managing user accounts through domain & workgroup.\n\nEducation\nBachelor of Technology (Information Technology) 2020 2024\nDr. A.P.J Abdul Kalam Technical University\n\nSenior Secondary Education 2019\nMaharaja Agrasen Public School, Lucknow\n\nSecondary Education 2017\nMaharaja Agrasen Public School, Lucknow"
+    },
+    {
+      "attempt_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5-attempt-2",
+      "resume_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5",
+      "attempt_number": 2,
+      "extractor_name": "pymupdf",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 96.1 (selected 'tika' scored 96.1).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 96.1 (selected 'tika' scored 96.1).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5",
+        "source_tool": "pymupdf",
+        "attempt_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 117 characters, 4.7% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2898,
+            "word_count": 274,
+            "line_count": 64,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.336784,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 117,
+            "repeated_line_ratio": 0.046512
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2898,
+            "word_count": 274,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "profile",
+              "Skills": "technical skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "harsh122hy@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Profile",
+                "detection_method": "heading",
+                "line_number": 4,
+                "evidence": "Profile",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Technical Skills",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "Technical Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Experience",
+                "detection_method": "heading",
+                "line_number": 33,
+                "evidence": "Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 56,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 80.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2898,
+            "word_count": 274,
+            "line_count": 64,
+            "non_empty_line_count": 44,
+            "short_line_count": 9,
+            "short_line_ratio": 0.204545,
+            "fragmented_line_count": 7,
+            "fragmented_line_ratio": 0.159091,
+            "mean_line_length": 60.48,
+            "median_line_length": 53.0,
+            "line_length_stdev": 38.42,
+            "line_length_cv": 0.635205,
+            "broken_sentence_count": 5,
+            "broken_sentence_ratio": 0.116279,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5",
+        "source_tool": "pymupdf",
+        "attempt_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 80.0,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 117 characters, 4.7% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2898,
+            "word_count": 274,
+            "line_count": 64,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.336784,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 117,
+            "repeated_line_ratio": 0.046512
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2898,
+            "word_count": 274,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "profile",
+              "Skills": "technical skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "harsh122hy@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Profile",
+                "detection_method": "heading",
+                "line_number": 4,
+                "evidence": "Profile",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Technical Skills",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "Technical Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Experience",
+                "detection_method": "heading",
+                "line_number": 33,
+                "evidence": "Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 56,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 80.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2898,
+            "word_count": 274,
+            "line_count": 64,
+            "non_empty_line_count": 44,
+            "short_line_count": 9,
+            "short_line_ratio": 0.204545,
+            "fragmented_line_count": 7,
+            "fragmented_line_ratio": 0.159091,
+            "mean_line_length": 60.48,
+            "median_line_length": 53.0,
+            "line_length_stdev": 38.42,
+            "line_length_cv": 0.635205,
+            "broken_sentence_count": 5,
+            "broken_sentence_ratio": 0.116279,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 96.1,
+      "duration_ms": 30.56,
+      "text": "Harsh Yadav \n                         +91 8737811439   |    harsh122hy@gmail.com   |   linkedin.com/in/harsh-yadav-404a9a356 \n \nProfile  \nInformation Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess \nknowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting \nconcepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT \ninfrastructure and cloud technologies. \nTechnical Skills \nOS:                                  Windows 10/11, Windows Server 2022/2025, Red Hat Enterprise Linux (Basic) \nNetworking:                   TCP/IP, IP Addressing, DNS, DHCP, LAN/WAN, VPN, Wi-Fi Troubleshooting,  \n                                         Ping, Tracert \nUser Administration:    Active Directory, Password Reset, Outlook Configuration, MS Office, Office 365 \nSupport:                         Remote Desktop (RDP), Printer Configuration, Hardware & Software  \n                                        Troubleshooting \nHardware:                      PC Assembly, Component Installation, Hardware Configuration & Upgrades \nTools:                              Event Viewer, Task Manager, Ticket Handling, System Monitoring, Documentation \nCloud:                             AWS EC2, S3, IAM, VPC   \n \nHands-On Practice \n \nInstalled and configured Windows 10/11, Windows Server 2022/2025 and Red Hat Enterprise Linux virtual \nmachines using VMware \n \nConfigured TCP/IP settings and tested connectivity using Ping and Tracert. \n \nPerformed hardware and software troubleshooting. \n \nInstalled device drivers and configured printers. \n \nPracticed Active Directory, DNS and DHCP concepts. \n \nExperience \nEvo Technology                                                                                                                     Aug 2025  Present \nLucknow, Uttar Pradesh \nDesktop Support Engineer \n \n \nTroubleshooting of Desktop. \n \nInstalling Microsoft Operating System updating and maintenance. \n \nConfigure and troubleshooting of MS Outlook 2019. \n \nPerformed general maintenance tasks on Computers, Laptops, Printers and other authorized network \nequipment. \n \nBasic LAN/WAN connectivity and internet troubleshooting. \n \nSolve internet related problems configuring basic TCP/IP settings. \n \nSolving laptop issues through Remote Support. \n \nCreating & Managing user accounts through domain & workgroup. \n \nEducation \nBachelor of Technology (Information Technology)                                        2020  2024 \nDr. A.P.J Abdul Kalam Technical University \n \nSenior Secondary Education                                                                                        2019 \nMaharaja Agrasen Public School, Lucknow \n \nSecondary Education                                                                                                     2017 \nMaharaja Agrasen Public School, Lucknow",
+      "extracted_text": "Harsh Yadav \n                         +91 8737811439   |    harsh122hy@gmail.com   |   linkedin.com/in/harsh-yadav-404a9a356 \n \nProfile  \nInformation Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess \nknowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting \nconcepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT \ninfrastructure and cloud technologies. \nTechnical Skills \nOS:                                  Windows 10/11, Windows Server 2022/2025, Red Hat Enterprise Linux (Basic) \nNetworking:                   TCP/IP, IP Addressing, DNS, DHCP, LAN/WAN, VPN, Wi-Fi Troubleshooting,  \n                                         Ping, Tracert \nUser Administration:    Active Directory, Password Reset, Outlook Configuration, MS Office, Office 365 \nSupport:                         Remote Desktop (RDP), Printer Configuration, Hardware & Software  \n                                        Troubleshooting \nHardware:                      PC Assembly, Component Installation, Hardware Configuration & Upgrades \nTools:                              Event Viewer, Task Manager, Ticket Handling, System Monitoring, Documentation \nCloud:                             AWS EC2, S3, IAM, VPC   \n \nHands-On Practice \n \nInstalled and configured Windows 10/11, Windows Server 2022/2025 and Red Hat Enterprise Linux virtual \nmachines using VMware \n \nConfigured TCP/IP settings and tested connectivity using Ping and Tracert. \n \nPerformed hardware and software troubleshooting. \n \nInstalled device drivers and configured printers. \n \nPracticed Active Directory, DNS and DHCP concepts. \n \nExperience \nEvo Technology                                                                                                                     Aug 2025  Present \nLucknow, Uttar Pradesh \nDesktop Support Engineer \n \n \nTroubleshooting of Desktop. \n \nInstalling Microsoft Operating System updating and maintenance. \n \nConfigure and troubleshooting of MS Outlook 2019. \n \nPerformed general maintenance tasks on Computers, Laptops, Printers and other authorized network \nequipment. \n \nBasic LAN/WAN connectivity and internet troubleshooting. \n \nSolve internet related problems configuring basic TCP/IP settings. \n \nSolving laptop issues through Remote Support. \n \nCreating & Managing user accounts through domain & workgroup. \n \nEducation \nBachelor of Technology (Information Technology)                                        2020  2024 \nDr. A.P.J Abdul Kalam Technical University \n \nSenior Secondary Education                                                                                        2019 \nMaharaja Agrasen Public School, Lucknow \n \nSecondary Education                                                                                                     2017 \nMaharaja Agrasen Public School, Lucknow",
+      "extracted_text_length": 2898,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "format": "PDF 1.7",
+        "title": "Naukri_HarshYadav[1y_1m].pdf",
+        "producer": "Microsoft: Print To PDF",
+        "creationDate": "D:20261006163427+05'30'",
+        "modDate": "D:20261006163427+05'30'"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Harsh Yadav\n+91 8737811439 | harsh122hy@gmail.com | linkedin.com/in/harsh-yadav-404a9a356\n\nProfile\nInformation Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess\nknowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting\nconcepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT\ninfrastructure and cloud technologies.\nTechnical Skills\nOS: Windows 10/11, Windows Server 2022/2025, Red Hat Enterprise Linux (Basic)\nNetworking: TCP/IP, IP Addressing, DNS, DHCP, LAN/WAN, VPN, Wi-Fi Troubleshooting,\nPing, Tracert\nUser Administration: Active Directory, Password Reset, Outlook Configuration, MS Office, Office 365\nSupport: Remote Desktop (RDP), Printer Configuration, Hardware & Software\nTroubleshooting\nHardware: PC Assembly, Component Installation, Hardware Configuration & Upgrades\nTools: Event Viewer, Task Manager, Ticket Handling, System Monitoring, Documentation\nCloud: AWS EC2, S3, IAM, VPC\n\nHands-On Practice\n\nInstalled and configured Windows 10/11, Windows Server 2022/2025 and Red Hat Enterprise Linux virtual\nmachines using VMware\n\nConfigured TCP/IP settings and tested connectivity using Ping and Tracert.\n\nPerformed hardware and software troubleshooting.\n\nInstalled device drivers and configured printers.\n\nPracticed Active Directory, DNS and DHCP concepts.\n\nExperience\nEvo Technology Aug 2025 Present\nLucknow, Uttar Pradesh\nDesktop Support Engineer\n\nTroubleshooting of Desktop.\n\nInstalling Microsoft Operating System updating and maintenance.\n\nConfigure and troubleshooting of MS Outlook 2019.\n\nPerformed general maintenance tasks on Computers, Laptops, Printers and other authorized network\nequipment.\n\nBasic LAN/WAN connectivity and internet troubleshooting.\n\nSolve internet related problems configuring basic TCP/IP settings.\n\nSolving laptop issues through Remote Support.\n\nCreating & Managing user accounts through domain & workgroup.\n\nEducation\nBachelor of Technology (Information Technology) 2020 2024\nDr. A.P.J Abdul Kalam Technical University\n\nSenior Secondary Education 2019\nMaharaja Agrasen Public School, Lucknow\n\nSecondary Education 2017\nMaharaja Agrasen Public School, Lucknow"
+    },
+    {
+      "attempt_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5-attempt-3",
+      "resume_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5",
+      "attempt_number": 3,
+      "extractor_name": "docling",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 94.4 (selected 'tika' scored 96.1).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 94.4 (selected 'tika' scored 96.1).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5",
+        "source_tool": "docling",
+        "attempt_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 78.46,
+          "flags": [
+            "ABNORMAL_WHITESPACE_RATIO",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Whitespace makes up 37.2% of the text.",
+            "Repeated-character corruption suspected: longest run is 161 characters, 13.9% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 3507,
+            "word_count": 319,
+            "line_count": 50,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.371543,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 161,
+            "repeated_line_ratio": 0.138889
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3507,
+            "word_count": 319,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:(\\+?\\d[\\d\\s().-]{7,}\\d)",
+              "Summary": "profile",
+              "Skills": "technical skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "2020 2024",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Profile",
+                "detection_method": "heading",
+                "line_number": 1,
+                "evidence": "Profile",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Technical Skills",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "Technical Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Experience",
+                "detection_method": "heading",
+                "line_number": 23,
+                "evidence": "Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 38,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 78.46
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3507,
+            "word_count": 319,
+            "line_count": 50,
+            "non_empty_line_count": 37,
+            "short_line_count": 8,
+            "short_line_ratio": 0.216216,
+            "fragmented_line_count": 4,
+            "fragmented_line_ratio": 0.108108,
+            "mean_line_length": 93.46,
+            "median_line_length": 68.0,
+            "line_length_stdev": 74.24,
+            "line_length_cv": 0.794365,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5",
+        "source_tool": "docling",
+        "attempt_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 78.46,
+          "flags": [
+            "ABNORMAL_WHITESPACE_RATIO",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Whitespace makes up 37.2% of the text.",
+            "Repeated-character corruption suspected: longest run is 161 characters, 13.9% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 3507,
+            "word_count": 319,
+            "line_count": 50,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.371543,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 161,
+            "repeated_line_ratio": 0.138889
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3507,
+            "word_count": 319,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:(\\+?\\d[\\d\\s().-]{7,}\\d)",
+              "Summary": "profile",
+              "Skills": "technical skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "2020 2024",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Profile",
+                "detection_method": "heading",
+                "line_number": 1,
+                "evidence": "Profile",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Technical Skills",
+                "detection_method": "heading",
+                "line_number": 5,
+                "evidence": "Technical Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Experience",
+                "detection_method": "heading",
+                "line_number": 23,
+                "evidence": "Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 38,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 78.46
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3507,
+            "word_count": 319,
+            "line_count": 50,
+            "non_empty_line_count": 37,
+            "short_line_count": 8,
+            "short_line_ratio": 0.216216,
+            "fragmented_line_count": 4,
+            "fragmented_line_ratio": 0.108108,
+            "mean_line_length": 93.46,
+            "median_line_length": 68.0,
+            "line_length_stdev": 74.24,
+            "line_length_cv": 0.794365,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 94.4,
+      "duration_ms": 49050.14,
+      "text": "Profile\n\nInformation Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess knowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting concepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT infrastructure and cloud technologies.\n\nTechnical Skills\n\n| OS:                           | Windows 10/11, Windows Server 2022/2025, Red Hat Enterprise Linux (Basic) TCP/IP, IP Addressing, DNS, DHCP, LAN/WAN, VPN, Wi-Fi Troubleshooting,                |\n|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| Networking:                   | Ping, Tracert                                                                                                                                                   |\n| User Administration: Support: | Active Directory, Password Reset, Outlook Configuration, MS Office, Office 365 Remote Desktop (RDP), Printer Configuration, Hardware & Software Troubleshooting |\n| Hardware:                     | PC Assembly, Component Installation, Hardware Configuration & Upgrades                                                                                          |\n| Tools:                        | Event Viewer, Task Manager, Ticket Handling, System Monitoring, Documentation                                                                                   |\n| Cloud:                        | AWS EC2, S3, IAM, VPC                                                                                                                                           |\n\nHands-On Practice\n\n- Installed and configured Windows 10/11, Windows Server 2022/2025 and Red Hat Enterprise Linux virtual machines using VMware\n- Configured TCP/IP settings and tested connectivity using Ping and Tracert.\n- Performed hardware and software troubleshooting.\n- Installed device drivers and configured printers.\n- Practiced Active Directory, DNS and DHCP concepts.\n\nExperience\n\nEvo Technology Lucknow, Uttar Pradesh\n\nDesktop Support Engineer\n\n- Troubleshooting of Desktop.\n- Installing Microsoft Operating System updating and maintenance.\n- Configure and troubleshooting of MS Outlook 2019.\n- Performed general maintenance tasks on Computers, Laptops, Printers and other authorized network equipment.\n- Basic LAN/WAN connectivity and internet troubleshooting.\n- Solve internet related problems configuring basic TCP/IP settings.\n- Solving laptop issues through Remote Support.\n- Creating & Managing user accounts through domain & workgroup.\n\nEducation\n\n| Bachelor of Technology (Information Technology) Dr. A.P.J Abdul Kalam Technical University   |   2020 2024 |\n|----------------------------------------------------------------------------------------------|-------------|\n| Senior Secondary Education                                                                   |             |\n|                                                                                              |        2019 |\n| Maharaja Agrasen Public School, Lucknow                                                      |             |\n| Secondary Education                                                                          |        2017 |\n| Maharaja Agrasen Public School, Lucknow                                                      |             |\n\nHarsh Yadav\n\nAug 2025 Present",
+      "extracted_text": "Profile\n\nInformation Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess knowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting concepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT infrastructure and cloud technologies.\n\nTechnical Skills\n\n| OS:                           | Windows 10/11, Windows Server 2022/2025, Red Hat Enterprise Linux (Basic) TCP/IP, IP Addressing, DNS, DHCP, LAN/WAN, VPN, Wi-Fi Troubleshooting,                |\n|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| Networking:                   | Ping, Tracert                                                                                                                                                   |\n| User Administration: Support: | Active Directory, Password Reset, Outlook Configuration, MS Office, Office 365 Remote Desktop (RDP), Printer Configuration, Hardware & Software Troubleshooting |\n| Hardware:                     | PC Assembly, Component Installation, Hardware Configuration & Upgrades                                                                                          |\n| Tools:                        | Event Viewer, Task Manager, Ticket Handling, System Monitoring, Documentation                                                                                   |\n| Cloud:                        | AWS EC2, S3, IAM, VPC                                                                                                                                           |\n\nHands-On Practice\n\n- Installed and configured Windows 10/11, Windows Server 2022/2025 and Red Hat Enterprise Linux virtual machines using VMware\n- Configured TCP/IP settings and tested connectivity using Ping and Tracert.\n- Performed hardware and software troubleshooting.\n- Installed device drivers and configured printers.\n- Practiced Active Directory, DNS and DHCP concepts.\n\nExperience\n\nEvo Technology Lucknow, Uttar Pradesh\n\nDesktop Support Engineer\n\n- Troubleshooting of Desktop.\n- Installing Microsoft Operating System updating and maintenance.\n- Configure and troubleshooting of MS Outlook 2019.\n- Performed general maintenance tasks on Computers, Laptops, Printers and other authorized network equipment.\n- Basic LAN/WAN connectivity and internet troubleshooting.\n- Solve internet related problems configuring basic TCP/IP settings.\n- Solving laptop issues through Remote Support.\n- Creating & Managing user accounts through domain & workgroup.\n\nEducation\n\n| Bachelor of Technology (Information Technology) Dr. A.P.J Abdul Kalam Technical University   |   2020 2024 |\n|----------------------------------------------------------------------------------------------|-------------|\n| Senior Secondary Education                                                                   |             |\n|                                                                                              |        2019 |\n| Maharaja Agrasen Public School, Lucknow                                                      |             |\n| Secondary Education                                                                          |        2017 |\n| Maharaja Agrasen Public School, Lucknow                                                      |             |\n\nHarsh Yadav\n\nAug 2025 Present",
+      "extracted_text_length": 3507,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Profile\n\nInformation Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess knowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting concepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT infrastructure and cloud technologies.\n\nTechnical Skills\n\n| OS: | Windows 10/11, Windows Server 2022/2025, Red Hat Enterprise Linux (Basic) TCP/IP, IP Addressing, DNS, DHCP, LAN/WAN, VPN, Wi-Fi Troubleshooting, |\n|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| Networking: | Ping, Tracert |\n| User Administration: Support: | Active Directory, Password Reset, Outlook Configuration, MS Office, Office 365 Remote Desktop (RDP), Printer Configuration, Hardware & Software Troubleshooting |\n| Hardware: | PC Assembly, Component Installation, Hardware Configuration & Upgrades |\n| Tools: | Event Viewer, Task Manager, Ticket Handling, System Monitoring, Documentation |\n| Cloud: | AWS EC2, S3, IAM, VPC |\n\nHands-On Practice\n\n- Installed and configured Windows 10/11, Windows Server 2022/2025 and Red Hat Enterprise Linux virtual machines using VMware\n- Configured TCP/IP settings and tested connectivity using Ping and Tracert.\n- Performed hardware and software troubleshooting.\n- Installed device drivers and configured printers.\n- Practiced Active Directory, DNS and DHCP concepts.\n\nExperience\n\nEvo Technology Lucknow, Uttar Pradesh\n\nDesktop Support Engineer\n\n- Troubleshooting of Desktop.\n- Installing Microsoft Operating System updating and maintenance.\n- Configure and troubleshooting of MS Outlook 2019.\n- Performed general maintenance tasks on Computers, Laptops, Printers and other authorized network equipment.\n- Basic LAN/WAN connectivity and internet troubleshooting.\n- Solve internet related problems configuring basic TCP/IP settings.\n- Solving laptop issues through Remote Support.\n- Creating & Managing user accounts through domain & workgroup.\n\nEducation\n\n| Bachelor of Technology (Information Technology) Dr. A.P.J Abdul Kalam Technical University | 2020 2024 |\n|----------------------------------------------------------------------------------------------|-------------|\n| Senior Secondary Education | |\n| | 2019 |\n| Maharaja Agrasen Public School, Lucknow | |\n| Secondary Education | 2017 |\n| Maharaja Agrasen Public School, Lucknow | |\n\nHarsh Yadav\n\nAug 2025 Present"
+    }
+  ],
+  "attempt_count": 3,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "extracted_text": "Harsh Yadav \n                         +91 8737811439   |    harsh122hy@gmail.com   |   linkedin.com/in/harsh-yadav-404a9a356 \n\n \nProfile  \nInformation Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess \nknowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting \nconcepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT \ninfrastructure and cloud technologies. \n\nTechnical Skills \nOS:                                  Windows 10/11, Windows Server 2022/2025, Red Hat Enterprise Linux (Basic) \nNetworking:                   TCP/IP, IP Addressing, DNS, DHCP, LAN/WAN, VPN, Wi-Fi Troubleshooting,  \n                                         Ping, Tracert \nUser Administration:    Active Directory, Password Reset, Outlook Configuration, MS Office, Office 365 \nSupport:                         Remote Desktop (RDP), Printer Configuration, Hardware & Software  \n                                        Troubleshooting \nHardware:                      PC Assembly, Component Installation, Hardware Configuration & Upgrades \nTools:                              Event Viewer, Task Manager, Ticket Handling, System Monitoring, Documentation \nCloud:                             AWS EC2, S3, IAM, VPC   \n \n\nHands-On Practice \n Installed and configured Windows 10/11, Windows Server 2022/2025 and Red Hat Enterprise Linux virtual \n\nmachines using VMware \n Configured TCP/IP settings and tested connectivity using Ping and Tracert. \n Performed hardware and software troubleshooting. \n Installed device drivers and configured printers. \n Practiced Active Directory, DNS and DHCP concepts. \n \n\nExperience \nEvo Technology                                                                                                                     Aug 2025  Present \nLucknow, Uttar Pradesh \nDesktop Support Engineer \n \n Troubleshooting of Desktop. \n Installing Microsoft Operating System updating and maintenance. \n Configure and troubleshooting of MS Outlook 2019. \n Performed general maintenance tasks on Computers, Laptops, Printers and other authorized network \n\nequipment. \n Basic LAN/WAN connectivity and internet troubleshooting. \n Solve internet related problems configuring basic TCP/IP settings. \n Solving laptop issues through Remote Support. \n Creating & Managing user accounts through domain & workgroup. \n\n \n\nEducation \nBachelor of Technology (Information Technology)                                        2020  2024 \nDr. A.P.J Abdul Kalam Technical University \n \nSenior Secondary Education                                                                                        2019 \nMaharaja Agrasen Public School, Lucknow \n \nSecondary Education                                                                                                     2017 \nMaharaja Agrasen Public School, Lucknow",
+  "final_extracted_text": "Harsh Yadav \n                         +91 8737811439   |    harsh122hy@gmail.com   |   linkedin.com/in/harsh-yadav-404a9a356 \n\n \nProfile  \nInformation Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess \nknowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting \nconcepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT \ninfrastructure and cloud technologies. \n\nTechnical Skills \nOS:                                  Windows 10/11, Windows Server 2022/2025, Red Hat Enterprise Linux (Basic) \nNetworking:                   TCP/IP, IP Addressing, DNS, DHCP, LAN/WAN, VPN, Wi-Fi Troubleshooting,  \n                                         Ping, Tracert \nUser Administration:    Active Directory, Password Reset, Outlook Configuration, MS Office, Office 365 \nSupport:                         Remote Desktop (RDP), Printer Configuration, Hardware & Software  \n                                        Troubleshooting \nHardware:                      PC Assembly, Component Installation, Hardware Configuration & Upgrades \nTools:                              Event Viewer, Task Manager, Ticket Handling, System Monitoring, Documentation \nCloud:                             AWS EC2, S3, IAM, VPC   \n \n\nHands-On Practice \n Installed and configured Windows 10/11, Windows Server 2022/2025 and Red Hat Enterprise Linux virtual \n\nmachines using VMware \n Configured TCP/IP settings and tested connectivity using Ping and Tracert. \n Performed hardware and software troubleshooting. \n Installed device drivers and configured printers. \n Practiced Active Directory, DNS and DHCP concepts. \n \n\nExperience \nEvo Technology                                                                                                                     Aug 2025  Present \nLucknow, Uttar Pradesh \nDesktop Support Engineer \n \n Troubleshooting of Desktop. \n Installing Microsoft Operating System updating and maintenance. \n Configure and troubleshooting of MS Outlook 2019. \n Performed general maintenance tasks on Computers, Laptops, Printers and other authorized network \n\nequipment. \n Basic LAN/WAN connectivity and internet troubleshooting. \n Solve internet related problems configuring basic TCP/IP settings. \n Solving laptop issues through Remote Support. \n Creating & Managing user accounts through domain & workgroup. \n\n \n\nEducation \nBachelor of Technology (Information Technology)                                        2020  2024 \nDr. A.P.J Abdul Kalam Technical University \n \nSenior Secondary Education                                                                                        2019 \nMaharaja Agrasen Public School, Lucknow \n \nSecondary Education                                                                                                     2017 \nMaharaja Agrasen Public School, Lucknow",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "quality": {
+    "status": "PASS",
+    "document_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5",
+    "source_tool": "tika",
+    "attempt_id": "fe975e94-57b5-40ed-b06b-c56c2375d5f5-attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 80.0,
+      "flags": [
+        "EXCESSIVE_REPEATED_CHARACTERS"
+      ],
+      "reasons": [
+        "Repeated-character corruption suspected: longest run is 117 characters, 4.7% of long lines are single-character repeats."
+      ],
+      "metrics": {
+        "char_count": 2893,
+        "word_count": 274,
+        "line_count": 59,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.335638,
+        "symbol_count": 0,
+        "symbol_ratio": 0.0,
+        "max_repeated_char_run": 117,
+        "repeated_line_ratio": 0.046512
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 91.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 2893,
+        "word_count": 274,
+        "configured_section_count": 8,
+        "detected_count": 5,
+        "missing_count": 3,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_sections": [
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "profile",
+          "Skills": "technical skills",
+          "Work Experience": "experience",
+          "Education": "education"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "harsh122hy@gmail.com",
+            "confidence": 0.8
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "Profile",
+            "detection_method": "heading",
+            "line_number": 5,
+            "evidence": "Profile",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "Technical Skills",
+            "detection_method": "heading",
+            "line_number": 11,
+            "evidence": "Technical Skills",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "Experience",
+            "detection_method": "heading",
+            "line_number": 33,
+            "evidence": "Experience",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "Education",
+            "detection_method": "heading",
+            "line_number": 51,
+            "evidence": "Education",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Responsibilities": "missing",
+          "Projects": "missing",
+          "Certifications": "missing"
+        },
+        "extraction_quality": 80.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_sections": [
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 2893,
+        "word_count": 274,
+        "line_count": 59,
+        "non_empty_line_count": 44,
+        "short_line_count": 9,
+        "short_line_ratio": 0.204545,
+        "fragmented_line_count": 7,
+        "fragmented_line_ratio": 0.159091,
+        "mean_line_length": 60.48,
+        "median_line_length": 53.0,
+        "line_length_stdev": 38.42,
+        "line_length_cv": 0.635205,
+        "broken_sentence_count": 5,
+        "broken_sentence_ratio": 0.116279,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Selected 'tika' with quality score 96.1 (tie among ['tika', 'pymupdf'] broken by configured tie-break order ['tika', 'pymupdf', 'docling']).",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 21851.9,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": 30.56,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 49050.14,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=96.1, pymupdf=96.1, docling=94.4",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected 'tika' with quality score 96.1 (tie among ['tika', 'pymupdf'] broken by configured tie-break order ['tika', 'pymupdf', 'docling']).",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Tika text normalized: 2893 → 2205 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Contact Information Recovery",
+      "type": "contact_recovery",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Phone, email and location already present in the selected text — no recovery needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 28049.69,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 77171.59999999999,
+      "message": "Muse AI produced validated Resume JSON from the Tika extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 77171.59999999999,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Harsh Yadav \n                         +91 8737811439   |    harsh122hy@gmail.com   |   linkedin.com/in/harsh-yadav-404a9a356 \n\n \nProfile  \nInformation Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess \nknowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting \nconcepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT \ninfrastructure and cloud technologies. \n\nTechnical Skills \nOS:                                  Windows 10/11, Windows Server 2022/2025, Red Hat Enterprise Linux (Basic) \nNetworking:                   TCP/IP, IP Addressing, DNS, DHCP, LAN/WAN, VPN, Wi-Fi Troubleshooting,  \n                                         Ping, Tracert \nUser Administration:    Active Directory, Password Reset, Outlook Configuration, MS Office, Office 365 \nSupport:                         Remote Desktop (RDP), Printer Configuration, Hardware & Software  \n                                        Troubleshooting \nHardware:                      PC Assembly, Component Installation, Hardware Configuration & Upgrades \nTools:                              Event Viewer, Task Manager, Ticket Handling, System Monitoring, Documentation \nCloud:                             AWS EC2, S3, IAM, VPC   \n \n\nHands-On Practice \n Installed and configured Windows 10/11, Windows Server 2022/2025 and Red Hat Enterprise Linux virtual \n\nmachines using VMware \n Configured TCP/IP settings and tested connectivity using Ping and Tracert. \n Performed hardware and software troubleshooting. \n Installed device drivers and configured printers. \n Practiced Active Directory, DNS and DHCP concepts. \n \n\nExperience \nEvo Technology                                                                                                                     Aug 2025  Present \nLucknow, Uttar Pradesh \nDesktop Support Engineer \n \n Troubleshooting of Desktop. \n Installing Microsoft Operating System updating and maintenance. \n Configure and troubleshooting of MS Outlook 2019. \n Performed general maintenance tasks on Computers, Laptops, Printers and other authorized network \n\nequipment. \n Basic LAN/WAN connectivity and internet troubleshooting. \n Solve internet related problems configuring basic TCP/IP settings. \n Solving laptop issues through Remote Support. \n Creating & Managing user accounts through domain & workgroup. \n\n \n\nEducation \nBachelor of Technology (Information Technology)                                        2020  2024 \nDr. A.P.J Abdul Kalam Technical University \n \nSenior Secondary Education                                                                                        2019 \nMaharaja Agrasen Public School, Lucknow \n \nSecondary Education                                                                                                     2017 \nMaharaja Agrasen Public School, Lucknow",
+    "normalized_text": "Harsh Yadav\n+91 8737811439 | harsh122hy@gmail.com | linkedin.com/in/harsh-yadav-404a9a356\n\nProfile\nInformation Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess\nknowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting\nconcepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT\ninfrastructure and cloud technologies.\n\nTechnical Skills\nOS: Windows 10/11, Windows Server 2022/2025, Red Hat Enterprise Linux (Basic)\nNetworking: TCP/IP, IP Addressing, DNS, DHCP, LAN/WAN, VPN, Wi-Fi Troubleshooting,\nPing, Tracert\nUser Administration: Active Directory, Password Reset, Outlook Configuration, MS Office, Office 365\nSupport: Remote Desktop (RDP), Printer Configuration, Hardware & Software\nTroubleshooting\nHardware: PC Assembly, Component Installation, Hardware Configuration & Upgrades\nTools: Event Viewer, Task Manager, Ticket Handling, System Monitoring, Documentation\nCloud: AWS EC2, S3, IAM, VPC\n\nHands-On Practice\nInstalled and configured Windows 10/11, Windows Server 2022/2025 and Red Hat Enterprise Linux virtual\n\nmachines using VMware\nConfigured TCP/IP settings and tested connectivity using Ping and Tracert.\nPerformed hardware and software troubleshooting.\nInstalled device drivers and configured printers.\nPracticed Active Directory, DNS and DHCP concepts.\n\nExperience\nEvo Technology Aug 2025 Present\nLucknow, Uttar Pradesh\nDesktop Support Engineer\n\nTroubleshooting of Desktop.\nInstalling Microsoft Operating System updating and maintenance.\nConfigure and troubleshooting of MS Outlook 2019.\nPerformed general maintenance tasks on Computers, Laptops, Printers and other authorized network\n\nequipment.\nBasic LAN/WAN connectivity and internet troubleshooting.\nSolve internet related problems configuring basic TCP/IP settings.\nSolving laptop issues through Remote Support.\nCreating & Managing user accounts through domain & workgroup.\n\nEducation\nBachelor of Technology (Information Technology) 2020 2024\nDr. A.P.J Abdul Kalam Technical University\n\nSenior Secondary Education 2019\nMaharaja Agrasen Public School, Lucknow\n\nSecondary Education 2017\nMaharaja Agrasen Public School, Lucknow",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 2893,
+    "normalized_chars": 2205,
+    "original_estimated_tokens": 723,
+    "normalized_estimated_tokens": 551,
+    "estimated_reduction_percent": 23.8
+  },
+  "contact_recovery": {
+    "status": "not_needed",
+    "selected_extractor": "tika",
+    "present_before": [
+      "phone",
+      "email",
+      "location"
+    ],
+    "missing_before": [],
+    "recovered": {},
+    "still_missing": [],
+    "sources_tried": [],
+    "applied": false,
+    "pre_recovery_normalized_text": null,
+    "at": "2026-11-11T06:59:21.174834+00:00"
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 28049.69,
+      "input_tokens": 1284,
+      "output_tokens": 2687,
+      "total_tokens": 3971,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1284,
+    "output_tokens": 2687,
+    "total_tokens": 3971,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 28049.69,
+    "usage": {
+      "completion_tokens": 2687,
+      "prompt_tokens": 1284,
+      "total_tokens": 3971,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2115
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 2893,
+      "normalized_chars": 2205,
+      "estimated_reduction_percent": 23.8,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "tika",
+  "selected_quality_score": 96.1,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 96.1,
+      "status": "success",
+      "word_count": 274,
+      "char_count": 2893,
+      "meaningful_char_count": 1922,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0227,
+      "readability_score": 95.3,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary"
+        ]
+      },
+      "structure": {
+        "heading_count": 4,
+        "paragraph_count": 11,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.9533,
+        "cleanliness": 1.0,
+        "non_duplication": 0.9773,
+        "completeness": 1.0,
+        "structure": 0.7
+      }
+    },
+    "pymupdf": {
+      "extractor": "pymupdf",
+      "quality_score": 96.1,
+      "status": "success",
+      "word_count": 274,
+      "char_count": 2898,
+      "meaningful_char_count": 1922,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0227,
+      "readability_score": 95.3,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary"
+        ]
+      },
+      "structure": {
+        "heading_count": 4,
+        "paragraph_count": 20,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.9533,
+        "cleanliness": 1.0,
+        "non_duplication": 0.9773,
+        "completeness": 1.0,
+        "structure": 0.7
+      }
+    },
+    "docling": {
+      "extractor": "docling",
+      "quality_score": 94.4,
+      "status": "success",
+      "word_count": 319,
+      "char_count": 3507,
+      "meaningful_char_count": 2204,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.027,
+      "readability_score": 84.2,
+      "completeness": {
+        "has_email": false,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary"
+        ]
+      },
+      "structure": {
+        "heading_count": 4,
+        "paragraph_count": 14,
+        "bullet_count": 13
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.842,
+        "cleanliness": 1.0,
+        "non_duplication": 0.973,
+        "completeness": 0.8,
+        "structure": 1.0
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 2893,
+    "normalized_chars": 2205,
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "error": null,
+    "original_text": "Harsh Yadav \n                         +91 8737811439   |    harsh122hy@gmail.com   |   linkedin.com/in/harsh-yadav-404a9a356 \n\n \nProfile  \nInformation Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess \nknowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting \nconcepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT \ninfrastructure and cloud technologies. \n\nTechnical Skills \nOS:                                  Windows 10/11, Windows Server 2022/2025, Red Hat Enterprise Linux (Basic) \nNetworking:                   TCP/IP, IP Addressing, DNS, DHCP, LAN/WAN, VPN, Wi-Fi Troubleshooting,  \n                                         Ping, Tracert \nUser Administration:    Active Directory, Password Reset, Outlook Configuration, MS Office, Office 365 \nSupport:                         Remote Desktop (RDP), Printer Configuration, Hardware & Software  \n                                        Troubleshooting \nHardware:                      PC Assembly, Component Installation, Hardware Configuration & Upgrades \nTools:                              Event Viewer, Task Manager, Ticket Handling, System Monitoring, Documentation \nCloud:                             AWS EC2, S3, IAM, VPC   \n \n\nHands-On Practice \n Installed and configured Windows 10/11, Windows Server 2022/2025 and Red Hat Enterprise Linux virtual \n\nmachines using VMware \n Configured TCP/IP settings and tested connectivity using Ping and Tracert. \n Performed hardware and software troubleshooting. \n Installed device drivers and configured printers. \n Practiced Active Directory, DNS and DHCP concepts. \n \n\nExperience \nEvo Technology                                                                                                                     Aug 2025  Present \nLucknow, Uttar Pradesh \nDesktop Support Engineer \n \n Troubleshooting of Desktop. \n Installing Microsoft Operating System updating and maintenance. \n Configure and troubleshooting of MS Outlook 2019. \n Performed general maintenance tasks on Computers, Laptops, Printers and other authorized network \n\nequipment. \n Basic LAN/WAN connectivity and internet troubleshooting. \n Solve internet related problems configuring basic TCP/IP settings. \n Solving laptop issues through Remote Support. \n Creating & Managing user accounts through domain & workgroup. \n\n \n\nEducation \nBachelor of Technology (Information Technology)                                        2020  2024 \nDr. A.P.J Abdul Kalam Technical University \n \nSenior Secondary Education                                                                                        2019 \nMaharaja Agrasen Public School, Lucknow \n \nSecondary Education                                                                                                     2017 \nMaharaja Agrasen Public School, Lucknow",
+    "normalized_text": "Harsh Yadav\n+91 8737811439 | harsh122hy@gmail.com | linkedin.com/in/harsh-yadav-404a9a356\n\nProfile\nInformation Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess\nknowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting\nconcepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT\ninfrastructure and cloud technologies.\n\nTechnical Skills\nOS: Windows 10/11, Windows Server 2022/2025, Red Hat Enterprise Linux (Basic)\nNetworking: TCP/IP, IP Addressing, DNS, DHCP, LAN/WAN, VPN, Wi-Fi Troubleshooting,\nPing, Tracert\nUser Administration: Active Directory, Password Reset, Outlook Configuration, MS Office, Office 365\nSupport: Remote Desktop (RDP), Printer Configuration, Hardware & Software\nTroubleshooting\nHardware: PC Assembly, Component Installation, Hardware Configuration & Upgrades\nTools: Event Viewer, Task Manager, Ticket Handling, System Monitoring, Documentation\nCloud: AWS EC2, S3, IAM, VPC\n\nHands-On Practice\nInstalled and configured Windows 10/11, Windows Server 2022/2025 and Red Hat Enterprise Linux virtual\n\nmachines using VMware\nConfigured TCP/IP settings and tested connectivity using Ping and Tracert.\nPerformed hardware and software troubleshooting.\nInstalled device drivers and configured printers.\nPracticed Active Directory, DNS and DHCP concepts.\n\nExperience\nEvo Technology Aug 2025 Present\nLucknow, Uttar Pradesh\nDesktop Support Engineer\n\nTroubleshooting of Desktop.\nInstalling Microsoft Operating System updating and maintenance.\nConfigure and troubleshooting of MS Outlook 2019.\nPerformed general maintenance tasks on Computers, Laptops, Printers and other authorized network\n\nequipment.\nBasic LAN/WAN connectivity and internet troubleshooting.\nSolve internet related problems configuring basic TCP/IP settings.\nSolving laptop issues through Remote Support.\nCreating & Managing user accounts through domain & workgroup.\n\nEducation\nBachelor of Technology (Information Technology) 2020 2024\nDr. A.P.J Abdul Kalam Technical University\n\nSenior Secondary Education 2019\nMaharaja Agrasen Public School, Lucknow\n\nSecondary Education 2017\nMaharaja Agrasen Public School, Lucknow"
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "Harsh Yadav",
+      "email": "harsh122hy@gmail.com",
+      "phone": "+91 8737811439",
+      "location": "",
+      "summary": "Information Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess knowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting concepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT infrastructure and cloud technologies.",
+      "skills": {
+        "technical_skills": [
+          "Windows 10/11",
+          "Windows Server 2022/2025",
+          "Red Hat Enterprise Linux",
+          "TCP/IP",
+          "IP Addressing",
+          "DNS",
+          "DHCP",
+          "LAN/WAN",
+          "VPN",
+          "Wi-Fi Troubleshooting",
+          "Ping",
+          "Tracert",
+          "Active Directory",
+          "Password Reset",
+          "Outlook Configuration",
+          "MS Office",
+          "Office 365",
+          "Remote Desktop (RDP)",
+          "Printer Configuration",
+          "Hardware & Software Troubleshooting",
+          "PC Assembly",
+          "Component Installation",
+          "Hardware Configuration & Upgrades",
+          "AWS EC2",
+          "S3",
+          "IAM",
+          "VPC"
+        ],
+        "soft_skills": [],
+        "tools": [
+          "Event Viewer",
+          "Task Manager",
+          "Ticket Handling",
+          "System Monitoring",
+          "Documentation",
+          "VMware"
+        ],
+        "taxonomy_skills": [],
+        "other_skills": []
+      },
+      "experience": [
+        {
+          "title": "Desktop Support Engineer",
+          "company": "Evo Technology",
+          "location": "Lucknow, Uttar Pradesh",
+          "start_date": "Aug 2025",
+          "end_date": "Present",
+          "highlights": [
+            "Troubleshooting of Desktop.",
+            "Installing Microsoft Operating System updating and maintenance.",
+            "Configure and troubleshooting of MS Outlook 2019.",
+            "Performed general maintenance tasks on Computers, Laptops, Printers and other authorized network equipment.",
+            "Basic LAN/WAN connectivity and internet troubleshooting.",
+            "Solve internet related problems configuring basic TCP/IP settings.",
+            "Solving laptop issues through Remote Support.",
+            "Creating & Managing user accounts through domain & workgroup."
+          ]
+        }
+      ],
+      "education": [
+        {
+          "degree": "Bachelor of Technology (Information Technology)",
+          "institution": "Dr. A.P.J Abdul Kalam Technical University",
+          "location": "",
+          "start_date": "2020",
+          "end_date": "2024"
+        },
+        {
+          "degree": "Senior Secondary Education",
+          "institution": "Maharaja Agrasen Public School",
+          "location": "Lucknow",
+          "start_date": "",
+          "end_date": "2019"
+        },
+        {
+          "degree": "Secondary Education",
+          "institution": "Maharaja Agrasen Public School",
+          "location": "Lucknow",
+          "start_date": "",
+          "end_date": "2017"
+        }
+      ],
+      "certifications": [],
+      "languages": [],
+      "links": [
+        "linkedin.com/in/harsh-yadav-404a9a356"
+      ]
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 28049.69,
+    "usage": {
+      "completion_tokens": 2687,
+      "prompt_tokens": 1284,
+      "total_tokens": 3971,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2115
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "Harsh Yadav",
+    "email": "harsh122hy@gmail.com",
+    "phone": "+91 8737811439",
+    "location": "",
+    "summary": "Information Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess knowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting concepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT infrastructure and cloud technologies.",
+    "skills": {
+      "technical_skills": [
+        "Windows 10/11",
+        "Windows Server 2022/2025",
+        "Red Hat Enterprise Linux",
+        "TCP/IP",
+        "IP Addressing",
+        "DNS",
+        "DHCP",
+        "LAN/WAN",
+        "VPN",
+        "Wi-Fi Troubleshooting",
+        "Ping",
+        "Tracert",
+        "Active Directory",
+        "Password Reset",
+        "Outlook Configuration",
+        "MS Office",
+        "Office 365",
+        "Remote Desktop (RDP)",
+        "Printer Configuration",
+        "Hardware & Software Troubleshooting",
+        "PC Assembly",
+        "Component Installation",
+        "Hardware Configuration & Upgrades",
+        "AWS EC2",
+        "S3",
+        "IAM",
+        "VPC"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "Event Viewer",
+        "Task Manager",
+        "Ticket Handling",
+        "System Monitoring",
+        "Documentation",
+        "VMware"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Desktop Support Engineer",
+        "company": "Evo Technology",
+        "location": "Lucknow, Uttar Pradesh",
+        "start_date": "Aug 2025",
+        "end_date": "Present",
+        "highlights": [
+          "Troubleshooting of Desktop.",
+          "Installing Microsoft Operating System updating and maintenance.",
+          "Configure and troubleshooting of MS Outlook 2019.",
+          "Performed general maintenance tasks on Computers, Laptops, Printers and other authorized network equipment.",
+          "Basic LAN/WAN connectivity and internet troubleshooting.",
+          "Solve internet related problems configuring basic TCP/IP settings.",
+          "Solving laptop issues through Remote Support.",
+          "Creating & Managing user accounts through domain & workgroup."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Technology (Information Technology)",
+        "institution": "Dr. A.P.J Abdul Kalam Technical University",
+        "location": "",
+        "start_date": "2020",
+        "end_date": "2024"
+      },
+      {
+        "degree": "Senior Secondary Education",
+        "institution": "Maharaja Agrasen Public School",
+        "location": "Lucknow",
+        "start_date": "",
+        "end_date": "2019"
+      },
+      {
+        "degree": "Secondary Education",
+        "institution": "Maharaja Agrasen Public School",
+        "location": "Lucknow",
+        "start_date": "",
+        "end_date": "2017"
+      }
+    ],
+    "certifications": [],
+    "languages": [],
+    "links": [
+      "linkedin.com/in/harsh-yadav-404a9a356"
+    ]
+  },
+  "resume_json": {
+    "full_name": "Harsh Yadav",
+    "email": "harsh122hy@gmail.com",
+    "phone": "+91 8737811439",
+    "location": "",
+    "summary": "Information Technology graduate aspiring to build a career as an IT Desktop Support Engineer. Possess knowledge of Windows and Linux operating systems, networking fundamentals and troubleshooting concepts. Hands-on experience with AWS fundamentals and keen interest in building expertise in IT infrastructure and cloud technologies.",
+    "skills": {
+      "technical_skills": [
+        "Windows 10/11",
+        "Windows Server 2022/2025",
+        "Red Hat Enterprise Linux",
+        "TCP/IP",
+        "IP Addressing",
+        "DNS",
+        "DHCP",
+        "LAN/WAN",
+        "VPN",
+        "Wi-Fi Troubleshooting",
+        "Ping",
+        "Tracert",
+        "Active Directory",
+        "Password Reset",
+        "Outlook Configuration",
+        "MS Office",
+        "Office 365",
+        "Remote Desktop (RDP)",
+        "Printer Configuration",
+        "Hardware & Software Troubleshooting",
+        "PC Assembly",
+        "Component Installation",
+        "Hardware Configuration & Upgrades",
+        "AWS EC2",
+        "S3",
+        "IAM",
+        "VPC"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "Event Viewer",
+        "Task Manager",
+        "Ticket Handling",
+        "System Monitoring",
+        "Documentation",
+        "VMware"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Desktop Support Engineer",
+        "company": "Evo Technology",
+        "location": "Lucknow, Uttar Pradesh",
+        "start_date": "Aug 2025",
+        "end_date": "Present",
+        "highlights": [
+          "Troubleshooting of Desktop.",
+          "Installing Microsoft Operating System updating and maintenance.",
+          "Configure and troubleshooting of MS Outlook 2019.",
+          "Performed general maintenance tasks on Computers, Laptops, Printers and other authorized network equipment.",
+          "Basic LAN/WAN connectivity and internet troubleshooting.",
+          "Solve internet related problems configuring basic TCP/IP settings.",
+          "Solving laptop issues through Remote Support.",
+          "Creating & Managing user accounts through domain & workgroup."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Technology (Information Technology)",
+        "institution": "Dr. A.P.J Abdul Kalam Technical University",
+        "location": "",
+        "start_date": "2020",
+        "end_date": "2024"
+      },
+      {
+        "degree": "Senior Secondary Education",
+        "institution": "Maharaja Agrasen Public School",
+        "location": "Lucknow",
+        "start_date": "",
+        "end_date": "2019"
+      },
+      {
+        "degree": "Secondary Education",
+        "institution": "Maharaja Agrasen Public School",
+        "location": "Lucknow",
+        "start_date": "",
+        "end_date": "2017"
+      }
+    ],
+    "certifications": [],
+    "languages": [],
+    "links": [
+      "linkedin.com/in/harsh-yadav-404a9a356"
+    ]
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 49.105,
+    "quality_seconds": 0.0122,
+    "normalization_seconds": 0.0006,
+    "recovery_seconds": 0.0014,
+    "llm_seconds": 28.0523,
+    "total_seconds": 77.1716
+  },
+  "_stored_name": "fe975e94-57b5-40ed-b06b-c56c2375d5f5_SHJ-5412_SHC-379412.pdf"
+}

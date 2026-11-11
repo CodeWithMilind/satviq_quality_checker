@@ -8,9 +8,13 @@
 # "below_threshold" instead of silently sending bad text to the LLM.
 min_quality_threshold: 60.0
 
-# Per-extractor wall-clock timeout (seconds) when the three
-# extractors run concurrently.
-per_extractor_timeout_seconds: 60.0
+# EXTRACTION-ONLY safety limit (seconds): the maximum time to
+# WAIT for one extractor in the concurrent run. A stuck-process
+# guard, deliberately generous so it never clips legitimate
+# extraction (Docling on a large PDF legitimately takes minutes).
+# This NEVER applies to Muse AI — Muse calls have no timeout.
+# Set to null to disable the guard entirely.
+per_extractor_timeout_seconds: 600.0
 
 # Deterministic tie-breaking order when two extractors score exactly
 # the same. Earlier in the list wins.
@@ -27,10 +31,6 @@ llm_max_retries: 2
 # per-call temperature, so this is recorded in the llm block but not
 # forced onto the provider. null = provider default.
 llm_temperature: null
-
-# Timeout (seconds) applied when the LLM is a plain callable
-# (service-based calls use the service's own configured timeout).
-llm_timeout_seconds: 120.0
 
 # Quality scoring weights. They are sum-normalised at scoring time,
 # so they do not need to sum to exactly 1.0, but the defaults do.

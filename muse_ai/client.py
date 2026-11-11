@@ -51,17 +51,32 @@ class MuseAuthError(MuseError):
 
 
 class MuseTimeoutError(MuseError):
-    """The request exceeded MUSE_TIMEOUT_SECONDS."""
+    """The transport reported a timeout (kept for classification;
+    requests are sent with no configured timeout)."""
+
+
+def _timeout_message(timeout: float | None) -> str:
+    if timeout is None:
+        return "Muse API request timed out."
+    return f"Muse API request timed out after {timeout:g}s."
 
 
 def http_post_json(url: str, payload: dict, headers: dict,
-                   timeout: float) -> dict:
-    """POST JSON and parse the JSON reply (test seam)."""
+                   timeout: float | None) -> dict:
+    """POST JSON and parse the JSON reply (test seam).
+
+    ``timeout=None`` means NO request timeout: urlopen is called
+    without a timeout argument and the call waits for the API
+    however long it takes (timeouts were removed by request)."""
     request = urllib.request.Request(
         url, data=json.dumps(payload).encode("utf-8"), method="POST",
         headers={"Content-Type": "application/json", **headers})
     try:
-        with urllib.request.urlopen(request, timeout=timeout) as response:
+        if timeout is None:
+            response_cm = urllib.request.urlopen(request)
+        else:
+            response_cm = urllib.request.urlopen(request, timeout=timeout)
+        with response_cm as response:
             return json.loads(response.read().decode("utf-8"))
     except urllib.error.HTTPError as exc:
         body = ""
@@ -73,12 +88,10 @@ def http_post_json(url: str, payload: dict, headers: dict,
             f"Muse API returned HTTP {exc.code}: {body}",
             status=exc.code) from exc
     except (TimeoutError, socket.timeout) as exc:
-        raise MuseTimeoutError(
-            f"Muse API request timed out after {timeout:g}s.") from exc
+        raise MuseTimeoutError(_timeout_message(timeout)) from exc
     except urllib.error.URLError as exc:
         if isinstance(exc.reason, (TimeoutError, socket.timeout)):
-            raise MuseTimeoutError(
-                f"Muse API request timed out after {timeout:g}s.") from exc
+            raise MuseTimeoutError(_timeout_message(timeout)) from exc
         raise MuseError(
             f"Could not reach the Muse API: {exc.reason}") from exc
 

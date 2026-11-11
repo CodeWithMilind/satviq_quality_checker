@@ -46,6 +46,39 @@ function escapeHtml(value) {
     .replaceAll('"', "&quot;");
 }
 
+function contactRecoveryHtml(record) {
+  const rec = record.contact_recovery;
+  if (!rec) return "";
+  const statusChip = {
+    not_needed: '<span class="chip chip-info">Not needed</span>',
+    recovered: '<span class="chip chip-ok">Recovered</span>',
+    partial: '<span class="chip chip-warn">Partially recovered</span>',
+    not_recovered: '<span class="chip chip-bad">Not recovered</span>',
+    error: '<span class="chip chip-bad">Error</span>',
+  }[rec.status] || "";
+  const recovered = rec.recovered || {};
+  const present = rec.present_before || [];
+  const fieldRow = (field, label) => {
+    if (recovered[field]) {
+      return `<tr><td>${label}</td><td><span class="chip chip-ok">Recovered</span> ${escapeHtml(recovered[field].value)} <span class="hint">(source: ${escapeHtml(recovered[field].source)})</span></td></tr>`;
+    }
+    if (present.includes(field)) {
+      return `<tr><td>${label}</td><td><span class="chip">Already present</span></td></tr>`;
+    }
+    return `<tr><td>${label}</td><td><span class="chip chip-bad">Still missing</span></td></tr>`;
+  };
+  const before = rec.completeness_before;
+  const after = rec.completeness_after;
+  const compLine = (before && after)
+    ? `<p class="hint">Completeness re-checked against the corrected text: ${escapeHtml(before.score)} → ${escapeHtml(after.score)}${after.contact_information_detected ? " · Contact Information now detected" : ""}.</p>`
+    : "";
+  return `<div class="card">
+      <h4>Contact Information Recovery ${statusChip}</h4>
+      <table class="kv-table">${fieldRow("phone", "Phone")}${fieldRow("email", "Email")}${fieldRow("location", "Location")}</table>
+      ${compLine}
+    </div>`;
+}
+
 function fmtBytes(bytes) {
   if (bytes === null || bytes === undefined) return "N/A";
   if (bytes < 1024) return bytes + " B";
@@ -138,6 +171,7 @@ function menuHtml(record) {
       <button data-menu-action="section" data-section="attempts" data-id="${id}">View Extraction Attempts</button>
       <hr />
       <button data-menu-action="download-json" data-id="${id}">Download JSON</button>
+      <button data-menu-action="reprocess" data-id="${id}">Reprocess (AI pipeline)</button>
       ${record.has_original_file ? `<a href="${Api.downloadOriginalUrl(record.resume_id)}" download>Download Original File</a>` : ""}
       ${(record.extracted_text || record.extracted_text_chars) ? `<a href="${Api.downloadTextUrl(record.resume_id)}" download>Download Extracted Text</a>` : ""}
       <hr />
@@ -179,6 +213,13 @@ async function handleMenuAction(action, id, dataset) {
       link.download = (record.filename || "resume").replace(/\.[^.]+$/, "") + "_record.json";
       link.click();
       URL.revokeObjectURL(link.href);
+    } catch (err) { toast(err.message, "error"); }
+  } else if (action === "reprocess") {
+    try {
+      const updated = await Api.reprocessResume(id);
+      state.recordCache[id] = updated;
+      toast("Resume reprocessed with the current pipeline.", "success");
+      location.hash = "#/resume/" + id + "?tab=ai";
     } catch (err) { toast(err.message, "error"); }
   } else if (action === "delete") {
     if (!confirm("Delete this resume and its stored result?")) return;
@@ -530,7 +571,7 @@ function attemptCardHtml(attempt, index) {
       ${attempt.decision_reason || attempt.fallback_reason ? `<p class="hint">${escapeHtml(attempt.decision_reason || attempt.fallback_reason)}</p>` : ""}
       <table class="kv-table">
         <tr><td>Actual duration</td><td>${fmtMs(attempt.duration_ms)}</td></tr>
-        <tr><td>OCR</td><td>${ocr ? escapeHtml(Object.entries(ocr).map(([k, v]) => k + ": " + (typeof v === "object" ? JSON.stringify(v) : v)).join(" · ")) : "N/A"}</td></tr>
+        <tr><td>OCR</td><td>${ocr ? escapeHtml(Object.entries(ocr).map(([k, v]) => k + ": " + (v === null || v === undefined ? "unknown" : (typeof v === "object" ? JSON.stringify(v) : v))).join(" · ")) : "N/A"}</td></tr>
         ${attempt.provider || attempt.model ? `<tr><td>LLM</td><td>${escapeHtml(attempt.provider || "")} ${escapeHtml(attempt.model || "")}</td></tr>` : ""}
         ${attempt.json_validation ? `<tr><td>JSON validation</td><td>${escapeHtml(attempt.json_validation)}</td></tr>` : ""}
         ${attempt.input_type ? `<tr><td>Input type</td><td>${escapeHtml(attempt.input_type)}</td></tr>` : ""}
@@ -600,9 +641,31 @@ function qualityReportHtml(record) {
 }
 
 function tokenUsageHtml(record) {
-  const tokens = record.token_usage || {};
+  let tokens = record.token_usage || {};
   const meta = record.resume_json_meta || {};
-  const requests = record.muse_requests || [];
+  let requests = record.muse_requests || [];
+  // Records whose Muse outcome lives only in the llm block /
+  // resume_json_meta (e.g. stored by the previous simple-pipeline
+  // build, which dropped muse_requests/token_usage) still show
+  // their real usage here — values come from the API response
+  // itself, never estimated.
+  if (!tokens.usage_available && !requests.length) {
+    const llm = record.llm || {};
+    const usage = llm.usage || meta.usage || {};
+    if (usage && (usage.total_tokens != null || usage.prompt_tokens != null || usage.completion_tokens != null)) {
+      const inp = usage.prompt_tokens ?? null;
+      const out = usage.completion_tokens ?? null;
+      tokens = { input_tokens: inp, output_tokens: out,
+        total_tokens: usage.total_tokens != null ? usage.total_tokens
+          : (inp != null && out != null ? inp + out : null),
+        usage_available: true, api_calls: llm.attempts || 1,
+        models: [llm.model || meta.model].filter(Boolean) };
+      requests = [{ stage: "resume_json", model: llm.model || meta.model || "",
+        input_tokens: inp, output_tokens: out, total_tokens: tokens.total_tokens,
+        duration_ms: llm.duration_ms != null ? llm.duration_ms : meta.duration_ms,
+        status: llm.status === "success" ? "success" : "failed" }];
+    }
+  }
   if (!tokens.usage_available && !requests.length) {
     return '<p class="hint">Token usage is not available for this resume (no LLM usage was reported).</p>';
   }
@@ -617,8 +680,8 @@ function tokenUsageHtml(record) {
       <div class="metric"><div class="metric-label">Input Tokens</div><div class="metric-value">${tokens.input_tokens != null ? fmtNum(tokens.input_tokens) : "N/A"}</div></div>
       <div class="metric"><div class="metric-label">Output Tokens</div><div class="metric-value">${tokens.output_tokens != null ? fmtNum(tokens.output_tokens) : "N/A"}</div></div>
       <div class="metric"><div class="metric-label">Total Tokens</div><div class="metric-value">${tokens.total_tokens != null ? fmtNum(tokens.total_tokens) : "N/A"}</div></div>
-      <div class="metric"><div class="metric-label">Provider</div><div class="metric-value">${escapeHtml(meta.provider || "N/A")}</div></div>
-      <div class="metric"><div class="metric-label">Model</div><div class="metric-value">${escapeHtml(meta.model || (tokens.models || []).join(", ") || "N/A")}</div></div>
+      <div class="metric"><div class="metric-label">Provider</div><div class="metric-value">${escapeHtml(meta.provider || (record.llm && record.llm.provider) || "N/A")}</div></div>
+      <div class="metric"><div class="metric-label">Model</div><div class="metric-value">${escapeHtml(meta.model || (record.llm && record.llm.model) || (tokens.models || []).join(", ") || "N/A")}</div></div>
       <div class="metric"><div class="metric-label">LLM Calls</div><div class="metric-value">${tokens.api_calls != null ? tokens.api_calls : requests.length}</div></div>
     </div>
     ${rows ? `<table class="kv-table mt"><thead><tr>
@@ -641,7 +704,8 @@ async function renderResume(id, params) {
   }
   const norm = record.text_normalization || {};
   const extractedText = record.extracted_text || "";
-  const normalizedText = norm.normalized_text || "";
+  const normalizedText = norm.normalized_text
+    || (record.normalization && record.normalization.normalized_text) || "";
   const activeTab = ["text", "normalized", "selected", "ai"].includes(params.tab) ? params.tab : "text";
 
   // --- Shared extractor viewer state -------------------------------------
@@ -669,7 +733,7 @@ async function renderResume(id, params) {
   // normalized text produced from the pipeline-selected extractor and
   // sent to the AI stage) — shown in its own "Selected Normalized
   // Text" tab, NOT in the extractor selector.
-  const selectedSource = norm.source || record.extractor_used
+  const selectedSource = norm.source || record.selected_extractor || record.extractor_used
     || (finalAttempt ? finalAttempt.extractor_name : null);
   let currentExtractor = (params.extractor && viewerTools.includes(params.extractor))
     ? params.extractor
@@ -882,29 +946,85 @@ async function renderResume(id, params) {
         </div>
         ${(norm.normalization_steps || []).length ? `<p class="hint">Steps applied: ${norm.normalization_steps.map(escapeHtml).join(" · ")}</p>` : ""}
         ${norm.error ? `<div class="error-box">${escapeHtml(norm.error)}</div>` : ""}
+        ${contactRecoveryHtml(record)}
         ${normalizedText ? `<div class="text-panel">${escapeHtml(normalizedText)}</div>`
           : '<p class="hint">No selected normalized text is stored for this resume.</p>'}`;
       $("copySelectedBtn").addEventListener("click", () => copyText(normalizedText));
     } else {
-      const resumeJson = record.resume_json;
+      // The validated Resume JSON may live under resume_json (the
+      // canonical field), resume_data (the simple pipeline's mirror)
+      // or the llm block — display it from whichever the stored
+      // record actually carries. When there is none, show the REAL
+      // Muse outcome (not configured / failed, with its error) from
+      // resume_json_meta / llm instead of a bare "no output" note,
+      // so a configuration or API problem is never mistaken for
+      // missing data.
+      const llm = record.llm || {};
+      const meta = record.resume_json_meta || {};
+      const lastAttempt = record.ai_last_attempt || {};
+      const resumeJson = record.resume_json || record.resume_data
+        || llm.resume_json || null;
+      const aiProvider = meta.provider || llm.provider
+        || (resumeJson ? (record.resume_json_source || "Muse AI") : "");
+      const aiModel = meta.model || llm.model || "";
+      const aiValidation = meta.validation || llm.validation
+        || (resumeJson ? "valid" : "");
+      const aiDuration = meta.duration_ms != null ? meta.duration_ms : llm.duration_ms;
+      const aiError = lastAttempt.error || meta.error || llm.error || "";
+      const aiErrorType = lastAttempt.error_type || meta.error_type || llm.error_type || "";
+      const aiStatus = lastAttempt.status || meta.status || llm.status || "";
+      const usage = (record.token_usage && record.token_usage.usage_available)
+        ? record.token_usage : null;
+      const usageText = usage && usage.total_tokens != null
+        ? " · Tokens: " + fmtNum(usage.total_tokens) + " total"
+        : (llm.usage && llm.usage.total_tokens != null
+          ? " · Tokens: " + fmtNum(llm.usage.total_tokens) + " total" : "");
       panel.innerHTML = `
         <div class="panel-toolbar">
-          <span class="hint">${record.resume_json_source ? "Source: " + escapeHtml(record.resume_json_source) : ""}${record.resume_json_meta && record.resume_json_meta.model ? " · Model: " + escapeHtml(record.resume_json_meta.model) : ""}${record.resume_json_meta && record.resume_json_meta.validation ? " · Validation: " + escapeHtml(record.resume_json_meta.validation) : ""}</span>
+          <span class="hint">${record.resume_json_source || aiProvider ? "Source: " + escapeHtml(record.resume_json_source || aiProvider) : ""}${aiProvider ? " · Provider: " + escapeHtml(aiProvider) : ""}${aiModel ? " · Model: " + escapeHtml(aiModel) : ""}${aiValidation ? " · Validation: " + escapeHtml(aiValidation) : ""}${aiDuration != null ? " · LLM duration: " + fmtMs(aiDuration) : ""}${usageText}</span>
           <span class="spacer"></span>
+          <button class="btn btn-small btn-primary" id="generateAiBtn" type="button">${resumeJson ? "Regenerate AI Output" : "Generate AI Output"}</button>
           <label class="hint"><input type="checkbox" id="jsonToggle" /> JSON view</label>
           <button class="btn btn-small" id="copyJsonBtn" type="button">Copy JSON</button>
         </div>
+        ${normalizedText
+          ? `<p class="hint">On-demand: sends ONLY this resume's selected normalized text (${normalizedText.length.toLocaleString()} characters, from ${escapeHtml(engineLabel(selectedSource))}) to Muse — one call, extractors are not re-run.</p>`
+          : '<p class="hint">No selected normalized text is stored for this resume, so there is nothing to send to Muse. Reprocess the resume first.</p>'}
         <div id="aiOutputArea"></div>`;
       const area = $("aiOutputArea");
       function drawAi() {
         if (!resumeJson) {
-          area.innerHTML = '<p class="hint">No AI output is stored for this resume.</p>';
+          if (aiStatus === "running") {
+            area.innerHTML = '<p class="hint"><strong>Muse AI generation is RUNNING.</strong>'
+              + (lastAttempt.at ? " Started " + escapeHtml(lastAttempt.at) + "." : "")
+              + " A slow Muse response is still running, not failed — reopen this resume in a little while to see the saved result.</p>";
+          } else if (aiStatus === "not_configured" || aiErrorType === "ConfigurationError") {
+            area.innerHTML = '<div class="error-box">Muse AI is not configured, so no Resume JSON was generated for this resume.'
+              + (aiError ? " " + escapeHtml(aiError) : "") + "</div>";
+          } else if (aiError || aiStatus === "failed") {
+            area.innerHTML = '<div class="error-box">Muse AI processing failed for this resume.'
+              + (aiError ? " " + escapeHtml(aiError) : "") + "</div>"
+              + '<p class="hint">The extracted and normalized text is still available in the other tabs. Use the Generate AI Output button above to retry only the AI stage — the extractors are not re-run.</p>';
+          } else if (aiStatus === "skipped") {
+            area.innerHTML = '<p class="hint">The AI stage was skipped for this resume because no extractor output was selected.</p>';
+          } else {
+            area.innerHTML = '<p class="hint">No AI output is stored for this resume.</p>';
+          }
           return;
         }
+        const attemptNotice = (!lastAttempt.status || lastAttempt.status === "success")
+          ? ""
+          : lastAttempt.status === "running"
+            ? '<p class="hint"><strong>AI generation is currently RUNNING on the server.</strong> The AI output below is from the previous completed generation.</p>'
+            : '<div class="error-box">' + (lastAttempt.status === "not_configured"
+                ? "Latest AI attempt: Muse AI is not configured."
+                : "Latest AI attempt failed.")
+              + (lastAttempt.error ? " " + escapeHtml(lastAttempt.error) : "")
+              + " The stored AI output below is unchanged.</div>";
         if ($("jsonToggle").checked) {
-          area.innerHTML = `<pre class="json-view">${escapeHtml(JSON.stringify(resumeJson, null, 2))}</pre>`;
+          area.innerHTML = attemptNotice + `<pre class="json-view">${escapeHtml(JSON.stringify(resumeJson, null, 2))}</pre>`;
         } else {
-          area.innerHTML = Object.entries(resumeJson).map(([key, value]) => `
+          area.innerHTML = attemptNotice + Object.entries(resumeJson).map(([key, value]) => `
             <div class="structured-field"><div class="sf-label">${escapeHtml(key)}</div>
             <div class="sf-value">${structuredValueHtml(value)}</div></div>`).join("");
         }
@@ -912,6 +1032,47 @@ async function renderResume(id, params) {
       $("jsonToggle").addEventListener("change", drawAi);
       $("copyJsonBtn").addEventListener("click", () =>
         copyText(resumeJson ? JSON.stringify(resumeJson, null, 2) : ""));
+      let aiAbort = null;
+      $("generateAiBtn").addEventListener("click", async () => {
+        const btn = $("generateAiBtn");
+        if (aiAbort) {
+          // Clicking again while a generation is in flight means
+          // "stop waiting": it aborts only this page's wait (a user
+          // action — never a timeout). The server-side generation
+          // is NOT cancelled; its result is still saved on the
+          // record when Muse responds. It also means a second
+          // generation can never be started from here while one
+          // runs (the backend refuses duplicates too).
+          aiAbort.abort();
+          return;
+        }
+        const originalLabel = btn.textContent;
+        aiAbort = new AbortController();
+        btn.textContent = "Stop waiting";
+        btn.title = "The generation keeps running on the server and its result will be saved.";
+        try {
+          const updated = await Api.generateAiOutput(id, aiAbort.signal);
+          state.recordCache[id] = updated;
+          if (updated.resume_json) {
+            toast("AI output generated from the selected normalized text.", "success");
+          } else {
+            const attempt = updated.ai_last_attempt || {};
+            toast(attempt.error || "Muse AI did not produce AI output.", "error");
+          }
+          renderResume(id, { tab: "ai", extractor: currentExtractor });
+        } catch (err) {
+          if (err && err.name === "AbortError") {
+            toast("Stopped waiting — the generation is still running on the server and its result will be saved. Reopen this resume in a little while to see it.", "success");
+            renderResume(id, { tab: "ai", extractor: currentExtractor });
+          } else {
+            toast(err.message, "error");
+            btn.textContent = originalLabel;
+            btn.title = "";
+          }
+        } finally {
+          aiAbort = null;
+        }
+      });
       drawAi();
     }
   }
@@ -1017,6 +1178,19 @@ async function renderSettings() {
         ${ai.error ? `<div class="error-box">${escapeHtml(ai.error)}</div>` : ""}
       </div>
       <div class="card">
+        <h3>Extractor Status</h3>
+        <p class="hint">Check which extractors are working on this machine.
+          <strong>Check extractors</strong> verifies the installation only (Java + Tika JAR,
+          PyMuPDF, Docling, Tesseract). <strong>Run live test</strong> really extracts the bundled
+          sample_resume.pdf with every extractor — that is the proof. Docling's first-ever
+          run can take a few minutes; there is no timeout.</p>
+        <div class="inline-row mt">
+          <button class="btn" id="extractorCheckBtn" type="button">Check extractors</button>
+          <button class="btn" id="extractorTestBtn" type="button">Run live test</button>
+        </div>
+        <div id="extractorStatusResult" class="mt"></div>
+      </div>
+      <div class="card">
         <h3>System Prompt</h3>
         <div class="inline-row mb">
           ${data.is_custom
@@ -1039,6 +1213,43 @@ async function renderSettings() {
         </div>
         <div id="promptTestResult" class="mt"></div>
       </div>`;
+
+    const extBox = $("extractorStatusResult");
+    const renderProbe = (data) => {
+      const rows = (data.extractors || []).map((e) => `
+        <tr><td>${escapeHtml(e.label || e.name)}</td>
+            <td>${e.status === "available"
+              ? '<span class="chip chip-ok">Available</span>'
+              : '<span class="chip chip-bad">Unavailable</span>'}</td>
+            <td>${escapeHtml(e.detail || "")}${e.error ? `<div class="hint">${escapeHtml(e.error)}</div>` : ""}</td></tr>`).join("");
+      extBox.innerHTML = `<table class="data-table"><thead><tr><th>Extractor</th><th>Status</th><th>Details</th></tr></thead><tbody>${rows}</tbody></table>
+        <p class="hint">Checked ${escapeHtml(fmtDate(data.checked_at))}. "Available" means the installation looks ready — run the live test for proof.</p>`;
+    };
+    const renderLive = (data) => {
+      const labels = { tika: "Apache Tika", pymupdf: "PyMuPDF", docling: "Docling", ocr: "Tesseract OCR" };
+      const rows = Object.keys(data.results || {}).map((name) => {
+        const r = data.results[name];
+        const chip = r.status === "success"
+          ? '<span class="chip chip-ok">Working</span>'
+          : r.status === "timeout"
+            ? '<span class="chip chip-warn">Timed out</span>'
+            : '<span class="chip chip-bad">Not working</span>';
+        return `<tr><td>${escapeHtml(labels[name] || name)}</td><td>${chip}</td>
+          <td>${Number(r.chars || 0).toLocaleString()} chars · ${((r.duration_ms || 0) / 1000).toFixed(1)}s${r.error ? `<div class="hint">${escapeHtml(r.error)}</div>` : ""}</td></tr>`;
+      }).join("");
+      extBox.innerHTML = `<table class="data-table"><thead><tr><th>Extractor</th><th>Status</th><th>Live result on ${escapeHtml(data.file || "sample_resume.pdf")}</th></tr></thead><tbody>${rows}</tbody></table>
+        <p class="hint">Ran ${escapeHtml(fmtDate(data.ran_at))}.</p>`;
+    };
+    $("extractorCheckBtn").addEventListener("click", async () => {
+      extBox.innerHTML = '<span class="hint">Checking extractor installation…</span>';
+      try { renderProbe(await Api.extractorStatus()); }
+      catch (err) { extBox.innerHTML = `<div class="error-box">${escapeHtml(err.message)}</div>`; }
+    });
+    $("extractorTestBtn").addEventListener("click", async () => {
+      extBox.innerHTML = '<span class="hint">Running every extractor on sample_resume.pdf — Docling can take a while…</span>';
+      try { renderLive(await Api.testExtractors()); }
+      catch (err) { extBox.innerHTML = `<div class="error-box">${escapeHtml(err.message)}</div>`; }
+    });
 
     const editor = $("promptEditor");
     const chars = $("promptChars");

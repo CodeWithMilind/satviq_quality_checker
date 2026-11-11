@@ -1,5 +1,9 @@
 """Strict pipeline rule: normalize ONLY non-Muse extracted text.
 
+These tests pin the LEGACY pipeline explicitly
+(pipeline_mode="legacy"); the default pipeline for new uploads
+is the simple pipeline.
+
 - Text normalization receives raw text from the extractor chain
   (Tika / PyMuPDF / Docling / OCR) and nothing else. Muse AI output
   must never be passed to a normalizer.
@@ -99,7 +103,7 @@ def test_normalizer_never_receives_muse_output(
     pdf = _qc_failing_pdf(tmp_path)
     record = process_resume_file(
         pdf, resume_id="norm-rule-1", original_filename="failing.pdf",
-        muse_service=FakeMuseService())
+        muse_service=FakeMuseService(), pipeline_mode="legacy")
 
     # The vision stage ran and its output was accepted.
     assert record["extractor_used"] == "muse_ai"
@@ -136,7 +140,7 @@ def test_vision_receives_normalized_chain_text_only(tmp_path):
     pdf = _qc_failing_pdf(tmp_path)
     record = process_resume_file(
         pdf, resume_id="norm-rule-2", original_filename="failing.pdf",
-        muse_service=service)
+        muse_service=service, pipeline_mode="legacy")
     tika_text = service.vision_kwargs["tika_text"]
     if tika_text is not None:
         assert CLAUDE_MARKER not in tika_text

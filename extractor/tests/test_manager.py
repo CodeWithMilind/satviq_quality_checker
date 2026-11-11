@@ -167,6 +167,8 @@ def test_disabled_extractor_is_skipped(sample_file):
 
 
 def test_total_timeout_stops_attempts(sample_file):
+    # The configurable extraction safety budget still functions
+    # (spec §5): with a zero budget no attempt is started.
     calls: list[str] = []
     manager = _manager({"tika": "fail", "pymupdf": "ok"}, calls,
                        max_total_timeout_seconds=0)

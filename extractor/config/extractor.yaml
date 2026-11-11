@@ -16,8 +16,10 @@ manager:
   # Hard cap on the number of extractor attempts for one document,
   # regardless of how many extractors are configured.
   max_attempts: 4
-  # Total wall-clock budget for one document, across all attempts.
-  max_total_timeout_seconds: 300
+  # EXTRACTION-ONLY safety budget (seconds) for one document,
+  # across all attempts — a stuck-process guard, deliberately
+  # generous. Never applies to Muse AI (Muse has no timeout).
+  max_total_timeout_seconds: 1800
 
 # Basic acceptance policy (NOT the Quality Checker).
 # A successful extraction is accepted only if it also contains
@@ -54,8 +56,10 @@ quality_gate:
 extractors:
   tika:
     enabled: true
-    # Hard cap for the Java subprocess (Tika 4 JVM startup + parse).
-    timeout_seconds: 120
+    # EXTRACTION-ONLY safety cap (seconds) for the Java subprocess
+    # (Tika 4 JVM startup + parse) — a stuck-process guard,
+    # deliberately generous. Never applies to Muse AI.
+    timeout_seconds: 600
     # Apache Tika 4.2.0 runs as a Java subprocess on the local
     # tika-app JAR — there is NO Tika server and no Python tika client.
     #   jar_path resolution: this value -> TIKA_JAR_PATH env ->
@@ -79,8 +83,8 @@ extractors:
     ocr_strategy: "auto"
     # Render DPI for OCR'd PDF pages.
     ocr_dpi: 300
-    # Tesseract's own per-call timeout, seconds.
-    ocr_timeout_seconds: 120
+    # Tesseract's per-call timeout inside Tika is set to 24h by the
+    # extractor (effectively no cap — timeouts have been removed).
     # Tesseract executable OR its install directory. Resolution:
     # this value -> TESSERACT_PATH env -> PATH -> Windows default
     # C:\Program Files\Tesseract-OCR. Leave null for auto-detection.
@@ -98,7 +102,6 @@ extractors:
 
   pymupdf:
     enabled: true
-    timeout_seconds: 30
     # PDFs whose total embedded text is shorter than this are reported
     # as having no meaningful embedded text (likely scanned) so the
     # manager can fall through to Docling / OCR.
@@ -108,7 +111,6 @@ extractors:
 
   docling:
     enabled: true
-    timeout_seconds: 180
     # Passed explicitly to Docling where the installed version supports
     # them. Kept as plain data so config stays version-tolerant.
     options:
@@ -117,7 +119,6 @@ extractors:
 
   ocr:
     enabled: true
-    timeout_seconds: 180
     # Tesseract language(s), e.g. "eng" or "eng+hin".
     language: "eng"
     # Rendering resolution for PDF pages before OCR.

@@ -1,0 +1,1640 @@
+{
+  "resume_id": "624843a0-4043-4860-8092-44e6621272b1",
+  "filename": "download_13_.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 446345,
+  "uploaded_at": "2026-11-11T05:41:52.311455+00:00",
+  "success": true,
+  "extractor_used": "docling",
+  "final_extractor": "docling",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "624843a0-4043-4860-8092-44e6621272b1-attempt-1",
+      "resume_id": "624843a0-4043-4860-8092-44e6621272b1",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 95.8 (selected 'docling' scored 98.4).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 95.8 (selected 'docling' scored 98.4).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "624843a0-4043-4860-8092-44e6621272b1",
+        "source_tool": "tika",
+        "attempt_id": "624843a0-4043-4860-8092-44e6621272b1-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3175,
+            "word_count": 428,
+            "line_count": 119,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.146772,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3175,
+            "word_count": 428,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "summary",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "monbiju97@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 100,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 14,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 112,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 90.95,
+          "flags": [
+            "POSSIBLE_BROKEN_SENTENCES"
+          ],
+          "reasons": [
+            "48.1% of line transitions look like a sentence broken across lines without punctuation."
+          ],
+          "metrics": {
+            "char_count": 3175,
+            "word_count": 428,
+            "line_count": 119,
+            "non_empty_line_count": 80,
+            "short_line_count": 18,
+            "short_line_ratio": 0.225,
+            "fragmented_line_count": 15,
+            "fragmented_line_ratio": 0.1875,
+            "mean_line_length": 38.21,
+            "median_line_length": 35.5,
+            "line_length_stdev": 20.71,
+            "line_length_cv": 0.542088,
+            "broken_sentence_count": 38,
+            "broken_sentence_ratio": 0.481013,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "624843a0-4043-4860-8092-44e6621272b1",
+        "source_tool": "tika",
+        "attempt_id": "624843a0-4043-4860-8092-44e6621272b1-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3175,
+            "word_count": 428,
+            "line_count": 119,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.146772,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3175,
+            "word_count": 428,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "summary",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "monbiju97@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 100,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 14,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 112,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 90.95,
+          "flags": [
+            "POSSIBLE_BROKEN_SENTENCES"
+          ],
+          "reasons": [
+            "48.1% of line transitions look like a sentence broken across lines without punctuation."
+          ],
+          "metrics": {
+            "char_count": 3175,
+            "word_count": 428,
+            "line_count": 119,
+            "non_empty_line_count": 80,
+            "short_line_count": 18,
+            "short_line_ratio": 0.225,
+            "fragmented_line_count": 15,
+            "fragmented_line_ratio": 0.1875,
+            "mean_line_length": 38.21,
+            "median_line_length": 35.5,
+            "line_length_stdev": 20.71,
+            "line_length_cv": 0.542088,
+            "broken_sentence_count": 38,
+            "broken_sentence_ratio": 0.481013,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 95.8,
+      "duration_ms": 22089.3,
+      "text": "BIJAYANI MOHANTY\n\nCredit Consultant/Manager | Risk Analyst\n\n& 7978903735 @monbiju97@gmail.com @linkedin.com 9 Gurgaon\n\nSUMMARY\n\nlam a Credit Consultant/Manager with more than 3 years of\nexperience in evaluating creditworthiness, advising clients on credit\nimprovement strategies, and optimizing financial health for individuals\nand businesses.\n\nEXPERIENCE\n\nManager Credit\n\nU GRO Capital # 03/2023 - Present 9 Gurgaon, India\n\ne Developed and implemented credit policies and procedures to\nassess customer creditworthiness, reducing default risk and\naligning with company risk appetite by 30%\n\ne Managed the full credit lifecycle, including credit checks,\napprovals, collections, and account reconciliation, overseeing a\nportfolio worth 5 million.\n\ne Monitored accounts receivable and ensured timely collection of\npayments, resulting in improved Days Sales Outstanding (DSO) by\n10% over 3 months.\n\ne Conducted financial analysis and credit reviews for new and\nexisting clients, setting appropriate credit limits and terms.\n\ne Collaborated with sales, finance, and legal teams to support\ncontract negotiations while protecting the company financial\ninterests.\n\ne Trained and supervised a team of 8 credit analysts/assistants,\nfostering a high-performing and compliant credit control\ndepartment.\n\ne Reduced credit default risk by 50% through implementation of\nenhanced risk assessment tools and regular account monitoring.\n\ne Accelerated credit approval turnaround time by 60% faster by\nstreamlining the review process and automating reporting tools.\n\ne Supported the growth of the customer base by providing sound\ncredit recommendations for over 5 Cr in approval in 1 month.\n\nAssistant Credit Manager\n\nCapitalNow @ 04/2022 - 08/2022 9 Hyderabad, India\n\ne Assessed credit risk and analysed financial statements.\n\ne Conducted financial review of customer lines of credit by\nassessing company financials and initiating credit application\nreviews. Performed creditreviews on corporations to assess\nfinancial conditions\n\nCredit Analyst\n\nHero Fin m 04/2021-10/2021 9 New Delhi, India\n\ne Improved understanding of financial statements, which helped in\nassessing risk. Controlled credit exposure by providing financial.\n\ne Order management support to minimize risk and obtain timely\npayment.\n\ne Completed paperwork, recognizing discrepancies and promptly\naddressing for resolution.\n\nKEY ACHIEVEMENTS\n\nReduced bad debt write-offs by 30%\nyear-over-year through tighter credit\nassessments and proactive risk\nmanagement.\n\nv\n\n7 Improved cash flow by accelerating\ncollections cycle, achieving increase\nin on-time payment.\n\n2 Successfully negotiated payment\nterms with key clients, securing\nfavorable outcomes while\nmaintaining strong business\nrelationships.\n\n2 Process Improvement Streamlined\nreporting processes, resulting in a\n50% reduction in preparation time\nand enhanced accuracy.\n\nSKILLS\n\nCredit Risk Assessment, Credit Policy\nDevelopment, Credit Limit Setting,\nCustomer Credit Evaluation, Collections\nManagement, Control Bad Debt\nReduction, Loan & Credit Approvals,\n\nLANGUAGES\n\nEnglish\n\nEDUCATION\n\nMasters in Economics\n\nBirla Global University\n\n# 07/2019 - 07/2021\n9 Bhubaneshwar, India",
+      "extracted_text": "BIJAYANI MOHANTY\n\nCredit Consultant/Manager | Risk Analyst\n\n& 7978903735 @monbiju97@gmail.com @linkedin.com 9 Gurgaon\n\nSUMMARY\n\nlam a Credit Consultant/Manager with more than 3 years of\nexperience in evaluating creditworthiness, advising clients on credit\nimprovement strategies, and optimizing financial health for individuals\nand businesses.\n\nEXPERIENCE\n\nManager Credit\n\nU GRO Capital # 03/2023 - Present 9 Gurgaon, India\n\ne Developed and implemented credit policies and procedures to\nassess customer creditworthiness, reducing default risk and\naligning with company risk appetite by 30%\n\ne Managed the full credit lifecycle, including credit checks,\napprovals, collections, and account reconciliation, overseeing a\nportfolio worth 5 million.\n\ne Monitored accounts receivable and ensured timely collection of\npayments, resulting in improved Days Sales Outstanding (DSO) by\n10% over 3 months.\n\ne Conducted financial analysis and credit reviews for new and\nexisting clients, setting appropriate credit limits and terms.\n\ne Collaborated with sales, finance, and legal teams to support\ncontract negotiations while protecting the company financial\ninterests.\n\ne Trained and supervised a team of 8 credit analysts/assistants,\nfostering a high-performing and compliant credit control\ndepartment.\n\ne Reduced credit default risk by 50% through implementation of\nenhanced risk assessment tools and regular account monitoring.\n\ne Accelerated credit approval turnaround time by 60% faster by\nstreamlining the review process and automating reporting tools.\n\ne Supported the growth of the customer base by providing sound\ncredit recommendations for over 5 Cr in approval in 1 month.\n\nAssistant Credit Manager\n\nCapitalNow @ 04/2022 - 08/2022 9 Hyderabad, India\n\ne Assessed credit risk and analysed financial statements.\n\ne Conducted financial review of customer lines of credit by\nassessing company financials and initiating credit application\nreviews. Performed creditreviews on corporations to assess\nfinancial conditions\n\nCredit Analyst\n\nHero Fin m 04/2021-10/2021 9 New Delhi, India\n\ne Improved understanding of financial statements, which helped in\nassessing risk. Controlled credit exposure by providing financial.\n\ne Order management support to minimize risk and obtain timely\npayment.\n\ne Completed paperwork, recognizing discrepancies and promptly\naddressing for resolution.\n\nKEY ACHIEVEMENTS\n\nReduced bad debt write-offs by 30%\nyear-over-year through tighter credit\nassessments and proactive risk\nmanagement.\n\nv\n\n7 Improved cash flow by accelerating\ncollections cycle, achieving increase\nin on-time payment.\n\n2 Successfully negotiated payment\nterms with key clients, securing\nfavorable outcomes while\nmaintaining strong business\nrelationships.\n\n2 Process Improvement Streamlined\nreporting processes, resulting in a\n50% reduction in preparation time\nand enhanced accuracy.\n\nSKILLS\n\nCredit Risk Assessment, Credit Policy\nDevelopment, Credit Limit Setting,\nCustomer Credit Evaluation, Collections\nManagement, Control Bad Debt\nReduction, Loan & Credit Approvals,\n\nLANGUAGES\n\nEnglish\n\nEDUCATION\n\nMasters in Economics\n\nBirla Global University\n\n# 07/2019 - 07/2021\n9 Bhubaneshwar, India",
+      "extracted_text_length": 3175,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "BIJAYANI MOHANTY\n\nCredit Consultant/Manager | Risk Analyst\n\n& 7978903735 @monbiju97@gmail.com @linkedin.com 9 Gurgaon\n\nSUMMARY\n\nlam a Credit Consultant/Manager with more than 3 years of\nexperience in evaluating creditworthiness, advising clients on credit\nimprovement strategies, and optimizing financial health for individuals\nand businesses.\n\nEXPERIENCE\n\nManager Credit\n\nU GRO Capital # 03/2023 - Present 9 Gurgaon, India\n\ne Developed and implemented credit policies and procedures to\nassess customer creditworthiness, reducing default risk and\naligning with company risk appetite by 30%\n\ne Managed the full credit lifecycle, including credit checks,\napprovals, collections, and account reconciliation, overseeing a\nportfolio worth 5 million.\n\ne Monitored accounts receivable and ensured timely collection of\npayments, resulting in improved Days Sales Outstanding (DSO) by\n10% over 3 months.\n\ne Conducted financial analysis and credit reviews for new and\nexisting clients, setting appropriate credit limits and terms.\n\ne Collaborated with sales, finance, and legal teams to support\ncontract negotiations while protecting the company financial\ninterests.\n\ne Trained and supervised a team of 8 credit analysts/assistants,\nfostering a high-performing and compliant credit control\ndepartment.\n\ne Reduced credit default risk by 50% through implementation of\nenhanced risk assessment tools and regular account monitoring.\n\ne Accelerated credit approval turnaround time by 60% faster by\nstreamlining the review process and automating reporting tools.\n\ne Supported the growth of the customer base by providing sound\ncredit recommendations for over 5 Cr in approval in 1 month.\n\nAssistant Credit Manager\n\nCapitalNow @ 04/2022 - 08/2022 9 Hyderabad, India\n\ne Assessed credit risk and analysed financial statements.\n\ne Conducted financial review of customer lines of credit by\nassessing company financials and initiating credit application\nreviews. Performed creditreviews on corporations to assess\nfinancial conditions\n\nCredit Analyst\n\nHero Fin m 04/2021-10/2021 9 New Delhi, India\n\ne Improved understanding of financial statements, which helped in\nassessing risk. Controlled credit exposure by providing financial.\n\ne Order management support to minimize risk and obtain timely\npayment.\n\ne Completed paperwork, recognizing discrepancies and promptly\naddressing for resolution.\n\nKEY ACHIEVEMENTS\n\nReduced bad debt write-offs by 30%\nyear-over-year through tighter credit\nassessments and proactive risk\nmanagement.\n\nv\n\n7 Improved cash flow by accelerating\ncollections cycle, achieving increase\nin on-time payment.\n\n2 Successfully negotiated payment\nterms with key clients, securing\nfavorable outcomes while\nmaintaining strong business\nrelationships.\n\n2 Process Improvement Streamlined\nreporting processes, resulting in a\n50% reduction in preparation time\nand enhanced accuracy.\n\nSKILLS\n\nCredit Risk Assessment, Credit Policy\nDevelopment, Credit Limit Setting,\nCustomer Credit Evaluation, Collections\nManagement, Control Bad Debt\nReduction, Loan & Credit Approvals,\n\nLANGUAGES\n\nEnglish\n\nEDUCATION\n\nMasters in Economics\n\nBirla Global University\n\n# 07/2019 - 07/2021\n9 Bhubaneshwar, India"
+    },
+    {
+      "attempt_id": "624843a0-4043-4860-8092-44e6621272b1-attempt-2",
+      "resume_id": "624843a0-4043-4860-8092-44e6621272b1",
+      "attempt_number": 2,
+      "extractor_name": "pymupdf",
+      "extractor_version": null,
+      "success": false,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "fallback_decision": "reject",
+      "fallback_reason": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "quality_status": null,
+      "quality": null,
+      "quality_checker_report": null,
+      "quality_score": 0.0,
+      "duration_ms": 198.54,
+      "text": "",
+      "extracted_text": "",
+      "extracted_text_length": 0,
+      "extraction_status": "FAILED",
+      "error": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "error_message": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "format": "PDF 1.7",
+        "title": "Resume Editor.pdf",
+        "author": "Bijayani Mohanty",
+        "creator": "Aspose Ltd.",
+        "producer": "Aspose.PDF for Java 18.8",
+        "creationDate": "D:20250609190247+05'30'",
+        "modDate": "D:20250911151408+05'30'"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": ""
+    },
+    {
+      "attempt_id": "624843a0-4043-4860-8092-44e6621272b1-attempt-3",
+      "resume_id": "624843a0-4043-4860-8092-44e6621272b1",
+      "attempt_number": 3,
+      "extractor_name": "docling",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Selected 'docling' with the highest quality score 98.4 (threshold 60.0).",
+      "fallback_decision": "accept",
+      "fallback_reason": "Selected 'docling' with the highest quality score 98.4 (threshold 60.0).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "624843a0-4043-4860-8092-44e6621272b1",
+        "source_tool": "docling",
+        "attempt_id": "624843a0-4043-4860-8092-44e6621272b1-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3252,
+            "word_count": 439,
+            "line_count": 71,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.142681,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3252,
+            "word_count": 439,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "summary",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "monbiju97@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 55,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 63,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3252,
+            "word_count": 439,
+            "line_count": 71,
+            "non_empty_line_count": 45,
+            "short_line_count": 15,
+            "short_line_ratio": 0.333333,
+            "fragmented_line_count": 13,
+            "fragmented_line_ratio": 0.288889,
+            "mean_line_length": 70.71,
+            "median_line_length": 35.0,
+            "line_length_stdev": 65.3,
+            "line_length_cv": 0.923503,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "624843a0-4043-4860-8092-44e6621272b1",
+        "source_tool": "docling",
+        "attempt_id": "624843a0-4043-4860-8092-44e6621272b1-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3252,
+            "word_count": 439,
+            "line_count": 71,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.142681,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3252,
+            "word_count": 439,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "summary",
+              "Skills": "skills",
+              "Work Experience": "experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "monbiju97@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "SUMMARY",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 55,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 63,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3252,
+            "word_count": 439,
+            "line_count": 71,
+            "non_empty_line_count": 45,
+            "short_line_count": 15,
+            "short_line_ratio": 0.333333,
+            "fragmented_line_count": 13,
+            "fragmented_line_ratio": 0.288889,
+            "mean_line_length": 70.71,
+            "median_line_length": 35.0,
+            "line_length_stdev": 65.3,
+            "line_length_cv": 0.923503,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 98.4,
+      "duration_ms": 35742.51,
+      "text": "BIJAYANI MOHANTY\n\nCredit Consultant/Manager | Risk Analyst\n\n7978903735@ monbiju97@gmail.com linkedin.com Gurgaon\n\nSUMMARY\n\nKEY ACHIEVEMENTS\n\nI am a Credit Consultant/Manager with more than 3 years of experience in evaluating creditworthiness, advising clients on credit improvement strategies, and optimizing financial health for individuals and businesses.\n\nEXPERIENCE\n\nManager Credit\n\nU GRO Capital\n\n- 曲\n- 03/2023 - Present Gurgaon, India\n- Developed and implemented credit policies and procedures to assess customer creditworthiness, reducing default risk and aligning with company risk appetite by 30%\n- Managed the full credit lifecycle, including credit checks, approvals, collections, and account reconciliation, overseeing a portfolio worth 5 million.\n- Monitored accounts receivable and ensured timely collection of payments, resulting in improved Days Sales Outstanding (DSO) by 10% over 3 months.\n- Conducted financial analysis and credit reviews for new and existing clients, setting appropriate credit limits and terms.\n- Collaborated with sales, finance, and legal teams to support contract negotiations while protecting the company' financial interests.\n- Trained and supervised a team of 8 credit analysts/assistants, fostering a high-performing and compliant credit control department.\n- Reduced credit default risk by 50% through implementation of enhanced risk assessment tools and regular account monitoring.\n- Accelerated credit approval turnaround time by 60% faster by streamlining the review process and automating reporting tools.\n- Supported the growth of the customer base by providing sound credit recommendations for over 5 Cr in approval in 1 month.\n\nAssistant Credit Manager\n\nCapitalNow\n\n- 04/2022 - 08/2022Hyderābād, India\n\n- Assessed credit risk and analysed financial statements.\n- Conducted financial review of customer lines of credit by assessing company financials and initiating credit application reviews. Performed creditreviews on corporations to assess financial conditions\n\nCredit Analyst\n\nHero Fin\n\n- 曲\n- 04/2021 - 10/2021New Delhi, India\n\n- Improved understanding of financial statements, which helped in assessing risk. Controlled credit exposure by providing financial.\n- Order management support to minimize risk and obtain timely payment.\n- Completed paperwork, recognizing discrepancies and promptly addressing for resolution.\n- Reduced bad debt write-offs by 30% year-over-year through tighter credit assessments and proactive risk management.\n- Improved cash flow by accelerating collections cycle, achieving increase in on-time payment. 4 Improved cash flow by accelerating collections cycle, achieving increase in on-time payment.\n- Successfully negotiated payment terms with key clients, securing favorable outcomes while maintaining strong business relationships.\n- Process Improvement Streamlined reporting processes, resulting in a 50% reduction in preparation time and enhanced accuracy.\n\nSKILLS\n\nCredit Risk Assessment, Credit Policy Development, Credit Limit Setting, Customer Credit Evaluation, Collections Management, Control Bad Debt Reduction, Loan & Credit Approvals,\n\nLANGUAGES\n\nEnglish\n\nEDUCATION\n\nMasters in Economics\n\nBirla Global University\n\n07/2019 - 07/2021\n\nBhubaneshwar, India",
+      "extracted_text": "BIJAYANI MOHANTY\n\nCredit Consultant/Manager | Risk Analyst\n\n7978903735@ monbiju97@gmail.com linkedin.com Gurgaon\n\nSUMMARY\n\nKEY ACHIEVEMENTS\n\nI am a Credit Consultant/Manager with more than 3 years of experience in evaluating creditworthiness, advising clients on credit improvement strategies, and optimizing financial health for individuals and businesses.\n\nEXPERIENCE\n\nManager Credit\n\nU GRO Capital\n\n- 曲\n- 03/2023 - Present Gurgaon, India\n- Developed and implemented credit policies and procedures to assess customer creditworthiness, reducing default risk and aligning with company risk appetite by 30%\n- Managed the full credit lifecycle, including credit checks, approvals, collections, and account reconciliation, overseeing a portfolio worth 5 million.\n- Monitored accounts receivable and ensured timely collection of payments, resulting in improved Days Sales Outstanding (DSO) by 10% over 3 months.\n- Conducted financial analysis and credit reviews for new and existing clients, setting appropriate credit limits and terms.\n- Collaborated with sales, finance, and legal teams to support contract negotiations while protecting the company' financial interests.\n- Trained and supervised a team of 8 credit analysts/assistants, fostering a high-performing and compliant credit control department.\n- Reduced credit default risk by 50% through implementation of enhanced risk assessment tools and regular account monitoring.\n- Accelerated credit approval turnaround time by 60% faster by streamlining the review process and automating reporting tools.\n- Supported the growth of the customer base by providing sound credit recommendations for over 5 Cr in approval in 1 month.\n\nAssistant Credit Manager\n\nCapitalNow\n\n- 04/2022 - 08/2022Hyderābād, India\n\n- Assessed credit risk and analysed financial statements.\n- Conducted financial review of customer lines of credit by assessing company financials and initiating credit application reviews. Performed creditreviews on corporations to assess financial conditions\n\nCredit Analyst\n\nHero Fin\n\n- 曲\n- 04/2021 - 10/2021New Delhi, India\n\n- Improved understanding of financial statements, which helped in assessing risk. Controlled credit exposure by providing financial.\n- Order management support to minimize risk and obtain timely payment.\n- Completed paperwork, recognizing discrepancies and promptly addressing for resolution.\n- Reduced bad debt write-offs by 30% year-over-year through tighter credit assessments and proactive risk management.\n- Improved cash flow by accelerating collections cycle, achieving increase in on-time payment. 4 Improved cash flow by accelerating collections cycle, achieving increase in on-time payment.\n- Successfully negotiated payment terms with key clients, securing favorable outcomes while maintaining strong business relationships.\n- Process Improvement Streamlined reporting processes, resulting in a 50% reduction in preparation time and enhanced accuracy.\n\nSKILLS\n\nCredit Risk Assessment, Credit Policy Development, Credit Limit Setting, Customer Credit Evaluation, Collections Management, Control Bad Debt Reduction, Loan & Credit Approvals,\n\nLANGUAGES\n\nEnglish\n\nEDUCATION\n\nMasters in Economics\n\nBirla Global University\n\n07/2019 - 07/2021\n\nBhubaneshwar, India",
+      "extracted_text_length": 3252,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "BIJAYANI MOHANTY\n\nCredit Consultant/Manager | Risk Analyst\n\n7978903735@ monbiju97@gmail.com linkedin.com Gurgaon\n\nSUMMARY\n\nKEY ACHIEVEMENTS\n\nI am a Credit Consultant/Manager with more than 3 years of experience in evaluating creditworthiness, advising clients on credit improvement strategies, and optimizing financial health for individuals and businesses.\n\nEXPERIENCE\n\nManager Credit\n\nU GRO Capital\n\n- 曲\n- 03/2023 - Present Gurgaon, India\n- Developed and implemented credit policies and procedures to assess customer creditworthiness, reducing default risk and aligning with company risk appetite by 30%\n- Managed the full credit lifecycle, including credit checks, approvals, collections, and account reconciliation, overseeing a portfolio worth 5 million.\n- Monitored accounts receivable and ensured timely collection of payments, resulting in improved Days Sales Outstanding (DSO) by 10% over 3 months.\n- Conducted financial analysis and credit reviews for new and existing clients, setting appropriate credit limits and terms.\n- Collaborated with sales, finance, and legal teams to support contract negotiations while protecting the company' financial interests.\n- Trained and supervised a team of 8 credit analysts/assistants, fostering a high-performing and compliant credit control department.\n- Reduced credit default risk by 50% through implementation of enhanced risk assessment tools and regular account monitoring.\n- Accelerated credit approval turnaround time by 60% faster by streamlining the review process and automating reporting tools.\n- Supported the growth of the customer base by providing sound credit recommendations for over 5 Cr in approval in 1 month.\n\nAssistant Credit Manager\n\nCapitalNow\n\n- 04/2022 - 08/2022Hyderābād, India\n\n- Assessed credit risk and analysed financial statements.\n- Conducted financial review of customer lines of credit by assessing company financials and initiating credit application reviews. Performed creditreviews on corporations to assess financial conditions\n\nCredit Analyst\n\nHero Fin\n\n- 曲\n- 04/2021 - 10/2021New Delhi, India\n\n- Improved understanding of financial statements, which helped in assessing risk. Controlled credit exposure by providing financial.\n- Order management support to minimize risk and obtain timely payment.\n- Completed paperwork, recognizing discrepancies and promptly addressing for resolution.\n- Reduced bad debt write-offs by 30% year-over-year through tighter credit assessments and proactive risk management.\n- Improved cash flow by accelerating collections cycle, achieving increase in on-time payment. 4 Improved cash flow by accelerating collections cycle, achieving increase in on-time payment.\n- Successfully negotiated payment terms with key clients, securing favorable outcomes while maintaining strong business relationships.\n- Process Improvement Streamlined reporting processes, resulting in a 50% reduction in preparation time and enhanced accuracy.\n\nSKILLS\n\nCredit Risk Assessment, Credit Policy Development, Credit Limit Setting, Customer Credit Evaluation, Collections Management, Control Bad Debt Reduction, Loan & Credit Approvals,\n\nLANGUAGES\n\nEnglish\n\nEDUCATION\n\nMasters in Economics\n\nBirla Global University\n\n07/2019 - 07/2021\n\nBhubaneshwar, India"
+    }
+  ],
+  "attempt_count": 3,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "extracted_text": "BIJAYANI MOHANTY\n\nCredit Consultant/Manager | Risk Analyst\n\n7978903735@ monbiju97@gmail.com linkedin.com Gurgaon\n\nSUMMARY\n\nKEY ACHIEVEMENTS\n\nI am a Credit Consultant/Manager with more than 3 years of experience in evaluating creditworthiness, advising clients on credit improvement strategies, and optimizing financial health for individuals and businesses.\n\nEXPERIENCE\n\nManager Credit\n\nU GRO Capital\n\n- 曲\n- 03/2023 - Present Gurgaon, India\n- Developed and implemented credit policies and procedures to assess customer creditworthiness, reducing default risk and aligning with company risk appetite by 30%\n- Managed the full credit lifecycle, including credit checks, approvals, collections, and account reconciliation, overseeing a portfolio worth 5 million.\n- Monitored accounts receivable and ensured timely collection of payments, resulting in improved Days Sales Outstanding (DSO) by 10% over 3 months.\n- Conducted financial analysis and credit reviews for new and existing clients, setting appropriate credit limits and terms.\n- Collaborated with sales, finance, and legal teams to support contract negotiations while protecting the company' financial interests.\n- Trained and supervised a team of 8 credit analysts/assistants, fostering a high-performing and compliant credit control department.\n- Reduced credit default risk by 50% through implementation of enhanced risk assessment tools and regular account monitoring.\n- Accelerated credit approval turnaround time by 60% faster by streamlining the review process and automating reporting tools.\n- Supported the growth of the customer base by providing sound credit recommendations for over 5 Cr in approval in 1 month.\n\nAssistant Credit Manager\n\nCapitalNow\n\n- 04/2022 - 08/2022Hyderābād, India\n\n- Assessed credit risk and analysed financial statements.\n- Conducted financial review of customer lines of credit by assessing company financials and initiating credit application reviews. Performed creditreviews on corporations to assess financial conditions\n\nCredit Analyst\n\nHero Fin\n\n- 曲\n- 04/2021 - 10/2021New Delhi, India\n\n- Improved understanding of financial statements, which helped in assessing risk. Controlled credit exposure by providing financial.\n- Order management support to minimize risk and obtain timely payment.\n- Completed paperwork, recognizing discrepancies and promptly addressing for resolution.\n- Reduced bad debt write-offs by 30% year-over-year through tighter credit assessments and proactive risk management.\n- Improved cash flow by accelerating collections cycle, achieving increase in on-time payment. 4 Improved cash flow by accelerating collections cycle, achieving increase in on-time payment.\n- Successfully negotiated payment terms with key clients, securing favorable outcomes while maintaining strong business relationships.\n- Process Improvement Streamlined reporting processes, resulting in a 50% reduction in preparation time and enhanced accuracy.\n\nSKILLS\n\nCredit Risk Assessment, Credit Policy Development, Credit Limit Setting, Customer Credit Evaluation, Collections Management, Control Bad Debt Reduction, Loan & Credit Approvals,\n\nLANGUAGES\n\nEnglish\n\nEDUCATION\n\nMasters in Economics\n\nBirla Global University\n\n07/2019 - 07/2021\n\nBhubaneshwar, India",
+  "final_extracted_text": "BIJAYANI MOHANTY\n\nCredit Consultant/Manager | Risk Analyst\n\n7978903735@ monbiju97@gmail.com linkedin.com Gurgaon\n\nSUMMARY\n\nKEY ACHIEVEMENTS\n\nI am a Credit Consultant/Manager with more than 3 years of experience in evaluating creditworthiness, advising clients on credit improvement strategies, and optimizing financial health for individuals and businesses.\n\nEXPERIENCE\n\nManager Credit\n\nU GRO Capital\n\n- 曲\n- 03/2023 - Present Gurgaon, India\n- Developed and implemented credit policies and procedures to assess customer creditworthiness, reducing default risk and aligning with company risk appetite by 30%\n- Managed the full credit lifecycle, including credit checks, approvals, collections, and account reconciliation, overseeing a portfolio worth 5 million.\n- Monitored accounts receivable and ensured timely collection of payments, resulting in improved Days Sales Outstanding (DSO) by 10% over 3 months.\n- Conducted financial analysis and credit reviews for new and existing clients, setting appropriate credit limits and terms.\n- Collaborated with sales, finance, and legal teams to support contract negotiations while protecting the company' financial interests.\n- Trained and supervised a team of 8 credit analysts/assistants, fostering a high-performing and compliant credit control department.\n- Reduced credit default risk by 50% through implementation of enhanced risk assessment tools and regular account monitoring.\n- Accelerated credit approval turnaround time by 60% faster by streamlining the review process and automating reporting tools.\n- Supported the growth of the customer base by providing sound credit recommendations for over 5 Cr in approval in 1 month.\n\nAssistant Credit Manager\n\nCapitalNow\n\n- 04/2022 - 08/2022Hyderābād, India\n\n- Assessed credit risk and analysed financial statements.\n- Conducted financial review of customer lines of credit by assessing company financials and initiating credit application reviews. Performed creditreviews on corporations to assess financial conditions\n\nCredit Analyst\n\nHero Fin\n\n- 曲\n- 04/2021 - 10/2021New Delhi, India\n\n- Improved understanding of financial statements, which helped in assessing risk. Controlled credit exposure by providing financial.\n- Order management support to minimize risk and obtain timely payment.\n- Completed paperwork, recognizing discrepancies and promptly addressing for resolution.\n- Reduced bad debt write-offs by 30% year-over-year through tighter credit assessments and proactive risk management.\n- Improved cash flow by accelerating collections cycle, achieving increase in on-time payment. 4 Improved cash flow by accelerating collections cycle, achieving increase in on-time payment.\n- Successfully negotiated payment terms with key clients, securing favorable outcomes while maintaining strong business relationships.\n- Process Improvement Streamlined reporting processes, resulting in a 50% reduction in preparation time and enhanced accuracy.\n\nSKILLS\n\nCredit Risk Assessment, Credit Policy Development, Credit Limit Setting, Customer Credit Evaluation, Collections Management, Control Bad Debt Reduction, Loan & Credit Approvals,\n\nLANGUAGES\n\nEnglish\n\nEDUCATION\n\nMasters in Economics\n\nBirla Global University\n\n07/2019 - 07/2021\n\nBhubaneshwar, India",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "quality": {
+    "status": "PASS",
+    "document_id": "624843a0-4043-4860-8092-44e6621272b1",
+    "source_tool": "docling",
+    "attempt_id": "624843a0-4043-4860-8092-44e6621272b1-attempt-3",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3252,
+        "word_count": 439,
+        "line_count": 71,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.142681,
+        "symbol_count": 0,
+        "symbol_ratio": 0.0,
+        "max_repeated_char_run": 2,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 91.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 3252,
+        "word_count": 439,
+        "configured_section_count": 8,
+        "detected_count": 5,
+        "missing_count": 3,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_sections": [
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "summary",
+          "Skills": "skills",
+          "Work Experience": "experience",
+          "Education": "education"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "monbiju97@gmail.com",
+            "confidence": 0.8
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "SUMMARY",
+            "detection_method": "heading",
+            "line_number": 7,
+            "evidence": "SUMMARY",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "SKILLS",
+            "detection_method": "heading",
+            "line_number": 55,
+            "evidence": "SKILLS",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 13,
+            "evidence": "EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATION",
+            "detection_method": "heading",
+            "line_number": 63,
+            "evidence": "EDUCATION",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Responsibilities": "missing",
+          "Projects": "missing",
+          "Certifications": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_sections": [
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3252,
+        "word_count": 439,
+        "line_count": 71,
+        "non_empty_line_count": 45,
+        "short_line_count": 15,
+        "short_line_ratio": 0.333333,
+        "fragmented_line_count": 13,
+        "fragmented_line_ratio": 0.288889,
+        "mean_line_length": 70.71,
+        "median_line_length": 35.0,
+        "line_length_stdev": 65.3,
+        "line_length_cv": 0.923503,
+        "broken_sentence_count": 0,
+        "broken_sentence_ratio": 0.0,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Selected 'docling' with the highest quality score 98.4 (threshold 60.0).",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 22089.3,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "FAIL",
+      "duration_ms": 198.54,
+      "message": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 35742.51,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=95.8, pymupdf=0.0, docling=98.4",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected 'docling' with the highest quality score 98.4 (threshold 60.0).",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Docling text normalized: 3252 → 3252 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 24332.25,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 60104.0,
+      "message": "Muse AI produced validated Resume JSON from the Docling extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 60104.0,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "docling",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "BIJAYANI MOHANTY\n\nCredit Consultant/Manager | Risk Analyst\n\n7978903735@ monbiju97@gmail.com linkedin.com Gurgaon\n\nSUMMARY\n\nKEY ACHIEVEMENTS\n\nI am a Credit Consultant/Manager with more than 3 years of experience in evaluating creditworthiness, advising clients on credit improvement strategies, and optimizing financial health for individuals and businesses.\n\nEXPERIENCE\n\nManager Credit\n\nU GRO Capital\n\n- 曲\n- 03/2023 - Present Gurgaon, India\n- Developed and implemented credit policies and procedures to assess customer creditworthiness, reducing default risk and aligning with company risk appetite by 30%\n- Managed the full credit lifecycle, including credit checks, approvals, collections, and account reconciliation, overseeing a portfolio worth 5 million.\n- Monitored accounts receivable and ensured timely collection of payments, resulting in improved Days Sales Outstanding (DSO) by 10% over 3 months.\n- Conducted financial analysis and credit reviews for new and existing clients, setting appropriate credit limits and terms.\n- Collaborated with sales, finance, and legal teams to support contract negotiations while protecting the company' financial interests.\n- Trained and supervised a team of 8 credit analysts/assistants, fostering a high-performing and compliant credit control department.\n- Reduced credit default risk by 50% through implementation of enhanced risk assessment tools and regular account monitoring.\n- Accelerated credit approval turnaround time by 60% faster by streamlining the review process and automating reporting tools.\n- Supported the growth of the customer base by providing sound credit recommendations for over 5 Cr in approval in 1 month.\n\nAssistant Credit Manager\n\nCapitalNow\n\n- 04/2022 - 08/2022Hyderābād, India\n\n- Assessed credit risk and analysed financial statements.\n- Conducted financial review of customer lines of credit by assessing company financials and initiating credit application reviews. Performed creditreviews on corporations to assess financial conditions\n\nCredit Analyst\n\nHero Fin\n\n- 曲\n- 04/2021 - 10/2021New Delhi, India\n\n- Improved understanding of financial statements, which helped in assessing risk. Controlled credit exposure by providing financial.\n- Order management support to minimize risk and obtain timely payment.\n- Completed paperwork, recognizing discrepancies and promptly addressing for resolution.\n- Reduced bad debt write-offs by 30% year-over-year through tighter credit assessments and proactive risk management.\n- Improved cash flow by accelerating collections cycle, achieving increase in on-time payment. 4 Improved cash flow by accelerating collections cycle, achieving increase in on-time payment.\n- Successfully negotiated payment terms with key clients, securing favorable outcomes while maintaining strong business relationships.\n- Process Improvement Streamlined reporting processes, resulting in a 50% reduction in preparation time and enhanced accuracy.\n\nSKILLS\n\nCredit Risk Assessment, Credit Policy Development, Credit Limit Setting, Customer Credit Evaluation, Collections Management, Control Bad Debt Reduction, Loan & Credit Approvals,\n\nLANGUAGES\n\nEnglish\n\nEDUCATION\n\nMasters in Economics\n\nBirla Global University\n\n07/2019 - 07/2021\n\nBhubaneshwar, India",
+    "normalized_text": "BIJAYANI MOHANTY\n\nCredit Consultant/Manager | Risk Analyst\n\n7978903735@ monbiju97@gmail.com linkedin.com Gurgaon\n\nSUMMARY\n\nKEY ACHIEVEMENTS\n\nI am a Credit Consultant/Manager with more than 3 years of experience in evaluating creditworthiness, advising clients on credit improvement strategies, and optimizing financial health for individuals and businesses.\n\nEXPERIENCE\n\nManager Credit\n\nU GRO Capital\n\n- 曲\n- 03/2023 - Present Gurgaon, India\n- Developed and implemented credit policies and procedures to assess customer creditworthiness, reducing default risk and aligning with company risk appetite by 30%\n- Managed the full credit lifecycle, including credit checks, approvals, collections, and account reconciliation, overseeing a portfolio worth 5 million.\n- Monitored accounts receivable and ensured timely collection of payments, resulting in improved Days Sales Outstanding (DSO) by 10% over 3 months.\n- Conducted financial analysis and credit reviews for new and existing clients, setting appropriate credit limits and terms.\n- Collaborated with sales, finance, and legal teams to support contract negotiations while protecting the company' financial interests.\n- Trained and supervised a team of 8 credit analysts/assistants, fostering a high-performing and compliant credit control department.\n- Reduced credit default risk by 50% through implementation of enhanced risk assessment tools and regular account monitoring.\n- Accelerated credit approval turnaround time by 60% faster by streamlining the review process and automating reporting tools.\n- Supported the growth of the customer base by providing sound credit recommendations for over 5 Cr in approval in 1 month.\n\nAssistant Credit Manager\n\nCapitalNow\n\n- 04/2022 - 08/2022Hyderābād, India\n\n- Assessed credit risk and analysed financial statements.\n- Conducted financial review of customer lines of credit by assessing company financials and initiating credit application reviews. Performed creditreviews on corporations to assess financial conditions\n\nCredit Analyst\n\nHero Fin\n\n- 曲\n- 04/2021 - 10/2021New Delhi, India\n\n- Improved understanding of financial statements, which helped in assessing risk. Controlled credit exposure by providing financial.\n- Order management support to minimize risk and obtain timely payment.\n- Completed paperwork, recognizing discrepancies and promptly addressing for resolution.\n- Reduced bad debt write-offs by 30% year-over-year through tighter credit assessments and proactive risk management.\n- Improved cash flow by accelerating collections cycle, achieving increase in on-time payment. 4 Improved cash flow by accelerating collections cycle, achieving increase in on-time payment.\n- Successfully negotiated payment terms with key clients, securing favorable outcomes while maintaining strong business relationships.\n- Process Improvement Streamlined reporting processes, resulting in a 50% reduction in preparation time and enhanced accuracy.\n\nSKILLS\n\nCredit Risk Assessment, Credit Policy Development, Credit Limit Setting, Customer Credit Evaluation, Collections Management, Control Bad Debt Reduction, Loan & Credit Approvals,\n\nLANGUAGES\n\nEnglish\n\nEDUCATION\n\nMasters in Economics\n\nBirla Global University\n\n07/2019 - 07/2021\n\nBhubaneshwar, India",
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "original_chars": 3252,
+    "normalized_chars": 3252,
+    "original_estimated_tokens": 813,
+    "normalized_estimated_tokens": 813,
+    "estimated_reduction_percent": 0.0
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 24332.25,
+      "input_tokens": 1468,
+      "output_tokens": 2327,
+      "total_tokens": 3795,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1468,
+    "output_tokens": 2327,
+    "total_tokens": 3795,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 24332.25,
+    "usage": {
+      "completion_tokens": 2327,
+      "prompt_tokens": 1468,
+      "total_tokens": 3795,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1533
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "docling",
+      "status": "applied",
+      "original_chars": 3252,
+      "normalized_chars": 3252,
+      "estimated_reduction_percent": 0.0,
+      "normalization_applied": false,
+      "normalization_steps": [],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "docling",
+  "selected_quality_score": 98.4,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 95.8,
+      "status": "success",
+      "word_count": 428,
+      "char_count": 3175,
+      "meaningful_char_count": 2709,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 92.0,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary"
+        ]
+      },
+      "structure": {
+        "heading_count": 5,
+        "paragraph_count": 40,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.9196,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 1.0,
+        "structure": 0.7
+      }
+    },
+    "pymupdf": {
+      "extractor": "pymupdf",
+      "quality_score": 0.0,
+      "status": "failed",
+      "word_count": 0,
+      "char_count": 0,
+      "meaningful_char_count": 0,
+      "empty_page_ratio": 1.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 0.0,
+      "completeness": {
+        "has_email": false,
+        "has_phone": false,
+        "has_skills_section": false,
+        "has_experience_section": false,
+        "has_education_section": false,
+        "sections_found": []
+      },
+      "structure": {
+        "heading_count": 0,
+        "paragraph_count": 0,
+        "bullet_count": 0
+      },
+      "error": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required."
+    },
+    "docling": {
+      "extractor": "docling",
+      "quality_score": 98.4,
+      "status": "success",
+      "word_count": 439,
+      "char_count": 3252,
+      "meaningful_char_count": 2788,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0222,
+      "readability_score": 90.5,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary"
+        ]
+      },
+      "structure": {
+        "heading_count": 5,
+        "paragraph_count": 27,
+        "bullet_count": 23
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.9052,
+        "cleanliness": 1.0,
+        "non_duplication": 0.9778,
+        "completeness": 1.0,
+        "structure": 1.0
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 3252,
+    "normalized_chars": 3252,
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "error": null,
+    "original_text": "BIJAYANI MOHANTY\n\nCredit Consultant/Manager | Risk Analyst\n\n7978903735@ monbiju97@gmail.com linkedin.com Gurgaon\n\nSUMMARY\n\nKEY ACHIEVEMENTS\n\nI am a Credit Consultant/Manager with more than 3 years of experience in evaluating creditworthiness, advising clients on credit improvement strategies, and optimizing financial health for individuals and businesses.\n\nEXPERIENCE\n\nManager Credit\n\nU GRO Capital\n\n- 曲\n- 03/2023 - Present Gurgaon, India\n- Developed and implemented credit policies and procedures to assess customer creditworthiness, reducing default risk and aligning with company risk appetite by 30%\n- Managed the full credit lifecycle, including credit checks, approvals, collections, and account reconciliation, overseeing a portfolio worth 5 million.\n- Monitored accounts receivable and ensured timely collection of payments, resulting in improved Days Sales Outstanding (DSO) by 10% over 3 months.\n- Conducted financial analysis and credit reviews for new and existing clients, setting appropriate credit limits and terms.\n- Collaborated with sales, finance, and legal teams to support contract negotiations while protecting the company' financial interests.\n- Trained and supervised a team of 8 credit analysts/assistants, fostering a high-performing and compliant credit control department.\n- Reduced credit default risk by 50% through implementation of enhanced risk assessment tools and regular account monitoring.\n- Accelerated credit approval turnaround time by 60% faster by streamlining the review process and automating reporting tools.\n- Supported the growth of the customer base by providing sound credit recommendations for over 5 Cr in approval in 1 month.\n\nAssistant Credit Manager\n\nCapitalNow\n\n- 04/2022 - 08/2022Hyderābād, India\n\n- Assessed credit risk and analysed financial statements.\n- Conducted financial review of customer lines of credit by assessing company financials and initiating credit application reviews. Performed creditreviews on corporations to assess financial conditions\n\nCredit Analyst\n\nHero Fin\n\n- 曲\n- 04/2021 - 10/2021New Delhi, India\n\n- Improved understanding of financial statements, which helped in assessing risk. Controlled credit exposure by providing financial.\n- Order management support to minimize risk and obtain timely payment.\n- Completed paperwork, recognizing discrepancies and promptly addressing for resolution.\n- Reduced bad debt write-offs by 30% year-over-year through tighter credit assessments and proactive risk management.\n- Improved cash flow by accelerating collections cycle, achieving increase in on-time payment. 4 Improved cash flow by accelerating collections cycle, achieving increase in on-time payment.\n- Successfully negotiated payment terms with key clients, securing favorable outcomes while maintaining strong business relationships.\n- Process Improvement Streamlined reporting processes, resulting in a 50% reduction in preparation time and enhanced accuracy.\n\nSKILLS\n\nCredit Risk Assessment, Credit Policy Development, Credit Limit Setting, Customer Credit Evaluation, Collections Management, Control Bad Debt Reduction, Loan & Credit Approvals,\n\nLANGUAGES\n\nEnglish\n\nEDUCATION\n\nMasters in Economics\n\nBirla Global University\n\n07/2019 - 07/2021\n\nBhubaneshwar, India",
+    "normalized_text": "BIJAYANI MOHANTY\n\nCredit Consultant/Manager | Risk Analyst\n\n7978903735@ monbiju97@gmail.com linkedin.com Gurgaon\n\nSUMMARY\n\nKEY ACHIEVEMENTS\n\nI am a Credit Consultant/Manager with more than 3 years of experience in evaluating creditworthiness, advising clients on credit improvement strategies, and optimizing financial health for individuals and businesses.\n\nEXPERIENCE\n\nManager Credit\n\nU GRO Capital\n\n- 曲\n- 03/2023 - Present Gurgaon, India\n- Developed and implemented credit policies and procedures to assess customer creditworthiness, reducing default risk and aligning with company risk appetite by 30%\n- Managed the full credit lifecycle, including credit checks, approvals, collections, and account reconciliation, overseeing a portfolio worth 5 million.\n- Monitored accounts receivable and ensured timely collection of payments, resulting in improved Days Sales Outstanding (DSO) by 10% over 3 months.\n- Conducted financial analysis and credit reviews for new and existing clients, setting appropriate credit limits and terms.\n- Collaborated with sales, finance, and legal teams to support contract negotiations while protecting the company' financial interests.\n- Trained and supervised a team of 8 credit analysts/assistants, fostering a high-performing and compliant credit control department.\n- Reduced credit default risk by 50% through implementation of enhanced risk assessment tools and regular account monitoring.\n- Accelerated credit approval turnaround time by 60% faster by streamlining the review process and automating reporting tools.\n- Supported the growth of the customer base by providing sound credit recommendations for over 5 Cr in approval in 1 month.\n\nAssistant Credit Manager\n\nCapitalNow\n\n- 04/2022 - 08/2022Hyderābād, India\n\n- Assessed credit risk and analysed financial statements.\n- Conducted financial review of customer lines of credit by assessing company financials and initiating credit application reviews. Performed creditreviews on corporations to assess financial conditions\n\nCredit Analyst\n\nHero Fin\n\n- 曲\n- 04/2021 - 10/2021New Delhi, India\n\n- Improved understanding of financial statements, which helped in assessing risk. Controlled credit exposure by providing financial.\n- Order management support to minimize risk and obtain timely payment.\n- Completed paperwork, recognizing discrepancies and promptly addressing for resolution.\n- Reduced bad debt write-offs by 30% year-over-year through tighter credit assessments and proactive risk management.\n- Improved cash flow by accelerating collections cycle, achieving increase in on-time payment. 4 Improved cash flow by accelerating collections cycle, achieving increase in on-time payment.\n- Successfully negotiated payment terms with key clients, securing favorable outcomes while maintaining strong business relationships.\n- Process Improvement Streamlined reporting processes, resulting in a 50% reduction in preparation time and enhanced accuracy.\n\nSKILLS\n\nCredit Risk Assessment, Credit Policy Development, Credit Limit Setting, Customer Credit Evaluation, Collections Management, Control Bad Debt Reduction, Loan & Credit Approvals,\n\nLANGUAGES\n\nEnglish\n\nEDUCATION\n\nMasters in Economics\n\nBirla Global University\n\n07/2019 - 07/2021\n\nBhubaneshwar, India"
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "BIJAYANI MOHANTY",
+      "email": "monbiju97@gmail.com",
+      "phone": "7978903735",
+      "location": "Gurgaon",
+      "summary": "I am a Credit Consultant/Manager with more than 3 years of experience in evaluating creditworthiness, advising clients on credit improvement strategies, and optimizing financial health for individuals and businesses.",
+      "skills": {
+        "technical_skills": [
+          "Credit Risk Assessment",
+          "Credit Policy Development",
+          "Credit Limit Setting",
+          "Customer Credit Evaluation",
+          "Collections Management",
+          "Control Bad Debt Reduction",
+          "Loan & Credit Approvals"
+        ],
+        "soft_skills": [],
+        "tools": [],
+        "taxonomy_skills": [],
+        "other_skills": []
+      },
+      "experience": [
+        {
+          "title": "Manager Credit",
+          "company": "U GRO Capital",
+          "location": "Gurgaon, India",
+          "start_date": "03/2023",
+          "end_date": "Present",
+          "highlights": [
+            "Developed and implemented credit policies and procedures to assess customer creditworthiness, reducing default risk and aligning with company risk appetite by 30%",
+            "Managed the full credit lifecycle, including credit checks, approvals, collections, and account reconciliation, overseeing a portfolio worth 5 million.",
+            "Monitored accounts receivable and ensured timely collection of payments, resulting in improved Days Sales Outstanding (DSO) by 10% over 3 months.",
+            "Conducted financial analysis and credit reviews for new and existing clients, setting appropriate credit limits and terms.",
+            "Collaborated with sales, finance, and legal teams to support contract negotiations while protecting the company' financial interests.",
+            "Trained and supervised a team of 8 credit analysts/assistants, fostering a high-performing and compliant credit control department.",
+            "Reduced credit default risk by 50% through implementation of enhanced risk assessment tools and regular account monitoring.",
+            "Accelerated credit approval turnaround time by 60% faster by streamlining the review process and automating reporting tools.",
+            "Supported the growth of the customer base by providing sound credit recommendations for over 5 Cr in approval in 1 month."
+          ]
+        },
+        {
+          "title": "Assistant Credit Manager",
+          "company": "CapitalNow",
+          "location": "Hyderābād, India",
+          "start_date": "04/2022",
+          "end_date": "08/2022",
+          "highlights": [
+            "Assessed credit risk and analysed financial statements.",
+            "Conducted financial review of customer lines of credit by assessing company financials and initiating credit application reviews. Performed creditreviews on corporations to assess financial conditions"
+          ]
+        },
+        {
+          "title": "Credit Analyst",
+          "company": "Hero Fin",
+          "location": "New Delhi, India",
+          "start_date": "04/2021",
+          "end_date": "10/2021",
+          "highlights": [
+            "Improved understanding of financial statements, which helped in assessing risk. Controlled credit exposure by providing financial.",
+            "Order management support to minimize risk and obtain timely payment.",
+            "Completed paperwork, recognizing discrepancies and promptly addressing for resolution.",
+            "Reduced bad debt write-offs by 30% year-over-year through tighter credit assessments and proactive risk management.",
+            "Improved cash flow by accelerating collections cycle, achieving increase in on-time payment. 4 Improved cash flow by accelerating collections cycle, achieving increase in on-time payment.",
+            "Successfully negotiated payment terms with key clients, securing favorable outcomes while maintaining strong business relationships.",
+            "Process Improvement Streamlined reporting processes, resulting in a 50% reduction in preparation time and enhanced accuracy."
+          ]
+        }
+      ],
+      "education": [
+        {
+          "degree": "Masters in Economics",
+          "institution": "Birla Global University",
+          "location": "Bhubaneshwar, India",
+          "start_date": "07/2019",
+          "end_date": "07/2021"
+        }
+      ],
+      "certifications": [],
+      "languages": [
+        "English"
+      ],
+      "links": [
+        "linkedin.com"
+      ]
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 24332.25,
+    "usage": {
+      "completion_tokens": 2327,
+      "prompt_tokens": 1468,
+      "total_tokens": 3795,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1533
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "BIJAYANI MOHANTY",
+    "email": "monbiju97@gmail.com",
+    "phone": "7978903735",
+    "location": "Gurgaon",
+    "summary": "I am a Credit Consultant/Manager with more than 3 years of experience in evaluating creditworthiness, advising clients on credit improvement strategies, and optimizing financial health for individuals and businesses.",
+    "skills": {
+      "technical_skills": [
+        "Credit Risk Assessment",
+        "Credit Policy Development",
+        "Credit Limit Setting",
+        "Customer Credit Evaluation",
+        "Collections Management",
+        "Control Bad Debt Reduction",
+        "Loan & Credit Approvals"
+      ],
+      "soft_skills": [],
+      "tools": [],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Manager Credit",
+        "company": "U GRO Capital",
+        "location": "Gurgaon, India",
+        "start_date": "03/2023",
+        "end_date": "Present",
+        "highlights": [
+          "Developed and implemented credit policies and procedures to assess customer creditworthiness, reducing default risk and aligning with company risk appetite by 30%",
+          "Managed the full credit lifecycle, including credit checks, approvals, collections, and account reconciliation, overseeing a portfolio worth 5 million.",
+          "Monitored accounts receivable and ensured timely collection of payments, resulting in improved Days Sales Outstanding (DSO) by 10% over 3 months.",
+          "Conducted financial analysis and credit reviews for new and existing clients, setting appropriate credit limits and terms.",
+          "Collaborated with sales, finance, and legal teams to support contract negotiations while protecting the company' financial interests.",
+          "Trained and supervised a team of 8 credit analysts/assistants, fostering a high-performing and compliant credit control department.",
+          "Reduced credit default risk by 50% through implementation of enhanced risk assessment tools and regular account monitoring.",
+          "Accelerated credit approval turnaround time by 60% faster by streamlining the review process and automating reporting tools.",
+          "Supported the growth of the customer base by providing sound credit recommendations for over 5 Cr in approval in 1 month."
+        ]
+      },
+      {
+        "title": "Assistant Credit Manager",
+        "company": "CapitalNow",
+        "location": "Hyderābād, India",
+        "start_date": "04/2022",
+        "end_date": "08/2022",
+        "highlights": [
+          "Assessed credit risk and analysed financial statements.",
+          "Conducted financial review of customer lines of credit by assessing company financials and initiating credit application reviews. Performed creditreviews on corporations to assess financial conditions"
+        ]
+      },
+      {
+        "title": "Credit Analyst",
+        "company": "Hero Fin",
+        "location": "New Delhi, India",
+        "start_date": "04/2021",
+        "end_date": "10/2021",
+        "highlights": [
+          "Improved understanding of financial statements, which helped in assessing risk. Controlled credit exposure by providing financial.",
+          "Order management support to minimize risk and obtain timely payment.",
+          "Completed paperwork, recognizing discrepancies and promptly addressing for resolution.",
+          "Reduced bad debt write-offs by 30% year-over-year through tighter credit assessments and proactive risk management.",
+          "Improved cash flow by accelerating collections cycle, achieving increase in on-time payment. 4 Improved cash flow by accelerating collections cycle, achieving increase in on-time payment.",
+          "Successfully negotiated payment terms with key clients, securing favorable outcomes while maintaining strong business relationships.",
+          "Process Improvement Streamlined reporting processes, resulting in a 50% reduction in preparation time and enhanced accuracy."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Masters in Economics",
+        "institution": "Birla Global University",
+        "location": "Bhubaneshwar, India",
+        "start_date": "07/2019",
+        "end_date": "07/2021"
+      }
+    ],
+    "certifications": [],
+    "languages": [
+      "English"
+    ],
+    "links": [
+      "linkedin.com"
+    ]
+  },
+  "resume_json": {
+    "full_name": "BIJAYANI MOHANTY",
+    "email": "monbiju97@gmail.com",
+    "phone": "7978903735",
+    "location": "Gurgaon",
+    "summary": "I am a Credit Consultant/Manager with more than 3 years of experience in evaluating creditworthiness, advising clients on credit improvement strategies, and optimizing financial health for individuals and businesses.",
+    "skills": {
+      "technical_skills": [
+        "Credit Risk Assessment",
+        "Credit Policy Development",
+        "Credit Limit Setting",
+        "Customer Credit Evaluation",
+        "Collections Management",
+        "Control Bad Debt Reduction",
+        "Loan & Credit Approvals"
+      ],
+      "soft_skills": [],
+      "tools": [],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Manager Credit",
+        "company": "U GRO Capital",
+        "location": "Gurgaon, India",
+        "start_date": "03/2023",
+        "end_date": "Present",
+        "highlights": [
+          "Developed and implemented credit policies and procedures to assess customer creditworthiness, reducing default risk and aligning with company risk appetite by 30%",
+          "Managed the full credit lifecycle, including credit checks, approvals, collections, and account reconciliation, overseeing a portfolio worth 5 million.",
+          "Monitored accounts receivable and ensured timely collection of payments, resulting in improved Days Sales Outstanding (DSO) by 10% over 3 months.",
+          "Conducted financial analysis and credit reviews for new and existing clients, setting appropriate credit limits and terms.",
+          "Collaborated with sales, finance, and legal teams to support contract negotiations while protecting the company' financial interests.",
+          "Trained and supervised a team of 8 credit analysts/assistants, fostering a high-performing and compliant credit control department.",
+          "Reduced credit default risk by 50% through implementation of enhanced risk assessment tools and regular account monitoring.",
+          "Accelerated credit approval turnaround time by 60% faster by streamlining the review process and automating reporting tools.",
+          "Supported the growth of the customer base by providing sound credit recommendations for over 5 Cr in approval in 1 month."
+        ]
+      },
+      {
+        "title": "Assistant Credit Manager",
+        "company": "CapitalNow",
+        "location": "Hyderābād, India",
+        "start_date": "04/2022",
+        "end_date": "08/2022",
+        "highlights": [
+          "Assessed credit risk and analysed financial statements.",
+          "Conducted financial review of customer lines of credit by assessing company financials and initiating credit application reviews. Performed creditreviews on corporations to assess financial conditions"
+        ]
+      },
+      {
+        "title": "Credit Analyst",
+        "company": "Hero Fin",
+        "location": "New Delhi, India",
+        "start_date": "04/2021",
+        "end_date": "10/2021",
+        "highlights": [
+          "Improved understanding of financial statements, which helped in assessing risk. Controlled credit exposure by providing financial.",
+          "Order management support to minimize risk and obtain timely payment.",
+          "Completed paperwork, recognizing discrepancies and promptly addressing for resolution.",
+          "Reduced bad debt write-offs by 30% year-over-year through tighter credit assessments and proactive risk management.",
+          "Improved cash flow by accelerating collections cycle, achieving increase in on-time payment. 4 Improved cash flow by accelerating collections cycle, achieving increase in on-time payment.",
+          "Successfully negotiated payment terms with key clients, securing favorable outcomes while maintaining strong business relationships.",
+          "Process Improvement Streamlined reporting processes, resulting in a 50% reduction in preparation time and enhanced accuracy."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Masters in Economics",
+        "institution": "Birla Global University",
+        "location": "Bhubaneshwar, India",
+        "start_date": "07/2019",
+        "end_date": "07/2021"
+      }
+    ],
+    "certifications": [],
+    "languages": [
+      "English"
+    ],
+    "links": [
+      "linkedin.com"
+    ]
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 35.7604,
+    "quality_seconds": 0.0085,
+    "normalization_seconds": 0.0007,
+    "llm_seconds": 24.3344,
+    "total_seconds": 60.104
+  },
+  "_stored_name": "624843a0-4043-4860-8092-44e6621272b1_download_13_.pdf"
+}

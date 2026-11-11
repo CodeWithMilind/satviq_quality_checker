@@ -9,8 +9,6 @@
   "use strict";
 
   var BASE = (window.SATVIQ_API_BASE || "").replace(/\/$/, "");
-  var DEFAULT_TIMEOUT_MS = 30000;
-  var PROCESS_TIMEOUT_MS = 600000;
 
   function ApiError(message, status) {
     this.name = "ApiError";
@@ -23,18 +21,20 @@
     return BASE + path;
   }
 
-  /* fetch with an abort-based timeout and consistent error shape. */
+  /* fetch with a consistent error shape. There is NO request
+   * timeout: slow backend work — extraction, Muse generation —
+   * is waited out, never aborted by a timer. An AbortSignal is
+   * accepted only so the Generate AI Output button can implement
+   * "stop waiting" (a user action, never a timeout); the backend
+   * generation itself continues and saves its result. */
   function request(path, options) {
     options = options || {};
-    var timeout = options.timeout || DEFAULT_TIMEOUT_MS;
-    var controller = new AbortController();
-    var timer = setTimeout(function () { controller.abort(); }, timeout);
     var init = {
       method: options.method || "GET",
       headers: options.headers || {},
       body: options.body,
-      signal: controller.signal,
     };
+    if (options.signal) init.signal = options.signal;
     if (options.json !== undefined) {
       init.headers = Object.assign({}, init.headers, {
         "Content-Type": "application/json",
@@ -43,7 +43,6 @@
     }
     return fetch(url(path), init)
       .then(function (response) {
-        clearTimeout(timer);
         if (!response.ok) {
           return response
             .json()
@@ -58,10 +57,7 @@
         return response.json();
       })
       .catch(function (err) {
-        clearTimeout(timer);
-        if (err.name === "AbortError") {
-          throw new ApiError("The request timed out. Please try again.");
-        }
+        if (err && err.name === "AbortError") throw err; /* stop-waiting */
         if (err instanceof ApiError) throw err;
         throw new ApiError("Could not reach the backend. Is the server running?");
       });
@@ -75,7 +71,7 @@
       files.forEach(function (file) { form.append("files", file); });
       var xhr = new XMLHttpRequest();
       xhr.open("POST", url("/api/resumes/process"));
-      xhr.timeout = PROCESS_TIMEOUT_MS;
+      xhr.timeout = 0; /* 0 = no timeout (timeouts have been removed) */
       if (xhr.upload && typeof onProgress === "function") {
         xhr.upload.onprogress = function (event) {
           if (event.lengthComputable) {
@@ -91,9 +87,6 @@
       };
       xhr.onerror = function () {
         reject(new ApiError("Could not reach the backend. Is the server running?"));
-      };
-      xhr.ontimeout = function () {
-        reject(new ApiError("Processing timed out. Please try again."));
       };
       xhr.send(form);
     });
@@ -134,11 +127,29 @@
     deleteAllResumes: function () {
       return request("/api/resumes", { method: "DELETE" });
     },
+    reprocessResume: function (id) {
+      return request("/api/resumes/" + encodeURIComponent(id) + "/reprocess", {
+        method: "POST",
+      });
+    },
+    generateAiOutput: function (id, signal) {
+      return request("/api/resumes/" + encodeURIComponent(id) + "/ai/generate", {
+        method: "POST",
+        signal: signal,
+      });
+    },
+    extractorStatus: function () {
+      return request("/api/extractors/status");
+    },
+    testExtractors: function () {
+      /* No timeout (as everywhere): Docling's first-ever run can
+         legitimately take minutes. */
+      return request("/api/extractors/test", { method: "POST" });
+    },
     runExtractors: function (id, extractors) {
       return request("/api/resumes/" + encodeURIComponent(id) + "/extractors/run", {
         method: "POST",
         json: { extractors: extractors },
-        timeout: 600000,
       });
     },
     downloadOriginalUrl: function (id) {
@@ -161,7 +172,6 @@
       return request("/api/settings/system-prompt/test", {
         method: "POST",
         json: text === undefined ? {} : { system_prompt: text },
-        timeout: 120000,
       });
     },
   };

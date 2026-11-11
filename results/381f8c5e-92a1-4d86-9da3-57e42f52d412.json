@@ -1,0 +1,2116 @@
+{
+  "resume_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412",
+  "filename": "SHJ-5412_SHC-382596.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 341635,
+  "uploaded_at": "2026-11-11T07:14:05.293398+00:00",
+  "success": true,
+  "extractor_used": "docling",
+  "final_extractor": "docling",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412-attempt-1",
+      "resume_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 95.1 (selected 'docling' scored 97.8).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 95.1 (selected 'docling' scored 97.8).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412",
+        "source_tool": "tika",
+        "attempt_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 86.56,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "14 non-printable characters found (0.66% of text).",
+            "Repeated-character corruption suspected: longest run is 26 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2117,
+            "word_count": 273,
+            "line_count": 131,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 14,
+            "non_printable_ratio": 0.006613,
+            "whitespace_ratio": 0.232877,
+            "symbol_count": 16,
+            "symbol_ratio": 0.007558,
+            "max_repeated_char_run": 26,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 79.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2117,
+            "word_count": 273,
+            "configured_section_count": 8,
+            "detected_count": 4,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile",
+              "Work Experience": "working experience",
+              "Education": "educational qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERSONAL DETAILS",
+                "detection_method": "heading",
+                "line_number": 102,
+                "evidence": "PERSONAL DETAILS",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFILE",
+                "detection_method": "heading",
+                "line_number": 23,
+                "evidence": "PROFILE",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORKING EXPERIENCE ( 2.5+ Years )",
+                "detection_method": "heading_embedded",
+                "line_number": 34,
+                "evidence": "WORKING EXPERIENCE ( 2.5+ Years )",
+                "confidence": 0.9
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATIONAL QUALIFICATION",
+                "detection_method": "heading",
+                "line_number": 91,
+                "evidence": "EDUCATIONAL QUALIFICATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Skills": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 86.56
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2117,
+            "word_count": 273,
+            "line_count": 131,
+            "non_empty_line_count": 46,
+            "short_line_count": 12,
+            "short_line_ratio": 0.26087,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.108696,
+            "mean_line_length": 40.78,
+            "median_line_length": 35.5,
+            "line_length_stdev": 22.6,
+            "line_length_cv": 0.554097,
+            "broken_sentence_count": 6,
+            "broken_sentence_ratio": 0.133333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412",
+        "source_tool": "tika",
+        "attempt_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 86.56,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "14 non-printable characters found (0.66% of text).",
+            "Repeated-character corruption suspected: longest run is 26 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2117,
+            "word_count": 273,
+            "line_count": 131,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 14,
+            "non_printable_ratio": 0.006613,
+            "whitespace_ratio": 0.232877,
+            "symbol_count": 16,
+            "symbol_ratio": 0.007558,
+            "max_repeated_char_run": 26,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 79.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2117,
+            "word_count": 273,
+            "configured_section_count": 8,
+            "detected_count": 4,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile",
+              "Work Experience": "working experience",
+              "Education": "educational qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERSONAL DETAILS",
+                "detection_method": "heading",
+                "line_number": 102,
+                "evidence": "PERSONAL DETAILS",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFILE",
+                "detection_method": "heading",
+                "line_number": 23,
+                "evidence": "PROFILE",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORKING EXPERIENCE ( 2.5+ Years )",
+                "detection_method": "heading_embedded",
+                "line_number": 34,
+                "evidence": "WORKING EXPERIENCE ( 2.5+ Years )",
+                "confidence": 0.9
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATIONAL QUALIFICATION",
+                "detection_method": "heading",
+                "line_number": 91,
+                "evidence": "EDUCATIONAL QUALIFICATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Skills": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 86.56
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2117,
+            "word_count": 273,
+            "line_count": 131,
+            "non_empty_line_count": 46,
+            "short_line_count": 12,
+            "short_line_ratio": 0.26087,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.108696,
+            "mean_line_length": 40.78,
+            "median_line_length": 35.5,
+            "line_length_stdev": 22.6,
+            "line_length_cv": 0.554097,
+            "broken_sentence_count": 6,
+            "broken_sentence_ratio": 0.133333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 95.1,
+      "duration_ms": 26047.11,
+      "text": "Kuldeep Sengar \n\n  kuldeepsengar9536@gmail.com \n\n  (+91) 9368317466 \n\n \n\n \n\n \n\nCAREER OBJECTIVE \n \n\n    Looking for a position in the Information Technology industry where I can \n\nleverage my skills and abilities to contribute to innovation and problem-solving, \n\nwhile fostering professional growth and adapting to new challenges \n \n\nPROFILE \n \n\n    A highly motivated tech support professional with expertise in troubleshooting, \n\nanalyzing, and resolving complex technical issues using advanced problem-\n\nsolving techniques. \n\n \n\nWORKING EXPERIENCE ( 2.5+ Years ) \n\n Customer Support Engineer at Niti Aayog (Module Informatics Private \n\nLimited, Noida) : December 2023- Present  \n\n Windows (Window 7, 10 & 11) -formatting, configure, Partition, \n\nDrivers Installation and Update, software configuration.  \n\n Manage Laptop, Desktop - Part Replacement and Troubleshooting. \n\n Printer Configuration (USB and Network Printer). \n\n Provide Support to Remote Client using TightVNC & Anydesk. \n\n Configure, Backup & Restore of Outlook Mail and MS Office – \n\n2010, 2013, 2016. \n\n Manage and Update IT Asset Inventory on Excel. \n\n Understand basic networking concepts LANs & WANs, IP Address, \n\nDNS and DHCP. \n\n Active Management of Service Requests, Incidents, and Activities. \n\n Document and Maintain IT support procedures, Guidelines and \n\nKnowledge-Base articles. \n\n \n\n IT Support Engineer  in SAIL( Steel Authority of India Limited ) Yard, \n\nBallabhgarh : August2022- November 2023  \n\n \n\n \n\n \n\n \n\n \n\n \n\nmailto:kuldeepsengar9536@gmail.com\n\n\n \n\n \n\nEDUCATIONAL QUALIFICATION \n \n\n High School, UP Board \n\n Intermediate, UP Board \n\n B. Sc. (PCM)  -DBRAU Agra \n\n \n\nPERSONAL DETAILS \n \nFather’s Name :    Mr.  Ramkishan Singh \nDate of Birth :  08/04/1994 \n\nReligion :    Hindu \nNationality :  Indian \nLanguages Known :   English and Hindi \n\n Permanent Address :   Vill- Punner, Dist.- Hathras, U.P.204102                          \n\n \n\n \n\nDECLARATION \n \n\nI hereby solemnly declare that above furnished particulars are true to the \n\nbest my knowledge and   belief. \n \n\n \n\n  Date:         Kuldeep Sengar \n\n \n\nPlace:",
+      "extracted_text": "Kuldeep Sengar \n\n  kuldeepsengar9536@gmail.com \n\n  (+91) 9368317466 \n\n \n\n \n\n \n\nCAREER OBJECTIVE \n \n\n    Looking for a position in the Information Technology industry where I can \n\nleverage my skills and abilities to contribute to innovation and problem-solving, \n\nwhile fostering professional growth and adapting to new challenges \n \n\nPROFILE \n \n\n    A highly motivated tech support professional with expertise in troubleshooting, \n\nanalyzing, and resolving complex technical issues using advanced problem-\n\nsolving techniques. \n\n \n\nWORKING EXPERIENCE ( 2.5+ Years ) \n\n Customer Support Engineer at Niti Aayog (Module Informatics Private \n\nLimited, Noida) : December 2023- Present  \n\n Windows (Window 7, 10 & 11) -formatting, configure, Partition, \n\nDrivers Installation and Update, software configuration.  \n\n Manage Laptop, Desktop - Part Replacement and Troubleshooting. \n\n Printer Configuration (USB and Network Printer). \n\n Provide Support to Remote Client using TightVNC & Anydesk. \n\n Configure, Backup & Restore of Outlook Mail and MS Office – \n\n2010, 2013, 2016. \n\n Manage and Update IT Asset Inventory on Excel. \n\n Understand basic networking concepts LANs & WANs, IP Address, \n\nDNS and DHCP. \n\n Active Management of Service Requests, Incidents, and Activities. \n\n Document and Maintain IT support procedures, Guidelines and \n\nKnowledge-Base articles. \n\n \n\n IT Support Engineer  in SAIL( Steel Authority of India Limited ) Yard, \n\nBallabhgarh : August2022- November 2023  \n\n \n\n \n\n \n\n \n\n \n\n \n\nmailto:kuldeepsengar9536@gmail.com\n\n\n \n\n \n\nEDUCATIONAL QUALIFICATION \n \n\n High School, UP Board \n\n Intermediate, UP Board \n\n B. Sc. (PCM)  -DBRAU Agra \n\n \n\nPERSONAL DETAILS \n \nFather’s Name :    Mr.  Ramkishan Singh \nDate of Birth :  08/04/1994 \n\nReligion :    Hindu \nNationality :  Indian \nLanguages Known :   English and Hindi \n\n Permanent Address :   Vill- Punner, Dist.- Hathras, U.P.204102                          \n\n \n\n \n\nDECLARATION \n \n\nI hereby solemnly declare that above furnished particulars are true to the \n\nbest my knowledge and   belief. \n \n\n \n\n  Date:         Kuldeep Sengar \n\n \n\nPlace:",
+      "extracted_text_length": 2117,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Kuldeep Sengar\n\nkuldeepsengar9536@gmail.com\n\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can\n\nleverage my skills and abilities to contribute to innovation and problem-solving,\n\nwhile fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting,\n\nanalyzing, and resolving complex technical issues using advanced problem-\n\nsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n\n Customer Support Engineer at Niti Aayog (Module Informatics Private\n\nLimited, Noida) : December 2023- Present\n\n Windows (Window 7, 10 & 11) -formatting, configure, Partition,\n\nDrivers Installation and Update, software configuration.\n\n Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n\n Printer Configuration (USB and Network Printer).\n\n Provide Support to Remote Client using TightVNC & Anydesk.\n\n Configure, Backup & Restore of Outlook Mail and MS Office –\n\n2010, 2013, 2016.\n\n Manage and Update IT Asset Inventory on Excel.\n\n Understand basic networking concepts LANs & WANs, IP Address,\n\nDNS and DHCP.\n\n Active Management of Service Requests, Incidents, and Activities.\n\n Document and Maintain IT support procedures, Guidelines and\n\nKnowledge-Base articles.\n\n IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard,\n\nBallabhgarh : August2022- November 2023\n\nmailto:kuldeepsengar9536@gmail.com\n\nEDUCATIONAL QUALIFICATION\n\n High School, UP Board\n\n Intermediate, UP Board\n\n B. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather’s Name : Mr. Ramkishan Singh\nDate of Birth : 08/04/1994\n\nReligion : Hindu\nNationality : Indian\nLanguages Known : English and Hindi\n\nPermanent Address : Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the\n\nbest my knowledge and belief.\n\nDate: Kuldeep Sengar\n\nPlace:"
+    },
+    {
+      "attempt_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412-attempt-2",
+      "resume_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412",
+      "attempt_number": 2,
+      "extractor_name": "pymupdf",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 94.6 (selected 'docling' scored 97.8).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 94.6 (selected 'docling' scored 97.8).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412",
+        "source_tool": "pymupdf",
+        "attempt_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 86.37,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "14 non-printable characters found (0.69% of text).",
+            "Repeated-character corruption suspected: longest run is 26 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2021,
+            "word_count": 272,
+            "line_count": 80,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 14,
+            "non_printable_ratio": 0.006927,
+            "whitespace_ratio": 0.213261,
+            "symbol_count": 16,
+            "symbol_ratio": 0.007917,
+            "max_repeated_char_run": 26,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 79.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2021,
+            "word_count": 272,
+            "configured_section_count": 8,
+            "detected_count": 4,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile",
+              "Work Experience": "working experience",
+              "Education": "educational qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERSONAL DETAILS",
+                "detection_method": "heading",
+                "line_number": 47,
+                "evidence": "PERSONAL DETAILS",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFILE",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "PROFILE",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORKING EXPERIENCE ( 2.5+ Years )",
+                "detection_method": "heading_embedded",
+                "line_number": 19,
+                "evidence": "WORKING EXPERIENCE ( 2.5+ Years )",
+                "confidence": 0.9
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATIONAL QUALIFICATION",
+                "detection_method": "heading",
+                "line_number": 38,
+                "evidence": "EDUCATIONAL QUALIFICATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Skills": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 86.37
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 97.27,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES"
+          ],
+          "reasons": [
+            "43.6% of lines have 2 words or fewer — text may be fragmented or columns may have been split."
+          ],
+          "metrics": {
+            "char_count": 2021,
+            "word_count": 272,
+            "line_count": 80,
+            "non_empty_line_count": 55,
+            "short_line_count": 24,
+            "short_line_ratio": 0.436364,
+            "fragmented_line_count": 18,
+            "fragmented_line_ratio": 0.327273,
+            "mean_line_length": 33.15,
+            "median_line_length": 24.0,
+            "line_length_stdev": 24.73,
+            "line_length_cv": 0.746109,
+            "broken_sentence_count": 5,
+            "broken_sentence_ratio": 0.092593,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412",
+        "source_tool": "pymupdf",
+        "attempt_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 86.37,
+          "flags": [
+            "EXCESSIVE_NON_PRINTABLE_CHARS",
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "14 non-printable characters found (0.69% of text).",
+            "Repeated-character corruption suspected: longest run is 26 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 2021,
+            "word_count": 272,
+            "line_count": 80,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 14,
+            "non_printable_ratio": 0.006927,
+            "whitespace_ratio": 0.213261,
+            "symbol_count": 16,
+            "symbol_ratio": 0.007917,
+            "max_repeated_char_run": 26,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 79.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2021,
+            "word_count": 272,
+            "configured_section_count": 8,
+            "detected_count": 4,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile",
+              "Work Experience": "working experience",
+              "Education": "educational qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERSONAL DETAILS",
+                "detection_method": "heading",
+                "line_number": 47,
+                "evidence": "PERSONAL DETAILS",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFILE",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "PROFILE",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORKING EXPERIENCE ( 2.5+ Years )",
+                "detection_method": "heading_embedded",
+                "line_number": 19,
+                "evidence": "WORKING EXPERIENCE ( 2.5+ Years )",
+                "confidence": 0.9
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATIONAL QUALIFICATION",
+                "detection_method": "heading",
+                "line_number": 38,
+                "evidence": "EDUCATIONAL QUALIFICATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Skills": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 86.37
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 97.27,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES"
+          ],
+          "reasons": [
+            "43.6% of lines have 2 words or fewer — text may be fragmented or columns may have been split."
+          ],
+          "metrics": {
+            "char_count": 2021,
+            "word_count": 272,
+            "line_count": 80,
+            "non_empty_line_count": 55,
+            "short_line_count": 24,
+            "short_line_ratio": 0.436364,
+            "fragmented_line_count": 18,
+            "fragmented_line_ratio": 0.327273,
+            "mean_line_length": 33.15,
+            "median_line_length": 24.0,
+            "line_length_stdev": 24.73,
+            "line_length_cv": 0.746109,
+            "broken_sentence_count": 5,
+            "broken_sentence_ratio": 0.092593,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 94.6,
+      "duration_ms": 69.23,
+      "text": "Kuldeep Sengar \n  kuldeepsengar9536@gmail.com \n  (+91) 9368317466 \n \n \n \nCAREER OBJECTIVE \n \n    Looking for a position in the Information Technology industry where I can \nleverage my skills and abilities to contribute to innovation and problem-solving, \nwhile fostering professional growth and adapting to new challenges \n \nPROFILE \n \n    A highly motivated tech support professional with expertise in troubleshooting, \nanalyzing, and resolving complex technical issues using advanced problem-\nsolving techniques. \n \nWORKING EXPERIENCE ( 2.5+ Years ) \n Customer Support Engineer at Niti Aayog (Module Informatics Private \nLimited, Noida) : December 2023- Present  \n Windows (Window 7, 10 & 11) -formatting, configure, Partition, \nDrivers Installation and Update, software configuration.  \n Manage Laptop, Desktop - Part Replacement and Troubleshooting. \n Printer Configuration (USB and Network Printer). \n Provide Support to Remote Client using TightVNC & Anydesk. \n Configure, Backup & Restore of Outlook Mail and MS Office – \n2010, 2013, 2016. \n Manage and Update IT Asset Inventory on Excel. \n Understand basic networking concepts LANs & WANs, IP Address, \nDNS and DHCP. \n Active Management of Service Requests, Incidents, and Activities. \n Document and Maintain IT support procedures, Guidelines and \nKnowledge-Base articles. \n \n IT Support Engineer  in SAIL( Steel Authority of India Limited ) Yard, \nBallabhgarh : August2022- November 2023\nEDUCATIONAL QUALIFICATION \n \n \nHigh School, UP Board \n \nIntermediate, UP Board \n \nB. Sc. (PCM)  -DBRAU Agra \n \nPERSONAL DETAILS \n \nFather’s Name \n:    Mr.  Ramkishan Singh \nDate of Birth \n:  08/04/1994 \nReligion \n:    Hindu \nNationality \n:  Indian \nLanguages Known \n:   English and Hindi \n Permanent Address \n:   Vill- Punner, Dist.- Hathras, U.P.204102                          \n \n \nDECLARATION \n \nI hereby solemnly declare that above furnished particulars are true to the \nbest my knowledge and  belief. \n \n \n  Date: \n \n \n \n \n \n \n \n \nKuldeep Sengar \n \nPlace:",
+      "extracted_text": "Kuldeep Sengar \n  kuldeepsengar9536@gmail.com \n  (+91) 9368317466 \n \n \n \nCAREER OBJECTIVE \n \n    Looking for a position in the Information Technology industry where I can \nleverage my skills and abilities to contribute to innovation and problem-solving, \nwhile fostering professional growth and adapting to new challenges \n \nPROFILE \n \n    A highly motivated tech support professional with expertise in troubleshooting, \nanalyzing, and resolving complex technical issues using advanced problem-\nsolving techniques. \n \nWORKING EXPERIENCE ( 2.5+ Years ) \n Customer Support Engineer at Niti Aayog (Module Informatics Private \nLimited, Noida) : December 2023- Present  \n Windows (Window 7, 10 & 11) -formatting, configure, Partition, \nDrivers Installation and Update, software configuration.  \n Manage Laptop, Desktop - Part Replacement and Troubleshooting. \n Printer Configuration (USB and Network Printer). \n Provide Support to Remote Client using TightVNC & Anydesk. \n Configure, Backup & Restore of Outlook Mail and MS Office – \n2010, 2013, 2016. \n Manage and Update IT Asset Inventory on Excel. \n Understand basic networking concepts LANs & WANs, IP Address, \nDNS and DHCP. \n Active Management of Service Requests, Incidents, and Activities. \n Document and Maintain IT support procedures, Guidelines and \nKnowledge-Base articles. \n \n IT Support Engineer  in SAIL( Steel Authority of India Limited ) Yard, \nBallabhgarh : August2022- November 2023\nEDUCATIONAL QUALIFICATION \n \n \nHigh School, UP Board \n \nIntermediate, UP Board \n \nB. Sc. (PCM)  -DBRAU Agra \n \nPERSONAL DETAILS \n \nFather’s Name \n:    Mr.  Ramkishan Singh \nDate of Birth \n:  08/04/1994 \nReligion \n:    Hindu \nNationality \n:  Indian \nLanguages Known \n:   English and Hindi \n Permanent Address \n:   Vill- Punner, Dist.- Hathras, U.P.204102                          \n \n \nDECLARATION \n \nI hereby solemnly declare that above furnished particulars are true to the \nbest my knowledge and  belief. \n \n \n  Date: \n \n \n \n \n \n \n \n \nKuldeep Sengar \n \nPlace:",
+      "extracted_text_length": 2021,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "format": "PDF 1.5",
+        "author": "krishna PC",
+        "creator": "Aspose Ltd.",
+        "producer": "Aspose.PDF for Java 18.8",
+        "creationDate": "D:20241217104931+05'30'",
+        "modDate": "D:20261014123230+05'30'"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Kuldeep Sengar\nkuldeepsengar9536@gmail.com\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can\nleverage my skills and abilities to contribute to innovation and problem-solving,\nwhile fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting,\nanalyzing, and resolving complex technical issues using advanced problem-\nsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n Customer Support Engineer at Niti Aayog (Module Informatics Private\nLimited, Noida) : December 2023- Present\n Windows (Window 7, 10 & 11) -formatting, configure, Partition,\nDrivers Installation and Update, software configuration.\n Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n Printer Configuration (USB and Network Printer).\n Provide Support to Remote Client using TightVNC & Anydesk.\n Configure, Backup & Restore of Outlook Mail and MS Office –\n2010, 2013, 2016.\n Manage and Update IT Asset Inventory on Excel.\n Understand basic networking concepts LANs & WANs, IP Address,\nDNS and DHCP.\n Active Management of Service Requests, Incidents, and Activities.\n Document and Maintain IT support procedures, Guidelines and\nKnowledge-Base articles.\n\n IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard,\nBallabhgarh : August2022- November 2023\nEDUCATIONAL QUALIFICATION\n\n\nHigh School, UP Board\n\nIntermediate, UP Board\n\nB. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather’s Name\n: Mr. Ramkishan Singh\nDate of Birth\n: 08/04/1994\nReligion\n: Hindu\nNationality\n: Indian\nLanguages Known\n: English and Hindi\nPermanent Address\n: Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the\nbest my knowledge and belief.\n\nDate:\n\nKuldeep Sengar\n\nPlace:"
+    },
+    {
+      "attempt_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412-attempt-3",
+      "resume_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412",
+      "attempt_number": 3,
+      "extractor_name": "docling",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Selected 'docling' with the highest quality score 97.8 (threshold 60.0).",
+      "fallback_decision": "accept",
+      "fallback_reason": "Selected 'docling' with the highest quality score 97.8 (threshold 60.0).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412",
+        "source_tool": "docling",
+        "attempt_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1877,
+            "word_count": 271,
+            "line_count": 49,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.153436,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 79.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1877,
+            "word_count": 271,
+            "configured_section_count": 8,
+            "detected_count": 4,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile",
+              "Work Experience": "working experience",
+              "Education": "educational qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERSONAL DETAILS",
+                "detection_method": "heading",
+                "line_number": 35,
+                "evidence": "PERSONAL DETAILS",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFILE",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "PROFILE",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORKING EXPERIENCE ( 2.5+ Years )",
+                "detection_method": "heading_embedded",
+                "line_number": 15,
+                "evidence": "WORKING EXPERIENCE ( 2.5+ Years )",
+                "confidence": 0.9
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATIONAL QUALIFICATION",
+                "detection_method": "heading",
+                "line_number": 29,
+                "evidence": "EDUCATIONAL QUALIFICATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Skills": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1877,
+            "word_count": 271,
+            "line_count": 49,
+            "non_empty_line_count": 31,
+            "short_line_count": 11,
+            "short_line_ratio": 0.354839,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.16129,
+            "mean_line_length": 59.0,
+            "median_line_length": 42.0,
+            "line_length_stdev": 51.84,
+            "line_length_cv": 0.878565,
+            "broken_sentence_count": 1,
+            "broken_sentence_ratio": 0.033333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412",
+        "source_tool": "docling",
+        "attempt_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1877,
+            "word_count": 271,
+            "line_count": 49,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.153436,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 79.0,
+          "flags": [
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1877,
+            "word_count": 271,
+            "configured_section_count": 8,
+            "detected_count": 4,
+            "missing_count": 4,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Skills",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [
+              "Skills"
+            ],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal details",
+              "Summary": "profile",
+              "Work Experience": "working experience",
+              "Education": "educational qualification"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "PERSONAL DETAILS",
+                "detection_method": "heading",
+                "line_number": 35,
+                "evidence": "PERSONAL DETAILS",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFILE",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "PROFILE",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORKING EXPERIENCE ( 2.5+ Years )",
+                "detection_method": "heading_embedded",
+                "line_number": 15,
+                "evidence": "WORKING EXPERIENCE ( 2.5+ Years )",
+                "confidence": 0.9
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATIONAL QUALIFICATION",
+                "detection_method": "heading",
+                "line_number": 29,
+                "evidence": "EDUCATIONAL QUALIFICATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Skills": "missing",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Skills",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [
+            "Skills"
+          ],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1877,
+            "word_count": 271,
+            "line_count": 49,
+            "non_empty_line_count": 31,
+            "short_line_count": 11,
+            "short_line_ratio": 0.354839,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.16129,
+            "mean_line_length": 59.0,
+            "median_line_length": 42.0,
+            "line_length_stdev": 51.84,
+            "line_length_cv": 0.878565,
+            "broken_sentence_count": 1,
+            "broken_sentence_ratio": 0.033333,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 97.8,
+      "duration_ms": 32403.7,
+      "text": "Kuldeep Sengar\n\nkuldeepsengar9536@gmail.com\n\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n\n- Customer Support Engineer at Niti Aayog (Module Informatics Private Limited, Noida) : December 2023- Present\n- Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\n- Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n- Printer Configuration (USB and Network Printer).\n- Provide Support to Remote Client using TightVNC & Anydesk.\n- Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.\n- Manage and Update IT Asset Inventory on Excel.\n- Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\n- Active Management of Service Requests, Incidents, and Activities.\n- Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\n- IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard, Ballabhgarh : August2022- November 2023\n\nEDUCATIONAL QUALIFICATION\n\n- High School, UP Board\n- Intermediate, UP Board\n- B. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather's Name : Mr. Ramkishan Singh Date of Birth : 08/04/1994 Religion : Hindu Nationality : Indian Languages Known : English and Hindi\n\nPermanent Address\n\n: Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the best my knowledge and belief.\n\nDate: Place:\n\nKuldeep Sengar",
+      "extracted_text": "Kuldeep Sengar\n\nkuldeepsengar9536@gmail.com\n\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n\n- Customer Support Engineer at Niti Aayog (Module Informatics Private Limited, Noida) : December 2023- Present\n- Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\n- Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n- Printer Configuration (USB and Network Printer).\n- Provide Support to Remote Client using TightVNC & Anydesk.\n- Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.\n- Manage and Update IT Asset Inventory on Excel.\n- Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\n- Active Management of Service Requests, Incidents, and Activities.\n- Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\n- IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard, Ballabhgarh : August2022- November 2023\n\nEDUCATIONAL QUALIFICATION\n\n- High School, UP Board\n- Intermediate, UP Board\n- B. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather's Name : Mr. Ramkishan Singh Date of Birth : 08/04/1994 Religion : Hindu Nationality : Indian Languages Known : English and Hindi\n\nPermanent Address\n\n: Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the best my knowledge and belief.\n\nDate: Place:\n\nKuldeep Sengar",
+      "extracted_text_length": 1877,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Kuldeep Sengar\n\nkuldeepsengar9536@gmail.com\n\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n\n- Customer Support Engineer at Niti Aayog (Module Informatics Private Limited, Noida) : December 2023- Present\n- Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\n- Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n- Printer Configuration (USB and Network Printer).\n- Provide Support to Remote Client using TightVNC & Anydesk.\n- Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.\n- Manage and Update IT Asset Inventory on Excel.\n- Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\n- Active Management of Service Requests, Incidents, and Activities.\n- Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\n- IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard, Ballabhgarh : August2022- November 2023\n\nEDUCATIONAL QUALIFICATION\n\n- High School, UP Board\n- Intermediate, UP Board\n- B. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather's Name : Mr. Ramkishan Singh Date of Birth : 08/04/1994 Religion : Hindu Nationality : Indian Languages Known : English and Hindi\n\nPermanent Address\n\n: Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the best my knowledge and belief.\n\nDate: Place:\n\nKuldeep Sengar"
+    }
+  ],
+  "attempt_count": 3,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "extracted_text": "Kuldeep Sengar\n\nkuldeepsengar9536@gmail.com\n\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n\n- Customer Support Engineer at Niti Aayog (Module Informatics Private Limited, Noida) : December 2023- Present\n- Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\n- Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n- Printer Configuration (USB and Network Printer).\n- Provide Support to Remote Client using TightVNC & Anydesk.\n- Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.\n- Manage and Update IT Asset Inventory on Excel.\n- Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\n- Active Management of Service Requests, Incidents, and Activities.\n- Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\n- IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard, Ballabhgarh : August2022- November 2023\n\nEDUCATIONAL QUALIFICATION\n\n- High School, UP Board\n- Intermediate, UP Board\n- B. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather's Name : Mr. Ramkishan Singh Date of Birth : 08/04/1994 Religion : Hindu Nationality : Indian Languages Known : English and Hindi\n\nPermanent Address\n\n: Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the best my knowledge and belief.\n\nDate: Place:\n\nKuldeep Sengar",
+  "final_extracted_text": "Kuldeep Sengar\n\nkuldeepsengar9536@gmail.com\n\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n\n- Customer Support Engineer at Niti Aayog (Module Informatics Private Limited, Noida) : December 2023- Present\n- Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\n- Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n- Printer Configuration (USB and Network Printer).\n- Provide Support to Remote Client using TightVNC & Anydesk.\n- Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.\n- Manage and Update IT Asset Inventory on Excel.\n- Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\n- Active Management of Service Requests, Incidents, and Activities.\n- Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\n- IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard, Ballabhgarh : August2022- November 2023\n\nEDUCATIONAL QUALIFICATION\n\n- High School, UP Board\n- Intermediate, UP Board\n- B. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather's Name : Mr. Ramkishan Singh Date of Birth : 08/04/1994 Religion : Hindu Nationality : Indian Languages Known : English and Hindi\n\nPermanent Address\n\n: Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the best my knowledge and belief.\n\nDate: Place:\n\nKuldeep Sengar",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "quality": {
+    "status": "PASS",
+    "document_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412",
+    "source_tool": "docling",
+    "attempt_id": "381f8c5e-92a1-4d86-9da3-57e42f52d412-attempt-3",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 1877,
+        "word_count": 271,
+        "line_count": 49,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.153436,
+        "symbol_count": 0,
+        "symbol_ratio": 0.0,
+        "max_repeated_char_run": 2,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 79.0,
+      "flags": [
+        "MISSING_RECOMMENDED_SECTION",
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 1877,
+        "word_count": 271,
+        "configured_section_count": 8,
+        "detected_count": 4,
+        "missing_count": 4,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_sections": [
+          "Skills",
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [
+          "Skills"
+        ],
+        "missing_optional": [
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "personal details",
+          "Summary": "profile",
+          "Work Experience": "working experience",
+          "Education": "educational qualification"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": "PERSONAL DETAILS",
+            "detection_method": "heading",
+            "line_number": 35,
+            "evidence": "PERSONAL DETAILS",
+            "confidence": 0.98
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "PROFILE",
+            "detection_method": "heading",
+            "line_number": 11,
+            "evidence": "PROFILE",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "WORKING EXPERIENCE ( 2.5+ Years )",
+            "detection_method": "heading_embedded",
+            "line_number": 15,
+            "evidence": "WORKING EXPERIENCE ( 2.5+ Years )",
+            "confidence": 0.9
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATIONAL QUALIFICATION",
+            "detection_method": "heading",
+            "line_number": 29,
+            "evidence": "EDUCATIONAL QUALIFICATION",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Skills": "missing",
+          "Responsibilities": "missing",
+          "Projects": "missing",
+          "Certifications": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_sections": [
+        "Skills",
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [
+        "Skills"
+      ],
+      "missing_optional": [
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 1877,
+        "word_count": 271,
+        "line_count": 49,
+        "non_empty_line_count": 31,
+        "short_line_count": 11,
+        "short_line_ratio": 0.354839,
+        "fragmented_line_count": 5,
+        "fragmented_line_ratio": 0.16129,
+        "mean_line_length": 59.0,
+        "median_line_length": 42.0,
+        "line_length_stdev": 51.84,
+        "line_length_cv": 0.878565,
+        "broken_sentence_count": 1,
+        "broken_sentence_ratio": 0.033333,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Selected 'docling' with the highest quality score 97.8 (threshold 60.0).",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 26047.11,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": 69.23,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 32403.7,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=95.1, pymupdf=94.6, docling=97.8",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected 'docling' with the highest quality score 97.8 (threshold 60.0).",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Docling text normalized: 1877 → 1877 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Contact Information Recovery",
+      "type": "contact_recovery",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Contact information missing and could not be recovered from any source (extractor outputs, first-page text layer, OCR). Still missing: location.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 26360.48,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 69131.3,
+      "message": "Muse AI produced validated Resume JSON from the Docling extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 69131.3,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "docling",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Kuldeep Sengar\n\nkuldeepsengar9536@gmail.com\n\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n\n- Customer Support Engineer at Niti Aayog (Module Informatics Private Limited, Noida) : December 2023- Present\n- Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\n- Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n- Printer Configuration (USB and Network Printer).\n- Provide Support to Remote Client using TightVNC & Anydesk.\n- Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.\n- Manage and Update IT Asset Inventory on Excel.\n- Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\n- Active Management of Service Requests, Incidents, and Activities.\n- Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\n- IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard, Ballabhgarh : August2022- November 2023\n\nEDUCATIONAL QUALIFICATION\n\n- High School, UP Board\n- Intermediate, UP Board\n- B. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather's Name : Mr. Ramkishan Singh Date of Birth : 08/04/1994 Religion : Hindu Nationality : Indian Languages Known : English and Hindi\n\nPermanent Address\n\n: Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the best my knowledge and belief.\n\nDate: Place:\n\nKuldeep Sengar",
+    "normalized_text": "Kuldeep Sengar\n\nkuldeepsengar9536@gmail.com\n\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n\n- Customer Support Engineer at Niti Aayog (Module Informatics Private Limited, Noida) : December 2023- Present\n- Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\n- Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n- Printer Configuration (USB and Network Printer).\n- Provide Support to Remote Client using TightVNC & Anydesk.\n- Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.\n- Manage and Update IT Asset Inventory on Excel.\n- Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\n- Active Management of Service Requests, Incidents, and Activities.\n- Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\n- IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard, Ballabhgarh : August2022- November 2023\n\nEDUCATIONAL QUALIFICATION\n\n- High School, UP Board\n- Intermediate, UP Board\n- B. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather's Name : Mr. Ramkishan Singh Date of Birth : 08/04/1994 Religion : Hindu Nationality : Indian Languages Known : English and Hindi\n\nPermanent Address\n\n: Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the best my knowledge and belief.\n\nDate: Place:\n\nKuldeep Sengar",
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "original_chars": 1877,
+    "normalized_chars": 1877,
+    "original_estimated_tokens": 469,
+    "normalized_estimated_tokens": 469,
+    "estimated_reduction_percent": 0.0
+  },
+  "contact_recovery": {
+    "status": "not_recovered",
+    "selected_extractor": "docling",
+    "present_before": [
+      "phone",
+      "email"
+    ],
+    "missing_before": [
+      "location"
+    ],
+    "recovered": {},
+    "still_missing": [
+      "location"
+    ],
+    "sources_tried": [
+      {
+        "source": "Tika",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "PyMuPDF",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "Docling",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "PyMuPDF",
+        "method": "first_page_text_layer",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "OCR",
+        "method": "ocr_first_page",
+        "found": [],
+        "error": null
+      }
+    ],
+    "applied": false,
+    "pre_recovery_normalized_text": null,
+    "at": "2026-11-11T07:13:27.982092+00:00"
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 26360.48,
+      "input_tokens": 1265,
+      "output_tokens": 2179,
+      "total_tokens": 3444,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1265,
+    "output_tokens": 2179,
+    "total_tokens": 3444,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 26360.48,
+    "usage": {
+      "completion_tokens": 2179,
+      "prompt_tokens": 1265,
+      "total_tokens": 3444,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1485
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "docling",
+      "status": "applied",
+      "original_chars": 1877,
+      "normalized_chars": 1877,
+      "estimated_reduction_percent": 0.0,
+      "normalization_applied": false,
+      "normalization_steps": [],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "docling",
+  "selected_quality_score": 97.8,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 95.1,
+      "status": "success",
+      "word_count": 273,
+      "char_count": 2117,
+      "meaningful_char_count": 1624,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 87.4,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary"
+        ]
+      },
+      "structure": {
+        "heading_count": 1,
+        "paragraph_count": 43,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.874,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 1.0,
+        "structure": 0.7
+      }
+    },
+    "pymupdf": {
+      "extractor": "pymupdf",
+      "quality_score": 94.6,
+      "status": "success",
+      "word_count": 272,
+      "char_count": 2021,
+      "meaningful_char_count": 1590,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0545,
+      "readability_score": 87.6,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary"
+        ]
+      },
+      "structure": {
+        "heading_count": 2,
+        "paragraph_count": 15,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.8765,
+        "cleanliness": 1.0,
+        "non_duplication": 0.9455,
+        "completeness": 1.0,
+        "structure": 0.7
+      }
+    },
+    "docling": {
+      "extractor": "docling",
+      "quality_score": 97.8,
+      "status": "success",
+      "word_count": 271,
+      "char_count": 1877,
+      "meaningful_char_count": 1589,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0323,
+      "readability_score": 87.6,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary"
+        ]
+      },
+      "structure": {
+        "heading_count": 1,
+        "paragraph_count": 19,
+        "bullet_count": 14
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.876,
+        "cleanliness": 1.0,
+        "non_duplication": 0.9677,
+        "completeness": 1.0,
+        "structure": 1.0
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 1877,
+    "normalized_chars": 1877,
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "error": null,
+    "original_text": "Kuldeep Sengar\n\nkuldeepsengar9536@gmail.com\n\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n\n- Customer Support Engineer at Niti Aayog (Module Informatics Private Limited, Noida) : December 2023- Present\n- Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\n- Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n- Printer Configuration (USB and Network Printer).\n- Provide Support to Remote Client using TightVNC & Anydesk.\n- Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.\n- Manage and Update IT Asset Inventory on Excel.\n- Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\n- Active Management of Service Requests, Incidents, and Activities.\n- Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\n- IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard, Ballabhgarh : August2022- November 2023\n\nEDUCATIONAL QUALIFICATION\n\n- High School, UP Board\n- Intermediate, UP Board\n- B. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather's Name : Mr. Ramkishan Singh Date of Birth : 08/04/1994 Religion : Hindu Nationality : Indian Languages Known : English and Hindi\n\nPermanent Address\n\n: Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the best my knowledge and belief.\n\nDate: Place:\n\nKuldeep Sengar",
+    "normalized_text": "Kuldeep Sengar\n\nkuldeepsengar9536@gmail.com\n\n(+91) 9368317466\n\nCAREER OBJECTIVE\n\nLooking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges\n\nPROFILE\n\nA highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.\n\nWORKING EXPERIENCE ( 2.5+ Years )\n\n- Customer Support Engineer at Niti Aayog (Module Informatics Private Limited, Noida) : December 2023- Present\n- Windows (Window 7, 10 & 11) -formatting, configure, Partition, Drivers Installation and Update, software configuration.\n- Manage Laptop, Desktop - Part Replacement and Troubleshooting.\n- Printer Configuration (USB and Network Printer).\n- Provide Support to Remote Client using TightVNC & Anydesk.\n- Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.\n- Manage and Update IT Asset Inventory on Excel.\n- Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.\n- Active Management of Service Requests, Incidents, and Activities.\n- Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles.\n- IT Support Engineer in SAIL( Steel Authority of India Limited ) Yard, Ballabhgarh : August2022- November 2023\n\nEDUCATIONAL QUALIFICATION\n\n- High School, UP Board\n- Intermediate, UP Board\n- B. Sc. (PCM) -DBRAU Agra\n\nPERSONAL DETAILS\n\nFather's Name : Mr. Ramkishan Singh Date of Birth : 08/04/1994 Religion : Hindu Nationality : Indian Languages Known : English and Hindi\n\nPermanent Address\n\n: Vill- Punner, Dist.- Hathras, U.P.204102\n\nDECLARATION\n\nI hereby solemnly declare that above furnished particulars are true to the best my knowledge and belief.\n\nDate: Place:\n\nKuldeep Sengar"
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "Kuldeep Sengar",
+      "email": "kuldeepsengar9536@gmail.com",
+      "phone": "(+91) 9368317466",
+      "location": "Vill- Punner, Dist.- Hathras, U.P. 204102",
+      "summary": "Looking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges. A highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.",
+      "skills": {
+        "technical_skills": [
+          "Windows formatting, configuration and Partition",
+          "Drivers Installation and Update",
+          "Software Configuration",
+          "Laptop and Desktop Troubleshooting and Part Replacement",
+          "Printer Configuration (USB and Network Printer)",
+          "Remote Client Support",
+          "Outlook Mail Configure, Backup and Restore",
+          "IT Asset Inventory Management",
+          "LANs and WANs",
+          "IP Address",
+          "DNS",
+          "DHCP",
+          "Service Requests Management",
+          "Incident Management",
+          "IT Support Documentation"
+        ],
+        "soft_skills": [
+          "Problem-solving",
+          "Analytical Skills",
+          "Adaptability",
+          "Motivated"
+        ],
+        "tools": [
+          "Windows 7",
+          "Windows 10",
+          "Windows 11",
+          "TightVNC",
+          "Anydesk",
+          "MS Office 2010",
+          "MS Office 2013",
+          "MS Office 2016",
+          "Microsoft Outlook",
+          "Microsoft Excel"
+        ],
+        "taxonomy_skills": [],
+        "other_skills": []
+      },
+      "experience": [
+        {
+          "title": "Customer Support Engineer",
+          "company": "Niti Aayog (Module Informatics Private Limited, Noida)",
+          "location": "Noida",
+          "start_date": "December 2023",
+          "end_date": "Present",
+          "highlights": [
+            "Windows (Window 7, 10 & 11) - formatting, configure, Partition, Drivers Installation and Update, software configuration.",
+            "Manage Laptop, Desktop - Part Replacement and Troubleshooting.",
+            "Printer Configuration (USB and Network Printer).",
+            "Provide Support to Remote Client using TightVNC & Anydesk.",
+            "Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.",
+            "Manage and Update IT Asset Inventory on Excel.",
+            "Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.",
+            "Active Management of Service Requests, Incidents, and Activities.",
+            "Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles."
+          ]
+        },
+        {
+          "title": "IT Support Engineer",
+          "company": "SAIL (Steel Authority of India Limited)",
+          "location": "Ballabhgarh",
+          "start_date": "August 2022",
+          "end_date": "November 2023",
+          "highlights": []
+        }
+      ],
+      "education": [
+        {
+          "degree": "High School",
+          "institution": "UP Board",
+          "location": "",
+          "start_date": "",
+          "end_date": ""
+        },
+        {
+          "degree": "Intermediate",
+          "institution": "UP Board",
+          "location": "",
+          "start_date": "",
+          "end_date": ""
+        },
+        {
+          "degree": "B. Sc. (PCM)",
+          "institution": "DBRAU Agra",
+          "location": "",
+          "start_date": "",
+          "end_date": ""
+        }
+      ],
+      "certifications": [],
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "links": []
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 26360.48,
+    "usage": {
+      "completion_tokens": 2179,
+      "prompt_tokens": 1265,
+      "total_tokens": 3444,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1485
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "Kuldeep Sengar",
+    "email": "kuldeepsengar9536@gmail.com",
+    "phone": "(+91) 9368317466",
+    "location": "Vill- Punner, Dist.- Hathras, U.P. 204102",
+    "summary": "Looking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges. A highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.",
+    "skills": {
+      "technical_skills": [
+        "Windows formatting, configuration and Partition",
+        "Drivers Installation and Update",
+        "Software Configuration",
+        "Laptop and Desktop Troubleshooting and Part Replacement",
+        "Printer Configuration (USB and Network Printer)",
+        "Remote Client Support",
+        "Outlook Mail Configure, Backup and Restore",
+        "IT Asset Inventory Management",
+        "LANs and WANs",
+        "IP Address",
+        "DNS",
+        "DHCP",
+        "Service Requests Management",
+        "Incident Management",
+        "IT Support Documentation"
+      ],
+      "soft_skills": [
+        "Problem-solving",
+        "Analytical Skills",
+        "Adaptability",
+        "Motivated"
+      ],
+      "tools": [
+        "Windows 7",
+        "Windows 10",
+        "Windows 11",
+        "TightVNC",
+        "Anydesk",
+        "MS Office 2010",
+        "MS Office 2013",
+        "MS Office 2016",
+        "Microsoft Outlook",
+        "Microsoft Excel"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Customer Support Engineer",
+        "company": "Niti Aayog (Module Informatics Private Limited, Noida)",
+        "location": "Noida",
+        "start_date": "December 2023",
+        "end_date": "Present",
+        "highlights": [
+          "Windows (Window 7, 10 & 11) - formatting, configure, Partition, Drivers Installation and Update, software configuration.",
+          "Manage Laptop, Desktop - Part Replacement and Troubleshooting.",
+          "Printer Configuration (USB and Network Printer).",
+          "Provide Support to Remote Client using TightVNC & Anydesk.",
+          "Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.",
+          "Manage and Update IT Asset Inventory on Excel.",
+          "Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.",
+          "Active Management of Service Requests, Incidents, and Activities.",
+          "Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles."
+        ]
+      },
+      {
+        "title": "IT Support Engineer",
+        "company": "SAIL (Steel Authority of India Limited)",
+        "location": "Ballabhgarh",
+        "start_date": "August 2022",
+        "end_date": "November 2023",
+        "highlights": []
+      }
+    ],
+    "education": [
+      {
+        "degree": "High School",
+        "institution": "UP Board",
+        "location": "",
+        "start_date": "",
+        "end_date": ""
+      },
+      {
+        "degree": "Intermediate",
+        "institution": "UP Board",
+        "location": "",
+        "start_date": "",
+        "end_date": ""
+      },
+      {
+        "degree": "B. Sc. (PCM)",
+        "institution": "DBRAU Agra",
+        "location": "",
+        "start_date": "",
+        "end_date": ""
+      }
+    ],
+    "certifications": [],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "links": []
+  },
+  "resume_json": {
+    "full_name": "Kuldeep Sengar",
+    "email": "kuldeepsengar9536@gmail.com",
+    "phone": "(+91) 9368317466",
+    "location": "Vill- Punner, Dist.- Hathras, U.P. 204102",
+    "summary": "Looking for a position in the Information Technology industry where I can leverage my skills and abilities to contribute to innovation and problem-solving, while fostering professional growth and adapting to new challenges. A highly motivated tech support professional with expertise in troubleshooting, analyzing, and resolving complex technical issues using advanced problemsolving techniques.",
+    "skills": {
+      "technical_skills": [
+        "Windows formatting, configuration and Partition",
+        "Drivers Installation and Update",
+        "Software Configuration",
+        "Laptop and Desktop Troubleshooting and Part Replacement",
+        "Printer Configuration (USB and Network Printer)",
+        "Remote Client Support",
+        "Outlook Mail Configure, Backup and Restore",
+        "IT Asset Inventory Management",
+        "LANs and WANs",
+        "IP Address",
+        "DNS",
+        "DHCP",
+        "Service Requests Management",
+        "Incident Management",
+        "IT Support Documentation"
+      ],
+      "soft_skills": [
+        "Problem-solving",
+        "Analytical Skills",
+        "Adaptability",
+        "Motivated"
+      ],
+      "tools": [
+        "Windows 7",
+        "Windows 10",
+        "Windows 11",
+        "TightVNC",
+        "Anydesk",
+        "MS Office 2010",
+        "MS Office 2013",
+        "MS Office 2016",
+        "Microsoft Outlook",
+        "Microsoft Excel"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Customer Support Engineer",
+        "company": "Niti Aayog (Module Informatics Private Limited, Noida)",
+        "location": "Noida",
+        "start_date": "December 2023",
+        "end_date": "Present",
+        "highlights": [
+          "Windows (Window 7, 10 & 11) - formatting, configure, Partition, Drivers Installation and Update, software configuration.",
+          "Manage Laptop, Desktop - Part Replacement and Troubleshooting.",
+          "Printer Configuration (USB and Network Printer).",
+          "Provide Support to Remote Client using TightVNC & Anydesk.",
+          "Configure, Backup & Restore of Outlook Mail and MS Office - 2010, 2013, 2016.",
+          "Manage and Update IT Asset Inventory on Excel.",
+          "Understand basic networking concepts LANs & WANs, IP Address, DNS and DHCP.",
+          "Active Management of Service Requests, Incidents, and Activities.",
+          "Document and Maintain IT support procedures, Guidelines and Knowledge-Base articles."
+        ]
+      },
+      {
+        "title": "IT Support Engineer",
+        "company": "SAIL (Steel Authority of India Limited)",
+        "location": "Ballabhgarh",
+        "start_date": "August 2022",
+        "end_date": "November 2023",
+        "highlights": []
+      }
+    ],
+    "education": [
+      {
+        "degree": "High School",
+        "institution": "UP Board",
+        "location": "",
+        "start_date": "",
+        "end_date": ""
+      },
+      {
+        "degree": "Intermediate",
+        "institution": "UP Board",
+        "location": "",
+        "start_date": "",
+        "end_date": ""
+      },
+      {
+        "degree": "B. Sc. (PCM)",
+        "institution": "DBRAU Agra",
+        "location": "",
+        "start_date": "",
+        "end_date": ""
+      }
+    ],
+    "certifications": [],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "links": []
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 32.4243,
+    "quality_seconds": 0.0136,
+    "normalization_seconds": 0.0006,
+    "recovery_seconds": 10.3296,
+    "llm_seconds": 26.3631,
+    "total_seconds": 69.1313
+  },
+  "_stored_name": "381f8c5e-92a1-4d86-9da3-57e42f52d412_SHJ-5412_SHC-382596.pdf"
+}

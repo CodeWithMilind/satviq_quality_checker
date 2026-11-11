@@ -1,0 +1,2209 @@
+{
+  "resume_id": "0327eecd-403d-491f-b079-5338a677f3f3",
+  "filename": "SHJ-5329_SHC-363873.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 354685,
+  "uploaded_at": "2026-11-11T05:58:13.958734+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "final_extractor": "tika",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "0327eecd-403d-491f-b079-5338a677f3f3-attempt-1",
+      "resume_id": "0327eecd-403d-491f-b079-5338a677f3f3",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Selected 'tika' with quality score 98.5 (tie among ['tika', 'docling'] broken by configured tie-break order ['tika', 'pymupdf', 'docling']).",
+      "fallback_decision": "accept",
+      "fallback_reason": "Selected 'tika' with quality score 98.5 (tie among ['tika', 'docling'] broken by configured tie-break order ['tika', 'pymupdf', 'docling']).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "0327eecd-403d-491f-b079-5338a677f3f3",
+        "source_tool": "tika",
+        "attempt_id": "0327eecd-403d-491f-b079-5338a677f3f3-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 99.29,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 13 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 5246,
+            "word_count": 697,
+            "line_count": 141,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.166984,
+            "symbol_count": 40,
+            "symbol_ratio": 0.007625,
+            "max_repeated_char_run": 13,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 5246,
+            "word_count": 697,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education"
+            },
+            "conditional_rejected": [
+              {
+                "section": "Projects",
+                "alias": "portfolio",
+                "original_heading": "Portfolio: Google Drive (link on request)",
+                "line_number": 133
+              }
+            ],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "workwithsuraj30@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 110,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 23,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 125,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 99.29
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 5246,
+            "word_count": 697,
+            "line_count": 141,
+            "non_empty_line_count": 72,
+            "short_line_count": 14,
+            "short_line_ratio": 0.194444,
+            "fragmented_line_count": 9,
+            "fragmented_line_ratio": 0.125,
+            "mean_line_length": 69.49,
+            "median_line_length": 59.5,
+            "line_length_stdev": 41.33,
+            "line_length_cv": 0.594829,
+            "broken_sentence_count": 18,
+            "broken_sentence_ratio": 0.253521,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "0327eecd-403d-491f-b079-5338a677f3f3",
+        "source_tool": "tika",
+        "attempt_id": "0327eecd-403d-491f-b079-5338a677f3f3-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 99.29,
+          "flags": [
+            "EXCESSIVE_REPEATED_CHARACTERS"
+          ],
+          "reasons": [
+            "Repeated-character corruption suspected: longest run is 13 characters, 0.0% of long lines are single-character repeats."
+          ],
+          "metrics": {
+            "char_count": 5246,
+            "word_count": 697,
+            "line_count": 141,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.166984,
+            "symbol_count": 40,
+            "symbol_ratio": 0.007625,
+            "max_repeated_char_run": 13,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 5246,
+            "word_count": 697,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education"
+            },
+            "conditional_rejected": [
+              {
+                "section": "Projects",
+                "alias": "portfolio",
+                "original_heading": "Portfolio: Google Drive (link on request)",
+                "line_number": 133
+              }
+            ],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "workwithsuraj30@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 110,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 23,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 125,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 99.29
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 5246,
+            "word_count": 697,
+            "line_count": 141,
+            "non_empty_line_count": 72,
+            "short_line_count": 14,
+            "short_line_ratio": 0.194444,
+            "fragmented_line_count": 9,
+            "fragmented_line_ratio": 0.125,
+            "mean_line_length": 69.49,
+            "median_line_length": 59.5,
+            "line_length_stdev": 41.33,
+            "line_length_cv": 0.594829,
+            "broken_sentence_count": 18,
+            "broken_sentence_ratio": 0.253521,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 98.5,
+      "duration_ms": 14496.22,
+      "text": "SURAJ SINGH RAJPUT \n\nCinematographer  •  Videographer  •  Video Editor \n\nBengaluru, Karnataka, India   | +91 89611 91217 | workwithsuraj30@gmail.com  | Linkedin \n\nPROFESSIONAL SUMMARY  \n\nCinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept \n\nto final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade,  \n\nEmbassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and \n\ncorporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms, \n\nwith multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color \n\ngrading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content. \n\n \n\nWORK EXPERIENCE  \n\nWebenza  \n\nSenior Cinematographer · Bengaluru | Feb 2026 | Present     \n\n• Directed and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing \nthe entire production process from concept to final delivery. \n\n•  Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production \nwhile maintaining creative quality.  \n\n• Led multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on \ntime and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control, \ndelivering visually consistent, brand-aligned content across all campaigns. \n\nFreelance — The Filmer Production | Ongoing, alongside full-time roles  \n\nCinematographer, Videographer & Video Editor · Bengaluru  \n\n• Delivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit, \n\nZomato, Em bassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold \n\n• Shot and produced content for the Kapil Dev – Grant Thornton Invitational golf event Managed each project end-to-end \nclient briefing, shoot planning, filming, editing and final delivery — as founder of The Filmer Production  \n\nWelkin Light Media ( Apr 2024 | Jan 2026 )  \n\nCreative Head · Bengaluru \n\n• Led end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison \n\nDe Medusa, Watchcube, High Brew and Zomato. \n\n• Directed and shot content across product, real estate and F&B categories, reducing dependency on external production \n\nvendors. \n\n• Delivered a campaign for Hermitage India generating 300K–500K organic views with zero paid boost Managed a \n\ncrossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew \n\nmembers \n\nRocktfuel Media ( Jul 2023 | Feb 2024 )   \n\nVideographer & Video Editor · Bengaluru \n\n● Directed all production stages — scripting, storyboarding, casting, location scouting and crew management — for \nmultiple brand clients over 8 months \n\n● Operated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage \n\n● Collaborated with creative teams to develop and test new content formats and shooting techniques \n\nRuia Care – Multibrand Car Workshop ( Oct 2021 | Jan 2023)             \n\nVideo Producer, Editor & Social Media Manager · Kolkata \n\n● Managed end-to-end content pipeline for Instagram and YouTube — scripting, shooting, editing, publishing — as sole \ncontent creator for a multi-brand car service company \n\n● Produced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer \nengagement \n\n● Directed pre- to post-production independently across 15 months, building full-stack production capability \n\nChefrome ( Feb 2021 | Aug 2021)  \n\nVideo Producer · Kolkata \n\n● Managed and directed production elements including scripting, storyboarding, casting and location scouting for early-\ncareer video projects \n\n● Operated professional video equipment (camera, lighting, audio) to capture high-quality footage \n\n● Collaborated with the team to brainstorm and implement new creative techniques \n\n \n\nworkwithsuraj30@gmail.com\nmailto:%20linkedin.com/in/suraj-singhrajput-4779a8227\n\n\n \n\nSKILLS \n\nTechnical Skills – Cinematography, Video Production, Motion Graphics, Photography, Pre & Post Production, Color Grading & \nCorrection. \n\nSoftware & Tools – Adobe Premiere Pro, Adobe After Effects, Adobe Creative Suite. \n\nCreative Skills – Visual Storytelling, Composition & Framing, Content Planing, Creative Direction. \n\nAI Tools – Copilot, ElevenLabs, Canva AI, Capcut AI. \n\nCamera & Equipment – DSLR Camera, Microphones, Tripods, Gimbals, Studio Lighting, Mirrorless Camera Operation. \n\nSoft Skills - Client Collaboration & Communication, Adaptability, Team Collaboration. \n\nEDUCATION \n\nUniversity of Calcutta, Kolkata ( 2019 | 2022 ) \n\nBachelor of Commerce – Accounting Honours .  \n\nLINKS  \n\nPortfolio: Google Drive (link on request) \n\nInstagram: @i_am_surajsinghrajput , @the__filmerproduction \n\nWebsite: singhsuraj.wixsite.com \n \n \n\nmailto:singhsuraj.wixsite.com",
+      "extracted_text": "SURAJ SINGH RAJPUT \n\nCinematographer  •  Videographer  •  Video Editor \n\nBengaluru, Karnataka, India   | +91 89611 91217 | workwithsuraj30@gmail.com  | Linkedin \n\nPROFESSIONAL SUMMARY  \n\nCinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept \n\nto final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade,  \n\nEmbassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and \n\ncorporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms, \n\nwith multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color \n\ngrading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content. \n\n \n\nWORK EXPERIENCE  \n\nWebenza  \n\nSenior Cinematographer · Bengaluru | Feb 2026 | Present     \n\n• Directed and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing \nthe entire production process from concept to final delivery. \n\n•  Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production \nwhile maintaining creative quality.  \n\n• Led multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on \ntime and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control, \ndelivering visually consistent, brand-aligned content across all campaigns. \n\nFreelance — The Filmer Production | Ongoing, alongside full-time roles  \n\nCinematographer, Videographer & Video Editor · Bengaluru  \n\n• Delivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit, \n\nZomato, Em bassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold \n\n• Shot and produced content for the Kapil Dev – Grant Thornton Invitational golf event Managed each project end-to-end \nclient briefing, shoot planning, filming, editing and final delivery — as founder of The Filmer Production  \n\nWelkin Light Media ( Apr 2024 | Jan 2026 )  \n\nCreative Head · Bengaluru \n\n• Led end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison \n\nDe Medusa, Watchcube, High Brew and Zomato. \n\n• Directed and shot content across product, real estate and F&B categories, reducing dependency on external production \n\nvendors. \n\n• Delivered a campaign for Hermitage India generating 300K–500K organic views with zero paid boost Managed a \n\ncrossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew \n\nmembers \n\nRocktfuel Media ( Jul 2023 | Feb 2024 )   \n\nVideographer & Video Editor · Bengaluru \n\n● Directed all production stages — scripting, storyboarding, casting, location scouting and crew management — for \nmultiple brand clients over 8 months \n\n● Operated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage \n\n● Collaborated with creative teams to develop and test new content formats and shooting techniques \n\nRuia Care – Multibrand Car Workshop ( Oct 2021 | Jan 2023)             \n\nVideo Producer, Editor & Social Media Manager · Kolkata \n\n● Managed end-to-end content pipeline for Instagram and YouTube — scripting, shooting, editing, publishing — as sole \ncontent creator for a multi-brand car service company \n\n● Produced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer \nengagement \n\n● Directed pre- to post-production independently across 15 months, building full-stack production capability \n\nChefrome ( Feb 2021 | Aug 2021)  \n\nVideo Producer · Kolkata \n\n● Managed and directed production elements including scripting, storyboarding, casting and location scouting for early-\ncareer video projects \n\n● Operated professional video equipment (camera, lighting, audio) to capture high-quality footage \n\n● Collaborated with the team to brainstorm and implement new creative techniques \n\n \n\nworkwithsuraj30@gmail.com\nmailto:%20linkedin.com/in/suraj-singhrajput-4779a8227\n\n\n \n\nSKILLS \n\nTechnical Skills – Cinematography, Video Production, Motion Graphics, Photography, Pre & Post Production, Color Grading & \nCorrection. \n\nSoftware & Tools – Adobe Premiere Pro, Adobe After Effects, Adobe Creative Suite. \n\nCreative Skills – Visual Storytelling, Composition & Framing, Content Planing, Creative Direction. \n\nAI Tools – Copilot, ElevenLabs, Canva AI, Capcut AI. \n\nCamera & Equipment – DSLR Camera, Microphones, Tripods, Gimbals, Studio Lighting, Mirrorless Camera Operation. \n\nSoft Skills - Client Collaboration & Communication, Adaptability, Team Collaboration. \n\nEDUCATION \n\nUniversity of Calcutta, Kolkata ( 2019 | 2022 ) \n\nBachelor of Commerce – Accounting Honours .  \n\nLINKS  \n\nPortfolio: Google Drive (link on request) \n\nInstagram: @i_am_surajsinghrajput , @the__filmerproduction \n\nWebsite: singhsuraj.wixsite.com \n \n \n\nmailto:singhsuraj.wixsite.com",
+      "extracted_text_length": 5246,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "SURAJ SINGH RAJPUT\n\nCinematographer • Videographer • Video Editor\n\nBengaluru, Karnataka, India | +91 89611 91217 | workwithsuraj30@gmail.com | Linkedin\n\nPROFESSIONAL SUMMARY\n\nCinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept\n\nto final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade,\n\nEmbassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and\n\ncorporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms,\n\nwith multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color\n\ngrading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content.\n\nWORK EXPERIENCE\n\nWebenza\n\nSenior Cinematographer · Bengaluru | Feb 2026 | Present\n\n• Directed and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing\nthe entire production process from concept to final delivery.\n\n• Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production\nwhile maintaining creative quality.\n\n• Led multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on\ntime and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control,\ndelivering visually consistent, brand-aligned content across all campaigns.\n\nFreelance — The Filmer Production | Ongoing, alongside full-time roles\n\nCinematographer, Videographer & Video Editor · Bengaluru\n\n• Delivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit,\n\nZomato, Em bassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold\n\n• Shot and produced content for the Kapil Dev – Grant Thornton Invitational golf event Managed each project end-to-end\nclient briefing, shoot planning, filming, editing and final delivery — as founder of The Filmer Production\n\nWelkin Light Media ( Apr 2024 | Jan 2026 )\n\nCreative Head · Bengaluru\n\n• Led end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison\n\nDe Medusa, Watchcube, High Brew and Zomato.\n\n• Directed and shot content across product, real estate and F&B categories, reducing dependency on external production\n\nvendors.\n\n• Delivered a campaign for Hermitage India generating 300K–500K organic views with zero paid boost Managed a\n\ncrossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew\n\nmembers\n\nRocktfuel Media ( Jul 2023 | Feb 2024 )\n\nVideographer & Video Editor · Bengaluru\n\n● Directed all production stages — scripting, storyboarding, casting, location scouting and crew management — for\nmultiple brand clients over 8 months\n\n● Operated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage\n\n● Collaborated with creative teams to develop and test new content formats and shooting techniques\n\nRuia Care – Multibrand Car Workshop ( Oct 2021 | Jan 2023)\n\nVideo Producer, Editor & Social Media Manager · Kolkata\n\n● Managed end-to-end content pipeline for Instagram and YouTube — scripting, shooting, editing, publishing — as sole\ncontent creator for a multi-brand car service company\n\n● Produced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer\nengagement\n\n● Directed pre- to post-production independently across 15 months, building full-stack production capability\n\nChefrome ( Feb 2021 | Aug 2021)\n\nVideo Producer · Kolkata\n\n● Managed and directed production elements including scripting, storyboarding, casting and location scouting for early-\ncareer video projects\n\n● Operated professional video equipment (camera, lighting, audio) to capture high-quality footage\n\n● Collaborated with the team to brainstorm and implement new creative techniques\n\nworkwithsuraj30@gmail.com\nmailto:%20linkedin.com/in/suraj-singhrajput-4779a8227\n\nSKILLS\n\nTechnical Skills – Cinematography, Video Production, Motion Graphics, Photography, Pre & Post Production, Color Grading &\nCorrection.\n\nSoftware & Tools – Adobe Premiere Pro, Adobe After Effects, Adobe Creative Suite.\n\nCreative Skills – Visual Storytelling, Composition & Framing, Content Planing, Creative Direction.\n\nAI Tools – Copilot, ElevenLabs, Canva AI, Capcut AI.\n\nCamera & Equipment – DSLR Camera, Microphones, Tripods, Gimbals, Studio Lighting, Mirrorless Camera Operation.\n\nSoft Skills - Client Collaboration & Communication, Adaptability, Team Collaboration.\n\nEDUCATION\n\nUniversity of Calcutta, Kolkata ( 2019 | 2022 )\n\nBachelor of Commerce – Accounting Honours .\n\nLINKS\n\nPortfolio: Google Drive (link on request)\n\nInstagram: @i_am_surajsinghrajput , @the__filmerproduction\n\nWebsite: singhsuraj.wixsite.com\n\nmailto:singhsuraj.wixsite.com"
+    },
+    {
+      "attempt_id": "0327eecd-403d-491f-b079-5338a677f3f3-attempt-2",
+      "resume_id": "0327eecd-403d-491f-b079-5338a677f3f3",
+      "attempt_number": 2,
+      "extractor_name": "pymupdf",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 96.8 (selected 'tika' scored 98.5).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 96.8 (selected 'tika' scored 98.5).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "0327eecd-403d-491f-b079-5338a677f3f3",
+        "source_tool": "pymupdf",
+        "attempt_id": "0327eecd-403d-491f-b079-5338a677f3f3-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 5080,
+            "word_count": 694,
+            "line_count": 92,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.160827,
+            "symbol_count": 40,
+            "symbol_ratio": 0.007874,
+            "max_repeated_char_run": 12,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 5080,
+            "word_count": 694,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education"
+            },
+            "conditional_rejected": [
+              {
+                "section": "Projects",
+                "alias": "portfolio",
+                "original_heading": "Portfolio: Google Drive (link on request)",
+                "line_number": 90
+              }
+            ],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "workwithsuraj30@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 4,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 78,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 12,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 86,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 5080,
+            "word_count": 694,
+            "line_count": 92,
+            "non_empty_line_count": 86,
+            "short_line_count": 28,
+            "short_line_ratio": 0.325581,
+            "fragmented_line_count": 26,
+            "fragmented_line_ratio": 0.302326,
+            "mean_line_length": 56.72,
+            "median_line_length": 50.5,
+            "line_length_stdev": 46.0,
+            "line_length_cv": 0.811049,
+            "broken_sentence_count": 15,
+            "broken_sentence_ratio": 0.176471,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "0327eecd-403d-491f-b079-5338a677f3f3",
+        "source_tool": "pymupdf",
+        "attempt_id": "0327eecd-403d-491f-b079-5338a677f3f3-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 5080,
+            "word_count": 694,
+            "line_count": 92,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.160827,
+            "symbol_count": 40,
+            "symbol_ratio": 0.007874,
+            "max_repeated_char_run": 12,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 5080,
+            "word_count": 694,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education"
+            },
+            "conditional_rejected": [
+              {
+                "section": "Projects",
+                "alias": "portfolio",
+                "original_heading": "Portfolio: Google Drive (link on request)",
+                "line_number": 90
+              }
+            ],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "workwithsuraj30@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 4,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 78,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 12,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 86,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 5080,
+            "word_count": 694,
+            "line_count": 92,
+            "non_empty_line_count": 86,
+            "short_line_count": 28,
+            "short_line_ratio": 0.325581,
+            "fragmented_line_count": 26,
+            "fragmented_line_ratio": 0.302326,
+            "mean_line_length": 56.72,
+            "median_line_length": 50.5,
+            "line_length_stdev": 46.0,
+            "line_length_cv": 0.811049,
+            "broken_sentence_count": 15,
+            "broken_sentence_ratio": 0.176471,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 96.8,
+      "duration_ms": 48.66,
+      "text": "SURAJ SINGH RAJPUT \nCinematographer  •  Videographer  •  Video Editor \nBengaluru, Karnataka, India   | +91 89611 91217 | workwithsuraj30@gmail.com  | Linkedin \nPROFESSIONAL SUMMARY \nCinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept \nto final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade, \nEmbassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and \ncorporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms, \nwith multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color \ngrading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content. \n \nWORK EXPERIENCE \nWebenza  \nSenior Cinematographer · Bengaluru | Feb 2026 | Present     \n• \nDirected and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing \nthe entire production process from concept to final delivery. \n• \n Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production \nwhile maintaining creative quality.  \n• \nLed multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on \ntime and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control, \ndelivering visually consistent, brand-aligned content across all campaigns. \nFreelance — The Filmer Production | Ongoing, alongside full-time roles \n \nCinematographer, Videographer & Video Editor · Bengaluru  \n• \nDelivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit, \nZomato, Em bassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold \n• \nShot and produced content for the Kapil Dev – Grant Thornton Invitational golf event Managed each project end-to-end \nclient briefing, shoot planning, filming, editing and final delivery — as founder of The Filmer Production  \nWelkin Light Media ( Apr 2024 | Jan 2026 ) \n \nCreative Head · Bengaluru \n• \nLed end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison \nDe Medusa, Watchcube, High Brew and Zomato. \n• \nDirected and shot content across product, real estate and F&B categories, reducing dependency on external production \nvendors. \n• \nDelivered a campaign for Hermitage India generating 300K–500K organic views with zero paid boost Managed a \ncrossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew \nmembers \nRocktfuel Media ( Jul 2023 | Feb 2024 ) \n  \nVideographer & Video Editor · Bengaluru \n● \nDirected all production stages — scripting, storyboarding, casting, location scouting and crew management — for \nmultiple brand clients over 8 months \n● \nOperated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage \n● \nCollaborated with creative teams to develop and test new content formats and shooting techniques \nRuia Care – Multibrand Car Workshop ( Oct 2021 | Jan 2023) \n            \nVideo Producer, Editor & Social Media Manager · Kolkata \n● \nManaged end-to-end content pipeline for Instagram and YouTube — scripting, shooting, editing, publishing — as sole \ncontent creator for a multi-brand car service company \n● \nProduced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer \nengagement \n● \nDirected pre- to post-production independently across 15 months, building full-stack production capability \nChefrome ( Feb 2021 | Aug 2021) \n \nVideo Producer · Kolkata \n● \nManaged and directed production elements including scripting, storyboarding, casting and location scouting for early-\ncareer video projects \n● \nOperated professional video equipment (camera, lighting, audio) to capture high-quality footage \n● \nCollaborated with the team to brainstorm and implement new creative techniques\nSKILLS \nTechnical Skills – Cinematography, Video Production, Motion Graphics, Photography, Pre & Post Production, Color Grading & \nCorrection. \nSoftware & Tools – Adobe Premiere Pro, Adobe After Effects, Adobe Creative Suite. \nCreative Skills – Visual Storytelling, Composition & Framing, Content Planing, Creative Direction. \nAI Tools – Copilot, ElevenLabs, Canva AI, Capcut AI. \nCamera & Equipment – DSLR Camera, Microphones, Tripods, Gimbals, Studio Lighting, Mirrorless Camera Operation. \nSoft Skills - Client Collaboration & Communication, Adaptability, Team Collaboration. \nEDUCATION \nUniversity of Calcutta, Kolkata ( 2019 | 2022 ) \nBachelor of Commerce – Accounting Honours .  \nLINKS \nPortfolio: Google Drive (link on request) \nInstagram: @i_am_surajsinghrajput , @the__filmerproduction \nWebsite: singhsuraj.wixsite.com",
+      "extracted_text": "SURAJ SINGH RAJPUT \nCinematographer  •  Videographer  •  Video Editor \nBengaluru, Karnataka, India   | +91 89611 91217 | workwithsuraj30@gmail.com  | Linkedin \nPROFESSIONAL SUMMARY \nCinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept \nto final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade, \nEmbassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and \ncorporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms, \nwith multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color \ngrading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content. \n \nWORK EXPERIENCE \nWebenza  \nSenior Cinematographer · Bengaluru | Feb 2026 | Present     \n• \nDirected and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing \nthe entire production process from concept to final delivery. \n• \n Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production \nwhile maintaining creative quality.  \n• \nLed multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on \ntime and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control, \ndelivering visually consistent, brand-aligned content across all campaigns. \nFreelance — The Filmer Production | Ongoing, alongside full-time roles \n \nCinematographer, Videographer & Video Editor · Bengaluru  \n• \nDelivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit, \nZomato, Em bassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold \n• \nShot and produced content for the Kapil Dev – Grant Thornton Invitational golf event Managed each project end-to-end \nclient briefing, shoot planning, filming, editing and final delivery — as founder of The Filmer Production  \nWelkin Light Media ( Apr 2024 | Jan 2026 ) \n \nCreative Head · Bengaluru \n• \nLed end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison \nDe Medusa, Watchcube, High Brew and Zomato. \n• \nDirected and shot content across product, real estate and F&B categories, reducing dependency on external production \nvendors. \n• \nDelivered a campaign for Hermitage India generating 300K–500K organic views with zero paid boost Managed a \ncrossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew \nmembers \nRocktfuel Media ( Jul 2023 | Feb 2024 ) \n  \nVideographer & Video Editor · Bengaluru \n● \nDirected all production stages — scripting, storyboarding, casting, location scouting and crew management — for \nmultiple brand clients over 8 months \n● \nOperated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage \n● \nCollaborated with creative teams to develop and test new content formats and shooting techniques \nRuia Care – Multibrand Car Workshop ( Oct 2021 | Jan 2023) \n            \nVideo Producer, Editor & Social Media Manager · Kolkata \n● \nManaged end-to-end content pipeline for Instagram and YouTube — scripting, shooting, editing, publishing — as sole \ncontent creator for a multi-brand car service company \n● \nProduced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer \nengagement \n● \nDirected pre- to post-production independently across 15 months, building full-stack production capability \nChefrome ( Feb 2021 | Aug 2021) \n \nVideo Producer · Kolkata \n● \nManaged and directed production elements including scripting, storyboarding, casting and location scouting for early-\ncareer video projects \n● \nOperated professional video equipment (camera, lighting, audio) to capture high-quality footage \n● \nCollaborated with the team to brainstorm and implement new creative techniques\nSKILLS \nTechnical Skills – Cinematography, Video Production, Motion Graphics, Photography, Pre & Post Production, Color Grading & \nCorrection. \nSoftware & Tools – Adobe Premiere Pro, Adobe After Effects, Adobe Creative Suite. \nCreative Skills – Visual Storytelling, Composition & Framing, Content Planing, Creative Direction. \nAI Tools – Copilot, ElevenLabs, Canva AI, Capcut AI. \nCamera & Equipment – DSLR Camera, Microphones, Tripods, Gimbals, Studio Lighting, Mirrorless Camera Operation. \nSoft Skills - Client Collaboration & Communication, Adaptability, Team Collaboration. \nEDUCATION \nUniversity of Calcutta, Kolkata ( 2019 | 2022 ) \nBachelor of Commerce – Accounting Honours .  \nLINKS \nPortfolio: Google Drive (link on request) \nInstagram: @i_am_surajsinghrajput , @the__filmerproduction \nWebsite: singhsuraj.wixsite.com",
+      "extracted_text_length": 5080,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "format": "PDF 1.7",
+        "author": "Un-named",
+        "creator": "Aspose Ltd.",
+        "producer": "Aspose.PDF for Java 18.8",
+        "creationDate": "D:20260711154559+05'30'",
+        "modDate": "D:20260812142128+05'30'"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "SURAJ SINGH RAJPUT\nCinematographer • Videographer • Video Editor\nBengaluru, Karnataka, India | +91 89611 91217 | workwithsuraj30@gmail.com | Linkedin\nPROFESSIONAL SUMMARY\nCinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept\nto final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade,\nEmbassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and\ncorporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms,\nwith multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color\ngrading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content.\n\nWORK EXPERIENCE\nWebenza\nSenior Cinematographer · Bengaluru | Feb 2026 | Present\nDirected and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing\nthe entire production process from concept to final delivery.\nCreated AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production\nwhile maintaining creative quality.\nLed multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on\ntime and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control,\ndelivering visually consistent, brand-aligned content across all campaigns.\nFreelance — The Filmer Production | Ongoing, alongside full-time roles\n\nCinematographer, Videographer & Video Editor · Bengaluru\nDelivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit,\nZomato, Em bassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold\nShot and produced content for the Kapil Dev – Grant Thornton Invitational golf event Managed each project end-to-end\nclient briefing, shoot planning, filming, editing and final delivery — as founder of The Filmer Production\nWelkin Light Media ( Apr 2024 | Jan 2026 )\n\nCreative Head · Bengaluru\nLed end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison\nDe Medusa, Watchcube, High Brew and Zomato.\nDirected and shot content across product, real estate and F&B categories, reducing dependency on external production\nvendors.\nDelivered a campaign for Hermitage India generating 300K–500K organic views with zero paid boost Managed a\ncrossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew\nmembers\nRocktfuel Media ( Jul 2023 | Feb 2024 )\n\nVideographer & Video Editor · Bengaluru\n●\nDirected all production stages — scripting, storyboarding, casting, location scouting and crew management — for\nmultiple brand clients over 8 months\n●\nOperated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage\n●\nCollaborated with creative teams to develop and test new content formats and shooting techniques\nRuia Care – Multibrand Car Workshop ( Oct 2021 | Jan 2023)\n\nVideo Producer, Editor & Social Media Manager · Kolkata\n●\nManaged end-to-end content pipeline for Instagram and YouTube — scripting, shooting, editing, publishing — as sole\ncontent creator for a multi-brand car service company\n●\nProduced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer\nengagement\n●\nDirected pre- to post-production independently across 15 months, building full-stack production capability\nChefrome ( Feb 2021 | Aug 2021)\n\nVideo Producer · Kolkata\n●\nManaged and directed production elements including scripting, storyboarding, casting and location scouting for early-\ncareer video projects\n●\nOperated professional video equipment (camera, lighting, audio) to capture high-quality footage\n●\nCollaborated with the team to brainstorm and implement new creative techniques\nSKILLS\nTechnical Skills – Cinematography, Video Production, Motion Graphics, Photography, Pre & Post Production, Color Grading &\nCorrection.\nSoftware & Tools – Adobe Premiere Pro, Adobe After Effects, Adobe Creative Suite.\nCreative Skills – Visual Storytelling, Composition & Framing, Content Planing, Creative Direction.\nAI Tools – Copilot, ElevenLabs, Canva AI, Capcut AI.\nCamera & Equipment – DSLR Camera, Microphones, Tripods, Gimbals, Studio Lighting, Mirrorless Camera Operation.\nSoft Skills - Client Collaboration & Communication, Adaptability, Team Collaboration.\nEDUCATION\nUniversity of Calcutta, Kolkata ( 2019 | 2022 )\nBachelor of Commerce – Accounting Honours .\nLINKS\nPortfolio: Google Drive (link on request)\nInstagram: @i_am_surajsinghrajput , @the__filmerproduction\nWebsite: singhsuraj.wixsite.com"
+    },
+    {
+      "attempt_id": "0327eecd-403d-491f-b079-5338a677f3f3-attempt-3",
+      "resume_id": "0327eecd-403d-491f-b079-5338a677f3f3",
+      "attempt_number": 3,
+      "extractor_name": "docling",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 98.5 (selected 'tika' scored 98.5).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 98.5 (selected 'tika' scored 98.5).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "0327eecd-403d-491f-b079-5338a677f3f3",
+        "source_tool": "docling",
+        "attempt_id": "0327eecd-403d-491f-b079-5338a677f3f3-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4991,
+            "word_count": 693,
+            "line_count": 86,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.146063,
+            "symbol_count": 8,
+            "symbol_ratio": 0.001603,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4991,
+            "word_count": 693,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education"
+            },
+            "conditional_rejected": [
+              {
+                "section": "Projects",
+                "alias": "portfolio",
+                "original_heading": "Portfolio: Google Drive (link on request)",
+                "line_number": 82
+              }
+            ],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "workwithsuraj30@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 60,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 74,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 97.56,
+          "flags": [
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "Line lengths vary unusually (coefficient of variation 1.16) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 4991,
+            "word_count": 693,
+            "line_count": 86,
+            "non_empty_line_count": 49,
+            "short_line_count": 7,
+            "short_line_ratio": 0.142857,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.102041,
+            "mean_line_length": 100.12,
+            "median_line_length": 70.0,
+            "line_length_stdev": 116.38,
+            "line_length_cv": 1.162424,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "0327eecd-403d-491f-b079-5338a677f3f3",
+        "source_tool": "docling",
+        "attempt_id": "0327eecd-403d-491f-b079-5338a677f3f3-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4991,
+            "word_count": 693,
+            "line_count": 86,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.146063,
+            "symbol_count": 8,
+            "symbol_ratio": 0.001603,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4991,
+            "word_count": 693,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education"
+            },
+            "conditional_rejected": [
+              {
+                "section": "Projects",
+                "alias": "portfolio",
+                "original_heading": "Portfolio: Google Drive (link on request)",
+                "line_number": 82
+              }
+            ],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "workwithsuraj30@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 60,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 11,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 74,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 97.56,
+          "flags": [
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "Line lengths vary unusually (coefficient of variation 1.16) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 4991,
+            "word_count": 693,
+            "line_count": 86,
+            "non_empty_line_count": 49,
+            "short_line_count": 7,
+            "short_line_ratio": 0.142857,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.102041,
+            "mean_line_length": 100.12,
+            "median_line_length": 70.0,
+            "line_length_stdev": 116.38,
+            "line_length_cv": 1.162424,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 98.5,
+      "duration_ms": 17314.93,
+      "text": "SURAJ SINGH RAJPUT\n\nCinematographer · Videographer · Video Editor\n\nBengaluru, Karnataka, India | +91 89611 91217 | workwithsuraj30@gmail.com | Linkedin\n\nPROFESSIONAL SUMMARY\n\nCinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept to final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade, Embassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and corporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms, with multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color grading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content.\n\nWORK EXPERIENCE\n\nWebenza\n\nSenior Cinematographer · Bengaluru | Feb 2026 | Present\n\n- Directed and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing the entire production process from concept to final delivery.\n- Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production while maintaining creative quality.\n- Led multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on time and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control, delivering visually consistent, brand-aligned content across all campaigns.\n\nFreelance - The Filmer Production | Ongoing, alongside full-time roles\n\nCinematographer, Videographer & Video Editor · Bengaluru\n\n- Delivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit, Zomato, Em bassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold\n- Shot and produced content for the Kapil Dev - Grant Thornton Invitational golf event Managed each project end-to-end client briefing, shoot planning, filming, editing and final delivery - as founder of The Filmer Production\n\nWelkin Light Media ( Apr 2024 | Jan 2026 )\n\nCreative Head · Bengaluru\n\n- Led end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison De Medusa, Watchcube, High Brew and Zomato.\n- Directed and shot content across product, real estate and F&B categories, reducing dependency on external production vendors.\n- Delivered a campaign for Hermitage India generating 300K-500K organic views with zero paid boost Managed a crossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew members\n\nRocktfuel Media ( Jul 2023 | Feb 2024 )\n\nVideographer & Video Editor · Bengaluru\n\n- Directed all production stages - scripting, storyboarding, casting, location scouting and crew management - for multiple brand clients over 8 months\n- Operated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage\n- Collaborated with creative teams to develop and test new content formats and shooting techniques\n\nRuia Care - Multibrand Car Workshop ( Oct 2021 | Jan 2023)\n\nVideo Producer, Editor & Social Media Manager · Kolkata\n\n- Managed end-to-end content pipeline for Instagram and YouTube - scripting, shooting, editing, publishing - as sole content creator for a multi-brand car service company\n- Produced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer engagement\n- Directed pre- to post-production independently across 15 months, building full-stack production capability\n\nChefrome ( Feb 2021 | Aug 2021)\n\nVideo Producer · Kolkata\n\n- Managed and directed production elements including scripting, storyboarding, casting and location scouting for earlycareer video projects\n- Operated professional video equipment (camera, lighting, audio) to capture high-quality footage\n- Collaborated with the team to brainstorm and implement new creative techniques\n\nSKILLS\n\nTechnical Skills - Cinematography, Video Production, Motion Graphics, Photography, Pre & Post Production, Color Grading & Correction.\n\nSoftware & Tools - Adobe Premiere Pro, Adobe After Effects, Adobe Creative Suite.\n\nCreative Skills - Visual Storytelling, Composition & Framing, Content Planing, Creative Direction.\n\nAI Tools - Copilot, ElevenLabs, Canva AI, Capcut AI.\n\nCamera & Equipment - DSLR Camera, Microphones, Tripods, Gimbals, Studio Lighting, Mirrorless Camera Operation.\n\nSoft Skills - Client Collaboration & Communication, Adaptability, Team Collaboration.\n\nEDUCATION\n\nUniversity of Calcutta, Kolkata ( 2019 | 2022 )\n\nBachelor of Commerce - Accounting Honours .\n\nLINKS\n\nPortfolio: Google Drive (link on request)\n\nInstagram: @i_am_surajsinghrajput , @the__filmerproduction\n\nWebsite: singhsuraj.wixsite.com",
+      "extracted_text": "SURAJ SINGH RAJPUT\n\nCinematographer · Videographer · Video Editor\n\nBengaluru, Karnataka, India | +91 89611 91217 | workwithsuraj30@gmail.com | Linkedin\n\nPROFESSIONAL SUMMARY\n\nCinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept to final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade, Embassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and corporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms, with multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color grading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content.\n\nWORK EXPERIENCE\n\nWebenza\n\nSenior Cinematographer · Bengaluru | Feb 2026 | Present\n\n- Directed and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing the entire production process from concept to final delivery.\n- Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production while maintaining creative quality.\n- Led multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on time and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control, delivering visually consistent, brand-aligned content across all campaigns.\n\nFreelance - The Filmer Production | Ongoing, alongside full-time roles\n\nCinematographer, Videographer & Video Editor · Bengaluru\n\n- Delivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit, Zomato, Em bassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold\n- Shot and produced content for the Kapil Dev - Grant Thornton Invitational golf event Managed each project end-to-end client briefing, shoot planning, filming, editing and final delivery - as founder of The Filmer Production\n\nWelkin Light Media ( Apr 2024 | Jan 2026 )\n\nCreative Head · Bengaluru\n\n- Led end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison De Medusa, Watchcube, High Brew and Zomato.\n- Directed and shot content across product, real estate and F&B categories, reducing dependency on external production vendors.\n- Delivered a campaign for Hermitage India generating 300K-500K organic views with zero paid boost Managed a crossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew members\n\nRocktfuel Media ( Jul 2023 | Feb 2024 )\n\nVideographer & Video Editor · Bengaluru\n\n- Directed all production stages - scripting, storyboarding, casting, location scouting and crew management - for multiple brand clients over 8 months\n- Operated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage\n- Collaborated with creative teams to develop and test new content formats and shooting techniques\n\nRuia Care - Multibrand Car Workshop ( Oct 2021 | Jan 2023)\n\nVideo Producer, Editor & Social Media Manager · Kolkata\n\n- Managed end-to-end content pipeline for Instagram and YouTube - scripting, shooting, editing, publishing - as sole content creator for a multi-brand car service company\n- Produced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer engagement\n- Directed pre- to post-production independently across 15 months, building full-stack production capability\n\nChefrome ( Feb 2021 | Aug 2021)\n\nVideo Producer · Kolkata\n\n- Managed and directed production elements including scripting, storyboarding, casting and location scouting for earlycareer video projects\n- Operated professional video equipment (camera, lighting, audio) to capture high-quality footage\n- Collaborated with the team to brainstorm and implement new creative techniques\n\nSKILLS\n\nTechnical Skills - Cinematography, Video Production, Motion Graphics, Photography, Pre & Post Production, Color Grading & Correction.\n\nSoftware & Tools - Adobe Premiere Pro, Adobe After Effects, Adobe Creative Suite.\n\nCreative Skills - Visual Storytelling, Composition & Framing, Content Planing, Creative Direction.\n\nAI Tools - Copilot, ElevenLabs, Canva AI, Capcut AI.\n\nCamera & Equipment - DSLR Camera, Microphones, Tripods, Gimbals, Studio Lighting, Mirrorless Camera Operation.\n\nSoft Skills - Client Collaboration & Communication, Adaptability, Team Collaboration.\n\nEDUCATION\n\nUniversity of Calcutta, Kolkata ( 2019 | 2022 )\n\nBachelor of Commerce - Accounting Honours .\n\nLINKS\n\nPortfolio: Google Drive (link on request)\n\nInstagram: @i_am_surajsinghrajput , @the__filmerproduction\n\nWebsite: singhsuraj.wixsite.com",
+      "extracted_text_length": 4991,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "SURAJ SINGH RAJPUT\n\nCinematographer · Videographer · Video Editor\n\nBengaluru, Karnataka, India | +91 89611 91217 | workwithsuraj30@gmail.com | Linkedin\n\nPROFESSIONAL SUMMARY\n\nCinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept to final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade, Embassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and corporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms, with multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color grading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content.\n\nWORK EXPERIENCE\n\nWebenza\n\nSenior Cinematographer · Bengaluru | Feb 2026 | Present\n\n- Directed and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing the entire production process from concept to final delivery.\n- Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production while maintaining creative quality.\n- Led multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on time and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control, delivering visually consistent, brand-aligned content across all campaigns.\n\nFreelance - The Filmer Production | Ongoing, alongside full-time roles\n\nCinematographer, Videographer & Video Editor · Bengaluru\n\n- Delivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit, Zomato, Em bassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold\n- Shot and produced content for the Kapil Dev - Grant Thornton Invitational golf event Managed each project end-to-end client briefing, shoot planning, filming, editing and final delivery - as founder of The Filmer Production\n\nWelkin Light Media ( Apr 2024 | Jan 2026 )\n\nCreative Head · Bengaluru\n\n- Led end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison De Medusa, Watchcube, High Brew and Zomato.\n- Directed and shot content across product, real estate and F&B categories, reducing dependency on external production vendors.\n- Delivered a campaign for Hermitage India generating 300K-500K organic views with zero paid boost Managed a crossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew members\n\nRocktfuel Media ( Jul 2023 | Feb 2024 )\n\nVideographer & Video Editor · Bengaluru\n\n- Directed all production stages - scripting, storyboarding, casting, location scouting and crew management - for multiple brand clients over 8 months\n- Operated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage\n- Collaborated with creative teams to develop and test new content formats and shooting techniques\n\nRuia Care - Multibrand Car Workshop ( Oct 2021 | Jan 2023)\n\nVideo Producer, Editor & Social Media Manager · Kolkata\n\n- Managed end-to-end content pipeline for Instagram and YouTube - scripting, shooting, editing, publishing - as sole content creator for a multi-brand car service company\n- Produced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer engagement\n- Directed pre- to post-production independently across 15 months, building full-stack production capability\n\nChefrome ( Feb 2021 | Aug 2021)\n\nVideo Producer · Kolkata\n\n- Managed and directed production elements including scripting, storyboarding, casting and location scouting for earlycareer video projects\n- Operated professional video equipment (camera, lighting, audio) to capture high-quality footage\n- Collaborated with the team to brainstorm and implement new creative techniques\n\nSKILLS\n\nTechnical Skills - Cinematography, Video Production, Motion Graphics, Photography, Pre & Post Production, Color Grading & Correction.\n\nSoftware & Tools - Adobe Premiere Pro, Adobe After Effects, Adobe Creative Suite.\n\nCreative Skills - Visual Storytelling, Composition & Framing, Content Planing, Creative Direction.\n\nAI Tools - Copilot, ElevenLabs, Canva AI, Capcut AI.\n\nCamera & Equipment - DSLR Camera, Microphones, Tripods, Gimbals, Studio Lighting, Mirrorless Camera Operation.\n\nSoft Skills - Client Collaboration & Communication, Adaptability, Team Collaboration.\n\nEDUCATION\n\nUniversity of Calcutta, Kolkata ( 2019 | 2022 )\n\nBachelor of Commerce - Accounting Honours .\n\nLINKS\n\nPortfolio: Google Drive (link on request)\n\nInstagram: @i_am_surajsinghrajput , @the__filmerproduction\n\nWebsite: singhsuraj.wixsite.com"
+    }
+  ],
+  "attempt_count": 3,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "extracted_text": "SURAJ SINGH RAJPUT \n\nCinematographer  •  Videographer  •  Video Editor \n\nBengaluru, Karnataka, India   | +91 89611 91217 | workwithsuraj30@gmail.com  | Linkedin \n\nPROFESSIONAL SUMMARY  \n\nCinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept \n\nto final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade,  \n\nEmbassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and \n\ncorporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms, \n\nwith multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color \n\ngrading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content. \n\n \n\nWORK EXPERIENCE  \n\nWebenza  \n\nSenior Cinematographer · Bengaluru | Feb 2026 | Present     \n\n• Directed and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing \nthe entire production process from concept to final delivery. \n\n•  Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production \nwhile maintaining creative quality.  \n\n• Led multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on \ntime and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control, \ndelivering visually consistent, brand-aligned content across all campaigns. \n\nFreelance — The Filmer Production | Ongoing, alongside full-time roles  \n\nCinematographer, Videographer & Video Editor · Bengaluru  \n\n• Delivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit, \n\nZomato, Em bassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold \n\n• Shot and produced content for the Kapil Dev – Grant Thornton Invitational golf event Managed each project end-to-end \nclient briefing, shoot planning, filming, editing and final delivery — as founder of The Filmer Production  \n\nWelkin Light Media ( Apr 2024 | Jan 2026 )  \n\nCreative Head · Bengaluru \n\n• Led end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison \n\nDe Medusa, Watchcube, High Brew and Zomato. \n\n• Directed and shot content across product, real estate and F&B categories, reducing dependency on external production \n\nvendors. \n\n• Delivered a campaign for Hermitage India generating 300K–500K organic views with zero paid boost Managed a \n\ncrossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew \n\nmembers \n\nRocktfuel Media ( Jul 2023 | Feb 2024 )   \n\nVideographer & Video Editor · Bengaluru \n\n● Directed all production stages — scripting, storyboarding, casting, location scouting and crew management — for \nmultiple brand clients over 8 months \n\n● Operated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage \n\n● Collaborated with creative teams to develop and test new content formats and shooting techniques \n\nRuia Care – Multibrand Car Workshop ( Oct 2021 | Jan 2023)             \n\nVideo Producer, Editor & Social Media Manager · Kolkata \n\n● Managed end-to-end content pipeline for Instagram and YouTube — scripting, shooting, editing, publishing — as sole \ncontent creator for a multi-brand car service company \n\n● Produced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer \nengagement \n\n● Directed pre- to post-production independently across 15 months, building full-stack production capability \n\nChefrome ( Feb 2021 | Aug 2021)  \n\nVideo Producer · Kolkata \n\n● Managed and directed production elements including scripting, storyboarding, casting and location scouting for early-\ncareer video projects \n\n● Operated professional video equipment (camera, lighting, audio) to capture high-quality footage \n\n● Collaborated with the team to brainstorm and implement new creative techniques \n\n \n\nworkwithsuraj30@gmail.com\nmailto:%20linkedin.com/in/suraj-singhrajput-4779a8227\n\n\n \n\nSKILLS \n\nTechnical Skills – Cinematography, Video Production, Motion Graphics, Photography, Pre & Post Production, Color Grading & \nCorrection. \n\nSoftware & Tools – Adobe Premiere Pro, Adobe After Effects, Adobe Creative Suite. \n\nCreative Skills – Visual Storytelling, Composition & Framing, Content Planing, Creative Direction. \n\nAI Tools – Copilot, ElevenLabs, Canva AI, Capcut AI. \n\nCamera & Equipment – DSLR Camera, Microphones, Tripods, Gimbals, Studio Lighting, Mirrorless Camera Operation. \n\nSoft Skills - Client Collaboration & Communication, Adaptability, Team Collaboration. \n\nEDUCATION \n\nUniversity of Calcutta, Kolkata ( 2019 | 2022 ) \n\nBachelor of Commerce – Accounting Honours .  \n\nLINKS  \n\nPortfolio: Google Drive (link on request) \n\nInstagram: @i_am_surajsinghrajput , @the__filmerproduction \n\nWebsite: singhsuraj.wixsite.com \n \n \n\nmailto:singhsuraj.wixsite.com",
+  "final_extracted_text": "SURAJ SINGH RAJPUT \n\nCinematographer  •  Videographer  •  Video Editor \n\nBengaluru, Karnataka, India   | +91 89611 91217 | workwithsuraj30@gmail.com  | Linkedin \n\nPROFESSIONAL SUMMARY  \n\nCinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept \n\nto final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade,  \n\nEmbassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and \n\ncorporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms, \n\nwith multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color \n\ngrading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content. \n\n \n\nWORK EXPERIENCE  \n\nWebenza  \n\nSenior Cinematographer · Bengaluru | Feb 2026 | Present     \n\n• Directed and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing \nthe entire production process from concept to final delivery. \n\n•  Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production \nwhile maintaining creative quality.  \n\n• Led multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on \ntime and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control, \ndelivering visually consistent, brand-aligned content across all campaigns. \n\nFreelance — The Filmer Production | Ongoing, alongside full-time roles  \n\nCinematographer, Videographer & Video Editor · Bengaluru  \n\n• Delivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit, \n\nZomato, Em bassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold \n\n• Shot and produced content for the Kapil Dev – Grant Thornton Invitational golf event Managed each project end-to-end \nclient briefing, shoot planning, filming, editing and final delivery — as founder of The Filmer Production  \n\nWelkin Light Media ( Apr 2024 | Jan 2026 )  \n\nCreative Head · Bengaluru \n\n• Led end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison \n\nDe Medusa, Watchcube, High Brew and Zomato. \n\n• Directed and shot content across product, real estate and F&B categories, reducing dependency on external production \n\nvendors. \n\n• Delivered a campaign for Hermitage India generating 300K–500K organic views with zero paid boost Managed a \n\ncrossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew \n\nmembers \n\nRocktfuel Media ( Jul 2023 | Feb 2024 )   \n\nVideographer & Video Editor · Bengaluru \n\n● Directed all production stages — scripting, storyboarding, casting, location scouting and crew management — for \nmultiple brand clients over 8 months \n\n● Operated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage \n\n● Collaborated with creative teams to develop and test new content formats and shooting techniques \n\nRuia Care – Multibrand Car Workshop ( Oct 2021 | Jan 2023)             \n\nVideo Producer, Editor & Social Media Manager · Kolkata \n\n● Managed end-to-end content pipeline for Instagram and YouTube — scripting, shooting, editing, publishing — as sole \ncontent creator for a multi-brand car service company \n\n● Produced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer \nengagement \n\n● Directed pre- to post-production independently across 15 months, building full-stack production capability \n\nChefrome ( Feb 2021 | Aug 2021)  \n\nVideo Producer · Kolkata \n\n● Managed and directed production elements including scripting, storyboarding, casting and location scouting for early-\ncareer video projects \n\n● Operated professional video equipment (camera, lighting, audio) to capture high-quality footage \n\n● Collaborated with the team to brainstorm and implement new creative techniques \n\n \n\nworkwithsuraj30@gmail.com\nmailto:%20linkedin.com/in/suraj-singhrajput-4779a8227\n\n\n \n\nSKILLS \n\nTechnical Skills – Cinematography, Video Production, Motion Graphics, Photography, Pre & Post Production, Color Grading & \nCorrection. \n\nSoftware & Tools – Adobe Premiere Pro, Adobe After Effects, Adobe Creative Suite. \n\nCreative Skills – Visual Storytelling, Composition & Framing, Content Planing, Creative Direction. \n\nAI Tools – Copilot, ElevenLabs, Canva AI, Capcut AI. \n\nCamera & Equipment – DSLR Camera, Microphones, Tripods, Gimbals, Studio Lighting, Mirrorless Camera Operation. \n\nSoft Skills - Client Collaboration & Communication, Adaptability, Team Collaboration. \n\nEDUCATION \n\nUniversity of Calcutta, Kolkata ( 2019 | 2022 ) \n\nBachelor of Commerce – Accounting Honours .  \n\nLINKS  \n\nPortfolio: Google Drive (link on request) \n\nInstagram: @i_am_surajsinghrajput , @the__filmerproduction \n\nWebsite: singhsuraj.wixsite.com \n \n \n\nmailto:singhsuraj.wixsite.com",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "quality": {
+    "status": "PASS",
+    "document_id": "0327eecd-403d-491f-b079-5338a677f3f3",
+    "source_tool": "tika",
+    "attempt_id": "0327eecd-403d-491f-b079-5338a677f3f3-attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 99.29,
+      "flags": [
+        "EXCESSIVE_REPEATED_CHARACTERS"
+      ],
+      "reasons": [
+        "Repeated-character corruption suspected: longest run is 13 characters, 0.0% of long lines are single-character repeats."
+      ],
+      "metrics": {
+        "char_count": 5246,
+        "word_count": 697,
+        "line_count": 141,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.166984,
+        "symbol_count": 40,
+        "symbol_ratio": 0.007625,
+        "max_repeated_char_run": 13,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 91.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 5246,
+        "word_count": 697,
+        "configured_section_count": 8,
+        "detected_count": 5,
+        "missing_count": 3,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_sections": [
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "professional summary",
+          "Skills": "skills",
+          "Work Experience": "WORKEXPERIENCE",
+          "Education": "education"
+        },
+        "conditional_rejected": [
+          {
+            "section": "Projects",
+            "alias": "portfolio",
+            "original_heading": "Portfolio: Google Drive (link on request)",
+            "line_number": 133
+          }
+        ],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "workwithsuraj30@gmail.com",
+            "confidence": 0.8
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "PROFESSIONAL SUMMARY",
+            "detection_method": "heading",
+            "line_number": 7,
+            "evidence": "PROFESSIONAL SUMMARY",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "SKILLS",
+            "detection_method": "heading",
+            "line_number": 110,
+            "evidence": "SKILLS",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "WORK EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 23,
+            "evidence": "WORK EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATION",
+            "detection_method": "heading",
+            "line_number": 125,
+            "evidence": "EDUCATION",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Responsibilities": "missing",
+          "Projects": "missing",
+          "Certifications": "missing"
+        },
+        "extraction_quality": 99.29
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_sections": [
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 5246,
+        "word_count": 697,
+        "line_count": 141,
+        "non_empty_line_count": 72,
+        "short_line_count": 14,
+        "short_line_ratio": 0.194444,
+        "fragmented_line_count": 9,
+        "fragmented_line_ratio": 0.125,
+        "mean_line_length": 69.49,
+        "median_line_length": 59.5,
+        "line_length_stdev": 41.33,
+        "line_length_cv": 0.594829,
+        "broken_sentence_count": 18,
+        "broken_sentence_ratio": 0.253521,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Selected 'tika' with quality score 98.5 (tie among ['tika', 'docling'] broken by configured tie-break order ['tika', 'pymupdf', 'docling']).",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 14496.22,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": 48.66,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 17314.93,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=98.5, pymupdf=96.8, docling=98.5",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected 'tika' with quality score 98.5 (tie among ['tika', 'docling'] broken by configured tie-break order ['tika', 'pymupdf', 'docling']).",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Tika text normalized: 5246 → 5126 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 32906.81,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 50264.5,
+      "message": "Muse AI produced validated Resume JSON from the Tika extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 50264.5,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "SURAJ SINGH RAJPUT \n\nCinematographer  •  Videographer  •  Video Editor \n\nBengaluru, Karnataka, India   | +91 89611 91217 | workwithsuraj30@gmail.com  | Linkedin \n\nPROFESSIONAL SUMMARY  \n\nCinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept \n\nto final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade,  \n\nEmbassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and \n\ncorporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms, \n\nwith multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color \n\ngrading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content. \n\n \n\nWORK EXPERIENCE  \n\nWebenza  \n\nSenior Cinematographer · Bengaluru | Feb 2026 | Present     \n\n• Directed and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing \nthe entire production process from concept to final delivery. \n\n•  Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production \nwhile maintaining creative quality.  \n\n• Led multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on \ntime and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control, \ndelivering visually consistent, brand-aligned content across all campaigns. \n\nFreelance — The Filmer Production | Ongoing, alongside full-time roles  \n\nCinematographer, Videographer & Video Editor · Bengaluru  \n\n• Delivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit, \n\nZomato, Em bassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold \n\n• Shot and produced content for the Kapil Dev – Grant Thornton Invitational golf event Managed each project end-to-end \nclient briefing, shoot planning, filming, editing and final delivery — as founder of The Filmer Production  \n\nWelkin Light Media ( Apr 2024 | Jan 2026 )  \n\nCreative Head · Bengaluru \n\n• Led end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison \n\nDe Medusa, Watchcube, High Brew and Zomato. \n\n• Directed and shot content across product, real estate and F&B categories, reducing dependency on external production \n\nvendors. \n\n• Delivered a campaign for Hermitage India generating 300K–500K organic views with zero paid boost Managed a \n\ncrossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew \n\nmembers \n\nRocktfuel Media ( Jul 2023 | Feb 2024 )   \n\nVideographer & Video Editor · Bengaluru \n\n● Directed all production stages — scripting, storyboarding, casting, location scouting and crew management — for \nmultiple brand clients over 8 months \n\n● Operated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage \n\n● Collaborated with creative teams to develop and test new content formats and shooting techniques \n\nRuia Care – Multibrand Car Workshop ( Oct 2021 | Jan 2023)             \n\nVideo Producer, Editor & Social Media Manager · Kolkata \n\n● Managed end-to-end content pipeline for Instagram and YouTube — scripting, shooting, editing, publishing — as sole \ncontent creator for a multi-brand car service company \n\n● Produced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer \nengagement \n\n● Directed pre- to post-production independently across 15 months, building full-stack production capability \n\nChefrome ( Feb 2021 | Aug 2021)  \n\nVideo Producer · Kolkata \n\n● Managed and directed production elements including scripting, storyboarding, casting and location scouting for early-\ncareer video projects \n\n● Operated professional video equipment (camera, lighting, audio) to capture high-quality footage \n\n● Collaborated with the team to brainstorm and implement new creative techniques \n\n \n\nworkwithsuraj30@gmail.com\nmailto:%20linkedin.com/in/suraj-singhrajput-4779a8227\n\n\n \n\nSKILLS \n\nTechnical Skills – Cinematography, Video Production, Motion Graphics, Photography, Pre & Post Production, Color Grading & \nCorrection. \n\nSoftware & Tools – Adobe Premiere Pro, Adobe After Effects, Adobe Creative Suite. \n\nCreative Skills – Visual Storytelling, Composition & Framing, Content Planing, Creative Direction. \n\nAI Tools – Copilot, ElevenLabs, Canva AI, Capcut AI. \n\nCamera & Equipment – DSLR Camera, Microphones, Tripods, Gimbals, Studio Lighting, Mirrorless Camera Operation. \n\nSoft Skills - Client Collaboration & Communication, Adaptability, Team Collaboration. \n\nEDUCATION \n\nUniversity of Calcutta, Kolkata ( 2019 | 2022 ) \n\nBachelor of Commerce – Accounting Honours .  \n\nLINKS  \n\nPortfolio: Google Drive (link on request) \n\nInstagram: @i_am_surajsinghrajput , @the__filmerproduction \n\nWebsite: singhsuraj.wixsite.com \n \n \n\nmailto:singhsuraj.wixsite.com",
+    "normalized_text": "SURAJ SINGH RAJPUT\n\nCinematographer • Videographer • Video Editor\n\nBengaluru, Karnataka, India | +91 89611 91217 | workwithsuraj30@gmail.com | Linkedin\n\nPROFESSIONAL SUMMARY\n\nCinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept\n\nto final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade,\n\nEmbassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and\n\ncorporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms,\n\nwith multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color\n\ngrading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content.\n\nWORK EXPERIENCE\n\nWebenza\n\nSenior Cinematographer · Bengaluru | Feb 2026 | Present\n\n• Directed and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing\nthe entire production process from concept to final delivery.\n\n• Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production\nwhile maintaining creative quality.\n\n• Led multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on\ntime and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control,\ndelivering visually consistent, brand-aligned content across all campaigns.\n\nFreelance — The Filmer Production | Ongoing, alongside full-time roles\n\nCinematographer, Videographer & Video Editor · Bengaluru\n\n• Delivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit,\n\nZomato, Em bassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold\n\n• Shot and produced content for the Kapil Dev – Grant Thornton Invitational golf event Managed each project end-to-end\nclient briefing, shoot planning, filming, editing and final delivery — as founder of The Filmer Production\n\nWelkin Light Media ( Apr 2024 | Jan 2026 )\n\nCreative Head · Bengaluru\n\n• Led end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison\n\nDe Medusa, Watchcube, High Brew and Zomato.\n\n• Directed and shot content across product, real estate and F&B categories, reducing dependency on external production\n\nvendors.\n\n• Delivered a campaign for Hermitage India generating 300K–500K organic views with zero paid boost Managed a\n\ncrossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew\n\nmembers\n\nRocktfuel Media ( Jul 2023 | Feb 2024 )\n\nVideographer & Video Editor · Bengaluru\n\n● Directed all production stages — scripting, storyboarding, casting, location scouting and crew management — for\nmultiple brand clients over 8 months\n\n● Operated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage\n\n● Collaborated with creative teams to develop and test new content formats and shooting techniques\n\nRuia Care – Multibrand Car Workshop ( Oct 2021 | Jan 2023)\n\nVideo Producer, Editor & Social Media Manager · Kolkata\n\n● Managed end-to-end content pipeline for Instagram and YouTube — scripting, shooting, editing, publishing — as sole\ncontent creator for a multi-brand car service company\n\n● Produced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer\nengagement\n\n● Directed pre- to post-production independently across 15 months, building full-stack production capability\n\nChefrome ( Feb 2021 | Aug 2021)\n\nVideo Producer · Kolkata\n\n● Managed and directed production elements including scripting, storyboarding, casting and location scouting for early-\ncareer video projects\n\n● Operated professional video equipment (camera, lighting, audio) to capture high-quality footage\n\n● Collaborated with the team to brainstorm and implement new creative techniques\n\nworkwithsuraj30@gmail.com\nmailto:%20linkedin.com/in/suraj-singhrajput-4779a8227\n\nSKILLS\n\nTechnical Skills – Cinematography, Video Production, Motion Graphics, Photography, Pre & Post Production, Color Grading &\nCorrection.\n\nSoftware & Tools – Adobe Premiere Pro, Adobe After Effects, Adobe Creative Suite.\n\nCreative Skills – Visual Storytelling, Composition & Framing, Content Planing, Creative Direction.\n\nAI Tools – Copilot, ElevenLabs, Canva AI, Capcut AI.\n\nCamera & Equipment – DSLR Camera, Microphones, Tripods, Gimbals, Studio Lighting, Mirrorless Camera Operation.\n\nSoft Skills - Client Collaboration & Communication, Adaptability, Team Collaboration.\n\nEDUCATION\n\nUniversity of Calcutta, Kolkata ( 2019 | 2022 )\n\nBachelor of Commerce – Accounting Honours .\n\nLINKS\n\nPortfolio: Google Drive (link on request)\n\nInstagram: @i_am_surajsinghrajput , @the__filmerproduction\n\nWebsite: singhsuraj.wixsite.com\n\nmailto:singhsuraj.wixsite.com",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "original_chars": 5246,
+    "normalized_chars": 5126,
+    "original_estimated_tokens": 1312,
+    "normalized_estimated_tokens": 1282,
+    "estimated_reduction_percent": 2.3
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 32906.81,
+      "input_tokens": 1942,
+      "output_tokens": 4802,
+      "total_tokens": 6744,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1942,
+    "output_tokens": 4802,
+    "total_tokens": 6744,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 32906.81,
+    "usage": {
+      "completion_tokens": 4802,
+      "prompt_tokens": 1942,
+      "total_tokens": 6744,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3514
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 5246,
+      "normalized_chars": 5126,
+      "estimated_reduction_percent": 2.3,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed",
+        "lines_trimmed",
+        "excessive_blank_lines_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "tika",
+  "selected_quality_score": 98.5,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 98.5,
+      "status": "success",
+      "word_count": 697,
+      "char_count": 5246,
+      "meaningful_char_count": 4370,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 89.7,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary",
+          "projects"
+        ]
+      },
+      "structure": {
+        "heading_count": 4,
+        "paragraph_count": 61,
+        "bullet_count": 8
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.8967,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 1.0,
+        "structure": 1.0
+      }
+    },
+    "pymupdf": {
+      "extractor": "pymupdf",
+      "quality_score": 96.8,
+      "status": "success",
+      "word_count": 694,
+      "char_count": 5080,
+      "meaningful_char_count": 4263,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.1744,
+      "readability_score": 90.0,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary",
+          "projects"
+        ]
+      },
+      "structure": {
+        "heading_count": 4,
+        "paragraph_count": 7,
+        "bullet_count": 8
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.8997,
+        "cleanliness": 1.0,
+        "non_duplication": 0.8256,
+        "completeness": 1.0,
+        "structure": 1.0
+      }
+    },
+    "docling": {
+      "extractor": "docling",
+      "quality_score": 98.5,
+      "status": "success",
+      "word_count": 693,
+      "char_count": 4991,
+      "meaningful_char_count": 4262,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 90.0,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary",
+          "projects"
+        ]
+      },
+      "structure": {
+        "heading_count": 4,
+        "paragraph_count": 38,
+        "bullet_count": 17
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.8996,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 1.0,
+        "structure": 1.0
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 5246,
+    "normalized_chars": 5126,
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed",
+      "lines_trimmed",
+      "excessive_blank_lines_collapsed"
+    ],
+    "error": null,
+    "original_text": "SURAJ SINGH RAJPUT \n\nCinematographer  •  Videographer  •  Video Editor \n\nBengaluru, Karnataka, India   | +91 89611 91217 | workwithsuraj30@gmail.com  | Linkedin \n\nPROFESSIONAL SUMMARY  \n\nCinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept \n\nto final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade,  \n\nEmbassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and \n\ncorporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms, \n\nwith multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color \n\ngrading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content. \n\n \n\nWORK EXPERIENCE  \n\nWebenza  \n\nSenior Cinematographer · Bengaluru | Feb 2026 | Present     \n\n• Directed and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing \nthe entire production process from concept to final delivery. \n\n•  Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production \nwhile maintaining creative quality.  \n\n• Led multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on \ntime and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control, \ndelivering visually consistent, brand-aligned content across all campaigns. \n\nFreelance — The Filmer Production | Ongoing, alongside full-time roles  \n\nCinematographer, Videographer & Video Editor · Bengaluru  \n\n• Delivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit, \n\nZomato, Em bassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold \n\n• Shot and produced content for the Kapil Dev – Grant Thornton Invitational golf event Managed each project end-to-end \nclient briefing, shoot planning, filming, editing and final delivery — as founder of The Filmer Production  \n\nWelkin Light Media ( Apr 2024 | Jan 2026 )  \n\nCreative Head · Bengaluru \n\n• Led end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison \n\nDe Medusa, Watchcube, High Brew and Zomato. \n\n• Directed and shot content across product, real estate and F&B categories, reducing dependency on external production \n\nvendors. \n\n• Delivered a campaign for Hermitage India generating 300K–500K organic views with zero paid boost Managed a \n\ncrossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew \n\nmembers \n\nRocktfuel Media ( Jul 2023 | Feb 2024 )   \n\nVideographer & Video Editor · Bengaluru \n\n● Directed all production stages — scripting, storyboarding, casting, location scouting and crew management — for \nmultiple brand clients over 8 months \n\n● Operated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage \n\n● Collaborated with creative teams to develop and test new content formats and shooting techniques \n\nRuia Care – Multibrand Car Workshop ( Oct 2021 | Jan 2023)             \n\nVideo Producer, Editor & Social Media Manager · Kolkata \n\n● Managed end-to-end content pipeline for Instagram and YouTube — scripting, shooting, editing, publishing — as sole \ncontent creator for a multi-brand car service company \n\n● Produced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer \nengagement \n\n● Directed pre- to post-production independently across 15 months, building full-stack production capability \n\nChefrome ( Feb 2021 | Aug 2021)  \n\nVideo Producer · Kolkata \n\n● Managed and directed production elements including scripting, storyboarding, casting and location scouting for early-\ncareer video projects \n\n● Operated professional video equipment (camera, lighting, audio) to capture high-quality footage \n\n● Collaborated with the team to brainstorm and implement new creative techniques \n\n \n\nworkwithsuraj30@gmail.com\nmailto:%20linkedin.com/in/suraj-singhrajput-4779a8227\n\n\n \n\nSKILLS \n\nTechnical Skills – Cinematography, Video Production, Motion Graphics, Photography, Pre & Post Production, Color Grading & \nCorrection. \n\nSoftware & Tools – Adobe Premiere Pro, Adobe After Effects, Adobe Creative Suite. \n\nCreative Skills – Visual Storytelling, Composition & Framing, Content Planing, Creative Direction. \n\nAI Tools – Copilot, ElevenLabs, Canva AI, Capcut AI. \n\nCamera & Equipment – DSLR Camera, Microphones, Tripods, Gimbals, Studio Lighting, Mirrorless Camera Operation. \n\nSoft Skills - Client Collaboration & Communication, Adaptability, Team Collaboration. \n\nEDUCATION \n\nUniversity of Calcutta, Kolkata ( 2019 | 2022 ) \n\nBachelor of Commerce – Accounting Honours .  \n\nLINKS  \n\nPortfolio: Google Drive (link on request) \n\nInstagram: @i_am_surajsinghrajput , @the__filmerproduction \n\nWebsite: singhsuraj.wixsite.com \n \n \n\nmailto:singhsuraj.wixsite.com",
+    "normalized_text": "SURAJ SINGH RAJPUT\n\nCinematographer • Videographer • Video Editor\n\nBengaluru, Karnataka, India | +91 89611 91217 | workwithsuraj30@gmail.com | Linkedin\n\nPROFESSIONAL SUMMARY\n\nCinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept\n\nto final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade,\n\nEmbassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and\n\ncorporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms,\n\nwith multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color\n\ngrading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content.\n\nWORK EXPERIENCE\n\nWebenza\n\nSenior Cinematographer · Bengaluru | Feb 2026 | Present\n\n• Directed and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing\nthe entire production process from concept to final delivery.\n\n• Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production\nwhile maintaining creative quality.\n\n• Led multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on\ntime and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control,\ndelivering visually consistent, brand-aligned content across all campaigns.\n\nFreelance — The Filmer Production | Ongoing, alongside full-time roles\n\nCinematographer, Videographer & Video Editor · Bengaluru\n\n• Delivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit,\n\nZomato, Em bassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold\n\n• Shot and produced content for the Kapil Dev – Grant Thornton Invitational golf event Managed each project end-to-end\nclient briefing, shoot planning, filming, editing and final delivery — as founder of The Filmer Production\n\nWelkin Light Media ( Apr 2024 | Jan 2026 )\n\nCreative Head · Bengaluru\n\n• Led end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison\n\nDe Medusa, Watchcube, High Brew and Zomato.\n\n• Directed and shot content across product, real estate and F&B categories, reducing dependency on external production\n\nvendors.\n\n• Delivered a campaign for Hermitage India generating 300K–500K organic views with zero paid boost Managed a\n\ncrossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew\n\nmembers\n\nRocktfuel Media ( Jul 2023 | Feb 2024 )\n\nVideographer & Video Editor · Bengaluru\n\n● Directed all production stages — scripting, storyboarding, casting, location scouting and crew management — for\nmultiple brand clients over 8 months\n\n● Operated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage\n\n● Collaborated with creative teams to develop and test new content formats and shooting techniques\n\nRuia Care – Multibrand Car Workshop ( Oct 2021 | Jan 2023)\n\nVideo Producer, Editor & Social Media Manager · Kolkata\n\n● Managed end-to-end content pipeline for Instagram and YouTube — scripting, shooting, editing, publishing — as sole\ncontent creator for a multi-brand car service company\n\n● Produced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer\nengagement\n\n● Directed pre- to post-production independently across 15 months, building full-stack production capability\n\nChefrome ( Feb 2021 | Aug 2021)\n\nVideo Producer · Kolkata\n\n● Managed and directed production elements including scripting, storyboarding, casting and location scouting for early-\ncareer video projects\n\n● Operated professional video equipment (camera, lighting, audio) to capture high-quality footage\n\n● Collaborated with the team to brainstorm and implement new creative techniques\n\nworkwithsuraj30@gmail.com\nmailto:%20linkedin.com/in/suraj-singhrajput-4779a8227\n\nSKILLS\n\nTechnical Skills – Cinematography, Video Production, Motion Graphics, Photography, Pre & Post Production, Color Grading &\nCorrection.\n\nSoftware & Tools – Adobe Premiere Pro, Adobe After Effects, Adobe Creative Suite.\n\nCreative Skills – Visual Storytelling, Composition & Framing, Content Planing, Creative Direction.\n\nAI Tools – Copilot, ElevenLabs, Canva AI, Capcut AI.\n\nCamera & Equipment – DSLR Camera, Microphones, Tripods, Gimbals, Studio Lighting, Mirrorless Camera Operation.\n\nSoft Skills - Client Collaboration & Communication, Adaptability, Team Collaboration.\n\nEDUCATION\n\nUniversity of Calcutta, Kolkata ( 2019 | 2022 )\n\nBachelor of Commerce – Accounting Honours .\n\nLINKS\n\nPortfolio: Google Drive (link on request)\n\nInstagram: @i_am_surajsinghrajput , @the__filmerproduction\n\nWebsite: singhsuraj.wixsite.com\n\nmailto:singhsuraj.wixsite.com"
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "SURAJ SINGH RAJPUT",
+      "email": "workwithsuraj30@gmail.com",
+      "phone": "+91 89611 91217",
+      "location": "Bengaluru, Karnataka, India",
+      "summary": "Cinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept to final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade, Embassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and corporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms, with multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color grading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content.",
+      "skills": {
+        "technical_skills": [
+          "Cinematography",
+          "Video Production",
+          "Motion Graphics",
+          "Photography",
+          "Pre & Post Production",
+          "Color Grading & Correction",
+          "Visual Storytelling",
+          "Composition & Framing",
+          "Content Planing",
+          "Creative Direction"
+        ],
+        "soft_skills": [
+          "Client Collaboration & Communication",
+          "Adaptability",
+          "Team Collaboration"
+        ],
+        "tools": [
+          "Adobe Premiere Pro",
+          "Adobe After Effects",
+          "Adobe Creative Suite",
+          "Copilot",
+          "ElevenLabs",
+          "Canva AI",
+          "Capcut AI",
+          "DSLR Camera",
+          "Microphones",
+          "Tripods",
+          "Gimbals",
+          "Studio Lighting",
+          "Mirrorless Camera Operation"
+        ],
+        "taxonomy_skills": [],
+        "other_skills": []
+      },
+      "experience": [
+        {
+          "title": "Senior Cinematographer",
+          "company": "Webenza",
+          "location": "Bengaluru",
+          "start_date": "Feb 2026",
+          "end_date": "Present",
+          "highlights": [
+            "Directed and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing the entire production process from concept to final delivery.",
+            "Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production while maintaining creative quality.",
+            "Led multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on time and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control, delivering visually consistent, brand-aligned content across all campaigns."
+          ]
+        },
+        {
+          "title": "Cinematographer, Videographer & Video Editor",
+          "company": "The Filmer Production",
+          "location": "Bengaluru",
+          "start_date": "",
+          "end_date": "Present",
+          "highlights": [
+            "Delivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit, Zomato, Embassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold",
+            "Shot and produced content for the Kapil Dev - Grant Thornton Invitational golf event",
+            "Managed each project end-to-end - client briefing, shoot planning, filming, editing and final delivery - as founder of The Filmer Production"
+          ]
+        },
+        {
+          "title": "Creative Head",
+          "company": "Welkin Light Media",
+          "location": "Bengaluru",
+          "start_date": "Apr 2024",
+          "end_date": "Jan 2026",
+          "highlights": [
+            "Led end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison De Medusa, Watchcube, High Brew and Zomato.",
+            "Directed and shot content across product, real estate and F&B categories, reducing dependency on external production vendors.",
+            "Delivered a campaign for Hermitage India generating 300K-500K organic views with zero paid boost",
+            "Managed a crossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew members"
+          ]
+        },
+        {
+          "title": "Videographer & Video Editor",
+          "company": "Rocktfuel Media",
+          "location": "Bengaluru",
+          "start_date": "Jul 2023",
+          "end_date": "Feb 2024",
+          "highlights": [
+            "Directed all production stages — scripting, storyboarding, casting, location scouting and crew management — for multiple brand clients over 8 months",
+            "Operated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage",
+            "Collaborated with creative teams to develop and test new content formats and shooting techniques"
+          ]
+        },
+        {
+          "title": "Video Producer, Editor & Social Media Manager",
+          "company": "Ruia Care - Multibrand Car Workshop",
+          "location": "Kolkata",
+          "start_date": "Oct 2021",
+          "end_date": "Jan 2023",
+          "highlights": [
+            "Managed end-to-end content pipeline for Instagram and YouTube — scripting, shooting, editing, publishing — as sole content creator for a multi-brand car service company",
+            "Produced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer engagement",
+            "Directed pre- to post-production independently across 15 months, building full-stack production capability"
+          ]
+        },
+        {
+          "title": "Video Producer",
+          "company": "Chefrome",
+          "location": "Kolkata",
+          "start_date": "Feb 2021",
+          "end_date": "Aug 2021",
+          "highlights": [
+            "Managed and directed production elements including scripting, storyboarding, casting and location scouting for early-career video projects",
+            "Operated professional video equipment (camera, lighting, audio) to capture high-quality footage",
+            "Collaborated with the team to brainstorm and implement new creative techniques"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "degree": "Bachelor of Commerce – Accounting Honours",
+          "institution": "University of Calcutta",
+          "location": "Kolkata",
+          "start_date": "2019",
+          "end_date": "2022"
+        }
+      ],
+      "certifications": [],
+      "languages": [],
+      "links": [
+        "linkedin.com/in/suraj-singhrajput-4779a8227",
+        "singhsuraj.wixsite.com"
+      ]
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 32906.81,
+    "usage": {
+      "completion_tokens": 4802,
+      "prompt_tokens": 1942,
+      "total_tokens": 6744,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3514
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "SURAJ SINGH RAJPUT",
+    "email": "workwithsuraj30@gmail.com",
+    "phone": "+91 89611 91217",
+    "location": "Bengaluru, Karnataka, India",
+    "summary": "Cinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept to final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade, Embassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and corporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms, with multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color grading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content.",
+    "skills": {
+      "technical_skills": [
+        "Cinematography",
+        "Video Production",
+        "Motion Graphics",
+        "Photography",
+        "Pre & Post Production",
+        "Color Grading & Correction",
+        "Visual Storytelling",
+        "Composition & Framing",
+        "Content Planing",
+        "Creative Direction"
+      ],
+      "soft_skills": [
+        "Client Collaboration & Communication",
+        "Adaptability",
+        "Team Collaboration"
+      ],
+      "tools": [
+        "Adobe Premiere Pro",
+        "Adobe After Effects",
+        "Adobe Creative Suite",
+        "Copilot",
+        "ElevenLabs",
+        "Canva AI",
+        "Capcut AI",
+        "DSLR Camera",
+        "Microphones",
+        "Tripods",
+        "Gimbals",
+        "Studio Lighting",
+        "Mirrorless Camera Operation"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Senior Cinematographer",
+        "company": "Webenza",
+        "location": "Bengaluru",
+        "start_date": "Feb 2026",
+        "end_date": "Present",
+        "highlights": [
+          "Directed and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing the entire production process from concept to final delivery.",
+          "Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production while maintaining creative quality.",
+          "Led multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on time and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control, delivering visually consistent, brand-aligned content across all campaigns."
+        ]
+      },
+      {
+        "title": "Cinematographer, Videographer & Video Editor",
+        "company": "The Filmer Production",
+        "location": "Bengaluru",
+        "start_date": "",
+        "end_date": "Present",
+        "highlights": [
+          "Delivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit, Zomato, Embassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold",
+          "Shot and produced content for the Kapil Dev - Grant Thornton Invitational golf event",
+          "Managed each project end-to-end - client briefing, shoot planning, filming, editing and final delivery - as founder of The Filmer Production"
+        ]
+      },
+      {
+        "title": "Creative Head",
+        "company": "Welkin Light Media",
+        "location": "Bengaluru",
+        "start_date": "Apr 2024",
+        "end_date": "Jan 2026",
+        "highlights": [
+          "Led end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison De Medusa, Watchcube, High Brew and Zomato.",
+          "Directed and shot content across product, real estate and F&B categories, reducing dependency on external production vendors.",
+          "Delivered a campaign for Hermitage India generating 300K-500K organic views with zero paid boost",
+          "Managed a crossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew members"
+        ]
+      },
+      {
+        "title": "Videographer & Video Editor",
+        "company": "Rocktfuel Media",
+        "location": "Bengaluru",
+        "start_date": "Jul 2023",
+        "end_date": "Feb 2024",
+        "highlights": [
+          "Directed all production stages — scripting, storyboarding, casting, location scouting and crew management — for multiple brand clients over 8 months",
+          "Operated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage",
+          "Collaborated with creative teams to develop and test new content formats and shooting techniques"
+        ]
+      },
+      {
+        "title": "Video Producer, Editor & Social Media Manager",
+        "company": "Ruia Care - Multibrand Car Workshop",
+        "location": "Kolkata",
+        "start_date": "Oct 2021",
+        "end_date": "Jan 2023",
+        "highlights": [
+          "Managed end-to-end content pipeline for Instagram and YouTube — scripting, shooting, editing, publishing — as sole content creator for a multi-brand car service company",
+          "Produced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer engagement",
+          "Directed pre- to post-production independently across 15 months, building full-stack production capability"
+        ]
+      },
+      {
+        "title": "Video Producer",
+        "company": "Chefrome",
+        "location": "Kolkata",
+        "start_date": "Feb 2021",
+        "end_date": "Aug 2021",
+        "highlights": [
+          "Managed and directed production elements including scripting, storyboarding, casting and location scouting for early-career video projects",
+          "Operated professional video equipment (camera, lighting, audio) to capture high-quality footage",
+          "Collaborated with the team to brainstorm and implement new creative techniques"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Commerce – Accounting Honours",
+        "institution": "University of Calcutta",
+        "location": "Kolkata",
+        "start_date": "2019",
+        "end_date": "2022"
+      }
+    ],
+    "certifications": [],
+    "languages": [],
+    "links": [
+      "linkedin.com/in/suraj-singhrajput-4779a8227",
+      "singhsuraj.wixsite.com"
+    ]
+  },
+  "resume_json": {
+    "full_name": "SURAJ SINGH RAJPUT",
+    "email": "workwithsuraj30@gmail.com",
+    "phone": "+91 89611 91217",
+    "location": "Bengaluru, Karnataka, India",
+    "summary": "Cinematographer, videographer, and video editor with 5+ years of experience creating high-quality visual content from concept to final delivery. Worked with leading brands including Flipkart, Samsung, Zomato, TVS, Gujarat Titans, Rare Rabbit, Brigade, Embassy, Orion Malls, Ferrero, Fhenix India, Grant Thornton, and many more across lifestyle, real estate, sports, D2C, and corporate sectors. Produced 100+ commercial and social-first videos, generating 4 million+ organic views across brand platforms, with multiple reels individually surpassing 300K+ views. Skilled in cinematography, multicamera production, video editing, color grading, motion graphics, and AI-powered creative workflows, with a strong eye for visual storytelling and branddriven content.",
+    "skills": {
+      "technical_skills": [
+        "Cinematography",
+        "Video Production",
+        "Motion Graphics",
+        "Photography",
+        "Pre & Post Production",
+        "Color Grading & Correction",
+        "Visual Storytelling",
+        "Composition & Framing",
+        "Content Planing",
+        "Creative Direction"
+      ],
+      "soft_skills": [
+        "Client Collaboration & Communication",
+        "Adaptability",
+        "Team Collaboration"
+      ],
+      "tools": [
+        "Adobe Premiere Pro",
+        "Adobe After Effects",
+        "Adobe Creative Suite",
+        "Copilot",
+        "ElevenLabs",
+        "Canva AI",
+        "Capcut AI",
+        "DSLR Camera",
+        "Microphones",
+        "Tripods",
+        "Gimbals",
+        "Studio Lighting",
+        "Mirrorless Camera Operation"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Senior Cinematographer",
+        "company": "Webenza",
+        "location": "Bengaluru",
+        "start_date": "Feb 2026",
+        "end_date": "Present",
+        "highlights": [
+          "Directed and shot 50+ commercial video campaigns for brands including Orion Malls and The Bay at Ecoworld, managing the entire production process from concept to final delivery.",
+          "Created AI-powered marketing videos for brands such as Airtel and Dr. Fixit using AI workflows to speed up production while maintaining creative quality.",
+          "Led multi-camera productions, coordinating with directors, producers, clients, and on-set crews to deliver projects on time and in line with brand objectives. Ensured high standards in video editing, color grading, and final quality control, delivering visually consistent, brand-aligned content across all campaigns."
+        ]
+      },
+      {
+        "title": "Cinematographer, Videographer & Video Editor",
+        "company": "The Filmer Production",
+        "location": "Bengaluru",
+        "start_date": "",
+        "end_date": "Present",
+        "highlights": [
+          "Delivered independent video and photography projects for brands and organizations including Samsung, Rare Rabbit, Zomato, Embassy, Gujarat Titans, Phenix India, TVS, Ferrera, Ajanta and My Digi Gold",
+          "Shot and produced content for the Kapil Dev - Grant Thornton Invitational golf event",
+          "Managed each project end-to-end - client briefing, shoot planning, filming, editing and final delivery - as founder of The Filmer Production"
+        ]
+      },
+      {
+        "title": "Creative Head",
+        "company": "Welkin Light Media",
+        "location": "Bengaluru",
+        "start_date": "Apr 2024",
+        "end_date": "Jan 2026",
+        "highlights": [
+          "Led end-to-end creative strategy for 100+ video campaigns across brand accounts including Rare Rabbit, Brigade, Maison De Medusa, Watchcube, High Brew and Zomato.",
+          "Directed and shot content across product, real estate and F&B categories, reducing dependency on external production vendors.",
+          "Delivered a campaign for Hermitage India generating 300K-500K organic views with zero paid boost",
+          "Managed a crossfunctional workflow spanning shooting, editing, motion graphics and graphic design; mentored junior crew members"
+        ]
+      },
+      {
+        "title": "Videographer & Video Editor",
+        "company": "Rocktfuel Media",
+        "location": "Bengaluru",
+        "start_date": "Jul 2023",
+        "end_date": "Feb 2024",
+        "highlights": [
+          "Directed all production stages — scripting, storyboarding, casting, location scouting and crew management — for multiple brand clients over 8 months",
+          "Operated professional video gear (cameras, lighting, audio) to deliver broadcast-quality footage",
+          "Collaborated with creative teams to develop and test new content formats and shooting techniques"
+        ]
+      },
+      {
+        "title": "Video Producer, Editor & Social Media Manager",
+        "company": "Ruia Care - Multibrand Car Workshop",
+        "location": "Kolkata",
+        "start_date": "Oct 2021",
+        "end_date": "Jan 2023",
+        "highlights": [
+          "Managed end-to-end content pipeline for Instagram and YouTube — scripting, shooting, editing, publishing — as sole content creator for a multi-brand car service company",
+          "Produced videos and photography showcasing vehicles and service highlights, enhancing brand visibility and customer engagement",
+          "Directed pre- to post-production independently across 15 months, building full-stack production capability"
+        ]
+      },
+      {
+        "title": "Video Producer",
+        "company": "Chefrome",
+        "location": "Kolkata",
+        "start_date": "Feb 2021",
+        "end_date": "Aug 2021",
+        "highlights": [
+          "Managed and directed production elements including scripting, storyboarding, casting and location scouting for early-career video projects",
+          "Operated professional video equipment (camera, lighting, audio) to capture high-quality footage",
+          "Collaborated with the team to brainstorm and implement new creative techniques"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Commerce – Accounting Honours",
+        "institution": "University of Calcutta",
+        "location": "Kolkata",
+        "start_date": "2019",
+        "end_date": "2022"
+      }
+    ],
+    "certifications": [],
+    "languages": [],
+    "links": [
+      "linkedin.com/in/suraj-singhrajput-4779a8227",
+      "singhsuraj.wixsite.com"
+    ]
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 17.3338,
+    "quality_seconds": 0.0193,
+    "normalization_seconds": 0.001,
+    "llm_seconds": 32.9103,
+    "total_seconds": 50.2645
+  },
+  "_stored_name": "0327eecd-403d-491f-b079-5338a677f3f3_SHJ-5329_SHC-363873.pdf"
+}

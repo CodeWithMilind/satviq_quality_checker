@@ -456,14 +456,16 @@ def test_below_threshold_no_llm_call(dummy_pdf):
     assert "threshold" in (result["selection_reason"] or "").lower()
 
 
-# Extra: extractor timeout via run_extractors
-def test_extractor_timeout_status():
+# Extra: no extractor timeout — a slow extractor is waited out
+def test_extractor_slow_is_awaited_no_timeout():
     slow = FakeExtractor("tika", GOOD_TEXT, delay=1.5)
     fast = FakeExtractor("pymupdf", GOOD_TEXT)
-    results = run_extractors("ignored.pdf", extractors={"tika": slow, "pymupdf": fast, "docling": FakeExtractor("docling", GOOD_TEXT)}, timeout_seconds=0.2)
+    results = run_extractors("ignored.pdf", extractors={"tika": slow, "pymupdf": fast, "docling": FakeExtractor("docling", GOOD_TEXT)})
     by = {r["extractor"]: r for r in results}
-    assert by["tika"]["status"] == "timeout"
-    assert "timed out" in by["tika"]["error"].lower() or "timeout" in by["tika"]["error"].lower()
+    # Timeouts were removed: the 1.5s extractor completes normally
+    # instead of being cut off with a "timeout" status.
+    assert by["tika"]["status"] == "success"
+    assert by["tika"]["extracted_text"] == GOOD_TEXT
     assert by["pymupdf"]["status"] == "success"
     # canonical order preserved
     assert [r["extractor"] for r in results] == ["tika", "pymupdf", "docling"]
@@ -475,7 +477,7 @@ def test_callable_extractor_support(tmp_path):
     p.write_bytes(b"%PDF")
     def my_callable(path):
         return {"text": GOOD_TEXT, "success": True, "metadata": {}, "page_count": 1, "page_texts": [GOOD_TEXT]}
-    results = run_extractors(p, extractors={"tika": my_callable, "pymupdf": FakeExtractor("pymupdf", GOOD_TEXT), "docling": FakeExtractor("docling", GOOD_TEXT)}, timeout_seconds=10)
+    results = run_extractors(p, extractors={"tika": my_callable, "pymupdf": FakeExtractor("pymupdf", GOOD_TEXT), "docling": FakeExtractor("docling", GOOD_TEXT)})
     assert results[0]["status"] == "success"
     assert results[0]["extracted_text"] == GOOD_TEXT
 

@@ -37,6 +37,10 @@ sections:
       - "contact details"
       - "personal information"
       - "personal details"
+      - "personalinformation"
+      - "contactdetails"
+      - "permanent residence"
+      - "permanent address"
     patterns:
       - "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"   # email
       - "(\\+?\\d[\\d\\s().-]{7,}\\d)"                       # phone-like
@@ -51,6 +55,7 @@ sections:
       - "profile summary"
       - "objective"
       - "career objective"
+      - "careerobjective"
       - "about me"
       - "career summary"                       # [cv100] x2
       - "career objectives"                    # [cv100] x2
@@ -68,6 +73,13 @@ sections:
     aliases:
       - "skills"
       - "technical skills"
+      - "technicalskills"
+      - "handling equipment"
+      - "handlingequipment"
+      - "equipment handled"
+      - "machinery handled"
+      - "industrial equipment"
+      - "technical expertise"
       - "core competencies"
       - "core skills"
       - "technologies"
@@ -111,6 +123,7 @@ sections:
     importance: "recommended"
     aliases:
       - "experience"
+      - "WORKEXPERIENCE"
       - "work experience"
       - "professional experience"
       - "employment history"
@@ -125,10 +138,34 @@ sections:
       - "organisational experience"           # [cv100] x1
       - "post qualification work experience"  # [cv100] x1
       - "pre qualification work experience"   # [cv100] x1
-      - "working experience"                  # [cv100] x1 (also seen with a '(2.5+ Years)' suffix, which exact match cannot capture)
+      - "working experience"                  # [cv100] x1 (also seen with a '(2.5+ Years)' suffix, which exact match cannot capture)      
+      - "WORKEXPERIENCE"
+      - "WORKEXPRIENCE"
+      - "WORK EXPRIENCE"
+      - "WORKEXPERIENCE"
+      - "WORKEXPRIENCE"
+      - "WORK EXPERIENCE"
+      - "EMPLOYMENT HISTORY"
+      - "PROFESSIONAL EXPERIENCE"
+      - "WORK HISTORY"
+      - "EXPERIENCE"
+
+
 
     conditional_aliases:
       - "work profile"                        # [cv100] x1 (heads a duties list)
+  responsibilities:
+    display_name: "Responsibilities"
+    importance: "optional"
+    aliases:
+      - "responsibilities"
+      - "key responsibilities"
+      - "job responsibilities"
+      - "duties and responsibilities"
+      - "roles and responsibilities"
+      - "responsibility"
+    conditional_aliases: []
+
   education:
     display_name: "Education"
     importance: "recommended"
@@ -143,6 +180,7 @@ sections:
       - "qualification"
       - "academic details"
       - "academic qualification"               # [corpus] x2 (singular form)
+      - "academicqualification"
       # Combined heading: one line covering two sections. The same
       # alias is also listed under certifications, so BOTH sections
       # are detected from the single heading. [corpus] x2
@@ -219,6 +257,8 @@ sections:
       - "certifications and licenses"
       - "licenses and certifications"
       - "professional certifications"
+      - "technical qualification"
+      - "technicalqualification"
       - "courses and certifications"
       - "certifications and training"          # [corpus] x1
       - "certifications and technical training"  # [corpus] x1
@@ -373,20 +413,22 @@ content_probes:
       - '[\w.+-]+@[\w-]+\.[\w.]+'
       - '\+?\d[\d\s()\-]{7,}\d'
   Summary:
-    stems: [objective, summary, profile, about me]
+    stems: [objective, careerobjective, summary, profile, about me]
     patterns: []
   Skills:
-    stems: [skill, equipment, tools handled, proficien]
+    stems: [skill, equipment, handlingequipment, tools handled, machinery handled, proficien]
     patterns: []
   Work Experience:
-    stems: [experience, working with, working at, worked at,
-            employment history, work history, responsibilities,
-            year exp, years exp]
+    stems: [experience, workexpri ence, workex prience, working with, working at, worked at,
+            employment history, work history, year exp, years exp]
     patterns:
       - '(?i)\b(pvt\.?\s*ltd|private\s+limited|\bltd\b|\bllp\b)\b'
       - '(?i)\b(till\s+date|\d{4}\s*(to|-|–)\s*(\d{4}|present))\b'
+  Responsibilities:
+    stems: [responsibilities, handled, maintain, manpower]
+    patterns: []
   Education:
-    stems: [qualification, degree, diploma, university, college]
+    stems: [qualification, academicqualification, degree, diploma, university, college]
     patterns:
       - '(?i)\b(HSC|SSC|CGPA|PGDM|MCA|MBA|B\.?Com|B\.?Tech|ITI)\b'
   Projects:

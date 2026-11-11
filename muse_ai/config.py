@@ -7,7 +7,6 @@ never through the frontend, never hardcoded:
     MUSE_API_KEY=            (required; secret)
     MUSE_BASE_URL=https://api.meta.ai/v1
     MUSE_MODEL=muse-spark-1.3
-    MUSE_TIMEOUT_SECONDS=20
     MUSE_MAX_OUTPUT_TOKENS=  (optional)
     MUSE_TEMPERATURE=        (optional)
     MUSE_VISION_ENABLED=true
@@ -30,7 +29,6 @@ from pathlib import Path
 PROVIDER_NAME = "Muse AI"
 DEFAULT_BASE_URL = "https://api.meta.ai/v1"
 DEFAULT_MODEL = "muse-spark-1.3"
-DEFAULT_TIMEOUT_SECONDS = 20.0
 
 # Documented inline-file limit for the Model API (file handling docs).
 INLINE_FILE_LIMIT_BYTES = 50_000_000
@@ -82,7 +80,12 @@ class MuseConfig:
     api_key: str | None = None
     base_url: str = DEFAULT_BASE_URL
     model: str = DEFAULT_MODEL
-    timeout_seconds: float = DEFAULT_TIMEOUT_SECONDS
+    # Timeouts are REMOVED: Muse requests are made with no timeout
+    # (None), so a slow model response is waited out instead of
+    # being cut off. The field is kept (always None unless a caller
+    # constructs a config explicitly) so outcome records keep their
+    # "timeout_seconds" key; MUSE_TIMEOUT_SECONDS is no longer read.
+    timeout_seconds: float | None = None
     max_output_tokens: int | None = None
     temperature: float | None = None
     vision_enabled: bool = True
@@ -129,17 +132,9 @@ def load_muse_config(env: dict | None = None) -> MuseConfig:
     config.model = (env.get("MUSE_MODEL") or DEFAULT_MODEL).strip() \
         or DEFAULT_MODEL
 
-    raw_timeout = (env.get("MUSE_TIMEOUT_SECONDS") or "").strip()
-    if raw_timeout:
-        try:
-            config.timeout_seconds = float(raw_timeout)
-            if config.timeout_seconds <= 0:
-                raise ValueError
-        except ValueError:
-            config.errors.append(
-                f"MUSE_TIMEOUT_SECONDS must be a positive number, "
-                f"got {raw_timeout!r}.")
-            config.timeout_seconds = DEFAULT_TIMEOUT_SECONDS
+    # MUSE_TIMEOUT_SECONDS is intentionally NOT read: request
+    # timeouts were removed, so config.timeout_seconds stays None
+    # and the client waits for the API however long it takes.
 
     raw_tokens = (env.get("MUSE_MAX_OUTPUT_TOKENS") or "").strip()
     if raw_tokens:

@@ -1,0 +1,1982 @@
+{
+  "resume_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7",
+  "filename": "SHJ-5329_SHC-365545.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 74068,
+  "uploaded_at": "2026-11-11T06:45:31.420297+00:00",
+  "success": true,
+  "extractor_used": "docling",
+  "final_extractor": "docling",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7-attempt-1",
+      "resume_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 94.9 (selected 'docling' scored 98.0).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 94.9 (selected 'docling' scored 98.0).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7",
+        "source_tool": "tika",
+        "attempt_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3014,
+            "word_count": 374,
+            "line_count": 127,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.135036,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3014,
+            "word_count": 374,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Responsibilities",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Projects": "personal projects"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "5@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK\tEXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 68,
+                "evidence": "WORK\tEXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 116,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "PERSONAL\tPROJECTS",
+                "detection_method": "heading",
+                "line_number": 89,
+                "evidence": "PERSONAL\tPROJECTS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "detected",
+              "Summary": "missing",
+              "Responsibilities": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Responsibilities",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 80.64,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "53.8% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "49.5% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 3014,
+            "word_count": 374,
+            "line_count": 127,
+            "non_empty_line_count": 93,
+            "short_line_count": 50,
+            "short_line_ratio": 0.537634,
+            "fragmented_line_count": 46,
+            "fragmented_line_ratio": 0.494624,
+            "mean_line_length": 31.05,
+            "median_line_length": 16.0,
+            "line_length_stdev": 29.55,
+            "line_length_cv": 0.951428,
+            "broken_sentence_count": 12,
+            "broken_sentence_ratio": 0.130435,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7",
+        "source_tool": "tika",
+        "attempt_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3014,
+            "word_count": 374,
+            "line_count": 127,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.135036,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3014,
+            "word_count": 374,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Responsibilities",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Projects": "personal projects"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "5@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK\tEXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 68,
+                "evidence": "WORK\tEXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 116,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "PERSONAL\tPROJECTS",
+                "detection_method": "heading",
+                "line_number": 89,
+                "evidence": "PERSONAL\tPROJECTS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "detected",
+              "Summary": "missing",
+              "Responsibilities": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Responsibilities",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 80.64,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "53.8% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "49.5% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 3014,
+            "word_count": 374,
+            "line_count": 127,
+            "non_empty_line_count": 93,
+            "short_line_count": 50,
+            "short_line_ratio": 0.537634,
+            "fragmented_line_count": 46,
+            "fragmented_line_ratio": 0.494624,
+            "mean_line_length": 31.05,
+            "median_line_length": 16.0,
+            "line_length_stdev": 29.55,
+            "line_length_cv": 0.951428,
+            "broken_sentence_count": 12,
+            "broken_sentence_ratio": 0.130435,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 94.9,
+      "duration_ms": 4846.02,
+      "text": "rahulsinha012\n5@gmail.com\n\n+91-\n7049582700\n\nPune,\tIndia\n\nlinkedin.com/i\nn/hosturl.link/i\nLdZCP\n\nSKILLS\n\nCinematography\n&\tVisual\nStory\ttelling\n\nCamera\nOperation-\nDSLR\t/\nCinema\nCamera\nHandling\n\nCreative\nDirection\nAssociate\nDirector\n\nLighting\nDesign\t&\nExecution\n\nPhotography\n\nEditing\tSkill\nfor\twork\nflow\n\nLive\nBroadcast\nDirector\n\nLANGUAGES\n\nEnglish\nProfessional\nWorking\nProficiency\n\nHindi\nFullProfessional\nProficiency\n\nINTERESTS\n\nTravelling\n\nTracking\n\nRahul\tKumar\tSinha\nCinematographer\nDirector\tof\tPhotography\tand\tAssociate\tCinematographer\twith\t5+\tyears\tof\texperience\tacross\tfeature\nfilms,\tTV\tcommercials,\tshort\tfilms,\tpodcasts,\tand\tdigital\tmedia.\tSkilled\tin\tcinematography,\tlighting,\ncamera\toperations,\tand\tvisual\tstorytelling\tin\thigh-pressure\tproduction\tenvironments.\n\nWORK\tEXPERIENCE\n\nCinematographer/\tCreative\tDirector\nLavin\tfilms\tinternational\n12/2022\t-\tPresent, Pune,(M.H.)India\nServed\tas\tCinematographer/CreativeDirector/FocusPuller\ton\tTVCs,\tshort\tfilms,\tpodcasts,\tdigital\tcontent,\tand\na\tMarathi\tfeature\tfilm.\n\nAchievements/Tasks\nShot\t12+\tcommercials,\t30+\tshort\tfilms,\tand\t100+\tdigital\tprojects,\tmanaging\tcamera,\tlighting,\nand\ton-set\texecution.\nCollaborated\twith\tcreative\tteams\ton\tvisual\tstorytelling\tand\tsupported\tin-house\tdirection\nworkflows\nLead\tcinematography\tfor\t50+Tvc,\tpodcasts,\tsocial\tmedia\tprojects,\tand\tYouTube\tadvertisements,\nhandling\tcamera,\tlighting,\tand\ton-set\texecution\tacross\tformats\nExperienced\tin\tconcept\tdevelopment,\tcreative\tideation,\tscripting,\tshot\tplanning,\tand\tvisual\nstorytelling,\twith\thands-on\tuse\tof\tClaude\tAI\tand\tHiggsfield\tfor\tcreative\tdevelopment\tand\tAI-\nassisted\tcontent\tcreation.\nSkilled\tin\tintegrating\tElevenLabs\tfor\tAI\tvoiceovers\tand\tTopaz\tAI\tfor\tvideo\tenhancement,\nupscaling,\tand\tquality\timprovement\tduring\tthe\tediting\tand\tpost-production\tprocess.\n\nPERSONAL\tPROJECTS\n\nI.\tMultifitTVC\t(10/2024\t-\t11/2024)\nAssistant\tCinematographer,\tfocus\tpullar,\tCamera\toperater\nLighting,\tand\tcamera\trig\toperation\n\nII.\tMillennium\tSamriddhi\twith\tPV\tSindhu\t(01/2025\t-\t05/2025)\n2nd\tunit\tDOP,\t1st\tAssistant\tCinematographer\n\nIII.\tBorosil\tScientific's\tModern\tManufacturing\tFacilities\t(02/2024-04/2024)\nDOP(Director\tof\tPhotography)\tFor\tentire\tProject,\tVisual\tChoreography,\tStoryteling\n\nIV.\tTreasure\tTroves\t(11/2024\t-\t12/2024)\nAssistant\tCinematographer,\tfocus\tpullar,\tCamera\toperater\n\nV.\tAmbat\tShaukin\tMarathi\tfilm\t(09/2023\t-\t11/2023)\n2nd\tunit\tDOP,\t1st\tAssistant\tCinematographer,\t(DIT)\tDigital\timage\ttechnician\n\nVI.\tADP\tcareer\tCorporate\tfilm\t(06/2024\t-\t06/2024)\nCinematographer,\tVisual\tPlanning,\tScripting\tand\tshort\tbreak-down\ton\tpre\tproduction\n\nVII.\tMahindra\tTractor\tIndependance\tDay\tTVC\t(07/2024\t-\t07/2020)\n2nd\tunit\tDOP,\t1st\tAssistant\tCinematographer,\tProduction\tplanning\n\nVIII.\tCopeland\tCorporate\tfilm\t(06/2025\t-\t07/2025)\nCinematographer,\tCamera\trig\toperator\n\nEDUCATION\n\nMaster\tof\tDesign\t(M.Des.)\nMIT-ADT\tInstitute\tof\tDesign\n07/2021\t-\t06/2023, Loni\tkalbhor\tPune\tM.H.\tIndia\nCourses\n\nFilm\tand\tVideo\tDesign\n\nBachelor\tof\tCommerce\t(B.com)\nHemchand\tYadav\tVishwavidyalaya,\tDurg\n07/2017\t-\t04/2020, Durg(C.G)",
+      "extracted_text": "rahulsinha012\n5@gmail.com\n\n+91-\n7049582700\n\nPune,\tIndia\n\nlinkedin.com/i\nn/hosturl.link/i\nLdZCP\n\nSKILLS\n\nCinematography\n&\tVisual\nStory\ttelling\n\nCamera\nOperation-\nDSLR\t/\nCinema\nCamera\nHandling\n\nCreative\nDirection\nAssociate\nDirector\n\nLighting\nDesign\t&\nExecution\n\nPhotography\n\nEditing\tSkill\nfor\twork\nflow\n\nLive\nBroadcast\nDirector\n\nLANGUAGES\n\nEnglish\nProfessional\nWorking\nProficiency\n\nHindi\nFullProfessional\nProficiency\n\nINTERESTS\n\nTravelling\n\nTracking\n\nRahul\tKumar\tSinha\nCinematographer\nDirector\tof\tPhotography\tand\tAssociate\tCinematographer\twith\t5+\tyears\tof\texperience\tacross\tfeature\nfilms,\tTV\tcommercials,\tshort\tfilms,\tpodcasts,\tand\tdigital\tmedia.\tSkilled\tin\tcinematography,\tlighting,\ncamera\toperations,\tand\tvisual\tstorytelling\tin\thigh-pressure\tproduction\tenvironments.\n\nWORK\tEXPERIENCE\n\nCinematographer/\tCreative\tDirector\nLavin\tfilms\tinternational\n12/2022\t-\tPresent, Pune,(M.H.)India\nServed\tas\tCinematographer/CreativeDirector/FocusPuller\ton\tTVCs,\tshort\tfilms,\tpodcasts,\tdigital\tcontent,\tand\na\tMarathi\tfeature\tfilm.\n\nAchievements/Tasks\nShot\t12+\tcommercials,\t30+\tshort\tfilms,\tand\t100+\tdigital\tprojects,\tmanaging\tcamera,\tlighting,\nand\ton-set\texecution.\nCollaborated\twith\tcreative\tteams\ton\tvisual\tstorytelling\tand\tsupported\tin-house\tdirection\nworkflows\nLead\tcinematography\tfor\t50+Tvc,\tpodcasts,\tsocial\tmedia\tprojects,\tand\tYouTube\tadvertisements,\nhandling\tcamera,\tlighting,\tand\ton-set\texecution\tacross\tformats\nExperienced\tin\tconcept\tdevelopment,\tcreative\tideation,\tscripting,\tshot\tplanning,\tand\tvisual\nstorytelling,\twith\thands-on\tuse\tof\tClaude\tAI\tand\tHiggsfield\tfor\tcreative\tdevelopment\tand\tAI-\nassisted\tcontent\tcreation.\nSkilled\tin\tintegrating\tElevenLabs\tfor\tAI\tvoiceovers\tand\tTopaz\tAI\tfor\tvideo\tenhancement,\nupscaling,\tand\tquality\timprovement\tduring\tthe\tediting\tand\tpost-production\tprocess.\n\nPERSONAL\tPROJECTS\n\nI.\tMultifitTVC\t(10/2024\t-\t11/2024)\nAssistant\tCinematographer,\tfocus\tpullar,\tCamera\toperater\nLighting,\tand\tcamera\trig\toperation\n\nII.\tMillennium\tSamriddhi\twith\tPV\tSindhu\t(01/2025\t-\t05/2025)\n2nd\tunit\tDOP,\t1st\tAssistant\tCinematographer\n\nIII.\tBorosil\tScientific's\tModern\tManufacturing\tFacilities\t(02/2024-04/2024)\nDOP(Director\tof\tPhotography)\tFor\tentire\tProject,\tVisual\tChoreography,\tStoryteling\n\nIV.\tTreasure\tTroves\t(11/2024\t-\t12/2024)\nAssistant\tCinematographer,\tfocus\tpullar,\tCamera\toperater\n\nV.\tAmbat\tShaukin\tMarathi\tfilm\t(09/2023\t-\t11/2023)\n2nd\tunit\tDOP,\t1st\tAssistant\tCinematographer,\t(DIT)\tDigital\timage\ttechnician\n\nVI.\tADP\tcareer\tCorporate\tfilm\t(06/2024\t-\t06/2024)\nCinematographer,\tVisual\tPlanning,\tScripting\tand\tshort\tbreak-down\ton\tpre\tproduction\n\nVII.\tMahindra\tTractor\tIndependance\tDay\tTVC\t(07/2024\t-\t07/2020)\n2nd\tunit\tDOP,\t1st\tAssistant\tCinematographer,\tProduction\tplanning\n\nVIII.\tCopeland\tCorporate\tfilm\t(06/2025\t-\t07/2025)\nCinematographer,\tCamera\trig\toperator\n\nEDUCATION\n\nMaster\tof\tDesign\t(M.Des.)\nMIT-ADT\tInstitute\tof\tDesign\n07/2021\t-\t06/2023, Loni\tkalbhor\tPune\tM.H.\tIndia\nCourses\n\nFilm\tand\tVideo\tDesign\n\nBachelor\tof\tCommerce\t(B.com)\nHemchand\tYadav\tVishwavidyalaya,\tDurg\n07/2017\t-\t04/2020, Durg(C.G)",
+      "extracted_text_length": 3014,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "rahulsinha012\n5@gmail.com\n\n+91-\n7049582700\n\nPune, India\n\nlinkedin.com/i\nn/hosturl.link/i\nLdZCP\n\nSKILLS\n\nCinematography\n& Visual\nStory telling\n\nCamera\nOperation-\nDSLR /\nCinema\nCamera\nHandling\n\nCreative\nDirection\nAssociate\nDirector\n\nLighting\nDesign &\nExecution\n\nPhotography\n\nEditing Skill\nfor work\nflow\n\nLive\nBroadcast\nDirector\n\nLANGUAGES\n\nEnglish\nProfessional\nWorking\nProficiency\n\nHindi\nFullProfessional\nProficiency\n\nINTERESTS\n\nTravelling\n\nTracking\n\nRahul Kumar Sinha\nCinematographer\nDirector of Photography and Associate Cinematographer with 5+ years of experience across feature\nfilms, TV commercials, short films, podcasts, and digital media. Skilled in cinematography, lighting,\ncamera operations, and visual storytelling in high-pressure production environments.\n\nWORK EXPERIENCE\n\nCinematographer/ Creative Director\nLavin films international\n12/2022 - Present, Pune,(M.H.)India\nServed as Cinematographer/CreativeDirector/FocusPuller on TVCs, short films, podcasts, digital content, and\na Marathi feature film.\n\nAchievements/Tasks\nShot 12+ commercials, 30+ short films, and 100+ digital projects, managing camera, lighting,\nand on-set execution.\nCollaborated with creative teams on visual storytelling and supported in-house direction\nworkflows\nLead cinematography for 50+Tvc, podcasts, social media projects, and YouTube advertisements,\nhandling camera, lighting, and on-set execution across formats\nExperienced in concept development, creative ideation, scripting, shot planning, and visual\nstorytelling, with hands-on use of Claude AI and Higgsfield for creative development and AI-\nassisted content creation.\nSkilled in integrating ElevenLabs for AI voiceovers and Topaz AI for video enhancement,\nupscaling, and quality improvement during the editing and post-production process.\n\nPERSONAL PROJECTS\n\nI. MultifitTVC (10/2024 - 11/2024)\nAssistant Cinematographer, focus pullar, Camera operater\nLighting, and camera rig operation\n\nII. Millennium Samriddhi with PV Sindhu (01/2025 - 05/2025)\n2nd unit DOP, 1st Assistant Cinematographer\n\nIII. Borosil Scientific's Modern Manufacturing Facilities (02/2024-04/2024)\nDOP(Director of Photography) For entire Project, Visual Choreography, Storyteling\n\nIV. Treasure Troves (11/2024 - 12/2024)\nAssistant Cinematographer, focus pullar, Camera operater\n\nV. Ambat Shaukin Marathi film (09/2023 - 11/2023)\n2nd unit DOP, 1st Assistant Cinematographer, (DIT) Digital image technician\n\nVI. ADP career Corporate film (06/2024 - 06/2024)\nCinematographer, Visual Planning, Scripting and short break-down on pre production\n\nVII. Mahindra Tractor Independance Day TVC (07/2024 - 07/2020)\n2nd unit DOP, 1st Assistant Cinematographer, Production planning\n\nVIII. Copeland Corporate film (06/2025 - 07/2025)\nCinematographer, Camera rig operator\n\nEDUCATION\n\nMaster of Design (M.Des.)\nMIT-ADT Institute of Design\n07/2021 - 06/2023, Loni kalbhor Pune M.H. India\nCourses\n\nFilm and Video Design\n\nBachelor of Commerce (B.com)\nHemchand Yadav Vishwavidyalaya, Durg\n07/2017 - 04/2020, Durg(C.G)"
+    },
+    {
+      "attempt_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7-attempt-2",
+      "resume_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7",
+      "attempt_number": 2,
+      "extractor_name": "pymupdf",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 94.9 (selected 'docling' scored 98.0).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 94.9 (selected 'docling' scored 98.0).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7",
+        "source_tool": "pymupdf",
+        "attempt_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2980,
+            "word_count": 374,
+            "line_count": 96,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.125168,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2980,
+            "word_count": 374,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Responsibilities",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Projects": "personal projects"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "5@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 49,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 86,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "PERSONAL PROJECTS",
+                "detection_method": "heading",
+                "line_number": 68,
+                "evidence": "PERSONAL PROJECTS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "detected",
+              "Summary": "missing",
+              "Responsibilities": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Responsibilities",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 80.66,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "54.2% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "49.0% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 2980,
+            "word_count": 374,
+            "line_count": 96,
+            "non_empty_line_count": 96,
+            "short_line_count": 52,
+            "short_line_ratio": 0.541667,
+            "fragmented_line_count": 47,
+            "fragmented_line_ratio": 0.489583,
+            "mean_line_length": 30.05,
+            "median_line_length": 16.0,
+            "line_length_stdev": 29.23,
+            "line_length_cv": 0.972757,
+            "broken_sentence_count": 12,
+            "broken_sentence_ratio": 0.126316,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7",
+        "source_tool": "pymupdf",
+        "attempt_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 2980,
+            "word_count": 374,
+            "line_count": 96,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.125168,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 2980,
+            "word_count": 374,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Responsibilities",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Projects": "personal projects"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "5@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 49,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 86,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "PERSONAL PROJECTS",
+                "detection_method": "heading",
+                "line_number": 68,
+                "evidence": "PERSONAL PROJECTS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "detected",
+              "Summary": "missing",
+              "Responsibilities": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Responsibilities",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 80.66,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES"
+          ],
+          "reasons": [
+            "54.2% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "49.0% of lines are 15 characters or shorter."
+          ],
+          "metrics": {
+            "char_count": 2980,
+            "word_count": 374,
+            "line_count": 96,
+            "non_empty_line_count": 96,
+            "short_line_count": 52,
+            "short_line_ratio": 0.541667,
+            "fragmented_line_count": 47,
+            "fragmented_line_ratio": 0.489583,
+            "mean_line_length": 30.05,
+            "median_line_length": 16.0,
+            "line_length_stdev": 29.23,
+            "line_length_cv": 0.972757,
+            "broken_sentence_count": 12,
+            "broken_sentence_ratio": 0.126316,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 94.9,
+      "duration_ms": 43.7,
+      "text": "rahulsinha012\n5@gmail.com\n+91-\n7049582700\nPune, India\nlinkedin.com/i\nn/hosturl.link/i\nLdZCP\nSKILLS\nCinematography\n& Visual\nStory telling\nCamera\nOperation-\nDSLR /\nCinema\nCamera\nHandling\nCreative\nDirection\nAssociate\nDirector\nLighting\nDesign &\nExecution\nPhotography\nEditing Skill\nfor work\nflow\nLive\nBroadcast\nDirector\nLANGUAGES\nEnglish\nProfessional\nWorking\nProficiency\nHindi\nFullProfessional\nProficiency\nINTERESTS\nTravelling\nTracking\nRahul Kumar Sinha\nCinematographer\nDirector of Photography and Associate Cinematographer with 5+ years of experience across feature\nfilms, TV commercials, short films, podcasts, and digital media. Skilled in cinematography, lighting,\ncamera operations, and visual storytelling in high-pressure production environments.\nWORK EXPERIENCE\nCinematographer/ Creative Director\nLavin films international\n12/2022 - Present,\nPune,(M.H.)India\nServed as Cinematographer/CreativeDirector/FocusPuller on TVCs, short films, podcasts, digital content, and\na Marathi feature film.\nAchievements/Tasks\nShot 12+ commercials, 30+ short films, and 100+ digital projects, managing camera, lighting,\nand on-set execution.\nCollaborated with creative teams on visual storytelling and supported in-house direction\nworkflows\nLead cinematography for 50+Tvc, podcasts, social media projects, and YouTube advertisements,\nhandling camera, lighting, and on-set execution across formats\nExperienced in concept development, creative ideation, scripting, shot planning, and visual\nstorytelling, with hands-on use of Claude AI and Higgsfield for creative development and AI-\nassisted content creation.\nSkilled in integrating ElevenLabs for AI voiceovers and Topaz AI for video enhancement,\nupscaling, and quality improvement during the editing and post-production process.\nPERSONAL PROJECTS\nI. MultifitTVC (10/2024 - 11/2024)\nAssistant Cinematographer, focus pullar, Camera operater\nLighting, and camera rig operation\nII. Millennium Samriddhi with PV Sindhu (01/2025 - 05/2025)\n2nd unit DOP, 1st Assistant Cinematographer\nIII. Borosil Scientific's Modern Manufacturing Facilities (02/2024-04/2024)\nDOP(Director of Photography) For entire Project, Visual Choreography, Storyteling\nIV. Treasure Troves (11/2024 - 12/2024)\nAssistant Cinematographer, focus pullar, Camera operater\nV. Ambat Shaukin Marathi film (09/2023 - 11/2023)\n2nd unit DOP, 1st Assistant Cinematographer, (DIT) Digital image technician\nVI. ADP career Corporate film (06/2024 - 06/2024)\nCinematographer, Visual Planning, Scripting and short break-down on pre production\nVII. Mahindra Tractor Independance Day TVC (07/2024 - 07/2020)\n2nd unit DOP, 1st Assistant Cinematographer, Production planning\nVIII. Copeland Corporate film (06/2025 - 07/2025)\nCinematographer, Camera rig operator\nEDUCATION\nMaster of Design (M.Des.)\nMIT-ADT Institute of Design\n07/2021 - 06/2023,\nLoni kalbhor Pune M.H. India\nCourses\nFilm and Video Design\nBachelor of Commerce (B.com)\nHemchand Yadav Vishwavidyalaya, Durg\n07/2017 - 04/2020,\nDurg(C.G)",
+      "extracted_text": "rahulsinha012\n5@gmail.com\n+91-\n7049582700\nPune, India\nlinkedin.com/i\nn/hosturl.link/i\nLdZCP\nSKILLS\nCinematography\n& Visual\nStory telling\nCamera\nOperation-\nDSLR /\nCinema\nCamera\nHandling\nCreative\nDirection\nAssociate\nDirector\nLighting\nDesign &\nExecution\nPhotography\nEditing Skill\nfor work\nflow\nLive\nBroadcast\nDirector\nLANGUAGES\nEnglish\nProfessional\nWorking\nProficiency\nHindi\nFullProfessional\nProficiency\nINTERESTS\nTravelling\nTracking\nRahul Kumar Sinha\nCinematographer\nDirector of Photography and Associate Cinematographer with 5+ years of experience across feature\nfilms, TV commercials, short films, podcasts, and digital media. Skilled in cinematography, lighting,\ncamera operations, and visual storytelling in high-pressure production environments.\nWORK EXPERIENCE\nCinematographer/ Creative Director\nLavin films international\n12/2022 - Present,\nPune,(M.H.)India\nServed as Cinematographer/CreativeDirector/FocusPuller on TVCs, short films, podcasts, digital content, and\na Marathi feature film.\nAchievements/Tasks\nShot 12+ commercials, 30+ short films, and 100+ digital projects, managing camera, lighting,\nand on-set execution.\nCollaborated with creative teams on visual storytelling and supported in-house direction\nworkflows\nLead cinematography for 50+Tvc, podcasts, social media projects, and YouTube advertisements,\nhandling camera, lighting, and on-set execution across formats\nExperienced in concept development, creative ideation, scripting, shot planning, and visual\nstorytelling, with hands-on use of Claude AI and Higgsfield for creative development and AI-\nassisted content creation.\nSkilled in integrating ElevenLabs for AI voiceovers and Topaz AI for video enhancement,\nupscaling, and quality improvement during the editing and post-production process.\nPERSONAL PROJECTS\nI. MultifitTVC (10/2024 - 11/2024)\nAssistant Cinematographer, focus pullar, Camera operater\nLighting, and camera rig operation\nII. Millennium Samriddhi with PV Sindhu (01/2025 - 05/2025)\n2nd unit DOP, 1st Assistant Cinematographer\nIII. Borosil Scientific's Modern Manufacturing Facilities (02/2024-04/2024)\nDOP(Director of Photography) For entire Project, Visual Choreography, Storyteling\nIV. Treasure Troves (11/2024 - 12/2024)\nAssistant Cinematographer, focus pullar, Camera operater\nV. Ambat Shaukin Marathi film (09/2023 - 11/2023)\n2nd unit DOP, 1st Assistant Cinematographer, (DIT) Digital image technician\nVI. ADP career Corporate film (06/2024 - 06/2024)\nCinematographer, Visual Planning, Scripting and short break-down on pre production\nVII. Mahindra Tractor Independance Day TVC (07/2024 - 07/2020)\n2nd unit DOP, 1st Assistant Cinematographer, Production planning\nVIII. Copeland Corporate film (06/2025 - 07/2025)\nCinematographer, Camera rig operator\nEDUCATION\nMaster of Design (M.Des.)\nMIT-ADT Institute of Design\n07/2021 - 06/2023,\nLoni kalbhor Pune M.H. India\nCourses\nFilm and Video Design\nBachelor of Commerce (B.com)\nHemchand Yadav Vishwavidyalaya, Durg\n07/2017 - 04/2020,\nDurg(C.G)",
+      "extracted_text_length": 2980,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "format": "PDF 1.4",
+        "creator": "wkhtmltopdf 0.12.6",
+        "producer": "Qt 5.15.13",
+        "creationDate": "D:20260818074800Z"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "rahulsinha012\n5@gmail.com\n+91-\n7049582700\nPune, India\nlinkedin.com/i\nn/hosturl.link/i\nLdZCP\nSKILLS\nCinematography\n& Visual\nStory telling\nCamera\nOperation-\nDSLR /\nCinema\nCamera\nHandling\nCreative\nDirection\nAssociate\nDirector\nLighting\nDesign &\nExecution\nPhotography\nEditing Skill\nfor work\nflow\nLive\nBroadcast\nDirector\nLANGUAGES\nEnglish\nProfessional\nWorking\nProficiency\nHindi\nFullProfessional\nProficiency\nINTERESTS\nTravelling\nTracking\nRahul Kumar Sinha\nCinematographer\nDirector of Photography and Associate Cinematographer with 5+ years of experience across feature\nfilms, TV commercials, short films, podcasts, and digital media. Skilled in cinematography, lighting,\ncamera operations, and visual storytelling in high-pressure production environments.\nWORK EXPERIENCE\nCinematographer/ Creative Director\nLavin films international\n12/2022 - Present,\nPune,(M.H.)India\nServed as Cinematographer/CreativeDirector/FocusPuller on TVCs, short films, podcasts, digital content, and\na Marathi feature film.\nAchievements/Tasks\nShot 12+ commercials, 30+ short films, and 100+ digital projects, managing camera, lighting,\nand on-set execution.\nCollaborated with creative teams on visual storytelling and supported in-house direction\nworkflows\nLead cinematography for 50+Tvc, podcasts, social media projects, and YouTube advertisements,\nhandling camera, lighting, and on-set execution across formats\nExperienced in concept development, creative ideation, scripting, shot planning, and visual\nstorytelling, with hands-on use of Claude AI and Higgsfield for creative development and AI-\nassisted content creation.\nSkilled in integrating ElevenLabs for AI voiceovers and Topaz AI for video enhancement,\nupscaling, and quality improvement during the editing and post-production process.\nPERSONAL PROJECTS\nI. MultifitTVC (10/2024 - 11/2024)\nAssistant Cinematographer, focus pullar, Camera operater\nLighting, and camera rig operation\nII. Millennium Samriddhi with PV Sindhu (01/2025 - 05/2025)\n2nd unit DOP, 1st Assistant Cinematographer\nIII. Borosil Scientific's Modern Manufacturing Facilities (02/2024-04/2024)\nDOP(Director of Photography) For entire Project, Visual Choreography, Storyteling\nIV. Treasure Troves (11/2024 - 12/2024)\nAssistant Cinematographer, focus pullar, Camera operater\nV. Ambat Shaukin Marathi film (09/2023 - 11/2023)\n2nd unit DOP, 1st Assistant Cinematographer, (DIT) Digital image technician\nVI. ADP career Corporate film (06/2024 - 06/2024)\nCinematographer, Visual Planning, Scripting and short break-down on pre production\nVII. Mahindra Tractor Independance Day TVC (07/2024 - 07/2020)\n2nd unit DOP, 1st Assistant Cinematographer, Production planning\nVIII. Copeland Corporate film (06/2025 - 07/2025)\nCinematographer, Camera rig operator\nEDUCATION\nMaster of Design (M.Des.)\nMIT-ADT Institute of Design\n07/2021 - 06/2023,\nLoni kalbhor Pune M.H. India\nCourses\nFilm and Video Design\nBachelor of Commerce (B.com)\nHemchand Yadav Vishwavidyalaya, Durg\n07/2017 - 04/2020,\nDurg(C.G)"
+    },
+    {
+      "attempt_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7-attempt-3",
+      "resume_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7",
+      "attempt_number": 3,
+      "extractor_name": "docling",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Selected 'docling' with the highest quality score 98.0 (threshold 60.0).",
+      "fallback_decision": "accept",
+      "fallback_reason": "Selected 'docling' with the highest quality score 98.0 (threshold 60.0).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7",
+        "source_tool": "docling",
+        "attempt_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3040,
+            "word_count": 377,
+            "line_count": 113,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.141447,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3040,
+            "word_count": 377,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Responsibilities",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Projects": "personal projects"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "5@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 47,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 101,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "PERSONAL PROJECTS",
+                "detection_method": "heading",
+                "line_number": 65,
+                "evidence": "PERSONAL PROJECTS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "detected",
+              "Summary": "missing",
+              "Responsibilities": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Responsibilities",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 99.41,
+          "flags": [
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "Line lengths vary unusually (coefficient of variation 1.04) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 3040,
+            "word_count": 377,
+            "line_count": 113,
+            "non_empty_line_count": 59,
+            "short_line_count": 18,
+            "short_line_ratio": 0.305085,
+            "fragmented_line_count": 14,
+            "fragmented_line_ratio": 0.237288,
+            "mean_line_length": 49.63,
+            "median_line_length": 35.0,
+            "line_length_stdev": 51.59,
+            "line_length_cv": 1.039465,
+            "broken_sentence_count": 1,
+            "broken_sentence_ratio": 0.017241,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7",
+        "source_tool": "docling",
+        "attempt_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 3040,
+            "word_count": 377,
+            "line_count": 113,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.141447,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 3040,
+            "word_count": 377,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects"
+            ],
+            "missing_sections": [
+              "Summary",
+              "Responsibilities",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Skills": "skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Projects": "personal projects"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "5@gmail.com",
+                "confidence": 0.8
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "SKILLS",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WORK EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 47,
+                "evidence": "WORK EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 101,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "PERSONAL PROJECTS",
+                "detection_method": "heading",
+                "line_number": 65,
+                "evidence": "PERSONAL PROJECTS",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "detected",
+              "Summary": "missing",
+              "Responsibilities": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects"
+          ],
+          "missing_sections": [
+            "Summary",
+            "Responsibilities",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 99.41,
+          "flags": [
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "Line lengths vary unusually (coefficient of variation 1.04) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 3040,
+            "word_count": 377,
+            "line_count": 113,
+            "non_empty_line_count": 59,
+            "short_line_count": 18,
+            "short_line_ratio": 0.305085,
+            "fragmented_line_count": 14,
+            "fragmented_line_ratio": 0.237288,
+            "mean_line_length": 49.63,
+            "median_line_length": 35.0,
+            "line_length_stdev": 51.59,
+            "line_length_cv": 1.039465,
+            "broken_sentence_count": 1,
+            "broken_sentence_ratio": 0.017241,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 98.0,
+      "duration_ms": 6195.74,
+      "text": "rahulsinha012 5@gmail.com\n\n+917049582700\n\nPune, India\n\nlinkedin.com/i n/hosturl.link/i LdZCP\n\nSKILLS\n\nCinematography & Visual Story telling\n\nCamera OperationDSLR / Cinema Camera Handling\n\nCreative Direction Associate Director\n\nLighting Design & Execution\n\nPhotography\n\nEditing Skill for work flow\n\nLive Broadcast Director\n\nLANGUAGES\n\nEnglish\n\nProfessional Working Proficiency\n\nHindi\n\nFullProfessional Proficiency\n\nINTERESTS\n\nTravelling\n\nTracking\n\nRahul Kumar Sinha\n\nCinematographer\n\nDirector of Photography and Associate Cinematographer with 5+ years of experience across feature films, TV commercials, short films, podcasts, and digital media. Skilled in cinematography, lighting, camera operations, and visual storytelling in high-pressure production environments.\n\nWORK EXPERIENCE\n\nCinematographer/ Creative Director\n\nLavin films international\n\n12/2022 - Present, Pune,(M.H.)India\n\nServed as Cinematographer/CreativeDirector/FocusPuller on TVCs, short films, podcasts, digital content, and a Marathi feature film.\n\nAchievements/Tasks\n\n- Shot 12+ commercials, 30+ short films, and 100+ digital projects, managing camera, lighting, and on-set execution.\n- Collaborated with creative teams on visual storytelling and supported in-house direction workflows\n- Lead cinematography for 50+Tvc, podcasts, social media projects, and YouTube advertisements, handling camera, lighting, and on-set execution across formats\n- Experienced in concept development, creative ideation, scripting, shot planning, and visual storytelling, with hands-on use of Claude AI and Higgsfield for creative development and AIassisted content creation.\n- Skilled in integrating ElevenLabs for AI voiceovers and Topaz AI for video enhancement, upscaling, and quality improvement during the editing and post-production process.\n\nPERSONAL PROJECTS\n\nI. MultifitTVC (10/2024 - 11/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nLighting, and camera rig operation\n\nII. Millennium Samriddhi with PV Sindhu (01/2025 - 05/2025)\n\n2nd unit DOP, 1st Assistant Cinematographer\n\nIII. Borosil Scientific's Modern Manufacturing Facilities (02/2024-04/2024)\n\nDOP(Director of Photography) For entire Project, Visual Choreography, Storyteling\n\nIV. Treasure Troves (11/2024 - 12/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nV. Ambat Shaukin Marathi film (09/2023 - 11/2023)\n\n2nd unit DOP, 1st Assistant Cinematographer, (DIT) Digital image technician\n\nVI. ADP career Corporate film (06/2024 - 06/2024)\n\nCinematographer, Visual Planning, Scripting and short break-down on pre production\n\nVII. Mahindra Tractor Independance Day TVC (07/2024 - 07/2020)\n\n2nd unit DOP, 1st Assistant Cinematographer, Production planning\n\nVIII. Copeland Corporate film (06/2025 - 07/2025)\n\nCinematographer, Camera rig operator\n\nEDUCATION\n\nMaster of Design (M.Des.) MIT-ADT Institute of Design\n\n07/2021 - 06/2023, Loni kalbhor Pune M.H. India\n\nCourses\n\n- Film and Video Design\n\nBachelor of Commerce (B.com) Hemchand Yadav Vishwavidyalaya, Durg\n\n07/2017 - 04/2020, Durg(C.G)",
+      "extracted_text": "rahulsinha012 5@gmail.com\n\n+917049582700\n\nPune, India\n\nlinkedin.com/i n/hosturl.link/i LdZCP\n\nSKILLS\n\nCinematography & Visual Story telling\n\nCamera OperationDSLR / Cinema Camera Handling\n\nCreative Direction Associate Director\n\nLighting Design & Execution\n\nPhotography\n\nEditing Skill for work flow\n\nLive Broadcast Director\n\nLANGUAGES\n\nEnglish\n\nProfessional Working Proficiency\n\nHindi\n\nFullProfessional Proficiency\n\nINTERESTS\n\nTravelling\n\nTracking\n\nRahul Kumar Sinha\n\nCinematographer\n\nDirector of Photography and Associate Cinematographer with 5+ years of experience across feature films, TV commercials, short films, podcasts, and digital media. Skilled in cinematography, lighting, camera operations, and visual storytelling in high-pressure production environments.\n\nWORK EXPERIENCE\n\nCinematographer/ Creative Director\n\nLavin films international\n\n12/2022 - Present, Pune,(M.H.)India\n\nServed as Cinematographer/CreativeDirector/FocusPuller on TVCs, short films, podcasts, digital content, and a Marathi feature film.\n\nAchievements/Tasks\n\n- Shot 12+ commercials, 30+ short films, and 100+ digital projects, managing camera, lighting, and on-set execution.\n- Collaborated with creative teams on visual storytelling and supported in-house direction workflows\n- Lead cinematography for 50+Tvc, podcasts, social media projects, and YouTube advertisements, handling camera, lighting, and on-set execution across formats\n- Experienced in concept development, creative ideation, scripting, shot planning, and visual storytelling, with hands-on use of Claude AI and Higgsfield for creative development and AIassisted content creation.\n- Skilled in integrating ElevenLabs for AI voiceovers and Topaz AI for video enhancement, upscaling, and quality improvement during the editing and post-production process.\n\nPERSONAL PROJECTS\n\nI. MultifitTVC (10/2024 - 11/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nLighting, and camera rig operation\n\nII. Millennium Samriddhi with PV Sindhu (01/2025 - 05/2025)\n\n2nd unit DOP, 1st Assistant Cinematographer\n\nIII. Borosil Scientific's Modern Manufacturing Facilities (02/2024-04/2024)\n\nDOP(Director of Photography) For entire Project, Visual Choreography, Storyteling\n\nIV. Treasure Troves (11/2024 - 12/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nV. Ambat Shaukin Marathi film (09/2023 - 11/2023)\n\n2nd unit DOP, 1st Assistant Cinematographer, (DIT) Digital image technician\n\nVI. ADP career Corporate film (06/2024 - 06/2024)\n\nCinematographer, Visual Planning, Scripting and short break-down on pre production\n\nVII. Mahindra Tractor Independance Day TVC (07/2024 - 07/2020)\n\n2nd unit DOP, 1st Assistant Cinematographer, Production planning\n\nVIII. Copeland Corporate film (06/2025 - 07/2025)\n\nCinematographer, Camera rig operator\n\nEDUCATION\n\nMaster of Design (M.Des.) MIT-ADT Institute of Design\n\n07/2021 - 06/2023, Loni kalbhor Pune M.H. India\n\nCourses\n\n- Film and Video Design\n\nBachelor of Commerce (B.com) Hemchand Yadav Vishwavidyalaya, Durg\n\n07/2017 - 04/2020, Durg(C.G)",
+      "extracted_text_length": 3040,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "rahulsinha012 5@gmail.com\n\n+917049582700\n\nPune, India\n\nlinkedin.com/i n/hosturl.link/i LdZCP\n\nSKILLS\n\nCinematography & Visual Story telling\n\nCamera OperationDSLR / Cinema Camera Handling\n\nCreative Direction Associate Director\n\nLighting Design & Execution\n\nPhotography\n\nEditing Skill for work flow\n\nLive Broadcast Director\n\nLANGUAGES\n\nEnglish\n\nProfessional Working Proficiency\n\nHindi\n\nFullProfessional Proficiency\n\nINTERESTS\n\nTravelling\n\nTracking\n\nRahul Kumar Sinha\n\nCinematographer\n\nDirector of Photography and Associate Cinematographer with 5+ years of experience across feature films, TV commercials, short films, podcasts, and digital media. Skilled in cinematography, lighting, camera operations, and visual storytelling in high-pressure production environments.\n\nWORK EXPERIENCE\n\nCinematographer/ Creative Director\n\nLavin films international\n\n12/2022 - Present, Pune,(M.H.)India\n\nServed as Cinematographer/CreativeDirector/FocusPuller on TVCs, short films, podcasts, digital content, and a Marathi feature film.\n\nAchievements/Tasks\n\n- Shot 12+ commercials, 30+ short films, and 100+ digital projects, managing camera, lighting, and on-set execution.\n- Collaborated with creative teams on visual storytelling and supported in-house direction workflows\n- Lead cinematography for 50+Tvc, podcasts, social media projects, and YouTube advertisements, handling camera, lighting, and on-set execution across formats\n- Experienced in concept development, creative ideation, scripting, shot planning, and visual storytelling, with hands-on use of Claude AI and Higgsfield for creative development and AIassisted content creation.\n- Skilled in integrating ElevenLabs for AI voiceovers and Topaz AI for video enhancement, upscaling, and quality improvement during the editing and post-production process.\n\nPERSONAL PROJECTS\n\nI. MultifitTVC (10/2024 - 11/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nLighting, and camera rig operation\n\nII. Millennium Samriddhi with PV Sindhu (01/2025 - 05/2025)\n\n2nd unit DOP, 1st Assistant Cinematographer\n\nIII. Borosil Scientific's Modern Manufacturing Facilities (02/2024-04/2024)\n\nDOP(Director of Photography) For entire Project, Visual Choreography, Storyteling\n\nIV. Treasure Troves (11/2024 - 12/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nV. Ambat Shaukin Marathi film (09/2023 - 11/2023)\n\n2nd unit DOP, 1st Assistant Cinematographer, (DIT) Digital image technician\n\nVI. ADP career Corporate film (06/2024 - 06/2024)\n\nCinematographer, Visual Planning, Scripting and short break-down on pre production\n\nVII. Mahindra Tractor Independance Day TVC (07/2024 - 07/2020)\n\n2nd unit DOP, 1st Assistant Cinematographer, Production planning\n\nVIII. Copeland Corporate film (06/2025 - 07/2025)\n\nCinematographer, Camera rig operator\n\nEDUCATION\n\nMaster of Design (M.Des.) MIT-ADT Institute of Design\n\n07/2021 - 06/2023, Loni kalbhor Pune M.H. India\n\nCourses\n\n- Film and Video Design\n\nBachelor of Commerce (B.com) Hemchand Yadav Vishwavidyalaya, Durg\n\n07/2017 - 04/2020, Durg(C.G)"
+    }
+  ],
+  "attempt_count": 3,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "extracted_text": "rahulsinha012 5@gmail.com\n\n+917049582700\n\nPune, India\n\nlinkedin.com/i n/hosturl.link/i LdZCP\n\nSKILLS\n\nCinematography & Visual Story telling\n\nCamera OperationDSLR / Cinema Camera Handling\n\nCreative Direction Associate Director\n\nLighting Design & Execution\n\nPhotography\n\nEditing Skill for work flow\n\nLive Broadcast Director\n\nLANGUAGES\n\nEnglish\n\nProfessional Working Proficiency\n\nHindi\n\nFullProfessional Proficiency\n\nINTERESTS\n\nTravelling\n\nTracking\n\nRahul Kumar Sinha\n\nCinematographer\n\nDirector of Photography and Associate Cinematographer with 5+ years of experience across feature films, TV commercials, short films, podcasts, and digital media. Skilled in cinematography, lighting, camera operations, and visual storytelling in high-pressure production environments.\n\nWORK EXPERIENCE\n\nCinematographer/ Creative Director\n\nLavin films international\n\n12/2022 - Present, Pune,(M.H.)India\n\nServed as Cinematographer/CreativeDirector/FocusPuller on TVCs, short films, podcasts, digital content, and a Marathi feature film.\n\nAchievements/Tasks\n\n- Shot 12+ commercials, 30+ short films, and 100+ digital projects, managing camera, lighting, and on-set execution.\n- Collaborated with creative teams on visual storytelling and supported in-house direction workflows\n- Lead cinematography for 50+Tvc, podcasts, social media projects, and YouTube advertisements, handling camera, lighting, and on-set execution across formats\n- Experienced in concept development, creative ideation, scripting, shot planning, and visual storytelling, with hands-on use of Claude AI and Higgsfield for creative development and AIassisted content creation.\n- Skilled in integrating ElevenLabs for AI voiceovers and Topaz AI for video enhancement, upscaling, and quality improvement during the editing and post-production process.\n\nPERSONAL PROJECTS\n\nI. MultifitTVC (10/2024 - 11/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nLighting, and camera rig operation\n\nII. Millennium Samriddhi with PV Sindhu (01/2025 - 05/2025)\n\n2nd unit DOP, 1st Assistant Cinematographer\n\nIII. Borosil Scientific's Modern Manufacturing Facilities (02/2024-04/2024)\n\nDOP(Director of Photography) For entire Project, Visual Choreography, Storyteling\n\nIV. Treasure Troves (11/2024 - 12/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nV. Ambat Shaukin Marathi film (09/2023 - 11/2023)\n\n2nd unit DOP, 1st Assistant Cinematographer, (DIT) Digital image technician\n\nVI. ADP career Corporate film (06/2024 - 06/2024)\n\nCinematographer, Visual Planning, Scripting and short break-down on pre production\n\nVII. Mahindra Tractor Independance Day TVC (07/2024 - 07/2020)\n\n2nd unit DOP, 1st Assistant Cinematographer, Production planning\n\nVIII. Copeland Corporate film (06/2025 - 07/2025)\n\nCinematographer, Camera rig operator\n\nEDUCATION\n\nMaster of Design (M.Des.) MIT-ADT Institute of Design\n\n07/2021 - 06/2023, Loni kalbhor Pune M.H. India\n\nCourses\n\n- Film and Video Design\n\nBachelor of Commerce (B.com) Hemchand Yadav Vishwavidyalaya, Durg\n\n07/2017 - 04/2020, Durg(C.G)",
+  "final_extracted_text": "rahulsinha012 5@gmail.com\n\n+917049582700\n\nPune, India\n\nlinkedin.com/i n/hosturl.link/i LdZCP\n\nSKILLS\n\nCinematography & Visual Story telling\n\nCamera OperationDSLR / Cinema Camera Handling\n\nCreative Direction Associate Director\n\nLighting Design & Execution\n\nPhotography\n\nEditing Skill for work flow\n\nLive Broadcast Director\n\nLANGUAGES\n\nEnglish\n\nProfessional Working Proficiency\n\nHindi\n\nFullProfessional Proficiency\n\nINTERESTS\n\nTravelling\n\nTracking\n\nRahul Kumar Sinha\n\nCinematographer\n\nDirector of Photography and Associate Cinematographer with 5+ years of experience across feature films, TV commercials, short films, podcasts, and digital media. Skilled in cinematography, lighting, camera operations, and visual storytelling in high-pressure production environments.\n\nWORK EXPERIENCE\n\nCinematographer/ Creative Director\n\nLavin films international\n\n12/2022 - Present, Pune,(M.H.)India\n\nServed as Cinematographer/CreativeDirector/FocusPuller on TVCs, short films, podcasts, digital content, and a Marathi feature film.\n\nAchievements/Tasks\n\n- Shot 12+ commercials, 30+ short films, and 100+ digital projects, managing camera, lighting, and on-set execution.\n- Collaborated with creative teams on visual storytelling and supported in-house direction workflows\n- Lead cinematography for 50+Tvc, podcasts, social media projects, and YouTube advertisements, handling camera, lighting, and on-set execution across formats\n- Experienced in concept development, creative ideation, scripting, shot planning, and visual storytelling, with hands-on use of Claude AI and Higgsfield for creative development and AIassisted content creation.\n- Skilled in integrating ElevenLabs for AI voiceovers and Topaz AI for video enhancement, upscaling, and quality improvement during the editing and post-production process.\n\nPERSONAL PROJECTS\n\nI. MultifitTVC (10/2024 - 11/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nLighting, and camera rig operation\n\nII. Millennium Samriddhi with PV Sindhu (01/2025 - 05/2025)\n\n2nd unit DOP, 1st Assistant Cinematographer\n\nIII. Borosil Scientific's Modern Manufacturing Facilities (02/2024-04/2024)\n\nDOP(Director of Photography) For entire Project, Visual Choreography, Storyteling\n\nIV. Treasure Troves (11/2024 - 12/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nV. Ambat Shaukin Marathi film (09/2023 - 11/2023)\n\n2nd unit DOP, 1st Assistant Cinematographer, (DIT) Digital image technician\n\nVI. ADP career Corporate film (06/2024 - 06/2024)\n\nCinematographer, Visual Planning, Scripting and short break-down on pre production\n\nVII. Mahindra Tractor Independance Day TVC (07/2024 - 07/2020)\n\n2nd unit DOP, 1st Assistant Cinematographer, Production planning\n\nVIII. Copeland Corporate film (06/2025 - 07/2025)\n\nCinematographer, Camera rig operator\n\nEDUCATION\n\nMaster of Design (M.Des.) MIT-ADT Institute of Design\n\n07/2021 - 06/2023, Loni kalbhor Pune M.H. India\n\nCourses\n\n- Film and Video Design\n\nBachelor of Commerce (B.com) Hemchand Yadav Vishwavidyalaya, Durg\n\n07/2017 - 04/2020, Durg(C.G)",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "quality": {
+    "status": "PASS",
+    "document_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7",
+    "source_tool": "docling",
+    "attempt_id": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7-attempt-3",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 3040,
+        "word_count": 377,
+        "line_count": 113,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.141447,
+        "symbol_count": 0,
+        "symbol_ratio": 0.0,
+        "max_repeated_char_run": 3,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 91.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 3040,
+        "word_count": 377,
+        "configured_section_count": 8,
+        "detected_count": 5,
+        "missing_count": 3,
+        "detected_sections": [
+          "Contact Information",
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Projects"
+        ],
+        "missing_sections": [
+          "Summary",
+          "Responsibilities",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Summary",
+          "Responsibilities",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Skills": "skills",
+          "Work Experience": "WORKEXPERIENCE",
+          "Education": "education",
+          "Projects": "personal projects"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "5@gmail.com",
+            "confidence": 0.8
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "SKILLS",
+            "detection_method": "heading",
+            "line_number": 9,
+            "evidence": "SKILLS",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "WORK EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 47,
+            "evidence": "WORK EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATION",
+            "detection_method": "heading",
+            "line_number": 101,
+            "evidence": "EDUCATION",
+            "confidence": 0.98
+          },
+          "Projects": {
+            "canonical_name": "Projects",
+            "original_heading": "PERSONAL PROJECTS",
+            "detection_method": "heading",
+            "line_number": 65,
+            "evidence": "PERSONAL PROJECTS",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Projects": "detected",
+          "Summary": "missing",
+          "Responsibilities": "missing",
+          "Certifications": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Projects"
+      ],
+      "missing_sections": [
+        "Summary",
+        "Responsibilities",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Summary",
+        "Responsibilities",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 99.41,
+      "flags": [
+        "HIGH_LINE_LENGTH_VARIATION"
+      ],
+      "reasons": [
+        "Line lengths vary unusually (coefficient of variation 1.04) — a possible sign of mixed or merged column text."
+      ],
+      "metrics": {
+        "char_count": 3040,
+        "word_count": 377,
+        "line_count": 113,
+        "non_empty_line_count": 59,
+        "short_line_count": 18,
+        "short_line_ratio": 0.305085,
+        "fragmented_line_count": 14,
+        "fragmented_line_ratio": 0.237288,
+        "mean_line_length": 49.63,
+        "median_line_length": 35.0,
+        "line_length_stdev": 51.59,
+        "line_length_cv": 1.039465,
+        "broken_sentence_count": 1,
+        "broken_sentence_ratio": 0.017241,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Selected 'docling' with the highest quality score 98.0 (threshold 60.0).",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 4846.02,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": 43.7,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 6195.74,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=94.9, pymupdf=94.9, docling=98.0",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected 'docling' with the highest quality score 98.0 (threshold 60.0).",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Docling text normalized: 3040 → 3040 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Contact Information Recovery",
+      "type": "contact_recovery",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Phone, email and location already present in the selected text — no recovery needed.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 26959.27,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 33172.2,
+      "message": "Muse AI produced validated Resume JSON from the Docling extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 33172.2,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "docling",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "rahulsinha012 5@gmail.com\n\n+917049582700\n\nPune, India\n\nlinkedin.com/i n/hosturl.link/i LdZCP\n\nSKILLS\n\nCinematography & Visual Story telling\n\nCamera OperationDSLR / Cinema Camera Handling\n\nCreative Direction Associate Director\n\nLighting Design & Execution\n\nPhotography\n\nEditing Skill for work flow\n\nLive Broadcast Director\n\nLANGUAGES\n\nEnglish\n\nProfessional Working Proficiency\n\nHindi\n\nFullProfessional Proficiency\n\nINTERESTS\n\nTravelling\n\nTracking\n\nRahul Kumar Sinha\n\nCinematographer\n\nDirector of Photography and Associate Cinematographer with 5+ years of experience across feature films, TV commercials, short films, podcasts, and digital media. Skilled in cinematography, lighting, camera operations, and visual storytelling in high-pressure production environments.\n\nWORK EXPERIENCE\n\nCinematographer/ Creative Director\n\nLavin films international\n\n12/2022 - Present, Pune,(M.H.)India\n\nServed as Cinematographer/CreativeDirector/FocusPuller on TVCs, short films, podcasts, digital content, and a Marathi feature film.\n\nAchievements/Tasks\n\n- Shot 12+ commercials, 30+ short films, and 100+ digital projects, managing camera, lighting, and on-set execution.\n- Collaborated with creative teams on visual storytelling and supported in-house direction workflows\n- Lead cinematography for 50+Tvc, podcasts, social media projects, and YouTube advertisements, handling camera, lighting, and on-set execution across formats\n- Experienced in concept development, creative ideation, scripting, shot planning, and visual storytelling, with hands-on use of Claude AI and Higgsfield for creative development and AIassisted content creation.\n- Skilled in integrating ElevenLabs for AI voiceovers and Topaz AI for video enhancement, upscaling, and quality improvement during the editing and post-production process.\n\nPERSONAL PROJECTS\n\nI. MultifitTVC (10/2024 - 11/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nLighting, and camera rig operation\n\nII. Millennium Samriddhi with PV Sindhu (01/2025 - 05/2025)\n\n2nd unit DOP, 1st Assistant Cinematographer\n\nIII. Borosil Scientific's Modern Manufacturing Facilities (02/2024-04/2024)\n\nDOP(Director of Photography) For entire Project, Visual Choreography, Storyteling\n\nIV. Treasure Troves (11/2024 - 12/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nV. Ambat Shaukin Marathi film (09/2023 - 11/2023)\n\n2nd unit DOP, 1st Assistant Cinematographer, (DIT) Digital image technician\n\nVI. ADP career Corporate film (06/2024 - 06/2024)\n\nCinematographer, Visual Planning, Scripting and short break-down on pre production\n\nVII. Mahindra Tractor Independance Day TVC (07/2024 - 07/2020)\n\n2nd unit DOP, 1st Assistant Cinematographer, Production planning\n\nVIII. Copeland Corporate film (06/2025 - 07/2025)\n\nCinematographer, Camera rig operator\n\nEDUCATION\n\nMaster of Design (M.Des.) MIT-ADT Institute of Design\n\n07/2021 - 06/2023, Loni kalbhor Pune M.H. India\n\nCourses\n\n- Film and Video Design\n\nBachelor of Commerce (B.com) Hemchand Yadav Vishwavidyalaya, Durg\n\n07/2017 - 04/2020, Durg(C.G)",
+    "normalized_text": "rahulsinha012 5@gmail.com\n\n+917049582700\n\nPune, India\n\nlinkedin.com/i n/hosturl.link/i LdZCP\n\nSKILLS\n\nCinematography & Visual Story telling\n\nCamera OperationDSLR / Cinema Camera Handling\n\nCreative Direction Associate Director\n\nLighting Design & Execution\n\nPhotography\n\nEditing Skill for work flow\n\nLive Broadcast Director\n\nLANGUAGES\n\nEnglish\n\nProfessional Working Proficiency\n\nHindi\n\nFullProfessional Proficiency\n\nINTERESTS\n\nTravelling\n\nTracking\n\nRahul Kumar Sinha\n\nCinematographer\n\nDirector of Photography and Associate Cinematographer with 5+ years of experience across feature films, TV commercials, short films, podcasts, and digital media. Skilled in cinematography, lighting, camera operations, and visual storytelling in high-pressure production environments.\n\nWORK EXPERIENCE\n\nCinematographer/ Creative Director\n\nLavin films international\n\n12/2022 - Present, Pune,(M.H.)India\n\nServed as Cinematographer/CreativeDirector/FocusPuller on TVCs, short films, podcasts, digital content, and a Marathi feature film.\n\nAchievements/Tasks\n\n- Shot 12+ commercials, 30+ short films, and 100+ digital projects, managing camera, lighting, and on-set execution.\n- Collaborated with creative teams on visual storytelling and supported in-house direction workflows\n- Lead cinematography for 50+Tvc, podcasts, social media projects, and YouTube advertisements, handling camera, lighting, and on-set execution across formats\n- Experienced in concept development, creative ideation, scripting, shot planning, and visual storytelling, with hands-on use of Claude AI and Higgsfield for creative development and AIassisted content creation.\n- Skilled in integrating ElevenLabs for AI voiceovers and Topaz AI for video enhancement, upscaling, and quality improvement during the editing and post-production process.\n\nPERSONAL PROJECTS\n\nI. MultifitTVC (10/2024 - 11/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nLighting, and camera rig operation\n\nII. Millennium Samriddhi with PV Sindhu (01/2025 - 05/2025)\n\n2nd unit DOP, 1st Assistant Cinematographer\n\nIII. Borosil Scientific's Modern Manufacturing Facilities (02/2024-04/2024)\n\nDOP(Director of Photography) For entire Project, Visual Choreography, Storyteling\n\nIV. Treasure Troves (11/2024 - 12/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nV. Ambat Shaukin Marathi film (09/2023 - 11/2023)\n\n2nd unit DOP, 1st Assistant Cinematographer, (DIT) Digital image technician\n\nVI. ADP career Corporate film (06/2024 - 06/2024)\n\nCinematographer, Visual Planning, Scripting and short break-down on pre production\n\nVII. Mahindra Tractor Independance Day TVC (07/2024 - 07/2020)\n\n2nd unit DOP, 1st Assistant Cinematographer, Production planning\n\nVIII. Copeland Corporate film (06/2025 - 07/2025)\n\nCinematographer, Camera rig operator\n\nEDUCATION\n\nMaster of Design (M.Des.) MIT-ADT Institute of Design\n\n07/2021 - 06/2023, Loni kalbhor Pune M.H. India\n\nCourses\n\n- Film and Video Design\n\nBachelor of Commerce (B.com) Hemchand Yadav Vishwavidyalaya, Durg\n\n07/2017 - 04/2020, Durg(C.G)",
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "original_chars": 3040,
+    "normalized_chars": 3040,
+    "original_estimated_tokens": 760,
+    "normalized_estimated_tokens": 760,
+    "estimated_reduction_percent": 0.0
+  },
+  "contact_recovery": {
+    "status": "not_needed",
+    "selected_extractor": "docling",
+    "present_before": [
+      "phone",
+      "email",
+      "location"
+    ],
+    "missing_before": [],
+    "recovered": {},
+    "still_missing": [],
+    "sources_tried": [],
+    "applied": false,
+    "pre_recovery_normalized_text": null,
+    "at": "2026-11-11T06:45:04.235524+00:00"
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 26959.27,
+      "input_tokens": 1586,
+      "output_tokens": 3246,
+      "total_tokens": 4832,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1586,
+    "output_tokens": 3246,
+    "total_tokens": 4832,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 26959.27,
+    "usage": {
+      "completion_tokens": 3246,
+      "prompt_tokens": 1586,
+      "total_tokens": 4832,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2704
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "docling",
+      "status": "applied",
+      "original_chars": 3040,
+      "normalized_chars": 3040,
+      "estimated_reduction_percent": 0.0,
+      "normalization_applied": false,
+      "normalization_steps": [],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "docling",
+  "selected_quality_score": 98.0,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 94.9,
+      "status": "success",
+      "word_count": 374,
+      "char_count": 3014,
+      "meaningful_char_count": 2607,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.043,
+      "readability_score": 89.1,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "projects"
+        ]
+      },
+      "structure": {
+        "heading_count": 3,
+        "paragraph_count": 35,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.8909,
+        "cleanliness": 1.0,
+        "non_duplication": 0.957,
+        "completeness": 1.0,
+        "structure": 0.7
+      }
+    },
+    "pymupdf": {
+      "extractor": "pymupdf",
+      "quality_score": 94.9,
+      "status": "success",
+      "word_count": 374,
+      "char_count": 2980,
+      "meaningful_char_count": 2607,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0417,
+      "readability_score": 89.1,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "projects"
+        ]
+      },
+      "structure": {
+        "heading_count": 4,
+        "paragraph_count": 5,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.8909,
+        "cleanliness": 1.0,
+        "non_duplication": 0.9583,
+        "completeness": 1.0,
+        "structure": 0.7
+      }
+    },
+    "docling": {
+      "extractor": "docling",
+      "quality_score": 98.0,
+      "status": "success",
+      "word_count": 377,
+      "char_count": 3040,
+      "meaningful_char_count": 2610,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0169,
+      "readability_score": 87.9,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "projects"
+        ]
+      },
+      "structure": {
+        "heading_count": 4,
+        "paragraph_count": 55,
+        "bullet_count": 6
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.879,
+        "cleanliness": 1.0,
+        "non_duplication": 0.9831,
+        "completeness": 1.0,
+        "structure": 1.0
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 3040,
+    "normalized_chars": 3040,
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "error": null,
+    "original_text": "rahulsinha012 5@gmail.com\n\n+917049582700\n\nPune, India\n\nlinkedin.com/i n/hosturl.link/i LdZCP\n\nSKILLS\n\nCinematography & Visual Story telling\n\nCamera OperationDSLR / Cinema Camera Handling\n\nCreative Direction Associate Director\n\nLighting Design & Execution\n\nPhotography\n\nEditing Skill for work flow\n\nLive Broadcast Director\n\nLANGUAGES\n\nEnglish\n\nProfessional Working Proficiency\n\nHindi\n\nFullProfessional Proficiency\n\nINTERESTS\n\nTravelling\n\nTracking\n\nRahul Kumar Sinha\n\nCinematographer\n\nDirector of Photography and Associate Cinematographer with 5+ years of experience across feature films, TV commercials, short films, podcasts, and digital media. Skilled in cinematography, lighting, camera operations, and visual storytelling in high-pressure production environments.\n\nWORK EXPERIENCE\n\nCinematographer/ Creative Director\n\nLavin films international\n\n12/2022 - Present, Pune,(M.H.)India\n\nServed as Cinematographer/CreativeDirector/FocusPuller on TVCs, short films, podcasts, digital content, and a Marathi feature film.\n\nAchievements/Tasks\n\n- Shot 12+ commercials, 30+ short films, and 100+ digital projects, managing camera, lighting, and on-set execution.\n- Collaborated with creative teams on visual storytelling and supported in-house direction workflows\n- Lead cinematography for 50+Tvc, podcasts, social media projects, and YouTube advertisements, handling camera, lighting, and on-set execution across formats\n- Experienced in concept development, creative ideation, scripting, shot planning, and visual storytelling, with hands-on use of Claude AI and Higgsfield for creative development and AIassisted content creation.\n- Skilled in integrating ElevenLabs for AI voiceovers and Topaz AI for video enhancement, upscaling, and quality improvement during the editing and post-production process.\n\nPERSONAL PROJECTS\n\nI. MultifitTVC (10/2024 - 11/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nLighting, and camera rig operation\n\nII. Millennium Samriddhi with PV Sindhu (01/2025 - 05/2025)\n\n2nd unit DOP, 1st Assistant Cinematographer\n\nIII. Borosil Scientific's Modern Manufacturing Facilities (02/2024-04/2024)\n\nDOP(Director of Photography) For entire Project, Visual Choreography, Storyteling\n\nIV. Treasure Troves (11/2024 - 12/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nV. Ambat Shaukin Marathi film (09/2023 - 11/2023)\n\n2nd unit DOP, 1st Assistant Cinematographer, (DIT) Digital image technician\n\nVI. ADP career Corporate film (06/2024 - 06/2024)\n\nCinematographer, Visual Planning, Scripting and short break-down on pre production\n\nVII. Mahindra Tractor Independance Day TVC (07/2024 - 07/2020)\n\n2nd unit DOP, 1st Assistant Cinematographer, Production planning\n\nVIII. Copeland Corporate film (06/2025 - 07/2025)\n\nCinematographer, Camera rig operator\n\nEDUCATION\n\nMaster of Design (M.Des.) MIT-ADT Institute of Design\n\n07/2021 - 06/2023, Loni kalbhor Pune M.H. India\n\nCourses\n\n- Film and Video Design\n\nBachelor of Commerce (B.com) Hemchand Yadav Vishwavidyalaya, Durg\n\n07/2017 - 04/2020, Durg(C.G)",
+    "normalized_text": "rahulsinha012 5@gmail.com\n\n+917049582700\n\nPune, India\n\nlinkedin.com/i n/hosturl.link/i LdZCP\n\nSKILLS\n\nCinematography & Visual Story telling\n\nCamera OperationDSLR / Cinema Camera Handling\n\nCreative Direction Associate Director\n\nLighting Design & Execution\n\nPhotography\n\nEditing Skill for work flow\n\nLive Broadcast Director\n\nLANGUAGES\n\nEnglish\n\nProfessional Working Proficiency\n\nHindi\n\nFullProfessional Proficiency\n\nINTERESTS\n\nTravelling\n\nTracking\n\nRahul Kumar Sinha\n\nCinematographer\n\nDirector of Photography and Associate Cinematographer with 5+ years of experience across feature films, TV commercials, short films, podcasts, and digital media. Skilled in cinematography, lighting, camera operations, and visual storytelling in high-pressure production environments.\n\nWORK EXPERIENCE\n\nCinematographer/ Creative Director\n\nLavin films international\n\n12/2022 - Present, Pune,(M.H.)India\n\nServed as Cinematographer/CreativeDirector/FocusPuller on TVCs, short films, podcasts, digital content, and a Marathi feature film.\n\nAchievements/Tasks\n\n- Shot 12+ commercials, 30+ short films, and 100+ digital projects, managing camera, lighting, and on-set execution.\n- Collaborated with creative teams on visual storytelling and supported in-house direction workflows\n- Lead cinematography for 50+Tvc, podcasts, social media projects, and YouTube advertisements, handling camera, lighting, and on-set execution across formats\n- Experienced in concept development, creative ideation, scripting, shot planning, and visual storytelling, with hands-on use of Claude AI and Higgsfield for creative development and AIassisted content creation.\n- Skilled in integrating ElevenLabs for AI voiceovers and Topaz AI for video enhancement, upscaling, and quality improvement during the editing and post-production process.\n\nPERSONAL PROJECTS\n\nI. MultifitTVC (10/2024 - 11/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nLighting, and camera rig operation\n\nII. Millennium Samriddhi with PV Sindhu (01/2025 - 05/2025)\n\n2nd unit DOP, 1st Assistant Cinematographer\n\nIII. Borosil Scientific's Modern Manufacturing Facilities (02/2024-04/2024)\n\nDOP(Director of Photography) For entire Project, Visual Choreography, Storyteling\n\nIV. Treasure Troves (11/2024 - 12/2024)\n\nAssistant Cinematographer, focus pullar, Camera operater\n\nV. Ambat Shaukin Marathi film (09/2023 - 11/2023)\n\n2nd unit DOP, 1st Assistant Cinematographer, (DIT) Digital image technician\n\nVI. ADP career Corporate film (06/2024 - 06/2024)\n\nCinematographer, Visual Planning, Scripting and short break-down on pre production\n\nVII. Mahindra Tractor Independance Day TVC (07/2024 - 07/2020)\n\n2nd unit DOP, 1st Assistant Cinematographer, Production planning\n\nVIII. Copeland Corporate film (06/2025 - 07/2025)\n\nCinematographer, Camera rig operator\n\nEDUCATION\n\nMaster of Design (M.Des.) MIT-ADT Institute of Design\n\n07/2021 - 06/2023, Loni kalbhor Pune M.H. India\n\nCourses\n\n- Film and Video Design\n\nBachelor of Commerce (B.com) Hemchand Yadav Vishwavidyalaya, Durg\n\n07/2017 - 04/2020, Durg(C.G)"
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "Rahul Kumar Sinha",
+      "email": "rahulsinha0125@gmail.com",
+      "phone": "+917049582700",
+      "location": "Pune, India",
+      "summary": "Director of Photography and Associate Cinematographer with 5+ years of experience across feature films, TV commercials, short films, podcasts, and digital media. Skilled in cinematography, lighting, camera operations, and visual storytelling in high-pressure production environments.",
+      "skills": {
+        "technical_skills": [
+          "Cinematography & Visual Story telling",
+          "Camera Operation DSLR / Cinema Camera Handling",
+          "Creative Direction Associate Director",
+          "Lighting Design & Execution",
+          "Photography",
+          "Editing Skill for work flow",
+          "Live Broadcast Director"
+        ],
+        "soft_skills": [],
+        "tools": [],
+        "taxonomy_skills": [],
+        "other_skills": []
+      },
+      "experience": [
+        {
+          "title": "Cinematographer/ Creative Director",
+          "company": "Lavin films international",
+          "location": "Pune, (M.H.) India",
+          "start_date": "12/2022",
+          "end_date": "Present",
+          "highlights": [
+            "Shot 12+ commercials, 30+ short films, and 100+ digital projects, managing camera, lighting, and on-set execution.",
+            "Collaborated with creative teams on visual storytelling and supported in-house direction workflows",
+            "Lead cinematography for 50+ Tvc, podcasts, social media projects, and YouTube advertisements, handling camera, lighting, and on-set execution across formats",
+            "Experienced in concept development, creative ideation, scripting, shot planning, and visual storytelling, with hands-on use of Claude AI and Higgsfield for creative development and AI-assisted content creation.",
+            "Skilled in integrating ElevenLabs for AI voiceovers and Topaz AI for video enhancement, upscaling, and quality improvement during the editing and post-production process."
+          ]
+        }
+      ],
+      "education": [
+        {
+          "degree": "Master of Design (M.Des.)",
+          "institution": "MIT-ADT Institute of Design",
+          "location": "Loni kalbhor Pune M.H. India",
+          "start_date": "07/2021",
+          "end_date": "06/2023"
+        },
+        {
+          "degree": "Bachelor of Commerce (B.com)",
+          "institution": "Hemchand Yadav Vishwavidyalaya, Durg",
+          "location": "Durg (C.G)",
+          "start_date": "07/2017",
+          "end_date": "04/2020"
+        }
+      ],
+      "certifications": [],
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "links": [
+        "linkedin.com/in/hosturl.link/iLdZCP"
+      ]
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 26959.27,
+    "usage": {
+      "completion_tokens": 3246,
+      "prompt_tokens": 1586,
+      "total_tokens": 4832,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2704
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "Rahul Kumar Sinha",
+    "email": "rahulsinha0125@gmail.com",
+    "phone": "+917049582700",
+    "location": "Pune, India",
+    "summary": "Director of Photography and Associate Cinematographer with 5+ years of experience across feature films, TV commercials, short films, podcasts, and digital media. Skilled in cinematography, lighting, camera operations, and visual storytelling in high-pressure production environments.",
+    "skills": {
+      "technical_skills": [
+        "Cinematography & Visual Story telling",
+        "Camera Operation DSLR / Cinema Camera Handling",
+        "Creative Direction Associate Director",
+        "Lighting Design & Execution",
+        "Photography",
+        "Editing Skill for work flow",
+        "Live Broadcast Director"
+      ],
+      "soft_skills": [],
+      "tools": [],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Cinematographer/ Creative Director",
+        "company": "Lavin films international",
+        "location": "Pune, (M.H.) India",
+        "start_date": "12/2022",
+        "end_date": "Present",
+        "highlights": [
+          "Shot 12+ commercials, 30+ short films, and 100+ digital projects, managing camera, lighting, and on-set execution.",
+          "Collaborated with creative teams on visual storytelling and supported in-house direction workflows",
+          "Lead cinematography for 50+ Tvc, podcasts, social media projects, and YouTube advertisements, handling camera, lighting, and on-set execution across formats",
+          "Experienced in concept development, creative ideation, scripting, shot planning, and visual storytelling, with hands-on use of Claude AI and Higgsfield for creative development and AI-assisted content creation.",
+          "Skilled in integrating ElevenLabs for AI voiceovers and Topaz AI for video enhancement, upscaling, and quality improvement during the editing and post-production process."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master of Design (M.Des.)",
+        "institution": "MIT-ADT Institute of Design",
+        "location": "Loni kalbhor Pune M.H. India",
+        "start_date": "07/2021",
+        "end_date": "06/2023"
+      },
+      {
+        "degree": "Bachelor of Commerce (B.com)",
+        "institution": "Hemchand Yadav Vishwavidyalaya, Durg",
+        "location": "Durg (C.G)",
+        "start_date": "07/2017",
+        "end_date": "04/2020"
+      }
+    ],
+    "certifications": [],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "links": [
+      "linkedin.com/in/hosturl.link/iLdZCP"
+    ]
+  },
+  "resume_json": {
+    "full_name": "Rahul Kumar Sinha",
+    "email": "rahulsinha0125@gmail.com",
+    "phone": "+917049582700",
+    "location": "Pune, India",
+    "summary": "Director of Photography and Associate Cinematographer with 5+ years of experience across feature films, TV commercials, short films, podcasts, and digital media. Skilled in cinematography, lighting, camera operations, and visual storytelling in high-pressure production environments.",
+    "skills": {
+      "technical_skills": [
+        "Cinematography & Visual Story telling",
+        "Camera Operation DSLR / Cinema Camera Handling",
+        "Creative Direction Associate Director",
+        "Lighting Design & Execution",
+        "Photography",
+        "Editing Skill for work flow",
+        "Live Broadcast Director"
+      ],
+      "soft_skills": [],
+      "tools": [],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Cinematographer/ Creative Director",
+        "company": "Lavin films international",
+        "location": "Pune, (M.H.) India",
+        "start_date": "12/2022",
+        "end_date": "Present",
+        "highlights": [
+          "Shot 12+ commercials, 30+ short films, and 100+ digital projects, managing camera, lighting, and on-set execution.",
+          "Collaborated with creative teams on visual storytelling and supported in-house direction workflows",
+          "Lead cinematography for 50+ Tvc, podcasts, social media projects, and YouTube advertisements, handling camera, lighting, and on-set execution across formats",
+          "Experienced in concept development, creative ideation, scripting, shot planning, and visual storytelling, with hands-on use of Claude AI and Higgsfield for creative development and AI-assisted content creation.",
+          "Skilled in integrating ElevenLabs for AI voiceovers and Topaz AI for video enhancement, upscaling, and quality improvement during the editing and post-production process."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master of Design (M.Des.)",
+        "institution": "MIT-ADT Institute of Design",
+        "location": "Loni kalbhor Pune M.H. India",
+        "start_date": "07/2021",
+        "end_date": "06/2023"
+      },
+      {
+        "degree": "Bachelor of Commerce (B.com)",
+        "institution": "Hemchand Yadav Vishwavidyalaya, Durg",
+        "location": "Durg (C.G)",
+        "start_date": "07/2017",
+        "end_date": "04/2020"
+      }
+    ],
+    "certifications": [],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "links": [
+      "linkedin.com/in/hosturl.link/iLdZCP"
+    ]
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 6.2059,
+    "quality_seconds": 0.0037,
+    "normalization_seconds": 0.0002,
+    "recovery_seconds": 0.0006,
+    "llm_seconds": 26.9618,
+    "total_seconds": 33.1722
+  },
+  "_stored_name": "4020e1bd-d9fa-4dd5-bd05-b5c9461110f7_SHJ-5329_SHC-365545.pdf"
+}

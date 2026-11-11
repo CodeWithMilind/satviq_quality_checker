@@ -1,0 +1,1775 @@
+{
+  "resume_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa",
+  "filename": "download_12_.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 485120,
+  "uploaded_at": "2026-11-11T06:33:53.787003+00:00",
+  "success": true,
+  "extractor_used": "docling",
+  "final_extractor": "docling",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa-attempt-1",
+      "resume_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 54.1 (selected 'docling' scored 92.2).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 54.1 (selected 'docling' scored 92.2).",
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa",
+        "source_tool": "tika",
+        "attempt_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 75.0,
+          "flags": [
+            "SHORT_TEXT"
+          ],
+          "reasons": [
+            "Text is short for a resume: 213 characters / 35 words."
+          ],
+          "metrics": {
+            "char_count": 213,
+            "word_count": 35,
+            "line_count": 12,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.173709,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 27.0,
+          "flags": [
+            "MISSING_REQUIRED_SECTION",
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION",
+            "NO_SECTIONS_DETECTED"
+          ],
+          "reasons": [
+            "Required section not detected: Contact Information. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "No configured resume sections were detected in the extracted text."
+          ],
+          "metrics": {
+            "char_count": 213,
+            "word_count": 35,
+            "configured_section_count": 8,
+            "detected_count": 0,
+            "missing_count": 8,
+            "detected_sections": [],
+            "missing_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Responsibilities",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [
+              "Contact Information"
+            ],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {},
+            "conditional_rejected": [],
+            "section_evidence": {},
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "missing",
+              "Summary": "missing",
+              "Skills": "missing",
+              "Work Experience": "missing",
+              "Responsibilities": "missing",
+              "Education": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 75.0
+          },
+          "detected_sections": [],
+          "missing_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Responsibilities",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [
+            "Contact Information"
+          ],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 55.51,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION",
+            "POSSIBLE_BROKEN_SENTENCES"
+          ],
+          "reasons": [
+            "66.7% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "55.6% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.11) — a possible sign of mixed or merged column text.",
+            "50.0% of line transitions look like a sentence broken across lines without punctuation."
+          ],
+          "metrics": {
+            "char_count": 213,
+            "word_count": 35,
+            "line_count": 12,
+            "non_empty_line_count": 9,
+            "short_line_count": 6,
+            "short_line_ratio": 0.666667,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.555556,
+            "mean_line_length": 22.44,
+            "median_line_length": 11.0,
+            "line_length_stdev": 24.89,
+            "line_length_cv": 1.109021,
+            "broken_sentence_count": 4,
+            "broken_sentence_ratio": 0.5,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa",
+        "source_tool": "tika",
+        "attempt_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 75.0,
+          "flags": [
+            "SHORT_TEXT"
+          ],
+          "reasons": [
+            "Text is short for a resume: 213 characters / 35 words."
+          ],
+          "metrics": {
+            "char_count": 213,
+            "word_count": 35,
+            "line_count": 12,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.173709,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 27.0,
+          "flags": [
+            "MISSING_REQUIRED_SECTION",
+            "MISSING_RECOMMENDED_SECTION",
+            "MISSING_OPTIONAL_SECTION",
+            "NO_SECTIONS_DETECTED"
+          ],
+          "reasons": [
+            "Required section not detected: Contact Information. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Skills. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Work Experience. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Recommended section not detected: Education. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Summary. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "No configured resume sections were detected in the extracted text."
+          ],
+          "metrics": {
+            "char_count": 213,
+            "word_count": 35,
+            "configured_section_count": 8,
+            "detected_count": 0,
+            "missing_count": 8,
+            "detected_sections": [],
+            "missing_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Responsibilities",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [
+              "Contact Information"
+            ],
+            "missing_recommended": [
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_optional": [
+              "Summary",
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {},
+            "conditional_rejected": [],
+            "section_evidence": {},
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "missing",
+              "Summary": "missing",
+              "Skills": "missing",
+              "Work Experience": "missing",
+              "Responsibilities": "missing",
+              "Education": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 75.0
+          },
+          "detected_sections": [],
+          "missing_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Responsibilities",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [
+            "Contact Information"
+          ],
+          "missing_recommended": [
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_optional": [
+            "Summary",
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 55.51,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION",
+            "POSSIBLE_BROKEN_SENTENCES"
+          ],
+          "reasons": [
+            "66.7% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "55.6% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 1.11) — a possible sign of mixed or merged column text.",
+            "50.0% of line transitions look like a sentence broken across lines without punctuation."
+          ],
+          "metrics": {
+            "char_count": 213,
+            "word_count": 35,
+            "line_count": 12,
+            "non_empty_line_count": 9,
+            "short_line_count": 6,
+            "short_line_ratio": 0.666667,
+            "fragmented_line_count": 5,
+            "fragmented_line_ratio": 0.555556,
+            "mean_line_length": 22.44,
+            "median_line_length": 11.0,
+            "line_length_stdev": 24.89,
+            "line_length_cv": 1.109021,
+            "broken_sentence_count": 4,
+            "broken_sentence_ratio": 0.5,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 54.1,
+      "duration_ms": 11981.45,
+      "text": "LANGUAGES\n\ne English\ne Hindi\ne Marathi\n\nDECLARATION\n| hereby declare that the information provided above is true and correct to the best of my\nknowledge and belief.\n\nPlace: Pune Name: Soham Velhal\nDate: Signature:",
+      "extracted_text": "LANGUAGES\n\ne English\ne Hindi\ne Marathi\n\nDECLARATION\n| hereby declare that the information provided above is true and correct to the best of my\nknowledge and belief.\n\nPlace: Pune Name: Soham Velhal\nDate: Signature:",
+      "extracted_text_length": 213,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "LANGUAGES\n\ne English\ne Hindi\ne Marathi\n\nDECLARATION\n| hereby declare that the information provided above is true and correct to the best of my\nknowledge and belief.\n\nPlace: Pune Name: Soham Velhal\nDate: Signature:"
+    },
+    {
+      "attempt_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa-attempt-2",
+      "resume_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa",
+      "attempt_number": 2,
+      "extractor_name": "pymupdf",
+      "extractor_version": null,
+      "success": false,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "fallback_decision": "reject",
+      "fallback_reason": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "quality_status": null,
+      "quality": null,
+      "quality_checker_report": null,
+      "quality_score": 0.0,
+      "duration_ms": 511.02000000000004,
+      "text": "",
+      "extracted_text": "",
+      "extracted_text_length": 0,
+      "extraction_status": "FAILED",
+      "error": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "error_message": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "format": "PDF 1.7",
+        "title": "Chetan Shinde.pdf",
+        "creator": "Aspose Ltd.",
+        "producer": "Aspose.PDF for Java 18.8",
+        "creationDate": "D:20260217211443+05'30'",
+        "modDate": "D:20260320130402+05'30'"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": ""
+    },
+    {
+      "attempt_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa-attempt-3",
+      "resume_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa",
+      "attempt_number": 3,
+      "extractor_name": "docling",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Selected 'docling' with the highest quality score 92.2 (threshold 60.0).",
+      "fallback_decision": "accept",
+      "fallback_reason": "Selected 'docling' with the highest quality score 92.2 (threshold 60.0).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa",
+        "source_tool": "docling",
+        "attempt_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4943,
+            "word_count": 703,
+            "line_count": 93,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.146874,
+            "symbol_count": 12,
+            "symbol_ratio": 0.002428,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4943,
+            "word_count": 703,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact information",
+              "Summary": "professional summary",
+              "Skills": "technical skills",
+              "Work Experience": "professional experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "Contact Information",
+                "detection_method": "heading",
+                "line_number": 1,
+                "evidence": "Contact Information",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 10,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "TECHNICAL SKILLS",
+                "detection_method": "heading",
+                "line_number": 76,
+                "evidence": "TECHNICAL SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "PROFESSIONAL EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 28,
+                "evidence": "PROFESSIONAL EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 63,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 98.92,
+          "flags": [
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "Line lengths vary unusually (coefficient of variation 1.07) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 4943,
+            "word_count": 703,
+            "line_count": 93,
+            "non_empty_line_count": 69,
+            "short_line_count": 16,
+            "short_line_ratio": 0.231884,
+            "fragmented_line_count": 9,
+            "fragmented_line_ratio": 0.130435,
+            "mean_line_length": 70.3,
+            "median_line_length": 64.0,
+            "line_length_stdev": 75.37,
+            "line_length_cv": 1.072038,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa",
+        "source_tool": "docling",
+        "attempt_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 4943,
+            "word_count": 703,
+            "line_count": 93,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.146874,
+            "symbol_count": 12,
+            "symbol_ratio": 0.002428,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 4943,
+            "word_count": 703,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "contact information",
+              "Summary": "professional summary",
+              "Skills": "technical skills",
+              "Work Experience": "professional experience",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "Contact Information",
+                "detection_method": "heading",
+                "line_number": 1,
+                "evidence": "Contact Information",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "PROFESSIONAL SUMMARY",
+                "detection_method": "heading",
+                "line_number": 10,
+                "evidence": "PROFESSIONAL SUMMARY",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "TECHNICAL SKILLS",
+                "detection_method": "heading",
+                "line_number": 76,
+                "evidence": "TECHNICAL SKILLS",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "PROFESSIONAL EXPERIENCE",
+                "detection_method": "heading",
+                "line_number": 28,
+                "evidence": "PROFESSIONAL EXPERIENCE",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "EDUCATION",
+                "detection_method": "heading",
+                "line_number": 63,
+                "evidence": "EDUCATION",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 98.92,
+          "flags": [
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "Line lengths vary unusually (coefficient of variation 1.07) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 4943,
+            "word_count": 703,
+            "line_count": 93,
+            "non_empty_line_count": 69,
+            "short_line_count": 16,
+            "short_line_ratio": 0.231884,
+            "fragmented_line_count": 9,
+            "fragmented_line_ratio": 0.130435,
+            "mean_line_length": 70.3,
+            "median_line_length": 64.0,
+            "line_length_stdev": 75.37,
+            "line_length_cv": 1.072038,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 92.2,
+      "duration_ms": 145033.57,
+      "text": "Soham Velhal\n\n9 m n  mmm   18\n\nPROFESSIONAL SUMMARY\n\nStrategic and result-oriented Operations and Plant Head with 9.8 years of progressive experience, growing from Production Engineer to leading plant operations. Proven track record in scaling manufacturing performance, implementing ERP systems, and enhancing customer satisfaction. Successfully led operational initiatives that resulted in a 125% increase in company revenue over 4 years. Skilled in IsO compliance, lean systems, multi-skill workforce development, and cross-functional team leadership. Recognised for meticulous planning, inventory optimisation, and sustainable shop floor improvements.\n\nCORE COMPETENCIES\n\n- Plant Operations & Production Management\n- ERP Implementation · ERP Implementation\n- Budgeting & Cost Control\n- Supply Chain & Inventory Optimization\n- Cross-Functional Team Collaboration\n- Customer Communication & Relationship Management · Customer Communication & Relationship Management\n- Manpower Planning & Operator Retentior · Manpower Planning & Operator Retention\n- Lean Manufacturing, 5S and Kaizen\n- Quality & Compliance (ISO 9001 Standard · Quality & Compliance (ISO 9001 Standards)\n- Performance Monitoring & KPI Dashboarding\n- ISO & Customer Audits. · ISO & Customer Audits.\n\nPROFESSIONAL EXPERIENCE\n\nOperations and Plant Head, Avi Oilless Die Components India Pvt. Ltd. Pune, April 2021-Present\n\n- Responsible for full plant operations, resource management, production, quality, maintenance, and dispatch.\n- Increased sales revenue from ₹14 Cr to ₹31.5 Cr in 4 years by enhancing operational efficiency, delivery timelines, and quality.\n- Successfully implemented ERP system (Deskera) across departments—ensuring live tracking, planning, and reporting.\n- Handled ISO 9001 and customer audits as Management Representative (MR) for 5 consecutive years.\n- Developed a team of multi-skilled operators and employees, improving flexibility and reducing downtime during absenteeism or shifts.\n- Improved customer satisfaction index from 80% to 96%, thanks to better delivery adherence and direct customer engagement.\n- Practiced meticulous planning of materials and production, resulting in higher machine utilization and minimal rework.\n- Actively collaborated with cross-functional teams – Design, QA, SCM, and Sales – to meet customer demands and reduce lead time.\n- Increased operator retention rate, fostering a culture of respect, upskilling, and recognition.\n- Ensure compliance with EHs, statutory, and safety standards, maintaining a safe and auditready workplace.\n\nProduction Manager, Avi Oilless Die Components India Pvt. Ltd. Pune, Feb 2019-March 2021\n\n- un t  t    ns  r nm · rework and wastage.\n- Trained mid-level supervisors on process standardization and team motivation.\n- Improved coordination with procurement and logistics for better material availability.\n- Tracked and analyzed production KPIs (OEE, downtime, rejection rates) to identify and eliminate bottlenecks.\n- Oversaw shift-wise manpower deployment and ensured efficient utilization of labour and machine hours.\n- m  n  s  sa ns   ryt· for audits.\n- Ensured adherence to safety standards, conducted toolbox talks and coordinated with the EHS team.\n\nProduction Engineer, Avi Oilless Die Components India Pvt. Ltd., Pune, June 2016-Jan 2019\n\n- ae   ss it  s s  on\n- Worked on cycle time reduction and tool life improvement projects.\n- Assisted in the implementation of 5S and Kaizen across the unit.\n- Created daily production reports and coordinated with maintenance for minimal breakdowns.\n- Conducted root cause analysis for defects and suggested corrective actions.\n- Collaborated with quality control to ensure adherence to in-process quality standards and first-piece approvals.\n- Ensured all safety rules were followed on the shop floor, including PPE usage and machine safety.\n\nEDUCATION\n\nBachelor of Engineering (Mechanical Engineering) Shivaji University, Kolhapur, India, May 2015\n\nKEY ACHIEVEMENTS\n\n- Achieved a 125% increase in sales revenue over 4 years as Plant & Operations Head.\n- Successfully implemented Deskera ERP across all departments.\n- Handled ISO audits as Management Representative (MR) for 5 consecutive years with full compliance.\n- Improved customer satisfaction from 80% to 96% through better communication and ontime delivery.\n- Developed a multi-skilled workforce, enhancing operational flexibility and team efficiency.\n- Reduced inventory holding through meticulous material planning\n\nTECHNICAL SKILLS\n\n- ERP: Deskera, SAP (basic)\n- MS Office (Excel, Word, PowerPoint)\n- AutoCAD.\n- ISO 9001:2015, 14001, & 45001 Internal Auditor certification.\n\nLANGUAGES\n\n- English\n- Hindi\n- Marathi\n\nDECLARATION\n\nI hereby declare that the information provided above is true and correct to the best of my knowledge and belief.\n\nPlace: Pune Name: Soham Velhal Date: Signature:",
+      "extracted_text": "Soham Velhal\n\n9 m n  mmm   18\n\nPROFESSIONAL SUMMARY\n\nStrategic and result-oriented Operations and Plant Head with 9.8 years of progressive experience, growing from Production Engineer to leading plant operations. Proven track record in scaling manufacturing performance, implementing ERP systems, and enhancing customer satisfaction. Successfully led operational initiatives that resulted in a 125% increase in company revenue over 4 years. Skilled in IsO compliance, lean systems, multi-skill workforce development, and cross-functional team leadership. Recognised for meticulous planning, inventory optimisation, and sustainable shop floor improvements.\n\nCORE COMPETENCIES\n\n- Plant Operations & Production Management\n- ERP Implementation · ERP Implementation\n- Budgeting & Cost Control\n- Supply Chain & Inventory Optimization\n- Cross-Functional Team Collaboration\n- Customer Communication & Relationship Management · Customer Communication & Relationship Management\n- Manpower Planning & Operator Retentior · Manpower Planning & Operator Retention\n- Lean Manufacturing, 5S and Kaizen\n- Quality & Compliance (ISO 9001 Standard · Quality & Compliance (ISO 9001 Standards)\n- Performance Monitoring & KPI Dashboarding\n- ISO & Customer Audits. · ISO & Customer Audits.\n\nPROFESSIONAL EXPERIENCE\n\nOperations and Plant Head, Avi Oilless Die Components India Pvt. Ltd. Pune, April 2021-Present\n\n- Responsible for full plant operations, resource management, production, quality, maintenance, and dispatch.\n- Increased sales revenue from ₹14 Cr to ₹31.5 Cr in 4 years by enhancing operational efficiency, delivery timelines, and quality.\n- Successfully implemented ERP system (Deskera) across departments—ensuring live tracking, planning, and reporting.\n- Handled ISO 9001 and customer audits as Management Representative (MR) for 5 consecutive years.\n- Developed a team of multi-skilled operators and employees, improving flexibility and reducing downtime during absenteeism or shifts.\n- Improved customer satisfaction index from 80% to 96%, thanks to better delivery adherence and direct customer engagement.\n- Practiced meticulous planning of materials and production, resulting in higher machine utilization and minimal rework.\n- Actively collaborated with cross-functional teams – Design, QA, SCM, and Sales – to meet customer demands and reduce lead time.\n- Increased operator retention rate, fostering a culture of respect, upskilling, and recognition.\n- Ensure compliance with EHs, statutory, and safety standards, maintaining a safe and auditready workplace.\n\nProduction Manager, Avi Oilless Die Components India Pvt. Ltd. Pune, Feb 2019-March 2021\n\n- un t  t    ns  r nm · rework and wastage.\n- Trained mid-level supervisors on process standardization and team motivation.\n- Improved coordination with procurement and logistics for better material availability.\n- Tracked and analyzed production KPIs (OEE, downtime, rejection rates) to identify and eliminate bottlenecks.\n- Oversaw shift-wise manpower deployment and ensured efficient utilization of labour and machine hours.\n- m  n  s  sa ns   ryt· for audits.\n- Ensured adherence to safety standards, conducted toolbox talks and coordinated with the EHS team.\n\nProduction Engineer, Avi Oilless Die Components India Pvt. Ltd., Pune, June 2016-Jan 2019\n\n- ae   ss it  s s  on\n- Worked on cycle time reduction and tool life improvement projects.\n- Assisted in the implementation of 5S and Kaizen across the unit.\n- Created daily production reports and coordinated with maintenance for minimal breakdowns.\n- Conducted root cause analysis for defects and suggested corrective actions.\n- Collaborated with quality control to ensure adherence to in-process quality standards and first-piece approvals.\n- Ensured all safety rules were followed on the shop floor, including PPE usage and machine safety.\n\nEDUCATION\n\nBachelor of Engineering (Mechanical Engineering) Shivaji University, Kolhapur, India, May 2015\n\nKEY ACHIEVEMENTS\n\n- Achieved a 125% increase in sales revenue over 4 years as Plant & Operations Head.\n- Successfully implemented Deskera ERP across all departments.\n- Handled ISO audits as Management Representative (MR) for 5 consecutive years with full compliance.\n- Improved customer satisfaction from 80% to 96% through better communication and ontime delivery.\n- Developed a multi-skilled workforce, enhancing operational flexibility and team efficiency.\n- Reduced inventory holding through meticulous material planning\n\nTECHNICAL SKILLS\n\n- ERP: Deskera, SAP (basic)\n- MS Office (Excel, Word, PowerPoint)\n- AutoCAD.\n- ISO 9001:2015, 14001, & 45001 Internal Auditor certification.\n\nLANGUAGES\n\n- English\n- Hindi\n- Marathi\n\nDECLARATION\n\nI hereby declare that the information provided above is true and correct to the best of my knowledge and belief.\n\nPlace: Pune Name: Soham Velhal Date: Signature:",
+      "extracted_text_length": 4857,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Soham Velhal\n\n9 m n mmm 18\n\nPROFESSIONAL SUMMARY\n\nStrategic and result-oriented Operations and Plant Head with 9.8 years of progressive experience, growing from Production Engineer to leading plant operations. Proven track record in scaling manufacturing performance, implementing ERP systems, and enhancing customer satisfaction. Successfully led operational initiatives that resulted in a 125% increase in company revenue over 4 years. Skilled in IsO compliance, lean systems, multi-skill workforce development, and cross-functional team leadership. Recognised for meticulous planning, inventory optimisation, and sustainable shop floor improvements.\n\nCORE COMPETENCIES\n\n- Plant Operations & Production Management\n- ERP Implementation · ERP Implementation\n- Budgeting & Cost Control\n- Supply Chain & Inventory Optimization\n- Cross-Functional Team Collaboration\n- Customer Communication & Relationship Management · Customer Communication & Relationship Management\n- Manpower Planning & Operator Retentior · Manpower Planning & Operator Retention\n- Lean Manufacturing, 5S and Kaizen\n- Quality & Compliance (ISO 9001 Standard · Quality & Compliance (ISO 9001 Standards)\n- Performance Monitoring & KPI Dashboarding\n- ISO & Customer Audits. · ISO & Customer Audits.\n\nPROFESSIONAL EXPERIENCE\n\nOperations and Plant Head, Avi Oilless Die Components India Pvt. Ltd. Pune, April 2021-Present\n\n- Responsible for full plant operations, resource management, production, quality, maintenance, and dispatch.\n- Increased sales revenue from ₹14 Cr to ₹31.5 Cr in 4 years by enhancing operational efficiency, delivery timelines, and quality.\n- Successfully implemented ERP system (Deskera) across departments—ensuring live tracking, planning, and reporting.\n- Handled ISO 9001 and customer audits as Management Representative (MR) for 5 consecutive years.\n- Developed a team of multi-skilled operators and employees, improving flexibility and reducing downtime during absenteeism or shifts.\n- Improved customer satisfaction index from 80% to 96%, thanks to better delivery adherence and direct customer engagement.\n- Practiced meticulous planning of materials and production, resulting in higher machine utilization and minimal rework.\n- Actively collaborated with cross-functional teams – Design, QA, SCM, and Sales – to meet customer demands and reduce lead time.\n- Increased operator retention rate, fostering a culture of respect, upskilling, and recognition.\n- Ensure compliance with EHs, statutory, and safety standards, maintaining a safe and auditready workplace.\n\nProduction Manager, Avi Oilless Die Components India Pvt. Ltd. Pune, Feb 2019-March 2021\n\n- un t t ns r nm · rework and wastage.\n- Trained mid-level supervisors on process standardization and team motivation.\n- Improved coordination with procurement and logistics for better material availability.\n- Tracked and analyzed production KPIs (OEE, downtime, rejection rates) to identify and eliminate bottlenecks.\n- Oversaw shift-wise manpower deployment and ensured efficient utilization of labour and machine hours.\n- m n s sa ns ryt· for audits.\n- Ensured adherence to safety standards, conducted toolbox talks and coordinated with the EHS team.\n\nProduction Engineer, Avi Oilless Die Components India Pvt. Ltd., Pune, June 2016-Jan 2019\n\n- ae ss it s s on\n- Worked on cycle time reduction and tool life improvement projects.\n- Assisted in the implementation of 5S and Kaizen across the unit.\n- Created daily production reports and coordinated with maintenance for minimal breakdowns.\n- Conducted root cause analysis for defects and suggested corrective actions.\n- Collaborated with quality control to ensure adherence to in-process quality standards and first-piece approvals.\n- Ensured all safety rules were followed on the shop floor, including PPE usage and machine safety.\n\nEDUCATION\n\nBachelor of Engineering (Mechanical Engineering) Shivaji University, Kolhapur, India, May 2015\n\nKEY ACHIEVEMENTS\n\n- Achieved a 125% increase in sales revenue over 4 years as Plant & Operations Head.\n- Successfully implemented Deskera ERP across all departments.\n- Handled ISO audits as Management Representative (MR) for 5 consecutive years with full compliance.\n- Improved customer satisfaction from 80% to 96% through better communication and ontime delivery.\n- Developed a multi-skilled workforce, enhancing operational flexibility and team efficiency.\n- Reduced inventory holding through meticulous material planning\n\nTECHNICAL SKILLS\n\n- ERP: Deskera, SAP (basic)\n- MS Office (Excel, Word, PowerPoint)\n- AutoCAD.\n- ISO 9001:2015, 14001, & 45001 Internal Auditor certification.\n\nLANGUAGES\n\n- English\n- Hindi\n- Marathi\n\nDECLARATION\n\nI hereby declare that the information provided above is true and correct to the best of my knowledge and belief.\n\nPlace: Pune Name: Soham Velhal Date: Signature:"
+    }
+  ],
+  "attempt_count": 3,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "extracted_text": "Soham Velhal\n\n9 m n  mmm   18\n\nPROFESSIONAL SUMMARY\n\nStrategic and result-oriented Operations and Plant Head with 9.8 years of progressive experience, growing from Production Engineer to leading plant operations. Proven track record in scaling manufacturing performance, implementing ERP systems, and enhancing customer satisfaction. Successfully led operational initiatives that resulted in a 125% increase in company revenue over 4 years. Skilled in IsO compliance, lean systems, multi-skill workforce development, and cross-functional team leadership. Recognised for meticulous planning, inventory optimisation, and sustainable shop floor improvements.\n\nCORE COMPETENCIES\n\n- Plant Operations & Production Management\n- ERP Implementation · ERP Implementation\n- Budgeting & Cost Control\n- Supply Chain & Inventory Optimization\n- Cross-Functional Team Collaboration\n- Customer Communication & Relationship Management · Customer Communication & Relationship Management\n- Manpower Planning & Operator Retentior · Manpower Planning & Operator Retention\n- Lean Manufacturing, 5S and Kaizen\n- Quality & Compliance (ISO 9001 Standard · Quality & Compliance (ISO 9001 Standards)\n- Performance Monitoring & KPI Dashboarding\n- ISO & Customer Audits. · ISO & Customer Audits.\n\nPROFESSIONAL EXPERIENCE\n\nOperations and Plant Head, Avi Oilless Die Components India Pvt. Ltd. Pune, April 2021-Present\n\n- Responsible for full plant operations, resource management, production, quality, maintenance, and dispatch.\n- Increased sales revenue from ₹14 Cr to ₹31.5 Cr in 4 years by enhancing operational efficiency, delivery timelines, and quality.\n- Successfully implemented ERP system (Deskera) across departments—ensuring live tracking, planning, and reporting.\n- Handled ISO 9001 and customer audits as Management Representative (MR) for 5 consecutive years.\n- Developed a team of multi-skilled operators and employees, improving flexibility and reducing downtime during absenteeism or shifts.\n- Improved customer satisfaction index from 80% to 96%, thanks to better delivery adherence and direct customer engagement.\n- Practiced meticulous planning of materials and production, resulting in higher machine utilization and minimal rework.\n- Actively collaborated with cross-functional teams – Design, QA, SCM, and Sales – to meet customer demands and reduce lead time.\n- Increased operator retention rate, fostering a culture of respect, upskilling, and recognition.\n- Ensure compliance with EHs, statutory, and safety standards, maintaining a safe and auditready workplace.\n\nProduction Manager, Avi Oilless Die Components India Pvt. Ltd. Pune, Feb 2019-March 2021\n\n- un t  t    ns  r nm · rework and wastage.\n- Trained mid-level supervisors on process standardization and team motivation.\n- Improved coordination with procurement and logistics for better material availability.\n- Tracked and analyzed production KPIs (OEE, downtime, rejection rates) to identify and eliminate bottlenecks.\n- Oversaw shift-wise manpower deployment and ensured efficient utilization of labour and machine hours.\n- m  n  s  sa ns   ryt· for audits.\n- Ensured adherence to safety standards, conducted toolbox talks and coordinated with the EHS team.\n\nProduction Engineer, Avi Oilless Die Components India Pvt. Ltd., Pune, June 2016-Jan 2019\n\n- ae   ss it  s s  on\n- Worked on cycle time reduction and tool life improvement projects.\n- Assisted in the implementation of 5S and Kaizen across the unit.\n- Created daily production reports and coordinated with maintenance for minimal breakdowns.\n- Conducted root cause analysis for defects and suggested corrective actions.\n- Collaborated with quality control to ensure adherence to in-process quality standards and first-piece approvals.\n- Ensured all safety rules were followed on the shop floor, including PPE usage and machine safety.\n\nEDUCATION\n\nBachelor of Engineering (Mechanical Engineering) Shivaji University, Kolhapur, India, May 2015\n\nKEY ACHIEVEMENTS\n\n- Achieved a 125% increase in sales revenue over 4 years as Plant & Operations Head.\n- Successfully implemented Deskera ERP across all departments.\n- Handled ISO audits as Management Representative (MR) for 5 consecutive years with full compliance.\n- Improved customer satisfaction from 80% to 96% through better communication and ontime delivery.\n- Developed a multi-skilled workforce, enhancing operational flexibility and team efficiency.\n- Reduced inventory holding through meticulous material planning\n\nTECHNICAL SKILLS\n\n- ERP: Deskera, SAP (basic)\n- MS Office (Excel, Word, PowerPoint)\n- AutoCAD.\n- ISO 9001:2015, 14001, & 45001 Internal Auditor certification.\n\nLANGUAGES\n\n- English\n- Hindi\n- Marathi\n\nDECLARATION\n\nI hereby declare that the information provided above is true and correct to the best of my knowledge and belief.\n\nPlace: Pune Name: Soham Velhal Date: Signature:",
+  "final_extracted_text": "Soham Velhal\n\n9 m n  mmm   18\n\nPROFESSIONAL SUMMARY\n\nStrategic and result-oriented Operations and Plant Head with 9.8 years of progressive experience, growing from Production Engineer to leading plant operations. Proven track record in scaling manufacturing performance, implementing ERP systems, and enhancing customer satisfaction. Successfully led operational initiatives that resulted in a 125% increase in company revenue over 4 years. Skilled in IsO compliance, lean systems, multi-skill workforce development, and cross-functional team leadership. Recognised for meticulous planning, inventory optimisation, and sustainable shop floor improvements.\n\nCORE COMPETENCIES\n\n- Plant Operations & Production Management\n- ERP Implementation · ERP Implementation\n- Budgeting & Cost Control\n- Supply Chain & Inventory Optimization\n- Cross-Functional Team Collaboration\n- Customer Communication & Relationship Management · Customer Communication & Relationship Management\n- Manpower Planning & Operator Retentior · Manpower Planning & Operator Retention\n- Lean Manufacturing, 5S and Kaizen\n- Quality & Compliance (ISO 9001 Standard · Quality & Compliance (ISO 9001 Standards)\n- Performance Monitoring & KPI Dashboarding\n- ISO & Customer Audits. · ISO & Customer Audits.\n\nPROFESSIONAL EXPERIENCE\n\nOperations and Plant Head, Avi Oilless Die Components India Pvt. Ltd. Pune, April 2021-Present\n\n- Responsible for full plant operations, resource management, production, quality, maintenance, and dispatch.\n- Increased sales revenue from ₹14 Cr to ₹31.5 Cr in 4 years by enhancing operational efficiency, delivery timelines, and quality.\n- Successfully implemented ERP system (Deskera) across departments—ensuring live tracking, planning, and reporting.\n- Handled ISO 9001 and customer audits as Management Representative (MR) for 5 consecutive years.\n- Developed a team of multi-skilled operators and employees, improving flexibility and reducing downtime during absenteeism or shifts.\n- Improved customer satisfaction index from 80% to 96%, thanks to better delivery adherence and direct customer engagement.\n- Practiced meticulous planning of materials and production, resulting in higher machine utilization and minimal rework.\n- Actively collaborated with cross-functional teams – Design, QA, SCM, and Sales – to meet customer demands and reduce lead time.\n- Increased operator retention rate, fostering a culture of respect, upskilling, and recognition.\n- Ensure compliance with EHs, statutory, and safety standards, maintaining a safe and auditready workplace.\n\nProduction Manager, Avi Oilless Die Components India Pvt. Ltd. Pune, Feb 2019-March 2021\n\n- un t  t    ns  r nm · rework and wastage.\n- Trained mid-level supervisors on process standardization and team motivation.\n- Improved coordination with procurement and logistics for better material availability.\n- Tracked and analyzed production KPIs (OEE, downtime, rejection rates) to identify and eliminate bottlenecks.\n- Oversaw shift-wise manpower deployment and ensured efficient utilization of labour and machine hours.\n- m  n  s  sa ns   ryt· for audits.\n- Ensured adherence to safety standards, conducted toolbox talks and coordinated with the EHS team.\n\nProduction Engineer, Avi Oilless Die Components India Pvt. Ltd., Pune, June 2016-Jan 2019\n\n- ae   ss it  s s  on\n- Worked on cycle time reduction and tool life improvement projects.\n- Assisted in the implementation of 5S and Kaizen across the unit.\n- Created daily production reports and coordinated with maintenance for minimal breakdowns.\n- Conducted root cause analysis for defects and suggested corrective actions.\n- Collaborated with quality control to ensure adherence to in-process quality standards and first-piece approvals.\n- Ensured all safety rules were followed on the shop floor, including PPE usage and machine safety.\n\nEDUCATION\n\nBachelor of Engineering (Mechanical Engineering) Shivaji University, Kolhapur, India, May 2015\n\nKEY ACHIEVEMENTS\n\n- Achieved a 125% increase in sales revenue over 4 years as Plant & Operations Head.\n- Successfully implemented Deskera ERP across all departments.\n- Handled ISO audits as Management Representative (MR) for 5 consecutive years with full compliance.\n- Improved customer satisfaction from 80% to 96% through better communication and ontime delivery.\n- Developed a multi-skilled workforce, enhancing operational flexibility and team efficiency.\n- Reduced inventory holding through meticulous material planning\n\nTECHNICAL SKILLS\n\n- ERP: Deskera, SAP (basic)\n- MS Office (Excel, Word, PowerPoint)\n- AutoCAD.\n- ISO 9001:2015, 14001, & 45001 Internal Auditor certification.\n\nLANGUAGES\n\n- English\n- Hindi\n- Marathi\n\nDECLARATION\n\nI hereby declare that the information provided above is true and correct to the best of my knowledge and belief.\n\nPlace: Pune Name: Soham Velhal Date: Signature:",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "quality": {
+    "status": "PASS",
+    "document_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa",
+    "source_tool": "docling",
+    "attempt_id": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa-attempt-3",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 4943,
+        "word_count": 703,
+        "line_count": 93,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.146874,
+        "symbol_count": 12,
+        "symbol_ratio": 0.002428,
+        "max_repeated_char_run": 3,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 91.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 4943,
+        "word_count": 703,
+        "configured_section_count": 8,
+        "detected_count": 5,
+        "missing_count": 3,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_sections": [
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "contact information",
+          "Summary": "professional summary",
+          "Skills": "technical skills",
+          "Work Experience": "professional experience",
+          "Education": "education"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": "Contact Information",
+            "detection_method": "heading",
+            "line_number": 1,
+            "evidence": "Contact Information",
+            "confidence": 0.98
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "PROFESSIONAL SUMMARY",
+            "detection_method": "heading",
+            "line_number": 10,
+            "evidence": "PROFESSIONAL SUMMARY",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "TECHNICAL SKILLS",
+            "detection_method": "heading",
+            "line_number": 76,
+            "evidence": "TECHNICAL SKILLS",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "PROFESSIONAL EXPERIENCE",
+            "detection_method": "heading",
+            "line_number": 28,
+            "evidence": "PROFESSIONAL EXPERIENCE",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "EDUCATION",
+            "detection_method": "heading",
+            "line_number": 63,
+            "evidence": "EDUCATION",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Responsibilities": "missing",
+          "Projects": "missing",
+          "Certifications": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_sections": [
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 98.92,
+      "flags": [
+        "HIGH_LINE_LENGTH_VARIATION"
+      ],
+      "reasons": [
+        "Line lengths vary unusually (coefficient of variation 1.07) — a possible sign of mixed or merged column text."
+      ],
+      "metrics": {
+        "char_count": 4943,
+        "word_count": 703,
+        "line_count": 93,
+        "non_empty_line_count": 69,
+        "short_line_count": 16,
+        "short_line_ratio": 0.231884,
+        "fragmented_line_count": 9,
+        "fragmented_line_ratio": 0.130435,
+        "mean_line_length": 70.3,
+        "median_line_length": 64.0,
+        "line_length_stdev": 75.37,
+        "line_length_cv": 1.072038,
+        "broken_sentence_count": 0,
+        "broken_sentence_ratio": 0.0,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Selected 'docling' with the highest quality score 92.2 (threshold 60.0).",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 11981.45,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "FAIL",
+      "duration_ms": 511.02000000000004,
+      "message": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 145033.57,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=54.1, pymupdf=0.0, docling=92.2",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected 'docling' with the highest quality score 92.2 (threshold 60.0).",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Docling text normalized: 4857 → 4840 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Contact Information Recovery",
+      "type": "contact_recovery",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Recovered phone from OCR, email from OCR, location from OCR and merged them into the selected normalized text sent to Muse AI.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 26593.95,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 187221.1,
+      "message": "Muse AI produced validated Resume JSON from the Docling extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 187221.1,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "docling",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Soham Velhal\n\n9 m n  mmm   18\n\nPROFESSIONAL SUMMARY\n\nStrategic and result-oriented Operations and Plant Head with 9.8 years of progressive experience, growing from Production Engineer to leading plant operations. Proven track record in scaling manufacturing performance, implementing ERP systems, and enhancing customer satisfaction. Successfully led operational initiatives that resulted in a 125% increase in company revenue over 4 years. Skilled in IsO compliance, lean systems, multi-skill workforce development, and cross-functional team leadership. Recognised for meticulous planning, inventory optimisation, and sustainable shop floor improvements.\n\nCORE COMPETENCIES\n\n- Plant Operations & Production Management\n- ERP Implementation · ERP Implementation\n- Budgeting & Cost Control\n- Supply Chain & Inventory Optimization\n- Cross-Functional Team Collaboration\n- Customer Communication & Relationship Management · Customer Communication & Relationship Management\n- Manpower Planning & Operator Retentior · Manpower Planning & Operator Retention\n- Lean Manufacturing, 5S and Kaizen\n- Quality & Compliance (ISO 9001 Standard · Quality & Compliance (ISO 9001 Standards)\n- Performance Monitoring & KPI Dashboarding\n- ISO & Customer Audits. · ISO & Customer Audits.\n\nPROFESSIONAL EXPERIENCE\n\nOperations and Plant Head, Avi Oilless Die Components India Pvt. Ltd. Pune, April 2021-Present\n\n- Responsible for full plant operations, resource management, production, quality, maintenance, and dispatch.\n- Increased sales revenue from ₹14 Cr to ₹31.5 Cr in 4 years by enhancing operational efficiency, delivery timelines, and quality.\n- Successfully implemented ERP system (Deskera) across departments—ensuring live tracking, planning, and reporting.\n- Handled ISO 9001 and customer audits as Management Representative (MR) for 5 consecutive years.\n- Developed a team of multi-skilled operators and employees, improving flexibility and reducing downtime during absenteeism or shifts.\n- Improved customer satisfaction index from 80% to 96%, thanks to better delivery adherence and direct customer engagement.\n- Practiced meticulous planning of materials and production, resulting in higher machine utilization and minimal rework.\n- Actively collaborated with cross-functional teams – Design, QA, SCM, and Sales – to meet customer demands and reduce lead time.\n- Increased operator retention rate, fostering a culture of respect, upskilling, and recognition.\n- Ensure compliance with EHs, statutory, and safety standards, maintaining a safe and auditready workplace.\n\nProduction Manager, Avi Oilless Die Components India Pvt. Ltd. Pune, Feb 2019-March 2021\n\n- un t  t    ns  r nm · rework and wastage.\n- Trained mid-level supervisors on process standardization and team motivation.\n- Improved coordination with procurement and logistics for better material availability.\n- Tracked and analyzed production KPIs (OEE, downtime, rejection rates) to identify and eliminate bottlenecks.\n- Oversaw shift-wise manpower deployment and ensured efficient utilization of labour and machine hours.\n- m  n  s  sa ns   ryt· for audits.\n- Ensured adherence to safety standards, conducted toolbox talks and coordinated with the EHS team.\n\nProduction Engineer, Avi Oilless Die Components India Pvt. Ltd., Pune, June 2016-Jan 2019\n\n- ae   ss it  s s  on\n- Worked on cycle time reduction and tool life improvement projects.\n- Assisted in the implementation of 5S and Kaizen across the unit.\n- Created daily production reports and coordinated with maintenance for minimal breakdowns.\n- Conducted root cause analysis for defects and suggested corrective actions.\n- Collaborated with quality control to ensure adherence to in-process quality standards and first-piece approvals.\n- Ensured all safety rules were followed on the shop floor, including PPE usage and machine safety.\n\nEDUCATION\n\nBachelor of Engineering (Mechanical Engineering) Shivaji University, Kolhapur, India, May 2015\n\nKEY ACHIEVEMENTS\n\n- Achieved a 125% increase in sales revenue over 4 years as Plant & Operations Head.\n- Successfully implemented Deskera ERP across all departments.\n- Handled ISO audits as Management Representative (MR) for 5 consecutive years with full compliance.\n- Improved customer satisfaction from 80% to 96% through better communication and ontime delivery.\n- Developed a multi-skilled workforce, enhancing operational flexibility and team efficiency.\n- Reduced inventory holding through meticulous material planning\n\nTECHNICAL SKILLS\n\n- ERP: Deskera, SAP (basic)\n- MS Office (Excel, Word, PowerPoint)\n- AutoCAD.\n- ISO 9001:2015, 14001, & 45001 Internal Auditor certification.\n\nLANGUAGES\n\n- English\n- Hindi\n- Marathi\n\nDECLARATION\n\nI hereby declare that the information provided above is true and correct to the best of my knowledge and belief.\n\nPlace: Pune Name: Soham Velhal Date: Signature:",
+    "normalized_text": "Contact Information\nPhone: 7276968879\nEmail: sohamvelhal@gmail.com\nLocation: Pune, Maharashtra 411068\n\nSoham Velhal\n\n9 m n mmm 18\n\nPROFESSIONAL SUMMARY\n\nStrategic and result-oriented Operations and Plant Head with 9.8 years of progressive experience, growing from Production Engineer to leading plant operations. Proven track record in scaling manufacturing performance, implementing ERP systems, and enhancing customer satisfaction. Successfully led operational initiatives that resulted in a 125% increase in company revenue over 4 years. Skilled in IsO compliance, lean systems, multi-skill workforce development, and cross-functional team leadership. Recognised for meticulous planning, inventory optimisation, and sustainable shop floor improvements.\n\nCORE COMPETENCIES\n\n- Plant Operations & Production Management\n- ERP Implementation · ERP Implementation\n- Budgeting & Cost Control\n- Supply Chain & Inventory Optimization\n- Cross-Functional Team Collaboration\n- Customer Communication & Relationship Management · Customer Communication & Relationship Management\n- Manpower Planning & Operator Retentior · Manpower Planning & Operator Retention\n- Lean Manufacturing, 5S and Kaizen\n- Quality & Compliance (ISO 9001 Standard · Quality & Compliance (ISO 9001 Standards)\n- Performance Monitoring & KPI Dashboarding\n- ISO & Customer Audits. · ISO & Customer Audits.\n\nPROFESSIONAL EXPERIENCE\n\nOperations and Plant Head, Avi Oilless Die Components India Pvt. Ltd. Pune, April 2021-Present\n\n- Responsible for full plant operations, resource management, production, quality, maintenance, and dispatch.\n- Increased sales revenue from ₹14 Cr to ₹31.5 Cr in 4 years by enhancing operational efficiency, delivery timelines, and quality.\n- Successfully implemented ERP system (Deskera) across departments—ensuring live tracking, planning, and reporting.\n- Handled ISO 9001 and customer audits as Management Representative (MR) for 5 consecutive years.\n- Developed a team of multi-skilled operators and employees, improving flexibility and reducing downtime during absenteeism or shifts.\n- Improved customer satisfaction index from 80% to 96%, thanks to better delivery adherence and direct customer engagement.\n- Practiced meticulous planning of materials and production, resulting in higher machine utilization and minimal rework.\n- Actively collaborated with cross-functional teams – Design, QA, SCM, and Sales – to meet customer demands and reduce lead time.\n- Increased operator retention rate, fostering a culture of respect, upskilling, and recognition.\n- Ensure compliance with EHs, statutory, and safety standards, maintaining a safe and auditready workplace.\n\nProduction Manager, Avi Oilless Die Components India Pvt. Ltd. Pune, Feb 2019-March 2021\n\n- un t t ns r nm · rework and wastage.\n- Trained mid-level supervisors on process standardization and team motivation.\n- Improved coordination with procurement and logistics for better material availability.\n- Tracked and analyzed production KPIs (OEE, downtime, rejection rates) to identify and eliminate bottlenecks.\n- Oversaw shift-wise manpower deployment and ensured efficient utilization of labour and machine hours.\n- m n s sa ns ryt· for audits.\n- Ensured adherence to safety standards, conducted toolbox talks and coordinated with the EHS team.\n\nProduction Engineer, Avi Oilless Die Components India Pvt. Ltd., Pune, June 2016-Jan 2019\n\n- ae ss it s s on\n- Worked on cycle time reduction and tool life improvement projects.\n- Assisted in the implementation of 5S and Kaizen across the unit.\n- Created daily production reports and coordinated with maintenance for minimal breakdowns.\n- Conducted root cause analysis for defects and suggested corrective actions.\n- Collaborated with quality control to ensure adherence to in-process quality standards and first-piece approvals.\n- Ensured all safety rules were followed on the shop floor, including PPE usage and machine safety.\n\nEDUCATION\n\nBachelor of Engineering (Mechanical Engineering) Shivaji University, Kolhapur, India, May 2015\n\nKEY ACHIEVEMENTS\n\n- Achieved a 125% increase in sales revenue over 4 years as Plant & Operations Head.\n- Successfully implemented Deskera ERP across all departments.\n- Handled ISO audits as Management Representative (MR) for 5 consecutive years with full compliance.\n- Improved customer satisfaction from 80% to 96% through better communication and ontime delivery.\n- Developed a multi-skilled workforce, enhancing operational flexibility and team efficiency.\n- Reduced inventory holding through meticulous material planning\n\nTECHNICAL SKILLS\n\n- ERP: Deskera, SAP (basic)\n- MS Office (Excel, Word, PowerPoint)\n- AutoCAD.\n- ISO 9001:2015, 14001, & 45001 Internal Auditor certification.\n\nLANGUAGES\n\n- English\n- Hindi\n- Marathi\n\nDECLARATION\n\nI hereby declare that the information provided above is true and correct to the best of my knowledge and belief.\n\nPlace: Pune Name: Soham Velhal Date: Signature:",
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed"
+    ],
+    "original_chars": 4857,
+    "normalized_chars": 4840,
+    "original_estimated_tokens": 1214,
+    "normalized_estimated_tokens": 1210,
+    "estimated_reduction_percent": 0.3
+  },
+  "contact_recovery": {
+    "status": "recovered",
+    "selected_extractor": "docling",
+    "present_before": [],
+    "missing_before": [
+      "phone",
+      "email",
+      "location"
+    ],
+    "recovered": {
+      "phone": {
+        "value": "7276968879",
+        "source": "OCR",
+        "method": "ocr_first_page"
+      },
+      "email": {
+        "value": "sohamvelhal@gmail.com",
+        "source": "OCR",
+        "method": "ocr_first_page"
+      },
+      "location": {
+        "value": "Pune, Maharashtra 411068",
+        "source": "OCR",
+        "method": "ocr_first_page"
+      }
+    },
+    "still_missing": [],
+    "sources_tried": [
+      {
+        "source": "Tika",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "Docling",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "PyMuPDF",
+        "method": "first_page_text_layer",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "OCR",
+        "method": "ocr_first_page",
+        "found": [
+          "email",
+          "location",
+          "phone"
+        ],
+        "error": null
+      }
+    ],
+    "applied": true,
+    "pre_recovery_normalized_text": "Soham Velhal\n\n9 m n mmm 18\n\nPROFESSIONAL SUMMARY\n\nStrategic and result-oriented Operations and Plant Head with 9.8 years of progressive experience, growing from Production Engineer to leading plant operations. Proven track record in scaling manufacturing performance, implementing ERP systems, and enhancing customer satisfaction. Successfully led operational initiatives that resulted in a 125% increase in company revenue over 4 years. Skilled in IsO compliance, lean systems, multi-skill workforce development, and cross-functional team leadership. Recognised for meticulous planning, inventory optimisation, and sustainable shop floor improvements.\n\nCORE COMPETENCIES\n\n- Plant Operations & Production Management\n- ERP Implementation · ERP Implementation\n- Budgeting & Cost Control\n- Supply Chain & Inventory Optimization\n- Cross-Functional Team Collaboration\n- Customer Communication & Relationship Management · Customer Communication & Relationship Management\n- Manpower Planning & Operator Retentior · Manpower Planning & Operator Retention\n- Lean Manufacturing, 5S and Kaizen\n- Quality & Compliance (ISO 9001 Standard · Quality & Compliance (ISO 9001 Standards)\n- Performance Monitoring & KPI Dashboarding\n- ISO & Customer Audits. · ISO & Customer Audits.\n\nPROFESSIONAL EXPERIENCE\n\nOperations and Plant Head, Avi Oilless Die Components India Pvt. Ltd. Pune, April 2021-Present\n\n- Responsible for full plant operations, resource management, production, quality, maintenance, and dispatch.\n- Increased sales revenue from ₹14 Cr to ₹31.5 Cr in 4 years by enhancing operational efficiency, delivery timelines, and quality.\n- Successfully implemented ERP system (Deskera) across departments—ensuring live tracking, planning, and reporting.\n- Handled ISO 9001 and customer audits as Management Representative (MR) for 5 consecutive years.\n- Developed a team of multi-skilled operators and employees, improving flexibility and reducing downtime during absenteeism or shifts.\n- Improved customer satisfaction index from 80% to 96%, thanks to better delivery adherence and direct customer engagement.\n- Practiced meticulous planning of materials and production, resulting in higher machine utilization and minimal rework.\n- Actively collaborated with cross-functional teams – Design, QA, SCM, and Sales – to meet customer demands and reduce lead time.\n- Increased operator retention rate, fostering a culture of respect, upskilling, and recognition.\n- Ensure compliance with EHs, statutory, and safety standards, maintaining a safe and auditready workplace.\n\nProduction Manager, Avi Oilless Die Components India Pvt. Ltd. Pune, Feb 2019-March 2021\n\n- un t t ns r nm · rework and wastage.\n- Trained mid-level supervisors on process standardization and team motivation.\n- Improved coordination with procurement and logistics for better material availability.\n- Tracked and analyzed production KPIs (OEE, downtime, rejection rates) to identify and eliminate bottlenecks.\n- Oversaw shift-wise manpower deployment and ensured efficient utilization of labour and machine hours.\n- m n s sa ns ryt· for audits.\n- Ensured adherence to safety standards, conducted toolbox talks and coordinated with the EHS team.\n\nProduction Engineer, Avi Oilless Die Components India Pvt. Ltd., Pune, June 2016-Jan 2019\n\n- ae ss it s s on\n- Worked on cycle time reduction and tool life improvement projects.\n- Assisted in the implementation of 5S and Kaizen across the unit.\n- Created daily production reports and coordinated with maintenance for minimal breakdowns.\n- Conducted root cause analysis for defects and suggested corrective actions.\n- Collaborated with quality control to ensure adherence to in-process quality standards and first-piece approvals.\n- Ensured all safety rules were followed on the shop floor, including PPE usage and machine safety.\n\nEDUCATION\n\nBachelor of Engineering (Mechanical Engineering) Shivaji University, Kolhapur, India, May 2015\n\nKEY ACHIEVEMENTS\n\n- Achieved a 125% increase in sales revenue over 4 years as Plant & Operations Head.\n- Successfully implemented Deskera ERP across all departments.\n- Handled ISO audits as Management Representative (MR) for 5 consecutive years with full compliance.\n- Improved customer satisfaction from 80% to 96% through better communication and ontime delivery.\n- Developed a multi-skilled workforce, enhancing operational flexibility and team efficiency.\n- Reduced inventory holding through meticulous material planning\n\nTECHNICAL SKILLS\n\n- ERP: Deskera, SAP (basic)\n- MS Office (Excel, Word, PowerPoint)\n- AutoCAD.\n- ISO 9001:2015, 14001, & 45001 Internal Auditor certification.\n\nLANGUAGES\n\n- English\n- Hindi\n- Marathi\n\nDECLARATION\n\nI hereby declare that the information provided above is true and correct to the best of my knowledge and belief.\n\nPlace: Pune Name: Soham Velhal Date: Signature:",
+    "at": "2026-11-11T06:33:11.061540+00:00",
+    "completeness_before": {
+      "score": 66.0,
+      "contact_information_detected": false,
+      "missing_sections": [
+        "Contact Information",
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "completeness_after": {
+      "score": 91.0,
+      "contact_information_detected": true,
+      "missing_sections": [
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ]
+    }
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 26593.95,
+      "input_tokens": 1861,
+      "output_tokens": 3497,
+      "total_tokens": 5358,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1861,
+    "output_tokens": 3497,
+    "total_tokens": 5358,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 26593.95,
+    "usage": {
+      "completion_tokens": 3497,
+      "prompt_tokens": 1861,
+      "total_tokens": 5358,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2504
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "docling",
+      "status": "applied",
+      "original_chars": 4857,
+      "normalized_chars": 4840,
+      "estimated_reduction_percent": 0.3,
+      "normalization_applied": true,
+      "normalization_steps": [
+        "whitespace_runs_collapsed"
+      ],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "docling",
+  "selected_quality_score": 92.2,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 54.1,
+      "status": "success",
+      "word_count": 35,
+      "char_count": 213,
+      "meaningful_char_count": 176,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 90.9,
+      "completeness": {
+        "has_email": false,
+        "has_phone": false,
+        "has_skills_section": false,
+        "has_experience_section": false,
+        "has_education_section": false,
+        "sections_found": []
+      },
+      "structure": {
+        "heading_count": 1,
+        "paragraph_count": 4,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 0.1173,
+        "readability": 0.9086,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 0.0,
+        "structure": 0.7
+      }
+    },
+    "pymupdf": {
+      "extractor": "pymupdf",
+      "quality_score": 0.0,
+      "status": "failed",
+      "word_count": 0,
+      "char_count": 0,
+      "meaningful_char_count": 0,
+      "empty_page_ratio": 1.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 0.0,
+      "completeness": {
+        "has_email": false,
+        "has_phone": false,
+        "has_skills_section": false,
+        "has_experience_section": false,
+        "has_education_section": false,
+        "sections_found": []
+      },
+      "structure": {
+        "heading_count": 0,
+        "paragraph_count": 0,
+        "bullet_count": 0
+      },
+      "error": "PyMuPDF found no meaningful embedded text (0 chars < 20 minimum). This is likely a scanned PDF — OCR is required."
+    },
+    "docling": {
+      "extractor": "docling",
+      "quality_score": 92.2,
+      "status": "success",
+      "word_count": 693,
+      "char_count": 4857,
+      "meaningful_char_count": 4125,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 88.2,
+      "completeness": {
+        "has_email": false,
+        "has_phone": false,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary",
+          "projects"
+        ]
+      },
+      "structure": {
+        "heading_count": 4,
+        "paragraph_count": 24,
+        "bullet_count": 48
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.8823,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 0.6,
+        "structure": 1.0
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 4857,
+    "normalized_chars": 4840,
+    "normalization_applied": true,
+    "normalization_steps": [
+      "whitespace_runs_collapsed"
+    ],
+    "error": null,
+    "original_text": "Soham Velhal\n\n9 m n  mmm   18\n\nPROFESSIONAL SUMMARY\n\nStrategic and result-oriented Operations and Plant Head with 9.8 years of progressive experience, growing from Production Engineer to leading plant operations. Proven track record in scaling manufacturing performance, implementing ERP systems, and enhancing customer satisfaction. Successfully led operational initiatives that resulted in a 125% increase in company revenue over 4 years. Skilled in IsO compliance, lean systems, multi-skill workforce development, and cross-functional team leadership. Recognised for meticulous planning, inventory optimisation, and sustainable shop floor improvements.\n\nCORE COMPETENCIES\n\n- Plant Operations & Production Management\n- ERP Implementation · ERP Implementation\n- Budgeting & Cost Control\n- Supply Chain & Inventory Optimization\n- Cross-Functional Team Collaboration\n- Customer Communication & Relationship Management · Customer Communication & Relationship Management\n- Manpower Planning & Operator Retentior · Manpower Planning & Operator Retention\n- Lean Manufacturing, 5S and Kaizen\n- Quality & Compliance (ISO 9001 Standard · Quality & Compliance (ISO 9001 Standards)\n- Performance Monitoring & KPI Dashboarding\n- ISO & Customer Audits. · ISO & Customer Audits.\n\nPROFESSIONAL EXPERIENCE\n\nOperations and Plant Head, Avi Oilless Die Components India Pvt. Ltd. Pune, April 2021-Present\n\n- Responsible for full plant operations, resource management, production, quality, maintenance, and dispatch.\n- Increased sales revenue from ₹14 Cr to ₹31.5 Cr in 4 years by enhancing operational efficiency, delivery timelines, and quality.\n- Successfully implemented ERP system (Deskera) across departments—ensuring live tracking, planning, and reporting.\n- Handled ISO 9001 and customer audits as Management Representative (MR) for 5 consecutive years.\n- Developed a team of multi-skilled operators and employees, improving flexibility and reducing downtime during absenteeism or shifts.\n- Improved customer satisfaction index from 80% to 96%, thanks to better delivery adherence and direct customer engagement.\n- Practiced meticulous planning of materials and production, resulting in higher machine utilization and minimal rework.\n- Actively collaborated with cross-functional teams – Design, QA, SCM, and Sales – to meet customer demands and reduce lead time.\n- Increased operator retention rate, fostering a culture of respect, upskilling, and recognition.\n- Ensure compliance with EHs, statutory, and safety standards, maintaining a safe and auditready workplace.\n\nProduction Manager, Avi Oilless Die Components India Pvt. Ltd. Pune, Feb 2019-March 2021\n\n- un t  t    ns  r nm · rework and wastage.\n- Trained mid-level supervisors on process standardization and team motivation.\n- Improved coordination with procurement and logistics for better material availability.\n- Tracked and analyzed production KPIs (OEE, downtime, rejection rates) to identify and eliminate bottlenecks.\n- Oversaw shift-wise manpower deployment and ensured efficient utilization of labour and machine hours.\n- m  n  s  sa ns   ryt· for audits.\n- Ensured adherence to safety standards, conducted toolbox talks and coordinated with the EHS team.\n\nProduction Engineer, Avi Oilless Die Components India Pvt. Ltd., Pune, June 2016-Jan 2019\n\n- ae   ss it  s s  on\n- Worked on cycle time reduction and tool life improvement projects.\n- Assisted in the implementation of 5S and Kaizen across the unit.\n- Created daily production reports and coordinated with maintenance for minimal breakdowns.\n- Conducted root cause analysis for defects and suggested corrective actions.\n- Collaborated with quality control to ensure adherence to in-process quality standards and first-piece approvals.\n- Ensured all safety rules were followed on the shop floor, including PPE usage and machine safety.\n\nEDUCATION\n\nBachelor of Engineering (Mechanical Engineering) Shivaji University, Kolhapur, India, May 2015\n\nKEY ACHIEVEMENTS\n\n- Achieved a 125% increase in sales revenue over 4 years as Plant & Operations Head.\n- Successfully implemented Deskera ERP across all departments.\n- Handled ISO audits as Management Representative (MR) for 5 consecutive years with full compliance.\n- Improved customer satisfaction from 80% to 96% through better communication and ontime delivery.\n- Developed a multi-skilled workforce, enhancing operational flexibility and team efficiency.\n- Reduced inventory holding through meticulous material planning\n\nTECHNICAL SKILLS\n\n- ERP: Deskera, SAP (basic)\n- MS Office (Excel, Word, PowerPoint)\n- AutoCAD.\n- ISO 9001:2015, 14001, & 45001 Internal Auditor certification.\n\nLANGUAGES\n\n- English\n- Hindi\n- Marathi\n\nDECLARATION\n\nI hereby declare that the information provided above is true and correct to the best of my knowledge and belief.\n\nPlace: Pune Name: Soham Velhal Date: Signature:",
+    "normalized_text": "Contact Information\nPhone: 7276968879\nEmail: sohamvelhal@gmail.com\nLocation: Pune, Maharashtra 411068\n\nSoham Velhal\n\n9 m n mmm 18\n\nPROFESSIONAL SUMMARY\n\nStrategic and result-oriented Operations and Plant Head with 9.8 years of progressive experience, growing from Production Engineer to leading plant operations. Proven track record in scaling manufacturing performance, implementing ERP systems, and enhancing customer satisfaction. Successfully led operational initiatives that resulted in a 125% increase in company revenue over 4 years. Skilled in IsO compliance, lean systems, multi-skill workforce development, and cross-functional team leadership. Recognised for meticulous planning, inventory optimisation, and sustainable shop floor improvements.\n\nCORE COMPETENCIES\n\n- Plant Operations & Production Management\n- ERP Implementation · ERP Implementation\n- Budgeting & Cost Control\n- Supply Chain & Inventory Optimization\n- Cross-Functional Team Collaboration\n- Customer Communication & Relationship Management · Customer Communication & Relationship Management\n- Manpower Planning & Operator Retentior · Manpower Planning & Operator Retention\n- Lean Manufacturing, 5S and Kaizen\n- Quality & Compliance (ISO 9001 Standard · Quality & Compliance (ISO 9001 Standards)\n- Performance Monitoring & KPI Dashboarding\n- ISO & Customer Audits. · ISO & Customer Audits.\n\nPROFESSIONAL EXPERIENCE\n\nOperations and Plant Head, Avi Oilless Die Components India Pvt. Ltd. Pune, April 2021-Present\n\n- Responsible for full plant operations, resource management, production, quality, maintenance, and dispatch.\n- Increased sales revenue from ₹14 Cr to ₹31.5 Cr in 4 years by enhancing operational efficiency, delivery timelines, and quality.\n- Successfully implemented ERP system (Deskera) across departments—ensuring live tracking, planning, and reporting.\n- Handled ISO 9001 and customer audits as Management Representative (MR) for 5 consecutive years.\n- Developed a team of multi-skilled operators and employees, improving flexibility and reducing downtime during absenteeism or shifts.\n- Improved customer satisfaction index from 80% to 96%, thanks to better delivery adherence and direct customer engagement.\n- Practiced meticulous planning of materials and production, resulting in higher machine utilization and minimal rework.\n- Actively collaborated with cross-functional teams – Design, QA, SCM, and Sales – to meet customer demands and reduce lead time.\n- Increased operator retention rate, fostering a culture of respect, upskilling, and recognition.\n- Ensure compliance with EHs, statutory, and safety standards, maintaining a safe and auditready workplace.\n\nProduction Manager, Avi Oilless Die Components India Pvt. Ltd. Pune, Feb 2019-March 2021\n\n- un t t ns r nm · rework and wastage.\n- Trained mid-level supervisors on process standardization and team motivation.\n- Improved coordination with procurement and logistics for better material availability.\n- Tracked and analyzed production KPIs (OEE, downtime, rejection rates) to identify and eliminate bottlenecks.\n- Oversaw shift-wise manpower deployment and ensured efficient utilization of labour and machine hours.\n- m n s sa ns ryt· for audits.\n- Ensured adherence to safety standards, conducted toolbox talks and coordinated with the EHS team.\n\nProduction Engineer, Avi Oilless Die Components India Pvt. Ltd., Pune, June 2016-Jan 2019\n\n- ae ss it s s on\n- Worked on cycle time reduction and tool life improvement projects.\n- Assisted in the implementation of 5S and Kaizen across the unit.\n- Created daily production reports and coordinated with maintenance for minimal breakdowns.\n- Conducted root cause analysis for defects and suggested corrective actions.\n- Collaborated with quality control to ensure adherence to in-process quality standards and first-piece approvals.\n- Ensured all safety rules were followed on the shop floor, including PPE usage and machine safety.\n\nEDUCATION\n\nBachelor of Engineering (Mechanical Engineering) Shivaji University, Kolhapur, India, May 2015\n\nKEY ACHIEVEMENTS\n\n- Achieved a 125% increase in sales revenue over 4 years as Plant & Operations Head.\n- Successfully implemented Deskera ERP across all departments.\n- Handled ISO audits as Management Representative (MR) for 5 consecutive years with full compliance.\n- Improved customer satisfaction from 80% to 96% through better communication and ontime delivery.\n- Developed a multi-skilled workforce, enhancing operational flexibility and team efficiency.\n- Reduced inventory holding through meticulous material planning\n\nTECHNICAL SKILLS\n\n- ERP: Deskera, SAP (basic)\n- MS Office (Excel, Word, PowerPoint)\n- AutoCAD.\n- ISO 9001:2015, 14001, & 45001 Internal Auditor certification.\n\nLANGUAGES\n\n- English\n- Hindi\n- Marathi\n\nDECLARATION\n\nI hereby declare that the information provided above is true and correct to the best of my knowledge and belief.\n\nPlace: Pune Name: Soham Velhal Date: Signature:"
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "Soham Velhal",
+      "email": "sohamvelhal@gmail.com",
+      "phone": "7276968879",
+      "location": "Pune, Maharashtra 411068",
+      "summary": "Strategic and result-oriented Operations and Plant Head with 9.8 years of progressive experience, growing from Production Engineer to leading plant operations. Proven track record in scaling manufacturing performance, implementing ERP systems, and enhancing customer satisfaction. Successfully led operational initiatives that resulted in a 125% increase in company revenue over 4 years. Skilled in IsO compliance, lean systems, multi-skill workforce development, and cross-functional team leadership. Recognised for meticulous planning, inventory optimisation, and sustainable shop floor improvements.",
+      "skills": {
+        "technical_skills": [
+          "Plant Operations & Production Management",
+          "ERP Implementation",
+          "Budgeting & Cost Control",
+          "Supply Chain & Inventory Optimization",
+          "Lean Manufacturing, 5S and Kaizen",
+          "Quality & Compliance (ISO 9001 Standards)",
+          "Performance Monitoring & KPI Dashboarding",
+          "ISO & Customer Audits",
+          "Deskera",
+          "SAP (basic)",
+          "AutoCAD"
+        ],
+        "soft_skills": [
+          "Cross-Functional Team Collaboration",
+          "Customer Communication & Relationship Management",
+          "Manpower Planning & Operator Retention"
+        ],
+        "tools": [
+          "Deskera",
+          "SAP (basic)",
+          "MS Office (Excel, Word, PowerPoint)",
+          "AutoCAD"
+        ],
+        "taxonomy_skills": [],
+        "other_skills": []
+      },
+      "experience": [
+        {
+          "title": "Operations and Plant Head",
+          "company": "Avi Oilless Die Components India Pvt. Ltd.",
+          "location": "Pune",
+          "start_date": "April 2021",
+          "end_date": "Present",
+          "highlights": [
+            "Responsible for full plant operations, resource management, production, quality, maintenance, and dispatch.",
+            "Increased sales revenue from ₹14 Cr to ₹31.5 Cr in 4 years by enhancing operational efficiency, delivery timelines, and quality.",
+            "Successfully implemented ERP system (Deskera) across departments—ensuring live tracking, planning, and reporting.",
+            "Handled ISO 9001 and customer audits as Management Representative (MR) for 5 consecutive years.",
+            "Developed a team of multi-skilled operators and employees, improving flexibility and reducing downtime during absenteeism or shifts.",
+            "Improved customer satisfaction index from 80% to 96%, thanks to better delivery adherence and direct customer engagement.",
+            "Practiced meticulous planning of materials and production, resulting in higher machine utilization and minimal rework.",
+            "Actively collaborated with cross-functional teams – Design, QA, SCM, and Sales – to meet customer demands and reduce lead time.",
+            "Increased operator retention rate, fostering a culture of respect, upskilling, and recognition.",
+            "Ensure compliance with EHs, statutory, and safety standards, maintaining a safe and auditready workplace."
+          ]
+        },
+        {
+          "title": "Production Manager",
+          "company": "Avi Oilless Die Components India Pvt. Ltd.",
+          "location": "Pune",
+          "start_date": "Feb 2019",
+          "end_date": "March 2021",
+          "highlights": [
+            "Trained mid-level supervisors on process standardization and team motivation.",
+            "Improved coordination with procurement and logistics for better material availability.",
+            "Tracked and analyzed production KPIs (OEE, downtime, rejection rates) to identify and eliminate bottlenecks.",
+            "Oversaw shift-wise manpower deployment and ensured efficient utilization of labour and machine hours.",
+            "Ensured adherence to safety standards, conducted toolbox talks and coordinated with the EHS team."
+          ]
+        },
+        {
+          "title": "Production Engineer",
+          "company": "Avi Oilless Die Components India Pvt. Ltd.",
+          "location": "Pune",
+          "start_date": "June 2016",
+          "end_date": "Jan 2019",
+          "highlights": [
+            "Worked on cycle time reduction and tool life improvement projects.",
+            "Assisted in the implementation of 5S and Kaizen across the unit.",
+            "Created daily production reports and coordinated with maintenance for minimal breakdowns.",
+            "Conducted root cause analysis for defects and suggested corrective actions.",
+            "Collaborated with quality control to ensure adherence to in-process quality standards and first-piece approvals.",
+            "Ensured all safety rules were followed on the shop floor, including PPE usage and machine safety."
+          ]
+        }
+      ],
+      "education": [
+        {
+          "degree": "Bachelor of Engineering (Mechanical Engineering)",
+          "institution": "Shivaji University",
+          "location": "Kolhapur, India",
+          "start_date": "",
+          "end_date": "May 2015"
+        }
+      ],
+      "certifications": [
+        "ISO 9001:2015, 14001, & 45001 Internal Auditor certification"
+      ],
+      "languages": [
+        "English",
+        "Hindi",
+        "Marathi"
+      ],
+      "links": []
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 26593.95,
+    "usage": {
+      "completion_tokens": 3497,
+      "prompt_tokens": 1861,
+      "total_tokens": 5358,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2504
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "Soham Velhal",
+    "email": "sohamvelhal@gmail.com",
+    "phone": "7276968879",
+    "location": "Pune, Maharashtra 411068",
+    "summary": "Strategic and result-oriented Operations and Plant Head with 9.8 years of progressive experience, growing from Production Engineer to leading plant operations. Proven track record in scaling manufacturing performance, implementing ERP systems, and enhancing customer satisfaction. Successfully led operational initiatives that resulted in a 125% increase in company revenue over 4 years. Skilled in IsO compliance, lean systems, multi-skill workforce development, and cross-functional team leadership. Recognised for meticulous planning, inventory optimisation, and sustainable shop floor improvements.",
+    "skills": {
+      "technical_skills": [
+        "Plant Operations & Production Management",
+        "ERP Implementation",
+        "Budgeting & Cost Control",
+        "Supply Chain & Inventory Optimization",
+        "Lean Manufacturing, 5S and Kaizen",
+        "Quality & Compliance (ISO 9001 Standards)",
+        "Performance Monitoring & KPI Dashboarding",
+        "ISO & Customer Audits",
+        "Deskera",
+        "SAP (basic)",
+        "AutoCAD"
+      ],
+      "soft_skills": [
+        "Cross-Functional Team Collaboration",
+        "Customer Communication & Relationship Management",
+        "Manpower Planning & Operator Retention"
+      ],
+      "tools": [
+        "Deskera",
+        "SAP (basic)",
+        "MS Office (Excel, Word, PowerPoint)",
+        "AutoCAD"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Operations and Plant Head",
+        "company": "Avi Oilless Die Components India Pvt. Ltd.",
+        "location": "Pune",
+        "start_date": "April 2021",
+        "end_date": "Present",
+        "highlights": [
+          "Responsible for full plant operations, resource management, production, quality, maintenance, and dispatch.",
+          "Increased sales revenue from ₹14 Cr to ₹31.5 Cr in 4 years by enhancing operational efficiency, delivery timelines, and quality.",
+          "Successfully implemented ERP system (Deskera) across departments—ensuring live tracking, planning, and reporting.",
+          "Handled ISO 9001 and customer audits as Management Representative (MR) for 5 consecutive years.",
+          "Developed a team of multi-skilled operators and employees, improving flexibility and reducing downtime during absenteeism or shifts.",
+          "Improved customer satisfaction index from 80% to 96%, thanks to better delivery adherence and direct customer engagement.",
+          "Practiced meticulous planning of materials and production, resulting in higher machine utilization and minimal rework.",
+          "Actively collaborated with cross-functional teams – Design, QA, SCM, and Sales – to meet customer demands and reduce lead time.",
+          "Increased operator retention rate, fostering a culture of respect, upskilling, and recognition.",
+          "Ensure compliance with EHs, statutory, and safety standards, maintaining a safe and auditready workplace."
+        ]
+      },
+      {
+        "title": "Production Manager",
+        "company": "Avi Oilless Die Components India Pvt. Ltd.",
+        "location": "Pune",
+        "start_date": "Feb 2019",
+        "end_date": "March 2021",
+        "highlights": [
+          "Trained mid-level supervisors on process standardization and team motivation.",
+          "Improved coordination with procurement and logistics for better material availability.",
+          "Tracked and analyzed production KPIs (OEE, downtime, rejection rates) to identify and eliminate bottlenecks.",
+          "Oversaw shift-wise manpower deployment and ensured efficient utilization of labour and machine hours.",
+          "Ensured adherence to safety standards, conducted toolbox talks and coordinated with the EHS team."
+        ]
+      },
+      {
+        "title": "Production Engineer",
+        "company": "Avi Oilless Die Components India Pvt. Ltd.",
+        "location": "Pune",
+        "start_date": "June 2016",
+        "end_date": "Jan 2019",
+        "highlights": [
+          "Worked on cycle time reduction and tool life improvement projects.",
+          "Assisted in the implementation of 5S and Kaizen across the unit.",
+          "Created daily production reports and coordinated with maintenance for minimal breakdowns.",
+          "Conducted root cause analysis for defects and suggested corrective actions.",
+          "Collaborated with quality control to ensure adherence to in-process quality standards and first-piece approvals.",
+          "Ensured all safety rules were followed on the shop floor, including PPE usage and machine safety."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Engineering (Mechanical Engineering)",
+        "institution": "Shivaji University",
+        "location": "Kolhapur, India",
+        "start_date": "",
+        "end_date": "May 2015"
+      }
+    ],
+    "certifications": [
+      "ISO 9001:2015, 14001, & 45001 Internal Auditor certification"
+    ],
+    "languages": [
+      "English",
+      "Hindi",
+      "Marathi"
+    ],
+    "links": []
+  },
+  "resume_json": {
+    "full_name": "Soham Velhal",
+    "email": "sohamvelhal@gmail.com",
+    "phone": "7276968879",
+    "location": "Pune, Maharashtra 411068",
+    "summary": "Strategic and result-oriented Operations and Plant Head with 9.8 years of progressive experience, growing from Production Engineer to leading plant operations. Proven track record in scaling manufacturing performance, implementing ERP systems, and enhancing customer satisfaction. Successfully led operational initiatives that resulted in a 125% increase in company revenue over 4 years. Skilled in IsO compliance, lean systems, multi-skill workforce development, and cross-functional team leadership. Recognised for meticulous planning, inventory optimisation, and sustainable shop floor improvements.",
+    "skills": {
+      "technical_skills": [
+        "Plant Operations & Production Management",
+        "ERP Implementation",
+        "Budgeting & Cost Control",
+        "Supply Chain & Inventory Optimization",
+        "Lean Manufacturing, 5S and Kaizen",
+        "Quality & Compliance (ISO 9001 Standards)",
+        "Performance Monitoring & KPI Dashboarding",
+        "ISO & Customer Audits",
+        "Deskera",
+        "SAP (basic)",
+        "AutoCAD"
+      ],
+      "soft_skills": [
+        "Cross-Functional Team Collaboration",
+        "Customer Communication & Relationship Management",
+        "Manpower Planning & Operator Retention"
+      ],
+      "tools": [
+        "Deskera",
+        "SAP (basic)",
+        "MS Office (Excel, Word, PowerPoint)",
+        "AutoCAD"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Operations and Plant Head",
+        "company": "Avi Oilless Die Components India Pvt. Ltd.",
+        "location": "Pune",
+        "start_date": "April 2021",
+        "end_date": "Present",
+        "highlights": [
+          "Responsible for full plant operations, resource management, production, quality, maintenance, and dispatch.",
+          "Increased sales revenue from ₹14 Cr to ₹31.5 Cr in 4 years by enhancing operational efficiency, delivery timelines, and quality.",
+          "Successfully implemented ERP system (Deskera) across departments—ensuring live tracking, planning, and reporting.",
+          "Handled ISO 9001 and customer audits as Management Representative (MR) for 5 consecutive years.",
+          "Developed a team of multi-skilled operators and employees, improving flexibility and reducing downtime during absenteeism or shifts.",
+          "Improved customer satisfaction index from 80% to 96%, thanks to better delivery adherence and direct customer engagement.",
+          "Practiced meticulous planning of materials and production, resulting in higher machine utilization and minimal rework.",
+          "Actively collaborated with cross-functional teams – Design, QA, SCM, and Sales – to meet customer demands and reduce lead time.",
+          "Increased operator retention rate, fostering a culture of respect, upskilling, and recognition.",
+          "Ensure compliance with EHs, statutory, and safety standards, maintaining a safe and auditready workplace."
+        ]
+      },
+      {
+        "title": "Production Manager",
+        "company": "Avi Oilless Die Components India Pvt. Ltd.",
+        "location": "Pune",
+        "start_date": "Feb 2019",
+        "end_date": "March 2021",
+        "highlights": [
+          "Trained mid-level supervisors on process standardization and team motivation.",
+          "Improved coordination with procurement and logistics for better material availability.",
+          "Tracked and analyzed production KPIs (OEE, downtime, rejection rates) to identify and eliminate bottlenecks.",
+          "Oversaw shift-wise manpower deployment and ensured efficient utilization of labour and machine hours.",
+          "Ensured adherence to safety standards, conducted toolbox talks and coordinated with the EHS team."
+        ]
+      },
+      {
+        "title": "Production Engineer",
+        "company": "Avi Oilless Die Components India Pvt. Ltd.",
+        "location": "Pune",
+        "start_date": "June 2016",
+        "end_date": "Jan 2019",
+        "highlights": [
+          "Worked on cycle time reduction and tool life improvement projects.",
+          "Assisted in the implementation of 5S and Kaizen across the unit.",
+          "Created daily production reports and coordinated with maintenance for minimal breakdowns.",
+          "Conducted root cause analysis for defects and suggested corrective actions.",
+          "Collaborated with quality control to ensure adherence to in-process quality standards and first-piece approvals.",
+          "Ensured all safety rules were followed on the shop floor, including PPE usage and machine safety."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Engineering (Mechanical Engineering)",
+        "institution": "Shivaji University",
+        "location": "Kolhapur, India",
+        "start_date": "",
+        "end_date": "May 2015"
+      }
+    ],
+    "certifications": [
+      "ISO 9001:2015, 14001, & 45001 Internal Auditor certification"
+    ],
+    "languages": [
+      "English",
+      "Hindi",
+      "Marathi"
+    ],
+    "links": []
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 145.0502,
+    "quality_seconds": 0.0148,
+    "normalization_seconds": 0.0026,
+    "recovery_seconds": 15.5548,
+    "llm_seconds": 26.5984,
+    "total_seconds": 187.2211
+  },
+  "_stored_name": "1809fd8f-5b13-43f6-94a2-b771ca1c48aa_download_12_.pdf"
+}

@@ -1,0 +1,2243 @@
+{
+  "resume_id": "73bd5e56-f484-47c8-9608-07b672e0a440",
+  "filename": "sample_cv.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 159586,
+  "uploaded_at": "2026-11-11T06:39:17.009932+00:00",
+  "success": true,
+  "extractor_used": "docling",
+  "final_extractor": "docling",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "73bd5e56-f484-47c8-9608-07b672e0a440-attempt-1",
+      "resume_id": "73bd5e56-f484-47c8-9608-07b672e0a440",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 94.7 (selected 'docling' scored 94.9).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 94.7 (selected 'docling' scored 94.9).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "73bd5e56-f484-47c8-9608-07b672e0a440",
+        "source_tool": "tika",
+        "attempt_id": "73bd5e56-f484-47c8-9608-07b672e0a440-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 6054,
+            "word_count": 826,
+            "line_count": 184,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.174926,
+            "symbol_count": 77,
+            "symbol_ratio": 0.012719,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 6054,
+            "word_count": 826,
+            "configured_section_count": 8,
+            "detected_count": 7,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Projects": "portfolio and work samples",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "jatinshewaramani112@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "P R O F E S S I O N A L  S U M M A R Y",
+                "detection_method": "heading",
+                "line_number": 10,
+                "evidence": "P R O F E S S I O N A L  S U M M A R Y",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "C O R E  S K I L L S",
+                "detection_method": "heading",
+                "line_number": 24,
+                "evidence": "C O R E  S K I L L S",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "W O R K  E X P E R I E N C E",
+                "detection_method": "heading",
+                "line_number": 55,
+                "evidence": "W O R K  E X P E R I E N C E",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "E D U C A T I O N",
+                "detection_method": "heading",
+                "line_number": 127,
+                "evidence": "E D U C A T I O N",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "P O R T F O L I O  &  W O R K  S A M P L E S",
+                "detection_method": "heading",
+                "line_number": 154,
+                "evidence": "P O R T F O L I O  &  W O R K  S A M P L E S",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "C E R T I F I C A T I O N S",
+                "detection_method": "heading",
+                "line_number": 140,
+                "evidence": "C E R T I F I C A T I O N S",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 6054,
+            "word_count": 826,
+            "line_count": 184,
+            "non_empty_line_count": 91,
+            "short_line_count": 13,
+            "short_line_ratio": 0.142857,
+            "fragmented_line_count": 2,
+            "fragmented_line_ratio": 0.021978,
+            "mean_line_length": 63.29,
+            "median_line_length": 52.0,
+            "line_length_stdev": 34.32,
+            "line_length_cv": 0.54228,
+            "broken_sentence_count": 26,
+            "broken_sentence_ratio": 0.288889,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "73bd5e56-f484-47c8-9608-07b672e0a440",
+        "source_tool": "tika",
+        "attempt_id": "73bd5e56-f484-47c8-9608-07b672e0a440-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 6054,
+            "word_count": 826,
+            "line_count": 184,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.174926,
+            "symbol_count": 77,
+            "symbol_ratio": 0.012719,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 6054,
+            "word_count": 826,
+            "configured_section_count": 8,
+            "detected_count": 7,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Projects": "portfolio and work samples",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "jatinshewaramani112@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "P R O F E S S I O N A L  S U M M A R Y",
+                "detection_method": "heading",
+                "line_number": 10,
+                "evidence": "P R O F E S S I O N A L  S U M M A R Y",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "C O R E  S K I L L S",
+                "detection_method": "heading",
+                "line_number": 24,
+                "evidence": "C O R E  S K I L L S",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "W O R K  E X P E R I E N C E",
+                "detection_method": "heading",
+                "line_number": 55,
+                "evidence": "W O R K  E X P E R I E N C E",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "E D U C A T I O N",
+                "detection_method": "heading",
+                "line_number": 127,
+                "evidence": "E D U C A T I O N",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "P O R T F O L I O  &  W O R K  S A M P L E S",
+                "detection_method": "heading",
+                "line_number": 154,
+                "evidence": "P O R T F O L I O  &  W O R K  S A M P L E S",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "C E R T I F I C A T I O N S",
+                "detection_method": "heading",
+                "line_number": 140,
+                "evidence": "C E R T I F I C A T I O N S",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 6054,
+            "word_count": 826,
+            "line_count": 184,
+            "non_empty_line_count": 91,
+            "short_line_count": 13,
+            "short_line_ratio": 0.142857,
+            "fragmented_line_count": 2,
+            "fragmented_line_ratio": 0.021978,
+            "mean_line_length": 63.29,
+            "median_line_length": 52.0,
+            "line_length_stdev": 34.32,
+            "line_length_cv": 0.54228,
+            "broken_sentence_count": 26,
+            "broken_sentence_ratio": 0.288889,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 94.7,
+      "duration_ms": 12017.0,
+      "text": "JATIN SHEWARAMANI \n\nContent Strategist   ·   Editorial Journalist   ·   Content Creator \n\nLucknow, Uttar Pradesh  |  +91 93364 65792  |  jatinshewaramani112@gmail.com  |  Portfolio: \nhttps://astvyastjatin.my.canva.site/ \n\n \n\nP R O F E S S I O N A L  S U M M A R Y  \n\n \n\n \n\nResults-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media \nmanagement, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct \nfor field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram \naudiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms \n(WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera \npresentation with professional voiceover experience. \n \n\nC O R E  S K I L L S  \n\n \n\n \n\nCMS Platforms: WordPress · Contentful \n\nSocial Media: Instagram · YouTube · Facebook · \nLinkedIn · Hootsuite \n\nContent Strategy: Editorial planning · Campaign \nexecution · SEO Copywriting · Brand voice \n\nJournalism: Hyperlocal reporting · Feature writing · Field \nresearch \n\nVideo & On-Camera: Scripting · Shooting · Editing · \nVoiceover · On-camera presentation \n\nAI & Creative: Sora · Google Veo · Midjourney · Gemini · \nCanva \n\nEditing Software: Adobe Premiere Pro · DaVinci \nResolve · Corel Draw \n\nPaid Campaigns: Meta Ads Manager · Google Ads · A/B \nTesting · ROAS Optimisation \n\n \n\nW O R K  E X P E R I E N C E  \n\n \n\nEditorial Head – Content Strategist  ·  Knocksense Media Services Pvt. Ltd. Aug 2022 – Present \n\nContent Strategy & Campaign Management \n\n– Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership \nby 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars. \n\n– Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR \nuplift for partner brands. \n\n– Ran performance-driven Meta & Google Ads campaigns — managing budgets, audience targeting, creative \ntesting, and ROAS reporting. \n\n– Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and \nconversion rates. \n\n– Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial \nconsistency across all channels. \n\nEditorial & Journalism \n\n– Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention — \napplying rigorous field research and journalistic sourcing standards. \n\n– Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial \ncalendars, SEO metadata, and structured content across multiple verticals. \n\n– Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage. \n\nVideo Production & On-Camera \n\n– Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing \nand platform-specific publishing strategies. \n\n– Led end-to-end video production — scripting, shooting, and editing — optimising watch time, CTR, and \naudience retention metrics. \n\n– Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live \naudience engagement. \n\nmailto:jatinshewaramani112@gmail.com\nhttps://astvyastjatin.my.canva.site/\n\n\nContent Lead  ·  EuNext Publications Apr 2021 – Aug 2022 \n\n– Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured, \nresearch-backed storytelling. \n\n– Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity, \nand SEO optimisation. \n\n– Managed and published content on WordPress — handling post formatting, SEO tagging, and editorial \nscheduling for the publication and media verticals. \n\n– Scripted and produced videos for the media vertical, applying platform-specific formatting and audience \nretention techniques. \n\nContent Writer  ·  Vouchers Worldwide Technologies Pvt. Ltd. Sep 2020 – Feb 2021 \n\n– Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and \nimproving SEO score by 50%. \n\n– Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and \nstrengthening international brand visibility. \n\n \n\nE D U C A T I O N  \n\n \n\nBachelor of Business Administration (BBA) Aug 2016 – Mar 2019 \n\nBabu Banarasi Das University, Lucknow  ·  Specialisation: Digital Marketing \n\n– Team Lead, College Dramatics Team — awarded at IIT and IIM cultural fests, demonstrating leadership, live \nperformance, and creative direction. \n\n \n\nC E R T I F I C A T I O N S  \n\n \n\n \n\n– Meta Certified Digital Marketing Associate \n\n– Google Analytics Individual Qualification (GAIQ) \n\n– HubSpot Content Marketing Certification \n\n– HubSpot Social Media Marketing Certification \n\nP O R T F O L I O  &  W O R K  S A M P L E S  \n\n \n\n \n\n– AI Video Portfolio: Sora & Google Veo content samples showcasing AI-powered creation workflows — link.  \n\n– Viral Content: Short-form video achieving 2M+ organic views with zero paid promotion — link. \n\n– Brand Campaigns: Branded content with documented 90% audience penetration — available on request. \n\n– Editorial Writing: Published hyperlocal news, sports, and feature articles via Knocksense Media — link. \n\n \n\nA D D I T I O N A L  I N F O R M A T I O N  \n\n \n\n \n\nLanguages: Hindi (Native) · English (Fluent) · Sindhi (Native) · Punjabi (Conversational) \n\nCreative Interests: Tech & AI · Gaming · News & Journalism · Art · History-driven storytelling \n\nOn-Camera: Professional on-camera presenter and voiceover artist with large-scale event emceeing experience \n\nhttps://drive.google.com/drive/folders/1AMHsk3qFQLb5e8_dYqfaxDw-qd1E4Snx?usp=drive_link\nhttps://www.instagram.com/reel/DKwRgU4iRoR/?igsh=cm90b3hpdDV6MXZm\nhttps://www.knocksense.com/author/jatin-shewaramani/",
+      "extracted_text": "JATIN SHEWARAMANI \n\nContent Strategist   ·   Editorial Journalist   ·   Content Creator \n\nLucknow, Uttar Pradesh  |  +91 93364 65792  |  jatinshewaramani112@gmail.com  |  Portfolio: \nhttps://astvyastjatin.my.canva.site/ \n\n \n\nP R O F E S S I O N A L  S U M M A R Y  \n\n \n\n \n\nResults-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media \nmanagement, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct \nfor field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram \naudiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms \n(WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera \npresentation with professional voiceover experience. \n \n\nC O R E  S K I L L S  \n\n \n\n \n\nCMS Platforms: WordPress · Contentful \n\nSocial Media: Instagram · YouTube · Facebook · \nLinkedIn · Hootsuite \n\nContent Strategy: Editorial planning · Campaign \nexecution · SEO Copywriting · Brand voice \n\nJournalism: Hyperlocal reporting · Feature writing · Field \nresearch \n\nVideo & On-Camera: Scripting · Shooting · Editing · \nVoiceover · On-camera presentation \n\nAI & Creative: Sora · Google Veo · Midjourney · Gemini · \nCanva \n\nEditing Software: Adobe Premiere Pro · DaVinci \nResolve · Corel Draw \n\nPaid Campaigns: Meta Ads Manager · Google Ads · A/B \nTesting · ROAS Optimisation \n\n \n\nW O R K  E X P E R I E N C E  \n\n \n\nEditorial Head – Content Strategist  ·  Knocksense Media Services Pvt. Ltd. Aug 2022 – Present \n\nContent Strategy & Campaign Management \n\n– Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership \nby 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars. \n\n– Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR \nuplift for partner brands. \n\n– Ran performance-driven Meta & Google Ads campaigns — managing budgets, audience targeting, creative \ntesting, and ROAS reporting. \n\n– Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and \nconversion rates. \n\n– Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial \nconsistency across all channels. \n\nEditorial & Journalism \n\n– Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention — \napplying rigorous field research and journalistic sourcing standards. \n\n– Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial \ncalendars, SEO metadata, and structured content across multiple verticals. \n\n– Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage. \n\nVideo Production & On-Camera \n\n– Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing \nand platform-specific publishing strategies. \n\n– Led end-to-end video production — scripting, shooting, and editing — optimising watch time, CTR, and \naudience retention metrics. \n\n– Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live \naudience engagement. \n\nmailto:jatinshewaramani112@gmail.com\nhttps://astvyastjatin.my.canva.site/\n\n\nContent Lead  ·  EuNext Publications Apr 2021 – Aug 2022 \n\n– Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured, \nresearch-backed storytelling. \n\n– Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity, \nand SEO optimisation. \n\n– Managed and published content on WordPress — handling post formatting, SEO tagging, and editorial \nscheduling for the publication and media verticals. \n\n– Scripted and produced videos for the media vertical, applying platform-specific formatting and audience \nretention techniques. \n\nContent Writer  ·  Vouchers Worldwide Technologies Pvt. Ltd. Sep 2020 – Feb 2021 \n\n– Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and \nimproving SEO score by 50%. \n\n– Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and \nstrengthening international brand visibility. \n\n \n\nE D U C A T I O N  \n\n \n\nBachelor of Business Administration (BBA) Aug 2016 – Mar 2019 \n\nBabu Banarasi Das University, Lucknow  ·  Specialisation: Digital Marketing \n\n– Team Lead, College Dramatics Team — awarded at IIT and IIM cultural fests, demonstrating leadership, live \nperformance, and creative direction. \n\n \n\nC E R T I F I C A T I O N S  \n\n \n\n \n\n– Meta Certified Digital Marketing Associate \n\n– Google Analytics Individual Qualification (GAIQ) \n\n– HubSpot Content Marketing Certification \n\n– HubSpot Social Media Marketing Certification \n\nP O R T F O L I O  &  W O R K  S A M P L E S  \n\n \n\n \n\n– AI Video Portfolio: Sora & Google Veo content samples showcasing AI-powered creation workflows — link.  \n\n– Viral Content: Short-form video achieving 2M+ organic views with zero paid promotion — link. \n\n– Brand Campaigns: Branded content with documented 90% audience penetration — available on request. \n\n– Editorial Writing: Published hyperlocal news, sports, and feature articles via Knocksense Media — link. \n\n \n\nA D D I T I O N A L  I N F O R M A T I O N  \n\n \n\n \n\nLanguages: Hindi (Native) · English (Fluent) · Sindhi (Native) · Punjabi (Conversational) \n\nCreative Interests: Tech & AI · Gaming · News & Journalism · Art · History-driven storytelling \n\nOn-Camera: Professional on-camera presenter and voiceover artist with large-scale event emceeing experience \n\nhttps://drive.google.com/drive/folders/1AMHsk3qFQLb5e8_dYqfaxDw-qd1E4Snx?usp=drive_link\nhttps://www.instagram.com/reel/DKwRgU4iRoR/?igsh=cm90b3hpdDV6MXZm\nhttps://www.knocksense.com/author/jatin-shewaramani/",
+      "extracted_text_length": 6054,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": {
+        "ocr_enabled": true,
+        "ocr_used": null,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "JATIN SHEWARAMANI\n\nContent Strategist · Editorial Journalist · Content Creator\n\nLucknow, Uttar Pradesh | +91 93364 65792 | jatinshewaramani112@gmail.com | Portfolio:\nhttps://astvyastjatin.my.canva.site/\n\nP R O F E S S I O N A L S U M M A R Y\n\nResults-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media\nmanagement, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct\nfor field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram\naudiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms\n(WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera\npresentation with professional voiceover experience.\n\nC O R E S K I L L S\n\nCMS Platforms: WordPress · Contentful\n\nSocial Media: Instagram · YouTube · Facebook ·\nLinkedIn · Hootsuite\n\nContent Strategy: Editorial planning · Campaign\nexecution · SEO Copywriting · Brand voice\n\nJournalism: Hyperlocal reporting · Feature writing · Field\nresearch\n\nVideo & On-Camera: Scripting · Shooting · Editing ·\nVoiceover · On-camera presentation\n\nAI & Creative: Sora · Google Veo · Midjourney · Gemini ·\nCanva\n\nEditing Software: Adobe Premiere Pro · DaVinci\nResolve · Corel Draw\n\nPaid Campaigns: Meta Ads Manager · Google Ads · A/B\nTesting · ROAS Optimisation\n\nW O R K E X P E R I E N C E\n\nEditorial Head – Content Strategist · Knocksense Media Services Pvt. Ltd. Aug 2022 – Present\n\nContent Strategy & Campaign Management\n\n– Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership\nby 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars.\n\n– Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR\nuplift for partner brands.\n\n– Ran performance-driven Meta & Google Ads campaigns — managing budgets, audience targeting, creative\ntesting, and ROAS reporting.\n\n– Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and\nconversion rates.\n\n– Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial\nconsistency across all channels.\n\nEditorial & Journalism\n\n– Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention —\napplying rigorous field research and journalistic sourcing standards.\n\n– Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial\ncalendars, SEO metadata, and structured content across multiple verticals.\n\n– Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage.\n\nVideo Production & On-Camera\n\n– Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing\nand platform-specific publishing strategies.\n\n– Led end-to-end video production — scripting, shooting, and editing — optimising watch time, CTR, and\naudience retention metrics.\n\n– Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live\naudience engagement.\n\nmailto:jatinshewaramani112@gmail.com\nhttps://astvyastjatin.my.canva.site/\n\nContent Lead · EuNext Publications Apr 2021 – Aug 2022\n\n– Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured,\nresearch-backed storytelling.\n\n– Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity,\nand SEO optimisation.\n\n– Managed and published content on WordPress — handling post formatting, SEO tagging, and editorial\nscheduling for the publication and media verticals.\n\n– Scripted and produced videos for the media vertical, applying platform-specific formatting and audience\nretention techniques.\n\nContent Writer · Vouchers Worldwide Technologies Pvt. Ltd. Sep 2020 – Feb 2021\n\n– Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and\nimproving SEO score by 50%.\n\n– Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and\nstrengthening international brand visibility.\n\nE D U C A T I O N\n\nBachelor of Business Administration (BBA) Aug 2016 – Mar 2019\n\nBabu Banarasi Das University, Lucknow · Specialisation: Digital Marketing\n\n– Team Lead, College Dramatics Team — awarded at IIT and IIM cultural fests, demonstrating leadership, live\nperformance, and creative direction.\n\nC E R T I F I C A T I O N S\n\n– Meta Certified Digital Marketing Associate\n\n– Google Analytics Individual Qualification (GAIQ)\n\n– HubSpot Content Marketing Certification\n\n– HubSpot Social Media Marketing Certification\n\nP O R T F O L I O & W O R K S A M P L E S\n\n– AI Video Portfolio: Sora & Google Veo content samples showcasing AI-powered creation workflows — link.\n\n– Viral Content: Short-form video achieving 2M+ organic views with zero paid promotion — link.\n\n– Brand Campaigns: Branded content with documented 90% audience penetration — available on request.\n\n– Editorial Writing: Published hyperlocal news, sports, and feature articles via Knocksense Media — link.\n\nA D D I T I O N A L I N F O R M A T I O N\n\nLanguages: Hindi (Native) · English (Fluent) · Sindhi (Native) · Punjabi (Conversational)\n\nCreative Interests: Tech & AI · Gaming · News & Journalism · Art · History-driven storytelling\n\nOn-Camera: Professional on-camera presenter and voiceover artist with large-scale event emceeing experience\n\nhttps://drive.google.com/drive/folders/1AMHsk3qFQLb5e8_dYqfaxDw-qd1E4Snx?usp=drive_link\nhttps://www.instagram.com/reel/DKwRgU4iRoR/?igsh=cm90b3hpdDV6MXZm\nhttps://www.knocksense.com/author/jatin-shewaramani/"
+    },
+    {
+      "attempt_id": "73bd5e56-f484-47c8-9608-07b672e0a440-attempt-2",
+      "resume_id": "73bd5e56-f484-47c8-9608-07b672e0a440",
+      "attempt_number": 2,
+      "extractor_name": "pymupdf",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 94.8 (selected 'docling' scored 94.9).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 94.8 (selected 'docling' scored 94.9).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "73bd5e56-f484-47c8-9608-07b672e0a440",
+        "source_tool": "pymupdf",
+        "attempt_id": "73bd5e56-f484-47c8-9608-07b672e0a440-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 5686,
+            "word_count": 821,
+            "line_count": 108,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.170067,
+            "symbol_count": 77,
+            "symbol_ratio": 0.013542,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 5686,
+            "word_count": 821,
+            "configured_section_count": 8,
+            "detected_count": 7,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Projects": "portfolio and work samples",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "jatinshewaramani112@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "P R O F E S S I O N A L S U M M A R Y",
+                "detection_method": "heading",
+                "line_number": 6,
+                "evidence": "P R O F E S S I O N A L S U M M A R Y",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "C O R E S K I L L S",
+                "detection_method": "heading",
+                "line_number": 16,
+                "evidence": "C O R E S K I L L S",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "W O R K E X P E R I E N C E",
+                "detection_method": "heading",
+                "line_number": 35,
+                "evidence": "W O R K E X P E R I E N C E",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "E D U C A T I O N",
+                "detection_method": "heading",
+                "line_number": 80,
+                "evidence": "E D U C A T I O N",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "P O R T F O L I O & W O R K S A M P L E S",
+                "detection_method": "heading",
+                "line_number": 95,
+                "evidence": "P O R T F O L I O & W O R K S A M P L E S",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "C E R T I F I C A T I O N S",
+                "detection_method": "heading",
+                "line_number": 88,
+                "evidence": "C E R T I F I C A T I O N S",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 5686,
+            "word_count": 821,
+            "line_count": 108,
+            "non_empty_line_count": 90,
+            "short_line_count": 8,
+            "short_line_ratio": 0.088889,
+            "fragmented_line_count": 2,
+            "fragmented_line_ratio": 0.022222,
+            "mean_line_length": 60.8,
+            "median_line_length": 48.5,
+            "line_length_stdev": 35.41,
+            "line_length_cv": 0.582433,
+            "broken_sentence_count": 22,
+            "broken_sentence_ratio": 0.247191,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "73bd5e56-f484-47c8-9608-07b672e0a440",
+        "source_tool": "pymupdf",
+        "attempt_id": "73bd5e56-f484-47c8-9608-07b672e0a440-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 5686,
+            "word_count": 821,
+            "line_count": 108,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.170067,
+            "symbol_count": 77,
+            "symbol_ratio": 0.013542,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 5686,
+            "word_count": 821,
+            "configured_section_count": 8,
+            "detected_count": 7,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Projects": "portfolio and work samples",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "jatinshewaramani112@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "P R O F E S S I O N A L S U M M A R Y",
+                "detection_method": "heading",
+                "line_number": 6,
+                "evidence": "P R O F E S S I O N A L S U M M A R Y",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "C O R E S K I L L S",
+                "detection_method": "heading",
+                "line_number": 16,
+                "evidence": "C O R E S K I L L S",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "W O R K E X P E R I E N C E",
+                "detection_method": "heading",
+                "line_number": 35,
+                "evidence": "W O R K E X P E R I E N C E",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "E D U C A T I O N",
+                "detection_method": "heading",
+                "line_number": 80,
+                "evidence": "E D U C A T I O N",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "P O R T F O L I O & W O R K S A M P L E S",
+                "detection_method": "heading",
+                "line_number": 95,
+                "evidence": "P O R T F O L I O & W O R K S A M P L E S",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "C E R T I F I C A T I O N S",
+                "detection_method": "heading",
+                "line_number": 88,
+                "evidence": "C E R T I F I C A T I O N S",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 5686,
+            "word_count": 821,
+            "line_count": 108,
+            "non_empty_line_count": 90,
+            "short_line_count": 8,
+            "short_line_ratio": 0.088889,
+            "fragmented_line_count": 2,
+            "fragmented_line_ratio": 0.022222,
+            "mean_line_length": 60.8,
+            "median_line_length": 48.5,
+            "line_length_stdev": 35.41,
+            "line_length_cv": 0.582433,
+            "broken_sentence_count": 22,
+            "broken_sentence_ratio": 0.247191,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 94.8,
+      "duration_ms": 74.29,
+      "text": "JATIN SHEWARAMANI \nContent Strategist   ·   Editorial Journalist   ·   Content Creator \nLucknow, Uttar Pradesh  |  +91 93364 65792  |  jatinshewaramani112@gmail.com  |  Portfolio: \nhttps://astvyastjatin.my.canva.site/ \n \nP R O F E S S I O N A L S U M M A R Y \n \n \nResults-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media \nmanagement, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct \nfor field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram \naudiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms \n(WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera \npresentation with professional voiceover experience. \n \nC O R E S K I L L S \n \n \nCMS Platforms: WordPress · Contentful \nSocial Media: Instagram · YouTube · Facebook · \nLinkedIn · Hootsuite \nContent Strategy: Editorial planning · Campaign \nexecution · SEO Copywriting · Brand voice \nJournalism: Hyperlocal reporting · Feature writing · Field \nresearch \nVideo & On-Camera: Scripting · Shooting · Editing · \nVoiceover · On-camera presentation \nAI & Creative: Sora · Google Veo · Midjourney · Gemini · \nCanva \nEditing Software: Adobe Premiere Pro · DaVinci \nResolve · Corel Draw \nPaid Campaigns: Meta Ads Manager · Google Ads · A/B \nTesting · ROAS Optimisation \n \nW O R K E X P E R I E N C E \n \nEditorial Head – Content Strategist  ·  Knocksense Media Services Pvt. Ltd. \nAug 2022 – Present \nContent Strategy & Campaign Management \n– Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership \nby 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars. \n– Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR \nuplift for partner brands. \n– Ran performance-driven Meta & Google Ads campaigns — managing budgets, audience targeting, creative \ntesting, and ROAS reporting. \n– Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and \nconversion rates. \n– Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial \nconsistency across all channels. \nEditorial & Journalism \n– Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention — \napplying rigorous field research and journalistic sourcing standards. \n– Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial \ncalendars, SEO metadata, and structured content across multiple verticals. \n– Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage. \nVideo Production & On-Camera \n– Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing \nand platform-specific publishing strategies. \n– Led end-to-end video production — scripting, shooting, and editing — optimising watch time, CTR, and \naudience retention metrics. \n– Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live \naudience engagement.\nContent Lead  ·  EuNext Publications \nApr 2021 – Aug 2022 \n– Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured, \nresearch-backed storytelling. \n– Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity, \nand SEO optimisation. \n– Managed and published content on WordPress — handling post formatting, SEO tagging, and editorial \nscheduling for the publication and media verticals. \n– Scripted and produced videos for the media vertical, applying platform-specific formatting and audience \nretention techniques. \nContent Writer  ·  Vouchers Worldwide Technologies Pvt. Ltd. \nSep 2020 – Feb 2021 \n– Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and \nimproving SEO score by 50%. \n– Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and \nstrengthening international brand visibility. \n \nE D U C A T I O N \n \nBachelor of Business Administration (BBA) \nAug 2016 – Mar 2019 \nBabu Banarasi Das University, Lucknow  ·  Specialisation: Digital Marketing \n– Team Lead, College Dramatics Team — awarded at IIT and IIM cultural fests, demonstrating leadership, live \nperformance, and creative direction. \n \nC E R T I F I C A T I O N S \n \n \n– Meta Certified Digital Marketing Associate \n– Google Analytics Individual Qualification (GAIQ) \n– HubSpot Content Marketing Certification \n– HubSpot Social Media Marketing Certification \nP O R T F O L I O & W O R K S A M P L E S \n \n \n– AI Video Portfolio: Sora & Google Veo content samples showcasing AI-powered creation workflows — link.  \n– Viral Content: Short-form video achieving 2M+ organic views with zero paid promotion — link. \n– Brand Campaigns: Branded content with documented 90% audience penetration — available on request. \n– Editorial Writing: Published hyperlocal news, sports, and feature articles via Knocksense Media — link. \n \nA D D I T I O N A L I N F O R M A T I O N \n \n \nLanguages: Hindi (Native) · English (Fluent) · Sindhi (Native) · Punjabi (Conversational) \nCreative Interests: Tech & AI · Gaming · News & Journalism · Art · History-driven storytelling \nOn-Camera: Professional on-camera presenter and voiceover artist with large-scale event emceeing experience",
+      "extracted_text": "JATIN SHEWARAMANI \nContent Strategist   ·   Editorial Journalist   ·   Content Creator \nLucknow, Uttar Pradesh  |  +91 93364 65792  |  jatinshewaramani112@gmail.com  |  Portfolio: \nhttps://astvyastjatin.my.canva.site/ \n \nP R O F E S S I O N A L S U M M A R Y \n \n \nResults-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media \nmanagement, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct \nfor field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram \naudiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms \n(WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera \npresentation with professional voiceover experience. \n \nC O R E S K I L L S \n \n \nCMS Platforms: WordPress · Contentful \nSocial Media: Instagram · YouTube · Facebook · \nLinkedIn · Hootsuite \nContent Strategy: Editorial planning · Campaign \nexecution · SEO Copywriting · Brand voice \nJournalism: Hyperlocal reporting · Feature writing · Field \nresearch \nVideo & On-Camera: Scripting · Shooting · Editing · \nVoiceover · On-camera presentation \nAI & Creative: Sora · Google Veo · Midjourney · Gemini · \nCanva \nEditing Software: Adobe Premiere Pro · DaVinci \nResolve · Corel Draw \nPaid Campaigns: Meta Ads Manager · Google Ads · A/B \nTesting · ROAS Optimisation \n \nW O R K E X P E R I E N C E \n \nEditorial Head – Content Strategist  ·  Knocksense Media Services Pvt. Ltd. \nAug 2022 – Present \nContent Strategy & Campaign Management \n– Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership \nby 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars. \n– Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR \nuplift for partner brands. \n– Ran performance-driven Meta & Google Ads campaigns — managing budgets, audience targeting, creative \ntesting, and ROAS reporting. \n– Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and \nconversion rates. \n– Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial \nconsistency across all channels. \nEditorial & Journalism \n– Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention — \napplying rigorous field research and journalistic sourcing standards. \n– Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial \ncalendars, SEO metadata, and structured content across multiple verticals. \n– Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage. \nVideo Production & On-Camera \n– Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing \nand platform-specific publishing strategies. \n– Led end-to-end video production — scripting, shooting, and editing — optimising watch time, CTR, and \naudience retention metrics. \n– Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live \naudience engagement.\nContent Lead  ·  EuNext Publications \nApr 2021 – Aug 2022 \n– Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured, \nresearch-backed storytelling. \n– Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity, \nand SEO optimisation. \n– Managed and published content on WordPress — handling post formatting, SEO tagging, and editorial \nscheduling for the publication and media verticals. \n– Scripted and produced videos for the media vertical, applying platform-specific formatting and audience \nretention techniques. \nContent Writer  ·  Vouchers Worldwide Technologies Pvt. Ltd. \nSep 2020 – Feb 2021 \n– Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and \nimproving SEO score by 50%. \n– Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and \nstrengthening international brand visibility. \n \nE D U C A T I O N \n \nBachelor of Business Administration (BBA) \nAug 2016 – Mar 2019 \nBabu Banarasi Das University, Lucknow  ·  Specialisation: Digital Marketing \n– Team Lead, College Dramatics Team — awarded at IIT and IIM cultural fests, demonstrating leadership, live \nperformance, and creative direction. \n \nC E R T I F I C A T I O N S \n \n \n– Meta Certified Digital Marketing Associate \n– Google Analytics Individual Qualification (GAIQ) \n– HubSpot Content Marketing Certification \n– HubSpot Social Media Marketing Certification \nP O R T F O L I O & W O R K S A M P L E S \n \n \n– AI Video Portfolio: Sora & Google Veo content samples showcasing AI-powered creation workflows — link.  \n– Viral Content: Short-form video achieving 2M+ organic views with zero paid promotion — link. \n– Brand Campaigns: Branded content with documented 90% audience penetration — available on request. \n– Editorial Writing: Published hyperlocal news, sports, and feature articles via Knocksense Media — link. \n \nA D D I T I O N A L I N F O R M A T I O N \n \n \nLanguages: Hindi (Native) · English (Fluent) · Sindhi (Native) · Punjabi (Conversational) \nCreative Interests: Tech & AI · Gaming · News & Journalism · Art · History-driven storytelling \nOn-Camera: Professional on-camera presenter and voiceover artist with large-scale event emceeing experience",
+      "extracted_text_length": 5686,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "format": "PDF 1.7",
+        "author": "Un-named",
+        "creator": "Aspose Ltd.",
+        "producer": "Aspose.PDF for Java 18.8",
+        "creationDate": "D:20260717180107+05'30'",
+        "modDate": "D:20260812113148+05'30'"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "JATIN SHEWARAMANI\nContent Strategist · Editorial Journalist · Content Creator\nLucknow, Uttar Pradesh | +91 93364 65792 | jatinshewaramani112@gmail.com | Portfolio:\nhttps://astvyastjatin.my.canva.site/\n\nP R O F E S S I O N A L S U M M A R Y\n\nResults-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media\nmanagement, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct\nfor field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram\naudiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms\n(WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera\npresentation with professional voiceover experience.\n\nC O R E S K I L L S\n\nCMS Platforms: WordPress · Contentful\nSocial Media: Instagram · YouTube · Facebook ·\nLinkedIn · Hootsuite\nContent Strategy: Editorial planning · Campaign\nexecution · SEO Copywriting · Brand voice\nJournalism: Hyperlocal reporting · Feature writing · Field\nresearch\nVideo & On-Camera: Scripting · Shooting · Editing ·\nVoiceover · On-camera presentation\nAI & Creative: Sora · Google Veo · Midjourney · Gemini ·\nCanva\nEditing Software: Adobe Premiere Pro · DaVinci\nResolve · Corel Draw\nPaid Campaigns: Meta Ads Manager · Google Ads · A/B\nTesting · ROAS Optimisation\n\nW O R K E X P E R I E N C E\n\nEditorial Head – Content Strategist · Knocksense Media Services Pvt. Ltd.\nAug 2022 – Present\nContent Strategy & Campaign Management\n– Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership\nby 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars.\n– Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR\nuplift for partner brands.\n– Ran performance-driven Meta & Google Ads campaigns — managing budgets, audience targeting, creative\ntesting, and ROAS reporting.\n– Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and\nconversion rates.\n– Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial\nconsistency across all channels.\nEditorial & Journalism\n– Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention —\napplying rigorous field research and journalistic sourcing standards.\n– Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial\ncalendars, SEO metadata, and structured content across multiple verticals.\n– Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage.\nVideo Production & On-Camera\n– Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing\nand platform-specific publishing strategies.\n– Led end-to-end video production — scripting, shooting, and editing — optimising watch time, CTR, and\naudience retention metrics.\n– Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live\naudience engagement.\nContent Lead · EuNext Publications\nApr 2021 – Aug 2022\n– Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured,\nresearch-backed storytelling.\n– Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity,\nand SEO optimisation.\n– Managed and published content on WordPress — handling post formatting, SEO tagging, and editorial\nscheduling for the publication and media verticals.\n– Scripted and produced videos for the media vertical, applying platform-specific formatting and audience\nretention techniques.\nContent Writer · Vouchers Worldwide Technologies Pvt. Ltd.\nSep 2020 – Feb 2021\n– Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and\nimproving SEO score by 50%.\n– Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and\nstrengthening international brand visibility.\n\nE D U C A T I O N\n\nBachelor of Business Administration (BBA)\nAug 2016 – Mar 2019\nBabu Banarasi Das University, Lucknow · Specialisation: Digital Marketing\n– Team Lead, College Dramatics Team — awarded at IIT and IIM cultural fests, demonstrating leadership, live\nperformance, and creative direction.\n\nC E R T I F I C A T I O N S\n\n– Meta Certified Digital Marketing Associate\n– Google Analytics Individual Qualification (GAIQ)\n– HubSpot Content Marketing Certification\n– HubSpot Social Media Marketing Certification\nP O R T F O L I O & W O R K S A M P L E S\n\n– AI Video Portfolio: Sora & Google Veo content samples showcasing AI-powered creation workflows — link.\n– Viral Content: Short-form video achieving 2M+ organic views with zero paid promotion — link.\n– Brand Campaigns: Branded content with documented 90% audience penetration — available on request.\n– Editorial Writing: Published hyperlocal news, sports, and feature articles via Knocksense Media — link.\n\nA D D I T I O N A L I N F O R M A T I O N\n\nLanguages: Hindi (Native) · English (Fluent) · Sindhi (Native) · Punjabi (Conversational)\nCreative Interests: Tech & AI · Gaming · News & Journalism · Art · History-driven storytelling\nOn-Camera: Professional on-camera presenter and voiceover artist with large-scale event emceeing experience"
+    },
+    {
+      "attempt_id": "73bd5e56-f484-47c8-9608-07b672e0a440-attempt-3",
+      "resume_id": "73bd5e56-f484-47c8-9608-07b672e0a440",
+      "attempt_number": 3,
+      "extractor_name": "docling",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Selected 'docling' with the highest quality score 94.9 (threshold 60.0).",
+      "fallback_decision": "accept",
+      "fallback_reason": "Selected 'docling' with the highest quality score 94.9 (threshold 60.0).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "73bd5e56-f484-47c8-9608-07b672e0a440",
+        "source_tool": "docling",
+        "attempt_id": "73bd5e56-f484-47c8-9608-07b672e0a440-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 5583,
+            "word_count": 816,
+            "line_count": 117,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.154756,
+            "symbol_count": 36,
+            "symbol_ratio": 0.006448,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 5583,
+            "word_count": 816,
+            "configured_section_count": 8,
+            "detected_count": 7,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Projects": "portfolio and work samples",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "jatinshewaramani112@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "P R O F E S S I O N A L S U MMA R Y",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "P R O F E S S I O N A L S U MMA R Y",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "C O R E S K I L L S",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "C O R E S K I L L S",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WO R K E X P E R I E N C E",
+                "detection_method": "heading",
+                "line_number": 29,
+                "evidence": "WO R K E X P E R I E N C E",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "E D U C A T I O N",
+                "detection_method": "heading",
+                "line_number": 87,
+                "evidence": "E D U C A T I O N",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "P O R T F O L I O & WO R K S A M P L E S",
+                "detection_method": "heading",
+                "line_number": 104,
+                "evidence": "P O R T F O L I O & WO R K S A M P L E S",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "C E R T I F I C A T I O N S",
+                "detection_method": "heading",
+                "line_number": 97,
+                "evidence": "C E R T I F I C A T I O N S",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 99.72,
+          "flags": [
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "Line lengths vary unusually (coefficient of variation 1.02) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 5583,
+            "word_count": 816,
+            "line_count": 117,
+            "non_empty_line_count": 68,
+            "short_line_count": 4,
+            "short_line_ratio": 0.058824,
+            "fragmented_line_count": 2,
+            "fragmented_line_ratio": 0.029412,
+            "mean_line_length": 80.4,
+            "median_line_length": 51.0,
+            "line_length_stdev": 81.92,
+            "line_length_cv": 1.018949,
+            "broken_sentence_count": 2,
+            "broken_sentence_ratio": 0.029851,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "73bd5e56-f484-47c8-9608-07b672e0a440",
+        "source_tool": "docling",
+        "attempt_id": "73bd5e56-f484-47c8-9608-07b672e0a440-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 5583,
+            "word_count": 816,
+            "line_count": 117,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.154756,
+            "symbol_count": 36,
+            "symbol_ratio": 0.006448,
+            "max_repeated_char_run": 3,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 97.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 5583,
+            "word_count": 816,
+            "configured_section_count": 8,
+            "detected_count": 7,
+            "missing_count": 1,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_sections": [
+              "Responsibilities"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities"
+            ],
+            "matched_aliases": {
+              "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+              "Summary": "professional summary",
+              "Skills": "core skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education",
+              "Projects": "portfolio and work samples",
+              "Certifications": "certifications"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": null,
+                "detection_method": "pattern",
+                "line_number": null,
+                "evidence": "jatinshewaramani112@gmail.com",
+                "confidence": 0.8
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "P R O F E S S I O N A L S U MMA R Y",
+                "detection_method": "heading",
+                "line_number": 9,
+                "evidence": "P R O F E S S I O N A L S U MMA R Y",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "C O R E S K I L L S",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "C O R E S K I L L S",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "WO R K E X P E R I E N C E",
+                "detection_method": "heading",
+                "line_number": 29,
+                "evidence": "WO R K E X P E R I E N C E",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "E D U C A T I O N",
+                "detection_method": "heading",
+                "line_number": 87,
+                "evidence": "E D U C A T I O N",
+                "confidence": 0.98
+              },
+              "Projects": {
+                "canonical_name": "Projects",
+                "original_heading": "P O R T F O L I O & WO R K S A M P L E S",
+                "detection_method": "heading",
+                "line_number": 104,
+                "evidence": "P O R T F O L I O & WO R K S A M P L E S",
+                "confidence": 0.98
+              },
+              "Certifications": {
+                "canonical_name": "Certifications",
+                "original_heading": "C E R T I F I C A T I O N S",
+                "detection_method": "heading",
+                "line_number": 97,
+                "evidence": "C E R T I F I C A T I O N S",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Projects": "detected",
+              "Certifications": "detected",
+              "Responsibilities": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_sections": [
+            "Responsibilities"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 99.72,
+          "flags": [
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "Line lengths vary unusually (coefficient of variation 1.02) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 5583,
+            "word_count": 816,
+            "line_count": 117,
+            "non_empty_line_count": 68,
+            "short_line_count": 4,
+            "short_line_ratio": 0.058824,
+            "fragmented_line_count": 2,
+            "fragmented_line_ratio": 0.029412,
+            "mean_line_length": 80.4,
+            "median_line_length": 51.0,
+            "line_length_stdev": 81.92,
+            "line_length_cv": 1.018949,
+            "broken_sentence_count": 2,
+            "broken_sentence_ratio": 0.029851,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 94.9,
+      "duration_ms": 15424.31,
+      "text": "JATIN SHEWARAMANI\n\nContent Strategist · Editorial Journalist · Content Creator\n\nLucknow, Uttar Pradesh | +91 93364 65792 | jatinshewaramani112@gmail.com | Portfolio:\n\nhttps://astvyastjatin.my.canva.site/\n\nP R O F E S S I O N A L S U MMA R Y\n\nResults-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media management, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct for field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram audiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms (WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera presentation with professional voiceover experience.\n\nC O R E S K I L L S\n\nCMS Platforms: WordPress · Contentful\n\nSocial Media: Instagram · YouTube · Facebook ·\n\nLinkedIn · Hootsuite\n\nContent Strategy: Editorial planning · Campaign\n\nexecution · SEO Copywriting · Brand voice\n\nJournalism: Hyperlocal reporting · Feature writing · Field\n\nresearch\n\nWO R K E X P E R I E N C E\n\nVideo & On-Camera: Scripting · Shooting · Editing ·\n\nVoiceover · On-camera presentation\n\nAI & Creative: Sora · Google Veo · Midjourney · Gemini ·\n\nCanva\n\nEditing Software: Adobe Premiere Pro · DaVinci\n\nResolve · Corel Draw\n\nPaid Campaigns: Meta Ads Manager · Google Ads · A/B\n\nTesting · ROAS Optimisation\n\nEditorial Head - Content Strategist · Knocksense Media Services Pvt. Ltd.\n\nAug 2022 - Present\n\nContent Strategy & Campaign Management\n\n- Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership by 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars.\n- Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR uplift for partner brands.\n- Ran performance-driven Meta & Google Ads campaigns - managing budgets, audience targeting, creative testing, and ROAS reporting.\n- Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and conversion rates.\n- Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial consistency across all channels.\n\nEditorial & Journalism\n\n- Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention - applying rigorous field research and journalistic sourcing standards.\n- Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial calendars, SEO metadata, and structured content across multiple verticals.\n- Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage.\n\nVideo Production & On-Camera\n\n- Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing and platform-specific publishing strategies.\n- Led end-to-end video production - scripting, shooting, and editing - optimising watch time, CTR, and audience retention metrics.\n- Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live audience engagement.\n\nContent Lead · EuNext Publications\n\nApr 2021 - Aug 2022\n\n- Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured, research-backed storytelling.\n- Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity, and SEO optimisation.\n- Managed and published content on WordPress - handling post formatting, SEO tagging, and editorial scheduling for the publication and media verticals.\n- Scripted and produced videos for the media vertical, applying platform-specific formatting and audience retention techniques.\n\nContent Writer · Vouchers Worldwide Technologies Pvt. Ltd.\n\nSep 2020 - Feb 2021\n\n- Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and improving SEO score by 50%.\n- Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and strengthening international brand visibility.\n\nE D U C A T I O N\n\nBachelor of Business Administration (BBA)\n\nAug 2016 - Mar 2019\n\nBabu Banarasi Das University, Lucknow · Specialisation: Digital Marketing\n\n- Team Lead, College Dramatics Team - awarded at IIT and IIM cultural fests, demonstrating leadership, live performance, and creative direction.\n\nC E R T I F I C A T I O N S\n\n- Meta Certified Digital Marketing Associate\n- Google Analytics Individual Qualification (GAIQ)\n- HubSpot Content Marketing Certification\n- HubSpot Social Media Marketing Certification\n\nP O R T F O L I O & WO R K S A M P L E S\n\n- AI Video Portfolio: Sora & Google Veo content samples showcasing AI-powered creation workflows - link.\n- Viral Content: Short-form video achieving 2M+ organic views with zero paid promotion - link.\n- Brand Campaigns: Branded content with documented 90% audience penetration - available on request.\n- Editorial Writing: Published hyperlocal news, sports, and feature articles via Knocksense Media - link.\n\nA D D I T I O N A L I N F O R MA T I O N\n\nLanguages: Hindi (Native) · English (Fluent) · Sindhi (Native) · Punjabi (Conversational)\n\nCreative Interests: Tech & AI · Gaming · News & Journalism · Art · History-driven storytelling\n\nOn-Camera: Professional on-camera presenter and voiceover artist with large-scale event emceeing experience",
+      "extracted_text": "JATIN SHEWARAMANI\n\nContent Strategist · Editorial Journalist · Content Creator\n\nLucknow, Uttar Pradesh | +91 93364 65792 | jatinshewaramani112@gmail.com | Portfolio:\n\nhttps://astvyastjatin.my.canva.site/\n\nP R O F E S S I O N A L S U MMA R Y\n\nResults-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media management, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct for field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram audiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms (WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera presentation with professional voiceover experience.\n\nC O R E S K I L L S\n\nCMS Platforms: WordPress · Contentful\n\nSocial Media: Instagram · YouTube · Facebook ·\n\nLinkedIn · Hootsuite\n\nContent Strategy: Editorial planning · Campaign\n\nexecution · SEO Copywriting · Brand voice\n\nJournalism: Hyperlocal reporting · Feature writing · Field\n\nresearch\n\nWO R K E X P E R I E N C E\n\nVideo & On-Camera: Scripting · Shooting · Editing ·\n\nVoiceover · On-camera presentation\n\nAI & Creative: Sora · Google Veo · Midjourney · Gemini ·\n\nCanva\n\nEditing Software: Adobe Premiere Pro · DaVinci\n\nResolve · Corel Draw\n\nPaid Campaigns: Meta Ads Manager · Google Ads · A/B\n\nTesting · ROAS Optimisation\n\nEditorial Head - Content Strategist · Knocksense Media Services Pvt. Ltd.\n\nAug 2022 - Present\n\nContent Strategy & Campaign Management\n\n- Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership by 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars.\n- Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR uplift for partner brands.\n- Ran performance-driven Meta & Google Ads campaigns - managing budgets, audience targeting, creative testing, and ROAS reporting.\n- Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and conversion rates.\n- Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial consistency across all channels.\n\nEditorial & Journalism\n\n- Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention - applying rigorous field research and journalistic sourcing standards.\n- Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial calendars, SEO metadata, and structured content across multiple verticals.\n- Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage.\n\nVideo Production & On-Camera\n\n- Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing and platform-specific publishing strategies.\n- Led end-to-end video production - scripting, shooting, and editing - optimising watch time, CTR, and audience retention metrics.\n- Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live audience engagement.\n\nContent Lead · EuNext Publications\n\nApr 2021 - Aug 2022\n\n- Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured, research-backed storytelling.\n- Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity, and SEO optimisation.\n- Managed and published content on WordPress - handling post formatting, SEO tagging, and editorial scheduling for the publication and media verticals.\n- Scripted and produced videos for the media vertical, applying platform-specific formatting and audience retention techniques.\n\nContent Writer · Vouchers Worldwide Technologies Pvt. Ltd.\n\nSep 2020 - Feb 2021\n\n- Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and improving SEO score by 50%.\n- Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and strengthening international brand visibility.\n\nE D U C A T I O N\n\nBachelor of Business Administration (BBA)\n\nAug 2016 - Mar 2019\n\nBabu Banarasi Das University, Lucknow · Specialisation: Digital Marketing\n\n- Team Lead, College Dramatics Team - awarded at IIT and IIM cultural fests, demonstrating leadership, live performance, and creative direction.\n\nC E R T I F I C A T I O N S\n\n- Meta Certified Digital Marketing Associate\n- Google Analytics Individual Qualification (GAIQ)\n- HubSpot Content Marketing Certification\n- HubSpot Social Media Marketing Certification\n\nP O R T F O L I O & WO R K S A M P L E S\n\n- AI Video Portfolio: Sora & Google Veo content samples showcasing AI-powered creation workflows - link.\n- Viral Content: Short-form video achieving 2M+ organic views with zero paid promotion - link.\n- Brand Campaigns: Branded content with documented 90% audience penetration - available on request.\n- Editorial Writing: Published hyperlocal news, sports, and feature articles via Knocksense Media - link.\n\nA D D I T I O N A L I N F O R MA T I O N\n\nLanguages: Hindi (Native) · English (Fluent) · Sindhi (Native) · Punjabi (Conversational)\n\nCreative Interests: Tech & AI · Gaming · News & Journalism · Art · History-driven storytelling\n\nOn-Camera: Professional on-camera presenter and voiceover artist with large-scale event emceeing experience",
+      "extracted_text_length": 5583,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "JATIN SHEWARAMANI\n\nContent Strategist · Editorial Journalist · Content Creator\n\nLucknow, Uttar Pradesh | +91 93364 65792 | jatinshewaramani112@gmail.com | Portfolio:\n\nhttps://astvyastjatin.my.canva.site/\n\nP R O F E S S I O N A L S U MMA R Y\n\nResults-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media management, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct for field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram audiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms (WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera presentation with professional voiceover experience.\n\nC O R E S K I L L S\n\nCMS Platforms: WordPress · Contentful\n\nSocial Media: Instagram · YouTube · Facebook ·\n\nLinkedIn · Hootsuite\n\nContent Strategy: Editorial planning · Campaign\n\nexecution · SEO Copywriting · Brand voice\n\nJournalism: Hyperlocal reporting · Feature writing · Field\n\nresearch\n\nWO R K E X P E R I E N C E\n\nVideo & On-Camera: Scripting · Shooting · Editing ·\n\nVoiceover · On-camera presentation\n\nAI & Creative: Sora · Google Veo · Midjourney · Gemini ·\n\nCanva\n\nEditing Software: Adobe Premiere Pro · DaVinci\n\nResolve · Corel Draw\n\nPaid Campaigns: Meta Ads Manager · Google Ads · A/B\n\nTesting · ROAS Optimisation\n\nEditorial Head - Content Strategist · Knocksense Media Services Pvt. Ltd.\n\nAug 2022 - Present\n\nContent Strategy & Campaign Management\n\n- Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership by 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars.\n- Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR uplift for partner brands.\n- Ran performance-driven Meta & Google Ads campaigns - managing budgets, audience targeting, creative testing, and ROAS reporting.\n- Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and conversion rates.\n- Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial consistency across all channels.\n\nEditorial & Journalism\n\n- Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention - applying rigorous field research and journalistic sourcing standards.\n- Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial calendars, SEO metadata, and structured content across multiple verticals.\n- Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage.\n\nVideo Production & On-Camera\n\n- Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing and platform-specific publishing strategies.\n- Led end-to-end video production - scripting, shooting, and editing - optimising watch time, CTR, and audience retention metrics.\n- Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live audience engagement.\n\nContent Lead · EuNext Publications\n\nApr 2021 - Aug 2022\n\n- Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured, research-backed storytelling.\n- Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity, and SEO optimisation.\n- Managed and published content on WordPress - handling post formatting, SEO tagging, and editorial scheduling for the publication and media verticals.\n- Scripted and produced videos for the media vertical, applying platform-specific formatting and audience retention techniques.\n\nContent Writer · Vouchers Worldwide Technologies Pvt. Ltd.\n\nSep 2020 - Feb 2021\n\n- Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and improving SEO score by 50%.\n- Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and strengthening international brand visibility.\n\nE D U C A T I O N\n\nBachelor of Business Administration (BBA)\n\nAug 2016 - Mar 2019\n\nBabu Banarasi Das University, Lucknow · Specialisation: Digital Marketing\n\n- Team Lead, College Dramatics Team - awarded at IIT and IIM cultural fests, demonstrating leadership, live performance, and creative direction.\n\nC E R T I F I C A T I O N S\n\n- Meta Certified Digital Marketing Associate\n- Google Analytics Individual Qualification (GAIQ)\n- HubSpot Content Marketing Certification\n- HubSpot Social Media Marketing Certification\n\nP O R T F O L I O & WO R K S A M P L E S\n\n- AI Video Portfolio: Sora & Google Veo content samples showcasing AI-powered creation workflows - link.\n- Viral Content: Short-form video achieving 2M+ organic views with zero paid promotion - link.\n- Brand Campaigns: Branded content with documented 90% audience penetration - available on request.\n- Editorial Writing: Published hyperlocal news, sports, and feature articles via Knocksense Media - link.\n\nA D D I T I O N A L I N F O R MA T I O N\n\nLanguages: Hindi (Native) · English (Fluent) · Sindhi (Native) · Punjabi (Conversational)\n\nCreative Interests: Tech & AI · Gaming · News & Journalism · Art · History-driven storytelling\n\nOn-Camera: Professional on-camera presenter and voiceover artist with large-scale event emceeing experience"
+    }
+  ],
+  "attempt_count": 3,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "extracted_text": "JATIN SHEWARAMANI\n\nContent Strategist · Editorial Journalist · Content Creator\n\nLucknow, Uttar Pradesh | +91 93364 65792 | jatinshewaramani112@gmail.com | Portfolio:\n\nhttps://astvyastjatin.my.canva.site/\n\nP R O F E S S I O N A L S U MMA R Y\n\nResults-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media management, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct for field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram audiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms (WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera presentation with professional voiceover experience.\n\nC O R E S K I L L S\n\nCMS Platforms: WordPress · Contentful\n\nSocial Media: Instagram · YouTube · Facebook ·\n\nLinkedIn · Hootsuite\n\nContent Strategy: Editorial planning · Campaign\n\nexecution · SEO Copywriting · Brand voice\n\nJournalism: Hyperlocal reporting · Feature writing · Field\n\nresearch\n\nWO R K E X P E R I E N C E\n\nVideo & On-Camera: Scripting · Shooting · Editing ·\n\nVoiceover · On-camera presentation\n\nAI & Creative: Sora · Google Veo · Midjourney · Gemini ·\n\nCanva\n\nEditing Software: Adobe Premiere Pro · DaVinci\n\nResolve · Corel Draw\n\nPaid Campaigns: Meta Ads Manager · Google Ads · A/B\n\nTesting · ROAS Optimisation\n\nEditorial Head - Content Strategist · Knocksense Media Services Pvt. Ltd.\n\nAug 2022 - Present\n\nContent Strategy & Campaign Management\n\n- Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership by 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars.\n- Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR uplift for partner brands.\n- Ran performance-driven Meta & Google Ads campaigns - managing budgets, audience targeting, creative testing, and ROAS reporting.\n- Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and conversion rates.\n- Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial consistency across all channels.\n\nEditorial & Journalism\n\n- Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention - applying rigorous field research and journalistic sourcing standards.\n- Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial calendars, SEO metadata, and structured content across multiple verticals.\n- Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage.\n\nVideo Production & On-Camera\n\n- Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing and platform-specific publishing strategies.\n- Led end-to-end video production - scripting, shooting, and editing - optimising watch time, CTR, and audience retention metrics.\n- Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live audience engagement.\n\nContent Lead · EuNext Publications\n\nApr 2021 - Aug 2022\n\n- Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured, research-backed storytelling.\n- Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity, and SEO optimisation.\n- Managed and published content on WordPress - handling post formatting, SEO tagging, and editorial scheduling for the publication and media verticals.\n- Scripted and produced videos for the media vertical, applying platform-specific formatting and audience retention techniques.\n\nContent Writer · Vouchers Worldwide Technologies Pvt. Ltd.\n\nSep 2020 - Feb 2021\n\n- Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and improving SEO score by 50%.\n- Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and strengthening international brand visibility.\n\nE D U C A T I O N\n\nBachelor of Business Administration (BBA)\n\nAug 2016 - Mar 2019\n\nBabu Banarasi Das University, Lucknow · Specialisation: Digital Marketing\n\n- Team Lead, College Dramatics Team - awarded at IIT and IIM cultural fests, demonstrating leadership, live performance, and creative direction.\n\nC E R T I F I C A T I O N S\n\n- Meta Certified Digital Marketing Associate\n- Google Analytics Individual Qualification (GAIQ)\n- HubSpot Content Marketing Certification\n- HubSpot Social Media Marketing Certification\n\nP O R T F O L I O & WO R K S A M P L E S\n\n- AI Video Portfolio: Sora & Google Veo content samples showcasing AI-powered creation workflows - link.\n- Viral Content: Short-form video achieving 2M+ organic views with zero paid promotion - link.\n- Brand Campaigns: Branded content with documented 90% audience penetration - available on request.\n- Editorial Writing: Published hyperlocal news, sports, and feature articles via Knocksense Media - link.\n\nA D D I T I O N A L I N F O R MA T I O N\n\nLanguages: Hindi (Native) · English (Fluent) · Sindhi (Native) · Punjabi (Conversational)\n\nCreative Interests: Tech & AI · Gaming · News & Journalism · Art · History-driven storytelling\n\nOn-Camera: Professional on-camera presenter and voiceover artist with large-scale event emceeing experience",
+  "final_extracted_text": "JATIN SHEWARAMANI\n\nContent Strategist · Editorial Journalist · Content Creator\n\nLucknow, Uttar Pradesh | +91 93364 65792 | jatinshewaramani112@gmail.com | Portfolio:\n\nhttps://astvyastjatin.my.canva.site/\n\nP R O F E S S I O N A L S U MMA R Y\n\nResults-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media management, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct for field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram audiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms (WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera presentation with professional voiceover experience.\n\nC O R E S K I L L S\n\nCMS Platforms: WordPress · Contentful\n\nSocial Media: Instagram · YouTube · Facebook ·\n\nLinkedIn · Hootsuite\n\nContent Strategy: Editorial planning · Campaign\n\nexecution · SEO Copywriting · Brand voice\n\nJournalism: Hyperlocal reporting · Feature writing · Field\n\nresearch\n\nWO R K E X P E R I E N C E\n\nVideo & On-Camera: Scripting · Shooting · Editing ·\n\nVoiceover · On-camera presentation\n\nAI & Creative: Sora · Google Veo · Midjourney · Gemini ·\n\nCanva\n\nEditing Software: Adobe Premiere Pro · DaVinci\n\nResolve · Corel Draw\n\nPaid Campaigns: Meta Ads Manager · Google Ads · A/B\n\nTesting · ROAS Optimisation\n\nEditorial Head - Content Strategist · Knocksense Media Services Pvt. Ltd.\n\nAug 2022 - Present\n\nContent Strategy & Campaign Management\n\n- Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership by 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars.\n- Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR uplift for partner brands.\n- Ran performance-driven Meta & Google Ads campaigns - managing budgets, audience targeting, creative testing, and ROAS reporting.\n- Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and conversion rates.\n- Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial consistency across all channels.\n\nEditorial & Journalism\n\n- Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention - applying rigorous field research and journalistic sourcing standards.\n- Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial calendars, SEO metadata, and structured content across multiple verticals.\n- Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage.\n\nVideo Production & On-Camera\n\n- Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing and platform-specific publishing strategies.\n- Led end-to-end video production - scripting, shooting, and editing - optimising watch time, CTR, and audience retention metrics.\n- Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live audience engagement.\n\nContent Lead · EuNext Publications\n\nApr 2021 - Aug 2022\n\n- Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured, research-backed storytelling.\n- Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity, and SEO optimisation.\n- Managed and published content on WordPress - handling post formatting, SEO tagging, and editorial scheduling for the publication and media verticals.\n- Scripted and produced videos for the media vertical, applying platform-specific formatting and audience retention techniques.\n\nContent Writer · Vouchers Worldwide Technologies Pvt. Ltd.\n\nSep 2020 - Feb 2021\n\n- Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and improving SEO score by 50%.\n- Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and strengthening international brand visibility.\n\nE D U C A T I O N\n\nBachelor of Business Administration (BBA)\n\nAug 2016 - Mar 2019\n\nBabu Banarasi Das University, Lucknow · Specialisation: Digital Marketing\n\n- Team Lead, College Dramatics Team - awarded at IIT and IIM cultural fests, demonstrating leadership, live performance, and creative direction.\n\nC E R T I F I C A T I O N S\n\n- Meta Certified Digital Marketing Associate\n- Google Analytics Individual Qualification (GAIQ)\n- HubSpot Content Marketing Certification\n- HubSpot Social Media Marketing Certification\n\nP O R T F O L I O & WO R K S A M P L E S\n\n- AI Video Portfolio: Sora & Google Veo content samples showcasing AI-powered creation workflows - link.\n- Viral Content: Short-form video achieving 2M+ organic views with zero paid promotion - link.\n- Brand Campaigns: Branded content with documented 90% audience penetration - available on request.\n- Editorial Writing: Published hyperlocal news, sports, and feature articles via Knocksense Media - link.\n\nA D D I T I O N A L I N F O R MA T I O N\n\nLanguages: Hindi (Native) · English (Fluent) · Sindhi (Native) · Punjabi (Conversational)\n\nCreative Interests: Tech & AI · Gaming · News & Journalism · Art · History-driven storytelling\n\nOn-Camera: Professional on-camera presenter and voiceover artist with large-scale event emceeing experience",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "quality": {
+    "status": "PASS",
+    "document_id": "73bd5e56-f484-47c8-9608-07b672e0a440",
+    "source_tool": "docling",
+    "attempt_id": "73bd5e56-f484-47c8-9608-07b672e0a440-attempt-3",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 5583,
+        "word_count": 816,
+        "line_count": 117,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.154756,
+        "symbol_count": 36,
+        "symbol_ratio": 0.006448,
+        "max_repeated_char_run": 3,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 97.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 5583,
+        "word_count": 816,
+        "configured_section_count": 8,
+        "detected_count": 7,
+        "missing_count": 1,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_sections": [
+          "Responsibilities"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Responsibilities"
+        ],
+        "matched_aliases": {
+          "Contact Information": "pattern:[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-",
+          "Summary": "professional summary",
+          "Skills": "core skills",
+          "Work Experience": "WORKEXPERIENCE",
+          "Education": "education",
+          "Projects": "portfolio and work samples",
+          "Certifications": "certifications"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": null,
+            "detection_method": "pattern",
+            "line_number": null,
+            "evidence": "jatinshewaramani112@gmail.com",
+            "confidence": 0.8
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "P R O F E S S I O N A L S U MMA R Y",
+            "detection_method": "heading",
+            "line_number": 9,
+            "evidence": "P R O F E S S I O N A L S U MMA R Y",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "C O R E S K I L L S",
+            "detection_method": "heading",
+            "line_number": 13,
+            "evidence": "C O R E S K I L L S",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "WO R K E X P E R I E N C E",
+            "detection_method": "heading",
+            "line_number": 29,
+            "evidence": "WO R K E X P E R I E N C E",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "E D U C A T I O N",
+            "detection_method": "heading",
+            "line_number": 87,
+            "evidence": "E D U C A T I O N",
+            "confidence": 0.98
+          },
+          "Projects": {
+            "canonical_name": "Projects",
+            "original_heading": "P O R T F O L I O & WO R K S A M P L E S",
+            "detection_method": "heading",
+            "line_number": 104,
+            "evidence": "P O R T F O L I O & WO R K S A M P L E S",
+            "confidence": 0.98
+          },
+          "Certifications": {
+            "canonical_name": "Certifications",
+            "original_heading": "C E R T I F I C A T I O N S",
+            "detection_method": "heading",
+            "line_number": 97,
+            "evidence": "C E R T I F I C A T I O N S",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Projects": "detected",
+          "Certifications": "detected",
+          "Responsibilities": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_sections": [
+        "Responsibilities"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Responsibilities"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 99.72,
+      "flags": [
+        "HIGH_LINE_LENGTH_VARIATION"
+      ],
+      "reasons": [
+        "Line lengths vary unusually (coefficient of variation 1.02) — a possible sign of mixed or merged column text."
+      ],
+      "metrics": {
+        "char_count": 5583,
+        "word_count": 816,
+        "line_count": 117,
+        "non_empty_line_count": 68,
+        "short_line_count": 4,
+        "short_line_ratio": 0.058824,
+        "fragmented_line_count": 2,
+        "fragmented_line_ratio": 0.029412,
+        "mean_line_length": 80.4,
+        "median_line_length": 51.0,
+        "line_length_stdev": 81.92,
+        "line_length_cv": 1.018949,
+        "broken_sentence_count": 2,
+        "broken_sentence_ratio": 0.029851,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Selected 'docling' with the highest quality score 94.9 (threshold 60.0).",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 12017.0,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": 74.29,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 15424.31,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=94.7, pymupdf=94.8, docling=94.9",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected 'docling' with the highest quality score 94.9 (threshold 60.0).",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Docling text normalized: 5583 → 5583 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Contact Information Recovery",
+      "type": "contact_recovery",
+      "extractor": null,
+      "status": "FAIL",
+      "duration_ms": null,
+      "message": "Contact information missing and could not be recovered from any source (extractor outputs, first-page text layer, OCR). Still missing: location.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 18053.16,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 44920.6,
+      "message": "Muse AI produced validated Resume JSON from the Docling extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 44920.6,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "docling",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "JATIN SHEWARAMANI\n\nContent Strategist · Editorial Journalist · Content Creator\n\nLucknow, Uttar Pradesh | +91 93364 65792 | jatinshewaramani112@gmail.com | Portfolio:\n\nhttps://astvyastjatin.my.canva.site/\n\nP R O F E S S I O N A L S U MMA R Y\n\nResults-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media management, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct for field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram audiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms (WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera presentation with professional voiceover experience.\n\nC O R E S K I L L S\n\nCMS Platforms: WordPress · Contentful\n\nSocial Media: Instagram · YouTube · Facebook ·\n\nLinkedIn · Hootsuite\n\nContent Strategy: Editorial planning · Campaign\n\nexecution · SEO Copywriting · Brand voice\n\nJournalism: Hyperlocal reporting · Feature writing · Field\n\nresearch\n\nWO R K E X P E R I E N C E\n\nVideo & On-Camera: Scripting · Shooting · Editing ·\n\nVoiceover · On-camera presentation\n\nAI & Creative: Sora · Google Veo · Midjourney · Gemini ·\n\nCanva\n\nEditing Software: Adobe Premiere Pro · DaVinci\n\nResolve · Corel Draw\n\nPaid Campaigns: Meta Ads Manager · Google Ads · A/B\n\nTesting · ROAS Optimisation\n\nEditorial Head - Content Strategist · Knocksense Media Services Pvt. Ltd.\n\nAug 2022 - Present\n\nContent Strategy & Campaign Management\n\n- Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership by 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars.\n- Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR uplift for partner brands.\n- Ran performance-driven Meta & Google Ads campaigns - managing budgets, audience targeting, creative testing, and ROAS reporting.\n- Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and conversion rates.\n- Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial consistency across all channels.\n\nEditorial & Journalism\n\n- Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention - applying rigorous field research and journalistic sourcing standards.\n- Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial calendars, SEO metadata, and structured content across multiple verticals.\n- Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage.\n\nVideo Production & On-Camera\n\n- Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing and platform-specific publishing strategies.\n- Led end-to-end video production - scripting, shooting, and editing - optimising watch time, CTR, and audience retention metrics.\n- Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live audience engagement.\n\nContent Lead · EuNext Publications\n\nApr 2021 - Aug 2022\n\n- Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured, research-backed storytelling.\n- Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity, and SEO optimisation.\n- Managed and published content on WordPress - handling post formatting, SEO tagging, and editorial scheduling for the publication and media verticals.\n- Scripted and produced videos for the media vertical, applying platform-specific formatting and audience retention techniques.\n\nContent Writer · Vouchers Worldwide Technologies Pvt. Ltd.\n\nSep 2020 - Feb 2021\n\n- Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and improving SEO score by 50%.\n- Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and strengthening international brand visibility.\n\nE D U C A T I O N\n\nBachelor of Business Administration (BBA)\n\nAug 2016 - Mar 2019\n\nBabu Banarasi Das University, Lucknow · Specialisation: Digital Marketing\n\n- Team Lead, College Dramatics Team - awarded at IIT and IIM cultural fests, demonstrating leadership, live performance, and creative direction.\n\nC E R T I F I C A T I O N S\n\n- Meta Certified Digital Marketing Associate\n- Google Analytics Individual Qualification (GAIQ)\n- HubSpot Content Marketing Certification\n- HubSpot Social Media Marketing Certification\n\nP O R T F O L I O & WO R K S A M P L E S\n\n- AI Video Portfolio: Sora & Google Veo content samples showcasing AI-powered creation workflows - link.\n- Viral Content: Short-form video achieving 2M+ organic views with zero paid promotion - link.\n- Brand Campaigns: Branded content with documented 90% audience penetration - available on request.\n- Editorial Writing: Published hyperlocal news, sports, and feature articles via Knocksense Media - link.\n\nA D D I T I O N A L I N F O R MA T I O N\n\nLanguages: Hindi (Native) · English (Fluent) · Sindhi (Native) · Punjabi (Conversational)\n\nCreative Interests: Tech & AI · Gaming · News & Journalism · Art · History-driven storytelling\n\nOn-Camera: Professional on-camera presenter and voiceover artist with large-scale event emceeing experience",
+    "normalized_text": "JATIN SHEWARAMANI\n\nContent Strategist · Editorial Journalist · Content Creator\n\nLucknow, Uttar Pradesh | +91 93364 65792 | jatinshewaramani112@gmail.com | Portfolio:\n\nhttps://astvyastjatin.my.canva.site/\n\nP R O F E S S I O N A L S U MMA R Y\n\nResults-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media management, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct for field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram audiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms (WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera presentation with professional voiceover experience.\n\nC O R E S K I L L S\n\nCMS Platforms: WordPress · Contentful\n\nSocial Media: Instagram · YouTube · Facebook ·\n\nLinkedIn · Hootsuite\n\nContent Strategy: Editorial planning · Campaign\n\nexecution · SEO Copywriting · Brand voice\n\nJournalism: Hyperlocal reporting · Feature writing · Field\n\nresearch\n\nWO R K E X P E R I E N C E\n\nVideo & On-Camera: Scripting · Shooting · Editing ·\n\nVoiceover · On-camera presentation\n\nAI & Creative: Sora · Google Veo · Midjourney · Gemini ·\n\nCanva\n\nEditing Software: Adobe Premiere Pro · DaVinci\n\nResolve · Corel Draw\n\nPaid Campaigns: Meta Ads Manager · Google Ads · A/B\n\nTesting · ROAS Optimisation\n\nEditorial Head - Content Strategist · Knocksense Media Services Pvt. Ltd.\n\nAug 2022 - Present\n\nContent Strategy & Campaign Management\n\n- Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership by 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars.\n- Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR uplift for partner brands.\n- Ran performance-driven Meta & Google Ads campaigns - managing budgets, audience targeting, creative testing, and ROAS reporting.\n- Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and conversion rates.\n- Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial consistency across all channels.\n\nEditorial & Journalism\n\n- Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention - applying rigorous field research and journalistic sourcing standards.\n- Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial calendars, SEO metadata, and structured content across multiple verticals.\n- Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage.\n\nVideo Production & On-Camera\n\n- Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing and platform-specific publishing strategies.\n- Led end-to-end video production - scripting, shooting, and editing - optimising watch time, CTR, and audience retention metrics.\n- Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live audience engagement.\n\nContent Lead · EuNext Publications\n\nApr 2021 - Aug 2022\n\n- Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured, research-backed storytelling.\n- Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity, and SEO optimisation.\n- Managed and published content on WordPress - handling post formatting, SEO tagging, and editorial scheduling for the publication and media verticals.\n- Scripted and produced videos for the media vertical, applying platform-specific formatting and audience retention techniques.\n\nContent Writer · Vouchers Worldwide Technologies Pvt. Ltd.\n\nSep 2020 - Feb 2021\n\n- Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and improving SEO score by 50%.\n- Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and strengthening international brand visibility.\n\nE D U C A T I O N\n\nBachelor of Business Administration (BBA)\n\nAug 2016 - Mar 2019\n\nBabu Banarasi Das University, Lucknow · Specialisation: Digital Marketing\n\n- Team Lead, College Dramatics Team - awarded at IIT and IIM cultural fests, demonstrating leadership, live performance, and creative direction.\n\nC E R T I F I C A T I O N S\n\n- Meta Certified Digital Marketing Associate\n- Google Analytics Individual Qualification (GAIQ)\n- HubSpot Content Marketing Certification\n- HubSpot Social Media Marketing Certification\n\nP O R T F O L I O & WO R K S A M P L E S\n\n- AI Video Portfolio: Sora & Google Veo content samples showcasing AI-powered creation workflows - link.\n- Viral Content: Short-form video achieving 2M+ organic views with zero paid promotion - link.\n- Brand Campaigns: Branded content with documented 90% audience penetration - available on request.\n- Editorial Writing: Published hyperlocal news, sports, and feature articles via Knocksense Media - link.\n\nA D D I T I O N A L I N F O R MA T I O N\n\nLanguages: Hindi (Native) · English (Fluent) · Sindhi (Native) · Punjabi (Conversational)\n\nCreative Interests: Tech & AI · Gaming · News & Journalism · Art · History-driven storytelling\n\nOn-Camera: Professional on-camera presenter and voiceover artist with large-scale event emceeing experience",
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "original_chars": 5583,
+    "normalized_chars": 5583,
+    "original_estimated_tokens": 1396,
+    "normalized_estimated_tokens": 1396,
+    "estimated_reduction_percent": 0.0
+  },
+  "contact_recovery": {
+    "status": "not_recovered",
+    "selected_extractor": "docling",
+    "present_before": [
+      "phone",
+      "email"
+    ],
+    "missing_before": [
+      "location"
+    ],
+    "recovered": {},
+    "still_missing": [
+      "location"
+    ],
+    "sources_tried": [
+      {
+        "source": "Tika",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "PyMuPDF",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "Docling",
+        "method": "extractor_output",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "PyMuPDF",
+        "method": "first_page_text_layer",
+        "found": [],
+        "error": null
+      },
+      {
+        "source": "OCR",
+        "method": "ocr_first_page",
+        "found": [],
+        "error": null
+      }
+    ],
+    "applied": false,
+    "pre_recovery_normalized_text": null,
+    "at": "2026-11-11T06:38:47.275496+00:00"
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 18053.16,
+      "input_tokens": 2027,
+      "output_tokens": 2551,
+      "total_tokens": 4578,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 2027,
+    "output_tokens": 2551,
+    "total_tokens": 4578,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 18053.16,
+    "usage": {
+      "completion_tokens": 2551,
+      "prompt_tokens": 2027,
+      "total_tokens": 4578,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1471
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "docling",
+      "status": "applied",
+      "original_chars": 5583,
+      "normalized_chars": 5583,
+      "estimated_reduction_percent": 0.0,
+      "normalization_applied": false,
+      "normalization_steps": [],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "docling",
+  "selected_quality_score": 94.9,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 94.7,
+      "status": "success",
+      "word_count": 826,
+      "char_count": 6054,
+      "meaningful_char_count": 4995,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.011,
+      "readability_score": 78.4,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "certifications"
+        ]
+      },
+      "structure": {
+        "heading_count": 0,
+        "paragraph_count": 58,
+        "bullet_count": 26
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.784,
+        "cleanliness": 1.0,
+        "non_duplication": 0.989,
+        "completeness": 1.0,
+        "structure": 0.8
+      }
+    },
+    "pymupdf": {
+      "extractor": "pymupdf",
+      "quality_score": 94.8,
+      "status": "success",
+      "word_count": 821,
+      "char_count": 5686,
+      "meaningful_char_count": 4719,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 78.8,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "certifications"
+        ]
+      },
+      "structure": {
+        "heading_count": 0,
+        "paragraph_count": 14,
+        "bullet_count": 26
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.7876,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 1.0,
+        "structure": 0.8
+      }
+    },
+    "docling": {
+      "extractor": "docling",
+      "quality_score": 94.9,
+      "status": "success",
+      "word_count": 816,
+      "char_count": 5583,
+      "meaningful_char_count": 4719,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0,
+      "readability_score": 79.5,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "certifications"
+        ]
+      },
+      "structure": {
+        "heading_count": 0,
+        "paragraph_count": 50,
+        "bullet_count": 26
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 1.0,
+        "readability": 0.7951,
+        "cleanliness": 1.0,
+        "non_duplication": 1.0,
+        "completeness": 1.0,
+        "structure": 0.8
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 5583,
+    "normalized_chars": 5583,
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "error": null,
+    "original_text": "JATIN SHEWARAMANI\n\nContent Strategist · Editorial Journalist · Content Creator\n\nLucknow, Uttar Pradesh | +91 93364 65792 | jatinshewaramani112@gmail.com | Portfolio:\n\nhttps://astvyastjatin.my.canva.site/\n\nP R O F E S S I O N A L S U MMA R Y\n\nResults-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media management, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct for field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram audiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms (WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera presentation with professional voiceover experience.\n\nC O R E S K I L L S\n\nCMS Platforms: WordPress · Contentful\n\nSocial Media: Instagram · YouTube · Facebook ·\n\nLinkedIn · Hootsuite\n\nContent Strategy: Editorial planning · Campaign\n\nexecution · SEO Copywriting · Brand voice\n\nJournalism: Hyperlocal reporting · Feature writing · Field\n\nresearch\n\nWO R K E X P E R I E N C E\n\nVideo & On-Camera: Scripting · Shooting · Editing ·\n\nVoiceover · On-camera presentation\n\nAI & Creative: Sora · Google Veo · Midjourney · Gemini ·\n\nCanva\n\nEditing Software: Adobe Premiere Pro · DaVinci\n\nResolve · Corel Draw\n\nPaid Campaigns: Meta Ads Manager · Google Ads · A/B\n\nTesting · ROAS Optimisation\n\nEditorial Head - Content Strategist · Knocksense Media Services Pvt. Ltd.\n\nAug 2022 - Present\n\nContent Strategy & Campaign Management\n\n- Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership by 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars.\n- Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR uplift for partner brands.\n- Ran performance-driven Meta & Google Ads campaigns - managing budgets, audience targeting, creative testing, and ROAS reporting.\n- Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and conversion rates.\n- Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial consistency across all channels.\n\nEditorial & Journalism\n\n- Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention - applying rigorous field research and journalistic sourcing standards.\n- Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial calendars, SEO metadata, and structured content across multiple verticals.\n- Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage.\n\nVideo Production & On-Camera\n\n- Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing and platform-specific publishing strategies.\n- Led end-to-end video production - scripting, shooting, and editing - optimising watch time, CTR, and audience retention metrics.\n- Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live audience engagement.\n\nContent Lead · EuNext Publications\n\nApr 2021 - Aug 2022\n\n- Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured, research-backed storytelling.\n- Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity, and SEO optimisation.\n- Managed and published content on WordPress - handling post formatting, SEO tagging, and editorial scheduling for the publication and media verticals.\n- Scripted and produced videos for the media vertical, applying platform-specific formatting and audience retention techniques.\n\nContent Writer · Vouchers Worldwide Technologies Pvt. Ltd.\n\nSep 2020 - Feb 2021\n\n- Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and improving SEO score by 50%.\n- Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and strengthening international brand visibility.\n\nE D U C A T I O N\n\nBachelor of Business Administration (BBA)\n\nAug 2016 - Mar 2019\n\nBabu Banarasi Das University, Lucknow · Specialisation: Digital Marketing\n\n- Team Lead, College Dramatics Team - awarded at IIT and IIM cultural fests, demonstrating leadership, live performance, and creative direction.\n\nC E R T I F I C A T I O N S\n\n- Meta Certified Digital Marketing Associate\n- Google Analytics Individual Qualification (GAIQ)\n- HubSpot Content Marketing Certification\n- HubSpot Social Media Marketing Certification\n\nP O R T F O L I O & WO R K S A M P L E S\n\n- AI Video Portfolio: Sora & Google Veo content samples showcasing AI-powered creation workflows - link.\n- Viral Content: Short-form video achieving 2M+ organic views with zero paid promotion - link.\n- Brand Campaigns: Branded content with documented 90% audience penetration - available on request.\n- Editorial Writing: Published hyperlocal news, sports, and feature articles via Knocksense Media - link.\n\nA D D I T I O N A L I N F O R MA T I O N\n\nLanguages: Hindi (Native) · English (Fluent) · Sindhi (Native) · Punjabi (Conversational)\n\nCreative Interests: Tech & AI · Gaming · News & Journalism · Art · History-driven storytelling\n\nOn-Camera: Professional on-camera presenter and voiceover artist with large-scale event emceeing experience",
+    "normalized_text": "JATIN SHEWARAMANI\n\nContent Strategist · Editorial Journalist · Content Creator\n\nLucknow, Uttar Pradesh | +91 93364 65792 | jatinshewaramani112@gmail.com | Portfolio:\n\nhttps://astvyastjatin.my.canva.site/\n\nP R O F E S S I O N A L S U MMA R Y\n\nResults-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media management, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct for field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram audiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms (WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera presentation with professional voiceover experience.\n\nC O R E S K I L L S\n\nCMS Platforms: WordPress · Contentful\n\nSocial Media: Instagram · YouTube · Facebook ·\n\nLinkedIn · Hootsuite\n\nContent Strategy: Editorial planning · Campaign\n\nexecution · SEO Copywriting · Brand voice\n\nJournalism: Hyperlocal reporting · Feature writing · Field\n\nresearch\n\nWO R K E X P E R I E N C E\n\nVideo & On-Camera: Scripting · Shooting · Editing ·\n\nVoiceover · On-camera presentation\n\nAI & Creative: Sora · Google Veo · Midjourney · Gemini ·\n\nCanva\n\nEditing Software: Adobe Premiere Pro · DaVinci\n\nResolve · Corel Draw\n\nPaid Campaigns: Meta Ads Manager · Google Ads · A/B\n\nTesting · ROAS Optimisation\n\nEditorial Head - Content Strategist · Knocksense Media Services Pvt. Ltd.\n\nAug 2022 - Present\n\nContent Strategy & Campaign Management\n\n- Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership by 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars.\n- Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR uplift for partner brands.\n- Ran performance-driven Meta & Google Ads campaigns - managing budgets, audience targeting, creative testing, and ROAS reporting.\n- Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and conversion rates.\n- Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial consistency across all channels.\n\nEditorial & Journalism\n\n- Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention - applying rigorous field research and journalistic sourcing standards.\n- Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial calendars, SEO metadata, and structured content across multiple verticals.\n- Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage.\n\nVideo Production & On-Camera\n\n- Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing and platform-specific publishing strategies.\n- Led end-to-end video production - scripting, shooting, and editing - optimising watch time, CTR, and audience retention metrics.\n- Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live audience engagement.\n\nContent Lead · EuNext Publications\n\nApr 2021 - Aug 2022\n\n- Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured, research-backed storytelling.\n- Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity, and SEO optimisation.\n- Managed and published content on WordPress - handling post formatting, SEO tagging, and editorial scheduling for the publication and media verticals.\n- Scripted and produced videos for the media vertical, applying platform-specific formatting and audience retention techniques.\n\nContent Writer · Vouchers Worldwide Technologies Pvt. Ltd.\n\nSep 2020 - Feb 2021\n\n- Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and improving SEO score by 50%.\n- Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and strengthening international brand visibility.\n\nE D U C A T I O N\n\nBachelor of Business Administration (BBA)\n\nAug 2016 - Mar 2019\n\nBabu Banarasi Das University, Lucknow · Specialisation: Digital Marketing\n\n- Team Lead, College Dramatics Team - awarded at IIT and IIM cultural fests, demonstrating leadership, live performance, and creative direction.\n\nC E R T I F I C A T I O N S\n\n- Meta Certified Digital Marketing Associate\n- Google Analytics Individual Qualification (GAIQ)\n- HubSpot Content Marketing Certification\n- HubSpot Social Media Marketing Certification\n\nP O R T F O L I O & WO R K S A M P L E S\n\n- AI Video Portfolio: Sora & Google Veo content samples showcasing AI-powered creation workflows - link.\n- Viral Content: Short-form video achieving 2M+ organic views with zero paid promotion - link.\n- Brand Campaigns: Branded content with documented 90% audience penetration - available on request.\n- Editorial Writing: Published hyperlocal news, sports, and feature articles via Knocksense Media - link.\n\nA D D I T I O N A L I N F O R MA T I O N\n\nLanguages: Hindi (Native) · English (Fluent) · Sindhi (Native) · Punjabi (Conversational)\n\nCreative Interests: Tech & AI · Gaming · News & Journalism · Art · History-driven storytelling\n\nOn-Camera: Professional on-camera presenter and voiceover artist with large-scale event emceeing experience"
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "JATIN SHEWARAMANI",
+      "email": "jatinshewaramani112@gmail.com",
+      "phone": "+91 93364 65792",
+      "location": "Lucknow, Uttar Pradesh",
+      "summary": "Results-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media management, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct for field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram audiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms (WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera presentation with professional voiceover experience.",
+      "skills": {
+        "technical_skills": [
+          "Editorial planning",
+          "Campaign execution",
+          "SEO Copywriting",
+          "Brand voice",
+          "Hyperlocal reporting",
+          "Feature writing",
+          "Field research",
+          "Scripting",
+          "Shooting",
+          "Editing",
+          "Voiceover",
+          "On-camera presentation",
+          "A/B Testing",
+          "ROAS Optimisation"
+        ],
+        "soft_skills": [],
+        "tools": [
+          "WordPress",
+          "Contentful",
+          "Instagram",
+          "YouTube",
+          "Facebook",
+          "LinkedIn",
+          "Hootsuite",
+          "Sora",
+          "Google Veo",
+          "Midjourney",
+          "Gemini",
+          "Canva",
+          "Adobe Premiere Pro",
+          "DaVinci Resolve",
+          "Corel Draw",
+          "Meta Ads Manager",
+          "Google Ads"
+        ],
+        "taxonomy_skills": [],
+        "other_skills": []
+      },
+      "experience": [
+        {
+          "title": "Editorial Head - Content Strategist",
+          "company": "Knocksense Media Services Pvt. Ltd.",
+          "location": "",
+          "start_date": "Aug 2022",
+          "end_date": "Present",
+          "highlights": [
+            "Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership by 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars.",
+            "Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR uplift for partner brands.",
+            "Ran performance-driven Meta & Google Ads campaigns - managing budgets, audience targeting, creative testing, and ROAS reporting.",
+            "Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and conversion rates.",
+            "Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial consistency across all channels.",
+            "Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention - applying rigorous field research and journalistic sourcing standards.",
+            "Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial calendars, SEO metadata, and structured content across multiple verticals.",
+            "Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage.",
+            "Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing and platform-specific publishing strategies.",
+            "Led end-to-end video production - scripting, shooting, and editing - optimising watch time, CTR, and audience retention metrics.",
+            "Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live audience engagement."
+          ]
+        },
+        {
+          "title": "Content Lead",
+          "company": "EuNext Publications",
+          "location": "",
+          "start_date": "Apr 2021",
+          "end_date": "Aug 2022",
+          "highlights": [
+            "Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured, research-backed storytelling.",
+            "Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity, and SEO optimisation.",
+            "Managed and published content on WordPress - handling post formatting, SEO tagging, and editorial scheduling for the publication and media verticals.",
+            "Scripted and produced videos for the media vertical, applying platform-specific formatting and audience retention techniques."
+          ]
+        },
+        {
+          "title": "Content Writer",
+          "company": "Vouchers Worldwide Technologies Pvt. Ltd.",
+          "location": "",
+          "start_date": "Sep 2020",
+          "end_date": "Feb 2021",
+          "highlights": [
+            "Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and improving SEO score by 50%.",
+            "Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and strengthening international brand visibility."
+          ]
+        }
+      ],
+      "education": [
+        {
+          "degree": "Bachelor of Business Administration (BBA)",
+          "institution": "Babu Banarasi Das University",
+          "location": "Lucknow",
+          "start_date": "Aug 2016",
+          "end_date": "Mar 2019"
+        }
+      ],
+      "certifications": [
+        "Meta Certified Digital Marketing Associate",
+        "Google Analytics Individual Qualification (GAIQ)",
+        "HubSpot Content Marketing Certification",
+        "HubSpot Social Media Marketing Certification"
+      ],
+      "languages": [
+        "Hindi (Native)",
+        "English (Fluent)",
+        "Sindhi (Native)",
+        "Punjabi (Conversational)"
+      ],
+      "links": [
+        "https://astvyastjatin.my.canva.site/"
+      ]
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 18053.16,
+    "usage": {
+      "completion_tokens": 2551,
+      "prompt_tokens": 2027,
+      "total_tokens": 4578,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1471
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "JATIN SHEWARAMANI",
+    "email": "jatinshewaramani112@gmail.com",
+    "phone": "+91 93364 65792",
+    "location": "Lucknow, Uttar Pradesh",
+    "summary": "Results-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media management, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct for field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram audiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms (WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera presentation with professional voiceover experience.",
+    "skills": {
+      "technical_skills": [
+        "Editorial planning",
+        "Campaign execution",
+        "SEO Copywriting",
+        "Brand voice",
+        "Hyperlocal reporting",
+        "Feature writing",
+        "Field research",
+        "Scripting",
+        "Shooting",
+        "Editing",
+        "Voiceover",
+        "On-camera presentation",
+        "A/B Testing",
+        "ROAS Optimisation"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "WordPress",
+        "Contentful",
+        "Instagram",
+        "YouTube",
+        "Facebook",
+        "LinkedIn",
+        "Hootsuite",
+        "Sora",
+        "Google Veo",
+        "Midjourney",
+        "Gemini",
+        "Canva",
+        "Adobe Premiere Pro",
+        "DaVinci Resolve",
+        "Corel Draw",
+        "Meta Ads Manager",
+        "Google Ads"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Editorial Head - Content Strategist",
+        "company": "Knocksense Media Services Pvt. Ltd.",
+        "location": "",
+        "start_date": "Aug 2022",
+        "end_date": "Present",
+        "highlights": [
+          "Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership by 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars.",
+          "Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR uplift for partner brands.",
+          "Ran performance-driven Meta & Google Ads campaigns - managing budgets, audience targeting, creative testing, and ROAS reporting.",
+          "Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and conversion rates.",
+          "Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial consistency across all channels.",
+          "Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention - applying rigorous field research and journalistic sourcing standards.",
+          "Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial calendars, SEO metadata, and structured content across multiple verticals.",
+          "Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage.",
+          "Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing and platform-specific publishing strategies.",
+          "Led end-to-end video production - scripting, shooting, and editing - optimising watch time, CTR, and audience retention metrics.",
+          "Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live audience engagement."
+        ]
+      },
+      {
+        "title": "Content Lead",
+        "company": "EuNext Publications",
+        "location": "",
+        "start_date": "Apr 2021",
+        "end_date": "Aug 2022",
+        "highlights": [
+          "Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured, research-backed storytelling.",
+          "Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity, and SEO optimisation.",
+          "Managed and published content on WordPress - handling post formatting, SEO tagging, and editorial scheduling for the publication and media verticals.",
+          "Scripted and produced videos for the media vertical, applying platform-specific formatting and audience retention techniques."
+        ]
+      },
+      {
+        "title": "Content Writer",
+        "company": "Vouchers Worldwide Technologies Pvt. Ltd.",
+        "location": "",
+        "start_date": "Sep 2020",
+        "end_date": "Feb 2021",
+        "highlights": [
+          "Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and improving SEO score by 50%.",
+          "Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and strengthening international brand visibility."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Business Administration (BBA)",
+        "institution": "Babu Banarasi Das University",
+        "location": "Lucknow",
+        "start_date": "Aug 2016",
+        "end_date": "Mar 2019"
+      }
+    ],
+    "certifications": [
+      "Meta Certified Digital Marketing Associate",
+      "Google Analytics Individual Qualification (GAIQ)",
+      "HubSpot Content Marketing Certification",
+      "HubSpot Social Media Marketing Certification"
+    ],
+    "languages": [
+      "Hindi (Native)",
+      "English (Fluent)",
+      "Sindhi (Native)",
+      "Punjabi (Conversational)"
+    ],
+    "links": [
+      "https://astvyastjatin.my.canva.site/"
+    ]
+  },
+  "resume_json": {
+    "full_name": "JATIN SHEWARAMANI",
+    "email": "jatinshewaramani112@gmail.com",
+    "phone": "+91 93364 65792",
+    "location": "Lucknow, Uttar Pradesh",
+    "summary": "Results-driven Content Strategist and Editorial Journalist with 6+ years of hands-on experience in social media management, content creation, and integrated campaign execution. Journalism-trained with a sharp editorial instinct for field research, long-form storytelling, and hyperlocal reporting. Delivered 2M+ organic reach and grew Instagram audiences by 20-40% through data-driven content strategies and A/B testing. Proficient in leading CMS platforms (WordPress, Contentful), AI-powered content workflows (Sora, Google Veo, Midjourney), and on-camera presentation with professional voiceover experience.",
+    "skills": {
+      "technical_skills": [
+        "Editorial planning",
+        "Campaign execution",
+        "SEO Copywriting",
+        "Brand voice",
+        "Hyperlocal reporting",
+        "Feature writing",
+        "Field research",
+        "Scripting",
+        "Shooting",
+        "Editing",
+        "Voiceover",
+        "On-camera presentation",
+        "A/B Testing",
+        "ROAS Optimisation"
+      ],
+      "soft_skills": [],
+      "tools": [
+        "WordPress",
+        "Contentful",
+        "Instagram",
+        "YouTube",
+        "Facebook",
+        "LinkedIn",
+        "Hootsuite",
+        "Sora",
+        "Google Veo",
+        "Midjourney",
+        "Gemini",
+        "Canva",
+        "Adobe Premiere Pro",
+        "DaVinci Resolve",
+        "Corel Draw",
+        "Meta Ads Manager",
+        "Google Ads"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": []
+    },
+    "experience": [
+      {
+        "title": "Editorial Head - Content Strategist",
+        "company": "Knocksense Media Services Pvt. Ltd.",
+        "location": "",
+        "start_date": "Aug 2022",
+        "end_date": "Present",
+        "highlights": [
+          "Developed platform-specific content strategies across Instagram, YouTube, and Facebook, growing followership by 20-40% through audience segmentation, trend analysis, A/B testing, and consistent content calendars.",
+          "Executed high-reach branded content campaigns delivering 90% audience penetration and measurable CTR uplift for partner brands.",
+          "Ran performance-driven Meta & Google Ads campaigns - managing budgets, audience targeting, creative testing, and ROAS reporting.",
+          "Crafted high-impact taglines, CTAs, and microcopy for campaigns, directly enhancing brand recall and conversion rates.",
+          "Collaborated with cross-functional teams to drive content gamification, UX-led engagement, and editorial consistency across all channels.",
+          "Authored hyperlocal news, sports, and feature stories optimised for TAM expansion and audience retention - applying rigorous field research and journalistic sourcing standards.",
+          "Managed content publishing workflows on WordPress, Quintype and Contentful, maintaining editorial calendars, SEO metadata, and structured content across multiple verticals.",
+          "Led editorial planning and calendar management, ensuring timely, accurate, and audience-relevant coverage.",
+          "Produced viral short-form and long-form video content achieving 2M+ organic reach, leveraging A/B testing and platform-specific publishing strategies.",
+          "Led end-to-end video production - scripting, shooting, and editing - optimising watch time, CTR, and audience retention metrics.",
+          "Emceed large-scale public events (10,000+ attendees) with high-energy on-camera delivery and integrated live audience engagement."
+        ]
+      },
+      {
+        "title": "Content Lead",
+        "company": "EuNext Publications",
+        "location": "",
+        "start_date": "Apr 2021",
+        "end_date": "Aug 2022",
+        "highlights": [
+          "Authored in-depth long-form content for the publication vertical, boosting reader engagement through structured, research-backed storytelling.",
+          "Ghostwrote high-quality educational material across subject areas, maintaining factual accuracy, editorial clarity, and SEO optimisation.",
+          "Managed and published content on WordPress - handling post formatting, SEO tagging, and editorial scheduling for the publication and media verticals.",
+          "Scripted and produced videos for the media vertical, applying platform-specific formatting and audience retention techniques."
+        ]
+      },
+      {
+        "title": "Content Writer",
+        "company": "Vouchers Worldwide Technologies Pvt. Ltd.",
+        "location": "",
+        "start_date": "Sep 2020",
+        "end_date": "Feb 2021",
+        "highlights": [
+          "Led end-to-end website content development, establishing core sections (About, T&C, Privacy Policy) and improving SEO score by 50%.",
+          "Created and optimised SEO blogs for multi-country audiences, driving a 75% increase in organic reach and strengthening international brand visibility."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Business Administration (BBA)",
+        "institution": "Babu Banarasi Das University",
+        "location": "Lucknow",
+        "start_date": "Aug 2016",
+        "end_date": "Mar 2019"
+      }
+    ],
+    "certifications": [
+      "Meta Certified Digital Marketing Associate",
+      "Google Analytics Individual Qualification (GAIQ)",
+      "HubSpot Content Marketing Certification",
+      "HubSpot Social Media Marketing Certification"
+    ],
+    "languages": [
+      "Hindi (Native)",
+      "English (Fluent)",
+      "Sindhi (Native)",
+      "Punjabi (Conversational)"
+    ],
+    "links": [
+      "https://astvyastjatin.my.canva.site/"
+    ]
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 15.4446,
+    "quality_seconds": 0.0408,
+    "normalization_seconds": 0.002,
+    "recovery_seconds": 11.3775,
+    "llm_seconds": 18.0556,
+    "total_seconds": 44.9206
+  },
+  "_stored_name": "73bd5e56-f484-47c8-9608-07b672e0a440_sample_cv.pdf"
+}

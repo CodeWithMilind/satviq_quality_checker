@@ -1,0 +1,1949 @@
+{
+  "resume_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e",
+  "filename": "download_10_.pdf",
+  "file_type": "pdf",
+  "mime_type": "application/pdf",
+  "file_size_bytes": 27600,
+  "uploaded_at": "2026-11-11T05:37:17.257574+00:00",
+  "success": true,
+  "extractor_used": "tika",
+  "final_extractor": "tika",
+  "primary_extractor": "tika",
+  "attempts": [
+    {
+      "attempt_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e-attempt-1",
+      "resume_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e",
+      "attempt_number": 1,
+      "extractor_name": "tika",
+      "extractor_version": null,
+      "success": true,
+      "accepted": true,
+      "selected": true,
+      "is_final_selected": true,
+      "decision": "accept",
+      "decision_reason": "Selected 'tika' with quality score 92.7 (tie among ['tika', 'pymupdf'] broken by configured tie-break order ['tika', 'pymupdf', 'docling']).",
+      "fallback_decision": "accept",
+      "fallback_reason": "Selected 'tika' with quality score 92.7 (tie among ['tika', 'pymupdf'] broken by configured tie-break order ['tika', 'pymupdf', 'docling']).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e",
+        "source_tool": "tika",
+        "attempt_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1640,
+            "word_count": 207,
+            "line_count": 77,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.142683,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1640,
+            "word_count": 207,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal information",
+              "Summary": "profile summary",
+              "Skills": "communication skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "Personal Information",
+                "detection_method": "heading",
+                "line_number": 63,
+                "evidence": "Personal Information",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Profile Summary",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "Profile Summary",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Communication Skills",
+                "detection_method": "heading",
+                "line_number": 53,
+                "evidence": "Communication Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Work Experience",
+                "detection_method": "heading",
+                "line_number": 26,
+                "evidence": "Work Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 24,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 86.92,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "POSSIBLE_BROKEN_SENTENCES"
+          ],
+          "reasons": [
+            "49.0% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "40.8% of lines are 15 characters or shorter.",
+            "35.4% of line transitions look like a sentence broken across lines without punctuation."
+          ],
+          "metrics": {
+            "char_count": 1640,
+            "word_count": 207,
+            "line_count": 77,
+            "non_empty_line_count": 49,
+            "short_line_count": 24,
+            "short_line_ratio": 0.489796,
+            "fragmented_line_count": 20,
+            "fragmented_line_ratio": 0.408163,
+            "mean_line_length": 31.92,
+            "median_line_length": 19.0,
+            "line_length_stdev": 24.13,
+            "line_length_cv": 0.755952,
+            "broken_sentence_count": 17,
+            "broken_sentence_ratio": 0.354167,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e",
+        "source_tool": "tika",
+        "attempt_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e-attempt-1",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1640,
+            "word_count": 207,
+            "line_count": 77,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.142683,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1640,
+            "word_count": 207,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal information",
+              "Summary": "profile summary",
+              "Skills": "communication skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "Personal Information",
+                "detection_method": "heading",
+                "line_number": 63,
+                "evidence": "Personal Information",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Profile Summary",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "Profile Summary",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Communication Skills",
+                "detection_method": "heading",
+                "line_number": 53,
+                "evidence": "Communication Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Work Experience",
+                "detection_method": "heading",
+                "line_number": 26,
+                "evidence": "Work Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 24,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 86.92,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "POSSIBLE_BROKEN_SENTENCES"
+          ],
+          "reasons": [
+            "49.0% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "40.8% of lines are 15 characters or shorter.",
+            "35.4% of line transitions look like a sentence broken across lines without punctuation."
+          ],
+          "metrics": {
+            "char_count": 1640,
+            "word_count": 207,
+            "line_count": 77,
+            "non_empty_line_count": 49,
+            "short_line_count": 24,
+            "short_line_ratio": 0.489796,
+            "fragmented_line_count": 20,
+            "fragmented_line_ratio": 0.408163,
+            "mean_line_length": 31.92,
+            "median_line_length": 19.0,
+            "line_length_stdev": 24.13,
+            "line_length_cv": 0.755952,
+            "broken_sentence_count": 17,
+            "broken_sentence_ratio": 0.354167,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 92.7,
+      "duration_ms": 4493.04,
+      "text": "Anchal Mishra\nSenior Claims Executive\n\n3 Years 6 Months (+91) 8920781400 anchal20134@gmail.co\nm\n\nProfile Summary\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs\n(group health, dental, vision, short-term and long-term disability,\nworker's compensation, life insurance, travel and accident plan,\nflexible spending plan, retirement plans, etc.). This position\nprovides excellent customer service and designs quality benefits\nplans. The administrator continually investigates new benefits\nprograms, improves existing programs, and supervises and\nmonitors benefits administrationCoordinate daily benefits\nprocessing. Handle enrollments, terminations, changes,\nbeneficiaries and processing claims HRA,FSA TRN and PKG, DCA\nall these terms.Document and maintain administrative procedures\nfor assigned benefits processes Prolonged periods sitting at a\ndesk and working on a computer.\n\nEducation\n\nWork Experience\n\nSep 2020 - Present\n\nSenior Claims Executive\nCXC Solutions\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs group\nhealth, dental, vision, short-term and long-term disability, worker's\ncompensation, life insurance, travel and accident plan, flexible\nspending plan, retirement plans, etc.).\n\nKey skills\n\nClaims\n\nMS Office\n\nBPO Non Voice\n\nClaims Processing\n\nClaims Adjudication\n\nUS Process\n\nCommunication Skills\n\nUS Healthcare\n\nData Analytics\n\nSQL\n\nCOBRA Healthcare\n\nPersonal Information\n\nCity Noida\n\nCountry INDIA\n\nLanguages\n\nEnglish\n\nHindi\n\nB.Com, 2020\n\nHindu College, DU",
+      "extracted_text": "Anchal Mishra\nSenior Claims Executive\n\n3 Years 6 Months (+91) 8920781400 anchal20134@gmail.co\nm\n\nProfile Summary\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs\n(group health, dental, vision, short-term and long-term disability,\nworker's compensation, life insurance, travel and accident plan,\nflexible spending plan, retirement plans, etc.). This position\nprovides excellent customer service and designs quality benefits\nplans. The administrator continually investigates new benefits\nprograms, improves existing programs, and supervises and\nmonitors benefits administrationCoordinate daily benefits\nprocessing. Handle enrollments, terminations, changes,\nbeneficiaries and processing claims HRA,FSA TRN and PKG, DCA\nall these terms.Document and maintain administrative procedures\nfor assigned benefits processes Prolonged periods sitting at a\ndesk and working on a computer.\n\nEducation\n\nWork Experience\n\nSep 2020 - Present\n\nSenior Claims Executive\nCXC Solutions\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs group\nhealth, dental, vision, short-term and long-term disability, worker's\ncompensation, life insurance, travel and accident plan, flexible\nspending plan, retirement plans, etc.).\n\nKey skills\n\nClaims\n\nMS Office\n\nBPO Non Voice\n\nClaims Processing\n\nClaims Adjudication\n\nUS Process\n\nCommunication Skills\n\nUS Healthcare\n\nData Analytics\n\nSQL\n\nCOBRA Healthcare\n\nPersonal Information\n\nCity Noida\n\nCountry INDIA\n\nLanguages\n\nEnglish\n\nHindi\n\nB.Com, 2020\n\nHindu College, DU",
+      "extracted_text_length": 1640,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "tika_jar": "C:\\Apache\\Tika\\tika-app-4.2.0.jar",
+        "tika_version": "4.2.0",
+        "ocr_enabled": true,
+        "ocr_language": "eng",
+        "ocr_strategy": "auto",
+        "ocr_tesseract_path": "C:\\Program Files\\Tesseract-OCR",
+        "ocr_used": null,
+        "ocr_evidence": "OCR was available to Tika for this attempt (PDF page-text strategy 'auto'); the --text CLI output carries no per-page OCR marker, so whether specific pages were OCR'd is not reported."
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Anchal Mishra\nSenior Claims Executive\n\n3 Years 6 Months (+91) 8920781400 anchal20134@gmail.co\nm\n\nProfile Summary\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs\n(group health, dental, vision, short-term and long-term disability,\nworker's compensation, life insurance, travel and accident plan,\nflexible spending plan, retirement plans, etc.). This position\nprovides excellent customer service and designs quality benefits\nplans. The administrator continually investigates new benefits\nprograms, improves existing programs, and supervises and\nmonitors benefits administrationCoordinate daily benefits\nprocessing. Handle enrollments, terminations, changes,\nbeneficiaries and processing claims HRA,FSA TRN and PKG, DCA\nall these terms.Document and maintain administrative procedures\nfor assigned benefits processes Prolonged periods sitting at a\ndesk and working on a computer.\n\nEducation\n\nWork Experience\n\nSep 2020 - Present\n\nSenior Claims Executive\nCXC Solutions\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs group\nhealth, dental, vision, short-term and long-term disability, worker's\ncompensation, life insurance, travel and accident plan, flexible\nspending plan, retirement plans, etc.).\n\nKey skills\n\nClaims\n\nMS Office\n\nBPO Non Voice\n\nClaims Processing\n\nClaims Adjudication\n\nUS Process\n\nCommunication Skills\n\nUS Healthcare\n\nData Analytics\n\nSQL\n\nCOBRA Healthcare\n\nPersonal Information\n\nCity Noida\n\nCountry INDIA\n\nLanguages\n\nEnglish\n\nHindi\n\nB.Com, 2020\n\nHindu College, DU"
+    },
+    {
+      "attempt_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e-attempt-2",
+      "resume_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e",
+      "attempt_number": 2,
+      "extractor_name": "pymupdf",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 92.7 (selected 'tika' scored 92.7).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 92.7 (selected 'tika' scored 92.7).",
+      "quality_status": "PASS",
+      "quality": {
+        "status": "PASS",
+        "document_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e",
+        "source_tool": "pymupdf",
+        "attempt_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1612,
+            "word_count": 207,
+            "line_count": 53,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.127792,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1612,
+            "word_count": 207,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal information",
+              "Summary": "profile summary",
+              "Skills": "communication skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "Personal Information",
+                "detection_method": "heading",
+                "line_number": 44,
+                "evidence": "Personal Information",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Profile Summary",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "Profile Summary",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Communication Skills",
+                "detection_method": "heading",
+                "line_number": 39,
+                "evidence": "Communication Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Work Experience",
+                "detection_method": "heading",
+                "line_number": 23,
+                "evidence": "Work Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 22,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 84.0,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "POSSIBLE_BROKEN_SENTENCES"
+          ],
+          "reasons": [
+            "52.8% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "41.5% of lines are 15 characters or shorter.",
+            "34.6% of line transitions look like a sentence broken across lines without punctuation."
+          ],
+          "metrics": {
+            "char_count": 1612,
+            "word_count": 207,
+            "line_count": 53,
+            "non_empty_line_count": 53,
+            "short_line_count": 28,
+            "short_line_ratio": 0.528302,
+            "fragmented_line_count": 22,
+            "fragmented_line_ratio": 0.415094,
+            "mean_line_length": 29.43,
+            "median_line_length": 17.0,
+            "line_length_stdev": 23.94,
+            "line_length_cv": 0.813312,
+            "broken_sentence_count": 18,
+            "broken_sentence_ratio": 0.346154,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "PASS",
+        "document_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e",
+        "source_tool": "pymupdf",
+        "attempt_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e-attempt-2",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1612,
+            "word_count": 207,
+            "line_count": 53,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.127792,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1612,
+            "word_count": 207,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal information",
+              "Summary": "profile summary",
+              "Skills": "communication skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "Personal Information",
+                "detection_method": "heading",
+                "line_number": 44,
+                "evidence": "Personal Information",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Profile Summary",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "Profile Summary",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "Communication Skills",
+                "detection_method": "heading",
+                "line_number": 39,
+                "evidence": "Communication Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Work Experience",
+                "detection_method": "heading",
+                "line_number": 23,
+                "evidence": "Work Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 22,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 84.0,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "POSSIBLE_BROKEN_SENTENCES"
+          ],
+          "reasons": [
+            "52.8% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "41.5% of lines are 15 characters or shorter.",
+            "34.6% of line transitions look like a sentence broken across lines without punctuation."
+          ],
+          "metrics": {
+            "char_count": 1612,
+            "word_count": 207,
+            "line_count": 53,
+            "non_empty_line_count": 53,
+            "short_line_count": 28,
+            "short_line_ratio": 0.528302,
+            "fragmented_line_count": 22,
+            "fragmented_line_ratio": 0.415094,
+            "mean_line_length": 29.43,
+            "median_line_length": 17.0,
+            "line_length_stdev": 23.94,
+            "line_length_cv": 0.813312,
+            "broken_sentence_count": 18,
+            "broken_sentence_ratio": 0.346154,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 92.7,
+      "duration_ms": 184.93,
+      "text": "Anchal Mishra\nSenior Claims Executive\n3 Years 6 Months\n(+91) 8920781400\nanchal20134@gmail.co\nm\nProfile Summary\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs\n(group health, dental, vision, short-term and long-term disability,\nworker's compensation, life insurance, travel and accident plan,\nflexible spending plan, retirement plans, etc.). This position\nprovides excellent customer service and designs quality benefits\nplans. The administrator continually investigates new benefits\nprograms, improves existing programs, and supervises and\nmonitors benefits administrationCoordinate daily benefits\nprocessing. Handle enrollments, terminations, changes,\nbeneficiaries and processing claims HRA,FSA TRN and PKG, DCA\nall these terms.Document and maintain administrative procedures\nfor assigned benefits processes Prolonged periods sitting at a\ndesk and working on a computer.\nEducation\nWork Experience\nSep 2020 - Present\nSenior Claims Executive\nCXC Solutions\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs group\nhealth, dental, vision, short-term and long-term disability, worker's\ncompensation, life insurance, travel and accident plan, flexible\nspending plan, retirement plans, etc.).\nKey skills\nClaims\nMS Office\nBPO Non Voice\nClaims Processing\nClaims Adjudication\nUS Process\nCommunication Skills\nUS Healthcare\nData Analytics\nSQL\nCOBRA Healthcare\nPersonal Information\nCity\nNoida\nCountry\nINDIA\nLanguages\nEnglish\nHindi\nB.Com, 2020\nHindu College, DU",
+      "extracted_text": "Anchal Mishra\nSenior Claims Executive\n3 Years 6 Months\n(+91) 8920781400\nanchal20134@gmail.co\nm\nProfile Summary\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs\n(group health, dental, vision, short-term and long-term disability,\nworker's compensation, life insurance, travel and accident plan,\nflexible spending plan, retirement plans, etc.). This position\nprovides excellent customer service and designs quality benefits\nplans. The administrator continually investigates new benefits\nprograms, improves existing programs, and supervises and\nmonitors benefits administrationCoordinate daily benefits\nprocessing. Handle enrollments, terminations, changes,\nbeneficiaries and processing claims HRA,FSA TRN and PKG, DCA\nall these terms.Document and maintain administrative procedures\nfor assigned benefits processes Prolonged periods sitting at a\ndesk and working on a computer.\nEducation\nWork Experience\nSep 2020 - Present\nSenior Claims Executive\nCXC Solutions\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs group\nhealth, dental, vision, short-term and long-term disability, worker's\ncompensation, life insurance, travel and accident plan, flexible\nspending plan, retirement plans, etc.).\nKey skills\nClaims\nMS Office\nBPO Non Voice\nClaims Processing\nClaims Adjudication\nUS Process\nCommunication Skills\nUS Healthcare\nData Analytics\nSQL\nCOBRA Healthcare\nPersonal Information\nCity\nNoida\nCountry\nINDIA\nLanguages\nEnglish\nHindi\nB.Com, 2020\nHindu College, DU",
+      "extracted_text_length": 1612,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "format": "PDF 1.4",
+        "creator": "Aspose Ltd.",
+        "producer": "Aspose.PDF for Java 18.8",
+        "creationDate": "D:20250411125112+05'30'",
+        "modDate": "D:20261029150444+05'30'"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "Anchal Mishra\nSenior Claims Executive\n3 Years 6 Months\n(+91) 8920781400\nanchal20134@gmail.co\nm\nProfile Summary\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs\n(group health, dental, vision, short-term and long-term disability,\nworker's compensation, life insurance, travel and accident plan,\nflexible spending plan, retirement plans, etc.). This position\nprovides excellent customer service and designs quality benefits\nplans. The administrator continually investigates new benefits\nprograms, improves existing programs, and supervises and\nmonitors benefits administrationCoordinate daily benefits\nprocessing. Handle enrollments, terminations, changes,\nbeneficiaries and processing claims HRA,FSA TRN and PKG, DCA\nall these terms.Document and maintain administrative procedures\nfor assigned benefits processes Prolonged periods sitting at a\ndesk and working on a computer.\nEducation\nWork Experience\nSep 2020 - Present\nSenior Claims Executive\nCXC Solutions\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs group\nhealth, dental, vision, short-term and long-term disability, worker's\ncompensation, life insurance, travel and accident plan, flexible\nspending plan, retirement plans, etc.).\nKey skills\nClaims\nMS Office\nBPO Non Voice\nClaims Processing\nClaims Adjudication\nUS Process\nCommunication Skills\nUS Healthcare\nData Analytics\nSQL\nCOBRA Healthcare\nPersonal Information\nCity\nNoida\nCountry\nINDIA\nLanguages\nEnglish\nHindi\nB.Com, 2020\nHindu College, DU"
+    },
+    {
+      "attempt_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e-attempt-3",
+      "resume_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e",
+      "attempt_number": 3,
+      "extractor_name": "docling",
+      "extractor_version": null,
+      "success": true,
+      "accepted": false,
+      "selected": false,
+      "is_final_selected": false,
+      "decision": "reject",
+      "decision_reason": "Not selected: quality score 89.5 (selected 'tika' scored 92.7).",
+      "fallback_decision": "reject",
+      "fallback_reason": "Not selected: quality score 89.5 (selected 'tika' scored 92.7).",
+      "quality_status": "WARNING",
+      "quality": {
+        "status": "WARNING",
+        "document_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e",
+        "source_tool": "docling",
+        "attempt_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1587,
+            "word_count": 210,
+            "line_count": 46,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.142407,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1587,
+            "word_count": 210,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal information",
+              "Summary": "profile summary",
+              "Skills": "communication skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "Personal Information",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "Personal Information",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Profile Summary",
+                "detection_method": "heading",
+                "line_number": 28,
+                "evidence": "Profile Summary",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "- Communication Skills",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "- Communication Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Work Experience",
+                "detection_method": "heading",
+                "line_number": 38,
+                "evidence": "Work Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 32,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 68.77,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "44.8% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "55.2% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 2.99) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 1587,
+            "word_count": 210,
+            "line_count": 46,
+            "non_empty_line_count": 29,
+            "short_line_count": 13,
+            "short_line_ratio": 0.448276,
+            "fragmented_line_count": 16,
+            "fragmented_line_ratio": 0.551724,
+            "mean_line_length": 53.17,
+            "median_line_length": 15.0,
+            "line_length_stdev": 159.03,
+            "line_length_cv": 2.990752,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_checker_report": {
+        "status": "WARNING",
+        "document_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e",
+        "source_tool": "docling",
+        "attempt_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e-attempt-3",
+        "text_health": {
+          "filter_name": "text_health",
+          "score": 100.0,
+          "flags": [],
+          "reasons": [],
+          "metrics": {
+            "char_count": 1587,
+            "word_count": 210,
+            "line_count": 46,
+            "replacement_char_count": 0,
+            "replacement_char_ratio": 0.0,
+            "non_printable_count": 0,
+            "non_printable_ratio": 0.0,
+            "whitespace_ratio": 0.142407,
+            "symbol_count": 0,
+            "symbol_ratio": 0.0,
+            "max_repeated_char_run": 2,
+            "repeated_line_ratio": 0.0
+          }
+        },
+        "completeness": {
+          "filter_name": "completeness",
+          "score": 91.0,
+          "flags": [
+            "MISSING_OPTIONAL_SECTION"
+          ],
+          "reasons": [
+            "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+            "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+          ],
+          "metrics": {
+            "char_count": 1587,
+            "word_count": 210,
+            "configured_section_count": 8,
+            "detected_count": 5,
+            "missing_count": 3,
+            "detected_sections": [
+              "Contact Information",
+              "Summary",
+              "Skills",
+              "Work Experience",
+              "Education"
+            ],
+            "missing_sections": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "missing_required": [],
+            "missing_recommended": [],
+            "missing_optional": [
+              "Responsibilities",
+              "Projects",
+              "Certifications"
+            ],
+            "matched_aliases": {
+              "Contact Information": "personal information",
+              "Summary": "profile summary",
+              "Skills": "communication skills",
+              "Work Experience": "WORKEXPERIENCE",
+              "Education": "education"
+            },
+            "conditional_rejected": [],
+            "section_evidence": {
+              "Contact Information": {
+                "canonical_name": "Contact Information",
+                "original_heading": "Personal Information",
+                "detection_method": "heading",
+                "line_number": 13,
+                "evidence": "Personal Information",
+                "confidence": 0.98
+              },
+              "Summary": {
+                "canonical_name": "Summary",
+                "original_heading": "Profile Summary",
+                "detection_method": "heading",
+                "line_number": 28,
+                "evidence": "Profile Summary",
+                "confidence": 0.98
+              },
+              "Skills": {
+                "canonical_name": "Skills",
+                "original_heading": "- Communication Skills",
+                "detection_method": "heading",
+                "line_number": 7,
+                "evidence": "- Communication Skills",
+                "confidence": 0.98
+              },
+              "Work Experience": {
+                "canonical_name": "Work Experience",
+                "original_heading": "Work Experience",
+                "detection_method": "heading",
+                "line_number": 38,
+                "evidence": "Work Experience",
+                "confidence": 0.98
+              },
+              "Education": {
+                "canonical_name": "Education",
+                "original_heading": "Education",
+                "detection_method": "heading",
+                "line_number": 32,
+                "evidence": "Education",
+                "confidence": 0.98
+              }
+            },
+            "uncertain_sections": [],
+            "section_status": {
+              "Contact Information": "detected",
+              "Summary": "detected",
+              "Skills": "detected",
+              "Work Experience": "detected",
+              "Education": "detected",
+              "Responsibilities": "missing",
+              "Projects": "missing",
+              "Certifications": "missing"
+            },
+            "extraction_quality": 100.0
+          },
+          "detected_sections": [
+            "Contact Information",
+            "Summary",
+            "Skills",
+            "Work Experience",
+            "Education"
+          ],
+          "missing_sections": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ],
+          "missing_required": [],
+          "missing_recommended": [],
+          "missing_optional": [
+            "Responsibilities",
+            "Projects",
+            "Certifications"
+          ]
+        },
+        "reading_order": {
+          "filter_name": "reading_order",
+          "score": 68.77,
+          "flags": [
+            "EXCESSIVE_SHORT_LINES",
+            "FRAGMENTED_LINES",
+            "HIGH_LINE_LENGTH_VARIATION"
+          ],
+          "reasons": [
+            "44.8% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+            "55.2% of lines are 15 characters or shorter.",
+            "Line lengths vary unusually (coefficient of variation 2.99) — a possible sign of mixed or merged column text."
+          ],
+          "metrics": {
+            "char_count": 1587,
+            "word_count": 210,
+            "line_count": 46,
+            "non_empty_line_count": 29,
+            "short_line_count": 13,
+            "short_line_ratio": 0.448276,
+            "fragmented_line_count": 16,
+            "fragmented_line_ratio": 0.551724,
+            "mean_line_length": 53.17,
+            "median_line_length": 15.0,
+            "line_length_stdev": 159.03,
+            "line_length_cv": 2.990752,
+            "broken_sentence_count": 0,
+            "broken_sentence_ratio": 0.0,
+            "repeated_adjacent_count": 0,
+            "repeated_adjacent_ratio": 0.0
+          }
+        }
+      },
+      "quality_score": 89.5,
+      "duration_ms": 55629.87,
+      "text": "- Claims\n- MS Office\n- BPO Non Voice\n- Claims Processing\n- Claims Adjudication\n- US Process\n- Communication Skills\n- US Healthcare\n- Data Analytics\n- SQL\n- COBRA Healthcare\n\nPersonal Information\n\nCity\n\nCountry Noida INDIA\n\nLanguages\n\n- English\n- Hindi\n\nAnchal Mishra\n\nSenior Claims Executive\n\nProfile Summary\n\nThe benefits administrator position is responsible for directing and planning the day-to-day operations of group benefits programs (group health, dental, vision, short-term and long-term disability, worker's compensation, life insurance, travel and accident plan, flexible spending plan, retirement plans, etc.). This position provides excellent customer service and designs quality benefits plans. The administrator continually investigates new benefits programs, improves existing programs, and supervises and monitors benefits administrationCoordinate daily benefits processing. Handle enrollments, terminations, changes, beneficiaries and processing claims HRA,FSA TRN and PKG, DCA all these terms.Document and maintain administrative procedures for assigned benefits processes Prolonged periods sitting at a desk and working on a computer.\n\nEducation\n\nB.Com, 2020\n\nHindu College, DU\n\nWork Experience\n\nSep 2020 - Present\n\nSenior Claims Executive\n\nCXC Solutions\n\nThe benefits administrator position is responsible for directing and planning the day-to-day operations of group benefits programs group health, dental, vision, short-term and long-term disability, worker's compensation, life insurance, travel and accident plan, flexible spending plan, retirement plans, etc.).",
+      "extracted_text": "- Claims\n- MS Office\n- BPO Non Voice\n- Claims Processing\n- Claims Adjudication\n- US Process\n- Communication Skills\n- US Healthcare\n- Data Analytics\n- SQL\n- COBRA Healthcare\n\nPersonal Information\n\nCity\n\nCountry Noida INDIA\n\nLanguages\n\n- English\n- Hindi\n\nAnchal Mishra\n\nSenior Claims Executive\n\nProfile Summary\n\nThe benefits administrator position is responsible for directing and planning the day-to-day operations of group benefits programs (group health, dental, vision, short-term and long-term disability, worker's compensation, life insurance, travel and accident plan, flexible spending plan, retirement plans, etc.). This position provides excellent customer service and designs quality benefits plans. The administrator continually investigates new benefits programs, improves existing programs, and supervises and monitors benefits administrationCoordinate daily benefits processing. Handle enrollments, terminations, changes, beneficiaries and processing claims HRA,FSA TRN and PKG, DCA all these terms.Document and maintain administrative procedures for assigned benefits processes Prolonged periods sitting at a desk and working on a computer.\n\nEducation\n\nB.Com, 2020\n\nHindu College, DU\n\nWork Experience\n\nSep 2020 - Present\n\nSenior Claims Executive\n\nCXC Solutions\n\nThe benefits administrator position is responsible for directing and planning the day-to-day operations of group benefits programs group health, dental, vision, short-term and long-term disability, worker's compensation, life insurance, travel and accident plan, flexible spending plan, retirement plans, etc.).",
+      "extracted_text_length": 1587,
+      "extraction_status": "SUCCESS",
+      "error": null,
+      "error_message": null,
+      "error_type": null,
+      "error_traceback": null,
+      "started_at": null,
+      "completed_at": null,
+      "timeout_seconds": 600.0,
+      "metadata": {
+        "docling_options": {
+          "do_ocr": false,
+          "do_table_structure": true
+        },
+        "conversion_status": "ConversionStatus.SUCCESS"
+      },
+      "ocr": null,
+      "model_config_id": null,
+      "provider": null,
+      "model": null,
+      "json_validation": null,
+      "input_type": null,
+      "normalized_text": "- Claims\n- MS Office\n- BPO Non Voice\n- Claims Processing\n- Claims Adjudication\n- US Process\n- Communication Skills\n- US Healthcare\n- Data Analytics\n- SQL\n- COBRA Healthcare\n\nPersonal Information\n\nCity\n\nCountry Noida INDIA\n\nLanguages\n\n- English\n- Hindi\n\nAnchal Mishra\n\nSenior Claims Executive\n\nProfile Summary\n\nThe benefits administrator position is responsible for directing and planning the day-to-day operations of group benefits programs (group health, dental, vision, short-term and long-term disability, worker's compensation, life insurance, travel and accident plan, flexible spending plan, retirement plans, etc.). This position provides excellent customer service and designs quality benefits plans. The administrator continually investigates new benefits programs, improves existing programs, and supervises and monitors benefits administrationCoordinate daily benefits processing. Handle enrollments, terminations, changes, beneficiaries and processing claims HRA,FSA TRN and PKG, DCA all these terms.Document and maintain administrative procedures for assigned benefits processes Prolonged periods sitting at a desk and working on a computer.\n\nEducation\n\nB.Com, 2020\n\nHindu College, DU\n\nWork Experience\n\nSep 2020 - Present\n\nSenior Claims Executive\n\nCXC Solutions\n\nThe benefits administrator position is responsible for directing and planning the day-to-day operations of group benefits programs group health, dental, vision, short-term and long-term disability, worker's compensation, life insurance, travel and accident plan, flexible spending plan, retirement plans, etc.)."
+    }
+  ],
+  "attempt_count": 3,
+  "fallback_occurred": false,
+  "fallback_reason": null,
+  "extracted_text": "Anchal Mishra\nSenior Claims Executive\n\n3 Years 6 Months (+91) 8920781400 anchal20134@gmail.co\nm\n\nProfile Summary\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs\n(group health, dental, vision, short-term and long-term disability,\nworker's compensation, life insurance, travel and accident plan,\nflexible spending plan, retirement plans, etc.). This position\nprovides excellent customer service and designs quality benefits\nplans. The administrator continually investigates new benefits\nprograms, improves existing programs, and supervises and\nmonitors benefits administrationCoordinate daily benefits\nprocessing. Handle enrollments, terminations, changes,\nbeneficiaries and processing claims HRA,FSA TRN and PKG, DCA\nall these terms.Document and maintain administrative procedures\nfor assigned benefits processes Prolonged periods sitting at a\ndesk and working on a computer.\n\nEducation\n\nWork Experience\n\nSep 2020 - Present\n\nSenior Claims Executive\nCXC Solutions\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs group\nhealth, dental, vision, short-term and long-term disability, worker's\ncompensation, life insurance, travel and accident plan, flexible\nspending plan, retirement plans, etc.).\n\nKey skills\n\nClaims\n\nMS Office\n\nBPO Non Voice\n\nClaims Processing\n\nClaims Adjudication\n\nUS Process\n\nCommunication Skills\n\nUS Healthcare\n\nData Analytics\n\nSQL\n\nCOBRA Healthcare\n\nPersonal Information\n\nCity Noida\n\nCountry INDIA\n\nLanguages\n\nEnglish\n\nHindi\n\nB.Com, 2020\n\nHindu College, DU",
+  "final_extracted_text": "Anchal Mishra\nSenior Claims Executive\n\n3 Years 6 Months (+91) 8920781400 anchal20134@gmail.co\nm\n\nProfile Summary\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs\n(group health, dental, vision, short-term and long-term disability,\nworker's compensation, life insurance, travel and accident plan,\nflexible spending plan, retirement plans, etc.). This position\nprovides excellent customer service and designs quality benefits\nplans. The administrator continually investigates new benefits\nprograms, improves existing programs, and supervises and\nmonitors benefits administrationCoordinate daily benefits\nprocessing. Handle enrollments, terminations, changes,\nbeneficiaries and processing claims HRA,FSA TRN and PKG, DCA\nall these terms.Document and maintain administrative procedures\nfor assigned benefits processes Prolonged periods sitting at a\ndesk and working on a computer.\n\nEducation\n\nWork Experience\n\nSep 2020 - Present\n\nSenior Claims Executive\nCXC Solutions\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs group\nhealth, dental, vision, short-term and long-term disability, worker's\ncompensation, life insurance, travel and accident plan, flexible\nspending plan, retirement plans, etc.).\n\nKey skills\n\nClaims\n\nMS Office\n\nBPO Non Voice\n\nClaims Processing\n\nClaims Adjudication\n\nUS Process\n\nCommunication Skills\n\nUS Healthcare\n\nData Analytics\n\nSQL\n\nCOBRA Healthcare\n\nPersonal Information\n\nCity Noida\n\nCountry INDIA\n\nLanguages\n\nEnglish\n\nHindi\n\nB.Com, 2020\n\nHindu College, DU",
+  "page_count": null,
+  "warnings": [],
+  "error": null,
+  "quality_status": "PASS",
+  "final_quality_status": "PASS",
+  "quality": {
+    "status": "PASS",
+    "document_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e",
+    "source_tool": "tika",
+    "attempt_id": "606d7bb8-65ab-46c5-b9cc-ab03e500436e-attempt-1",
+    "text_health": {
+      "filter_name": "text_health",
+      "score": 100.0,
+      "flags": [],
+      "reasons": [],
+      "metrics": {
+        "char_count": 1640,
+        "word_count": 207,
+        "line_count": 77,
+        "replacement_char_count": 0,
+        "replacement_char_ratio": 0.0,
+        "non_printable_count": 0,
+        "non_printable_ratio": 0.0,
+        "whitespace_ratio": 0.142683,
+        "symbol_count": 0,
+        "symbol_ratio": 0.0,
+        "max_repeated_char_run": 2,
+        "repeated_line_ratio": 0.0
+      }
+    },
+    "completeness": {
+      "filter_name": "completeness",
+      "score": 91.0,
+      "flags": [
+        "MISSING_OPTIONAL_SECTION"
+      ],
+      "reasons": [
+        "Optional section not detected: Responsibilities. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Projects. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed.",
+        "Optional section not detected: Certifications. This may be a genuine omission in the resume or an extraction gap — it is not by itself proof that extraction failed."
+      ],
+      "metrics": {
+        "char_count": 1640,
+        "word_count": 207,
+        "configured_section_count": 8,
+        "detected_count": 5,
+        "missing_count": 3,
+        "detected_sections": [
+          "Contact Information",
+          "Summary",
+          "Skills",
+          "Work Experience",
+          "Education"
+        ],
+        "missing_sections": [
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "missing_required": [],
+        "missing_recommended": [],
+        "missing_optional": [
+          "Responsibilities",
+          "Projects",
+          "Certifications"
+        ],
+        "matched_aliases": {
+          "Contact Information": "personal information",
+          "Summary": "profile summary",
+          "Skills": "communication skills",
+          "Work Experience": "WORKEXPERIENCE",
+          "Education": "education"
+        },
+        "conditional_rejected": [],
+        "section_evidence": {
+          "Contact Information": {
+            "canonical_name": "Contact Information",
+            "original_heading": "Personal Information",
+            "detection_method": "heading",
+            "line_number": 63,
+            "evidence": "Personal Information",
+            "confidence": 0.98
+          },
+          "Summary": {
+            "canonical_name": "Summary",
+            "original_heading": "Profile Summary",
+            "detection_method": "heading",
+            "line_number": 7,
+            "evidence": "Profile Summary",
+            "confidence": 0.98
+          },
+          "Skills": {
+            "canonical_name": "Skills",
+            "original_heading": "Communication Skills",
+            "detection_method": "heading",
+            "line_number": 53,
+            "evidence": "Communication Skills",
+            "confidence": 0.98
+          },
+          "Work Experience": {
+            "canonical_name": "Work Experience",
+            "original_heading": "Work Experience",
+            "detection_method": "heading",
+            "line_number": 26,
+            "evidence": "Work Experience",
+            "confidence": 0.98
+          },
+          "Education": {
+            "canonical_name": "Education",
+            "original_heading": "Education",
+            "detection_method": "heading",
+            "line_number": 24,
+            "evidence": "Education",
+            "confidence": 0.98
+          }
+        },
+        "uncertain_sections": [],
+        "section_status": {
+          "Contact Information": "detected",
+          "Summary": "detected",
+          "Skills": "detected",
+          "Work Experience": "detected",
+          "Education": "detected",
+          "Responsibilities": "missing",
+          "Projects": "missing",
+          "Certifications": "missing"
+        },
+        "extraction_quality": 100.0
+      },
+      "detected_sections": [
+        "Contact Information",
+        "Summary",
+        "Skills",
+        "Work Experience",
+        "Education"
+      ],
+      "missing_sections": [
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ],
+      "missing_required": [],
+      "missing_recommended": [],
+      "missing_optional": [
+        "Responsibilities",
+        "Projects",
+        "Certifications"
+      ]
+    },
+    "reading_order": {
+      "filter_name": "reading_order",
+      "score": 86.92,
+      "flags": [
+        "EXCESSIVE_SHORT_LINES",
+        "FRAGMENTED_LINES",
+        "POSSIBLE_BROKEN_SENTENCES"
+      ],
+      "reasons": [
+        "49.0% of lines have 2 words or fewer — text may be fragmented or columns may have been split.",
+        "40.8% of lines are 15 characters or shorter.",
+        "35.4% of line transitions look like a sentence broken across lines without punctuation."
+      ],
+      "metrics": {
+        "char_count": 1640,
+        "word_count": 207,
+        "line_count": 77,
+        "non_empty_line_count": 49,
+        "short_line_count": 24,
+        "short_line_ratio": 0.489796,
+        "fragmented_line_count": 20,
+        "fragmented_line_ratio": 0.408163,
+        "mean_line_length": 31.92,
+        "median_line_length": 19.0,
+        "line_length_stdev": 24.13,
+        "line_length_cv": 0.755952,
+        "broken_sentence_count": 17,
+        "broken_sentence_ratio": 0.354167,
+        "repeated_adjacent_count": 0,
+        "repeated_adjacent_ratio": 0.0
+      }
+    }
+  },
+  "selection_reason": "Selected 'tika' with quality score 92.7 (tie among ['tika', 'pymupdf'] broken by configured tie-break order ['tika', 'pymupdf', 'docling']).",
+  "pipeline_trace": [
+    {
+      "stage": "Resume Upload",
+      "type": "upload",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "File received and stored for processing.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "MIME Type Detection",
+      "type": "mime",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "application/pdf",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": null
+    },
+    {
+      "stage": "Tika Extractor",
+      "type": "extractor",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 4493.04,
+      "message": "Extraction succeeded.",
+      "accepted": true,
+      "quality": null,
+      "decision": "accept",
+      "selected": true
+    },
+    {
+      "stage": "PyMuPDF Extractor",
+      "type": "extractor",
+      "extractor": "pymupdf",
+      "status": "PASS",
+      "duration_ms": 184.93,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Docling Extractor",
+      "type": "extractor",
+      "extractor": "docling",
+      "status": "PASS",
+      "duration_ms": 55629.87,
+      "message": "Extraction succeeded.",
+      "accepted": false,
+      "quality": null,
+      "decision": "reject",
+      "selected": false
+    },
+    {
+      "stage": "Quality Evaluation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Quality scores: tika=92.7, pymupdf=92.7, docling=89.5",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Best Extractor Selection",
+      "type": "selection",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected 'tika' with quality score 92.7 (tie among ['tika', 'pymupdf'] broken by configured tie-break order ['tika', 'pymupdf', 'docling']).",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Text Normalization",
+      "type": "normalization",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Selected Tika text normalized: 1640 → 1640 characters.",
+      "accepted": null,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    },
+    {
+      "stage": "Muse AI — Resume JSON Generation (muse-spark-1.3-contributor)",
+      "type": "llm",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": 23804.99,
+      "message": "Structured Resume JSON generated by Muse AI from the selected normalized text.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "JSON Validation",
+      "type": "quality",
+      "extractor": null,
+      "status": "PASS",
+      "duration_ms": null,
+      "message": "Resume JSON matches the project schema.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": false
+    },
+    {
+      "stage": "Final Extraction Result",
+      "type": "final",
+      "extractor": "tika",
+      "status": "PASS",
+      "duration_ms": 79456.7,
+      "message": "Muse AI produced validated Resume JSON from the Tika extraction.",
+      "accepted": true,
+      "quality": null,
+      "decision": null,
+      "selected": true
+    }
+  ],
+  "duration_ms": 79456.7,
+  "extractor_order": [
+    "tika",
+    "pymupdf",
+    "docling"
+  ],
+  "extraction_timeout_seconds": 600.0,
+  "hyperlinks": [],
+  "hyperlink_error": null,
+  "text_normalization": {
+    "source": "tika",
+    "status": "applied",
+    "error": null,
+    "original_extracted_text": "Anchal Mishra\nSenior Claims Executive\n\n3 Years 6 Months (+91) 8920781400 anchal20134@gmail.co\nm\n\nProfile Summary\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs\n(group health, dental, vision, short-term and long-term disability,\nworker's compensation, life insurance, travel and accident plan,\nflexible spending plan, retirement plans, etc.). This position\nprovides excellent customer service and designs quality benefits\nplans. The administrator continually investigates new benefits\nprograms, improves existing programs, and supervises and\nmonitors benefits administrationCoordinate daily benefits\nprocessing. Handle enrollments, terminations, changes,\nbeneficiaries and processing claims HRA,FSA TRN and PKG, DCA\nall these terms.Document and maintain administrative procedures\nfor assigned benefits processes Prolonged periods sitting at a\ndesk and working on a computer.\n\nEducation\n\nWork Experience\n\nSep 2020 - Present\n\nSenior Claims Executive\nCXC Solutions\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs group\nhealth, dental, vision, short-term and long-term disability, worker's\ncompensation, life insurance, travel and accident plan, flexible\nspending plan, retirement plans, etc.).\n\nKey skills\n\nClaims\n\nMS Office\n\nBPO Non Voice\n\nClaims Processing\n\nClaims Adjudication\n\nUS Process\n\nCommunication Skills\n\nUS Healthcare\n\nData Analytics\n\nSQL\n\nCOBRA Healthcare\n\nPersonal Information\n\nCity Noida\n\nCountry INDIA\n\nLanguages\n\nEnglish\n\nHindi\n\nB.Com, 2020\n\nHindu College, DU",
+    "normalized_text": "Anchal Mishra\nSenior Claims Executive\n\n3 Years 6 Months (+91) 8920781400 anchal20134@gmail.co\nm\n\nProfile Summary\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs\n(group health, dental, vision, short-term and long-term disability,\nworker's compensation, life insurance, travel and accident plan,\nflexible spending plan, retirement plans, etc.). This position\nprovides excellent customer service and designs quality benefits\nplans. The administrator continually investigates new benefits\nprograms, improves existing programs, and supervises and\nmonitors benefits administrationCoordinate daily benefits\nprocessing. Handle enrollments, terminations, changes,\nbeneficiaries and processing claims HRA,FSA TRN and PKG, DCA\nall these terms.Document and maintain administrative procedures\nfor assigned benefits processes Prolonged periods sitting at a\ndesk and working on a computer.\n\nEducation\n\nWork Experience\n\nSep 2020 - Present\n\nSenior Claims Executive\nCXC Solutions\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs group\nhealth, dental, vision, short-term and long-term disability, worker's\ncompensation, life insurance, travel and accident plan, flexible\nspending plan, retirement plans, etc.).\n\nKey skills\n\nClaims\n\nMS Office\n\nBPO Non Voice\n\nClaims Processing\n\nClaims Adjudication\n\nUS Process\n\nCommunication Skills\n\nUS Healthcare\n\nData Analytics\n\nSQL\n\nCOBRA Healthcare\n\nPersonal Information\n\nCity Noida\n\nCountry INDIA\n\nLanguages\n\nEnglish\n\nHindi\n\nB.Com, 2020\n\nHindu College, DU",
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "original_chars": 1640,
+    "normalized_chars": 1640,
+    "original_estimated_tokens": 410,
+    "normalized_estimated_tokens": 410,
+    "estimated_reduction_percent": 0.0
+  },
+  "muse_requests": [
+    {
+      "stage": "resume_json",
+      "model": "muse-spark-1.3-contributor",
+      "request_id": null,
+      "status": "success",
+      "duration_ms": 23804.99,
+      "input_tokens": 1168,
+      "output_tokens": 2560,
+      "total_tokens": 3728,
+      "cached_input_tokens": 0,
+      "usage_available": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1168,
+    "output_tokens": 2560,
+    "total_tokens": 3728,
+    "cached_input_tokens": 0,
+    "api_calls": 1,
+    "successful_calls": 1,
+    "failed_calls": 0,
+    "timed_out_calls": 0,
+    "models": [
+      "muse-spark-1.3-contributor"
+    ],
+    "usage_available": true,
+    "context": null
+  },
+  "resume_json_meta": {
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "status": "success",
+    "input_type": "text",
+    "duration_ms": 23804.99,
+    "usage": {
+      "completion_tokens": 2560,
+      "prompt_tokens": 1168,
+      "total_tokens": 3728,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2130
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "attempts": 1,
+    "text_normalization": {
+      "source": "tika",
+      "status": "applied",
+      "original_chars": 1640,
+      "normalized_chars": 1640,
+      "estimated_reduction_percent": 0.0,
+      "normalization_applied": false,
+      "normalization_steps": [],
+      "error": null
+    }
+  },
+  "pipeline_mode": "simple",
+  "selected_extractor": "tika",
+  "selected_quality_score": 92.7,
+  "extractor_reports": {
+    "tika": {
+      "extractor": "tika",
+      "quality_score": 92.7,
+      "status": "success",
+      "word_count": 207,
+      "char_count": 1640,
+      "meaningful_char_count": 1406,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0408,
+      "readability_score": 97.3,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary"
+        ]
+      },
+      "structure": {
+        "heading_count": 5,
+        "paragraph_count": 29,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 0.8833,
+        "readability": 0.9729,
+        "cleanliness": 1.0,
+        "non_duplication": 0.9592,
+        "completeness": 1.0,
+        "structure": 0.7
+      }
+    },
+    "pymupdf": {
+      "extractor": "pymupdf",
+      "quality_score": 92.7,
+      "status": "success",
+      "word_count": 207,
+      "char_count": 1612,
+      "meaningful_char_count": 1406,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0377,
+      "readability_score": 97.3,
+      "completeness": {
+        "has_email": true,
+        "has_phone": true,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary"
+        ]
+      },
+      "structure": {
+        "heading_count": 5,
+        "paragraph_count": 5,
+        "bullet_count": 0
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 0.8833,
+        "readability": 0.9729,
+        "cleanliness": 1.0,
+        "non_duplication": 0.9623,
+        "completeness": 1.0,
+        "structure": 0.7
+      }
+    },
+    "docling": {
+      "extractor": "docling",
+      "quality_score": 89.5,
+      "status": "success",
+      "word_count": 210,
+      "char_count": 1587,
+      "meaningful_char_count": 1361,
+      "empty_page_ratio": 0.0,
+      "replacement_char_ratio": 0.0,
+      "duplication_ratio": 0.0345,
+      "readability_score": 93.5,
+      "completeness": {
+        "has_email": false,
+        "has_phone": false,
+        "has_skills_section": true,
+        "has_experience_section": true,
+        "has_education_section": true,
+        "sections_found": [
+          "skills",
+          "experience",
+          "education",
+          "summary"
+        ]
+      },
+      "structure": {
+        "heading_count": 5,
+        "paragraph_count": 18,
+        "bullet_count": 13
+      },
+      "error": null,
+      "components": {
+        "availability": 1.0,
+        "length_adequacy": 0.8933,
+        "readability": 0.9352,
+        "cleanliness": 1.0,
+        "non_duplication": 0.9655,
+        "completeness": 0.6,
+        "structure": 1.0
+      }
+    }
+  },
+  "normalization": {
+    "status": "success",
+    "original_chars": 1640,
+    "normalized_chars": 1640,
+    "normalization_applied": false,
+    "normalization_steps": [],
+    "error": null,
+    "original_text": "Anchal Mishra\nSenior Claims Executive\n\n3 Years 6 Months (+91) 8920781400 anchal20134@gmail.co\nm\n\nProfile Summary\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs\n(group health, dental, vision, short-term and long-term disability,\nworker's compensation, life insurance, travel and accident plan,\nflexible spending plan, retirement plans, etc.). This position\nprovides excellent customer service and designs quality benefits\nplans. The administrator continually investigates new benefits\nprograms, improves existing programs, and supervises and\nmonitors benefits administrationCoordinate daily benefits\nprocessing. Handle enrollments, terminations, changes,\nbeneficiaries and processing claims HRA,FSA TRN and PKG, DCA\nall these terms.Document and maintain administrative procedures\nfor assigned benefits processes Prolonged periods sitting at a\ndesk and working on a computer.\n\nEducation\n\nWork Experience\n\nSep 2020 - Present\n\nSenior Claims Executive\nCXC Solutions\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs group\nhealth, dental, vision, short-term and long-term disability, worker's\ncompensation, life insurance, travel and accident plan, flexible\nspending plan, retirement plans, etc.).\n\nKey skills\n\nClaims\n\nMS Office\n\nBPO Non Voice\n\nClaims Processing\n\nClaims Adjudication\n\nUS Process\n\nCommunication Skills\n\nUS Healthcare\n\nData Analytics\n\nSQL\n\nCOBRA Healthcare\n\nPersonal Information\n\nCity Noida\n\nCountry INDIA\n\nLanguages\n\nEnglish\n\nHindi\n\nB.Com, 2020\n\nHindu College, DU",
+    "normalized_text": "Anchal Mishra\nSenior Claims Executive\n\n3 Years 6 Months (+91) 8920781400 anchal20134@gmail.co\nm\n\nProfile Summary\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs\n(group health, dental, vision, short-term and long-term disability,\nworker's compensation, life insurance, travel and accident plan,\nflexible spending plan, retirement plans, etc.). This position\nprovides excellent customer service and designs quality benefits\nplans. The administrator continually investigates new benefits\nprograms, improves existing programs, and supervises and\nmonitors benefits administrationCoordinate daily benefits\nprocessing. Handle enrollments, terminations, changes,\nbeneficiaries and processing claims HRA,FSA TRN and PKG, DCA\nall these terms.Document and maintain administrative procedures\nfor assigned benefits processes Prolonged periods sitting at a\ndesk and working on a computer.\n\nEducation\n\nWork Experience\n\nSep 2020 - Present\n\nSenior Claims Executive\nCXC Solutions\n\nThe benefits administrator position is responsible for directing and\nplanning the day-to-day operations of group benefits programs group\nhealth, dental, vision, short-term and long-term disability, worker's\ncompensation, life insurance, travel and accident plan, flexible\nspending plan, retirement plans, etc.).\n\nKey skills\n\nClaims\n\nMS Office\n\nBPO Non Voice\n\nClaims Processing\n\nClaims Adjudication\n\nUS Process\n\nCommunication Skills\n\nUS Healthcare\n\nData Analytics\n\nSQL\n\nCOBRA Healthcare\n\nPersonal Information\n\nCity Noida\n\nCountry INDIA\n\nLanguages\n\nEnglish\n\nHindi\n\nB.Com, 2020\n\nHindu College, DU"
+  },
+  "llm": {
+    "status": "success",
+    "provider": "Muse AI",
+    "model": "muse-spark-1.3-contributor",
+    "resume_json": {
+      "full_name": "Anchal Mishra",
+      "email": "anchal20134@gmail.com",
+      "phone": "(+91) 8920781400",
+      "location": "Noida, INDIA",
+      "summary": "The benefits administrator position is responsible for directing and planning the day-to-day operations of group benefits programs (group health, dental, vision, short-term and long-term disability, worker's compensation, life insurance, travel and accident plan, flexible spending plan, retirement plans, etc.). This position provides excellent customer service and designs quality benefits plans. The administrator continually investigates new benefits programs, improves existing programs, and supervises and monitors benefits administrationCoordinate daily benefits processing. Handle enrollments, terminations, changes, beneficiaries and processing claims HRA,FSA TRN and PKG, DCA all these terms.Document and maintain administrative procedures for assigned benefits processes Prolonged periods sitting at a desk and working on a computer.",
+      "skills": {
+        "technical_skills": [
+          "Claims",
+          "Claims Processing",
+          "Claims Adjudication",
+          "US Healthcare",
+          "Data Analytics",
+          "SQL",
+          "COBRA Healthcare"
+        ],
+        "soft_skills": [
+          "Communication Skills"
+        ],
+        "tools": [
+          "MS Office"
+        ],
+        "taxonomy_skills": [],
+        "other_skills": [
+          "BPO Non Voice",
+          "US Process"
+        ]
+      },
+      "experience": [
+        {
+          "title": "Senior Claims Executive",
+          "company": "CXC Solutions",
+          "location": "",
+          "start_date": "Sep 2020",
+          "end_date": "Present",
+          "highlights": [
+            "The benefits administrator position is responsible for directing and planning the day-to-day operations of group benefits programs group health, dental, vision, short-term and long-term disability, worker's compensation, life insurance, travel and accident plan, flexible spending plan, retirement plans, etc.)."
+          ]
+        }
+      ],
+      "education": [
+        {
+          "degree": "B.Com",
+          "institution": "Hindu College, DU",
+          "location": "",
+          "start_date": "",
+          "end_date": "2020"
+        }
+      ],
+      "certifications": [],
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "links": []
+    },
+    "validation": "valid",
+    "error": null,
+    "error_type": null,
+    "attempts": 1,
+    "duration_ms": 23804.99,
+    "usage": {
+      "completion_tokens": 2560,
+      "prompt_tokens": 1168,
+      "total_tokens": 3728,
+      "completion_tokens_details": {
+        "reasoning_tokens": 2130
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "temperature": null
+  },
+  "llm_status": "success",
+  "resume_data": {
+    "full_name": "Anchal Mishra",
+    "email": "anchal20134@gmail.com",
+    "phone": "(+91) 8920781400",
+    "location": "Noida, INDIA",
+    "summary": "The benefits administrator position is responsible for directing and planning the day-to-day operations of group benefits programs (group health, dental, vision, short-term and long-term disability, worker's compensation, life insurance, travel and accident plan, flexible spending plan, retirement plans, etc.). This position provides excellent customer service and designs quality benefits plans. The administrator continually investigates new benefits programs, improves existing programs, and supervises and monitors benefits administrationCoordinate daily benefits processing. Handle enrollments, terminations, changes, beneficiaries and processing claims HRA,FSA TRN and PKG, DCA all these terms.Document and maintain administrative procedures for assigned benefits processes Prolonged periods sitting at a desk and working on a computer.",
+    "skills": {
+      "technical_skills": [
+        "Claims",
+        "Claims Processing",
+        "Claims Adjudication",
+        "US Healthcare",
+        "Data Analytics",
+        "SQL",
+        "COBRA Healthcare"
+      ],
+      "soft_skills": [
+        "Communication Skills"
+      ],
+      "tools": [
+        "MS Office"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": [
+        "BPO Non Voice",
+        "US Process"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Senior Claims Executive",
+        "company": "CXC Solutions",
+        "location": "",
+        "start_date": "Sep 2020",
+        "end_date": "Present",
+        "highlights": [
+          "The benefits administrator position is responsible for directing and planning the day-to-day operations of group benefits programs group health, dental, vision, short-term and long-term disability, worker's compensation, life insurance, travel and accident plan, flexible spending plan, retirement plans, etc.)."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Com",
+        "institution": "Hindu College, DU",
+        "location": "",
+        "start_date": "",
+        "end_date": "2020"
+      }
+    ],
+    "certifications": [],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "links": []
+  },
+  "resume_json": {
+    "full_name": "Anchal Mishra",
+    "email": "anchal20134@gmail.com",
+    "phone": "(+91) 8920781400",
+    "location": "Noida, INDIA",
+    "summary": "The benefits administrator position is responsible for directing and planning the day-to-day operations of group benefits programs (group health, dental, vision, short-term and long-term disability, worker's compensation, life insurance, travel and accident plan, flexible spending plan, retirement plans, etc.). This position provides excellent customer service and designs quality benefits plans. The administrator continually investigates new benefits programs, improves existing programs, and supervises and monitors benefits administrationCoordinate daily benefits processing. Handle enrollments, terminations, changes, beneficiaries and processing claims HRA,FSA TRN and PKG, DCA all these terms.Document and maintain administrative procedures for assigned benefits processes Prolonged periods sitting at a desk and working on a computer.",
+    "skills": {
+      "technical_skills": [
+        "Claims",
+        "Claims Processing",
+        "Claims Adjudication",
+        "US Healthcare",
+        "Data Analytics",
+        "SQL",
+        "COBRA Healthcare"
+      ],
+      "soft_skills": [
+        "Communication Skills"
+      ],
+      "tools": [
+        "MS Office"
+      ],
+      "taxonomy_skills": [],
+      "other_skills": [
+        "BPO Non Voice",
+        "US Process"
+      ]
+    },
+    "experience": [
+      {
+        "title": "Senior Claims Executive",
+        "company": "CXC Solutions",
+        "location": "",
+        "start_date": "Sep 2020",
+        "end_date": "Present",
+        "highlights": [
+          "The benefits administrator position is responsible for directing and planning the day-to-day operations of group benefits programs group health, dental, vision, short-term and long-term disability, worker's compensation, life insurance, travel and accident plan, flexible spending plan, retirement plans, etc.)."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Com",
+        "institution": "Hindu College, DU",
+        "location": "",
+        "start_date": "",
+        "end_date": "2020"
+      }
+    ],
+    "certifications": [],
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "links": []
+  },
+  "resume_json_source": "muse_ai",
+  "timings": {
+    "extraction_seconds": 55.6402,
+    "quality_seconds": 0.0072,
+    "normalization_seconds": 0.0004,
+    "llm_seconds": 23.8087,
+    "total_seconds": 79.4567
+  },
+  "_stored_name": "606d7bb8-65ab-46c5-b9cc-ab03e500436e_download_10_.pdf"
+}

@@ -295,7 +295,6 @@ your key:
 MUSE_API_KEY=
 MUSE_BASE_URL=https://api.meta.ai/v1
 MUSE_MODEL=muse-spark-1.3
-MUSE_TIMEOUT_SECONDS=20
 MUSE_MAX_OUTPUT_TOKENS=
 MUSE_TEMPERATURE=
 MUSE_VISION_ENABLED=true
@@ -413,14 +412,19 @@ Exceeded), with remaining = window − input. When the API returns
 no usage, totals show as Unavailable rather than a fabricated
 number.
 
-**Timeouts.** Two independent backend-enforced caps: (1) the
-per-attempt Extraction Timeout chosen in the Upload card (15s /
-20s, default 20) covers every attempt including Muse stages —
-an overrun is recorded as TIMEOUT with configured timeout and
-actual duration and the flow continues; (2) Muse HTTP calls
-additionally obey `MUSE_TIMEOUT_SECONDS` (default 20) from
-`.env`. Note: 15s can clip a cold Tika JVM start on a slow
-machine — 20s is the safer default.
+**Timeouts.** Muse AI has NO timeout anywhere: `MUSE_TIMEOUT_SECONDS`
+no longer exists (it is ignored if present in an old `.env`), the
+Muse HTTP client sends requests with no timeout, the LLM stage
+applies none, and the frontend never aborts a Muse request — a
+Muse response is waited out however long it takes, and the AI
+Output tab shows a RUNNING status meanwhile. Extraction keeps
+only configurable, deliberately generous safety limits against
+stuck processes, strictly separate from Muse: the concurrent
+pipeline waits at most 600s per extractor
+(`per_extractor_timeout_seconds`), the Tika subprocess cap is
+600s and the legacy chain's total budget 1800s
+(`extractor/config/extractor.yaml`), and Tesseract's cap inside
+Tika is 24h.
 
 **What changed from the previous build:** the frontend AI Model
 Settings page, the multi-provider configuration store

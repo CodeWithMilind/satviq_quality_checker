@@ -15,7 +15,8 @@ def test_defaults_when_only_key_is_set():
     assert config.configured is True
     assert config.base_url == "https://api.meta.ai/v1"
     assert config.model == "muse-spark-1.3"
-    assert config.timeout_seconds == 20
+    # Timeouts were removed: there is no request timeout.
+    assert config.timeout_seconds is None
     assert config.max_output_tokens is None
     assert config.temperature is None
     assert config.vision_enabled is True
@@ -36,7 +37,9 @@ def test_optional_parameters_parse_when_provided():
     assert config.configured is True
     assert config.base_url == "https://example.test/v1"
     assert config.model == "muse-spark-1.2"
-    assert config.timeout_seconds == 30.5
+    # MUSE_TIMEOUT_SECONDS is no longer read (timeouts removed):
+    # even when present in the environment it is ignored.
+    assert config.timeout_seconds is None
     assert config.max_output_tokens == 1234
     assert config.temperature == 0.3
     assert config.vision_enabled is False
@@ -44,12 +47,16 @@ def test_optional_parameters_parse_when_provided():
 
 def test_invalid_values_are_reported_and_block_configuration():
     config = load_muse_config({
-        "MUSE_API_KEY": "k", "MUSE_TIMEOUT_SECONDS": "soon",
-        "MUSE_TEMPERATURE": "9"})
+        "MUSE_API_KEY": "k", "MUSE_TEMPERATURE": "9"})
     assert config.configured is False
     error = config.configuration_error or ""
-    assert "MUSE_TIMEOUT_SECONDS" in error
     assert "MUSE_TEMPERATURE" in error
+    # A stray MUSE_TIMEOUT_SECONDS value is ignored, never an
+    # error: the setting no longer exists.
+    config2 = load_muse_config({
+        "MUSE_API_KEY": "k", "MUSE_TIMEOUT_SECONDS": "soon"})
+    assert config2.configured is True
+    assert config2.timeout_seconds is None
 
 
 def test_public_status_never_contains_the_key():

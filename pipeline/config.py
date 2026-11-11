@@ -29,11 +29,16 @@ _DEFAULT_TIE_BREAK = ["tika", "pymupdf", "docling"]
 @dataclass
 class PipelineConfig:
     min_quality_threshold: float = 60.0
-    per_extractor_timeout_seconds: float = 60.0
+    # EXTRACTION-ONLY safety limit (spec §5): the maximum time to
+    # WAIT for one extractor in the concurrent run. It is a
+    # stuck-process guard, deliberately generous (10 minutes) so it
+    # never clips legitimate extraction — Docling on a large PDF
+    # legitimately takes minutes. It NEVER applies to Muse AI:
+    # Muse calls have no timeout at all. None disables the guard.
+    per_extractor_timeout_seconds: float | None = 600.0
     tie_break_order: list[str] = field(default_factory=lambda: list(_DEFAULT_TIE_BREAK))
     llm_max_retries: int = 2
     llm_temperature: float | None = None
-    llm_timeout_seconds: float = 120.0
     weights: dict[str, float] = field(default_factory=lambda: dict(DEFAULT_WEIGHTS))
     # alias used in some call sites
     scoring_weights: dict[str, float] | None = None
@@ -68,7 +73,9 @@ class PipelineConfig:
                 pass
         if "per_extractor_timeout_seconds" in data:
             try:
-                kwargs["per_extractor_timeout_seconds"] = float(data["per_extractor_timeout_seconds"])
+                v = data["per_extractor_timeout_seconds"]
+                kwargs["per_extractor_timeout_seconds"] = \
+                    float(v) if v is not None else None
             except Exception:
                 pass
         if "tie_break_order" in data and isinstance(data["tie_break_order"], list):
@@ -81,11 +88,6 @@ class PipelineConfig:
         if "llm_temperature" in data:
             v = data["llm_temperature"]
             kwargs["llm_temperature"] = float(v) if v is not None else None
-        if "llm_timeout_seconds" in data:
-            try:
-                kwargs["llm_timeout_seconds"] = float(data["llm_timeout_seconds"])
-            except Exception:
-                pass
         weights = data.get("weights") or data.get("scoring_weights") or data.get("quality_weights")
         if isinstance(weights, dict) and weights:
             merged = dict(DEFAULT_WEIGHTS)

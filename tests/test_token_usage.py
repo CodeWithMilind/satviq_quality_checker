@@ -1,5 +1,9 @@
 """Per-resume Muse token usage monitoring.
 
+The process_resume_file case below pins the LEGACY pipeline
+explicitly (pipeline_mode="legacy") because it exercises the
+vision request; the default pipeline is the simple pipeline.
+
 Covers: usage normalization from API responses, aggregation across
 multiple requests for one resume, no double counting (the vision
 request that also produced the Resume JSON is counted once),
@@ -65,7 +69,7 @@ def test_vision_request_usage_becomes_resume_totals(tmp_path):
         "prompt_tokens_details": {"cached_tokens": 25}}))
     record = process_resume_file(
         png, resume_id="token-test-1", original_filename="resume.png",
-        muse_service=service)
+        muse_service=service, pipeline_mode="legacy")
     usage = record["token_usage"]
     assert usage["input_tokens"] == 100
     assert usage["output_tokens"] == 40

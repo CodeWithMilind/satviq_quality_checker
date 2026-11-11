@@ -1,6 +1,10 @@
 """PDF hyperlink annotation extraction — deterministic, from the
 file's own annotation layer (extracted text never contains these
 URLs). Fixtures are built with PyMuPDF: real annotations, no mocks.
+
+Note: the process_resume_file case pins the LEGACY pipeline
+explicitly (pipeline_mode="legacy"); hyperlink capture into the
+record happens in the legacy Muse stages.
 """
 
 import fitz
@@ -99,7 +103,7 @@ def test_pipeline_record_carries_hyperlinks(tmp_path):
     pdf = _pdf_with_links(tmp_path)
     record = process_resume_file(
         pdf, resume_id="links-test-1", original_filename="resume.pdf",
-        muse_service=Unconfigured())
+        muse_service=Unconfigured(), pipeline_mode="legacy")
     urls = {h["url"] for h in record["hyperlinks"]}
     assert PORTFOLIO_URL in urls and LINKEDIN_URL in urls
     assert record["hyperlink_error"] is None

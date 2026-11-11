@@ -1,17 +1,18 @@
 """Extraction Manager — sequential fallback across the extractors.
 
 Responsibilities:
-- Load configuration (priority order, enabled/disabled, timeouts,
-  acceptance thresholds) from ``config/extractor.yaml``, with
-  programmatic overrides.
+- Load configuration (priority order, enabled/disabled, acceptance
+  thresholds) from ``config/extractor.yaml``, with programmatic
+  overrides.
 - Run extractors sequentially, capture failures without crashing,
   continue to the next extractor, and return the first *accepted*
   result.
 - Record every attempt, and the failure / rejection reason for each
   unsuccessful one, on the returned result (``result.attempts``).
   Errors are never silently discarded.
-- Prevent duplicate attempts and respect ``max_attempts`` and a total
-  timeout budget.
+- Prevent duplicate attempts, respect ``max_attempts``, and honour
+  the configurable total extraction safety budget
+  (``max_total_timeout_seconds``) when one is configured.
 
 Acceptance is decided by a policy object — NOT by exceptions alone,
 and NOT hardcoded inside the extractors. The default is
@@ -178,9 +179,12 @@ class ExtractionManager:
         manager_cfg = self.config.get("manager", {})
         self.order: list[str] = list(manager_cfg.get("order", list(_EXTRACTOR_CLASSES)))
         self.max_attempts: int = int(manager_cfg.get("max_attempts", len(self.order)))
-        self.max_total_timeout_seconds: float = float(
-            manager_cfg.get("max_total_timeout_seconds", 300)
-        )
+        # Extraction-only total safety budget (seconds); None (the
+        # default when unconfigured) means no budget. Configured
+        # generously in extractor.yaml as a stuck-process guard.
+        _budget = manager_cfg.get("max_total_timeout_seconds")
+        self.max_total_timeout_seconds: float | None = \
+            float(_budget) if _budget is not None else None
         self.policy: AcceptancePolicy = acceptance_policy or BasicAcceptancePolicy(
             self.config.get("acceptance", {})
         )
@@ -233,14 +237,15 @@ class ExtractionManager:
             if len(attempted_names) >= self.max_attempts:
                 logger.info("Max attempts (%d) reached; stopping fallback.", self.max_attempts)
                 break
-            elapsed = time.perf_counter() - started
-            if elapsed >= self.max_total_timeout_seconds:
-                reason = (f"Total extraction timeout of "
-                          f"{self.max_total_timeout_seconds:.0f}s exceeded before "
-                          f"trying '{name}'.")
-                logger.error(reason)
-                failure_reasons.append(reason)
-                break
+            if self.max_total_timeout_seconds is not None:
+                elapsed = time.perf_counter() - started
+                if elapsed >= self.max_total_timeout_seconds:
+                    reason = (f"Total extraction timeout of "
+                              f"{self.max_total_timeout_seconds:.0f}s exceeded before "
+                              f"trying '{name}'.")
+                    logger.error(reason)
+                    failure_reasons.append(reason)
+                    break
             if name in attempted_names:
                 logger.debug("Skipping duplicate attempt for extractor '%s'.", name)
                 continue

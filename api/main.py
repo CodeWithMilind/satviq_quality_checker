@@ -16,6 +16,7 @@ from __future__ import annotations
 import logging
 import re
 import uuid
+from datetime import datetime, timezone
 from pathlib import Path
 
 from fastapi import FastAPI, File, HTTPException, Request, UploadFile
@@ -25,13 +26,15 @@ from starlette.concurrency import run_in_threadpool
 
 from extractor.manager import load_manager_config
 
-from . import analytics, store
+from . import analytics, extractor_diagnostics, store
 from .pipeline import (
     MANUAL_EXTRACTORS,
     MAX_UPLOAD_BYTES,
     MAX_UPLOAD_MB,
     SUPPORTED_EXTENSIONS,
+    ai_generation_in_progress,
     failed_record,
+    generate_ai_output_for_record,
     process_resume_file,
     run_manual_extractors,
 )
@@ -140,6 +143,31 @@ def health() -> dict:
     }
 
 
+@app.get("/api/extractors/status")
+def extractors_status() -> dict:
+    """One-click extractor check (Settings → Extractor Status):
+    an installation probe for Tika / PyMuPDF / Docling / OCR —
+    Java + JAR, packages, Tesseract binary — with each extractor's
+    own precise error when something is missing."""
+    return extractor_diagnostics.probe_extractors()
+
+
+@app.post("/api/extractors/test")
+def extractors_test() -> dict:
+    """Live extractor test: really extract the bundled
+    sample_resume.pdf with every extractor (production code paths)
+    and report per-extractor status, characters, duration and the
+    real error on failure."""
+    path = extractor_diagnostics.sample_path()
+    if not path.exists():
+        raise HTTPException(
+            status_code=409,
+            detail=f"{path.name} was not found in the project root; "
+                   "the live extractor test needs the bundled "
+                   "sample resume.")
+    return extractor_diagnostics.run_live_tests(path)
+
+
 @app.get("/api/stats")
 def stats() -> dict:
     return store.compute_stats(store.list_records())
@@ -160,6 +188,12 @@ def analytics_summary(days: int | None = None, include_manual: bool = False) -> 
 @app.post("/api/resumes/process")
 async def process_resumes(files: list[UploadFile] = File(...)) -> dict:
     """Process one or more uploaded resumes through the full pipeline.
+
+    This is the standard upload flow and it runs the DEFAULT
+    pipeline (``pipeline_mode="simple"``): Tika + PyMuPDF + Docling
+    concurrently → quality evaluation → best-extractor selection →
+    normalization of the selected text only → one Muse AI call →
+    schema-validated Resume JSON, persisted on the record.
 
     Each file gets its own record — a bad file never fails the batch.
     Extraction runs in a threadpool so the server stays responsive.
@@ -217,6 +251,7 @@ async def process_resumes(files: list[UploadFile] = File(...)) -> dict:
             record = await run_in_threadpool(
                 process_resume_file, stored_path,
                 resume_id=resume_id, original_filename=safe_name,
+                pipeline_mode="simple",
             )
             record["_stored_name"] = stored_name
 
@@ -232,10 +267,12 @@ async def process_resumes(files: list[UploadFile] = File(...)) -> dict:
 async def process_resumes_simple(files: list[UploadFile] = File(...)) -> dict:
     """Process uploads through the SIMPLE pipeline (pipeline_mode=simple).
 
-    Mirrors /api/resumes/process upload saving/validation, but runs
-    Tika + PyMuPDF + Docling concurrently, quality-scores all three,
-    selects the best, normalizes, and calls the LLM once. Returns the
-    same {"results": [...]} shape with backward-compatible records.
+    Kept as an explicit alias: /api/resumes/process now runs this
+    same default pipeline. Runs Tika + PyMuPDF + Docling
+    concurrently, quality-scores all three, selects the best,
+    normalizes the selected text, and calls the LLM once. Returns
+    the same {"results": [...]} shape with backward-compatible
+    records.
     """
     results: list[dict] = []
     for upload in files:
@@ -390,6 +427,99 @@ async def run_manual_extractors_endpoint(resume_id: str,
         "extractor_results": (updated or {}).get("extractor_results", {}),
         "record": store.public(updated) if updated else None,
     })
+
+
+@app.post("/api/resumes/{resume_id}/reprocess", response_model=None)
+async def reprocess_resume(resume_id: str) -> JSONResponse:
+    """Reprocess an EXISTING record through the default pipeline.
+
+    For records created by the old (legacy) pipeline — or any record
+    whose AI stage never produced Resume JSON — this re-runs the
+    stored original file through the current default flow
+    (selection → selected-text normalization → Muse AI → validated
+    Resume JSON) and UPDATES the same record in place: same
+    ``resume_id``, same original upload timestamp, and any Manual
+    Comparison results are preserved. No duplicate history entry is
+    created. Returns 409 when the original uploaded file is no
+    longer available.
+    """
+    raw = store.load_raw_record(resume_id)
+    if raw is None:
+        return JSONResponse(status_code=404,
+                            content={"detail": "Resume record not found."})
+    stored_name = raw.get("_stored_name")
+    original_path = store.UPLOADS_DIR / stored_name if stored_name else None
+    if original_path is None or not original_path.is_file():
+        return JSONResponse(
+            status_code=409,
+            content={"detail": "The original uploaded file is not "
+                               "available for this record, so it "
+                               "cannot be reprocessed."})
+    record = await run_in_threadpool(
+        process_resume_file, original_path,
+        resume_id=resume_id,
+        original_filename=raw.get("filename") or stored_name,
+        pipeline_mode="simple",
+    )
+    record["_stored_name"] = stored_name
+    if raw.get("uploaded_at"):
+        record["uploaded_at"] = raw["uploaded_at"]
+    if raw.get("extractor_results"):
+        record["extractor_results"] = raw["extractor_results"]
+    store.save_record(record)
+    return JSONResponse(content=store.public(record))
+
+
+@app.post("/api/resumes/{resume_id}/ai/generate", response_model=None)
+async def generate_resume_ai_output(resume_id: str) -> JSONResponse:
+    """Generate the AI Output for an EXISTING record, on demand.
+
+    Sends ONLY the record's stored Selected Normalized Text to
+    Muse AI — exactly one Muse call; the extractors are NOT
+    re-run and no other extractor's text is sent. Used by the AI
+    Output tab's Generate button for testing a (new) API key
+    without re-uploading or re-extracting. The same record is
+    updated in place: on success the validated Resume JSON is
+    stored; on failure any previously stored JSON is kept and the
+    real error is recorded in ``ai_last_attempt``. Returns 409 when
+    the record holds no selected normalized text to send.
+    """
+    record = store.get_record(resume_id)
+    if record is None:
+        return JSONResponse(status_code=404,
+                            content={"detail": "Resume record not found."})
+    if ai_generation_in_progress(resume_id):
+        return JSONResponse(
+            status_code=409,
+            content={"detail": "AI generation is already running "
+                               "for this resume. Wait for it to "
+                               "finish — a slow Muse response is "
+                               "still running, not failed."})
+    # Persist a RUNNING status BEFORE the (possibly long) Muse
+    # call, so the UI shows the actual state while it processes;
+    # the final save below replaces it with the real outcome. The
+    # Muse call itself has NO timeout. A client disconnect cannot
+    # corrupt the record: the generation's result is written in
+    # the single final save, never partially.
+    previous_attempt = record.get("ai_last_attempt")
+    record["ai_last_attempt"] = {
+        "at": datetime.now(timezone.utc).isoformat(),
+        "status": "running", "ok": False, "provider": "Muse AI",
+        "model": None, "validation": None, "error": None,
+        "error_type": None, "duration_ms": None}
+    store.save_record(record)
+    record, attempt = await run_in_threadpool(
+        generate_ai_output_for_record, record)
+    if attempt.get("status") == "no_text":
+        record["ai_last_attempt"] = previous_attempt
+        store.save_record(record)
+        return JSONResponse(status_code=409,
+                            content={"detail": attempt.get("error")})
+    if attempt.get("status") == "already_running":
+        return JSONResponse(status_code=409,
+                            content={"detail": attempt.get("error")})
+    store.save_record(record)
+    return JSONResponse(content=store.public(record))
 
 
 @app.get("/api/resumes/{resume_id}/text", response_model=None)

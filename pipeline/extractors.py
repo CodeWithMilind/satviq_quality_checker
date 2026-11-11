@@ -1,9 +1,9 @@
 """Concurrent execution of the three independent extractors.
 
 Every supported document is processed independently by Tika, PyMuPDF
-and Docling. A failure or timeout in one extractor never stops the
-others. Results are returned in canonical order
-[tika, pymupdf, docling] as unified dicts.
+and Docling. A failure in one extractor never stops the others.
+Results are returned in canonical order [tika, pymupdf, docling] as
+unified dicts.
 """
 from __future__ import annotations
 
@@ -131,15 +131,19 @@ def _run_one(name: str, extractor_obj: Any, file_path: str | Path) -> Any:
     raise TypeError(f"Extractor '{name}' is neither an object with .extract() nor callable")
 
 
-def run_extractors(file_path: str | Path, extractors: dict[str, Any] | None = None, timeout_seconds: float | None = 60) -> list[dict[str, Any]]:
+def run_extractors(file_path: str | Path, extractors: dict[str, Any] | None = None, timeout_seconds: float | None = None) -> list[dict[str, Any]]:
     """Run all three extractors concurrently.
 
     Args:
         file_path: document to extract.
         extractors: optional dict name-> extractor object/callable.
             When None, the real Tika/PyMuPDF/Docling extractors are used.
-        timeout_seconds: per-extractor timeout. On timeout the result
-            has status "timeout" and an error naming the timeout.
+        timeout_seconds: EXTRACTION-ONLY safety limit — the maximum
+            time to WAIT for one extractor (a stuck-process guard;
+            the pipeline passes its configured, generous value).
+            On timeout the result has status "timeout". None (the
+            default for direct callers) waits however long it
+            takes. This never applies to Muse AI calls.
 
     Returns:
         List of unified result dicts in canonical order.

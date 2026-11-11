@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import Any
 
 from .config import PipelineConfig, load_pipeline_config
+from .contact_recovery import recover_contact_information
 from .extractors import run_extractors
 from .llm import LLMProcessor
 from .normalization import normalize_extracted_text
@@ -31,8 +32,10 @@ def _default_llm_service() -> Any | None:
 
 
 class ExtractionPipeline:
-    """The simple pipeline. Legacy ExtractionManager chain is untouched
-    and remains available via api.pipeline.process_resume_file (legacy mode).
+    """The simple pipeline — the DEFAULT for new uploads via
+    api.pipeline.process_resume_file. The legacy ExtractionManager
+    chain is untouched and remains available via
+    api.pipeline.process_resume_file with pipeline_mode="legacy".
     """
 
     def __init__(self, config: PipelineConfig | None = None, extractors: dict[str, Any] | None = None, llm_service: Any = None, llm_callable: Any = None, use_default_llm: bool = True):
@@ -122,6 +125,7 @@ class ExtractionPipeline:
                     "duration_ms": None,
                     "usage": {},
                 },
+                "contact_recovery": None,
                 "resume_data": None,
                 "timings": {
                     **timings_base,
@@ -144,6 +148,29 @@ class ExtractionPipeline:
         if normalized_text is None:
             normalized_text = original_text
         normalization_block = {k: v for k, v in norm.items() if k not in ("original_text", "normalized_text")}
+
+        # --- Contact Information Recovery ---
+        # If phone / email / location are missing from the selected
+        # normalized text, try to recover them — from the other
+        # extractors' outputs, the PDF's first-page text layer, then
+        # OCR — and merge ONLY validated recovered fields into the
+        # text the LLM stage receives. The selected extractor and
+        # its original text are never changed. A failure here must
+        # never fail the resume: the uncorrected text goes onward.
+        t0 = time.perf_counter()
+        contact_recovery: dict[str, Any] | None = None
+        try:
+            normalized_text, contact_recovery = recover_contact_information(
+                normalized_text=normalized_text,
+                selected_extractor=selected_name,
+                results=results,
+                file_path=file_path)
+        except Exception as exc:
+            logger.exception("Contact Information Recovery failed; "
+                             "continuing with the uncorrected text")
+            contact_recovery = {"status": "error", "error": str(exc),
+                                "applied": False, "recovered": {}}
+        recovery_seconds = time.perf_counter() - t0
 
         # --- LLM (only selected normalized text) ---
         t0 = time.perf_counter()
@@ -175,11 +202,13 @@ class ExtractionPipeline:
             "original_text": original_text,
             "normalized_text": normalized_text,
             "normalization": normalization_block,
+            "contact_recovery": contact_recovery,
             "llm": llm_result,
             "resume_data": resume_data,
             "timings": {
                 **timings_base,
                 "normalization_seconds": round(normalization_seconds, 4),
+                "recovery_seconds": round(recovery_seconds, 4),
                 "llm_seconds": round(llm_seconds, 4),
                 "total_seconds": round(total_seconds, 4),
             },
