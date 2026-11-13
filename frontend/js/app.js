@@ -354,8 +354,14 @@ function renderProcess() {
         <button class="btn btn-primary" id="processBtn" type="button" disabled>Process Resume</button>
       </div>
       <div class="progress-wrap" id="progressWrap" hidden>
+        <div class="progress-head">
+          <span class="spinner" id="progressSpinner" aria-hidden="true"></span>
+          <span class="progress-title" id="progressTitle">Processing…</span>
+          <span class="progress-counts" id="progressCounts"></span>
+        </div>
         <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-label" id="progressLabel">Uploading…</div>
+        <div class="batch-files" id="batchFiles"></div>
       </div>
     </div>
     <div id="processResults"></div>`;
@@ -381,6 +387,10 @@ function addFiles(files) {
   files.forEach((file) => {
     state.selectedFiles.push({ file, error: validateFile(file) });
   });
+  if (!state.processing) {
+    const wrap = $("progressWrap");
+    if (wrap) wrap.hidden = true;
+  }
   renderSelectedFiles();
 }
 
@@ -413,6 +423,66 @@ function renderSelectedFiles() {
   }
 }
 
+/* Per-file batch progress: one row per file in the batch, updated
+   from the server's real job state — Waiting / Processing / Done /
+   Failed. Nothing here is estimated: a row changes only when the
+   server reports that file started or finished. */
+function renderBatchFiles(filesState) {
+  const box = $("batchFiles");
+  if (!box) return;
+  const labels = {
+    pending: '<span class="chip">Waiting</span>',
+    processing: '<span class="chip chip-info">Processing…</span>',
+    done: '<span class="chip chip-ok">Done ✓</span>',
+    failed: '<span class="chip chip-bad">Failed ✗</span>',
+  };
+  box.innerHTML = (filesState || []).map((f) => `
+    <div class="batch-file-row ${escapeHtml(f.status || "pending")}">
+      <span class="batch-file-name">${escapeHtml(f.filename || "")}</span>
+      <span class="spacer"></span>
+      ${labels[f.status] || labels.pending}
+    </div>`).join("");
+}
+
+function renderJobProgress(snap) {
+  const fill = $("progressFill");
+  const label = $("progressLabel");
+  const title = $("progressTitle");
+  const counts = $("progressCounts");
+  const spinner = $("progressSpinner");
+  if (fill) fill.style.width = (snap.percent || 0) + "%";
+  if (counts) {
+    counts.textContent = snap.processed + " of " + snap.total +
+      " processed · " + snap.remaining + " remaining";
+  }
+  if (snap.is_done) {
+    if (title) title.textContent = "Processing complete";
+    if (label) {
+      label.textContent = "Done — " + snap.processed + " of " + snap.total +
+        " processed · 0 remaining" +
+        (snap.failed ? " · " + snap.failed + " failed" : "");
+    }
+    if (spinner) spinner.hidden = true;
+  } else if (snap.current_filename) {
+    if (title) {
+      title.textContent = "Processing file " + snap.current_index +
+        " of " + snap.total + ": " + snap.current_filename;
+    }
+    if (label) {
+      label.textContent = "Processing… " + (snap.percent || 0) + "% — " +
+        snap.processed + " processed, " + snap.remaining + " remaining";
+    }
+    if (spinner) spinner.hidden = false;
+  } else {
+    if (title) title.textContent = "Starting processing…";
+    if (label) label.textContent = "Processing on the server…";
+    if (spinner) spinner.hidden = false;
+  }
+  renderBatchFiles(snap.files);
+}
+
+const _waitMs = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
 async function processSelected() {
   const valid = state.selectedFiles.filter((entry) => !entry.error);
   if (!valid.length) return;
@@ -421,31 +491,86 @@ async function processSelected() {
   const wrap = $("progressWrap");
   const fill = $("progressFill");
   const label = $("progressLabel");
+  const title = $("progressTitle");
+  const counts = $("progressCounts");
+  const spinner = $("progressSpinner");
   wrap.hidden = false;
+  if (spinner) spinner.hidden = false;
   fill.style.width = "0%";
   label.textContent = "Uploading…";
+  if (title) title.textContent = "Uploading files…";
+  if (counts) {
+    counts.textContent = "0 of " + valid.length +
+      " processed · " + valid.length + " remaining";
+  }
+  renderBatchFiles(valid.map((entry) => (
+    { filename: entry.file.name, status: "pending" })));
+  let finished = false;
   try {
-    const body = await Api.processResumes(
-      valid.map((entry) => entry.file),
-      (percent) => {
-        fill.style.width = percent + "%";
-        label.textContent = percent >= 100
-          ? "Upload complete — processing on the server…"
-          : "Uploading… " + percent + "%";
-      });
-    const results = body.results || [];
+    let results = null;
+    let job = null;
+    try {
+      job = await Api.processResumesAsync(
+        valid.map((entry) => entry.file),
+        (percent) => {
+          fill.style.width = percent + "%";
+          label.textContent = percent >= 100
+            ? "Upload complete — starting processing…"
+            : "Uploading… " + percent + "%";
+        });
+    } catch (err) {
+      if (!err || err.status !== 404) throw err;
+      /* Older server without the async job endpoint (not restarted
+         yet): fall back to the synchronous call so processing still
+         works, and say plainly why live counts are not shown. */
+      label.textContent = "Upload complete — processing on the server… " +
+        "(restart the server after applying this update to see live progress counts)";
+      const body = await Api.processResumes(
+        valid.map((entry) => entry.file),
+        (percent) => { fill.style.width = percent + "%"; });
+      results = body.results || [];
+      fill.style.width = "100%";
+      if (title) title.textContent = "Processing complete";
+      if (counts) {
+        counts.textContent = results.length + " of " + valid.length +
+          " processed · 0 remaining";
+      }
+      if (spinner) spinner.hidden = true;
+      renderBatchFiles(valid.map((entry, i) => ({
+        filename: entry.file.name,
+        status: results[i] && results[i].success ? "done" : "failed",
+      })));
+    }
+    if (job) {
+      /* Poll the server's real job state until the batch is done.
+         No timeout: the poll ends when the job reports done, however
+         long extraction + the Muse call take. */
+      let snap = job;
+      renderJobProgress(snap);
+      while (!snap.is_done) {
+        await _waitMs(800);
+        snap = await Api.getBatchJob(job.job_id);
+        renderJobProgress(snap);
+      }
+      results = snap.results || [];
+    }
+    results = results || [];
     results.forEach((r) => { state.recordCache[r.resume_id] = r; });
     renderProcessResults(results);
     const failed = results.filter((r) => !r.success).length;
     if (failed) toast(failed + " file(s) could not be processed. See the result cards for details.", "error");
     else toast(results.length + " resume(s) processed.", "success");
     state.selectedFiles = [];
+    finished = true;
     renderSelectedFiles();
   } catch (err) {
     toast(err.message, "error");
   } finally {
     state.processing = false;
-    wrap.hidden = true;
+    /* Keep the finished progress panel visible (100%, counts, per-file
+       Done/Failed) so the user can see the batch completed; it is
+       hidden again when they pick new files. On error, hide it. */
+    if (!finished) wrap.hidden = true;
     renderSelectedFiles();
   }
 }

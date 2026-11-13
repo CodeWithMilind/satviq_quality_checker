@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import logging
 import re
+import threading
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
@@ -26,7 +27,7 @@ from starlette.concurrency import run_in_threadpool
 
 from extractor.manager import load_manager_config
 
-from . import analytics, extractor_diagnostics, store
+from . import analytics, extractor_diagnostics, jobs, store
 from .pipeline import (
     MANUAL_EXTRACTORS,
     MAX_UPLOAD_BYTES,
@@ -420,6 +421,143 @@ async def process_resumes(files: list[UploadFile] = File(...)) -> dict:
         results.append(store.public(record))
 
     return {"results": results}
+
+
+def _run_batch_job(job_id: str, items: list[dict]) -> None:
+    """Background worker for one batch job: process its files one
+    by one with the exact same pipeline call the synchronous
+    endpoint makes, updating the job after each file so the UI's
+    poll sees real processed / remaining counts. A failure on one
+    file never stops the batch — it is recorded as that file's
+    failed record, exactly as the synchronous flow does."""
+    for index, item in enumerate(items):
+        jobs.start_file(job_id, index)
+        try:
+            if item["pre_record"] is not None:
+                record = item["pre_record"]
+            else:
+                record = process_resume_file(
+                    item["stored_path"],
+                    resume_id=item["resume_id"],
+                    original_filename=item["safe_name"],
+                    pipeline_mode="simple",
+                )
+                record["_stored_name"] = item["stored_name"]
+            if "_stored_name" not in record:
+                record["_stored_name"] = None
+            store.save_record(record)
+            public_record = store.public(record)
+        except Exception:  # noqa: BLE001 - one file must not kill the batch
+            logger.exception(
+                "Batch job %s failed while processing %s",
+                job_id, item["safe_name"])
+            public_record = {
+                "resume_id": item["resume_id"],
+                "filename": item["safe_name"],
+                "success": False,
+                "error": "Processing failed on the server for this file.",
+            }
+            try:
+                fallback = failed_record(
+                    resume_id=item["resume_id"],
+                    original_filename=item["safe_name"],
+                    file_type=item["ext"] or None,
+                    mime_type=item["mime_type"], file_size=item["size"],
+                    error=public_record["error"])
+                fallback["_stored_name"] = None
+                store.save_record(fallback)
+                public_record = store.public(fallback)
+            except Exception:  # noqa: BLE001 - still report the file as done/failed
+                logger.exception("Could not store fallback record for %s",
+                                 item["safe_name"])
+        jobs.finish_file(job_id, index, public_record)
+    jobs.finish_job(job_id)
+
+
+@app.post("/api/resumes/process-async")
+async def process_resumes_async(files: list[UploadFile] = File(...)) -> dict:
+    """Start a batch job and return immediately with its job_id.
+
+    Same uploads, same validation, same default (simple) pipeline
+    as ``POST /api/resumes/process`` — the only difference is the
+    processing happens in a background thread and the client polls
+    ``GET /api/resumes/jobs/{job_id}`` for real progress:
+    how many files are processed, how many remain, which file is
+    currently processing, and each file's result as it finishes.
+    The synchronous endpoint is unchanged for API / test callers.
+    """
+    items: list[dict] = []
+    filenames: list[str] = []
+    for upload in files:
+        resume_id = str(uuid.uuid4())
+        safe_name = _sanitise_filename(upload.filename)
+        ext = Path(safe_name).suffix.lower().lstrip(".")
+        stored_name = f"{resume_id}_{safe_name}"
+        stored_path = store.UPLOADS_DIR / stored_name
+        size = 0
+        too_large = False
+        with stored_path.open("wb") as out:
+            while True:
+                chunk = await upload.read(1024 * 256)
+                if not chunk:
+                    break
+                size += len(chunk)
+                if size > MAX_UPLOAD_BYTES:
+                    too_large = True
+                    break
+                out.write(chunk)
+        await upload.close()
+        pre_record = None
+        if too_large:
+            stored_path.unlink(missing_ok=True)
+            pre_record = failed_record(
+                resume_id=resume_id, original_filename=safe_name,
+                file_type=ext or None, mime_type=upload.content_type,
+                file_size=size,
+                error=(f"File exceeds the {MAX_UPLOAD_MB} MB limit. "
+                       "Please upload a smaller resume."))
+        elif size == 0:
+            stored_path.unlink(missing_ok=True)
+            pre_record = failed_record(
+                resume_id=resume_id, original_filename=safe_name,
+                file_type=ext or None, mime_type=upload.content_type,
+                file_size=0, error="File is empty.")
+        elif ext not in SUPPORTED_EXTENSIONS:
+            stored_path.unlink(missing_ok=True)
+            pre_record = failed_record(
+                resume_id=resume_id, original_filename=safe_name,
+                file_type=ext or None, mime_type=upload.content_type,
+                file_size=size,
+                error=(f"Unsupported file type '.{ext}'. Supported types: "
+                       + ", ".join(sorted(SUPPORTED_EXTENSIONS)) + "."))
+        items.append({
+            "resume_id": resume_id, "safe_name": safe_name, "ext": ext,
+            "stored_name": stored_name, "stored_path": stored_path,
+            "size": size, "mime_type": upload.content_type,
+            "pre_record": pre_record,
+        })
+        filenames.append(safe_name)
+    job = jobs.create_job(filenames)
+    thread = threading.Thread(
+        target=_run_batch_job, args=(job["job_id"], items),
+        daemon=True, name=f"satviq-job-{job['job_id'][:8]}")
+    thread.start()
+    return jobs.snapshot(job["job_id"]) or job
+
+
+@app.get("/api/resumes/jobs/{job_id}", response_model=None)
+def get_batch_job(job_id: str) -> JSONResponse:
+    """Progress snapshot for a batch job started by
+    ``POST /api/resumes/process-async``: total, processed,
+    remaining, percent, current file, per-file statuses, and the
+    results collected so far (in upload order)."""
+    snap = jobs.snapshot(job_id)
+    if snap is None:
+        return JSONResponse(
+            status_code=404,
+            content={"detail": "Batch job not found. It may have "
+                               "expired or the server was restarted."})
+    return JSONResponse(content=snap)
 
 
 @app.post("/api/resumes/process-simple")

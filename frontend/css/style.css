@@ -193,6 +193,26 @@ input, select, textarea { font: inherit; color: var(--text); }
 }
 .progress-fill { height: 100%; background: var(--primary); width: 0%; transition: width 0.2s; }
 .progress-label { color: var(--muted); font-size: 12.5px; margin-top: 6px; }
+/* Batch progress: spinner + counts header + per-file status rows */
+.progress-head { display: flex; align-items: center; gap: 9px; margin-bottom: 8px; flex-wrap: wrap; }
+.progress-title { font-weight: 600; font-size: 13.5px; word-break: break-all; }
+.progress-counts { color: var(--muted); font-size: 12.5px; margin-left: auto; white-space: nowrap; }
+.spinner {
+  width: 16px; height: 16px; flex: 0 0 auto; border-radius: 50%;
+  border: 2.5px solid var(--border); border-top-color: var(--primary);
+  animation: satviq-spin 0.8s linear infinite;
+}
+.spinner[hidden] { display: none; }
+@keyframes satviq-spin { to { transform: rotate(360deg); } }
+.batch-files { margin-top: 10px; }
+.batch-file-row {
+  display: flex; align-items: center; gap: 10px; padding: 7px 12px;
+  border: 1px solid var(--border); border-radius: 6px; margin-bottom: 6px;
+  background: var(--card); font-size: 13px;
+}
+.batch-file-row .spacer { flex: 1; }
+.batch-file-row.processing { border-color: var(--primary); background: var(--primary-soft); }
+.batch-file-row .batch-file-name { font-weight: 500; word-break: break-all; }
 
 /* ---------- Chips / badges ---------- */
 .chip {

@@ -92,6 +92,38 @@
     });
   }
 
+  /* Start a batch job: same multipart upload (with real upload
+   * progress), but the server returns a job_id immediately and
+   * processes the files in the background. Poll getBatchJob for
+   * real server-side progress — processed / remaining counts,
+   * the current file, and each file's result as it finishes. */
+  function processResumesAsync(files, onProgress) {
+    return new Promise(function (resolve, reject) {
+      var form = new FormData();
+      files.forEach(function (file) { form.append("files", file); });
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", url("/api/resumes/process-async"));
+      xhr.timeout = 0; /* 0 = no timeout (timeouts have been removed) */
+      if (xhr.upload && typeof onProgress === "function") {
+        xhr.upload.onprogress = function (event) {
+          if (event.lengthComputable) {
+            onProgress(Math.round((event.loaded / event.total) * 100));
+          }
+        };
+      }
+      xhr.onload = function () {
+        var body = {};
+        try { body = JSON.parse(xhr.responseText || "{}"); } catch (e) { /* keep {} */ }
+        if (xhr.status >= 200 && xhr.status < 300) resolve(body);
+        else reject(new ApiError(body.detail || "Upload failed (" + xhr.status + ").", xhr.status));
+      };
+      xhr.onerror = function () {
+        reject(new ApiError("Could not reach the backend. Is the server running?"));
+      };
+      xhr.send(form);
+    });
+  }
+
   window.Api = {
     ApiError: ApiError,
     url: url,
@@ -111,6 +143,10 @@
       return request("/api/resumes/" + encodeURIComponent(resumeId) + "/costs");
     },
     processResumes: processResumes,
+    processResumesAsync: processResumesAsync,
+    getBatchJob: function (jobId) {
+      return request("/api/resumes/jobs/" + encodeURIComponent(jobId));
+    },
     listResumes: function (params) {
       var query = new URLSearchParams();
       Object.keys(params || {}).forEach(function (key) {
